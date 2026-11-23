@@ -145,3 +145,21 @@ export function loadFreqShard(languageId: string): Promise<FreqShard | null> {
 export function loadGrammarShard(languageId: string): Promise<GrammarShard | null> {
   return fetchShard<GrammarShard>("grammar", languageId);
 }
+
+export interface KslIndexPayload {
+  videos?: unknown[];
+  signs?: unknown[];
+  storybooks?: unknown[];
+}
+
+let kslIndexPromise: Promise<KslIndexPayload | null> | null = null;
+
+export function loadKslIndex(): Promise<KslIndexPayload | null> {
+  if (typeof window === "undefined") return Promise.resolve(null);
+  if (!kslIndexPromise) {
+    kslIndexPromise = fetch("/ksl-index.json")
+      .then((res) => (res.ok ? (res.json() as Promise<KslIndexPayload>) : null))
+      .catch(() => null);
+  }
+  return kslIndexPromise;
+}

@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import React, { useDeferredValue, useState, useMemo } from "react";
 import { StyleSheet, Text, View, TextInput, Pressable } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useDynamicStyles, triggerHaptic } from "../../theme";
@@ -18,6 +18,7 @@ export function NumberPlateDecoder() {
   const [plate, setPlate] = useState("KDA 123A");
   const [platePosition, setPlatePosition] = useState<"front" | "rear">("front");
   const [seriesSearch, setSeriesSearch] = useState("");
+  const deferredSeriesSearch = useDeferredValue(seriesSearch);
   const normalizedSpaces = plate.trim().toUpperCase().replace(/\s+/g, " ");
   const clean = normalizedSpaces.replace(/[^A-Z0-9]/g, "");
 
@@ -182,7 +183,7 @@ export function NumberPlateDecoder() {
   }, [clean, normalizedSpaces, platePosition, theme]);
 
   const filteredSeries = useMemo(() => {
-    const q = seriesSearch.trim().toLowerCase();
+    const q = deferredSeriesSearch.trim().toLowerCase();
     const list = platesData.prefixes as any[];
     if (!q) return list.slice(-24).reverse();
     return list.filter(
@@ -191,7 +192,7 @@ export function NumberPlateDecoder() {
         p.yearRange.toLowerCase().includes(q) ||
         p.county.toLowerCase().includes(q)
     );
-  }, [seriesSearch]);
+  }, [deferredSeriesSearch]);
 
   const isCivilian = result?.classification.includes("Civilian");
 

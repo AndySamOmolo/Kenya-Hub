@@ -265,7 +265,7 @@ export default function CookieConsent() {
   return (
     <div
       data-adsense-ignore="true"
-      className="fixed bottom-0 inset-x-0 z-[95] border-t border-border bg-bg-card/98 backdrop-blur-md shadow-2xl shadow-black/30"
+      className="fixed bottom-0 inset-x-0 z-[95] border-t border-border bg-bg-card sm:bg-bg-card/98 sm:backdrop-blur-md shadow-2xl shadow-black/30"
       style={{ backgroundColor: "var(--bg-card)" }}
       role="dialog"
       aria-label={showSettings ? "Cookie preferences" : "Cookie consent"}

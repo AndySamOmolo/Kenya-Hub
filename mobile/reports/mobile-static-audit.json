@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-23T21:04:32.997Z",
-  "mobileTsxFilesScanned": 49,
-  "toolsWired": "33/33",
+  "generatedAt": "2026-11-23T23:22:03.410Z",
+  "mobileTsxFilesScanned": 52,
+  "toolsWired": "50/50",
   "languagesWired": 23,
-  "statutoryJsonParity": "57/57",
+  "statutoryJsonParity": "58/58",
   "maestroFlows": [
     "01-smoke-tabs-and-theme-switch.yaml",
     "02-learn-courses-lessons-and-games.yaml",
@@ -14,8 +14,8 @@
     "07-all-education-transport-legal-health-tools.yaml",
     "08-all-23-languages-mobile-sweep.yaml"
   ],
-  "checksPassed": 83,
-  "checksTotal": 83,
+  "checksPassed": 100,
+  "checksTotal": 100,
   "errorCount": 0,
   "warningCount": 0,
   "errors": [],
@@ -220,6 +220,108 @@
       "detail": "Found switch case for 'mobile-number-prefix' in mobile/app/tools/[slug].tsx"
     },
     {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'school-fee-cap-auditor'",
+      "status": "pass",
+      "detail": "Found switch case for 'school-fee-cap-auditor' in mobile/app/tools/[slug].tsx"
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'cooking-fuel-comparator'",
+      "status": "pass",
+      "detail": "Found switch case for 'cooking-fuel-comparator' in mobile/app/tools/[slug].tsx"
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'auctioneer-fee-shield'",
+      "status": "pass",
+      "detail": "Found switch case for 'auctioneer-fee-shield' in mobile/app/tools/[slug].tsx"
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'succession-cap160-calculator'",
+      "status": "pass",
+      "detail": "Found switch case for 'succession-cap160-calculator' in mobile/app/tools/[slug].tsx"
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'duka-hustle-ubp-calculator'",
+      "status": "pass",
+      "detail": "Found switch case for 'duka-hustle-ubp-calculator' in mobile/app/tools/[slug].tsx"
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'funeral-harambee-planner'",
+      "status": "pass",
+      "detail": "Found switch case for 'funeral-harambee-planner' in mobile/app/tools/[slug].tsx"
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'rainwater-tank-sizer'",
+      "status": "pass",
+      "detail": "Found switch case for 'rainwater-tank-sizer' in mobile/app/tools/[slug].tsx"
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'fertilizer-seed-breakeven'",
+      "status": "pass",
+      "detail": "Found switch case for 'fertilizer-seed-breakeven' in mobile/app/tools/[slug].tsx"
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'dairy-ration-margin'",
+      "status": "pass",
+      "detail": "Found switch case for 'dairy-ration-margin' in mobile/app/tools/[slug].tsx"
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'land-subdivision-planner'",
+      "status": "pass",
+      "detail": "Found switch case for 'land-subdivision-planner' in mobile/app/tools/[slug].tsx"
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'biogas-digester-sizer'",
+      "status": "pass",
+      "detail": "Found switch case for 'biogas-digester-sizer' in mobile/app/tools/[slug].tsx"
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'livestock-vaccine-calendar'",
+      "status": "pass",
+      "detail": "Found switch case for 'livestock-vaccine-calendar' in mobile/app/tools/[slug].tsx"
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'ecitizen-docs-planner'",
+      "status": "pass",
+      "detail": "Found switch case for 'ecitizen-docs-planner' in mobile/app/tools/[slug].tsx"
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'tvet-kmtc-pathway-matcher'",
+      "status": "pass",
+      "detail": "Found switch case for 'tvet-kmtc-pathway-matcher' in mobile/app/tools/[slug].tsx"
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'used-car-elogbook-checker'",
+      "status": "pass",
+      "detail": "Found switch case for 'used-car-elogbook-checker' in mobile/app/tools/[slug].tsx"
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'child-maintenance-calculator'",
+      "status": "pass",
+      "detail": "Found switch case for 'child-maintenance-calculator' in mobile/app/tools/[slug].tsx"
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'article49-rights-companion'",
+      "status": "pass",
+      "detail": "Found switch case for 'article49-rights-companion' in mobile/app/tools/[slug].tsx"
+    },
+    {
       "domain": "courses",
       "name": "Mobile course 'kikuyu' wired in courseLoader + shared course & dict",
       "status": "pass",
@@ -365,9 +467,9 @@
     },
     {
       "domain": "hooks",
-      "name": "Zero Rules of Hooks violations across all 49 mobile .tsx files",
+      "name": "Zero Rules of Hooks violations across all 52 mobile .tsx files",
       "status": "pass",
-      "detail": "Scanned 49 .tsx files; found 0 violations"
+      "detail": "Scanned 52 .tsx files; found 0 violations"
     },
     {
       "domain": "theme",
@@ -445,7 +547,7 @@
       "domain": "ergonomics",
       "name": "No overlong static TextInput placeholders (>48ch) across mobile screens",
       "status": "pass",
-      "detail": "Scanned 49 .tsx files; 0 placeholders exceed 48 chars"
+      "detail": "Scanned 52 .tsx files; 0 placeholders exceed 48 chars"
     },
     {
       "domain": "mobile-ux",
@@ -511,7 +613,7 @@
       "domain": "data-parity",
       "name": "Web <-> Mobile statutory JSON SHA-256 hash parity",
       "status": "pass",
-      "detail": "100% SHA-256 match across all 57/57 statutory JSON datasets"
+      "detail": "100% SHA-256 match across all 58/58 statutory JSON datasets"
     },
     {
       "domain": "e2e",

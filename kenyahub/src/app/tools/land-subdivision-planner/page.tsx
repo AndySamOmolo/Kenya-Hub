@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useEffect, useState, useMemo } from "react";
 import {
   MapPin,
   Clock,
@@ -40,14 +40,23 @@ function getDefaultAgreementDate(): string {
   return now.toISOString().slice(0, 10);
 }
 
+const DEFAULT_AGREEMENT_DATE = "2026-01-01";
+const DEFAULT_TODAY_DATE = "2026-01-31";
+
 export default function LandSubdivisionPlannerPage() {
   const [tenure, setTenure] = useState<"agricultural" | "urban">("agricultural");
   const [plotCountStr, setPlotCountStr] = useState("4");
   const [lcbMode, setLcbMode] = useState<"regular" | "special">("regular");
-  const [agreementDate, setAgreementDate] = useState<string>(getDefaultAgreementDate);
+  const [agreementDate, setAgreementDate] = useState<string>(DEFAULT_AGREEMENT_DATE);
+  const [todayIso, setTodayIso] = useState<string>(DEFAULT_TODAY_DATE);
   const [checkedSteps, setCheckedSteps] = useState<Record<number, boolean>>({
     0: true,
   });
+
+  useEffect(() => {
+    setAgreementDate(getDefaultAgreementDate());
+    setTodayIso(new Date().toISOString().slice(0, 10));
+  }, []);
 
   const toggleStep = (idx: number) => {
     setCheckedSteps((prev) => ({ ...prev, [idx]: !prev[idx] }));
@@ -81,14 +90,9 @@ export default function LandSubdivisionPlannerPage() {
     // Cap 302 6-month (180-day) LCB void cliff
     const safeDate = /^\d{4}-\d{2}-\d{2}$/.test(agreementDate)
       ? agreementDate
-      : getDefaultAgreementDate();
+      : DEFAULT_AGREEMENT_DATE;
     const voidDate = addDaysIso(safeDate, landData.lcbVoidCliffDays);
-    const todayUtc = new Date();
-    const todayMidnightUtc = Date.UTC(
-      todayUtc.getUTCFullYear(),
-      todayUtc.getUTCMonth(),
-      todayUtc.getUTCDate()
-    );
+    const todayMidnightUtc = addDaysIso(todayIso, 0).getTime();
     const daysRemaining = Math.ceil((voidDate.getTime() - todayMidnightUtc) / (1000 * 60 * 60 * 24));
     const isVoid = daysRemaining < 0;
     const isUrgent = daysRemaining >= 0 && daysRemaining <= 30;
@@ -112,7 +116,7 @@ export default function LandSubdivisionPlannerPage() {
       isUrgent,
       completedCount,
     };
-  }, [tenure, plotCountStr, lcbMode, agreementDate, checkedSteps]);
+  }, [tenure, plotCountStr, lcbMode, agreementDate, todayIso, checkedSteps]);
 
   return (
     <ToolShell tool={tool}>

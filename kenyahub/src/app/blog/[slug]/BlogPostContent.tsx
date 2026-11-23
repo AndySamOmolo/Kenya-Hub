@@ -69,6 +69,11 @@ export default function BlogPostContent({ post }: { post: BlogPost | null }) {
     [post?.content]
   );
 
+  const contentHtml = useMemo(
+    () => (post?.content ? markdownToHtml(post.content) : ""),
+    [post?.content]
+  );
+
   const relatedTools = useMemo(
     () => (post ? getRelatedToolsForBlogPost(post.slug, post.tags || [], post.title, 4) : []),
     [post]
@@ -103,7 +108,6 @@ export default function BlogPostContent({ post }: { post: BlogPost | null }) {
     );
   }
 
-  const contentHtml = post.content ? markdownToHtml(post.content) : "";
   const isThinOrEmbedHeavy =
     Boolean(post.adsensePause) ||
     (post.content?.length || 0) < 1200 ||

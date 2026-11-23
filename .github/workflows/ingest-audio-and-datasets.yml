@@ -9,7 +9,7 @@ on:
         default: "false"
         type: string
       max_clips_per_dataset:
-        description: "Maximum audio clips to transcode & upload per dataset split (default 250)"
+        description: "Maximum audio clips to transcode & upload per dataset split (0 = unlimited)"
         required: false
         default: "0"
         type: string
@@ -129,7 +129,7 @@ jobs:
           CF_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CF_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           R2_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
-          R2_SECRET: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          R2_SECRET: ${{ secrets.R2_SECRET_ACCESS_KEY || secrets.R2_SECRET_KEY }}
         run: |
           if [ -n "$CF_ACCOUNT_ID" ] && { [ -n "$CF_API_TOKEN" ] || { [ -n "$R2_KEY_ID" ] && [ -n "$R2_SECRET" ]; }; }; then
             echo "Cloudflare R2 credentials detected — audio upload enabled."
@@ -158,8 +158,8 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y ffmpeg libsndfile1
-          pip install --upgrade pip
-          pip install "datasets>=2.19.0,<4.0.0" numpy soundfile librosa boto3 requests pyarrow huggingface_hub pypdf "datacollective>=0.7.1"
+          pip install --no-cache-dir --upgrade pip
+          pip install --no-cache-dir "datasets>=2.19.0,<4.0.0" numpy soundfile librosa boto3 requests pyarrow huggingface_hub pypdf "datacollective>=0.7.1"
 
       - name: Install Web Dependencies
         if: steps.lock_check.outputs.skip != 'true'
@@ -170,6 +170,7 @@ jobs:
         if: steps.lock_check.outputs.skip != 'true'
         working-directory: kenyahub
         env:
+          GITHUB_TOKEN: ${{ github.token }}
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
           HF_DATASETS_TRUST_REMOTE_CODE: "1"
           INCLUDE_CLDF: ${{ inputs.include_cldf_wikimedia_civic || 'true' }}
@@ -196,7 +197,9 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
-          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY || secrets.R2_SECRET_KEY }}
+          R2_UPLOAD_WORKERS: "12"
+          KSL_UPLOAD_WORKERS: "8"
           R2_BUCKET_NAME: ${{ secrets.R2_BUCKET_NAME || 'kenyahub-audio' }}
           NEXT_PUBLIC_AUDIO_CDN_URL: ${{ secrets.NEXT_PUBLIC_AUDIO_CDN_URL }}
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
@@ -236,7 +239,7 @@ jobs:
           npm --prefix kenyahub test
 
       - name: Commit Ingested Dictionaries, Typology, Manifests & Updated Lockfile
-        if: steps.lock_check.outputs.skip != 'true'
+        if: always() && steps.lock_check.outputs.skip != 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -267,29 +270,39 @@ jobs:
             git commit -m "feat(data): ingest commercially permissive audio, KSL, text, PanLex, CLDR 49, Kaikki & CLDF datasets"
             git reset --hard HEAD
             git clean -fd
-            git fetch origin "${GITHUB_REF_NAME}"
-            if ! git rebase "origin/${GITHUB_REF_NAME}"; then
-              mapfile -t conflicted < <(git diff --name-only --diff-filter=U)
-              unexpected_conflict=false
-              for file in "${conflicted[@]}"; do
-                case "$file" in
-                  kenyahub/src/data/dictionaries/*|kenyahub/src/data/language-sources/*|kenyahub/src/data/courses/proverbs/*|kenyahub/src/data/language-typology/*|kenyahub/src/data/open-corpus-index.json|kenyahub/src/data/locales/*|kenyahub/src/data/readers/*|kenyahub/src/data/benchmarks/*|kenyahub/src/data/frequency-lists/*|kenyahub/src/data/civic/*|kenyahub/src/data/wikimedia/*|kenyahub/public/data/learning/*|kenyahub/public/audio-manifest.json|kenyahub/public/.audio-ingested-lock.json|kenyahub/public/.text-ingested-lock.json|kenyahub/public/r2-audio-index.json|kenyahub/public/ksl-index.json|kenyahub/public/dholuo-audio-chapters.json|kenyahub/reports/tool-audit.json|mobile/src/shared/*)
-                    git checkout --theirs -- "$file"
-                    git add -- "$file"
-                    ;;
-                  *)
-                    echo "::error::Unexpected conflict in $file; refusing to overwrite repository changes."
-                    unexpected_conflict=true
-                    ;;
-                esac
-              done
-              if [ "$unexpected_conflict" = "true" ]; then
-                git rebase --abort
+            for attempt in 1 2 3; do
+              git fetch origin "${GITHUB_REF_NAME}"
+              if ! git rebase "origin/${GITHUB_REF_NAME}"; then
+                mapfile -t conflicted < <(git diff --name-only --diff-filter=U)
+                unexpected_conflict=false
+                for file in "${conflicted[@]}"; do
+                  case "$file" in
+                    kenyahub/src/data/dictionaries/*|kenyahub/src/data/language-sources/*|kenyahub/src/data/courses/proverbs/*|kenyahub/src/data/language-typology/*|kenyahub/src/data/open-corpus-index.json|kenyahub/src/data/locales/*|kenyahub/src/data/readers/*|kenyahub/src/data/benchmarks/*|kenyahub/src/data/frequency-lists/*|kenyahub/src/data/civic/*|kenyahub/src/data/wikimedia/*|kenyahub/public/data/learning/*|kenyahub/public/audio-manifest.json|kenyahub/public/.audio-ingested-lock.json|kenyahub/public/.text-ingested-lock.json|kenyahub/public/r2-audio-index.json|kenyahub/public/ksl-index.json|kenyahub/public/dholuo-audio-chapters.json|kenyahub/reports/tool-audit.json|mobile/src/shared/*)
+                      git checkout --theirs -- "$file"
+                      git add -- "$file"
+                      ;;
+                    *)
+                      echo "::error::Unexpected conflict in $file; refusing to overwrite repository changes."
+                      unexpected_conflict=true
+                      ;;
+                  esac
+                done
+                if [ "$unexpected_conflict" = "true" ]; then
+                  git rebase --abort
+                  exit 1
+                fi
+                GIT_EDITOR=true git rebase --continue
+              fi
+              if git push origin HEAD:"${GITHUB_REF_NAME}"; then
+                break
+              fi
+              if [ "$attempt" -eq 3 ]; then
+                echo "::error::Failed to push ingested dataset checkpoint after 3 attempts."
                 exit 1
               fi
-              GIT_EDITOR=true git rebase --continue
-            fi
-            git push origin HEAD:${GITHUB_REF_NAME}
+              echo "Push attempt ${attempt} failed; retrying in 5s..."
+              sleep 5
+            done
           else
             echo "No dictionary or manifest changes to commit."
           fi

@@ -236,16 +236,18 @@ export function EcitizenDocsPlannerTool() {
     let active = true;
     AsyncStorage.getItem(HUDUMA_BAG_STORAGE_KEY)
       .then((raw) => {
-        if (!active || !raw) return;
-        const parsed = JSON.parse(raw);
-        if (parsed && typeof parsed === "object") {
-          setPackedMap(parsed);
+        if (!active) return;
+        if (raw) {
+          try {
+            const parsed = JSON.parse(raw);
+            if (parsed && typeof parsed === "object") {
+              setPackedMap(parsed);
+            }
+          } catch {}
         }
+        setStorageReady(true);
       })
-      .catch(() => {})
-      .finally(() => {
-        if (active) setStorageReady(true);
-      });
+      .catch(() => {});
     return () => {
       active = false;
     };

@@ -8,7 +8,6 @@ import {
   Animated,
   LayoutAnimation,
   Platform,
-  UIManager,
   StyleSheet,
   type StyleProp,
   type ViewStyle,
@@ -19,13 +18,6 @@ import {
 import { Ionicons } from "@expo/vector-icons";
 import { useTheme, androidRipple, triggerHaptic } from "../theme";
 import { hexToRgba, resolveScrollbarThicknessPx } from "../lib/theme-engine";
-
-if (
-  Platform.OS === "android" &&
-  UIManager.setLayoutAnimationEnabledExperimental
-) {
-  UIManager.setLayoutAnimationEnabledExperimental(true);
-}
 
 function countPillChildren(children: React.ReactNode): number {
   let count = 0;

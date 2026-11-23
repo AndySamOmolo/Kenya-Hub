@@ -40,7 +40,8 @@ import {
 } from "@/lib/learn-progress";
 import { TOOLS } from "@/lib/tools-registry";
 import type { Tool } from "@/lib/types";
-import { getCourse, PUBLISHED_COURSES } from "@/data/courses/registry";
+import type { CourseDefinition } from "@/data/courses/registry";
+import { PUBLISHED_COURSE_SUMMARIES } from "@/data/courses/catalog-summary";
 import { getSourcesForLanguage, DICT_META_MAP, type Dictionary } from "@/data/language-sources";
 import { loadDictionary, DICT_CACHE } from "@/lib/dictionary-loader";
 import { playCorrectSfx, playBadgeUnlockSfx } from "@/lib/game-sfx";
@@ -131,8 +132,13 @@ function formatLanguageHeader(name: string, nativeName: string): string {
   return `${cleanName} (${cleanNative})`;
 }
 
-export default function LanguageClientPage({ languageId }: { languageId: string }) {
-  const course = getCourse(languageId);
+export default function LanguageClientPage({
+  languageId,
+  course,
+}: {
+  languageId: string;
+  course?: CourseDefinition;
+}) {
   const router = useRouter();
 
   const [progress, setProgress] = useState<UserProgress>(() =>
@@ -191,15 +197,23 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
     let active = true;
     if (DICT_CACHE[languageId]) {
       setLoadedDict(DICT_CACHE[languageId]);
-    } else {
-      loadDictionary(languageId).then((d) => {
-        if (active && d) setLoadedDict(d);
-      });
+      return () => {
+        active = false;
+      };
     }
+    setLoadedDict(null);
+    if (view !== "flashcards" && view !== "modules" && view !== "games") {
+      return () => {
+        active = false;
+      };
+    }
+    loadDictionary(languageId).then((d) => {
+      if (active && d) setLoadedDict(d);
+    });
     return () => {
       active = false;
     };
-  }, [languageId]);
+  }, [languageId, view]);
 
   useEffect(() => {
     if (view === "playing") {
@@ -298,27 +312,38 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
     const skills: CourseSkill[] = validMetaCats.map((catMeta) => {
       const loadedCat = loadedCatMap.get(catMeta.id);
       const dedupedWords: WordPair[] = [];
-      const allCatWords: WordPair[] = [];
       if (loadedCat?.entries) {
         for (const e of loadedCat.entries) {
           const t = e.translation.trim();
           const s = e.english.trim();
           if (!t || !s) continue;
-          const pair: WordPair = {
-            target: t,
-            source: s,
-            pronunciation: e.pronunciation || undefined,
-            example: e.context || undefined,
-            audioFile: e.audioFile || undefined,
-          };
-          allCatWords.push(pair);
           const key = `${t.toLowerCase()}::${s.toLowerCase()}`;
           if (!courseWordSet.has(key)) {
-            dedupedWords.push(pair);
+            dedupedWords.push({
+              target: t,
+              source: s,
+              pronunciation: e.pronunciation || undefined,
+              example: e.context || undefined,
+              audioFile: e.audioFile || undefined,
+            });
+          }
+        }
+        if (dedupedWords.length === 0) {
+          for (const e of loadedCat.entries) {
+            const t = e.translation.trim();
+            const s = e.english.trim();
+            if (!t || !s) continue;
+            dedupedWords.push({
+              target: t,
+              source: s,
+              pronunciation: e.pronunciation || undefined,
+              example: e.context || undefined,
+              audioFile: e.audioFile || undefined,
+            });
           }
         }
       }
-      const words = dedupedWords.length > 0 ? dedupedWords : allCatWords;
+      const words = dedupedWords;
       const countLabel = catMeta.count.toLocaleString("en-KE");
       return {
         id: `dict-cat-${catMeta.id}`,
@@ -359,19 +384,21 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
   }, [course, combinedUnits]);
 
   const flashcardDeck = useMemo(() => {
+    if (view !== "flashcards") return [];
     void audioIndexReady;
+    const matchedSkill =
+      flashcardSkillId === "all"
+        ? null
+        : allSkillsFlat.find((s) => s.skill.id === flashcardSkillId)?.skill ?? null;
     const base =
       flashcardSkillId === "all"
         ? allSkillsFlat.flatMap((s) =>
             s.skill.words.map((w) => ({ ...w, skillTitle: s.skill.title }))
           )
-        : (allSkillsFlat.find((s) => s.skill.id === flashcardSkillId)?.skill.words ?? []).map(
-            (w) => ({
-              ...w,
-              skillTitle:
-                allSkillsFlat.find((s) => s.skill.id === flashcardSkillId)?.skill.title ?? "",
-            })
-          );
+        : (matchedSkill?.words ?? []).map((w) => ({
+            ...w,
+            skillTitle: matchedSkill?.title ?? "",
+          }));
 
     if (flashcardFilter === "audio") {
       return base
@@ -400,7 +427,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
       if (scored.length > 0) return scored.slice(0, 500);
     }
     return base.slice(0, 600);
-  }, [allSkillsFlat, flashcardSkillId, flashcardFilter, freqRankMap, languageId, audioIndexReady]);
+  }, [view, allSkillsFlat, flashcardSkillId, flashcardFilter, freqRankMap, languageId, audioIndexReady]);
 
   const currentFlashcard =
     flashcardDeck[flashcardIndex] || flashcardDeck[0] || null;
@@ -442,6 +469,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
   }, [view, flashcardDeck.length, handleUpdateProgress]);
 
   const filteredModules = useMemo(() => {
+    if (view !== "modules") return [];
     const q = debouncedModuleSearch.trim().toLowerCase();
     return allSkillsFlat.filter((item) => {
       if (selectedUnitFilter !== "all" && item.unitId !== selectedUnitFilter) {
@@ -461,7 +489,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
           w.source.toLowerCase().includes(q)
       );
     });
-  }, [allSkillsFlat, debouncedModuleSearch, selectedUnitFilter]);
+  }, [view, allSkillsFlat, debouncedModuleSearch, selectedUnitFilter]);
 
   useEffect(() => {
     setModulesPage(1);
@@ -481,12 +509,38 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
   );
 
   const handleStartLesson = useCallback(
-    (skillId: string, level: number) => {
+    async (skillId: string, level: number) => {
       if (!course) return;
       const found = allSkillsFlat.find((s) => s.skill.id === skillId);
       if (!found) return;
       const due = getDueReviews(progress);
       let lessonSkill = found.skill;
+      if (skillId.startsWith("dict-cat-") && lessonSkill.words.length === 0) {
+        const dict = await loadDictionary(languageId);
+        if (dict) {
+          setLoadedDict(dict);
+          const catId = skillId.slice("dict-cat-".length);
+          const cat = dict.categories.find((c) => c.id === catId);
+          if (cat?.entries?.length) {
+            const loadedWords: WordPair[] = [];
+            for (const e of cat.entries) {
+              const t = e.translation.trim();
+              const s = e.english.trim();
+              if (!t || !s) continue;
+              loadedWords.push({
+                target: t,
+                source: s,
+                pronunciation: e.pronunciation || undefined,
+                example: e.context || undefined,
+                audioFile: e.audioFile || undefined,
+              });
+            }
+            if (loadedWords.length > 0) {
+              lessonSkill = { ...lessonSkill, words: loadedWords };
+            }
+          }
+        }
+      }
       let nextDictCursor: number | undefined;
       if (lessonSkill.words.length > 14) {
         const batchSize = 12;
@@ -512,7 +566,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
       });
       setView("playing");
     },
-    [course, allSkillsFlat, progress]
+    [course, allSkillsFlat, progress, languageId]
   );
 
   const handleStartReview = useCallback(() => {
@@ -579,6 +633,24 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
     setActiveLesson(null);
     setView("lessons");
   }, []);
+
+  const dedupedCourseWords = useMemo(() => {
+    if (!course) return [];
+    const seen = new Set<string>();
+    const list: WordPair[] = [];
+    for (const u of course.units) {
+      for (const sk of u.skills) {
+        for (const w of sk.words) {
+          if (!w.target || !w.source) continue;
+          const key = `${w.target.trim().toLowerCase()}::${w.source.trim().toLowerCase()}`;
+          if (seen.has(key)) continue;
+          seen.add(key);
+          list.push(w);
+        }
+      }
+    }
+    return list;
+  }, [course]);
 
   if (!course) {
     return (
@@ -648,22 +720,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
     },
   ];
 
-  const dedupedCourseWords = (() => {
-    const seen = new Set<string>();
-    const list: WordPair[] = [];
-    for (const u of course.units) {
-      for (const sk of u.skills) {
-        for (const w of sk.words) {
-          if (!w.target || !w.source) continue;
-          const key = `${w.target.trim().toLowerCase()}::${w.source.trim().toLowerCase()}`;
-          if (seen.has(key)) continue;
-          seen.add(key);
-          list.push(w);
-        }
-      }
-    }
-    return list;
-  })();
+
 
   const totalRefTablePages = Math.max(1, Math.ceil(dedupedCourseWords.length / REF_TABLE_PAGE_SIZE));
   const safeRefTablePage = Math.min(refTablePage, totalRefTablePages);
@@ -726,7 +783,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
             <CustomSelect
               value={course.config.id}
               onValueChange={(val) => router.push(`/tools/learn/${val}/`)}
-              options={PUBLISHED_COURSES.map((c) => ({
+              options={PUBLISHED_COURSE_SUMMARIES.map((c) => ({
                 value: c.config.id,
                 label: c.config.name,
               }))}

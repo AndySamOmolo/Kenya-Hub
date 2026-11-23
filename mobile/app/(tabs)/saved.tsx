@@ -386,14 +386,16 @@ export default function SavedScreen() {
     }, [loadSaved])
   );
 
+  const savedRef = useRef(saved);
+  savedRef.current = saved;
+
   const handleRemove = useCallback((slug: string) => {
-    setSaved((prev) => {
-      const updated = prev.filter((s) => s !== slug);
-      const serialized = serializeSavedTools(updated);
-      lastSavedRawRef.current = serialized;
-      AsyncStorage.setItem("kh-saved-tools", serialized).catch(() => {});
-      return updated;
-    });
+    const updated = savedRef.current.filter((s) => s !== slug);
+    savedRef.current = updated;
+    setSaved(updated);
+    const serialized = serializeSavedTools(updated);
+    lastSavedRawRef.current = serialized;
+    AsyncStorage.setItem("kh-saved-tools", serialized).catch(() => {});
   }, []);
 
   const handleClearAll = useCallback(() => {
@@ -407,9 +409,11 @@ export default function SavedScreen() {
           text: "Clear All",
           style: "destructive",
           onPress: async () => {
-            lastSavedRawRef.current = null;
-            setSaved([]);
-            await AsyncStorage.removeItem("kh-saved-tools");
+            try {
+              lastSavedRawRef.current = null;
+              setSaved([]);
+              await AsyncStorage.removeItem("kh-saved-tools");
+            } catch {}
           },
         },
       ]

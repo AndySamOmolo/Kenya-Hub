@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
+import React, { useCallback, useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import {
   ArrowLeft,
@@ -29,6 +29,7 @@ import {
   type KslStarterSign,
 } from "@/data/ksl-starter";
 import { OPEN_CORPUS_INDEX, type KslStorybookItem, type KslVideoItem } from "@/lib/open-corpus";
+import { loadKslIndex } from "@/lib/learning-shards";
 
 interface R2KslSignMeta {
   id: string;
@@ -292,21 +293,22 @@ export default function KslSignStudio() {
   const progressRef = useRef(0);
 
   useEffect(() => {
-    fetch("/ksl-index.json")
-      .then((r) => (r.ok ? r.json() : null))
-      .then((d) => {
-        if (d && Array.isArray(d.videos) && d.videos.length > 0) {
-          setKslVideos(d.videos as KslVideoItem[]);
-          setActiveVideoId((prev) => prev || d.videos[0].id);
-        }
-        if (d && Array.isArray(d.signs)) {
-          setR2Signs(d.signs as R2KslSignMeta[]);
-        }
-        if (d && Array.isArray(d.storybooks) && d.storybooks.length > 0) {
-          setKslStorybooks(d.storybooks as KslStorybookItem[]);
-        }
-      })
-      .catch(() => {});
+    let active = true;
+    loadKslIndex().then((d) => {
+      if (!active || !d) return;
+      if (Array.isArray(d.videos) && d.videos.length > 0) {
+        const vids = d.videos as KslVideoItem[];
+        setKslVideos(vids);
+        setActiveVideoId((prev) => prev || vids[0].id);
+      }
+      if (Array.isArray(d.signs)) {
+        setR2Signs(d.signs as R2KslSignMeta[]);
+      }
+      if (Array.isArray(d.storybooks) && d.storybooks.length > 0) {
+        setKslStorybooks(d.storybooks as KslStorybookItem[]);
+      }
+    });
+    return () => { active = false; };
   }, []);
 
   const savedVideoIdSet = useMemo(() => new Set(savedVideoIds), [savedVideoIds]);
@@ -417,43 +419,51 @@ export default function KslSignStudio() {
     }
   };
 
-  useEffect(() => {
-    if (tab !== "signs" && tab !== "quiz") return;
-    let lastTs = performance.now();
+  const drawCurrentFrame = useCallback(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return;
+    if (tab === "signs" && activeR2Pose && activeR2Pose.frames.length > 0) {
+      const fIdx = Math.floor(progressRef.current * activeR2Pose.frames.length) % activeR2Pose.frames.length;
+      drawR2PoseFrame(ctx, canvas.width, canvas.height, activeR2Pose.frames[fIdx]);
+    } else {
+      const targetMotion = tab === "quiz" ? quizSign.motionType : activeStarter.motionType;
+      drawProceduralSkeleton(ctx, canvas.width, canvas.height, progressRef.current, targetMotion);
+    }
+  }, [tab, activeR2Pose, quizSign, activeStarter]);
 
+  useEffect(() => {
+    const canvasActive = tab === "signs" || (tab === "quiz" && quizMode === "skeleton");
+    if (!canvasActive) return;
+
+    // Always render the current frame immediately (covers paused state without spinning rAF)
+    drawCurrentFrame();
+    if (!playing) return;
+
+    let lastTs = performance.now();
     const tick = (now: number) => {
       const dt = (now - lastTs) / 1000;
       lastTs = now;
 
-      if (playing) {
-        const speed = slowMo ? 0.25 : 0.55;
-        progressRef.current = (progressRef.current + dt * speed) % 1;
-        if (progressBarRef.current) {
-          progressBarRef.current.value = String(Math.round(progressRef.current * 100));
-        }
+      const speed = slowMo ? 0.25 : 0.55;
+      progressRef.current = (progressRef.current + dt * speed) % 1;
+      if (progressBarRef.current) {
+        progressBarRef.current.value = String(Math.round(progressRef.current * 100));
       }
 
-      const canvas = canvasRef.current;
-      if (canvas) {
-        const ctx = canvas.getContext("2d");
-        if (ctx) {
-          if (tab === "signs" && activeR2Pose && activeR2Pose.frames.length > 0) {
-            const fIdx = Math.floor(progressRef.current * activeR2Pose.frames.length) % activeR2Pose.frames.length;
-            drawR2PoseFrame(ctx, canvas.width, canvas.height, activeR2Pose.frames[fIdx]);
-          } else {
-            const targetMotion = tab === "quiz" ? quizSign.motionType : activeStarter.motionType;
-            drawProceduralSkeleton(ctx, canvas.width, canvas.height, progressRef.current, targetMotion);
-          }
-        }
-      }
+      drawCurrentFrame();
       rafRef.current = requestAnimationFrame(tick);
     };
 
     rafRef.current = requestAnimationFrame(tick);
     return () => {
-      if (rafRef.current) cancelAnimationFrame(rafRef.current);
+      if (rafRef.current) {
+        cancelAnimationFrame(rafRef.current);
+        rafRef.current = null;
+      }
     };
-  }, [tab, playing, slowMo, activeStarter, activeR2Pose, quizSign]);
+  }, [tab, quizMode, playing, slowMo, drawCurrentFrame]);
 
   const handleQuizAnswer = (pickedId: string) => {
     if (quizPicked) return;
@@ -597,7 +607,7 @@ export default function KslSignStudio() {
                   autoPlay={autoPlayVideo}
                   playsInline
                   loop={loopVideo}
-                  preload="auto"
+                  preload="metadata"
                   onLoadedData={(e) => {
                     e.currentTarget.playbackRate = playbackRate;
                     if (autoPlayVideo) {
@@ -809,6 +819,7 @@ export default function KslSignStudio() {
                   onClick={() => {
                     progressRef.current = 0;
                     if (progressBarRef.current) progressBarRef.current.value = "0";
+                    drawCurrentFrame();
                   }}
                   className="rounded-lg border border-border p-1.5 text-text-secondary hover:text-text-primary cursor-pointer"
                   aria-label="Restart sign animation"
@@ -823,7 +834,7 @@ export default function KslSignStudio() {
                 max={100}
                 defaultValue={0}
                 onChange={(e) => {
-                  progressRef.current = Number(e.target.value) / 100;
+                  progressRef.current = Number(e.target.value) / 100; drawCurrentFrame();
                 }}
                 aria-label="Animation frame scrubber"
                 className="w-28 accent-gold"

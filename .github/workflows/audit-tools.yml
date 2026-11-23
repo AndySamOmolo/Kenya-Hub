@@ -8,8 +8,6 @@ on:
     paths:
       - "kenyahub/src/app/tools/**"
       - "kenyahub/src/data/**"
-      - "kenyahub/src/data/courses/**"
-      - "kenyahub/src/data/dictionaries/**"
       - "kenyahub/src/lib/tools-registry.ts"
       - "kenyahub/scripts/audit-tools.mjs"
       - "kenyahub/scripts/test-core-logic.mjs"
@@ -21,6 +19,7 @@ permissions:
 jobs:
   audit:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     defaults:
       run:
         working-directory: kenyahub

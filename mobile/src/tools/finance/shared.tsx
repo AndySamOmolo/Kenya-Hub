@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import {
   StyleSheet,
   Text,
@@ -375,6 +375,13 @@ export function ShareCopyBar({
 }) {
   const { theme, styles } = useDynamicStyles(createStyles);
   const [sharedFeedback, setSharedFeedback] = useState<string | null>(null);
+  const shareTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => {
+    return () => {
+      if (shareTimerRef.current) clearTimeout(shareTimerRef.current);
+    };
+  }, []);
 
   const handleShare = async () => {
     triggerHaptic(12);
@@ -384,7 +391,11 @@ export function ShareCopyBar({
         message: `${title}\n\n${summaryText}\n\n— Calculated via KenyaHub (kenyahub.me)`,
       });
       setSharedFeedback("Shared!");
-      setTimeout(() => setSharedFeedback(null), 2200);
+      if (shareTimerRef.current) clearTimeout(shareTimerRef.current);
+      shareTimerRef.current = setTimeout(() => {
+        shareTimerRef.current = null;
+        setSharedFeedback(null);
+      }, 2200);
     } catch {
       // User dismissed share sheet
     }

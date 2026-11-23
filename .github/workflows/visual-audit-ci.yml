@@ -4,11 +4,11 @@ on:
   workflow_dispatch:
     inputs:
       run_web:
-        description: "Run Web Typecheck, Lint, Core Tests & Full Playwright Audit (all 33 tools + core pages)"
+        description: "Run Web Typecheck, Lint, Core Tests & Full Playwright Audit (all tools + core pages)"
         type: boolean
         default: true
       run_android:
-        description: "Run Mobile Typecheck, x86_64 APK Build & Full Android Emulator Audit (all 33 tools + tabs, Light & Dark)"
+        description: "Run Mobile Typecheck, x86_64 APK Build & Full Android Emulator Audit (all tools + tabs, Light & Dark)"
         type: boolean
         default: true
 
@@ -133,8 +133,6 @@ jobs:
           NODE_ENV: production
           NODE_OPTIONS: --max-old-space-size=4096
         run: |
-          sed -i 's/^reactNativeArchitectures=.*/reactNativeArchitectures=x86_64/' gradle.properties
-          grep "^reactNativeArchitectures=" gradle.properties
           chmod +x gradlew
           ./gradlew assembleRelease --no-daemon -PreactNativeArchitectures=x86_64
           echo "Verifying x86_64 native libraries inside APK..."
@@ -146,7 +144,7 @@ jobs:
           sudo udevadm control --reload-rules
           sudo udevadm trigger --name-match=kvm
 
-      - name: Boot Android Emulator & run full 33-tool + core tabs visual & crash audit
+      - name: Boot Android Emulator & run full all-tool + core tabs visual & crash audit
         uses: reactivecircus/android-emulator-runner@v2
         with:
           api-level: 34

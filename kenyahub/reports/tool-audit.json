@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-11-23T21:43:32.397Z",
-  "registryCount": 33,
-  "routeCount": 33,
+  "generatedAt": "2026-11-23T23:22:00.256Z",
+  "registryCount": 50,
+  "routeCount": 50,
   "courseCount": 23,
-  "totalFaqs": 146,
+  "totalFaqs": 197,
   "totalDictEntries": 239211,
   "totalAudioLinked": 2548,
-  "checksPassed": 74,
-  "checksTotal": 74,
-  "okCount": 33,
+  "checksPassed": 91,
+  "checksTotal": 91,
+  "okCount": 50,
   "reviewCount": 0,
   "staleCount": 0,
   "errorCount": 0,
@@ -221,6 +221,108 @@
       "detail": "found 4 FAQs"
     },
     {
+      "domain": "guides",
+      "name": "school-fee-cap-auditor has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 3 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "cooking-fuel-comparator has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 3 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "auctioneer-fee-shield has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 3 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "succession-cap160-calculator has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 3 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "duka-hustle-ubp-calculator has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 3 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "funeral-harambee-planner has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 3 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "rainwater-tank-sizer has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 3 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "fertilizer-seed-breakeven has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 3 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "dairy-ration-margin has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 3 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "land-subdivision-planner has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 3 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "biogas-digester-sizer has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 3 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "livestock-vaccine-calendar has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 3 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "ecitizen-docs-planner has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 3 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "tvet-kmtc-pathway-matcher has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 3 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "used-car-elogbook-checker has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 3 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "child-maintenance-calculator has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 3 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "article49-rights-companion has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 3 FAQs"
+    },
+    {
       "domain": "license",
       "name": "Zero CC-BY-NC / JW300 leakage across all 23 dictionaries",
       "status": "pass",
@@ -396,7 +498,7 @@
     },
     {
       "domain": "jsx",
-      "name": "All 33 Web tool pages have balanced <div> tags",
+      "name": "All 50 Web tool pages have balanced <div> tags",
       "status": "pass",
       "detail": ""
     },
@@ -1257,6 +1359,261 @@
           "file": "src/data/mobile-prefixes.json",
           "lastUpdated": "2026-11-20",
           "source": "Communications Authority of Kenya (CA) — National Numbering Plan"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "school-fee-cap-auditor",
+      "routeExists": true,
+      "sourceUrl": "https://www.education.go.ke/",
+      "maxAgeDays": 90,
+      "ageDays": 0,
+      "data": [
+        {
+          "file": "src/data/kenya-everyday-tools-2026.json",
+          "lastUpdated": "2026-11-24",
+          "source": "KenyaHub 2026 Everyday Citizen Reference (MoE Gazette 1449, EPRA, Cap 526, Cap 160, Nairobi UBP, KUFH, KALRO, Cap 302, DVS/KEVEVAPI, eCitizen, KNQF/KMTC, NTSA, Cap 141, IPOA)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "cooking-fuel-comparator",
+      "routeExists": true,
+      "sourceUrl": "https://www.epra.go.ke/",
+      "maxAgeDays": 90,
+      "ageDays": 0,
+      "data": [
+        {
+          "file": "src/data/kenya-everyday-tools-2026.json",
+          "lastUpdated": "2026-11-24",
+          "source": "KenyaHub 2026 Everyday Citizen Reference (MoE Gazette 1449, EPRA, Cap 526, Cap 160, Nairobi UBP, KUFH, KALRO, Cap 302, DVS/KEVEVAPI, eCitizen, KNQF/KMTC, NTSA, Cap 141, IPOA)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "auctioneer-fee-shield",
+      "routeExists": true,
+      "sourceUrl": "https://www.kenyalaw.org/lex/",
+      "maxAgeDays": 90,
+      "ageDays": 0,
+      "data": [
+        {
+          "file": "src/data/kenya-everyday-tools-2026.json",
+          "lastUpdated": "2026-11-24",
+          "source": "KenyaHub 2026 Everyday Citizen Reference (MoE Gazette 1449, EPRA, Cap 526, Cap 160, Nairobi UBP, KUFH, KALRO, Cap 302, DVS/KEVEVAPI, eCitizen, KNQF/KMTC, NTSA, Cap 141, IPOA)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "succession-cap160-calculator",
+      "routeExists": true,
+      "sourceUrl": "https://www.kenyalaw.org/lex/",
+      "maxAgeDays": 90,
+      "ageDays": 0,
+      "data": [
+        {
+          "file": "src/data/kenya-everyday-tools-2026.json",
+          "lastUpdated": "2026-11-24",
+          "source": "KenyaHub 2026 Everyday Citizen Reference (MoE Gazette 1449, EPRA, Cap 526, Cap 160, Nairobi UBP, KUFH, KALRO, Cap 302, DVS/KEVEVAPI, eCitizen, KNQF/KMTC, NTSA, Cap 141, IPOA)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "duka-hustle-ubp-calculator",
+      "routeExists": true,
+      "sourceUrl": "https://nairobiservices.go.ke/",
+      "maxAgeDays": 90,
+      "ageDays": 0,
+      "data": [
+        {
+          "file": "src/data/kenya-everyday-tools-2026.json",
+          "lastUpdated": "2026-11-24",
+          "source": "KenyaHub 2026 Everyday Citizen Reference (MoE Gazette 1449, EPRA, Cap 526, Cap 160, Nairobi UBP, KUFH, KALRO, Cap 302, DVS/KEVEVAPI, eCitizen, KNQF/KMTC, NTSA, Cap 141, IPOA)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "funeral-harambee-planner",
+      "routeExists": true,
+      "sourceUrl": "https://www.kutrrh.go.ke/",
+      "maxAgeDays": 90,
+      "ageDays": 0,
+      "data": [
+        {
+          "file": "src/data/kenya-everyday-tools-2026.json",
+          "lastUpdated": "2026-11-24",
+          "source": "KenyaHub 2026 Everyday Citizen Reference (MoE Gazette 1449, EPRA, Cap 526, Cap 160, Nairobi UBP, KUFH, KALRO, Cap 302, DVS/KEVEVAPI, eCitizen, KNQF/KMTC, NTSA, Cap 141, IPOA)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "rainwater-tank-sizer",
+      "routeExists": true,
+      "sourceUrl": "https://meteo.go.ke/",
+      "maxAgeDays": 90,
+      "ageDays": 0,
+      "data": [
+        {
+          "file": "src/data/kenya-everyday-tools-2026.json",
+          "lastUpdated": "2026-11-24",
+          "source": "KenyaHub 2026 Everyday Citizen Reference (MoE Gazette 1449, EPRA, Cap 526, Cap 160, Nairobi UBP, KUFH, KALRO, Cap 302, DVS/KEVEVAPI, eCitizen, KNQF/KMTC, NTSA, Cap 141, IPOA)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "fertilizer-seed-breakeven",
+      "routeExists": true,
+      "sourceUrl": "https://www.kalro.org/",
+      "maxAgeDays": 90,
+      "ageDays": 0,
+      "data": [
+        {
+          "file": "src/data/kenya-everyday-tools-2026.json",
+          "lastUpdated": "2026-11-24",
+          "source": "KenyaHub 2026 Everyday Citizen Reference (MoE Gazette 1449, EPRA, Cap 526, Cap 160, Nairobi UBP, KUFH, KALRO, Cap 302, DVS/KEVEVAPI, eCitizen, KNQF/KMTC, NTSA, Cap 141, IPOA)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "dairy-ration-margin",
+      "routeExists": true,
+      "sourceUrl": "https://www.kdb.go.ke/",
+      "maxAgeDays": 90,
+      "ageDays": 0,
+      "data": [
+        {
+          "file": "src/data/kenya-everyday-tools-2026.json",
+          "lastUpdated": "2026-11-24",
+          "source": "KenyaHub 2026 Everyday Citizen Reference (MoE Gazette 1449, EPRA, Cap 526, Cap 160, Nairobi UBP, KUFH, KALRO, Cap 302, DVS/KEVEVAPI, eCitizen, KNQF/KMTC, NTSA, Cap 141, IPOA)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "land-subdivision-planner",
+      "routeExists": true,
+      "sourceUrl": "https://ardhisasa.lands.go.ke/",
+      "maxAgeDays": 90,
+      "ageDays": 0,
+      "data": [
+        {
+          "file": "src/data/kenya-everyday-tools-2026.json",
+          "lastUpdated": "2026-11-24",
+          "source": "KenyaHub 2026 Everyday Citizen Reference (MoE Gazette 1449, EPRA, Cap 526, Cap 160, Nairobi UBP, KUFH, KALRO, Cap 302, DVS/KEVEVAPI, eCitizen, KNQF/KMTC, NTSA, Cap 141, IPOA)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "biogas-digester-sizer",
+      "routeExists": true,
+      "sourceUrl": "https://www.energy.go.ke/",
+      "maxAgeDays": 90,
+      "ageDays": 0,
+      "data": [
+        {
+          "file": "src/data/kenya-everyday-tools-2026.json",
+          "lastUpdated": "2026-11-24",
+          "source": "KenyaHub 2026 Everyday Citizen Reference (MoE Gazette 1449, EPRA, Cap 526, Cap 160, Nairobi UBP, KUFH, KALRO, Cap 302, DVS/KEVEVAPI, eCitizen, KNQF/KMTC, NTSA, Cap 141, IPOA)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "livestock-vaccine-calendar",
+      "routeExists": true,
+      "sourceUrl": "https://kevevapi.or.ke/",
+      "maxAgeDays": 90,
+      "ageDays": 0,
+      "data": [
+        {
+          "file": "src/data/kenya-everyday-tools-2026.json",
+          "lastUpdated": "2026-11-24",
+          "source": "KenyaHub 2026 Everyday Citizen Reference (MoE Gazette 1449, EPRA, Cap 526, Cap 160, Nairobi UBP, KUFH, KALRO, Cap 302, DVS/KEVEVAPI, eCitizen, KNQF/KMTC, NTSA, Cap 141, IPOA)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "ecitizen-docs-planner",
+      "routeExists": true,
+      "sourceUrl": "https://www.ecitizen.go.ke/",
+      "maxAgeDays": 90,
+      "ageDays": 0,
+      "data": [
+        {
+          "file": "src/data/kenya-everyday-tools-2026.json",
+          "lastUpdated": "2026-11-24",
+          "source": "KenyaHub 2026 Everyday Citizen Reference (MoE Gazette 1449, EPRA, Cap 526, Cap 160, Nairobi UBP, KUFH, KALRO, Cap 302, DVS/KEVEVAPI, eCitizen, KNQF/KMTC, NTSA, Cap 141, IPOA)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "tvet-kmtc-pathway-matcher",
+      "routeExists": true,
+      "sourceUrl": "https://kmtc.ac.ke/",
+      "maxAgeDays": 90,
+      "ageDays": 0,
+      "data": [
+        {
+          "file": "src/data/kenya-everyday-tools-2026.json",
+          "lastUpdated": "2026-11-24",
+          "source": "KenyaHub 2026 Everyday Citizen Reference (MoE Gazette 1449, EPRA, Cap 526, Cap 160, Nairobi UBP, KUFH, KALRO, Cap 302, DVS/KEVEVAPI, eCitizen, KNQF/KMTC, NTSA, Cap 141, IPOA)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "used-car-elogbook-checker",
+      "routeExists": true,
+      "sourceUrl": "https://ntsa.go.ke/",
+      "maxAgeDays": 90,
+      "ageDays": 0,
+      "data": [
+        {
+          "file": "src/data/kenya-everyday-tools-2026.json",
+          "lastUpdated": "2026-11-24",
+          "source": "KenyaHub 2026 Everyday Citizen Reference (MoE Gazette 1449, EPRA, Cap 526, Cap 160, Nairobi UBP, KUFH, KALRO, Cap 302, DVS/KEVEVAPI, eCitizen, KNQF/KMTC, NTSA, Cap 141, IPOA)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "child-maintenance-calculator",
+      "routeExists": true,
+      "sourceUrl": "https://www.kenyalaw.org/lex/",
+      "maxAgeDays": 90,
+      "ageDays": 0,
+      "data": [
+        {
+          "file": "src/data/kenya-everyday-tools-2026.json",
+          "lastUpdated": "2026-11-24",
+          "source": "KenyaHub 2026 Everyday Citizen Reference (MoE Gazette 1449, EPRA, Cap 526, Cap 160, Nairobi UBP, KUFH, KALRO, Cap 302, DVS/KEVEVAPI, eCitizen, KNQF/KMTC, NTSA, Cap 141, IPOA)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "article49-rights-companion",
+      "routeExists": true,
+      "sourceUrl": "https://www.ipoa.go.ke/",
+      "maxAgeDays": 90,
+      "ageDays": 0,
+      "data": [
+        {
+          "file": "src/data/kenya-everyday-tools-2026.json",
+          "lastUpdated": "2026-11-24",
+          "source": "KenyaHub 2026 Everyday Citizen Reference (MoE Gazette 1449, EPRA, Cap 526, Cap 160, Nairobi UBP, KUFH, KALRO, Cap 302, DVS/KEVEVAPI, eCitizen, KNQF/KMTC, NTSA, Cap 141, IPOA)"
         }
       ],
       "status": "ok"

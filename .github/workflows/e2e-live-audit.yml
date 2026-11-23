@@ -8,6 +8,9 @@ on:
         required: false
         default: ""
 
+permissions:
+  contents: read
+
 jobs:
   web-static-and-playwright-audit:
     name: Web Static & Live Playwright Audit (Desktop & Mobile × Light & Dark)
@@ -45,7 +48,7 @@ jobs:
         working-directory: kenyahub
         continue-on-error: true
         env:
-          BASE_URL: ${{ inputs.target_url || 'http://127.0.0.1:3000' }}
+          PLAYWRIGHT_BASE_URL: ${{ inputs.target_url || 'http://127.0.0.1:3000' }}
         run: npx playwright test
 
       - name: Upload Playwright HTML Report
@@ -57,7 +60,7 @@ jobs:
           retention-days: 14
 
   android-live-e2e-audit:
-    name: Android Emulator Exhaustive Live App Audit (All 33 Tools, 23 Languages, 47 Counties, Light+Dark, Videos)
+    name: Android Emulator Exhaustive Live App Audit (All Tools, 23 Languages, 47 Counties, Light+Dark, Videos)
     if: false # Disabled: Playwright and mobile photo/video audit disabled
     runs-on: ubuntu-latest
     timeout-minutes: 55

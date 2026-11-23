@@ -147,7 +147,7 @@ def verify_jats_commercial_license(root: ET.Element) -> bool:
                 lic_blobs.append(str(v).lower())
     blob = " ".join(lic_blobs)
     if not blob:
-        return True
+        return False
     if any(bad in blob for bad in ("noncommercial", "non-commercial", "by-nc", "by-nd", "-nc-", "-nd-")):
         return False
     return any(ok in blob for ok in ("creativecommons.org/licenses/by", "cc-by", "cc by", "cc0", "publicdomain/zero"))

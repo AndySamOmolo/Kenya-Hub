@@ -159,7 +159,7 @@ export default async function LanguagePage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }}
       />
-      <LanguageClientPage languageId={language} />
+      <LanguageClientPage languageId={language} course={course} />
     </>
   );
 }

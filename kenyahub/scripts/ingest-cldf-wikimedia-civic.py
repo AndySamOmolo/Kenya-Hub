@@ -43,6 +43,7 @@ WIKIMEDIA_DIR = ROOT_DIR / "src" / "data" / "wikimedia"
 
 HTTP_SESSION = requests.Session()
 HTTP_SESSION.headers.update({"User-Agent": "KenyaHub-CLDF-Wikimedia-Civic-Ingestor/2.1 (https://kenyahub.me; contact@kenyahub.me)"})
+GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "").strip()
 
 KENYAN_GLOTTOCODES = frozenset({
     "swah1253", "kiku1240", "luok1236", "luyi1234", "kamb1297", "kale1246", "gusi1247",
@@ -98,7 +99,26 @@ CIVIC_AGRI_SOURCES: list[dict[str, Any]] = [
 def should_skip_existing(path: Path, force: bool, retry_pending_only: bool) -> bool:
     if force or not retry_pending_only:
         return False
-    return path.exists() and path.stat().st_size > 200
+    if not path.exists() or path.stat().st_size <= 200:
+        return False
+    try:
+        raw = path.read_text(encoding="utf-8")
+    except Exception:
+        return False
+    if path.suffix.lower() == ".json":
+        try:
+            parsed = json.loads(raw)
+        except Exception:
+            return False
+        if not parsed:
+            return False
+        if isinstance(parsed, dict) and "message" in parsed and set(parsed.keys()) <= {"message", "documentation_url", "status"}:
+            return False
+        return True
+    head = raw.lstrip()[:200].lower()
+    if head.startswith(("<!doctype html", "<html", '{"error"', '{"message"')):
+        return False
+    return True
 
 
 def ingest_cldf_databases(dry_run: bool, force: bool = False, retry_pending_only: bool = True) -> None:
@@ -231,7 +251,8 @@ def ingest_civic_agri_sources(dry_run: bool, force: bool = False, retry_pending_
             print(f"  [skip-done] {out_name} already ingested.")
             continue
         try:
-            r = HTTP_SESSION.get(url, timeout=25)
+            req_headers = {"Authorization": f"Bearer {GITHUB_TOKEN}"} if (GITHUB_TOKEN and "api.github.com" in url) else {}
+            r = HTTP_SESSION.get(url, headers=req_headers, timeout=25)
             if r.ok:
                 out_p.write_text(json.dumps(r.json(), indent=2, ensure_ascii=False), encoding="utf-8")
         except Exception as exc:
@@ -333,15 +354,23 @@ def ingest_civic_agri_sources(dry_run: bool, force: bool = False, retry_pending_
 
 def write_catalog_manifest() -> None:
     CIVIC_DIR.mkdir(parents=True, exist_ok=True)
-    manifest = {
-        "updatedAt": datetime.now(timezone.utc).isoformat(),
+    out_path = CIVIC_DIR / "open-datasets-manifest.json"
+    content = {
         "excludedWatchlistCount": len(BLOCKED_NON_COMMERCIAL_REPOS),
         "excludedCldfConstituents": sorted(EXCLUDED_CLDF_DATASETS),
         "cldfSources": CLDF_SOURCES,
         "wikimediaSources": WIKIMEDIA_SOURCES,
         "civicAgriSources": CIVIC_AGRI_SOURCES,
     }
-    (CIVIC_DIR / "open-datasets-manifest.json").write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    if out_path.exists():
+        try:
+            existing = json.loads(out_path.read_text(encoding="utf-8"))
+            if {k: v for k, v in existing.items() if k != "updatedAt"} == content:
+                return
+        except Exception:
+            pass
+    manifest = {"updatedAt": datetime.now(timezone.utc).isoformat(), **content}
+    out_path.write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
 
 def main() -> None:

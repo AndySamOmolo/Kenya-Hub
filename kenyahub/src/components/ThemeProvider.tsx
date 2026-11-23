@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/set-state-in-effect */
 "use client";
 
-import { createContext, useContext, useEffect, useState, useCallback, useRef } from "react";
+import { createContext, useContext, useEffect, useMemo, useState, useCallback, useRef } from "react";
 import { useMounted } from "@/lib/useMounted";
 
 type Theme = "light" | "dark";
@@ -18,19 +18,39 @@ export function useTheme() {
 function applyThemeToDocument(next: Theme, atomic: boolean) {
   if (typeof document === "undefined") return;
   const root = document.documentElement;
+  const other: Theme = next === "dark" ? "light" : "dark";
+  const domAlreadyMatches =
+    root.getAttribute("data-theme") === next &&
+    root.classList.contains(next) &&
+    !root.classList.contains(other);
+
+  let storageMatches = false;
+  try {
+    storageMatches = localStorage.getItem("kh-theme") === next;
+  } catch {
+    storageMatches = true;
+  }
+
+  if (domAlreadyMatches && storageMatches && !atomic) {
+    return;
+  }
 
   if (atomic) {
     root.classList.add("theme-switching");
   }
 
-  root.setAttribute("data-theme", next);
-  root.classList.toggle("dark", next === "dark");
-  root.classList.toggle("light", next === "light");
+  if (!domAlreadyMatches) {
+    root.setAttribute("data-theme", next);
+    root.classList.toggle("dark", next === "dark");
+    root.classList.toggle("light", next === "light");
+  }
 
-  try {
-    localStorage.setItem("kh-theme", next);
-  } catch {
-    // ignore storage errors
+  if (!storageMatches) {
+    try {
+      localStorage.setItem("kh-theme", next);
+    } catch {
+      // ignore storage errors
+    }
   }
 
   if (atomic) {
@@ -83,8 +103,10 @@ export default function ThemeProvider({ children }: { children: React.ReactNode 
     setTheme(next);
   }, []);
 
+  const contextValue = useMemo(() => ({ theme, toggle }), [theme, toggle]);
+
   return (
-    <ThemeContext.Provider value={{ theme, toggle }}>
+    <ThemeContext.Provider value={contextValue}>
       {children}
     </ThemeContext.Provider>
   );

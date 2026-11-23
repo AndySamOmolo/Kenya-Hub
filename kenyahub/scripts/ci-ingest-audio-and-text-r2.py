@@ -21,13 +21,17 @@ Complete Time-Bounded GitHub Actions Streaming Pipeline for KenyaHub:
 from __future__ import annotations
 
 import concurrent.futures
+import csv
+import io
 import json
 import os
+import random
 import re
 import subprocess
 import sys
 import tarfile
 import tempfile
+import threading
 import time
 import unicodedata
 import zipfile
@@ -62,7 +66,8 @@ KSL_INDEX_PATH = PUBLIC_DIR / "ksl-index.json"
 CF_ACCOUNT_ID = os.environ.get("CLOUDFLARE_ACCOUNT_ID", "").strip()
 CF_API_TOKEN = os.environ.get("CLOUDFLARE_API_TOKEN", "").strip()
 R2_ACCESS_KEY_ID = os.environ.get("R2_ACCESS_KEY_ID", "").strip()
-R2_SECRET_ACCESS_KEY = os.environ.get("R2_SECRET_ACCESS_KEY", "").strip()
+R2_SECRET_ACCESS_KEY = (os.environ.get("R2_SECRET_ACCESS_KEY") or os.environ.get("R2_SECRET_KEY") or "").strip()
+R2_UPLOAD_WORKERS = max(1, min(24, int(os.environ.get("R2_UPLOAD_WORKERS", "12") or "12")))
 R2_BUCKET = os.environ.get("R2_BUCKET_NAME", "kenyahub-audio").strip() or "kenyahub-audio"
 
 
@@ -88,13 +93,65 @@ ZENODO_TOKEN = os.environ.get("ZENODO_TOKEN", "").strip() or None
 MAX_CLIPS = int(os.environ.get("MAX_CLIPS_PER_DATASET") or "0")
 
 def clip_cap_reached(count: int) -> bool:
-    return MAX_CLIPS > 0 and clip_cap_reached(count)
+    return MAX_CLIPS > 0 and count >= MAX_CLIPS
+
+
 MAX_TEXT_ROWS = int(os.environ.get("MAX_TEXT_ROWS_PER_DATASET") or "3000")
 
-HTTP_SESSION = requests.Session()
-HTTP_SESSION.headers.update({"User-Agent": "KenyaHubBot/2.3 (https://kenyahub.me; contact@kenyahub.me)"})
+_THREAD_LOCAL = threading.local()
+_R2_STATE_LOCK = threading.Lock()
+_UPLOADED_KEYS_LOCK = threading.Lock()
+
+
+def get_http_session() -> requests.Session:
+    sess = getattr(_THREAD_LOCAL, "session", None)
+    if sess is None:
+        sess = requests.Session()
+        sess.headers.update({"User-Agent": "KenyaHubBot/2.3 (https://kenyahub.me; contact@kenyahub.me)"})
+        _THREAD_LOCAL.session = sess
+    return sess
+
+
+HTTP_SESSION = get_http_session()
 R2_UPLOAD_DISABLED = os.environ.get("R2_READY", "true").strip().lower() in {"0", "false", "no"}
 R2_FAILURE_COUNT = 0
+R2_AUTH_FAILURE_COUNT = 0
+
+
+def flush_audio_index(uploaded_keys: dict) -> None:
+    with _UPLOADED_KEYS_LOCK:
+        tmp_path = AUDIO_INDEX_PATH.with_suffix(".json.tmp")
+        tmp_path.write_text(json.dumps(uploaded_keys, ensure_ascii=False, indent=2), encoding="utf-8")
+        os.replace(tmp_path, AUDIO_INDEX_PATH)
+
+
+def record_uploaded_key(uploaded_keys: dict, lang_id: str, slug: str, audio_url: str) -> None:
+    with _UPLOADED_KEYS_LOCK:
+        uploaded_keys.setdefault(lang_id, {})[slug] = audio_url
+
+
+def hydrate_uploaded_keys_from_r2(s3_client, uploaded_keys: dict) -> int:
+    if s3_client is None:
+        return 0
+    added = 0
+    try:
+        paginator = s3_client.get_paginator("list_objects_v2")
+        for page in paginator.paginate(Bucket=R2_BUCKET, Prefix="audio/"):
+            for obj in page.get("Contents", []) or []:
+                key = str(obj.get("Key") or "")
+                parts = key.split("/")
+                if len(parts) == 3 and parts[0] == "audio" and parts[2].endswith(".opus"):
+                    lang_id = parts[1]
+                    slug = parts[2][:-5]
+                    if lang_id and slug and slug not in uploaded_keys.get(lang_id, {}):
+                        record_uploaded_key(uploaded_keys, lang_id, slug, resolve_public_audio_url(key))
+                        added += 1
+        if added > 0:
+            total = sum(len(v) for v in uploaded_keys.values())
+            log(f"Hydrated {added} existing R2 audio keys from bucket '{R2_BUCKET}' (total indexed: {total}).")
+    except Exception as exc:
+        log(f"[warn] Could not hydrate existing keys from R2 via list_objects_v2: {exc}")
+    return added
 
 
 def load_existing_dataset_status() -> dict:
@@ -163,6 +220,11 @@ def load_hf_stream(repo: str, config: str, split: str = "train", revision: str =
     return ds
 
 
+def get_upload_workers(s3_client) -> int:
+    """Use full multi-threaded concurrency on R2 S3 data plane; keep REST fallback conservatively paced."""
+    return R2_UPLOAD_WORKERS if s3_client is not None else min(R2_UPLOAD_WORKERS, 4)
+
+
 def get_s3_client():
     if not (CF_ACCOUNT_ID and R2_ACCESS_KEY_ID and R2_SECRET_ACCESS_KEY):
         return None
@@ -178,7 +240,7 @@ def get_s3_client():
             region_name="auto",
             config=Config(
                 signature_version="s3v4",
-                max_pool_connections=16,
+                max_pool_connections=max(32, R2_UPLOAD_WORKERS * 2),
                 connect_timeout=10,
                 read_timeout=20,
                 retries={"max_attempts": 2},
@@ -193,7 +255,7 @@ def transcode_to_opus_bytes(input_path: str, opus_path: str, timeout_sec: int = 
     try:
         subprocess.run(
             [
-                "ffmpeg", "-y", "-i", input_path,
+                "ffmpeg", "-y", "-threads", "1", "-i", input_path,
                 "-vn", "-ac", "1", "-ar", "24000",
                 "-c:a", "libopus", "-b:a", "24k", "-vbr", "on", "-application", "voip",
                 opus_path,
@@ -212,12 +274,14 @@ def transcode_to_opus_bytes(input_path: str, opus_path: str, timeout_sec: int = 
 
 
 def upload_bytes_to_r2(s3_client, r2_key: str, opus_bytes: bytes) -> bool:
-    global R2_UPLOAD_DISABLED, R2_FAILURE_COUNT
+    global R2_UPLOAD_DISABLED, R2_FAILURE_COUNT, R2_AUTH_FAILURE_COUNT
     if R2_UPLOAD_DISABLED or not opus_bytes:
         return False
 
+    unrecoverable_auth = False
+
     if s3_client is not None:
-        for attempt in range(4):
+        for attempt in range(5):
             try:
                 s3_client.put_object(
                     Bucket=R2_BUCKET,
@@ -226,22 +290,36 @@ def upload_bytes_to_r2(s3_client, r2_key: str, opus_bytes: bytes) -> bool:
                     ContentType="audio/ogg; codecs=opus",
                     CacheControl="public, max-age=31536000, immutable",
                 )
-                R2_FAILURE_COUNT = 0
+                with _R2_STATE_LOCK:
+                    R2_FAILURE_COUNT = 0
+                    R2_AUTH_FAILURE_COUNT = 0
                 return True
             except Exception as exc:
-                if "429" in str(exc) or "SlowDown" in str(exc) or "503" in str(exc):
-                    time.sleep(min(20, 2 ** (attempt + 1)))
+                err_str = str(exc)
+                err_low = err_str.lower()
+                is_transient = any(
+                    tok in err_str
+                    for tok in ("429", "SlowDown", "500", "502", "503", "504", "InternalError", "RequestTimeout", "ServiceUnavailable", "Throttling")
+                ) or any(tok in err_low for tok in ("timed out", "connection reset", "temporarily unavailable"))
+                if is_transient and attempt < 4:
+                    wait_s = min(30.0, (2 ** (attempt + 1)) + random.uniform(0.1, 1.0))
+                    time.sleep(wait_s)
                     continue
-                R2_FAILURE_COUNT += 1
-                if R2_FAILURE_COUNT <= 3:
-                    log(f"  [warn] S3 R2 put_object notice for {r2_key}: {exc}")
+                if any(tok in err_str for tok in ("401", "403", "InvalidAccessKeyId", "SignatureDoesNotMatch", "AccessDenied")):
+                    unrecoverable_auth = True
+                with _R2_STATE_LOCK:
+                    if R2_FAILURE_COUNT < 5:
+                        log(f"  [warn] S3 R2 put_object notice for {r2_key}: {exc}")
                 break
 
     if CF_API_TOKEN and CF_ACCOUNT_ID:
+        unrecoverable_auth = False
         url = f"https://api.cloudflare.com/client/v4/accounts/{CF_ACCOUNT_ID}/r2/buckets/{R2_BUCKET}/objects/{r2_key}"
+        sess = get_http_session()
         for attempt in range(5):
+            time.sleep(0.25)
             try:
-                resp = HTTP_SESSION.put(
+                resp = sess.put(
                     url,
                     data=opus_bytes,
                     headers={
@@ -252,30 +330,46 @@ def upload_bytes_to_r2(s3_client, r2_key: str, opus_bytes: bytes) -> bool:
                     timeout=60,
                 )
                 if resp.ok:
-                    R2_FAILURE_COUNT = 0
+                    with _R2_STATE_LOCK:
+                        R2_FAILURE_COUNT = 0
+                        R2_AUTH_FAILURE_COUNT = 0
                     return True
-                if resp.status_code in (429, 502, 503, 504):
-                    retry_after = resp.headers.get("Retry-After")
-                    wait_s = min(30, int(retry_after)) if (retry_after and retry_after.isdigit()) else min(24, 2 ** (attempt + 1))
-                    if attempt == 0:
-                        log(f"  [rate-limit] Cloudflare R2 HTTP {resp.status_code}; backing off {wait_s}s...")
-                    time.sleep(wait_s)
-                    continue
-                R2_FAILURE_COUNT += 1
-                if R2_FAILURE_COUNT <= 3:
-                    log(f"  [warn] Cloudflare REST R2 upload HTTP {resp.status_code} for {r2_key}: {resp.text[:180]}")
+                if resp.status_code in (429, 500, 502, 503, 504):
+                    if attempt < 4:
+                        retry_after = resp.headers.get("Retry-After")
+                        if retry_after and retry_after.isdigit():
+                            wait_s = min(30.0, float(int(retry_after)) + random.uniform(0.1, 0.8))
+                        else:
+                            wait_s = min(30.0, (2 ** (attempt + 1)) + random.uniform(0.2, 1.2))
+                        if attempt == 0:
+                            log(f"  [retry] Cloudflare REST R2 HTTP {resp.status_code} for {r2_key}; backing off {wait_s:.1f}s...")
+                        time.sleep(wait_s)
+                        continue
+                if resp.status_code in (401, 403):
+                    unrecoverable_auth = True
+                with _R2_STATE_LOCK:
+                    if R2_FAILURE_COUNT < 5:
+                        log(f"  [warn] Cloudflare REST R2 upload HTTP {resp.status_code} for {r2_key}: {resp.text[:180]}")
                 break
             except Exception as exc:
-                if attempt < 2:
-                    time.sleep(2 ** (attempt + 1))
+                if attempt < 4:
+                    wait_s = min(30.0, (2 ** (attempt + 1)) + random.uniform(0.2, 1.2))
+                    time.sleep(wait_s)
                     continue
-                R2_FAILURE_COUNT += 1
-                if R2_FAILURE_COUNT <= 3:
-                    log(f"  [warn] Cloudflare REST R2 upload failed for {r2_key}: {exc}")
+                with _R2_STATE_LOCK:
+                    if R2_FAILURE_COUNT < 5:
+                        log(f"  [warn] Cloudflare REST R2 upload failed for {r2_key}: {exc}")
 
-    if R2_FAILURE_COUNT >= 10:
-        log("  [warn] 10 consecutive R2 uploads failed. Continuing in manifest + text-ingestion mode.")
-        R2_UPLOAD_DISABLED = True
+    with _R2_STATE_LOCK:
+        R2_FAILURE_COUNT += 1
+        if unrecoverable_auth:
+            R2_AUTH_FAILURE_COUNT += 1
+            if R2_AUTH_FAILURE_COUNT >= 3:
+                log("  [warn] 3 consecutive unrecoverable R2 auth failures (HTTP 401/403). Continuing in manifest + text-ingestion mode.")
+                R2_UPLOAD_DISABLED = True
+        if R2_FAILURE_COUNT >= 25:
+            log("  [warn] 25 consecutive R2 uploads failed. Continuing in manifest + text-ingestion mode.")
+            R2_UPLOAD_DISABLED = True
     return False
 
 
@@ -292,7 +386,7 @@ def transcode_and_upload_worker(s3_client, lang_id: str, slug: str, arr, sr: int
 
     try:
         if len(arr) / float(sr) > 20.0:
-            return None
+            return "", ""
     except Exception:
         pass
 
@@ -416,18 +510,21 @@ def ingest_thiomi_5k_parallel_text_and_audio(s3_client, uploaded_keys: dict, tex
     for lang_id, cfg, lang_label in pending_targets:
         if global_budget_exceeded():
             break
-        log(f"[Thiomi-5K] Streaming thiomi/thiomi-5k ({cfg}) -> {lang_id} (max {MAX_CLIPS} audio clips)...")
+        log(f"[Thiomi-5K] Streaming thiomi/thiomi-5k ({cfg}) -> {lang_id} (max {'unlimited' if MAX_CLIPS <= 0 else MAX_CLIPS} audio clips)...")
         ds_start = time.monotonic()
         batch_entries = []
         futures = []
+        hit_budget = False
         citation = f"The Thiomi-5K Parallel Speech & Text Corpus ({cfg} {lang_label}, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
         try:
             ds = load_hf_stream("thiomi/thiomi-5k", cfg, split="train")
-            with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
+            with concurrent.futures.ThreadPoolExecutor(max_workers=get_upload_workers(s3_client)) as pool:
                 for idx, row in enumerate(ds):
                     if (time.monotonic() - ds_start) > PER_DATASET_TIMEOUT_SEC or global_budget_exceeded():
+                        hit_budget = True
                         break
                     if idx >= MAX_TEXT_ROWS and clip_cap_reached(len(futures)):
+                        hit_budget = True
                         break
                     sid = str(row.get("sentenceId", "")).strip()
                     tr_txt = str(row.get("transcription", "")).strip()
@@ -436,7 +533,7 @@ def ingest_thiomi_5k_parallel_text_and_audio(s3_client, uploaded_keys: dict, tex
                     en_txt = eng_by_id.get(sid, "")
                     slug = to_audio_slug(tr_txt)
 
-                    if not R2_UPLOAD_DISABLED and len(futures) < MAX_CLIPS and slug and slug not in uploaded_keys.get(lang_id, {}):
+                    if not R2_UPLOAD_DISABLED and not clip_cap_reached(len(futures)) and slug and slug not in uploaded_keys.get(lang_id, {}):
                         audio_obj = row.get("audio")
                         if isinstance(audio_obj, dict):
                             arr = audio_obj.get("array")
@@ -448,12 +545,17 @@ def ingest_thiomi_5k_parallel_text_and_audio(s3_client, uploaded_keys: dict, tex
                         batch_entries.append({"english": en_txt, "translation": tr_txt, "context": citation, "_slug": slug})
 
                 audio_count = 0
+                failed_count = 0
                 for fut in concurrent.futures.as_completed(futures):
                     res = fut.result()
-                    if res:
+                    if res is None:
+                        failed_count += 1
+                    elif res[0]:
                         s_key, a_url = res
-                        uploaded_keys.setdefault(lang_id, {})[s_key] = a_url
+                        record_uploaded_key(uploaded_keys, lang_id, s_key, a_url)
                         audio_count += 1
+                        if audio_count % 250 == 0:
+                            flush_audio_index(uploaded_keys)
 
             for item in batch_entries:
                 s_key = item.pop("_slug", "")
@@ -462,9 +564,13 @@ def ingest_thiomi_5k_parallel_text_and_audio(s3_client, uploaded_keys: dict, tex
 
             added = add_verified_text_entries_to_dict(lang_id, batch_entries)
             text_counts[lang_id] = text_counts.get(lang_id, 0) + added
+            if audio_count > 0:
+                flush_audio_index(uploaded_keys)
+            thiomi_st = "in_progress" if (hit_budget or R2_UPLOAD_DISABLED) else ("partial" if failed_count > 0 else "completed")
             dataset_status[f"thiomi/thiomi-5k::{cfg}::{lang_id}"] = {
-                "status": "completed",
+                "status": thiomi_st,
                 "clipsUploaded": audio_count,
+                "clipsFailed": failed_count,
                 "textAdded": added,
                 "gated": False,
                 "lang_id": lang_id,
@@ -569,19 +675,32 @@ def ingest_hf_streaming_audio(s3_client, uploaded_keys: dict, dataset_status: di
         {"lang_id": "english-ke", "repo": "edinburghcstr/edacc", "config": "default", "split": "test", "text_col": "text", "row_filter": (("accent", "raw_accent", "l1"), "kenyan"), "decode_audio": False},
     ]
 
+    split_counts: dict[tuple[str, str, str], int] = {}
+    for j in hf_jobs:
+        k3 = (j["repo"], j["config"], j["lang_id"])
+        split_counts[k3] = split_counts.get(k3, 0) + 1
+
     for job in hf_jobs:
         lang_id = job["lang_id"]
         repo = job["repo"]
         cfg = job["config"]
-        job_key = f"{repo}::{cfg}::{lang_id}"
+        split_name = job["split"]
+        job_key = f"{repo}::{cfg}::{split_name}::{lang_id}"
+        legacy_job_key = f"{repo}::{cfg}::{lang_id}"
+        is_multi_split = split_counts.get((repo, cfg, lang_id), 1) > 1
+        existing_entry = dataset_status.get(job_key)
+        if not existing_entry and not is_multi_split:
+            existing_entry = dataset_status.get(legacy_job_key)
+        existing_status = (existing_entry or {}).get("status")
+
         if R2_UPLOAD_DISABLED or global_budget_exceeded():
-            if dataset_status.get(job_key, {}).get("status") != "completed":
+            if existing_status != "completed":
                 dataset_status[job_key] = {"status": "skipped_budget", "gated": bool(job.get("gated")), "lang_id": lang_id}
             continue
         if repo.strip().lower() in BLOCKED_NON_COMMERCIAL_REPOS:
             log(f"  [BLOCKED-NC] Refusing non-commercial repo: {repo}")
             continue
-        if not FORCE_REINGEST and RETRY_PENDING_ONLY and dataset_status.get(job_key, {}).get("status") == "completed":
+        if not FORCE_REINGEST and RETRY_PENDING_ONLY and existing_status == "completed":
             log(f"  [skip-done] Already ingested {job_key} in prior run.")
             continue
         if ONLY_UNGATED and job.get("gated"):
@@ -605,7 +724,7 @@ def ingest_hf_streaming_audio(s3_client, uploaded_keys: dict, dataset_status: di
 
             futures = []
             hit_budget = False
-            with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
+            with concurrent.futures.ThreadPoolExecutor(max_workers=get_upload_workers(s3_client)) as pool:
                 for idx, row in enumerate(ds):
                     if clip_cap_reached(len(futures)) or (time.monotonic() - ds_start) > PER_DATASET_TIMEOUT_SEC or global_budget_exceeded() or R2_UPLOAD_DISABLED:
                         hit_budget = True
@@ -649,23 +768,37 @@ def ingest_hf_streaming_audio(s3_client, uploaded_keys: dict, dataset_status: di
                             futures.append(pool.submit(transcode_and_upload_worker, s3_client, lang_id, slug, arr, sr))
 
                 count = 0
+                failed_count = 0
                 for fut in concurrent.futures.as_completed(futures):
                     res = fut.result()
-                    if res:
+                    if res is None:
+                        failed_count += 1
+                    elif res[0]:
                         s_key, a_url = res
-                        uploaded_keys.setdefault(lang_id, {})[s_key] = a_url
+                        record_uploaded_key(uploaded_keys, lang_id, s_key, a_url)
                         count += 1
+                        if count % 250 == 0:
+                            flush_audio_index(uploaded_keys)
 
-            prev_uploaded = int(dataset_status.get(job_key, {}).get("clipsUploaded") or 0)
+            prev_uploaded = int((existing_entry or {}).get("clipsUploaded") or 0)
+            if hit_budget or R2_UPLOAD_DISABLED:
+                final_status = "in_progress"
+            elif failed_count > 0:
+                final_status = "partial"
+            elif (prev_uploaded + count) > 0:
+                final_status = "completed"
+            else:
+                final_status = "completed_no_new_clips"
             dataset_status[job_key] = {
-                "status": "in_progress" if hit_budget else ("completed" if (prev_uploaded + count) > 0 else "completed_no_new_clips"),
+                "status": final_status,
                 "clipsUploaded": prev_uploaded + count,
+                "clipsFailed": failed_count,
                 "gated": bool(job.get("gated")),
                 "lang_id": lang_id,
                 "updatedAt": datetime.now(timezone.utc).isoformat(),
             }
             if count > 0:
-                AUDIO_INDEX_PATH.write_text(json.dumps(uploaded_keys, ensure_ascii=False, indent=2), encoding="utf-8")
+                flush_audio_index(uploaded_keys)
             log(f"  -> Uploaded {count} Opus 24kbps clips for {lang_id} from {repo}/{cfg} in {int(time.monotonic() - ds_start)}s.")
         except Exception as exc:
             st = "pending_gated_approval" if (job.get("gated") or is_gated_error(exc)) else "failed"
@@ -749,26 +882,70 @@ def ingest_common_voice_27_mdc(s3_client, uploaded_keys: dict, dataset_status: d
                         p_idx = header.index("path") if "path" in header else 1
                         s_idx = header.index("sentence") if "sentence" in header else 2
                         clip_map = {}
+                        ds_start = time.monotonic()
+                        hit_budget = False
+                        failed_count = 0
                         for line in tsv_lines[1:]:
                             parts = line.split("\t")
                             if len(parts) > max(p_idx, s_idx):
                                 clip_map[parts[p_idx].strip()] = parts[s_idx].strip()
-                            if len(clip_map) >= MAX_CLIPS * 2:
+                            if MAX_CLIPS > 0 and len(clip_map) >= MAX_CLIPS * 2:
                                 break
-                        for m in tf.getmembers():
-                            if clip_cap_reached(count) or global_budget_exceeded():
-                                break
-                            base = os.path.basename(m.name)
-                            if base in clip_map:
-                                slug = to_audio_slug(clip_map[base])
-                                if not slug or slug in uploaded_keys.get(lang_id, {}):
-                                    continue
-                                raw_b = tf.extractfile(m).read()
-                                res = transcode_raw_bytes_and_upload_worker(s3_client, lang_id, slug, raw_b, Path(base).suffix or ".mp3")
+                        workers = get_upload_workers(s3_client)
+                        max_in_flight = workers * 3
+                        in_flight: set = set()
+                        scheduled_slugs: set[str] = set()
+
+                        def _drain_cv_futures(wait_all: bool = False):
+                            nonlocal count, failed_count
+                            if not in_flight:
+                                return
+                            if wait_all:
+                                done, pending = concurrent.futures.wait(in_flight)
+                            else:
+                                done, pending = concurrent.futures.wait(in_flight, return_when=concurrent.futures.FIRST_COMPLETED)
+                            in_flight.clear()
+                            in_flight.update(pending)
+                            for fut in done:
+                                try:
+                                    res = fut.result()
+                                except Exception:
+                                    res = None
                                 if res:
-                                    uploaded_keys.setdefault(lang_id, {})[res[0]] = res[1]
+                                    record_uploaded_key(uploaded_keys, lang_id, res[0], res[1])
                                     count += 1
-            dataset_status[job_key] = {"status": "completed" if count > 0 else "completed_no_new_clips", "clipsUploaded": count, "lang_id": lang_id, "updatedAt": datetime.now(timezone.utc).isoformat()}
+                                    if count % 250 == 0:
+                                        flush_audio_index(uploaded_keys)
+                                else:
+                                    failed_count += 1
+
+                        with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as pool:
+                            for m in tf.getmembers():
+                                if clip_cap_reached(count + len(in_flight)) or (time.monotonic() - ds_start) > PER_DATASET_TIMEOUT_SEC or global_budget_exceeded() or R2_UPLOAD_DISABLED:
+                                    hit_budget = True
+                                    break
+                                base = os.path.basename(m.name)
+                                if base in clip_map:
+                                    slug = to_audio_slug(clip_map[base])
+                                    if not slug or slug in scheduled_slugs or slug in uploaded_keys.get(lang_id, {}):
+                                        continue
+                                    extracted = tf.extractfile(m)
+                                    if extracted is None:
+                                        continue
+                                    raw_b = extracted.read()
+                                    scheduled_slugs.add(slug)
+                                    in_flight.add(pool.submit(transcode_raw_bytes_and_upload_worker, s3_client, lang_id, slug, raw_b, Path(base).suffix or ".mp3"))
+                                    if len(in_flight) >= max_in_flight:
+                                        _drain_cv_futures(wait_all=False)
+                            _drain_cv_futures(wait_all=True)
+                        if count > 0:
+                            flush_audio_index(uploaded_keys)
+                    else:
+                        hit_budget = False
+                        failed_count = 0
+            prev_uploaded = int(dataset_status.get(job_key, {}).get("clipsUploaded") or 0)
+            cv_status = "in_progress" if (hit_budget or R2_UPLOAD_DISABLED) else ("partial" if failed_count > 0 else ("completed" if (prev_uploaded + count) > 0 else "completed_no_new_clips"))
+            dataset_status[job_key] = {"status": cv_status, "clipsUploaded": prev_uploaded + count, "clipsFailed": failed_count, "lang_id": lang_id, "updatedAt": datetime.now(timezone.utc).isoformat()}
             log(f"  -> Uploaded {count} Common Voice 27.0 clips for {lang_id}.")
         except Exception as exc:
             dataset_status[job_key] = {"status": "failed", "lang_id": lang_id, "reason": str(exc)[:220], "updatedAt": datetime.now(timezone.utc).isoformat()}
@@ -787,15 +964,18 @@ def ingest_lingua_libre_commons(s3_client, uploaded_keys: dict, dataset_status: 
         params = {
             "action": "query", "list": "categorymembers",
             "cmtitle": "Category:Lingua_Libre_pronunciation-swa",
-            "cmtype": "file", "cmlimit": min(MAX_CLIPS, 250), "format": "json",
+            "cmtype": "file", "cmlimit": 250 if MAX_CLIPS <= 0 else min(MAX_CLIPS, 250), "format": "json",
         }
         resp = HTTP_SESSION.get(api_url, params=params, timeout=20)
         if not resp.ok or "json" not in (resp.headers.get("content-type") or "").lower():
             return
         members = resp.json().get("query", {}).get("categorymembers", [])
         count = 0
+        failed_count = 0
+        hit_budget = False
         for item in members:
-            if clip_cap_reached(count) or global_budget_exceeded():
+            if clip_cap_reached(count) or global_budget_exceeded() or R2_UPLOAD_DISABLED:
+                hit_budget = True
                 break
             title = item.get("title", "")
             m = re.search(r"LL-Q\d+[\s_]\(swa\)-[^-]+-(.+)\.(wav|ogg|flac|mp3)$", title, re.IGNORECASE)
@@ -821,74 +1001,198 @@ def ingest_lingua_libre_commons(s3_client, uploaded_keys: dict, dataset_status: 
             if audio_resp.ok:
                 res = transcode_raw_bytes_and_upload_worker(s3_client, "swahili", slug, audio_resp.content, ext)
                 if res:
-                    uploaded_keys.setdefault("swahili", {})[res[0]] = res[1]
+                    record_uploaded_key(uploaded_keys, "swahili", res[0], res[1])
                     count += 1
-        dataset_status[job_key] = {"status": "completed" if count > 0 else "completed_no_new_clips", "clipsUploaded": count, "lang_id": "swahili", "updatedAt": datetime.now(timezone.utc).isoformat()}
+                else:
+                    failed_count += 1
+        if count > 0:
+            flush_audio_index(uploaded_keys)
+        ll_status = "in_progress" if (hit_budget or R2_UPLOAD_DISABLED) else ("partial" if failed_count > 0 else ("completed" if count > 0 else "completed_no_new_clips"))
+        dataset_status[job_key] = {"status": ll_status, "clipsUploaded": count, "clipsFailed": failed_count, "lang_id": "swahili", "updatedAt": datetime.now(timezone.utc).isoformat()}
         log(f"  -> Uploaded {count} Lingua Libre Swahili pronunciations.")
     except Exception as exc:
         dataset_status[job_key] = {"status": "failed", "lang_id": "swahili", "reason": str(exc)[:220], "updatedAt": datetime.now(timezone.utc).isoformat()}
 
 
-def _ingest_tar_or_zip_audio(s3_client, uploaded_keys: dict, lang_id: str, archive_path: str) -> int:
-    """Extract transcript + audio clips from tar/zip archives and upload up to MAX_CLIPS to R2."""
+def _parse_transcript_metadata(raw: str, filename: str, transcripts: dict[str, str]) -> None:
+    """Parse TSV/CSV metadata (with header detection) or headerless Kaldi-style transcript files."""
+    cleaned = raw.lstrip("\ufeff")
+    non_empty = [ln for ln in cleaned.splitlines() if ln.strip()]
+    if not non_empty:
+        return
+
+    first_line = non_empty[0]
+    fname_low = filename.lower()
+    if fname_low.endswith(".tsv") or "\t" in first_line:
+        delim = "\t"
+    elif fname_low.endswith(".csv") or ("," in first_line and "|" not in first_line):
+        delim = ","
+    elif "|" in first_line:
+        delim = "|"
+    else:
+        delim = None
+
+    split_tokens = {"train", "dev", "test", "valid", "validation", "val"}
+    text_cols = ("transcript", "transcription", "raw_transcription", "sentence", "utterance", "text", "normalized_text", "caption")
+    file_cols = ("file", "filename", "file_name", "filepath", "file_path", "path", "audio", "audio_path", "audio_filepath", "clip", "clip_id", "id", "utt_id", "wav")
+
+    def _strip_split_prefix(val: str) -> str:
+        return re.sub(r"^(?:train|dev|test|valid|validation|val)\t+", "", val.strip(), flags=re.IGNORECASE).strip()
+
+    if delim is not None:
+        rows = list(csv.reader(io.StringIO(cleaned), delimiter=delim))
+        rows = [r for r in rows if any(c.strip() for c in r)]
+        if not rows:
+            return
+        header = [c.strip().lower() for c in rows[0]]
+        text_idx = next((i for i, h in enumerate(header) if h in text_cols), None)
+        file_idx = next((i for i, h in enumerate(header) if h in file_cols), None)
+        if text_idx is not None or file_idx is not None:
+            if file_idx is None:
+                file_idx = 0 if text_idx != 0 else 1
+            if text_idx is None:
+                text_idx = 1 if file_idx != 1 else (len(header) - 1)
+            for row in rows[1:]:
+                if len(row) > max(file_idx, text_idx):
+                    key = Path(row[file_idx].strip()).stem
+                    val = _strip_split_prefix(row[text_idx])
+                    if key and val:
+                        transcripts[key] = val
+            return
+        for row in rows:
+            cols = [c.strip() for c in row]
+            if len(cols) >= 3 and cols[0].lower() in split_tokens:
+                cols = cols[1:]
+            elif len(cols) == 2 and cols[0].lower() in split_tokens and " " in cols[1]:
+                cols = cols[1].split(None, 1)
+            if len(cols) >= 2:
+                key = Path(cols[0]).stem
+                if len(cols) == 2:
+                    val = _strip_split_prefix(cols[1])
+                else:
+                    non_num = [c for c in cols[1:] if c and not re.fullmatch(r"[0-9]+(?:\.[0-9]+)?", c)]
+                    val = _strip_split_prefix(max(non_num, key=len) if non_num else cols[-1])
+                if key and val:
+                    transcripts[key] = val
+        return
+
+    # Headerless Kaldi-style whitespace-separated file: `<utt_id> <transcript>`
+    for line in non_empty:
+        stripped = _strip_split_prefix(line)
+        parts = stripped.split(None, 1)
+        if len(parts) == 2:
+            key = Path(parts[0].strip()).stem
+            val = _strip_split_prefix(parts[1])
+            if key and val:
+                transcripts[key] = val
+
+
+def _ingest_tar_or_zip_audio(s3_client, uploaded_keys: dict, lang_id: str, archive_path: str) -> tuple[int, bool, int]:
+    """Extract transcript + audio clips from tar/zip archives and upload to R2. Returns (count, hit_budget, failed_count)."""
     count = 0
+    failed_count = 0
+    hit_budget = False
+    ds_start = time.monotonic()
     transcripts: dict[str, str] = {}
     audio_exts = {".wav", ".mp3", ".flac", ".ogg", ".m4a"}
+
+    workers = get_upload_workers(s3_client)
+    max_in_flight = workers * 3
+    in_flight: set = set()
+    scheduled_slugs: set[str] = set()
+
+    def _drain_archive_futures(wait_all: bool = False):
+        nonlocal count, failed_count
+        if not in_flight:
+            return
+        if wait_all:
+            done, pending = concurrent.futures.wait(in_flight)
+        else:
+            done, pending = concurrent.futures.wait(in_flight, return_when=concurrent.futures.FIRST_COMPLETED)
+        in_flight.clear()
+        in_flight.update(pending)
+        for fut in done:
+            try:
+                res = fut.result()
+            except Exception:
+                res = None
+            if res:
+                record_uploaded_key(uploaded_keys, lang_id, res[0], res[1])
+                count += 1
+                if count % 250 == 0:
+                    flush_audio_index(uploaded_keys)
+            else:
+                failed_count += 1
 
     if archive_path.endswith(".zip"):
         with zipfile.ZipFile(archive_path, "r") as zf:
             for name in zf.namelist():
                 if name.lower().endswith((".txt", ".tsv", ".csv")) and "license" not in name.lower():
                     raw = zf.read(name).decode("utf-8", errors="ignore")
-                    for line in raw.splitlines():
-                        parts = re.split(r"[\t|,]", line, maxsplit=2)
-                        if len(parts) >= 2:
-                            transcripts[Path(parts[0].strip()).stem] = parts[-1].strip()
-            for name in zf.namelist():
-                if clip_cap_reached(count) or global_budget_exceeded():
-                    break
-                ext = Path(name).suffix.lower()
-                if ext not in audio_exts:
-                    continue
-                stem = Path(name).stem
-                text = transcripts.get(stem) or stem.replace("_", " ")
-                slug = to_audio_slug(text)
-                if not slug or slug in uploaded_keys.get(lang_id, {}):
-                    continue
-                res = transcode_raw_bytes_and_upload_worker(s3_client, lang_id, slug, zf.read(name), ext)
-                if res:
-                    uploaded_keys.setdefault(lang_id, {})[res[0]] = res[1]
-                    count += 1
+                    _parse_transcript_metadata(raw, name, transcripts)
+            with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as pool:
+                for name in zf.namelist():
+                    if clip_cap_reached(count + len(in_flight)) or (time.monotonic() - ds_start) > PER_DATASET_TIMEOUT_SEC or global_budget_exceeded() or R2_UPLOAD_DISABLED:
+                        hit_budget = True
+                        break
+                    ext = Path(name).suffix.lower()
+                    if ext not in audio_exts:
+                        continue
+                    stem = Path(name).stem
+                    text = transcripts.get(stem) or stem.replace("_", " ")
+                    slug = to_audio_slug(text)
+                    if not slug or slug in scheduled_slugs or slug in uploaded_keys.get(lang_id, {}):
+                        continue
+                    raw_bytes = zf.read(name)
+                    scheduled_slugs.add(slug)
+                    in_flight.add(pool.submit(transcode_raw_bytes_and_upload_worker, s3_client, lang_id, slug, raw_bytes, ext))
+                    if len(in_flight) >= max_in_flight:
+                        _drain_archive_futures(wait_all=False)
+                _drain_archive_futures(wait_all=True)
     else:
         with tarfile.open(archive_path, "r:*") as tf:
             members = tf.getmembers()
             for m in members:
-                if m.isfile() and (Path(m.name).name.lower() == "text" or (m.name.lower().endswith((".txt", ".tsv", ".csv")) and ("text" in m.name.lower() or "metadata" in m.name.lower() or "transcript" in m.name.lower()))):
-                    raw = tf.extractfile(m).read().decode("utf-8", errors="ignore")
-                    for line in raw.splitlines():
-                        parts = line.strip().split(None, 1)
-                        if len(parts) == 2:
-                            transcripts[Path(parts[0]).stem] = parts[1].strip()
-            for m in members:
-                if clip_cap_reached(count) or global_budget_exceeded():
-                    break
-                if not m.isfile():
-                    continue
-                ext = Path(m.name).suffix.lower()
-                if ext not in audio_exts:
-                    continue
-                stem = Path(m.name).stem
-                text = transcripts.get(stem)
-                if not text:
-                    continue
-                slug = to_audio_slug(text)
-                if not slug or slug in uploaded_keys.get(lang_id, {}):
-                    continue
-                res = transcode_raw_bytes_and_upload_worker(s3_client, lang_id, slug, tf.extractfile(m).read(), ext)
-                if res:
-                    uploaded_keys.setdefault(lang_id, {})[res[0]] = res[1]
-                    count += 1
-    return count
+                if m.isfile() and (
+                    Path(m.name).name.lower() == "text"
+                    or (
+                        m.name.lower().endswith((".txt", ".tsv", ".csv"))
+                        and ("text" in m.name.lower() or "metadata" in m.name.lower() or "transcript" in m.name.lower())
+                    )
+                ):
+                    extracted = tf.extractfile(m)
+                    if extracted is not None:
+                        raw = extracted.read().decode("utf-8", errors="ignore")
+                        _parse_transcript_metadata(raw, m.name, transcripts)
+            with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as pool:
+                for m in members:
+                    if clip_cap_reached(count + len(in_flight)) or (time.monotonic() - ds_start) > PER_DATASET_TIMEOUT_SEC or global_budget_exceeded() or R2_UPLOAD_DISABLED:
+                        hit_budget = True
+                        break
+                    if not m.isfile():
+                        continue
+                    ext = Path(m.name).suffix.lower()
+                    if ext not in audio_exts:
+                        continue
+                    stem = Path(m.name).stem
+                    text = transcripts.get(stem)
+                    if not text:
+                        continue
+                    slug = to_audio_slug(text)
+                    if not slug or slug in scheduled_slugs or slug in uploaded_keys.get(lang_id, {}):
+                        continue
+                    extracted = tf.extractfile(m)
+                    if extracted is None:
+                        continue
+                    raw_bytes = extracted.read()
+                    scheduled_slugs.add(slug)
+                    in_flight.add(pool.submit(transcode_raw_bytes_and_upload_worker, s3_client, lang_id, slug, raw_bytes, ext))
+                    if len(in_flight) >= max_in_flight:
+                        _drain_archive_futures(wait_all=False)
+                _drain_archive_futures(wait_all=True)
+    if count > 0:
+        flush_audio_index(uploaded_keys)
+    return count, hit_budget, failed_count
 
 
 def ingest_direct_archive_audio(s3_client, uploaded_keys: dict, dataset_status: dict):
@@ -958,22 +1262,40 @@ def ingest_direct_archive_audio(s3_client, uploaded_keys: dict, dataset_status: 
                 dl_url = zip_file.get("content_details", {}).get("download_url") or zip_file.get("download_url")
                 ext = Path(zip_file["filename"]).suffix.lower() or ".zip"
 
+            max_archive_bytes = 2500 * 1024 * 1024
+            aborted_too_large = False
             with tempfile.TemporaryDirectory() as tmpdir:
                 arch_path = os.path.join(tmpdir, f"archive{ext}")
                 with HTTP_SESSION.get(dl_url, stream=True, timeout=60) as resp:
                     if not resp.ok:
                         dataset_status[job_key] = {"status": "failed", "lang_id": lang_id, "reason": f"HTTP {resp.status_code}", "updatedAt": datetime.now(timezone.utc).isoformat()}
                         continue
+                    content_length = resp.headers.get("Content-Length")
+                    if content_length and content_length.isdigit() and int(content_length) > max_archive_bytes:
+                        reason = f"Archive size ({int(content_length) / (1024 ** 2):.1f} MB) exceeds {max_archive_bytes // (1024 ** 2)} MB limit"
+                        log(f"  [warn] Skipping {job_key}: {reason}")
+                        dataset_status[job_key] = {"status": "skipped_too_large", "lang_id": lang_id, "reason": reason, "updatedAt": datetime.now(timezone.utc).isoformat()}
+                        continue
                     downloaded = 0
                     with open(arch_path, "wb") as f:
                         for chunk in resp.iter_content(chunk_size=1024 * 1024):
-                            f.write(chunk)
+                            if not chunk:
+                                continue
                             downloaded += len(chunk)
-                            if downloaded > 2500 * 1024 * 1024:
+                            if downloaded > max_archive_bytes:
+                                aborted_too_large = True
                                 break
-                count = _ingest_tar_or_zip_audio(s3_client, uploaded_keys, lang_id, arch_path)
-            dataset_status[job_key] = {"status": "completed" if count > 0 else "completed_no_new_clips", "clipsUploaded": count, "lang_id": lang_id, "updatedAt": datetime.now(timezone.utc).isoformat()}
-            log(f"  -> Uploaded {count} clips from direct archive {job_key}.")
+                            f.write(chunk)
+                if aborted_too_large:
+                    reason = f"Download exceeded {max_archive_bytes // (1024 ** 2)} MB limit; aborted without reading truncated archive"
+                    log(f"  [warn] Skipping {job_key}: {reason}")
+                    dataset_status[job_key] = {"status": "skipped_too_large", "lang_id": lang_id, "reason": reason, "updatedAt": datetime.now(timezone.utc).isoformat()}
+                    continue
+                count, hit_budget, failed_count = _ingest_tar_or_zip_audio(s3_client, uploaded_keys, lang_id, arch_path)
+            prev_uploaded = int(dataset_status.get(job_key, {}).get("clipsUploaded") or 0)
+            arch_status = "in_progress" if (hit_budget or R2_UPLOAD_DISABLED) else ("partial" if failed_count > 0 else ("completed" if (prev_uploaded + count) > 0 else "completed_no_new_clips"))
+            dataset_status[job_key] = {"status": arch_status, "clipsUploaded": prev_uploaded + count, "clipsFailed": failed_count, "lang_id": lang_id, "updatedAt": datetime.now(timezone.utc).isoformat()}
+            log(f"  -> Uploaded {count} clips from direct archive {job_key} (status={arch_status}, failed={failed_count}).")
         except Exception as exc:
             dataset_status[job_key] = {"status": "failed", "lang_id": lang_id, "reason": str(exc)[:220], "updatedAt": datetime.now(timezone.utc).isoformat()}
 
@@ -989,7 +1311,9 @@ def ingest_mdc_aligned_speech(s3_client, uploaded_keys: dict, dataset_status: di
     ]
     for lang_id, slug_id, mdc_id, lic in mdc_aligned_targets:
         job_key = f"mozilla-data-collective/{slug_id}::{mdc_id}::{lang_id}"
-        if not FORCE_REINGEST and RETRY_PENDING_ONLY and dataset_status.get(job_key, {}).get("status") == "completed":
+        existing_st = dataset_status.get(job_key, {}).get("status")
+        if not FORCE_REINGEST and existing_st in ("completed", "completed_no_new_clips"):
+            log(f"  [skip-done] Already ingested {job_key} (status={existing_st}); skipping large tarball download.")
             continue
         if not MDC_API_KEY:
             dataset_status[job_key] = {
@@ -1030,9 +1354,11 @@ def ingest_mdc_aligned_speech(s3_client, uploaded_keys: dict, dataset_status: di
                         with open(arch_path, "wb") as f:
                             for chunk in file_resp.iter_content(chunk_size=1024 * 1024):
                                 f.write(chunk)
-                count = _ingest_tar_or_zip_audio(s3_client, uploaded_keys, lang_id, arch_path)
-            dataset_status[job_key] = {"status": "completed" if count > 0 else "completed_no_new_clips", "clipsUploaded": count, "lang_id": lang_id, "updatedAt": datetime.now(timezone.utc).isoformat()}
-            log(f"  -> Uploaded {count} clips for {lang_id} from MDC {mdc_id}.")
+                count, hit_budget, failed_count = _ingest_tar_or_zip_audio(s3_client, uploaded_keys, lang_id, arch_path)
+            prev_uploaded = int(dataset_status.get(job_key, {}).get("clipsUploaded") or 0)
+            mdc_status = "in_progress" if (hit_budget or R2_UPLOAD_DISABLED) else ("partial" if failed_count > 0 else ("completed" if (prev_uploaded + count) > 0 else "completed_no_new_clips"))
+            dataset_status[job_key] = {"status": mdc_status, "clipsUploaded": prev_uploaded + count, "clipsFailed": failed_count, "lang_id": lang_id, "updatedAt": datetime.now(timezone.utc).isoformat()}
+            log(f"  -> Uploaded {count} clips for {lang_id} from MDC {mdc_id} (status={mdc_status}, failed={failed_count}).")
         except Exception as exc:
             dataset_status[job_key] = {"status": "failed", "lang_id": lang_id, "reason": str(exc)[:220], "updatedAt": datetime.now(timezone.utc).isoformat()}
 
@@ -1049,15 +1375,18 @@ def ingest_wikimedia_oromo_pronunciation(s3_client, uploaded_keys: dict, dataset
         api_url = "https://commons.wikimedia.org/w/api.php"
         resp = HTTP_SESSION.get(
             api_url,
-            params={"action": "query", "list": "categorymembers", "cmtitle": "Category:Oromo_pronunciation", "cmtype": "file", "cmlimit": min(MAX_CLIPS, 250), "format": "json"},
+            params={"action": "query", "list": "categorymembers", "cmtitle": "Category:Oromo_pronunciation", "cmtype": "file", "cmlimit": 250 if MAX_CLIPS <= 0 else min(MAX_CLIPS, 250), "format": "json"},
             timeout=20,
         )
         if not resp.ok:
             return
         members = resp.json().get("query", {}).get("categorymembers", [])
         count = 0
+        failed_count = 0
+        hit_budget = False
         for item in members:
-            if clip_cap_reached(count) or global_budget_exceeded():
+            if clip_cap_reached(count) or global_budget_exceeded() or R2_UPLOAD_DISABLED:
+                hit_budget = True
                 break
             title = item.get("title", "")
             m = re.search(r"File:(?:Om-|LL-Q\d+_\(orm\)-[^-]+-)?(.+)\.(ogg|wav|flac|mp3)$", title, re.IGNORECASE)
@@ -1086,9 +1415,14 @@ def ingest_wikimedia_oromo_pronunciation(s3_client, uploaded_keys: dict, dataset
             if audio_resp.ok:
                 res = transcode_raw_bytes_and_upload_worker(s3_client, "borana", slug, audio_resp.content, ext)
                 if res:
-                    uploaded_keys.setdefault("borana", {})[res[0]] = res[1]
+                    record_uploaded_key(uploaded_keys, "borana", res[0], res[1])
                     count += 1
-        dataset_status[job_key] = {"status": "completed" if count > 0 else "completed_no_new_clips", "clipsUploaded": count, "lang_id": "borana", "updatedAt": datetime.now(timezone.utc).isoformat()}
+                else:
+                    failed_count += 1
+        if count > 0:
+            flush_audio_index(uploaded_keys)
+        orm_status = "in_progress" if (hit_budget or R2_UPLOAD_DISABLED) else ("partial" if failed_count > 0 else ("completed" if count > 0 else "completed_no_new_clips"))
+        dataset_status[job_key] = {"status": orm_status, "clipsUploaded": count, "clipsFailed": failed_count, "lang_id": "borana", "updatedAt": datetime.now(timezone.utc).isoformat()}
         log(f"  -> Uploaded {count} Wikimedia Commons Oromo pronunciations.")
     except Exception as exc:
         dataset_status[job_key] = {"status": "failed", "lang_id": "borana", "reason": str(exc)[:220], "updatedAt": datetime.now(timezone.utc).isoformat()}
@@ -1183,9 +1517,12 @@ def ingest_archive_org_audio(s3_client, uploaded_keys: dict, dataset_status: dic
                     if str(f.get("name", "")).lower().endswith((".mp3", ".ogg", ".wav", ".flac")) and "_64kb" not in str(f.get("name", "")).lower()
                 ]
             count = 0
+            failed_count = 0
+            hit_budget = False
             chapter_r2_map: dict[str, str] = {}
-            for af in audio_files[:MAX_CLIPS]:
-                if global_budget_exceeded():
+            for af in (audio_files if MAX_CLIPS <= 0 else audio_files[:MAX_CLIPS]):
+                if global_budget_exceeded() or R2_UPLOAD_DISABLED:
+                    hit_budget = True
                     break
                 fname = af["name"]
                 clean_stem = re.sub(r"_64kb$", "", Path(fname).stem, flags=re.IGNORECASE)
@@ -1201,9 +1538,11 @@ def ingest_archive_org_audio(s3_client, uploaded_keys: dict, dataset_status: dic
                         s3_client, lang_id, slug, a_resp.content, Path(fname).suffix.lower() or ".mp3", timeout_sec=120
                     )
                     if res:
-                        uploaded_keys.setdefault(lang_id, {})[res[0]] = res[1]
+                        record_uploaded_key(uploaded_keys, lang_id, res[0], res[1])
                         chapter_r2_map[res[0]] = res[1]
                         count += 1
+                    else:
+                        failed_count += 1
             if ident == "handbook_kavirondo3_1203" and chapter_r2_map:
                 ch_path = PUBLIC_DIR / "dholuo-audio-chapters.json"
                 if ch_path.exists():
@@ -1221,7 +1560,10 @@ def ingest_archive_org_audio(s3_client, uploaded_keys: dict, dataset_status: dic
                             log(f"  -> Updated {ch_path.name} with {len(chapter_r2_map)} Cloudflare R2 chapter URLs.")
                     except Exception as ch_exc:
                         log(f"  [warn] Could not update dholuo-audio-chapters.json: {ch_exc}")
-            dataset_status[job_key] = {"status": "completed" if count > 0 else "completed_no_new_clips", "clipsUploaded": count, "lang_id": lang_id, "updatedAt": datetime.now(timezone.utc).isoformat()}
+            if count > 0:
+                flush_audio_index(uploaded_keys)
+            ia_status = "in_progress" if (hit_budget or R2_UPLOAD_DISABLED) else ("partial" if failed_count > 0 else ("completed" if count > 0 else "completed_no_new_clips"))
+            dataset_status[job_key] = {"status": ia_status, "clipsUploaded": count, "clipsFailed": failed_count, "lang_id": lang_id, "updatedAt": datetime.now(timezone.utc).isoformat()}
             log(f"  -> Uploaded {count} Archive.org audio clips from {ident} for {lang_id}.")
         except Exception as exc:
             dataset_status[job_key] = {"status": "failed", "lang_id": lang_id, "reason": str(exc)[:220], "updatedAt": datetime.now(timezone.utc).isoformat()}
@@ -1416,7 +1758,12 @@ def main():
         return
 
     s3_client = get_s3_client()
+    log(
+        f"[R2] Transport: {'S3 Data Plane (fast)' if s3_client is not None else 'Cloudflare v4 REST fallback (slower — check R2_ACCESS_KEY_ID / R2_SECRET_KEY)'} "
+        f"| Upload workers: {get_upload_workers(s3_client)}"
+    )
     uploaded_keys = load_existing_audio_index()
+    hydrate_uploaded_keys_from_r2(s3_client, uploaded_keys)
     dataset_status = load_existing_dataset_status()
     text_counts = {}
 
@@ -1432,7 +1779,7 @@ def main():
     ingest_archive_org_audio(s3_client, uploaded_keys, dataset_status)
     ingest_ksl_pose_metadata(dataset_status)
 
-    AUDIO_INDEX_PATH.write_text(json.dumps(uploaded_keys, ensure_ascii=False, indent=2), encoding="utf-8")
+    flush_audio_index(uploaded_keys)
     attached = attach_audio_urls_and_sync_catalog(uploaded_keys)
 
     subprocess.run(["node", str(ROOT_DIR / "scripts" / "sync-cloudflare-r2-audio.mjs"), "--dry-run"], check=True)

@@ -78,6 +78,7 @@ import {
   pressableStyle,
   triggerHaptic,
   useTheme,
+  useSavedThemes,
   type ThemeColors,
 } from "../theme";
 import { ThemedIcon, ThemedIconBadge } from "./ThemedIcon";
@@ -845,14 +846,16 @@ export function ThemeSettingsView() {
     updateCustomColor,
     applyThemePreset,
     applyAppLookProfile,
-    savedThemes,
-    saveCustomTheme,
-    applySavedTheme,
-    deleteSavedTheme,
     resetThemeConfig,
     importThemeJson,
     exportThemeJson,
   } = themeCtx;
+  const {
+    savedThemes,
+    saveCustomTheme,
+    applySavedTheme,
+    deleteSavedTheme,
+  } = useSavedThemes();
 
   const [previewMode, setPreviewMode] = useState<PreviewMode>("mini-app");
   const [peekingDefault, setPeekingDefault] = useState<boolean>(false);

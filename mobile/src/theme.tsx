@@ -348,10 +348,6 @@ interface ThemeContextType {
   updateCustomColor: (key: keyof CustomColorsConfig, hex: string | undefined) => void;
   applyThemePreset: (presetId: string, forceMode?: "dark" | "light") => void;
   applyAppLookProfile: (profileId: string) => void;
-  savedThemes: SavedCustomTheme[];
-  saveCustomTheme: (name: string) => SavedCustomTheme | null;
-  applySavedTheme: (id: string) => void;
-  deleteSavedTheme: (id: string) => void;
   resetThemeConfig: () => void;
   importThemeJson: (raw: string) => boolean;
   exportThemeJson: () => string;
@@ -446,13 +442,23 @@ const ThemeContext = createContext<ThemeContextType>({
   updateCustomColor: () => {},
   applyThemePreset: () => {},
   applyAppLookProfile: () => {},
+  resetThemeConfig: () => {},
+  importThemeJson: () => false,
+  exportThemeJson: () => exportThemeConfigJson(DEFAULT_THEME_CONFIG),
+});
+
+export interface SavedThemesContextType {
+  savedThemes: SavedCustomTheme[];
+  saveCustomTheme: (name: string) => SavedCustomTheme | null;
+  applySavedTheme: (id: string) => void;
+  deleteSavedTheme: (id: string) => void;
+}
+
+const SavedThemesContext = createContext<SavedThemesContextType>({
   savedThemes: [],
   saveCustomTheme: () => null,
   applySavedTheme: () => {},
   deleteSavedTheme: () => {},
-  resetThemeConfig: () => {},
-  importThemeJson: () => false,
-  exportThemeJson: () => exportThemeConfigJson(DEFAULT_THEME_CONFIG),
 });
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
@@ -804,10 +810,6 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
       updateCustomColor,
       applyThemePreset,
       applyAppLookProfile,
-      savedThemes,
-      saveCustomTheme,
-      applySavedTheme,
-      deleteSavedTheme,
       resetThemeConfig,
       importThemeJson,
       exportThemeJson,
@@ -826,25 +828,37 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
       updateCustomColor,
       applyThemePreset,
       applyAppLookProfile,
-      savedThemes,
-      saveCustomTheme,
-      applySavedTheme,
-      deleteSavedTheme,
       resetThemeConfig,
       importThemeJson,
       exportThemeJson,
     ]
   );
 
+  const savedThemesCtxValue = React.useMemo(
+    () => ({
+      savedThemes,
+      saveCustomTheme,
+      applySavedTheme,
+      deleteSavedTheme,
+    }),
+    [savedThemes, saveCustomTheme, applySavedTheme, deleteSavedTheme]
+  );
+
   return (
     <ThemeContext.Provider value={ctxValue}>
-      {children}
+      <SavedThemesContext.Provider value={savedThemesCtxValue}>
+        {children}
+      </SavedThemesContext.Provider>
     </ThemeContext.Provider>
   );
 }
 
 export function useTheme() {
   return useContext(ThemeContext);
+}
+
+export function useSavedThemes() {
+  return useContext(SavedThemesContext);
 }
 
 export function useDynamicStyles<

@@ -4,6 +4,7 @@ import React, { useDeferredValue, useEffect, useMemo, useRef, useState } from "r
 import Link from "next/link";
 import { ArrowRight, BookOpen, Film, Hand, Search } from "lucide-react";
 import { OPEN_CORPUS_INDEX, type KslVideoItem } from "@/lib/open-corpus";
+import { loadKslIndex } from "@/lib/learning-shards";
 
 type KslFilterTab = "all" | "maseno-stickman" | "human-sign-bible";
 const KSL_PAGE_SIZE = 24;
@@ -23,17 +24,40 @@ export default function StagedVarietiesPanel() {
     OPEN_CORPUS_INDEX.ksl.videos ?? []
   );
 
-  // Dynamically load the full /ksl-index.json so all newly ingested KSL videos appear automatically
+  const sectionRef = useRef<HTMLElement | null>(null);
+  const [shouldLoadKslIndex, setShouldLoadKslIndex] = useState(false);
+
+  // Defer loading the 2.7 MB /ksl-index.json until panel scrolls into view or user interacts
   useEffect(() => {
-    fetch("/ksl-index.json")
-      .then((r) => (r.ok ? r.json() : null))
-      .then((d) => {
-        if (d && Array.isArray(d.videos) && d.videos.length > 0) {
-          setKslVideos(d.videos as KslVideoItem[]);
+    if (shouldLoadKslIndex) return;
+    const el = sectionRef.current;
+    if (!el || typeof IntersectionObserver === "undefined") {
+      setShouldLoadKslIndex(true);
+      return;
+    }
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) {
+          setShouldLoadKslIndex(true);
+          observer.disconnect();
         }
-      })
-      .catch(() => {});
-  }, []);
+      },
+      { rootMargin: "200px" }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [shouldLoadKslIndex]);
+
+  useEffect(() => {
+    if (!shouldLoadKslIndex) return;
+    let active = true;
+    loadKslIndex().then((d) => {
+      if (active && d && Array.isArray(d.videos) && d.videos.length > 0) {
+        setKslVideos(d.videos as KslVideoItem[]);
+      }
+    });
+    return () => { active = false; };
+  }, [shouldLoadKslIndex]);
 
   const filteredKslVideos = useMemo(() => {
     const q = deferredKslQuery.trim().toLowerCase();
@@ -94,7 +118,7 @@ export default function StagedVarietiesPanel() {
   }, [kslVideos]);
 
   return (
-    <section className="mt-10 space-y-6">
+    <section ref={sectionRef} onPointerEnter={() => setShouldLoadKslIndex(true)} className="mt-10 space-y-6">
       {/* 1. Kenyan Sign Language (KSL) — Video Library & Storybooks */}
       <div className="rounded-2xl border border-kenya-green/30 bg-bg-card p-5 sm:p-6 space-y-4">
         <div className="flex flex-wrap items-start justify-between gap-3 border-b border-border/60 pb-4">
@@ -179,7 +203,7 @@ export default function StagedVarietiesPanel() {
                     autoPlay={autoPlayVideo}
                     playsInline
                     loop
-                    preload="auto"
+                    preload="metadata"
                     onLoadedData={(e) => {
                       e.currentTarget.playbackRate = playbackRate;
                       if (autoPlayVideo) e.currentTarget.play().catch(() => {});

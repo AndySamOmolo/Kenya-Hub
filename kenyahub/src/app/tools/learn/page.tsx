@@ -113,9 +113,16 @@ export default function LearnPage() {
   const [familyFilter, setFamilyFilter] = useState<string>("All");
   const [searchQuery, setSearchQuery] = useState<string>("");
   const debouncedSearchQuery = useDebouncedValue(searchQuery, 180);
-  const [wordIndex, setWordIndex] = useState<number>(() => getDeterministicDailyIndex(INITIAL_RANDOM_WORDS?.length || 0));
+  const [wordIndex, setWordIndex] = useState<number>(0);
+  const [lastVisitedId, setLastVisitedId] = useState<string | null>(null);
 
   useEffect(() => {
+    setWordIndex(getDeterministicDailyIndex(INITIAL_RANDOM_WORDS?.length || 0));
+    try {
+      setLastVisitedId(localStorage.getItem("kenyahub_last_visited_lang"));
+    } catch {
+      // ignore storage errors
+    }
     const map: Record<string, StoredLangStats> = {};
     AVAILABLE_LANGUAGES.forEach((l) => {
       map[l.id] = getLanguageStats(l.id);
@@ -166,13 +173,12 @@ export default function LearnPage() {
         topLangId = lang.id;
       }
     }
-    const lastVisitedId = typeof window !== "undefined" ? localStorage.getItem("kenyahub_last_visited_lang") : null;
     const resumeLang =
       (lastVisitedId ? readyLangs.find((l) => l.id === lastVisitedId) : null) ||
       readyLangs.find((l) => l.id === topLangId) ||
       readyLangs[0];
     return { totalXp, bestStreak, totalWords, resumeLang };
-  }, [progressMap, readyLangs]);
+  }, [progressMap, readyLangs, lastVisitedId]);
 
   const spotlightWord = useMemo(() => {
     if (!INITIAL_RANDOM_WORDS || INITIAL_RANDOM_WORDS.length === 0) return null;

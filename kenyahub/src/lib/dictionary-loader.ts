@@ -26,9 +26,17 @@ type ContribDictEntry = DictEntry & { _userContrib?: boolean };
  * in translator searches and category browsing, while stripping any previously injected entries
  * that were subsequently rejected or removed (`F-12`).
  */
+const CONTRIB_STORAGE_KEY = "kenyahub_contributions_v1";
+const appliedContribRevision = new WeakMap<Dictionary, string>();
+
 export function applyApprovedContributionsToDict(dict: Dictionary): Dictionary {
   if (typeof window === "undefined") return dict;
   try {
+    const contribRevision = localStorage.getItem(CONTRIB_STORAGE_KEY) ?? "__seed__";
+    if (appliedContribRevision.get(dict) === contribRevision) {
+      return dict;
+    }
+
     let modified = false;
     for (const cat of dict.categories) {
       const beforeLen = cat.entries.length;
@@ -81,6 +89,7 @@ export function applyApprovedContributionsToDict(dict: Dictionary): Dictionary {
     if (modified) {
       invalidateDictIndex(dict);
     }
+    appliedContribRevision.set(dict, contribRevision);
   } catch {
     // Ignore storage read errors in restricted environments
   }

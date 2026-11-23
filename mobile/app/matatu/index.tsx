@@ -1,5 +1,5 @@
 import { ExpandablePillRow } from "../../src/components/ExpandablePillRow";
-import React, { useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
+import React, { useCallback, useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import {
   FlatList,
@@ -300,6 +300,195 @@ export default function MatatuScreen() {
     });
   }, [allRoutes, deferredSearch, selectedTown, saccoFilter, sortBy, journeyQuery]);
 
+  const keyExtractor = useCallback(
+    (item: RouteItem & { townId: string; townName: string }) =>
+      `${item.townId}-${item.slug}`,
+    []
+  );
+
+  const renderItem = useCallback(
+    ({ item }: { item: RouteItem & { townId: string; townName: string } }) => (
+      <RouteCard route={item} />
+    ),
+    []
+  );
+
+  const listHeader = useMemo(
+    () => (
+      <>
+        {/* Interactive Journey Planner with Explicit Find Route Button (F-039) */}
+        <View
+          style={{
+            backgroundColor: theme.surfaceContainer,
+            borderColor: theme.outlineVariant,
+            borderWidth: 1,
+            borderRadius: 14,
+            padding: 10,
+            marginBottom: 8,
+            gap: 6,
+          }}
+        >
+          <Text style={{ fontSize: 11.5, fontFamily: "Outfit_800ExtraBold", color: theme.gold, letterSpacing: 0.5 }}>
+            JOURNEY PLANNER
+          </Text>
+          <View style={{ flexDirection: "row", gap: 8 }}>
+            <TextInput
+              value={fromStage}
+              onChangeText={setFromStage}
+              placeholder="From stage (e.g. CBD)"
+              placeholderTextColor={theme.textMuted}
+              style={{
+                flex: 1,
+                backgroundColor: theme.surfaceContainerHigh,
+                borderWidth: 1,
+                borderColor: theme.outlineVariant,
+                borderRadius: 10,
+                paddingHorizontal: 10,
+                height: 36,
+                fontSize: 12.5,
+                color: theme.textPrimary,
+              }}
+            />
+            <TextInput
+              value={toStage}
+              onChangeText={setToStage}
+              placeholder="To stage (e.g. Westlands)"
+              placeholderTextColor={theme.textMuted}
+              style={{
+                flex: 1,
+                backgroundColor: theme.surfaceContainerHigh,
+                borderWidth: 1,
+                borderColor: theme.outlineVariant,
+                borderRadius: 10,
+                paddingHorizontal: 10,
+                height: 36,
+                fontSize: 12.5,
+                color: theme.textPrimary,
+              }}
+            />
+          </View>
+          <View style={{ flexDirection: "row", gap: 8 }}>
+            <Pressable
+              onPress={() => {
+                triggerHaptic(8);
+                setJourneyQuery({ from: fromStage.trim(), to: toStage.trim() });
+              }}
+              accessibilityRole="button"
+              accessibilityLabel="Find Route"
+              style={pressableStyle({
+                flex: 1,
+                backgroundColor: theme.gold,
+                paddingVertical: 7,
+                borderRadius: 10,
+                alignItems: "center",
+                flexDirection: "row",
+                justifyContent: "center",
+                gap: 6,
+              })}
+            >
+              <Ionicons name="navigate" size={14} color={theme.kenyaBlack} />
+              <Text style={{ fontSize: 12.5, fontFamily: "Outfit_800ExtraBold", color: theme.kenyaBlack }}>
+                Find Route
+              </Text>
+            </Pressable>
+            {journeyQuery && (
+              <Pressable
+                onPress={() => {
+                  setFromStage("");
+                  setToStage("");
+                  setJourneyQuery(null);
+                }}
+                style={pressableStyle({
+                  paddingHorizontal: 12,
+                  paddingVertical: 9,
+                  borderRadius: 10,
+                  borderWidth: 1,
+                  borderColor: theme.outlineVariant,
+                  backgroundColor: theme.surfaceContainerHigh,
+                  justifyContent: "center",
+                })}
+              >
+                <Text style={{ fontSize: 12, fontFamily: "Outfit_700Bold", color: theme.textSecondary }}>
+                  Clear
+                </Text>
+              </Pressable>
+            )}
+          </View>
+        </View>
+
+        {/* SACCO Filter Pills */}
+        {availableSaccos.length > 1 && (
+          <ExpandablePillRow
+            contentContainerStyle={{
+              flexDirection: "row",
+              alignItems: "center",
+              gap: 8,
+              marginBottom: 12,
+            }}
+          >
+            {["all", ...availableSaccos].map((sacco) => {
+              const active = saccoFilter === sacco;
+              return (
+                <Pressable
+                  key={sacco}
+                  onPress={() => {
+                    triggerHaptic(8);
+                    setSaccoFilter(sacco);
+                  }}
+                  style={pressableStyle({
+                    paddingHorizontal: 12,
+                    paddingVertical: 6,
+                    borderRadius: 999,
+                    borderWidth: 1,
+                    backgroundColor: active
+                      ? theme.primaryContainer
+                      : theme.surfaceContainer,
+                    borderColor: active ? theme.gold : theme.outlineVariant,
+                  })}
+                >
+                  <Text
+                    style={{
+                      fontSize: 11,
+                      fontFamily: "Inter_600SemiBold",
+                      color: active
+                        ? theme.onPrimaryContainer
+                        : theme.textSecondary,
+                    }}
+                  >
+                    {sacco === "all"
+                      ? `All SACCOs (${availableSaccos.length})`
+                      : sacco}
+                  </Text>
+                </Pressable>
+              );
+            })}
+          </ExpandablePillRow>
+        )}
+
+        {(search.trim().length > 0 ||
+          selectedTown !== "all" ||
+          saccoFilter !== "all" ||
+          Boolean(journeyQuery)) && (
+          <Text style={[styles.resultsCount, { color: theme.textMuted }]}>
+            Showing {filteredRoutes.length} of {allRoutes.length} routes
+          </Text>
+        )}
+      </>
+    ),
+    [
+      theme,
+      fromStage,
+      toStage,
+      journeyQuery,
+      availableSaccos,
+      saccoFilter,
+      search,
+      selectedTown,
+      filteredRoutes.length,
+      allRoutes.length,
+    ]
+  );
+
   return (
     <SafeAreaView
       style={[styles.screen, { backgroundColor: theme.bgPrimary }]}
@@ -487,177 +676,17 @@ export default function MatatuScreen() {
       <FlatList
         ref={scrollRef}
         data={filteredRoutes}
-        keyExtractor={(item, index) => `${item.townId}-${item.slug}-${index}`}
-        renderItem={({ item }) => <RouteCard route={item} />}
+        keyExtractor={keyExtractor}
+        renderItem={renderItem}
         initialNumToRender={8}
-        maxToRenderPerBatch={8}
+        maxToRenderPerBatch={10}
         updateCellsBatchingPeriod={40}
         windowSize={5}
         removeClippedSubviews={Platform.OS === "android"}
         contentContainerStyle={styles.content}
         showsVerticalScrollIndicator={false}
         keyboardShouldPersistTaps="handled"
-        ListHeaderComponent={
-          <>
-            {/* Interactive Journey Planner with Explicit Find Route Button (F-039) */}
-            <View
-              style={{
-                backgroundColor: theme.surfaceContainer,
-                borderColor: theme.outlineVariant,
-                borderWidth: 1,
-                borderRadius: 14,
-                padding: 10,
-                marginBottom: 8,
-                gap: 6,
-              }}
-            >
-              <Text style={{ fontSize: 11.5, fontFamily: "Outfit_800ExtraBold", color: theme.gold, letterSpacing: 0.5 }}>
-                JOURNEY PLANNER
-              </Text>
-              <View style={{ flexDirection: "row", gap: 8 }}>
-                <TextInput
-                  value={fromStage}
-                  onChangeText={setFromStage}
-                  placeholder="From stage (e.g. CBD)"
-                  placeholderTextColor={theme.textMuted}
-                  style={{
-                    flex: 1,
-                    backgroundColor: theme.surfaceContainerHigh,
-                    borderWidth: 1,
-                    borderColor: theme.outlineVariant,
-                    borderRadius: 10,
-                    paddingHorizontal: 10,
-                    height: 36,
-                    fontSize: 12.5,
-                    color: theme.textPrimary,
-                  }}
-                />
-                <TextInput
-                  value={toStage}
-                  onChangeText={setToStage}
-                  placeholder="To stage (e.g. Westlands)"
-                  placeholderTextColor={theme.textMuted}
-                  style={{
-                    flex: 1,
-                    backgroundColor: theme.surfaceContainerHigh,
-                    borderWidth: 1,
-                    borderColor: theme.outlineVariant,
-                    borderRadius: 10,
-                    paddingHorizontal: 10,
-                    height: 36,
-                    fontSize: 12.5,
-                    color: theme.textPrimary,
-                  }}
-                />
-              </View>
-              <View style={{ flexDirection: "row", gap: 8 }}>
-                <Pressable
-                  onPress={() => {
-                    triggerHaptic(8);
-                    setJourneyQuery({ from: fromStage.trim(), to: toStage.trim() });
-                  }}
-                  accessibilityRole="button"
-                  accessibilityLabel="Find Route"
-                  style={pressableStyle({
-                    flex: 1,
-                    backgroundColor: theme.gold,
-                    paddingVertical: 7,
-                    borderRadius: 10,
-                    alignItems: "center",
-                    flexDirection: "row",
-                    justifyContent: "center",
-                    gap: 6,
-                  })}
-                >
-                  <Ionicons name="navigate" size={14} color={theme.kenyaBlack} />
-                  <Text style={{ fontSize: 12.5, fontFamily: "Outfit_800ExtraBold", color: theme.kenyaBlack }}>
-                    Find Route
-                  </Text>
-                </Pressable>
-                {journeyQuery && (
-                  <Pressable
-                    onPress={() => {
-                      setFromStage("");
-                      setToStage("");
-                      setJourneyQuery(null);
-                    }}
-                    style={pressableStyle({
-                      paddingHorizontal: 12,
-                      paddingVertical: 9,
-                      borderRadius: 10,
-                      borderWidth: 1,
-                      borderColor: theme.outlineVariant,
-                      backgroundColor: theme.surfaceContainerHigh,
-                      justifyContent: "center",
-                    })}
-                  >
-                    <Text style={{ fontSize: 12, fontFamily: "Outfit_700Bold", color: theme.textSecondary }}>
-                      Clear
-                    </Text>
-                  </Pressable>
-                )}
-              </View>
-            </View>
-
-            {/* SACCO Filter Pills */}
-            {availableSaccos.length > 1 && (
-              <ExpandablePillRow
-                contentContainerStyle={{
-                  flexDirection: "row",
-                  alignItems: "center",
-                  gap: 8,
-                  marginBottom: 12,
-                }}
-              >
-                {["all", ...availableSaccos].map((sacco) => {
-                  const active = saccoFilter === sacco;
-                  return (
-                    <Pressable
-                      key={sacco}
-                      onPress={() => {
-                        triggerHaptic(8);
-                        setSaccoFilter(sacco);
-                      }}
-                      style={pressableStyle({
-                        paddingHorizontal: 12,
-                        paddingVertical: 6,
-                        borderRadius: 999,
-                        borderWidth: 1,
-                        backgroundColor: active
-                          ? theme.primaryContainer
-                          : theme.surfaceContainer,
-                        borderColor: active ? theme.gold : theme.outlineVariant,
-                      })}
-                    >
-                      <Text
-                        style={{
-                          fontSize: 11,
-                          fontFamily: "Inter_600SemiBold",
-                          color: active
-                            ? theme.onPrimaryContainer
-                            : theme.textSecondary,
-                        }}
-                      >
-                        {sacco === "all"
-                          ? `All SACCOs (${availableSaccos.length})`
-                          : sacco}
-                      </Text>
-                    </Pressable>
-                  );
-                })}
-              </ExpandablePillRow>
-            )}
-
-            {(search.trim().length > 0 ||
-              selectedTown !== "all" ||
-              saccoFilter !== "all" ||
-              Boolean(journeyQuery)) && (
-              <Text style={[styles.resultsCount, { color: theme.textMuted }]}>
-                Showing {filteredRoutes.length} of {allRoutes.length} routes
-              </Text>
-            )}
-          </>
-        }
+        ListHeaderComponent={listHeader}
         ListEmptyComponent={
           <View style={styles.empty}>
             <Ionicons name="bus-outline" size={48} color={theme.textMuted} />

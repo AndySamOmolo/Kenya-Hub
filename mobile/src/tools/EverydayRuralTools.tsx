@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import React, { useDeferredValue, useState, useMemo } from "react";
 import { StyleSheet, Text, View, TextInput, Pressable } from "react-native";
 import {
   useTheme,
@@ -78,6 +78,7 @@ export function RainwaterTankSizerTool() {
   const data = everydayData.rainwater;
 
   const [countySearch, setCountySearch] = useState("");
+  const deferredCountySearch = useDeferredValue(countySearch);
   const [countyCode, setCountyCode] = useState(47); // Nairobi default
   const [roofType, setRoofType] = useState<RoofType>("mabati");
   const [roofAreaInput, setRoofAreaInput] = useState("100");
@@ -85,12 +86,12 @@ export function RainwaterTankSizerTool() {
   const [litresPerPersonInput, setLitresPerPersonInput] = useState("40");
 
   const filteredCounties = useMemo(() => {
-    const q = countySearch.trim().toLowerCase();
+    const q = deferredCountySearch.trim().toLowerCase();
     if (!q) return data.counties;
     return data.counties.filter(
       (c) => c.name.toLowerCase().includes(q) || String(c.code) === q
     );
-  }, [countySearch, data.counties]);
+  }, [deferredCountySearch, data.counties]);
 
   const county = useMemo(
     () => data.counties.find((c) => c.code === countyCode) ?? data.counties[46],

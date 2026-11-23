@@ -126,6 +126,8 @@ export default function HomeScreen() {
   const isHomeFocused = useIsFocused();
   const widgetsScrollRef = useRef<ScrollView>(null);
   const [activeWidgetPage, setActiveWidgetPage] = useState(0);
+  const activeWidgetPageRef = useRef(activeWidgetPage);
+  activeWidgetPageRef.current = activeWidgetPage;
   const [widgetsTouchPaused, setWidgetsTouchPaused] = useState(false);
   const resumeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -147,13 +149,12 @@ export default function HomeScreen() {
     if (!showDailyWidgets || !isHomeFocused || widgetsTouchPaused) return;
     const timer = setInterval(() => {
       if (AppState.currentState !== "active") return;
-      setActiveWidgetPage((prev) => {
-        const next = (prev + 1) % 4;
-        widgetsScrollRef.current?.scrollTo({
-          x: next * WIDGET_SNAP_INTERVAL,
-          animated: true,
-        });
-        return next;
+      const next = (activeWidgetPageRef.current + 1) % 4;
+      activeWidgetPageRef.current = next;
+      setActiveWidgetPage(next);
+      widgetsScrollRef.current?.scrollTo({
+        x: next * WIDGET_SNAP_INTERVAL,
+        animated: true,
       });
     }, 5500);
     return () => clearInterval(timer);
@@ -326,18 +327,19 @@ export default function HomeScreen() {
     ];
   }, [visitCounts]);
 
+  const pinnedSlugsRef = useRef(pinnedSlugs);
+  pinnedSlugsRef.current = pinnedSlugs;
+
   const togglePinTool = useCallback((slug: string) => {
-    setPinnedSlugs((prev) => {
-      const next = prev.includes(slug)
-        ? prev.filter((s) => s !== slug)
-        : [slug, ...prev];
-      const serialized = serializeSavedTools(next);
-      lastStorageRawRef.current.saved = serialized;
-      AsyncStorage.setItem("kh-saved-tools", serialized).catch(
-        () => {}
-      );
-      return next;
-    });
+    const prev = pinnedSlugsRef.current;
+    const next = prev.includes(slug)
+      ? prev.filter((s) => s !== slug)
+      : [slug, ...prev];
+    pinnedSlugsRef.current = next;
+    setPinnedSlugs(next);
+    const serialized = serializeSavedTools(next);
+    lastStorageRawRef.current.saved = serialized;
+    AsyncStorage.setItem("kh-saved-tools", serialized).catch(() => {});
   }, []);
 
   const handleBlogLinkNavigation = useCallback(

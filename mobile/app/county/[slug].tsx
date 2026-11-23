@@ -363,7 +363,7 @@ export default function CountyDetailScreen() {
       subtitle: "eCitizen & Official County Portal",
       icon: "card-outline" as const,
       action: () =>
-        Linking.openURL(county.website || "https://ecitizen.go.ke"),
+        Linking.openURL(county.website || "https://ecitizen.go.ke").catch(() => {}),
     },
     {
       title: "County Budget & Expenditure Tracker",
@@ -1098,7 +1098,7 @@ export default function CountyDetailScreen() {
             >
               {filteredHospitals.slice(0, visibleCount).map((h: any, idx: number, arr: any[]) => (
                 <View
-                  key={idx}
+                  key={`${h.name}-${h.subcounty || ""}-${h.level || ""}`}
                   style={{
                     flexDirection: "row",
                     flexWrap: "wrap",
@@ -1183,9 +1183,9 @@ export default function CountyDetailScreen() {
               {countyPostalCodes.length})
             </Text>
             <View style={styles.constituenciesWrap}>
-              {filteredPostal.slice(0, postalVisibleCount).map((p: any, idx: number) => (
+              {filteredPostal.slice(0, postalVisibleCount).map((p: any) => (
                 <View
-                  key={idx}
+                  key={`${p.code}-${p.town}`}
                   style={[
                     styles.constituencyChip,
                     { backgroundColor: theme.bgCard, borderColor: theme.border },
@@ -1451,7 +1451,7 @@ export default function CountyDetailScreen() {
                     styles.contactRow,
                     { borderBottomColor: theme.border },
                   ])}
-                  onPress={() => Linking.openURL(`tel:${county.phone}`)}
+                  onPress={() => Linking.openURL(`tel:${county.phone}`).catch(() => {})}
                 >
                   <Ionicons name="call-outline" size={18} color={theme.gold} />
                   <View style={{ flex: 1 }}>
@@ -1477,7 +1477,7 @@ export default function CountyDetailScreen() {
                     styles.contactRow,
                     { borderBottomWidth: 0 },
                   ])}
-                  onPress={() => Linking.openURL(county.website!)}
+                  onPress={() => Linking.openURL(county.website!).catch(() => {})}
                 >
                   <Ionicons name="globe-outline" size={18} color={theme.sky} />
                   <View style={{ flex: 1 }}>

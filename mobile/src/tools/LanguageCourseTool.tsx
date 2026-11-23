@@ -39,10 +39,313 @@ import { loadDictionary, LOADED_DICTS_CACHE } from './translator/loader';
 import kikuyuProverbsData from '../shared/data/kikuyu-proverbs.json';
 import openCorpusIndex from '../shared/data/open-corpus-index.json';
 import { loadMobileAudioShard, type MobileAudioShardClip } from '../lib/mobile-learning-shards';
-import kslIndexData from '../shared/data/ksl-index.json';
 import dholuoChaptersData from '../shared/data/dholuo-audio-chapters.json';
-import learningQuizzesData from '../shared/data/learning-quizzes.json';
-import learningReadersData from '../shared/data/learning-readers.json';
+
+let _kslIndexCache: any = null;
+function getKslIndexData(): any {
+  if (!_kslIndexCache) {
+    _kslIndexCache = require('../shared/data/ksl-index.json');
+  }
+  return _kslIndexCache;
+}
+
+let _learningReadersCache: Record<string, any> | null = null;
+function getLearningReadersData(): Record<string, any> {
+  if (!_learningReadersCache) {
+    _learningReadersCache = require('../shared/data/learning-readers.json');
+  }
+  return _learningReadersCache!;
+}
+
+let _learningQuizzesCache: Record<string, any> | null = null;
+function getLearningQuizzesData(): Record<string, any> {
+  if (!_learningQuizzesCache) {
+    _learningQuizzesCache = require('../shared/data/learning-quizzes.json');
+  }
+  return _learningQuizzesCache!;
+}
+
+const KSL_PLAYER_STATIC_HTML = `<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><style>html,body{margin:0;padding:0;background:#000;width:100%;height:100%;display:flex;align-items:center;justify-content:center;overflow:hidden}video{width:100%;height:100%;object-fit:contain;background:#000}</style></head><body><video id="v" controls playsinline loop preload="auto"></video></body></html>`;
+const KSL_QUIZ_STATIC_HTML = `<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><style>html,body{margin:0;padding:0;background:#000;width:100%;height:100%;display:flex;align-items:center;justify-content:center;overflow:hidden}video{width:100%;height:100%;object-fit:contain;background:#000}</style></head><body><video id="v" controls autoplay muted playsinline loop preload="auto"></video></body></html>`;
+
+const KslVideoWebView = React.memo(function KslVideoWebView({
+  videoUrl,
+  playbackRate = 1,
+  autoPlay = false,
+  muted = false,
+  domStorageEnabled = false,
+}: {
+  videoUrl: string;
+  playbackRate?: number;
+  autoPlay?: boolean;
+  muted?: boolean;
+  domStorageEnabled?: boolean;
+}) {
+  const webViewRef = useRef<any>(null);
+  const loadedRef = useRef(false);
+  const lastUrlRef = useRef<string>('');
+  const source = useMemo(
+    () => ({
+      html: muted ? KSL_QUIZ_STATIC_HTML : KSL_PLAYER_STATIC_HTML,
+      baseUrl: 'https://audio.kenyahub.me',
+    }),
+    [muted]
+  );
+
+  const applyVideoState = useCallback(
+    (forceLoad: boolean) => {
+      const safeUrl = videoUrl.replace(/["'<>\\]/g, '');
+      if (!safeUrl || !webViewRef.current) return;
+      const urlChanged = forceLoad || lastUrlRef.current !== safeUrl;
+      lastUrlRef.current = safeUrl;
+      const js = urlChanged
+        ? `(function(){var v=document.getElementById('v');if(!v)return;v.src=${JSON.stringify(safeUrl)};v.playbackRate=${playbackRate};v.load();${autoPlay || muted ? 'var pr=v.play();if(pr&&pr.catch){pr.catch(function(){});}' : ''}})();true;`
+        : `(function(){var v=document.getElementById('v');if(!v)return;v.playbackRate=${playbackRate};})();true;`;
+      try {
+        webViewRef.current.injectJavaScript(js);
+      } catch {}
+    },
+    [videoUrl, playbackRate, autoPlay, muted]
+  );
+
+  useEffect(() => {
+    if (loadedRef.current) {
+      applyVideoState(false);
+    }
+  }, [applyVideoState]);
+
+  const handleLoadEnd = useCallback(() => {
+    loadedRef.current = true;
+    applyVideoState(true);
+  }, [applyVideoState]);
+
+  return (
+    <WebView
+      ref={webViewRef}
+      source={source}
+      onLoadEnd={handleLoadEnd}
+      allowsInlineMediaPlayback
+      mediaPlaybackRequiresUserAction={false}
+      javaScriptEnabled
+      domStorageEnabled={domStorageEnabled}
+      originWhitelist={['https://*', 'about:blank']}
+      style={{ flex: 1, backgroundColor: '#000000' }}
+    />
+  );
+});
+
+const ChapterAudioPlayerBar = React.memo(function ChapterAudioPlayerBar({
+  audioUrl,
+  title,
+  colors,
+}: {
+  audioUrl: string;
+  title: string;
+  colors: any;
+}) {
+  const [audioState, setAudioState] = useState<MobileAudioState>(() => getMobileAudioState());
+  const [chapterBarWidth, setChapterBarWidth] = useState<number>(240);
+
+  useEffect(() => {
+    setAudioState(getMobileAudioState());
+    return subscribeMobileAudioState(setAudioState);
+  }, []);
+
+  const fmtTime = (sec: number) => {
+    if (!Number.isFinite(sec) || sec < 0) return '0:00';
+    const m = Math.floor(sec / 60);
+    const ss = Math.floor(sec % 60);
+    return `${m}:${ss < 10 ? '0' : ''}${ss}`;
+  };
+
+  const isChActiveUrl = Boolean(audioUrl && audioState.url === audioUrl);
+  const chPlaying = isChActiveUrl && audioState.playing;
+  const chLoading = isChActiveUrl && audioState.loading;
+  const chCur = isChActiveUrl ? audioState.currentTime : 0;
+  const chDur = isChActiveUrl ? audioState.duration : 0;
+  const chPct = chDur > 0 ? Math.min(1, Math.max(0, chCur / chDur)) : 0;
+  const chRate = audioState.rate || 1;
+
+  return (
+    <View style={{ backgroundColor: colors.surfaceContainerLow, borderRadius: 12, borderWidth: 1, borderColor: colors.outlineVariant, padding: 10, gap: 10 }}>
+      <View style={{ flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: 8 }}>
+        <View style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
+          <Pressable
+            onPress={() => {
+              if (chPlaying) {
+                pauseVerifiedAudio();
+              } else if (isChActiveUrl && chCur > 0) {
+                resumeVerifiedAudio();
+              } else {
+                const ok = playVerifiedAudio({ translation: title, audioFile: audioUrl }, chRate);
+                if (!ok) Linking.openURL(audioUrl).catch(() => {});
+              }
+            }}
+            style={{
+              width: 40,
+              height: 40,
+              borderRadius: 20,
+              backgroundColor: colors.gold,
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}
+          >
+            <Feather name={chPlaying ? 'pause' : 'play'} size={18} color="#FFFFFF" />
+          </Pressable>
+          <Pressable
+            onPress={() => isChActiveUrl && skipVerifiedAudio(-10)}
+            style={{ paddingHorizontal: 9, paddingVertical: 6, borderRadius: 8, borderWidth: 1, borderColor: colors.outlineVariant, backgroundColor: colors.surface, flexDirection: 'row', alignItems: 'center', gap: 3, opacity: isChActiveUrl ? 1 : 0.5 }}
+          >
+            <Feather name="rotate-ccw" size={12} color={colors.textSecondary} />
+            <Text style={{ fontFamily: 'Inter_600SemiBold', fontSize: 11, color: colors.textSecondary }}>10s</Text>
+          </Pressable>
+          <Pressable
+            onPress={() => isChActiveUrl && skipVerifiedAudio(10)}
+            style={{ paddingHorizontal: 9, paddingVertical: 6, borderRadius: 8, borderWidth: 1, borderColor: colors.outlineVariant, backgroundColor: colors.surface, flexDirection: 'row', alignItems: 'center', gap: 3, opacity: isChActiveUrl ? 1 : 0.5 }}
+          >
+            <Text style={{ fontFamily: 'Inter_600SemiBold', fontSize: 11, color: colors.textSecondary }}>10s</Text>
+            <Feather name="rotate-cw" size={12} color={colors.textSecondary} />
+          </Pressable>
+        </View>
+
+        <View style={{ flexDirection: 'row', alignItems: 'center', gap: 5 }}>
+          {[0.75, 1, 1.25].map((r) => {
+            const act = Math.abs(chRate - r) < 0.05;
+            return (
+              <Pressable
+                key={r}
+                onPress={() => setVerifiedAudioRate(r)}
+                style={{
+                  paddingHorizontal: 8,
+                  paddingVertical: 5,
+                  borderRadius: 8,
+                  borderWidth: 1,
+                  borderColor: act ? colors.gold : colors.outlineVariant,
+                  backgroundColor: act ? `${colors.gold}20` : colors.surface,
+                }}
+              >
+                <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 11, color: act ? colors.gold : colors.textMuted }}>
+                  {r}x
+                </Text>
+              </Pressable>
+            );
+          })}
+        </View>
+      </View>
+
+      {/* Interactive Tappable Progress Bar + Time Readout */}
+      <View style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
+        <Text style={{ fontFamily: 'Inter_600SemiBold', fontSize: 11, color: colors.textMuted, minWidth: 34 }}>
+          {fmtTime(chCur)}
+        </Text>
+        <Pressable
+          onLayout={(e) => setChapterBarWidth(Math.max(1, e.nativeEvent.layout.width))}
+          onPress={(e) => {
+            if (!isChActiveUrl || chDur <= 0) return;
+            const ratio = Math.max(0, Math.min(1, e.nativeEvent.locationX / chapterBarWidth));
+            seekVerifiedAudio(ratio * chDur);
+          }}
+          style={{ flex: 1, paddingVertical: 8, justifyContent: 'center' }}
+        >
+          <View style={{ height: 6, borderRadius: 999, backgroundColor: colors.outlineVariant, overflow: 'hidden' }}>
+            <View style={{ height: '100%', width: `${Math.round(chPct * 100)}%`, backgroundColor: colors.gold, borderRadius: 999 }} />
+          </View>
+        </Pressable>
+        <Text style={{ fontFamily: 'Inter_600SemiBold', fontSize: 11, color: colors.textMuted, minWidth: 34, textAlign: 'right' }}>
+          {chLoading ? '…' : fmtTime(chDur)}
+        </Text>
+      </View>
+    </View>
+  );
+});
+
+const AudioClipList = React.memo(function AudioClipList({
+  clips,
+  slowMode,
+  showEn,
+  colors,
+}: {
+  clips: MobileAudioShardClip[];
+  slowMode: boolean;
+  showEn: boolean;
+  colors: any;
+}) {
+  const [activeClip, setActiveClip] = useState<{ url: string | null; playing: boolean }>(() => {
+    const s = getMobileAudioState();
+    return { url: s.url, playing: s.playing };
+  });
+
+  useEffect(() => {
+    const sync = (s: MobileAudioState) => {
+      setActiveClip((prev) =>
+        prev.url === s.url && prev.playing === s.playing
+          ? prev
+          : { url: s.url, playing: s.playing }
+      );
+    };
+    sync(getMobileAudioState());
+    return subscribeMobileAudioState(sync);
+  }, []);
+
+  return (
+    <View style={{ gap: 8 }}>
+      {clips.map((clip) => {
+        const isPlayingClip = activeClip.url === clip.audioUrl && activeClip.playing;
+        const fullText = clip.transcript || clip.label;
+        return (
+          <Pressable
+            key={clip.slug}
+            onPress={() => {
+              if (isPlayingClip) {
+                pauseVerifiedAudio();
+              } else {
+                playVerifiedAudio({ translation: fullText, audioFile: clip.audioUrl }, slowMode ? 0.75 : 1.0);
+              }
+            }}
+            style={{
+              flexDirection: 'row',
+              alignItems: 'flex-start',
+              justifyContent: 'space-between',
+              gap: 10,
+              paddingHorizontal: 12,
+              paddingVertical: 11,
+              borderRadius: 12,
+              borderWidth: 1,
+              borderColor: isPlayingClip ? colors.kenyaGreen : colors.outlineVariant,
+              backgroundColor: isPlayingClip ? `${colors.kenyaGreen}14` : colors.surface,
+            }}
+          >
+            <View style={{ flex: 1, gap: 3 }}>
+              <Text style={{ fontFamily: 'Inter_600SemiBold', fontSize: 13, color: isPlayingClip ? colors.kenyaGreen : colors.text, lineHeight: 19 }}>
+                {fullText}
+              </Text>
+              {showEn && Boolean(clip.english) && (
+                <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 12, color: colors.textSecondary, lineHeight: 17 }}>
+                  {clip.english}
+                </Text>
+              )}
+            </View>
+            <View
+              style={{
+                width: 32,
+                height: 32,
+                borderRadius: 16,
+                alignItems: 'center',
+                justifyContent: 'center',
+                backgroundColor: isPlayingClip ? colors.kenyaGreen : colors.surfaceContainer,
+                borderWidth: 1,
+                borderColor: isPlayingClip ? colors.kenyaGreen : colors.outlineVariant,
+                marginTop: 1,
+              }}
+            >
+              <Feather name={isPlayingClip ? 'pause' : 'volume-2'} size={15} color={isPlayingClip ? '#FFFFFF' : colors.kenyaGreen} />
+            </View>
+          </Pressable>
+        );
+      })}
+    </View>
+  );
+});
 import { KSL_ALPHABET } from '../shared/data/ksl-starter';
 import { KIKUYU_PROVERBS as KIKUYU_CW_ITEMS, LUO_PROVERBS as LUO_CW_ITEMS } from '../shared/data/courses/proverbs';
 import { luoProverbs } from '../shared/data/courses/luo/proverbs';
@@ -190,9 +493,9 @@ export default function LanguageCourseTool({
   const deferredKslSearchQuery = useDeferredValue(kslSearchQuery);
   const [kslLetter, setKslLetter] = useState<string>('ALL');
   const [kslPage, setKslPage] = useState<number>(1);
-  const kslWebViewRef = useRef<any>(null);
   const allKslVideos = useMemo(() => {
-    const full = (kslIndexData as any)?.videos;
+    if (!showLanguageMenu) return [];
+    const full = getKslIndexData()?.videos;
     const list: {
       id: string;
       title: string;
@@ -204,7 +507,7 @@ export default function LanguageCourseTool({
       transcript?: string;
     }[] = Array.isArray(full) && full.length > 0 ? full : ((openCorpusIndex as any).ksl?.videos || []);
     return list;
-  }, []);
+  }, [showLanguageMenu]);
   const kslCategoryCounts = useMemo(() => {
     let maseno = 0;
     let human = 0;
@@ -241,39 +544,33 @@ export default function LanguageCourseTool({
     });
   }, [allKslVideos, kslTab, kslLetter, deferredKslSearchQuery]);
   const [activeKslVideoId, setActiveKslVideoId] = useState<string>(
-    ((kslIndexData as any)?.videos?.[0]?.id as string) || ((openCorpusIndex as any).ksl?.videos?.[0]?.id as string) || ''
+    ((openCorpusIndex as any).ksl?.videos?.[0]?.id as string) || ''
   );
   const [kslPlaybackRate, setKslPlaybackRate] = useState<number>(1);
   const [kslAutoPlay, setKslAutoPlay] = useState<boolean>(false);
-  const [audioState, setAudioState] = useState<MobileAudioState>(() => getMobileAudioState());
   const [chapterSearchQuery, setChapterSearchQuery] = useState<string>('');
   const deferredChapterSearchQuery = useDeferredValue(chapterSearchQuery);
-  const [chapterBarWidth, setChapterBarWidth] = useState<number>(240);
   const [lrAudioSearch, setLrAudioSearch] = useState<string>('');
   const deferredLrAudioSearch = useDeferredValue(lrAudioSearch);
   const [lrSlowMode, setLrSlowMode] = useState<boolean>(false);
   const [lrShowAudioEn, setLrShowAudioEn] = useState<boolean>(true);
   const [lrAudioClips, setLrAudioClips] = useState<MobileAudioShardClip[]>([]);
   const [lrAudioLimit, setLrAudioLimit] = useState<number>(36);
-  useEffect(() => {
-    if (showLanguageMenu || activeTab !== 'listen_read') return;
-    setAudioState(getMobileAudioState());
-    return subscribeMobileAudioState(setAudioState);
-  }, [showLanguageMenu, activeTab]);
-  useEffect(() => {
-    let active = true;
-    setLrAudioClips([]);
-    setLrAudioLimit(36);
-    setLrAudioSearch('');
-    loadMobileAudioShard(selectedLangId).then((clips) => {
-      if (active && clips.length > 0) {
-        setLrAudioClips(clips);
-      }
-    });
-    return () => {
-      active = false;
-    };
-  }, [selectedLangId]);
+
+  const feedbackTimersRef = useRef<Set<ReturnType<typeof setTimeout>>>(new Set());
+  const clearFeedbackTimers = useCallback(() => {
+    feedbackTimersRef.current.forEach((id) => clearTimeout(id));
+    feedbackTimersRef.current.clear();
+  }, []);
+  const scheduleFeedbackTimeout = useCallback((fn: () => void, ms: number) => {
+    const id = setTimeout(() => {
+      feedbackTimersRef.current.delete(id);
+      fn();
+    }, ms);
+    feedbackTimersRef.current.add(id);
+    return id;
+  }, []);
+  useEffect(() => clearFeedbackTimers, [clearFeedbackTimers]);
   const [kslStudioMode, setKslStudioMode] = useState<'browse' | 'quiz' | 'spell'>('browse');
   const [kslQuizIdx, setKslQuizIdx] = useState<number>(0);
   const [kslQuizPicked, setKslQuizPicked] = useState<string | null>(null);
@@ -299,6 +596,22 @@ export default function LanguageCourseTool({
       : PUBLISHED_COURSE_SUMMARIES[0]?.config.id || 'swahili'
   );
   const [activeTab, setActiveTab] = useState<MainTab>(initialTab || 'learn');
+
+  useEffect(() => {
+    if (showLanguageMenu || activeTab !== 'listen-read') return;
+    let active = true;
+    setLrAudioClips([]);
+    setLrAudioLimit(36);
+    setLrAudioSearch('');
+    loadMobileAudioShard(selectedLangId).then((clips) => {
+      if (active && clips.length > 0) {
+        setLrAudioClips(clips);
+      }
+    });
+    return () => {
+      active = false;
+    };
+  }, [selectedLangId, showLanguageMenu, activeTab]);
 
   useEffect(() => {
     if (initialLanguageId && hasCourseSummary(initialLanguageId)) {
@@ -611,6 +924,9 @@ export default function LanguageCourseTool({
 
   // ── Games Hub State (4 Games: Scramble, Speed Match, Memory, Wordle) ──
   const [activeGame, setActiveGame] = useState<ActiveGame>('menu');
+  useEffect(() => {
+    clearFeedbackTimers();
+  }, [activeGame, activeTab, selectedLangId, clearFeedbackTimers]);
   const [gameScore, setGameScore] = useState(0);
   const [gameRound, setGameRound] = useState(0);
   // Scramble
@@ -931,7 +1247,7 @@ export default function LanguageCourseTool({
             setMissedItems((prev) => [...prev, { prompt: leftTxt, correct: rightTxt }]);
           }
         }
-        setTimeout(() => {
+        scheduleFeedbackTimeout(() => {
           setMatchWrongFlash(false);
           setMatchLeftIdx(null);
         }, 500);
@@ -2827,16 +3143,8 @@ export default function LanguageCourseTool({
           const pageVideos = filteredKslVideos.slice(pageStart, pageStart + KSL_PAGE_SIZE);
           const activeIdx = filteredKslVideos.findIndex((v) => v.id === activeKslVideoId);
           const activeKsl = (activeIdx >= 0 ? filteredKslVideos[activeIdx] : filteredKslVideos[0]) || null;
-          const safeVideoUrl = activeKsl ? activeKsl.videoUrl.replace(/["'<>]/g, '') : '';
-          const playerHtml = activeKsl
-            ? `<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><style>html,body{margin:0;padding:0;background:#000;width:100%;height:100%;display:flex;align-items:center;justify-content:center;overflow:hidden}video{width:100%;height:100%;object-fit:contain;background:#000}</style></head><body><video id="v" src="${safeVideoUrl}" controls ${kslAutoPlay ? 'autoplay' : ''} playsinline loop preload="auto"></video><script>var v=document.getElementById('v');if(v){v.playbackRate=${kslPlaybackRate};function tryPlay(){v.playbackRate=${kslPlaybackRate};${kslAutoPlay ? 'var pr=v.play();if(pr&&pr.catch){pr.catch(function(){});}' : ''}}v.addEventListener('loadedmetadata',tryPlay);v.addEventListener('canplay',tryPlay);tryPlay();}</script></body></html>`
-            : '';
-
           const handleSpeedChange = (spd: number) => {
             setKslPlaybackRate(spd);
-            try {
-              kslWebViewRef.current?.injectJavaScript(`var v=document.getElementById('v');if(v){v.playbackRate=${spd};}true;`);
-            } catch {}
           };
 
           return (
@@ -2900,8 +3208,7 @@ export default function LanguageCourseTool({
                 const pool = vocabPool.length >= 4 ? vocabPool : allKslVideos;
                 const qVid = pool[kslQuizIdx % Math.max(1, pool.length)];
                 if (!qVid || pool.length < 4) return null;
-                const qUrl = qVid.videoUrl.replace(/["'<>]/g, '');
-                const qHtml = `<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><style>html,body{margin:0;padding:0;background:#000;width:100%;height:100%;display:flex;align-items:center;justify-content:center;overflow:hidden}video{width:100%;height:100%;object-fit:contain;background:#000}</style></head><body><video src="${qUrl}" controls autoplay muted playsinline loop></video></body></html>`;
+                const qUrl = qVid.videoUrl;
                 const targetLbl = (qVid.gloss || qVid.title).trim().toLowerCase();
                 const others = pool.filter((v) => (v.gloss || v.title).trim().toLowerCase() !== targetLbl);
                 const start = others.length > 3 ? (kslQuizIdx * 5) % (others.length - 3) : 0;
@@ -2913,14 +3220,10 @@ export default function LanguageCourseTool({
                       <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 11.5, color: colors.kenyaGreen }}>Score: {kslQuizScore.right}/{kslQuizScore.total}</Text>
                     </View>
                     <View style={{ height: 200, borderRadius: 10, overflow: 'hidden', backgroundColor: '#000000' }}>
-                      <WebView
-                        key={`quiz-${qVid.id}`}
-                        source={{ html: qHtml, baseUrl: 'https://audio.kenyahub.me' }}
-                        allowsInlineMediaPlayback
-                        mediaPlaybackRequiresUserAction={false}
-                        javaScriptEnabled
-                        originWhitelist={['https://*', 'about:blank']}
-                        style={{ flex: 1, backgroundColor: '#000000' }}
+                      <KslVideoWebView
+                        videoUrl={qUrl}
+                        autoPlay
+                        muted
                       />
                     </View>
                     <View style={{ gap: 6 }}>
@@ -3090,16 +3393,11 @@ export default function LanguageCourseTool({
               {activeKsl && (
                 <View style={{ gap: 8, backgroundColor: colors.surface, borderRadius: 12, borderWidth: 1, borderColor: colors.outlineVariant, padding: 10 }}>
                   <View style={{ height: 220, borderRadius: 10, overflow: 'hidden', backgroundColor: '#000000' }}>
-                    <WebView
-                      ref={kslWebViewRef}
-                      key={activeKsl.id}
-                      source={{ html: playerHtml, baseUrl: 'https://audio.kenyahub.me' }}
-                      allowsInlineMediaPlayback
-                      mediaPlaybackRequiresUserAction={false}
-                      javaScriptEnabled
+                    <KslVideoWebView
+                      videoUrl={activeKsl.videoUrl}
+                      playbackRate={kslPlaybackRate}
+                      autoPlay={kslAutoPlay}
                       domStorageEnabled
-                      originWhitelist={['https://*', 'about:blank']}
-                      style={{ flex: 1, backgroundColor: '#000000' }}
                     />
                   </View>
 
@@ -4765,7 +5063,7 @@ export default function LanguageCourseTool({
                         setGameScore((s) => s + 10);
                         awardGameXP(10, false);
                       }
-                      setTimeout(() => {
+                      scheduleFeedbackTimeout(() => {
                         startSpeedRound();
                       }, 650);
                     }}
@@ -4842,7 +5140,7 @@ export default function LanguageCourseTool({
                             setGameScore((s) => s + (allNowMatched ? 25 : 10));
                             awardGameXP(allNowMatched ? 20 : 5, allNowMatched);
                           } else {
-                            setTimeout(() => setMemoryFlipped([]), 650);
+                            scheduleFeedbackTimeout(() => setMemoryFlipped([]), 650);
                           }
                         }
                       }}
@@ -5092,7 +5390,7 @@ export default function LanguageCourseTool({
                         setGameScore((s) => s + 20);
                         awardGameXP(20, false);
                       }
-                      setTimeout(() => {
+                      scheduleFeedbackTimeout(() => {
                         startRiddleRound();
                       }, 900);
                     }}
@@ -5158,7 +5456,7 @@ export default function LanguageCourseTool({
                         setGameScore((s) => s + 15);
                         awardGameXP(15, false);
                       }
-                      setTimeout(() => {
+                      scheduleFeedbackTimeout(() => {
                         startVocabQuizRound();
                       }, 700);
                     }}
@@ -5194,8 +5492,8 @@ export default function LanguageCourseTool({
          ======================================================================== */}
       {activeTab === 'listen-read' && (() => {
         const corpusLang = (openCorpusIndex.languages as Record<string, any>)[selectedLangId] || {};
-        const readerShard = (learningReadersData as Record<string, any>)[selectedLangId] || null;
-        const quizShard = (learningQuizzesData as Record<string, any>)[selectedLangId] || null;
+        const readerShard = getLearningReadersData()[selectedLangId] || null;
+        const quizShard = getLearningQuizzesData()[selectedLangId] || null;
         const samples: MobileAudioShardClip[] = lrAudioClips.length > 0 ? lrAudioClips : (corpusLang.nativeAudioSamples || []);
         const chapters: any[] = selectedLangId === 'luo' ? ((dholuoChaptersData as any)?.chapters || []) : (corpusLang.audioChapters || []);
         const stories: { title: string; text: string; wordCount?: number }[] = readerShard?.stories || [];
@@ -5239,24 +5537,11 @@ export default function LanguageCourseTool({
 
             {/* 1. LISTENING */}
             {lrSubTab === 'listen' && (() => {
-              const fmtTime = (sec: number) => {
-                if (!Number.isFinite(sec) || sec < 0) return '0:00';
-                const m = Math.floor(sec / 60);
-                const ss = Math.floor(sec % 60);
-                return `${m}:${ss < 10 ? '0' : ''}${ss}`;
-              };
               const activeChMeta = chapters.find((c: any) => c.id === dholuoTranscriptChapterId) || chapters[0] || null;
               const fullChs = selectedLangId === 'luo' ? ((dholuoChaptersData as any)?.chapters || []) : [];
               const activeChData = activeChMeta
                 ? fullChs.find((c: any) => c.id === activeChMeta.id) || fullChs[0] || null
                 : null;
-              const isChActiveUrl = Boolean(activeChMeta && audioState.url === activeChMeta.audioUrl);
-              const chPlaying = isChActiveUrl && audioState.playing;
-              const chLoading = isChActiveUrl && audioState.loading;
-              const chCur = isChActiveUrl ? audioState.currentTime : 0;
-              const chDur = isChActiveUrl ? audioState.duration : 0;
-              const chPct = chDur > 0 ? Math.min(1, Math.max(0, chCur / chDur)) : 0;
-              const chRate = audioState.rate || 1;
 
               const rawPhrases: { english: string; dholuo: string }[] = activeChData?.phrases || [];
               const chQ = deferredChapterSearchQuery.trim().toLowerCase();
@@ -5314,7 +5599,8 @@ export default function LanguageCourseTool({
                               setDholuoTranscriptChapterId(ch.id);
                               setDholuoTranscriptPage(1);
                               setChapterSearchQuery('');
-                              if (audioState.url && audioState.url !== ch.audioUrl && audioState.playing) {
+                              const curAudio = getMobileAudioState();
+                              if (curAudio.url && curAudio.url !== ch.audioUrl && curAudio.playing) {
                                 pauseVerifiedAudio();
                               }
                             }}
@@ -5364,96 +5650,12 @@ export default function LanguageCourseTool({
                         </View>
                       )}
 
-                      {/* Custom Styled Audio Player Controls (wrapped cleanly, zero overflow) */}
-                      <View style={{ backgroundColor: colors.surfaceContainerLow, borderRadius: 12, borderWidth: 1, borderColor: colors.outlineVariant, padding: 10, gap: 10 }}>
-                        <View style={{ flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: 8 }}>
-                          <View style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
-                            <Pressable
-                              onPress={() => {
-                                if (chPlaying) {
-                                  pauseVerifiedAudio();
-                                } else if (isChActiveUrl && chCur > 0) {
-                                  resumeVerifiedAudio();
-                                } else {
-                                  const ok = playVerifiedAudio({ translation: activeChMeta.title, audioFile: activeChMeta.audioUrl }, chRate);
-                                  if (!ok) Linking.openURL(activeChMeta.audioUrl).catch(() => {});
-                                }
-                              }}
-                              style={{
-                                width: 40,
-                                height: 40,
-                                borderRadius: 20,
-                                backgroundColor: colors.gold,
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                              }}
-                            >
-                              <Feather name={chPlaying ? 'pause' : 'play'} size={18} color="#FFFFFF" />
-                            </Pressable>
-                            <Pressable
-                              onPress={() => isChActiveUrl && skipVerifiedAudio(-10)}
-                              style={{ paddingHorizontal: 9, paddingVertical: 6, borderRadius: 8, borderWidth: 1, borderColor: colors.outlineVariant, backgroundColor: colors.surface, flexDirection: 'row', alignItems: 'center', gap: 3, opacity: isChActiveUrl ? 1 : 0.5 }}
-                            >
-                              <Feather name="rotate-ccw" size={12} color={colors.textSecondary} />
-                              <Text style={{ fontFamily: 'Inter_600SemiBold', fontSize: 11, color: colors.textSecondary }}>10s</Text>
-                            </Pressable>
-                            <Pressable
-                              onPress={() => isChActiveUrl && skipVerifiedAudio(10)}
-                              style={{ paddingHorizontal: 9, paddingVertical: 6, borderRadius: 8, borderWidth: 1, borderColor: colors.outlineVariant, backgroundColor: colors.surface, flexDirection: 'row', alignItems: 'center', gap: 3, opacity: isChActiveUrl ? 1 : 0.5 }}
-                            >
-                              <Text style={{ fontFamily: 'Inter_600SemiBold', fontSize: 11, color: colors.textSecondary }}>10s</Text>
-                              <Feather name="rotate-cw" size={12} color={colors.textSecondary} />
-                            </Pressable>
-                          </View>
-
-                          <View style={{ flexDirection: 'row', alignItems: 'center', gap: 5 }}>
-                            {[0.75, 1, 1.25].map((r) => {
-                              const act = Math.abs(chRate - r) < 0.05;
-                              return (
-                                <Pressable
-                                  key={r}
-                                  onPress={() => setVerifiedAudioRate(r)}
-                                  style={{
-                                    paddingHorizontal: 8,
-                                    paddingVertical: 5,
-                                    borderRadius: 8,
-                                    borderWidth: 1,
-                                    borderColor: act ? colors.gold : colors.outlineVariant,
-                                    backgroundColor: act ? `${colors.gold}20` : colors.surface,
-                                  }}
-                                >
-                                  <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 11, color: act ? colors.gold : colors.textMuted }}>
-                                    {r}x
-                                  </Text>
-                                </Pressable>
-                              );
-                            })}
-                          </View>
-                        </View>
-
-                        {/* Interactive Tappable Progress Bar + Time Readout */}
-                        <View style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
-                          <Text style={{ fontFamily: 'Inter_600SemiBold', fontSize: 11, color: colors.textMuted, minWidth: 34 }}>
-                            {fmtTime(chCur)}
-                          </Text>
-                          <Pressable
-                            onLayout={(e) => setChapterBarWidth(Math.max(1, e.nativeEvent.layout.width))}
-                            onPress={(e) => {
-                              if (!isChActiveUrl || chDur <= 0) return;
-                              const ratio = Math.max(0, Math.min(1, e.nativeEvent.locationX / chapterBarWidth));
-                              seekVerifiedAudio(ratio * chDur);
-                            }}
-                            style={{ flex: 1, paddingVertical: 8, justifyContent: 'center' }}
-                          >
-                            <View style={{ height: 6, borderRadius: 999, backgroundColor: colors.outlineVariant, overflow: 'hidden' }}>
-                              <View style={{ height: '100%', width: `${Math.round(chPct * 100)}%`, backgroundColor: colors.gold, borderRadius: 999 }} />
-                            </View>
-                          </Pressable>
-                          <Text style={{ fontFamily: 'Inter_600SemiBold', fontSize: 11, color: colors.textMuted, minWidth: 34, textAlign: 'right' }}>
-                            {chLoading ? '…' : fmtTime(chDur)}
-                          </Text>
-                        </View>
-                      </View>
+                      {/* Custom Styled Audio Player Controls (isolated subscription so 250ms ticks never re-render root) */}
+                      <ChapterAudioPlayerBar
+                        audioUrl={activeChMeta.audioUrl}
+                        title={activeChMeta.title}
+                        colors={colors}
+                      />
 
                       {/* Follow-Along Phrasebook inside Listen & Read */}
                       {rawPhrases.length > 0 && (
@@ -5620,62 +5822,12 @@ export default function LanguageCourseTool({
                       }}
                     />
 
-                    <View style={{ gap: 8 }}>
-                      {filteredSamples.slice(0, lrAudioLimit).map((clip) => {
-                        const isPlayingClip = audioState.url === clip.audioUrl && audioState.playing;
-                        const fullText = clip.transcript || clip.label;
-                        return (
-                          <Pressable
-                            key={clip.slug}
-                            onPress={() => {
-                              if (isPlayingClip) {
-                                pauseVerifiedAudio();
-                              } else {
-                                playVerifiedAudio({ translation: fullText, audioFile: clip.audioUrl }, lrSlowMode ? 0.75 : 1.0);
-                              }
-                            }}
-                            style={{
-                              flexDirection: 'row',
-                              alignItems: 'flex-start',
-                              justifyContent: 'space-between',
-                              gap: 10,
-                              paddingHorizontal: 12,
-                              paddingVertical: 11,
-                              borderRadius: 12,
-                              borderWidth: 1,
-                              borderColor: isPlayingClip ? colors.kenyaGreen : colors.outlineVariant,
-                              backgroundColor: isPlayingClip ? `${colors.kenyaGreen}14` : colors.surface,
-                            }}
-                          >
-                            <View style={{ flex: 1, gap: 3 }}>
-                              <Text style={{ fontFamily: 'Inter_600SemiBold', fontSize: 13, color: isPlayingClip ? colors.kenyaGreen : colors.text, lineHeight: 19 }}>
-                                {fullText}
-                              </Text>
-                              {lrShowAudioEn && Boolean(clip.english) && (
-                                <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 12, color: colors.textSecondary, lineHeight: 17 }}>
-                                  {clip.english}
-                                </Text>
-                              )}
-                            </View>
-                            <View
-                              style={{
-                                width: 32,
-                                height: 32,
-                                borderRadius: 16,
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                                backgroundColor: isPlayingClip ? colors.kenyaGreen : colors.surfaceContainer,
-                                borderWidth: 1,
-                                borderColor: isPlayingClip ? colors.kenyaGreen : colors.outlineVariant,
-                                marginTop: 1,
-                              }}
-                            >
-                              <Feather name={isPlayingClip ? 'pause' : 'volume-2'} size={15} color={isPlayingClip ? '#FFFFFF' : colors.kenyaGreen} />
-                            </View>
-                          </Pressable>
-                        );
-                      })}
-                    </View>
+                    <AudioClipList
+                      clips={filteredSamples.slice(0, lrAudioLimit)}
+                      slowMode={lrSlowMode}
+                      showEn={lrShowAudioEn}
+                      colors={colors}
+                    />
                     {filteredSamples.length > lrAudioLimit && (
                       <Pressable
                         onPress={() => setLrAudioLimit((n) => n + 36)}

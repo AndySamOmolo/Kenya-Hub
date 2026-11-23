@@ -11,6 +11,8 @@
  * - Never falls back to synthetic browser Text-to-Speech (`window.speechSynthesis`).
  */
 
+import { loadAudioShard } from "@/lib/learning-shards";
+
 export interface AudioPlayableEntry {
   english?: string | null;
   translation: string;
@@ -251,34 +253,36 @@ const VERIFIED_AUDIO_HOSTS = [
   "archive.org",
 ];
 
-// Lazy in-memory per-language slug -> verified R2 URL index loaded from /data/learning/audio/<langId>.json
+// Lazy in-memory per-language slug -> verified R2 URL index backed by shared learning-shards cache
 const languageAudioIndexCache = new Map<string, Map<string, string>>();
-const languageAudioLoading = new Set<string>();
+const languageAudioInFlight = new Map<string, Promise<number>>();
 
 export async function preloadLanguageAudioIndex(langId?: string | null): Promise<number> {
   if (typeof window === "undefined" || !langId) return 0;
   const lid = langId.trim().toLowerCase();
   const existing = languageAudioIndexCache.get(lid);
   if (existing) return existing.size;
-  if (languageAudioLoading.has(lid)) return 0;
-  languageAudioLoading.add(lid);
-  try {
-    const res = await fetch(`/data/learning/audio/${encodeURIComponent(lid)}.json`);
-    if (!res.ok) return 0;
-    const data = await res.json();
-    const map = new Map<string, string>();
-    for (const clip of data?.clips ?? []) {
-      if (clip?.slug && typeof clip?.audioUrl === "string") {
-        map.set(String(clip.slug), clip.audioUrl);
+  const inflight = languageAudioInFlight.get(lid);
+  if (inflight) return inflight;
+
+  const task = loadAudioShard(lid)
+    .then((data) => {
+      const map = new Map<string, string>();
+      for (const clip of data?.clips ?? []) {
+        if (clip?.slug && typeof clip?.audioUrl === "string") {
+          map.set(String(clip.slug), clip.audioUrl);
+        }
       }
-    }
-    languageAudioIndexCache.set(lid, map);
-    return map.size;
-  } catch {
-    return 0;
-  } finally {
-    languageAudioLoading.delete(lid);
-  }
+      languageAudioIndexCache.set(lid, map);
+      return map.size;
+    })
+    .catch(() => 0)
+    .finally(() => {
+      languageAudioInFlight.delete(lid);
+    });
+
+  languageAudioInFlight.set(lid, task);
+  return task;
 }
 
 function lookupDynamicAudioUrl(entry?: AudioPlayableEntry | null, langId?: string | null): string | null {

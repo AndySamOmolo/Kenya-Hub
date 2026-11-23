@@ -302,7 +302,7 @@ export default function KUCCPSCalculatorPage() {
           <div
             role="status"
             aria-live="polite"
-            className="sticky bottom-3 z-30 sm:hidden rounded-full border border-amber-500/45 bg-bg-card/95 backdrop-blur-md px-4 py-2.5 shadow-lg flex items-center justify-between gap-3"
+            className="sticky bottom-3 z-30 sm:hidden rounded-full border border-amber-500/45 bg-bg-card sm:bg-bg-card/95 sm:backdrop-blur-md px-4 py-2.5 shadow-lg flex items-center justify-between gap-3"
           >
             <span className="text-xs font-semibold text-text-secondary truncate">Top Cluster Score</span>
             <span className="text-sm font-extrabold text-gold tabular-nums whitespace-nowrap">

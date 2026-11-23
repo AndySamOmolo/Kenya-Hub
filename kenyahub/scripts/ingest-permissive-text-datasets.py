@@ -670,7 +670,7 @@ def ingest_kaikki_raw_dump(lang_filter: str, max_rows: int, dry_run: bool, max_s
                 kaikki_st[wiki_name] = {"status": "completed", "parsed": len(batch), "added": added, "updatedAt": datetime.now(timezone.utc).isoformat()}
                 print(f"  -> Kaikki {wiki_name} ({lang_id}): parsed {len(batch)} entries, added {added} new.")
             else:
-                kaikki_st[wiki_name] = {"status": "completed", "parsed": 0, "added": 0, "updatedAt": datetime.now(timezone.utc).isoformat()}
+                kaikki_st[wiki_name] = {"status": "no_entries", "parsed": 0, "added": 0, "updatedAt": datetime.now(timezone.utc).isoformat()}
         except Exception as exc:
             print(f"  [warn] Kaikki {wiki_name} notice: {exc}")
 
@@ -750,11 +750,17 @@ def ingest_direct_sources(lang_filter: str, max_rows: int, dry_run: bool, lock: 
                         (BENCHMARKS_DIR / "strathmore-sheng-mental-health-14637639.json").write_text(json.dumps(sheng_out, indent=2, ensure_ascii=False), encoding="utf-8")
 
             elif src["id"] == "hornmt-orm-som":
-                eng_lines = HTTP_SESSION.get(f"{src['url']}/eng.txt", timeout=30).text.splitlines()
+                eng_resp = HTTP_SESSION.get(f"{src['url']}/eng.txt", timeout=30)
+                if not eng_resp.ok:
+                    direct_st[src["id"]] = {"status": "failed", "reason": f"HTTP {eng_resp.status_code} fetching eng.txt", "updatedAt": datetime.now(timezone.utc).isoformat()}
+                    print(f"  [warn] hornmt-orm-som eng.txt HTTP {eng_resp.status_code}; skipping.")
+                    continue
+                eng_lines = eng_resp.text.splitlines()
                 fetched_parallel: dict[str, list[str]] = {}
                 for code, lid in (("orm", "borana"), ("som", "somali")):
                     tr_resp = HTTP_SESSION.get(f"{src['url']}/{code}.txt", timeout=30)
                     if not tr_resp.ok:
+                        print(f"  [warn] hornmt-orm-som {code}.txt HTTP {tr_resp.status_code}; skipping {lid}.")
                         continue
                     tr_lines = tr_resp.text.splitlines()
                     fetched_parallel[code] = tr_lines
@@ -766,6 +772,9 @@ def ingest_direct_sources(lang_filter: str, max_rows: int, dry_run: bool, lock: 
                         if e.strip() and t.strip()
                     ]
                     added_by_lang[lid] = added_by_lang.get(lid, 0) + merge_entries_into_dictionary(lid, batch, "phrases")
+                if not fetched_parallel:
+                    direct_st[src["id"]] = {"status": "failed", "reason": "No parallel orm/som files fetched successfully", "updatedAt": datetime.now(timezone.utc).isoformat()}
+                    continue
                 BENCHMARKS_DIR.mkdir(parents=True, exist_ok=True)
                 orm_l = fetched_parallel.get("orm", [])
                 som_l = fetched_parallel.get("som", [])
@@ -1111,25 +1120,28 @@ def main() -> None:
 
     lock = load_text_lock()
     totals: dict[str, int] = {}
-    stages = [
-        ingest_hf_jobs(args.lang, args.max_rows, args.only_ungated, dry_run=False, lock=lock),
-        ingest_panlex_cc0(args.lang, args.max_rows, dry_run=False, lock=lock),
-        ingest_direct_sources(args.lang, args.max_rows, dry_run=False, lock=lock),
-        ingest_cldr_49_kenyan_locales(args.lang, dry_run=False, lock=lock),
-    ]
-    if args.include_kaikki_raw:
-        stages.append(ingest_kaikki_raw_dump(args.lang, args.max_rows, dry_run=False, lock=lock))
-    for res in stages:
+
+    def _accumulate(res: dict[str, int]) -> None:
         for k, v in res.items():
             totals[k] = totals.get(k, 0) + v
+        save_text_lock(lock)
+
+    _accumulate(ingest_hf_jobs(args.lang, args.max_rows, args.only_ungated, dry_run=False, lock=lock))
+    _accumulate(ingest_panlex_cc0(args.lang, args.max_rows, dry_run=False, lock=lock))
+    _accumulate(ingest_direct_sources(args.lang, args.max_rows, dry_run=False, lock=lock))
+    _accumulate(ingest_cldr_49_kenyan_locales(args.lang, dry_run=False, lock=lock))
+    if args.include_kaikki_raw:
+        _accumulate(ingest_kaikki_raw_dump(args.lang, args.max_rows, dry_run=False, lock=lock))
 
     if args.include_benchmarks:
         ingest_benchmarks(args.max_rows, dry_run=False, lock=lock)
+        save_text_lock(lock)
     if args.include_oer:
         ingest_oer_storybooks(args.max_rows, dry_run=False, lock=lock)
+        save_text_lock(lock)
     if args.build_freq_lists:
         build_web_frequency_lists(args.max_rows, dry_run=False, lock=lock)
-    save_text_lock(lock)
+        save_text_lock(lock)
 
     print(f"Completed permissive text ingestion: {json.dumps(totals)}")
 

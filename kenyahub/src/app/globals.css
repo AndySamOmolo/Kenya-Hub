@@ -1035,7 +1035,7 @@ input[type="number"] {
 
 html,
 body {
-  overflow-x: hidden;
+  overflow-x: clip;
   max-width: 100vw;
 }
 
@@ -1286,18 +1286,12 @@ html[data-adsense-state="active"] .kh-back-to-top {
 /* Distraction-free mode for active lessons & mini-games */
 body[data-kh-focus-mode="true"] footer { display: none !important; }
 
-/* Mobile table scroll hint */
+/* Mobile table scroll hint (compositor-friendly, avoids background-attachment paint storms) */
 @media (max-width: 640px) {
   .table-responsive {
     position: relative;
-    background:
-      linear-gradient(to right, var(--bg-card) 30%, transparent),
-      linear-gradient(to left, var(--bg-card) 30%, transparent) 100% 0,
-      radial-gradient(farthest-side at 0 50%, rgba(0, 0, 0, 0.18), transparent),
-      radial-gradient(farthest-side at 100% 50%, rgba(0, 0, 0, 0.18), transparent) 100% 0;
-    background-repeat: no-repeat;
-    background-size: 28px 100%, 28px 100%, 10px 100%, 10px 100%;
-    background-attachment: local, local, scroll, scroll;
+    scrollbar-width: thin;
+    box-shadow: inset -10px 0 10px -10px rgba(0, 0, 0, 0.18);
   }
 }
 

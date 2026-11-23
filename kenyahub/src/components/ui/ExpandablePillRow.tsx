@@ -18,6 +18,32 @@ function countPillChildren(children: React.ReactNode): number {
   return count;
 }
 
+function getActivePillKey(children: React.ReactNode, indexRef = { current: 0 }): string {
+  let found = "";
+  React.Children.forEach(children, (child) => {
+    if (found || child === null || child === undefined || typeof child === "boolean") return;
+    if (React.isValidElement(child)) {
+      if (child.type === React.Fragment) {
+        found = getActivePillKey((child.props as { children?: React.ReactNode }).children, indexRef);
+        return;
+      }
+      const idx = indexRef.current++;
+      const props = child.props as Record<string, unknown>;
+      if (
+        props["data-active"] === "true" ||
+        props["data-active"] === true ||
+        props["aria-pressed"] === "true" ||
+        props["aria-pressed"] === true ||
+        props["aria-selected"] === "true" ||
+        props["aria-selected"] === true
+      ) {
+        found = child.key != null ? String(child.key) : String(idx);
+      }
+    }
+  });
+  return found;
+}
+
 function enhanceCollapsedChildren(children: React.ReactNode): React.ReactNode {
   return React.Children.map(children, (child) => {
     if (!React.isValidElement(child)) return child;
@@ -115,13 +141,15 @@ export default function ExpandablePillRow({
   const [expanded, setExpanded] = useState(false);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const count = countPillChildren(children);
+  const activePillKey = getActivePillKey(children);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(count > threshold);
 
-  // Spring edge-bounce state (in px) when hitting left/right scroll boundaries
-  const [bounceOffset, setBounceOffset] = useState(0);
+  // Spring edge-bounce driven via direct DOM transform (avoids React re-renders per drag/touch pixel)
+  const bounceOffsetRef = useRef(0);
   const [isDragging, setIsDragging] = useState(false);
   const bounceTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const shadowRafRef = useRef<number | null>(null);
   const lastScrollLeftRef = useRef(0);
   const lastScrollTimeRef = useRef(0);
   const touchStartXRef = useRef<number | null>(null);
@@ -135,15 +163,30 @@ export default function ExpandablePillRow({
   const wasAtRightRef = useRef(false);
   const didPeekMountRef = useRef(false);
 
+  const applyBounceTransform = useCallback((offset: number, immediate: boolean) => {
+    bounceOffsetRef.current = offset;
+    const el = scrollContainerRef.current;
+    if (!el) return;
+    if (offset !== 0) {
+      const scaleX = 1 + Math.min(0.02, Math.abs(offset) * 0.0012);
+      el.style.transformOrigin = offset >= 0 ? "left center" : "right center";
+      el.style.transition = immediate ? "none" : "transform 120ms cubic-bezier(0.22, 1, 0.36, 1)";
+      el.style.transform = `translate3d(${offset}px, 0, 0) scaleX(${scaleX})`;
+    } else {
+      el.style.transition = immediate ? "none" : "transform 360ms cubic-bezier(0.34, 1.56, 0.64, 1)";
+      el.style.transform = "translate3d(0px, 0, 0) scaleX(1)";
+    }
+  }, []);
+
   const triggerEdgeBounce = useCallback((direction: "left" | "right", intensity = 11) => {
     const clamped = Math.min(18, Math.max(6, intensity));
     const signed = direction === "left" ? clamped : -clamped;
-    setBounceOffset(signed);
+    applyBounceTransform(signed, false);
     if (bounceTimeoutRef.current) clearTimeout(bounceTimeoutRef.current);
     bounceTimeoutRef.current = setTimeout(() => {
-      setBounceOffset(0);
+      applyBounceTransform(0, false);
     }, 240);
-  }, []);
+  }, [applyBounceTransform]);
 
   const updateScrollShadows = useCallback(() => {
     const el = scrollContainerRef.current;
@@ -180,9 +223,18 @@ export default function ExpandablePillRow({
     setCanScrollRight((prev) => (prev === hasRight ? prev : hasRight));
   }, [expanded, triggerEdgeBounce]);
 
+  const scheduleUpdateScrollShadows = useCallback(() => {
+    if (shadowRafRef.current !== null) return;
+    shadowRafRef.current = requestAnimationFrame(() => {
+      shadowRafRef.current = null;
+      updateScrollShadows();
+    });
+  }, [updateScrollShadows]);
+
   useEffect(() => {
     return () => {
       if (bounceTimeoutRef.current) clearTimeout(bounceTimeoutRef.current);
+      if (shadowRafRef.current !== null) cancelAnimationFrame(shadowRafRef.current);
     };
   }, []);
 
@@ -203,22 +255,21 @@ export default function ExpandablePillRow({
   }, [expanded, triggerEdgeBounce]);
 
   useEffect(() => {
-    updateScrollShadows();
+    scheduleUpdateScrollShadows();
     const el = scrollContainerRef.current;
     if (!el || expanded) return;
 
     let ro: ResizeObserver | null = null;
     if (typeof ResizeObserver !== "undefined") {
-      ro = new ResizeObserver(() => updateScrollShadows());
+      ro = new ResizeObserver(() => scheduleUpdateScrollShadows());
       ro.observe(el);
-      Array.from(el.children).forEach((child) => ro?.observe(child));
     }
-    window.addEventListener("resize", updateScrollShadows, { passive: true });
+    window.addEventListener("resize", scheduleUpdateScrollShadows, { passive: true });
     return () => {
       ro?.disconnect();
-      window.removeEventListener("resize", updateScrollShadows);
+      window.removeEventListener("resize", scheduleUpdateScrollShadows);
     };
-  }, [children, expanded, updateScrollShadows]);
+  }, [count, expanded, scheduleUpdateScrollShadows]);
 
   useEffect(() => {
     if (expanded) return;
@@ -236,9 +287,9 @@ export default function ExpandablePillRow({
       left: Math.max(0, targetLeft),
       behavior: "smooth",
     });
-    const timer = setTimeout(updateScrollShadows, 260);
+    const timer = setTimeout(scheduleUpdateScrollShadows, 260);
     return () => clearTimeout(timer);
-  }, [children, expanded, updateScrollShadows]);
+  }, [activePillKey, count, expanded, scheduleUpdateScrollShadows]);
 
   // Handle wheel overscroll at left/right boundaries for a tactile edge bounce
   const handleWheel = useCallback(
@@ -279,21 +330,21 @@ export default function ExpandablePillRow({
       const dx = e.touches[0].clientX - touchStartXRef.current;
       if (dx > 6 && el.scrollLeft <= 1) {
         const pull = Math.min(16, Math.round(dx * 0.25));
-        setBounceOffset(pull);
+        applyBounceTransform(pull, true);
       } else if (dx < -6 && el.scrollLeft >= maxScroll - 1) {
         const pull = Math.min(16, Math.round(Math.abs(dx) * 0.25));
-        setBounceOffset(-pull);
+        applyBounceTransform(-pull, true);
       }
     },
-    [expanded]
+    [expanded, applyBounceTransform]
   );
 
   const handleTouchEnd = useCallback(() => {
     touchStartXRef.current = null;
-    if (bounceOffset !== 0) {
-      setBounceOffset(0);
+    if (bounceOffsetRef.current !== 0) {
+      applyBounceTransform(0, false);
     }
-  }, [bounceOffset]);
+  }, [applyBounceTransform]);
 
   // Desktop mouse grab-to-scroll with rubber-band edge resistance
   const handleMouseDown = useCallback(
@@ -328,26 +379,26 @@ export default function ExpandablePillRow({
       const rawTarget = drag.startScrollLeft - dx;
       if (rawTarget < 0) {
         el.scrollLeft = 0;
-        setBounceOffset(Math.min(16, Math.round(Math.abs(rawTarget) * 0.28)));
+        applyBounceTransform(Math.min(16, Math.round(Math.abs(rawTarget) * 0.28)), true);
       } else if (rawTarget > maxScroll) {
         el.scrollLeft = maxScroll;
-        setBounceOffset(-Math.min(16, Math.round((rawTarget - maxScroll) * 0.28)));
+        applyBounceTransform(-Math.min(16, Math.round((rawTarget - maxScroll) * 0.28)), true);
       } else {
         el.scrollLeft = rawTarget;
-        if (bounceOffset !== 0) setBounceOffset(0);
+        if (bounceOffsetRef.current !== 0) applyBounceTransform(0, true);
       }
     },
-    [expanded, bounceOffset]
+    [expanded, applyBounceTransform]
   );
 
   const handleMouseUpOrLeave = useCallback(() => {
     if (!pointerDragRef.current.active) return;
     pointerDragRef.current.active = false;
     setIsDragging(false);
-    if (bounceOffset !== 0) {
-      setBounceOffset(0);
+    if (bounceOffsetRef.current !== 0) {
+      applyBounceTransform(0, false);
     }
-  }, [bounceOffset]);
+  }, [applyBounceTransform]);
 
   // Keyboard Left/Right/Home/End navigation across pills
   const handleKeyDown = useCallback((e: React.KeyboardEvent<HTMLDivElement>) => {
@@ -409,17 +460,6 @@ export default function ExpandablePillRow({
 
   const bounceTransformStyle: React.CSSProperties = !expanded
     ? {
-        transform:
-          bounceOffset !== 0
-            ? `translate3d(${bounceOffset}px, 0, 0) scaleX(${
-                1 + Math.min(0.02, Math.abs(bounceOffset) * 0.0012)
-              })`
-            : "translate3d(0px, 0, 0) scaleX(1)",
-        transformOrigin: bounceOffset >= 0 ? "left center" : "right center",
-        transition:
-          bounceOffset !== 0
-            ? "transform 120ms cubic-bezier(0.22, 1, 0.36, 1)"
-            : "transform 360ms cubic-bezier(0.34, 1.56, 0.64, 1)",
         cursor: isDragging ? "grabbing" : canScrollLeft || canScrollRight ? "grab" : undefined,
       }
     : {};
@@ -437,7 +477,7 @@ export default function ExpandablePillRow({
       >
         <div
           ref={scrollContainerRef}
-          onScroll={updateScrollShadows}
+          onScroll={scheduleUpdateScrollShadows}
           onWheel={handleWheel}
           onTouchStart={handleTouchStart}
           onTouchMove={handleTouchMove}
@@ -513,23 +553,11 @@ export default function ExpandablePillRow({
           overflow: "hidden",
         }}
       >
-        {/* Left/Right Edge Glow Pulse on Bounce */}
-        {!expanded && bounceOffset > 0 && (
-          <span
-            aria-hidden="true"
-            className="pointer-events-none absolute left-0 top-1 bottom-1 w-2.5 rounded-r-full bg-gold/35 blur-[2px] z-10 transition-opacity"
-          />
-        )}
-        {!expanded && bounceOffset < 0 && (
-          <span
-            aria-hidden="true"
-            className="pointer-events-none absolute right-0 top-1 bottom-1 w-2.5 rounded-l-full bg-gold/35 blur-[2px] z-10 transition-opacity"
-          />
-        )}
+
 
         <div
           ref={scrollContainerRef}
-          onScroll={updateScrollShadows}
+          onScroll={scheduleUpdateScrollShadows}
           onWheel={handleWheel}
           onTouchStart={handleTouchStart}
           onTouchMove={handleTouchMove}

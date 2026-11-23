@@ -24,6 +24,8 @@ const databases = new Databases(client);
 async function uploadBlogs() {
   console.log(`Found ${STATIC_BLOG_POSTS.length} static blog posts in src/data/blog-posts.ts. Starting Appwrite sync...`);
 
+  let failedCount = 0;
+
   for (const post of STATIC_BLOG_POSTS) {
     try {
       const existingDocs = await databases.listDocuments(DATABASE_ID, COLLECTION_ID, [
@@ -54,12 +56,22 @@ async function uploadBlogs() {
         console.log(`Created new blog: ${post.title}`);
       }
     } catch (error: unknown) {
+      failedCount += 1;
       const msg = error instanceof Error ? error.message : String(error);
       console.error(`Failed to sync ${post.slug}:`, msg);
     }
   }
 
+  if (failedCount > 0) {
+    console.error(`\nBlog sync finished with ${failedCount} failure(s).`);
+    process.exitCode = 1;
+    return;
+  }
+
   console.log("\nBlog sync complete!");
 }
 
-uploadBlogs().catch(console.error);
+uploadBlogs().catch((err) => {
+  console.error(err);
+  process.exit(1);
+});

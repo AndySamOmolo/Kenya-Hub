@@ -144,14 +144,19 @@ export default function KenyanTranslatorPage() {
   }, [debouncedQuery, sourceLanguage, targetLanguage]);
 
   useEffect(() => {
-    const r2Langs = Object.values(OPEN_CORPUS_INDEX.languages).filter((l) => (l.r2AudioClips ?? 0) > 0).map((l) => l.languageId);
-    const toPreload =
-      targetLanguage === "all"
-        ? r2Langs
-        : [targetLanguage, sourceLanguage].filter((l) => l && l !== "english" && l !== "all");
+    const toPreload = Array.from(
+      new Set(
+        [targetLanguage, sourceLanguage].filter(
+          (l) => l && l !== "english" && l !== "all" && (OPEN_CORPUS_INDEX.languages[l]?.r2AudioClips ?? 0) > 0
+        )
+      )
+    );
+    if (toPreload.length === 0) return;
+    let active = true;
     Promise.all(toPreload.map((l) => preloadLanguageAudioIndex(l))).then((counts) => {
-      if (counts.some((c) => c > 0)) setAudioIndexTick((t) => t + 1);
+      if (active && counts.some((c) => c > 0)) setAudioIndexTick((t) => t + 1);
     });
+    return () => { active = false; };
   }, [sourceLanguage, targetLanguage]);
 
   const openContributeModal = useCallback((langName?: string, defaultEnglish?: string) => {
@@ -410,9 +415,27 @@ export default function KenyanTranslatorPage() {
     [dedupedSearchResults, audioIndexTick]
   );
 
+  // Lazily load audio indexes only for languages present in current search results
+  useEffect(() => {
+    if (dedupedSearchResults.length === 0) return;
+    const resultLangs = Array.from(
+      new Set(
+        dedupedSearchResults
+          .map((r) => r.languageId)
+          .filter((l) => l && (OPEN_CORPUS_INDEX.languages[l]?.r2AudioClips ?? 0) > 0)
+      )
+    );
+    if (resultLangs.length === 0) return;
+    let active = true;
+    Promise.all(resultLangs.map((l) => preloadLanguageAudioIndex(l))).then((counts) => {
+      if (active && counts.some((c) => c > 0)) setAudioIndexTick((t) => t + 1);
+    });
+    return () => { active = false; };
+  }, [dedupedSearchResults]);
+
   const filteredSearchResults = useMemo(
     () => { void audioIndexTick; return audioOnly ? dedupedSearchResults.filter((r) => hasVerifiedAudio(r.entry, r.languageId)) : dedupedSearchResults; },
-    [dedupedSearchResults, audioOnly]
+    [dedupedSearchResults, audioOnly, audioIndexTick]
   );
 
   const visibleSearchResults = useMemo(
@@ -434,10 +457,18 @@ export default function KenyanTranslatorPage() {
     () => (OPEN_CORPUS_INDEX.languages[browseLangId]?.nativeAudioSamples as AudioShardClip[] | undefined) ?? []
   );
 
+  const browseAudioCount = useMemo(() => {
+    const r2Count = OPEN_CORPUS_INDEX.languages[browseLangId]?.r2AudioClips ?? 0;
+    return Math.max(r2Count, browseAudioClips.length);
+  }, [browseLangId, browseAudioClips.length]);
+
   useEffect(() => {
     let active = true;
     const preview = (OPEN_CORPUS_INDEX.languages[browseLangId]?.nativeAudioSamples as AudioShardClip[] | undefined) ?? [];
     setBrowseAudioClips(preview);
+    if (activeCategory !== "__audio__") {
+      return () => { active = false; };
+    }
     const totalR2 = OPEN_CORPUS_INDEX.languages[browseLangId]?.r2AudioClips ?? 0;
     if (totalR2 > 0) {
       loadAudioShard(browseLangId).then((res) => {
@@ -449,9 +480,11 @@ export default function KenyanTranslatorPage() {
     return () => {
       active = false;
     };
-  }, [browseLangId]);
+  }, [browseLangId, activeCategory]);
 
   const browseAudioEntries = useMemo(() => {
+    if (activeCategory !== "__audio__") return [];
+    void audioIndexTick;
     const seen = new Set<string>();
     const seenUrls = new Set<string>();
     const list: DictEntry[] = [];
@@ -488,7 +521,7 @@ export default function KenyanTranslatorPage() {
       });
     }
     return list;
-  }, [browseDict, browseAudioClips]);
+  }, [activeCategory, browseDict, browseAudioClips, audioIndexTick]);
 
   const categoryEntries = useMemo(() => {
     if (!activeCategory || !browseDict) return [];
@@ -537,17 +570,24 @@ export default function KenyanTranslatorPage() {
   // Stats
   const totalEntries = TOTAL_DICTIONARY_ENTRIES;
 
-  // ─── Daily Word Feature (Seeded Deterministically by Calendar Date YYYY-MM-DD for Zero Hydration Flicker) ───
+  // ─── Daily Word Feature (Deterministic SSR fallback + client-side date seed in useEffect to avoid static-export hydration mismatch) ───
   const [randomWord, setRandomWord] = useState<{ entry: DictEntry; langName: string; langId: string } | null>(() => {
-    if (!INITIAL_RANDOM_WORDS.length) return null;
+    const sample = INITIAL_RANDOM_WORDS[0];
+    return sample ? { entry: sample.entry, langName: sample.langName, langId: sample.langId } : null;
+  });
+
+  useEffect(() => {
+    if (!INITIAL_RANDOM_WORDS.length) return;
     const dateStr = new Date().toISOString().slice(0, 10);
     let hash = 0;
     for (let i = 0; i < dateStr.length; i++) {
       hash = (hash * 31 + dateStr.charCodeAt(i)) >>> 0;
     }
     const sample = INITIAL_RANDOM_WORDS[hash % INITIAL_RANDOM_WORDS.length];
-    return sample ? { entry: sample.entry, langName: sample.langName, langId: sample.langId } : null;
-  });
+    if (sample) {
+      setRandomWord({ entry: sample.entry, langName: sample.langName, langId: sample.langId });
+    }
+  }, []);
 
   const pickBalancedRandomWord = useCallback(
     (excludeLangId?: string) => {
@@ -1039,7 +1079,7 @@ export default function KenyanTranslatorPage() {
                     Browse {browseMeta.languageName} by Category
                   </h3>
                   <ExpandablePillRow className="[&>button]:!h-8 [&>button]:!w-8 [&>button]:rounded-full [&_.expandable-pill-row]:px-1 [&_.expandable-pill-row]:scroll-pl-1">
-                    {browseAudioEntries.length > 0 && (
+                    {browseAudioCount > 0 && (
                       <button
                         key="__audio__"
                         onClick={() => { setActiveCategory(activeCategory === "__audio__" ? null : "__audio__"); setCategoryPage(1); }}
@@ -1050,7 +1090,7 @@ export default function KenyanTranslatorPage() {
                         }`}
                       >
                         <DynamicIcon emoji="🔊" className="w-3.5 h-3.5" />
-                        With Audio ({browseAudioEntries.length.toLocaleString("en-KE")})
+                        With Audio ({(activeCategory === "__audio__" && browseAudioEntries.length > 0 ? browseAudioEntries.length : browseAudioCount).toLocaleString("en-KE")})
                       </button>
                     )}
                     {ALL_CATEGORY_IDS.map((cat) => {

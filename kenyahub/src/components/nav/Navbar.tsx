@@ -19,6 +19,10 @@ import { useState, useEffect, useMemo, useRef, useDeferredValue } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { TOOL_CATEGORIES, TOOLS } from "@/lib/tools-registry";
+
+const TOOLS_BY_CATEGORY: Record<string, typeof TOOLS> = Object.fromEntries(
+  TOOL_CATEGORIES.map((cat) => [cat.id, TOOLS.filter((t) => t.category === cat.id)])
+);
 import { useTheme } from "@/components/ThemeProvider";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 
@@ -444,7 +448,7 @@ export default function Navbar() {
 
                         <div className="grid grid-cols-3 gap-x-6 gap-y-4 pt-1 max-h-[60vh] overflow-y-auto pr-2">
                           {TOOL_CATEGORIES.map((cat) => {
-                            const catTools = TOOLS.filter((t) => t.category === cat.id);
+                            const catTools = TOOLS_BY_CATEGORY[cat.id] ?? [];
                             return (
                               <div key={cat.id}>
                                 <Link

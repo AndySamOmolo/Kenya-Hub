@@ -184,7 +184,7 @@ function main() {
   const bucket = args.find((a) => a.startsWith("--bucket="))?.split("=")[1] || "kenyahub-audio";
 
   console.log("=== Cloudflare R2 Zero-Egress Audio & KSL Sync Pipeline ===");
-  console.log(`Bucket: ${bucket} | Mode: ${dryRun ? "MANIFEST GENERATION / DRY-RUN" : "LIVE R2 UPLOAD"}`);
+  console.log(`Bucket: ${bucket} | Mode: MANIFEST GENERATION${dryRun ? " (DRY-RUN)" : ""}`);
 
   const manifest = {
     version: "2.0.0",

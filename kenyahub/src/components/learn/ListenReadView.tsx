@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { memo, useEffect, useMemo, useRef, useState } from "react";
 import {
   BookOpen,
   CheckCircle2,
@@ -28,7 +28,7 @@ import {
   type QuizQuestionItem,
   type ReadersShard,
 } from "@/lib/learning-shards";
-import { playLanguageAudio } from "@/lib/language-audio";
+import { playLanguageAudio, stopLanguageAudio } from "@/lib/language-audio";
 import { useDebouncedValue } from "@/lib/useDebouncedValue";
 
 interface ListenReadViewProps {
@@ -37,6 +37,183 @@ interface ListenReadViewProps {
 }
 
 type SubTab = "listen" | "read" | "quiz";
+
+function formatAudioTime(sec: number) {
+  if (!Number.isFinite(sec) || sec < 0) return "0:00";
+  const m = Math.floor(sec / 60);
+  const s = Math.floor(sec % 60);
+  return `${m}:${s < 10 ? "0" : ""}${s}`;
+}
+
+const ChapterAudioPlayer = memo(function ChapterAudioPlayer({
+  chapterId,
+  audioUrl,
+}: {
+  chapterId: string;
+  audioUrl: string;
+}) {
+  const chapterAudioRef = useRef<HTMLAudioElement | null>(null);
+  const [chPlaying, setChPlaying] = useState(false);
+  const [chLoading, setChLoading] = useState(false);
+  const [chCurrentTime, setChCurrentTime] = useState(0);
+  const [chDuration, setChDuration] = useState(0);
+  const [chRate, setChRate] = useState<number>(1.0);
+
+  useEffect(() => {
+    const el = chapterAudioRef.current;
+    if (el) {
+      el.pause();
+      el.currentTime = 0;
+      el.playbackRate = chRate;
+    }
+    setChPlaying(false);
+    setChLoading(false);
+    setChCurrentTime(0);
+    setChDuration(0);
+  }, [chapterId]);
+
+  useEffect(() => {
+    if (chapterAudioRef.current) {
+      chapterAudioRef.current.playbackRate = chRate;
+    }
+  }, [chRate]);
+
+  useEffect(() => {
+    const el = chapterAudioRef.current;
+    return () => {
+      if (el) {
+        el.pause();
+      }
+    };
+  }, []);
+
+  const toggleChapterPlay = () => {
+    const el = chapterAudioRef.current;
+    if (!el) return;
+    if (chPlaying) {
+      el.pause();
+      setChPlaying(false);
+    } else {
+      setChLoading(true);
+      el.playbackRate = chRate;
+      el.play()
+        .then(() => {
+          setChPlaying(true);
+          setChLoading(false);
+        })
+        .catch(() => {
+          setChPlaying(false);
+          setChLoading(false);
+        });
+    }
+  };
+
+  const skipChapterTime = (delta: number) => {
+    const el = chapterAudioRef.current;
+    if (!el) return;
+    const dur = Number.isFinite(el.duration) && el.duration > 0 ? el.duration : chDuration;
+    const next = Math.max(0, Math.min(dur || el.currentTime + delta, el.currentTime + delta));
+    el.currentTime = next;
+    setChCurrentTime(next);
+  };
+
+  return (
+    <>
+      {/* Hidden native audio element driven by custom styled player */}
+      <audio
+        ref={chapterAudioRef}
+        src={audioUrl}
+        preload="metadata"
+        onLoadedMetadata={(e) => setChDuration(e.currentTarget.duration || 0)}
+        onTimeUpdate={(e) => setChCurrentTime(e.currentTarget.currentTime || 0)}
+        onEnded={() => setChPlaying(false)}
+        onPause={() => setChPlaying(false)}
+        onPlay={() => {
+          setChPlaying(true);
+          setChLoading(false);
+        }}
+      />
+
+      {/* Custom Styled Audio Player Bar */}
+      <div className="rounded-xl border border-border bg-bg-card p-3 sm:p-3.5 space-y-2.5 shadow-sm overflow-hidden">
+        <div className="flex flex-wrap items-center justify-between gap-2">
+          <div className="flex items-center gap-2 shrink-0">
+            <button
+              type="button"
+              onClick={toggleChapterPlay}
+              aria-label={chPlaying ? "Pause chapter audio" : "Play chapter audio"}
+              className="h-10 w-10 shrink-0 rounded-full bg-gold text-black flex items-center justify-center shadow-sm hover:bg-gold-light transition-colors cursor-pointer"
+            >
+              {chPlaying ? <Pause className="h-4 w-4" /> : <Play className="h-4 w-4 ml-0.5" />}
+            </button>
+
+            <div className="flex items-center gap-1 shrink-0">
+              <button
+                type="button"
+                onClick={() => skipChapterTime(-10)}
+                title="Back 10 seconds"
+                className="inline-flex items-center gap-0.5 rounded-lg border border-border bg-bg-elevated px-2 py-1 text-[11px] font-semibold text-text-secondary hover:border-gold/50 hover:text-gold cursor-pointer"
+              >
+                <RotateCcw className="h-3 w-3" />
+                <span>10s</span>
+              </button>
+              <button
+                type="button"
+                onClick={() => skipChapterTime(10)}
+                title="Forward 10 seconds"
+                className="inline-flex items-center gap-0.5 rounded-lg border border-border bg-bg-elevated px-2 py-1 text-[11px] font-semibold text-text-secondary hover:border-gold/50 hover:text-gold cursor-pointer"
+              >
+                <span>10s</span>
+                <RotateCw className="h-3 w-3" />
+              </button>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-1 shrink-0">
+            {[0.75, 1, 1.25].map((r) => (
+              <button
+                key={r}
+                type="button"
+                onClick={() => setChRate(r)}
+                className={`rounded-lg border px-2 py-1 text-[11px] font-bold transition-colors cursor-pointer ${
+                  chRate === r
+                    ? "border-gold bg-gold/15 text-gold"
+                    : "border-border bg-bg-elevated text-text-muted hover:text-text-primary"
+                }`}
+              >
+                {r}x
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Interactive Seek Scrubber + Time Readout */}
+        <div className="flex items-center gap-2.5">
+          <span className="text-[11px] font-mono text-text-muted w-9 shrink-0">
+            {formatAudioTime(chCurrentTime)}
+          </span>
+          <input
+            type="range"
+            min={0}
+            max={chDuration || 100}
+            step={0.5}
+            value={Math.min(chCurrentTime, chDuration || 100)}
+            onChange={(e) => {
+              const t = Number(e.target.value);
+              if (chapterAudioRef.current) chapterAudioRef.current.currentTime = t;
+              setChCurrentTime(t);
+            }}
+            aria-label="Audio playback position"
+            className="flex-1 h-1.5 accent-gold cursor-pointer"
+          />
+          <span className="text-[11px] font-mono text-text-muted w-9 text-right shrink-0">
+            {chLoading ? "…" : formatAudioTime(chDuration)}
+          </span>
+        </div>
+      </div>
+    </>
+  );
+});
 
 export default function ListenReadView({ languageId, languageName }: ListenReadViewProps) {
   const langMeta = getLanguageOpenCorpus(languageId);
@@ -64,19 +241,7 @@ export default function ListenReadView({ languageId, languageName }: ListenReadV
   const [slowMode, setSlowMode] = useState(false);
   const [showAudioEnglish, setShowAudioEnglish] = useState(true);
   const [activeChapterId, setActiveChapterId] = useState<string>(chapters[0]?.id ?? "");
-  const chapterAudioRef = useRef<HTMLAudioElement | null>(null);
-  const [chPlaying, setChPlaying] = useState(false);
-  const [chLoading, setChLoading] = useState(false);
-  const [chCurrentTime, setChCurrentTime] = useState(0);
-  const [chDuration, setChDuration] = useState(0);
-  const [chRate, setChRate] = useState<number>(1.0);
 
-  const formatAudioTime = (sec: number) => {
-    if (!Number.isFinite(sec) || sec < 0) return "0:00";
-    const m = Math.floor(sec / 60);
-    const s = Math.floor(sec % 60);
-    return `${m}:${s < 10 ? "0" : ""}${s}`;
-  };
 
   // Reading state
   const [readers, setReaders] = useState<ReadersShard | null>(null);
@@ -161,65 +326,25 @@ export default function ListenReadView({ languageId, languageName }: ListenReadV
   }, [rawChapterPhrases, debouncedChapterSearch]);
 
   useEffect(() => {
-    const el = chapterAudioRef.current;
-    if (el) {
-      el.pause();
-      el.currentTime = 0;
-      el.playbackRate = chRate;
-    }
-    setChPlaying(false);
-    setChLoading(false);
-    setChCurrentTime(0);
-    setChDuration(0);
     setPhraseLimit(30);
   }, [activeChapter?.id]);
 
   useEffect(() => {
-    if (chapterAudioRef.current) {
-      chapterAudioRef.current.playbackRate = chRate;
-    }
-  }, [chRate]);
-
-  const toggleChapterPlay = () => {
-    const el = chapterAudioRef.current;
-    if (!el) return;
-    if (chPlaying) {
-      el.pause();
-      setChPlaying(false);
-    } else {
-      setChLoading(true);
-      el.playbackRate = chRate;
-      el.play()
-        .then(() => {
-          setChPlaying(true);
-          setChLoading(false);
-        })
-        .catch(() => {
-          setChPlaying(false);
-          setChLoading(false);
-        });
-    }
-  };
-
-  const skipChapterTime = (delta: number) => {
-    const el = chapterAudioRef.current;
-    if (!el) return;
-    const dur = Number.isFinite(el.duration) && el.duration > 0 ? el.duration : chDuration;
-    const next = Math.max(0, Math.min(dur || el.currentTime + delta, el.currentTime + delta));
-    el.currentTime = next;
-    setChCurrentTime(next);
-  };
+    return () => {
+      stopLanguageAudio();
+    };
+  }, []);
 
   const handlePlayClip = (clip: AudioShardClip) => {
     setPlayingSlug(clip.slug);
     playLanguageAudio(
       { translation: clip.label, audioFile: clip.audioUrl },
       languageId,
-      { rate: slowMode ? 0.75 : 1.0 }
+      {
+        rate: slowMode ? 0.75 : 1.0,
+        onEnd: () => setPlayingSlug((cur) => (cur === clip.slug ? null : cur)),
+      }
     );
-    window.setTimeout(() => {
-      setPlayingSlug((cur) => (cur === clip.slug ? null : cur));
-    }, 1800);
   };
 
   const handleSelectChoice = (idx: number) => {
@@ -373,98 +498,7 @@ export default function ListenReadView({ languageId, languageName }: ListenReadV
                   )}
                 </div>
 
-                {/* Hidden native audio element driven by custom styled player */}
-                <audio
-                  ref={chapterAudioRef}
-                  src={activeChapter.audioUrl}
-                  preload="metadata"
-                  onLoadedMetadata={(e) => setChDuration(e.currentTarget.duration || 0)}
-                  onTimeUpdate={(e) => setChCurrentTime(e.currentTarget.currentTime || 0)}
-                  onEnded={() => setChPlaying(false)}
-                  onPause={() => setChPlaying(false)}
-                  onPlay={() => {
-                    setChPlaying(true);
-                    setChLoading(false);
-                  }}
-                />
-
-                {/* Custom Styled Audio Player Bar */}
-                <div className="rounded-xl border border-border bg-bg-card p-3 sm:p-3.5 space-y-2.5 shadow-sm overflow-hidden">
-                  <div className="flex flex-wrap items-center justify-between gap-2">
-                    <div className="flex items-center gap-2 shrink-0">
-                      <button
-                        type="button"
-                        onClick={toggleChapterPlay}
-                        aria-label={chPlaying ? "Pause chapter audio" : "Play chapter audio"}
-                        className="h-10 w-10 shrink-0 rounded-full bg-gold text-black flex items-center justify-center shadow-sm hover:bg-gold-light transition-colors cursor-pointer"
-                      >
-                        {chPlaying ? <Pause className="h-4 w-4" /> : <Play className="h-4 w-4 ml-0.5" />}
-                      </button>
-
-                      <div className="flex items-center gap-1 shrink-0">
-                        <button
-                          type="button"
-                          onClick={() => skipChapterTime(-10)}
-                          title="Back 10 seconds"
-                          className="inline-flex items-center gap-0.5 rounded-lg border border-border bg-bg-elevated px-2 py-1 text-[11px] font-semibold text-text-secondary hover:border-gold/50 hover:text-gold cursor-pointer"
-                        >
-                          <RotateCcw className="h-3 w-3" />
-                          <span>10s</span>
-                        </button>
-                        <button
-                          type="button"
-                          onClick={() => skipChapterTime(10)}
-                          title="Forward 10 seconds"
-                          className="inline-flex items-center gap-0.5 rounded-lg border border-border bg-bg-elevated px-2 py-1 text-[11px] font-semibold text-text-secondary hover:border-gold/50 hover:text-gold cursor-pointer"
-                        >
-                          <span>10s</span>
-                          <RotateCw className="h-3 w-3" />
-                        </button>
-                      </div>
-                    </div>
-
-                    <div className="flex items-center gap-1 shrink-0">
-                      {[0.75, 1, 1.25].map((r) => (
-                        <button
-                          key={r}
-                          type="button"
-                          onClick={() => setChRate(r)}
-                          className={`rounded-lg border px-2 py-1 text-[11px] font-bold transition-colors cursor-pointer ${
-                            chRate === r
-                              ? "border-gold bg-gold/15 text-gold"
-                              : "border-border bg-bg-elevated text-text-muted hover:text-text-primary"
-                          }`}
-                        >
-                          {r}x
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* Interactive Seek Scrubber + Time Readout */}
-                  <div className="flex items-center gap-2.5">
-                    <span className="text-[11px] font-mono text-text-muted w-9 shrink-0">
-                      {formatAudioTime(chCurrentTime)}
-                    </span>
-                    <input
-                      type="range"
-                      min={0}
-                      max={chDuration || 100}
-                      step={0.5}
-                      value={Math.min(chCurrentTime, chDuration || 100)}
-                      onChange={(e) => {
-                        const t = Number(e.target.value);
-                        if (chapterAudioRef.current) chapterAudioRef.current.currentTime = t;
-                        setChCurrentTime(t);
-                      }}
-                      aria-label="Audio playback position"
-                      className="flex-1 h-1.5 accent-gold cursor-pointer"
-                    />
-                    <span className="text-[11px] font-mono text-text-muted w-9 text-right shrink-0">
-                      {chLoading ? "…" : formatAudioTime(chDuration)}
-                    </span>
-                  </div>
-                </div>
+                <ChapterAudioPlayer chapterId={activeChapter.id} audioUrl={activeChapter.audioUrl} />
 
                 {/* Follow-Along Numbered Phrasebook Transcript */}
                 {rawChapterPhrases.length > 0 && (

@@ -8,7 +8,6 @@ import {
   Pressable,
   StyleSheet,
   Text,
-  UIManager,
   View,
 } from "react-native";
 import { useRouter } from "expo-router";
@@ -97,13 +96,6 @@ export function resolveToolIoniconName(emoji?: string): string {
     default:
       return "sparkles-outline";
   }
-}
-
-if (
-  Platform.OS === "android" &&
-  UIManager.setLayoutAnimationEnabledExperimental
-) {
-  UIManager.setLayoutAnimationEnabledExperimental(true);
 }
 
 function useReduceMotionEnabled(): boolean {

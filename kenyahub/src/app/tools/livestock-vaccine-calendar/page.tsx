@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useEffect, useState, useMemo } from "react";
 import { Calendar, Download, Syringe, HeartPulse, Info } from "lucide-react";
 import ToolShell from "@/components/tools/ToolShell";
 import CustomSelect from "@/components/ui/CustomSelect";
@@ -102,17 +102,21 @@ function buildIcsContent(speciesLabel: string, events: CalendarEventItem[]): str
   return lines.join("\r\n");
 }
 
+const DEFAULT_BASE_DATE = "2026-01-01";
+
 export default function LivestockVaccineCalendarPage() {
   const [species, setSpecies] = useState<SpeciesId>("cattle");
-  const [baseDateStr, setBaseDateStr] = useState<string>(() =>
-    new Date().toISOString().slice(0, 10)
-  );
+  const [baseDateStr, setBaseDateStr] = useState<string>(DEFAULT_BASE_DATE);
+
+  useEffect(() => {
+    setBaseDateStr(new Date().toISOString().slice(0, 10));
+  }, []);
 
   const calc = useMemo(() => {
     const option = SPECIES_OPTIONS.find((s) => s.id === species) || SPECIES_OPTIONS[0];
     const safeDate = /^\d{4}-\d{2}-\d{2}$/.test(baseDateStr)
       ? baseDateStr
-      : new Date().toISOString().slice(0, 10);
+      : DEFAULT_BASE_DATE;
     const baseDate = parseIsoUtc(safeDate);
 
     const reproMilestones: CalendarEventItem[] = [];

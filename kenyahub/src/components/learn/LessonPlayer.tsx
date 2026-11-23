@@ -155,24 +155,38 @@ export default function LessonPlayer({
 
   const inputRef = useRef<HTMLInputElement>(null);
 
+  const scrollTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const scrollRafRef = useRef<number | null>(null);
+
   const forceScrollTop = useCallback(() => {
     if (typeof window === "undefined") return;
+    if (scrollRafRef.current !== null) cancelAnimationFrame(scrollRafRef.current);
+    if (scrollTimerRef.current !== null) clearTimeout(scrollTimerRef.current);
     const prevBehavior = document.documentElement.style.scrollBehavior;
     document.documentElement.style.scrollBehavior = "auto";
     window.scrollTo(0, 0);
     document.documentElement.scrollTop = 0;
     document.body.scrollTop = 0;
-    requestAnimationFrame(() => {
+    scrollRafRef.current = requestAnimationFrame(() => {
+      scrollRafRef.current = null;
       window.scrollTo(0, 0);
       document.documentElement.scrollTop = 0;
       document.body.scrollTop = 0;
     });
-    setTimeout(() => {
+    scrollTimerRef.current = setTimeout(() => {
+      scrollTimerRef.current = null;
       window.scrollTo(0, 0);
       document.documentElement.scrollTop = 0;
       document.body.scrollTop = 0;
       document.documentElement.style.scrollBehavior = prevBehavior;
     }, 60);
+  }, []);
+
+  useEffect(() => {
+    return () => {
+      if (scrollRafRef.current !== null) cancelAnimationFrame(scrollRafRef.current);
+      if (scrollTimerRef.current !== null) clearTimeout(scrollTimerRef.current);
+    };
   }, []);
 
   useEffect(() => {
@@ -190,17 +204,19 @@ export default function LessonPlayer({
     ? ((currentIndex + (isChecked ? 1 : 0)) / exercises.length) * 100
     : 0;
 
+  const handleContinueRef = useRef<() => void>(() => {});
+
   useEffect(() => {
+    if (lessonComplete || lessonStage !== "practice" || !isChecked) return;
     const onKeyDown = (e: KeyboardEvent) => {
-      if (lessonComplete) return;
-      if (e.key === "Enter" && lessonStage === "practice" && isChecked) {
+      if (e.key === "Enter") {
         e.preventDefault();
-        handleContinue();
+        handleContinueRef.current();
       }
     };
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
-  });
+  }, [lessonComplete, lessonStage, isChecked]);
 
   const shuffledRightPairs = useMemo(() => {
     if (exercise?.type !== "match_pairs" || !exercise.pairs) return [];
@@ -359,6 +375,10 @@ export default function LessonPlayer({
     onComplete,
     resetExercise,
   ]);
+
+  useEffect(() => {
+    handleContinueRef.current = handleContinue;
+  }, [handleContinue]);
 
   const handleMatchSelect = useCallback(
     (side: "left" | "right", value: string) => {

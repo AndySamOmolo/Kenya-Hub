@@ -16,6 +16,7 @@ jobs:
   sync:
     name: Sync Static Blogs to Appwrite
     runs-on: ubuntu-latest
+    timeout-minutes: 10
 
     defaults:
       run:

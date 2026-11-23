@@ -1,46 +1,3 @@
-import {
-  EtimsMpesaReconcilerTool,
-  OdpcHrRetentionVaultTool,
-  EudrCoopGeojsonPackagerTool,
-  IcmsLandedCostArbitrageTool,
-  ShaClaimScrubberTool,
-  PpraEgpTenderSerializerTool,
-  KjseaPathwayEngineTool,
-  ArdhisasaCadTitleAuditorTool,
-} from "../../src/tools/KenyaUtilityTools2026";
-import {
-  ShaBenefitEstimatorTool,
-  SmallClaimsTool,
-  NtsaTransferTool,
-  BomaYanguTool,
-  RentalTaxTool,
-  LandlordTenantTool,
-  DomesticWageTool,
-  AirtimeDrainTool,
-} from "../../src/tools/CivicLegalTools";
-import {
-  SchoolFeeCapAuditorTool,
-  CookingFuelComparatorTool,
-  AuctioneerFeeShieldTool,
-  SuccessionCap160Tool,
-  DukaHustleUbpTool,
-  FuneralHarambeePlannerTool,
-} from "../../src/tools/EverydayHouseholdTools";
-import {
-  RainwaterTankSizerTool,
-  FertilizerSeedBreakevenTool,
-  DairyRationMarginTool,
-  LandSubdivisionPlannerTool,
-  BiogasDigesterSizerTool,
-  LivestockVaccineCalendarTool,
-} from "../../src/tools/EverydayRuralTools";
-import {
-  EcitizenDocsPlannerTool,
-  TvetKmtcPathwayTool,
-  UsedCarElogbookTool,
-  ChildMaintenanceTool,
-  Article49RightsTool,
-} from "../../src/tools/EverydayCivicTools";
 import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import AsyncStorage from "@react-native-async-storage/async-storage";
@@ -82,33 +39,113 @@ import toolDataSources from "../../src/shared/data/tool-data-sources.json";
 import { DynamicIcon } from "../../src/components/DynamicIcon";
 import { BlogMarkdownContent } from "../../src/components/home/HomeHelpers";
 
-// Active Interactive Tools
-import {
-  PayeCalculator,
-  MpesaCalculator,
-  KplcTokenCalculator,
-  HelbCalculator,
-  StampDutyCalculator,
-  WaterBillCalculator,
-  KraCarImportCalculator,
-  MjengoConstructionCalculator,
-  SaccoChamaCalculator,
-} from "../../src/tools/FinanceTools";
-
-import {
-  NumberPlateDecoder,
-  MobilePrefixFinder,
-  TrafficFinesTool,
-} from "../../src/tools/TransportGovernmentTools";
-
-import { KcseCalculatorTool } from "../../src/tools/EducationCultureTools";
-
-import { LanguageLearningTool } from "../../src/tools/LanguageCourseTool";
-import { KenyanTranslatorTool } from "../../src/tools/KenyanTranslatorTool";
-import {
-  CbcCurriculumTool,
-  KuccpsClusterTool,
-} from "../../src/tools/AdvancedTools";
+// Lazy-loaded Interactive Tools (resolved on demand per slug to avoid parsing all 50 tools on mount)
+function getToolComponent(slug: string): React.ComponentType<any> | null {
+  switch (slug) {
+    case "paye-calculator":
+      return require("../../src/tools/FinanceTools").PayeCalculator;
+    case "mpesa-fee-calculator":
+      return require("../../src/tools/FinanceTools").MpesaCalculator;
+    case "kplc-token-calculator":
+      return require("../../src/tools/FinanceTools").KplcTokenCalculator;
+    case "helb-calculator":
+      return require("../../src/tools/FinanceTools").HelbCalculator;
+    case "stamp-duty-calculator":
+      return require("../../src/tools/FinanceTools").StampDutyCalculator;
+    case "water-bill-calculator":
+      return require("../../src/tools/FinanceTools").WaterBillCalculator;
+    case "kra-car-import-calculator":
+      return require("../../src/tools/FinanceTools").KraCarImportCalculator;
+    case "mjengo-construction-calculator":
+      return require("../../src/tools/FinanceTools").MjengoConstructionCalculator;
+    case "sacco-chama-calculator":
+      return require("../../src/tools/FinanceTools").SaccoChamaCalculator;
+    case "number-plate-decoder":
+      return require("../../src/tools/TransportGovernmentTools").NumberPlateDecoder;
+    case "mobile-number-prefix":
+      return require("../../src/tools/TransportGovernmentTools").MobilePrefixFinder;
+    case "traffic-fines":
+      return require("../../src/tools/TransportGovernmentTools").TrafficFinesTool;
+    case "cbc-curriculum":
+      return require("../../src/tools/AdvancedTools").CbcCurriculumTool;
+    case "kuccps-cluster-calculator":
+      return require("../../src/tools/AdvancedTools").KuccpsClusterTool;
+    case "kcse-grade-calculator":
+      return require("../../src/tools/EducationCultureTools").KcseCalculatorTool;
+    case "kenyan-translator":
+      return require("../../src/tools/KenyanTranslatorTool").KenyanTranslatorTool;
+    case "learn":
+      return require("../../src/tools/LanguageCourseTool").LanguageLearningTool;
+    case "sha-benefit-estimator":
+      return require("../../src/tools/CivicLegalTools").ShaBenefitEstimatorTool;
+    case "small-claims-calculator":
+      return require("../../src/tools/CivicLegalTools").SmallClaimsTool;
+    case "ntsa-transfer-calculator":
+      return require("../../src/tools/CivicLegalTools").NtsaTransferTool;
+    case "boma-yangu-calculator":
+      return require("../../src/tools/CivicLegalTools").BomaYanguTool;
+    case "rental-tax-calculator":
+      return require("../../src/tools/CivicLegalTools").RentalTaxTool;
+    case "landlord-tenant-rights":
+      return require("../../src/tools/CivicLegalTools").LandlordTenantTool;
+    case "domestic-wage-calculator":
+      return require("../../src/tools/CivicLegalTools").DomesticWageTool;
+    case "airtime-drain-guide":
+      return require("../../src/tools/CivicLegalTools").AirtimeDrainTool;
+    case "etims-mpesa-reconciler":
+      return require("../../src/tools/KenyaUtilityTools2026").EtimsMpesaReconcilerTool;
+    case "odpc-hr-retention-vault":
+      return require("../../src/tools/KenyaUtilityTools2026").OdpcHrRetentionVaultTool;
+    case "eudr-coop-geojson-packager":
+      return require("../../src/tools/KenyaUtilityTools2026").EudrCoopGeojsonPackagerTool;
+    case "icms-landed-cost-arbitrage":
+      return require("../../src/tools/KenyaUtilityTools2026").IcmsLandedCostArbitrageTool;
+    case "sha-claim-scrubber":
+      return require("../../src/tools/KenyaUtilityTools2026").ShaClaimScrubberTool;
+    case "ppra-egp-tender-serializer":
+      return require("../../src/tools/KenyaUtilityTools2026").PpraEgpTenderSerializerTool;
+    case "kjsea-pathway-engine":
+      return require("../../src/tools/KenyaUtilityTools2026").KjseaPathwayEngineTool;
+    case "ardhisasa-cad-title-auditor":
+      return require("../../src/tools/KenyaUtilityTools2026").ArdhisasaCadTitleAuditorTool;
+    case "school-fee-cap-auditor":
+      return require("../../src/tools/EverydayHouseholdTools").SchoolFeeCapAuditorTool;
+    case "cooking-fuel-comparator":
+      return require("../../src/tools/EverydayHouseholdTools").CookingFuelComparatorTool;
+    case "auctioneer-fee-shield":
+      return require("../../src/tools/EverydayHouseholdTools").AuctioneerFeeShieldTool;
+    case "succession-cap160-calculator":
+      return require("../../src/tools/EverydayHouseholdTools").SuccessionCap160Tool;
+    case "duka-hustle-ubp-calculator":
+      return require("../../src/tools/EverydayHouseholdTools").DukaHustleUbpTool;
+    case "funeral-harambee-planner":
+      return require("../../src/tools/EverydayHouseholdTools").FuneralHarambeePlannerTool;
+    case "rainwater-tank-sizer":
+      return require("../../src/tools/EverydayRuralTools").RainwaterTankSizerTool;
+    case "fertilizer-seed-breakeven":
+      return require("../../src/tools/EverydayRuralTools").FertilizerSeedBreakevenTool;
+    case "dairy-ration-margin":
+      return require("../../src/tools/EverydayRuralTools").DairyRationMarginTool;
+    case "land-subdivision-planner":
+      return require("../../src/tools/EverydayRuralTools").LandSubdivisionPlannerTool;
+    case "biogas-digester-sizer":
+      return require("../../src/tools/EverydayRuralTools").BiogasDigesterSizerTool;
+    case "livestock-vaccine-calendar":
+      return require("../../src/tools/EverydayRuralTools").LivestockVaccineCalendarTool;
+    case "ecitizen-docs-planner":
+      return require("../../src/tools/EverydayCivicTools").EcitizenDocsPlannerTool;
+    case "tvet-kmtc-pathway-matcher":
+      return require("../../src/tools/EverydayCivicTools").TvetKmtcPathwayTool;
+    case "used-car-elogbook-checker":
+      return require("../../src/tools/EverydayCivicTools").UsedCarElogbookTool;
+    case "child-maintenance-calculator":
+      return require("../../src/tools/EverydayCivicTools").ChildMaintenanceTool;
+    case "article49-rights-companion":
+      return require("../../src/tools/EverydayCivicTools").Article49RightsTool;
+    default:
+      return null;
+  }
+}
 
 interface WorkedExampleEntry {
   title: string;
@@ -307,22 +344,40 @@ export default function ToolDetailScreen() {
   const [showBackToTop, setShowBackToTop] = useState(false);
   const [selectedPost, setSelectedPost] = useState<StaticBlogPost | null>(null);
   const [readerProgress, setReaderProgress] = useState(0);
+  const lastReaderProgressRef = useRef(0);
 
   const scrollRef = useRef<ScrollView>(null);
   const scrollYRef = useRef(0);
   const viewportHeightRef = useRef(700);
   const toolWrapLayoutRef = useRef({ y: 0, height: 0 });
+  const resetRafRef = useRef<number | null>(null);
+  const resetTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const clearResetTimers = useCallback(() => {
+    if (resetRafRef.current !== null) {
+      cancelAnimationFrame(resetRafRef.current);
+      resetRafRef.current = null;
+    }
+    if (resetTimerRef.current !== null) {
+      clearTimeout(resetTimerRef.current);
+      resetTimerRef.current = null;
+    }
+  }, []);
+
+  useEffect(() => clearResetTimers, [clearResetTimers]);
 
   const resetToPageTop = useCallback(() => {
+    clearResetTimers();
     scrollRef.current?.scrollTo({ y: 0, animated: false });
-    requestAnimationFrame(() =>
-      scrollRef.current?.scrollTo({ y: 0, animated: false })
-    );
-    setTimeout(
-      () => scrollRef.current?.scrollTo({ y: 0, animated: false }),
-      50
-    );
-  }, []);
+    resetRafRef.current = requestAnimationFrame(() => {
+      resetRafRef.current = null;
+      scrollRef.current?.scrollTo({ y: 0, animated: false });
+    });
+    resetTimerRef.current = setTimeout(() => {
+      resetTimerRef.current = null;
+      scrollRef.current?.scrollTo({ y: 0, animated: false });
+    }, 50);
+  }, [clearResetTimers]);
 
   const scrollToTop = useCallback(() => {
     const targetY = Math.max(0, toolWrapLayoutRef.current.y - 12);
@@ -421,6 +476,11 @@ export default function ToolDetailScreen() {
     [tool?.slug]
   );
 
+  const ActiveToolComponent = useMemo(
+    () => (tool ? getToolComponent(tool.slug) : null),
+    [tool?.slug]
+  );
+
   if (!tool) {
     return (
       <SafeAreaView
@@ -450,14 +510,16 @@ export default function ToolDetailScreen() {
 
   const toggleSaved = async () => {
     triggerHaptic(12);
-    const current = parseSavedTools(
-      await AsyncStorage.getItem("kh-saved-tools")
-    );
-    const next = saved
-      ? current.filter((item) => item !== tool.slug)
-      : [...new Set([...current, tool.slug])];
-    await AsyncStorage.setItem("kh-saved-tools", serializeSavedTools(next));
-    setSaved(!saved);
+    try {
+      const current = parseSavedTools(
+        await AsyncStorage.getItem("kh-saved-tools")
+      );
+      const next = saved
+        ? current.filter((item) => item !== tool.slug)
+        : [...new Set([...current, tool.slug])];
+      await AsyncStorage.setItem("kh-saved-tools", serializeSavedTools(next));
+      setSaved(!saved);
+    } catch {}
   };
 
   const related = getRelatedTools(tool.slug, 4);
@@ -504,122 +566,33 @@ export default function ToolDetailScreen() {
       : "Live data";
 
   const renderToolComponent = () => {
-    switch (tool.slug) {
-      case "paye-calculator":
-        return <PayeCalculator />;
-      case "mpesa-fee-calculator":
-        return <MpesaCalculator />;
-      case "kplc-token-calculator":
-        return <KplcTokenCalculator />;
-      case "helb-calculator":
-        return <HelbCalculator />;
-      case "stamp-duty-calculator":
-        return <StampDutyCalculator />;
-      case "water-bill-calculator":
-        return <WaterBillCalculator />;
-      case "kra-car-import-calculator":
-        return <KraCarImportCalculator />;
-      case "mjengo-construction-calculator":
-        return <MjengoConstructionCalculator />;
-      case "sacco-chama-calculator":
-        return <SaccoChamaCalculator />;
-      case "number-plate-decoder":
-        return <NumberPlateDecoder />;
-      case "mobile-number-prefix":
-        return <MobilePrefixFinder />;
-      case "traffic-fines":
-        return <TrafficFinesTool onScrollToTop={scrollToTop} />;
-      case "cbc-curriculum":
-        return <CbcCurriculumTool onScrollToTop={scrollToTop} />;
-      case "kuccps-cluster-calculator":
-        return <KuccpsClusterTool onScrollToTop={scrollToTop} />;
-      case "kcse-grade-calculator":
-        return <KcseCalculatorTool />;
-      case "kenyan-translator":
-        return <KenyanTranslatorTool onScrollToTop={scrollToTop} />;
-      case "learn":
-        return (
-          <LanguageLearningTool
-            onScrollToTop={scrollToTop}
-            initialLanguageId={lang}
-            initialTab={tab as any}
-          />
-        );
-      case "sha-benefit-estimator":
-        return <ShaBenefitEstimatorTool />;
-      case "small-claims-calculator":
-        return <SmallClaimsTool />;
-      case "ntsa-transfer-calculator":
-        return <NtsaTransferTool />;
-      case "boma-yangu-calculator":
-        return <BomaYanguTool />;
-      case "rental-tax-calculator":
-        return <RentalTaxTool />;
-      case "landlord-tenant-rights":
-        return <LandlordTenantTool />;
-      case "domestic-wage-calculator":
-        return <DomesticWageTool />;
-      case "airtime-drain-guide":
-        return <AirtimeDrainTool />;
-      case "etims-mpesa-reconciler":
-        return <EtimsMpesaReconcilerTool />;
-      case "odpc-hr-retention-vault":
-        return <OdpcHrRetentionVaultTool />;
-      case "eudr-coop-geojson-packager":
-        return <EudrCoopGeojsonPackagerTool />;
-      case "icms-landed-cost-arbitrage":
-        return <IcmsLandedCostArbitrageTool />;
-      case "sha-claim-scrubber":
-        return <ShaClaimScrubberTool />;
-      case "ppra-egp-tender-serializer":
-        return <PpraEgpTenderSerializerTool />;
-      case "kjsea-pathway-engine":
-        return <KjseaPathwayEngineTool />;
-      case "ardhisasa-cad-title-auditor":
-        return <ArdhisasaCadTitleAuditorTool />;
-      case "school-fee-cap-auditor":
-        return <SchoolFeeCapAuditorTool />;
-      case "cooking-fuel-comparator":
-        return <CookingFuelComparatorTool />;
-      case "auctioneer-fee-shield":
-        return <AuctioneerFeeShieldTool />;
-      case "succession-cap160-calculator":
-        return <SuccessionCap160Tool />;
-      case "duka-hustle-ubp-calculator":
-        return <DukaHustleUbpTool />;
-      case "funeral-harambee-planner":
-        return <FuneralHarambeePlannerTool />;
-      case "rainwater-tank-sizer":
-        return <RainwaterTankSizerTool />;
-      case "fertilizer-seed-breakeven":
-        return <FertilizerSeedBreakevenTool />;
-      case "dairy-ration-margin":
-        return <DairyRationMarginTool />;
-      case "land-subdivision-planner":
-        return <LandSubdivisionPlannerTool />;
-      case "biogas-digester-sizer":
-        return <BiogasDigesterSizerTool />;
-      case "livestock-vaccine-calendar":
-        return <LivestockVaccineCalendarTool />;
-      case "ecitizen-docs-planner":
-        return <EcitizenDocsPlannerTool />;
-      case "tvet-kmtc-pathway-matcher":
-        return <TvetKmtcPathwayTool />;
-      case "used-car-elogbook-checker":
-        return <UsedCarElogbookTool />;
-      case "child-maintenance-calculator":
-        return <ChildMaintenanceTool />;
-      case "article49-rights-companion":
-        return <Article49RightsTool />;
-      default:
-        return (
-          <View style={{ padding: 20, alignItems: "center" }}>
-            <Text style={{ color: theme.textSecondary, fontSize: 13 }}>
-              This tool is not available in this app version yet.
-            </Text>
-          </View>
-        );
+    if (!ActiveToolComponent) {
+      return (
+        <View style={{ padding: 20, alignItems: "center" }}>
+          <Text style={{ color: theme.textSecondary, fontSize: 13 }}>
+            This tool is not available in this app version yet.
+          </Text>
+        </View>
+      );
     }
+    if (tool.slug === "learn") {
+      return (
+        <ActiveToolComponent
+          onScrollToTop={scrollToTop}
+          initialLanguageId={lang}
+          initialTab={tab as any}
+        />
+      );
+    }
+    if (
+      tool.slug === "traffic-fines" ||
+      tool.slug === "cbc-curriculum" ||
+      tool.slug === "kuccps-cluster-calculator" ||
+      tool.slug === "kenyan-translator"
+    ) {
+      return <ActiveToolComponent onScrollToTop={scrollToTop} />;
+    }
+    return <ActiveToolComponent />;
   };
 
   return (
@@ -1251,6 +1224,7 @@ export default function ToolDetailScreen() {
                     android_ripple={androidRipple(theme.rippleColor)}
                     onPress={() => {
                       triggerHaptic(8);
+                      lastReaderProgressRef.current = 0;
                       setReaderProgress(0);
                       setSelectedPost(post);
                     }}
@@ -1525,7 +1499,7 @@ export default function ToolDetailScreen() {
             <ScrollView
               contentContainerStyle={{ padding: 16, paddingBottom: 48 }}
               showsVerticalScrollIndicator={false}
-              scrollEventThrottle={16}
+              scrollEventThrottle={48}
               onScroll={(e) => {
                 const { contentOffset, contentSize, layoutMeasurement } =
                   e.nativeEvent;
@@ -1533,9 +1507,15 @@ export default function ToolDetailScreen() {
                   1,
                   contentSize.height - layoutMeasurement.height
                 );
-                setReaderProgress(
-                  Math.min(1, Math.max(0, contentOffset.y / maxScroll))
-                );
+                const next = Math.min(1, Math.max(0, contentOffset.y / maxScroll));
+                if (
+                  Math.abs(next - lastReaderProgressRef.current) >= 0.03 ||
+                  next === 0 ||
+                  next === 1
+                ) {
+                  lastReaderProgressRef.current = next;
+                  setReaderProgress(next);
+                }
               }}
             >
               <View

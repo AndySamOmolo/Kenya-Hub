@@ -1447,14 +1447,14 @@ export function FuneralHarambeePlannerTool() {
       .then((raw) => {
         if (!mounted) return;
         if (raw) {
-          const parsed = JSON.parse(raw);
-          if (Array.isArray(parsed)) setPledges(parsed);
+          try {
+            const parsed = JSON.parse(raw);
+            if (Array.isArray(parsed)) setPledges(parsed);
+          } catch {}
         }
+        setLoadedPledges(true);
       })
-      .catch(() => {})
-      .finally(() => {
-        if (mounted) setLoadedPledges(true);
-      });
+      .catch(() => {});
     return () => {
       mounted = false;
     };

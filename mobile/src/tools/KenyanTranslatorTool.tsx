@@ -308,6 +308,10 @@ export function KenyanTranslatorTool({
 
   const [recentSearches, setRecentSearches] = useState<string[]>([]);
   const [favorites, setFavorites] = useState<string[]>([]);
+  const recentSearchesRef = useRef<string[]>(recentSearches);
+  recentSearchesRef.current = recentSearches;
+  const favoritesRef = useRef<string[]>(favorites);
+  favoritesRef.current = favorites;
   const [userContributions, setUserContributions] = useState<{
     id: string;
     language: string;
@@ -473,9 +477,11 @@ export function KenyanTranslatorTool({
   }, []);
 
   const toastTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const contribTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   useEffect(() => {
     return () => {
       if (toastTimerRef.current) clearTimeout(toastTimerRef.current);
+      if (contribTimerRef.current) clearTimeout(contribTimerRef.current);
     };
   }, []);
 
@@ -490,29 +496,28 @@ export function KenyanTranslatorTool({
 
   const addRecentSearch = useCallback((q: string) => {
     if (!q || q.length < 2) return;
-    setRecentSearches((prev) => {
-      const next = [
-        q,
-        ...prev.filter((s) => s.toLowerCase() !== q.toLowerCase()),
-      ].slice(0, 6);
-      AsyncStorage.setItem("kh-translator-recent", JSON.stringify(next));
-      return next;
-    });
+    const prev = recentSearchesRef.current;
+    const next = [
+      q,
+      ...prev.filter((s) => s.toLowerCase() !== q.toLowerCase()),
+    ].slice(0, 6);
+    recentSearchesRef.current = next;
+    setRecentSearches(next);
+    AsyncStorage.setItem("kh-translator-recent", JSON.stringify(next)).catch(() => {});
   }, []);
 
   const toggleFavorite = useCallback(
     (wordKey: string) => {
       triggerHaptic(10);
-      setFavorites((prev) => {
-        const next = prev.includes(wordKey)
-          ? prev.filter((k) => k !== wordKey)
-          : [...prev, wordKey];
-        AsyncStorage.setItem("kh-translator-favs", JSON.stringify(next));
-        showToast(
-          next.includes(wordKey) ? "Saved to Favorites" : "Removed from Favorites"
-        );
-        return next;
-      });
+      const prev = favoritesRef.current;
+      const isAdding = !prev.includes(wordKey);
+      const next = isAdding
+        ? [...prev, wordKey]
+        : prev.filter((k) => k !== wordKey);
+      favoritesRef.current = next;
+      setFavorites(next);
+      AsyncStorage.setItem("kh-translator-favs", JSON.stringify(next)).catch(() => {});
+      showToast(isAdding ? "Saved to Favorites" : "Removed from Favorites");
     },
     [showToast]
   );
@@ -936,7 +941,9 @@ export function KenyanTranslatorTool({
       setUserContributions(updatedList);
       setContribSubmitted(true);
       showToast("Saved locally to your device dictionary!");
-      setTimeout(() => {
+      if (contribTimerRef.current) clearTimeout(contribTimerRef.current);
+      contribTimerRef.current = setTimeout(() => {
+        contribTimerRef.current = null;
         setIsContributeOpen(false);
       }, 1600);
     } catch {}

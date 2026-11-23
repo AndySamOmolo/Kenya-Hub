@@ -1,6 +1,6 @@
 import { ExpandablePillRow } from "../../components/ExpandablePillRow";
 import { DynamicIcon } from "../../components/DynamicIcon";
-import React, { useState, useMemo, useEffect, useRef } from "react";
+import React, { useDeferredValue, useState, useMemo, useEffect, useRef } from "react";
 import { Text, View, TextInput, Pressable, ScrollView } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useDynamicStyles } from "../../theme";
@@ -11,6 +11,7 @@ import finesData from "../../shared/data/traffic-fines.json";
 export function TrafficFinesTool({ onScrollToTop }: { onScrollToTop?: () => void } = {}) {
   const { theme, styles } = useDynamicStyles(createStyles);
   const [search, setSearch] = useState("");
+  const deferredSearch = useDeferredValue(search);
   const [selectedCat, setSelectedCat] = useState<string>("all");
   const [sortBy, setSortBy] = useState<"default" | "fineDesc" | "fineAsc" | "points">(
     "default"
@@ -18,7 +19,7 @@ export function TrafficFinesTool({ onScrollToTop }: { onScrollToTop?: () => void
   const categories = finesData.categories || [];
 
   const filteredOffences = useMemo(() => {
-    const q = search.trim().toLowerCase();
+    const q = deferredSearch.trim().toLowerCase();
     const list: any[] = [];
     for (const cat of categories) {
       if (selectedCat !== "all" && cat.id !== selectedCat) continue;
@@ -37,7 +38,7 @@ export function TrafficFinesTool({ onScrollToTop }: { onScrollToTop?: () => void
     if (sortBy === "points")
       return [...list].sort((a, b) => b.demeritPoints - a.demeritPoints);
     return list;
-  }, [search, selectedCat, sortBy, categories]);
+  }, [deferredSearch, selectedCat, sortBy, categories]);
 
   return (
     <View style={styles.toolWrap}>

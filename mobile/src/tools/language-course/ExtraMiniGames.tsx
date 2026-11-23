@@ -1,4 +1,22 @@
-import React, { useCallback, useEffect, useMemo, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
+
+function useSafeTimeout() {
+  const timersRef = useRef<Set<ReturnType<typeof setTimeout>>>(new Set());
+  useEffect(() => {
+    return () => {
+      timersRef.current.forEach((id) => clearTimeout(id));
+      timersRef.current.clear();
+    };
+  }, []);
+  return useCallback((fn: () => void, ms: number) => {
+    const id = setTimeout(() => {
+      timersRef.current.delete(id);
+      fn();
+    }, ms);
+    timersRef.current.add(id);
+    return id;
+  }, []);
+}
 import { View, Text, Pressable, StyleSheet } from "react-native";
 import { Feather } from "@expo/vector-icons";
 import { useTheme, androidRipple } from "../../theme";
@@ -168,6 +186,7 @@ function MethaliBuilderMobile({
   const { colors, isDark } = useTheme();
   const ripple = androidRipple(isDark);
   const SESSION_ROUNDS = 6;
+  const scheduleTimeout = useSafeTimeout();
   const [mode, setMode] = useState<"tiles" | "complete">("tiles");
   const [round, setRound] = useState(0);
   const [score, setScore] = useState(0);
@@ -264,7 +283,7 @@ function MethaliBuilderMobile({
         awardGameXP(25, false);
       } else {
         setSolved(false);
-        setTimeout(() => {
+        scheduleTimeout(() => {
           setSelectedIndices([]);
           setSolved(null);
         }, 650);
@@ -517,6 +536,7 @@ function NounClassSorterMobile({
   const { colors, isDark } = useTheme();
   const ripple = androidRipple(isDark);
   const SESSION_ROUNDS = 10;
+  const scheduleTimeout = useSafeTimeout();
   const [round, setRound] = useState(0);
   const [score, setScore] = useState(0);
   const [pickedBucket, setPickedBucket] = useState<string | null>(null);
@@ -615,7 +635,7 @@ function NounClassSorterMobile({
       setScore((s) => s + 20);
       awardGameXP(20, false);
     }
-    setTimeout(() => {
+    scheduleTimeout(() => {
       setPickedBucket(null);
       if (round + 1 >= sortItems.length) {
         setDone(true);
@@ -737,6 +757,7 @@ function OddWordOutMobile({
   const { colors, isDark } = useTheme();
   const ripple = androidRipple(isDark);
   const SESSION_ROUNDS = 8;
+  const scheduleTimeout = useSafeTimeout();
   const [round, setRound] = useState(0);
   const [score, setScore] = useState(0);
   const [picked, setPicked] = useState<string | null>(null);
@@ -826,7 +847,7 @@ function OddWordOutMobile({
       setScore((s) => s + 20);
       awardGameXP(20, false);
     }
-    setTimeout(() => {
+    scheduleTimeout(() => {
       setPicked(null);
       if (round + 1 >= rounds.length) {
         setDone(true);
@@ -1216,6 +1237,7 @@ function SentenceSafariMobile({
 }: Omit<ExtraMiniGamesProps, "activeGame">) {
   const { colors, isDark } = useTheme();
   const ripple = androidRipple(isDark);
+  const scheduleTimeout = useSafeTimeout();
   const SESSION_ROUNDS = 8;
   const [round, setRound] = useState(0);
   const [score, setScore] = useState(0);
@@ -1307,7 +1329,7 @@ function SentenceSafariMobile({
       setScore((s) => s + 20);
       awardGameXP(20, false);
     }
-    setTimeout(() => {
+    scheduleTimeout(() => {
       setPicked(null);
       if (round + 1 >= challenges.length) {
         setDone(true);
@@ -1477,6 +1499,7 @@ function TongueTwisterMobile({
 }: Omit<ExtraMiniGamesProps, "activeGame">) {
   const { colors, isDark } = useTheme();
   const ripple = androidRipple(isDark);
+  const scheduleTimeout = useSafeTimeout();
   const [round, setRound] = useState(0);
   const [score, setScore] = useState(0);
   const [tiles, setTiles] = useState<string[]>([]);
@@ -1522,7 +1545,7 @@ function TongueTwisterMobile({
         awardGameXP(25, false);
       } else {
         setSolved(false);
-        setTimeout(() => {
+        scheduleTimeout(() => {
           setSelected([]);
           setSolved(null);
         }, 600);
