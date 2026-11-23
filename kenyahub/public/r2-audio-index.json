@@ -16190,7 +16190,8 @@
     "gaala": "https://audio.kenyahub.me/audio/borana/gaala.opus",
     "kanariyaan": "https://audio.kenyahub.me/audio/borana/kanariyaan.opus",
     "lalisee": "https://audio.kenyahub.me/audio/borana/lalisee.opus",
-    "m-mixxii": "https://audio.kenyahub.me/audio/borana/m-mixxii.opus"
+    "m-mixxii": "https://audio.kenyahub.me/audio/borana/m-mixxii.opus",
+    "afaan-oromoo-ifa-boruu-qaba": "https://audio.kenyahub.me/audio/borana/afaan-oromoo-ifa-boruu-qaba.opus"
   },
   "teso": {
     "acie-akwii-nudos-kotoma-oraasit-kayen-ekudukudo-kosiep-ediope": "https://audio.kenyahub.me/audio/teso/acie-akwii-nudos-kotoma-oraasit-kayen-ekudukudo-kosiep-ediope.opus",
@@ -20283,6 +20284,10 @@
     "kikibarasta-boisionik-che-terchin-nganda-chechang-kokibo-ketisie": "https://audio.kenyahub.me/audio/kalenjin/kikibarasta-boisionik-che-terchin-nganda-chechang-kokibo-ketisie.opus",
     "mabau-chi-mbaronik-ab-bororiet": "https://audio.kenyahub.me/audio/kalenjin/mabau-chi-mbaronik-ab-bororiet.opus",
     "mokiruiye-komie-kingekas-logoiwechoto": "https://audio.kenyahub.me/audio/kalenjin/mokiruiye-komie-kingekas-logoiwechoto.opus",
-    "sobet-emyee-akatesei-bandab-tai": "https://audio.kenyahub.me/audio/kalenjin/sobet-emyee-akatesei-bandab-tai.opus"
+    "sobet-emyee-akatesei-bandab-tai": "https://audio.kenyahub.me/audio/kalenjin/sobet-emyee-akatesei-bandab-tai.opus",
+    "kiran-aimgee-nea": "https://audio.kenyahub.me/audio/kalenjin/kiran-aimgee-nea.opus"
+  },
+  "taita": {
+    "napoilwa-kukuw-ona-sena": "https://audio.kenyahub.me/audio/taita/napoilwa-kukuw-ona-sena.opus"
   }
 }
