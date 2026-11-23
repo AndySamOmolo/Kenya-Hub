@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-23T07:24:05.928436+00:00",
+  "generatedAt": "2026-11-23T08:48:27.911720+00:00",
   "cldrVersion": "49.0.0",
   "stats": {
-    "totalR2AudioClips": 20263,
+    "totalR2AudioClips": 20266,
     "totalAudioChapters": 5,
     "totalKslVideos": 2343,
     "totalStagedVarieties": 4,
@@ -12,7 +12,7 @@
     "totalQuizQuestions": 520,
     "totalCivicDatasets": 10,
     "totalWikimediaDatasets": 6,
-    "pendingGatedCount": 12
+    "pendingGatedCount": 9
   },
   "languages": {
     "swahili": {
@@ -619,7 +619,7 @@
       "audioChapters": [],
       "shards": {
         "audioCount": 12778,
-        "storiesCount": 236,
+        "storiesCount": 223,
         "sentencesCount": 180,
         "articlesCount": 72,
         "quizCount": 230,
@@ -1940,7 +1940,7 @@
       "audioChapters": [],
       "shards": {
         "audioCount": 323,
-        "storiesCount": 55,
+        "storiesCount": 56,
         "sentencesCount": 0,
         "articlesCount": 0,
         "quizCount": 0,
@@ -2333,7 +2333,7 @@
       "audioChapters": [],
       "shards": {
         "audioCount": 449,
-        "storiesCount": 29,
+        "storiesCount": 30,
         "sentencesCount": 0,
         "articlesCount": 0,
         "quizCount": 0,
@@ -2343,7 +2343,7 @@
     },
     "kalenjin": {
       "languageId": "kalenjin",
-      "r2AudioClips": 2166,
+      "r2AudioClips": 2167,
       "nativeAudioSamples": [
         {
           "slug": "kongoi",
@@ -2725,7 +2725,7 @@
       "benchmarks": [],
       "audioChapters": [],
       "shards": {
-        "audioCount": 2166,
+        "audioCount": 2167,
         "storiesCount": 4,
         "sentencesCount": 0,
         "articlesCount": 108,
@@ -4717,8 +4717,14 @@
     },
     "taita": {
       "languageId": "taita",
-      "r2AudioClips": 0,
-      "nativeAudioSamples": [],
+      "r2AudioClips": 1,
+      "nativeAudioSamples": [
+        {
+          "slug": "napoilwa-kukuw-ona-sena",
+          "label": "Napoilwa kukuw ona sena",
+          "audioUrl": "https://audio.kenyahub.me/audio/taita/napoilwa-kukuw-ona-sena.opus"
+        }
+      ],
       "cldr": {
         "locale": "dav",
         "months": [
@@ -4785,7 +4791,7 @@
       "benchmarks": [],
       "audioChapters": [],
       "shards": {
-        "audioCount": 0,
+        "audioCount": 1,
         "storiesCount": 0,
         "sentencesCount": 0,
         "articlesCount": 0,
@@ -4895,7 +4901,7 @@
     },
     "borana": {
       "languageId": "borana",
-      "r2AudioClips": 392,
+      "r2AudioClips": 393,
       "nativeAudioSamples": [
         {
           "slug": "gaala",
@@ -4936,6 +4942,11 @@
           "slug": "kun-fedhiin",
           "label": "Kun fedhiin",
           "audioUrl": "https://audio.kenyahub.me/audio/borana/kun-fedhiin.opus"
+        },
+        {
+          "slug": "afaan-oromoo-ifa-boruu-qaba",
+          "label": "Afaan oromoo ifa boruu qaba",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/afaan-oromoo-ifa-boruu-qaba.opus"
         },
         {
           "slug": "iddoo-kanarratti-kan-argamummoo",
@@ -5011,11 +5022,6 @@
           "slug": "daandiiwwan-konkolaataa-irratti-yeroo-baay-ee-mukkeen-ni-argamu-",
           "label": "Daandiiwwan konkolaataa irratti yeroo baay ee mukkeen ni argamu",
           "audioUrl": "https://audio.kenyahub.me/audio/borana/daandiiwwan-konkolaataa-irratti-yeroo-baay-ee-mukkeen-ni-argamu-.opus"
-        },
-        {
-          "slug": "daldalaan-nama-hojii-daldalummaa-yookiis-bittaa-fi-gurgurtummaa-",
-          "label": "Daldalaan nama hojii daldalummaa yookiis bittaa fi gurgurtummaa",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/daldalaan-nama-hojii-daldalummaa-yookiis-bittaa-fi-gurgurtummaa-.opus"
         }
       ],
       "cldr": {
@@ -5300,7 +5306,7 @@
       ],
       "audioChapters": [],
       "shards": {
-        "audioCount": 392,
+        "audioCount": 393,
         "storiesCount": 49,
         "sentencesCount": 0,
         "articlesCount": 0,

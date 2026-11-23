@@ -1,7 +1,7 @@
 {
   "languageId": "ksl",
   "iso639_3": "xki",
-  "updatedAt": "2026-11-22T22:08:53.788894+00:00",
+  "updatedAt": "2026-11-23T08:48:23.356707+00:00",
   "sources": [
     {
       "id": "maseno-ksl-pose-14338329",
@@ -27472,8 +27472,8 @@
     "openSignBibles": {
       "completed": false,
       "uploadedVideos": 857,
-      "totalScanned": 818,
-      "updatedAt": "2026-11-22T22:08:53.499127+00:00"
+      "totalScanned": 716,
+      "updatedAt": "2026-11-23T08:48:23.224986+00:00"
     },
     "maseno": {
       "completed": true,
