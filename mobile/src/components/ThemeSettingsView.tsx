@@ -41,6 +41,7 @@ import {
   type HomeLayoutPreset,
   type HorizontalScrollbarStyle,
   type IconBadgeStyle,
+  type IconPackStyle,
   type InputStylePreset,
   type MenuIndicatorStyle,
   type NumericStyle,
@@ -72,7 +73,6 @@ import {
   darkColors,
   getThemedButtonStyle,
   getThemedCardStyle,
-  getThemedIconBadgeStyle,
   getThemedInputStyle,
   lightColors,
   pressableStyle,
@@ -80,6 +80,7 @@ import {
   useTheme,
   type ThemeColors,
 } from "../theme";
+import { ThemedIcon, ThemedIconBadge } from "./ThemedIcon";
 
 type AccordionKey =
   | "makeovers"
@@ -138,7 +139,7 @@ const QUICK_FILTER_PILLS: {
 ];
 
 const PREVIEW_MODE_OPTIONS: readonly { value: PreviewMode; label: string }[] = [
-  { value: "mini-app", label: "Mini-App" },
+  { value: "mini-app", label: "App" },
   { value: "card", label: "Card" },
   { value: "hide", label: "Hide" },
 ];
@@ -183,8 +184,8 @@ const PROGRESS_BAR_STYLE_OPTIONS: readonly { value: ProgressBarStyle; label: str
 const DIVIDER_STYLE_OPTIONS: readonly { value: DividerStyle; label: string }[] = [
   { value: "hairline", label: "Hairline" },
   { value: "none", label: "None" },
-  { value: "dashed-soft", label: "Dashed Soft" },
-  { value: "accent-fade", label: "Accent Fade" },
+  { value: "dashed-soft", label: "Stitched Dash" },
+  { value: "accent-fade", label: "Ink Accent" },
 ];
 
 const SECTION_HEADER_STYLE_OPTIONS: readonly { value: SectionHeaderStyle; label: string }[] = [
@@ -276,7 +277,7 @@ const FONT_PAIR_OPTIONS: readonly { value: FontPair; label: string }[] = [
   { value: "outfit-inter", label: "Outfit + Inter" },
   { value: "classic-sans", label: "Classic Sans" },
   { value: "editorial-serif", label: "Editorial Serif" },
-  { value: "mono-tech", label: "Tech Mono" },
+  { value: "mono-tech", label: "Industrial Sans" },
   { value: "geometric", label: "Geometric" },
   { value: "humanist", label: "Humanist" },
   { value: "condensed", label: "Condensed News" },
@@ -381,6 +382,7 @@ const SURFACE_STYLE_OPTIONS: readonly { value: SurfaceStyle; label: string }[] =
   { value: "outlined", label: "Crisp Outline" },
   { value: "crisp", label: "High Clarity" },
   { value: "flat", label: "Seamless Flat" },
+  { value: "frameless", label: "Unboxed" },
 ];
 
 const CARD_RADIUS_OPTIONS: readonly { value: RadiusPreset; label: string }[] = [
@@ -426,7 +428,7 @@ const TAB_BAR_STYLE_OPTIONS: readonly { value: TabBarStyle; label: string }[] = 
   { value: "segmented", label: "Segmented" },
   { value: "docked-cards", label: "Docked Cards" },
   { value: "compact", label: "Compact" },
-  { value: "minimal", label: "Minimal" },
+  { value: "minimal", label: "Soft Wash" },
 ];
 
 const MENU_INDICATOR_OPTIONS: readonly { value: MenuIndicatorStyle; label: string }[] = [
@@ -455,10 +457,11 @@ const SHADOW_OPTIONS: readonly { value: CardShadowIntensity; label: string }[] =
 const INPUT_STYLE_OPTIONS: readonly { value: InputStylePreset; label: string }[] = [
   { value: "outlined", label: "Outlined" },
   { value: "filled", label: "Filled" },
-  { value: "underlined", label: "Underlined" },
+  { value: "underlined", label: "Editorial Rule" },
   { value: "pill", label: "Pill" },
   { value: "minimal", label: "Minimal" },
-  { value: "accent", label: "Accent" },
+  { value: "accent", label: "Ink Frame" },
+  { value: "unboxed", label: "Unboxed" },
 ];
 
 const BUTTON_STYLE_OPTIONS: readonly { value: ButtonStylePreset; label: string }[] = [
@@ -468,6 +471,7 @@ const BUTTON_STYLE_OPTIONS: readonly { value: ButtonStylePreset; label: string }
   { value: "elevated", label: "Raised Card" },
   { value: "keycap-press", label: "Tactile Keycap" },
   { value: "editorial-link", label: "Editorial Link" },
+  { value: "unboxed-text", label: "Bare Text" },
 ];
 
 const TRANSITION_OPTIONS: readonly { value: PageTransitionPreset; label: string }[] = [
@@ -516,12 +520,22 @@ const CARD_ACCENT_OPTIONS: readonly { value: CardAccentStyle; label: string }[] 
 
 const ICON_BADGE_OPTIONS: readonly { value: IconBadgeStyle; label: string }[] = [
   { value: "soft-circle", label: "Soft Circle" },
-  { value: "monochrome-ink", label: "Monochrome Ink" },
-  { value: "keycap", label: "Hardware Keycap" },
-  { value: "hairline-ring", label: "Precision Ring" },
-  { value: "duotone-wash", label: "Duotone Wash" },
-  { value: "outline", label: "Crisp Frame" },
-  { value: "minimal", label: "Bare Glyph" },
+  { value: "recessed-well", label: "Recessed Well" },
+  { value: "postage-stamp", label: "Postage Stamp" },
+  { value: "split-disc", label: "Split Disc" },
+  { value: "monogram-frame", label: "Editorial Frame" },
+  { value: "ceramic-tile", label: "Ceramic Tile" },
+  { value: "tilted-lozenge", label: "Tilted Diamond" },
+  { value: "ink-seal", label: "Ink Seal" },
+  { value: "bare-glyph", label: "Floating Glyph" },
+  { value: "hidden", label: "No Icons" },
+];
+
+const ICON_PACK_OPTIONS: readonly { value: IconPackStyle; label: string }[] = [
+  { value: "outline", label: "Outline" },
+  { value: "filled", label: "Filled" },
+  { value: "sharp", label: "Sharp" },
+  { value: "duotone", label: "Duotone" },
 ];
 
 const COLOR_BLIND_OPTIONS: readonly { value: ColorBlindMode; label: string }[] = [
@@ -611,6 +625,7 @@ const DIFF_KEY_LABELS: Partial<Record<keyof ThemeConfig, string>> = {
   homeLayout: "Home Layout",
   cardAccentStyle: "Card Accent",
   iconBadgeStyle: "Icon Badge",
+  iconPack: "Icon Glyph Style",
   iconScale: "Icon Scale",
   headingTransform: "Heading Case",
   numericStyle: "Numbers",
@@ -626,6 +641,14 @@ const DIFF_KEY_LABELS: Partial<Record<keyof ThemeConfig, string>> = {
   highContrastBorders: "High Contrast",
   colorBlindMode: "Color Blind",
   pressEffect: "Tap Effect",
+  showCardIcons: "Card Icons",
+  showTabIcons: "Tab Icons",
+  showCardDescriptions: "Card Descriptions",
+  showCategoryBadges: "Category Tags",
+  showTrailingArrows: "Trailing Arrows",
+  showHomeGreeting: "Home Greeting",
+  showDailyWidgets: "Daily Widgets",
+  showOfflinePill: "Offline Pill",
 };
 
 const HEX_REGEX = /^#[0-9A-Fa-f]{6}$/;
@@ -685,6 +708,7 @@ function isMakeoverActive(
     cfg.surfaceStyle === profile.config.surfaceStyle &&
     cfg.cardAccentStyle === profile.config.cardAccentStyle &&
     cfg.iconBadgeStyle === profile.config.iconBadgeStyle &&
+    (cfg.iconPack ?? "outline") === (profile.config.iconPack ?? "outline") &&
     Object.values(cfg.customColors ?? {}).filter(Boolean).length === 0
   );
 }
@@ -1049,7 +1073,7 @@ export function ThemeSettingsView() {
               style={[styles.dockEyebrow, { color: theme.textSecondary }]}
               numberOfLines={1}
             >
-              {peekingDefault ? "DEFAULT PEEK" : "LIVE PREVIEW"}
+              {peekingDefault ? "DEFAULT" : "PREVIEW"}
             </Text>
           </View>
 
@@ -1083,7 +1107,7 @@ export function ThemeSettingsView() {
                   { color: peekingDefault ? onGoldInk : theme.textPrimary },
                 ]}
               >
-                {peekingDefault ? "Default" : "Hold Peek"}
+                {peekingDefault ? "Default" : "Peek"}
               </Text>
             </Pressable>
 
@@ -1134,7 +1158,6 @@ export function ThemeSettingsView() {
             previewConfig={previewConfig}
             previewMetrics={previewMetrics}
             previewFonts={previewFonts}
-            peekingDefault={peekingDefault}
             activePill={previewActivePill}
             onSelectPill={(idx) => {
               doHaptic();
@@ -1155,7 +1178,6 @@ export function ThemeSettingsView() {
             previewConfig={previewConfig}
             previewMetrics={previewMetrics}
             previewFonts={previewFonts}
-            peekingDefault={peekingDefault}
             onActionPress={doHaptic}
           />
         )}
@@ -1467,6 +1489,8 @@ export function ThemeSettingsView() {
               onToggle={() => handleToggleSection("makeovers")}
               theme={theme}
             >
+              {openSections.makeovers && (
+                <>
               <View style={styles.makeoversGrid}>
                 {APP_LOOK_PROFILES.map((profile) => {
                   const isActive = isMakeoverActive(profile, themeConfig);
@@ -1722,6 +1746,8 @@ export function ThemeSettingsView() {
                   </View>
                 )}
               </View>
+                </>
+              )}
             </AccordionCard>
           )}
 
@@ -2297,16 +2323,135 @@ export function ThemeSettingsView() {
                 theme={theme}
               />
 
-              <OptionPillGroup
-                label="Icon Badge Style"
-                options={ICON_BADGE_OPTIONS}
-                selectedValue={themeConfig?.iconBadgeStyle ?? "soft-circle"}
-                onSelect={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ iconBadgeStyle: val });
-                }}
-                theme={theme}
-              />
+              <View style={styles.optionGroup}>
+                <Text style={[styles.optionGroupTitle, { color: theme.textPrimary }]}>
+                  Icon Container
+                </Text>
+                <ScrollView
+                  horizontal
+                  nestedScrollEnabled
+                  showsHorizontalScrollIndicator={
+                    themeConfig?.horizontalScrollbarStyle === "native-indicator"
+                  }
+                  contentContainerStyle={styles.visualSwatchStrip}
+                >
+                  {ICON_BADGE_OPTIONS.map((opt) => {
+                    const active =
+                      (themeConfig?.iconBadgeStyle ?? "soft-circle") === opt.value;
+                    return (
+                      <Pressable
+                        key={`icon-badge-${opt.value}`}
+                        onPress={() => {
+                          doHaptic();
+                          updateThemeConfig({ iconBadgeStyle: opt.value });
+                        }}
+                        accessibilityRole="button"
+                        accessibilityState={{ selected: active }}
+                        accessibilityLabel={`Icon container ${opt.label}`}
+                        android_ripple={androidRipple(theme.rippleColor)}
+                        style={pressableStyle(styles.visualSwatchPressable)}
+                      >
+                        <View
+                          style={[
+                            styles.visualSwatchInner,
+                            {
+                              backgroundColor: active
+                                ? theme.primaryContainer
+                                : theme.surfaceContainerLow,
+                              borderColor: active
+                                ? theme.gold
+                                : theme.outlineVariant,
+                              borderWidth: active ? 1.5 : 1,
+                            },
+                          ]}
+                        >
+                          <View style={styles.visualBadgePreviewSlot}>
+                            <ThemedIconBadge
+                              name="wallet"
+                              baseSize={30}
+                              forceVisible
+                              overrideTheme={theme}
+                              overrideConfig={{
+                                ...themeConfig,
+                                iconBadgeStyle: opt.value,
+                              }}
+                            />
+                          </View>
+                          <Text
+                            style={[
+                              styles.visualSwatchLabel,
+                              { color: active ? theme.gold : theme.textSecondary },
+                            ]}
+                            numberOfLines={1}
+                          >
+                            {opt.label}
+                          </Text>
+                        </View>
+                      </Pressable>
+                    );
+                  })}
+                </ScrollView>
+              </View>
+
+              <View style={styles.optionGroup}>
+                <Text style={[styles.optionGroupTitle, { color: theme.textPrimary }]}>
+                  Icon Glyph Style
+                </Text>
+                <View style={styles.visualGlyphStrip}>
+                  {ICON_PACK_OPTIONS.map((opt) => {
+                    const active =
+                      (themeConfig?.iconPack ?? "outline") === opt.value;
+                    return (
+                      <Pressable
+                        key={`icon-pack-${opt.value}`}
+                        onPress={() => {
+                          doHaptic();
+                          updateThemeConfig({ iconPack: opt.value });
+                        }}
+                        accessibilityRole="button"
+                        accessibilityState={{ selected: active }}
+                        accessibilityLabel={`Icon glyph style ${opt.label}`}
+                        android_ripple={androidRipple(theme.rippleColor)}
+                        style={pressableStyle(styles.visualGlyphPressable)}
+                      >
+                        <View
+                          style={[
+                            styles.visualGlyphInner,
+                            {
+                              backgroundColor: active
+                                ? theme.primaryContainer
+                                : theme.surfaceContainerLow,
+                              borderColor: active
+                                ? theme.gold
+                                : theme.outlineVariant,
+                              borderWidth: active ? 1.5 : 1,
+                            },
+                          ]}
+                        >
+                          <ThemedIcon
+                            name="calculator"
+                            size={18}
+                            pack={opt.value}
+                            scaleWithTheme={false}
+                            color={active ? theme.gold : theme.textPrimary}
+                            overrideTheme={theme}
+                            overrideConfig={themeConfig}
+                          />
+                          <Text
+                            style={[
+                              styles.visualSwatchLabel,
+                              { color: active ? theme.gold : theme.textSecondary },
+                            ]}
+                            numberOfLines={1}
+                          >
+                            {opt.label}
+                          </Text>
+                        </View>
+                      </Pressable>
+                    );
+                  })}
+                </View>
+              </View>
 
               <OptionPillGroup
                 label="Layout Density"
@@ -2384,6 +2529,202 @@ export function ThemeSettingsView() {
                 }}
                 theme={theme}
               />
+
+              {/* Element Visibility & Strip-Down Controls */}
+              <View
+                style={[
+                  styles.stripDownBlock,
+                  { borderTopColor: theme.outlineVariant },
+                ]}
+              >
+                <Text style={[styles.stripDownEyebrow, { color: theme.gold }]}>
+                  STRIP-DOWN &amp; VISIBILITY
+                </Text>
+
+                <View style={styles.stripDownPresetRow}>
+                  <Pressable
+                    onPress={() => {
+                      doHaptic();
+                      updateThemeConfig({
+                        surfaceStyle: "frameless",
+                        inputStyle: "unboxed",
+                        buttonStyle: "unboxed-text",
+                        iconBadgeStyle: "hidden",
+                        showCardIcons: false,
+                        showCardDescriptions: false,
+                        showCategoryBadges: false,
+                        showTrailingArrows: false,
+                        showOfflinePill: false,
+                      });
+                    }}
+                    accessibilityRole="button"
+                    accessibilityLabel="Apply Ultra-Minimal Strip"
+                    android_ripple={androidRipple(theme.rippleColor)}
+                    style={pressableStyle(styles.stripDownPresetPressable)}
+                  >
+                    <View
+                      style={[
+                        styles.stripDownPresetInner,
+                        {
+                          backgroundColor: theme.primaryContainer,
+                          borderColor: theme.gold,
+                        },
+                      ]}
+                    >
+                      <Ionicons
+                        name="eye-off-outline"
+                        size={13}
+                        color={theme.gold}
+                      />
+                      <Text
+                        style={[
+                          styles.stripDownPresetText,
+                          { color: theme.gold },
+                        ]}
+                        numberOfLines={1}
+                      >
+                        Ultra-Minimal Strip
+                      </Text>
+                    </View>
+                  </Pressable>
+
+                  <Pressable
+                    onPress={() => {
+                      doHaptic();
+                      updateThemeConfig({
+                        showCardIcons: true,
+                        showTabIcons: true,
+                        showCardDescriptions: true,
+                        showCategoryBadges: true,
+                        showTrailingArrows: true,
+                        showHomeGreeting: true,
+                        showDailyWidgets: true,
+                        showOfflinePill: true,
+                        ...(themeConfig?.iconBadgeStyle === "hidden"
+                          ? { iconBadgeStyle: "soft-circle" as IconBadgeStyle }
+                          : {}),
+                      });
+                    }}
+                    accessibilityRole="button"
+                    accessibilityLabel="Restore All Elements"
+                    android_ripple={androidRipple(theme.rippleColor)}
+                    style={pressableStyle(styles.stripDownPresetPressable)}
+                  >
+                    <View
+                      style={[
+                        styles.stripDownPresetInner,
+                        {
+                          backgroundColor: theme.surfaceContainerLow,
+                          borderColor: theme.outlineVariant,
+                        },
+                      ]}
+                    >
+                      <Ionicons
+                        name="refresh-outline"
+                        size={13}
+                        color={theme.textPrimary}
+                      />
+                      <Text
+                        style={[
+                          styles.stripDownPresetText,
+                          { color: theme.textPrimary },
+                        ]}
+                        numberOfLines={1}
+                      >
+                        Restore All Elements
+                      </Text>
+                    </View>
+                  </Pressable>
+                </View>
+
+                <ToggleRow
+                  label="Card & Tile Icons"
+                  description="Show decorative icon badges inside cards, tiles, and list rows"
+                  value={themeConfig?.showCardIcons !== false}
+                  onValueChange={(val) => {
+                    doHaptic();
+                    updateThemeConfig({ showCardIcons: val });
+                  }}
+                  theme={theme}
+                />
+
+                <ToggleRow
+                  label="Bottom Tab Icons"
+                  description="Show icons in the bottom navigation bar (hiding forces text labels)"
+                  value={themeConfig?.showTabIcons !== false}
+                  onValueChange={(val) => {
+                    doHaptic();
+                    updateThemeConfig({ showTabIcons: val });
+                  }}
+                  theme={theme}
+                />
+
+                <ToggleRow
+                  label="Card Descriptions"
+                  description="Show secondary subtitle and summary lines on cards"
+                  value={themeConfig?.showCardDescriptions !== false}
+                  onValueChange={(val) => {
+                    doHaptic();
+                    updateThemeConfig({ showCardDescriptions: val });
+                  }}
+                  theme={theme}
+                />
+
+                <ToggleRow
+                  label="Category Tags"
+                  description="Show category pills and eyebrow labels above card titles"
+                  value={themeConfig?.showCategoryBadges !== false}
+                  onValueChange={(val) => {
+                    doHaptic();
+                    updateThemeConfig({ showCategoryBadges: val });
+                  }}
+                  theme={theme}
+                />
+
+                <ToggleRow
+                  label="Trailing Arrows"
+                  description="Show right-hand chevron arrows on tappable rows and cards"
+                  value={themeConfig?.showTrailingArrows !== false}
+                  onValueChange={(val) => {
+                    doHaptic();
+                    updateThemeConfig({ showTrailingArrows: val });
+                  }}
+                  theme={theme}
+                />
+
+                <ToggleRow
+                  label="Home Greeting Hero"
+                  description="Show the greeting banner and header summary on the Home screen"
+                  value={themeConfig?.showHomeGreeting !== false}
+                  onValueChange={(val) => {
+                    doHaptic();
+                    updateThemeConfig({ showHomeGreeting: val });
+                  }}
+                  theme={theme}
+                />
+
+                <ToggleRow
+                  label="Daily Widgets"
+                  description="Show daily quick widgets such as Sheng word and Kenyan trivia"
+                  value={themeConfig?.showDailyWidgets !== false}
+                  onValueChange={(val) => {
+                    doHaptic();
+                    updateThemeConfig({ showDailyWidgets: val });
+                  }}
+                  theme={theme}
+                />
+
+                <ToggleRow
+                  label="Top Bar Offline Pill"
+                  description="Show the offline-ready status pill in the top header bar"
+                  value={themeConfig?.showOfflinePill !== false}
+                  onValueChange={(val) => {
+                    doHaptic();
+                    updateThemeConfig({ showOfflinePill: val });
+                  }}
+                  theme={theme}
+                />
+              </View>
                 </>
               )}
             </AccordionCard>
@@ -2868,7 +3209,6 @@ const MiniAppLivePreview = React.memo(function MiniAppLivePreview({
   previewConfig,
   previewMetrics,
   previewFonts,
-  peekingDefault,
   activePill,
   onSelectPill,
   activeTab,
@@ -2879,7 +3219,6 @@ const MiniAppLivePreview = React.memo(function MiniAppLivePreview({
   previewConfig: ThemeConfig;
   previewMetrics: ThemeMetrics;
   previewFonts: { heading: string; body: string; bold: string };
-  peekingDefault: boolean;
   activePill: number;
   onSelectPill: (idx: number) => void;
   activeTab: number;
@@ -2909,12 +3248,6 @@ const MiniAppLivePreview = React.memo(function MiniAppLivePreview({
     previewConfig,
     previewMetrics,
     "secondary"
-  );
-  const badgeStyle = getThemedIconBadgeStyle(
-    previewTheme,
-    previewConfig,
-    previewTheme.gold,
-    22
   );
 
   const frameRadius = Math.max(8, Math.min(18, previewMetrics.cardRadiusPx));
@@ -2992,15 +3325,22 @@ const MiniAppLivePreview = React.memo(function MiniAppLivePreview({
       : previewConfig.tabBarSize === "xl"
       ? 36
       : 30;
-  const showTabLabels = previewConfig.tabBarLabels !== false;
+  const showTabIcons = previewConfig.showTabIcons !== false;
+  const showTabLabels = !showTabIcons || previewConfig.tabBarLabels !== false;
+  const showOfflinePill = previewConfig.showOfflinePill !== false;
+  const showCardDescriptions = previewConfig.showCardDescriptions !== false;
+  const showCategoryBadges = previewConfig.showCategoryBadges !== false;
+  const showTrailingArrows = previewConfig.showTrailingArrows !== false;
+  const isFramelessSurface = previewConfig.surfaceStyle === "frameless";
+  const isUnboxedInput = previewConfig.inputStyle === "unboxed";
+  const isUnboxedBtn = previewConfig.buttonStyle === "unboxed-text";
   const miniBtnPV = Math.max(
     2.5,
     Math.min(6, Math.round(previewMetrics.buttonPaddingVPx * 0.36))
   );
-  const miniBtnPH = Math.max(
-    6,
-    Math.min(12, Math.round(previewMetrics.buttonPaddingHPx * 0.52))
-  );
+  const miniBtnPH = isUnboxedBtn
+    ? 2
+    : Math.max(6, Math.min(12, Math.round(previewMetrics.buttonPaddingHPx * 0.52)));
 
   const isBentoHome =
     previewConfig.homeLayout === "bento-grid" ||
@@ -3014,6 +3354,7 @@ const MiniAppLivePreview = React.memo(function MiniAppLivePreview({
     const isUnderline = previewConfig.pillBarLayout === "underline-tabs";
     const isMinimal = previewConfig.pillBarLayout === "minimal-text";
     const isSidebar = previewConfig.pillBarLayout === "sidebar-chips";
+    const isIndexTabs = previewConfig.pillBarLayout === "index-tabs";
     return (
       <Pressable
         key={`mpill-${idx}`}
@@ -3022,20 +3363,39 @@ const MiniAppLivePreview = React.memo(function MiniAppLivePreview({
           {
             paddingVertical: pillPV,
             paddingHorizontal: pillPH,
-            borderRadius: isUnderline || isMinimal ? 0 : pillRadius,
-            backgroundColor: isUnderline || isMinimal
-              ? "transparent"
-              : selected
-              ? previewTheme.gold
-              : previewTheme.surfaceContainerHigh,
+            borderRadius: isUnderline || isMinimal || isIndexTabs ? 0 : pillRadius,
+            borderTopLeftRadius: isIndexTabs ? 6 : undefined,
+            borderTopRightRadius: isIndexTabs ? 6 : undefined,
+            backgroundColor:
+              isUnderline || isMinimal
+                ? "transparent"
+                : isIndexTabs
+                ? selected
+                  ? previewTheme.surfaceContainer
+                  : previewTheme.surfaceContainerLow
+                : selected
+                ? previewTheme.gold
+                : previewTheme.surfaceContainerHigh,
             borderWidth: isUnderline || isMinimal ? 0 : 1,
             borderColor: selected
               ? previewTheme.gold
               : previewTheme.outlineVariant,
-            borderBottomWidth: isUnderline ? (selected ? 2 : 0) : isMinimal ? 0 : 1,
-            borderBottomColor: isUnderline && selected
-              ? previewTheme.gold
-              : previewTheme.outlineVariant,
+            borderTopWidth: isIndexTabs ? (selected ? 2 : 1) : isUnderline || isMinimal ? 0 : 1,
+            borderBottomWidth: isIndexTabs
+              ? selected
+                ? 0
+                : 1
+              : isUnderline
+              ? selected
+                ? 2
+                : 0
+              : isMinimal
+              ? 0
+              : 1,
+            borderBottomColor:
+              isUnderline && selected
+                ? previewTheme.gold
+                : previewTheme.outlineVariant,
             borderLeftWidth: isSidebar ? 3 : isUnderline || isMinimal ? 0 : 1,
             borderLeftColor: isSidebar
               ? selected
@@ -3055,7 +3415,7 @@ const MiniAppLivePreview = React.memo(function MiniAppLivePreview({
             fontFamily: previewFonts.bold,
             fontSize: 8.5,
             color:
-              isUnderline || isMinimal
+              isUnderline || isMinimal || isIndexTabs
                 ? selected
                   ? previewTheme.gold
                   : previewTheme.textSecondary
@@ -3255,13 +3615,25 @@ const MiniAppLivePreview = React.memo(function MiniAppLivePreview({
       );
     }
 
-    // Horizontal scroll modes: scroll-with-expand, always-scroll, compact-scroll, underline-tabs, sidebar-chips, minimal-text
+    // Horizontal scroll modes: scroll-with-expand, always-scroll, compact-scroll, underline-tabs, sidebar-chips, index-tabs, minimal-text
+    const isIndexTabsRow = layout === "index-tabs";
     return (
       <ScrollView
         horizontal
         nestedScrollEnabled
         showsHorizontalScrollIndicator={false}
-        contentContainerStyle={{ gap: 4, alignItems: "center" }}
+        style={
+          isIndexTabsRow
+            ? {
+                borderBottomWidth: StyleSheet.hairlineWidth,
+                borderBottomColor: previewTheme.outlineVariant,
+              }
+            : undefined
+        }
+        contentContainerStyle={{
+          gap: isIndexTabsRow ? 3 : 4,
+          alignItems: isIndexTabsRow ? "flex-end" : "center",
+        }}
       >
         {MINI_PILLS.map((label, idx) => renderPillItem(label, idx))}
       </ScrollView>
@@ -3271,6 +3643,47 @@ const MiniAppLivePreview = React.memo(function MiniAppLivePreview({
   const renderHorizontalScrollbar = () => {
     const sbStyle = previewConfig.horizontalScrollbarStyle;
     if (sbStyle === "hidden") return null;
+    if (sbStyle === "tick-ruler") {
+      const tickCount = 9;
+      const activeTickIdx = Math.round(
+        (activePill / Math.max(1, MINI_PILLS.length - 1)) * (tickCount - 1)
+      );
+      return (
+        <View
+          style={{
+            flexDirection: "row",
+            alignItems: "flex-end",
+            justifyContent: "space-between",
+            paddingHorizontal: 8,
+            marginTop: 3,
+            height: hScrollThick + 5,
+          }}
+        >
+          {Array.from({ length: tickCount }, (_, i) => {
+            const isActiveTick = i === activeTickIdx;
+            const isMajor = i === 0 || i === 4 || i === 8;
+            return (
+              <View
+                key={`sbtick-${i}`}
+                style={{
+                  width: isActiveTick ? 2 : 1,
+                  height: isActiveTick
+                    ? hScrollThick + 5
+                    : isMajor
+                    ? hScrollThick + 3
+                    : hScrollThick + 1,
+                  borderRadius: 1,
+                  backgroundColor: isActiveTick
+                    ? hScrollColor
+                    : previewTheme.outlineVariant,
+                  opacity: isActiveTick ? 1 : isMajor ? 0.8 : 0.45,
+                }}
+              />
+            );
+          })}
+        </View>
+      );
+    }
     if (sbStyle === "dots") {
       return (
         <View
@@ -3374,6 +3787,8 @@ const MiniAppLivePreview = React.memo(function MiniAppLivePreview({
         {MINI_TABS.map((tab, idx) => {
           const active = activeTab === idx;
           const isFilledBox = indStyle === "filled-box";
+          const isBracket = indStyle === "bracket";
+          const showTopNotch = active && (isBracket || isTopAccent);
           const tabColor = active
             ? isFilledBox
               ? onGold
@@ -3390,6 +3805,7 @@ const MiniAppLivePreview = React.memo(function MiniAppLivePreview({
                   alignItems: "center",
                   justifyContent: "center",
                   paddingVertical: 2,
+                  position: "relative",
                   borderRadius: isSegmented || isDocked ? 6 : 8,
                   backgroundColor:
                     active && (isFilledBox || isSegmented)
@@ -3412,40 +3828,72 @@ const MiniAppLivePreview = React.memo(function MiniAppLivePreview({
                 },
               ]}
             >
-              <View
-                style={[
-                  {
-                    paddingHorizontal: active && indStyle === "pill" ? 7 : 2,
-                    paddingVertical: 1,
-                    borderRadius: 999,
-                    backgroundColor:
-                      active && (indStyle === "pill" || indStyle === "glow")
-                        ? previewTheme.primaryContainer
-                        : "transparent",
-                  },
-                ]}
-              >
-                <Ionicons
-                  name={tab.icon}
-                  size={Math.round(11 * miniIconScale)}
-                  color={tabColor}
-                />
-              </View>
-              {showTabLabels && (
-                <Text
+              {showTopNotch && (
+                <View
                   style={{
-                    fontFamily: previewFonts.bold,
-                    fontSize: 7.5,
-                    color: tabColor,
-                    marginTop: 1,
-                    includeFontPadding: false,
+                    position: "absolute",
+                    top: 0,
+                    width: 16,
+                    height: 2,
+                    borderBottomLeftRadius: 2,
+                    borderBottomRightRadius: 2,
+                    backgroundColor: previewTheme.gold,
                   }}
-                  numberOfLines={1}
-                >
-                  {tab.label}
-                </Text>
+                />
               )}
-              {active && indStyle === "underline" && (
+              {showTabIcons && (
+                <View
+                  style={[
+                    {
+                      paddingHorizontal: active && indStyle === "pill" ? 7 : 2,
+                      paddingVertical: 1,
+                      borderRadius: 999,
+                      backgroundColor:
+                        active && (indStyle === "pill" || indStyle === "glow")
+                          ? previewTheme.primaryContainer
+                          : "transparent",
+                    },
+                  ]}
+                >
+                  <ThemedIcon
+                    name={tab.icon}
+                    size={Math.round(11 * miniIconScale)}
+                    color={tabColor}
+                    pack={previewConfig.iconPack}
+                    scaleWithTheme={false}
+                    overrideTheme={previewTheme}
+                    overrideConfig={previewConfig}
+                  />
+                </View>
+              )}
+              {showTabLabels && (
+                <View
+                  style={
+                    !showTabIcons && active && (indStyle === "pill" || indStyle === "glow")
+                      ? {
+                          paddingHorizontal: 6,
+                          paddingVertical: 1.5,
+                          borderRadius: 999,
+                          backgroundColor: previewTheme.primaryContainer,
+                        }
+                      : undefined
+                  }
+                >
+                  <Text
+                    style={{
+                      fontFamily: previewFonts.bold,
+                      fontSize: showTabIcons ? 7.5 : 8.5,
+                      color: tabColor,
+                      marginTop: showTabIcons ? 1 : 0,
+                      includeFontPadding: false,
+                    }}
+                    numberOfLines={1}
+                  >
+                    {tab.label}
+                  </Text>
+                </View>
+              )}
+              {active && indStyle === "underline" && !isTopAccent && !isBracket && (
                 <View
                   style={{
                     width: 14,
@@ -3456,7 +3904,7 @@ const MiniAppLivePreview = React.memo(function MiniAppLivePreview({
                   }}
                 />
               )}
-              {active && indStyle === "dot" && (
+              {active && indStyle === "dot" && !isTopAccent && !isBracket && (
                 <View
                   style={{
                     width: 3.5,
@@ -3471,6 +3919,96 @@ const MiniAppLivePreview = React.memo(function MiniAppLivePreview({
           );
         })}
       </View>
+    );
+  };
+
+  const renderMiniSectionHeader = () => {
+    const shStyle = previewConfig.sectionHeaderStyle || "eyebrow";
+    if (shStyle === "accent-pill") {
+      return (
+        <View style={{ flexDirection: "row", alignItems: "center" }}>
+          <View
+            style={{
+              paddingHorizontal: 6,
+              paddingVertical: 1.5,
+              borderRadius: 999,
+              backgroundColor: previewTheme.primaryContainer,
+              borderWidth: StyleSheet.hairlineWidth,
+              borderColor: hexToRgba(previewTheme.gold, 0.5),
+            }}
+          >
+            <Text
+              style={{
+                fontFamily: previewFonts.bold,
+                fontSize: 7.5,
+                letterSpacing: 0.5,
+                textTransform: "uppercase",
+                color: previewTheme.gold,
+                includeFontPadding: false,
+              }}
+              numberOfLines={1}
+            >
+              Featured Tools
+            </Text>
+          </View>
+        </View>
+      );
+    }
+    if (shStyle === "ruled-line" || shStyle === "left-bar") {
+      return (
+        <View style={{ flexDirection: "row", alignItems: "center", gap: 5 }}>
+          <Text
+            style={{
+              fontFamily: previewFonts.heading,
+              fontSize: 8.5,
+              color: previewTheme.textPrimary,
+              textTransform: previewConfig.headingTransform || "none",
+              includeFontPadding: false,
+            }}
+            numberOfLines={1}
+          >
+            Featured Tools
+          </Text>
+          <View
+            style={{
+              flex: 1,
+              height: StyleSheet.hairlineWidth,
+              backgroundColor: hexToRgba(previewTheme.gold, 0.5),
+            }}
+          />
+        </View>
+      );
+    }
+    if (shStyle === "bold-title") {
+      return (
+        <Text
+          style={{
+            fontFamily: previewFonts.heading,
+            fontSize: 9.5,
+            color: previewTheme.textPrimary,
+            textTransform: previewConfig.headingTransform || "none",
+            includeFontPadding: false,
+          }}
+          numberOfLines={1}
+        >
+          Featured Tools
+        </Text>
+      );
+    }
+    return (
+      <Text
+        style={{
+          fontFamily: previewFonts.bold,
+          fontSize: 7.5,
+          letterSpacing: 0.8,
+          textTransform: "uppercase",
+          color: previewTheme.gold,
+          includeFontPadding: false,
+        }}
+        numberOfLines={1}
+      >
+        Featured Tools
+      </Text>
     );
   };
 
@@ -3512,17 +4050,10 @@ const MiniAppLivePreview = React.memo(function MiniAppLivePreview({
         </View>
 
         {/* Real KenyaStripe */}
-        {peekingDefault ? (
-          <View style={styles.defaultStripeMock} accessible={false}>
-            <View style={{ height: 1.5, backgroundColor: "#000000" }} />
-            <View style={{ height: 0.5, backgroundColor: "#FAF7F2" }} />
-            <View style={{ height: 1.5, backgroundColor: "#BE2126" }} />
-            <View style={{ height: 0.5, backgroundColor: "#FAF7F2" }} />
-            <View style={{ height: 1.5, backgroundColor: "#006B3F" }} />
-          </View>
-        ) : (
-          <KenyaStripe />
-        )}
+        <KenyaStripe
+          themeOverride={previewTheme}
+          configOverride={previewConfig}
+        />
 
         {/* Mini Top App Bar */}
         <View
@@ -3562,12 +4093,63 @@ const MiniAppLivePreview = React.memo(function MiniAppLivePreview({
           >
             KenyaHub
           </Text>
-          {!isCenteredHeader && (
-            <Ionicons
-              name="notifications-outline"
-              size={Math.round(11 * miniIconScale)}
-              color={previewTheme.gold}
-            />
+          {!isCenteredHeader ? (
+            <View style={{ flexDirection: "row", alignItems: "center", gap: 5 }}>
+              {showOfflinePill && (
+                <View
+                  style={[
+                    styles.miniOfflinePill,
+                    {
+                      backgroundColor: previewTheme.secondaryContainer,
+                      borderColor: hexToRgba(previewTheme.kenyaGreenLight, 0.45),
+                    },
+                  ]}
+                >
+                  <Text
+                    style={[
+                      styles.miniOfflinePillText,
+                      { color: previewTheme.onSecondaryContainer },
+                    ]}
+                    numberOfLines={1}
+                  >
+                    OFFLINE
+                  </Text>
+                </View>
+              )}
+              <ThemedIcon
+                name="notifications-outline"
+                size={Math.round(11 * miniIconScale)}
+                color={previewTheme.gold}
+                pack={previewConfig.iconPack}
+                scaleWithTheme={false}
+                overrideTheme={previewTheme}
+                overrideConfig={previewConfig}
+              />
+            </View>
+          ) : (
+            showOfflinePill && (
+              <View
+                style={[
+                  styles.miniOfflinePill,
+                  {
+                    position: "absolute",
+                    right: 8,
+                    backgroundColor: previewTheme.secondaryContainer,
+                    borderColor: hexToRgba(previewTheme.kenyaGreenLight, 0.45),
+                  },
+                ]}
+              >
+                <Text
+                  style={[
+                    styles.miniOfflinePillText,
+                    { color: previewTheme.onSecondaryContainer },
+                  ]}
+                  numberOfLines={1}
+                >
+                  OFFLINE
+                </Text>
+              </View>
+            )
           )}
         </View>
 
@@ -3581,15 +4163,19 @@ const MiniAppLivePreview = React.memo(function MiniAppLivePreview({
                 flexDirection: "row",
                 alignItems: "center",
                 gap: 5,
-                paddingHorizontal: 7,
-                paddingVertical: 3,
+                paddingHorizontal: isUnboxedInput ? 2 : 7,
+                paddingVertical: isUnboxedInput ? 2 : 3,
               },
             ]}
           >
-            <Ionicons
+            <ThemedIcon
               name="search"
               size={Math.round(10 * miniIconScale)}
               color={previewTheme.textMuted}
+              pack={previewConfig.iconPack}
+              scaleWithTheme={false}
+              overrideTheme={previewTheme}
+              overrideConfig={previewConfig}
             />
             <Text
               style={{
@@ -3610,12 +4196,15 @@ const MiniAppLivePreview = React.memo(function MiniAppLivePreview({
             {renderHorizontalScrollbar()}
           </View>
 
+          {/* Mini Section Header reflecting sectionHeaderStyle */}
+          {renderMiniSectionHeader()}
+
           {/* Mini Body Card(s) reflecting homeLayout */}
           {isBentoHome ? (
             <View style={{ flexDirection: "row", gap: 6 }}>
               {[
-                { title: "PAYE Tax", stat: "KES 12,450", icon: "calculator-outline" as const },
-                { title: "CBC Notes", stat: "Grade 8", icon: "school-outline" as const },
+                { title: "PAYE Tax", tag: "FINANCE", desc: "2026 KRA bands", stat: "KES 12,450", icon: "calculator-outline" as const },
+                { title: "CBC Notes", tag: "STUDY", desc: "Junior school", stat: "Grade 8", icon: "school-outline" as const },
               ].map((tile) => (
                 <View
                   key={tile.title}
@@ -3623,19 +4212,42 @@ const MiniAppLivePreview = React.memo(function MiniAppLivePreview({
                     cardStyle,
                     {
                       flex: 1,
-                      padding: miniCardPad,
+                      paddingVertical: miniCardPad,
+                      paddingHorizontal: isFramelessSurface ? 0 : miniCardPad,
                       gap: 3,
                     },
                   ]}
                 >
-                  <View style={{ flexDirection: "row", alignItems: "center", gap: 5 }}>
-                    <View style={badgeStyle.container}>
-                      <Ionicons
-                        name={tile.icon}
-                        size={Math.round(11 * miniIconScale)}
-                        color={badgeStyle.iconColor}
-                      />
+                  {showCategoryBadges && (
+                    <View
+                      style={[
+                        styles.miniCategoryTag,
+                        {
+                          backgroundColor: previewTheme.primaryContainer,
+                          alignSelf: "flex-start",
+                        },
+                      ]}
+                    >
+                      <Text
+                        style={[
+                          styles.miniCategoryTagText,
+                          { color: previewTheme.gold },
+                        ]}
+                        numberOfLines={1}
+                      >
+                        {tile.tag}
+                      </Text>
                     </View>
+                  )}
+                  <View style={{ flexDirection: "row", alignItems: "center", gap: 5 }}>
+                    <ThemedIconBadge
+                      name={tile.icon}
+                      accentColor={previewTheme.gold}
+                      baseSize={22}
+                      iconSize={11}
+                      overrideTheme={previewTheme}
+                      overrideConfig={previewConfig}
+                    />
                     <View style={styles.flexOne}>
                       <Text
                         style={{
@@ -3649,6 +4261,19 @@ const MiniAppLivePreview = React.memo(function MiniAppLivePreview({
                       >
                         {tile.title}
                       </Text>
+                      {showCardDescriptions && (
+                        <Text
+                          style={{
+                            fontFamily: previewFonts.body,
+                            fontSize: 7.5,
+                            color: previewTheme.textSecondary,
+                            includeFontPadding: false,
+                          }}
+                          numberOfLines={1}
+                        >
+                          {tile.desc}
+                        </Text>
+                      )}
                       <Text
                         style={{
                           fontFamily:
@@ -3670,6 +4295,8 @@ const MiniAppLivePreview = React.memo(function MiniAppLivePreview({
                     progress={0.68}
                     color={previewTheme.gold}
                     height={3.5}
+                    themeOverride={previewTheme}
+                    configOverride={previewConfig}
                   />
                 </View>
               ))}
@@ -3681,19 +4308,32 @@ const MiniAppLivePreview = React.memo(function MiniAppLivePreview({
                 {
                   flexDirection: "row",
                   alignItems: "center",
-                  padding: miniCardPad,
+                  paddingVertical: miniCardPad,
+                  paddingHorizontal: isFramelessSurface ? 0 : miniCardPad,
                   gap: 6,
                 },
               ]}
             >
-              <View style={badgeStyle.container}>
-                <Ionicons
-                  name="wallet-outline"
-                  size={Math.round(11 * miniIconScale)}
-                  color={badgeStyle.iconColor}
-                />
-              </View>
+              <ThemedIconBadge
+                name="wallet-outline"
+                accentColor={previewTheme.gold}
+                baseSize={22}
+                iconSize={11}
+                overrideTheme={previewTheme}
+                overrideConfig={previewConfig}
+              />
               <View style={styles.flexOne}>
+                {showCategoryBadges && (
+                  <Text
+                    style={[
+                      styles.miniCategoryTagText,
+                      { color: previewTheme.gold, marginBottom: 1 },
+                    ]}
+                    numberOfLines={1}
+                  >
+                    FINANCE
+                  </Text>
+                )}
                 <Text
                   style={{
                     fontFamily: previewFonts.heading,
@@ -3706,6 +4346,19 @@ const MiniAppLivePreview = React.memo(function MiniAppLivePreview({
                 >
                   PAYE Relief Summary
                 </Text>
+                {showCardDescriptions && (
+                  <Text
+                    style={{
+                      fontFamily: previewFonts.body,
+                      fontSize: 8,
+                      color: previewTheme.textSecondary,
+                      includeFontPadding: false,
+                    }}
+                    numberOfLines={1}
+                  >
+                    2026 KRA bands &amp; SHIF relief
+                  </Text>
+                )}
                 <Text
                   style={{
                     fontFamily:
@@ -3739,26 +4392,57 @@ const MiniAppLivePreview = React.memo(function MiniAppLivePreview({
                   Open
                 </Text>
               </Pressable>
+              {showTrailingArrows && (
+                <Ionicons
+                  name="chevron-forward"
+                  size={11}
+                  color={previewTheme.textMuted}
+                />
+              )}
             </View>
           ) : (
             <View
               style={[
                 cardStyle,
                 {
-                  padding: miniCardPad,
+                  paddingVertical: miniCardPad,
+                  paddingHorizontal: isFramelessSurface ? 0 : miniCardPad,
                   gap: 4,
                 },
               ]}
             >
               <View style={styles.miniCardTopRow}>
-                <View style={badgeStyle.container}>
-                  <Ionicons
-                    name="wallet-outline"
-                    size={Math.round(11 * miniIconScale)}
-                    color={badgeStyle.iconColor}
-                  />
-                </View>
+                <ThemedIconBadge
+                  name="wallet-outline"
+                  accentColor={previewTheme.gold}
+                  baseSize={22}
+                  iconSize={11}
+                  overrideTheme={previewTheme}
+                  overrideConfig={previewConfig}
+                />
                 <View style={styles.flexOne}>
+                  {showCategoryBadges && (
+                    <View
+                      style={[
+                        styles.miniCategoryTag,
+                        {
+                          backgroundColor: previewTheme.primaryContainer,
+                          alignSelf: "flex-start",
+                          marginBottom: 1.5,
+                        },
+                      ]}
+                    >
+                      <Text
+                        style={[
+                          styles.miniCategoryTagText,
+                          { color: previewTheme.gold },
+                        ]}
+                        numberOfLines={1}
+                      >
+                        FINANCE
+                      </Text>
+                    </View>
+                  )}
                   <Text
                     style={{
                       fontFamily: previewFonts.heading,
@@ -3771,6 +4455,19 @@ const MiniAppLivePreview = React.memo(function MiniAppLivePreview({
                   >
                     Civic & Tax Suite
                   </Text>
+                  {showCardDescriptions && (
+                    <Text
+                      style={{
+                        fontFamily: previewFonts.body,
+                        fontSize: 8,
+                        color: previewTheme.textSecondary,
+                        includeFontPadding: false,
+                      }}
+                      numberOfLines={1}
+                    >
+                      PAYE, SHIF &amp; housing levy offline
+                    </Text>
+                  )}
                 </View>
                 <Text
                   style={{
@@ -3786,25 +4483,27 @@ const MiniAppLivePreview = React.memo(function MiniAppLivePreview({
                 >
                   KES 12,450
                 </Text>
+                {showTrailingArrows && (
+                  <Ionicons
+                    name="chevron-forward"
+                    size={11}
+                    color={previewTheme.textMuted}
+                  />
+                )}
               </View>
 
-              {peekingDefault ? (
-                <View
-                  style={{
-                    width: "100%",
-                    height: StyleSheet.hairlineWidth,
-                    backgroundColor: previewTheme.outlineVariant,
-                    marginVertical: 2,
-                  }}
-                />
-              ) : (
-                <ThemedDivider style={{ marginVertical: 2 }} />
-              )}
+              <ThemedDivider
+                style={{ marginVertical: 2 }}
+                themeOverride={previewTheme}
+                configOverride={previewConfig}
+              />
 
               <ThemedProgressBar
                 progress={0.68}
                 color={previewTheme.gold}
                 height={4}
+                themeOverride={previewTheme}
+                configOverride={previewConfig}
               />
 
               <View style={styles.miniCardBtnsRow}>
@@ -3833,17 +4532,27 @@ const MiniAppLivePreview = React.memo(function MiniAppLivePreview({
                   onPress={onActionPress}
                   style={[
                     secondaryBtn.container,
-                    {
-                      paddingVertical: miniBtnPV,
-                      paddingHorizontal: miniBtnPH,
-                    },
+                    isUnboxedBtn
+                      ? {
+                          backgroundColor: "transparent",
+                          borderWidth: 0,
+                          borderRadius: 0,
+                          paddingVertical: miniBtnPV,
+                          paddingHorizontal: 2,
+                        }
+                      : {
+                          paddingVertical: miniBtnPV,
+                          paddingHorizontal: miniBtnPH,
+                        },
                   ]}
                 >
                   <Text
                     style={{
                       fontFamily: previewFonts.bold,
                       fontSize: 8.5,
-                      color: secondaryBtn.textColor,
+                      color: isUnboxedBtn
+                        ? previewTheme.textSecondary
+                        : secondaryBtn.textColor,
                       includeFontPadding: false,
                     }}
                   >
@@ -3873,7 +4582,15 @@ const MiniAppLivePreview = React.memo(function MiniAppLivePreview({
                 },
               ]}
             >
-              <Ionicons name="compass" size={11} color={onGold} />
+              <ThemedIcon
+                name="compass"
+                size={11}
+                color={onGold}
+                pack={previewConfig.iconPack}
+                scaleWithTheme={false}
+                overrideTheme={previewTheme}
+                overrideConfig={previewConfig}
+              />
             </View>
           )}
         </View>
@@ -3890,14 +4607,12 @@ const CardCompactPreview = React.memo(function CardCompactPreview({
   previewConfig,
   previewMetrics,
   previewFonts,
-  peekingDefault,
   onActionPress,
 }: {
   previewTheme: ThemeColors;
   previewConfig: ThemeConfig;
   previewMetrics: ThemeMetrics;
   previewFonts: { heading: string; body: string; bold: string };
-  peekingDefault: boolean;
   onActionPress: () => void;
 }) {
   const monoFont = Platform.OS === "ios" ? "Menlo" : "monospace";
@@ -3918,16 +4633,14 @@ const CardCompactPreview = React.memo(function CardCompactPreview({
     previewMetrics,
     "secondary"
   );
-  const badgeStyle = getThemedIconBadgeStyle(
-    previewTheme,
-    previewConfig,
-    previewTheme.gold,
-    26
-  );
-  const innerRadius = Math.max(
-    0,
-    previewMetrics.cardRadiusPx - previewMetrics.borderWidthPx
-  );
+  const isFramelessSurface = previewConfig.surfaceStyle === "frameless";
+  const isUnboxedBtn = previewConfig.buttonStyle === "unboxed-text";
+  const showCardDescriptions = previewConfig.showCardDescriptions !== false;
+  const showCategoryBadges = previewConfig.showCategoryBadges !== false;
+  const showTrailingArrows = previewConfig.showTrailingArrows !== false;
+  const innerRadius = isFramelessSurface
+    ? 0
+    : Math.max(0, previewMetrics.cardRadiusPx - previewMetrics.borderWidthPx);
   const pad = Math.max(8, Math.min(14, Math.round(previewMetrics.cardPaddingPx * 0.72)));
 
   return (
@@ -3938,17 +4651,49 @@ const CardCompactPreview = React.memo(function CardCompactPreview({
           { borderRadius: innerRadius, elevation: 0 },
         ]}
       >
-        {!peekingDefault && <KenyaStripe />}
-        <View style={{ padding: pad, gap: 6 }}>
+        <KenyaStripe
+          themeOverride={previewTheme}
+          configOverride={previewConfig}
+        />
+        <View
+          style={{
+            paddingVertical: pad,
+            paddingHorizontal: isFramelessSurface ? 2 : pad,
+            gap: 6,
+          }}
+        >
           <View style={styles.miniCardTopRow}>
-            <View style={badgeStyle.container}>
-              <Ionicons
-                name="sparkles"
-                size={13}
-                color={badgeStyle.iconColor}
-              />
-            </View>
+            <ThemedIconBadge
+              name="sparkles"
+              accentColor={previewTheme.gold}
+              baseSize={26}
+              iconSize={13}
+              overrideTheme={previewTheme}
+              overrideConfig={previewConfig}
+            />
             <View style={styles.flexOne}>
+              {showCategoryBadges && (
+                <View
+                  style={[
+                    styles.miniCategoryTag,
+                    {
+                      backgroundColor: previewTheme.primaryContainer,
+                      alignSelf: "flex-start",
+                      marginBottom: 2,
+                    },
+                  ]}
+                >
+                  <Text
+                    style={[
+                      styles.miniCategoryTagText,
+                      { color: previewTheme.gold },
+                    ]}
+                    numberOfLines={1}
+                  >
+                    CIVIC &amp; TAX
+                  </Text>
+                </View>
+              )}
               <Text
                 style={{
                   fontFamily: previewFonts.heading,
@@ -3962,6 +4707,20 @@ const CardCompactPreview = React.memo(function CardCompactPreview({
               >
                 KenyaHub Civic & Utility Suite
               </Text>
+              {showCardDescriptions && (
+                <Text
+                  style={{
+                    fontFamily: previewFonts.body,
+                    fontSize: Math.round(10.5 * previewMetrics.fontScale),
+                    color: previewTheme.textSecondary,
+                    marginTop: 1,
+                    includeFontPadding: false,
+                  }}
+                  numberOfLines={1}
+                >
+                  PAYE, SHIF &amp; statutory deductions offline
+                </Text>
+              )}
             </View>
             <Text
               style={{
@@ -3977,14 +4736,27 @@ const CardCompactPreview = React.memo(function CardCompactPreview({
             >
               KES 12,450
             </Text>
+            {showTrailingArrows && (
+              <Ionicons
+                name="chevron-forward"
+                size={13}
+                color={previewTheme.textMuted}
+              />
+            )}
           </View>
 
-          {!peekingDefault && <ThemedDivider style={{ marginVertical: 1 }} />}
+          <ThemedDivider
+            style={{ marginVertical: 1 }}
+            themeOverride={previewTheme}
+            configOverride={previewConfig}
+          />
 
           <ThemedProgressBar
             progress={0.68}
             color={previewTheme.gold}
             height={4.5}
+            themeOverride={previewTheme}
+            configOverride={previewConfig}
           />
 
           <View style={styles.miniCardBtnsRow}>
@@ -3992,7 +4764,10 @@ const CardCompactPreview = React.memo(function CardCompactPreview({
               onPress={onActionPress}
               style={[
                 primaryBtn.container,
-                { paddingVertical: 5, paddingHorizontal: 11 },
+                {
+                  paddingVertical: 5,
+                  paddingHorizontal: isUnboxedBtn ? 2 : 11,
+                },
               ]}
             >
               <Text
@@ -4010,14 +4785,24 @@ const CardCompactPreview = React.memo(function CardCompactPreview({
               onPress={onActionPress}
               style={[
                 secondaryBtn.container,
-                { paddingVertical: 5, paddingHorizontal: 11 },
+                isUnboxedBtn
+                  ? {
+                      backgroundColor: "transparent",
+                      borderWidth: 0,
+                      borderRadius: 0,
+                      paddingVertical: 5,
+                      paddingHorizontal: 4,
+                    }
+                  : { paddingVertical: 5, paddingHorizontal: 11 },
               ]}
             >
               <Text
                 style={{
                   fontFamily: previewFonts.bold,
                   fontSize: 11,
-                  color: secondaryBtn.textColor,
+                  color: isUnboxedBtn
+                    ? previewTheme.textSecondary
+                    : secondaryBtn.textColor,
                   includeFontPadding: false,
                 }}
               >
@@ -4335,10 +5120,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
     gap: 3,
   },
-  defaultStripeMock: {
-    width: "100%",
-    overflow: "hidden",
-  },
   miniAppBar: {
     flexDirection: "row",
     alignItems: "center",
@@ -4601,8 +5382,7 @@ const styles = StyleSheet.create({
     gap: 8,
   },
   makeoverPressable: {
-    width: "48%",
-    flexGrow: 1,
+    width: "48.6%",
     borderRadius: 12,
     overflow: "hidden",
   },
@@ -4764,8 +5544,7 @@ const styles = StyleSheet.create({
     gap: 8,
   },
   presetPressable: {
-    width: "48%",
-    flexGrow: 1,
+    width: "48.6%",
     borderRadius: 12,
     overflow: "hidden",
   },
@@ -4906,6 +5685,51 @@ const styles = StyleSheet.create({
     fontSize: 12,
     includeFontPadding: false,
   },
+  visualSwatchStrip: {
+    gap: 8,
+    paddingVertical: 2,
+  },
+  visualSwatchPressable: {
+    borderRadius: 11,
+    overflow: "hidden",
+  },
+  visualSwatchInner: {
+    minWidth: 82,
+    paddingHorizontal: 8,
+    paddingVertical: 8,
+    borderRadius: 11,
+    alignItems: "center",
+    justifyContent: "center",
+    gap: 6,
+  },
+  visualBadgePreviewSlot: {
+    minHeight: 38,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  visualSwatchLabel: {
+    fontFamily: "Inter_600SemiBold",
+    fontSize: 10.5,
+    includeFontPadding: false,
+    textAlign: "center",
+  },
+  visualGlyphStrip: {
+    flexDirection: "row",
+    gap: 6,
+  },
+  visualGlyphPressable: {
+    flex: 1,
+    borderRadius: 11,
+    overflow: "hidden",
+  },
+  visualGlyphInner: {
+    paddingHorizontal: 6,
+    paddingVertical: 8,
+    borderRadius: 11,
+    alignItems: "center",
+    justifyContent: "center",
+    gap: 5,
+  },
   toggleRowPressable: {
     borderRadius: 11,
     overflow: "hidden",
@@ -4997,6 +5821,67 @@ const styles = StyleSheet.create({
   resetBtnText: {
     fontFamily: "Inter_700Bold",
     fontSize: 13,
+    includeFontPadding: false,
+  },
+  stripDownBlock: {
+    marginTop: 6,
+    paddingTop: 12,
+    borderTopWidth: StyleSheet.hairlineWidth,
+    gap: 8,
+  },
+  stripDownEyebrow: {
+    fontFamily: "Inter_700Bold",
+    fontSize: 10.5,
+    letterSpacing: 0.9,
+    textTransform: "uppercase",
+    includeFontPadding: false,
+  },
+  stripDownPresetRow: {
+    flexDirection: "row",
+    gap: 8,
+  },
+  stripDownPresetPressable: {
+    flex: 1,
+    borderRadius: 10,
+    overflow: "hidden",
+  },
+  stripDownPresetInner: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: 5,
+    paddingVertical: 8,
+    paddingHorizontal: 8,
+    borderRadius: 10,
+    borderWidth: 1,
+  },
+  stripDownPresetText: {
+    fontFamily: "Inter_600SemiBold",
+    fontSize: 11.5,
+    includeFontPadding: false,
+  },
+  miniOfflinePill: {
+    paddingHorizontal: 4.5,
+    paddingVertical: 1,
+    borderRadius: 999,
+    borderWidth: StyleSheet.hairlineWidth,
+  },
+  miniOfflinePillText: {
+    fontFamily: "Inter_700Bold",
+    fontSize: 6.5,
+    letterSpacing: 0.4,
+    includeFontPadding: false,
+  },
+  miniCategoryTag: {
+    paddingHorizontal: 4,
+    paddingVertical: 0.5,
+    borderRadius: 4,
+  },
+  miniCategoryTagText: {
+    fontFamily: "Inter_700Bold",
+    fontSize: 6.5,
+    letterSpacing: 0.5,
+    textTransform: "uppercase",
     includeFontPadding: false,
   },
 });

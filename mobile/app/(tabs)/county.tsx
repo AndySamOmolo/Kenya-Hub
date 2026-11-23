@@ -13,8 +13,7 @@ import {
   useWindowDimensions,
 } from "react-native";
 import { useRouter } from "expo-router";
-import { Ionicons } from "@expo/vector-icons";
-import { SafeAreaView } from "react-native-safe-area-context";
+import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
 import {
   useTheme,
   KenyaStripe,
@@ -25,7 +24,8 @@ import {
   getThemedCardStyle,
   getThemedInputStyle,
 } from "../../src/theme";
-import type { ThemeMetrics } from "../../src/lib/theme-engine";
+import { getContrastInk, type ThemeConfig, type ThemeMetrics } from "../../src/lib/theme-engine";
+import { ThemedIcon, ThemedIconBadge } from "../../src/components/ThemedIcon";
 import countiesData from "../../src/shared/data/counties.json";
 import budgetsData from "../../src/shared/data/county-budgets.json";
 import rainfallData from "../../src/shared/data/rainfall-patterns.json";
@@ -239,12 +239,16 @@ const DirectoryCardItem = React.memo(function DirectoryCardItem({
   item,
   router,
   theme,
+  themeConfig,
+  resolvedFonts,
   themedCardStyle,
   styles,
 }: {
   item: any;
   router: any;
   theme: any;
+  themeConfig: ThemeConfig;
+  resolvedFonts: { heading: string; body: string; bold: string };
   themedCardStyle: ReturnType<typeof getThemedCardStyle>;
   styles: ReturnType<typeof createCountyStyles>;
 }) {
@@ -253,39 +257,43 @@ const DirectoryCardItem = React.memo(function DirectoryCardItem({
     item.population >= 1000000
       ? `${(item.population / 1000000).toFixed(2)}M`
       : `${Math.round(item.population / 1000)}k`;
+  const isFrameless = themeConfig.surfaceStyle === "frameless";
+  const showCardIcons =
+    themeConfig.showCardIcons !== false && themeConfig.iconBadgeStyle !== "hidden";
+  const showCardDescriptions = themeConfig.showCardDescriptions !== false;
+  const showTrailingArrows = themeConfig.showTrailingArrows !== false;
 
   return (
     <View
       style={[
         styles.countyCardWrap,
         themedCardStyle,
+        isFrameless && {
+          borderBottomWidth: StyleSheet.hairlineWidth,
+          borderBottomColor: theme.outlineVariant,
+        },
       ]}
     >
       <Pressable
         android_ripple={androidRipple(theme.rippleColor)}
         accessibilityRole="button"
         accessibilityLabel={`Open ${item.name} County profile`}
-        style={pressableStyle(styles.countyCard)}
+        style={pressableStyle([
+          styles.countyCard,
+          isFrameless && { paddingHorizontal: 0 },
+        ])}
         onPress={() => {
           triggerHaptic(8);
           router.push(`/county/${item.slug}` as any);
         }}
       >
         <View style={styles.cardHeaderRow}>
-          <View
-            style={[
-              styles.codeBadge,
-              {
-                backgroundColor: theme.primaryContainer,
-                borderColor: `${theme.gold}45`,
-              },
-            ]}
-          >
-            <Text style={[styles.codeText, { color: theme.onPrimaryContainer }]}>
-              {codeFormatted}
-            </Text>
-          </View>
-          <View style={{ flex: 1, marginLeft: 11, minWidth: 0 }}>
+          <ThemedIconBadge
+            label={codeFormatted}
+            accentColor={theme.gold}
+            baseSize={40}
+          />
+          <View style={{ flex: 1, marginLeft: showCardIcons ? 11 : 0, minWidth: 0 }}>
             <Text
               style={[styles.countyName, { color: theme.textPrimary }]}
               numberOfLines={1}
@@ -300,45 +308,53 @@ const DirectoryCardItem = React.memo(function DirectoryCardItem({
               <Text
                 style={{
                   color: theme.textPrimary,
-                  fontFamily: "Inter_600SemiBold",
+                  fontFamily: resolvedFonts.bold,
                 }}
               >
                 {item.capital}
               </Text>
-              {" · "}
-              {item.area.toLocaleString()} km² · {item.constituencies.length} Const.
+              {showCardDescriptions && (
+                <>
+                  {" · "}
+                  {item.area.toLocaleString()} km² · {item.constituencies.length} Const.
+                </>
+              )}
             </Text>
           </View>
-          <View
-            style={[
-              styles.trailingCircle,
-              {
-                backgroundColor: theme.surfaceContainerHigh,
-                borderColor: theme.outlineVariant,
-              },
-            ]}
-          >
-            <Ionicons
-              name="chevron-forward"
-              size={15}
-              color={theme.gold}
-            />
-          </View>
+          {showTrailingArrows && (
+            <View
+              style={[
+                styles.trailingCircle,
+                {
+                  backgroundColor: theme.surfaceContainerHigh,
+                  borderColor: theme.outlineVariant,
+                },
+              ]}
+            >
+              <ThemedIcon
+                name="chevron-forward"
+                size={15}
+                color={theme.gold}
+              />
+            </View>
+          )}
         </View>
 
         {/* Clean Governor Row */}
-        <View style={styles.governorRow}>
-          <Ionicons name="person-outline" size={13} color={theme.gold} />
-          <Text
-            style={[styles.governorText, { color: theme.textSecondary }]}
-            numberOfLines={1}
-          >
-            Gov.{" "}
-            <Text style={{ color: theme.textPrimary, fontFamily: "Inter_600SemiBold" }}>
-              {item.governor}
+        {showCardDescriptions && (
+          <View style={styles.governorRow}>
+            <ThemedIcon name="person-outline" size={13} color={theme.gold} />
+            <Text
+              style={[styles.governorText, { color: theme.textSecondary }]}
+              numberOfLines={1}
+            >
+              Gov.{" "}
+              <Text style={{ color: theme.textPrimary, fontFamily: resolvedFonts.bold }}>
+                {item.governor}
+              </Text>
             </Text>
-          </Text>
-        </View>
+          </View>
+        )}
 
         {/* Structured 3-Column Metrics Strip */}
         <View
@@ -412,12 +428,14 @@ const BudgetCardItem = React.memo(function BudgetCardItem({
   item,
   router,
   theme,
+  resolvedFonts,
   themedCardStyle,
   styles,
 }: {
   item: any;
   router: any;
   theme: any;
+  resolvedFonts: { heading: string; body: string; bold: string };
   themedCardStyle: ReturnType<typeof getThemedCardStyle>;
   styles: ReturnType<typeof createCountyStyles>;
 }) {
@@ -446,7 +464,7 @@ const BudgetCardItem = React.memo(function BudgetCardItem({
         <Text
           style={{
             fontSize: 12,
-            fontFamily: "Outfit_800ExtraBold",
+            fontFamily: resolvedFonts.heading,
             color: theme.kenyaGreenLight,
           }}
         >
@@ -473,13 +491,13 @@ const BudgetCardItem = React.memo(function BudgetCardItem({
       <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
         <Text style={{ fontSize: 11, color: theme.textSecondary }}>
           Share:{" "}
-          <Text style={{ fontFamily: "Outfit_700Bold", color: theme.textPrimary }}>
+          <Text style={{ fontFamily: resolvedFonts.heading, color: theme.textPrimary }}>
             KES {b.allocation.toLocaleString()}M
           </Text>
         </Text>
         <Text style={{ fontSize: 11, color: theme.textSecondary }}>
           OSR:{" "}
-          <Text style={{ fontFamily: "Outfit_700Bold", color: theme.gold }}>
+          <Text style={{ fontFamily: resolvedFonts.heading, color: theme.gold }}>
             KES {b.ownSourceRevenue.toLocaleString()}M
           </Text>
         </Text>
@@ -487,7 +505,7 @@ const BudgetCardItem = React.memo(function BudgetCardItem({
           Spent:{" "}
           <Text
             style={{
-              fontFamily: "Outfit_700Bold",
+              fontFamily: resolvedFonts.heading,
               color: theme.kenyaGreenLight,
             }}
           >
@@ -503,12 +521,14 @@ const ConstituencyCardItem = React.memo(function ConstituencyCardItem({
   item,
   router,
   theme,
+  resolvedFonts,
   themedCardStyle,
   styles,
 }: {
   item: any;
   router: any;
   theme: any;
+  resolvedFonts: { heading: string; body: string; bold: string };
   themedCardStyle: ReturnType<typeof getThemedCardStyle>;
   styles: ReturnType<typeof createCountyStyles>;
 }) {
@@ -535,7 +555,7 @@ const ConstituencyCardItem = React.memo(function ConstituencyCardItem({
         <Text
           style={{
             fontSize: 11,
-            fontFamily: "Outfit_700Bold",
+            fontFamily: resolvedFonts.heading,
             color: theme.gold,
           }}
         >
@@ -549,7 +569,7 @@ const ConstituencyCardItem = React.memo(function ConstituencyCardItem({
           Gov:{" "}
           <Text
             style={{
-              fontFamily: "Outfit_700Bold",
+              fontFamily: resolvedFonts.heading,
               color: theme.kenyaGreenLight,
             }}
           >
@@ -561,7 +581,7 @@ const ConstituencyCardItem = React.memo(function ConstituencyCardItem({
         >
           Dep:{" "}
           <Text
-            style={{ fontFamily: "Outfit_700Bold", color: theme.textPrimary }}
+            style={{ fontFamily: resolvedFonts.heading, color: theme.textPrimary }}
           >
             {item.deputyGovernor}
           </Text>
@@ -571,7 +591,7 @@ const ConstituencyCardItem = React.memo(function ConstituencyCardItem({
             style={{ fontSize: 11, color: theme.textSecondary, width: "48%" }}
           >
             Sen:{" "}
-            <Text style={{ fontFamily: "Outfit_700Bold", color: theme.sky }}>
+            <Text style={{ fontFamily: resolvedFonts.heading, color: theme.sky }}>
               {item.senator}
             </Text>
           </Text>
@@ -581,7 +601,7 @@ const ConstituencyCardItem = React.memo(function ConstituencyCardItem({
             style={{ fontSize: 11, color: theme.textSecondary, width: "48%" }}
           >
             WR:{" "}
-            <Text style={{ fontFamily: "Outfit_700Bold", color: theme.gold }}>
+            <Text style={{ fontFamily: resolvedFonts.heading, color: theme.gold }}>
               {item.womenRep}
             </Text>
           </Text>
@@ -611,7 +631,7 @@ const ConstituencyCardItem = React.memo(function ConstituencyCardItem({
               style={{
                 fontSize: 10,
                 color: theme.textSecondary,
-                fontFamily: "Inter_600SemiBold",
+                fontFamily: resolvedFonts.bold,
               }}
             >
               {con}
@@ -627,12 +647,14 @@ const ClimateCardItem = React.memo(function ClimateCardItem({
   item,
   router,
   theme,
+  resolvedFonts,
   themedCardStyle,
   styles,
 }: {
   item: any;
   router: any;
   theme: any;
+  resolvedFonts: { heading: string; body: string; bold: string };
   themedCardStyle: ReturnType<typeof getThemedCardStyle>;
   styles: ReturnType<typeof createCountyStyles>;
 }) {
@@ -666,7 +688,7 @@ const ClimateCardItem = React.memo(function ClimateCardItem({
         <Text
           style={{
             fontSize: 12,
-            fontFamily: "Outfit_800ExtraBold",
+            fontFamily: resolvedFonts.heading,
             color: theme.sky,
           }}
         >
@@ -674,16 +696,23 @@ const ClimateCardItem = React.memo(function ClimateCardItem({
         </Text>
       </View>
       {(r.monthly || r.monthlyAvg) && (
-        <View style={{ flexDirection: "row", gap: 2 }}>
+        <View
+          style={{
+            flexDirection: "row",
+            flexWrap: "wrap",
+            gap: 4,
+            justifyContent: "space-between",
+          }}
+        >
           {MONTH_KEYS.map((mk, idx) => {
             const mm = r.monthly?.[mk] ?? r.monthlyAvg?.[idx] ?? 0;
             return (
               <View
                 key={mk}
                 style={{
-                  flex: 1,
-                  paddingVertical: 4,
-                  borderRadius: 4,
+                  width: "15.5%",
+                  paddingVertical: 5,
+                  borderRadius: 6,
                   alignItems: "center",
                   backgroundColor:
                     mm >= 150
@@ -695,8 +724,8 @@ const ClimateCardItem = React.memo(function ClimateCardItem({
               >
                 <Text
                   style={{
-                    fontSize: 7,
-                    fontFamily: "Outfit_700Bold",
+                    fontSize: 10,
+                    fontFamily: resolvedFonts.heading,
                     color: theme.textMuted,
                   }}
                 >
@@ -704,8 +733,8 @@ const ClimateCardItem = React.memo(function ClimateCardItem({
                 </Text>
                 <Text
                   style={{
-                    fontSize: 8,
-                    fontFamily: "Outfit_800ExtraBold",
+                    fontSize: 11,
+                    fontFamily: resolvedFonts.heading,
                     color: theme.textPrimary,
                   }}
                 >
@@ -738,9 +767,15 @@ export default function CountyScreen() {
     () => getThemedInputStyle(theme, themeConfig, themeMetrics),
     [theme, themeConfig, themeMetrics]
   );
+  const insets = useSafeAreaInsets();
   const screenPadPx = (themeMetrics as any)?.screenPaddingPx ?? Math.round(14 * (themeMetrics?.spacingScale ?? 1));
   const floatClearance = themeMetrics?.floatingTabBarClearancePx ?? 0;
+  const bottomClearance =
+    Math.round(32 * (themeMetrics?.spacingScale ?? 1)) +
+    floatClearance +
+    insets.bottom;
   const headingTransform = themeConfig.headingTransform || "none";
+  const goldInk = getContrastInk(theme.gold);
   const { height: windowHeight } = useWindowDimensions();
   const [activeTab, setActiveTab] = useState<CountyHubTab>("directory");
   const scrollRef = useRef<ScrollView>(null);
@@ -797,14 +832,14 @@ export default function CountyScreen() {
   const renderCountyItem = useCallback(
     ({ item }: { item: any }) => {
       if (activeTab === "budgets")
-        return <BudgetCardItem item={item} router={router} theme={theme} themedCardStyle={themedCardStyle} styles={styles} />;
+        return <BudgetCardItem item={item} router={router} theme={theme} resolvedFonts={resolvedFonts} themedCardStyle={themedCardStyle} styles={styles} />;
       if (activeTab === "constituencies")
-        return <ConstituencyCardItem item={item} router={router} theme={theme} themedCardStyle={themedCardStyle} styles={styles} />;
+        return <ConstituencyCardItem item={item} router={router} theme={theme} resolvedFonts={resolvedFonts} themedCardStyle={themedCardStyle} styles={styles} />;
       if (activeTab === "climate")
-        return <ClimateCardItem item={item} router={router} theme={theme} themedCardStyle={themedCardStyle} styles={styles} />;
-      return <DirectoryCardItem item={item} router={router} theme={theme} themedCardStyle={themedCardStyle} styles={styles} />;
+        return <ClimateCardItem item={item} router={router} theme={theme} resolvedFonts={resolvedFonts} themedCardStyle={themedCardStyle} styles={styles} />;
+      return <DirectoryCardItem item={item} router={router} theme={theme} themeConfig={themeConfig} resolvedFonts={resolvedFonts} themedCardStyle={themedCardStyle} styles={styles} />;
     },
-    [activeTab, router, theme, themedCardStyle, styles]
+    [activeTab, router, theme, themeConfig, resolvedFonts, themedCardStyle, styles]
   );
 
   const pickerFiltered = useMemo(() => {
@@ -916,10 +951,10 @@ export default function CountyScreen() {
                   },
                 ])}
               >
-                <Ionicons
+                <ThemedIcon
                   name={tab.icon}
                   size={13}
-                  color={active ? theme.kenyaBlack : theme.gold}
+                  color={active ? goldInk : theme.gold}
                 />
                 <Text
                   style={{
@@ -928,8 +963,8 @@ export default function CountyScreen() {
                     paddingBottom: 0,
                     includeFontPadding: false,
                     textAlignVertical: "center",
-                    fontFamily: "Outfit_700Bold",
-                    color: active ? theme.kenyaBlack : theme.textPrimary,
+                    fontFamily: resolvedFonts.heading,
+                    color: active ? goldInk : theme.textPrimary,
                   }}
                 >
                   {tab.label}
@@ -947,11 +982,11 @@ export default function CountyScreen() {
                 themedInputStyle,
               ]}
             >
-              <Ionicons name="search" size={16} color={theme.gold} />
+              <ThemedIcon name="search" size={16} color={theme.gold} />
               <TextInput
                 multiline={false}
-                accessibilityLabel="Search county, governor, or headquarters"
-                placeholder="Search county, governor, or HQ..."
+                accessibilityLabel="Search county or headquarters"
+                placeholder="Search county or HQ..."
                 numberOfLines={1}
                 placeholderTextColor={theme.textMuted}
                 value={query}
@@ -965,7 +1000,7 @@ export default function CountyScreen() {
                   accessibilityLabel="Clear county search"
                   hitSlop={8}
                 >
-                  <Ionicons
+                  <ThemedIcon
                     name="close-circle"
                     size={18}
                     color={theme.textMuted}
@@ -1047,8 +1082,7 @@ export default function CountyScreen() {
           ref={scrollRef}
           contentContainerStyle={[
             styles.listContent,
-            { paddingHorizontal: screenPadPx },
-            floatClearance > 0 ? { paddingBottom: Math.round(32 * (themeMetrics?.spacingScale ?? 1)) + floatClearance } : null,
+            { paddingHorizontal: screenPadPx, paddingBottom: bottomClearance },
           ]}
           showsVerticalScrollIndicator={themeConfig?.verticalScrollbarStyle !== "hidden"}
           persistentScrollbar={themeConfig.verticalScrollbarStyle === "always-visible"}
@@ -1069,7 +1103,7 @@ export default function CountyScreen() {
               <Text
                 style={{
                   fontSize: 12,
-                  fontFamily: "Inter_400Regular",
+                  fontFamily: resolvedFonts.body,
                   color: theme.textSecondary,
                 }}
               >
@@ -1099,7 +1133,7 @@ export default function CountyScreen() {
                   <Text
                     style={{
                       fontSize: 9.5,
-                      fontFamily: "Outfit_700Bold",
+                      fontFamily: resolvedFonts.heading,
                       color: theme.gold,
                       letterSpacing: 0.6,
                     }}
@@ -1117,7 +1151,7 @@ export default function CountyScreen() {
                     <Text
                       style={{
                         fontSize: 15,
-                        fontFamily: "Outfit_800ExtraBold",
+                        fontFamily: resolvedFonts.heading,
                         color: theme.textPrimary,
                         flex: 1,
                       }}
@@ -1125,7 +1159,7 @@ export default function CountyScreen() {
                     >
                       {countyA.name}
                     </Text>
-                    <Ionicons
+                    <ThemedIcon
                       name="chevron-down"
                       size={16}
                       color={theme.gold}
@@ -1160,7 +1194,7 @@ export default function CountyScreen() {
                     },
                   ])}
                 >
-                  <Ionicons
+                  <ThemedIcon
                     name="swap-horizontal"
                     size={18}
                     color={theme.gold}
@@ -1187,7 +1221,7 @@ export default function CountyScreen() {
                   <Text
                     style={{
                       fontSize: 9.5,
-                      fontFamily: "Outfit_700Bold",
+                      fontFamily: resolvedFonts.heading,
                       color: theme.kenyaGreenLight,
                       letterSpacing: 0.6,
                     }}
@@ -1205,7 +1239,7 @@ export default function CountyScreen() {
                     <Text
                       style={{
                         fontSize: 15,
-                        fontFamily: "Outfit_800ExtraBold",
+                        fontFamily: resolvedFonts.heading,
                         color: theme.textPrimary,
                         flex: 1,
                       }}
@@ -1213,7 +1247,7 @@ export default function CountyScreen() {
                     >
                       {countyB.name}
                     </Text>
-                    <Ionicons
+                    <ThemedIcon
                       name="chevron-down"
                       size={16}
                       color={theme.kenyaGreenLight}
@@ -1302,7 +1336,7 @@ export default function CountyScreen() {
                 };
                 const sections: {
                   title: string;
-                  icon: keyof typeof Ionicons.glyphMap;
+                  icon: string;
                   rows: CompareRow[];
                 }[] = [
                   {
@@ -1563,14 +1597,14 @@ export default function CountyScreen() {
                             <Text
                               style={{
                                 fontSize: 10,
-                                fontFamily: "Inter_500Medium",
+                                fontFamily: resolvedFonts.bold,
                                 color: theme.textSecondary,
                               }}
                             >
                               {item.metric}:{" "}
                               <Text
                                 style={{
-                                  fontFamily: "Outfit_700Bold",
+                                  fontFamily: resolvedFonts.heading,
                                   color: accent,
                                 }}
                               >
@@ -1603,7 +1637,7 @@ export default function CountyScreen() {
                         <Text
                           style={{
                             fontSize: 10.5,
-                            fontFamily: "Outfit_800ExtraBold",
+                            fontFamily: resolvedFonts.heading,
                             color: theme.textMuted,
                             flex: 1.15,
                             textAlign: "left",
@@ -1614,7 +1648,7 @@ export default function CountyScreen() {
                         <Text
                           style={{
                             fontSize: 10.5,
-                            fontFamily: "Outfit_800ExtraBold",
+                            fontFamily: resolvedFonts.heading,
                             color: theme.gold,
                             flex: 1,
                             textAlign: "right",
@@ -1626,7 +1660,7 @@ export default function CountyScreen() {
                         <Text
                           style={{
                             fontSize: 10.5,
-                            fontFamily: "Outfit_800ExtraBold",
+                            fontFamily: resolvedFonts.heading,
                             color: theme.kenyaGreenLight,
                             flex: 1,
                             textAlign: "right",
@@ -1652,7 +1686,7 @@ export default function CountyScreen() {
                               },
                             ]}
                           >
-                            <Ionicons
+                            <ThemedIcon
                               name={section.icon}
                               size={13}
                               color={theme.gold}
@@ -1712,7 +1746,7 @@ export default function CountyScreen() {
                                   <Text
                                     style={{
                                       fontSize: 11,
-                                      fontFamily: "Outfit_700Bold",
+                                      fontFamily: resolvedFonts.heading,
                                       color: theme.textPrimary,
                                       flex: 1,
                                       textAlign: "right",
@@ -1723,7 +1757,7 @@ export default function CountyScreen() {
                                   <Text
                                     style={{
                                       fontSize: 11,
-                                      fontFamily: "Outfit_700Bold",
+                                      fontFamily: resolvedFonts.heading,
                                       color: theme.textPrimary,
                                       flex: 1,
                                       textAlign: "right",
@@ -1848,7 +1882,7 @@ export default function CountyScreen() {
                   <Text
                     style={{
                       color: theme.gold,
-                      fontFamily: "Outfit_800ExtraBold",
+                      fontFamily: resolvedFonts.heading,
                     }}
                   >
                     •
@@ -1870,8 +1904,7 @@ export default function CountyScreen() {
           keyExtractor={keyExtractor}
           contentContainerStyle={[
             styles.listContent,
-            { paddingHorizontal: screenPadPx },
-            floatClearance > 0 ? { paddingBottom: Math.round(32 * (themeMetrics?.spacingScale ?? 1)) + floatClearance } : null,
+            { paddingHorizontal: screenPadPx, paddingBottom: bottomClearance },
           ]}
           showsVerticalScrollIndicator={themeConfig?.verticalScrollbarStyle !== "hidden"}
           persistentScrollbar={themeConfig.verticalScrollbarStyle === "always-visible"}
@@ -1901,7 +1934,7 @@ export default function CountyScreen() {
                     minimumFontScale={0.75}
                     style={{
                       fontSize: 9.5,
-                      fontFamily: "Outfit_700Bold",
+                      fontFamily: resolvedFonts.heading,
                       letterSpacing: 0.3,
                       color: theme.textMuted,
                     }}
@@ -1914,7 +1947,7 @@ export default function CountyScreen() {
                     minimumFontScale={0.8}
                     style={{
                       fontSize: 15,
-                      fontFamily: "Outfit_800ExtraBold",
+                      fontFamily: resolvedFonts.heading,
                       color: theme.gold,
                       marginTop: 2,
                     }}
@@ -1937,7 +1970,7 @@ export default function CountyScreen() {
                     minimumFontScale={0.75}
                     style={{
                       fontSize: 9.5,
-                      fontFamily: "Outfit_700Bold",
+                      fontFamily: resolvedFonts.heading,
                       letterSpacing: 0.3,
                       color: theme.textMuted,
                     }}
@@ -1950,7 +1983,7 @@ export default function CountyScreen() {
                     minimumFontScale={0.8}
                     style={{
                       fontSize: 15,
-                      fontFamily: "Outfit_800ExtraBold",
+                      fontFamily: resolvedFonts.heading,
                       color: theme.sky,
                       marginTop: 2,
                     }}
@@ -1973,7 +2006,7 @@ export default function CountyScreen() {
                     minimumFontScale={0.75}
                     style={{
                       fontSize: 9.5,
-                      fontFamily: "Outfit_700Bold",
+                      fontFamily: resolvedFonts.heading,
                       letterSpacing: 0.3,
                       color: theme.textMuted,
                     }}
@@ -1986,7 +2019,7 @@ export default function CountyScreen() {
                     minimumFontScale={0.8}
                     style={{
                       fontSize: 15,
-                      fontFamily: "Outfit_800ExtraBold",
+                      fontFamily: resolvedFonts.heading,
                       color: theme.kenyaGreenLight,
                       marginTop: 2,
                     }}
@@ -2006,7 +2039,7 @@ export default function CountyScreen() {
           renderItem={renderCountyItem}
           ListEmptyComponent={
             <View style={styles.emptyWrap}>
-              <Ionicons
+              <ThemedIcon
                 name="search-outline"
                 size={44}
                 color={theme.textMuted}
@@ -2048,7 +2081,7 @@ export default function CountyScreen() {
                 accessibilityLabel="Close county picker"
                 hitSlop={10}
               >
-                <Ionicons name="close-circle" size={24} color={theme.textMuted} />
+                <ThemedIcon name="close-circle" size={24} color={theme.textMuted} />
               </Pressable>
             </View>
 
@@ -2059,7 +2092,7 @@ export default function CountyScreen() {
                 { marginBottom: 10 },
               ]}
             >
-              <Ionicons name="search" size={18} color={theme.gold} />
+              <ThemedIcon name="search" size={18} color={theme.gold} />
               <TextInput
                 value={pickerSearch}
                 onChangeText={setPickerSearch}
@@ -2070,7 +2103,7 @@ export default function CountyScreen() {
               />
               {pickerSearch.length > 0 && (
                 <Pressable onPress={() => setPickerSearch("")} hitSlop={8}>
-                  <Ionicons
+                  <ThemedIcon
                     name="close-circle"
                     size={18}
                     color={theme.textMuted}
@@ -2113,32 +2146,16 @@ export default function CountyScreen() {
                       },
                     ])}
                   >
-                    <View
-                      style={[
-                        styles.codeBadge,
-                        {
-                          backgroundColor: theme.surfaceContainerHigh,
-                          borderColor: theme.outlineVariant,
-                          width: 38,
-                          height: 32,
-                        },
-                      ]}
-                    >
-                      <Text
-                        style={{
-                          fontSize: 11,
-                          fontFamily: "Outfit_800ExtraBold",
-                          color: theme.gold,
-                        }}
-                      >
-                        {String(item.code).padStart(3, "0")}
-                      </Text>
-                    </View>
+                    <ThemedIconBadge
+                      label={String(item.code).padStart(3, "0")}
+                      accentColor={theme.gold}
+                      baseSize={36}
+                    />
                     <View style={{ flex: 1, marginLeft: 10 }}>
                       <Text
                         style={{
                           fontSize: 14,
-                          fontFamily: "Outfit_700Bold",
+                          fontFamily: resolvedFonts.heading,
                           color: theme.textPrimary,
                         }}
                       >
@@ -2150,7 +2167,7 @@ export default function CountyScreen() {
                       </Text>
                     </View>
                     {isSelected && (
-                      <Ionicons
+                      <ThemedIcon
                         name="checkmark-circle"
                         size={20}
                         color={theme.gold}
@@ -2216,13 +2233,12 @@ function createCountyStyles(
       borderRadius: r(17),
       borderWidth: bw,
       paddingHorizontal: sp(11),
-      height: Math.round(34 * spacingScale),
+      minHeight: Math.max(42, Math.round(42 * spacingScale)),
       marginBottom: sp(4),
     },
     searchInput: {
       flex: 1,
       minWidth: 0,
-      height: "100%",
       marginLeft: sp(8),
       marginRight: sp(6),
       fontFamily: bf("Inter_500Medium"),

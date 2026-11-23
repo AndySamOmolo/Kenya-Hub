@@ -11,8 +11,7 @@ import {
   Text,
   View,
 } from "react-native";
-import { Ionicons } from "@expo/vector-icons";
-import { SafeAreaView } from "react-native-safe-area-context";
+import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
 import {
   useTheme,
   KenyaStripe,
@@ -24,7 +23,6 @@ import {
   parseSavedTools,
   serializeSavedTools,
   getThemedCardStyle,
-  getThemedIconBadgeStyle,
 } from "../../src/theme";
 import type { ThemeMetrics } from "../../src/lib/theme-engine";
 import {
@@ -32,7 +30,44 @@ import {
   getPopularTools,
   getCategoryInfo,
 } from "../../src/shared/lib/tools-registry";
-import { DynamicIcon } from "../../src/components/DynamicIcon";
+import { ThemedIcon, ThemedIconBadge } from "../../src/components/ThemedIcon";
+
+function toolEmojiToIonicon(emoji?: string): string {
+  const clean = (emoji || "").replace(/[\uFE0F]/g, "").trim();
+  switch (clean) {
+    case "🛡": return "shield-checkmark-outline";
+    case "🔒": return "lock-closed-outline";
+    case "🌱": return "leaf-outline";
+    case "🚢": return "boat-outline";
+    case "🩺":
+    case "🏥": return "medkit-outline";
+    case "📑":
+    case "📝": return "document-text-outline";
+    case "🎯": return "disc-outline";
+    case "📐": return "resize-outline";
+    case "🗣": return "chatbubble-ellipses-outline";
+    case "🌍": return "globe-outline";
+    case "🧮": return "calculator-outline";
+    case "📱": return "phone-portrait-outline";
+    case "🏦":
+    case "🏢": return "business-outline";
+    case "🎓": return "school-outline";
+    case "🏠": return "home-outline";
+    case "📚": return "book-outline";
+    case "🚗":
+    case "🚘": return "car-outline";
+    case "🚦": return "warning-outline";
+    case "🧱": return "construct-outline";
+    case "⚡": return "flash-outline";
+    case "💧": return "water-outline";
+    case "⚖": return "scale-outline";
+    case "🔑": return "key-outline";
+    case "🧹": return "brush-outline";
+    case "📞": return "call-outline";
+    default: return "sparkles-outline";
+  }
+}
+
 import { showAdPrivacyOptionsForm } from "../../src/lib/mobile-ads";
 
 function createSavedStyles(
@@ -216,16 +251,19 @@ const SavedToolCard = React.memo(function SavedToolCard({
     [theme, themeConfig, themeMetrics]
   );
   const categoryColor = categoryColorMap[tool.category] || theme.gold;
-  const iconBadge = useMemo(
-    () => getThemedIconBadgeStyle(theme, themeConfig, categoryColor, 42),
-    [theme, themeConfig, categoryColor]
-  );
+  const isFrameless = themeConfig.surfaceStyle === "frameless";
+  const showCategoryBadges = themeConfig.showCategoryBadges !== false;
+  const showCardDescriptions = themeConfig.showCardDescriptions !== false;
 
   return (
     <View
       style={[
         styles.cardWrap,
         themedCardStyle,
+        isFrameless && {
+          borderBottomWidth: StyleSheet.hairlineWidth,
+          borderBottomColor: theme.outlineVariant,
+        },
       ]}
     >
       <Pressable
@@ -238,28 +276,39 @@ const SavedToolCard = React.memo(function SavedToolCard({
             params: { slug: tool.slug },
           })
         }
-        style={pressableStyle(styles.card)}
+        style={pressableStyle([
+          styles.card,
+          isFrameless && { paddingHorizontal: 0 },
+        ])}
       >
-        <View style={[iconBadge.container, { marginRight: Math.round(12 * (themeMetrics?.spacingScale ?? 1)) }]}>
-          <DynamicIcon emoji={tool.icon} size={Math.round(22 * (themeMetrics?.iconScale ?? 1))} color={iconBadge.iconColor} />
-        </View>
+        <ThemedIconBadge
+          name={toolEmojiToIonicon(tool.icon)}
+          accentColor={categoryColor}
+          baseSize={42}
+          iconSize={20}
+          style={{ marginRight: Math.round(12 * (themeMetrics?.spacingScale ?? 1)) }}
+        />
         <View style={styles.cardBody}>
-          <View style={styles.categoryPillWrap}>
-            <View
-              style={[styles.categoryDot, { backgroundColor: categoryColor }]}
-            />
-            <Text style={[styles.categoryPillText, { color: categoryColor }]}>
-              {(
-                getCategoryInfo(tool.category)?.name || tool.category
-              ).toUpperCase()}
-            </Text>
-          </View>
+          {showCategoryBadges && (
+            <View style={styles.categoryPillWrap}>
+              <View
+                style={[styles.categoryDot, { backgroundColor: categoryColor }]}
+              />
+              <Text style={[styles.categoryPillText, { color: categoryColor }]}>
+                {(
+                  getCategoryInfo(tool.category)?.name || tool.category
+                ).toUpperCase()}
+              </Text>
+            </View>
+          )}
           <Text style={[styles.title, { color: theme.textPrimary }]}>
             {tool.shortTitle}
           </Text>
-          <Text style={[styles.description, { color: theme.textSecondary }]}>
-            {tool.description}
-          </Text>
+          {showCardDescriptions && (
+            <Text style={[styles.description, { color: theme.textSecondary }]}>
+              {tool.description}
+            </Text>
+          )}
         </View>
         <Pressable
           android_ripple={androidRipple(theme.rippleColor, true)}
@@ -276,7 +325,7 @@ const SavedToolCard = React.memo(function SavedToolCard({
           ])}
           hitSlop={8}
         >
-          <Ionicons name="bookmark" size={18} color={theme.gold} />
+          <ThemedIcon name="bookmark" size={18} color={theme.gold} />
         </Pressable>
       </Pressable>
     </View>
@@ -294,9 +343,19 @@ export default function SavedScreen() {
     () => getThemedCardStyle(theme, themeConfig, themeMetrics),
     [theme, themeConfig, themeMetrics]
   );
+  const insets = useSafeAreaInsets();
   const screenPadPx = (themeMetrics as any)?.screenPaddingPx ?? Math.round(14 * (themeMetrics?.spacingScale ?? 1));
   const floatClearance = themeMetrics?.floatingTabBarClearancePx ?? 0;
+  const bottomClearance =
+    Math.round(28 * (themeMetrics?.spacingScale ?? 1)) +
+    floatClearance +
+    insets.bottom;
   const headingTransform = themeConfig.headingTransform || "none";
+  const isFrameless = themeConfig.surfaceStyle === "frameless";
+  const showCardIcons =
+    themeConfig.showCardIcons !== false && themeConfig.iconBadgeStyle !== "hidden";
+  const showCardDescriptions = themeConfig.showCardDescriptions !== false;
+  const showTrailingArrows = themeConfig.showTrailingArrows !== false;
   const [saved, setSaved] = useState<string[]>([]);
   const popular = useMemo(() => getPopularTools(4), []);
 
@@ -429,8 +488,7 @@ export default function SavedScreen() {
       <ScrollView
         contentContainerStyle={[
           styles.content,
-          { paddingHorizontal: screenPadPx },
-          floatClearance > 0 ? { paddingBottom: Math.round(28 * (themeMetrics?.spacingScale ?? 1)) + floatClearance } : null,
+          { paddingHorizontal: screenPadPx, paddingBottom: bottomClearance },
         ]}
         showsVerticalScrollIndicator={themeConfig?.verticalScrollbarStyle !== "hidden"}
         persistentScrollbar={themeConfig.verticalScrollbarStyle === "always-visible"}
@@ -455,17 +513,12 @@ export default function SavedScreen() {
           </>
         ) : (
           <View style={styles.empty}>
-            <View
-              style={[
-                styles.emptyIconWrap,
-                {
-                  backgroundColor: theme.surfaceContainer,
-                  borderColor: theme.outlineVariant,
-                },
-              ]}
-            >
-              <Ionicons name="bookmark-outline" size={34} color={theme.gold} />
-            </View>
+            <ThemedIconBadge
+              name="bookmark-outline"
+              accentColor={theme.gold}
+              baseSize={64}
+              iconSize={30}
+            />
             <Text style={[styles.emptyTitle, { color: theme.textPrimary, textTransform: headingTransform }]}>
               No pinned tools yet
             </Text>
@@ -486,13 +539,20 @@ export default function SavedScreen() {
                   style={[
                     styles.suggestCardWrap,
                     themedCardStyle,
+                    isFrameless && {
+                      borderBottomWidth: StyleSheet.hairlineWidth,
+                      borderBottomColor: theme.outlineVariant,
+                    },
                   ]}
                 >
                   <Pressable
                     android_ripple={androidRipple(theme.rippleColor)}
                     accessibilityRole="button"
                     accessibilityLabel={`Open ${item.shortTitle}`}
-                    style={pressableStyle(styles.suggestCard)}
+                    style={pressableStyle([
+                      styles.suggestCard,
+                      isFrameless && { paddingHorizontal: 0 },
+                    ])}
                     onPress={() =>
                       router.push({
                         pathname: "/tools/[slug]",
@@ -500,12 +560,13 @@ export default function SavedScreen() {
                       })
                     }
                   >
-                    <DynamicIcon
-                      emoji={item.icon}
-                      size={20}
-                      color={theme.gold}
+                    <ThemedIconBadge
+                      name={toolEmojiToIonicon(item.icon)}
+                      accentColor={categoryColorMap[item.category] || theme.gold}
+                      baseSize={38}
+                      iconSize={18}
                     />
-                    <View style={{ flex: 1, marginLeft: 12 }}>
+                    <View style={{ flex: 1, marginLeft: showCardIcons ? 12 : 0 }}>
                       <Text
                         style={[
                           styles.suggestTitle,
@@ -514,17 +575,21 @@ export default function SavedScreen() {
                       >
                         {item.shortTitle}
                       </Text>
-                      <Text
-                        style={[styles.suggestDesc, { color: theme.textMuted }]}
-                      >
-                        {item.description}
-                      </Text>
+                      {showCardDescriptions && (
+                        <Text
+                          style={[styles.suggestDesc, { color: theme.textMuted }]}
+                        >
+                          {item.description}
+                        </Text>
+                      )}
                     </View>
-                    <Ionicons
-                      name="arrow-forward"
-                      size={16}
-                      color={theme.textMuted}
-                    />
+                    {showTrailingArrows && (
+                      <ThemedIcon
+                        name="arrow-forward"
+                        size={16}
+                        color={theme.textMuted}
+                      />
+                    )}
                   </Pressable>
                 </View>
               ))}
@@ -542,28 +607,39 @@ export default function SavedScreen() {
               style={[
                 styles.suggestCardWrap,
                 themedCardStyle,
+                isFrameless && {
+                  borderBottomWidth: StyleSheet.hairlineWidth,
+                  borderBottomColor: theme.outlineVariant,
+                },
               ]}
             >
               <Pressable
                 android_ripple={androidRipple(theme.rippleColor)}
                 accessibilityRole="link"
                 accessibilityLabel="Privacy Policy"
-                style={pressableStyle(styles.suggestCard)}
+                style={pressableStyle([
+                  styles.suggestCard,
+                  isFrameless && { paddingHorizontal: 0 },
+                ])}
                 onPress={() => {
                   triggerHaptic(8);
                   Linking.openURL("https://kenyahub.me/privacy/").catch(() => {});
                 }}
               >
-                <Ionicons name="shield-checkmark-outline" size={20} color={theme.kenyaGreenLight} />
-                <View style={{ flex: 1, marginLeft: 12 }}>
+                <ThemedIconBadge name="shield-checkmark-outline" accentColor={theme.kenyaGreenLight} baseSize={36} iconSize={18} />
+                <View style={{ flex: 1, marginLeft: showCardIcons ? 12 : 0 }}>
                   <Text style={[styles.suggestTitle, { color: theme.textPrimary }]}>
                     Privacy Policy
                   </Text>
-                  <Text style={[styles.suggestDesc, { color: theme.textMuted }]}>
-                    Kenya Data Protection Act 2019 & local-only data practices
-                  </Text>
+                  {showCardDescriptions && (
+                    <Text style={[styles.suggestDesc, { color: theme.textMuted }]}>
+                      Kenya Data Protection Act 2019 & local-only data practices
+                    </Text>
+                  )}
                 </View>
-                <Ionicons name="open-outline" size={16} color={theme.textMuted} />
+                {showTrailingArrows && (
+                  <ThemedIcon name="open-outline" size={16} color={theme.textMuted} />
+                )}
               </Pressable>
             </View>
 
@@ -571,28 +647,39 @@ export default function SavedScreen() {
               style={[
                 styles.suggestCardWrap,
                 themedCardStyle,
+                isFrameless && {
+                  borderBottomWidth: StyleSheet.hairlineWidth,
+                  borderBottomColor: theme.outlineVariant,
+                },
               ]}
             >
               <Pressable
                 android_ripple={androidRipple(theme.rippleColor)}
                 accessibilityRole="link"
                 accessibilityLabel="Terms of Service"
-                style={pressableStyle(styles.suggestCard)}
+                style={pressableStyle([
+                  styles.suggestCard,
+                  isFrameless && { paddingHorizontal: 0 },
+                ])}
                 onPress={() => {
                   triggerHaptic(8);
                   Linking.openURL("https://kenyahub.me/terms/").catch(() => {});
                 }}
               >
-                <Ionicons name="document-text-outline" size={20} color={theme.gold} />
-                <View style={{ flex: 1, marginLeft: 12 }}>
+                <ThemedIconBadge name="document-text-outline" accentColor={theme.gold} baseSize={36} iconSize={18} />
+                <View style={{ flex: 1, marginLeft: showCardIcons ? 12 : 0 }}>
                   <Text style={[styles.suggestTitle, { color: theme.textPrimary }]}>
                     Terms of Service
                   </Text>
-                  <Text style={[styles.suggestDesc, { color: theme.textMuted }]}>
-                    Independent utility disclaimer & usage terms
-                  </Text>
+                  {showCardDescriptions && (
+                    <Text style={[styles.suggestDesc, { color: theme.textMuted }]}>
+                      Independent utility disclaimer & usage terms
+                    </Text>
+                  )}
                 </View>
-                <Ionicons name="open-outline" size={16} color={theme.textMuted} />
+                {showTrailingArrows && (
+                  <ThemedIcon name="open-outline" size={16} color={theme.textMuted} />
+                )}
               </Pressable>
             </View>
 
@@ -600,25 +687,36 @@ export default function SavedScreen() {
               style={[
                 styles.suggestCardWrap,
                 themedCardStyle,
+                isFrameless && {
+                  borderBottomWidth: StyleSheet.hairlineWidth,
+                  borderBottomColor: theme.outlineVariant,
+                },
               ]}
             >
               <Pressable
                 android_ripple={androidRipple(theme.rippleColor)}
                 accessibilityRole="button"
                 accessibilityLabel="Manage Ad Privacy"
-                style={pressableStyle(styles.suggestCard)}
+                style={pressableStyle([
+                  styles.suggestCard,
+                  isFrameless && { paddingHorizontal: 0 },
+                ])}
                 onPress={handleManageAdPrivacy}
               >
-                <Ionicons name="options-outline" size={20} color={theme.sky} />
-                <View style={{ flex: 1, marginLeft: 12 }}>
+                <ThemedIconBadge name="options-outline" accentColor={theme.sky} baseSize={36} iconSize={18} />
+                <View style={{ flex: 1, marginLeft: showCardIcons ? 12 : 0 }}>
                   <Text style={[styles.suggestTitle, { color: theme.textPrimary }]}>
                     Manage Ad Privacy
                   </Text>
-                  <Text style={[styles.suggestDesc, { color: theme.textMuted }]}>
-                    Review or update your Google AdMob consent preferences
-                  </Text>
+                  {showCardDescriptions && (
+                    <Text style={[styles.suggestDesc, { color: theme.textMuted }]}>
+                      Review or update your Google AdMob consent preferences
+                    </Text>
+                  )}
                 </View>
-                <Ionicons name="chevron-forward" size={16} color={theme.textMuted} />
+                {showTrailingArrows && (
+                  <ThemedIcon name="chevron-forward" size={16} color={theme.textMuted} />
+                )}
               </Pressable>
             </View>
 
@@ -626,28 +724,39 @@ export default function SavedScreen() {
               style={[
                 styles.suggestCardWrap,
                 themedCardStyle,
+                isFrameless && {
+                  borderBottomWidth: StyleSheet.hairlineWidth,
+                  borderBottomColor: theme.outlineVariant,
+                },
               ]}
             >
               <Pressable
                 android_ripple={androidRipple(theme.rippleColor)}
                 accessibilityRole="link"
                 accessibilityLabel="Contact & Support"
-                style={pressableStyle(styles.suggestCard)}
+                style={pressableStyle([
+                  styles.suggestCard,
+                  isFrameless && { paddingHorizontal: 0 },
+                ])}
                 onPress={() => {
                   triggerHaptic(8);
                   Linking.openURL("https://kenyahub.me/contact/").catch(() => {});
                 }}
               >
-                <Ionicons name="mail-outline" size={20} color={theme.kenyaGreenLight} />
-                <View style={{ flex: 1, marginLeft: 12 }}>
+                <ThemedIconBadge name="mail-outline" accentColor={theme.kenyaGreenLight} baseSize={36} iconSize={18} />
+                <View style={{ flex: 1, marginLeft: showCardIcons ? 12 : 0 }}>
                   <Text style={[styles.suggestTitle, { color: theme.textPrimary }]}>
                     Contact & Support
                   </Text>
-                  <Text style={[styles.suggestDesc, { color: theme.textMuted }]}>
-                    Report statutory rate updates, bugs, or data inquiries
-                  </Text>
+                  {showCardDescriptions && (
+                    <Text style={[styles.suggestDesc, { color: theme.textMuted }]}>
+                      Report statutory rate updates, bugs, or data inquiries
+                    </Text>
+                  )}
                 </View>
-                <Ionicons name="open-outline" size={16} color={theme.textMuted} />
+                {showTrailingArrows && (
+                  <ThemedIcon name="open-outline" size={16} color={theme.textMuted} />
+                )}
               </Pressable>
             </View>
 
@@ -655,26 +764,38 @@ export default function SavedScreen() {
               style={[
                 styles.suggestCardWrap,
                 themedCardStyle,
-                { borderColor: `${theme.kenyaRedLight}45` },
+                isFrameless
+                  ? {
+                      borderBottomWidth: StyleSheet.hairlineWidth,
+                      borderBottomColor: `${theme.kenyaRedLight}45`,
+                    }
+                  : { borderColor: `${theme.kenyaRedLight}45` },
               ]}
             >
               <Pressable
                 android_ripple={androidRipple(theme.rippleColor)}
                 accessibilityRole="button"
                 accessibilityLabel="Clear All App Data"
-                style={pressableStyle(styles.suggestCard)}
+                style={pressableStyle([
+                  styles.suggestCard,
+                  isFrameless && { paddingHorizontal: 0 },
+                ])}
                 onPress={handleClearAllAppData}
               >
-                <Ionicons name="trash-outline" size={20} color={theme.kenyaRedLight} />
-                <View style={{ flex: 1, marginLeft: 12 }}>
+                <ThemedIconBadge name="trash-outline" accentColor={theme.kenyaRedLight} baseSize={36} iconSize={18} />
+                <View style={{ flex: 1, marginLeft: showCardIcons ? 12 : 0 }}>
                   <Text style={[styles.suggestTitle, { color: theme.kenyaRedLight }]}>
                     Clear All App Data
                   </Text>
-                  <Text style={[styles.suggestDesc, { color: theme.textMuted }]}>
-                    Erase all offline saved tools, language progress, and preferences
-                  </Text>
+                  {showCardDescriptions && (
+                    <Text style={[styles.suggestDesc, { color: theme.textMuted }]}>
+                      Erase all offline saved tools, language progress, and preferences
+                    </Text>
+                  )}
                 </View>
-                <Ionicons name="chevron-forward" size={16} color={theme.kenyaRedLight} />
+                {showTrailingArrows && (
+                  <ThemedIcon name="chevron-forward" size={16} color={theme.kenyaRedLight} />
+                )}
               </Pressable>
             </View>
           </View>

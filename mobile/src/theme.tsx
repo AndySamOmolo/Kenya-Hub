@@ -26,6 +26,7 @@ import {
   exportThemeConfigJson,
   resolveFontPairFamilies,
   hexToRgba,
+  mixHex,
   getContrastInk,
   type ThemeConfig,
   type ThemeMetrics,
@@ -384,6 +385,7 @@ export function buildThemeKey(cfg: ThemeConfig, colorsObj: ThemeColors, dark: bo
     cfg.cardShadowIntensity,
     cfg.cardAccentStyle,
     cfg.iconBadgeStyle,
+    cfg.iconPack,
     cfg.inputStyle,
     cfg.buttonStyle,
     cfg.homeLayout,
@@ -417,6 +419,14 @@ export function buildThemeKey(cfg: ThemeConfig, colorsObj: ThemeColors, dark: bo
     cfg.dividerStyle,
     cfg.sectionHeaderStyle,
     cfg.pressEffect,
+    cfg.showCardIcons ? "1" : "0",
+    cfg.showTabIcons ? "1" : "0",
+    cfg.showCardDescriptions ? "1" : "0",
+    cfg.showCategoryBadges ? "1" : "0",
+    cfg.showTrailingArrows ? "1" : "0",
+    cfg.showHomeGreeting ? "1" : "0",
+    cfg.showDailyWidgets ? "1" : "0",
+    cfg.showOfflinePill ? "1" : "0",
     customSig,
   ].join("|");
 }
@@ -881,6 +891,19 @@ export function getThemedCardStyle(
   themeConfig: ThemeConfig,
   themeMetrics: ThemeMetrics
 ): ThemedCardStyle {
+  if (themeConfig.surfaceStyle === "frameless") {
+    return {
+      borderRadius: 0,
+      borderWidth: 0,
+      borderColor: "transparent",
+      backgroundColor: "transparent",
+      elevation: 0,
+      shadowColor: "#000000",
+      shadowOpacity: 0,
+      shadowRadius: 0,
+      shadowOffset: { width: 0, height: 0 },
+    };
+  }
   const borderRadius = themeMetrics.cardRadiusPx;
   let borderWidth = themeMetrics.borderWidthPx;
   let borderColor = themeConfig.highContrastBorders
@@ -912,8 +935,8 @@ export function getThemedCardStyle(
       borderWidth = Math.max(0.75, borderWidth);
       break;
     case "neo-brutal":
-      backgroundColor = theme.bgCard;
-      borderColor = theme.textPrimary;
+      backgroundColor = theme.isDark ? theme.surfaceContainerHigh : theme.bgCard;
+      borderColor = theme.isDark ? theme.outline : theme.textPrimary;
       borderWidth = Math.max(1.5, borderWidth);
       break;
     case "inset-tray":
@@ -960,13 +983,11 @@ export function getThemedCardStyle(
         shadowColor = "#000000";
         shadowOpacity = 0;
         shadowRadius = 0;
-        borderWidth = Math.max(1.5, borderWidth);
-        borderColor = theme.gold;
       } else {
-        elevation = 6;
-        shadowOpacity = 0.35;
-        shadowColor = theme.gold;
-        shadowRadius = 10;
+        elevation = 5;
+        shadowOpacity = theme.isDark ? 0.34 : 0.14;
+        shadowColor = "#000000";
+        shadowRadius = 8;
       }
       break;
     case "crisp-3d":
@@ -1032,17 +1053,22 @@ export function getThemedCardStyle(
       cardStyle.borderBottomColor = theme.outline;
       break;
     case "double-rule":
-      cardStyle.borderTopWidth = 2;
-      cardStyle.borderTopColor = theme.gold;
+      cardStyle.borderTopWidth = StyleSheet.hairlineWidth;
+      cardStyle.borderTopColor = theme.outline;
       cardStyle.borderBottomWidth = StyleSheet.hairlineWidth;
       cardStyle.borderBottomColor = theme.outline;
       break;
-    case "offset-edge":
+    case "offset-edge": {
+      const edgeColor =
+        themeConfig.surfaceStyle === "neo-brutal" && !theme.isDark
+          ? theme.textPrimary
+          : theme.outline;
       cardStyle.borderBottomWidth = 3;
       cardStyle.borderRightWidth = 2;
-      cardStyle.borderBottomColor = themeConfig.surfaceStyle === "neo-brutal" ? theme.textPrimary : theme.outline;
-      cardStyle.borderRightColor = themeConfig.surfaceStyle === "neo-brutal" ? theme.textPrimary : theme.outline;
+      cardStyle.borderBottomColor = edgeColor;
+      cardStyle.borderRightColor = edgeColor;
       break;
+    }
     case "none":
     default:
       break;
@@ -1068,6 +1094,14 @@ export function getThemedInputStyle(
       return { backgroundColor: theme.surfaceContainerLow, borderColor: "transparent", borderWidth: 0, borderRadius: Math.min(10, themeMetrics.buttonRadiusPx) };
     case "accent":
       return { backgroundColor: theme.surfaceContainerLow, borderColor: theme.gold, borderWidth: Math.max(1.25, bw), borderRadius: themeMetrics.buttonRadiusPx };
+    case "unboxed":
+      return {
+        backgroundColor: "transparent",
+        borderWidth: 0,
+        borderColor: "transparent",
+        borderRadius: 0,
+        paddingHorizontal: 2,
+      };
     case "outlined":
     default:
       return { backgroundColor: theme.surfaceContainerLow, borderColor: theme.outlineVariant, borderWidth: bw, borderRadius: themeMetrics.buttonRadiusPx };
@@ -1110,7 +1144,7 @@ export function getThemedButtonStyle(
           borderWidth: 1.25,
           borderColor: theme.outline,
           borderBottomWidth: 3,
-          borderBottomColor: theme.gold,
+          borderBottomColor: theme.isDark ? "#000000" : theme.outline,
         },
         textColor: theme.textPrimary,
       };
@@ -1124,6 +1158,20 @@ export function getThemedButtonStyle(
           borderWidth: 0,
           borderBottomWidth: 1.5,
           borderBottomColor: theme.gold,
+        },
+        textColor: theme.gold,
+      };
+    case "unboxed-text":
+      return {
+        container: {
+          ...base,
+          borderRadius: 0,
+          backgroundColor: "transparent",
+          borderWidth: 0,
+          borderColor: "transparent",
+          elevation: 0,
+          shadowOpacity: 0,
+          paddingHorizontal: 4,
         },
         textColor: theme.gold,
       };
@@ -1144,65 +1192,129 @@ export function getThemedIconBadgeStyle(
   const size = Math.round(baseSize * Math.max(0.82, Math.min(1.25, rawIconScale)));
   const common: ViewStyle = { width: size, height: size, alignItems: "center", justifyContent: "center" };
   switch (themeConfig.iconBadgeStyle) {
-    case "outline":
-      return { container: { ...common, borderRadius: Math.round(size * 0.28), backgroundColor: "transparent", borderWidth: 1.25, borderColor: accent }, iconColor: accent };
-    case "filled":
-      return { container: { ...common, borderRadius: Math.round(size * 0.28), backgroundColor: hexToRgba(accent, 0.22), borderWidth: 1, borderColor: hexToRgba(accent, 0.42) }, iconColor: accent };
+    case "recessed-well":
     case "soft-square":
-      return { container: { ...common, borderRadius: Math.round(size * 0.22), backgroundColor: hexToRgba(accent, 0.14) }, iconColor: accent };
-    case "accent-solid":
-      return { container: { ...common, borderRadius: Math.round(size * 0.28), backgroundColor: accent }, iconColor: getContrastInk(accent) };
     case "monochrome-ink":
       return {
         container: {
           ...common,
-          borderRadius: Math.round(size * 0.24),
-          backgroundColor: theme.surfaceContainerHigh,
+          borderRadius: Math.round(size * 0.26),
+          backgroundColor: theme.surfaceContainerLowest,
           borderWidth: StyleSheet.hairlineWidth,
           borderColor: theme.outlineVariant,
+          borderTopWidth: 1.5,
+          borderTopColor: theme.isDark ? "rgba(0, 0, 0, 0.52)" : hexToRgba(theme.outline, 0.36),
+          elevation: 0,
         },
-        iconColor: theme.textPrimary,
+        iconColor: accent,
       };
-    case "keycap":
+    case "postage-stamp":
       return {
         container: {
           ...common,
-          borderRadius: Math.round(size * 0.22),
-          backgroundColor: theme.bgCard,
+          borderRadius: 4,
+          backgroundColor: theme.surfaceContainerLow,
           borderWidth: 1,
+          borderStyle: "dashed",
           borderColor: theme.outline,
-          borderBottomWidth: 2.5,
-          borderBottomColor: theme.outline,
+          elevation: 0,
         },
-        iconColor: theme.gold,
+        iconColor: accent,
       };
-    case "hairline-ring":
-      return {
-        container: {
-          ...common,
-          borderRadius: Math.round(size / 2),
-          backgroundColor: "transparent",
-          borderWidth: 1,
-          borderColor: theme.outlineVariant,
-        },
-        iconColor: theme.textPrimary,
-      };
+    case "split-disc":
+    case "filled":
     case "duotone-wash":
       return {
         container: {
           ...common,
-          borderRadius: Math.round(size * 0.28),
-          backgroundColor: hexToRgba(theme.gold, 0.11),
+          borderRadius: Math.round(size / 2),
+          backgroundColor: hexToRgba(accent, 0.14),
           borderWidth: StyleSheet.hairlineWidth,
-          borderColor: hexToRgba(theme.gold, 0.25),
+          borderColor: hexToRgba(accent, 0.32),
+          elevation: 0,
         },
-        iconColor: theme.gold,
+        iconColor: accent,
       };
+    case "monogram-frame":
+    case "outline":
+      return {
+        container: {
+          ...common,
+          borderRadius: 4,
+          backgroundColor: "transparent",
+          borderWidth: 1.25,
+          borderColor: theme.outline,
+          elevation: 0,
+        },
+        iconColor: accent,
+      };
+    case "ceramic-tile":
+    case "keycap":
+      return {
+        container: {
+          ...common,
+          borderRadius: Math.round(size * 0.24),
+          backgroundColor: theme.bgCard,
+          borderWidth: 1,
+          borderColor: theme.outlineVariant,
+          borderBottomWidth: 2.5,
+          borderBottomColor: theme.isDark ? "#000000" : theme.outline,
+          elevation: 0,
+        },
+        iconColor: accent,
+      };
+    case "tilted-lozenge":
+      return {
+        container: {
+          ...common,
+          borderRadius: Math.round(size * 0.24),
+          backgroundColor: hexToRgba(accent, 0.15),
+          borderWidth: 1,
+          borderColor: hexToRgba(accent, 0.36),
+          elevation: 0,
+        },
+        iconColor: accent,
+      };
+    case "ink-seal":
+    case "accent-solid":
+      return {
+        container: {
+          ...common,
+          borderRadius: Math.round(size / 2),
+          backgroundColor: accent,
+          elevation: 0,
+        },
+        iconColor: getContrastInk(accent),
+      };
+    case "bare-glyph":
     case "minimal":
-      return { container: { ...common, borderRadius: 0, backgroundColor: "transparent" }, iconColor: accent };
+      return {
+        container: { ...common, borderRadius: 0, backgroundColor: "transparent", elevation: 0 },
+        iconColor: accent,
+      };
+    case "hidden":
+      return {
+        container: {
+          width: 0,
+          height: 0,
+          opacity: 0,
+          overflow: "hidden",
+          elevation: 0,
+        },
+        iconColor: "transparent",
+      };
     case "soft-circle":
+    case "hairline-ring":
     default:
-      return { container: { ...common, borderRadius: Math.round(size / 2), backgroundColor: hexToRgba(accent, 0.14) }, iconColor: accent };
+      return {
+        container: {
+          ...common,
+          borderRadius: Math.round(size / 2),
+          backgroundColor: hexToRgba(accent, 0.14),
+          elevation: 0,
+        },
+        iconColor: accent,
+      };
   }
 }
 
@@ -1232,8 +1344,18 @@ export function getThemedNumericStyle(
   return { fontFamily: resolvedFonts.bold, fontVariant: ["tabular-nums"], includeFontPadding: false };
 }
 
-export const ThemedDivider = React.memo(function ThemedDivider({ style }: { style?: StyleProp<ViewStyle> }) {
-  const { theme, themeConfig } = useTheme();
+export const ThemedDivider = React.memo(function ThemedDivider({
+  style,
+  themeOverride,
+  configOverride,
+}: {
+  style?: StyleProp<ViewStyle>;
+  themeOverride?: ThemeColors;
+  configOverride?: ThemeConfig;
+}) {
+  const ctx = useTheme();
+  const theme = themeOverride ?? ctx.theme;
+  const themeConfig = configOverride ?? ctx.themeConfig;
   const mode = themeConfig.dividerStyle || "hairline";
   if (mode === "none") return null;
   if (mode === "dashed-soft") {
@@ -1252,13 +1374,19 @@ export const ThemedProgressBar = React.memo(function ThemedProgressBar({
   color,
   height,
   style,
+  themeOverride,
+  configOverride,
 }: {
   progress: number;
   color?: string;
   height?: number;
   style?: StyleProp<ViewStyle>;
+  themeOverride?: ThemeColors;
+  configOverride?: ThemeConfig;
 }) {
-  const { theme, themeConfig } = useTheme();
+  const ctx = useTheme();
+  const theme = themeOverride ?? ctx.theme;
+  const themeConfig = configOverride ?? ctx.themeConfig;
   const pct = Math.max(0, Math.min(1, Number.isFinite(progress) ? progress : 0));
   const fill = color || theme.gold;
   const barStyle = themeConfig.progressBarStyle || "rounded";
@@ -1285,8 +1413,15 @@ export const ThemedProgressBar = React.memo(function ThemedProgressBar({
  * Kenyan Flag Stripe Component
  * Subtle 3px bar: Black · White · Red · White · Green (toggleable in Settings)
  */
-export const KenyaStripe = React.memo(function KenyaStripe() {
-  const { themeConfig } = useTheme();
+export const KenyaStripe = React.memo(function KenyaStripe({
+  themeOverride: _themeOverride,
+  configOverride,
+}: {
+  themeOverride?: ThemeColors;
+  configOverride?: ThemeConfig;
+} = {}) {
+  const ctx = useTheme();
+  const themeConfig = configOverride ?? ctx.themeConfig;
   if (!themeConfig.showKenyaStripe || themeConfig.stripeThickness === "hidden") return null;
   const mult =
     themeConfig.stripeThickness === "hairline" ? 0.6 :
@@ -1340,7 +1475,7 @@ export const AndroidTopAppBar = React.memo(function AndroidTopAppBar({
   const showGear = showThemeToggle && showSettingsButton;
   const isCentered = themeConfig.headerAlignment === "center";
 
-  const barKey = `${theme.surfaceContainerLow}-${theme.primaryContainer}-${themeConfig.appBarStyle}-${themeConfig.headerAlignment}-${themeConfig.appBarSize}-${iconScale}`;
+  const barKey = `${theme.surfaceContainerLow}-${theme.primaryContainer}-${themeConfig.appBarStyle}-${themeConfig.headerAlignment}-${themeConfig.appBarSize}-${themeConfig.iconBadgeStyle}-${themeConfig.iconPack}-${iconScale}-${themeConfig.showOfflinePill !== false ? "1" : "0"}`;
 
   return (
     <View
@@ -1350,7 +1485,7 @@ export const AndroidTopAppBar = React.memo(function AndroidTopAppBar({
         {
           backgroundColor:
             themeConfig.appBarStyle === "accent-tinted"
-              ? theme.primaryContainer
+              ? mixHex(theme.surfaceContainerLow, theme.gold, theme.isDark ? 0.08 : 0.06)
               : theme.surfaceContainerLow,
           borderBottomColor: theme.outlineVariant,
           borderBottomWidth:
@@ -1366,6 +1501,7 @@ export const AndroidTopAppBar = React.memo(function AndroidTopAppBar({
         themeConfig.appBarStyle === "floating" && {
           marginHorizontal: 10,
           marginTop: 6,
+          marginBottom: 6,
           borderRadius: 16,
           borderWidth: 1,
           borderColor: theme.outlineVariant,

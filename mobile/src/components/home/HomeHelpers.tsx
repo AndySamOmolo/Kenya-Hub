@@ -6,13 +6,13 @@ import {
   Linking,
   Platform,
   Pressable,
+  StyleSheet,
   Text,
   UIManager,
   View,
 } from "react-native";
 import { useRouter } from "expo-router";
 import { useIsFocused } from "@react-navigation/native";
-import { Ionicons } from "@expo/vector-icons";
 import {
   useTheme,
   categoryColorMap,
@@ -20,7 +20,6 @@ import {
   pressableStyle,
   triggerHaptic,
   getThemedCardStyle,
-  getThemedIconBadgeStyle,
   darkColors,
 } from "../../theme";
 import type { HomeLayoutPreset, ThemeConfig, ThemeMetrics } from "../../lib/theme-engine";
@@ -30,8 +29,75 @@ import {
   TOTAL_DICTIONARY_ENTRIES,
   ALL_DICT_METAS,
 } from "../../shared/data/dictionaries/catalog";
-import { DynamicIcon } from "../DynamicIcon";
+import { ThemedIcon, ThemedIconBadge } from "../ThemedIcon";
 import { styles as defaultHomeStyles, createHomeStyles } from "./styles";
+
+/** Maps tool and category emojis from tools-registry to canonical Ionicon names for ThemedIconBadge. */
+export function resolveToolIoniconName(emoji?: string): string {
+  if (!emoji) return "sparkles-outline";
+  const clean = emoji.replace(/[\uFE0F]/g, "").trim();
+  switch (clean) {
+    case "🗣":
+      return "chatbubble-ellipses-outline";
+    case "💰":
+      return "cash-outline";
+    case "🎓":
+      return "school-outline";
+    case "🚗":
+    case "🚘":
+      return "car-outline";
+    case "🏗":
+    case "🧱":
+      return "construct-outline";
+    case "⚡":
+      return "flash-outline";
+    case "⚖":
+      return "scale-outline";
+    case "🏥":
+    case "🩺":
+      return "medkit-outline";
+    case "🛡":
+      return "shield-checkmark-outline";
+    case "🔒":
+      return "lock-closed-outline";
+    case "🔑":
+      return "key-outline";
+    case "🌱":
+      return "leaf-outline";
+    case "🚢":
+      return "boat-outline";
+    case "📑":
+    case "📝":
+      return "document-text-outline";
+    case "🎯":
+      return "disc-outline";
+    case "📐":
+      return "resize-outline";
+    case "🌍":
+      return "globe-outline";
+    case "🧮":
+      return "calculator-outline";
+    case "📱":
+      return "phone-portrait-outline";
+    case "🏦":
+    case "🏢":
+      return "business-outline";
+    case "🏠":
+      return "home-outline";
+    case "📚":
+      return "book-outline";
+    case "🚦":
+      return "warning-outline";
+    case "💧":
+      return "water-outline";
+    case "🧹":
+      return "brush-outline";
+    case "📞":
+      return "call-outline";
+    default:
+      return "sparkles-outline";
+  }
+}
 
 if (
   Platform.OS === "android" &&
@@ -557,15 +623,22 @@ export const FeaturedLanguageWidget = React.memo(function FeaturedLanguageWidget
     ROTATING_LANGUAGES[featuredLangIdx % ROTATING_LANGUAGES.length];
   const isCurrentLearned =
     learnStats.langId === currentFeatured.id && learnStats.totalXP > 0;
+  const isFrameless = themeConfig.surfaceStyle === "frameless";
+  const showTrailingArrows = themeConfig.showTrailingArrows !== false;
 
   return (
     <View
       style={[
         styles.snapshotWidget,
         themedCardStyle,
-        themeConfig.cardAccentStyle === "none"
+        !isFrameless && themeConfig.cardAccentStyle === "none"
           ? { borderColor: `${theme.gold}45` }
           : null,
+        isFrameless && {
+          paddingHorizontal: 4,
+          borderBottomWidth: StyleSheet.hairlineWidth,
+          borderBottomColor: theme.outlineVariant,
+        },
       ]}
     >
       <View style={styles.widgetHeaderRow}>
@@ -576,7 +649,7 @@ export const FeaturedLanguageWidget = React.memo(function FeaturedLanguageWidget
               { backgroundColor: `${theme.gold}22` },
             ]}
           >
-            <Ionicons name="school" size={12} color={theme.gold} />
+            <ThemedIcon name="school" size={12} color={theme.gold} scaleWithTheme={false} />
             <Text style={[styles.widgetBadgeText, { color: theme.gold }]}>
               23 COURSES
             </Text>
@@ -592,7 +665,7 @@ export const FeaturedLanguageWidget = React.memo(function FeaturedLanguageWidget
             <Text
               style={{
                 fontSize: 9.5,
-                fontFamily: "Outfit_800ExtraBold",
+                fontFamily: resolvedFonts.heading,
                 color: theme.gold,
               }}
             >
@@ -607,11 +680,11 @@ export const FeaturedLanguageWidget = React.memo(function FeaturedLanguageWidget
           hitSlop={12}
           style={pressableStyle(styles.diceMiniBtn)}
         >
-          <Ionicons name="dice-outline" size={14} color={theme.gold} />
+          <ThemedIcon name="dice-outline" size={14} color={theme.gold} scaleWithTheme={false} />
           <Text
             style={{
               fontSize: 10,
-              fontFamily: "Outfit_700Bold",
+              fontFamily: resolvedFonts.bold,
               color: theme.gold,
             }}
           >
@@ -650,7 +723,9 @@ export const FeaturedLanguageWidget = React.memo(function FeaturedLanguageWidget
           <Text style={[styles.widgetFooterLinkText, { color: theme.gold }]}>
             {isCurrentLearned ? "Resume Course" : "Start Learning"}
           </Text>
-          <Ionicons name="arrow-forward" size={13} color={theme.gold} />
+          {showTrailingArrows && (
+            <ThemedIcon name="arrow-forward" size={13} color={theme.gold} scaleWithTheme={false} />
+          )}
         </View>
       </Pressable>
     </View>
@@ -712,12 +787,19 @@ export const WordOfTheMomentWidget = React.memo(function WordOfTheMomentWidget({
   const currentWord =
     INITIAL_RANDOM_WORDS[wordIdx % INITIAL_RANDOM_WORDS.length];
   if (!currentWord) return null;
+  const isFrameless = themeConfig.surfaceStyle === "frameless";
+  const showTrailingArrows = themeConfig.showTrailingArrows !== false;
 
   return (
     <View
       style={[
         styles.snapshotWidget,
         themedCardStyle,
+        isFrameless && {
+          paddingHorizontal: 4,
+          borderBottomWidth: StyleSheet.hairlineWidth,
+          borderBottomColor: theme.outlineVariant,
+        },
       ]}
     >
       <View style={styles.widgetHeaderRow}>
@@ -727,7 +809,7 @@ export const WordOfTheMomentWidget = React.memo(function WordOfTheMomentWidget({
             { backgroundColor: `${theme.kenyaGreenLight}29` },
           ]}
         >
-          <Ionicons name="sparkles" size={12} color={theme.kenyaGreenLight} />
+          <ThemedIcon name="sparkles" size={12} color={theme.kenyaGreenLight} scaleWithTheme={false} />
           <Text style={[styles.widgetBadgeText, { color: theme.kenyaGreenLight }]}>
             {currentWord.langName.toUpperCase()} WORD
           </Text>
@@ -739,11 +821,11 @@ export const WordOfTheMomentWidget = React.memo(function WordOfTheMomentWidget({
           hitSlop={12}
           style={pressableStyle(styles.diceMiniBtn)}
         >
-          <Ionicons name="dice-outline" size={14} color={theme.gold} />
+          <ThemedIcon name="dice-outline" size={14} color={theme.gold} scaleWithTheme={false} />
           <Text
             style={{
               fontSize: 10,
-              fontFamily: "Outfit_700Bold",
+              fontFamily: resolvedFonts.bold,
               color: theme.gold,
             }}
           >
@@ -787,7 +869,9 @@ export const WordOfTheMomentWidget = React.memo(function WordOfTheMomentWidget({
             {TOTAL_DICTIONARY_ENTRIES.toLocaleString()}+ Words in{" "}
             {ALL_DICT_METAS.length} Languages
           </Text>
-          <Ionicons name="arrow-forward" size={13} color={theme.kenyaGreenLight} />
+          {showTrailingArrows && (
+            <ThemedIcon name="arrow-forward" size={13} color={theme.kenyaGreenLight} scaleWithTheme={false} />
+          )}
         </View>
       </Pressable>
     </View>
@@ -824,11 +908,12 @@ export const PopularToolRow = React.memo(function PopularToolRow({
   const isGridTile = activeLayout === "bento-grid" || activeLayout === "large-tiles";
   const isCompact = activeLayout === "compact-list" || activeLayout === "minimal-rows";
   const isEditorial = activeLayout === "editorial-cards";
-  const iconBadge = useMemo(
-    () => getThemedIconBadgeStyle(theme, themeConfig, categoryColor, isGridTile ? 42 : isCompact ? 32 : 36),
-    [theme, themeConfig, categoryColor, isGridTile, isCompact]
-  );
-  const iconPx = Math.round((isGridTile ? 22 : isCompact ? 18 : 22) * (themeMetrics?.iconScale ?? 1));
+  const isFrameless = themeConfig.surfaceStyle === "frameless";
+  const showCategoryBadges = themeConfig.showCategoryBadges !== false;
+  const showCardDescriptions = themeConfig.showCardDescriptions !== false;
+  const showTrailingArrows = themeConfig.showTrailingArrows !== false;
+  const badgeBaseSize = isGridTile ? 42 : isCompact ? 32 : 36;
+  const badgeIconSize = isGridTile ? 21 : isCompact ? 16 : 19;
 
   return (
     <View
@@ -837,11 +922,17 @@ export const PopularToolRow = React.memo(function PopularToolRow({
         themedCardStyle,
         {
           overflow: "visible",
-          borderColor: isPinned ? `${theme.gold}55` : themedCardStyle.borderColor,
+          borderColor: !isFrameless && isPinned ? `${theme.gold}55` : themedCardStyle.borderColor,
         },
         isGridTile ? { width: "48.5%" } : null,
         activeLayout === "minimal-rows"
           ? { borderWidth: 0, borderBottomWidth: 1, borderRadius: 0, backgroundColor: "transparent", elevation: 0 }
+          : null,
+        isFrameless
+          ? {
+              borderBottomWidth: StyleSheet.hairlineWidth,
+              borderBottomColor: theme.outlineVariant,
+            }
           : null,
       ]}
     >
@@ -862,11 +953,16 @@ export const PopularToolRow = React.memo(function PopularToolRow({
           isEditorial ? { paddingVertical: 14, paddingHorizontal: 14 } : null,
         ])}
       >
-        <View style={iconBadge.container}>
-          <DynamicIcon emoji={tool.icon} size={iconPx} color={iconBadge.iconColor} />
-        </View>
+        <ThemedIconBadge
+          name={resolveToolIoniconName(tool.icon)}
+          accentColor={categoryColor}
+          baseSize={badgeBaseSize}
+          iconSize={badgeIconSize}
+          overrideTheme={theme}
+          overrideConfig={themeConfig}
+        />
         <View style={[styles.popularToolBody, isGridTile ? { width: "100%" } : null]}>
-          {!isCompact && (
+          {!isCompact && showCategoryBadges && (
             <View
               style={[
                 styles.miniCategoryPill,
@@ -885,15 +981,17 @@ export const PopularToolRow = React.memo(function PopularToolRow({
           <Text style={[styles.popularToolTitle, { color: theme.textPrimary }]} numberOfLines={isGridTile ? 1 : 2}>
             {tool.shortTitle || tool.title}
           </Text>
-          <Text
-            style={[
-              styles.popularToolDesc,
-              { color: theme.textSecondary, marginTop: 2 },
-            ]}
-            numberOfLines={isCompact ? 1 : isEditorial ? 3 : 2}
-          >
-            {tool.description}
-          </Text>
+          {showCardDescriptions && (
+            <Text
+              style={[
+                styles.popularToolDesc,
+                { color: theme.textSecondary, marginTop: 2 },
+              ]}
+              numberOfLines={isCompact ? 1 : isEditorial ? 3 : 2}
+            >
+              {tool.description}
+            </Text>
+          )}
         </View>
         <View style={styles.popularToolActions}>
           <Pressable
@@ -917,17 +1015,22 @@ export const PopularToolRow = React.memo(function PopularToolRow({
               },
             ])}
           >
-            <Ionicons
+            <ThemedIcon
               name={isPinned ? "bookmark" : "bookmark-outline"}
               size={15}
               color={isPinned ? theme.gold : theme.textMuted}
+              pack={isPinned ? "filled" : undefined}
+              scaleWithTheme={false}
             />
           </Pressable>
-          <Ionicons
-            name="chevron-forward"
-            size={16}
-            color={theme.textMuted}
-          />
+          {showTrailingArrows && (
+            <ThemedIcon
+              name="chevron-forward"
+              size={16}
+              color={theme.textMuted}
+              scaleWithTheme={false}
+            />
+          )}
         </View>
       </Pressable>
     </View>
@@ -1035,30 +1138,42 @@ export function SUPER_APP_APP_TILES(
   const layout: HomeLayoutPreset = themeConfig?.homeLayout ?? "classic";
   const isTwoCol = layout === "bento-grid" || layout === "large-tiles" || layout === "editorial-cards";
   const isRowList = layout === "compact-list" || layout === "minimal-rows";
-  const cardStyle = themeConfig && themeMetrics ? getThemedCardStyle(theme, themeConfig, themeMetrics) : null;
-  const iconScale = themeMetrics?.iconScale ?? 1;
+  const showTrailingArrows = themeConfig?.showTrailingArrows !== false;
+  const hideIcons = themeConfig?.showCardIcons === false || themeConfig?.iconBadgeStyle === "hidden";
+  const isFrameless = themeConfig?.surfaceStyle === "frameless";
+  const rawCardStyle = themeConfig && themeMetrics ? getThemedCardStyle(theme, themeConfig, themeMetrics) : null;
+  const tileCardStyle = rawCardStyle
+    ? (() => {
+        const {
+          borderLeftWidth: _blw,
+          borderLeftColor: _blc,
+          borderTopWidth: _btw,
+          borderTopColor: _btc,
+          borderBottomWidth: _bbw,
+          borderBottomColor: _bbc,
+          ...rest
+        } = rawCardStyle;
+        return rest;
+      })()
+    : null;
 
   return items.map((item) => {
     const baseSize =
       layout === "large-tiles"
-        ? 36
+        ? 38
         : isRowList
-        ? 28
+        ? 30
         : isTwoCol
-        ? 32
+        ? 34
         : 46;
-    const badge = themeConfig
-      ? getThemedIconBadgeStyle(theme, themeConfig, item.color, baseSize)
-      : null;
-    const iconSize = Math.round(
-      (layout === "large-tiles"
-        ? 18
+    const baseIconSize =
+      layout === "large-tiles"
+        ? 19
         : isRowList
         ? 15
         : isTwoCol
-        ? 16
-        : 22) * iconScale
-    );
+        ? 17
+        : 22;
 
     return (
       <Pressable
@@ -1079,58 +1194,79 @@ export function SUPER_APP_APP_TILES(
         }}
         style={pressableStyle([
           styles.launcherTile,
-          isTwoCol && cardStyle
+          hideIcons && !isTwoCol && !isRowList
+            ? {
+                gap: 0,
+                paddingVertical: 10,
+                justifyContent: "center",
+              }
+            : null,
+          isFrameless && !isTwoCol && !isRowList
+            ? {
+                borderBottomWidth: StyleSheet.hairlineWidth,
+                borderBottomColor: theme.outlineVariant,
+                paddingBottom: 8,
+              }
+            : null,
+          isTwoCol && tileCardStyle
             ? [
-                cardStyle,
+                tileCardStyle,
                 {
                   width: "48.5%",
                   flexDirection: layout === "large-tiles" ? "column" : "row",
                   alignItems: "center",
-                  justifyContent: layout === "large-tiles" ? "center" : "flex-start",
-                  paddingHorizontal: layout === "large-tiles" ? 10 : 9,
-                  paddingVertical: layout === "large-tiles" ? 9 : 7,
-                  gap: layout === "large-tiles" ? 6 : 8,
+                  justifyContent: hideIcons || layout === "large-tiles" ? "center" : "flex-start",
+                  paddingHorizontal: layout === "large-tiles" ? 10 : 10,
+                  paddingVertical: layout === "large-tiles" ? 10 : 8,
+                  gap: hideIcons ? 0 : layout === "large-tiles" ? 6 : 9,
                 },
+                isFrameless
+                  ? {
+                      borderBottomWidth: StyleSheet.hairlineWidth,
+                      borderBottomColor: theme.outlineVariant,
+                    }
+                  : null,
               ]
             : null,
           isRowList
             ? [
-                layout === "compact-list" && cardStyle ? cardStyle : null,
+                layout === "compact-list" && tileCardStyle ? tileCardStyle : null,
                 {
-                  width: "48.5%",
+                  width: "100%",
                   flexDirection: "row",
                   alignItems: "center",
                   justifyContent: "space-between",
-                  paddingHorizontal: 8,
-                  paddingVertical: 6,
-                  gap: 7,
-                  borderBottomWidth: layout === "minimal-rows" ? 1 : undefined,
-                  borderBottomColor: layout === "minimal-rows" ? theme.outlineVariant : undefined,
+                  paddingHorizontal: layout === "minimal-rows" || isFrameless ? 4 : 10,
+                  paddingVertical: layout === "minimal-rows" ? 8 : 7,
+                  gap: hideIcons && !showTrailingArrows ? 0 : 10,
+                  borderBottomWidth:
+                    layout === "minimal-rows"
+                      ? 1
+                      : isFrameless
+                      ? StyleSheet.hairlineWidth
+                      : undefined,
+                  borderBottomColor:
+                    layout === "minimal-rows" || isFrameless ? theme.outlineVariant : undefined,
                 },
               ]
             : null,
         ])}
       >
-        <View
-          style={
-            badge
-              ? badge.container
-              : [
-                  styles.launcherSquircle,
-                  {
-                    backgroundColor: `${item.color}1C`,
-                    borderColor: `${item.color}40`,
-                  },
-                ]
-          }
-        >
-          <Ionicons name={item.icon} size={iconSize} color={badge ? badge.iconColor : item.color} />
-        </View>
+        <ThemedIconBadge
+          name={item.icon}
+          accentColor={item.color}
+          baseSize={baseSize}
+          iconSize={baseIconSize}
+          overrideTheme={theme}
+          overrideConfig={themeConfig}
+        />
         <Text
           style={[
             styles.launcherLabel,
             { color: theme.textPrimary },
-            isTwoCol && layout !== "large-tiles" ? { textAlign: "left", flex: 1 } : null,
+            isTwoCol && layout !== "large-tiles"
+              ? { textAlign: hideIcons ? "center" : "left", flex: 1 }
+              : null,
             isRowList ? { textAlign: "left", flex: 1, fontSize: 13 } : null,
           ]}
           numberOfLines={1}
@@ -1139,8 +1275,15 @@ export function SUPER_APP_APP_TILES(
         >
           {item.label}
         </Text>
-        {isRowList && (
-          <Ionicons name="chevron-forward" size={15} color={theme.textMuted} />
+        {isRowList && showTrailingArrows && (
+          <ThemedIcon
+            name="chevron-forward"
+            size={15}
+            color={theme.textMuted}
+            overrideTheme={theme}
+            overrideConfig={themeConfig}
+            scaleWithTheme={false}
+          />
         )}
       </Pressable>
     );

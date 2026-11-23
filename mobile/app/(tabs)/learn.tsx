@@ -1,7 +1,6 @@
 import React, { useMemo, useRef, useState } from "react";
-import { Platform, Pressable, ScrollView, StatusBar, StyleSheet, Text } from "react-native";
+import { Pressable, ScrollView, StyleSheet, Text } from "react-native";
 import { useLocalSearchParams } from "expo-router";
-import { Ionicons } from "@expo/vector-icons";
 import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
 import {
   useTheme,
@@ -11,7 +10,8 @@ import {
   pressableStyle,
   triggerHaptic,
 } from "../../src/theme";
-import type { ThemeMetrics } from "../../src/lib/theme-engine";
+import { getContrastInk, type ThemeMetrics } from "../../src/lib/theme-engine";
+import { ThemedIcon } from "../../src/components/ThemedIcon";
 import {
   LanguageLearningTool,
   type CourseNavigationState,
@@ -66,7 +66,7 @@ function createLearnStyles(
 }
 
 export default function LearnTabScreen() {
-  const { theme, isDark, themeConfig, themeMetrics, resolvedFonts, themeKey } = useTheme();
+  const { theme, themeConfig, themeMetrics, resolvedFonts, themeKey } = useTheme();
   const styles = useMemo(
     () => createLearnStyles(themeMetrics, resolvedFonts),
     [themeMetrics, resolvedFonts]
@@ -74,9 +74,13 @@ export default function LearnTabScreen() {
   const screenPadPx = (themeMetrics as any)?.screenPaddingPx ?? Math.round(12 * (themeMetrics?.spacingScale ?? 1));
   const floatClearance = themeMetrics?.floatingTabBarClearancePx ?? 0;
   const headingTransform = themeConfig.headingTransform || "none";
+  const goldInk = getContrastInk(theme.gold);
   const params = useLocalSearchParams<{ lang?: string; tab?: string }>();
   const insets = useSafeAreaInsets();
-  const safeTop = Math.max(insets.top, Platform.OS === "android" ? StatusBar.currentHeight ?? 24 : 0);
+  const bottomClearance =
+    Math.round(92 * (themeMetrics?.spacingScale ?? 1)) +
+    floatClearance +
+    insets.bottom;
   const scrollRef = useRef<ScrollView>(null);
   const [showBackToTop, setShowBackToTop] = useState(false);
   const [navState, setNavState] = useState<CourseNavigationState>({
@@ -93,7 +97,7 @@ export default function LearnTabScreen() {
   return (
     <SafeAreaView
       key={themeKey}
-      style={[styles.screen, { backgroundColor: theme.bgPrimary, paddingTop: insets.top === 0 ? safeTop : 0 }]}
+      style={[styles.screen, { backgroundColor: theme.bgPrimary }]}
       edges={["top", "left", "right"]}
     >
       <KenyaStripe />
@@ -110,8 +114,7 @@ export default function LearnTabScreen() {
         ref={scrollRef}
         contentContainerStyle={[
           styles.content,
-          { paddingHorizontal: screenPadPx },
-          floatClearance > 0 ? { paddingBottom: Math.round(92 * (themeMetrics?.spacingScale ?? 1)) + floatClearance } : null,
+          { paddingHorizontal: screenPadPx, paddingBottom: bottomClearance },
         ]}
         showsVerticalScrollIndicator={themeConfig?.verticalScrollbarStyle !== "hidden"}
         persistentScrollbar={themeConfig.verticalScrollbarStyle === "always-visible"}
@@ -141,13 +144,13 @@ export default function LearnTabScreen() {
             styles.fabTopBtn,
             {
               backgroundColor: theme.gold,
-              borderColor: theme.kenyaBlack,
+              borderColor: goldInk,
+              bottom: 18 + floatClearance + insets.bottom,
             },
-            floatClearance > 0 ? { bottom: 18 + floatClearance } : null,
           ])}
         >
-          <Ionicons name="arrow-up" size={16} color={theme.kenyaBlack} />
-          <Text style={[styles.fabTopText, { color: theme.kenyaBlack, textTransform: headingTransform }]}>
+          <ThemedIcon name="arrow-up" size={16} color={goldInk} />
+          <Text style={[styles.fabTopText, { color: goldInk, textTransform: headingTransform }]}>
             Top
           </Text>
         </Pressable>

@@ -313,43 +313,7 @@ export function ExpandablePillRow({
           return { ratio, thumbFrac, scrollable };
         }
         if (!scrollable) return prev;
-        if (sbStyle === "tick-ruler" || sbStyle === "glow-rail") {
-      const tickCount = 9;
-      const activeTick = Math.min(
-        tickCount - 1,
-        Math.round(scrollMetrics.ratio * (tickCount - 1))
-      );
-      return (
-        <View
-          style={{
-            flexDirection: "row",
-            justifyContent: "space-between",
-            alignItems: "flex-end",
-            paddingHorizontal: 8,
-            marginTop: 4,
-            height: Math.max(8, sbThickness + 4),
-          }}
-        >
-          {Array.from({ length: tickCount }).map((_, idx) => {
-            const isMajor = idx === 0 || idx === 4 || idx === 8;
-            const isHit = idx === activeTick;
-            return (
-              <View
-                key={`tick-${idx}`}
-                style={{
-                  width: isHit ? Math.max(3, sbThickness) : 1.5,
-                  height: isHit ? Math.max(8, sbThickness + 4) : isMajor ? 6 : 4,
-                  borderRadius: 1,
-                  backgroundColor: isHit ? sbColor : theme.outlineVariant,
-                  opacity: isHit ? 1 : 0.55,
-                }}
-              />
-            );
-          })}
-        </View>
-      );
-    }
-    if (sbStyle === "dots") {
+        if (sbStyle === "dots") {
           const prevDot = Math.min(4, Math.round(prev.ratio * 4));
           const nextDot = Math.min(4, Math.round(ratio * 4));
           if (prevDot === nextDot) return prev;
@@ -1046,6 +1010,42 @@ export function ExpandablePillRow({
       sbStyle === "native-indicator"
     ) {
       return null;
+    }
+    if (sbStyle === "tick-ruler" || sbStyle === "glow-rail") {
+      const tickCount = 9;
+      const activeTick = Math.min(
+        tickCount - 1,
+        Math.round(scrollMetrics.ratio * (tickCount - 1))
+      );
+      return (
+        <View
+          style={{
+            flexDirection: "row",
+            justifyContent: "space-between",
+            alignItems: "flex-end",
+            paddingHorizontal: 8,
+            marginTop: 4,
+            height: Math.max(8, sbThickness + 4),
+          }}
+        >
+          {Array.from({ length: tickCount }).map((_, idx) => {
+            const isMajor = idx === 0 || idx === 4 || idx === 8;
+            const isHit = idx === activeTick;
+            return (
+              <View
+                key={`tick-${idx}`}
+                style={{
+                  width: isHit ? Math.max(3, sbThickness) : 1.5,
+                  height: isHit ? Math.max(8, sbThickness + 4) : isMajor ? 6 : 4,
+                  borderRadius: 1,
+                  backgroundColor: isHit ? sbColor : theme.outlineVariant,
+                  opacity: isHit ? 1 : 0.55,
+                }}
+              />
+            );
+          })}
+        </View>
+      );
     }
     if (sbStyle === "dots") {
       const dotCount = 5;

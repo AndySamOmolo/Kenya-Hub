@@ -11,8 +11,7 @@ import {
   TextInput,
   View,
 } from "react-native";
-import { Ionicons } from "@expo/vector-icons";
-import { SafeAreaView } from "react-native-safe-area-context";
+import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
 import {
   useTheme,
   categoryColorMap,
@@ -23,7 +22,6 @@ import {
   parseSavedTools,
   getThemedCardStyle,
   getThemedInputStyle,
-  getThemedIconBadgeStyle,
 } from "../../src/theme";
 import type { ThemeConfig, ThemeMetrics } from "../../src/lib/theme-engine";
 import {
@@ -33,7 +31,44 @@ import {
   getCategoryInfo,
 } from "../../src/shared/lib/tools-registry";
 import matatuData from "../../src/shared/data/matatu-routes.json";
-import { DynamicIcon } from "../../src/components/DynamicIcon";
+import { ThemedIcon, ThemedIconBadge } from "../../src/components/ThemedIcon";
+
+function toolEmojiToIonicon(emoji?: string): string {
+  const clean = (emoji || "").replace(/[\uFE0F]/g, "").trim();
+  switch (clean) {
+    case "🛡": return "shield-checkmark-outline";
+    case "🔒": return "lock-closed-outline";
+    case "🌱": return "leaf-outline";
+    case "🚢": return "boat-outline";
+    case "🩺":
+    case "🏥": return "medkit-outline";
+    case "📑":
+    case "📝": return "document-text-outline";
+    case "🎯": return "disc-outline";
+    case "📐": return "resize-outline";
+    case "🗣": return "chatbubble-ellipses-outline";
+    case "🌍": return "globe-outline";
+    case "🧮": return "calculator-outline";
+    case "📱": return "phone-portrait-outline";
+    case "🏦":
+    case "🏢": return "business-outline";
+    case "🎓": return "school-outline";
+    case "🏠": return "home-outline";
+    case "📚": return "book-outline";
+    case "🚗":
+    case "🚘": return "car-outline";
+    case "🚦": return "warning-outline";
+    case "🧱": return "construct-outline";
+    case "⚡": return "flash-outline";
+    case "💧": return "water-outline";
+    case "⚖": return "scale-outline";
+    case "🔑": return "key-outline";
+    case "🧹": return "brush-outline";
+    case "📞": return "call-outline";
+    default: return "sparkles-outline";
+  }
+}
+
 
 const MATATU_KEYWORDS = [
   "matatu",
@@ -74,77 +109,105 @@ const ToolItem = React.memo(function ToolItem({
 }) {
   const categoryColor = categoryColorMap[item.category] || theme.gold;
   const catInfo = getCategoryInfo(item.category);
-  const iconBadge = useMemo(
-    () => getThemedIconBadgeStyle(theme, themeConfig, categoryColor, 46),
-    [theme, themeConfig, categoryColor]
-  );
-  const iconPx = Math.round(22 * (themeMetrics?.iconScale ?? 1));
+  const isFrameless = themeConfig.surfaceStyle === "frameless";
+  const showCardIcons =
+    themeConfig.showCardIcons !== false && themeConfig.iconBadgeStyle !== "hidden";
+  const showCategoryBadges = themeConfig.showCategoryBadges !== false;
+  const showCardDescriptions = themeConfig.showCardDescriptions !== false;
+  const showTrailingArrows = themeConfig.showTrailingArrows !== false;
 
   return (
     <View
       style={[
         styles.cardWrap,
         themedCardStyle,
-        isPinned ? { borderColor: `${theme.gold}66` } : null,
+        isFrameless
+          ? {
+              borderBottomWidth: StyleSheet.hairlineWidth,
+              borderBottomColor: theme.outlineVariant,
+            }
+          : isPinned
+          ? { borderColor: `${theme.gold}66` }
+          : null,
       ]}
     >
       <Pressable
         android_ripple={androidRipple(theme.rippleColor)}
         onPress={() => onPressTool(item.slug)}
-        style={styles.card}
+        style={[styles.card, isFrameless && { paddingHorizontal: 0 }]}
       >
         <View style={styles.cardHeaderRow}>
-          <View style={iconBadge.container}>
-            <DynamicIcon emoji={item.icon} size={iconPx} color={iconBadge.iconColor} />
-          </View>
-          <View style={styles.body}>
-            <View style={styles.categoryPillWrap}>
-              <View
-                style={[styles.categoryDot, { backgroundColor: categoryColor }]}
-              />
-              <Text style={[styles.categoryPillText, { color: categoryColor }]}>
-                {(catInfo?.name || item.category).toUpperCase()}
-              </Text>
-              {isPinned && (
-                <View
-                  style={[
-                    styles.pinnedTag,
-                    { backgroundColor: `${theme.gold}20` },
-                  ]}
-                >
-                  <Ionicons name="bookmark" size={10} color={theme.gold} />
-                  <Text style={[styles.pinnedTagText, { color: theme.gold }]}>
-                    PINNED
-                  </Text>
-                </View>
-              )}
-            </View>
+          <ThemedIconBadge
+            name={toolEmojiToIonicon(item.icon)}
+            accentColor={categoryColor}
+            baseSize={46}
+            iconSize={22}
+          />
+          <View
+            style={[
+              styles.body,
+              !showCardIcons && { marginLeft: 0 },
+              !showTrailingArrows && { marginRight: 0 },
+            ]}
+          >
+            {(showCategoryBadges || isPinned) && (
+              <View style={styles.categoryPillWrap}>
+                {showCategoryBadges && (
+                  <>
+                    <View
+                      style={[styles.categoryDot, { backgroundColor: categoryColor }]}
+                    />
+                    <Text style={[styles.categoryPillText, { color: categoryColor }]}>
+                      {(catInfo?.name || item.category).toUpperCase()}
+                    </Text>
+                  </>
+                )}
+                {isPinned && (
+                  <View
+                    style={[
+                      styles.pinnedTag,
+                      { backgroundColor: `${theme.gold}20` },
+                      !showCategoryBadges && { marginLeft: 0 },
+                    ]}
+                  >
+                    <ThemedIcon name="bookmark" size={10} color={theme.gold} />
+                    <Text style={[styles.pinnedTagText, { color: theme.gold }]}>
+                      PINNED
+                    </Text>
+                  </View>
+                )}
+              </View>
+            )}
             <Text style={[styles.title, { color: theme.textPrimary }]}>
               {item.shortTitle}
             </Text>
           </View>
-          <View
-            style={[
-              styles.trailingCircle,
-              { backgroundColor: theme.surfaceContainerHigh },
-            ]}
-          >
-            <Ionicons
-              name="arrow-forward"
-              size={16}
-              color={theme.textSecondary}
-            />
-          </View>
+          {showTrailingArrows && (
+            <View
+              style={[
+                styles.trailingCircle,
+                { backgroundColor: theme.surfaceContainerHigh },
+              ]}
+            >
+              <ThemedIcon
+                name="arrow-forward"
+                size={16}
+                color={theme.textSecondary}
+              />
+            </View>
+          )}
         </View>
 
-        <Text style={[styles.description, { color: theme.textSecondary }]}>
-          {item.description}
-        </Text>
+        {showCardDescriptions && (
+          <Text style={[styles.description, { color: theme.textSecondary }]}>
+            {item.description}
+          </Text>
+        )}
 
         <View
           style={[styles.sourceBadge, { borderTopColor: theme.outlineVariant }]}
         >
-          <Ionicons
+          <ThemedIcon
             name="shield-checkmark"
             size={13}
             color={theme.kenyaGreenLight}
@@ -173,13 +236,20 @@ export default function ToolsScreen() {
     () => getThemedInputStyle(theme, themeConfig, themeMetrics),
     [theme, themeConfig, themeMetrics]
   );
-  const matatuIconBadge = useMemo(
-    () => getThemedIconBadgeStyle(theme, themeConfig, theme.sky, 46),
-    [theme, themeConfig]
-  );
+  const insets = useSafeAreaInsets();
   const screenPadPx = (themeMetrics as any)?.screenPaddingPx ?? Math.round(14 * (themeMetrics?.spacingScale ?? 1));
   const floatClearance = themeMetrics?.floatingTabBarClearancePx ?? 0;
+  const bottomClearance =
+    Math.round(28 * (themeMetrics?.spacingScale ?? 1)) +
+    floatClearance +
+    insets.bottom;
   const headingTransform = themeConfig.headingTransform || "none";
+  const isFrameless = themeConfig.surfaceStyle === "frameless";
+  const showCardIcons =
+    themeConfig.showCardIcons !== false && themeConfig.iconBadgeStyle !== "hidden";
+  const showCategoryBadges = themeConfig.showCategoryBadges !== false;
+  const showCardDescriptions = themeConfig.showCardDescriptions !== false;
+  const showTrailingArrows = themeConfig.showTrailingArrows !== false;
   const listExtraData = useMemo(
     () => ({ theme, themeConfig, themeMetrics, resolvedFonts, themedCardStyle }),
     [theme, themeConfig, themeMetrics, resolvedFonts, themedCardStyle]
@@ -370,17 +440,16 @@ export default function ToolsScreen() {
             themedInputStyle,
           ]}
         >
-          <Ionicons
+          <ThemedIcon
             name="search"
             size={16}
             color={theme.gold}
             style={styles.searchIcon}
           />
           <TextInput
-            
             value={query}
             onChangeText={setQuery}
-            placeholder={`Search ${TOOLS.length} tools or Matatu routes...`}
+            placeholder={`Search ${TOOLS.length} tools...`}
             numberOfLines={1}
             multiline={false}
             placeholderTextColor={theme.textMuted}
@@ -389,7 +458,7 @@ export default function ToolsScreen() {
           />
           {query.length > 0 && (
             <Pressable onPress={() => setQuery("")} hitSlop={8}>
-              <Ionicons
+              <ThemedIcon
                 name="close-circle"
                 size={16}
                 color={theme.textMuted}
@@ -450,7 +519,7 @@ export default function ToolsScreen() {
                     paddingBottom: 0,
                     includeFontPadding: false,
                     textAlignVertical: "center",
-                    fontFamily: active ? "Outfit_700Bold" : "Inter_600SemiBold",
+                    fontFamily: active ? resolvedFonts.heading : resolvedFonts.bold,
                     color: active
                       ? theme.onPrimaryContainer
                       : theme.textSecondary,
@@ -507,7 +576,7 @@ export default function ToolsScreen() {
                     borderColor: active ? theme.gold : theme.outlineVariant,
                   }}
                 >
-                  <Ionicons
+                  <ThemedIcon
                     name={option.icon}
                     size={11}
                     color={active ? theme.onPrimaryContainer : theme.gold}
@@ -538,8 +607,7 @@ export default function ToolsScreen() {
         keyExtractor={(item) => item.slug}
         contentContainerStyle={[
           styles.list,
-          { paddingHorizontal: screenPadPx },
-          floatClearance > 0 ? { paddingBottom: Math.round(28 * (themeMetrics?.spacingScale ?? 1)) + floatClearance } : null,
+          { paddingHorizontal: screenPadPx, paddingBottom: bottomClearance },
         ]}
         showsVerticalScrollIndicator={themeConfig?.verticalScrollbarStyle !== "hidden"}
         persistentScrollbar={themeConfig.verticalScrollbarStyle === "always-visible"}
@@ -578,10 +646,16 @@ export default function ToolsScreen() {
                 style={[
                   styles.cardWrap,
                   themedCardStyle,
-                  {
-                    borderColor: `${theme.gold}66`,
-                    marginBottom: 4,
-                  },
+                  isFrameless
+                    ? {
+                        borderBottomWidth: StyleSheet.hairlineWidth,
+                        borderBottomColor: theme.outlineVariant,
+                        marginBottom: 4,
+                      }
+                    : {
+                        borderColor: `${theme.gold}66`,
+                        marginBottom: 4,
+                      },
                 ]}
               >
                 <Pressable
@@ -596,52 +670,67 @@ export default function ToolsScreen() {
                           : undefined,
                     });
                   }}
-                  style={styles.card}
+                  style={[styles.card, isFrameless && { paddingHorizontal: 0 }]}
                 >
                   <View style={styles.cardHeaderRow}>
-                    <View style={matatuIconBadge.container}>
-                      <Ionicons name="bus" size={Math.round(22 * (themeMetrics?.iconScale ?? 1))} color={matatuIconBadge.iconColor} />
-                    </View>
-                    <View style={styles.body}>
-                      <View style={styles.categoryPillWrap}>
-                        <View
-                          style={[
-                            styles.categoryDot,
-                            { backgroundColor: theme.sky },
-                          ]}
-                        />
-                        <Text
-                          style={[
-                            styles.categoryPillText,
-                            { color: theme.sky },
-                          ]}
-                        >
-                          TRANSPORT & TRAVEL HUB
-                        </Text>
-                      </View>
+                    <ThemedIconBadge
+                      name="bus"
+                      accentColor={theme.sky}
+                      baseSize={46}
+                      iconSize={22}
+                    />
+                    <View
+                      style={[
+                        styles.body,
+                        !showCardIcons && { marginLeft: 0 },
+                        !showTrailingArrows && { marginRight: 0 },
+                      ]}
+                    >
+                      {showCategoryBadges && (
+                        <View style={styles.categoryPillWrap}>
+                          <View
+                            style={[
+                              styles.categoryDot,
+                              { backgroundColor: theme.sky },
+                            ]}
+                          />
+                          <Text
+                            style={[
+                              styles.categoryPillText,
+                              { color: theme.sky },
+                            ]}
+                          >
+                            TRANSPORT & TRAVEL HUB
+                          </Text>
+                        </View>
+                      )}
                       <Text style={[styles.title, { color: theme.textPrimary }]}>
                         Matatu Routes & SACCO Fares
                       </Text>
                     </View>
-                    <View
-                      style={[
-                        styles.trailingCircle,
-                        { backgroundColor: theme.surfaceContainerHigh },
-                      ]}
-                    >
-                      <Ionicons
-                        name="arrow-forward"
-                        size={16}
-                        color={theme.textSecondary}
-                      />
-                    </View>
+                    {showTrailingArrows && (
+                      <View
+                        style={[
+                          styles.trailingCircle,
+                          { backgroundColor: theme.surfaceContainerHigh },
+                        ]}
+                      >
+                        <ThemedIcon
+                          name="arrow-forward"
+                          size={16}
+                          color={theme.textSecondary}
+                        />
+                      </View>
+                    )}
                   </View>
 
-                  <Text
-                    style={[styles.description, { color: theme.textSecondary }]}
-                  >
-                    Explore {matatuSummary.routeCount} verified matatu routes, {matatuSummary.stageCount} stage stopovers, interactive maps, and off-peak/peak fares across {matatuSummary.townCount} Kenyan cities.
-                  </Text>
+                  {showCardDescriptions && (
+                    <Text
+                      style={[styles.description, { color: theme.textSecondary }]}
+                    >
+                      Explore {matatuSummary.routeCount} verified matatu routes, {matatuSummary.stageCount} stage stopovers, interactive maps, and off-peak/peak fares across {matatuSummary.townCount} Kenyan cities.
+                    </Text>
+                  )}
 
                   <View
                     style={[
@@ -649,7 +738,7 @@ export default function ToolsScreen() {
                       { borderTopColor: theme.outlineVariant },
                     ]}
                   >
-                    <Ionicons
+                    <ThemedIcon
                       name="shield-checkmark"
                       size={13}
                       color={theme.kenyaGreenLight}
@@ -665,7 +754,7 @@ export default function ToolsScreen() {
             {showPinnedSection && (
               <View style={styles.pinnedSection}>
                 <View style={styles.pinnedHeaderRow}>
-                  <Ionicons name="bookmark" size={16} color={theme.gold} />
+                  <ThemedIcon name="bookmark" size={16} color={theme.gold} />
                   <Text
                     style={[styles.pinnedSectionTitle, { color: theme.textPrimary, textTransform: headingTransform }]}
                   >
@@ -693,7 +782,7 @@ export default function ToolsScreen() {
         ListEmptyComponent={
           !showMatatuHubCard ? (
             <View style={styles.emptyWrap}>
-              <Ionicons name="search-outline" size={44} color={theme.textMuted} />
+              <ThemedIcon name="search-outline" size={44} color={theme.textMuted} />
               <Text style={[styles.emptyTitle, { color: theme.textPrimary }]}>
                 No tools found matching &ldquo;{query}&rdquo;
               </Text>
@@ -713,7 +802,7 @@ export default function ToolsScreen() {
                 <Text
                   style={{
                     color: theme.onPrimaryContainer,
-                    fontFamily: "Outfit_700Bold",
+                    fontFamily: resolvedFonts.heading,
                     fontSize: 12,
                   }}
                 >
@@ -768,7 +857,7 @@ function createToolsStyles(
       borderRadius: r(17),
       borderWidth: bw,
       paddingHorizontal: sp(11),
-      height: Math.round(34 * spacingScale),
+      minHeight: Math.max(42, Math.round(42 * spacingScale)),
       marginBottom: sp(6),
       elevation: Platform.OS === "android" ? 1 : 0,
     },
@@ -778,7 +867,6 @@ function createToolsStyles(
     searchInput: {
       flex: 1,
       minWidth: 0,
-      height: "100%",
       marginRight: sp(6),
       fontFamily: bf("Inter_400Regular"),
       fontSize: fs(12.5),

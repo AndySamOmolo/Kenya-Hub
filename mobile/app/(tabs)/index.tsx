@@ -9,12 +9,12 @@ import {
   Modal,
   Pressable,
   ScrollView,
+  StyleSheet,
   Text,
   TextInput,
   View,
 } from "react-native";
-import { Ionicons } from "@expo/vector-icons";
-import { SafeAreaView } from "react-native-safe-area-context";
+import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
 import {
   useTheme,
   categoryColorMap,
@@ -27,7 +27,6 @@ import {
   serializeSavedTools,
   getThemedCardStyle,
   getThemedInputStyle,
-  getThemedIconBadgeStyle,
 } from "../../src/theme";
 import {
   TOOLS,
@@ -41,7 +40,7 @@ import {
 import holidaysData from "../../src/shared/data/public-holidays.json";
 import matatuData from "../../src/shared/data/matatu-routes.json";
 import { PUBLISHED_COURSE_SUMMARIES } from "../../src/shared/data/courses/catalog-summary";
-import { DynamicIcon } from "../../src/components/DynamicIcon";
+import { ThemedIcon, ThemedIconBadge } from "../../src/components/ThemedIcon";
 
 import {
   COURSE_NAMES,
@@ -51,6 +50,7 @@ import {
   SUPER_APP_APP_TILES,
   FeaturedLanguageWidget,
   WordOfTheMomentWidget,
+  resolveToolIoniconName,
 } from "../../src/components/home/HomeHelpers";
 import { createHomeStyles } from "../../src/components/home/styles";
 
@@ -85,6 +85,7 @@ for (const t of TOOLS) {
 
 export default function HomeScreen() {
   const router = useRouter();
+  const insets = useSafeAreaInsets();
   const { theme, isDark, themeConfig, themeMetrics, resolvedFonts, themeKey } = useTheme();
   const styles = useMemo(
     () => createHomeStyles(themeMetrics, resolvedFonts),
@@ -103,6 +104,11 @@ export default function HomeScreen() {
   const extraScrollPadPx = (themeMetrics as any)?.screenPaddingPx !== undefined ? Math.max(0, (themeMetrics as any).screenPaddingPx - 14) : 0;
   const floatClearance = themeMetrics?.floatingTabBarClearancePx ?? 0;
   const headingTransform = themeConfig.headingTransform || "none";
+  const showOfflinePill = themeConfig.showOfflinePill !== false;
+  const showHomeGreeting = themeConfig.showHomeGreeting !== false;
+  const showDailyWidgets = themeConfig.showDailyWidgets !== false;
+  const showTrailingArrows = themeConfig.showTrailingArrows !== false;
+  const isFrameless = themeConfig.surfaceStyle === "frameless";
   const [pinnedSlugs, setPinnedSlugs] = useState<string[]>([]);
   const [visitCounts, setVisitCounts] = useState<Record<string, number>>({});
   const [searchQuery, setSearchQuery] = useState("");
@@ -138,7 +144,7 @@ export default function HomeScreen() {
   }, []);
 
   useEffect(() => {
-    if (!isHomeFocused || widgetsTouchPaused) return;
+    if (!showDailyWidgets || !isHomeFocused || widgetsTouchPaused) return;
     const timer = setInterval(() => {
       if (AppState.currentState !== "active") return;
       setActiveWidgetPage((prev) => {
@@ -151,7 +157,7 @@ export default function HomeScreen() {
       });
     }, 5500);
     return () => clearInterval(timer);
-  }, [isHomeFocused, widgetsTouchPaused]);
+  }, [showDailyWidgets, isHomeFocused, widgetsTouchPaused]);
 
   const [learnStats, setLearnStats] = useState<{
     langId: string;
@@ -268,6 +274,7 @@ export default function HomeScreen() {
       "stamp-duty-calculator": { label: "Stamp Duty", icon: "home", color: "#A855F7" },
       "traffic-fines": { label: "Fines", icon: "warning", color: "#EF4444" },
       "water-bill-calculator": { label: "Water Bill", icon: "water", color: "#0EA5E9" },
+      "ntsa-transfer-calculator": { label: "NTSA", icon: "car", color: "#2FA463" },
     };
 
     const sorted = [...TOOLS].sort((a, b) => {
@@ -566,33 +573,35 @@ export default function HomeScreen() {
       <AndroidTopAppBar
         showBrandLogo
         rightAction={
-          <View style={styles.headerBadgesRow}>
-            <View
-              accessibilityLabel="Offline ready"
-              style={[
-                styles.offlineChip,
-                {
-                  backgroundColor: theme.secondaryContainer,
-                  borderColor: `${theme.kenyaGreenLight}38`,
-                },
-              ]}
-            >
+          showOfflinePill ? (
+            <View style={styles.headerBadgesRow}>
               <View
+                accessibilityLabel="Offline ready"
                 style={[
-                  styles.offlineStatusDot,
-                  { backgroundColor: theme.kenyaGreenLight },
-                ]}
-              />
-              <Text
-                style={[
-                  styles.offlineChipText,
-                  { color: theme.onSecondaryContainer },
+                  styles.offlineChip,
+                  {
+                    backgroundColor: theme.secondaryContainer,
+                    borderColor: `${theme.kenyaGreenLight}38`,
+                  },
                 ]}
               >
-                Offline
-              </Text>
+                <View
+                  style={[
+                    styles.offlineStatusDot,
+                    { backgroundColor: theme.kenyaGreenLight },
+                  ]}
+                />
+                <Text
+                  style={[
+                    styles.offlineChipText,
+                    { color: theme.onSecondaryContainer },
+                  ]}
+                >
+                  Offline
+                </Text>
+              </View>
             </View>
-          </View>
+          ) : undefined
         }
       />
 
@@ -600,7 +609,12 @@ export default function HomeScreen() {
         contentContainerStyle={[
           styles.scrollContent,
           extraScrollPadPx > 0 ? { paddingHorizontal: extraScrollPadPx } : null,
-          floatClearance > 0 ? { paddingBottom: Math.round(32 * (themeMetrics?.spacingScale ?? 1)) + floatClearance } : null,
+          {
+            paddingBottom:
+              Math.round(32 * (themeMetrics?.spacingScale ?? 1)) +
+              floatClearance +
+              (floatClearance > 0 ? Math.max(insets.bottom, 16) : insets.bottom),
+          },
         ]}
         showsVerticalScrollIndicator={themeConfig?.verticalScrollbarStyle !== "hidden"}
         persistentScrollbar={themeConfig.verticalScrollbarStyle === "always-visible"}
@@ -608,33 +622,35 @@ export default function HomeScreen() {
       >
         {/* 1. Native Android Header with Single Clean Greeting */}
         <View style={styles.greetingContainer}>
-          <View style={styles.greetingTopRow}>
-            <View style={{ flex: 1 }}>
-              <Text style={[styles.greetingSub, { color: theme.gold }]}>
-                KENYA SUPER-APP · PUBLIC UTILITIES
-              </Text>
-              <Text style={[styles.greetingTitle, { color: theme.textPrimary, textTransform: headingTransform }]}>
-                {greeting.en}, Mwananchi
-              </Text>
+          {showHomeGreeting && (
+            <View style={styles.greetingTopRow}>
+              <View style={{ flex: 1 }}>
+                <Text style={[styles.greetingSub, { color: theme.gold }]}>
+                  KENYA SUPER-APP · PUBLIC UTILITIES
+                </Text>
+                <Text style={[styles.greetingTitle, { color: theme.textPrimary, textTransform: headingTransform }]}>
+                  {greeting.en}, Mwananchi
+                </Text>
+              </View>
+              <Pressable
+                onPress={() => router.push("/(tabs)/saved")}
+                accessibilityRole="button"
+                accessibilityLabel={`${pinnedTools.length} saved tools`}
+                style={pressableStyle([
+                  styles.savedCountPill,
+                  {
+                    backgroundColor: theme.surfaceContainerHigh,
+                    borderColor: theme.outlineVariant,
+                  },
+                ])}
+              >
+                <ThemedIcon name="bookmark" size={14} color={theme.gold} scaleWithTheme={false} />
+                <Text style={[styles.savedCountText, { color: theme.textPrimary }]}>
+                  {pinnedTools.length} Saved
+                </Text>
+              </Pressable>
             </View>
-            <Pressable
-              onPress={() => router.push("/(tabs)/saved")}
-              accessibilityRole="button"
-              accessibilityLabel={`${pinnedTools.length} saved tools`}
-              style={pressableStyle([
-                styles.savedCountPill,
-                {
-                  backgroundColor: theme.surfaceContainerHigh,
-                  borderColor: theme.outlineVariant,
-                },
-              ])}
-            >
-              <Ionicons name="bookmark" size={14} color={theme.gold} />
-              <Text style={[styles.savedCountText, { color: theme.textPrimary }]}>
-                {pinnedTools.length} Saved
-              </Text>
-            </Pressable>
-          </View>
+          )}
 
           {/* 2. Instant In-Place Android Search Bar (Stable key across theme switches - UX-5) */}
           <View
@@ -644,16 +660,15 @@ export default function HomeScreen() {
               searchQuery.length > 0 ? { borderColor: theme.gold } : null,
             ]}
           >
-            <Ionicons name="search" size={18} color={theme.gold} />
+            <ThemedIcon name="search" size={18} color={theme.gold} scaleWithTheme={false} />
             <TextInput
               value={searchQuery}
               onChangeText={setSearchQuery}
               accessibilityLabel="Search Kenyan calculators, language courses, and Matatu routes"
-              placeholder="Search tools, languages, or routes..."
+              placeholder="Search tools, courses..."
               placeholderTextColor={theme.textSecondary}
               numberOfLines={1}
               multiline={false}
-              scrollEnabled={false}
               style={[styles.searchInputText, { color: theme.textPrimary }]}
               returnKeyType="search"
             />
@@ -664,7 +679,7 @@ export default function HomeScreen() {
                 accessibilityLabel="Clear search query"
                 hitSlop={10}
               >
-                <Ionicons name="close-circle" size={19} color={theme.textMuted} />
+                <ThemedIcon name="close-circle" size={19} color={theme.textMuted} scaleWithTheme={false} />
               </Pressable>
             ) : (
               <Pressable
@@ -699,6 +714,11 @@ export default function HomeScreen() {
               style={[
                 styles.instantResultsCard,
                 themedCardStyle,
+                isFrameless && {
+                  paddingHorizontal: 0,
+                  borderBottomWidth: StyleSheet.hairlineWidth,
+                  borderBottomColor: theme.outlineVariant,
+                },
               ]}
             >
               <View style={styles.instantResultsHeader}>
@@ -744,14 +764,12 @@ export default function HomeScreen() {
                   }}
                   style={pressableStyle(styles.instantResultRow)}
                 >
-                  <View
-                    style={[
-                      styles.instantResultIcon,
-                      { backgroundColor: "rgba(14, 165, 233, 0.18)" },
-                    ]}
-                  >
-                    <Ionicons name="bus" size={18} color="#0EA5E9" />
-                  </View>
+                  <ThemedIconBadge
+                    name="bus"
+                    accentColor="#0EA5E9"
+                    baseSize={36}
+                    iconSize={18}
+                  />
                   <View style={{ flex: 1 }}>
                     <Text
                       style={[
@@ -774,11 +792,14 @@ export default function HomeScreen() {
                       {matatuSummary.townCount} Kenyan cities
                     </Text>
                   </View>
-                  <Ionicons
-                    name="chevron-forward"
-                    size={16}
-                    color={theme.textMuted}
-                  />
+                  {showTrailingArrows && (
+                    <ThemedIcon
+                      name="chevron-forward"
+                      size={16}
+                      color={theme.textMuted}
+                      scaleWithTheme={false}
+                    />
+                  )}
                 </Pressable>
               )}
 
@@ -805,14 +826,12 @@ export default function HomeScreen() {
                         },
                       ])}
                     >
-                      <View
-                        style={[
-                          styles.instantResultIcon,
-                          { backgroundColor: `${col}1C` },
-                        ]}
-                      >
-                        <DynamicIcon emoji={item.icon} size={18} color={col} />
-                      </View>
+                      <ThemedIconBadge
+                        name={resolveToolIoniconName(item.icon)}
+                        accentColor={col}
+                        baseSize={36}
+                        iconSize={18}
+                      />
                       <View style={{ flex: 1 }}>
                         <Text
                           style={[
@@ -838,17 +857,22 @@ export default function HomeScreen() {
                         hitSlop={8}
                         style={{ padding: 4 }}
                       >
-                        <Ionicons
+                        <ThemedIcon
                           name={pinned ? "bookmark" : "bookmark-outline"}
                           size={16}
                           color={pinned ? theme.gold : theme.textMuted}
+                          pack={pinned ? "filled" : undefined}
+                          scaleWithTheme={false}
                         />
                       </Pressable>
-                      <Ionicons
-                        name="chevron-forward"
-                        size={16}
-                        color={theme.textMuted}
-                      />
+                      {showTrailingArrows && (
+                        <ThemedIcon
+                          name="chevron-forward"
+                          size={16}
+                          color={theme.textMuted}
+                          scaleWithTheme={false}
+                        />
+                      )}
                     </Pressable>
                   );
                 })
@@ -873,18 +897,12 @@ export default function HomeScreen() {
                     },
                   ])}
                 >
-                  <View
-                    style={[
-                      styles.instantResultIcon,
-                      { backgroundColor: `${config.color || theme.gold}22` },
-                    ]}
-                  >
-                    <Ionicons
-                      name="school"
-                      size={18}
-                      color={config.color || theme.gold}
-                    />
-                  </View>
+                  <ThemedIconBadge
+                    name="school"
+                    accentColor={config.color || theme.gold}
+                    baseSize={36}
+                    iconSize={18}
+                  />
                   <View style={{ flex: 1 }}>
                     <Text
                       style={[
@@ -910,11 +928,14 @@ export default function HomeScreen() {
                       {config.family} · {skillCount} modules · {wordsCount} words
                     </Text>
                   </View>
-                  <Ionicons
-                    name="chevron-forward"
-                    size={16}
-                    color={theme.textMuted}
-                  />
+                  {showTrailingArrows && (
+                    <ThemedIcon
+                      name="chevron-forward"
+                      size={16}
+                      color={theme.textMuted}
+                      scaleWithTheme={false}
+                    />
+                  )}
                 </Pressable>
               ))}
 
@@ -937,14 +958,12 @@ export default function HomeScreen() {
                     },
                   ])}
                 >
-                  <View
-                    style={[
-                      styles.instantResultIcon,
-                      { backgroundColor: "rgba(14, 165, 233, 0.18)" },
-                    ]}
-                  >
-                    <Ionicons name="navigate" size={18} color="#0EA5E9" />
-                  </View>
+                  <ThemedIconBadge
+                    name="navigate"
+                    accentColor="#0EA5E9"
+                    baseSize={36}
+                    iconSize={18}
+                  />
                   <View style={{ flex: 1 }}>
                     <Text
                       style={[
@@ -965,11 +984,14 @@ export default function HomeScreen() {
                       {route.terminusA} ↔ {route.terminusB} · KES {route.fareMin}–{route.fareMax}
                     </Text>
                   </View>
-                  <Ionicons
-                    name="chevron-forward"
-                    size={16}
-                    color={theme.textMuted}
-                  />
+                  {showTrailingArrows && (
+                    <ThemedIcon
+                      name="chevron-forward"
+                      size={16}
+                      color={theme.textMuted}
+                      scaleWithTheme={false}
+                    />
+                  )}
                 </Pressable>
               ))}
 
@@ -996,7 +1018,7 @@ export default function HomeScreen() {
                 ? { justifyContent: "space-between", rowGap: 8 }
                 : null,
               homeLayout === "compact-list" || homeLayout === "minimal-rows"
-                ? { flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", rowGap: 6 }
+                ? { flexDirection: "column", rowGap: homeLayout === "minimal-rows" ? 0 : 6 }
                 : null,
             ]}
           >
@@ -1005,6 +1027,8 @@ export default function HomeScreen() {
         </View>
 
         {/* 4. Live Kenyan Snapshot Horizontal Widgets (Swipe-snapped + Page Dots - MOB-4, UX-6) */}
+        {showDailyWidgets && (
+          <>
         <View style={styles.sectionHeader}>
           <View>
             <Text style={[styles.sectionOverline, { color: theme.gold }]}>
@@ -1069,6 +1093,11 @@ export default function HomeScreen() {
             style={pressableStyle([
               styles.snapshotWidget,
               themedCardStyle,
+              isFrameless && {
+                paddingHorizontal: 4,
+                borderBottomWidth: StyleSheet.hairlineWidth,
+                borderBottomColor: theme.outlineVariant,
+              },
             ])}
           >
             <View style={styles.widgetHeaderRow}>
@@ -1078,7 +1107,7 @@ export default function HomeScreen() {
                   { backgroundColor: `${theme.sky}29` },
                 ]}
               >
-                <Ionicons name="bus" size={12} color={theme.sky} />
+                <ThemedIcon name="bus" size={12} color={theme.sky} scaleWithTheme={false} />
                 <Text style={[styles.widgetBadgeText, { color: theme.sky }]}>
                   MATATU TRANSIT
                 </Text>
@@ -1113,7 +1142,9 @@ export default function HomeScreen() {
               <Text style={[styles.widgetFooterLinkText, { color: theme.sky }]}>
                 Open Matatu Hub
               </Text>
-              <Ionicons name="arrow-forward" size={13} color={theme.sky} />
+              {showTrailingArrows && (
+                <ThemedIcon name="arrow-forward" size={13} color={theme.sky} scaleWithTheme={false} />
+              )}
             </View>
           </Pressable>
 
@@ -1127,6 +1158,11 @@ export default function HomeScreen() {
               style={pressableStyle([
                 styles.snapshotWidget,
                 themedCardStyle,
+                isFrameless && {
+                  paddingHorizontal: 4,
+                  borderBottomWidth: StyleSheet.hairlineWidth,
+                  borderBottomColor: theme.outlineVariant,
+                },
               ])}
             >
               <View style={styles.widgetHeaderRow}>
@@ -1136,7 +1172,7 @@ export default function HomeScreen() {
                     { backgroundColor: "rgba(14, 165, 233, 0.16)" },
                   ]}
                 >
-                  <Ionicons name="calendar" size={12} color={theme.sky} />
+                  <ThemedIcon name="calendar" size={12} color={theme.sky} scaleWithTheme={false} />
                   <Text style={[styles.widgetBadgeText, { color: theme.sky }]}>
                     NEXT HOLIDAY
                   </Text>
@@ -1182,11 +1218,15 @@ export default function HomeScreen() {
                 >
                   Full Holiday Calendar
                 </Text>
-                <Ionicons name="arrow-forward" size={13} color={theme.sky} />
+                {showTrailingArrows && (
+                  <ThemedIcon name="arrow-forward" size={13} color={theme.sky} scaleWithTheme={false} />
+                )}
               </View>
             </Pressable>
           )}
         </ScrollView>
+          </>
+        )}
 
         {/* 5. Pinned / Saved Quick Access Strip */}
         {pinnedTools.length > 0 && (
@@ -1210,7 +1250,9 @@ export default function HomeScreen() {
                 <Text style={[styles.seeAllText, { color: theme.gold }]}>
                   Manage
                 </Text>
-                <Ionicons name="arrow-forward" size={14} color={theme.gold} />
+                {showTrailingArrows && (
+                  <ThemedIcon name="arrow-forward" size={14} color={theme.gold} scaleWithTheme={false} />
+                )}
               </Pressable>
             </View>
 
@@ -1237,16 +1279,19 @@ export default function HomeScreen() {
                     style={pressableStyle([
                       styles.pinnedMiniCard,
                       themedCardStyle,
+                      isFrameless && {
+                        paddingHorizontal: 4,
+                        borderBottomWidth: StyleSheet.hairlineWidth,
+                        borderBottomColor: theme.outlineVariant,
+                      },
                     ])}
                   >
-                    {(() => {
-                      const miniBadge = getThemedIconBadgeStyle(theme, themeConfig, col, 26);
-                      return (
-                        <View style={miniBadge.container}>
-                          <DynamicIcon emoji={t.icon} size={Math.round(15 * (themeMetrics?.iconScale ?? 1))} color={miniBadge.iconColor} />
-                        </View>
-                      );
-                    })()}
+                    <ThemedIconBadge
+                      name={resolveToolIoniconName(t.icon)}
+                      accentColor={col}
+                      baseSize={28}
+                      iconSize={15}
+                    />
                     <Text
                       style={[
                         styles.pinnedMiniTitle,
@@ -1286,7 +1331,9 @@ export default function HomeScreen() {
             <Text style={[styles.seeAllText, { color: theme.gold }]}>
               All {TOOLS.length}
             </Text>
-            <Ionicons name="arrow-forward" size={14} color={theme.gold} />
+            {showTrailingArrows && (
+              <ThemedIcon name="arrow-forward" size={14} color={theme.gold} scaleWithTheme={false} />
+            )}
           </Pressable>
         </View>
 
@@ -1324,7 +1371,7 @@ export default function HomeScreen() {
           </View>
         </View>
 
-        <View style={styles.categoriesFullList}>
+        <View style={[styles.categoriesFullList, isFrameless && { gap: 0 }]}>
           {TOOL_CATEGORIES.map((cat) => {
             const count = CATEGORY_TOOL_COUNTS[cat.id] || 0;
             const catColor = categoryColorMap[cat.id] || theme.gold;
@@ -1342,16 +1389,20 @@ export default function HomeScreen() {
                 style={pressableStyle([
                   styles.categoryFullCard,
                   themedCardStyle,
+                  isFrameless && {
+                    paddingHorizontal: 2,
+                    paddingVertical: 12,
+                    borderBottomWidth: StyleSheet.hairlineWidth,
+                    borderBottomColor: theme.outlineVariant,
+                  },
                 ])}
               >
-                {(() => {
-                  const catBadge = getThemedIconBadgeStyle(theme, themeConfig, catColor, 38);
-                  return (
-                    <View style={catBadge.container}>
-                      <DynamicIcon emoji={cat.icon} size={Math.round(20 * (themeMetrics?.iconScale ?? 1))} color={catBadge.iconColor} />
-                    </View>
-                  );
-                })()}
+                <ThemedIconBadge
+                  name={resolveToolIoniconName(cat.icon)}
+                  accentColor={catColor}
+                  baseSize={38}
+                  iconSize={19}
+                />
                 <View style={{ flex: 1, minWidth: 0 }}>
                   <View style={styles.catHeaderLine}>
                     <Text
@@ -1376,11 +1427,14 @@ export default function HomeScreen() {
                     {cat.description}
                   </Text>
                 </View>
-                <Ionicons
-                  name="chevron-forward"
-                  size={16}
-                  color={theme.textMuted}
-                />
+                {showTrailingArrows && (
+                  <ThemedIcon
+                    name="chevron-forward"
+                    size={16}
+                    color={theme.textMuted}
+                    scaleWithTheme={false}
+                  />
+                )}
               </Pressable>
             );
           })}
@@ -1461,6 +1515,11 @@ export default function HomeScreen() {
               style={pressableStyle([
                 styles.guideCarouselCard,
                 themedCardStyle,
+                isFrameless && {
+                  paddingHorizontal: 4,
+                  borderBottomWidth: StyleSheet.hairlineWidth,
+                  borderBottomColor: theme.outlineVariant,
+                },
               ])}
             >
               <View style={styles.guideTagRow}>
@@ -1513,7 +1572,9 @@ export default function HomeScreen() {
                 >
                   Read Guide
                 </Text>
-                <Ionicons name="arrow-forward" size={13} color={theme.gold} />
+                {showTrailingArrows && (
+                  <ThemedIcon name="arrow-forward" size={13} color={theme.gold} scaleWithTheme={false} />
+                )}
               </View>
             </Pressable>
           ))}
