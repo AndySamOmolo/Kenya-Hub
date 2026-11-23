@@ -2,6 +2,7 @@ import React, { useState, useRef, useCallback, useEffect } from "react";
 import {
   View,
   Text,
+  Modal,
   ScrollView,
   Pressable,
   Animated,
@@ -69,6 +70,53 @@ function isPillMarkedActive(props: any, goldColor?: string): boolean {
   return false;
 }
 
+function extractNodeText(node: React.ReactNode): string {
+  if (node === null || node === undefined || typeof node === "boolean") return "";
+  if (typeof node === "string" || typeof node === "number") return String(node);
+  if (Array.isArray(node)) {
+    return node.map(extractNodeText).filter(Boolean).join(" ").replace(/\s+/g, " ").trim();
+  }
+  if (React.isValidElement(node)) {
+    return extractNodeText((node.props as { children?: React.ReactNode }).children);
+  }
+  return "";
+}
+
+interface ExtractedOption {
+  key: string;
+  label: string;
+  active: boolean;
+  disabled: boolean;
+  onPress?: () => void;
+}
+
+function extractPillOptions(
+  nodes: React.ReactNode,
+  goldColor: string | undefined,
+  acc: ExtractedOption[] = []
+): ExtractedOption[] {
+  React.Children.forEach(nodes, (child) => {
+    if (!React.isValidElement(child)) return;
+    if (child.type === React.Fragment) {
+      extractPillOptions((child.props as { children?: React.ReactNode }).children, goldColor, acc);
+      return;
+    }
+    const props = child.props as any;
+    const rawLabel =
+      extractNodeText(props.children) ||
+      (typeof props.accessibilityLabel === "string" ? props.accessibilityLabel : "") ||
+      `Option ${acc.length + 1}`;
+    acc.push({
+      key: String(child.key ?? `opt-${acc.length}`),
+      label: rawLabel.trim(),
+      active: isPillMarkedActive(props, goldColor),
+      disabled: Boolean(props.disabled),
+      onPress: typeof props.onPress === "function" ? props.onPress : undefined,
+    });
+  });
+  return acc;
+}
+
 // Gentle 16-step feather alpha progression for edge fade without harsh vertical lines
 const FADE_STEPS = [
   0.0, 0.02, 0.05, 0.09, 0.14, 0.2, 0.27, 0.35,
@@ -126,16 +174,26 @@ export function ExpandablePillRow({
   showExpandButton = true,
   fadeColor,
 }: ExpandablePillRowProps) {
-  const { theme, themeConfig, resolvedFonts } = useTheme();
+  const { theme, themeConfig, themeKey, resolvedFonts } = useTheme();
   const pillLayoutMode = themeConfig?.pillBarLayout || "scroll-with-expand";
-  const [expanded, setExpanded] = useState(pillLayoutMode === "always-wrap" || pillLayoutMode === "centered-wrap" || pillLayoutMode === "grid-pills");
+  const isWrapMode =
+    pillLayoutMode === "always-wrap" ||
+    pillLayoutMode === "centered-wrap" ||
+    pillLayoutMode === "grid-pills" ||
+    pillLayoutMode === "two-col-grid" ||
+    pillLayoutMode === "three-col-tiles" ||
+    pillLayoutMode === "vertical-list";
+
+  const [expanded, setExpanded] = useState(isWrapMode);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
   useEffect(() => {
-    if (pillLayoutMode === "always-wrap" || pillLayoutMode === "centered-wrap" || pillLayoutMode === "grid-pills") {
-      setExpanded(true);
-    } else if (pillLayoutMode === "always-scroll") {
-      setExpanded(false);
+    setExpanded(isWrapMode);
+    if (pillLayoutMode !== "dropdown" && pillLayoutMode !== "stepper") {
+      setDropdownOpen(false);
     }
-  }, [pillLayoutMode]);
+  }, [isWrapMode, pillLayoutMode]);
+
   const count = countPillChildren(children);
 
   const scrollViewRef = useRef<ScrollView | null>(null);
@@ -152,7 +210,11 @@ export function ExpandablePillRow({
 
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(count > threshold);
-  const [scrollMetrics, setScrollMetrics] = useState<{ ratio: number; thumbFrac: number; scrollable: boolean }>({
+  const [scrollMetrics, setScrollMetrics] = useState<{
+    ratio: number;
+    thumbFrac: number;
+    scrollable: boolean;
+  }>({
     ratio: 0,
     thumbFrac: 0.4,
     scrollable: false,
@@ -211,7 +273,7 @@ export function ExpandablePillRow({
 
     setCanScrollLeft(hasLeft);
     setCanScrollRight(hasRight);
-  }, [expanded, triggerSpringBounce]);
+  }, [expanded, themeConfig?.scrollBounceEnabled, triggerSpringBounce]);
 
   const handleScrollEndDrag = useCallback(
     (e: NativeSyntheticEvent<NativeScrollEvent>) => {
@@ -219,7 +281,7 @@ export function ExpandablePillRow({
       const cw = contentWidthRef.current;
       const lw = layoutWidthRef.current;
       const maxScroll = Math.max(0, cw - lw);
-      if (maxScroll <= 8) return;
+      if (maxScroll <= 8 || themeConfig?.scrollBounceEnabled === false) return;
       const vx = e.nativeEvent.velocity?.x ?? 0;
       if (x <= 2 && vx < -0.1) {
         triggerSpringBounce("left", 12);
@@ -227,7 +289,7 @@ export function ExpandablePillRow({
         triggerSpringBounce("right", 12);
       }
     },
-    [triggerSpringBounce]
+    [themeConfig?.scrollBounceEnabled, triggerSpringBounce]
   );
 
   const centerActivePill = useCallback(
@@ -274,6 +336,15 @@ export function ExpandablePillRow({
   let runningPillIdx = 0;
   let detectedActiveIdx = -1;
 
+  const isUnderlineTabs = pillLayoutMode === "underline-tabs";
+  const isSegmentedBar = pillLayoutMode === "segmented-bar";
+  const isFloatingDock = pillLayoutMode === "floating-dock";
+  const isSidebarChips = pillLayoutMode === "sidebar-chips";
+  const isTwoColGrid = pillLayoutMode === "two-col-grid";
+  const isThreeColTiles = pillLayoutMode === "three-col-tiles";
+  const isVerticalList = pillLayoutMode === "vertical-list";
+  const isMinimalText = pillLayoutMode === "minimal-text";
+
   const renderNormalizedChildren = (
     nodes: React.ReactNode,
     isExpanded: boolean,
@@ -297,7 +368,8 @@ export function ExpandablePillRow({
 
       if (isRootPill) {
         const pillIdx = runningPillIdx++;
-        if (detectedActiveIdx === -1 && isPillMarkedActive(props, theme.gold)) {
+        const isActive = isPillMarkedActive(props, theme.gold);
+        if (detectedActiveIdx === -1 && isActive) {
           detectedActiveIdx = pillIdx;
         }
         const origStyle = props.style;
@@ -311,10 +383,91 @@ export function ExpandablePillRow({
             ? Math.max(9, Math.ceil(flatPillStyle.paddingHorizontal))
             : 10;
         const origOnLayout = props.onLayout;
-        const normalizedPillExtra = {
+
+        let modeOverride: ViewStyle | null = null;
+        if (isUnderlineTabs) {
+          modeOverride = {
+            backgroundColor: "transparent",
+            borderWidth: 0,
+            borderRadius: 0,
+            borderBottomWidth: isActive ? 2.5 : 0,
+            borderBottomColor: isActive ? theme.gold : "transparent",
+            paddingVertical: 8,
+            paddingHorizontal: 10,
+          };
+        } else if (isMinimalText) {
+          modeOverride = {
+            backgroundColor: "transparent",
+            borderWidth: 0,
+            borderRadius: 0,
+            paddingVertical: 5,
+            paddingHorizontal: 8,
+            opacity: isActive ? 1 : 0.72,
+          };
+        } else if (isSegmentedBar) {
+          modeOverride = {
+            borderRadius: 9,
+            borderWidth: 0,
+            backgroundColor: isActive ? theme.primaryContainer : "transparent",
+            paddingVertical: 6,
+            paddingHorizontal: 9,
+            minHeight: 32,
+          };
+        } else if (isFloatingDock) {
+          modeOverride = {
+            borderRadius: 999,
+            borderWidth: isActive ? 1 : 0,
+            borderColor: isActive ? theme.gold : "transparent",
+            backgroundColor: isActive ? theme.primaryContainer : "transparent",
+            paddingVertical: 6,
+            paddingHorizontal: 10,
+            minHeight: 32,
+          };
+        } else if (isSidebarChips) {
+          modeOverride = {
+            borderRadius: 7,
+            borderWidth: 1,
+            borderColor: isActive ? theme.gold : theme.outlineVariant,
+            borderLeftWidth: 3.5,
+            borderLeftColor: isActive ? theme.gold : theme.kenyaGreen,
+            backgroundColor: isActive ? theme.primaryContainer : theme.surfaceContainerLow,
+            paddingVertical: 6,
+            paddingHorizontal: 9,
+            minHeight: 32,
+          };
+        } else if (isTwoColGrid) {
+          modeOverride = {
+            width: "48.2%" as any,
+            borderRadius: 10,
+            paddingVertical: 7,
+            paddingHorizontal: 8,
+            minHeight: 36,
+            justifyContent: "center",
+          };
+        } else if (isThreeColTiles) {
+          modeOverride = {
+            width: "31.6%" as any,
+            borderRadius: 9,
+            paddingVertical: 6,
+            paddingHorizontal: 5,
+            minHeight: 34,
+            justifyContent: "center",
+          };
+        } else if (isVerticalList) {
+          modeOverride = {
+            width: "100%" as any,
+            borderRadius: 10,
+            paddingVertical: 8,
+            paddingHorizontal: 11,
+            minHeight: 36,
+            justifyContent: "space-between",
+          };
+        }
+
+        const normalizedPillExtra: ViewStyle = {
           flexDirection: flatPillStyle.flexDirection || "row",
-          alignItems: "center" as const,
-          justifyContent: "center" as const,
+          alignItems: "center",
+          justifyContent: "center",
           paddingVertical: pv,
           paddingHorizontal: ph,
           minHeight:
@@ -322,20 +475,27 @@ export function ExpandablePillRow({
               ? Math.max(flatPillStyle.minHeight, 26)
               : 28,
           borderRadius:
-            themeConfig?.pillShape === "square" ? 0 :
-            themeConfig?.pillShape === "sharp" ? 4 :
-            themeConfig?.pillShape === "subtle" ? 8 :
-            themeConfig?.pillShape === "rounded" ? 12 :
-            themeConfig?.pillShape === "soft" ? 18 :
-            isExpanded ? 16 : (flatPillStyle.borderRadius ?? 999),
+            themeConfig?.pillShape === "square"
+              ? 0
+              : themeConfig?.pillShape === "sharp"
+              ? 4
+              : themeConfig?.pillShape === "subtle"
+              ? 8
+              : themeConfig?.pillShape === "rounded"
+              ? 12
+              : themeConfig?.pillShape === "soft"
+              ? 18
+              : isExpanded
+              ? 16
+              : flatPillStyle.borderRadius ?? 999,
         };
-        const expandedExtra = isExpanded
+        const expandedExtra = isExpanded && !isTwoColGrid && !isThreeColTiles && !isVerticalList
           ? { maxWidth: "100%" as const, flexShrink: 1 }
           : null;
         const composedStyle =
           typeof origStyle === "function"
-            ? (state: any) => [origStyle(state), normalizedPillExtra, expandedExtra]
-            : [origStyle, normalizedPillExtra, expandedExtra];
+            ? (state: any) => [origStyle(state), normalizedPillExtra, expandedExtra, modeOverride]
+            : [origStyle, normalizedPillExtra, expandedExtra, modeOverride];
 
         return React.cloneElement(
           child as React.ReactElement<any>,
@@ -374,17 +534,21 @@ export function ExpandablePillRow({
         return React.cloneElement(
           child as React.ReactElement<any>,
           {
-            ...(isExpanded && props.numberOfLines === 1
+            ...(isTwoColGrid || isThreeColTiles
+              ? { numberOfLines: 1 }
+              : isExpanded && props.numberOfLines === 1
               ? { numberOfLines: undefined }
               : {}),
             style: [
               props.style,
               {
-                fontSize: Math.round(fontSize * (themeConfig?.fontScale || 1) * 10) / 10,
+                fontSize: Math.round((isThreeColTiles ? Math.min(fontSize, 10.5) : isTwoColGrid ? Math.min(fontSize, 11.5) : fontSize) * (themeConfig?.fontScale || 1) * 10) / 10,
                 lineHeight: Math.round(lineHeight * (themeConfig?.fontScale || 1)),
                 includeFontPadding: true,
                 textAlignVertical: "center",
-                ...(themeConfig?.fontPair && themeConfig.fontPair !== "outfit-inter" ? { fontFamily: resolvedFonts.bold } : {}),
+                ...(themeConfig?.fontPair && themeConfig.fontPair !== "outfit-inter"
+                  ? { fontFamily: resolvedFonts.bold }
+                  : {}),
               },
               isExpanded ? { flexShrink: 1 } : null,
             ],
@@ -399,21 +563,26 @@ export function ExpandablePillRow({
           ...(isExpanded && props.numberOfLines === 1
             ? { numberOfLines: undefined }
             : {}),
-          style: isExpanded ? (typeof props.style === "function" ? (s: any) => [(props.style as any)(s), { flexShrink: 1 }] : [props.style, { flexShrink: 1 }]) : props.style,
+          style: isExpanded
+            ? typeof props.style === "function"
+              ? (s: any) => [(props.style as any)(s), { flexShrink: 1 }]
+              : [props.style, { flexShrink: 1 }]
+            : props.style,
         },
         nextChildren
       );
     });
   };
 
-  const renderedPills = renderNormalizedChildren(children, expanded, true);
+  const renderedPills =
+    (pillLayoutMode === "dropdown" || pillLayoutMode === "stepper") ? null : renderNormalizedChildren(children, expanded, true);
 
   useEffect(() => {
-    if (detectedActiveIdx >= 0 && !expanded) {
+    if (detectedActiveIdx >= 0 && !expanded && pillLayoutMode !== "dropdown" && pillLayoutMode !== "stepper") {
       const timer = setTimeout(() => centerActivePill(detectedActiveIdx), 40);
       return () => clearTimeout(timer);
     }
-  }, [detectedActiveIdx, expanded, centerActivePill]);
+  }, [detectedActiveIdx, expanded, pillLayoutMode, centerActivePill]);
 
   const flatContent = StyleSheet.flatten(contentContainerStyle) || {};
   const {
@@ -444,26 +613,291 @@ export function ExpandablePillRow({
     ...(paddingRight !== undefined ? { paddingRight } : {}),
   };
 
+  // Alternatives 1 & 7: Dropdown Picker Modal & Prev/Next Carousel Stepper
+  if (pillLayoutMode === "dropdown" || pillLayoutMode === "stepper") {
+    const options = extractPillOptions(children, theme.gold);
+    const activeIdx = Math.max(0, options.findIndex((o) => o.active));
+    const activeOpt = options[activeIdx] || options[0];
+    const stepBy = (delta: number) => {
+      if (options.length <= 1) return;
+      const nextIdx = (activeIdx + delta + options.length) % options.length;
+      const target = options[nextIdx];
+      if (target && !target.disabled) {
+        triggerHaptic(6);
+        try {
+          target.onPress?.();
+        } catch {}
+      }
+    };
+    return (
+      <View key={`dd-wrap-${themeKey}`} style={[outerSpacing, style]}>
+        {pillLayoutMode === "stepper" ? (
+          <View
+            style={[
+              rowStyles.dropdownBtn,
+              {
+                backgroundColor: theme.surfaceContainerLow,
+                borderColor: theme.outlineVariant,
+                paddingVertical: 5,
+                paddingHorizontal: 6,
+              },
+            ]}
+          >
+            <Pressable
+              onPress={() => stepBy(-1)}
+              hitSlop={6}
+              accessibilityRole="button"
+              accessibilityLabel="Previous option"
+            >
+              <View
+                style={{
+                  width: 30,
+                  height: 30,
+                  borderRadius: 8,
+                  backgroundColor: theme.surfaceContainerHigh,
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <Ionicons name="chevron-back" size={16} color={theme.gold} />
+              </View>
+            </Pressable>
+            <Pressable
+              onPress={() => {
+                triggerHaptic(6);
+                setDropdownOpen(true);
+              }}
+              style={{ flex: 1, minWidth: 0, alignItems: "center", paddingHorizontal: 6 }}
+            >
+              <Text
+                style={{
+                  fontFamily: resolvedFonts.bold,
+                  fontSize: Math.round(12.5 * (themeConfig?.fontScale || 1)),
+                  color: theme.textPrimary,
+                }}
+                numberOfLines={1}
+              >
+                {activeOpt?.label || "Select option"}
+              </Text>
+              <Text
+                style={{
+                  fontFamily: resolvedFonts.body,
+                  fontSize: 10,
+                  color: theme.textMuted,
+                }}
+              >
+                {activeIdx + 1} / {Math.max(1, options.length)} · Tap for all
+              </Text>
+            </Pressable>
+            <Pressable
+              onPress={() => stepBy(1)}
+              hitSlop={6}
+              accessibilityRole="button"
+              accessibilityLabel="Next option"
+            >
+              <View
+                style={{
+                  width: 30,
+                  height: 30,
+                  borderRadius: 8,
+                  backgroundColor: theme.surfaceContainerHigh,
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <Ionicons name="chevron-forward" size={16} color={theme.gold} />
+              </View>
+            </Pressable>
+          </View>
+        ) : (
+        <Pressable
+          onPress={() => {
+            triggerHaptic(6);
+            setDropdownOpen(true);
+          }}
+          accessibilityRole="button"
+          accessibilityLabel={`Select option: ${activeOpt?.label || "Menu"}`}
+        >
+          <View
+            style={[
+              rowStyles.dropdownBtn,
+              {
+                backgroundColor: theme.surfaceContainerLow,
+                borderColor: theme.outlineVariant,
+              },
+            ]}
+          >
+            <View style={{ flex: 1, minWidth: 0 }}>
+              <Text
+                style={{
+                  fontFamily: resolvedFonts.bold,
+                  fontSize: Math.round(12.5 * (themeConfig?.fontScale || 1)),
+                  color: theme.textPrimary,
+                }}
+                numberOfLines={1}
+              >
+                {activeOpt?.label || "Select option"}
+              </Text>
+            </View>
+            <View
+              style={{
+                paddingHorizontal: 7,
+                paddingVertical: 2,
+                borderRadius: 999,
+                backgroundColor: theme.primaryContainer,
+              }}
+            >
+              <Text
+                style={{
+                  fontFamily: resolvedFonts.bold,
+                  fontSize: 10.5,
+                  color: theme.gold,
+                }}
+              >
+                {options.length}
+              </Text>
+            </View>
+            <Ionicons name="chevron-down" size={16} color={theme.gold} />
+          </View>
+        </Pressable>
+        )}
+
+        <Modal
+          visible={dropdownOpen}
+          transparent
+          animationType="fade"
+          onRequestClose={() => setDropdownOpen(false)}
+        >
+          <Pressable
+            style={rowStyles.modalBackdrop}
+            onPress={() => setDropdownOpen(false)}
+          >
+            <Pressable onPress={() => {}}>
+              <View
+                key={`dd-sheet-${themeKey}`}
+                style={[
+                  rowStyles.modalSheet,
+                  {
+                    backgroundColor: theme.surfaceContainer,
+                    borderColor: theme.outlineVariant,
+                  },
+                ]}
+              >
+                <View style={rowStyles.modalHeader}>
+                  <Text
+                    style={{
+                      fontFamily: resolvedFonts.heading,
+                      fontSize: 15,
+                      color: theme.textPrimary,
+                    }}
+                  >
+                    Select Option ({options.length})
+                  </Text>
+                  <Pressable onPress={() => setDropdownOpen(false)} hitSlop={8}>
+                    <Ionicons name="close" size={20} color={theme.textSecondary} />
+                  </Pressable>
+                </View>
+                <ScrollView
+                  style={{ maxHeight: 340 }}
+                  contentContainerStyle={{ gap: 6 }}
+                  showsVerticalScrollIndicator={true}
+                >
+                  {options.map((opt) => (
+                    <Pressable
+                      key={`${opt.key}-${themeKey}`}
+                      disabled={opt.disabled}
+                      onPress={() => {
+                        triggerHaptic(6);
+                        setDropdownOpen(false);
+                        try {
+                          opt.onPress?.();
+                        } catch {}
+                      }}
+                    >
+                      <View
+                        style={[
+                          rowStyles.modalOption,
+                          {
+                            backgroundColor: opt.active
+                              ? theme.primaryContainer
+                              : theme.surfaceContainerLow,
+                            borderColor: opt.active ? theme.gold : theme.outlineVariant,
+                            opacity: opt.disabled ? 0.45 : 1,
+                          },
+                        ]}
+                      >
+                        <Text
+                          style={{
+                            flex: 1,
+                            fontFamily: opt.active ? resolvedFonts.bold : resolvedFonts.body,
+                            fontSize: 13,
+                            color: opt.active ? theme.gold : theme.textPrimary,
+                          }}
+                          numberOfLines={2}
+                        >
+                          {opt.label}
+                        </Text>
+                        {opt.active && (
+                          <Ionicons name="checkmark-circle" size={18} color={theme.gold} />
+                        )}
+                      </View>
+                    </Pressable>
+                  ))}
+                </ScrollView>
+              </View>
+            </Pressable>
+          </Pressable>
+        </Modal>
+      </View>
+    );
+  }
+
   const resolvedFadeColor = fadeColor || theme.bgPrimary;
   const sbStyle = themeConfig?.horizontalScrollbarStyle || "subtle-bar";
-  const sbThickness = resolveScrollbarThicknessPx(themeConfig?.horizontalScrollbarThickness || "thin");
+  const sbThickness = resolveScrollbarThicknessPx(
+    themeConfig?.horizontalScrollbarThickness || "thin"
+  );
   const sbColor = themeConfig?.customColors?.scrollbarColor || theme.gold;
   const showNativeSb = sbStyle === "native-indicator";
   const showEdgeFade = themeConfig?.edgeFadeEnabled !== false;
   const canExpand =
     pillLayoutMode !== "always-scroll" &&
+    !isUnderlineTabs &&
+    !isSegmentedBar &&
+    !isFloatingDock &&
+    !isSidebarChips &&
+    !isMinimalText &&
+    !isTwoColGrid &&
+    !isThreeColTiles &&
+    !isVerticalList &&
     showExpandButton &&
     (count > threshold || canScrollRight || canScrollLeft || expanded);
 
   const renderCustomScrollbar = () => {
-    if (expanded || !scrollMetrics.scrollable || sbStyle === "hidden" || sbStyle === "native-indicator") {
+    if (
+      expanded ||
+      !scrollMetrics.scrollable ||
+      sbStyle === "hidden" ||
+      sbStyle === "native-indicator"
+    ) {
       return null;
     }
     if (sbStyle === "dots") {
       const dotCount = 5;
-      const activeDot = Math.min(dotCount - 1, Math.round(scrollMetrics.ratio * (dotCount - 1)));
+      const activeDot = Math.min(
+        dotCount - 1,
+        Math.round(scrollMetrics.ratio * (dotCount - 1))
+      );
       return (
-        <View style={{ flexDirection: "row", justifyContent: "center", alignItems: "center", gap: 5, marginTop: 4 }}>
+        <View
+          style={{
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: 5,
+            marginTop: 4,
+          }}
+        >
           {Array.from({ length: dotCount }).map((_, idx) => (
             <View
               key={`dot-${idx}`}
@@ -479,7 +913,9 @@ export function ExpandablePillRow({
         </View>
       );
     }
-    const leftPct = Math.round(scrollMetrics.ratio * (1 - scrollMetrics.thumbFrac) * 100);
+    const leftPct = Math.round(
+      scrollMetrics.ratio * (1 - scrollMetrics.thumbFrac) * 100
+    );
     const widthPct = Math.round(scrollMetrics.thumbFrac * 100);
     return (
       <View
@@ -512,46 +948,119 @@ export function ExpandablePillRow({
     );
   };
 
+  // Alternatives: 2-Col Grid, 3-Col Mini Tiles & Phone-Bounded Vertical List
+  if (isTwoColGrid || isThreeColTiles || isVerticalList) {
+    if (isVerticalList && count > 4) {
+      return (
+        <View
+          style={[
+            outerSpacing,
+            style,
+            {
+              maxHeight: 168,
+              borderRadius: 12,
+              borderWidth: StyleSheet.hairlineWidth,
+              borderColor: theme.outlineVariant,
+              backgroundColor: theme.surfaceContainerLow,
+              padding: 6,
+            },
+          ]}
+        >
+          <ScrollView nestedScrollEnabled showsVerticalScrollIndicator={true} contentContainerStyle={{ gap: 5 }}>
+            {renderedPills}
+          </ScrollView>
+        </View>
+      );
+    }
+    return (
+      <View
+        style={[
+          innerContentStyle,
+          outerSpacing,
+          style,
+          {
+            width: "100%",
+            flexDirection: isVerticalList ? "column" : "row",
+            flexWrap: isVerticalList ? "nowrap" : "wrap",
+            justifyContent: isTwoColGrid || isThreeColTiles ? "space-between" : "flex-start",
+            gap: isThreeColTiles ? 5 : 6,
+            paddingVertical: 2,
+          },
+        ]}
+      >
+        {renderedPills}
+      </View>
+    );
+  }
+
+  // Horizontal Scroll-based alternatives (Scroll+Expand, Always Scroll, Underline Tabs, Segmented Bar, Minimal Text)
   if (!canExpand) {
     return (
-      <View style={[rowStyles.rowWrap, outerSpacing, style]}>
+      <View
+        style={[
+          rowStyles.rowWrap,
+          outerSpacing,
+          style,
+          isUnderlineTabs && {
+            borderBottomWidth: StyleSheet.hairlineWidth,
+            borderBottomColor: theme.outlineVariant,
+          },
+          isSegmentedBar && {
+            backgroundColor: theme.surfaceContainerLow,
+            borderRadius: 12,
+            borderWidth: 1,
+            borderColor: theme.outlineVariant,
+            padding: 3,
+          },
+          isFloatingDock && {
+            backgroundColor: theme.surfaceContainerHigh,
+            borderRadius: 999,
+            borderWidth: 1,
+            borderColor: theme.outlineVariant,
+            paddingHorizontal: 5,
+            paddingVertical: 3,
+          },
+        ]}
+      >
         <View style={{ flex: 1, minWidth: 0 }}>
-        <View style={rowStyles.viewportWrap}>
-          <Animated.View style={{ flex: 1, transform: [{ translateX: bounceAnim }] }}>
-            <ScrollView
-              ref={scrollViewRef}
-              horizontal
-              bounces={true}
-              alwaysBounceHorizontal={true}
-              overScrollMode="always"
-              showsHorizontalScrollIndicator={showNativeSb}
-              scrollEventThrottle={16}
-              onLayout={handleLayout}
-              onContentSizeChange={handleContentSizeChange}
-              onScroll={handleScroll}
-              onScrollEndDrag={handleScrollEndDrag}
-              contentContainerStyle={[
-                innerContentStyle,
-                {
-                  flexDirection: "row",
-                  alignItems: "center",
-                  gap: 6,
-                  paddingVertical: 2,
-                  paddingRight: canScrollRight ? 12 : 2,
-                },
-              ]}
+          <View style={rowStyles.viewportWrap}>
+            <Animated.View
+              style={{ flex: 1, transform: [{ translateX: bounceAnim }] }}
             >
-              {renderedPills}
-            </ScrollView>
-          </Animated.View>
-          {showEdgeFade && canScrollLeft && (
-            <EdgePocketShadow side="left" bgColor={resolvedFadeColor} />
-          )}
-          {showEdgeFade && canScrollRight && (
-            <EdgePocketShadow side="right" bgColor={resolvedFadeColor} />
-          )}
-        </View>
-        {renderCustomScrollbar()}
+              <ScrollView
+                ref={scrollViewRef}
+                horizontal
+                bounces={true}
+                alwaysBounceHorizontal={true}
+                overScrollMode="always"
+                showsHorizontalScrollIndicator={showNativeSb}
+                scrollEventThrottle={16}
+                onLayout={handleLayout}
+                onContentSizeChange={handleContentSizeChange}
+                onScroll={handleScroll}
+                onScrollEndDrag={handleScrollEndDrag}
+                contentContainerStyle={[
+                  innerContentStyle,
+                  {
+                    flexDirection: "row",
+                    alignItems: "center",
+                    gap: isSegmentedBar ? 3 : isUnderlineTabs ? 4 : 6,
+                    paddingVertical: isUnderlineTabs ? 0 : 2,
+                    paddingRight: canScrollRight ? 12 : 2,
+                  },
+                ]}
+              >
+                {renderedPills}
+              </ScrollView>
+            </Animated.View>
+            {showEdgeFade && canScrollLeft && !isSegmentedBar && !isFloatingDock && (
+              <EdgePocketShadow side="left" bgColor={resolvedFadeColor} />
+            )}
+            {showEdgeFade && canScrollRight && !isSegmentedBar && !isFloatingDock && (
+              <EdgePocketShadow side="right" bgColor={resolvedFadeColor} />
+            )}
+          </View>
+          {renderCustomScrollbar()}
         </View>
       </View>
     );
@@ -577,7 +1086,8 @@ export function ExpandablePillRow({
               flexDirection: "row",
               flexWrap: "wrap",
               alignItems: "center",
-              justifyContent: pillLayoutMode === "centered-wrap" ? "center" : "flex-start",
+              justifyContent:
+                pillLayoutMode === "centered-wrap" ? "center" : "flex-start",
               gap: 6,
               paddingVertical: 2,
             },
@@ -587,42 +1097,44 @@ export function ExpandablePillRow({
         </View>
       ) : (
         <View style={{ flex: 1, minWidth: 0 }}>
-        <View style={rowStyles.viewportWrap}>
-          <Animated.View style={{ flex: 1, transform: [{ translateX: bounceAnim }] }}>
-            <ScrollView
-              ref={scrollViewRef}
-              horizontal
-              bounces={true}
-              alwaysBounceHorizontal={true}
-              overScrollMode="always"
-              showsHorizontalScrollIndicator={showNativeSb}
-              scrollEventThrottle={16}
-              onLayout={handleLayout}
-              onContentSizeChange={handleContentSizeChange}
-              onScroll={handleScroll}
-              onScrollEndDrag={handleScrollEndDrag}
-              contentContainerStyle={[
-                innerContentStyle,
-                {
-                  flexDirection: "row",
-                  alignItems: "center",
-                  gap: 6,
-                  paddingVertical: 2,
-                  paddingRight: canScrollRight ? 14 : 2,
-                },
-              ]}
+          <View style={rowStyles.viewportWrap}>
+            <Animated.View
+              style={{ flex: 1, transform: [{ translateX: bounceAnim }] }}
             >
-              {renderedPills}
-            </ScrollView>
-          </Animated.View>
-          {showEdgeFade && canScrollLeft && (
-            <EdgePocketShadow side="left" bgColor={resolvedFadeColor} />
-          )}
-          {showEdgeFade && canScrollRight && (
-            <EdgePocketShadow side="right" bgColor={resolvedFadeColor} />
-          )}
-        </View>
-        {renderCustomScrollbar()}
+              <ScrollView
+                ref={scrollViewRef}
+                horizontal
+                bounces={true}
+                alwaysBounceHorizontal={true}
+                overScrollMode="always"
+                showsHorizontalScrollIndicator={showNativeSb}
+                scrollEventThrottle={16}
+                onLayout={handleLayout}
+                onContentSizeChange={handleContentSizeChange}
+                onScroll={handleScroll}
+                onScrollEndDrag={handleScrollEndDrag}
+                contentContainerStyle={[
+                  innerContentStyle,
+                  {
+                    flexDirection: "row",
+                    alignItems: "center",
+                    gap: 6,
+                    paddingVertical: 2,
+                    paddingRight: canScrollRight ? 14 : 2,
+                  },
+                ]}
+              >
+                {renderedPills}
+              </ScrollView>
+            </Animated.View>
+            {showEdgeFade && canScrollLeft && (
+              <EdgePocketShadow side="left" bgColor={resolvedFadeColor} />
+            )}
+            {showEdgeFade && canScrollRight && (
+              <EdgePocketShadow side="right" bgColor={resolvedFadeColor} />
+            )}
+          </View>
+          {renderCustomScrollbar()}
         </View>
       )}
 
@@ -704,6 +1216,42 @@ const rowStyles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     flexShrink: 0,
+  },
+  dropdownBtn: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 8,
+    paddingHorizontal: 13,
+    paddingVertical: 10,
+    borderRadius: 12,
+    borderWidth: 1,
+  },
+  modalBackdrop: {
+    flex: 1,
+    backgroundColor: "rgba(0,0,0,0.48)",
+    justifyContent: "flex-end",
+    padding: 16,
+  },
+  modalSheet: {
+    borderRadius: 20,
+    borderWidth: 1,
+    padding: 16,
+    gap: 12,
+  },
+  modalHeader: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+  },
+  modalOption: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    gap: 10,
+    paddingHorizontal: 13,
+    paddingVertical: 11,
+    borderRadius: 12,
+    borderWidth: 1,
   },
 });
 

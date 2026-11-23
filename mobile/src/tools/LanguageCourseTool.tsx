@@ -127,7 +127,7 @@ export default function LanguageCourseTool({
   initialTab?: MainTab;
   onNavigationStateChange?: (state: CourseNavigationState) => void;
 } = {}) {
-  const { colors, isDark, themeConfig, themeMetrics } = useTheme();
+  const { colors, isDark, themeConfig, themeMetrics, themeKey } = useTheme();
   const styles = useMemo(() => createStyles(colors, themeMetrics), [colors, themeMetrics]);
   const ripple = useMemo(() => androidRipple(colors.rippleColor), [colors.rippleColor]);
 
@@ -2361,7 +2361,7 @@ export default function LanguageCourseTool({
           >
             <Feather name="search" size={14} color={colors.gold} />
             <TextInput
-              key={`menu-search-${isDark ? 'dark' : 'light'}`}
+              key={`menu-search-${themeKey}`}
               value={menuSearchQuery}
               onChangeText={setMenuSearchQuery}
               placeholder="Search language or county..."

@@ -44,7 +44,7 @@ const RouteCard = React.memo(function RouteCard({
   route: RouteItem & { townId?: string; townName?: string };
 }) {
   const router = useRouter();
-  const { theme, isDark } = useTheme();
+  const { theme, isDark, themeKey } = useTheme();
   const rNum = route.routeNumber || route.number || "—";
 
   return (
@@ -188,7 +188,7 @@ const RouteCard = React.memo(function RouteCard({
 
 export default function MatatuScreen() {
   const router = useRouter();
-  const { theme, isDark } = useTheme();
+  const { theme, isDark, themeKey } = useTheme();
   const params = useLocalSearchParams<{ town?: string; q?: string }>();
   const [search, setSearch] = useState(params.q ?? "");
   const [selectedTown, setSelectedTown] = useState<string>(params.town || "all");
@@ -299,7 +299,7 @@ export default function MatatuScreen() {
 
   return (
     <SafeAreaView
-      key={isDark ? "dark" : "light"}
+      key={themeKey}
       style={[styles.screen, { backgroundColor: theme.bgPrimary }]}
       edges={["top", "left", "right", "bottom"]}
     >

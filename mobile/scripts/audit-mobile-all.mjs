@@ -176,7 +176,7 @@ for (const screenRel of [
   "app/matatu/index.tsx",
 ]) {
   const src = fs.readFileSync(path.join(mobileRoot, screenRel), "utf8");
-  const hasKey = src.includes('key={isDark ? "dark" : "light"}');
+  const hasKey = (src.includes("key={themeKey}") || src.includes('key={isDark ? "dark" : "light"}'));
   check(
     "theme",
     `${screenRel} has atomic SafeAreaView theme key`,

@@ -25,10 +25,12 @@ import {
   parseThemeConfigJson,
   exportThemeConfigJson,
   resolveFontPairFamilies,
+  hexToRgba,
   type ThemeConfig,
   type ThemeMetrics,
   type ThemeMode,
   type CustomColorsConfig,
+  type HapticStrength,
 } from "./lib/theme-engine";
 
 export const darkColors = {
@@ -214,7 +216,15 @@ export const categoryColorMap: Record<string, string> = {
 
 // Global runtime flags synchronized from ThemeProvider
 let _globalHapticsEnabled = true;
+let _globalHapticDurationMs = 8;
 let _globalReduceMotion = false;
+
+const HAPTIC_STRENGTH_MS: Record<HapticStrength, number> = {
+  off: 0,
+  light: 8,
+  medium: 16,
+  strong: 28,
+};
 
 export function androidRipple(color?: string, borderless = false) {
   return {
@@ -238,11 +248,15 @@ export function pressableStyle(
   ];
 }
 
-export function triggerHaptic(durationMs = 10) {
-  if (!_globalHapticsEnabled) return;
+export function triggerHaptic(durationMs?: number) {
+  if (!_globalHapticsEnabled || _globalHapticDurationMs <= 0) return;
+  const effectiveDuration =
+    durationMs !== undefined
+      ? Math.max(1, Math.round((durationMs / 10) * _globalHapticDurationMs))
+      : _globalHapticDurationMs;
   try {
     if (Platform.OS === "android" || Platform.OS === "ios") {
-      Vibration.vibrate(durationMs);
+      Vibration.vibrate(effectiveDuration);
     }
   } catch {
     // Ignore on unsupported devices
@@ -285,11 +299,21 @@ export function serializeSavedTools(slugs: string[]): string {
 }
 
 const THEME_CONFIG_STORAGE_KEY = "kh-theme-config";
+const SAVED_THEMES_STORAGE_KEY = "kh-saved-themes";
+
+export interface SavedCustomTheme {
+  id: string;
+  name: string;
+  createdAt: string;
+  swatches: [string, string, string, string];
+  config: ThemeConfig;
+}
 
 interface ThemeContextType {
   theme: ThemeColors;
   isDark: boolean;
   themeReady: boolean;
+  themeKey: string;
   themeConfig: ThemeConfig;
   themeMetrics: ThemeMetrics;
   resolvedFonts: { heading: string; body: string; bold: string };
@@ -299,6 +323,10 @@ interface ThemeContextType {
   updateCustomColor: (key: keyof CustomColorsConfig, hex: string | undefined) => void;
   applyThemePreset: (presetId: string, forceMode?: "dark" | "light") => void;
   applyAppLookProfile: (profileId: string) => void;
+  savedThemes: SavedCustomTheme[];
+  saveCustomTheme: (name: string) => SavedCustomTheme | null;
+  applySavedTheme: (id: string) => void;
+  deleteSavedTheme: (id: string) => void;
   resetThemeConfig: () => void;
   importThemeJson: (raw: string) => boolean;
   exportThemeJson: () => string;
@@ -310,6 +338,7 @@ const ThemeContext = createContext<ThemeContextType>({
   theme: darkColors,
   isDark: true,
   themeReady: false,
+  themeKey: `d-${DEFAULT_THEME_CONFIG.presetId}-${darkColors.bgPrimary}-${darkColors.surfaceContainer}-${darkColors.gold}-${DEFAULT_THEME_CONFIG.surfaceStyle}-${DEFAULT_THEME_CONFIG.cardAccentStyle}`,
   themeConfig: DEFAULT_THEME_CONFIG,
   themeMetrics: defaultMetrics,
   resolvedFonts: { heading: "Outfit_700Bold", body: "Inter_400Regular", bold: "Inter_700Bold" },
@@ -319,6 +348,10 @@ const ThemeContext = createContext<ThemeContextType>({
   updateCustomColor: () => {},
   applyThemePreset: () => {},
   applyAppLookProfile: () => {},
+  savedThemes: [],
+  saveCustomTheme: () => null,
+  applySavedTheme: () => {},
+  deleteSavedTheme: () => {},
   resetThemeConfig: () => {},
   importThemeJson: () => false,
   exportThemeJson: () => exportThemeConfigJson(DEFAULT_THEME_CONFIG),
@@ -327,6 +360,7 @@ const ThemeContext = createContext<ThemeContextType>({
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const systemColorScheme = useColorScheme();
   const [themeConfig, setThemeConfig] = useState<ThemeConfig>(DEFAULT_THEME_CONFIG);
+  const [savedThemes, setSavedThemes] = useState<SavedCustomTheme[]>([]);
   const [themeReady, setThemeReady] = useState<boolean>(false);
 
   useEffect(() => {
@@ -334,9 +368,31 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     Promise.all([
       AsyncStorage.getItem(THEME_CONFIG_STORAGE_KEY),
       AsyncStorage.getItem("kh-theme"),
+      AsyncStorage.getItem(SAVED_THEMES_STORAGE_KEY),
     ])
-      .then(([rawConfig, legacyMode]) => {
+      .then(([rawConfig, legacyMode, rawSaved]) => {
         if (!mounted) return;
+        if (rawSaved) {
+          try {
+            const arr = JSON.parse(rawSaved);
+            if (Array.isArray(arr)) {
+              const valid: SavedCustomTheme[] = [];
+              for (const item of arr) {
+                if (!item || typeof item !== "object" || typeof item.id !== "string" || typeof item.name !== "string") continue;
+                const parsedCfg = parseThemeConfigJson(JSON.stringify(item.config || {}));
+                if (!parsedCfg) continue;
+                valid.push({
+                  id: item.id,
+                  name: item.name,
+                  createdAt: typeof item.createdAt === "string" ? item.createdAt : new Date().toISOString(),
+                  swatches: Array.isArray(item.swatches) && item.swatches.length === 4 ? item.swatches : ["#0E0C0A", "#1E1A17", "#C8961E", "#006B3F"],
+                  config: parsedCfg,
+                });
+              }
+              setSavedThemes(valid);
+            }
+          } catch {}
+        }
         if (rawConfig) {
           const parsed = parseThemeConfigJson(rawConfig);
           if (parsed) {
@@ -373,8 +429,9 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     _globalHapticsEnabled = themeConfig.hapticsEnabled;
+    _globalHapticDurationMs = HAPTIC_STRENGTH_MS[themeConfig.hapticStrength] ?? 8;
     _globalReduceMotion = themeConfig.reduceMotion;
-  }, [themeConfig.hapticsEnabled, themeConfig.reduceMotion]);
+  }, [themeConfig.hapticsEnabled, themeConfig.hapticStrength, themeConfig.reduceMotion]);
 
   useEffect(() => {
     try {
@@ -465,6 +522,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
         const next: ThemeConfig = {
           ...DEFAULT_THEME_CONFIG,
           hapticsEnabled: prev.hapticsEnabled,
+          hapticStrength: prev.hapticStrength,
           reduceMotion: prev.reduceMotion,
           highContrastBorders: prev.highContrastBorders,
           colorBlindMode: prev.colorBlindMode,
@@ -477,6 +535,65 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
       });
     },
     [persistConfig]
+  );
+
+  const persistSavedThemes = React.useCallback((next: SavedCustomTheme[]) => {
+    AsyncStorage.setItem(SAVED_THEMES_STORAGE_KEY, JSON.stringify(next)).catch(() => {});
+  }, []);
+
+  const saveCustomTheme = React.useCallback(
+    (rawName: string): SavedCustomTheme | null => {
+      const cleanName = rawName.trim().slice(0, 32);
+      if (!cleanName) return null;
+      triggerHaptic(10);
+      const resolved = resolveThemeColors(darkColors, lightColors, themeConfig, isDark);
+      const snapshot: ThemeConfig = {
+        ...themeConfig,
+        customColors: { ...themeConfig.customColors },
+      };
+      const entry: SavedCustomTheme = {
+        id: `custom-${Date.now()}-${Math.random().toString(36).slice(2, 6)}`,
+        name: cleanName,
+        createdAt: new Date().toISOString(),
+        swatches: [resolved.bgPrimary, resolved.surfaceContainer, resolved.gold, resolved.kenyaGreen],
+        config: snapshot,
+      };
+      setSavedThemes((prev) => {
+        const filtered = prev.filter((t) => t.name.toLowerCase() !== cleanName.toLowerCase());
+        const next = [entry, ...filtered].slice(0, 20);
+        persistSavedThemes(next);
+        return next;
+      });
+      return entry;
+    },
+    [themeConfig, isDark, persistSavedThemes]
+  );
+
+  const applySavedTheme = React.useCallback(
+    (id: string) => {
+      const found = savedThemes.find((t) => t.id === id);
+      if (!found) return;
+      triggerHaptic(8);
+      const next: ThemeConfig = {
+        ...found.config,
+        customColors: { ...found.config.customColors },
+      };
+      setThemeConfig(next);
+      persistConfig(next);
+    },
+    [savedThemes, persistConfig]
+  );
+
+  const deleteSavedTheme = React.useCallback(
+    (id: string) => {
+      triggerHaptic(8);
+      setSavedThemes((prev) => {
+        const next = prev.filter((t) => t.id !== id);
+        persistSavedThemes(next);
+        return next;
+      });
+    },
+    [persistSavedThemes]
   );
 
   const resetThemeConfig = React.useCallback(() => {
@@ -517,11 +634,14 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     [themeConfig.fontPair]
   );
 
+  const themeKey = `${isDark ? "d" : "l"}-${themeConfig.presetId}-${theme.bgPrimary}-${theme.surfaceContainer}-${theme.gold}-${themeConfig.surfaceStyle}-${themeConfig.cardAccentStyle}`;
+
   const ctxValue = React.useMemo(
     () => ({
       theme,
       isDark,
       themeReady,
+      themeKey,
       themeConfig,
       themeMetrics,
       resolvedFonts,
@@ -531,6 +651,10 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
       updateCustomColor,
       applyThemePreset,
       applyAppLookProfile,
+      savedThemes,
+      saveCustomTheme,
+      applySavedTheme,
+      deleteSavedTheme,
       resetThemeConfig,
       importThemeJson,
       exportThemeJson,
@@ -539,6 +663,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
       theme,
       isDark,
       themeReady,
+      themeKey,
       themeConfig,
       themeMetrics,
       resolvedFonts,
@@ -548,6 +673,10 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
       updateCustomColor,
       applyThemePreset,
       applyAppLookProfile,
+      savedThemes,
+      saveCustomTheme,
+      applySavedTheme,
+      deleteSavedTheme,
       resetThemeConfig,
       importThemeJson,
       exportThemeJson,
@@ -616,9 +745,7 @@ export function getThemedCardStyle(
       borderWidth = Math.max(1, borderWidth);
       break;
     case "glass":
-      backgroundColor = theme.isDark
-        ? "rgba(30, 26, 23, 0.78)"
-        : "rgba(255, 255, 255, 0.82)";
+      backgroundColor = hexToRgba(theme.surfaceContainer, 0.88);
       break;
     case "tonal":
       backgroundColor = theme.surfaceContainerHigh;
@@ -633,6 +760,7 @@ export function getThemedCardStyle(
       break;
   }
 
+  const isAndroid = Platform.OS === "android";
   let elevation = themeMetrics.elevationPx;
   let shadowOpacity = theme.isDark ? 0.24 : 0.08;
   let shadowColor = "#000000";
@@ -650,40 +778,51 @@ export function getThemedCardStyle(
       shadowRadius = 3;
       break;
     case "medium":
-      elevation = 4;
+      elevation = isAndroid ? 2 : 4;
       shadowOpacity = theme.isDark ? 0.28 : 0.12;
       shadowRadius = 6;
       break;
     case "strong":
-      elevation = 8;
+      elevation = isAndroid ? 3 : 8;
       shadowOpacity = theme.isDark ? 0.42 : 0.2;
       shadowRadius = 10;
       break;
     case "glow":
-      elevation = 6;
-      shadowOpacity = 0.35;
-      shadowColor = theme.gold;
-      shadowRadius = 10;
+      if (isAndroid) {
+        elevation = 2;
+        shadowColor = "#000000";
+        shadowOpacity = 0;
+        shadowRadius = 0;
+        borderWidth = Math.max(1.5, borderWidth);
+        borderColor = theme.gold;
+      } else {
+        elevation = 6;
+        shadowOpacity = 0.35;
+        shadowColor = theme.gold;
+        shadowRadius = 10;
+      }
       break;
     case "crisp-3d":
-      elevation = 5;
+      elevation = isAndroid ? 3 : 5;
       shadowOpacity = theme.isDark ? 0.4 : 0.18;
       shadowRadius = 2;
       break;
   }
+
+  const clampedAndroidElevation = isAndroid ? Math.min(3, Math.max(0, elevation)) : 0;
 
   const cardStyle: ThemedCardStyle = {
     borderRadius,
     borderWidth,
     borderColor,
     backgroundColor,
-    elevation: Platform.OS === "android" ? elevation : 0,
-    shadowColor,
-    shadowOpacity,
-    shadowRadius,
+    elevation: clampedAndroidElevation,
+    shadowColor: isAndroid ? "#000000" : shadowColor,
+    shadowOpacity: isAndroid ? 0 : shadowOpacity,
+    shadowRadius: isAndroid ? 0 : shadowRadius,
     shadowOffset: {
       width: 0,
-      height: elevation > 0 ? Math.min(4, Math.ceil(elevation / 2)) : 0,
+      height: !isAndroid && elevation > 0 ? Math.min(4, Math.ceil(elevation / 2)) : 0,
     },
   };
 
@@ -705,13 +844,17 @@ export function getThemedCardStyle(
       cardStyle.borderWidth = Math.max(1.25, borderWidth);
       break;
     case "glow-edge":
-      cardStyle.borderColor = theme.goldLight;
-      cardStyle.borderWidth = Math.max(1.5, borderWidth);
-      cardStyle.shadowColor = theme.gold;
-      cardStyle.shadowOpacity = 0.38;
-      cardStyle.shadowRadius = 10;
-      if (Platform.OS === "android") {
-        cardStyle.elevation = Math.max(4, elevation);
+      if (isAndroid) {
+        cardStyle.borderColor = theme.gold;
+        cardStyle.borderWidth = Math.max(1.5, borderWidth);
+        cardStyle.shadowColor = "#000000";
+        cardStyle.elevation = Math.min(3, Math.max(2, clampedAndroidElevation));
+      } else {
+        cardStyle.borderColor = theme.goldLight;
+        cardStyle.borderWidth = Math.max(1.5, borderWidth);
+        cardStyle.shadowColor = theme.gold;
+        cardStyle.shadowOpacity = 0.38;
+        cardStyle.shadowRadius = 10;
       }
       break;
     case "none":
@@ -765,14 +908,14 @@ export function AndroidTopAppBar({
   showThemeToggle?: boolean;
   showSettingsButton?: boolean;
 }) {
-  const { theme, isDark, themeConfig, resolvedFonts } = useTheme();
+  const { theme, themeKey, themeConfig, resolvedFonts } = useTheme();
   const router = useRouter();
   const showGear = showThemeToggle && showSettingsButton;
   const isCentered = themeConfig.headerAlignment === "center";
 
   return (
     <View
-      key={isDark ? "appbar-dark" : "appbar-light"}
+      key={themeKey}
       style={[
         appBarStyles.container,
         {

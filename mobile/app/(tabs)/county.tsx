@@ -702,7 +702,7 @@ function renderClimateCard(item: any, router: any, theme: any, styles: ReturnTyp
 
 export default function CountyScreen() {
   const router = useRouter();
-  const { theme, isDark, themeConfig, themeMetrics, resolvedFonts } = useTheme();
+  const { theme, isDark, themeConfig, themeMetrics, resolvedFonts, themeKey } = useTheme();
   const styles = useMemo(
     () => createCountyStyles(themeMetrics, resolvedFonts),
     [themeMetrics, resolvedFonts]
@@ -801,7 +801,7 @@ export default function CountyScreen() {
 
   return (
     <SafeAreaView
-      key={isDark ? "dark" : "light"}
+      key={themeKey}
       style={[styles.container, { backgroundColor: theme.bgPrimary }]}
       edges={["top", "left", "right"]}
     >

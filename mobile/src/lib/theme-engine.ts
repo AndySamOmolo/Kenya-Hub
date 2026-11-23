@@ -42,7 +42,17 @@ export type PillBarLayout =
   | "always-wrap"
   | "compact-scroll"
   | "centered-wrap"
-  | "grid-pills";
+  | "grid-pills"
+  | "dropdown"
+  | "underline-tabs"
+  | "segmented-bar"
+  | "two-col-grid"
+  | "vertical-list"
+  | "minimal-text"
+  | "stepper"
+  | "three-col-tiles"
+  | "floating-dock"
+  | "sidebar-chips";
 
 export type AppBarStyle =
   | "standard"
@@ -118,6 +128,10 @@ export type IconBadgeStyle =
   | "accent-solid"
   | "minimal";
 
+export type HeadingTransform = "none" | "uppercase" | "capitalize";
+export type NumericStyle = "default" | "tabular-mono";
+export type HapticStrength = "off" | "light" | "medium" | "strong";
+
 export interface CustomColorsConfig {
   primaryAccent?: string;
   secondaryAccent?: string;
@@ -171,6 +185,9 @@ export interface ThemeConfig {
   headerAlignment: HeaderAlignment;
   cardAccentStyle: CardAccentStyle;
   iconBadgeStyle: IconBadgeStyle;
+  headingTransform: HeadingTransform;
+  numericStyle: NumericStyle;
+  hapticStrength: HapticStrength;
 }
 
 export interface ThemeColorsShape {
@@ -284,6 +301,9 @@ export const DEFAULT_THEME_CONFIG: ThemeConfig = {
   headerAlignment: "left",
   cardAccentStyle: "none",
   iconBadgeStyle: "soft-circle",
+  headingTransform: "none",
+  numericStyle: "default",
+  hapticStrength: "light",
 };
 
 export interface AppLookProfile {
@@ -470,6 +490,64 @@ export const APP_LOOK_PROFILES: AppLookProfile[] = [
       customColors: {},
     },
   },
+  {
+    id: "swahili-royal",
+    name: "Swahili Royal",
+    tagline: "Swahili Twilight · Editorial Serif · Floating Pill · Glow",
+    icon: "sparkles-outline",
+    swatches: ["#0D0817", "#1D1430", "#F0B949", "#F2736B"],
+    config: {
+      presetId: "swahili-twilight",
+      mode: "dark",
+      tabBarStyle: "floating-pill",
+      tabBarLabels: true,
+      menuIndicatorStyle: "glow",
+      fontPair: "editorial-serif",
+      surfaceStyle: "elevated",
+      cardRadius: "soft",
+      buttonRadius: "pill",
+      borderWidth: "thin",
+      horizontalScrollbarStyle: "glow-rail",
+      pillBarLayout: "scroll-with-expand",
+      appBarStyle: "floating",
+      homeLayout: "editorial-cards",
+      headerAlignment: "center",
+      cardAccentStyle: "glow-edge",
+      iconBadgeStyle: "soft-circle",
+      quickMenuPosition: "off",
+      cardShadowIntensity: "glow",
+      customColors: {},
+    },
+  },
+  {
+    id: "crisp-daylight",
+    name: "Crisp Daylight",
+    tagline: "Naivasha Mist · Crisp · Classic Sans · Top Accent",
+    icon: "sunny-outline",
+    swatches: ["#F4F8FA", "#FFFFFF", "#127377", "#22658A"],
+    config: {
+      presetId: "naivasha-mist",
+      mode: "light",
+      tabBarStyle: "top-accent",
+      tabBarLabels: true,
+      menuIndicatorStyle: "underline",
+      fontPair: "classic-sans",
+      surfaceStyle: "crisp",
+      cardRadius: "rounded",
+      buttonRadius: "rounded",
+      borderWidth: "thin",
+      horizontalScrollbarStyle: "subtle-bar",
+      pillBarLayout: "scroll-with-expand",
+      appBarStyle: "standard",
+      homeLayout: "classic",
+      headerAlignment: "left",
+      cardAccentStyle: "top-bar",
+      iconBadgeStyle: "soft-square",
+      quickMenuPosition: "off",
+      cardShadowIntensity: "subtle",
+      customColors: {},
+    },
+  },
 ];
 
 export const THEME_PRESETS: ThemePreset[] = [
@@ -480,7 +558,9 @@ export const THEME_PRESETS: ThemePreset[] = [
     recommendedMode: "light",
     swatches: ["#0E0C0A", "#FAF7F2", "#C8961E", "#006B3F"],
     dark: {},
-    light: {},
+    light: {
+      gold: "#9C7005",
+    },
   },
   {
     id: "amoled-pitch",
@@ -663,7 +743,7 @@ export const THEME_PRESETS: ThemePreset[] = [
       surfaceContainer: "#E6EFF1",
       surfaceContainerHigh: "#DCE8EB",
       surfaceContainerHighest: "#D1E0E4",
-      gold: "#B38629",
+      gold: "#966D1B",
       goldLight: "#C89B3C",
       sky: "#0E7A7D",
       skyLight: "#159A9E",
@@ -811,7 +891,7 @@ export const THEME_PRESETS: ThemePreset[] = [
       surfaceContainer: "#E2E6F6",
       surfaceContainerHigh: "#D6DCF2",
       surfaceContainerHighest: "#CAD2ED",
-      gold: "#B8860B",
+      gold: "#966B00",
       goldLight: "#D9A31E",
       sky: "#0088A3",
       skyLight: "#00ACC7",
@@ -1263,6 +1343,298 @@ export const THEME_PRESETS: ThemePreset[] = [
       rippleColor: "rgba(20, 122, 75, 0.14)",
     },
   },
+  {
+    id: "swahili-twilight",
+    name: "Swahili Twilight",
+    tagline: "Deep Plum-Indigo, Warm Gold & Coral",
+    recommendedMode: "dark",
+    swatches: ["#0D0817", "#1D1430", "#F0B949", "#F2736B"],
+    dark: {
+      bgPrimary: "#0D0817",
+      bgSecondary: "#150E24",
+      bgCard: "#1D1430",
+      bgCardHover: "#261B3E",
+      bgElevated: "#2D214A",
+      surface: "#1D1430",
+      surfaceContainerLowest: "#080510",
+      surfaceContainerLow: "#150E24",
+      surfaceContainer: "#1D1430",
+      surfaceContainerHigh: "#271C40",
+      surfaceContainerHighest: "#332552",
+      gold: "#F0B949",
+      goldLight: "#FAD37A",
+      kenyaRed: "#F2736B",
+      kenyaRedLight: "#FF9B94",
+      sky: "#8C7AE6",
+      skyLight: "#B3A6F2",
+      primaryContainer: "rgba(240, 185, 73, 0.22)",
+      onPrimaryContainer: "#FCE3A4",
+      secondaryContainer: "rgba(242, 115, 107, 0.20)",
+      onSecondaryContainer: "#FFC7C2",
+      border: "#4A3A6B",
+      borderLight: "#5D4A85",
+      borderAccent: "#745DA3",
+      outline: "#7D66AD",
+      outlineVariant: "#4A3A6B",
+      textPrimary: "#F5F0FA",
+      text: "#F5F0FA",
+      textSecondary: "#C5B8D9",
+      textMuted: "#9F8FB8",
+      rippleColor: "rgba(240, 185, 73, 0.18)",
+    },
+    light: {
+      bgPrimary: "#F8F5FC",
+      bgSecondary: "#EEE8F7",
+      bgCard: "#FFFFFF",
+      bgCardHover: "#F3EEF9",
+      bgElevated: "#E5DDF2",
+      surface: "#FFFFFF",
+      surfaceContainerLowest: "#FFFFFF",
+      surfaceContainerLow: "#F3EEF9",
+      surfaceContainer: "#EAE3F5",
+      surfaceContainerHigh: "#E0D7EE",
+      surfaceContainerHighest: "#D5C9E8",
+      gold: "#96660B",
+      goldLight: "#B8811C",
+      kenyaRed: "#C4453D",
+      kenyaRedLight: "#E0635B",
+      sky: "#5E4B9E",
+      skyLight: "#7B67BD",
+      primaryContainer: "rgba(150, 102, 11, 0.15)",
+      onPrimaryContainer: "#4D3200",
+      secondaryContainer: "rgba(196, 69, 61, 0.13)",
+      onSecondaryContainer: "#5C1612",
+      border: "#8E7FA8",
+      borderLight: "#7A6B94",
+      borderAccent: "#63557D",
+      outline: "#73648C",
+      outlineVariant: "#8E7FA8",
+      textPrimary: "#1B112B",
+      text: "#1B112B",
+      textSecondary: "#4B3B63",
+      textMuted: "#65547D",
+      rippleColor: "rgba(150, 102, 11, 0.14)",
+    },
+  },
+  {
+    id: "tsavo-night",
+    name: "Tsavo Night",
+    tagline: "Volcanic Charcoal, Burnt Copper & Savanna Gold",
+    recommendedMode: "dark",
+    swatches: ["#0F0D0C", "#211C19", "#E08448", "#E6B44C"],
+    dark: {
+      bgPrimary: "#0F0D0C",
+      bgSecondary: "#181513",
+      bgCard: "#211C19",
+      bgCardHover: "#2B2420",
+      bgElevated: "#332B26",
+      surface: "#211C19",
+      surfaceContainerLowest: "#090807",
+      surfaceContainerLow: "#181513",
+      surfaceContainer: "#211C19",
+      surfaceContainerHigh: "#2C2521",
+      surfaceContainerHighest: "#382F2A",
+      gold: "#E08448",
+      goldLight: "#F5AC78",
+      earth: "#C96A38",
+      earthLight: "#E68E5E",
+      kenyaGreen: "#4D9E6B",
+      kenyaGreenLight: "#78C996",
+      primaryContainer: "rgba(224, 132, 72, 0.22)",
+      onPrimaryContainer: "#FFD7BA",
+      secondaryContainer: "rgba(230, 180, 76, 0.20)",
+      onSecondaryContainer: "#FAE2A5",
+      border: "#5E4F47",
+      borderLight: "#736157",
+      borderAccent: "#8C776B",
+      outline: "#917C70",
+      outlineVariant: "#5E4F47",
+      textPrimary: "#F5F0EC",
+      text: "#F5F0EC",
+      textSecondary: "#C7BAB2",
+      textMuted: "#A3948B",
+      rippleColor: "rgba(224, 132, 72, 0.18)",
+    },
+    light: {
+      bgPrimary: "#F9F6F3",
+      bgSecondary: "#F0EAE4",
+      bgCard: "#FFFFFF",
+      bgCardHover: "#F5EFEA",
+      bgElevated: "#E8E0D8",
+      surface: "#FFFFFF",
+      surfaceContainerLowest: "#FFFFFF",
+      surfaceContainerLow: "#F4EFEA",
+      surfaceContainer: "#ECE5DE",
+      surfaceContainerHigh: "#E3DAD1",
+      surfaceContainerHighest: "#D9CEC3",
+      gold: "#A84E1D",
+      goldLight: "#C7642E",
+      earth: "#853B14",
+      earthLight: "#A34E22",
+      kenyaGreen: "#2B7548",
+      kenyaGreenLight: "#3E9460",
+      primaryContainer: "rgba(168, 78, 29, 0.15)",
+      onPrimaryContainer: "#4F2107",
+      secondaryContainer: "rgba(133, 59, 20, 0.13)",
+      onSecondaryContainer: "#421B05",
+      border: "#998A80",
+      borderLight: "#85766C",
+      borderAccent: "#6E6057",
+      outline: "#7D6E64",
+      outlineVariant: "#998A80",
+      textPrimary: "#1F1916",
+      text: "#1F1916",
+      textSecondary: "#52463F",
+      textMuted: "#6B5E56",
+      rippleColor: "rgba(168, 78, 29, 0.14)",
+    },
+  },
+  {
+    id: "naivasha-mist",
+    name: "Naivasha Mist",
+    tagline: "Crisp Lake Sky, Cool Ivory & Forest Teal",
+    recommendedMode: "light",
+    swatches: ["#0A1317", "#F4F8FA", "#127377", "#22658A"],
+    dark: {
+      bgPrimary: "#0A1317",
+      bgSecondary: "#111F24",
+      bgCard: "#172A30",
+      bgCardHover: "#1F363D",
+      bgElevated: "#254048",
+      surface: "#172A30",
+      surfaceContainerLowest: "#060C0F",
+      surfaceContainerLow: "#111F24",
+      surfaceContainer: "#172A30",
+      surfaceContainerHigh: "#203840",
+      surfaceContainerHighest: "#2A4750",
+      gold: "#39B8BD",
+      goldLight: "#70DCE0",
+      sky: "#4FA4CF",
+      skyLight: "#84C6E8",
+      kenyaGreen: "#2CA682",
+      kenyaGreenLight: "#5CD1AF",
+      primaryContainer: "rgba(57, 184, 189, 0.22)",
+      onPrimaryContainer: "#B0F2F5",
+      secondaryContainer: "rgba(79, 164, 207, 0.20)",
+      onSecondaryContainer: "#BCE2F5",
+      border: "#3B5B66",
+      borderLight: "#4B707D",
+      borderAccent: "#5D8796",
+      outline: "#6691A1",
+      outlineVariant: "#3B5B66",
+      textPrimary: "#EEF6F8",
+      text: "#EEF6F8",
+      textSecondary: "#AFC6CC",
+      textMuted: "#8AA6AD",
+      rippleColor: "rgba(57, 184, 189, 0.18)",
+    },
+    light: {
+      bgPrimary: "#F4F8FA",
+      bgSecondary: "#E8F0F3",
+      bgCard: "#FFFFFF",
+      bgCardHover: "#EFF5F7",
+      bgElevated: "#DFEAEE",
+      surface: "#FFFFFF",
+      surfaceContainerLowest: "#FFFFFF",
+      surfaceContainerLow: "#EFF5F7",
+      surfaceContainer: "#E5EEF1",
+      surfaceContainerHigh: "#DAE6EA",
+      surfaceContainerHighest: "#CFDFE4",
+      gold: "#127377",
+      goldLight: "#1D9196",
+      sky: "#22658A",
+      skyLight: "#3580A8",
+      kenyaGreen: "#166E53",
+      kenyaGreenLight: "#248C6C",
+      primaryContainer: "rgba(18, 115, 119, 0.14)",
+      onPrimaryContainer: "#063C3F",
+      secondaryContainer: "rgba(34, 101, 138, 0.13)",
+      onSecondaryContainer: "#0D354A",
+      border: "#7E97A1",
+      borderLight: "#6A848E",
+      borderAccent: "#546E78",
+      outline: "#647E88",
+      outlineVariant: "#7E97A1",
+      textPrimary: "#0F2026",
+      text: "#0F2026",
+      textSecondary: "#3B555E",
+      textMuted: "#536E78",
+      rippleColor: "rgba(18, 115, 119, 0.14)",
+    },
+  },
+  {
+    id: "nairobi-linen",
+    name: "Nairobi Linen",
+    tagline: "Modern Editorial Warm White, Espresso & Terracotta",
+    recommendedMode: "light",
+    swatches: ["#120E0B", "#FAF8F5", "#AD4424", "#6E4730"],
+    dark: {
+      bgPrimary: "#120E0B",
+      bgSecondary: "#1C1612",
+      bgCard: "#241D18",
+      bgCardHover: "#2E251F",
+      bgElevated: "#382D26",
+      surface: "#241D18",
+      surfaceContainerLowest: "#0A0806",
+      surfaceContainerLow: "#1C1612",
+      surfaceContainer: "#241D18",
+      surfaceContainerHigh: "#302721",
+      surfaceContainerHighest: "#3D322A",
+      gold: "#DE7652",
+      goldLight: "#F59D7D",
+      earth: "#C46E41",
+      earthLight: "#E09167",
+      kenyaGreen: "#4B966B",
+      kenyaGreenLight: "#74BF93",
+      primaryContainer: "rgba(222, 118, 82, 0.22)",
+      onPrimaryContainer: "#FFD3C4",
+      secondaryContainer: "rgba(196, 110, 65, 0.20)",
+      onSecondaryContainer: "#F7CEB7",
+      border: "#615147",
+      borderLight: "#756357",
+      borderAccent: "#8F7A6C",
+      outline: "#968072",
+      outlineVariant: "#615147",
+      textPrimary: "#F7F3EE",
+      text: "#F7F3EE",
+      textSecondary: "#C9BEB5",
+      textMuted: "#A6988E",
+      rippleColor: "rgba(222, 118, 82, 0.18)",
+    },
+    light: {
+      bgPrimary: "#FAF8F5",
+      bgSecondary: "#F2EEE8",
+      bgCard: "#FFFFFF",
+      bgCardHover: "#F6F3EE",
+      bgElevated: "#EAE4DC",
+      surface: "#FFFFFF",
+      surfaceContainerLowest: "#FFFFFF",
+      surfaceContainerLow: "#F5F2EC",
+      surfaceContainer: "#EDE8E0",
+      surfaceContainerHigh: "#E4DED4",
+      surfaceContainerHighest: "#DBD3C8",
+      gold: "#AD4424",
+      goldLight: "#CC5B37",
+      earth: "#6E4730",
+      earthLight: "#8A5B40",
+      kenyaGreen: "#266B44",
+      kenyaGreenLight: "#388A5C",
+      primaryContainer: "rgba(173, 68, 36, 0.14)",
+      onPrimaryContainer: "#521C0C",
+      secondaryContainer: "rgba(110, 71, 48, 0.13)",
+      onSecondaryContainer: "#382114",
+      border: "#998E84",
+      borderLight: "#857A70",
+      borderAccent: "#6E635A",
+      outline: "#7D7268",
+      outlineVariant: "#998E84",
+      textPrimary: "#1E1712",
+      text: "#1E1712",
+      textSecondary: "#52453B",
+      textMuted: "#6B5D52",
+      rippleColor: "rgba(173, 68, 36, 0.14)",
+    },
+  },
 ];
 
 /**
@@ -1417,6 +1789,7 @@ export function resolveThemeColors(
     resolved.gold = accent;
     resolved.goldLight = mixHex(accent, resolvedIsDark ? "#FFFFFF" : "#000000", 0.2);
     resolved.primaryContainer = hexToRgba(accent, resolvedIsDark ? 0.22 : 0.16);
+    resolved.onPrimaryContainer = mixHex(accent, resolvedIsDark ? "#FFFFFF" : "#000000", resolvedIsDark ? 0.58 : 0.45);
     resolved.rippleColor = hexToRgba(accent, resolvedIsDark ? 0.18 : 0.14);
   }
 
@@ -1425,6 +1798,7 @@ export function resolveThemeColors(
     resolved.kenyaGreen = secondary;
     resolved.kenyaGreenLight = mixHex(secondary, "#FFFFFF", resolvedIsDark ? 0.24 : 0.12);
     resolved.secondaryContainer = hexToRgba(secondary, resolvedIsDark ? 0.20 : 0.13);
+    resolved.onSecondaryContainer = mixHex(secondary, resolvedIsDark ? "#FFFFFF" : "#000000", resolvedIsDark ? 0.58 : 0.45);
   }
 
   if (custom.tertiaryAccent && isValidHexColor(custom.tertiaryAccent)) {
@@ -1464,6 +1838,8 @@ export function resolveThemeColors(
     const txt = custom.textPrimary.trim();
     resolved.textPrimary = txt;
     resolved.text = txt;
+    resolved.textSecondary = mixHex(txt, resolved.surfaceContainer, 0.24);
+    resolved.textMuted = mixHex(txt, resolved.surfaceContainer, 0.38);
   }
 
   if (custom.borderColor && isValidHexColor(custom.borderColor)) {
@@ -1492,6 +1868,8 @@ export function resolveThemeColors(
 
   resolved = applyColorBlindTransform(resolved, config.colorBlindMode);
 
+  resolved.text = resolved.textPrimary;
+  resolved.surface = resolved.bgCard;
   return resolved;
 }
 
@@ -1618,6 +1996,7 @@ const VALID_SCROLLBAR_THICKNESS = new Set<ScrollbarThickness>([
 ]);
 const VALID_PILL_BAR_LAYOUTS = new Set<PillBarLayout>([
   "scroll-with-expand", "always-scroll", "always-wrap", "compact-scroll", "centered-wrap", "grid-pills",
+  "dropdown", "underline-tabs", "segmented-bar", "two-col-grid", "vertical-list", "minimal-text", "stepper", "three-col-tiles", "floating-dock", "sidebar-chips",
 ]);
 const VALID_APP_BAR_STYLES = new Set<AppBarStyle>([
   "standard", "compact", "tall-editorial", "borderless", "accent-tinted", "floating",
@@ -1648,6 +2027,9 @@ const VALID_CARD_ACCENT_STYLES = new Set<CardAccentStyle>([
 const VALID_ICON_BADGE_STYLES = new Set<IconBadgeStyle>([
   "outline", "filled", "soft-circle", "soft-square", "accent-solid", "minimal",
 ]);
+const VALID_HEADING_TRANSFORMS = new Set<HeadingTransform>(["none", "uppercase", "capitalize"]);
+const VALID_NUMERIC_STYLES = new Set<NumericStyle>(["default", "tabular-mono"]);
+const VALID_HAPTIC_STRENGTHS = new Set<HapticStrength>(["off", "light", "medium", "strong"]);
 
 const CUSTOM_COLOR_KEYS: (keyof CustomColorsConfig)[] = [
   "primaryAccent",
@@ -1824,6 +2206,15 @@ export function parseThemeConfigJson(raw: string): ThemeConfig | null {
   }
   if (typeof obj.iconBadgeStyle === "string" && VALID_ICON_BADGE_STYLES.has(obj.iconBadgeStyle as IconBadgeStyle)) {
     merged.iconBadgeStyle = obj.iconBadgeStyle as IconBadgeStyle;
+  }
+  if (typeof obj.headingTransform === "string" && VALID_HEADING_TRANSFORMS.has(obj.headingTransform as HeadingTransform)) {
+    merged.headingTransform = obj.headingTransform as HeadingTransform;
+  }
+  if (typeof obj.numericStyle === "string" && VALID_NUMERIC_STYLES.has(obj.numericStyle as NumericStyle)) {
+    merged.numericStyle = obj.numericStyle as NumericStyle;
+  }
+  if (typeof obj.hapticStrength === "string" && VALID_HAPTIC_STRENGTHS.has(obj.hapticStrength as HapticStrength)) {
+    merged.hapticStrength = obj.hapticStrength as HapticStrength;
   }
   return merged;
 }

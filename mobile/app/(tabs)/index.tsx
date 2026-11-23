@@ -76,7 +76,7 @@ const ALL_MATATU_ROUTES = Object.entries(matatuData.routes || {}).flatMap(
 
 export default function HomeScreen() {
   const router = useRouter();
-  const { theme, isDark, themeConfig, themeMetrics, resolvedFonts } = useTheme();
+  const { theme, isDark, themeConfig, themeMetrics, resolvedFonts, themeKey } = useTheme();
   const styles = useMemo(
     () => createHomeStyles(themeMetrics, resolvedFonts),
     [themeMetrics, resolvedFonts]
@@ -516,7 +516,7 @@ export default function HomeScreen() {
 
   return (
     <SafeAreaView
-      key={isDark ? "dark" : "light"}
+      key={themeKey}
       style={[styles.screen, { backgroundColor: theme.bgPrimary }]}
       edges={["top", "left", "right"]}
     >

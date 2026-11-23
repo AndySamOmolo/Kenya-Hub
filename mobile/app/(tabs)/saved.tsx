@@ -213,7 +213,7 @@ function SavedToolCard({
   styles: ReturnType<typeof createSavedStyles>;
 }) {
   const router = useRouter();
-  const { theme } = useTheme();
+  const { theme, themeKey } = useTheme();
   const categoryColor = categoryColorMap[tool.category] || theme.gold;
 
   return (
@@ -291,7 +291,7 @@ function SavedToolCard({
 
 export default function SavedScreen() {
   const router = useRouter();
-  const { theme, isDark, themeConfig, themeMetrics, resolvedFonts } = useTheme();
+  const { theme, isDark, themeConfig, themeMetrics, resolvedFonts, themeKey } = useTheme();
   const styles = useMemo(
     () => createSavedStyles(themeMetrics, resolvedFonts),
     [themeMetrics, resolvedFonts]
@@ -395,7 +395,7 @@ export default function SavedScreen() {
 
   return (
     <SafeAreaView
-      key={isDark ? "dark" : "light"}
+      key={themeKey}
       style={[styles.screen, { backgroundColor: theme.bgPrimary }]}
       edges={["top", "left", "right"]}
     >

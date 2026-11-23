@@ -156,7 +156,7 @@ const ToolItem = React.memo(function ToolItem({
 
 export default function ToolsScreen() {
   const router = useRouter();
-  const { theme, isDark, themeConfig, themeMetrics, resolvedFonts } = useTheme();
+  const { theme, isDark, themeConfig, themeMetrics, resolvedFonts, themeKey } = useTheme();
   const styles = useMemo(
     () => createToolsStyles(themeMetrics, resolvedFonts),
     [themeMetrics, resolvedFonts]
@@ -310,7 +310,7 @@ export default function ToolsScreen() {
 
   return (
     <SafeAreaView
-      key={isDark ? "dark" : "light"}
+      key={themeKey}
       style={[styles.screen, { backgroundColor: theme.bgPrimary }]}
       edges={["top", "left", "right"]}
     >

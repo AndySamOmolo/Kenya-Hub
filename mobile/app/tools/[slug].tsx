@@ -245,7 +245,7 @@ export default function ToolDetailScreen() {
     tab?: string;
   }>();
   const router = useRouter();
-  const { theme, isDark } = useTheme();
+  const { theme, isDark, themeKey } = useTheme();
   const insets = useSafeAreaInsets();
   const safeTop = Math.max(insets.top, Platform.OS === "android" ? StatusBar.currentHeight ?? 24 : 0);
   const effectiveSlug = slug === "cbc-grade-age" ? "cbc-curriculum" : slug;
@@ -401,7 +401,7 @@ export default function ToolDetailScreen() {
   if (!tool) {
     return (
       <SafeAreaView
-      key={isDark ? "dark" : "light"}
+      key={themeKey}
         style={[styles.screen, { backgroundColor: theme.bgPrimary }]}
         edges={["top", "left", "right", "bottom"]}
       >
