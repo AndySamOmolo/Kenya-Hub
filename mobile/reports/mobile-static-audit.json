@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-23T09:12:32.276Z",
-  "mobileTsxFilesScanned": 46,
+  "generatedAt": "2026-11-23T10:17:30.637Z",
+  "mobileTsxFilesScanned": 48,
   "toolsWired": "33/33",
   "languagesWired": 23,
   "statutoryJsonParity": "57/57",
@@ -365,9 +365,9 @@
     },
     {
       "domain": "hooks",
-      "name": "Zero Rules of Hooks violations across all 46 mobile .tsx files",
+      "name": "Zero Rules of Hooks violations across all 48 mobile .tsx files",
       "status": "pass",
-      "detail": "Scanned 46 .tsx files; found 0 violations"
+      "detail": "Scanned 48 .tsx files; found 0 violations"
     },
     {
       "domain": "theme",
@@ -377,9 +377,9 @@
     },
     {
       "domain": "theme",
-      "name": "AndroidTopAppBar exposes testID='theme-toggle'",
+      "name": "AndroidTopAppBar exposes testID='settings-button' & Settings exposes testID='theme-toggle'",
       "status": "pass",
-      "detail": "Verified testID='theme-toggle' in mobile/src/theme.tsx"
+      "detail": "Verified testID='settings-button' in mobile/src/theme.tsx and testID='theme-toggle' in ThemeSettingsView.tsx"
     },
     {
       "domain": "theme",
@@ -445,7 +445,7 @@
       "domain": "ergonomics",
       "name": "No overlong static TextInput placeholders (>48ch) across mobile screens",
       "status": "pass",
-      "detail": "Scanned 46 .tsx files; 0 placeholders exceed 48 chars"
+      "detail": "Scanned 48 .tsx files; 0 placeholders exceed 48 chars"
     },
     {
       "domain": "mobile-ux",

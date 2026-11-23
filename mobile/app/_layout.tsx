@@ -31,7 +31,7 @@ import { VerifiedAudioPlayer } from "../src/components/VerifiedAudioPlayer";
 import { initializeMobileAdsWithConsent } from "../src/lib/mobile-ads";
 
 function LayoutContent({ fontsLoaded }: { fontsLoaded: boolean }) {
-  const { theme, isDark, themeReady } = useTheme();
+  const { theme, isDark, themeReady, themeConfig } = useTheme();
 
   if (!fontsLoaded || !themeReady) {
     return (
@@ -44,7 +44,7 @@ function LayoutContent({ fontsLoaded }: { fontsLoaded: boolean }) {
   return (
     <>
       <StatusBar
-        style={isDark ? "light" : "dark"}
+        style={themeConfig.statusBarMode === "light" ? "light" : themeConfig.statusBarMode === "dark" ? "dark" : isDark ? "light" : "dark"}
         translucent
         backgroundColor="transparent"
       />
@@ -53,8 +53,12 @@ function LayoutContent({ fontsLoaded }: { fontsLoaded: boolean }) {
         screenOptions={{
           headerShown: false,
           contentStyle: { backgroundColor: theme.bgPrimary },
-          animation: "slide_from_right",
-          animationDuration: 160,
+          animation:
+            themeConfig.pageTransition === "fade" ? "fade" :
+            themeConfig.pageTransition === "bottom-sheet" ? "slide_from_bottom" :
+            themeConfig.pageTransition === "none" ? "none" :
+            themeConfig.pageTransition === "default" ? "default" : "slide_from_right",
+          animationDuration: themeConfig.pageTransition === "fast" ? 80 : 160,
           freezeOnBlur: true,
           gestureEnabled: true,
           fullScreenGestureEnabled: true,

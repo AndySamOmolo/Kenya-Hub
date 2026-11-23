@@ -136,11 +136,12 @@ check(
   themeSrc.includes("Appearance.setColorScheme"),
   "Verified Appearance.setColorScheme sync in mobile/src/theme.tsx"
 );
+const settingsViewSrc = fs.readFileSync(path.join(mobileRoot, "src/components/ThemeSettingsView.tsx"), "utf8");
 check(
   "theme",
-  "AndroidTopAppBar exposes testID='theme-toggle'",
-  themeSrc.includes('testID="theme-toggle"'),
-  "Verified testID='theme-toggle' in mobile/src/theme.tsx"
+  "AndroidTopAppBar exposes testID='settings-button' & Settings exposes testID='theme-toggle'",
+  themeSrc.includes('testID="settings-button"') && settingsViewSrc.includes('testID="theme-toggle"'),
+  "Verified testID='settings-button' in mobile/src/theme.tsx and testID='theme-toggle' in ThemeSettingsView.tsx"
 );
 check(
   "theme",

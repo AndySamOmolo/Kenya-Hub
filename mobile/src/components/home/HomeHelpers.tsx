@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect, useCallback, useMemo } from "react";
 import {
   AccessibilityInfo,
   LayoutAnimation,
@@ -26,7 +26,7 @@ import {
   ALL_DICT_METAS,
 } from "../../shared/data/language-sources";
 import { DynamicIcon } from "../DynamicIcon";
-import { styles } from "./styles";
+import { styles as defaultHomeStyles, createHomeStyles } from "./styles";
 
 if (
   Platform.OS === "android" &&
@@ -505,7 +505,8 @@ export function FeaturedLanguageWidget({
   paused?: boolean;
 }) {
   const router = useRouter();
-  const { theme } = useTheme();
+  const { theme, themeMetrics, resolvedFonts } = useTheme();
+  const styles = useMemo(() => createHomeStyles(themeMetrics, resolvedFonts), [themeMetrics, resolvedFonts]);
   const isFocused = useIsFocused();
   const reduceMotion = useReduceMotionEnabled();
   const [featuredLangIdx, setFeaturedLangIdx] = useState<number>(
@@ -641,7 +642,8 @@ export function FeaturedLanguageWidget({
  */
 export function WordOfTheMomentWidget({ paused = false }: { paused?: boolean }) {
   const router = useRouter();
-  const { theme } = useTheme();
+  const { theme, themeMetrics, resolvedFonts } = useTheme();
+  const styles = useMemo(() => createHomeStyles(themeMetrics, resolvedFonts), [themeMetrics, resolvedFonts]);
   const isFocused = useIsFocused();
   const reduceMotion = useReduceMotionEnabled();
   const [wordIdx, setWordIdx] = useState<number>(() =>
@@ -769,7 +771,8 @@ export function PopularToolRow({
   onTogglePin: (slug: string) => void;
 }) {
   const router = useRouter();
-  const { theme } = useTheme();
+  const { theme, themeMetrics, resolvedFonts } = useTheme();
+  const styles = useMemo(() => createHomeStyles(themeMetrics, resolvedFonts), [themeMetrics, resolvedFonts]);
   const categoryColor = categoryColorMap[tool.category] || theme.gold;
   const catInfo = getCategoryInfo(tool.category);
 
@@ -965,8 +968,10 @@ export function SUPER_APP_APP_TILES(
     params?: any;
   }>,
   router: ReturnType<typeof useRouter>,
-  theme: any
+  theme: any,
+  customStyles?: ReturnType<typeof createHomeStyles>
 ) {
+  const styles = customStyles ?? defaultHomeStyles;
   return items.map((item) => (
     <Pressable
       key={item.id}

@@ -23,6 +23,7 @@ import {
   pressableStyle,
   triggerHaptic,
 } from "../../src/theme";
+import type { ThemeMetrics } from "../../src/lib/theme-engine";
 import countiesData from "../../src/shared/data/counties.json";
 import budgetsData from "../../src/shared/data/county-budgets.json";
 import rainfallData from "../../src/shared/data/rainfall-patterns.json";
@@ -236,10 +237,12 @@ const DirectoryCardItem = React.memo(function DirectoryCardItem({
   item,
   router,
   theme,
+  styles,
 }: {
   item: any;
   router: any;
   theme: any;
+  styles: ReturnType<typeof createCountyStyles>;
 }) {
   const codeFormatted = String(item.code).padStart(3, "0");
   const popFormatted =
@@ -404,7 +407,7 @@ const DirectoryCardItem = React.memo(function DirectoryCardItem({
   );
 });
 
-function renderBudgetCard(item: any, router: any, theme: any) {
+function renderBudgetCard(item: any, router: any, theme: any, styles: ReturnType<typeof createCountyStyles>) {
   const b = item.budget;
   if (!b) return null;
   return (
@@ -487,7 +490,7 @@ function renderBudgetCard(item: any, router: any, theme: any) {
   );
 }
 
-function renderConstituencyCard(item: any, router: any, theme: any) {
+function renderConstituencyCard(item: any, router: any, theme: any, styles: ReturnType<typeof createCountyStyles>) {
   return (
     <Pressable
       key={item.code}
@@ -604,7 +607,7 @@ function renderConstituencyCard(item: any, router: any, theme: any) {
   );
 }
 
-function renderClimateCard(item: any, router: any, theme: any) {
+function renderClimateCard(item: any, router: any, theme: any, styles: ReturnType<typeof createCountyStyles>) {
   const r = item.rain;
   if (!r) return null;
   return (
@@ -699,7 +702,11 @@ function renderClimateCard(item: any, router: any, theme: any) {
 
 export default function CountyScreen() {
   const router = useRouter();
-  const { theme, isDark } = useTheme();
+  const { theme, isDark, themeConfig, themeMetrics, resolvedFonts } = useTheme();
+  const styles = useMemo(
+    () => createCountyStyles(themeMetrics, resolvedFonts),
+    [themeMetrics, resolvedFonts]
+  );
   const { height: windowHeight } = useWindowDimensions();
   const [activeTab, setActiveTab] = useState<CountyHubTab>("directory");
   const scrollRef = useRef<ScrollView>(null);
@@ -744,8 +751,8 @@ export default function CountyScreen() {
   }, [deferredQuery, enrichedCounties, sortBy]);
 
   const listExtraData = useMemo(
-    () => `${activeTab}-${isDark ? "d" : "l"}`,
-    [activeTab, isDark]
+    () => ({ activeTab, isDark, themeMetrics, resolvedFonts }),
+    [activeTab, isDark, themeMetrics, resolvedFonts]
   );
 
   const keyExtractor = useCallback(
@@ -756,14 +763,14 @@ export default function CountyScreen() {
   const renderCountyItem = useCallback(
     ({ item }: { item: any }) => {
       if (activeTab === "budgets")
-        return renderBudgetCard(item, router, theme);
+        return renderBudgetCard(item, router, theme, styles);
       if (activeTab === "constituencies")
-        return renderConstituencyCard(item, router, theme);
+        return renderConstituencyCard(item, router, theme, styles);
       if (activeTab === "climate")
-        return renderClimateCard(item, router, theme);
-      return <DirectoryCardItem item={item} router={router} theme={theme} />;
+        return renderClimateCard(item, router, theme, styles);
+      return <DirectoryCardItem item={item} router={router} theme={theme} styles={styles} />;
     },
-    [activeTab, router, theme]
+    [activeTab, router, theme, styles]
   );
 
   const pickerFiltered = useMemo(() => {
@@ -1008,7 +1015,8 @@ export default function CountyScreen() {
         <ScrollView
           ref={scrollRef}
           contentContainerStyle={styles.listContent}
-          showsVerticalScrollIndicator={false}
+          showsVerticalScrollIndicator={themeConfig?.verticalScrollbarStyle !== "hidden"}
+          persistentScrollbar={themeConfig?.verticalScrollbarStyle === "always-visible"}
           keyboardShouldPersistTaps="handled"
           overScrollMode="always"
         >
@@ -1832,7 +1840,8 @@ export default function CountyScreen() {
           extraData={listExtraData}
           keyExtractor={keyExtractor}
           contentContainerStyle={styles.listContent}
-          showsVerticalScrollIndicator={false}
+          showsVerticalScrollIndicator={themeConfig?.verticalScrollbarStyle !== "hidden"}
+          persistentScrollbar={themeConfig?.verticalScrollbarStyle === "always-visible"}
           keyboardShouldPersistTaps="handled"
           overScrollMode="always"
           initialNumToRender={8}
@@ -2044,7 +2053,8 @@ export default function CountyScreen() {
               data={pickerFiltered}
               keyExtractor={(item) => `pick-${item.slug}`}
               keyboardShouldPersistTaps="handled"
-              showsVerticalScrollIndicator={false}
+              showsVerticalScrollIndicator={themeConfig?.verticalScrollbarStyle !== "hidden"}
+          persistentScrollbar={themeConfig?.verticalScrollbarStyle === "always-visible"}
               renderItem={({ item }) => {
                 const isSelected =
                   (pickerTarget === "A" && compareSlugA === item.slug) ||
@@ -2122,321 +2132,347 @@ export default function CountyScreen() {
   );
 }
 
-const styles = StyleSheet.create({
-  container: { flex: 1 },
-  header: {
-    paddingHorizontal: 14,
-    paddingTop: 4,
-    paddingBottom: 6,
-    borderBottomWidth: StyleSheet.hairlineWidth,
-  },
-  modeChip: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 5,
-    paddingHorizontal: 10,
-    paddingVertical: 5,
-    minHeight: 28,
-    borderRadius: 999,
-    borderWidth: 1,
-  },
-  searchBar: {
-    flexDirection: "row",
-    alignItems: "center",
-    borderRadius: 17,
-    borderWidth: 1,
-    paddingHorizontal: 11,
-    height: 34,
-    marginBottom: 4,
-  },
-  searchInput: {
-    flex: 1,
-    minWidth: 0,
-    height: "100%",
-    marginLeft: 8,
-    marginRight: 6,
-    fontFamily: "Inter_500Medium",
-    fontSize: 12.5,
-    paddingVertical: 0,
-    paddingHorizontal: 0,
-    textAlignVertical: "center",
-    includeFontPadding: false,
-  },
-  sortRow: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 6,
-  },
-  sortLabel: {
-    fontFamily: "Outfit_700Bold",
-    fontSize: 10,
-    letterSpacing: 0.7,
-  },
-  segmentBtn: {
-    paddingHorizontal: 9,
-    paddingVertical: 4,
-    minHeight: 26,
-    borderRadius: 999,
-    borderWidth: 1,
-  },
-  segmentText: {
-    fontFamily: "Outfit_700Bold",
-    fontSize: 11,
-    lineHeight: 15,
-  },
-  listContent: {
-    paddingHorizontal: 14,
-    paddingTop: 10,
-    paddingBottom: 32,
-    gap: 8,
-  },
-  miniStat: {
-    flex: 1,
-    borderRadius: 10,
-    borderWidth: 1,
-    paddingVertical: 8,
-    paddingHorizontal: 6,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  countText: {
-    fontFamily: "Inter_500Medium",
-    fontSize: 12,
-    marginBottom: 2,
-  },
-  countyCardWrap: {
-    borderRadius: 16,
-    borderWidth: 1,
-    overflow: "hidden",
-    elevation: Platform.OS === "android" ? 2 : 0,
-  },
-  countyCard: {
-    padding: 13,
-    gap: 9,
-  },
-  cardHeaderRow: {
-    flexDirection: "row",
-    alignItems: "center",
-  },
-  codeBadge: {
-    width: 40,
-    height: 40,
-    borderRadius: 11,
-    borderWidth: 1,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  codeText: {
-    fontFamily: "Outfit_800ExtraBold",
-    fontSize: 13.5,
-    letterSpacing: 0.3,
-  },
-  countyName: {
-    fontFamily: "Outfit_700Bold",
-    fontSize: 15.5,
-    lineHeight: 20,
-  },
-  countyCapital: {
-    fontFamily: "Inter_400Regular",
-    fontSize: 11.5,
-    marginTop: 2,
-  },
-  trailingCircle: {
-    width: 28,
-    height: 28,
-    borderRadius: 14,
-    borderWidth: StyleSheet.hairlineWidth,
-    alignItems: "center",
-    justifyContent: "center",
-    marginLeft: 6,
-  },
-  governorRow: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 6,
-    paddingHorizontal: 2,
-  },
-  governorText: {
-    flex: 1,
-    fontFamily: "Inter_400Regular",
-    fontSize: 11.5,
-  },
-  countyMetricsStrip: {
-    flexDirection: "row",
-    alignItems: "center",
-    borderRadius: 11,
-    borderWidth: StyleSheet.hairlineWidth,
-    paddingVertical: 7.5,
-    paddingHorizontal: 8,
-  },
-  countyMetricCell: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-    paddingHorizontal: 4,
-  },
-  countyMetricDivider: {
-    width: StyleSheet.hairlineWidth,
-    height: 22,
-    opacity: 0.6,
-  },
-  countyMetricLabel: {
-    fontFamily: "Outfit_700Bold",
-    fontSize: 8.5,
-    letterSpacing: 0.5,
-  },
-  countyMetricValue: {
-    fontFamily: "Outfit_800ExtraBold",
-    fontSize: 12,
-    marginTop: 1.5,
-  },
-  cardInfoRow: {
-    flexDirection: "row",
-    flexWrap: "wrap",
-    gap: 6,
-    marginTop: 10,
-    paddingTop: 10,
-    borderTopWidth: StyleSheet.hairlineWidth,
-  },
-  infoPill: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 5,
-    paddingHorizontal: 8,
-    paddingVertical: 4,
-    borderRadius: 8,
-    borderWidth: 1,
-  },
-  infoPillText: {
-    fontFamily: "Inter_500Medium",
-    fontSize: 11,
-  },
-  notesCard: {
-    borderRadius: 16,
-    borderWidth: 1,
-    padding: 16,
-    gap: 10,
-  },
-  notesHeading: {
-    fontFamily: "Outfit_700Bold",
-    fontSize: 15,
-  },
-  noteRow: {
-    flexDirection: "row",
-    alignItems: "flex-start",
-    gap: 8,
-  },
-  noteText: {
-    flex: 1,
-    fontFamily: "Inter_400Regular",
-    fontSize: 12,
-    lineHeight: 18,
-  },
-  emptyWrap: {
-    alignItems: "center",
-    paddingVertical: 48,
-    gap: 8,
-  },
-  emptyTitle: {
-    fontFamily: "Outfit_700Bold",
-    fontSize: 16,
-  },
-  compareSelectorRow: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 8,
-    marginTop: 4,
-  },
-  compareSelectorCard: {
-    flex: 1,
-    borderRadius: 14,
-    borderWidth: 1.5,
-    padding: 11,
-  },
-  swapCountiesBtn: {
-    width: 38,
-    height: 38,
-    borderRadius: 19,
-    borderWidth: 1,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  h2hStrip: {
-    flexDirection: "row",
-    flexWrap: "wrap",
-    gap: 6,
-    marginTop: 4,
-  },
-  h2hBadge: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 5,
-    paddingHorizontal: 8,
-    paddingVertical: 4,
-    borderRadius: 999,
-    borderWidth: 1,
-  },
-  compareSectionHeader: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 6,
-    paddingHorizontal: 9,
-    paddingVertical: 5,
-    borderRadius: 8,
-    borderWidth: StyleSheet.hairlineWidth,
-    marginBottom: 4,
-  },
-  compareSectionTitle: {
-    fontFamily: "Outfit_700Bold",
-    fontSize: 11.5,
-    letterSpacing: 0.2,
-  },
-  compareProfileRow: {
-    flexDirection: "row",
-    gap: 8,
-    marginTop: 12,
-  },
-  compareProfileBtn: {
-    flex: 1,
-    borderRadius: 12,
-    borderWidth: 1,
-    paddingVertical: 10,
-    paddingHorizontal: 10,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  compareProfileBtnText: {
-    fontFamily: "Outfit_700Bold",
-    fontSize: 12,
-  },
-  modalBackdrop: {
-    flex: 1,
-    backgroundColor: "rgba(0,0,0,0.65)",
-    justifyContent: "flex-end",
-  },
-  pickerSheet: {
-    height: "78%",
-    borderTopLeftRadius: 24,
-    borderTopRightRadius: 24,
-    borderTopWidth: 1,
-    padding: 16,
-  },
-  pickerHeaderRow: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
-    marginBottom: 12,
-  },
-  pickerTitle: {
-    fontFamily: "Outfit_800ExtraBold",
-    fontSize: 18,
-  },
-  pickerRow: {
-    flexDirection: "row",
-    alignItems: "center",
-    paddingVertical: 10,
-    paddingHorizontal: 8,
-    borderBottomWidth: StyleSheet.hairlineWidth,
-    borderRadius: 10,
-  },
-});
+function createCountyStyles(
+  metrics?: ThemeMetrics,
+  fonts?: { heading: string; body: string; bold: string }
+) {
+  const cardRadiusPx = metrics?.cardRadiusPx ?? 14;
+  const radiusRatio = cardRadiusPx / 14;
+  const r = (base: number) => Math.round(base * radiusRatio);
+  const bw = metrics?.borderWidthPx ?? 1;
+  const bwThick = bw === 0 ? 0 : Number((bw * 1.5).toFixed(2));
+  const spacingScale = metrics?.spacingScale ?? 1;
+  const sp = (v: number) => Number((v * spacingScale).toFixed(1));
+  const fontScale = metrics?.fontScale ?? 1;
+  const lineHeightScale = metrics?.lineHeightScale ?? 1;
+  const fs = (v: number) => Number((v * fontScale).toFixed(1));
+  const lh = (v: number) => Math.round(v * fontScale * lineHeightScale);
+  const isDefaultFonts =
+    !fonts ||
+    (fonts.heading === "Outfit_700Bold" &&
+      fonts.body === "Inter_400Regular" &&
+      fonts.bold === "Inter_700Bold");
+  const hf = (fallback = "Outfit_700Bold") =>
+    isDefaultFonts ? fallback : fonts.heading;
+  const bf = (fallback = "Inter_400Regular") =>
+    isDefaultFonts ? fallback : fonts.body;
+
+  return StyleSheet.create({
+    container: { flex: 1 },
+    header: {
+      paddingHorizontal: sp(14),
+      paddingTop: sp(4),
+      paddingBottom: sp(6),
+      borderBottomWidth: StyleSheet.hairlineWidth,
+    },
+    modeChip: {
+      flexDirection: "row",
+      alignItems: "center",
+      gap: sp(5),
+      paddingHorizontal: sp(10),
+      paddingVertical: sp(5),
+      minHeight: 28,
+      borderRadius: 999,
+      borderWidth: bw,
+    },
+    searchBar: {
+      flexDirection: "row",
+      alignItems: "center",
+      borderRadius: r(17),
+      borderWidth: bw,
+      paddingHorizontal: sp(11),
+      height: Math.round(34 * spacingScale),
+      marginBottom: sp(4),
+    },
+    searchInput: {
+      flex: 1,
+      minWidth: 0,
+      height: "100%",
+      marginLeft: sp(8),
+      marginRight: sp(6),
+      fontFamily: bf("Inter_500Medium"),
+      fontSize: fs(12.5),
+      paddingVertical: 0,
+      paddingHorizontal: 0,
+      textAlignVertical: "center",
+      includeFontPadding: false,
+    },
+    sortRow: {
+      flexDirection: "row",
+      alignItems: "center",
+      gap: sp(6),
+    },
+    sortLabel: {
+      fontFamily: hf("Outfit_700Bold"),
+      fontSize: fs(10),
+      letterSpacing: 0.7,
+    },
+    segmentBtn: {
+      paddingHorizontal: sp(9),
+      paddingVertical: sp(4),
+      minHeight: 26,
+      borderRadius: 999,
+      borderWidth: bw,
+    },
+    segmentText: {
+      fontFamily: hf("Outfit_700Bold"),
+      fontSize: fs(11),
+      lineHeight: lh(15),
+    },
+    listContent: {
+      paddingHorizontal: sp(14),
+      paddingTop: sp(10),
+      paddingBottom: sp(32),
+      gap: sp(8),
+    },
+    miniStat: {
+      flex: 1,
+      borderRadius: r(10),
+      borderWidth: bw,
+      paddingVertical: sp(8),
+      paddingHorizontal: sp(6),
+      alignItems: "center",
+      justifyContent: "center",
+    },
+    countText: {
+      fontFamily: bf("Inter_500Medium"),
+      fontSize: fs(12),
+      marginBottom: 2,
+    },
+    countyCardWrap: {
+      borderRadius: r(16),
+      borderWidth: bw,
+      overflow: "hidden",
+      elevation: Platform.OS === "android" ? 2 : 0,
+    },
+    countyCard: {
+      padding: sp(13),
+      gap: sp(9),
+    },
+    cardHeaderRow: {
+      flexDirection: "row",
+      alignItems: "center",
+    },
+    codeBadge: {
+      width: 40,
+      height: 40,
+      borderRadius: r(11),
+      borderWidth: bw,
+      alignItems: "center",
+      justifyContent: "center",
+    },
+    codeText: {
+      fontFamily: hf("Outfit_800ExtraBold"),
+      fontSize: fs(13.5),
+      letterSpacing: 0.3,
+    },
+    countyName: {
+      fontFamily: hf("Outfit_700Bold"),
+      fontSize: fs(15.5),
+      lineHeight: lh(20),
+    },
+    countyCapital: {
+      fontFamily: bf("Inter_400Regular"),
+      fontSize: fs(11.5),
+      marginTop: 2,
+    },
+    trailingCircle: {
+      width: 28,
+      height: 28,
+      borderRadius: 14,
+      borderWidth: StyleSheet.hairlineWidth,
+      alignItems: "center",
+      justifyContent: "center",
+      marginLeft: sp(6),
+    },
+    governorRow: {
+      flexDirection: "row",
+      alignItems: "center",
+      gap: sp(6),
+      paddingHorizontal: 2,
+    },
+    governorText: {
+      flex: 1,
+      fontFamily: bf("Inter_400Regular"),
+      fontSize: fs(11.5),
+    },
+    countyMetricsStrip: {
+      flexDirection: "row",
+      alignItems: "center",
+      borderRadius: r(11),
+      borderWidth: StyleSheet.hairlineWidth,
+      paddingVertical: sp(7.5),
+      paddingHorizontal: sp(8),
+    },
+    countyMetricCell: {
+      flex: 1,
+      alignItems: "center",
+      justifyContent: "center",
+      paddingHorizontal: sp(4),
+    },
+    countyMetricDivider: {
+      width: StyleSheet.hairlineWidth,
+      height: 22,
+      opacity: 0.6,
+    },
+    countyMetricLabel: {
+      fontFamily: hf("Outfit_700Bold"),
+      fontSize: fs(8.5),
+      letterSpacing: 0.5,
+    },
+    countyMetricValue: {
+      fontFamily: hf("Outfit_800ExtraBold"),
+      fontSize: fs(12),
+      marginTop: 1.5,
+    },
+    cardInfoRow: {
+      flexDirection: "row",
+      flexWrap: "wrap",
+      gap: sp(6),
+      marginTop: sp(10),
+      paddingTop: sp(10),
+      borderTopWidth: StyleSheet.hairlineWidth,
+    },
+    infoPill: {
+      flexDirection: "row",
+      alignItems: "center",
+      gap: sp(5),
+      paddingHorizontal: sp(8),
+      paddingVertical: sp(4),
+      borderRadius: r(8),
+      borderWidth: bw,
+    },
+    infoPillText: {
+      fontFamily: bf("Inter_500Medium"),
+      fontSize: fs(11),
+    },
+    notesCard: {
+      borderRadius: r(16),
+      borderWidth: bw,
+      padding: sp(16),
+      gap: sp(10),
+    },
+    notesHeading: {
+      fontFamily: hf("Outfit_700Bold"),
+      fontSize: fs(15),
+    },
+    noteRow: {
+      flexDirection: "row",
+      alignItems: "flex-start",
+      gap: sp(8),
+    },
+    noteText: {
+      flex: 1,
+      fontFamily: bf("Inter_400Regular"),
+      fontSize: fs(12),
+      lineHeight: lh(18),
+    },
+    emptyWrap: {
+      alignItems: "center",
+      paddingVertical: sp(48),
+      gap: sp(8),
+    },
+    emptyTitle: {
+      fontFamily: hf("Outfit_700Bold"),
+      fontSize: fs(16),
+    },
+    compareSelectorRow: {
+      flexDirection: "row",
+      alignItems: "center",
+      gap: sp(8),
+      marginTop: sp(4),
+    },
+    compareSelectorCard: {
+      flex: 1,
+      borderRadius: r(14),
+      borderWidth: bwThick,
+      padding: sp(11),
+    },
+    swapCountiesBtn: {
+      width: 38,
+      height: 38,
+      borderRadius: 19,
+      borderWidth: bw,
+      alignItems: "center",
+      justifyContent: "center",
+    },
+    h2hStrip: {
+      flexDirection: "row",
+      flexWrap: "wrap",
+      gap: sp(6),
+      marginTop: sp(4),
+    },
+    h2hBadge: {
+      flexDirection: "row",
+      alignItems: "center",
+      gap: sp(5),
+      paddingHorizontal: sp(8),
+      paddingVertical: sp(4),
+      borderRadius: 999,
+      borderWidth: bw,
+    },
+    compareSectionHeader: {
+      flexDirection: "row",
+      alignItems: "center",
+      gap: sp(6),
+      paddingHorizontal: sp(9),
+      paddingVertical: sp(5),
+      borderRadius: r(8),
+      borderWidth: StyleSheet.hairlineWidth,
+      marginBottom: sp(4),
+    },
+    compareSectionTitle: {
+      fontFamily: hf("Outfit_700Bold"),
+      fontSize: fs(11.5),
+      letterSpacing: 0.2,
+    },
+    compareProfileRow: {
+      flexDirection: "row",
+      gap: sp(8),
+      marginTop: sp(12),
+    },
+    compareProfileBtn: {
+      flex: 1,
+      borderRadius: r(12),
+      borderWidth: bw,
+      paddingVertical: sp(10),
+      paddingHorizontal: sp(10),
+      alignItems: "center",
+      justifyContent: "center",
+    },
+    compareProfileBtnText: {
+      fontFamily: hf("Outfit_700Bold"),
+      fontSize: fs(12),
+    },
+    modalBackdrop: {
+      flex: 1,
+      backgroundColor: "rgba(0,0,0,0.65)",
+      justifyContent: "flex-end",
+    },
+    pickerSheet: {
+      height: "78%",
+      borderTopLeftRadius: r(24),
+      borderTopRightRadius: r(24),
+      borderTopWidth: bw,
+      padding: sp(16),
+    },
+    pickerHeaderRow: {
+      flexDirection: "row",
+      alignItems: "center",
+      justifyContent: "space-between",
+      marginBottom: sp(12),
+    },
+    pickerTitle: {
+      fontFamily: hf("Outfit_800ExtraBold"),
+      fontSize: fs(18),
+    },
+    pickerRow: {
+      flexDirection: "row",
+      alignItems: "center",
+      paddingVertical: sp(10),
+      paddingHorizontal: sp(8),
+      borderBottomWidth: StyleSheet.hairlineWidth,
+      borderRadius: r(10),
+    },
+  });
+}

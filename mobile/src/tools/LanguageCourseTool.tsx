@@ -86,7 +86,7 @@ import {
   isValidQuizPair,
   pickBalancedDistractors,
 } from "./language-course/types";
-import { styles } from "./language-course/styles";
+import { createStyles } from "./language-course/styles";
 import ExtraMiniGames from "./language-course/ExtraMiniGames";
 
 export interface CourseNavigationState {
@@ -127,7 +127,8 @@ export default function LanguageCourseTool({
   initialTab?: MainTab;
   onNavigationStateChange?: (state: CourseNavigationState) => void;
 } = {}) {
-  const { colors, isDark } = useTheme();
+  const { colors, isDark, themeConfig, themeMetrics } = useTheme();
+  const styles = useMemo(() => createStyles(colors, themeMetrics), [colors, themeMetrics]);
   const ripple = useMemo(() => androidRipple(colors.rippleColor), [colors.rippleColor]);
 
   // ── Language Selection Menu & Active Course State ──
@@ -2875,7 +2876,7 @@ export default function LanguageCourseTool({
 
               {/* Horizontal A-Z Quick-Jump Bar */}
               {kslAvailableLetters.length > 1 && (
-                <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 5, paddingVertical: 2 }}>
+                <ScrollView horizontal showsHorizontalScrollIndicator={themeConfig?.horizontalScrollbarStyle === "native-indicator"} contentContainerStyle={{ gap: 5, paddingVertical: 2 }}>
                   {['ALL', ...kslAvailableLetters].map((ltr) => {
                     const isAct = kslLetter === ltr;
                     return (
@@ -5150,7 +5151,7 @@ export default function LanguageCourseTool({
                     </View>
 
                     {/* Compact Horizontal Chapter Selector */}
-                    <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 7, paddingVertical: 2 }}>
+                    <ScrollView horizontal showsHorizontalScrollIndicator={themeConfig?.horizontalScrollbarStyle === "native-indicator"} contentContainerStyle={{ gap: 7, paddingVertical: 2 }}>
                       {chapters.map((ch: any) => {
                         const cleanT = String(ch.title || '').replace(/^\d+\s*[—–-]\s*/, '');
                         const isAct = ch.id === activeChMeta.id;

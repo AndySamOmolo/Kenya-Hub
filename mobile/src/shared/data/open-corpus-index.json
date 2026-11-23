@@ -2,7 +2,7 @@
   "generatedAt": "2026-11-23T08:17:52.196587+00:00",
   "cldrVersion": "49.0.0",
   "stats": {
-    "totalR2AudioClips": 20266,
+    "totalR2AudioClips": 20263,
     "totalAudioChapters": 5,
     "totalKslVideos": 2343,
     "totalStagedVarieties": 4,
@@ -12,7 +12,7 @@
     "totalQuizQuestions": 520,
     "totalCivicDatasets": 10,
     "totalWikimediaDatasets": 6,
-    "pendingGatedCount": 9
+    "pendingGatedCount": 12
   },
   "languages": {
     "swahili": {
@@ -2660,7 +2660,7 @@
       "audioChapters": [],
       "shards": {
         "audioCount": 323,
-        "storiesCount": 56,
+        "storiesCount": 55,
         "sentencesCount": 0,
         "articlesCount": 0,
         "quizCount": 0,
@@ -3253,7 +3253,7 @@
       "audioChapters": [],
       "shards": {
         "audioCount": 449,
-        "storiesCount": 30,
+        "storiesCount": 29,
         "sentencesCount": 0,
         "articlesCount": 0,
         "quizCount": 0,
@@ -3263,7 +3263,7 @@
     },
     "kalenjin": {
       "languageId": "kalenjin",
-      "r2AudioClips": 2167,
+      "r2AudioClips": 2166,
       "nativeAudioSamples": [
         {
           "slug": "kongoi",
@@ -3767,7 +3767,7 @@
       "benchmarks": [],
       "audioChapters": [],
       "shards": {
-        "audioCount": 2167,
+        "audioCount": 2166,
         "storiesCount": 4,
         "sentencesCount": 0,
         "articlesCount": 108,
@@ -6279,14 +6279,8 @@
     },
     "taita": {
       "languageId": "taita",
-      "r2AudioClips": 1,
-      "nativeAudioSamples": [
-        {
-          "slug": "napoilwa-kukuw-ona-sena",
-          "label": "Napoilwa kukuw ona sena",
-          "audioUrl": "https://audio.kenyahub.me/audio/taita/napoilwa-kukuw-ona-sena.opus"
-        }
-      ],
+      "r2AudioClips": 0,
+      "nativeAudioSamples": [],
       "cldr": {
         "locale": "dav",
         "months": [
@@ -6353,7 +6347,7 @@
       "benchmarks": [],
       "audioChapters": [],
       "shards": {
-        "audioCount": 1,
+        "audioCount": 0,
         "storiesCount": 0,
         "sentencesCount": 0,
         "articlesCount": 0,
@@ -6463,7 +6457,7 @@
     },
     "borana": {
       "languageId": "borana",
-      "r2AudioClips": 393,
+      "r2AudioClips": 392,
       "nativeAudioSamples": [
         {
           "slug": "gaala",
@@ -6990,7 +6984,7 @@
       ],
       "audioChapters": [],
       "shards": {
-        "audioCount": 393,
+        "audioCount": 392,
         "storiesCount": 49,
         "sentencesCount": 0,
         "articlesCount": 0,

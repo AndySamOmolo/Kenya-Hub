@@ -13,8 +13,23 @@ import {
   type TextStyle,
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+import { useRouter } from "expo-router";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { BrandLogo } from "./components/BrandLogo";
+import {
+  DEFAULT_THEME_CONFIG,
+  THEME_PRESETS,
+  APP_LOOK_PROFILES,
+  resolveThemeColors,
+  resolveThemeMetrics,
+  parseThemeConfigJson,
+  exportThemeConfigJson,
+  resolveFontPairFamilies,
+  type ThemeConfig,
+  type ThemeMetrics,
+  type ThemeMode,
+  type CustomColorsConfig,
+} from "./lib/theme-engine";
 
 export const darkColors = {
   isDark: true,
@@ -125,11 +140,6 @@ export const fonts = {
   bodyBold: "Inter_700Bold",
 };
 
-/**
- * Standardized Material 3 Typography Presets (UX-14)
- * Explicitly pairs custom Outfit/Inter font families with includeFontPadding: false
- * so Android never falls back to system Roboto when fontWeight is set.
- */
 export const typography: Record<
   "h1" | "h2" | "title" | "subtitle" | "body" | "bodyBold" | "caption" | "mono",
   TextStyle
@@ -202,9 +212,10 @@ export const categoryColorMap: Record<string, string> = {
   "agriculture-environment": "#006B3F",
 };
 
-/**
- * Native Android Material 3 ripple effect on Pressable components (UX-1)
- */
+// Global runtime flags synchronized from ThemeProvider
+let _globalHapticsEnabled = true;
+let _globalReduceMotion = false;
+
 export function androidRipple(color?: string, borderless = false) {
   return {
     color: color || "rgba(232, 190, 90, 0.16)",
@@ -212,10 +223,6 @@ export function androidRipple(color?: string, borderless = false) {
   };
 }
 
-/**
- * Tactile pressed state style helper for Pressable components (UX-1)
- * Applies subtle scale + opacity response on touch across Android & iOS.
- */
 export function pressableStyle(
   baseStyle?: StyleProp<ViewStyle>,
   pressedStyle?: StyleProp<ViewStyle>,
@@ -224,17 +231,15 @@ export function pressableStyle(
   return ({ pressed }: { pressed: boolean }): StyleProp<ViewStyle> => [
     baseStyle,
     pressed && {
-      opacity: 0.84,
-      transform: scaleOnPress ? [{ scale: 0.985 }] : undefined,
+      opacity: _globalReduceMotion ? 0.92 : 0.84,
+      transform: scaleOnPress && !_globalReduceMotion ? [{ scale: 0.985 }] : undefined,
     },
     pressed && pressedStyle,
   ];
 }
 
-/**
- * Lightweight haptic pulse for key interactions (UX-1)
- */
 export function triggerHaptic(durationMs = 10) {
+  if (!_globalHapticsEnabled) return;
   try {
     if (Platform.OS === "android" || Platform.OS === "ios") {
       Vibration.vibrate(durationMs);
@@ -244,10 +249,6 @@ export function triggerHaptic(durationMs = 10) {
   }
 }
 
-/**
- * Backward-compatible parser & serializer for kh-saved-tools (MOB-16)
- * Reads both JSON array format ('["paye-calculator"]') and legacy comma-separated strings.
- */
 export function parseSavedTools(raw: string | null | undefined): string[] {
   if (!raw || !raw.trim()) return [];
   const trimmed = raw.trim();
@@ -283,52 +284,97 @@ export function serializeSavedTools(slugs: string[]): string {
   return JSON.stringify(unique);
 }
 
+const THEME_CONFIG_STORAGE_KEY = "kh-theme-config";
+
 interface ThemeContextType {
   theme: ThemeColors;
   isDark: boolean;
   themeReady: boolean;
+  themeConfig: ThemeConfig;
+  themeMetrics: ThemeMetrics;
+  resolvedFonts: { heading: string; body: string; bold: string };
   toggleTheme: () => void;
-  setThemeMode: (mode: "dark" | "light") => void;
+  setThemeMode: (mode: ThemeMode) => void;
+  updateThemeConfig: (patch: Partial<ThemeConfig>) => void;
+  updateCustomColor: (key: keyof CustomColorsConfig, hex: string | undefined) => void;
+  applyThemePreset: (presetId: string, forceMode?: "dark" | "light") => void;
+  applyAppLookProfile: (profileId: string) => void;
+  resetThemeConfig: () => void;
+  importThemeJson: (raw: string) => boolean;
+  exportThemeJson: () => string;
 }
+
+const defaultMetrics = resolveThemeMetrics(DEFAULT_THEME_CONFIG);
 
 const ThemeContext = createContext<ThemeContextType>({
   theme: darkColors,
   isDark: true,
   themeReady: false,
+  themeConfig: DEFAULT_THEME_CONFIG,
+  themeMetrics: defaultMetrics,
+  resolvedFonts: { heading: "Outfit_700Bold", body: "Inter_400Regular", bold: "Inter_700Bold" },
   toggleTheme: () => {},
   setThemeMode: () => {},
+  updateThemeConfig: () => {},
+  updateCustomColor: () => {},
+  applyThemePreset: () => {},
+  applyAppLookProfile: () => {},
+  resetThemeConfig: () => {},
+  importThemeJson: () => false,
+  exportThemeJson: () => exportThemeConfigJson(DEFAULT_THEME_CONFIG),
 });
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const systemColorScheme = useColorScheme();
-  const [isDark, setIsDark] = useState<boolean>(() => systemColorScheme !== "light");
+  const [themeConfig, setThemeConfig] = useState<ThemeConfig>(DEFAULT_THEME_CONFIG);
   const [themeReady, setThemeReady] = useState<boolean>(false);
 
   useEffect(() => {
     let mounted = true;
-    AsyncStorage.getItem("kh-theme")
-      .then((saved) => {
+    Promise.all([
+      AsyncStorage.getItem(THEME_CONFIG_STORAGE_KEY),
+      AsyncStorage.getItem("kh-theme"),
+    ])
+      .then(([rawConfig, legacyMode]) => {
         if (!mounted) return;
-        if (saved === "light") {
-          setIsDark(false);
-        } else if (saved === "dark") {
-          setIsDark(true);
-        } else if (systemColorScheme === "light") {
-          setIsDark(false);
-        } else {
-          setIsDark(true);
+        if (rawConfig) {
+          const parsed = parseThemeConfigJson(rawConfig);
+          if (parsed) {
+            setThemeConfig(parsed);
+            return;
+          }
+        }
+        if (legacyMode === "light" || legacyMode === "dark") {
+          setThemeConfig((prev) => ({ ...prev, mode: legacyMode }));
         }
       })
-      .catch(() => {
-        // Ignore AsyncStorage read error
-      })
+      .catch(() => {})
       .finally(() => {
         if (mounted) setThemeReady(true);
       });
     return () => {
       mounted = false;
     };
-  }, [systemColorScheme]);
+  }, []);
+
+  const persistConfig = React.useCallback((next: ThemeConfig) => {
+    AsyncStorage.setItem(THEME_CONFIG_STORAGE_KEY, JSON.stringify(next)).catch(() => {});
+    if (next.mode === "light" || next.mode === "dark") {
+      AsyncStorage.setItem("kh-theme", next.mode).catch(() => {});
+    }
+  }, []);
+
+  const isDark =
+    themeConfig.mode === "dark"
+      ? true
+      : themeConfig.mode === "light"
+      ? false
+      : systemColorScheme !== "light";
+
+  useEffect(() => {
+    _globalHapticsEnabled = themeConfig.hapticsEnabled;
+    _globalReduceMotion = themeConfig.reduceMotion;
+  }, [themeConfig.hapticsEnabled, themeConfig.reduceMotion]);
 
   useEffect(() => {
     try {
@@ -338,23 +384,174 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 
   const toggleTheme = React.useCallback(() => {
     triggerHaptic(8);
-    setIsDark((prev) => {
-      const next = !prev;
-      AsyncStorage.setItem("kh-theme", next ? "dark" : "light").catch(() => {});
+    setThemeConfig((prev) => {
+      const currentDark =
+        prev.mode === "dark" ? true : prev.mode === "light" ? false : systemColorScheme !== "light";
+      const nextMode: ThemeMode = currentDark ? "light" : "dark";
+      const next = { ...prev, mode: nextMode };
+      persistConfig(next);
       return next;
     });
-  }, []);
+  }, [persistConfig, systemColorScheme]);
 
-  const setThemeMode = React.useCallback((mode: "dark" | "light") => {
-    const next = mode === "dark";
-    setIsDark(next);
-    AsyncStorage.setItem("kh-theme", mode).catch(() => {});
-  }, []);
+  const setThemeMode = React.useCallback(
+    (mode: ThemeMode) => {
+      triggerHaptic(6);
+      setThemeConfig((prev) => {
+        const next = { ...prev, mode };
+        persistConfig(next);
+        return next;
+      });
+    },
+    [persistConfig]
+  );
 
-  const theme = isDark ? darkColors : lightColors;
+  const updateThemeConfig = React.useCallback(
+    (patch: Partial<ThemeConfig>) => {
+      setThemeConfig((prev) => {
+        const next = { ...prev, ...patch };
+        persistConfig(next);
+        return next;
+      });
+    },
+    [persistConfig]
+  );
+
+  const updateCustomColor = React.useCallback(
+    (key: keyof CustomColorsConfig, hex: string | undefined) => {
+      setThemeConfig((prev) => {
+        const nextCustom = { ...prev.customColors };
+        if (!hex || !hex.trim()) {
+          delete nextCustom[key];
+        } else {
+          nextCustom[key] = hex.trim();
+        }
+        const next = { ...prev, customColors: nextCustom };
+        persistConfig(next);
+        return next;
+      });
+    },
+    [persistConfig]
+  );
+
+  const applyThemePreset = React.useCallback(
+    (presetId: string, forceMode?: "dark" | "light") => {
+      triggerHaptic(8);
+      if (!THEME_PRESETS.some((p) => p.id === presetId)) return;
+      setThemeConfig((prev) => {
+        const next: ThemeConfig = {
+          ...prev,
+          presetId,
+          mode: forceMode ? forceMode : prev.mode,
+        };
+        persistConfig(next);
+        return next;
+      });
+    },
+    [persistConfig]
+  );
+
+  const applyAppLookProfile = React.useCallback(
+    (profileId: string) => {
+      const profile = APP_LOOK_PROFILES.find((p) => p.id === profileId);
+      if (!profile) return;
+      triggerHaptic(10);
+      if (profile.id === "kenyahub-classic") {
+        setThemeConfig(DEFAULT_THEME_CONFIG);
+        persistConfig(DEFAULT_THEME_CONFIG);
+        return;
+      }
+      setThemeConfig((prev) => {
+        const next: ThemeConfig = {
+          ...DEFAULT_THEME_CONFIG,
+          hapticsEnabled: prev.hapticsEnabled,
+          reduceMotion: prev.reduceMotion,
+          highContrastBorders: prev.highContrastBorders,
+          colorBlindMode: prev.colorBlindMode,
+          fontScale: prev.fontScale,
+          ...profile.config,
+          customColors: profile.config.customColors ?? {},
+        };
+        persistConfig(next);
+        return next;
+      });
+    },
+    [persistConfig]
+  );
+
+  const resetThemeConfig = React.useCallback(() => {
+    triggerHaptic(12);
+    setThemeConfig(DEFAULT_THEME_CONFIG);
+    persistConfig(DEFAULT_THEME_CONFIG);
+  }, [persistConfig]);
+
+  const importThemeJson = React.useCallback(
+    (raw: string): boolean => {
+      const parsed = parseThemeConfigJson(raw);
+      if (!parsed) return false;
+      triggerHaptic(10);
+      setThemeConfig(parsed);
+      persistConfig(parsed);
+      return true;
+    },
+    [persistConfig]
+  );
+
+  const exportThemeJson = React.useCallback(
+    () => exportThemeConfigJson(themeConfig),
+    [themeConfig]
+  );
+
+  const theme = React.useMemo(
+    () => resolveThemeColors(darkColors, lightColors, themeConfig, isDark) as ThemeColors,
+    [themeConfig, isDark]
+  );
+
+  const themeMetrics = React.useMemo(
+    () => resolveThemeMetrics(themeConfig),
+    [themeConfig]
+  );
+
+  const resolvedFonts = React.useMemo(
+    () => resolveFontPairFamilies(themeConfig.fontPair, Platform.OS === "ios"),
+    [themeConfig.fontPair]
+  );
+
   const ctxValue = React.useMemo(
-    () => ({ theme, isDark, themeReady, toggleTheme, setThemeMode }),
-    [theme, isDark, themeReady, toggleTheme, setThemeMode]
+    () => ({
+      theme,
+      isDark,
+      themeReady,
+      themeConfig,
+      themeMetrics,
+      resolvedFonts,
+      toggleTheme,
+      setThemeMode,
+      updateThemeConfig,
+      updateCustomColor,
+      applyThemePreset,
+      applyAppLookProfile,
+      resetThemeConfig,
+      importThemeJson,
+      exportThemeJson,
+    }),
+    [
+      theme,
+      isDark,
+      themeReady,
+      themeConfig,
+      themeMetrics,
+      resolvedFonts,
+      toggleTheme,
+      setThemeMode,
+      updateThemeConfig,
+      updateCustomColor,
+      applyThemePreset,
+      applyAppLookProfile,
+      resetThemeConfig,
+      importThemeJson,
+      exportThemeJson,
+    ]
   );
 
   return (
@@ -372,31 +569,184 @@ export function useTheme() {
 export function useDynamicStyles<
   T extends StyleSheet.NamedStyles<T> | StyleSheet.NamedStyles<any>
 >(
-  creator: (theme: ThemeColors) => T
-): { theme: ThemeColors; isDark: boolean; styles: T } {
-  const { theme, isDark } = useTheme();
-  const styles = React.useMemo(() => creator(theme), [theme, isDark]);
-  return { theme, isDark, styles };
+  creator: (theme: ThemeColors, metrics?: ThemeMetrics) => T
+): { theme: ThemeColors; isDark: boolean; metrics: ThemeMetrics; styles: T } {
+  const { theme, isDark, themeMetrics } = useTheme();
+  const styles = React.useMemo(() => creator(theme, themeMetrics), [theme, themeMetrics]);
+  return { theme, isDark, metrics: themeMetrics, styles };
+}
+
+export interface ThemedCardStyle extends ViewStyle {
+  borderRadius: number;
+  borderWidth: number;
+  borderColor: string;
+  backgroundColor: string;
+  elevation: number;
+  shadowOpacity: number;
+  borderLeftWidth?: number;
+  borderLeftColor?: string;
+  borderTopWidth?: number;
+  borderTopColor?: string;
+  borderBottomWidth?: number;
+  borderBottomColor?: string;
+}
+
+/**
+ * Computes a complete themed card container style obeying cardRadius, borderWidth,
+ * surfaceStyle, cardShadowIntensity, and cardAccentStyle.
+ */
+export function getThemedCardStyle(
+  theme: ThemeColors,
+  themeConfig: ThemeConfig,
+  themeMetrics: ThemeMetrics
+): ThemedCardStyle {
+  const borderRadius = themeMetrics.cardRadiusPx;
+  let borderWidth = themeMetrics.borderWidthPx;
+  let borderColor = themeConfig.highContrastBorders
+    ? theme.textPrimary
+    : theme.outlineVariant;
+  let backgroundColor = theme.surfaceContainer;
+
+  switch (themeConfig.surfaceStyle) {
+    case "flat":
+      backgroundColor = theme.bgSecondary;
+      break;
+    case "outlined":
+      backgroundColor = theme.bgCard;
+      borderWidth = Math.max(1, borderWidth);
+      break;
+    case "glass":
+      backgroundColor = theme.isDark
+        ? "rgba(30, 26, 23, 0.78)"
+        : "rgba(255, 255, 255, 0.82)";
+      break;
+    case "tonal":
+      backgroundColor = theme.surfaceContainerHigh;
+      break;
+    case "crisp":
+      backgroundColor = theme.surfaceContainerLowest;
+      borderColor = theme.outline;
+      break;
+    case "elevated":
+    default:
+      backgroundColor = theme.surfaceContainer;
+      break;
+  }
+
+  let elevation = themeMetrics.elevationPx;
+  let shadowOpacity = theme.isDark ? 0.24 : 0.08;
+  let shadowColor = "#000000";
+  let shadowRadius = 4;
+
+  switch (themeConfig.cardShadowIntensity) {
+    case "none":
+      elevation = 0;
+      shadowOpacity = 0;
+      shadowRadius = 0;
+      break;
+    case "subtle":
+      elevation = themeConfig.surfaceStyle === "flat" ? 0 : Math.max(1, elevation);
+      shadowOpacity = theme.isDark ? 0.18 : 0.06;
+      shadowRadius = 3;
+      break;
+    case "medium":
+      elevation = 4;
+      shadowOpacity = theme.isDark ? 0.28 : 0.12;
+      shadowRadius = 6;
+      break;
+    case "strong":
+      elevation = 8;
+      shadowOpacity = theme.isDark ? 0.42 : 0.2;
+      shadowRadius = 10;
+      break;
+    case "glow":
+      elevation = 6;
+      shadowOpacity = 0.35;
+      shadowColor = theme.gold;
+      shadowRadius = 10;
+      break;
+    case "crisp-3d":
+      elevation = 5;
+      shadowOpacity = theme.isDark ? 0.4 : 0.18;
+      shadowRadius = 2;
+      break;
+  }
+
+  const cardStyle: ThemedCardStyle = {
+    borderRadius,
+    borderWidth,
+    borderColor,
+    backgroundColor,
+    elevation: Platform.OS === "android" ? elevation : 0,
+    shadowColor,
+    shadowOpacity,
+    shadowRadius,
+    shadowOffset: {
+      width: 0,
+      height: elevation > 0 ? Math.min(4, Math.ceil(elevation / 2)) : 0,
+    },
+  };
+
+  switch (themeConfig.cardAccentStyle) {
+    case "left-bar":
+      cardStyle.borderLeftWidth = 4;
+      cardStyle.borderLeftColor = theme.gold;
+      break;
+    case "top-bar":
+      cardStyle.borderTopWidth = 3;
+      cardStyle.borderTopColor = theme.gold;
+      break;
+    case "bottom-bar":
+      cardStyle.borderBottomWidth = 3;
+      cardStyle.borderBottomColor = theme.gold;
+      break;
+    case "tinted-border":
+      cardStyle.borderColor = theme.gold;
+      cardStyle.borderWidth = Math.max(1.25, borderWidth);
+      break;
+    case "glow-edge":
+      cardStyle.borderColor = theme.goldLight;
+      cardStyle.borderWidth = Math.max(1.5, borderWidth);
+      cardStyle.shadowColor = theme.gold;
+      cardStyle.shadowOpacity = 0.38;
+      cardStyle.shadowRadius = 10;
+      if (Platform.OS === "android") {
+        cardStyle.elevation = Math.max(4, elevation);
+      }
+      break;
+    case "none":
+    default:
+      break;
+  }
+
+  return cardStyle;
 }
 
 /**
  * Kenyan Flag Stripe Component
- * Subtle 3px bar: Black · White · Red · White · Green
+ * Subtle 3px bar: Black · White · Red · White · Green (toggleable in Settings)
  */
 export function KenyaStripe() {
+  const { themeConfig } = useTheme();
+  if (!themeConfig.showKenyaStripe || themeConfig.stripeThickness === "hidden") return null;
+  const mult =
+    themeConfig.stripeThickness === "hairline" ? 0.6 :
+    themeConfig.stripeThickness === "medium" ? 1.4 :
+    themeConfig.stripeThickness === "thick" ? 2.0 :
+    themeConfig.stripeThickness === "bold" ? 2.8 : 1.0;
   return (
     <View style={stripeStyles.container} accessible={false}>
-      <View style={[stripeStyles.band, { backgroundColor: "#000000", height: 1.5 }]} />
-      <View style={[stripeStyles.band, { backgroundColor: "#FAF7F2", height: 0.5 }]} />
-      <View style={[stripeStyles.band, { backgroundColor: "#BE2126", height: 1.5 }]} />
-      <View style={[stripeStyles.band, { backgroundColor: "#FAF7F2", height: 0.5 }]} />
-      <View style={[stripeStyles.band, { backgroundColor: "#006B3F", height: 1.5 }]} />
+      <View style={[stripeStyles.band, { backgroundColor: "#000000", height: 1.5 * mult }]} />
+      <View style={[stripeStyles.band, { backgroundColor: "#FAF7F2", height: 0.5 * mult }]} />
+      <View style={[stripeStyles.band, { backgroundColor: "#BE2126", height: 1.5 * mult }]} />
+      <View style={[stripeStyles.band, { backgroundColor: "#FAF7F2", height: 0.5 * mult }]} />
+      <View style={[stripeStyles.band, { backgroundColor: "#006B3F", height: 1.5 * mult }]} />
     </View>
   );
 }
 
 /**
- * Compact, Uniform 52dp Top App Bar for Android
+ * Compact, Uniform 52dp Top App Bar for Android with Settings Gear Button
  */
 export function AndroidTopAppBar({
   title,
@@ -405,6 +755,7 @@ export function AndroidTopAppBar({
   showBrandLogo = false,
   rightAction,
   showThemeToggle = true,
+  showSettingsButton = true,
 }: {
   title?: string;
   subtitle?: string;
@@ -412,8 +763,12 @@ export function AndroidTopAppBar({
   showBrandLogo?: boolean;
   rightAction?: React.ReactNode;
   showThemeToggle?: boolean;
+  showSettingsButton?: boolean;
 }) {
-  const { theme, isDark, toggleTheme } = useTheme();
+  const { theme, isDark, themeConfig, resolvedFonts } = useTheme();
+  const router = useRouter();
+  const showGear = showThemeToggle && showSettingsButton;
+  const isCentered = themeConfig.headerAlignment === "center";
 
   return (
     <View
@@ -421,13 +776,31 @@ export function AndroidTopAppBar({
       style={[
         appBarStyles.container,
         {
-          backgroundColor: theme.surfaceContainerLow,
+          backgroundColor:
+            themeConfig.appBarStyle === "accent-tinted"
+              ? theme.primaryContainer
+              : theme.surfaceContainerLow,
           borderBottomColor: theme.outlineVariant,
+          borderBottomWidth:
+            themeConfig.appBarStyle === "borderless" ? 0 : StyleSheet.hairlineWidth,
+          minHeight:
+            themeConfig.appBarStyle === "compact"
+              ? 44
+              : themeConfig.appBarStyle === "tall-editorial"
+              ? 64
+              : 52,
+        },
+        themeConfig.appBarStyle === "floating" && {
+          marginHorizontal: 10,
+          marginTop: 6,
+          borderRadius: 16,
+          borderWidth: 1,
+          borderColor: theme.outlineVariant,
         },
       ]}
     >
-      <View style={appBarStyles.leftRow}>
-        {onBack && (
+      <View style={[appBarStyles.leftRow, isCentered && { marginRight: 0 }]}>
+        {onBack ? (
           <Pressable
             onPress={() => {
               triggerHaptic(8);
@@ -444,17 +817,33 @@ export function AndroidTopAppBar({
           >
             <Ionicons name="arrow-back" size={18} color={theme.textPrimary} />
           </Pressable>
-        )}
+        ) : isCentered && (showGear || rightAction) ? (
+          <View style={appBarStyles.iconBtn} accessible={false} />
+        ) : null}
 
         {showBrandLogo && !title ? (
-          <BrandLogo size="sm" />
+          <View style={isCentered ? { flex: 1, alignItems: "center" } : undefined}>
+            <BrandLogo size="sm" />
+          </View>
         ) : (
-          <View style={appBarStyles.titleGroup}>
+          <View style={[appBarStyles.titleGroup, isCentered && { justifyContent: "center" }]}>
             {showBrandLogo && <BrandLogo size="sm" showText={false} />}
-            <View style={{ flex: 1, minWidth: 0, justifyContent: "center" }}>
+            <View
+              style={{
+                flex: isCentered ? 0 : 1,
+                flexShrink: 1,
+                minWidth: 0,
+                justifyContent: "center",
+                alignItems: isCentered ? "center" : "flex-start",
+              }}
+            >
               {title && (
                 <Text
-                  style={[appBarStyles.title, { color: theme.textPrimary }]}
+                  style={[
+                    appBarStyles.title,
+                    { color: theme.textPrimary, fontFamily: resolvedFonts.heading },
+                    isCentered && { textAlign: "center" },
+                  ]}
                   numberOfLines={1}
                   accessibilityRole="header"
                 >
@@ -463,7 +852,11 @@ export function AndroidTopAppBar({
               )}
               {subtitle && (
                 <Text
-                  style={[appBarStyles.subtitle, { color: theme.textSecondary }]}
+                  style={[
+                    appBarStyles.subtitle,
+                    { color: theme.textSecondary, fontFamily: resolvedFonts.body },
+                    isCentered && { textAlign: "center" },
+                  ]}
                   numberOfLines={1}
                 >
                   {subtitle}
@@ -476,14 +869,15 @@ export function AndroidTopAppBar({
 
       <View style={appBarStyles.actionsRow}>
         {rightAction}
-        {showThemeToggle && (
+        {showGear && (
           <Pressable
-            testID="theme-toggle"
-            onPress={toggleTheme}
+            testID="settings-button"
+            onPress={() => {
+              triggerHaptic(8);
+              router.push("/settings" as any);
+            }}
             accessibilityRole="button"
-            accessibilityLabel={
-              isDark ? "Switch to light mode" : "Switch to dark mode"
-            }
+            accessibilityLabel="Open settings and theme studio"
             android_ripple={androidRipple(theme.rippleColor, true)}
             style={pressableStyle([
               appBarStyles.iconBtn,
@@ -496,8 +890,8 @@ export function AndroidTopAppBar({
             hitSlop={8}
           >
             <Ionicons
-              name={isDark ? "sunny-outline" : "moon-outline"}
-              size={17}
+              name="settings-outline"
+              size={18}
               color={theme.gold}
             />
           </Pressable>

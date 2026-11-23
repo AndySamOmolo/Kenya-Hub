@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useMemo, useState } from "react";
 import { useRouter, useFocusEffect } from "expo-router";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import {
@@ -24,6 +24,7 @@ import {
   parseSavedTools,
   serializeSavedTools,
 } from "../../src/theme";
+import type { ThemeMetrics } from "../../src/lib/theme-engine";
 import {
   TOOLS,
   getPopularTools,
@@ -32,15 +33,187 @@ import {
 import { DynamicIcon } from "../../src/components/DynamicIcon";
 import { getMobileAdsModule } from "../../src/lib/mobile-ads";
 
+function createSavedStyles(
+  metrics?: ThemeMetrics,
+  fonts?: { heading: string; body: string; bold: string }
+) {
+  const cardRadiusPx = metrics?.cardRadiusPx ?? 14;
+  const radiusRatio = cardRadiusPx / 14;
+  const r = (base: number) => Math.round(base * radiusRatio);
+  const bw = metrics?.borderWidthPx ?? 1;
+  const spacingScale = metrics?.spacingScale ?? 1;
+  const sp = (v: number) => Number((v * spacingScale).toFixed(1));
+  const fontScale = metrics?.fontScale ?? 1;
+  const lineHeightScale = metrics?.lineHeightScale ?? 1;
+  const fs = (v: number) => Number((v * fontScale).toFixed(1));
+  const lh = (v: number) => Math.round(v * fontScale * lineHeightScale);
+  const isDefaultFonts =
+    !fonts ||
+    (fonts.heading === "Outfit_700Bold" &&
+      fonts.body === "Inter_400Regular" &&
+      fonts.bold === "Inter_700Bold");
+  const hf = (fallback = "Outfit_700Bold") =>
+    isDefaultFonts ? fallback : fonts.heading;
+  const bf = (fallback = "Inter_400Regular") =>
+    isDefaultFonts ? fallback : fonts.body;
+
+  return StyleSheet.create({
+    screen: {
+      flex: 1,
+    },
+    clearBtn: {
+      paddingHorizontal: sp(10),
+      paddingVertical: sp(5),
+      borderRadius: r(14),
+      borderWidth: bw,
+    },
+    clearBtnText: {
+      color: "#E05A5A",
+      fontSize: fs(12),
+      fontFamily: hf("Outfit_700Bold"),
+    },
+    content: {
+      padding: sp(14),
+      paddingBottom: sp(28),
+    },
+    countText: {
+      fontFamily: bf("Inter_500Medium"),
+      fontSize: fs(12),
+      marginBottom: sp(12),
+    },
+    list: {
+      gap: sp(10),
+    },
+    cardWrap: {
+      borderRadius: r(16),
+      borderWidth: bw,
+      overflow: "hidden",
+      elevation: Platform.OS === "android" ? 2 : 0,
+    },
+    card: {
+      padding: sp(12),
+      flexDirection: "row",
+      alignItems: "center",
+    },
+    cardIconWrap: {
+      width: 42,
+      height: 42,
+      borderRadius: r(12),
+      borderWidth: bw,
+      alignItems: "center",
+      justifyContent: "center",
+      marginRight: sp(12),
+    },
+    cardBody: {
+      flex: 1,
+    },
+    categoryPillWrap: {
+      flexDirection: "row",
+      alignItems: "center",
+      gap: sp(5),
+      marginBottom: 2,
+    },
+    categoryDot: {
+      width: 5,
+      height: 5,
+      borderRadius: 2.5,
+    },
+    categoryPillText: {
+      fontSize: fs(9),
+      fontFamily: hf("Outfit_700Bold"),
+      letterSpacing: 0.5,
+    },
+    title: {
+      fontSize: fs(15.5),
+      fontFamily: hf("Outfit_700Bold"),
+    },
+    description: {
+      fontFamily: bf("Inter_400Regular"),
+      fontSize: fs(12),
+      marginTop: 2,
+    },
+    removeBtn: {
+      width: 36,
+      height: 36,
+      borderRadius: 18,
+      alignItems: "center",
+      justifyContent: "center",
+      marginLeft: sp(8),
+    },
+    empty: {
+      alignItems: "center",
+      paddingTop: sp(28),
+    },
+    emptyIconWrap: {
+      width: 68,
+      height: 68,
+      borderRadius: r(22),
+      borderWidth: bw,
+      alignItems: "center",
+      justifyContent: "center",
+    },
+    emptyTitle: {
+      fontFamily: hf("Outfit_700Bold"),
+      fontSize: fs(18),
+      marginTop: sp(14),
+    },
+    emptySubtitle: {
+      fontFamily: bf("Inter_400Regular"),
+      fontSize: fs(13),
+      lineHeight: lh(19),
+      textAlign: "center",
+      marginTop: sp(6),
+      maxWidth: 280,
+    },
+    suggestHeading: {
+      fontFamily: hf("Outfit_700Bold"),
+      fontSize: fs(11),
+      letterSpacing: 1.2,
+      marginTop: sp(28),
+      marginBottom: sp(10),
+      alignSelf: "flex-start",
+    },
+    suggestList: {
+      width: "100%",
+      gap: sp(8),
+    },
+    suggestCardWrap: {
+      borderRadius: r(16),
+      borderWidth: bw,
+      overflow: "hidden",
+      elevation: Platform.OS === "android" ? 1 : 0,
+    },
+    suggestCard: {
+      flexDirection: "row",
+      alignItems: "center",
+      padding: sp(14),
+    },
+    suggestTitle: {
+      fontFamily: hf("Outfit_700Bold"),
+      fontSize: fs(14),
+    },
+    suggestDesc: {
+      fontFamily: bf("Inter_400Regular"),
+      fontSize: fs(11.5),
+      marginTop: 1,
+    },
+    privacySection: {
+      width: "100%",
+    },
+  });
+}
+
 function SavedToolCard({
   tool,
   onRemove,
+  styles,
 }: {
   tool: (typeof TOOLS)[0];
   onRemove: () => void;
+  styles: ReturnType<typeof createSavedStyles>;
 }) {
   const router = useRouter();
-  const { theme, isDark } = useTheme();
+  const { theme } = useTheme();
   const categoryColor = categoryColorMap[tool.category] || theme.gold;
 
   return (
@@ -118,7 +291,11 @@ function SavedToolCard({
 
 export default function SavedScreen() {
   const router = useRouter();
-  const { theme, isDark } = useTheme();
+  const { theme, isDark, themeConfig, themeMetrics, resolvedFonts } = useTheme();
+  const styles = useMemo(
+    () => createSavedStyles(themeMetrics, resolvedFonts),
+    [themeMetrics, resolvedFonts]
+  );
   const [saved, setSaved] = useState<string[]>([]);
   const popular = getPopularTools(4);
 
@@ -247,7 +424,8 @@ export default function SavedScreen() {
 
       <ScrollView
         contentContainerStyle={styles.content}
-        showsVerticalScrollIndicator={false}
+        showsVerticalScrollIndicator={themeConfig?.verticalScrollbarStyle !== "hidden"}
+        persistentScrollbar={themeConfig?.verticalScrollbarStyle === "always-visible"}
         keyboardShouldPersistTaps="handled"
         overScrollMode="always"
       >
@@ -261,6 +439,7 @@ export default function SavedScreen() {
                 <SavedToolCard
                   key={tool.slug}
                   tool={tool}
+                  styles={styles}
                   onRemove={() => handleRemove(tool.slug)}
                 />
               ))}
@@ -513,148 +692,3 @@ export default function SavedScreen() {
     </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  screen: {
-    flex: 1,
-  },
-  clearBtn: {
-    paddingHorizontal: 10,
-    paddingVertical: 5,
-    borderRadius: 14,
-    borderWidth: 1,
-  },
-  clearBtnText: {
-    color: "#E05A5A",
-    fontSize: 12,
-    fontFamily: "Outfit_700Bold",
-  },
-  content: {
-    padding: 14,
-    paddingBottom: 28,
-  },
-  countText: {
-    fontFamily: "Inter_500Medium",
-    fontSize: 12,
-    marginBottom: 12,
-  },
-  list: {
-    gap: 10,
-  },
-  cardWrap: {
-    borderRadius: 16,
-    borderWidth: 1,
-    overflow: "hidden",
-    elevation: Platform.OS === "android" ? 2 : 0,
-  },
-  card: {
-    padding: 12,
-    flexDirection: "row",
-    alignItems: "center",
-  },
-  cardIconWrap: {
-    width: 42,
-    height: 42,
-    borderRadius: 12,
-    borderWidth: 1,
-    alignItems: "center",
-    justifyContent: "center",
-    marginRight: 12,
-  },
-  cardBody: {
-    flex: 1,
-  },
-  categoryPillWrap: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 5,
-    marginBottom: 2,
-  },
-  categoryDot: {
-    width: 5,
-    height: 5,
-    borderRadius: 2.5,
-  },
-  categoryPillText: {
-    fontSize: 9,
-    fontFamily: "Outfit_700Bold",
-    letterSpacing: 0.5,
-  },
-  title: {
-    fontSize: 15.5,
-    fontFamily: "Outfit_700Bold",
-  },
-  description: {
-    fontFamily: "Inter_400Regular",
-    fontSize: 12,
-    marginTop: 2,
-  },
-  removeBtn: {
-    width: 36,
-    height: 36,
-    borderRadius: 18,
-    alignItems: "center",
-    justifyContent: "center",
-    marginLeft: 8,
-  },
-  empty: {
-    alignItems: "center",
-    paddingTop: 28,
-  },
-  emptyIconWrap: {
-    width: 68,
-    height: 68,
-    borderRadius: 22,
-    borderWidth: 1,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  emptyTitle: {
-    fontFamily: "Outfit_700Bold",
-    fontSize: 18,
-    marginTop: 14,
-  },
-  emptySubtitle: {
-    fontFamily: "Inter_400Regular",
-    fontSize: 13,
-    lineHeight: 19,
-    textAlign: "center",
-    marginTop: 6,
-    maxWidth: 280,
-  },
-  suggestHeading: {
-    fontFamily: "Outfit_700Bold",
-    fontSize: 11,
-    letterSpacing: 1.2,
-    marginTop: 28,
-    marginBottom: 10,
-    alignSelf: "flex-start",
-  },
-  suggestList: {
-    width: "100%",
-    gap: 8,
-  },
-  suggestCardWrap: {
-    borderRadius: 16,
-    borderWidth: 1,
-    overflow: "hidden",
-    elevation: Platform.OS === "android" ? 1 : 0,
-  },
-  suggestCard: {
-    flexDirection: "row",
-    alignItems: "center",
-    padding: 14,
-  },
-  suggestTitle: {
-    fontFamily: "Outfit_700Bold",
-    fontSize: 14,
-  },
-  suggestDesc: {
-    fontFamily: "Inter_400Regular",
-    fontSize: 11.5,
-    marginTop: 1,
-  },
-  privacySection: {
-    width: "100%",
-  },
-});

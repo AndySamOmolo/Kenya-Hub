@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useMemo, useRef, useState } from "react";
 import { Platform, Pressable, ScrollView, StatusBar, StyleSheet, Text } from "react-native";
 import { useLocalSearchParams } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
@@ -11,13 +11,66 @@ import {
   pressableStyle,
   triggerHaptic,
 } from "../../src/theme";
+import type { ThemeMetrics } from "../../src/lib/theme-engine";
 import {
   LanguageLearningTool,
   type CourseNavigationState,
 } from "../../src/tools/LanguageCourseTool";
 
+function createLearnStyles(
+  metrics?: ThemeMetrics,
+  fonts?: { heading: string; body: string; bold: string }
+) {
+  const bw = metrics?.borderWidthPx ?? 1;
+  const spacingScale = metrics?.spacingScale ?? 1;
+  const sp = (v: number) => Number((v * spacingScale).toFixed(1));
+  const fontScale = metrics?.fontScale ?? 1;
+  const fs = (v: number) => Number((v * fontScale).toFixed(1));
+  const isDefaultFonts =
+    !fonts ||
+    (fonts.heading === "Outfit_700Bold" &&
+      fonts.body === "Inter_400Regular" &&
+      fonts.bold === "Inter_700Bold");
+  const hf = (fallback = "Outfit_700Bold") =>
+    isDefaultFonts ? fallback : fonts.heading;
+
+  return StyleSheet.create({
+    screen: { flex: 1 },
+    content: {
+      paddingHorizontal: sp(12),
+      paddingTop: sp(8),
+      paddingBottom: sp(92),
+    },
+    fabTopBtn: {
+      position: "absolute",
+      bottom: 18,
+      right: 16,
+      flexDirection: "row",
+      alignItems: "center",
+      gap: sp(5),
+      paddingHorizontal: sp(14),
+      paddingVertical: sp(10),
+      borderRadius: 999,
+      borderWidth: bw,
+      elevation: 6,
+      shadowColor: "#000",
+      shadowOpacity: 0.25,
+      shadowRadius: 8,
+      shadowOffset: { width: 0, height: 3 },
+    },
+    fabTopText: {
+      fontFamily: hf("Outfit_700Bold"),
+      fontSize: fs(12),
+    },
+  });
+}
+
 export default function LearnTabScreen() {
-  const { theme, isDark } = useTheme();
+  const { theme, isDark, themeConfig, themeMetrics, resolvedFonts } = useTheme();
+  const styles = useMemo(
+    () => createLearnStyles(themeMetrics, resolvedFonts),
+    [themeMetrics, resolvedFonts]
+  );
   const params = useLocalSearchParams<{ lang?: string; tab?: string }>();
   const insets = useSafeAreaInsets();
   const safeTop = Math.max(insets.top, Platform.OS === "android" ? StatusBar.currentHeight ?? 24 : 0);
@@ -53,7 +106,8 @@ export default function LearnTabScreen() {
       <ScrollView
         ref={scrollRef}
         contentContainerStyle={styles.content}
-        showsVerticalScrollIndicator={false}
+        showsVerticalScrollIndicator={themeConfig?.verticalScrollbarStyle !== "hidden"}
+        persistentScrollbar={themeConfig?.verticalScrollbarStyle === "always-visible"}
         keyboardShouldPersistTaps="handled"
         scrollEventThrottle={16}
         onScroll={(e) => {
@@ -93,29 +147,3 @@ export default function LearnTabScreen() {
     </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  screen: { flex: 1 },
-  content: { paddingHorizontal: 12, paddingTop: 8, paddingBottom: 92 },
-  fabTopBtn: {
-    position: "absolute",
-    bottom: 18,
-    right: 16,
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 5,
-    paddingHorizontal: 14,
-    paddingVertical: 10,
-    borderRadius: 999,
-    borderWidth: 1,
-    elevation: 6,
-    shadowColor: "#000",
-    shadowOpacity: 0.25,
-    shadowRadius: 8,
-    shadowOffset: { width: 0, height: 3 },
-  },
-  fabTopText: {
-    fontFamily: "Outfit_700Bold",
-    fontSize: 12,
-  },
-});

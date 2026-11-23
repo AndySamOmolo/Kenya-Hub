@@ -17,6 +17,7 @@ import {
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useTheme, androidRipple, triggerHaptic } from "../theme";
+import { resolveScrollbarThicknessPx } from "../lib/theme-engine";
 
 if (
   Platform.OS === "android" &&
@@ -125,8 +126,16 @@ export function ExpandablePillRow({
   showExpandButton = true,
   fadeColor,
 }: ExpandablePillRowProps) {
-  const { theme } = useTheme();
-  const [expanded, setExpanded] = useState(false);
+  const { theme, themeConfig, resolvedFonts } = useTheme();
+  const pillLayoutMode = themeConfig?.pillBarLayout || "scroll-with-expand";
+  const [expanded, setExpanded] = useState(pillLayoutMode === "always-wrap" || pillLayoutMode === "centered-wrap" || pillLayoutMode === "grid-pills");
+  useEffect(() => {
+    if (pillLayoutMode === "always-wrap" || pillLayoutMode === "centered-wrap" || pillLayoutMode === "grid-pills") {
+      setExpanded(true);
+    } else if (pillLayoutMode === "always-scroll") {
+      setExpanded(false);
+    }
+  }, [pillLayoutMode]);
   const count = countPillChildren(children);
 
   const scrollViewRef = useRef<ScrollView | null>(null);
@@ -143,6 +152,11 @@ export function ExpandablePillRow({
 
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(count > threshold);
+  const [scrollMetrics, setScrollMetrics] = useState<{ ratio: number; thumbFrac: number; scrollable: boolean }>({
+    ratio: 0,
+    thumbFrac: 0.4,
+    scrollable: false,
+  });
 
   const triggerSpringBounce = useCallback(
     (direction: "left" | "right", peakAbs = 11) => {
@@ -178,7 +192,10 @@ export function ExpandablePillRow({
     const hasLeft = x > 3;
     const hasRight = maxScroll - x > 3;
 
-    if (maxScroll > 10) {
+    const ratio = maxScroll > 2 ? Math.min(1, Math.max(0, x / maxScroll)) : 0;
+    const thumbFrac = cw > 0 ? Math.min(0.85, Math.max(0.18, lw / cw)) : 0.4;
+    setScrollMetrics({ ratio, thumbFrac, scrollable: maxScroll > 6 });
+    if (maxScroll > 10 && themeConfig?.scrollBounceEnabled !== false) {
       if (!hasLeft && !wasAtLeftRef.current) {
         triggerSpringBounce("left", 11);
       } else if (!hasRight && !wasAtRightRef.current) {
@@ -304,9 +321,13 @@ export function ExpandablePillRow({
             typeof flatPillStyle.minHeight === "number"
               ? Math.max(flatPillStyle.minHeight, 26)
               : 28,
-          borderRadius: isExpanded
-            ? 16
-            : flatPillStyle.borderRadius ?? 999,
+          borderRadius:
+            themeConfig?.pillShape === "square" ? 0 :
+            themeConfig?.pillShape === "sharp" ? 4 :
+            themeConfig?.pillShape === "subtle" ? 8 :
+            themeConfig?.pillShape === "rounded" ? 12 :
+            themeConfig?.pillShape === "soft" ? 18 :
+            isExpanded ? 16 : (flatPillStyle.borderRadius ?? 999),
         };
         const expandedExtra = isExpanded
           ? { maxWidth: "100%" as const, flexShrink: 1 }
@@ -359,10 +380,11 @@ export function ExpandablePillRow({
             style: [
               props.style,
               {
-                fontSize,
-                lineHeight,
+                fontSize: Math.round(fontSize * (themeConfig?.fontScale || 1) * 10) / 10,
+                lineHeight: Math.round(lineHeight * (themeConfig?.fontScale || 1)),
                 includeFontPadding: true,
                 textAlignVertical: "center",
+                ...(themeConfig?.fontPair && themeConfig.fontPair !== "outfit-inter" ? { fontFamily: resolvedFonts.bold } : {}),
               },
               isExpanded ? { flexShrink: 1 } : null,
             ],
@@ -423,13 +445,77 @@ export function ExpandablePillRow({
   };
 
   const resolvedFadeColor = fadeColor || theme.bgPrimary;
+  const sbStyle = themeConfig?.horizontalScrollbarStyle || "subtle-bar";
+  const sbThickness = resolveScrollbarThicknessPx(themeConfig?.horizontalScrollbarThickness || "thin");
+  const sbColor = themeConfig?.customColors?.scrollbarColor || theme.gold;
+  const showNativeSb = sbStyle === "native-indicator";
+  const showEdgeFade = themeConfig?.edgeFadeEnabled !== false;
   const canExpand =
+    pillLayoutMode !== "always-scroll" &&
     showExpandButton &&
     (count > threshold || canScrollRight || canScrollLeft || expanded);
+
+  const renderCustomScrollbar = () => {
+    if (expanded || !scrollMetrics.scrollable || sbStyle === "hidden" || sbStyle === "native-indicator") {
+      return null;
+    }
+    if (sbStyle === "dots") {
+      const dotCount = 5;
+      const activeDot = Math.min(dotCount - 1, Math.round(scrollMetrics.ratio * (dotCount - 1)));
+      return (
+        <View style={{ flexDirection: "row", justifyContent: "center", alignItems: "center", gap: 5, marginTop: 4 }}>
+          {Array.from({ length: dotCount }).map((_, idx) => (
+            <View
+              key={`dot-${idx}`}
+              style={{
+                width: idx === activeDot ? sbThickness * 3 : sbThickness * 1.5,
+                height: sbThickness * 1.5,
+                borderRadius: 999,
+                backgroundColor: idx === activeDot ? sbColor : theme.outlineVariant,
+                opacity: idx === activeDot ? 1 : 0.45,
+              }}
+            />
+          ))}
+        </View>
+      );
+    }
+    const leftPct = Math.round(scrollMetrics.ratio * (1 - scrollMetrics.thumbFrac) * 100);
+    const widthPct = Math.round(scrollMetrics.thumbFrac * 100);
+    return (
+      <View
+        style={{
+          height: sbThickness,
+          width: "100%",
+          borderRadius: 999,
+          marginTop: 4,
+          backgroundColor:
+            themeConfig?.scrollbarTrackVisible !== false
+              ? `${theme.outlineVariant}40`
+              : "transparent",
+          overflow: "hidden",
+          position: "relative",
+        }}
+      >
+        <View
+          style={{
+            position: "absolute",
+            top: 0,
+            bottom: 0,
+            left: `${leftPct}%`,
+            width: `${widthPct}%`,
+            borderRadius: 999,
+            backgroundColor: sbColor,
+            opacity: sbStyle === "subtle-bar" ? 0.65 : 1,
+          }}
+        />
+      </View>
+    );
+  };
 
   if (!canExpand) {
     return (
       <View style={[rowStyles.rowWrap, outerSpacing, style]}>
+        <View style={{ flex: 1, minWidth: 0 }}>
         <View style={rowStyles.viewportWrap}>
           <Animated.View style={{ flex: 1, transform: [{ translateX: bounceAnim }] }}>
             <ScrollView
@@ -438,7 +524,7 @@ export function ExpandablePillRow({
               bounces={true}
               alwaysBounceHorizontal={true}
               overScrollMode="always"
-              showsHorizontalScrollIndicator={false}
+              showsHorizontalScrollIndicator={showNativeSb}
               scrollEventThrottle={16}
               onLayout={handleLayout}
               onContentSizeChange={handleContentSizeChange}
@@ -458,12 +544,14 @@ export function ExpandablePillRow({
               {renderedPills}
             </ScrollView>
           </Animated.View>
-          {canScrollLeft && (
+          {showEdgeFade && canScrollLeft && (
             <EdgePocketShadow side="left" bgColor={resolvedFadeColor} />
           )}
-          {canScrollRight && (
+          {showEdgeFade && canScrollRight && (
             <EdgePocketShadow side="right" bgColor={resolvedFadeColor} />
           )}
+        </View>
+        {renderCustomScrollbar()}
         </View>
       </View>
     );
@@ -489,6 +577,7 @@ export function ExpandablePillRow({
               flexDirection: "row",
               flexWrap: "wrap",
               alignItems: "center",
+              justifyContent: pillLayoutMode === "centered-wrap" ? "center" : "flex-start",
               gap: 6,
               paddingVertical: 2,
             },
@@ -497,6 +586,7 @@ export function ExpandablePillRow({
           {renderedPills}
         </View>
       ) : (
+        <View style={{ flex: 1, minWidth: 0 }}>
         <View style={rowStyles.viewportWrap}>
           <Animated.View style={{ flex: 1, transform: [{ translateX: bounceAnim }] }}>
             <ScrollView
@@ -505,7 +595,7 @@ export function ExpandablePillRow({
               bounces={true}
               alwaysBounceHorizontal={true}
               overScrollMode="always"
-              showsHorizontalScrollIndicator={false}
+              showsHorizontalScrollIndicator={showNativeSb}
               scrollEventThrottle={16}
               onLayout={handleLayout}
               onContentSizeChange={handleContentSizeChange}
@@ -525,19 +615,21 @@ export function ExpandablePillRow({
               {renderedPills}
             </ScrollView>
           </Animated.View>
-          {canScrollLeft && (
+          {showEdgeFade && canScrollLeft && (
             <EdgePocketShadow side="left" bgColor={resolvedFadeColor} />
           )}
-          {canScrollRight && (
+          {showEdgeFade && canScrollRight && (
             <EdgePocketShadow side="right" bgColor={resolvedFadeColor} />
           )}
+        </View>
+        {renderCustomScrollbar()}
         </View>
       )}
 
       <Pressable
         android_ripple={androidRipple(theme.rippleColor, true)}
         onPress={() => {
-          triggerHaptic("selection");
+          triggerHaptic(8);
           LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
           setExpanded((prev) => !prev);
         }}

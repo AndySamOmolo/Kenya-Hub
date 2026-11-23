@@ -22,6 +22,7 @@ import {
   pressableStyle,
   parseSavedTools,
 } from "../../src/theme";
+import type { ThemeMetrics } from "../../src/lib/theme-engine";
 import {
   TOOLS,
   TOOL_CATEGORIES,
@@ -53,11 +54,13 @@ const ToolItem = React.memo(function ToolItem({
   item,
   isPinned = false,
   theme,
+  styles,
   onPressTool,
 }: {
   item: (typeof TOOLS)[0];
   isPinned?: boolean;
   theme: ReturnType<typeof useTheme>["theme"];
+  styles: ReturnType<typeof createToolsStyles>;
   onPressTool: (slug: string) => void;
 }) {
   const categoryColor = categoryColorMap[item.category] || theme.gold;
@@ -153,7 +156,15 @@ const ToolItem = React.memo(function ToolItem({
 
 export default function ToolsScreen() {
   const router = useRouter();
-  const { theme, isDark } = useTheme();
+  const { theme, isDark, themeConfig, themeMetrics, resolvedFonts } = useTheme();
+  const styles = useMemo(
+    () => createToolsStyles(themeMetrics, resolvedFonts),
+    [themeMetrics, resolvedFonts]
+  );
+  const listExtraData = useMemo(
+    () => ({ theme, themeMetrics, resolvedFonts }),
+    [theme, themeMetrics, resolvedFonts]
+  );
   const params = useLocalSearchParams<{ category?: string; q?: string }>();
   const [query, setQuery] = useState(params.q ?? "");
   const [category, setCategory] = useState(params.category ?? "all");
@@ -178,10 +189,11 @@ export default function ToolsScreen() {
         item={item}
         isPinned={pinnedSet.has(item.slug)}
         theme={theme}
+        styles={styles}
         onPressTool={handlePressTool}
       />
     ),
-    [pinnedSet, theme, handlePressTool]
+    [pinnedSet, theme, styles, handlePressTool]
   );
 
   useEffect(() => {
@@ -496,10 +508,11 @@ export default function ToolsScreen() {
       <FlatList
         ref={listRef}
         data={filtered}
-        extraData={theme}
+        extraData={listExtraData}
         keyExtractor={(item) => item.slug}
         contentContainerStyle={styles.list}
-        showsVerticalScrollIndicator={false}
+        showsVerticalScrollIndicator={themeConfig?.verticalScrollbarStyle !== "hidden"}
+        persistentScrollbar={themeConfig?.verticalScrollbarStyle === "always-visible"}
         keyboardShouldPersistTaps="handled"
         overScrollMode="always"
         initialNumToRender={8}
@@ -639,7 +652,7 @@ export default function ToolsScreen() {
                 </View>
                 <View style={{ gap: 10 }}>
                   {pinnedTools.map((pt) => (
-                    <ToolItem key={`pinned-${pt.slug}`} item={pt} isPinned />
+                    <ToolItem key={`pinned-${pt.slug}`} item={pt} isPinned theme={theme} styles={styles} onPressTool={handlePressTool} />
                   ))}
                 </View>
                 <Text
@@ -693,205 +706,235 @@ export default function ToolsScreen() {
   );
 }
 
-const styles = StyleSheet.create({
-  screen: {
-    flex: 1,
-  },
-  filterHeader: {
-    paddingHorizontal: 14,
-    paddingTop: 4,
-    paddingBottom: 6,
-    borderBottomWidth: StyleSheet.hairlineWidth,
-  },
-  searchWrap: {
-    flexDirection: "row",
-    alignItems: "center",
-    borderRadius: 17,
-    borderWidth: 1,
-    paddingHorizontal: 11,
-    height: 34,
-    marginBottom: 6,
-    elevation: Platform.OS === "android" ? 1 : 0,
-  },
-  searchIcon: {
-    marginRight: 9,
-  },
-  searchInput: {
-    flex: 1,
-    minWidth: 0,
-    height: "100%",
-    marginRight: 6,
-    fontSize: 12.5,
-    paddingVertical: 0,
-    paddingHorizontal: 0,
-    textAlignVertical: "center",
-    includeFontPadding: false,
-  },
-  sortRow: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "center",
-    gap: 6,
-    marginTop: 5,
-  },
-  sortLabel: {
-    fontFamily: "Outfit_700Bold",
-    fontSize: 10,
-    lineHeight: 14,
-    letterSpacing: 0.8,
-    flexShrink: 0,
-    includeFontPadding: false,
-    textAlignVertical: "center",
-  },
-  segmentText: {
-    fontFamily: "Outfit_700Bold",
-    fontSize: 11,
-    lineHeight: 15,
-    paddingBottom: 0,
-    includeFontPadding: false,
-    textAlignVertical: "center",
-  },
-  list: {
-    paddingHorizontal: 14,
-    paddingTop: 10,
-    paddingBottom: 28,
-    gap: 8,
-  },
-  resultsBar: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
-    marginBottom: 8,
-  },
-  resultsText: {
-    fontSize: 12,
-  },
-  clearFilterText: {
-    fontSize: 12,
-    fontFamily: "Outfit_700Bold",
-  },
-  pinnedSection: {
-    marginBottom: 8,
-  },
-  pinnedHeaderRow: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 6,
-    marginBottom: 10,
-  },
-  pinnedSectionTitle: {
-    fontFamily: "Outfit_700Bold",
-    fontSize: 15,
-  },
-  allToolsDividerLabel: {
-    fontFamily: "Outfit_700Bold",
-    fontSize: 11,
-    letterSpacing: 1,
-    marginTop: 16,
-    marginBottom: 4,
-  },
-  cardWrap: {
-    borderRadius: 16,
-    borderWidth: 1,
-    overflow: "hidden",
-    elevation: Platform.OS === "android" ? 2 : 0,
-  },
-  card: {
-    padding: 16,
-  },
-  cardHeaderRow: {
-    flexDirection: "row",
-    alignItems: "center",
-  },
-  cardIconWrap: {
-    width: 46,
-    height: 46,
-    borderRadius: 14,
-    borderWidth: 1,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  trailingCircle: {
-    width: 32,
-    height: 32,
-    borderRadius: 16,
-    alignItems: "center",
-    justifyContent: "center",
-    marginLeft: 10,
-  },
-  body: {
-    flex: 1,
-    marginLeft: 12,
-    marginRight: 4,
-  },
-  categoryPillWrap: {
-    flexDirection: "row",
-    flexWrap: "wrap",
-    alignItems: "center",
-    gap: 5,
-    marginBottom: 3,
-  },
-  categoryDot: {
-    width: 5,
-    height: 5,
-    borderRadius: 2.5,
-  },
-  categoryPillText: {
-    fontSize: 9,
-    fontFamily: "Outfit_700Bold",
-    letterSpacing: 0.5,
-  },
-  pinnedTag: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 3,
-    paddingHorizontal: 6,
-    paddingVertical: 1,
-    borderRadius: 6,
-    marginLeft: 4,
-  },
-  pinnedTagText: {
-    fontSize: 8,
-    fontFamily: "Outfit_700Bold",
-  },
-  title: {
-    fontFamily: "Outfit_700Bold",
-    fontSize: 16,
-  },
-  description: {
-    fontSize: 12.5,
-    lineHeight: 18,
-    marginTop: 8,
-  },
-  sourceBadge: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 6,
-    marginTop: 10,
-    paddingTop: 8,
-    borderTopWidth: StyleSheet.hairlineWidth,
-  },
-  source: {
-    fontSize: 11,
-  },
-  emptyWrap: {
-    alignItems: "center",
-    paddingVertical: 48,
-  },
-  emptyTitle: {
-    fontFamily: "Outfit_700Bold",
-    fontSize: 16,
-    marginTop: 10,
-  },
-  emptySub: {
-    fontSize: 13,
-    marginTop: 4,
-    textAlign: "center",
-  },
-  clearAllBtn: {
-    marginTop: 14,
-    paddingHorizontal: 16,
-    paddingVertical: 9,
-    borderRadius: 18,
-  },
-});
+function createToolsStyles(
+  metrics?: ThemeMetrics,
+  fonts?: { heading: string; body: string; bold: string }
+) {
+  const cardRadiusPx = metrics?.cardRadiusPx ?? 14;
+  const radiusRatio = cardRadiusPx / 14;
+  const r = (base: number) => Math.round(base * radiusRatio);
+  const bw = metrics?.borderWidthPx ?? 1;
+  const spacingScale = metrics?.spacingScale ?? 1;
+  const sp = (v: number) => Number((v * spacingScale).toFixed(1));
+  const fontScale = metrics?.fontScale ?? 1;
+  const lineHeightScale = metrics?.lineHeightScale ?? 1;
+  const fs = (v: number) => Number((v * fontScale).toFixed(1));
+  const lh = (v: number) => Math.round(v * fontScale * lineHeightScale);
+  const isDefaultFonts =
+    !fonts ||
+    (fonts.heading === "Outfit_700Bold" &&
+      fonts.body === "Inter_400Regular" &&
+      fonts.bold === "Inter_700Bold");
+  const hf = (fallback = "Outfit_700Bold") =>
+    isDefaultFonts ? fallback : fonts.heading;
+  const bf = (fallback = "Inter_400Regular") =>
+    isDefaultFonts ? fallback : fonts.body;
+
+  return StyleSheet.create({
+    screen: {
+      flex: 1,
+    },
+    filterHeader: {
+      paddingHorizontal: sp(14),
+      paddingTop: sp(4),
+      paddingBottom: sp(6),
+      borderBottomWidth: StyleSheet.hairlineWidth,
+    },
+    searchWrap: {
+      flexDirection: "row",
+      alignItems: "center",
+      borderRadius: r(17),
+      borderWidth: bw,
+      paddingHorizontal: sp(11),
+      height: Math.round(34 * spacingScale),
+      marginBottom: sp(6),
+      elevation: Platform.OS === "android" ? 1 : 0,
+    },
+    searchIcon: {
+      marginRight: sp(9),
+    },
+    searchInput: {
+      flex: 1,
+      minWidth: 0,
+      height: "100%",
+      marginRight: sp(6),
+      fontFamily: bf("Inter_400Regular"),
+      fontSize: fs(12.5),
+      paddingVertical: 0,
+      paddingHorizontal: 0,
+      textAlignVertical: "center",
+      includeFontPadding: false,
+    },
+    sortRow: {
+      flexDirection: "row",
+      alignItems: "center",
+      justifyContent: "center",
+      gap: sp(6),
+      marginTop: sp(5),
+    },
+    sortLabel: {
+      fontFamily: hf("Outfit_700Bold"),
+      fontSize: fs(10),
+      lineHeight: lh(14),
+      letterSpacing: 0.8,
+      flexShrink: 0,
+      includeFontPadding: false,
+      textAlignVertical: "center",
+    },
+    segmentText: {
+      fontFamily: hf("Outfit_700Bold"),
+      fontSize: fs(11),
+      lineHeight: lh(15),
+      paddingBottom: 0,
+      includeFontPadding: false,
+      textAlignVertical: "center",
+    },
+    list: {
+      paddingHorizontal: sp(14),
+      paddingTop: sp(10),
+      paddingBottom: sp(28),
+      gap: sp(8),
+    },
+    resultsBar: {
+      flexDirection: "row",
+      alignItems: "center",
+      justifyContent: "space-between",
+      marginBottom: sp(8),
+    },
+    resultsText: {
+      fontFamily: bf("Inter_400Regular"),
+      fontSize: fs(12),
+    },
+    clearFilterText: {
+      fontSize: fs(12),
+      fontFamily: hf("Outfit_700Bold"),
+    },
+    pinnedSection: {
+      marginBottom: sp(8),
+    },
+    pinnedHeaderRow: {
+      flexDirection: "row",
+      alignItems: "center",
+      gap: sp(6),
+      marginBottom: sp(10),
+    },
+    pinnedSectionTitle: {
+      fontFamily: hf("Outfit_700Bold"),
+      fontSize: fs(15),
+    },
+    allToolsDividerLabel: {
+      fontFamily: hf("Outfit_700Bold"),
+      fontSize: fs(11),
+      letterSpacing: 1,
+      marginTop: sp(16),
+      marginBottom: sp(4),
+    },
+    cardWrap: {
+      borderRadius: r(16),
+      borderWidth: bw,
+      overflow: "hidden",
+      elevation: Platform.OS === "android" ? 2 : 0,
+    },
+    card: {
+      padding: sp(16),
+    },
+    cardHeaderRow: {
+      flexDirection: "row",
+      alignItems: "center",
+    },
+    cardIconWrap: {
+      width: 46,
+      height: 46,
+      borderRadius: r(14),
+      borderWidth: bw,
+      alignItems: "center",
+      justifyContent: "center",
+    },
+    trailingCircle: {
+      width: 32,
+      height: 32,
+      borderRadius: 16,
+      alignItems: "center",
+      justifyContent: "center",
+      marginLeft: sp(10),
+    },
+    body: {
+      flex: 1,
+      marginLeft: sp(12),
+      marginRight: sp(4),
+    },
+    categoryPillWrap: {
+      flexDirection: "row",
+      flexWrap: "wrap",
+      alignItems: "center",
+      gap: sp(5),
+      marginBottom: 3,
+    },
+    categoryDot: {
+      width: 5,
+      height: 5,
+      borderRadius: 2.5,
+    },
+    categoryPillText: {
+      fontSize: fs(9),
+      fontFamily: hf("Outfit_700Bold"),
+      letterSpacing: 0.5,
+    },
+    pinnedTag: {
+      flexDirection: "row",
+      alignItems: "center",
+      gap: 3,
+      paddingHorizontal: sp(6),
+      paddingVertical: 1,
+      borderRadius: r(6),
+      marginLeft: sp(4),
+    },
+    pinnedTagText: {
+      fontSize: fs(8),
+      fontFamily: hf("Outfit_700Bold"),
+    },
+    title: {
+      fontFamily: hf("Outfit_700Bold"),
+      fontSize: fs(16),
+    },
+    description: {
+      fontFamily: bf("Inter_400Regular"),
+      fontSize: fs(12.5),
+      lineHeight: lh(18),
+      marginTop: sp(8),
+    },
+    sourceBadge: {
+      flexDirection: "row",
+      alignItems: "center",
+      gap: sp(6),
+      marginTop: sp(10),
+      paddingTop: sp(8),
+      borderTopWidth: StyleSheet.hairlineWidth,
+    },
+    source: {
+      fontFamily: bf("Inter_400Regular"),
+      fontSize: fs(11),
+    },
+    emptyWrap: {
+      alignItems: "center",
+      paddingVertical: sp(48),
+    },
+    emptyTitle: {
+      fontFamily: hf("Outfit_700Bold"),
+      fontSize: fs(16),
+      marginTop: sp(10),
+    },
+    emptySub: {
+      fontFamily: bf("Inter_400Regular"),
+      fontSize: fs(13),
+      marginTop: sp(4),
+      textAlign: "center",
+    },
+    clearAllBtn: {
+      marginTop: sp(14),
+      paddingHorizontal: sp(16),
+      paddingVertical: sp(9),
+      borderRadius: r(18),
+    },
+  });
+}

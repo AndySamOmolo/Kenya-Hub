@@ -48,7 +48,7 @@ import {
   FeaturedLanguageWidget,
   WordOfTheMomentWidget,
 } from "../../src/components/home/HomeHelpers";
-import { styles } from "../../src/components/home/styles";
+import { createHomeStyles } from "../../src/components/home/styles";
 
 const MATATU_KEYWORDS = [
   "matatu",
@@ -76,7 +76,11 @@ const ALL_MATATU_ROUTES = Object.entries(matatuData.routes || {}).flatMap(
 
 export default function HomeScreen() {
   const router = useRouter();
-  const { theme, isDark } = useTheme();
+  const { theme, isDark, themeConfig, themeMetrics, resolvedFonts } = useTheme();
+  const styles = useMemo(
+    () => createHomeStyles(themeMetrics, resolvedFonts),
+    [themeMetrics, resolvedFonts]
+  );
   const [pinnedSlugs, setPinnedSlugs] = useState<string[]>([]);
   const [visitCounts, setVisitCounts] = useState<Record<string, number>>({});
   const [searchQuery, setSearchQuery] = useState("");
@@ -553,7 +557,8 @@ export default function HomeScreen() {
 
       <ScrollView
         contentContainerStyle={styles.scrollContent}
-        showsVerticalScrollIndicator={false}
+        showsVerticalScrollIndicator={themeConfig?.verticalScrollbarStyle !== "hidden"}
+        persistentScrollbar={themeConfig?.verticalScrollbarStyle === "always-visible"}
         keyboardShouldPersistTaps="handled"
       >
         {/* 1. Native Android Header with Single Clean Greeting */}
@@ -946,7 +951,7 @@ export default function HomeScreen() {
         {/* 3. Native Super-App Quick Launcher */}
         <View style={styles.launcherSection}>
           <View style={styles.launcherGrid}>
-            {SUPER_APP_APP_TILES(dynamicLauncherItems, router, theme)}
+            {SUPER_APP_APP_TILES(dynamicLauncherItems, router, theme, styles)}
           </View>
         </View>
 
@@ -981,7 +986,7 @@ export default function HomeScreen() {
         <ScrollView
           ref={widgetsScrollRef}
           horizontal
-          showsHorizontalScrollIndicator={false}
+          showsHorizontalScrollIndicator={themeConfig?.horizontalScrollbarStyle === "native-indicator"}
           snapToInterval={WIDGET_SNAP_INTERVAL}
           decelerationRate="fast"
           bounces={true}
@@ -1167,7 +1172,7 @@ export default function HomeScreen() {
 
             <ScrollView
               horizontal
-              showsHorizontalScrollIndicator={false}
+              showsHorizontalScrollIndicator={themeConfig?.horizontalScrollbarStyle === "native-indicator"}
               contentContainerStyle={styles.pinnedStripContent}
               bounces={true}
               alwaysBounceHorizontal={true}
@@ -1392,7 +1397,7 @@ export default function HomeScreen() {
 
         <ScrollView
           horizontal
-          showsHorizontalScrollIndicator={false}
+          showsHorizontalScrollIndicator={themeConfig?.horizontalScrollbarStyle === "native-indicator"}
           contentContainerStyle={styles.guidesCarouselContent}
           bounces={true}
           alwaysBounceHorizontal={true}
@@ -1490,7 +1495,8 @@ export default function HomeScreen() {
           />
           <ScrollView
             contentContainerStyle={{ padding: 16, paddingBottom: 48, gap: 10 }}
-            showsVerticalScrollIndicator={false}
+            showsVerticalScrollIndicator={themeConfig?.verticalScrollbarStyle !== "hidden"}
+        persistentScrollbar={themeConfig?.verticalScrollbarStyle === "always-visible"}
           >
             {allHolidaysList.map((h, idx) => (
               <View
@@ -1593,7 +1599,8 @@ export default function HomeScreen() {
           {selectedPost && (
             <ScrollView
               contentContainerStyle={{ padding: 16, paddingBottom: 48 }}
-              showsVerticalScrollIndicator={false}
+              showsVerticalScrollIndicator={themeConfig?.verticalScrollbarStyle !== "hidden"}
+        persistentScrollbar={themeConfig?.verticalScrollbarStyle === "always-visible"}
               scrollEventThrottle={16}
               onScroll={(e) => {
                 const { contentOffset, contentSize, layoutMeasurement } =
