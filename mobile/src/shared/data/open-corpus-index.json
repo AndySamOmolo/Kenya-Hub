@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-23T08:17:52.196587+00:00",
+  "generatedAt": "2026-11-23T21:43:31.890362+00:00",
   "cldrVersion": "49.0.0",
   "stats": {
-    "totalR2AudioClips": 20263,
+    "totalR2AudioClips": 31076,
     "totalAudioChapters": 5,
     "totalKslVideos": 2343,
     "totalStagedVarieties": 4,
@@ -12,7 +12,7 @@
     "totalQuizQuestions": 520,
     "totalCivicDatasets": 10,
     "totalWikimediaDatasets": 6,
-    "pendingGatedCount": 12
+    "pendingGatedCount": 9
   },
   "languages": {
     "swahili": {
@@ -819,7 +819,7 @@
       "audioChapters": [],
       "shards": {
         "audioCount": 12777,
-        "storiesCount": 236,
+        "storiesCount": 223,
         "sentencesCount": 180,
         "articlesCount": 72,
         "quizCount": 230,
@@ -1443,7 +1443,7 @@
     },
     "luo": {
       "languageId": "luo",
-      "r2AudioClips": 1174,
+      "r2AudioClips": 11984,
       "nativeAudioSamples": [
         {
           "slug": "agombo-neno-wengegi-chieng-jumapil-ka-oresa-kendo",
@@ -2178,7 +2178,7 @@
         }
       ],
       "shards": {
-        "audioCount": 1169,
+        "audioCount": 11979,
         "storiesCount": 6,
         "sentencesCount": 0,
         "articlesCount": 41,
@@ -2660,7 +2660,7 @@
       "audioChapters": [],
       "shards": {
         "audioCount": 323,
-        "storiesCount": 55,
+        "storiesCount": 56,
         "sentencesCount": 0,
         "articlesCount": 0,
         "quizCount": 0,
@@ -3253,7 +3253,7 @@
       "audioChapters": [],
       "shards": {
         "audioCount": 449,
-        "storiesCount": 29,
+        "storiesCount": 30,
         "sentencesCount": 0,
         "articlesCount": 0,
         "quizCount": 0,
@@ -3263,7 +3263,7 @@
     },
     "kalenjin": {
       "languageId": "kalenjin",
-      "r2AudioClips": 2166,
+      "r2AudioClips": 2167,
       "nativeAudioSamples": [
         {
           "slug": "kongoi",
@@ -3767,7 +3767,7 @@
       "benchmarks": [],
       "audioChapters": [],
       "shards": {
-        "audioCount": 2166,
+        "audioCount": 2167,
         "storiesCount": 4,
         "sentencesCount": 0,
         "articlesCount": 108,
@@ -6279,8 +6279,15 @@
     },
     "taita": {
       "languageId": "taita",
-      "r2AudioClips": 0,
-      "nativeAudioSamples": [],
+      "r2AudioClips": 1,
+      "nativeAudioSamples": [
+        {
+          "slug": "napoilwa-kukuw-ona-sena",
+          "label": "Napoilwa kukuw ona sena",
+          "transcript": "Napoilwa kukuw ona sena",
+          "audioUrl": "https://audio.kenyahub.me/audio/taita/napoilwa-kukuw-ona-sena.opus"
+        }
+      ],
       "cldr": {
         "locale": "dav",
         "months": [
@@ -6347,7 +6354,7 @@
       "benchmarks": [],
       "audioChapters": [],
       "shards": {
-        "audioCount": 0,
+        "audioCount": 1,
         "storiesCount": 0,
         "sentencesCount": 0,
         "articlesCount": 0,
@@ -6457,7 +6464,7 @@
     },
     "borana": {
       "languageId": "borana",
-      "r2AudioClips": 392,
+      "r2AudioClips": 393,
       "nativeAudioSamples": [
         {
           "slug": "gaala",
@@ -6466,6 +6473,12 @@
           "audioUrl": "https://audio.kenyahub.me/audio/borana/gaala.opus",
           "english": "Camel",
           "verifiedTranscript": true
+        },
+        {
+          "slug": "afaan-oromoo-ifa-boruu-qaba",
+          "label": "Afaan oromoo ifa boruu qaba",
+          "transcript": "Afaan oromoo ifa boruu qaba",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/afaan-oromoo-ifa-boruu-qaba.opus"
         },
         {
           "slug": "turkii-awurooppaa-3-biyyattii-qabaata",
@@ -6694,12 +6707,6 @@
           "label": "Riichaardi veermaan dubbataan ogeeyyii fayyaa daangaa…",
           "transcript": "Riichaardi veermaan dubbataan ogeeyyii fayyaa daangaa…",
           "audioUrl": "https://audio.kenyahub.me/audio/borana/riichaardi-veermaan-dubbataan-ogeeyyii-fayyaa-daangaa-hinqabnee-.opus"
-        },
-        {
-          "slug": "suuraa-kana-irratti-kan-agarru-ijoollee-kubbaa-miilaa-taphachuf-",
-          "label": "Suuraa kana irratti kan agarru ijoollee kubbaa miilaa…",
-          "transcript": "Suuraa kana irratti kan agarru ijoollee kubbaa miilaa…",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/suuraa-kana-irratti-kan-agarru-ijoollee-kubbaa-miilaa-taphachuf-.opus"
         }
       ],
       "cldr": {
@@ -6984,7 +6991,7 @@
       ],
       "audioChapters": [],
       "shards": {
-        "audioCount": 392,
+        "audioCount": 393,
         "storiesCount": 49,
         "sentencesCount": 0,
         "articlesCount": 0,
@@ -12606,7 +12613,8 @@
         "transcript": "Now Abraham journeyed from there to the region of the Negev and settled between Kadesh and Shur. While he was staying in Gerar, Abraham said of his wife Sarah, “She is my sister.” So Abimelech king of Gerar had Sarah brought to him. One night, however, God came to Abimelech in a dream and told him, “You are as good as dead because of the woman you have taken, for she is a married woman.” Now Abimelech had not gone near her, so he replied, “Lord, would You destroy a nation even though it is innocent? Didn’t Abraham tell me, ‘She is my sister’? And she herself said, ‘He is my brother.’ I have done this in the integrity of my heart and the innocence of my hands.” Then God said to Abimelech in the dream, “Yes, I know that you did this with a clear conscience, and so I have kept you from sinning against Me. That is why I did not let you touch her. Now return the man’s wife, for he is a prophet; he will pray for you and you will live. But if you do not restore her, be aware that you will surely die—you and all who belong to you.” Early the next morning Abimelech got up and summoned all his servants; and when he described to them all that had happened, the men were terrified. Then Abimelech called Abraham and asked, “What have you done to us? How have I sinned against you, that you have brought such tremendous guilt upon me and my kingdom? You have done things to me that should not be done.” Abimelech also asked Abraham, “What prompted you to do such a thing?” Abraham replied, “I thought to myself, ‘Surely there is no fear of God in this place. They will kill me on account of my wife.’ Besides, she really is my sister, the daughter of my father—though not the daughter of my mother—and she became my wife. So when God had me journey from my father’s house, I said to Sarah, ‘This is how you can show your loyalty to me: Wherever we go, say of me, “He is my brother.”’” So Abimelech brought sheep and cattle, menservants and maidservants, and he gave them to Abraham and restored his wife Sarah to him. And Abimelech said, “Look, my land is before you. Settle wherever you please.” And he said to Sarah, “See, I am giving your brother a thousand pieces of silver. It is your vindication before all who are with you; you are completely cleared.",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles",
+        "fullDurationV2": true
       },
       {
         "id": "sign-bible-xki-48393b9bc1",
@@ -12619,7 +12627,8 @@
         "transcript": "Then the king of Sodom, the king of Gomorrah, the king of Admah, the king of Zeboiim, and the king of Bela (that is, Zoar) marched out and arrayed themselves for battle in the Valley of Siddim against Chedorlaomer king of Elam, Tidal king of Goiim, Amraphel king of Shinar, and Arioch king of Ellasar—four kings against five. Now the Valley of Siddim was full of tar pits, and as the kings of Sodom and Gomorrah fled, some men fell into the pits, but the survivors fled to the hill country. The four kings seized all the goods of Sodom and Gomorrah and all their food, and they went on their way. They also carried off Abram’s nephew Lot and his possessions, since Lot was living in Sodom. Then an escapee came and reported this to Abram the Hebrew. Now Abram was living near the Oaks of Mamre the Amorite, a brother of Eshcol and Aner, all of whom were bound by treaty to Abram. And when Abram heard that his relative had been captured, he mobilized the 318 trained men born in his household, and they set out in pursuit as far as Dan. During the night, Abram divided his forces and routed Chedorlaomer’s army, pursuing them as far as Hobah, north of Damascus. He retrieved all the goods, as well as his relative Lot and his possessions, together with the women and the rest of the people. After Abram returned from defeating Chedorlaomer and the kings allied with him, the king of Sodom went out to meet him in the Valley of Shaveh (that is, the King’s Valley). Then Melchizedek king of Salem brought out bread and wine—since he was priest of God Most High — and he blessed Abram and said: “Blessed be Abram by God Most High, Creator of heaven and earth, and blessed be God Most High, who has delivered your enemies into your hand.” Then Abram gave Melchizedek a tenth of everything. The king of Sodom said to Abram, “Give me the people, but take the goods for yourself.” But Abram replied to the king of Sodom, “I have raised my hand to the LORD God Most High, Creator of heaven and earth, that I will not accept even a thread, or a strap of a sandal, or anything that belongs to you, lest you should say, ‘I have made Abram rich.’ I will accept nothing but what my men have eaten and the share for the men who went with me—Aner, Eshcol, and Mamre. They may take their portion.”",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles",
+        "fullDurationV2": true
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-403",
@@ -12918,7 +12927,8 @@
         "transcript": "And Adam had relations with his wife Eve, and she conceived and gave birth to Cain. “With the help of the LORD I have brought forth a man,” she said. Later she gave birth to Cain’s brother Abel. Now Abel was a keeper of sheep, while Cain was a tiller of the soil. So in the course of time, Cain brought some of the fruit of the soil as an offering to the LORD, while Abel brought the best portions of the firstborn of his flock. And the LORD looked with favor on Abel and his offering, but He had no regard for Cain and his offering. So Cain became very angry, and his countenance fell. “Why are you angry,” said the LORD to Cain, “and why has your countenance fallen? If you do what is right, will you not be accepted? But if you refuse to do what is right, sin is crouching at your door; it desires you, but you must master it.” Then Cain said to his brother Abel, “Let us go out to the field.” And while they were in the field, Cain rose up against his brother Abel and killed him. And the LORD said to Cain, “Where is your brother Abel?” “I do not know!” he answered. “Am I my brother’s keeper?” “What have you done?” replied the LORD. “The voice of your brother’s blood cries out to Me from the ground. Now you are cursed and banished from the ground, which has opened its mouth to receive your brother’s blood from your hand. When you till the ground, it will no longer yield its produce to you. You will be a fugitive and a wanderer on the earth.” But Cain said to the LORD, “My punishment is greater than I can bear. Behold, this day You have driven me from the face of the earth, and from Your face I will be hidden; I will be a fugitive and a wanderer on the earth, and whoever finds me will kill me.” “Not so!” replied the LORD. “If anyone slays Cain, then Cain will be avenged sevenfold.” And the LORD placed a mark on Cain, so that no one who found him would kill him. So Cain went out from the presence of the LORD and settled in the land of Nod, east of Eden. And Cain had relations with his wife, and she conceived and gave birth to Enoch. Then Cain built a city and named it after his son Enoch. And Adam again had relations with his wife, and she gave birth to a son and named him Seth, saying, “God has granted me another seed in place of Abel, since Cain killed him.” And to Seth also a son was born, and he called him Enosh.",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles",
+        "fullDurationV2": true
       },
       {
         "id": "sign-bible-xki-ecd428cbe0",
@@ -13061,7 +13071,8 @@
         "transcript": "Now the serpent was more crafty than any beast of the field that the LORD God had made. And he said to the woman, “Did God really say, ‘You must not eat from any tree in the garden?’” The woman answered the serpent, “We may eat the fruit of the trees of the garden, but about the fruit of the tree in the middle of the garden, God has said, ‘You must not eat of it or touch it, or you will die.’” “You will not surely die,” the serpent told her. “For God knows that in the day you eat of it, your eyes will be opened and you will be like God, knowing good and evil.” When the woman saw that the tree was good for food and pleasing to the eyes, and that it was desirable for obtaining wisdom, she took the fruit and ate it. She also gave some to her husband who was with her, and he ate it. And the eyes of both of them were opened, and they knew that they were naked; so they sewed together fig leaves and made coverings for themselves. Then the man and his wife heard the voice of the LORD God walking in the garden in the breeze of the day, and they hid themselves from the presence of the LORD God among the trees of the garden. But the LORD God called out to the man, “Where are you?” “I heard Your voice in the garden,” he replied, “and I was afraid because I was naked; so I hid myself.” “Who told you that you were naked?” asked the LORD God. “Have you eaten from the tree of which I commanded you not to eat?” And the man answered, “The woman whom You gave me, she gave me fruit from the tree, and I ate it.” Then the LORD God said to the woman, “What is this you have done?” “The serpent deceived me,” she replied, “and I ate.” So the LORD God said to the serpent: “Because you have done this, cursed are you above all livestock and every beast of the field! On your belly will you go, and dust you will eat, all the days of your life. And I will put enmity between you and the woman, and between your seed and her seed. He will crush your head, and you will strike his heel.” To the woman He said: “I will sharply increase your pain in childbirth; in pain you will bring forth children. Your desire will be for your husband, and he will rule over you.” And to Adam He said: “Because you have listened to the voice of your wife and have eaten from the tree of which I commanded you not to eat, cursed is the ground because of you; through toil you will eat of it all the days of your life.",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles",
+        "fullDurationV2": true
       },
       {
         "id": "sign-bible-xki-b7bf0d6708",
@@ -13074,7 +13085,8 @@
         "transcript": "Now the serpent was more crafty than any beast of the field that the LORD God had made. And he said to the woman, “Did God really say, ‘You must not eat from any tree in the garden?’” The woman answered the serpent, “We may eat the fruit of the trees of the garden, but about the fruit of the tree in the middle of the garden, God has said, ‘You must not eat of it or touch it, or you will die.’” “You will not surely die,” the serpent told her. “For God knows that in the day you eat of it, your eyes will be opened and you will be like God, knowing good and evil.” When the woman saw that the tree was good for food and pleasing to the eyes, and that it was desirable for obtaining wisdom, she took the fruit and ate it. She also gave some to her husband who was with her, and he ate it. And the eyes of both of them were opened, and they knew that they were naked; so they sewed together fig leaves and made coverings for themselves. Then the man and his wife heard the voice of the LORD God walking in the garden in the breeze of the day, and they hid themselves from the presence of the LORD God among the trees of the garden. But the LORD God called out to the man, “Where are you?” “I heard Your voice in the garden,” he replied, “and I was afraid because I was naked; so I hid myself.” “Who told you that you were naked?” asked the LORD God. “Have you eaten from the tree of which I commanded you not to eat?” And the man answered, “The woman whom You gave me, she gave me fruit from the tree, and I ate it.” Then the LORD God said to the woman, “What is this you have done?” “The serpent deceived me,” she replied, “and I ate.” So the LORD God said to the serpent: “Because you have done this, cursed are you above all livestock and every beast of the field! On your belly will you go, and dust you will eat, all the days of your life. And I will put enmity between you and the woman, and between your seed and her seed. He will crush your head, and you will strike his heel.” To the woman He said: “I will sharply increase your pain in childbirth; in pain you will bring forth children. Your desire will be for your husband, and he will rule over you.” And to Adam He said: “Because you have listened to the voice of your wife and have eaten from the tree of which I commanded you not to eat, cursed is the ground because of you; through toil you will eat of it all the days of your life.",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles",
+        "fullDurationV2": true
       }
     ],
     "storybooks": [],
