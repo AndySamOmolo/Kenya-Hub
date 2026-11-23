@@ -224,6 +224,14 @@ export default function LanguageCourseTool({
       setActiveTab(initialTab);
     }
   }, [initialTab]);
+
+  useEffect(() => {
+    const cl = (openCorpusIndex.languages as Record<string, any>)[selectedLangId];
+    const hasAud = Boolean((cl?.r2AudioClips || 0) > 0 || (cl?.nativeAudioSamples?.length || 0) > 0 || selectedLangId === 'luo');
+    setLrSubTab(hasAud ? 'listen' : 'read');
+    setLrQuizIdx(0);
+    setLrQuizChoice(null);
+  }, [selectedLangId]);
   const [showAchievements, setShowAchievements] = useState(false);
 
   // ── Progress Store (All Languages) ──
@@ -2410,7 +2418,7 @@ export default function LanguageCourseTool({
                 onPress={() => handleSelectLanguageFromMenu(config.id)}
                 style={{
                   backgroundColor: colors.surfaceContainerLow,
-                  borderColor: courseXp > 0 ? `${config.color}66` : colors.outlineVariant,
+                  borderColor: courseXp > 0 ? `${config.color}88` : `${config.color}45`,
                   borderWidth: 1,
                   borderRadius: 15,
                   padding: 12,
@@ -3385,7 +3393,7 @@ export default function LanguageCourseTool({
         )}
       </View>
 
-      {/* 2. Primary Course Mode Navigation Tabs Above the Fold (Path | Vocab | Games | Grammar | Wisdom - UX-9) */}
+      {/* 2. Primary Course Mode Navigation Tabs Above the Fold (Path | Listen & Read | Vocab | Games | Grammar | Wisdom - UX-9) */}
       <ExpandablePillRow contentContainerStyle={{ flexDirection: 'row', alignItems: 'center', gap: 8, paddingVertical: 2 }}>
         {(
           [
@@ -5075,7 +5083,7 @@ export default function LanguageCourseTool({
                           <Text style={{ fontFamily: 'Inter_600SemiBold', fontSize: 12.5, color: colors.text, flex: 1 }} numberOfLines={2}>
                             Ch. {ch.number}: {cleanTitle}
                           </Text>
-                          <MaterialCommunityIcons name="play-circle" size={20} color={colors.kenyaGreen} />
+                          <Feather name="play-circle" size={20} color={colors.kenyaGreen} />
                         </Pressable>
                       );
                     })}
@@ -5107,7 +5115,7 @@ export default function LanguageCourseTool({
                             backgroundColor: colors.surface,
                           }}
                         >
-                          <MaterialCommunityIcons name="volume-high" size={14} color={colors.kenyaGreen} />
+                          <Feather name="volume-2" size={14} color={colors.kenyaGreen} />
                           <Text style={{ fontFamily: 'Inter_600SemiBold', fontSize: 12, color: colors.text }} numberOfLines={1}>
                             {s.label}
                           </Text>
@@ -5334,7 +5342,7 @@ export default function LanguageCourseTool({
                               backgroundColor: colors.surface,
                             }}
                           >
-                            <MaterialCommunityIcons name="volume-high" size={13} color={colors.kenyaGreen} />
+                            <Feather name="volume-2" size={13} color={colors.kenyaGreen} />
                             <Text style={{ fontFamily: "Inter_500Medium", fontSize: 11, color: colors.text }} numberOfLines={1}>
                               {sample.label}
                             </Text>

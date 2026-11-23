@@ -91,15 +91,15 @@ export default function StagedVarietiesPanel() {
               Practice signs with slow-motion playback (0.5x–1x) using Maseno University stickman sign videos and human KSL signers.
             </p>
           </div>
-          <div className="flex flex-wrap items-center gap-2 shrink-0">
+          <div className="flex flex-wrap items-center gap-2 min-w-0 max-w-full">
             {kslVideos.length > 0 && (
-              <span className="rounded-full border border-kenya-green/30 bg-kenya-green/10 px-3 py-1 text-xs font-semibold text-kenya-green">
+              <span className="whitespace-nowrap rounded-full border border-kenya-green/30 bg-kenya-green/10 px-3 py-1 text-xs font-semibold text-kenya-green">
                 {kslVideos.length.toLocaleString()} playable videos
               </span>
             )}
             <Link
               href="/tools/learn/ksl/"
-              className="inline-flex items-center gap-1 rounded-full border border-gold/40 bg-gold/10 px-3 py-1 text-xs font-semibold text-gold hover:bg-gold/20 transition-colors"
+              className="whitespace-nowrap inline-flex items-center gap-1 rounded-full border border-gold/40 bg-gold/10 px-3 py-1 text-xs font-semibold text-gold hover:bg-gold/20 transition-colors"
             >
               Open Full KSL Studio <ArrowRight className="h-3 w-3" />
             </Link>

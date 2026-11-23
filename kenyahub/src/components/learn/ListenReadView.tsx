@@ -79,6 +79,7 @@ export default function ListenReadView({ languageId, languageName }: ListenReadV
   const [readers, setReaders] = useState<ReadersShard | null>(null);
   const [expandedStoryIdx, setExpandedStoryIdx] = useState<number | null>(0);
   const [expandedBiIdx, setExpandedBiIdx] = useState<number | null>(0);
+  const [biLimit, setBiLimit] = useState<number>(20);
   const [showBiEnglish, setShowBiEnglish] = useState<boolean>(true);
   const [chapterSearch, setChapterSearch] = useState<string>("");
   const [showChapterEnglish, setShowChapterEnglish] = useState<boolean>(true);
@@ -244,7 +245,7 @@ export default function ListenReadView({ languageId, languageName }: ListenReadV
             <span>
               Stories &amp; Reading (
               {(
-                (readers?.stories.length ?? shards?.storiesCount ?? 0) +
+                ((readers?.stories.length ?? 0) + (readers?.bilingualReadings?.length ?? 0) || shards?.storiesCount || 0) +
                 (readers?.sentences.length ?? shards?.sentencesCount ?? 0) +
                 (readers?.newsArticles.length ?? 0)
               ).toLocaleString("en-KE")}
@@ -653,7 +654,7 @@ export default function ListenReadView({ languageId, languageName }: ListenReadV
                 </button>
               </div>
               <div className="space-y-2.5">
-                {readers.bilingualReadings.slice(0, 20).map((item, idx) => {
+                {readers.bilingualReadings.slice(0, biLimit).map((item, idx) => {
                   const isOpen = expandedBiIdx === idx;
                   return (
                     <div key={idx} className="rounded-xl border border-border/70 bg-bg-elevated/50 overflow-hidden">
@@ -692,6 +693,17 @@ export default function ListenReadView({ languageId, languageName }: ListenReadV
                   );
                 })}
               </div>
+              {readers.bilingualReadings.length > biLimit && (
+                <div className="text-center pt-1">
+                  <button
+                    type="button"
+                    onClick={() => setBiLimit((n) => n + 24)}
+                    className="rounded-xl border border-gold/40 bg-gold/10 px-4 py-2 text-xs font-semibold text-gold hover:bg-gold/20 cursor-pointer"
+                  >
+                    Show more stories ({readers.bilingualReadings.length - biLimit} more)
+                  </button>
+                </div>
+              )}
             </div>
           )}
 

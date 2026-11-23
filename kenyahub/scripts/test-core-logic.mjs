@@ -317,6 +317,7 @@ test("DATA-01..03: catalog.ts matches all 23 dictionaries, audio floor >= 2000, 
 test("SEC-05: Mobile LanguageCourseTool restricts WebView originWhitelist (no wildcard '*')", () => {
   const mobLctSrc = fs.readFileSync(path.join(MOBILE_ROOT, "src/tools/LanguageCourseTool.tsx"), "utf8");
   assert.ok(!mobLctSrc.includes("originWhitelist={['*']}") && !mobLctSrc.includes('originWhitelist={["*"]}'));
+  assert.ok(!mobLctSrc.includes("<MaterialCommunityIcons"), "LanguageCourseTool must not use unimported MaterialCommunityIcons");
 });
 
 console.log(`\nAll ${passed} core verification test suites passed!`);

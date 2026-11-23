@@ -917,7 +917,7 @@ def ingest_oer_storybooks(max_rows: int, dry_run: bool, lock: dict | None = None
         out_file = READERS_DIR / f"{job['id']}.json"
         needs_gsb_en = False
         if job["id"] == "glotstorybook":
-            if not out_file.exists() or oer_st.get("glotstorybook", {}).get("englishAlignedV2") is not True:
+            if not out_file.exists() or oer_st.get("glotstorybook", {}).get("englishAlignedV4") is not True:
                 needs_gsb_en = True
             else:
                 try:
@@ -957,38 +957,60 @@ def ingest_oer_storybooks(max_rows: int, dry_run: bool, lock: dict | None = None
                 title_val = str(row.get("title") or row.get("File Name") or row.get("Story Category") or job["id"]).strip()
                 sid_m = re.match(r"^(\d{3,5})[_\-]", title_val)
                 story_num = sid_m.group(1) if sid_m else ""
+                src_norm = str(src).strip().lower()[:40]
                 if is_gsb and iso in ("eng", "en", "english") and story_num:
-                    eb = eng_by_story_id.setdefault(story_num, {"title": title_val, "pages": []})
-                    if len(eb["pages"]) < 16:
+                    # Keep EVERY distinct English story separate by (source, story_num, exact File Name) so two stories NEVER concatenate!
+                    cands = eng_by_story_id.setdefault((src_norm, story_num), {})
+                    eb = cands.setdefault(title_val, {"title": title_val, "pages": []})
+                    if len(eb["pages"]) < 80:
                         eb["pages"].append(body_txt)
                     continue
                 if iso not in ISO_TO_KENYAHUB_LANG:
                     continue
-                item: dict[str, Any] = {"lang_id": ISO_TO_KENYAHUB_LANG[iso], "license": str(lic), "title": title_val, "text": body_txt}
+                item: dict[str, Any] = {"lang_id": ISO_TO_KENYAHUB_LANG[iso], "license": str(lic), "source_norm": src_norm, "title": title_val, "text": body_txt}
                 if story_num:
                     item["story_id"] = story_num
                 kept.append(item)
             if is_gsb and kept:
-                # Group multi-page GlotStoryBook rows into complete stories and attach matching English translations!
+                # Group multi-page GlotStoryBook rows into COMPLETE stories (up to 80 pages / 25k chars) and pick the single best-matching English candidate!
                 grouped: dict[tuple[str, str], dict[str, Any]] = {}
                 for r in kept:
                     gk = (r["lang_id"], r["title"])
                     if gk not in grouped:
-                        grouped[gk] = {"lang_id": r["lang_id"], "license": r["license"], "title": r["title"], "story_id": r.get("story_id", ""), "pages": []}
-                    if len(grouped[gk]["pages"]) < 16:
+                        grouped[gk] = {"lang_id": r["lang_id"], "license": r["license"], "source_norm": r.get("source_norm", ""), "title": r["title"], "story_id": r.get("story_id", ""), "pages": []}
+                    if len(grouped[gk]["pages"]) < 80:
                         grouped[gk]["pages"].append(r["text"])
                 merged_stories = []
                 for g in grouped.values():
+                    local_full = "\n\n".join(g["pages"])[:25000]
+                    local_words = {w.lower() for w in re.findall(r"[A-Za-z]{4,}", g["title"] + " " + local_full[:600])}
                     st_obj: dict[str, Any] = {
                         "lang_id": g["lang_id"],
                         "license": g["license"],
                         "title": g["title"],
-                        "text": "\n\n".join(g["pages"])[:4500],
+                        "text": local_full,
                     }
-                    eng_match = eng_by_story_id.get(g["story_id"])
-                    if eng_match and eng_match.get("pages"):
-                        st_obj["englishTitle"] = eng_match["title"]
-                        st_obj["english"] = "\n\n".join(eng_match["pages"])[:4500]
+                    cands_dict = eng_by_story_id.get((g["source_norm"], g["story_id"])) or {}
+                    best_eng = None
+                    best_score = -1.0
+                    for cand in cands_dict.values():
+                        if not cand.get("pages"):
+                            continue
+                        eng_full = "\n\n".join(cand["pages"])[:25000]
+                        ratio = len(local_full) / max(1, len(eng_full))
+                        if not (0.45 <= ratio <= 2.2):
+                            continue
+                        eng_words = {w.lower() for w in re.findall(r"[A-Za-z]{4,}", cand["title"] + " " + eng_full[:600])}
+                        overlap = len(local_words & eng_words)
+                        len_closeness = 1.0 - abs(1.0 - ratio)
+                        score = overlap * 3.0 + len_closeness
+                        if len(cands_dict) == 1 or overlap >= 1 or (0.65 <= ratio <= 1.55):
+                            if score > best_score:
+                                best_score = score
+                                best_eng = (cand["title"], eng_full)
+                    if best_eng:
+                        st_obj["englishTitle"] = best_eng[0]
+                        st_obj["english"] = best_eng[1]
                     merged_stories.append(st_obj)
                 kept = merged_stories
             if kept:
@@ -998,7 +1020,7 @@ def ingest_oer_storybooks(max_rows: int, dry_run: bool, lock: dict | None = None
                 "status": "completed",
                 "count": len(kept),
                 "withEnglish": with_en,
-                "englishAlignedV2": True if job["id"] == "glotstorybook" else None,
+                "englishAlignedV4": True if job["id"] == "glotstorybook" else None,
                 "updatedAt": datetime.now(timezone.utc).isoformat(),
             }
             if job["id"] == "glotstorybook":

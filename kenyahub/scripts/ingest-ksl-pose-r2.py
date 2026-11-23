@@ -166,7 +166,7 @@ def transcode_to_compact_mp4(raw_bytes: bytes, in_ext: str = ".mp4", max_seconds
             f.write(raw_bytes)
         cmd = [
             "ffmpeg", "-y", "-i", in_path,
-            "-t", str(max_seconds),
+            *(["-t", str(max_seconds)] if max_seconds and max_seconds > 0 else []),
             "-an",
             "-vf", "scale='min(480,iw)':-2,fps=20",
             "-c:v", "libx264", "-preset", "veryfast", "-crf", "28",
@@ -174,7 +174,7 @@ def transcode_to_compact_mp4(raw_bytes: bytes, in_ext: str = ".mp4", max_seconds
             out_path,
         ]
         try:
-            subprocess.run(cmd, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=45)
+            subprocess.run(cmd, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=120)
             if os.path.exists(out_path) and os.path.getsize(out_path) > 0:
                 return Path(out_path).read_bytes()
         except Exception:
@@ -502,6 +502,7 @@ def ingest_maseno_zenodo(s3_client, existing: dict, videos_out: list[dict], sign
             total_maseno_vids = sum(1 for v in videos_out if v.get("category") == "maseno-stickman")
             ingestion_state["maseno"] = {
                 "completed": not hit_budget_or_cap,
+            "fullDurationV2": True,
                 "uploadedVideos": total_maseno_vids,
                 "totalVideosFound": len(vid_members),
                 "uploadedPoses": len(signs_out),
@@ -761,7 +762,7 @@ def ingest_open_sign_bibles_xki(s3_client, existing: dict, videos_out: list[dict
             except Exception:
                 pass
             if not video_url:
-                mp4_bytes = transcode_to_compact_mp4(bytes(mp4_raw), ".mp4", max_seconds=15)
+                mp4_bytes = transcode_to_compact_mp4(bytes(mp4_raw), ".mp4", max_seconds=180)
                 if not mp4_bytes:
                     continue
                 video_url = upload_bytes_to_r2(s3_client, f"ksl/human/{vid_id}.mp4", mp4_bytes, "video/mp4")
