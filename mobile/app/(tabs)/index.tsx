@@ -47,7 +47,7 @@ import {
   ROTATING_LANGUAGES,
   BlogMarkdownContent,
   PopularToolRow,
-  SUPER_APP_APP_TILES,
+  SuperAppLauncherTiles,
   FeaturedLanguageWidget,
   WordOfTheMomentWidget,
   resolveToolIoniconName,
@@ -530,12 +530,65 @@ export default function HomeScreen() {
       .slice(0, 6);
   }, [visitCounts]);
 
+  const pinnedSet = useMemo(() => new Set(pinnedSlugs), [pinnedSlugs]);
+
   const pinnedTools = useMemo(
     () =>
       pinnedSlugs
         .map((s) => TOOLS.find((t) => t.slug === s))
         .filter(Boolean) as (typeof TOOLS)[0][],
     [pinnedSlugs]
+  );
+
+  const handleClearSearch = useCallback(() => setSearchQuery(""), []);
+  const handleCloseHolidays = useCallback(() => setShowHolidaysModal(false), []);
+  const handleClosePost = useCallback(() => setSelectedPost(null), []);
+  const handleWidgetMomentumEnd = useCallback((e: any) => {
+    const page = Math.round(e.nativeEvent.contentOffset.x / WIDGET_SNAP_INTERVAL);
+    setActiveWidgetPage(Math.max(0, Math.min(3, page)));
+  }, []);
+
+  const offlineRightAction = useMemo(
+    () =>
+      showOfflinePill ? (
+        <View style={styles.headerBadgesRow}>
+          <View
+            accessibilityLabel="Offline ready"
+            style={[
+              styles.offlineChip,
+              {
+                backgroundColor: theme.secondaryContainer,
+                borderColor: `${theme.kenyaGreenLight}38`,
+              },
+            ]}
+          >
+            <View
+              style={[
+                styles.offlineStatusDot,
+                { backgroundColor: theme.kenyaGreenLight },
+              ]}
+            />
+            <Text
+              style={[
+                styles.offlineChipText,
+                { color: theme.onSecondaryContainer },
+              ]}
+            >
+              Offline
+            </Text>
+          </View>
+        </View>
+      ) : undefined,
+    [
+      showOfflinePill,
+      styles.headerBadgesRow,
+      styles.offlineChip,
+      styles.offlineStatusDot,
+      styles.offlineChipText,
+      theme.secondaryContainer,
+      theme.kenyaGreenLight,
+      theme.onSecondaryContainer,
+    ]
   );
 
   const blogTags = useMemo(() => {
@@ -571,37 +624,7 @@ export default function HomeScreen() {
 
       <AndroidTopAppBar
         showBrandLogo
-        rightAction={
-          showOfflinePill ? (
-            <View style={styles.headerBadgesRow}>
-              <View
-                accessibilityLabel="Offline ready"
-                style={[
-                  styles.offlineChip,
-                  {
-                    backgroundColor: theme.secondaryContainer,
-                    borderColor: `${theme.kenyaGreenLight}38`,
-                  },
-                ]}
-              >
-                <View
-                  style={[
-                    styles.offlineStatusDot,
-                    { backgroundColor: theme.kenyaGreenLight },
-                  ]}
-                />
-                <Text
-                  style={[
-                    styles.offlineChipText,
-                    { color: theme.onSecondaryContainer },
-                  ]}
-                >
-                  Offline
-                </Text>
-              </View>
-            </View>
-          ) : undefined
-        }
+        rightAction={offlineRightAction}
       />
 
       <ScrollView
@@ -673,7 +696,7 @@ export default function HomeScreen() {
             />
             {searchQuery.length > 0 ? (
               <Pressable
-                onPress={() => setSearchQuery("")}
+                onPress={handleClearSearch}
                 accessibilityRole="button"
                 accessibilityLabel="Clear search query"
                 hitSlop={10}
@@ -805,7 +828,7 @@ export default function HomeScreen() {
               {inlineSearchResults.length > 0 ? (
                 inlineSearchResults.map((item, idx) => {
                   const col = categoryColorMap[item.category] || theme.gold;
-                  const pinned = pinnedSlugs.includes(item.slug);
+                  const pinned = pinnedSet.has(item.slug);
                   return (
                     <Pressable
                       key={item.slug}
@@ -1021,7 +1044,14 @@ export default function HomeScreen() {
                 : null,
             ]}
           >
-            {SUPER_APP_APP_TILES(dynamicLauncherItems, router, theme, styles, themeConfig, themeMetrics)}
+            <SuperAppLauncherTiles
+              items={dynamicLauncherItems}
+              router={router}
+              theme={theme}
+              customStyles={styles}
+              themeConfig={themeConfig}
+              themeMetrics={themeMetrics}
+            />
           </View>
         </View>
 
@@ -1065,12 +1095,7 @@ export default function HomeScreen() {
           alwaysBounceHorizontal={true}
           overScrollMode="always"
           onScrollBeginDrag={pauseWidgetsTemporarily}
-          onMomentumScrollEnd={(e) => {
-            const page = Math.round(
-              e.nativeEvent.contentOffset.x / WIDGET_SNAP_INTERVAL
-            );
-            setActiveWidgetPage(Math.max(0, Math.min(3, page)));
-          }}
+          onMomentumScrollEnd={handleWidgetMomentumEnd}
           contentContainerStyle={styles.widgetsScrollContent}
         >
           {/* Widget A: Isolated Featured Language Card (MOB-4, UX-6) */}
@@ -1350,10 +1375,11 @@ export default function HomeScreen() {
             <PopularToolRow
               key={t.slug}
               tool={t}
-              isPinned={pinnedSlugs.includes(t.slug)}
+              isPinned={pinnedSet.has(t.slug)}
               onTogglePin={togglePinTool}
               homeLayout={homeLayout}
               sharedStyles={styles}
+              themedCardStyle={themedCardStyle}
             />
           ))}
         </View>
@@ -1595,7 +1621,7 @@ export default function HomeScreen() {
           <AndroidTopAppBar
             title="Kenyan Public Holidays"
             subtitle="Statutory National & Religious Holidays"
-            onBack={() => setShowHolidaysModal(false)}
+            onBack={handleCloseHolidays}
           />
           <ScrollView
             contentContainerStyle={{ padding: 16, paddingBottom: 48, gap: 10 }}
@@ -1681,7 +1707,7 @@ export default function HomeScreen() {
                 ? `${selectedPost.author} · ${selectedPost.readTime} min read`
                 : ""
             }
-            onBack={() => setSelectedPost(null)}
+            onBack={handleClosePost}
           />
           {/* 3dp Gold Reading Progress Bar (UX-13) */}
           <View

@@ -885,12 +885,14 @@ export const PopularToolRow = React.memo(function PopularToolRow({
   onTogglePin,
   homeLayout,
   sharedStyles,
+  themedCardStyle: passedCardStyle,
 }: {
   tool: (typeof TOOLS)[0];
   isPinned: boolean;
   onTogglePin: (slug: string) => void;
   homeLayout?: HomeLayoutPreset;
   sharedStyles?: ReturnType<typeof createHomeStyles>;
+  themedCardStyle?: ReturnType<typeof getThemedCardStyle>;
 }) {
   const router = useRouter();
   const { theme, themeConfig, themeMetrics, resolvedFonts } = useTheme();
@@ -899,8 +901,8 @@ export const PopularToolRow = React.memo(function PopularToolRow({
     [sharedStyles, themeMetrics, resolvedFonts]
   );
   const themedCardStyle = useMemo(
-    () => getThemedCardStyle(theme, themeConfig, themeMetrics),
-    [theme, themeConfig, themeMetrics]
+    () => passedCardStyle ?? getThemedCardStyle(theme, themeConfig, themeMetrics),
+    [passedCardStyle, theme, themeConfig, themeMetrics]
   );
   const categoryColor = categoryColorMap[tool.category] || theme.gold;
   const catInfo = getCategoryInfo(tool.category);
@@ -1119,21 +1121,30 @@ export const SUPER_APP_LAUNCHER_ITEMS = [
   },
 ];
 
-export function SUPER_APP_APP_TILES(
-  items: Array<{
-    id: string;
-    label: string;
-    icon: any;
-    color: string;
-    route: any;
-    params?: any;
-  }>,
-  router: ReturnType<typeof useRouter>,
-  theme: any,
-  customStyles?: ReturnType<typeof createHomeStyles>,
-  themeConfig?: ThemeConfig,
-  themeMetrics?: ThemeMetrics
-) {
+export interface SuperAppLauncherItem {
+  id: string;
+  label: string;
+  icon: any;
+  color: string;
+  route: any;
+  params?: any;
+}
+
+export const SuperAppLauncherTiles = React.memo(function SuperAppLauncherTiles({
+  items,
+  router,
+  theme,
+  customStyles,
+  themeConfig,
+  themeMetrics,
+}: {
+  items: SuperAppLauncherItem[];
+  router: ReturnType<typeof useRouter>;
+  theme: any;
+  customStyles?: ReturnType<typeof createHomeStyles>;
+  themeConfig?: ThemeConfig;
+  themeMetrics?: ThemeMetrics;
+}) {
   const styles = customStyles ?? defaultHomeStyles;
   const layout: HomeLayoutPreset = themeConfig?.homeLayout ?? "classic";
   const isTwoCol = layout === "bento-grid" || layout === "large-tiles" || layout === "editorial-cards";
@@ -1141,23 +1152,24 @@ export function SUPER_APP_APP_TILES(
   const showTrailingArrows = themeConfig?.showTrailingArrows !== false;
   const hideIcons = themeConfig?.showCardIcons === false || themeConfig?.iconBadgeStyle === "hidden";
   const isFrameless = themeConfig?.surfaceStyle === "frameless";
-  const rawCardStyle = themeConfig && themeMetrics ? getThemedCardStyle(theme, themeConfig, themeMetrics) : null;
-  const tileCardStyle = rawCardStyle
-    ? (() => {
-        const {
-          borderLeftWidth: _blw,
-          borderLeftColor: _blc,
-          borderTopWidth: _btw,
-          borderTopColor: _btc,
-          borderBottomWidth: _bbw,
-          borderBottomColor: _bbc,
-          ...rest
-        } = rawCardStyle;
-        return rest;
-      })()
-    : null;
+  const tileCardStyle = useMemo(() => {
+    const rawCardStyle = themeConfig && themeMetrics ? getThemedCardStyle(theme, themeConfig, themeMetrics) : null;
+    if (!rawCardStyle) return null;
+    const {
+      borderLeftWidth: _blw,
+      borderLeftColor: _blc,
+      borderTopWidth: _btw,
+      borderTopColor: _btc,
+      borderBottomWidth: _bbw,
+      borderBottomColor: _bbc,
+      ...rest
+    } = rawCardStyle;
+    return rest;
+  }, [theme, themeConfig, themeMetrics]);
 
-  return items.map((item) => {
+  return (
+    <>
+      {items.map((item) => {
     const baseSize =
       layout === "large-tiles"
         ? 38
@@ -1287,5 +1299,27 @@ export function SUPER_APP_APP_TILES(
         )}
       </Pressable>
     );
-  });
+      })}
+    </>
+  );
+});
+
+export function SUPER_APP_APP_TILES(
+  items: SuperAppLauncherItem[],
+  router: ReturnType<typeof useRouter>,
+  theme: any,
+  customStyles?: ReturnType<typeof createHomeStyles>,
+  themeConfig?: ThemeConfig,
+  themeMetrics?: ThemeMetrics
+) {
+  return (
+    <SuperAppLauncherTiles
+      items={items}
+      router={router}
+      theme={theme}
+      customStyles={customStyles}
+      themeConfig={themeConfig}
+      themeMetrics={themeMetrics}
+    />
+  );
 }

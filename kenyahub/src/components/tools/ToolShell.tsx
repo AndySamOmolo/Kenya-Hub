@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowLeftRight } from "lucide-react";
 import type { Tool } from "@/lib/types";
 import { getCategoryInfo, getRelatedTools } from "@/lib/tools-registry";
-import { STATIC_BLOG_POSTS, type StaticBlogPost } from "@/data/blog-posts";
+import { STATIC_BLOG_POST_SUMMARIES, type StaticBlogPostSummary } from "@/data/blog-posts-summary";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 import ToolAccessTracker from "@/components/tools/ToolAccessTracker";
 import PinToolButton from "@/components/tools/PinToolButton";
@@ -198,11 +198,11 @@ const CURATED_TOOL_BLOG_SLUGS: Record<string, string[]> = {
   ],
 };
 
-function getCuratedBlogPostsForTool(tool: Tool, limit: number = 3): StaticBlogPost[] {
+function getCuratedBlogPostsForTool(tool: Tool, limit: number = 3): StaticBlogPostSummary[] {
   const slugs = CURATED_TOOL_BLOG_SLUGS[tool.slug] || [];
-  const results: StaticBlogPost[] = [];
+  const results: StaticBlogPostSummary[] = [];
   for (const slug of slugs) {
-    const post = STATIC_BLOG_POSTS.find((p) => p.slug === slug);
+    const post = STATIC_BLOG_POST_SUMMARIES.find((p) => p.slug === slug);
     if (post && !results.some((r) => r.slug === post.slug)) {
       results.push(post);
     }
@@ -818,7 +818,8 @@ export default function ToolShell({
                   <Link
                     key={post.slug}
                     href={`/blog/${post.slug}/`}
-                    className="bg-bg-card border border-border hover:border-gold/50 rounded-xl p-4 transition-all flex flex-col justify-between group"
+                    prefetch={false}
+                    className="bg-bg-card border border-border hover:border-gold/50 rounded-xl p-4 transition-colors flex flex-col justify-between group"
                   >
                     <div>
                       <div className="flex items-center justify-between text-xs text-text-muted mb-1.5">

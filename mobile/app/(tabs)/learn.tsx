@@ -1,4 +1,4 @@
-import React, { useMemo, useRef, useState } from "react";
+import React, { useCallback, useMemo, useRef, useState } from "react";
 import { Pressable, ScrollView, StyleSheet, Text } from "react-native";
 import { useLocalSearchParams } from "expo-router";
 import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
@@ -83,16 +83,28 @@ export default function LearnTabScreen() {
     insets.bottom;
   const scrollRef = useRef<ScrollView>(null);
   const [showBackToTop, setShowBackToTop] = useState(false);
+  const showBackToTopRef = useRef(false);
   const [navState, setNavState] = useState<CourseNavigationState>({
     inCourse: false,
     courseName: "Kenyan Languages",
     backToMenu: () => {},
   });
 
-  const handleScrollToTop = () => {
+  const handleScrollToTop = useCallback(() => {
     triggerHaptic(8);
     scrollRef.current?.scrollTo({ y: 0, animated: true });
-  };
+  }, []);
+
+  const handleLearnScroll = useCallback((e: any) => {
+    const y = e.nativeEvent.contentOffset.y;
+    if (y > 700 && !showBackToTopRef.current) {
+      showBackToTopRef.current = true;
+      setShowBackToTop(true);
+    } else if (y <= 700 && showBackToTopRef.current) {
+      showBackToTopRef.current = false;
+      setShowBackToTop(false);
+    }
+  }, []);
 
   return (
     <SafeAreaView
@@ -119,11 +131,7 @@ export default function LearnTabScreen() {
         persistentScrollbar={themeConfig.verticalScrollbarStyle === "always-visible"}
         keyboardShouldPersistTaps="handled"
         scrollEventThrottle={64}
-        onScroll={(e) => {
-          const y = e.nativeEvent.contentOffset.y;
-          if (y > 700 && !showBackToTop) setShowBackToTop(true);
-          else if (y <= 700 && showBackToTop) setShowBackToTop(false);
-        }}
+        onScroll={handleLearnScroll}
       >
         <LanguageLearningTool
           initialLanguageId={typeof params.lang === "string" ? params.lang : undefined}

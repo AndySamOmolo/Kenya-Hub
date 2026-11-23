@@ -176,8 +176,8 @@ export default function ExpandablePillRow({
     lastScrollLeftRef.current = scrollLeft;
     lastScrollTimeRef.current = now;
 
-    setCanScrollLeft(hasLeft);
-    setCanScrollRight(hasRight);
+    setCanScrollLeft((prev) => (prev === hasLeft ? prev : hasLeft));
+    setCanScrollRight((prev) => (prev === hasRight ? prev : hasRight));
   }, [expanded, triggerEdgeBounce]);
 
   useEffect(() => {

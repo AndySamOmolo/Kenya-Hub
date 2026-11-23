@@ -28,13 +28,17 @@ export default function BlogPostContent({ post }: { post: BlogPost | null }) {
   const progressRef = useRef<HTMLDivElement>(null);
   const [copied, setCopied] = useState(false);
 
-  // Reading progress bar — uses ref to avoid re-renders that destroy iframes
+  // Reading progress bar — GPU scaleX via ref to avoid layout reflows and re-renders
+  const lastProgressRef = useRef(-1);
   const handleScroll = useCallback(() => {
     const scrollTop = window.scrollY;
     const docHeight = document.documentElement.scrollHeight - window.innerHeight;
     if (docHeight > 0 && progressRef.current) {
-      const progress = Math.min(100, Math.round((scrollTop / docHeight) * 100));
-      progressRef.current.style.width = `${progress}%`;
+      const progress = Math.min(100, Math.max(0, Math.round((scrollTop / docHeight) * 100)));
+      if (progress !== lastProgressRef.current) {
+        lastProgressRef.current = progress;
+        progressRef.current.style.transform = `scaleX(${progress / 100})`;
+      }
     }
   }, []);
 
@@ -108,7 +112,7 @@ export default function BlogPostContent({ post }: { post: BlogPost | null }) {
 
   return (
     <>
-      <div ref={progressRef} className="fixed top-0 left-0 z-50 h-0.5 bg-gold transition-all duration-150 ease-out" style={{ width: "0%" }} />
+      <div ref={progressRef} className="fixed top-0 left-0 z-50 h-0.5 w-full origin-left bg-gold transition-transform duration-150 ease-out" style={{ transform: "scaleX(0)" }} />
 
       <article
         data-error-page={isThinOrEmbedHeavy ? "true" : undefined}

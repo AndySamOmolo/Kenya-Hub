@@ -89,6 +89,50 @@ import {
 import { createStyles } from "./language-course/styles";
 import ExtraMiniGames from "./language-course/ExtraMiniGames";
 
+const ALL_KIKUYU_PROVERBS = [
+  ...(Array.isArray(kikuyuProverbsData) ? (kikuyuProverbsData as any[]) : []),
+  ...KIKUYU_CW_ITEMS.map((item, idx) => ({
+    id: 1001 + idx,
+    kikuyu: item.indigenous,
+    translation: item.literalTranslation,
+    explanation: item.meaning,
+    englishEquivalent: item.englishEquivalent || null,
+    category: item.theme || "wisdom",
+  })),
+];
+
+const ALL_LUO_PROVERBS = [
+  ...luoProverbs,
+  ...LUO_CW_ITEMS.map((item, idx) => ({
+    id: 10000 + idx + 1,
+    luo: item.indigenous,
+    english: item.literalTranslation,
+    meaning: item.meaning,
+    explanation: item.englishEquivalent || item.meaning,
+    category: (item.theme || "wisdom") as any,
+  })),
+];
+
+const MENU_FAMILY_COUNTS: Record<string, number> = (() => {
+  const counts: Record<string, number> = { All: PUBLISHED_COURSE_SUMMARIES.length };
+  for (const c of PUBLISHED_COURSE_SUMMARIES) {
+    if (c.config.family) {
+      counts[c.config.family] = (counts[c.config.family] || 0) + 1;
+    }
+  }
+  return counts;
+})();
+
+const STAGED_VARIETIES: {
+  id: string;
+  name: string;
+  nativeName: string;
+  family: string;
+  counties: string[];
+  totalEntries: number;
+  sampleEntries: { english: string; translation: string; context?: string }[];
+}[] = (openCorpusIndex as any).stagedVarieties || [];
+
 export interface CourseNavigationState {
   inCourse: boolean;
   courseName: string;
@@ -211,7 +255,11 @@ export default function LanguageCourseTool({
   const [lrShowAudioEn, setLrShowAudioEn] = useState<boolean>(true);
   const [lrAudioClips, setLrAudioClips] = useState<MobileAudioShardClip[]>([]);
   const [lrAudioLimit, setLrAudioLimit] = useState<number>(36);
-  useEffect(() => subscribeMobileAudioState(setAudioState), []);
+  useEffect(() => {
+    if (showLanguageMenu || activeTab !== 'listen_read') return;
+    setAudioState(getMobileAudioState());
+    return subscribeMobileAudioState(setAudioState);
+  }, [showLanguageMenu, activeTab]);
   useEffect(() => {
     let active = true;
     setLrAudioClips([]);
@@ -1387,6 +1435,124 @@ export default function LanguageCourseTool({
   );
 
 
+  const activeEmergingVariety = useMemo(
+    () => STAGED_VARIETIES.find((v) => v.id === selectedEmergingId) || STAGED_VARIETIES[0] || null,
+    [selectedEmergingId]
+  );
+
+  const filteredEmergingEntries = useMemo(() => {
+    if (!showLanguageMenu || !activeEmergingVariety) return [];
+    const eq = deferredEmergingSearchQuery.trim().toLowerCase();
+    const list = activeEmergingVariety.sampleEntries || [];
+    if (!eq) return list;
+    return list.filter(
+      (ent) =>
+        ent.translation.toLowerCase().includes(eq) ||
+        ent.english.toLowerCase().includes(eq) ||
+        (ent.context || '').toLowerCase().includes(eq)
+    );
+  }, [showLanguageMenu, activeEmergingVariety, deferredEmergingSearchQuery]);
+
+  const filteredBrowseSkills = useMemo(() => {
+    if (showLanguageMenu || activeTab !== 'cards' || cardMode !== 'browse') return [];
+    const q = deferredVocabSearch.trim().toLowerCase();
+    if (!q) return allSkills;
+    return allSkills
+      .map((sk) => ({
+        ...sk,
+        words: sk.words.filter(
+          (w) =>
+            w.target.toLowerCase().includes(q) ||
+            w.source.toLowerCase().includes(q) ||
+            sk.title.toLowerCase().includes(q)
+        ),
+      }))
+      .filter((sk) => sk.words.length > 0);
+  }, [showLanguageMenu, activeTab, cardMode, deferredVocabSearch, allSkills]);
+
+  const filteredKikuyuProverbs = useMemo(() => {
+    if (showLanguageMenu || activeTab !== 'proverbs' || selectedLangId !== 'kikuyu') return [];
+    const q = deferredProverbSearch.trim().toLowerCase();
+    return ALL_KIKUYU_PROVERBS.filter((p: any) => {
+      if (proverbCategory !== 'All' && p.category !== proverbCategory) return false;
+      if (!q) return true;
+      return (
+        (p.kikuyu || '').toLowerCase().includes(q) ||
+        (p.translation || '').toLowerCase().includes(q) ||
+        (p.explanation || '').toLowerCase().includes(q) ||
+        (p.englishEquivalent || '').toLowerCase().includes(q) ||
+        String(p.id) === q
+      );
+    });
+  }, [showLanguageMenu, activeTab, selectedLangId, proverbCategory, deferredProverbSearch]);
+
+  const filteredLuoProverbs = useMemo(() => {
+    if (showLanguageMenu || activeTab !== 'proverbs' || selectedLangId !== 'luo' || luoSubTab !== 'proverbs') return [];
+    const q = deferredProverbSearch.trim().toLowerCase();
+    return ALL_LUO_PROVERBS.filter((p) => {
+      if (proverbCategory !== 'All' && p.category !== proverbCategory) return false;
+      if (!q) return true;
+      return (
+        p.luo.toLowerCase().includes(q) ||
+        (p.english || '').toLowerCase().includes(q) ||
+        (p.meaning || '').toLowerCase().includes(q)
+      );
+    });
+  }, [showLanguageMenu, activeTab, selectedLangId, luoSubTab, proverbCategory, deferredProverbSearch]);
+
+  const filteredLuoRiddles = useMemo(() => {
+    if (showLanguageMenu || activeTab !== 'proverbs' || selectedLangId !== 'luo' || luoSubTab !== 'riddles') return [];
+    const q = deferredProverbSearch.trim().toLowerCase();
+    if (!q) return luoRiddles;
+    return luoRiddles.filter(
+      (r) =>
+        r.luo.toLowerCase().includes(q) ||
+        r.english.toLowerCase().includes(q) ||
+        r.answer.toLowerCase().includes(q)
+    );
+  }, [showLanguageMenu, activeTab, selectedLangId, luoSubTab, deferredProverbSearch]);
+
+  const filteredCulturalWisdom = useMemo(() => {
+    if (showLanguageMenu || activeTab !== 'proverbs' || selectedLangId === 'kikuyu' || selectedLangId === 'luo') return [];
+    const q = deferredProverbSearch.trim().toLowerCase();
+    const baseItems = getCulturalWisdomForLanguage(selectedLangId);
+    const noteItems: CulturalWisdomItem[] = [];
+    if (currentCourse) {
+      const seen = new Set<string>();
+      currentCourse.units.forEach((u) => {
+        u.skills.forEach((s) => {
+          if (
+            s.culturalNote &&
+            !s.culturalNote.startsWith('Source attribution:') &&
+            !seen.has(s.culturalNote)
+          ) {
+            seen.add(s.culturalNote);
+            const w0 = s.words[0];
+            noteItems.push({
+              id: `${selectedLangId}-note-${s.id}`,
+              languageId: selectedLangId,
+              nativeText: w0 ? `${w0.target} — "${w0.source}"` : s.title,
+              literalTranslation: s.title,
+              meaning: s.culturalNote,
+              category: 'tradition',
+            });
+          }
+        });
+      });
+    }
+    const combined = [...baseItems, ...noteItems];
+    return combined.filter((item) => {
+      if (proverbCategory !== 'All' && item.category !== proverbCategory) return false;
+      if (!q) return true;
+      return (
+        item.nativeText.toLowerCase().includes(q) ||
+        item.literalTranslation.toLowerCase().includes(q) ||
+        item.meaning.toLowerCase().includes(q) ||
+        (item.englishEquivalent || '').toLowerCase().includes(q)
+      );
+    });
+  }, [showLanguageMenu, activeTab, selectedLangId, currentCourse, proverbCategory, deferredProverbSearch]);
+
   if (lessonStage !== 'idle' && activeSkill) {
     const currentEx = exercises[exIndex];
     const progressRatio =
@@ -2406,10 +2572,7 @@ export default function LanguageCourseTool({
           >
             {menuFamilies.map((fam) => {
               const active = menuFamilyFilter === fam;
-              const count =
-                fam === 'All'
-                  ? PUBLISHED_COURSE_SUMMARIES.length
-                  : PUBLISHED_COURSE_SUMMARIES.filter((c) => c.config.family === fam).length;
+              const count = MENU_FAMILY_COUNTS[fam] || 0;
               return (
                 <Pressable
                   key={fam}
@@ -3108,26 +3271,10 @@ export default function LanguageCourseTool({
 
         {/* More Kenyan Languages — Starter Phrasebooks (Kinubi, Kuria, Kenyan Maay, Yaaku · 1:1 Web Parity) */}
         {(() => {
-          const varieties: {
-            id: string;
-            name: string;
-            nativeName: string;
-            family: string;
-            counties: string[];
-            totalEntries: number;
-            sampleEntries: { english: string; translation: string; context?: string }[];
-          }[] = (openCorpusIndex as any).stagedVarieties || [];
-          if (varieties.length === 0) return null;
-          const activeVar = varieties.find((v) => v.id === selectedEmergingId) || varieties[0];
-          const eq = deferredEmergingSearchQuery.trim().toLowerCase();
-          const filteredEmerging = (activeVar?.sampleEntries || []).filter((ent) => {
-            if (!eq) return true;
-            return (
-              ent.translation.toLowerCase().includes(eq) ||
-              ent.english.toLowerCase().includes(eq) ||
-              (ent.context || '').toLowerCase().includes(eq)
-            );
-          });
+          const varieties = STAGED_VARIETIES;
+          if (varieties.length === 0 || !activeEmergingVariety) return null;
+          const activeVar = activeEmergingVariety;
+          const filteredEmerging = filteredEmergingEntries;
           return (
             <View
               style={{
@@ -4004,20 +4151,7 @@ export default function LanguageCourseTool({
                 )}
               </View>
               {(() => {
-                const q = deferredVocabSearch.trim().toLowerCase();
-                const filteredSkills = !q
-                  ? allSkills
-                  : allSkills
-                      .map((sk) => ({
-                        ...sk,
-                        words: sk.words.filter(
-                          (w) =>
-                            w.target.toLowerCase().includes(q) ||
-                            w.source.toLowerCase().includes(q) ||
-                            sk.title.toLowerCase().includes(q)
-                        ),
-                      }))
-                      .filter((sk) => sk.words.length > 0);
+                const filteredSkills = filteredBrowseSkills;
                 const visibleSkills = filteredSkills.slice(0, modulesPage * MODULES_PAGE_SIZE);
                 return (
                   <>
@@ -6262,29 +6396,7 @@ export default function LanguageCourseTool({
           {/* 1. Kikuyu Proverbs List */}
           {selectedLangId === 'kikuyu' &&
             (() => {
-              const q = deferredProverbSearch.trim().toLowerCase();
-              const rawList = [
-                ...(Array.isArray(kikuyuProverbsData) ? (kikuyuProverbsData as any[]) : []),
-                ...KIKUYU_CW_ITEMS.map((item, idx) => ({
-                  id: 1001 + idx,
-                  kikuyu: item.indigenous,
-                  translation: item.literalTranslation,
-                  explanation: item.meaning,
-                  englishEquivalent: item.englishEquivalent || null,
-                  category: item.theme || "wisdom",
-                })),
-              ];
-              const filtered = rawList.filter((p: any) => {
-                if (proverbCategory !== 'All' && p.category !== proverbCategory) return false;
-                if (!q) return true;
-                return (
-                  (p.kikuyu || '').toLowerCase().includes(q) ||
-                  (p.translation || '').toLowerCase().includes(q) ||
-                  (p.explanation || '').toLowerCase().includes(q) ||
-                  (p.englishEquivalent || '').toLowerCase().includes(q) ||
-                  String(p.id) === q
-                );
-              });
+              const filtered = filteredKikuyuProverbs;
               const visible = filtered.slice(0, proverbPage * 20);
               return (
                 <View style={{ gap: 10 }}>
@@ -6352,27 +6464,7 @@ export default function LanguageCourseTool({
           {/* 2. Dholuo Proverbs / Riddles / Twisters */}
           {selectedLangId === 'luo' && luoSubTab === 'proverbs' &&
             (() => {
-              const q = deferredProverbSearch.trim().toLowerCase();
-              const allLuoProverbs = [
-                ...luoProverbs,
-                ...LUO_CW_ITEMS.map((item, idx) => ({
-                  id: 10000 + idx + 1,
-                  luo: item.indigenous,
-                  english: item.literalTranslation,
-                  meaning: item.meaning,
-                  explanation: item.englishEquivalent || item.meaning,
-                  category: (item.theme || "wisdom") as any,
-                })),
-              ];
-              const filtered = allLuoProverbs.filter((p) => {
-                if (proverbCategory !== 'All' && p.category !== proverbCategory) return false;
-                if (!q) return true;
-                return (
-                  p.luo.toLowerCase().includes(q) ||
-                  (p.english || '').toLowerCase().includes(q) ||
-                  (p.meaning || '').toLowerCase().includes(q)
-                );
-              });
+              const filtered = filteredLuoProverbs;
               const visible = filtered.slice(0, proverbPage * 20);
               return (
                 <View style={{ gap: 10 }}>
@@ -6428,15 +6520,7 @@ export default function LanguageCourseTool({
 
           {selectedLangId === 'luo' && luoSubTab === 'riddles' &&
             (() => {
-              const filteredRiddles = luoRiddles.filter((r) => {
-                const q = deferredProverbSearch.trim().toLowerCase();
-                return (
-                  !q ||
-                  r.luo.toLowerCase().includes(q) ||
-                  r.english.toLowerCase().includes(q) ||
-                  r.answer.toLowerCase().includes(q)
-                );
-              });
+              const filteredRiddles = filteredLuoRiddles;
               const visibleRiddles = filteredRiddles.slice(0, proverbPage * 20);
               return (
                 <View style={{ gap: 10 }}>
@@ -6523,43 +6607,7 @@ export default function LanguageCourseTool({
           {/* 3. Luhya, Kamba, Kisii, Maasai, Teso & Turkana Wisdom (Locked to selectedLangId) */}
           {selectedLangId !== 'kikuyu' && selectedLangId !== 'luo' &&
             (() => {
-              const q = deferredProverbSearch.trim().toLowerCase();
-              const baseItems = getCulturalWisdomForLanguage(selectedLangId);
-              const noteItems: CulturalWisdomItem[] = [];
-              if (currentCourse) {
-                const seen = new Set<string>();
-                currentCourse.units.forEach((u) => {
-                  u.skills.forEach((s) => {
-                    if (
-                      s.culturalNote &&
-                      !s.culturalNote.startsWith('Source attribution:') &&
-                      !seen.has(s.culturalNote)
-                    ) {
-                      seen.add(s.culturalNote);
-                      const w0 = s.words[0];
-                      noteItems.push({
-                        id: `${selectedLangId}-note-${s.id}`,
-                        languageId: selectedLangId,
-                        nativeText: w0 ? `${w0.target} — "${w0.source}"` : s.title,
-                        literalTranslation: s.title,
-                        meaning: s.culturalNote,
-                        category: 'tradition',
-                      });
-                    }
-                  });
-                });
-              }
-              const combined = [...baseItems, ...noteItems];
-              const filtered = combined.filter((item) => {
-                if (proverbCategory !== 'All' && item.category !== proverbCategory) return false;
-                if (!q) return true;
-                return (
-                  item.nativeText.toLowerCase().includes(q) ||
-                  item.literalTranslation.toLowerCase().includes(q) ||
-                  item.meaning.toLowerCase().includes(q) ||
-                  (item.englishEquivalent || '').toLowerCase().includes(q)
-                );
-              });
+              const filtered = filteredCulturalWisdom;
               const visible = filtered.slice(0, proverbPage * 20);
               return (
                 <View style={{ gap: 10 }}>

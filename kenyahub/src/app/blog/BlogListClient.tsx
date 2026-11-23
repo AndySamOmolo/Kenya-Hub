@@ -31,7 +31,7 @@ export default function BlogListClient({ posts }: { posts: BlogListItem[] }) {
         {visiblePosts.map((post) => (
           <article
             key={post.slug}
-            className="bg-bg-card border border-border rounded-xl p-5 sm:p-6 hover:border-gold transition-colors group flex flex-col justify-between"
+            className="cv-auto bg-bg-card border border-border rounded-xl p-5 sm:p-6 hover:border-gold transition-colors group flex flex-col justify-between"
           >
             <Link href={`/blog/${post.slug}/`} prefetch={false} className="flex flex-col h-full justify-between">
               <div>

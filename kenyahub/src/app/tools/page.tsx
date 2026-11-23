@@ -353,7 +353,7 @@ export default function ToolsHubPage() {
             data-active={selectedCategory === "all"}
             aria-pressed={selectedCategory === "all"}
             onClick={() => handleSelectCategory("all")}
-            className={`shrink-0 whitespace-nowrap rounded-full px-2.5 py-1 sm:px-3.5 sm:py-1.5 min-h-[26px] sm:min-h-[34px] inline-flex items-center justify-center gap-1.5 sm:gap-2 text-[11px] sm:text-xs font-semibold border transition-all cursor-pointer ${
+            className={`shrink-0 whitespace-nowrap rounded-full px-2.5 py-1 sm:px-3.5 sm:py-1.5 min-h-[26px] sm:min-h-[34px] inline-flex items-center justify-center gap-1.5 sm:gap-2 text-[11px] sm:text-xs font-semibold border transition-colors cursor-pointer ${
               selectedCategory === "all"
                 ? "border-gold bg-gold/15 text-gold font-bold shadow-2xs"
                 : "border-border bg-bg-elevated/60 text-text-secondary hover:text-text-primary hover:border-border-light"
@@ -384,7 +384,7 @@ export default function ToolsHubPage() {
                 data-active={active}
                 aria-pressed={active}
                 onClick={() => handleSelectCategory(cat.id)}
-                className={`shrink-0 whitespace-nowrap rounded-full px-2.5 py-1 sm:px-3.5 sm:py-1.5 min-h-[26px] sm:min-h-[34px] inline-flex items-center justify-center gap-1.5 sm:gap-2 text-[11px] sm:text-xs font-semibold border transition-all cursor-pointer ${
+                className={`shrink-0 whitespace-nowrap rounded-full px-2.5 py-1 sm:px-3.5 sm:py-1.5 min-h-[26px] sm:min-h-[34px] inline-flex items-center justify-center gap-1.5 sm:gap-2 text-[11px] sm:text-xs font-semibold border transition-colors cursor-pointer ${
                   active
                     ? "border-gold bg-gold/15 text-gold font-bold shadow-2xs"
                     : "border-border bg-bg-elevated/60 text-text-secondary hover:text-text-primary hover:border-border-light"
@@ -419,7 +419,7 @@ export default function ToolsHubPage() {
                   key={id}
                   type="button"
                   onClick={() => setSortBy(id)}
-                  className={`shrink-0 whitespace-nowrap rounded-full px-2 py-0.5 sm:px-3.5 sm:py-1.5 min-h-[26px] sm:min-h-[32px] inline-flex items-center justify-center gap-1 sm:gap-1.5 text-[11px] sm:text-xs font-bold border transition-all cursor-pointer ${
+                  className={`shrink-0 whitespace-nowrap rounded-full px-2 py-0.5 sm:px-3.5 sm:py-1.5 min-h-[26px] sm:min-h-[32px] inline-flex items-center justify-center gap-1 sm:gap-1.5 text-[11px] sm:text-xs font-bold border transition-colors cursor-pointer ${
                     active
                       ? "border-gold bg-gold/15 text-gold shadow-2xs"
                       : "border-border bg-bg-elevated/60 text-text-secondary hover:text-text-primary hover:border-border-light"

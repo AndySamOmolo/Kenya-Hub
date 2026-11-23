@@ -1,4 +1,4 @@
-import React, { useCallback, useMemo, useState } from "react";
+import React, { useCallback, useMemo, useRef, useState } from "react";
 import { useRouter, useFocusEffect } from "expo-router";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import {
@@ -239,16 +239,18 @@ const SavedToolCard = React.memo(function SavedToolCard({
   tool,
   onRemove,
   styles,
+  themedCardStyle: passedCardStyle,
 }: {
   tool: (typeof TOOLS)[0];
   onRemove: (slug: string) => void;
   styles: ReturnType<typeof createSavedStyles>;
+  themedCardStyle?: ReturnType<typeof getThemedCardStyle>;
 }) {
   const router = useRouter();
   const { theme, themeConfig, themeMetrics } = useTheme();
   const themedCardStyle = useMemo(
-    () => getThemedCardStyle(theme, themeConfig, themeMetrics),
-    [theme, themeConfig, themeMetrics]
+    () => passedCardStyle ?? getThemedCardStyle(theme, themeConfig, themeMetrics),
+    [passedCardStyle, theme, themeConfig, themeMetrics]
   );
   const categoryColor = categoryColorMap[tool.category] || theme.gold;
   const isFrameless = themeConfig.surfaceStyle === "frameless";
@@ -357,18 +359,23 @@ export default function SavedScreen() {
   const showCardDescriptions = themeConfig.showCardDescriptions !== false;
   const showTrailingArrows = themeConfig.showTrailingArrows !== false;
   const [saved, setSaved] = useState<string[]>([]);
+  const lastSavedRawRef = useRef<string | null | undefined>(undefined);
   const popular = useMemo(() => getPopularTools(4), []);
 
   const loadSaved = useCallback(async () => {
     try {
       const value = await AsyncStorage.getItem("kh-saved-tools");
+      if (value === lastSavedRawRef.current) return;
       const parsed = parseSavedTools(value);
+      const serialized = serializeSavedTools(parsed);
+      lastSavedRawRef.current = value && !value.trim().startsWith("[") ? serialized : value;
       setSaved(parsed);
       // Migrate legacy comma-separated string to JSON array if needed
       if (value && !value.trim().startsWith("[")) {
-        await AsyncStorage.setItem("kh-saved-tools", serializeSavedTools(parsed));
+        await AsyncStorage.setItem("kh-saved-tools", serialized);
       }
     } catch {
+      lastSavedRawRef.current = null;
       setSaved([]);
     }
   }, []);
@@ -382,12 +389,14 @@ export default function SavedScreen() {
   const handleRemove = useCallback((slug: string) => {
     setSaved((prev) => {
       const updated = prev.filter((s) => s !== slug);
-      AsyncStorage.setItem("kh-saved-tools", serializeSavedTools(updated)).catch(() => {});
+      const serialized = serializeSavedTools(updated);
+      lastSavedRawRef.current = serialized;
+      AsyncStorage.setItem("kh-saved-tools", serialized).catch(() => {});
       return updated;
     });
   }, []);
 
-  const handleClearAll = () => {
+  const handleClearAll = useCallback(() => {
     triggerHaptic(12);
     Alert.alert(
       "Clear Pinned Tools?",
@@ -398,15 +407,16 @@ export default function SavedScreen() {
           text: "Clear All",
           style: "destructive",
           onPress: async () => {
+            lastSavedRawRef.current = null;
             setSaved([]);
             await AsyncStorage.removeItem("kh-saved-tools");
           },
         },
       ]
     );
-  };
+  }, []);
 
-  const handleManageAdPrivacy = async () => {
+  const handleManageAdPrivacy = useCallback(async () => {
     triggerHaptic(8);
     try {
       const shown = await showAdPrivacyOptionsForm();
@@ -425,9 +435,9 @@ export default function SavedScreen() {
         },
       ]
     );
-  };
+  }, []);
 
-  const handleClearAllAppData = () => {
+  const handleClearAllAppData = useCallback(() => {
     triggerHaptic(12);
     Alert.alert(
       "Clear All App Data?",
@@ -440,13 +450,14 @@ export default function SavedScreen() {
           onPress: async () => {
             try {
               await AsyncStorage.clear();
+              lastSavedRawRef.current = null;
               setSaved([]);
             } catch {}
           },
         },
       ]
     );
-  };
+  }, []);
 
   const tools = useMemo(
     () =>
@@ -454,6 +465,25 @@ export default function SavedScreen() {
         .map((slug) => TOOLS.find((tool) => tool.slug === slug))
         .filter(Boolean) as (typeof TOOLS)[number][],
     [saved]
+  );
+
+  const clearRightAction = useMemo(
+    () =>
+      tools.length > 0 ? (
+        <Pressable
+          onPress={handleClearAll}
+          accessibilityRole="button"
+          accessibilityLabel="Clear all pinned tools"
+          android_ripple={androidRipple(theme.rippleColor)}
+          style={pressableStyle([
+            styles.clearBtn,
+            { borderColor: `${theme.kenyaRedLight}45` },
+          ])}
+        >
+          <Text style={[styles.clearBtnText, { color: theme.kenyaRedLight }]}>Clear</Text>
+        </Pressable>
+      ) : undefined,
+    [tools.length, handleClearAll, theme.rippleColor, theme.kenyaRedLight, styles.clearBtn, styles.clearBtnText]
   );
 
   return (
@@ -466,22 +496,7 @@ export default function SavedScreen() {
       <AndroidTopAppBar
         title="Pinned Tools"
         subtitle="Saved offline for 1-tap access"
-        rightAction={
-          tools.length > 0 ? (
-            <Pressable
-              onPress={handleClearAll}
-              accessibilityRole="button"
-              accessibilityLabel="Clear all pinned tools"
-              android_ripple={androidRipple(theme.rippleColor)}
-              style={pressableStyle([
-                styles.clearBtn,
-                { borderColor: `${theme.kenyaRedLight}45` },
-              ])}
-            >
-              <Text style={[styles.clearBtnText, { color: theme.kenyaRedLight }]}>Clear</Text>
-            </Pressable>
-          ) : undefined
-        }
+        rightAction={clearRightAction}
       />
 
       <ScrollView
@@ -505,6 +520,7 @@ export default function SavedScreen() {
                   key={tool.slug}
                   tool={tool}
                   styles={styles}
+                  themedCardStyle={themedCardStyle}
                   onRemove={handleRemove}
                 />
               ))}

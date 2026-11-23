@@ -862,7 +862,10 @@ export function useDynamicStyles<
     () => creator(theme, themeMetrics, resolvedFonts, themeConfig),
     [theme, themeMetrics, resolvedFonts, themeConfig]
   );
-  return { theme, isDark, metrics: themeMetrics, styles };
+  return React.useMemo(
+    () => ({ theme, isDark, metrics: themeMetrics, styles }),
+    [theme, isDark, themeMetrics, styles]
+  );
 }
 
 export interface ThemedCardStyle extends ViewStyle {

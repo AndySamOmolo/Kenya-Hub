@@ -237,11 +237,12 @@ export default function MatatuPage() {
 
             {/* Search results dropdown */}
             {searchResults.length > 0 && (
-              <div className="absolute top-full left-0 right-0 mt-2 bg-bg-card/95 backdrop-blur-xl border border-border rounded-xl shadow-2xl shadow-black/30 z-50 overflow-hidden max-h-[380px] overflow-y-auto">
+              <div className="absolute top-full left-0 right-0 mt-2 bg-bg-card sm:bg-bg-card/95 sm:backdrop-blur-xl border border-border rounded-xl shadow-2xl shadow-black/30 z-50 overflow-hidden max-h-[380px] overflow-y-auto">
                 {searchResults.map((r) => (
                   <Link
                     key={`${r.townSlug}-${r.slug}`}
                     href={`/matatu/${r.townSlug}/${r.slug}/`}
+                    prefetch={false}
                     className="flex items-center gap-3 px-4 py-3 hover:bg-bg-elevated transition-colors border-b border-border/50 last:border-0"
                   >
                     <DynamicIcon emoji="🚌" className="w-5 h-5 text-gold flex-shrink-0" />
@@ -372,7 +373,8 @@ export default function MatatuPage() {
                     <Link
                       key={`${r.townSlug}-${r.slug}`}
                       href={`/matatu/${r.townSlug}/${r.slug}/`}
-                      className="rounded-xl border border-kenya-green/35 bg-kenya-green/5 hover:border-gold p-3.5 flex items-center justify-between gap-3 transition-all"
+                      prefetch={false}
+                      className="rounded-xl border border-kenya-green/35 bg-kenya-green/5 hover:border-gold p-3.5 flex items-center justify-between gap-3 transition-colors"
                     >
                       <div className="min-w-0">
                         <span className="text-xs font-bold text-gold">
@@ -414,14 +416,14 @@ export default function MatatuPage() {
                       </div>
                       <p className="text-text-primary">
                         <strong>1. Board Route {pair.leg1.routeNumber}:</strong>{" "}
-                        <Link href={`/matatu/${pair.leg1.townSlug}/${pair.leg1.slug}/`} className="text-gold hover:underline">
+                        <Link href={`/matatu/${pair.leg1.townSlug}/${pair.leg1.slug}/`} prefetch={false} className="text-gold hover:underline">
                           {pair.leg1.name}
                         </Link>{" "}
                         to CBD ({pair.leg1.terminusA})
                       </p>
                       <p className="text-text-primary">
                         <strong>2. Connect to Route {pair.leg2.routeNumber}:</strong>{" "}
-                        <Link href={`/matatu/${pair.leg2.townSlug}/${pair.leg2.slug}/`} className="text-gold hover:underline">
+                        <Link href={`/matatu/${pair.leg2.townSlug}/${pair.leg2.slug}/`} prefetch={false} className="text-gold hover:underline">
                           {pair.leg2.name}
                         </Link>{" "}
                         ({pair.leg2.terminusA} → {pair.leg2.terminusB})
@@ -446,7 +448,7 @@ export default function MatatuPage() {
       </div>
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2.5 mb-7">
         {matatuData.towns.filter((town) => town.isActive).map((town) => (
-          <Link key={town.slug} href={`/matatu/${town.slug}/`} className="bg-bg-card border border-gold/30 rounded-xl p-3 text-center group hover:border-gold transition-all hover:shadow-md hover:shadow-gold/5">
+          <Link key={town.slug} href={`/matatu/${town.slug}/`} prefetch={false} className="bg-bg-card border border-gold/30 rounded-xl p-3 text-center group hover:border-gold transition-[border-color,box-shadow] hover:shadow-md hover:shadow-gold/5">
             <div className="flex justify-center mb-1.5"><DynamicIcon emoji="🚌" className="w-6 h-6 text-gold" /></div>
             <p className="text-xs sm:text-sm font-bold text-text-primary group-hover:text-gold transition-colors">{town.name}</p>
             <p className="text-[0.65rem] text-gold mt-0.5 font-semibold">{((matatuData.routes as Record<string, unknown[]>)[town.slug]?.length ?? town.routeCount)} routes</p>
@@ -458,7 +460,7 @@ export default function MatatuPage() {
       <h2 className="text-base sm:text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-3">Featured Matatu Routes Across Kenya</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5">
         {featuredRoutes.map((route) => (
-          <Link key={`${route.townSlug}-${route.slug}`} href={`/matatu/${route.townSlug}/${route.slug}/`} className="cv-auto bg-bg-card border border-border rounded-xl p-3 sm:p-3.5 group hover:border-gold/50 transition-all">
+          <Link key={`${route.townSlug}-${route.slug}`} href={`/matatu/${route.townSlug}/${route.slug}/`} prefetch={false} className="cv-auto bg-bg-card border border-border rounded-xl p-3 sm:p-3.5 group hover:border-gold/50 transition-colors">
             <div className="flex items-start gap-2.5">
               <div className="min-w-[2.25rem] px-1.5 h-9 rounded-lg bg-gold/10 border border-gold/20 flex items-center justify-center flex-shrink-0">
                 <span className="text-xs font-bold text-gold whitespace-nowrap">{route.routeNumber}</span>

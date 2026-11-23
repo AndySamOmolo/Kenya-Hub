@@ -1,6 +1,6 @@
 import { ExpandablePillRow } from "../components/ExpandablePillRow";
 import { DynamicIcon } from "../components/DynamicIcon";
-import React, { useState, useMemo, useCallback, useEffect, useDeferredValue } from "react";
+import React, { useState, useMemo, useCallback, useEffect, useDeferredValue, useRef } from "react";
 import {
   Text,
   View,
@@ -53,6 +53,222 @@ import {
   loadMobileAudioShard,
   type MobileAudioShardClip,
 } from "../lib/mobile-learning-shards";
+
+function stripDiacritics(s: string): string {
+  return s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+}
+
+const TranslatorResultCard = React.memo(function TranslatorResultCard({
+  item,
+  isFav,
+  isReverseToEnglish,
+  sourceDictName,
+  theme,
+  styles,
+  onPlayAudio,
+  onShare,
+  onToggleFavorite,
+}: {
+  item: TranslationResultItem;
+  isFav: boolean;
+  isReverseToEnglish: boolean;
+  sourceDictName?: string;
+  theme: any;
+  styles: any;
+  onPlayAudio: (entry: DictEntry) => void;
+  onShare: (langName: string, english: string, translation: string, pronunciation?: string, context?: string) => void;
+  onToggleFavorite: (wordKey: string) => void;
+}) {
+  const cleanLangName = item.languageName.split("(")[0].trim();
+  const familyKey = item.family?.toLowerCase();
+  const favKey = `${item.languageId}:${item.entry.english}`;
+
+  return (
+    <View style={styles.resultCard}>
+      <View style={styles.resultHeader}>
+        <View style={styles.resultTagRow}>
+          <View style={styles.catBadge}>
+            <Text style={styles.catBadgeText}>{item.categoryName}</Text>
+          </View>
+          <View
+            style={[
+              styles.familyBadge,
+              { backgroundColor: `${FAMILY_COLORS[familyKey] || "#999"}20` },
+            ]}
+          >
+            <Text
+              style={[
+                styles.familyBadgeText,
+                { color: FAMILY_COLORS[familyKey] || theme.gold },
+              ]}
+            >
+              {cleanLangName}
+            </Text>
+          </View>
+        </View>
+
+        <View style={{ flexDirection: "row", alignItems: "center", gap: 12 }}>
+          {hasVerifiedAudio(item.entry) ? (
+            <Pressable
+              onPress={() => onPlayAudio(item.entry)}
+              accessibilityRole="button"
+              accessibilityLabel={`Play verified ${cleanLangName} recording`}
+              hitSlop={8}
+            >
+              <Ionicons name="volume-high-outline" size={19} color={theme.gold} />
+            </Pressable>
+          ) : null}
+          <Pressable
+            onPress={() =>
+              onShare(
+                cleanLangName,
+                item.entry.english,
+                item.entry.translation,
+                item.entry.pronunciation,
+                item.entry.context
+              )
+            }
+            accessibilityRole="button"
+            accessibilityLabel={`Share ${cleanLangName} translation`}
+            hitSlop={8}
+          >
+            <Ionicons name="share-social-outline" size={18} color={theme.textSecondary} />
+          </Pressable>
+
+          <Pressable
+            onPress={() => onToggleFavorite(favKey)}
+            accessibilityRole="button"
+            accessibilityLabel={isFav ? "Remove from favorites" : "Save to favorites"}
+            hitSlop={8}
+          >
+            <Ionicons
+              name={isFav ? "star" : "star-outline"}
+              size={20}
+              color={isFav ? theme.gold : theme.textMuted}
+            />
+          </Pressable>
+        </View>
+      </View>
+
+      <Text style={styles.resultTranslation}>
+        {item.missingTarget
+          ? `Not yet recorded in ${cleanLangName}`
+          : isReverseToEnglish
+          ? item.entry.english
+          : item.entry.translation}
+      </Text>
+      <Text style={styles.resultEnglish}>
+        {item.sourceEntry && sourceDictName
+          ? `${sourceDictName}: ${item.sourceEntry.translation} → English: "${item.pivotEnglish}"`
+          : isReverseToEnglish
+          ? item.entry.translation
+          : item.entry.english}
+      </Text>
+
+      {item.entry.pronunciation ? (
+        <View style={styles.pronounceRow}>
+          <Ionicons name="chatbubble-ellipses-outline" size={14} color={theme.sky} />
+          <Text style={styles.pronounceText}>
+            Pronunciation: /{item.entry.pronunciation}/
+          </Text>
+        </View>
+      ) : null}
+
+      {item.entry.context ? (
+        <Text style={styles.contextText}>
+          {item.entry.context.replace(/\*\*([^*]+)\*\*/g, "$1")}
+        </Text>
+      ) : null}
+    </View>
+  );
+});
+
+const BrowseEntryCard = React.memo(function BrowseEntryCard({
+  entry,
+  langId,
+  cleanLang,
+  isFav,
+  theme,
+  styles,
+  onPlayAudio,
+  onShare,
+  onToggleFavorite,
+}: {
+  entry: DictEntry;
+  langId: string;
+  cleanLang: string;
+  isFav: boolean;
+  theme: any;
+  styles: any;
+  onPlayAudio: (entry: DictEntry) => void;
+  onShare: (langName: string, english: string, translation: string, pronunciation?: string, context?: string) => void;
+  onToggleFavorite: (wordKey: string) => void;
+}) {
+  return (
+    <View style={styles.resultCard}>
+      <View style={styles.resultHeader}>
+        <Text style={styles.resultEnglish}>{entry.english}</Text>
+        <View style={{ flexDirection: "row", alignItems: "center", gap: 12 }}>
+          {hasVerifiedAudio(entry) ? (
+            <Pressable
+              onPress={() => onPlayAudio(entry)}
+              accessibilityRole="button"
+              accessibilityLabel={`Play verified ${cleanLang} recording`}
+              hitSlop={8}
+            >
+              <Ionicons name="volume-high-outline" size={18} color={theme.gold} />
+            </Pressable>
+          ) : null}
+          <Pressable
+            onPress={() =>
+              onShare(
+                cleanLang,
+                entry.english,
+                entry.translation,
+                entry.pronunciation,
+                entry.context
+              )
+            }
+            accessibilityRole="button"
+            accessibilityLabel="Share phrase"
+            hitSlop={8}
+          >
+            <Ionicons name="share-social-outline" size={17} color={theme.textSecondary} />
+          </Pressable>
+          <Pressable
+            onPress={() => onToggleFavorite(`${langId}:${entry.english}`)}
+            accessibilityRole="button"
+            accessibilityLabel={isFav ? "Remove from favorites" : "Save to favorites"}
+            hitSlop={8}
+          >
+            <Ionicons
+              name={isFav ? "star" : "star-outline"}
+              size={18}
+              color={isFav ? theme.gold : theme.textMuted}
+            />
+          </Pressable>
+        </View>
+      </View>
+
+      <Text style={styles.resultTranslation}>{entry.translation}</Text>
+
+      {entry.pronunciation ? (
+        <View style={styles.pronounceRow}>
+          <Ionicons name="chatbubble-ellipses-outline" size={14} color={theme.sky} />
+          <Text style={styles.pronounceText}>
+            Pronunciation: /{entry.pronunciation}/
+          </Text>
+        </View>
+      ) : null}
+
+      {entry.context ? (
+        <Text style={styles.contextText}>
+          {entry.context.replace(/\*\*([^*]+)\*\*/g, "$1")}
+        </Text>
+      ) : null}
+    </View>
+  );
+});
 
 export function KenyanTranslatorTool({
   onScrollToTop,
@@ -256,10 +472,21 @@ export function KenyanTranslatorTool({
     };
   }, []);
 
-  const showToast = (msg: string) => {
+  const toastTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  useEffect(() => {
+    return () => {
+      if (toastTimerRef.current) clearTimeout(toastTimerRef.current);
+    };
+  }, []);
+
+  const showToast = useCallback((msg: string) => {
     setToastMessage(msg);
-    setTimeout(() => setToastMessage(null), 2500);
-  };
+    if (toastTimerRef.current) clearTimeout(toastTimerRef.current);
+    toastTimerRef.current = setTimeout(() => {
+      toastTimerRef.current = null;
+      setToastMessage(null);
+    }, 2500);
+  }, []);
 
   const addRecentSearch = useCallback((q: string) => {
     if (!q || q.length < 2) return;
@@ -273,44 +500,55 @@ export function KenyanTranslatorTool({
     });
   }, []);
 
-  const toggleFavorite = (wordKey: string) => {
-    triggerHaptic(10);
-    setFavorites((prev) => {
-      const next = prev.includes(wordKey)
-        ? prev.filter((k) => k !== wordKey)
-        : [...prev, wordKey];
-      AsyncStorage.setItem("kh-translator-favs", JSON.stringify(next));
-      showToast(
-        next.includes(wordKey) ? "Saved to Favorites" : "Removed from Favorites"
-      );
-      return next;
-    });
-  };
-
-  const handleShareEntry = async (
-    langName: string,
-    english: string,
-    translation: string,
-    pronunciation?: string,
-    context?: string
-  ) => {
-    triggerHaptic(10);
-    const lines = [
-      `${langName} ↔ English Translation`,
-      `${langName}: ${translation}${pronunciation ? ` (/${pronunciation}/)` : ""}`,
-      `English: ${english}`,
-    ];
-    if (context) {
-      lines.push(`Context: ${context.replace(/\*\*([^*]+)\*\*/g, "$1")}`);
-    }
-    lines.push("", "— Shared via KenyaHub 23-Language Dictionary");
-    try {
-      await Share.share({
-        title: `${translation} (${langName})`,
-        message: lines.join("\n"),
+  const toggleFavorite = useCallback(
+    (wordKey: string) => {
+      triggerHaptic(10);
+      setFavorites((prev) => {
+        const next = prev.includes(wordKey)
+          ? prev.filter((k) => k !== wordKey)
+          : [...prev, wordKey];
+        AsyncStorage.setItem("kh-translator-favs", JSON.stringify(next));
+        showToast(
+          next.includes(wordKey) ? "Saved to Favorites" : "Removed from Favorites"
+        );
+        return next;
       });
-    } catch {}
-  };
+    },
+    [showToast]
+  );
+
+  const handlePlayAudio = useCallback((entry: DictEntry) => {
+    triggerHaptic(8);
+    playVerifiedAudio(entry);
+  }, []);
+
+  const handleShareEntry = useCallback(
+    async (
+      langName: string,
+      english: string,
+      translation: string,
+      pronunciation?: string,
+      context?: string
+    ) => {
+      triggerHaptic(10);
+      const lines = [
+        `${langName} ↔ English Translation`,
+        `${langName}: ${translation}${pronunciation ? ` (/${pronunciation}/)` : ""}`,
+        `English: ${english}`,
+      ];
+      if (context) {
+        lines.push(`Context: ${context.replace(/\*\*([^*]+)\*\*/g, "$1")}`);
+      }
+      lines.push("", "— Shared via KenyaHub 23-Language Dictionary");
+      try {
+        await Share.share({
+          title: `${translation} (${langName})`,
+          message: lines.join("\n"),
+        });
+      } catch {}
+    },
+    []
+  );
 
   const loadedDictList = useMemo(
     () =>
@@ -377,15 +615,14 @@ export function KenyanTranslatorTool({
   const searchResults = useMemo(() => {
     const q = deferredSearchQuery.trim();
     if (!q) return [];
-    const stripDia = (s: string) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
-    const qNorm = stripDia(q);
+    const qNorm = stripDiacritics(q);
     const customMatches: TranslationResultItem[] = userContributions
       .filter((item) => {
         const langId = item.language.toLowerCase().trim();
         if (targetLanguage !== "all" && targetLanguage !== "english" && langId !== targetLanguage) {
           return false;
         }
-        return stripDia(item.english).includes(qNorm) || stripDia(item.translation).includes(qNorm);
+        return stripDiacritics(item.english).includes(qNorm) || stripDiacritics(item.translation).includes(qNorm);
       })
       .map((item) => {
         const langId = item.language.toLowerCase().trim();
@@ -645,14 +882,13 @@ export function KenyanTranslatorTool({
   }, [browseDict, activeCategory, browseAudioEntries]);
 
   const categoryEntries = useMemo(() => {
-    const stripDia = (s: string) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
-    const q = stripDia(deferredCategoryFilter.trim());
+    const q = stripDiacritics(deferredCategoryFilter.trim());
     if (!q) return dedupedCategoryEntries;
     return dedupedCategoryEntries.filter(
       (e) =>
-        stripDia(e.english).includes(q) ||
-        stripDia(e.translation).includes(q) ||
-        (e.context && stripDia(e.context).includes(q))
+        stripDiacritics(e.english).includes(q) ||
+        stripDiacritics(e.translation).includes(q) ||
+        (e.context && stripDiacritics(e.context).includes(q))
     );
   }, [dedupedCategoryEntries, deferredCategoryFilter]);
 
@@ -1147,156 +1383,20 @@ export function KenyanTranslatorTool({
                 )}
               </View>
 
-              {visibleSearchResults.map((item, idx) => {
-                const isFav = favoritesSet.has(
-                  `${item.languageId}:${item.entry.english}`
-                );
-                const isReverseToEnglish =
-                  sourceLanguage !== "english" && targetLanguage === "english";
-                const cleanLangName = item.languageName.split("(")[0].trim();
-
-                return (
-                  <View key={idx} style={styles.resultCard}>
-                    <View style={styles.resultHeader}>
-                      <View style={styles.resultTagRow}>
-                        <View style={styles.catBadge}>
-                          <Text style={styles.catBadgeText}>
-                            {item.categoryName}
-                          </Text>
-                        </View>
-                        <View
-                          style={[
-                            styles.familyBadge,
-                            {
-                              backgroundColor: `${
-                                FAMILY_COLORS[item.family?.toLowerCase()] ||
-                                "#999"
-                              }20`,
-                            },
-                          ]}
-                        >
-                          <Text
-                            style={[
-                              styles.familyBadgeText,
-                              {
-                                color:
-                                  FAMILY_COLORS[item.family?.toLowerCase()] ||
-                                  theme.gold,
-                              },
-                            ]}
-                          >
-                            {cleanLangName}
-                          </Text>
-                        </View>
-                      </View>
-
-                      {/* Action Buttons: Verified Audio (when available) + Share + Favorite Star */}
-                      <View
-                        style={{
-                          flexDirection: "row",
-                          alignItems: "center",
-                          gap: 12,
-                        }}
-                      >
-                        {hasVerifiedAudio(item.entry) ? (
-                          <Pressable
-                            onPress={() => {
-                              triggerHaptic(8);
-                              playVerifiedAudio(item.entry);
-                            }}
-                            accessibilityRole="button"
-                            accessibilityLabel={`Play verified ${cleanLangName} recording`}
-                            hitSlop={8}
-                          >
-                            <Ionicons
-                              name="volume-high-outline"
-                              size={19}
-                              color={theme.gold}
-                            />
-                          </Pressable>
-                        ) : null}
-                        <Pressable
-                          onPress={() =>
-                            handleShareEntry(
-                              cleanLangName,
-                              item.entry.english,
-                              item.entry.translation,
-                              item.entry.pronunciation,
-                              item.entry.context
-                            )
-                          }
-                          accessibilityRole="button"
-                          accessibilityLabel={`Share ${cleanLangName} translation`}
-                          hitSlop={8}
-                        >
-                          <Ionicons
-                            name="share-social-outline"
-                            size={18}
-                            color={theme.textSecondary}
-                          />
-                        </Pressable>
-
-                        <Pressable
-                          onPress={() =>
-                            toggleFavorite(
-                              `${item.languageId}:${item.entry.english}`
-                            )
-                          }
-                          accessibilityRole="button"
-                          accessibilityLabel={
-                            isFav
-                              ? "Remove from favorites"
-                              : "Save to favorites"
-                          }
-                          hitSlop={8}
-                        >
-                          <Ionicons
-                            name={isFav ? "star" : "star-outline"}
-                            size={20}
-                            color={isFav ? theme.gold : theme.textMuted}
-                          />
-                        </Pressable>
-                      </View>
-                    </View>
-
-                    <Text style={styles.resultTranslation}>
-                      {item.missingTarget
-                        ? `Not yet recorded in ${cleanLangName}`
-                        : isReverseToEnglish
-                        ? item.entry.english
-                        : item.entry.translation}
-                    </Text>
-                    <Text style={styles.resultEnglish}>
-                      {item.sourceEntry && sourceDict
-                        ? `${sourceDict.languageName.split("(")[0].trim()}: ${
-                            item.sourceEntry.translation
-                          } → English: "${item.pivotEnglish}"`
-                        : isReverseToEnglish
-                        ? item.entry.translation
-                        : item.entry.english}
-                    </Text>
-
-                    {item.entry.pronunciation ? (
-                      <View style={styles.pronounceRow}>
-                        <Ionicons
-                          name="chatbubble-ellipses-outline"
-                          size={14}
-                          color={theme.sky}
-                        />
-                        <Text style={styles.pronounceText}>
-                          Pronunciation: /{item.entry.pronunciation}/
-                        </Text>
-                      </View>
-                    ) : null}
-
-                    {item.entry.context ? (
-                      <Text style={styles.contextText}>
-                        {item.entry.context.replace(/\*\*([^*]+)\*\*/g, "$1")}
-                      </Text>
-                    ) : null}
-                  </View>
-                );
-              })}
+              {visibleSearchResults.map((item, idx) => (
+                <TranslatorResultCard
+                  key={`${item.languageId}|${item.entry.english}|${item.entry.translation}|${idx}`}
+                  item={item}
+                  isFav={favoritesSet.has(`${item.languageId}:${item.entry.english}`)}
+                  isReverseToEnglish={sourceLanguage !== "english" && targetLanguage === "english"}
+                  sourceDictName={sourceDict ? sourceDict.languageName.split("(")[0].trim() : undefined}
+                  theme={theme}
+                  styles={styles}
+                  onPlayAudio={handlePlayAudio}
+                  onShare={handleShareEntry}
+                  onToggleFavorite={toggleFavorite}
+                />
+              ))}
 
               {filteredSearchResults.length > visibleSearchResults.length && (
                 <Pressable
@@ -1701,105 +1801,20 @@ export function KenyanTranslatorTool({
               {browseMeta.languageName.split("(")[0].trim()}
             </Text>
 
-            {visibleCategoryEntries.map((e, idx) => {
-              const isFav = favoritesSet.has(
-                `${browseMeta.languageId}:${e.english}`
-              );
-              const cleanLang = browseMeta.languageName.split("(")[0].trim();
-              return (
-                <View key={idx} style={styles.resultCard}>
-                  <View style={styles.resultHeader}>
-                    <Text style={styles.resultEnglish}>{e.english}</Text>
-                    <View
-                      style={{
-                        flexDirection: "row",
-                        alignItems: "center",
-                        gap: 12,
-                      }}
-                    >
-                      {hasVerifiedAudio(e) ? (
-                        <Pressable
-                          onPress={() => {
-                            triggerHaptic(8);
-                            playVerifiedAudio(e);
-                          }}
-                          accessibilityRole="button"
-                          accessibilityLabel={`Play verified ${cleanLang} recording`}
-                          hitSlop={8}
-                        >
-                          <Ionicons
-                            name="volume-high-outline"
-                            size={18}
-                            color={theme.gold}
-                          />
-                        </Pressable>
-                      ) : null}
-                      <Pressable
-                        onPress={() =>
-                          handleShareEntry(
-                            cleanLang,
-                            e.english,
-                            e.translation,
-                            e.pronunciation,
-                            e.context
-                          )
-                        }
-                        accessibilityRole="button"
-                        accessibilityLabel="Share phrase"
-                        hitSlop={8}
-                      >
-                        <Ionicons
-                          name="share-social-outline"
-                          size={17}
-                          color={theme.textSecondary}
-                        />
-                      </Pressable>
-                      <Pressable
-                        onPress={() =>
-                          toggleFavorite(
-                            `${browseMeta.languageId}:${e.english}`
-                          )
-                        }
-                        accessibilityRole="button"
-                        accessibilityLabel={
-                          isFav
-                            ? "Remove from favorites"
-                            : "Save to favorites"
-                        }
-                        hitSlop={8}
-                      >
-                        <Ionicons
-                          name={isFav ? "star" : "star-outline"}
-                          size={18}
-                          color={isFav ? theme.gold : theme.textMuted}
-                        />
-                      </Pressable>
-                    </View>
-                  </View>
-
-                  <Text style={styles.resultTranslation}>{e.translation}</Text>
-
-                  {e.pronunciation ? (
-                    <View style={styles.pronounceRow}>
-                      <Ionicons
-                        name="chatbubble-ellipses-outline"
-                        size={14}
-                        color={theme.sky}
-                      />
-                      <Text style={styles.pronounceText}>
-                        Pronunciation: /{e.pronunciation}/
-                      </Text>
-                    </View>
-                  ) : null}
-
-                  {e.context ? (
-                    <Text style={styles.contextText}>
-                      {e.context.replace(/\*\*([^*]+)\*\*/g, "$1")}
-                    </Text>
-                  ) : null}
-                </View>
-              );
-            })}
+            {visibleCategoryEntries.map((e, idx) => (
+              <BrowseEntryCard
+                key={`${browseMeta.languageId}|${e.english}|${e.translation}|${idx}`}
+                entry={e}
+                langId={browseMeta.languageId}
+                cleanLang={browseMeta.languageName.split("(")[0].trim()}
+                isFav={favoritesSet.has(`${browseMeta.languageId}:${e.english}`)}
+                theme={theme}
+                styles={styles}
+                onPlayAudio={handlePlayAudio}
+                onShare={handleShareEntry}
+                onToggleFavorite={toggleFavorite}
+              />
+            ))}
 
             {categoryEntries.length > visibleCategoryEntries.length && (
               <Pressable

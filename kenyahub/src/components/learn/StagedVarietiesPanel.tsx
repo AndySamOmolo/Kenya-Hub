@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import React, { useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { ArrowRight, BookOpen, Film, Hand, Search } from "lucide-react";
 import { OPEN_CORPUS_INDEX, type KslVideoItem } from "@/lib/open-corpus";
@@ -13,8 +13,10 @@ export default function StagedVarietiesPanel() {
     OPEN_CORPUS_INDEX.stagedVarieties[0]?.id ?? ""
   );
   const [query, setQuery] = useState("");
+  const deferredQuery = useDeferredValue(query);
   const [kslTab, setKslTab] = useState<KslFilterTab>("all");
   const [kslQuery, setKslQuery] = useState("");
+  const deferredKslQuery = useDeferredValue(kslQuery);
   const [playbackRate, setPlaybackRate] = useState<number>(1);
   const [visibleKslCount, setVisibleKslCount] = useState<number>(KSL_PAGE_SIZE);
   const [kslVideos, setKslVideos] = useState<KslVideoItem[]>(
@@ -34,7 +36,7 @@ export default function StagedVarietiesPanel() {
   }, []);
 
   const filteredKslVideos = useMemo(() => {
-    const q = kslQuery.trim().toLowerCase();
+    const q = deferredKslQuery.trim().toLowerCase();
     return kslVideos.filter((v) => {
       if (kslTab !== "all" && v.category !== kslTab) return false;
       if (!q) return true;
@@ -45,7 +47,7 @@ export default function StagedVarietiesPanel() {
         (v.transcript ?? "").toLowerCase().includes(q)
       );
     });
-  }, [kslVideos, kslTab, kslQuery]);
+  }, [kslVideos, kslTab, deferredKslQuery]);
 
   const [activeVideoId, setActiveVideoId] = useState<string>(
     (OPEN_CORPUS_INDEX.ksl.videos ?? [])[0]?.id ?? ""
@@ -65,19 +67,31 @@ export default function StagedVarietiesPanel() {
     }
   }, [playbackRate, activeVideo?.id, autoPlayVideo]);
 
-  const activeVariety = OPEN_CORPUS_INDEX.stagedVarieties.find((v) => v.id === selectedId);
-  const filteredEntries = (activeVariety?.sampleEntries ?? []).filter((e) => {
-    const q = query.trim().toLowerCase();
-    if (!q) return true;
-    return (
-      e.english.toLowerCase().includes(q) ||
-      e.translation.toLowerCase().includes(q) ||
-      e.context.toLowerCase().includes(q)
+  const activeVariety = useMemo(
+    () => OPEN_CORPUS_INDEX.stagedVarieties.find((v) => v.id === selectedId),
+    [selectedId]
+  );
+  const filteredEntries = useMemo(() => {
+    const entries = activeVariety?.sampleEntries ?? [];
+    const q = deferredQuery.trim().toLowerCase();
+    if (!q) return entries;
+    return entries.filter(
+      (e) =>
+        e.english.toLowerCase().includes(q) ||
+        e.translation.toLowerCase().includes(q) ||
+        e.context.toLowerCase().includes(q)
     );
-  });
+  }, [activeVariety, deferredQuery]);
 
-  const masenoCount = kslVideos.filter((v) => v.category === "maseno-stickman").length;
-  const humanBibleCount = kslVideos.filter((v) => v.category === "human-sign-bible").length;
+  const { masenoCount, humanBibleCount } = useMemo(() => {
+    let maseno = 0;
+    let bible = 0;
+    for (const v of kslVideos) {
+      if (v.category === "maseno-stickman") maseno++;
+      else if (v.category === "human-sign-bible") bible++;
+    }
+    return { masenoCount: maseno, humanBibleCount: bible };
+  }, [kslVideos]);
 
   return (
     <section className="mt-10 space-y-6">
@@ -104,6 +118,7 @@ export default function StagedVarietiesPanel() {
             )}
             <Link
               href="/tools/learn/ksl/"
+              prefetch={false}
               className="whitespace-nowrap inline-flex items-center gap-1 rounded-full border border-gold/40 bg-gold/10 px-3 py-1 text-xs font-semibold text-gold hover:bg-gold/20 transition-colors"
             >
               Open Full KSL Studio <ArrowRight className="h-3 w-3" />
@@ -128,7 +143,7 @@ export default function StagedVarietiesPanel() {
                       setKslTab(tab.id);
                       setVisibleKslCount(KSL_PAGE_SIZE);
                     }}
-                    className={`rounded-lg border px-2.5 py-1 text-xs font-semibold transition-all cursor-pointer ${
+                    className={`rounded-lg border px-2.5 py-1 text-xs font-semibold transition-colors cursor-pointer ${
                       kslTab === tab.id
                         ? "border-kenya-green bg-kenya-green text-white"
                         : "border-border bg-bg-elevated text-text-secondary hover:border-kenya-green/50"

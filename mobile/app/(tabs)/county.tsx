@@ -752,6 +752,59 @@ const ClimateCardItem = React.memo(function ClimateCardItem({
   );
 });
 
+const PickerCountyRow = React.memo(function PickerCountyRow({
+  item,
+  isSelected,
+  onSelect,
+  theme,
+  resolvedFonts,
+  styles,
+}: {
+  item: any;
+  isSelected: boolean;
+  onSelect: (slug: string) => void;
+  theme: any;
+  resolvedFonts: { heading: string; body: string; bold: string };
+  styles: ReturnType<typeof createCountyStyles>;
+}) {
+  return (
+    <Pressable
+      android_ripple={androidRipple(theme.rippleColor)}
+      onPress={() => onSelect(item.slug)}
+      style={pressableStyle([
+        styles.pickerRow,
+        {
+          backgroundColor: isSelected ? theme.primaryContainer : "transparent",
+          borderBottomColor: theme.outlineVariant,
+        },
+      ])}
+    >
+      <ThemedIconBadge
+        label={String(item.code).padStart(3, "0")}
+        accentColor={theme.gold}
+        baseSize={36}
+      />
+      <View style={{ flex: 1, marginLeft: 10 }}>
+        <Text
+          style={{
+            fontSize: 14,
+            fontFamily: resolvedFonts.heading,
+            color: theme.textPrimary,
+          }}
+        >
+          {item.name} County
+        </Text>
+        <Text style={{ fontSize: 11, color: theme.textSecondary }}>
+          HQ: {item.capital} · Pop. {item.population.toLocaleString()}
+        </Text>
+      </View>
+      {isSelected && (
+        <ThemedIcon name="checkmark-circle" size={20} color={theme.gold} />
+      )}
+    </Pressable>
+  );
+});
+
 export default function CountyScreen() {
   const router = useRouter();
   const { theme, isDark, themeConfig, themeMetrics, resolvedFonts } = useTheme();
@@ -788,6 +841,7 @@ export default function CountyScreen() {
   const [compareSlugB, setCompareSlugB] = useState("mombasa");
   const [pickerTarget, setPickerTarget] = useState<"A" | "B" | null>(null);
   const [pickerSearch, setPickerSearch] = useState("");
+  const deferredPickerSearch = useDeferredValue(pickerSearch);
 
   const notes: string[] = (countiesData as any).notes || [];
   const enrichedCounties = STATIC_ENRICHED_COUNTIES;
@@ -843,7 +897,7 @@ export default function CountyScreen() {
   );
 
   const pickerFiltered = useMemo(() => {
-    const q = pickerSearch.trim().toLowerCase();
+    const q = deferredPickerSearch.trim().toLowerCase();
     if (!q) return enrichedCounties;
     return enrichedCounties.filter(
       (c) =>
@@ -851,7 +905,38 @@ export default function CountyScreen() {
         c.capital.toLowerCase().includes(q) ||
         String(c.code).padStart(3, "0").includes(q)
     );
-  }, [pickerSearch, enrichedCounties]);
+  }, [deferredPickerSearch, enrichedCounties]);
+
+  const pickerKeyExtractor = useCallback((item: any) => `pick-${item.slug}`, []);
+
+  const handleSelectPickerCounty = useCallback(
+    (slug: string) => {
+      triggerHaptic(8);
+      if (pickerTarget === "A") setCompareSlugA(slug);
+      else if (pickerTarget === "B") setCompareSlugB(slug);
+      setPickerTarget(null);
+    },
+    [pickerTarget]
+  );
+
+  const renderPickerItem = useCallback(
+    ({ item }: { item: any }) => {
+      const isSelected =
+        (pickerTarget === "A" && compareSlugA === item.slug) ||
+        (pickerTarget === "B" && compareSlugB === item.slug);
+      return (
+        <PickerCountyRow
+          item={item}
+          isSelected={isSelected}
+          onSelect={handleSelectPickerCounty}
+          theme={theme}
+          resolvedFonts={resolvedFonts}
+          styles={styles}
+        />
+      );
+    },
+    [pickerTarget, compareSlugA, compareSlugB, handleSelectPickerCounty, theme, resolvedFonts, styles]
+  );
 
   const nationalTotals = NATIONAL_TOTALS;
 
@@ -2113,7 +2198,7 @@ export default function CountyScreen() {
 
             <FlatList
               data={pickerFiltered}
-              keyExtractor={(item) => `pick-${item.slug}`}
+              keyExtractor={pickerKeyExtractor}
               keyboardShouldPersistTaps="handled"
               initialNumToRender={8}
               maxToRenderPerBatch={6}
@@ -2121,60 +2206,8 @@ export default function CountyScreen() {
               updateCellsBatchingPeriod={40}
               removeClippedSubviews={Platform.OS === "android"}
               showsVerticalScrollIndicator={themeConfig?.verticalScrollbarStyle !== "hidden"}
-          persistentScrollbar={themeConfig?.verticalScrollbarStyle === "always-visible"}
-              renderItem={({ item }) => {
-                const isSelected =
-                  (pickerTarget === "A" && compareSlugA === item.slug) ||
-                  (pickerTarget === "B" && compareSlugB === item.slug);
-                return (
-                  <Pressable
-                    android_ripple={androidRipple(theme.rippleColor)}
-                    onPress={() => {
-                      triggerHaptic(8);
-                      if (pickerTarget === "A") setCompareSlugA(item.slug);
-                      else if (pickerTarget === "B") setCompareSlugB(item.slug);
-                      setPickerTarget(null);
-                    }}
-                    style={pressableStyle([
-                      styles.pickerRow,
-                      {
-                        backgroundColor: isSelected
-                          ? theme.primaryContainer
-                          : "transparent",
-                        borderBottomColor: theme.outlineVariant,
-                      },
-                    ])}
-                  >
-                    <ThemedIconBadge
-                      label={String(item.code).padStart(3, "0")}
-                      accentColor={theme.gold}
-                      baseSize={36}
-                    />
-                    <View style={{ flex: 1, marginLeft: 10 }}>
-                      <Text
-                        style={{
-                          fontSize: 14,
-                          fontFamily: resolvedFonts.heading,
-                          color: theme.textPrimary,
-                        }}
-                      >
-                        {item.name} County
-                      </Text>
-                      <Text style={{ fontSize: 11, color: theme.textSecondary }}>
-                        HQ: {item.capital} · Pop.{" "}
-                        {item.population.toLocaleString()}
-                      </Text>
-                    </View>
-                    {isSelected && (
-                      <ThemedIcon
-                        name="checkmark-circle"
-                        size={20}
-                        color={theme.gold}
-                      />
-                    )}
-                  </Pressable>
-                );
-              }}
+              persistentScrollbar={themeConfig?.verticalScrollbarStyle === "always-visible"}
+              renderItem={renderPickerItem}
             />
           </View>
         </View>

@@ -19,10 +19,6 @@ import { useState, useEffect, useMemo, useRef, useDeferredValue } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { TOOL_CATEGORIES, TOOLS } from "@/lib/tools-registry";
-import { PUBLISHED_COURSE_SUMMARIES } from "@/data/courses/catalog-summary";
-import { STATIC_BLOG_POSTS } from "@/data/blog-posts";
-import countiesData from "@/data/counties.json";
-import matatuRoutesData from "@/data/matatu-routes.json";
 import { useTheme } from "@/components/ThemeProvider";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 
@@ -33,6 +29,10 @@ interface QuickSearchItem {
   href: string;
   badge: string;
   icon: string;
+  titleNorm: string;
+  badgeNorm: string;
+  subNorm: string;
+  titleTokens: string[];
 }
 
 function stripDiacritics(input: string): string {
@@ -42,11 +42,99 @@ function stripDiacritics(input: string): string {
     .toLowerCase();
 }
 
+function buildSearchItem(raw: Omit<QuickSearchItem, "titleNorm" | "badgeNorm" | "subNorm" | "titleTokens">): QuickSearchItem {
+  const titleNorm = stripDiacritics(raw.title);
+  return {
+    ...raw,
+    titleNorm,
+    badgeNorm: stripDiacritics(raw.badge),
+    subNorm: stripDiacritics(raw.subtitle),
+    titleTokens: titleNorm.split(/[\s\-–—/(),.:]+/).filter(Boolean),
+  };
+}
+
+let cachedExtraSearchItems: QuickSearchItem[] | null = null;
+let extraSearchItemsPromise: Promise<QuickSearchItem[]> | null = null;
+
+function loadExtraSearchItems(): Promise<QuickSearchItem[]> {
+  if (cachedExtraSearchItems) return Promise.resolve(cachedExtraSearchItems);
+  if (!extraSearchItemsPromise) {
+    extraSearchItemsPromise = Promise.all([
+      import("@/data/courses/catalog-summary"),
+      import("@/data/blog-posts-summary"),
+      import("@/data/counties.json"),
+      import("@/data/matatu-routes.json"),
+    ]).then(([coursesMod, blogMod, countiesMod, matatuMod]) => {
+      const items: QuickSearchItem[] = [];
+      for (const c of coursesMod.PUBLISHED_COURSE_SUMMARIES) {
+        items.push(buildSearchItem({
+          id: `lang-${c.config.id}`,
+          title: `Learn ${c.config.name} (${c.config.nativeName})`,
+          subtitle: `${c.config.family} • ${c.config.counties.slice(0, 3).join(", ")}`,
+          href: `/tools/learn/${c.config.id}/`,
+          badge: "Language",
+          icon: "🗣️",
+        }));
+      }
+      for (const county of countiesMod.default.counties) {
+        const codeStr = String(county.code).padStart(3, "0");
+        items.push(buildSearchItem({
+          id: `county-${county.slug}`,
+          title: `${county.name} County (#${codeStr})`,
+          subtitle: `HQ: ${county.capital} • Gov. ${county.governor}`,
+          href: `/county/${county.slug}/`,
+          badge: "County",
+          icon: "🏛️",
+        }));
+      }
+      for (const post of blogMod.STATIC_BLOG_POST_SUMMARIES) {
+        items.push(buildSearchItem({
+          id: `blog-${post.slug}`,
+          title: post.title,
+          subtitle: post.excerpt,
+          href: `/blog/${post.slug}/`,
+          badge: "Guide",
+          icon: "📖",
+        }));
+      }
+      const routesByTown = (matatuMod.default.routes || {}) as Record<
+        string,
+        Array<{
+          routeNumber: string;
+          name: string;
+          slug: string;
+          terminusA: string;
+          terminusB: string;
+          saccoName?: string;
+        }>
+      >;
+      for (const [townSlug, townRoutes] of Object.entries(routesByTown)) {
+        if (!Array.isArray(townRoutes)) continue;
+        const townLabel = townSlug.charAt(0).toUpperCase() + townSlug.slice(1);
+        for (const route of townRoutes) {
+          items.push(buildSearchItem({
+            id: `matatu-${townSlug}-${route.slug}`,
+            title: `Route ${route.routeNumber}: ${route.name} (${townLabel})`,
+            subtitle: `${route.terminusA} → ${route.terminusB}${route.saccoName ? ` • ${route.saccoName}` : ""}`,
+            href: `/matatu/${townSlug}/${route.slug}/`,
+            badge: "Matatu",
+            icon: "🚌",
+          }));
+        }
+      }
+      cachedExtraSearchItems = items;
+      return items;
+    });
+  }
+  return extraSearchItemsPromise;
+}
+
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [toolsOpen, setToolsOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
+  const [extraSearchItems, setExtraSearchItems] = useState<QuickSearchItem[]>(() => cachedExtraSearchItems ?? []);
   const deferredSearchQuery = useDeferredValue(searchQuery);
   const searchInputRef = useRef<HTMLInputElement>(null);
   const searchDialogRef = useRef<HTMLDivElement>(null);
@@ -149,77 +237,40 @@ export default function Navbar() {
     setSearchOpen(true);
   };
 
-  const quickSearchItems = useMemo<QuickSearchItem[]>(() => {
+  useEffect(() => {
+    if (!searchOpen || extraSearchItems.length > 0) return;
+    let cancelled = false;
+    loadExtraSearchItems()
+      .then((items) => {
+        if (!cancelled) setExtraSearchItems(items);
+      })
+      .catch(() => {});
+    return () => {
+      cancelled = true;
+    };
+  }, [searchOpen, extraSearchItems.length]);
+
+  const toolSearchItems = useMemo<QuickSearchItem[]>(() => {
     if (!searchOpen) return [];
     const items: QuickSearchItem[] = [];
-    for (const t of TOOLS.filter((tool) => tool.isLive)) {
-      items.push({
+    for (const t of TOOLS) {
+      if (!t.isLive) continue;
+      items.push(buildSearchItem({
         id: `tool-${t.slug}`,
         title: t.shortTitle,
         subtitle: t.description,
         href: `/tools/${t.slug}/`,
         badge: "Tool",
         icon: t.icon,
-      });
-    }
-    for (const c of PUBLISHED_COURSE_SUMMARIES) {
-      items.push({
-        id: `lang-${c.config.id}`,
-        title: `Learn ${c.config.name} (${c.config.nativeName})`,
-        subtitle: `${c.config.family} • ${c.config.counties.slice(0, 3).join(", ")}`,
-        href: `/tools/learn/${c.config.id}/`,
-        badge: "Language",
-        icon: "🗣️",
-      });
-    }
-    for (const county of countiesData.counties) {
-      const codeStr = String(county.code).padStart(3, "0");
-      items.push({
-        id: `county-${county.slug}`,
-        title: `${county.name} County (#${codeStr})`,
-        subtitle: `HQ: ${county.capital} • Gov. ${county.governor}`,
-        href: `/county/${county.slug}/`,
-        badge: "County",
-        icon: "🏛️",
-      });
-    }
-    for (const post of STATIC_BLOG_POSTS) {
-      items.push({
-        id: `blog-${post.slug}`,
-        title: post.title,
-        subtitle: post.excerpt,
-        href: `/blog/${post.slug}/`,
-        badge: "Guide",
-        icon: "📖",
-      });
-    }
-    const routesByTown = (matatuRoutesData.routes || {}) as Record<
-      string,
-      Array<{
-        routeNumber: string;
-        name: string;
-        slug: string;
-        terminusA: string;
-        terminusB: string;
-        saccoName?: string;
-      }>
-    >;
-    for (const [townSlug, townRoutes] of Object.entries(routesByTown)) {
-      if (!Array.isArray(townRoutes)) continue;
-      const townLabel = townSlug.charAt(0).toUpperCase() + townSlug.slice(1);
-      for (const route of townRoutes) {
-        items.push({
-          id: `matatu-${townSlug}-${route.slug}`,
-          title: `Route ${route.routeNumber}: ${route.name} (${townLabel})`,
-          subtitle: `${route.terminusA} → ${route.terminusB}${route.saccoName ? ` • ${route.saccoName}` : ""}`,
-          href: `/matatu/${townSlug}/${route.slug}/`,
-          badge: "Matatu",
-          icon: "🚌",
-        });
-      }
+      }));
     }
     return items;
   }, [searchOpen]);
+
+  const quickSearchItems = useMemo<QuickSearchItem[]>(() => {
+    if (!searchOpen) return [];
+    return extraSearchItems.length > 0 ? [...toolSearchItems, ...extraSearchItems] : toolSearchItems;
+  }, [searchOpen, toolSearchItems, extraSearchItems]);
 
   const filteredSearchResults = useMemo(() => {
     if (!searchOpen) return [];
@@ -236,10 +287,10 @@ export default function Navbar() {
 
     const scored: { item: QuickSearchItem; score: number }[] = [];
     for (const item of quickSearchItems) {
-      const title = stripDiacritics(item.title);
-      const badge = stripDiacritics(item.badge);
-      const sub = stripDiacritics(item.subtitle);
-      const titleTokens = title.split(/[\s\-–—/(),.:]+/).filter(Boolean);
+      const title = item.titleNorm;
+      const badge = item.badgeNorm;
+      const sub = item.subNorm;
+      const titleTokens = item.titleTokens;
 
       let score = 0;
       let matchedTitle = false;
@@ -559,9 +610,9 @@ export default function Navbar() {
                   aria-label="Toggle navigation menu"
                 >
                   <div className="space-y-1.5">
-                    <span className={`block w-5 h-0.5 bg-current transition-all duration-300 origin-center ${mobileOpen ? "rotate-45 translate-y-[4px]" : ""}`} />
-                    <span className={`block w-5 h-0.5 bg-current transition-all duration-300 ${mobileOpen ? "opacity-0 scale-0" : ""}`} />
-                    <span className={`block w-5 h-0.5 bg-current transition-all duration-300 origin-center ${mobileOpen ? "-rotate-45 -translate-y-[4px]" : ""}`} />
+                    <span className={`block w-5 h-0.5 bg-current transition-transform duration-300 origin-center ${mobileOpen ? "rotate-45 translate-y-[4px]" : ""}`} />
+                    <span className={`block w-5 h-0.5 bg-current transition-[opacity,transform] duration-300 ${mobileOpen ? "opacity-0 scale-0" : ""}`} />
+                    <span className={`block w-5 h-0.5 bg-current transition-transform duration-300 origin-center ${mobileOpen ? "-rotate-45 -translate-y-[4px]" : ""}`} />
                   </div>
                 </button>
               </div>
@@ -640,7 +691,7 @@ export default function Navbar() {
       {searchOpen && (
         <div
           data-adsense-pause="true"
-          className="fixed inset-0 z-[120] bg-black/65 backdrop-blur-sm flex items-start justify-center p-3 pt-14 sm:p-4 sm:pt-24"
+          className="fixed inset-0 z-[120] bg-black/75 sm:bg-black/65 sm:backdrop-blur-sm flex items-start justify-center p-3 pt-14 sm:p-4 sm:pt-24"
           onClick={() => setSearchOpen(false)}
           role="dialog"
           aria-modal="true"

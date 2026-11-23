@@ -28,11 +28,21 @@ export default function ScrollReset() {
 
   useEffect(() => {
     if (typeof window === "undefined") return;
+    let lastShow: boolean | null = null;
     const onScroll = () => {
-      setShowBackToTop(window.scrollY > 720);
+      const next = window.scrollY > 720;
+      if (next !== lastShow) {
+        lastShow = next;
+        setShowBackToTop(next);
+      }
     };
+    let lastFocus: boolean | null = null;
     const syncFocusMode = () => {
-      setFocusMode(document.body.dataset.khFocusMode === "true");
+      const next = document.body.dataset.khFocusMode === "true";
+      if (next !== lastFocus) {
+        lastFocus = next;
+        setFocusMode(next);
+      }
     };
     const observer = new MutationObserver(syncFocusMode);
     observer.observe(document.body, { attributes: true, attributeFilter: ["data-kh-focus-mode"] });
@@ -54,7 +64,7 @@ export default function ScrollReset() {
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       aria-label="Scroll back to top"
       title="Back to top"
-      className="kh-back-to-top fixed bottom-20 sm:bottom-6 right-4 sm:right-6 z-40 w-10 h-10 rounded-full border border-gold/40 bg-bg-card text-gold shadow-lg shadow-black/30 hover:bg-gold hover:text-kenya-black hover:-translate-y-1 active:scale-90 flex items-center justify-center transition-all duration-200 cursor-pointer"
+      className="kh-back-to-top fixed bottom-20 sm:bottom-6 right-4 sm:right-6 z-40 w-10 h-10 rounded-full border border-gold/40 bg-bg-card text-gold shadow-lg shadow-black/30 hover:bg-gold hover:text-kenya-black hover:-translate-y-1 active:scale-90 flex items-center justify-center transition-[transform,background-color,color] duration-200 cursor-pointer"
       style={{ backgroundColor: "var(--bg-card)" }}
     >
       <ArrowUp className="w-4 h-4" />

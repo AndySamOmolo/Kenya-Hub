@@ -311,7 +311,7 @@ export default function LearnPage() {
                   setActiveHubTab(tab.id);
                   scrollToTopIfScrolled();
                 }}
-                className={`shrink-0 whitespace-nowrap rounded-full px-3 py-1 sm:px-4 sm:py-1.5 min-h-[32px] sm:min-h-[38px] inline-flex items-center text-xs sm:text-sm font-medium border transition-all cursor-pointer ${
+                className={`shrink-0 whitespace-nowrap rounded-full px-3 py-1 sm:px-4 sm:py-1.5 min-h-[32px] sm:min-h-[38px] inline-flex items-center text-xs sm:text-sm font-medium border transition-colors cursor-pointer ${
                   active
                     ? "border-gold/50 bg-gold/15 text-gold font-semibold"
                     : "border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light"
@@ -365,7 +365,7 @@ export default function LearnPage() {
                       key={fam}
                       type="button"
                       onClick={() => setFamilyFilter(fam)}
-                      className={`shrink-0 whitespace-nowrap rounded-full px-2.5 py-1 sm:px-3.5 sm:py-1.5 min-h-[30px] sm:min-h-[36px] inline-flex items-center justify-center text-xs font-semibold border transition-all cursor-pointer ${
+                      className={`shrink-0 whitespace-nowrap rounded-full px-2.5 py-1 sm:px-3.5 sm:py-1.5 min-h-[30px] sm:min-h-[36px] inline-flex items-center justify-center text-xs font-semibold border transition-colors cursor-pointer ${
                         active
                           ? "border-gold/50 bg-gold/15 text-gold font-semibold"
                           : "border-border bg-bg-elevated text-text-secondary hover:text-text-primary"
@@ -394,10 +394,10 @@ export default function LearnPage() {
                 return (
                   <div
                     key={lang.id}
-                    className="group relative overflow-hidden rounded-2xl border border-border bg-bg-card p-4.5 sm:p-5 transition-all hover:border-gold/50 flex flex-col justify-between shadow-sm"
+                    className="cv-auto group relative overflow-hidden rounded-2xl border border-border bg-bg-card p-4.5 sm:p-5 transition-colors hover:border-gold/50 flex flex-col justify-between shadow-sm"
                   >
                     <div className="flex flex-col flex-1">
-                      <Link href={`/tools/learn/${lang.id}/`} className="flex flex-col flex-1">
+                      <Link href={`/tools/learn/${lang.id}/`} prefetch={false} className="flex flex-col flex-1">
                         <div className="flex items-start justify-between gap-2.5">
                           <div className="min-w-0 flex-1">
                             {/* Cultural greeting and regional motif badges */}
@@ -476,6 +476,7 @@ export default function LearnPage() {
                               <Link
                                 key={cat.id}
                                 href={`/tools/learn/${lang.id}/`}
+                                prefetch={false}
                                 className="inline-flex items-center gap-1.5 rounded-lg border border-border bg-bg-elevated/70 px-2.5 py-1 text-xs text-text-secondary hover:border-gold hover:text-gold transition-colors"
                               >
                                 <span>{cat.icon}</span>

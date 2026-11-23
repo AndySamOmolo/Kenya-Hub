@@ -88,6 +88,8 @@ const MATATU_KEYWORDS = [
   "thika",
 ];
 
+const toolKeyExtractor = (item: (typeof TOOLS)[0]) => item.slug;
+
 const ToolItem = React.memo(function ToolItem({
   item,
   isPinned = false,
@@ -264,6 +266,7 @@ export default function ToolsScreen() {
   );
   const [pinnedSlugs, setPinnedSlugs] = useState<string[]>([]);
   const [visitCounts, setVisitCounts] = useState<Record<string, number>>({});
+  const lastStorageRawRef = useRef<{ saved?: string | null; visits?: string | null }>({});
 
   const pinnedSet = useMemo(() => new Set(pinnedSlugs), [pinnedSlugs]);
   const handlePressTool = useCallback(
@@ -300,16 +303,23 @@ export default function ToolsScreen() {
         .then((entries) => {
           if (!active) return;
           const map = new Map(entries);
-          setPinnedSlugs(parseSavedTools(map.get("kh-saved-tools")));
-          const visitsRaw = map.get("kh-tool-visits");
-          if (!visitsRaw) {
-            setVisitCounts({});
-          } else {
-            try {
-              const parsed = JSON.parse(visitsRaw);
-              setVisitCounts(parsed && typeof parsed === "object" ? parsed : {});
-            } catch {
+          const savedRaw = map.get("kh-saved-tools") ?? null;
+          if (savedRaw !== lastStorageRawRef.current.saved) {
+            lastStorageRawRef.current.saved = savedRaw;
+            setPinnedSlugs(parseSavedTools(savedRaw));
+          }
+          const visitsRaw = map.get("kh-tool-visits") ?? null;
+          if (visitsRaw !== lastStorageRawRef.current.visits) {
+            lastStorageRawRef.current.visits = visitsRaw;
+            if (!visitsRaw) {
               setVisitCounts({});
+            } else {
+              try {
+                const parsed = JSON.parse(visitsRaw);
+                setVisitCounts(parsed && typeof parsed === "object" ? parsed : {});
+              } catch {
+                setVisitCounts({});
+              }
             }
           }
         })
@@ -603,7 +613,7 @@ export default function ToolsScreen() {
         ref={listRef}
         data={filtered}
         extraData={listExtraData}
-        keyExtractor={(item) => item.slug}
+        keyExtractor={toolKeyExtractor}
         contentContainerStyle={[
           styles.list,
           { paddingHorizontal: screenPadPx, paddingBottom: bottomClearance },

@@ -438,7 +438,7 @@ export default function CountyIndexPage() {
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`shrink-0 whitespace-nowrap rounded-full px-2.5 py-1 sm:px-4 sm:py-1.5 text-[11px] sm:text-xs font-medium border transition-all ${
+              className={`shrink-0 whitespace-nowrap rounded-full px-2.5 py-1 sm:px-4 sm:py-1.5 text-[11px] sm:text-xs font-medium border transition-colors ${
                 active
                   ? "border-gold/50 bg-gold/15 text-gold font-semibold"
                   : "border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light"
@@ -530,7 +530,7 @@ export default function CountyIndexPage() {
       {activeTab === "directory" && (
         <>
           {/* Clean Region & A–Z Filter Bar (No native scrollbar clutter) */}
-          <div className="md:sticky md:top-16 z-30 px-3 sm:px-3.5 py-2 sm:py-2.5 mb-3 sm:mb-4 bg-bg-card/95 backdrop-blur-sm border border-border/80 rounded-xl space-y-2 shadow-xs">
+          <div className="md:sticky md:top-16 z-30 px-3 sm:px-3.5 py-2 sm:py-2.5 mb-3 sm:mb-4 bg-bg-card md:bg-bg-card/95 md:backdrop-blur-sm border border-border/80 rounded-xl space-y-2 shadow-xs">
             <div className="flex items-center gap-2">
               <span className="text-[0.625rem] font-bold uppercase tracking-wider text-text-muted shrink-0 w-11">
                 Region
@@ -595,6 +595,7 @@ export default function CountyIndexPage() {
               <Link
                 key={county.code}
                 href={`/county/${county.slug}/`}
+                prefetch={false}
                 className="cv-auto group block bg-bg-card border border-border rounded-xl p-4 sm:p-5 hover:border-gold/50 transition-colors"
               >
                 <div className="flex items-start justify-between mb-3">
@@ -671,7 +672,7 @@ export default function CountyIndexPage() {
                     return (
                       <tr key={c.code} className="hover:bg-white/[0.02] transition-colors">
                         <td className="py-3 px-4 font-semibold text-text-primary">
-                          <Link href={`/county/${c.slug}/`} className="hover:text-gold transition-colors">
+                          <Link href={`/county/${c.slug}/`} prefetch={false} className="hover:text-gold transition-colors">
                             <span className="text-text-muted font-mono mr-1.5">
                               {String(c.code).padStart(3, "0")}
                             </span>
@@ -715,11 +716,12 @@ export default function CountyIndexPage() {
       {activeTab === "constituencies" && (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {filtered.map((c) => (
-            <div key={c.code} className="bg-bg-card border border-border rounded-xl p-5 space-y-4">
+            <div key={c.code} className="cv-auto bg-bg-card border border-border rounded-xl p-5 space-y-4">
               <div className="flex items-center justify-between border-b border-border pb-3">
                 <div>
                   <Link
                     href={`/county/${c.slug}/`}
+                    prefetch={false}
                     className="text-base font-bold font-[family-name:var(--font-outfit)] text-text-primary hover:text-gold transition-colors"
                   >
                     {String(c.code).padStart(3, "0")}. {c.name} County
@@ -728,6 +730,7 @@ export default function CountyIndexPage() {
                 </div>
                 <Link
                   href={`/county/${c.slug}/`}
+                  prefetch={false}
                   className="text-xs font-semibold text-gold hover:underline"
                 >
                   Full Profile →
@@ -780,11 +783,12 @@ export default function CountyIndexPage() {
             const r = c.rain;
             if (!r) return null;
             return (
-              <div key={c.code} className="bg-bg-card border border-border rounded-xl p-5 space-y-4">
+              <div key={c.code} className="cv-auto bg-bg-card border border-border rounded-xl p-5 space-y-4">
                 <div className="flex items-start justify-between">
                   <div>
                     <Link
                       href={`/county/${c.slug}/`}
+                      prefetch={false}
                       className="text-base font-bold font-[family-name:var(--font-outfit)] text-text-primary hover:text-gold transition-colors"
                     >
                       {String(c.code).padStart(3, "0")}. {c.name} County
@@ -1232,13 +1236,13 @@ export default function CountyIndexPage() {
                             >
                               {pctA > 0 && (
                                 <div
-                                  className="h-full bg-gold rounded-l-full transition-all"
+                                  className="h-full bg-gold rounded-l-full transition-[width] duration-200"
                                   style={{ width: `${pctA}%` }}
                                 />
                               )}
                               {100 - pctA > 0 && (
                                 <div
-                                  className="h-full bg-kenya-green-light rounded-r-full transition-all"
+                                  className="h-full bg-kenya-green-light rounded-r-full transition-[width] duration-200"
                                   style={{ width: `${100 - pctA}%` }}
                                 />
                               )}

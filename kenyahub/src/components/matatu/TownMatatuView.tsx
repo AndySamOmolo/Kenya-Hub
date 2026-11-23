@@ -2,7 +2,7 @@
 
 import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import { BusFront, Check, ChevronRight, MapPin } from "lucide-react";
-import { useState, useMemo, useEffect, useRef } from "react";
+import { useState, useMemo, useEffect, useRef, useDeferredValue } from "react";
 import { scrollToTopIfScrolled } from "@/lib/scroll";
 import Link from "next/link";
 import matatuData from "@/data/matatu-routes.json";
@@ -17,6 +17,7 @@ export default function TownMatatuView({ townSlug }: TownMatatuViewProps) {
   const routes = (matatuData.routes as Record<string, typeof matatuData.routes.nairobi>)[townSlug] || [];
 
   const [search, setSearch] = useState("");
+  const deferredSearch = useDeferredValue(search);
   const [saccoFilter, setSaccoFilter] = useState("all");
   const _scrollMountRef = useRef(false);
   useEffect(() => {
@@ -32,8 +33,8 @@ export default function TownMatatuView({ townSlug }: TownMatatuViewProps) {
     return routes.filter((r) => {
       if (saccoFilter !== "all" && r.saccoName !== saccoFilter) return false;
 
-      if (search.trim()) {
-        const q = search.toLowerCase();
+      if (deferredSearch.trim()) {
+        const q = deferredSearch.toLowerCase();
         return (
           r.name.toLowerCase().includes(q) ||
           r.routeNumber.toLowerCase().includes(q) ||
@@ -45,7 +46,7 @@ export default function TownMatatuView({ townSlug }: TownMatatuViewProps) {
       }
       return true;
     });
-  }, [routes, saccoFilter, search]);
+  }, [routes, saccoFilter, deferredSearch]);
 
   if (!townInfo) {
     return (
@@ -119,7 +120,7 @@ export default function TownMatatuView({ townSlug }: TownMatatuViewProps) {
                   key={s}
                   type="button"
                   onClick={() => setSaccoFilter(s)}
-                  className={`shrink-0 whitespace-nowrap rounded-full px-3.5 py-1.5 text-xs font-medium border transition-all cursor-pointer ${
+                  className={`shrink-0 whitespace-nowrap rounded-full px-3.5 py-1.5 text-xs font-medium border transition-colors cursor-pointer ${
                     active
                       ? "border-gold/50 bg-gold/15 text-gold font-semibold"
                       : "border-border bg-bg-elevated text-text-secondary hover:text-text-primary hover:border-border-light"
@@ -147,12 +148,13 @@ export default function TownMatatuView({ townSlug }: TownMatatuViewProps) {
           return (
             <div
               key={r.slug}
-              className="bg-bg-card border border-border rounded-xl p-5 hover:border-gold/50 transition-all group flex flex-col justify-between"
+              className="cv-auto bg-bg-card border border-border rounded-xl p-5 hover:border-gold/50 transition-colors group flex flex-col justify-between"
             >
               <div>
                 <div className="flex items-start justify-between gap-2.5 mb-3">
                   <Link
                     href={`/matatu/${townSlug}/${r.slug}/`}
+                    prefetch={false}
                     className="flex items-center gap-2.5 min-w-0 flex-1"
                   >
                     <div className="min-w-[2.5rem] px-2 h-10 rounded-xl bg-gold/10 border border-gold/20 flex items-center justify-center flex-shrink-0">
@@ -212,6 +214,7 @@ export default function TownMatatuView({ townSlug }: TownMatatuViewProps) {
                 </a>
                 <Link
                   href={`/matatu/${townSlug}/${r.slug}/`}
+                  prefetch={false}
                   className="text-[0.7rem] text-kenya-green-light font-semibold hover:text-gold transition-colors inline-flex items-center gap-1"
                 >
                   View Map &amp; Stages →

@@ -19,7 +19,7 @@ import {
 import { TOOLS, TOOL_CATEGORIES } from "@/lib/tools-registry";
 import { PUBLISHED_COURSE_SUMMARIES } from "@/data/courses/catalog-summary";
 import { getLanguageIdentity } from "@/data/language-identity";
-import { STATIC_BLOG_POSTS } from "@/data/blog-posts";
+import { STATIC_BLOG_POST_SUMMARIES as STATIC_BLOG_POSTS } from "@/data/blog-posts-summary";
 import PinnedToolsHomeSection from "@/components/tools/PinnedToolsHomeSection";
 import PopularToolsSection from "@/components/tools/PopularToolsSection";
 import DynamicIcon from "@/components/ui/DynamicIcon";
@@ -254,8 +254,9 @@ export default function HomePage() {
                   <Link
                     key={config.id}
                     href={`/tools/learn/${config.id}/`}
+                    prefetch={false}
                     aria-labelledby={`home-course-${config.id}`}
-                    className={`${idx >= 6 ? "hidden sm:flex " : ""}group rounded-xl border border-border bg-bg-card hover:border-gold/50 p-3 sm:p-3.5 transition-all flex flex-col justify-between shadow-xs`}
+                    className={`${idx >= 6 ? "hidden sm:flex " : ""}group rounded-xl border border-border bg-bg-card hover:border-gold/50 p-3 sm:p-3.5 transition-colors flex flex-col justify-between shadow-xs`}
                   >
                     <div>
                       <div className="flex items-center justify-between gap-1.5 mb-1.5">
@@ -369,6 +370,7 @@ export default function HomePage() {
               <Link
                 key={cat.id}
                 href={`/tools/?category=${cat.id}`}
+                prefetch={false}
                 aria-labelledby={`home-cat-${cat.id}`}
                 className="tool-card bg-bg-card border border-border rounded-2xl p-4 sm:p-6 flex items-start gap-3.5 sm:gap-4 group"
               >
@@ -420,8 +422,9 @@ export default function HomePage() {
             <Link
               key={post.slug}
               href={`/blog/${post.slug}/`}
+              prefetch={false}
               aria-labelledby={`home-guide-${post.slug}`}
-              className="bg-bg-card border border-border hover:border-gold/50 rounded-2xl p-5 transition-all flex flex-col justify-between group"
+              className="bg-bg-card border border-border hover:border-gold/50 rounded-2xl p-5 transition-colors flex flex-col justify-between group"
             >
               <div>
                 <div className="flex flex-wrap items-center gap-1.5 mb-3">

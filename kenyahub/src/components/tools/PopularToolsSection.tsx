@@ -76,6 +76,7 @@ export default function PopularToolsSection() {
             <Link
               key={tool.slug}
               href={`/tools/${tool.slug}/`}
+              prefetch={false}
               className="tool-card bg-bg-card border border-border rounded-2xl p-5 sm:p-6 block group"
               style={{ animationDelay: `${i * 80}ms` }}
             >

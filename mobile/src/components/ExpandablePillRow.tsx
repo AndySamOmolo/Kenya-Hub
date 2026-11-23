@@ -182,7 +182,7 @@ export interface ExpandablePillRowProps {
   fadeColor?: string;
 }
 
-export function ExpandablePillRow({
+export const ExpandablePillRow = React.memo(function ExpandablePillRow({
   children,
   style,
   contentContainerStyle,
@@ -349,6 +349,8 @@ export function ExpandablePillRow({
   const handleScrollEndDrag = useCallback(
     (e: NativeSyntheticEvent<NativeScrollEvent>) => {
       const x = e.nativeEvent.contentOffset.x;
+      scrollXRef.current = x;
+      updateScrollState();
       const cw = contentWidthRef.current;
       const lw = layoutWidthRef.current;
       const maxScroll = Math.max(0, cw - lw);
@@ -360,7 +362,15 @@ export function ExpandablePillRow({
         triggerSpringBounce("right", 12);
       }
     },
-    [themeConfig?.scrollBounceEnabled, triggerSpringBounce]
+    [themeConfig?.scrollBounceEnabled, triggerSpringBounce, updateScrollState]
+  );
+
+  const handleMomentumScrollEnd = useCallback(
+    (e: NativeSyntheticEvent<NativeScrollEvent>) => {
+      scrollXRef.current = e.nativeEvent.contentOffset.x;
+      updateScrollState();
+    },
+    [updateScrollState]
   );
 
   const centerActivePill = useCallback(
@@ -396,13 +406,13 @@ export function ExpandablePillRow({
     [updateScrollState]
   );
 
-  const handleScroll = useCallback(
-    (e: NativeSyntheticEvent<NativeScrollEvent>) => {
-      scrollXRef.current = e.nativeEvent.contentOffset.x;
-      updateScrollState();
-    },
-    [updateScrollState]
-  );
+  const handleToggleExpanded = useCallback(() => {
+    triggerHaptic(8);
+    if (!themeConfig?.reduceMotion) {
+      LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
+    }
+    setExpanded((prev) => !prev);
+  }, [themeConfig?.reduceMotion]);
 
   let runningPillIdx = 0;
   let detectedActiveIdx = -1;
@@ -1268,11 +1278,10 @@ export function ExpandablePillRow({
                 alwaysBounceHorizontal={true}
                 overScrollMode="always"
                 showsHorizontalScrollIndicator={showNativeSb}
-                scrollEventThrottle={48}
                 onLayout={handleLayout}
                 onContentSizeChange={handleContentSizeChange}
-                onScroll={handleScroll}
                 onScrollEndDrag={handleScrollEndDrag}
+                onMomentumScrollEnd={handleMomentumScrollEnd}
                 contentContainerStyle={[
                   innerContentStyle,
                   {
@@ -1346,11 +1355,10 @@ export function ExpandablePillRow({
                 alwaysBounceHorizontal={true}
                 overScrollMode="always"
                 showsHorizontalScrollIndicator={showNativeSb}
-                scrollEventThrottle={48}
                 onLayout={handleLayout}
                 onContentSizeChange={handleContentSizeChange}
-                onScroll={handleScroll}
                 onScrollEndDrag={handleScrollEndDrag}
+                onMomentumScrollEnd={handleMomentumScrollEnd}
                 contentContainerStyle={[
                   innerContentStyle,
                   {
@@ -1378,13 +1386,7 @@ export function ExpandablePillRow({
 
       <Pressable
         android_ripple={androidRipple(theme.rippleColor, true)}
-        onPress={() => {
-          triggerHaptic(8);
-          if (!themeConfig?.reduceMotion) {
-            LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
-          }
-          setExpanded((prev) => !prev);
-        }}
+        onPress={handleToggleExpanded}
         hitSlop={8}
         accessibilityRole="button"
         accessibilityLabel={
@@ -1421,7 +1423,7 @@ export function ExpandablePillRow({
       </Pressable>
     </View>
   );
-}
+});
 
 const rowStyles = StyleSheet.create({
   rowWrap: {

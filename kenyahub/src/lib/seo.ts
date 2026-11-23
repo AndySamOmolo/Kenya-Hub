@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { TOOLS } from "./tools-registry";
-import { STATIC_BLOG_POSTS, type StaticBlogPost } from "@/data/blog-posts";
+import { STATIC_BLOG_POST_SUMMARIES, type StaticBlogPostSummary } from "@/data/blog-posts-summary";
 import type { Tool } from "./types";
 
 const BASE_URL = "https://kenyahub.me";
@@ -228,14 +228,14 @@ const TOOL_TO_BLOG_MAP: Record<string, string[]> = {
 export function getRelatedBlogPostsForTool(
   toolSlug: string,
   limit: number = 3
-): StaticBlogPost[] {
+): StaticBlogPostSummary[] {
   const tool = TOOLS.find((t) => t.slug === toolSlug);
-  const results: StaticBlogPost[] = [];
+  const results: StaticBlogPostSummary[] = [];
   const seen = new Set<string>();
 
   const explicitSlugs = TOOL_TO_BLOG_MAP[toolSlug] || [];
   for (const bSlug of explicitSlugs) {
-    const found = STATIC_BLOG_POSTS.find((p) => p.slug === bSlug);
+    const found = STATIC_BLOG_POST_SUMMARIES.find((p) => p.slug === bSlug);
     if (found && !seen.has(found.slug)) {
       results.push(found);
       seen.add(found.slug);
@@ -251,7 +251,7 @@ export function getRelatedBlogPostsForTool(
       ].filter((w) => w.length > 3 && w !== "kenya" && w !== "calculator" && w !== "2026")
     : [];
 
-  const scored = STATIC_BLOG_POSTS.filter((p) => !seen.has(p.slug)).map((p) => {
+  const scored = STATIC_BLOG_POST_SUMMARIES.filter((p) => !seen.has(p.slug)).map((p) => {
     const hay = `${p.title} ${p.excerpt} ${(p.tags || []).join(" ")}`.toLowerCase();
     let score = 0;
     for (const tok of tokens) {
@@ -346,9 +346,9 @@ export function getRelatedBlogPostsForBlogPost(
   currentSlug: string,
   tags: string[] = [],
   limit: number = 3
-): StaticBlogPost[] {
+): StaticBlogPostSummary[] {
   const tagSet = new Set(tags.map((t) => t.toLowerCase()));
-  const candidates = STATIC_BLOG_POSTS.filter((p) => p.slug !== currentSlug).map((p) => {
+  const candidates = STATIC_BLOG_POST_SUMMARIES.filter((p) => p.slug !== currentSlug).map((p) => {
     let score = 0;
     for (const t of p.tags || []) {
       if (tagSet.has(t.toLowerCase())) score += 3;
