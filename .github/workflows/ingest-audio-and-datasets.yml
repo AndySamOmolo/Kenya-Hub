@@ -33,8 +33,13 @@ on:
         required: false
         default: "true"
         type: string
+      include_audio_ingestion:
+        description: "Stream & upload open-access audio datasets to Cloudflare R2"
+        required: false
+        default: "true"
+        type: string
       include_ksl_metadata:
-        description: "Sync Kenyan Sign Language (xki) metadata index (public/ksl-index.json)"
+        description: "Sync Kenyan Sign Language (xki) videos & metadata index (public/ksl-index.json)"
         required: false
         default: "true"
         type: string
@@ -76,7 +81,7 @@ jobs:
   ingest-datasets:
     name: Stream Open-Access Text, CLDF, KSL & Audio Datasets -> Repo & Cloudflare R2
     runs-on: ubuntu-latest
-    timeout-minutes: 330
+    timeout-minutes: 345
     permissions:
       contents: write
 
@@ -207,13 +212,15 @@ jobs:
           INCLUDE_KSL_METADATA: ${{ inputs.include_ksl_metadata || 'true' }}
           MAX_KSL_MASENO_VIDEOS: "0"
           MAX_KSL_HUMAN_VIDEOS: "0"
-          KSL_TIME_BUDGET_SEC: "7200"
+          KSL_TIME_BUDGET_SEC: ${{ inputs.include_audio_ingestion == 'false' && '14400' || '5400' }}
           PER_DATASET_TIMEOUT_SEC: "900"
-          GLOBAL_TIME_BUDGET_SEC: "14400"
+          GLOBAL_TIME_BUDGET_SEC: "10800"
           INGESTION_SCRIPTS_HASH: ${{ steps.lock_check.outputs.scripts_hash }}
           R2_READY: ${{ steps.secrets_check.outputs.r2_ready }}
         run: |
-          python3 -u scripts/ci-ingest-audio-and-text-r2.py
+          if [ "${{ inputs.include_audio_ingestion || 'true' }}" = "true" ]; then
+            python3 -u scripts/ci-ingest-audio-and-text-r2.py
+          fi
           if [ "${{ inputs.include_ksl_metadata || 'true' }}" = "true" ]; then
             python3 -u scripts/ingest-ksl-pose-r2.py
           fi
