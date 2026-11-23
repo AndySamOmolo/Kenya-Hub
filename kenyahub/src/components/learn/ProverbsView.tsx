@@ -14,7 +14,9 @@ import {
   getCulturalWisdomForLanguage,
   type CulturalWisdomItem,
 } from "@/data/courses/cultural-wisdom";
-import { COURSE_REGISTRY, getCourse } from "@/data/courses/registry";
+import { PUBLISHED_COURSE_SUMMARIES } from "@/data/courses/catalog-summary";
+import type { CourseUnit } from "@/data/courses/types";
+import { useDebouncedValue } from "@/lib/useDebouncedValue";
 import { renderInlineMarkdown } from "@/lib/render-markdown";
 
 export interface KikuyuProverbItem {
@@ -71,15 +73,18 @@ export default function ProverbsView({
   lockedLanguageId,
   defaultLanguageId,
   initialLanguage = "kamba",
+  courseUnits,
 }: {
   lockedLanguageId?: string;
   defaultLanguageId?: string;
   initialLanguage?: string;
+  courseUnits?: CourseUnit[];
 }) {
   const resolvedInitial = lockedLanguageId || defaultLanguageId || initialLanguage;
   const [selectedLang, setSelectedLang] = useState<string>(resolvedInitial);
   const [luoSubTab, setLuoSubTab] = useState<LuoSubTab>("proverbs");
   const [search, setSearch] = useState("");
+  const debouncedSearch = useDebouncedValue(search, 180);
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [revealedIds, setRevealedIds] = useState<Record<string, boolean>>({});
   const [spotlight, setSpotlight] = useState<SpotlightProverb | null>(null);
@@ -106,15 +111,18 @@ export default function ProverbsView({
   }, [lockedLanguageId]);
 
   const activeLang = lockedLanguageId || selectedLang;
-  const activeCourse = useMemo(() => getCourse(activeLang), [activeLang]);
+  const activeSummary = useMemo(
+    () => PUBLISHED_COURSE_SUMMARIES.find((c) => c.config.id === activeLang),
+    [activeLang]
+  );
 
   const otherLangWisdom = useMemo((): CulturalWisdomItem[] => {
     if (activeLang === "kikuyu" || activeLang === "luo") return [];
     const proverbs = getCulturalWisdomForLanguage(activeLang);
     const notes: CulturalWisdomItem[] = [];
-    if (activeCourse) {
+    if (courseUnits && courseUnits.length > 0) {
       const seen = new Set<string>();
-      activeCourse.units.forEach((unit) => {
+      courseUnits.forEach((unit) => {
         unit.skills.forEach((skill) => {
           if (
             skill.culturalNote &&
@@ -132,14 +140,14 @@ export default function ProverbsView({
               literalTranslation: skill.title,
               meaning: skill.culturalNote,
               category: "tradition",
-              source: `${activeCourse.config.name} Cultural & Historical Notes`,
+              source: `${activeSummary?.config.name || "Kenyan"} Cultural & Historical Notes`,
             });
           }
         });
       });
     }
     return [...proverbs, ...notes];
-  }, [activeLang, activeCourse]);
+  }, [activeLang, courseUnits, activeSummary]);
 
   const kikuyuCategories = useMemo((): string[] => {
     const cats = Array.from(
@@ -163,7 +171,7 @@ export default function ProverbsView({
   }, [otherLangWisdom]);
 
   const filteredKikuyu = useMemo(() => {
-    const q = search.trim().toLowerCase();
+    const q = debouncedSearch.trim().toLowerCase();
     const normQ = normalizeDiacritics(q);
     return KIKUYU_PROVERBS.filter((p: KikuyuProverbItem) => {
       if (selectedCategory !== "All" && p.category !== selectedCategory) return false;
@@ -177,10 +185,10 @@ export default function ProverbsView({
         String(p.id) === q
       );
     });
-  }, [search, selectedCategory]);
+  }, [debouncedSearch, selectedCategory]);
 
   const filteredLuoProverbs = useMemo(() => {
-    const q = search.trim().toLowerCase();
+    const q = debouncedSearch.trim().toLowerCase();
     return ALL_LUO_PROVERBS.filter((p: ProverbEntry) => {
       if (selectedCategory !== "All" && p.category !== selectedCategory) return false;
       if (!q) return true;
@@ -191,10 +199,10 @@ export default function ProverbsView({
         (p.explanation || "").toLowerCase().includes(q)
       );
     });
-  }, [search, selectedCategory]);
+  }, [debouncedSearch, selectedCategory]);
 
   const filteredLuoRiddles = useMemo(() => {
-    const q = search.trim().toLowerCase();
+    const q = debouncedSearch.trim().toLowerCase();
     if (!q) return luoRiddles;
     return luoRiddles.filter(
       (r: RiddleEntry) =>
@@ -202,19 +210,19 @@ export default function ProverbsView({
         r.english.toLowerCase().includes(q) ||
         r.answer.toLowerCase().includes(q)
     );
-  }, [search]);
+  }, [debouncedSearch]);
 
   const filteredLuoTwisters = useMemo(() => {
-    const q = search.trim().toLowerCase();
+    const q = debouncedSearch.trim().toLowerCase();
     if (!q) return luoTongueTwisters;
     return luoTongueTwisters.filter(
       (t: TongueTwisterEntry) =>
         t.luo.toLowerCase().includes(q) || t.english.toLowerCase().includes(q)
     );
-  }, [search]);
+  }, [debouncedSearch]);
 
   const filteredOtherWisdom = useMemo(() => {
-    const q = search.trim().toLowerCase();
+    const q = debouncedSearch.trim().toLowerCase();
     const normQ = normalizeDiacritics(q);
     return otherLangWisdom.filter((item) => {
       if (selectedCategory !== "All" && item.category !== selectedCategory) return false;
@@ -227,7 +235,7 @@ export default function ProverbsView({
         (item.englishEquivalent || "").toLowerCase().includes(q)
       );
     });
-  }, [otherLangWisdom, search, selectedCategory]);
+  }, [otherLangWisdom, debouncedSearch, selectedCategory]);
 
   // Highlight a random proverb in a dedicated spotlight card without polluting the search input
   const pickRandom = () => {
@@ -268,7 +276,7 @@ export default function ProverbsView({
       const item = otherLangWisdom[Math.floor(Math.random() * otherLangWisdom.length)];
       if (item) {
         setSpotlight({
-          badge: `${activeCourse?.config.name || "Traditional"} Wisdom`,
+          badge: `${activeSummary?.config.name || "Traditional"} Wisdom`,
           nativeText: item.nativeText,
           literalTranslation: item.literalTranslation,
           meaning: item.meaning,
@@ -285,12 +293,12 @@ export default function ProverbsView({
       ? luoCategories
       : otherCategories;
 
-  const langDisplayName = activeCourse?.config.name || "Kenyan";
-  const langNativeName = activeCourse?.config.nativeName || langDisplayName;
+  const langDisplayName = activeSummary?.config.name || "Kenyan";
+  const langNativeName = activeSummary?.config.nativeName || langDisplayName;
 
   const wisdomCountByLang = useMemo(() => {
     const counts: Record<string, number> = {};
-    for (const { config } of Object.values(COURSE_REGISTRY)) {
+    for (const { config } of PUBLISHED_COURSE_SUMMARIES) {
       counts[config.id] =
         config.id === "kikuyu"
           ? KIKUYU_PROVERBS.length
@@ -305,7 +313,7 @@ export default function ProverbsView({
     <div className="space-y-5">
       {!lockedLanguageId && (
         <ExpandablePillRow>
-          {Object.values(COURSE_REGISTRY).map(({ config }) => {
+          {PUBLISHED_COURSE_SUMMARIES.map(({ config }) => {
             const count = wisdomCountByLang[config.id] ?? 0;
             const active = activeLang === config.id;
             return (

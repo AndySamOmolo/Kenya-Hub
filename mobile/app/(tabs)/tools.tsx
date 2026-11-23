@@ -178,6 +178,7 @@ export default function ToolsScreen() {
     [theme, themeConfig]
   );
   const screenPadPx = (themeMetrics as any)?.screenPaddingPx ?? Math.round(14 * (themeMetrics?.spacingScale ?? 1));
+  const floatClearance = themeMetrics?.floatingTabBarClearancePx ?? 0;
   const headingTransform = themeConfig.headingTransform || "none";
   const listExtraData = useMemo(
     () => ({ theme, themeConfig, themeMetrics, resolvedFonts, themedCardStyle }),
@@ -277,16 +278,22 @@ export default function ToolsScreen() {
     return { routeCount, stageCount, townCount: towns.length };
   }, []);
 
+  const showMatatuHubCardQuery = useMemo(() => {
+    const q = deferredQuery.trim().toLowerCase();
+    if (!q) return false;
+    return (
+      MATATU_KEYWORDS.some((kw) => q.includes(kw)) ||
+      "matatu routes sacco fares".includes(q)
+    );
+  }, [deferredQuery]);
+
   const showMatatuHubCard =
-    category === "transport-travel" ||
-    (query.trim().length > 0 &&
-      (MATATU_KEYWORDS.some((kw) => query.trim().toLowerCase().includes(kw)) ||
-        "matatu routes sacco fares".includes(query.trim().toLowerCase())));
+    category === "transport-travel" || showMatatuHubCardQuery;
 
   const filtered = useMemo(() => {
+    const q = deferredQuery.toLowerCase().trim();
     const list = TOOLS.filter((tool) => {
       const matchesCategory = category === "all" || tool.category === category;
-      const q = query.toLowerCase().trim();
       if (!q) return matchesCategory;
       const haystack =
         `${tool.title} ${tool.shortTitle} ${tool.description} ${tool.keywords.join(" ")}`.toLowerCase();
@@ -313,7 +320,7 @@ export default function ToolsScreen() {
       }
       return getToolUsageScore(b) - getToolUsageScore(a) || labelComparison;
     });
-  }, [category, query, sortBy, hasAnyVisits, visitCounts]);
+  }, [category, deferredQuery, sortBy, hasAnyVisits, visitCounts]);
 
   const categories = useMemo(
     () => [
@@ -529,7 +536,11 @@ export default function ToolsScreen() {
         data={filtered}
         extraData={listExtraData}
         keyExtractor={(item) => item.slug}
-        contentContainerStyle={[styles.list, { paddingHorizontal: screenPadPx }]}
+        contentContainerStyle={[
+          styles.list,
+          { paddingHorizontal: screenPadPx },
+          floatClearance > 0 ? { paddingBottom: Math.round(28 * (themeMetrics?.spacingScale ?? 1)) + floatClearance } : null,
+        ]}
         showsVerticalScrollIndicator={themeConfig?.verticalScrollbarStyle !== "hidden"}
         persistentScrollbar={themeConfig.verticalScrollbarStyle === "always-visible"}
         keyboardShouldPersistTaps="handled"

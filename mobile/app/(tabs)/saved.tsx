@@ -33,7 +33,7 @@ import {
   getCategoryInfo,
 } from "../../src/shared/lib/tools-registry";
 import { DynamicIcon } from "../../src/components/DynamicIcon";
-import { getMobileAdsModule } from "../../src/lib/mobile-ads";
+import { showAdPrivacyOptionsForm } from "../../src/lib/mobile-ads";
 
 function createSavedStyles(
   metrics?: ThemeMetrics,
@@ -200,13 +200,13 @@ function createSavedStyles(
   });
 }
 
-function SavedToolCard({
+const SavedToolCard = React.memo(function SavedToolCard({
   tool,
   onRemove,
   styles,
 }: {
   tool: (typeof TOOLS)[0];
-  onRemove: () => void;
+  onRemove: (slug: string) => void;
   styles: ReturnType<typeof createSavedStyles>;
 }) {
   const router = useRouter();
@@ -268,7 +268,7 @@ function SavedToolCard({
           onPress={(e) => {
             e.stopPropagation();
             triggerHaptic(12);
-            onRemove();
+            onRemove(tool.slug);
           }}
           style={pressableStyle([
             styles.removeBtn,
@@ -281,7 +281,7 @@ function SavedToolCard({
       </Pressable>
     </View>
   );
-}
+});
 
 export default function SavedScreen() {
   const router = useRouter();
@@ -295,9 +295,10 @@ export default function SavedScreen() {
     [theme, themeConfig, themeMetrics]
   );
   const screenPadPx = (themeMetrics as any)?.screenPaddingPx ?? Math.round(14 * (themeMetrics?.spacingScale ?? 1));
+  const floatClearance = themeMetrics?.floatingTabBarClearancePx ?? 0;
   const headingTransform = themeConfig.headingTransform || "none";
   const [saved, setSaved] = useState<string[]>([]);
-  const popular = getPopularTools(4);
+  const popular = useMemo(() => getPopularTools(4), []);
 
   const loadSaved = useCallback(async () => {
     try {
@@ -319,11 +320,13 @@ export default function SavedScreen() {
     }, [loadSaved])
   );
 
-  const handleRemove = async (slug: string) => {
-    const updated = saved.filter((s) => s !== slug);
-    setSaved(updated);
-    await AsyncStorage.setItem("kh-saved-tools", serializeSavedTools(updated));
-  };
+  const handleRemove = useCallback((slug: string) => {
+    setSaved((prev) => {
+      const updated = prev.filter((s) => s !== slug);
+      AsyncStorage.setItem("kh-saved-tools", serializeSavedTools(updated)).catch(() => {});
+      return updated;
+    });
+  }, []);
 
   const handleClearAll = () => {
     triggerHaptic(12);
@@ -347,11 +350,8 @@ export default function SavedScreen() {
   const handleManageAdPrivacy = async () => {
     triggerHaptic(8);
     try {
-      const mod = getMobileAdsModule();
-      if (mod?.AdsConsent?.showPrivacyOptionsForm) {
-        await mod.AdsConsent.showPrivacyOptionsForm();
-        return;
-      }
+      const shown = await showAdPrivacyOptionsForm();
+      if (shown) return;
     } catch {
       // Fall back to privacy portal notice below
     }
@@ -389,9 +389,13 @@ export default function SavedScreen() {
     );
   };
 
-  const tools = saved
-    .map((slug) => TOOLS.find((tool) => tool.slug === slug))
-    .filter(Boolean) as (typeof TOOLS)[number][];
+  const tools = useMemo(
+    () =>
+      saved
+        .map((slug) => TOOLS.find((tool) => tool.slug === slug))
+        .filter(Boolean) as (typeof TOOLS)[number][],
+    [saved]
+  );
 
   return (
     <SafeAreaView
@@ -423,7 +427,11 @@ export default function SavedScreen() {
       />
 
       <ScrollView
-        contentContainerStyle={[styles.content, { paddingHorizontal: screenPadPx }]}
+        contentContainerStyle={[
+          styles.content,
+          { paddingHorizontal: screenPadPx },
+          floatClearance > 0 ? { paddingBottom: Math.round(28 * (themeMetrics?.spacingScale ?? 1)) + floatClearance } : null,
+        ]}
         showsVerticalScrollIndicator={themeConfig?.verticalScrollbarStyle !== "hidden"}
         persistentScrollbar={themeConfig.verticalScrollbarStyle === "always-visible"}
         keyboardShouldPersistTaps="handled"
@@ -440,7 +448,7 @@ export default function SavedScreen() {
                   key={tool.slug}
                   tool={tool}
                   styles={styles}
-                  onRemove={() => handleRemove(tool.slug)}
+                  onRemove={handleRemove}
                 />
               ))}
             </View>

@@ -15,6 +15,11 @@ import SearchInput from "@/components/ui/SearchInput";
 import CustomSelect from "@/components/ui/CustomSelect";
 import { useMounted } from "@/lib/useMounted";
 
+const CATEGORY_COUNTS: Record<string, number> = TOOLS.reduce((acc, t) => {
+  acc[t.category] = (acc[t.category] ?? 0) + 1;
+  return acc;
+}, {} as Record<string, number>);
+
 function ToolsUrlSync({
   onSync,
 }: {
@@ -358,7 +363,7 @@ export default function ToolsHubPage() {
             <span className="leading-normal">All ({TOOLS.length})</span>
           </button>
           {TOOL_CATEGORIES.map((cat) => {
-            const count = TOOLS.filter((t) => t.category === cat.id).length;
+            const count = CATEGORY_COUNTS[cat.id] ?? 0;
             const active = selectedCategory === cat.id;
             const dotColor = ({
   "language-learning": "#C75B39",

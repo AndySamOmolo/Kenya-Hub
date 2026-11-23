@@ -72,6 +72,7 @@ export default function LearnTabScreen() {
     [themeMetrics, resolvedFonts]
   );
   const screenPadPx = (themeMetrics as any)?.screenPaddingPx ?? Math.round(12 * (themeMetrics?.spacingScale ?? 1));
+  const floatClearance = themeMetrics?.floatingTabBarClearancePx ?? 0;
   const headingTransform = themeConfig.headingTransform || "none";
   const params = useLocalSearchParams<{ lang?: string; tab?: string }>();
   const insets = useSafeAreaInsets();
@@ -107,11 +108,15 @@ export default function LearnTabScreen() {
       />
       <ScrollView
         ref={scrollRef}
-        contentContainerStyle={[styles.content, { paddingHorizontal: screenPadPx }]}
+        contentContainerStyle={[
+          styles.content,
+          { paddingHorizontal: screenPadPx },
+          floatClearance > 0 ? { paddingBottom: Math.round(92 * (themeMetrics?.spacingScale ?? 1)) + floatClearance } : null,
+        ]}
         showsVerticalScrollIndicator={themeConfig?.verticalScrollbarStyle !== "hidden"}
         persistentScrollbar={themeConfig.verticalScrollbarStyle === "always-visible"}
         keyboardShouldPersistTaps="handled"
-        scrollEventThrottle={16}
+        scrollEventThrottle={64}
         onScroll={(e) => {
           const y = e.nativeEvent.contentOffset.y;
           if (y > 700 && !showBackToTop) setShowBackToTop(true);
@@ -138,6 +143,7 @@ export default function LearnTabScreen() {
               backgroundColor: theme.gold,
               borderColor: theme.kenyaBlack,
             },
+            floatClearance > 0 ? { bottom: 18 + floatClearance } : null,
           ])}
         >
           <Ionicons name="arrow-up" size={16} color={theme.kenyaBlack} />

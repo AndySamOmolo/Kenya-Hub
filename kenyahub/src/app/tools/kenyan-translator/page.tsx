@@ -4,7 +4,8 @@ import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 import SearchInput from "@/components/ui/SearchInput";
 
-import { useState, useMemo, useCallback, useEffect, useDeferredValue } from "react";
+import { useState, useMemo, useCallback, useEffect } from "react";
+import { useDebouncedValue } from "@/lib/useDebouncedValue";
 import ToolShell, { type RichGuideEntry } from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import CustomSelect from "@/components/ui/CustomSelect";
@@ -52,10 +53,11 @@ export default function KenyanTranslatorPage() {
   const [sourceLanguage, setSourceLanguage] = useState("english");
   const [targetLanguage, setTargetLanguage] = useState("all");
   const [searchQuery, setSearchQuery] = useState("");
-  const deferredSearchQuery = useDeferredValue(searchQuery);
+  const debouncedQuery = useDebouncedValue(searchQuery, 200);
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
   const [categoryPage, setCategoryPage] = useState(1);
   const [categorySearch, setCategorySearch] = useState("");
+  const debouncedCategorySearch = useDebouncedValue(categorySearch, 180);
   const [searchPage, setSearchPage] = useState(1);
   const [audioOnly, setAudioOnly] = useState(false);
   const [viewMode, setViewMode] = useState<"translate" | "browse" | "favorites">("translate");
@@ -95,7 +97,7 @@ export default function KenyanTranslatorPage() {
     if (targetLanguage !== "english" && targetLanguage !== "all") toLoad.add(targetLanguage);
     ensureDictionariesLoaded(Array.from(toLoad));
 
-    if (targetLanguage === "all" && searchQuery.trim().length > 0) {
+    if (targetLanguage === "all" && debouncedQuery.trim().length >= 2) {
       const priorityIds = ["swahili", "kikuyu", "luo", "kalenjin", "luhya", "kamba"];
       const timer1 = setTimeout(() => {
         ensureDictionariesLoaded(priorityIds);
@@ -111,7 +113,7 @@ export default function KenyanTranslatorPage() {
         clearTimeout(timer2);
       };
     }
-  }, [sourceLanguage, targetLanguage, searchQuery, viewMode, ensureDictionariesLoaded]);
+  }, [sourceLanguage, targetLanguage, debouncedQuery, viewMode, ensureDictionariesLoaded]);
 
   // Load browse target or favorites dictionaries on demand
   useEffect(() => {
@@ -139,6 +141,9 @@ export default function KenyanTranslatorPage() {
 
   useEffect(() => {
     setSearchPage(1);
+  }, [debouncedQuery, sourceLanguage, targetLanguage]);
+
+  useEffect(() => {
     const r2Langs = Object.values(OPEN_CORPUS_INDEX.languages).filter((l) => (l.r2AudioClips ?? 0) > 0).map((l) => l.languageId);
     const toPreload =
       targetLanguage === "all"
@@ -147,7 +152,7 @@ export default function KenyanTranslatorPage() {
     Promise.all(toPreload.map((l) => preloadLanguageAudioIndex(l))).then((counts) => {
       if (counts.some((c) => c > 0)) setAudioIndexTick((t) => t + 1);
     });
-  }, [searchQuery, sourceLanguage, targetLanguage]);
+  }, [sourceLanguage, targetLanguage]);
 
   const openContributeModal = useCallback((langName?: string, defaultEnglish?: string) => {
     if (langName) setContributeLanguage(langName.split("(")[0].trim());
@@ -286,7 +291,7 @@ export default function KenyanTranslatorPage() {
   const { searchResults, detectedPivotWords } = useMemo(
     () =>
       runTranslatorSearch({
-        query: deferredSearchQuery,
+        query: debouncedQuery,
         sourceLanguage,
         targetLanguage,
         sourceDict,
@@ -294,12 +299,12 @@ export default function KenyanTranslatorPage() {
         activeDictList,
         maxSingleDictResults: 150,
       }),
-    [deferredSearchQuery, sourceLanguage, targetLanguage, targetDict, sourceDict, activeDictList]
+    [debouncedQuery, sourceLanguage, targetLanguage, targetDict, sourceDict, activeDictList]
   );
 
   // Fuzzy "Did you mean?" suggestions when search returns 0 results
   const fuzzySuggestions = useMemo(() => {
-    if (!deferredSearchQuery.trim() || deferredSearchQuery.trim().length < 3 || searchResults.length > 0) return [];
+    if (!debouncedQuery.trim() || debouncedQuery.trim().length < 3 || searchResults.length > 0) return [];
     const pool =
       sourceLanguage === "english"
         ? targetDict
@@ -308,8 +313,8 @@ export default function KenyanTranslatorPage() {
         : sourceDict
         ? [sourceDict]
         : activeDictList;
-    return getFuzzySuggestions(deferredSearchQuery, pool, sourceLanguage, 5);
-  }, [deferredSearchQuery, searchResults.length, sourceLanguage, targetDict, sourceDict, activeDictList]);
+    return getFuzzySuggestions(debouncedQuery, pool, sourceLanguage, 5);
+  }, [debouncedQuery, searchResults.length, sourceLanguage, targetDict, sourceDict, activeDictList]);
 
   // Swap languages while preserving or flipping the active query
   const swapLanguages = useCallback(() => {
@@ -386,7 +391,7 @@ export default function KenyanTranslatorPage() {
   }, [searchResults]);
 
   const stagedMatches = useMemo(() => {
-    const q = deferredSearchQuery.trim().toLowerCase();
+    const q = debouncedQuery.trim().toLowerCase();
     if (q.length < 2 || targetLanguage !== "all") return [];
     const hits: { varietyName: string; translation: string; english: string; context?: string }[] = [];
     for (const v of OPEN_CORPUS_INDEX.stagedVarieties || []) {
@@ -398,7 +403,7 @@ export default function KenyanTranslatorPage() {
       }
     }
     return hits;
-  }, [deferredSearchQuery, targetLanguage]);
+  }, [debouncedQuery, targetLanguage]);
 
   const audioSearchCount = useMemo(
     () => { void audioIndexTick; return dedupedSearchResults.filter((r) => hasVerifiedAudio(r.entry, r.languageId)).length; },
@@ -502,7 +507,7 @@ export default function KenyanTranslatorPage() {
       });
     }
     const stripDia = (s: string) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
-    const q = stripDia(categorySearch.trim());
+    const q = stripDia(debouncedCategorySearch.trim());
     if (!q) return baseEntries;
     return baseEntries.filter(
       (e) =>
@@ -510,7 +515,7 @@ export default function KenyanTranslatorPage() {
         stripDia(e.translation).includes(q) ||
         (e.context && stripDia(e.context).includes(q))
     );
-  }, [activeCategory, browseDict, browseAudioEntries, categorySearch]);
+  }, [activeCategory, browseDict, browseAudioEntries, debouncedCategorySearch]);
 
   const totalCategoryPages = Math.max(1, Math.ceil(categoryEntries.length / CATEGORY_PAGE_SIZE));
   const paginatedCategoryEntries = useMemo(() => {

@@ -224,7 +224,6 @@ export default function KslSignStudio() {
   const [selectedId, setSelectedId] = useState<string>(KSL_STARTER_SIGNS[0].id);
   const [playing, setPlaying] = useState(true);
   const [slowMo, setSlowMo] = useState(false);
-  const [progress, setProgress] = useState(0);
 
   // Live full KSL video & pose catalog loaded from /ksl-index.json
   const [kslVideos, setKslVideos] = useState<KslVideoItem[]>(initialVideos);
@@ -288,6 +287,7 @@ export default function KslSignStudio() {
   };
 
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
+  const progressBarRef = useRef<HTMLInputElement | null>(null);
   const rafRef = useRef<number | null>(null);
   const progressRef = useRef(0);
 
@@ -309,21 +309,23 @@ export default function KslSignStudio() {
       .catch(() => {});
   }, []);
 
+  const savedVideoIdSet = useMemo(() => new Set(savedVideoIds), [savedVideoIds]);
+
   const availableVideoLetters = useMemo(() => {
     const set = new Set<string>();
     for (const v of kslVideos) {
-      if (videoTab === "saved" && !savedVideoIds.includes(v.id)) continue;
+      if (videoTab === "saved" && !savedVideoIdSet.has(v.id)) continue;
       if (videoTab !== "all" && videoTab !== "saved" && v.category !== videoTab) continue;
       const ch = ((v.gloss || v.title || "").trim()[0] || "").toUpperCase();
       if (ch >= "A" && ch <= "Z") set.add(ch);
     }
     return Array.from(set).sort();
-  }, [kslVideos, videoTab, savedVideoIds]);
+  }, [kslVideos, videoTab, savedVideoIdSet]);
 
   const filteredVideos = useMemo(() => {
     const q = deferredVideoQuery.trim().toLowerCase();
     return kslVideos.filter((v) => {
-      if (videoTab === "saved" && !savedVideoIds.includes(v.id)) return false;
+      if (videoTab === "saved" && !savedVideoIdSet.has(v.id)) return false;
       if (videoTab !== "all" && videoTab !== "saved" && v.category !== videoTab) return false;
       if (videoLetter !== "ALL") {
         const ch = ((v.gloss || v.title || "").trim()[0] || "").toUpperCase();
@@ -337,10 +339,12 @@ export default function KslSignStudio() {
         (v.transcript ?? "").toLowerCase().includes(q)
       );
     });
-  }, [kslVideos, videoTab, videoLetter, deferredVideoQuery, savedVideoIds]);
+  }, [kslVideos, videoTab, videoLetter, deferredVideoQuery, savedVideoIdSet]);
 
-  const activeVideo =
-    filteredVideos.find((v) => v.id === activeVideoId) ?? filteredVideos[0] ?? null;
+  const activeVideo = useMemo(
+    () => filteredVideos.find((v) => v.id === activeVideoId) ?? filteredVideos[0] ?? null,
+    [filteredVideos, activeVideoId]
+  );
 
   useEffect(() => {
     const el = videoRef.current;
@@ -404,8 +408,8 @@ export default function KslSignStudio() {
       if (resp.ok) {
         const seq = (await resp.json()) as R2PoseSequence;
         setActiveR2Pose(seq);
-        setProgress(0);
         progressRef.current = 0;
+        if (progressBarRef.current) progressBarRef.current.value = "0";
         setPlaying(true);
       }
     } catch {
@@ -424,7 +428,9 @@ export default function KslSignStudio() {
       if (playing) {
         const speed = slowMo ? 0.25 : 0.55;
         progressRef.current = (progressRef.current + dt * speed) % 1;
-        setProgress(progressRef.current);
+        if (progressBarRef.current) {
+          progressBarRef.current.value = String(Math.round(progressRef.current * 100));
+        }
       }
 
       const canvas = canvasRef.current;
@@ -617,13 +623,13 @@ export default function KslSignStudio() {
                       type="button"
                       onClick={() => toggleSaveVideo(activeVideo.id)}
                       className={`inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-[0.7rem] font-semibold cursor-pointer ${
-                        savedVideoIds.includes(activeVideo.id)
+                        savedVideoIdSet.has(activeVideo.id)
                           ? "border-gold bg-gold/15 text-gold"
                           : "border-border bg-bg-elevated text-text-secondary hover:text-gold"
                       }`}
                     >
                       <Bookmark className="h-3 w-3" />
-                      {savedVideoIds.includes(activeVideo.id) ? "Saved" : "Save"}
+                      {savedVideoIdSet.has(activeVideo.id) ? "Saved" : "Save"}
                     </button>
                     <button
                       type="button"
@@ -802,7 +808,7 @@ export default function KslSignStudio() {
                   type="button"
                   onClick={() => {
                     progressRef.current = 0;
-                    setProgress(0);
+                    if (progressBarRef.current) progressBarRef.current.value = "0";
                   }}
                   className="rounded-lg border border-border p-1.5 text-text-secondary hover:text-text-primary cursor-pointer"
                   aria-label="Restart sign animation"
@@ -811,14 +817,13 @@ export default function KslSignStudio() {
                 </button>
               </div>
               <input
+                ref={progressBarRef}
                 type="range"
                 min={0}
                 max={100}
-                value={Math.round(progress * 100)}
+                defaultValue={0}
                 onChange={(e) => {
-                  const v = Number(e.target.value) / 100;
-                  progressRef.current = v;
-                  setProgress(v);
+                  progressRef.current = Number(e.target.value) / 100;
                 }}
                 aria-label="Animation frame scrubber"
                 className="w-28 accent-gold"

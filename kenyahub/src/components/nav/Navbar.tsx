@@ -316,6 +316,9 @@ export default function Navbar() {
                     src="/kenya-flag.svg"
                     alt=""
                     aria-hidden="true"
+                    decoding="async"
+                    width={20}
+                    height={13}
                     className="relative w-4 sm:w-5 h-auto rounded-[1px] shadow-sm"
                   />
                 </div>

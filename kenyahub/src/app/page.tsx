@@ -105,9 +105,9 @@ export default function HomePage() {
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <div className="absolute -top-20 -right-20 w-96 h-96 border border-white/[0.03] rotate-45 rounded-3xl" />
             <div className="absolute -bottom-32 -left-16 w-80 h-80 border border-white/[0.03] rotate-45 rounded-3xl" />
-            <div className="absolute top-1/4 right-1/4 w-2 h-2 rounded-full bg-gold/20 animate-float" />
-            <div className="absolute top-2/3 right-1/3 w-1.5 h-1.5 rounded-full bg-kenya-green/20 animate-float" style={{ animationDelay: "1s" }} />
-            <div className="absolute top-1/3 left-1/4 w-1 h-1 rounded-full bg-kenya-red/20 animate-float" style={{ animationDelay: "2s" }} />
+            <div className="absolute top-1/4 right-1/4 w-2 h-2 rounded-full bg-gold/20" />
+            <div className="absolute top-2/3 right-1/3 w-1.5 h-1.5 rounded-full bg-kenya-green/20" />
+            <div className="absolute top-1/3 left-1/4 w-1 h-1 rounded-full bg-kenya-red/20" />
           </div>
 
           <div className="relative max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 pt-4 pb-5 sm:pt-12 sm:pb-14">
@@ -116,7 +116,6 @@ export default function HomePage() {
               <div className="flex justify-center sm:justify-start mb-2.5 sm:mb-5 w-full">
                 <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-gold/30 bg-gold/10 text-center shadow-sm max-w-full">
                   <span className="relative flex h-1.5 w-1.5 shrink-0">
-                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-kenya-green opacity-75" />
                     <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-kenya-green-light" />
                   </span>
                   <span className="text-[0.65rem] sm:text-xs font-semibold text-gold tracking-tight sm:tracking-wide break-words">
@@ -167,7 +166,7 @@ export default function HomePage() {
       </section>
 
       {/* FLAGSHIP MAIN FEATURE: KENYAN LANGUAGE LEARNING & TRANSLATOR HUB */}
-      <section className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 py-5 sm:py-14">
+      <section className="cv-auto max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 py-5 sm:py-14">
         <div className="rounded-2xl sm:rounded-3xl border border-gold/35 bg-gradient-to-br from-bg-card via-bg-card to-bg-elevated p-3.5 sm:p-8 lg:p-10 shadow-xl">
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-3 sm:gap-4 mb-4 sm:mb-8">
             <div className="max-w-2xl">
@@ -299,7 +298,7 @@ export default function HomePage() {
       <div className="section-divider mx-auto max-w-7xl" />
 
       {/* FLAGSHIP PUBLIC DATA HUBS (47 COUNTIES & MATATU ROUTES) */}
-      <section className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 py-6 sm:py-12">
+      <section className="cv-auto max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 py-6 sm:py-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
           <Link
             href="/county/"
@@ -350,7 +349,7 @@ export default function HomePage() {
       <div className="section-divider mx-auto max-w-7xl" />
 
       {/* CATEGORIES */}
-      <section className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 py-6 sm:py-16">
+      <section className="cv-auto max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 py-6 sm:py-16">
         <div className="text-center mb-6 sm:mb-12">
           <p className="text-xs font-bold uppercase tracking-[0.15em] text-gold mb-2">
             Browse by Category
@@ -397,7 +396,7 @@ export default function HomePage() {
       <div className="section-divider mx-auto max-w-7xl" />
 
       {/* FEATURED STATUTORY GUIDES & EDITORIAL ARTICLES */}
-      <section className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 py-6 sm:py-16">
+      <section className="cv-auto max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 py-6 sm:py-16">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-6 sm:mb-10 gap-3">
           <div>
             <p className="text-xs font-bold uppercase tracking-[0.15em] text-gold mb-1.5 flex items-center gap-1.5">
@@ -456,7 +455,7 @@ export default function HomePage() {
       <div className="section-divider mx-auto max-w-7xl" />
 
       {/* WHY KENYAHUB */}
-      <section className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 py-6 sm:py-16">
+      <section className="cv-auto max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 py-6 sm:py-16">
         <div className="text-center mb-6 sm:mb-12">
           <p className="text-xs font-bold uppercase tracking-[0.15em] text-gold mb-2">
             Built Different
@@ -510,7 +509,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA */}
-      <section className="relative overflow-hidden">
+      <section className="cv-auto relative overflow-hidden">
         <div className="maasai-border-top" />
         <div className="bg-bg-secondary py-10 sm:py-20">
           <div className="max-w-3xl mx-auto px-4 text-center">

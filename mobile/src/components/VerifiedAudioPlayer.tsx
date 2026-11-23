@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import { StyleSheet, View } from "react-native";
 import { WebView, type WebViewMessageEvent } from "react-native-webview";
 import {
@@ -52,11 +52,17 @@ const AUDIO_HOST_HTML = `<!DOCTYPE html>
 
 /**
  * Hidden 0x0 HTML5 audio host mounted once in RootLayout.
+ * Lazy-mounts the underlying WebView only on the first playback command to avoid
+ * Android cold-start WebView inflation and idle RAM overhead.
  * Plays verified HTTPS native-speaker recordings (.mp3 / .opus / .wav)
  * with live playback state, seeking, speed control, and zero TTS fallback.
  */
 export function VerifiedAudioPlayer() {
   const webViewRef = useRef<WebView | null>(null);
+  const webViewMountedRef = useRef(false);
+  const webViewLoadedRef = useRef(false);
+  const pendingScriptsRef = useRef<string[]>([]);
+  const [webViewMounted, setWebViewMounted] = useState(false);
 
   const handleMessage = useCallback((event: WebViewMessageEvent) => {
     try {
@@ -76,12 +82,41 @@ export function VerifiedAudioPlayer() {
     }
   }, []);
 
+  const handleLoadEnd = useCallback(() => {
+    webViewLoadedRef.current = true;
+    if (pendingScriptsRef.current.length > 0 && webViewRef.current) {
+      const queued = pendingScriptsRef.current.splice(0);
+      for (const script of queued) {
+        webViewRef.current.injectJavaScript(script);
+      }
+    }
+  }, []);
+
   useEffect(() => {
+    const runOrQueue = (script: string, mountIfNeeded = false) => {
+      if (webViewLoadedRef.current && webViewRef.current) {
+        webViewRef.current.injectJavaScript(script);
+        return;
+      }
+      if (mountIfNeeded) {
+        pendingScriptsRef.current.push(script);
+        if (!webViewMountedRef.current) {
+          webViewMountedRef.current = true;
+          setWebViewMounted(true);
+        }
+        return;
+      }
+      if (webViewMountedRef.current) {
+        pendingScriptsRef.current.push(script);
+      }
+    };
+
     registerAudioPlaybackHandler({
       play: (url: string, rate = 1) => {
         const serializedUrl = JSON.stringify(url);
         const safeRate = Number.isFinite(rate) ? Math.max(0.5, Math.min(2, rate)) : 1;
-        webViewRef.current?.injectJavaScript(`
+        runOrQueue(
+          `
           (function() {
             try {
               var el = document.getElementById('kh-verified-audio');
@@ -97,10 +132,12 @@ export function VerifiedAudioPlayer() {
             } catch (e) {}
           })();
           true;
-        `);
+        `,
+          true
+        );
       },
       pause: () => {
-        webViewRef.current?.injectJavaScript(`
+        runOrQueue(`
           (function() {
             try {
               var el = document.getElementById('kh-verified-audio');
@@ -111,7 +148,7 @@ export function VerifiedAudioPlayer() {
         `);
       },
       resume: () => {
-        webViewRef.current?.injectJavaScript(`
+        runOrQueue(`
           (function() {
             try {
               var el = document.getElementById('kh-verified-audio');
@@ -126,7 +163,7 @@ export function VerifiedAudioPlayer() {
       },
       seek: (seconds: number) => {
         const safeSec = Number.isFinite(seconds) ? Math.max(0, seconds) : 0;
-        webViewRef.current?.injectJavaScript(`
+        runOrQueue(`
           (function() {
             try {
               var el = document.getElementById('kh-verified-audio');
@@ -140,7 +177,7 @@ export function VerifiedAudioPlayer() {
       },
       skip: (deltaSeconds: number) => {
         const delta = Number.isFinite(deltaSeconds) ? deltaSeconds : 0;
-        webViewRef.current?.injectJavaScript(`
+        runOrQueue(`
           (function() {
             try {
               var el = document.getElementById('kh-verified-audio');
@@ -154,7 +191,7 @@ export function VerifiedAudioPlayer() {
       },
       setRate: (rate: number) => {
         const safeRate = Number.isFinite(rate) ? Math.max(0.5, Math.min(2, rate)) : 1;
-        webViewRef.current?.injectJavaScript(`
+        runOrQueue(`
           (function() {
             try {
               var el = document.getElementById('kh-verified-audio');
@@ -165,7 +202,7 @@ export function VerifiedAudioPlayer() {
         `);
       },
       stop: () => {
-        webViewRef.current?.injectJavaScript(`
+        runOrQueue(`
           (function() {
             try {
               var el = document.getElementById('kh-verified-audio');
@@ -184,6 +221,10 @@ export function VerifiedAudioPlayer() {
     };
   }, []);
 
+  if (!webViewMounted) {
+    return null;
+  }
+
   return (
     <View
       style={styles.hiddenHost}
@@ -195,6 +236,7 @@ export function VerifiedAudioPlayer() {
         ref={webViewRef}
         source={{ html: AUDIO_HOST_HTML, baseUrl: "https://audio.kenyahub.me/" }}
         onMessage={handleMessage}
+        onLoadEnd={handleLoadEnd}
         javaScriptEnabled
         domStorageEnabled={false}
         mediaPlaybackRequiresUserAction={false}

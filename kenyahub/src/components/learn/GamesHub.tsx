@@ -33,19 +33,27 @@ import {
   recordWordPracticeResult,
 } from "@/lib/learn-progress";
 import { isGameSfxMuted, setGameSfxMuted } from "@/lib/game-sfx";
+import dynamic from "next/dynamic";
 import { getScopedWords, type VocabScopeMode } from "./games/shared";
-import { WordleGame } from "./games/WordleGame";
-import { ScrambleGame } from "./games/ScrambleGame";
-import { SpeedMatchGame } from "./games/SpeedMatchGame";
-import { MemoryGame } from "./games/MemoryGame";
-import { RiddleGame } from "./games/RiddleGame";
-import { VocabQuizGame } from "./games/VocabQuizGame";
-import { MethaliBuilderGame } from "./games/MethaliBuilderGame";
-import { SentenceSafariGame } from "./games/SentenceSafariGame";
-import { NounClassSorterGame } from "./games/NounClassSorterGame";
-import { OddWordOutGame } from "./games/OddWordOutGame";
-import { PolyglotBridgeGame } from "./games/PolyglotBridgeGame";
-import { TongueTwisterGame } from "./games/TongueTwisterGame";
+
+const gameLoading = () => (
+  <div className="py-12 text-center text-sm text-text-muted animate-pulse">
+    Loading game...
+  </div>
+);
+
+const WordleGame = dynamic(() => import("./games/WordleGame").then((m) => m.WordleGame), { ssr: false, loading: gameLoading });
+const ScrambleGame = dynamic(() => import("./games/ScrambleGame").then((m) => m.ScrambleGame), { ssr: false, loading: gameLoading });
+const SpeedMatchGame = dynamic(() => import("./games/SpeedMatchGame").then((m) => m.SpeedMatchGame), { ssr: false, loading: gameLoading });
+const MemoryGame = dynamic(() => import("./games/MemoryGame").then((m) => m.MemoryGame), { ssr: false, loading: gameLoading });
+const RiddleGame = dynamic(() => import("./games/RiddleGame").then((m) => m.RiddleGame), { ssr: false, loading: gameLoading });
+const VocabQuizGame = dynamic(() => import("./games/VocabQuizGame").then((m) => m.VocabQuizGame), { ssr: false, loading: gameLoading });
+const MethaliBuilderGame = dynamic(() => import("./games/MethaliBuilderGame").then((m) => m.MethaliBuilderGame), { ssr: false, loading: gameLoading });
+const SentenceSafariGame = dynamic(() => import("./games/SentenceSafariGame").then((m) => m.SentenceSafariGame), { ssr: false, loading: gameLoading });
+const NounClassSorterGame = dynamic(() => import("./games/NounClassSorterGame").then((m) => m.NounClassSorterGame), { ssr: false, loading: gameLoading });
+const OddWordOutGame = dynamic(() => import("./games/OddWordOutGame").then((m) => m.OddWordOutGame), { ssr: false, loading: gameLoading });
+const PolyglotBridgeGame = dynamic(() => import("./games/PolyglotBridgeGame").then((m) => m.PolyglotBridgeGame), { ssr: false, loading: gameLoading });
+const TongueTwisterGame = dynamic(() => import("./games/TongueTwisterGame").then((m) => m.TongueTwisterGame), { ssr: false, loading: gameLoading });
 
 interface GamesHubProps {
   units: CourseUnit[];

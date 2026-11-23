@@ -229,14 +229,23 @@ const HAPTIC_STRENGTH_MS: Record<HapticStrength, number> = {
   strong: 28,
 };
 
+const ANDROID_RIPPLE_CACHE = new Map<string, { color: string; borderless: boolean }>();
+const ANDROID_RIPPLE_CACHE_MAX = 128;
+
 export function androidRipple(color?: string, borderless = false) {
-  if (_globalPressEffect === "none" || _globalPressEffect === "opacity-only") {
-    return { color: "transparent", borderless };
+  const key = `${_globalPressEffect}|${color || ""}|${borderless}`;
+  const cached = ANDROID_RIPPLE_CACHE.get(key);
+  if (cached) return cached;
+  const val =
+    _globalPressEffect === "none" || _globalPressEffect === "opacity-only"
+      ? { color: "transparent", borderless }
+      : { color: color || "rgba(232, 190, 90, 0.16)", borderless };
+  if (ANDROID_RIPPLE_CACHE.size >= ANDROID_RIPPLE_CACHE_MAX) {
+    const firstKey = ANDROID_RIPPLE_CACHE.keys().next().value;
+    if (firstKey !== undefined) ANDROID_RIPPLE_CACHE.delete(firstKey);
   }
-  return {
-    color: color || "rgba(232, 190, 90, 0.16)",
-    borderless,
-  };
+  ANDROID_RIPPLE_CACHE.set(key, val);
+  return val;
 }
 
 export function pressableStyle(
@@ -325,6 +334,7 @@ export interface SavedCustomTheme {
 
 interface ThemeContextType {
   theme: ThemeColors;
+  colors: ThemeColors;
   isDark: boolean;
   themeReady: boolean;
   themeKey: string;
@@ -413,6 +423,7 @@ export function buildThemeKey(cfg: ThemeConfig, colorsObj: ThemeColors, dark: bo
 
 const ThemeContext = createContext<ThemeContextType>({
   theme: darkColors,
+  colors: darkColors,
   isDark: true,
   themeReady: false,
   themeKey: buildThemeKey(DEFAULT_THEME_CONFIG, darkColors, true),
@@ -442,34 +453,12 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     let mounted = true;
-    Promise.all([
-      AsyncStorage.getItem(THEME_CONFIG_STORAGE_KEY),
-      AsyncStorage.getItem("kh-theme"),
-      AsyncStorage.getItem(SAVED_THEMES_STORAGE_KEY),
-    ])
-      .then(([rawConfig, legacyMode, rawSaved]) => {
+    AsyncStorage.multiGet([THEME_CONFIG_STORAGE_KEY, "kh-theme"])
+      .then((entries) => {
         if (!mounted) return;
-        if (rawSaved) {
-          try {
-            const arr = JSON.parse(rawSaved);
-            if (Array.isArray(arr)) {
-              const valid: SavedCustomTheme[] = [];
-              for (const item of arr) {
-                if (!item || typeof item !== "object" || typeof item.id !== "string" || typeof item.name !== "string") continue;
-                const parsedCfg = parseThemeConfigJson(JSON.stringify(item.config || {}));
-                if (!parsedCfg) continue;
-                valid.push({
-                  id: item.id,
-                  name: item.name,
-                  createdAt: typeof item.createdAt === "string" ? item.createdAt : new Date().toISOString(),
-                  swatches: Array.isArray(item.swatches) && item.swatches.length === 4 ? item.swatches : ["#0E0C0A", "#1E1A17", "#C8961E", "#006B3F"],
-                  config: parsedCfg,
-                });
-              }
-              setSavedThemes(valid);
-            }
-          } catch {}
-        }
+        const map = new Map(entries);
+        const rawConfig = map.get(THEME_CONFIG_STORAGE_KEY) ?? null;
+        const legacyMode = map.get("kh-theme") ?? null;
         if (rawConfig) {
           const parsed = parseThemeConfigJson(rawConfig);
           if (parsed) {
@@ -483,14 +472,43 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
       })
       .catch(() => {})
       .finally(() => {
-        if (mounted) setThemeReady(true);
+        if (!mounted) return;
+        setThemeReady(true);
+        // Deferred load of saved custom themes so initial paint is never blocked
+        AsyncStorage.getItem(SAVED_THEMES_STORAGE_KEY)
+          .then((rawSaved) => {
+            if (!mounted || !rawSaved) return;
+            try {
+              const arr = JSON.parse(rawSaved);
+              if (Array.isArray(arr)) {
+                const valid: SavedCustomTheme[] = [];
+                for (const item of arr) {
+                  if (!item || typeof item !== "object" || typeof item.id !== "string" || typeof item.name !== "string") continue;
+                  const parsedCfg = parseThemeConfigJson(JSON.stringify(item.config || {}));
+                  if (!parsedCfg) continue;
+                  valid.push({
+                    id: item.id,
+                    name: item.name,
+                    createdAt: typeof item.createdAt === "string" ? item.createdAt : new Date().toISOString(),
+                    swatches: Array.isArray(item.swatches) && item.swatches.length === 4 ? item.swatches : ["#0E0C0A", "#1E1A17", "#C8961E", "#006B3F"],
+                    config: parsedCfg,
+                  });
+                }
+                setSavedThemes(valid);
+              }
+            } catch {}
+          })
+          .catch(() => {});
       });
     return () => {
       mounted = false;
     };
   }, []);
 
-  const persistConfig = React.useCallback((next: ThemeConfig) => {
+  const persistTimerRef = React.useRef<ReturnType<typeof setTimeout> | null>(null);
+  const pendingPersistConfigRef = React.useRef<ThemeConfig | null>(null);
+
+  const flushPersistConfig = React.useCallback((next: ThemeConfig) => {
     AsyncStorage.setItem(THEME_CONFIG_STORAGE_KEY, JSON.stringify(next)).catch(() => {});
     if (next.mode === "light" || next.mode === "dark") {
       AsyncStorage.setItem("kh-theme", next.mode).catch(() => {});
@@ -498,6 +516,38 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
       AsyncStorage.removeItem("kh-theme").catch(() => {});
     }
   }, []);
+
+  const persistConfig = React.useCallback(
+    (next: ThemeConfig) => {
+      pendingPersistConfigRef.current = next;
+      if (persistTimerRef.current) {
+        clearTimeout(persistTimerRef.current);
+      }
+      persistTimerRef.current = setTimeout(() => {
+        persistTimerRef.current = null;
+        const toWrite = pendingPersistConfigRef.current;
+        pendingPersistConfigRef.current = null;
+        if (toWrite) {
+          flushPersistConfig(toWrite);
+        }
+      }, 180);
+    },
+    [flushPersistConfig]
+  );
+
+  useEffect(() => {
+    return () => {
+      if (persistTimerRef.current) {
+        clearTimeout(persistTimerRef.current);
+        persistTimerRef.current = null;
+      }
+      const pending = pendingPersistConfigRef.current;
+      pendingPersistConfigRef.current = null;
+      if (pending) {
+        flushPersistConfig(pending);
+      }
+    };
+  }, [flushPersistConfig]);
 
   const isDark =
     themeConfig.mode === "dark"
@@ -731,6 +781,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const ctxValue = React.useMemo(
     () => ({
       theme,
+      colors: theme,
       isDark,
       themeReady,
       themeKey,
@@ -783,8 +834,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 }
 
 export function useTheme() {
-  const ctx = useContext(ThemeContext);
-  return { ...ctx, colors: ctx.theme };
+  return useContext(ThemeContext);
 }
 
 export function useDynamicStyles<
@@ -818,6 +868,8 @@ export interface ThemedCardStyle extends ViewStyle {
   borderTopColor?: string;
   borderBottomWidth?: number;
   borderBottomColor?: string;
+  borderRightWidth?: number;
+  borderRightColor?: string;
 }
 
 /**
@@ -853,6 +905,21 @@ export function getThemedCardStyle(
     case "crisp":
       backgroundColor = theme.surfaceContainerLowest;
       borderColor = theme.outline;
+      break;
+    case "paper-ink":
+      backgroundColor = theme.bgCard;
+      borderColor = theme.outline;
+      borderWidth = Math.max(0.75, borderWidth);
+      break;
+    case "neo-brutal":
+      backgroundColor = theme.bgCard;
+      borderColor = theme.textPrimary;
+      borderWidth = Math.max(1.5, borderWidth);
+      break;
+    case "inset-tray":
+      backgroundColor = theme.surfaceContainerLow;
+      borderColor = hexToRgba(theme.outlineVariant, 0.55);
+      borderWidth = Math.max(0.5, borderWidth);
       break;
     case "elevated":
     default:
@@ -909,7 +976,8 @@ export function getThemedCardStyle(
       break;
   }
 
-  const clampedAndroidElevation = isAndroid ? (themeConfig.surfaceStyle === "glass" ? 0 : Math.min(3, Math.max(0, elevation))) : 0;
+  const isFlatCraftSurface = themeConfig.surfaceStyle === "glass" || themeConfig.surfaceStyle === "paper-ink" || themeConfig.surfaceStyle === "neo-brutal" || themeConfig.surfaceStyle === "inset-tray";
+  const clampedAndroidElevation = isAndroid ? (isFlatCraftSurface ? 0 : Math.min(3, Math.max(0, elevation))) : 0;
 
   const cardStyle: ThemedCardStyle = {
     borderRadius,
@@ -956,6 +1024,24 @@ export function getThemedCardStyle(
         cardStyle.shadowOpacity = 0.38;
         cardStyle.shadowRadius = 10;
       }
+      break;
+    case "corner-frame":
+      cardStyle.borderTopWidth = Math.max(1.5, borderWidth);
+      cardStyle.borderBottomWidth = Math.max(1.5, borderWidth);
+      cardStyle.borderTopColor = theme.outline;
+      cardStyle.borderBottomColor = theme.outline;
+      break;
+    case "double-rule":
+      cardStyle.borderTopWidth = 2;
+      cardStyle.borderTopColor = theme.gold;
+      cardStyle.borderBottomWidth = StyleSheet.hairlineWidth;
+      cardStyle.borderBottomColor = theme.outline;
+      break;
+    case "offset-edge":
+      cardStyle.borderBottomWidth = 3;
+      cardStyle.borderRightWidth = 2;
+      cardStyle.borderBottomColor = themeConfig.surfaceStyle === "neo-brutal" ? theme.textPrimary : theme.outline;
+      cardStyle.borderRightColor = themeConfig.surfaceStyle === "neo-brutal" ? theme.textPrimary : theme.outline;
       break;
     case "none":
     default:
@@ -1015,10 +1101,32 @@ export function getThemedButtonStyle(
       return { container: { ...base, backgroundColor: "transparent", borderWidth: Math.max(1.5, themeMetrics.borderWidthPx), borderColor: theme.gold }, textColor: theme.gold };
     case "elevated":
       return { container: { ...base, backgroundColor: theme.surfaceContainerHigh, borderWidth: 1, borderColor: theme.outlineVariant, elevation: Platform.OS === "android" ? 2 : 0 }, textColor: theme.gold };
+    case "keycap-press":
     case "pill-glow":
-      return { container: { ...base, borderRadius: 999, backgroundColor: theme.gold, borderWidth: 1.5, borderColor: theme.goldLight }, textColor: onGold };
+      return {
+        container: {
+          ...base,
+          backgroundColor: theme.bgCard,
+          borderWidth: 1.25,
+          borderColor: theme.outline,
+          borderBottomWidth: 3,
+          borderBottomColor: theme.gold,
+        },
+        textColor: theme.textPrimary,
+      };
+    case "editorial-link":
     case "flat":
-      return { container: { ...base, backgroundColor: theme.primaryContainer, borderWidth: 0 }, textColor: theme.onPrimaryContainer };
+      return {
+        container: {
+          ...base,
+          borderRadius: 0,
+          backgroundColor: "transparent",
+          borderWidth: 0,
+          borderBottomWidth: 1.5,
+          borderBottomColor: theme.gold,
+        },
+        textColor: theme.gold,
+      };
     case "filled":
     default:
       return { container: { ...base, backgroundColor: theme.gold, borderWidth: 0 }, textColor: onGold };
@@ -1032,7 +1140,8 @@ export function getThemedIconBadgeStyle(
   baseSize = 36
 ): { container: ViewStyle; iconColor: string } {
   const accent = accentColor || theme.gold;
-  const size = Math.round(baseSize * Math.max(0.82, Math.min(1.25, resolveThemeMetrics(themeConfig).iconScale)));
+  const rawIconScale = Number.isFinite(themeConfig.iconScale) ? themeConfig.iconScale : 1.0;
+  const size = Math.round(baseSize * Math.max(0.82, Math.min(1.25, rawIconScale)));
   const common: ViewStyle = { width: size, height: size, alignItems: "center", justifyContent: "center" };
   switch (themeConfig.iconBadgeStyle) {
     case "outline":
@@ -1043,6 +1152,52 @@ export function getThemedIconBadgeStyle(
       return { container: { ...common, borderRadius: Math.round(size * 0.22), backgroundColor: hexToRgba(accent, 0.14) }, iconColor: accent };
     case "accent-solid":
       return { container: { ...common, borderRadius: Math.round(size * 0.28), backgroundColor: accent }, iconColor: getContrastInk(accent) };
+    case "monochrome-ink":
+      return {
+        container: {
+          ...common,
+          borderRadius: Math.round(size * 0.24),
+          backgroundColor: theme.surfaceContainerHigh,
+          borderWidth: StyleSheet.hairlineWidth,
+          borderColor: theme.outlineVariant,
+        },
+        iconColor: theme.textPrimary,
+      };
+    case "keycap":
+      return {
+        container: {
+          ...common,
+          borderRadius: Math.round(size * 0.22),
+          backgroundColor: theme.bgCard,
+          borderWidth: 1,
+          borderColor: theme.outline,
+          borderBottomWidth: 2.5,
+          borderBottomColor: theme.outline,
+        },
+        iconColor: theme.gold,
+      };
+    case "hairline-ring":
+      return {
+        container: {
+          ...common,
+          borderRadius: Math.round(size / 2),
+          backgroundColor: "transparent",
+          borderWidth: 1,
+          borderColor: theme.outlineVariant,
+        },
+        iconColor: theme.textPrimary,
+      };
+    case "duotone-wash":
+      return {
+        container: {
+          ...common,
+          borderRadius: Math.round(size * 0.28),
+          backgroundColor: hexToRgba(theme.gold, 0.11),
+          borderWidth: StyleSheet.hairlineWidth,
+          borderColor: hexToRgba(theme.gold, 0.25),
+        },
+        iconColor: theme.gold,
+      };
     case "minimal":
       return { container: { ...common, borderRadius: 0, backgroundColor: "transparent" }, iconColor: accent };
     case "soft-circle":
@@ -1077,7 +1232,7 @@ export function getThemedNumericStyle(
   return { fontFamily: resolvedFonts.bold, fontVariant: ["tabular-nums"], includeFontPadding: false };
 }
 
-export function ThemedDivider({ style }: { style?: StyleProp<ViewStyle> }) {
+export const ThemedDivider = React.memo(function ThemedDivider({ style }: { style?: StyleProp<ViewStyle> }) {
   const { theme, themeConfig } = useTheme();
   const mode = themeConfig.dividerStyle || "hairline";
   if (mode === "none") return null;
@@ -1088,9 +1243,11 @@ export function ThemedDivider({ style }: { style?: StyleProp<ViewStyle> }) {
     return <View style={[{ width: "100%", height: 1.5, backgroundColor: hexToRgba(theme.gold, 0.38), borderRadius: 999, marginVertical: 8 }, style]} />;
   }
   return <View style={[{ width: "100%", height: StyleSheet.hairlineWidth, backgroundColor: theme.outlineVariant, marginVertical: 8 }, style]} />;
-}
+});
 
-export function ThemedProgressBar({
+const SEGMENTS = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] as const;
+
+export const ThemedProgressBar = React.memo(function ThemedProgressBar({
   progress,
   color,
   height,
@@ -1107,11 +1264,10 @@ export function ThemedProgressBar({
   const barStyle = themeConfig.progressBarStyle || "rounded";
   const barH = height ?? (barStyle === "thin-line" ? 3 : barStyle === "segmented" ? 7 : 6);
   if (barStyle === "segmented") {
-    const segs = 10;
-    const filledCount = Math.round(pct * segs);
+    const filledCount = Math.round(pct * SEGMENTS.length);
     return (
       <View style={[{ flexDirection: "row", gap: 3, width: "100%", height: barH }, style]}>
-        {Array.from({ length: segs }).map((_, idx) => (
+        {SEGMENTS.map((idx) => (
           <View key={`seg-${idx}`} style={{ flex: 1, height: "100%", borderRadius: 2, backgroundColor: idx < filledCount ? fill : theme.surfaceContainerHighest }} />
         ))}
       </View>
@@ -1123,13 +1279,13 @@ export function ThemedProgressBar({
       <View style={{ width: `${Math.round(pct * 100)}%`, height: "100%", borderRadius: radius, backgroundColor: fill }} />
     </View>
   );
-}
+});
 
 /**
  * Kenyan Flag Stripe Component
  * Subtle 3px bar: Black · White · Red · White · Green (toggleable in Settings)
  */
-export function KenyaStripe() {
+export const KenyaStripe = React.memo(function KenyaStripe() {
   const { themeConfig } = useTheme();
   if (!themeConfig.showKenyaStripe || themeConfig.stripeThickness === "hidden") return null;
   const mult =
@@ -1146,12 +1302,12 @@ export function KenyaStripe() {
       <View style={[stripeStyles.band, { backgroundColor: "#006B3F", height: 1.5 * mult }]} />
     </View>
   );
-}
+});
 
 /**
  * Compact, Uniform 52dp Top App Bar for Android with Settings Gear Button
  */
-export function AndroidTopAppBar({
+export const AndroidTopAppBar = React.memo(function AndroidTopAppBar({
   title,
   subtitle,
   onBack,
@@ -1338,7 +1494,7 @@ export function AndroidTopAppBar({
       </View>
     </View>
   );
-}
+});
 
 const stripeStyles = StyleSheet.create({
   container: {

@@ -4,6 +4,7 @@ import { useRouter, useFocusEffect } from "expo-router";
 import { useIsFocused } from "@react-navigation/native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import {
+  AppState,
   Linking,
   Modal,
   Pressable,
@@ -77,6 +78,11 @@ const ALL_MATATU_ROUTES = Object.entries(matatuData.routes || {}).flatMap(
     ((routes as any[]) || []).map((r) => ({ ...r, townSlug }))
 );
 
+const CATEGORY_TOOL_COUNTS: Record<string, number> = {};
+for (const t of TOOLS) {
+  CATEGORY_TOOL_COUNTS[t.category] = (CATEGORY_TOOL_COUNTS[t.category] || 0) + 1;
+}
+
 export default function HomeScreen() {
   const router = useRouter();
   const { theme, isDark, themeConfig, themeMetrics, resolvedFonts, themeKey } = useTheme();
@@ -95,6 +101,7 @@ export default function HomeScreen() {
   const homeLayout = themeConfig.homeLayout || "classic";
   const screenPadPx = (themeMetrics as any)?.screenPaddingPx ?? Math.round(14 * (themeMetrics?.spacingScale ?? 1));
   const extraScrollPadPx = (themeMetrics as any)?.screenPaddingPx !== undefined ? Math.max(0, (themeMetrics as any).screenPaddingPx - 14) : 0;
+  const floatClearance = themeMetrics?.floatingTabBarClearancePx ?? 0;
   const headingTransform = themeConfig.headingTransform || "none";
   const [pinnedSlugs, setPinnedSlugs] = useState<string[]>([]);
   const [visitCounts, setVisitCounts] = useState<Record<string, number>>({});
@@ -102,6 +109,12 @@ export default function HomeScreen() {
   const deferredSearchQuery = useDeferredValue(searchQuery);
   const [selectedPost, setSelectedPost] = useState<StaticBlogPost | null>(null);
   const [readerProgress, setReaderProgress] = useState(0);
+  const lastReaderProgressRef = useRef(0);
+  const lastStorageRawRef = useRef<{
+    saved?: string | null;
+    visits?: string | null;
+    progress?: string | null;
+  }>({});
   const [showHolidaysModal, setShowHolidaysModal] = useState(false);
   const [selectedBlogTag, setSelectedBlogTag] = useState<string>("All");
   const isHomeFocused = useIsFocused();
@@ -127,6 +140,7 @@ export default function HomeScreen() {
   useEffect(() => {
     if (!isHomeFocused || widgetsTouchPaused) return;
     const timer = setInterval(() => {
+      if (AppState.currentState !== "active") return;
       setActiveWidgetPage((prev) => {
         const next = (prev + 1) % 4;
         widgetsScrollRef.current?.scrollTo({
@@ -167,56 +181,65 @@ export default function HomeScreen() {
           if (!active) return;
           const map = new Map(entries);
 
-          const savedVal = map.get("kh-saved-tools");
-          setPinnedSlugs(parseSavedTools(savedVal));
+          const savedVal = map.get("kh-saved-tools") ?? null;
+          if (savedVal !== lastStorageRawRef.current.saved) {
+            lastStorageRawRef.current.saved = savedVal;
+            setPinnedSlugs(parseSavedTools(savedVal));
+          }
 
-          const visitsRaw = map.get("kh-tool-visits");
-          if (!visitsRaw) {
-            setVisitCounts({});
-          } else {
-            try {
-              const parsed = JSON.parse(visitsRaw);
-              setVisitCounts(parsed && typeof parsed === "object" ? parsed : {});
-            } catch {
+          const visitsRaw = map.get("kh-tool-visits") ?? null;
+          if (visitsRaw !== lastStorageRawRef.current.visits) {
+            lastStorageRawRef.current.visits = visitsRaw;
+            if (!visitsRaw) {
               setVisitCounts({});
+            } else {
+              try {
+                const parsed = JSON.parse(visitsRaw);
+                setVisitCounts(parsed && typeof parsed === "object" ? parsed : {});
+              } catch {
+                setVisitCounts({});
+              }
             }
           }
 
-          const progRaw = map.get("@kenyahub_course_progress_v2");
-          if (progRaw) {
-            try {
-              const parsed = JSON.parse(progRaw);
-              if (parsed && typeof parsed === "object") {
-                let totalXP = 0;
-                let bestStreak = 0;
-                let activeLang = "swahili";
-                let latestPractice = 0;
-                let highestLangXP = 0;
-                for (const [lid, prog] of Object.entries(parsed) as [string, any][]) {
-                  const xp = Number(prog?.totalXP) || 0;
-                  const st = Number(prog?.streak) || 0;
-                  totalXP += xp;
-                  if (xp > highestLangXP && latestPractice === 0) {
-                    highestLangXP = xp;
-                    activeLang = lid;
-                  }
-                  if (st > bestStreak) bestStreak = st;
-                  const skills = Object.values(prog?.skills || {}) as any[];
-                  for (const sk of skills) {
-                    if ((sk?.lastPracticed || 0) > latestPractice) {
-                      latestPractice = sk.lastPracticed;
+          const progRaw = map.get("@kenyahub_course_progress_v2") ?? null;
+          if (progRaw !== lastStorageRawRef.current.progress) {
+            lastStorageRawRef.current.progress = progRaw;
+            if (progRaw) {
+              try {
+                const parsed = JSON.parse(progRaw);
+                if (parsed && typeof parsed === "object") {
+                  let totalXP = 0;
+                  let bestStreak = 0;
+                  let activeLang = "swahili";
+                  let latestPractice = 0;
+                  let highestLangXP = 0;
+                  for (const [lid, prog] of Object.entries(parsed) as [string, any][]) {
+                    const xp = Number(prog?.totalXP) || 0;
+                    const st = Number(prog?.streak) || 0;
+                    totalXP += xp;
+                    if (xp > highestLangXP && latestPractice === 0) {
+                      highestLangXP = xp;
                       activeLang = lid;
                     }
+                    if (st > bestStreak) bestStreak = st;
+                    const skills = Object.values(prog?.skills || {}) as any[];
+                    for (const sk of skills) {
+                      if ((sk?.lastPracticed || 0) > latestPractice) {
+                        latestPractice = sk.lastPracticed;
+                        activeLang = lid;
+                      }
+                    }
                   }
+                  setLearnStats({
+                    langId: activeLang,
+                    langName: COURSE_NAMES[activeLang] || "Kiswahili",
+                    totalXP,
+                    streak: bestStreak,
+                  });
                 }
-                setLearnStats({
-                  langId: activeLang,
-                  langName: COURSE_NAMES[activeLang] || "Kiswahili",
-                  totalXP,
-                  streak: bestStreak,
-                });
-              }
-            } catch {}
+              } catch {}
+            }
           }
         })
         .catch(() => {});
@@ -301,7 +324,9 @@ export default function HomeScreen() {
       const next = prev.includes(slug)
         ? prev.filter((s) => s !== slug)
         : [slug, ...prev];
-      AsyncStorage.setItem("kh-saved-tools", serializeSavedTools(next)).catch(
+      const serialized = serializeSavedTools(next);
+      lastStorageRawRef.current.saved = serialized;
+      AsyncStorage.setItem("kh-saved-tools", serialized).catch(
         () => {}
       );
       return next;
@@ -367,6 +392,7 @@ export default function HomeScreen() {
         const blogSlug = pathOnly.replace("/blog/", "").split("/")[0];
         const targetPost = STATIC_BLOG_POSTS.find((p) => p.slug === blogSlug);
         if (targetPost) {
+          lastReaderProgressRef.current = 0;
           setReaderProgress(0);
           setSelectedPost(targetPost);
         }
@@ -571,7 +597,11 @@ export default function HomeScreen() {
       />
 
       <ScrollView
-        contentContainerStyle={[styles.scrollContent, extraScrollPadPx > 0 ? { paddingHorizontal: extraScrollPadPx } : null]}
+        contentContainerStyle={[
+          styles.scrollContent,
+          extraScrollPadPx > 0 ? { paddingHorizontal: extraScrollPadPx } : null,
+          floatClearance > 0 ? { paddingBottom: Math.round(32 * (themeMetrics?.spacingScale ?? 1)) + floatClearance } : null,
+        ]}
         showsVerticalScrollIndicator={themeConfig?.verticalScrollbarStyle !== "hidden"}
         persistentScrollbar={themeConfig.verticalScrollbarStyle === "always-visible"}
         keyboardShouldPersistTaps="handled"
@@ -963,10 +993,10 @@ export default function HomeScreen() {
             style={[
               styles.launcherGrid,
               homeLayout === "bento-grid" || homeLayout === "large-tiles" || homeLayout === "editorial-cards"
-                ? { justifyContent: "space-between", rowGap: 10 }
+                ? { justifyContent: "space-between", rowGap: 8 }
                 : null,
               homeLayout === "compact-list" || homeLayout === "minimal-rows"
-                ? { flexDirection: "column", rowGap: homeLayout === "minimal-rows" ? 0 : 6 }
+                ? { flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", rowGap: 6 }
                 : null,
             ]}
           >
@@ -1024,10 +1054,11 @@ export default function HomeScreen() {
           <FeaturedLanguageWidget
             learnStats={learnStats}
             paused={widgetsTouchPaused}
+            sharedStyles={styles}
           />
 
           {/* Widget B: Isolated Word of the Moment Card (MOB-4, UX-6) */}
-          <WordOfTheMomentWidget paused={widgetsTouchPaused} />
+          <WordOfTheMomentWidget paused={widgetsTouchPaused} sharedStyles={styles} />
 
           {/* Widget C: Matatu Routes & SACCO Fares Explorer */}
           <Pressable
@@ -1276,6 +1307,7 @@ export default function HomeScreen() {
               isPinned={pinnedSlugs.includes(t.slug)}
               onTogglePin={togglePinTool}
               homeLayout={homeLayout}
+              sharedStyles={styles}
             />
           ))}
         </View>
@@ -1294,7 +1326,7 @@ export default function HomeScreen() {
 
         <View style={styles.categoriesFullList}>
           {TOOL_CATEGORIES.map((cat) => {
-            const count = TOOLS.filter((t) => t.category === cat.id).length;
+            const count = CATEGORY_TOOL_COUNTS[cat.id] || 0;
             const catColor = categoryColorMap[cat.id] || theme.gold;
 
             return (
@@ -1422,6 +1454,7 @@ export default function HomeScreen() {
               key={post.slug}
               android_ripple={androidRipple(theme.rippleColor)}
               onPress={() => {
+                lastReaderProgressRef.current = 0;
                 setReaderProgress(0);
                 setSelectedPost(post);
               }}
@@ -1612,7 +1645,7 @@ export default function HomeScreen() {
               contentContainerStyle={{ padding: 16, paddingBottom: 48 }}
               showsVerticalScrollIndicator={themeConfig?.verticalScrollbarStyle !== "hidden"}
         persistentScrollbar={themeConfig?.verticalScrollbarStyle === "always-visible"}
-              scrollEventThrottle={16}
+              scrollEventThrottle={48}
               onScroll={(e) => {
                 const { contentOffset, contentSize, layoutMeasurement } =
                   e.nativeEvent;
@@ -1620,7 +1653,14 @@ export default function HomeScreen() {
                   1,
                   contentSize.height - layoutMeasurement.height
                 );
-                setReaderProgress(Math.min(1, Math.max(0, contentOffset.y / maxScroll)));
+                const next = Math.min(1, Math.max(0, contentOffset.y / maxScroll));
+                if (
+                  Math.abs(next - lastReaderProgressRef.current) >= 0.03 ||
+                  ((next === 0 || next === 1) && next !== lastReaderProgressRef.current)
+                ) {
+                  lastReaderProgressRef.current = next;
+                  setReaderProgress(next);
+                }
               }}
             >
               <View

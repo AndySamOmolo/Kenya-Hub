@@ -1,5 +1,5 @@
 import { ExpandablePillRow } from "../../src/components/ExpandablePillRow";
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import React, { useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import {
   FlatList,
@@ -191,6 +191,7 @@ export default function MatatuScreen() {
   const { theme, isDark, themeKey } = useTheme();
   const params = useLocalSearchParams<{ town?: string; q?: string }>();
   const [search, setSearch] = useState(params.q ?? "");
+  const deferredSearch = useDeferredValue(search);
   const [selectedTown, setSelectedTown] = useState<string>(params.town || "all");
   const [saccoFilter, setSaccoFilter] = useState<string>("all");
   const scrollRef = useRef<any>(null);
@@ -246,7 +247,7 @@ export default function MatatuScreen() {
   }, [allRoutes, selectedTown]);
 
   const filteredRoutes = useMemo(() => {
-    const q = search.trim().toLowerCase();
+    const q = deferredSearch.trim().toLowerCase();
     const list = allRoutes.filter((r) => {
       const matchesTown =
         selectedTown === "all" ||
@@ -295,7 +296,7 @@ export default function MatatuScreen() {
         sensitivity: "base",
       });
     });
-  }, [allRoutes, search, selectedTown, saccoFilter, sortBy, journeyQuery]);
+  }, [allRoutes, deferredSearch, selectedTown, saccoFilter, sortBy, journeyQuery]);
 
   return (
     <SafeAreaView
@@ -489,6 +490,7 @@ export default function MatatuScreen() {
         renderItem={({ item }) => <RouteCard route={item} />}
         initialNumToRender={8}
         maxToRenderPerBatch={8}
+        updateCellsBatchingPeriod={40}
         windowSize={5}
         removeClippedSubviews={Platform.OS === "android"}
         contentContainerStyle={styles.content}

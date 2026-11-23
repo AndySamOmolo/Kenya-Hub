@@ -173,11 +173,13 @@ def transcode_to_compact_mp4(raw_bytes: bytes, in_ext: str = ".mp4", max_seconds
             "-pix_fmt", "yuv420p", "-movflags", "+faststart",
             out_path,
         ]
+        ffmpeg_timeout = 120 if (max_seconds and max_seconds > 0) else 600
         try:
-            subprocess.run(cmd, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=120)
+            subprocess.run(cmd, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=ffmpeg_timeout)
             if os.path.exists(out_path) and os.path.getsize(out_path) > 0:
                 return Path(out_path).read_bytes()
-        except Exception:
+        except Exception as exc:
+            print(f"  [warn] ffmpeg transcode failed (timeout={ffmpeg_timeout}s, max_seconds={max_seconds}): {exc}")
             return None
     return None
 
@@ -727,14 +729,20 @@ def ingest_open_sign_bibles_xki(s3_client, existing: dict, videos_out: list[dict
             key_hash = hashlib.sha1(key_raw.encode("utf-8")).hexdigest()[:10]
             vid_id = f"sign-bible-xki-{key_hash}"
             prev_slug_id = f"sign-bible-{slugify(f'xki-{title_core}-{idx}')}"
+            old_passage_id = f"sign-bible-xki-ksl-passage-{idx}"
             old_cbt_id = (
                 f"sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-{idx}"
                 if "chronological_bible_translation_in_kenyan_sign_language" in key_raw.lower()
                 else ""
             )
 
-            # Match by deterministic row key, exact previous slug, or verified CBT row ID
-            existing_item = by_id.get(vid_id) or by_id.get(prev_slug_id) or (by_id.get(old_cbt_id) if old_cbt_id else None)
+            # Match by deterministic row key, exact previous slug, legacy ksl-passage-{idx} (0..39), or CBT row ID (40..568)
+            existing_item = (
+                by_id.get(vid_id)
+                or by_id.get(prev_slug_id)
+                or by_id.get(old_passage_id)
+                or (by_id.get(old_cbt_id) if old_cbt_id else None)
+            )
             if existing_item is not None:
                 updated = False
                 if existing_item.get("title") != title_core:
@@ -758,7 +766,8 @@ def ingest_open_sign_bibles_xki(s3_client, existing: dict, videos_out: list[dict
                             ex_key = f"ksl/human/{existing_item.get('id', vid_id)}.mp4"
                             up_url = upload_bytes_to_r2(s3_client, ex_key, full_bytes, "video/mp4")
                             if up_url:
-                                existing_item["videoUrl"] = up_url
+                                # Append ?v=2 so Cloudflare CDN / browsers / Android bypass 1-year immutable cache of old 15s clip
+                                existing_item["videoUrl"] = f"{up_url}?v=2"
                                 existing_item["fullDurationV2"] = True
                                 updated = True
                 if updated:
@@ -806,6 +815,7 @@ def ingest_open_sign_bibles_xki(s3_client, existing: dict, videos_out: list[dict
                 if added % 25 == 0:
                     ingestion_state["openSignBibles"] = {
                         "completed": False,
+                        "fullDurationV2": False,
                         "uploadedVideos": sum(1 for v in videos_out if v.get("category") == "human-sign-bible"),
                         "totalScanned": total_scanned,
                         "updatedAt": datetime.now(timezone.utc).isoformat(),

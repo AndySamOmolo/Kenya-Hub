@@ -203,8 +203,10 @@ export default function LanguageCourseTool({
   const [kslAutoPlay, setKslAutoPlay] = useState<boolean>(false);
   const [audioState, setAudioState] = useState<MobileAudioState>(() => getMobileAudioState());
   const [chapterSearchQuery, setChapterSearchQuery] = useState<string>('');
+  const deferredChapterSearchQuery = useDeferredValue(chapterSearchQuery);
   const [chapterBarWidth, setChapterBarWidth] = useState<number>(240);
   const [lrAudioSearch, setLrAudioSearch] = useState<string>('');
+  const deferredLrAudioSearch = useDeferredValue(lrAudioSearch);
   const [lrSlowMode, setLrSlowMode] = useState<boolean>(false);
   const [lrShowAudioEn, setLrShowAudioEn] = useState<boolean>(true);
   const [lrAudioClips, setLrAudioClips] = useState<MobileAudioShardClip[]>([]);
@@ -240,6 +242,7 @@ export default function LanguageCourseTool({
   const [lrExpandedStory, setLrExpandedStory] = useState<number | null>(0);
   const [lrShowBiEn, setLrShowBiEn] = useState<boolean>(true);
   const [emergingSearchQuery, setEmergingSearchQuery] = useState<string>('');
+  const deferredEmergingSearchQuery = useDeferredValue(emergingSearchQuery);
   const [emergingVisibleCount, setEmergingVisibleCount] = useState<number>(30);
 
   const [selectedLangId, setSelectedLangId] = useState<string>(
@@ -277,19 +280,27 @@ export default function LanguageCourseTool({
 
   // Load & migrate progress from AsyncStorage
   useEffect(() => {
+    let active = true;
     (async () => {
       try {
-        const savedLastVisited = await AsyncStorage.getItem('kenyahub_last_visited_lang_v1');
+        const entries = await AsyncStorage.multiGet([
+          'kenyahub_last_visited_lang_v1',
+          STORAGE_KEY_V2,
+          STORAGE_KEY_V1,
+        ]);
+        if (!active) return;
+        const map = new Map(entries);
+        const savedLastVisited = map.get('kenyahub_last_visited_lang_v1');
         if (savedLastVisited && hasCourseSummary(savedLastVisited)) {
           setLastVisitedLangId(savedLastVisited);
         }
-        const rawV2 = await AsyncStorage.getItem(STORAGE_KEY_V2);
+        const rawV2 = map.get(STORAGE_KEY_V2);
         if (rawV2) {
           setAllProgress(JSON.parse(rawV2));
           return;
         }
         // Migrate from v1 if present
-        const rawV1 = await AsyncStorage.getItem(STORAGE_KEY_V1);
+        const rawV1 = map.get(STORAGE_KEY_V1);
         if (rawV1) {
           const v1 = JSON.parse(rawV1);
           const migrated: Record<string, LanguageProgress> = {};
@@ -316,6 +327,9 @@ export default function LanguageCourseTool({
         }
       } catch {}
     })();
+    return () => {
+      active = false;
+    };
   }, []);
 
   const currentCourse = useMemo(
@@ -536,6 +550,7 @@ export default function LanguageCourseTool({
   const [cardIndex, setCardIndex] = useState(0);
   const [isCardFlipped, setIsCardFlipped] = useState(false);
   const [vocabSearch, setVocabSearch] = useState('');
+  const deferredVocabSearch = useDeferredValue(vocabSearch);
   const [modulesPage, setModulesPage] = useState(1);
   const [expandedVocabRows, setExpandedVocabRows] = useState<Record<string, number>>({});
   const MODULES_PAGE_SIZE = 6;
@@ -579,12 +594,14 @@ export default function LanguageCourseTool({
 
   // ── Grammar Tab State ──
   const [grammarSearch, setGrammarSearch] = useState('');
+  const deferredGrammarSearch = useDeferredValue(grammarSearch);
   const [expandedGrammarId, setExpandedGrammarId] = useState<string | null>(null);
   const [showSourcesDropdown, setShowSourcesDropdown] = useState(false);
 
   // ── Proverbs & Oral Wisdom Tab State ──
   const [luoSubTab, setLuoSubTab] = useState<'proverbs' | 'riddles' | 'twisters'>('proverbs');
   const [proverbSearch, setProverbSearch] = useState('');
+  const deferredProverbSearch = useDeferredValue(proverbSearch);
   const [proverbCategory, setProverbCategory] = useState('All');
   const [proverbPage, setProverbPage] = useState(1);
   const [revealedRiddles, setRevealedRiddles] = useState<Record<number, boolean>>({});
@@ -1244,7 +1261,7 @@ export default function LanguageCourseTool({
     [showLanguageMenu, activeTab, selectedLangId]
   );
   const filteredGrammar = useMemo(() => {
-    const q = grammarSearch.trim().toLowerCase();
+    const q = deferredGrammarSearch.trim().toLowerCase();
     if (!q) return grammarSections;
     return grammarSections.filter(
       (sec) =>
@@ -1255,7 +1272,7 @@ export default function LanguageCourseTool({
           Object.values(ex).some((val) => (val || '').toLowerCase().includes(q))
         )
     );
-  }, [grammarSections, grammarSearch]);
+  }, [grammarSections, deferredGrammarSearch]);
 
   // ============================================================================
   // ACTIVE LESSON PLAYER VIEW (FULL-SCREEN MATERIAL 3 MODAL EXPERIENCE)
@@ -3102,7 +3119,7 @@ export default function LanguageCourseTool({
           }[] = (openCorpusIndex as any).stagedVarieties || [];
           if (varieties.length === 0) return null;
           const activeVar = varieties.find((v) => v.id === selectedEmergingId) || varieties[0];
-          const eq = emergingSearchQuery.trim().toLowerCase();
+          const eq = deferredEmergingSearchQuery.trim().toLowerCase();
           const filteredEmerging = (activeVar?.sampleEntries || []).filter((ent) => {
             if (!eq) return true;
             return (
@@ -3987,7 +4004,7 @@ export default function LanguageCourseTool({
                 )}
               </View>
               {(() => {
-                const q = vocabSearch.trim().toLowerCase();
+                const q = deferredVocabSearch.trim().toLowerCase();
                 const filteredSkills = !q
                   ? allSkills
                   : allSkills
@@ -5107,7 +5124,7 @@ export default function LanguageCourseTool({
               const chRate = audioState.rate || 1;
 
               const rawPhrases: { english: string; dholuo: string }[] = activeChData?.phrases || [];
-              const chQ = chapterSearchQuery.trim().toLowerCase();
+              const chQ = deferredChapterSearchQuery.trim().toLowerCase();
               const filteredPhrases = chQ
                 ? rawPhrases.filter(
                     (ph) =>
@@ -5121,7 +5138,7 @@ export default function LanguageCourseTool({
               const visiblePhrases = filteredPhrases.slice((safeTxP - 1) * TX_PAGE, safeTxP * TX_PAGE);
 
               const hasAnySampleEn = samples.some((s) => Boolean(s.english));
-              const audQ = lrAudioSearch.trim().toLowerCase();
+              const audQ = deferredLrAudioSearch.trim().toLowerCase();
               const filteredSamples = audQ
                 ? samples.filter(
                     (s) =>
@@ -6245,7 +6262,7 @@ export default function LanguageCourseTool({
           {/* 1. Kikuyu Proverbs List */}
           {selectedLangId === 'kikuyu' &&
             (() => {
-              const q = proverbSearch.trim().toLowerCase();
+              const q = deferredProverbSearch.trim().toLowerCase();
               const rawList = [
                 ...(Array.isArray(kikuyuProverbsData) ? (kikuyuProverbsData as any[]) : []),
                 ...KIKUYU_CW_ITEMS.map((item, idx) => ({
@@ -6335,7 +6352,7 @@ export default function LanguageCourseTool({
           {/* 2. Dholuo Proverbs / Riddles / Twisters */}
           {selectedLangId === 'luo' && luoSubTab === 'proverbs' &&
             (() => {
-              const q = proverbSearch.trim().toLowerCase();
+              const q = deferredProverbSearch.trim().toLowerCase();
               const allLuoProverbs = [
                 ...luoProverbs,
                 ...LUO_CW_ITEMS.map((item, idx) => ({
@@ -6412,7 +6429,7 @@ export default function LanguageCourseTool({
           {selectedLangId === 'luo' && luoSubTab === 'riddles' &&
             (() => {
               const filteredRiddles = luoRiddles.filter((r) => {
-                const q = proverbSearch.trim().toLowerCase();
+                const q = deferredProverbSearch.trim().toLowerCase();
                 return (
                   !q ||
                   r.luo.toLowerCase().includes(q) ||
@@ -6506,7 +6523,7 @@ export default function LanguageCourseTool({
           {/* 3. Luhya, Kamba, Kisii, Maasai, Teso & Turkana Wisdom (Locked to selectedLangId) */}
           {selectedLangId !== 'kikuyu' && selectedLangId !== 'luo' &&
             (() => {
-              const q = proverbSearch.trim().toLowerCase();
+              const q = deferredProverbSearch.trim().toLowerCase();
               const baseItems = getCulturalWisdomForLanguage(selectedLangId);
               const noteItems: CulturalWisdomItem[] = [];
               if (currentCourse) {

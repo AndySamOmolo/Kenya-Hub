@@ -140,6 +140,9 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <head suppressHydrationWarning>
+        <link rel="preconnect" href="https://audio.kenyahub.me" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://audio.kenyahub.me" />
+        <link rel="dns-prefetch" href="https://fra.cloud.appwrite.io" />
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         <meta name="google-adsense-account" content="ca-pub-5895990873842803" />
         <script

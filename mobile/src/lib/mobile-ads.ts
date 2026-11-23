@@ -1,5 +1,11 @@
 import { Platform } from "react-native";
 
+/** Set EXPO_PUBLIC_ADMOB_BANNER_ANDROID in .env / EAS secrets after registering KenyaHub in Google AdMob. */
+export const ADMOB_BANNER_UNIT_ID: string | undefined =
+  Platform.OS === "android"
+    ? process.env.EXPO_PUBLIC_ADMOB_BANNER_ANDROID || undefined
+    : process.env.EXPO_PUBLIC_ADMOB_BANNER_IOS || undefined;
+
 export interface MobileAdsState {
   sdkAvailable: boolean;
   initialized: boolean;

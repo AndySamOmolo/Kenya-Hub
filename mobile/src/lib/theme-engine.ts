@@ -4,7 +4,7 @@
  */
 
 export type ThemeMode = "system" | "light" | "dark";
-export type SurfaceStyle = "elevated" | "flat" | "outlined" | "glass" | "tonal" | "crisp";
+export type SurfaceStyle = "elevated" | "flat" | "outlined" | "glass" | "tonal" | "crisp" | "paper-ink" | "neo-brutal" | "inset-tray";
 export type BorderWidthPreset = "none" | "hairline" | "thin" | "medium" | "thick" | "bold";
 export type RadiusPreset = "square" | "sharp" | "subtle" | "rounded" | "soft" | "pill";
 export type ButtonRadiusPreset = "square" | "sharp" | "subtle" | "rounded" | "soft" | "pill";
@@ -26,6 +26,7 @@ export type HorizontalScrollbarStyle =
   | "subtle-bar"
   | "accent-track"
   | "glow-rail"
+  | "tick-ruler"
   | "dots";
 
 export type ScrollbarThickness =
@@ -52,7 +53,8 @@ export type PillBarLayout =
   | "stepper"
   | "three-col-tiles"
   | "floating-dock"
-  | "sidebar-chips";
+  | "sidebar-chips"
+  | "index-tabs";
 
 export type AppBarStyle =
   | "standard"
@@ -85,7 +87,8 @@ export type MenuIndicatorStyle =
   | "dot"
   | "filled-box"
   | "glow"
-  | "outline";
+  | "outline"
+  | "bracket";
 
 export type VerticalScrollbarStyle = "hidden" | "native" | "always-visible";
 
@@ -93,7 +96,7 @@ export type CardShadowIntensity = "none" | "subtle" | "medium" | "strong" | "glo
 
 export type InputStylePreset = "outlined" | "filled" | "underlined" | "pill" | "minimal" | "accent";
 
-export type ButtonStylePreset = "filled" | "tinted" | "outlined" | "elevated" | "pill-glow" | "flat";
+export type ButtonStylePreset = "filled" | "tinted" | "outlined" | "elevated" | "pill-glow" | "flat" | "keycap-press" | "editorial-link";
 
 export type PageTransitionPreset = "slide" | "fade" | "bottom-sheet" | "fast" | "none" | "default";
 
@@ -118,7 +121,10 @@ export type CardAccentStyle =
   | "top-bar"
   | "bottom-bar"
   | "tinted-border"
-  | "glow-edge";
+  | "glow-edge"
+  | "corner-frame"
+  | "double-rule"
+  | "offset-edge";
 
 export type IconBadgeStyle =
   | "outline"
@@ -126,7 +132,11 @@ export type IconBadgeStyle =
   | "soft-circle"
   | "soft-square"
   | "accent-solid"
-  | "minimal";
+  | "minimal"
+  | "monochrome-ink"
+  | "keycap"
+  | "hairline-ring"
+  | "duotone-wash";
 
 export type HeadingTransform = "none" | "uppercase" | "capitalize";
 export type NumericStyle = "default" | "tabular-mono";
@@ -137,7 +147,7 @@ export type ReadingTint = "none" | "warm-paper" | "soft-sepia" | "cool-slate";
 export type ScreenPaddingPreset = "edge" | "compact" | "standard" | "wide";
 export type ProgressBarStyle = "rounded" | "sharp" | "segmented" | "thin-line";
 export type DividerStyle = "hairline" | "none" | "dashed-soft" | "accent-fade";
-export type SectionHeaderStyle = "eyebrow" | "bold-title" | "accent-pill" | "left-bar";
+export type SectionHeaderStyle = "eyebrow" | "bold-title" | "accent-pill" | "left-bar" | "ruled-line";
 export type PressEffect = "scale-ripple" | "ripple-only" | "opacity-only" | "none";
 
 export interface CustomColorsConfig {
@@ -286,6 +296,7 @@ export interface ThemeMetrics {
   tabBarHeightPx: number;
   appBarHeightPx: number;
   screenPaddingPx: number;
+  floatingTabBarClearancePx: number;
 }
 
 export const SUPPORTED_FONT_SCALES = [0.85, 0.92, 1.0, 1.08, 1.18, 1.28] as const;
@@ -365,7 +376,7 @@ export const APP_LOOK_PROFILES: AppLookProfile[] = [
   {
     id: "kenyahub-classic",
     name: "KenyaHub Classic",
-    tagline: "Default KenyaHub Heritage look",
+    tagline: "Original warm Kenyan Heritage look",
     icon: "shield-checkmark-outline",
     swatches: ["#0E0C0A", "#FAF7F2", "#C8961E", "#006B3F"],
     config: {
@@ -400,431 +411,492 @@ export const APP_LOOK_PROFILES: AppLookProfile[] = [
     },
   },
   {
-    id: "minimalist-zen",
-    name: "Minimalist Zen",
-    tagline: "Coastal Lamu · Flat · Floating Pill · Minimal Rows",
-    icon: "leaf-outline",
-    swatches: ["#F5F9FA", "#E9F1F3", "#0E8A8D", "#C89B3C"],
-    config: {
-      presetId: "coastal-lamu",
-      mode: "light",
-      tabBarStyle: "floating-pill",
-      tabBarLabels: true,
-      menuIndicatorStyle: "dot",
-      fontPair: "humanist",
-      surfaceStyle: "flat",
-      cardRadius: "soft",
-      buttonRadius: "pill",
-      borderWidth: "none",
-      horizontalScrollbarStyle: "hidden",
-      pillBarLayout: "minimal-text",
-      pillShape: "pill",
-      pillSize: "sm",
-      buttonSize: "sm",
-      cardPadding: "lg",
-      tabBarSize: "sm",
-      appBarSize: "sm",
-      iconScale: 0.92,
-      showKenyaStripe: false,
-      stripeThickness: "hidden",
-      readingTint: "cool-slate",
-      dividerStyle: "none",
-      inputStyle: "minimal",
-      buttonStyle: "flat",
-      sectionHeaderStyle: "eyebrow",
-      appBarStyle: "borderless",
-      homeLayout: "minimal-rows",
-      headerAlignment: "center",
-      cardAccentStyle: "none",
-      iconBadgeStyle: "minimal",
-      quickMenuPosition: "off",
-      cardShadowIntensity: "none",
-      customColors: {},
-    },
-  },
-  {
-    id: "cyber-terminal",
-    name: "Cyber Terminal",
-    tagline: "Nairobi Cyber · Sharp · Tech Mono · Bento Grid",
-    icon: "terminal-outline",
-    swatches: ["#070917", "#121736", "#FFD23F", "#00E5FF"],
-    config: {
-      presetId: "nairobi-cyber",
-      mode: "dark",
-      tabBarStyle: "segmented",
-      tabBarLabels: true,
-      menuIndicatorStyle: "glow",
-      fontPair: "mono-tech",
-      surfaceStyle: "crisp",
-      cardRadius: "sharp",
-      buttonRadius: "sharp",
-      borderWidth: "medium",
-      horizontalScrollbarStyle: "glow-rail",
-      pillBarLayout: "sidebar-chips",
-      pillShape: "sharp",
-      pillSize: "sm",
-      buttonSize: "sm",
-      cardPadding: "sm",
-      tabBarSize: "sm",
-      appBarSize: "sm",
-      iconScale: 0.95,
-      stripeThickness: "hairline",
-      numericStyle: "tabular-mono",
-      headingTransform: "uppercase",
-      inputStyle: "accent",
-      buttonStyle: "outlined",
-      progressBarStyle: "sharp",
-      dividerStyle: "accent-fade",
-      sectionHeaderStyle: "left-bar",
-      accentIntensity: "vivid",
-      appBarStyle: "accent-tinted",
-      homeLayout: "bento-grid",
-      headerAlignment: "left",
-      cardAccentStyle: "glow-edge",
-      iconBadgeStyle: "outline",
-      quickMenuPosition: "bottom-right",
-      cardShadowIntensity: "glow",
-      customColors: {},
-    },
-  },
-  {
-    id: "editorial-magazine",
-    name: "Editorial Magazine",
-    tagline: "Sepia Parchment · Serif · Tall Header · Cards",
-    icon: "book-outline",
-    swatches: ["#F4ECD8", "#FAF4E4", "#94621F", "#3B5E36"],
+    id: "nairobi-broadsheet",
+    name: "Nairobi Broadsheet",
+    tagline: "Print magazine · Warm newsprint · Editorial serif",
+    icon: "newspaper-outline",
+    swatches: ["#F4ECD8", "#FAF4E4", "#2B2114", "#94621F"],
     config: {
       presetId: "sepia-parchment",
       mode: "light",
-      tabBarStyle: "top-accent",
-      tabBarLabels: true,
-      menuIndicatorStyle: "underline",
-      fontPair: "editorial-serif",
-      surfaceStyle: "outlined",
-      cardRadius: "subtle",
-      buttonRadius: "subtle",
+      surfaceStyle: "paper-ink",
+      cardRadius: "sharp",
+      buttonRadius: "sharp",
       borderWidth: "hairline",
-      horizontalScrollbarStyle: "subtle-bar",
-      pillBarLayout: "underline-tabs",
-      pillShape: "subtle",
-      pillSize: "lg",
-      buttonSize: "lg",
-      cardPadding: "xl",
-      tabBarSize: "lg",
-      appBarSize: "lg",
-      iconScale: 1.05,
-      stripeThickness: "medium",
-      readingTint: "warm-paper",
+      cardAccentStyle: "double-rule",
+      cardShadowIntensity: "none",
+      iconBadgeStyle: "monochrome-ink",
       inputStyle: "underlined",
       buttonStyle: "outlined",
+      fontPair: "editorial-serif",
+      headingTransform: "none",
+      numericStyle: "default",
+      readingTint: "warm-paper",
+      dividerStyle: "hairline",
+      sectionHeaderStyle: "ruled-line",
+      progressBarStyle: "thin-line",
+      pillBarLayout: "index-tabs",
+      pillShape: "sharp",
+      pillSize: "sm",
+      buttonSize: "md",
+      cardPadding: "md",
+      tabBarStyle: "top-accent",
+      tabBarLabels: true,
+      tabBarSize: "sm",
+      menuIndicatorStyle: "underline",
+      appBarStyle: "standard",
+      appBarSize: "md",
+      headerAlignment: "center",
+      homeLayout: "editorial-cards",
+      horizontalScrollbarStyle: "subtle-bar",
+      stripeThickness: "hairline",
+      iconScale: 0.95,
+      quickMenuPosition: "off",
+      customColors: {},
+    },
+  },
+  {
+    id: "braun-field-unit",
+    name: "Braun Field Unit",
+    tagline: "Tactile hardware · Keycap buttons · Tabular mono",
+    icon: "hardware-chip-outline",
+    swatches: ["#F5F2EB", "#FFFFFF", "#1A1815", "#B37A12"],
+    config: {
+      presetId: "nairobi-linen",
+      mode: "light",
+      surfaceStyle: "neo-brutal",
+      cardRadius: "subtle",
+      buttonRadius: "subtle",
+      borderWidth: "medium",
+      cardAccentStyle: "offset-edge",
+      cardShadowIntensity: "none",
+      iconBadgeStyle: "keycap",
+      inputStyle: "outlined",
+      buttonStyle: "keycap-press",
+      fontPair: "grotesk",
+      headingTransform: "uppercase",
+      numericStyle: "tabular-mono",
+      dividerStyle: "hairline",
+      sectionHeaderStyle: "accent-pill",
+      progressBarStyle: "segmented",
+      pillBarLayout: "segmented-bar",
+      pillShape: "subtle",
+      pillSize: "sm",
+      buttonSize: "sm",
+      cardPadding: "sm",
+      density: "compact",
+      tabBarStyle: "docked-cards",
+      tabBarLabels: true,
+      tabBarSize: "sm",
+      menuIndicatorStyle: "outline",
+      appBarStyle: "standard",
+      appBarSize: "sm",
+      headerAlignment: "left",
+      homeLayout: "compact-list",
+      horizontalScrollbarStyle: "tick-ruler",
+      stripeThickness: "thin",
+      iconScale: 0.94,
+      quickMenuPosition: "off",
+      customColors: {},
+    },
+  },
+  {
+    id: "swahili-stone-town",
+    name: "Lamu Coral & Brass",
+    tagline: "Coastal limestone · Calm inset trays · Floating bar",
+    icon: "compass-outline",
+    swatches: ["#F5F9FA", "#E6EFF1", "#0E8A8D", "#966D1B"],
+    config: {
+      presetId: "coastal-lamu",
+      mode: "light",
+      surfaceStyle: "inset-tray",
+      cardRadius: "soft",
+      buttonRadius: "pill",
+      borderWidth: "hairline",
+      cardAccentStyle: "none",
+      cardShadowIntensity: "none",
+      iconBadgeStyle: "hairline-ring",
+      inputStyle: "pill",
+      buttonStyle: "tinted",
+      fontPair: "humanist",
+      headingTransform: "none",
+      readingTint: "cool-slate",
+      dividerStyle: "none",
+      sectionHeaderStyle: "eyebrow",
+      progressBarStyle: "rounded",
+      pillBarLayout: "minimal-text",
+      pillShape: "pill",
+      pillSize: "sm",
+      buttonSize: "md",
+      cardPadding: "md",
+      tabBarStyle: "floating-pill",
+      tabBarLabels: true,
+      tabBarSize: "sm",
+      menuIndicatorStyle: "dot",
+      appBarStyle: "borderless",
+      appBarSize: "sm",
+      headerAlignment: "center",
+      homeLayout: "minimal-rows",
+      horizontalScrollbarStyle: "hidden",
+      showKenyaStripe: false,
+      stripeThickness: "hidden",
+      iconScale: 0.95,
+      quickMenuPosition: "off",
+      customColors: {},
+    },
+  },
+  {
+    id: "swiss-grid-press",
+    name: "Swiss Grid Poster",
+    tagline: "Stark monochrome · Zero radius · Stepper bar",
+    icon: "grid-outline",
+    swatches: ["#FFFFFF", "#EDEDED", "#000000", "#7A5400"],
+    config: {
+      presetId: "high-contrast",
+      mode: "light",
+      surfaceStyle: "neo-brutal",
+      cardRadius: "square",
+      buttonRadius: "square",
+      borderWidth: "medium",
+      cardAccentStyle: "corner-frame",
+      cardShadowIntensity: "none",
+      iconBadgeStyle: "monochrome-ink",
+      inputStyle: "outlined",
+      buttonStyle: "filled",
+      fontPair: "condensed",
+      headingTransform: "uppercase",
+      numericStyle: "tabular-mono",
+      dividerStyle: "hairline",
+      sectionHeaderStyle: "bold-title",
+      progressBarStyle: "sharp",
+      pillBarLayout: "stepper",
+      pillShape: "square",
+      pillSize: "sm",
+      buttonSize: "sm",
+      cardPadding: "sm",
+      density: "compact",
+      tabBarStyle: "top-accent",
+      tabBarLabels: true,
+      tabBarSize: "sm",
+      menuIndicatorStyle: "underline",
+      appBarStyle: "standard",
+      appBarSize: "sm",
+      headerAlignment: "left",
+      homeLayout: "classic",
+      horizontalScrollbarStyle: "accent-track",
+      stripeThickness: "medium",
+      iconScale: 0.92,
+      quickMenuPosition: "off",
+      customColors: {},
+    },
+  },
+  {
+    id: "savanna-dusk-ink",
+    name: "Savanna Dusk Journal",
+    tagline: "Espresso matte paper · Warm ochre · Duotone icons",
+    icon: "book-outline",
+    swatches: ["#140C09", "#261712", "#E07A48", "#FAF0EA"],
+    config: {
+      presetId: "rift-valley-dawn",
+      mode: "dark",
+      surfaceStyle: "paper-ink",
+      cardRadius: "rounded",
+      buttonRadius: "subtle",
+      borderWidth: "hairline",
+      cardAccentStyle: "double-rule",
+      cardShadowIntensity: "none",
+      iconBadgeStyle: "duotone-wash",
+      inputStyle: "filled",
+      buttonStyle: "tinted",
+      fontPair: "editorial-serif",
+      headingTransform: "none",
+      readingTint: "warm-paper",
       dividerStyle: "dashed-soft",
       sectionHeaderStyle: "bold-title",
       progressBarStyle: "thin-line",
-      appBarStyle: "tall-editorial",
+      pillBarLayout: "underline-tabs",
+      pillShape: "subtle",
+      pillSize: "md",
+      buttonSize: "md",
+      cardPadding: "md",
+      tabBarStyle: "classic",
+      tabBarLabels: true,
+      tabBarSize: "md",
+      menuIndicatorStyle: "dot",
+      appBarStyle: "borderless",
+      appBarSize: "md",
+      headerAlignment: "left",
       homeLayout: "editorial-cards",
-      headerAlignment: "center",
-      cardAccentStyle: "top-bar",
-      iconBadgeStyle: "soft-square",
+      horizontalScrollbarStyle: "subtle-bar",
+      stripeThickness: "thin",
+      iconScale: 1.0,
       quickMenuPosition: "off",
-      cardShadowIntensity: "subtle",
       customColors: {},
     },
   },
   {
-    id: "amoled-stealth",
-    name: "AMOLED Stealth",
-    tagline: "AMOLED Pitch · Pill Corners · Compact List",
+    id: "rift-obsidian-oled",
+    name: "Obsidian Pitch OLED",
+    tagline: "True black battery saver · Dropdown filter · Compact",
     icon: "moon-outline",
-    swatches: ["#000000", "#0D0D0D", "#F5C542", "#2FA463"],
+    swatches: ["#000000", "#0E0E0E", "#F5C542", "#FFFFFF"],
     config: {
       presetId: "amoled-pitch",
       mode: "dark",
-      tabBarStyle: "compact",
-      tabBarLabels: false,
-      menuIndicatorStyle: "pill",
-      fontPair: "grotesk",
-      surfaceStyle: "flat",
-      cardRadius: "pill",
+      oledBlack: true,
+      surfaceStyle: "inset-tray",
+      cardRadius: "rounded",
       buttonRadius: "pill",
       borderWidth: "hairline",
-      horizontalScrollbarStyle: "accent-track",
-      pillBarLayout: "dropdown",
-      pillShape: "pill",
-      pillSize: "xs",
-      buttonSize: "sm",
-      cardPadding: "sm",
-      tabBarSize: "xs",
-      appBarSize: "sm",
-      iconScale: 0.9,
-      oledBlack: true,
+      cardAccentStyle: "none",
+      cardShadowIntensity: "none",
+      iconBadgeStyle: "hairline-ring",
+      inputStyle: "filled",
+      buttonStyle: "outlined",
+      fontPair: "grotesk",
+      headingTransform: "none",
       density: "compact",
       screenPadding: "compact",
-      stripeThickness: "hairline",
-      inputStyle: "filled",
-      buttonStyle: "tinted",
       dividerStyle: "none",
+      sectionHeaderStyle: "eyebrow",
       progressBarStyle: "thin-line",
+      pillBarLayout: "dropdown",
+      pillShape: "pill",
+      pillSize: "sm",
+      buttonSize: "sm",
+      cardPadding: "sm",
+      tabBarStyle: "compact",
+      tabBarLabels: false,
+      tabBarSize: "xs",
+      menuIndicatorStyle: "dot",
       appBarStyle: "compact",
-      homeLayout: "compact-list",
+      appBarSize: "sm",
       headerAlignment: "left",
-      cardAccentStyle: "tinted-border",
-      iconBadgeStyle: "filled",
+      homeLayout: "compact-list",
+      horizontalScrollbarStyle: "hidden",
+      stripeThickness: "hairline",
+      iconScale: 0.92,
       quickMenuPosition: "off",
-      cardShadowIntensity: "none",
       customColors: {},
     },
   },
   {
-    id: "vibrant-bento",
-    name: "Vibrant Bento",
-    tagline: "Forest Canopy · Geometric · Docked Cards · Left Bar",
-    icon: "grid-outline",
+    id: "kanga-textile-studio",
+    name: "Kanga Print Press",
+    tagline: "Crimson & cobalt ink · Tactile card lip · Floating dock",
+    icon: "flame-outline",
+    swatches: ["#11090A", "#241417", "#F25C69", "#60A5FA"],
+    config: {
+      presetId: "maasai-shuka",
+      mode: "dark",
+      surfaceStyle: "outlined",
+      cardRadius: "subtle",
+      buttonRadius: "subtle",
+      borderWidth: "thin",
+      cardAccentStyle: "offset-edge",
+      cardShadowIntensity: "none",
+      iconBadgeStyle: "keycap",
+      inputStyle: "outlined",
+      buttonStyle: "filled",
+      fontPair: "geometric",
+      headingTransform: "none",
+      dividerStyle: "accent-fade",
+      sectionHeaderStyle: "accent-pill",
+      progressBarStyle: "sharp",
+      pillBarLayout: "floating-dock",
+      pillShape: "subtle",
+      pillSize: "sm",
+      buttonSize: "md",
+      cardPadding: "md",
+      tabBarStyle: "docked-cards",
+      tabBarLabels: true,
+      tabBarSize: "md",
+      menuIndicatorStyle: "outline",
+      appBarStyle: "standard",
+      appBarSize: "md",
+      headerAlignment: "left",
+      homeLayout: "classic",
+      horizontalScrollbarStyle: "dots",
+      stripeThickness: "medium",
+      iconScale: 1.0,
+      quickMenuPosition: "off",
+      customColors: {},
+    },
+  },
+  {
+    id: "kilimanjaro-morning",
+    name: "Highland Mist Daylight",
+    tagline: "Crisp outdoor contrast · Pine & glacier · Clean rows",
+    icon: "sunny-outline",
+    swatches: ["#F3F8FB", "#FFFFFF", "#0F766E", "#0369A1"],
+    config: {
+      presetId: "mt-kenya-alpine",
+      mode: "light",
+      surfaceStyle: "crisp",
+      cardRadius: "rounded",
+      buttonRadius: "rounded",
+      borderWidth: "thin",
+      cardAccentStyle: "corner-frame",
+      cardShadowIntensity: "subtle",
+      iconBadgeStyle: "duotone-wash",
+      inputStyle: "filled",
+      buttonStyle: "filled",
+      fontPair: "classic-sans",
+      headingTransform: "none",
+      readingTint: "cool-slate",
+      dividerStyle: "hairline",
+      sectionHeaderStyle: "eyebrow",
+      progressBarStyle: "rounded",
+      pillBarLayout: "compact-scroll",
+      pillShape: "rounded",
+      pillSize: "sm",
+      buttonSize: "md",
+      cardPadding: "md",
+      tabBarStyle: "classic",
+      tabBarLabels: true,
+      tabBarSize: "md",
+      menuIndicatorStyle: "pill",
+      appBarStyle: "standard",
+      appBarSize: "md",
+      headerAlignment: "left",
+      homeLayout: "classic",
+      horizontalScrollbarStyle: "subtle-bar",
+      stripeThickness: "thin",
+      iconScale: 1.0,
+      quickMenuPosition: "off",
+      customColors: {},
+    },
+  },
+  {
+    id: "karura-canopy-calm",
+    name: "Karura Forest Calm",
+    tagline: "Botanical moss · Monochrome icons · Floating pill bar",
+    icon: "leaf-outline",
     swatches: ["#070F0B", "#13261D", "#28B874", "#C2A14D"],
     config: {
       presetId: "forest-canopy",
       mode: "dark",
-      tabBarStyle: "docked-cards",
-      tabBarLabels: true,
-      menuIndicatorStyle: "filled-box",
-      fontPair: "geometric",
       surfaceStyle: "tonal",
       cardRadius: "soft",
-      buttonRadius: "soft",
-      borderWidth: "thin",
-      horizontalScrollbarStyle: "dots",
-      pillBarLayout: "floating-dock",
-      pillShape: "soft",
-      pillSize: "md",
-      buttonSize: "lg",
-      cardPadding: "lg",
-      tabBarSize: "lg",
-      appBarSize: "md",
-      iconScale: 1.1,
-      stripeThickness: "thick",
+      buttonRadius: "pill",
+      borderWidth: "hairline",
+      cardAccentStyle: "none",
+      cardShadowIntensity: "none",
+      iconBadgeStyle: "monochrome-ink",
       inputStyle: "pill",
-      buttonStyle: "elevated",
-      progressBarStyle: "segmented",
-      sectionHeaderStyle: "accent-pill",
-      appBarStyle: "floating",
-      homeLayout: "bento-grid",
+      buttonStyle: "tinted",
+      fontPair: "humanist",
+      headingTransform: "none",
+      dividerStyle: "none",
+      sectionHeaderStyle: "eyebrow",
+      progressBarStyle: "rounded",
+      pillBarLayout: "floating-dock",
+      pillShape: "pill",
+      pillSize: "sm",
+      buttonSize: "md",
+      cardPadding: "md",
+      tabBarStyle: "floating-pill",
+      tabBarLabels: true,
+      tabBarSize: "sm",
+      menuIndicatorStyle: "pill",
+      appBarStyle: "borderless",
+      appBarSize: "sm",
       headerAlignment: "left",
-      cardAccentStyle: "left-bar",
-      iconBadgeStyle: "accent-solid",
+      homeLayout: "minimal-rows",
+      horizontalScrollbarStyle: "dots",
+      stripeThickness: "hairline",
+      iconScale: 0.96,
       quickMenuPosition: "off",
-      cardShadowIntensity: "medium",
       customColors: {},
     },
   },
   {
-    id: "swahili-royal",
-    name: "Swahili Royal",
-    tagline: "Swahili Twilight · Editorial Serif · Floating Pill · Glow",
+    id: "zanzibar-indigo-night",
+    name: "Zanzibar Twilight",
+    tagline: "Deep plum & brass · Hairline rings · Segmented pills",
     icon: "sparkles-outline",
     swatches: ["#0D0817", "#1D1430", "#F0B949", "#F2736B"],
     config: {
       presetId: "swahili-twilight",
       mode: "dark",
-      tabBarStyle: "floating-pill",
-      tabBarLabels: true,
-      menuIndicatorStyle: "glow",
-      fontPair: "editorial-serif",
-      surfaceStyle: "elevated",
-      cardRadius: "soft",
-      buttonRadius: "pill",
+      surfaceStyle: "inset-tray",
+      cardRadius: "rounded",
+      buttonRadius: "rounded",
       borderWidth: "thin",
-      horizontalScrollbarStyle: "glow-rail",
-      pillBarLayout: "segmented-bar",
-      pillShape: "rounded",
-      pillSize: "md",
-      buttonSize: "lg",
-      cardPadding: "lg",
-      tabBarSize: "md",
-      appBarSize: "lg",
-      iconScale: 1.05,
-      stripeThickness: "medium",
+      cardAccentStyle: "double-rule",
+      cardShadowIntensity: "none",
+      iconBadgeStyle: "hairline-ring",
       inputStyle: "filled",
-      buttonStyle: "pill-glow",
+      buttonStyle: "outlined",
+      fontPair: "editorial-serif",
+      headingTransform: "none",
+      numericStyle: "tabular-mono",
       dividerStyle: "accent-fade",
       sectionHeaderStyle: "bold-title",
-      accentIntensity: "vivid",
+      progressBarStyle: "thin-line",
+      pillBarLayout: "segmented-bar",
+      pillShape: "rounded",
+      pillSize: "sm",
+      buttonSize: "md",
+      cardPadding: "md",
+      tabBarStyle: "top-accent",
+      tabBarLabels: true,
+      tabBarSize: "md",
+      menuIndicatorStyle: "underline",
       appBarStyle: "floating",
-      homeLayout: "editorial-cards",
-      headerAlignment: "center",
-      cardAccentStyle: "glow-edge",
-      iconBadgeStyle: "soft-circle",
-      quickMenuPosition: "off",
-      cardShadowIntensity: "glow",
-      customColors: {},
-    },
-  },
-  {
-    id: "crisp-daylight",
-    name: "Crisp Daylight",
-    tagline: "Naivasha Mist · Crisp · Classic Sans · Top Accent",
-    icon: "sunny-outline",
-    swatches: ["#F4F8FA", "#FFFFFF", "#127377", "#22658A"],
-    config: {
-      presetId: "naivasha-mist",
-      mode: "light",
-      tabBarStyle: "top-accent",
-      tabBarLabels: true,
-      menuIndicatorStyle: "underline",
-      fontPair: "classic-sans",
-      surfaceStyle: "crisp",
-      cardRadius: "rounded",
-      buttonRadius: "rounded",
-      borderWidth: "thin",
-      horizontalScrollbarStyle: "subtle-bar",
-      pillBarLayout: "stepper",
-      pillShape: "rounded",
-      pillSize: "md",
-      buttonSize: "md",
-      cardPadding: "md",
-      tabBarSize: "md",
       appBarSize: "md",
-      iconScale: 1.0,
-      stripeThickness: "thin",
-      appBarStyle: "standard",
+      headerAlignment: "center",
       homeLayout: "classic",
-      headerAlignment: "left",
-      cardAccentStyle: "top-bar",
-      iconBadgeStyle: "soft-square",
-      inputStyle: "filled",
-      buttonStyle: "tinted",
-      quickMenuPosition: "off",
-      cardShadowIntensity: "subtle",
-      customColors: {},
-    },
-  },
-  {
-    id: "maasai-shuka-bold",
-    name: "Maasai Shuka Bold",
-    tagline: "Charcoal · Crimson & Cobalt · 2-Col Grid · Left Bar",
-    icon: "flame-outline",
-    swatches: ["#120B0C", "#241416", "#D62839", "#3B82F6"],
-    config: {
-      presetId: "maasai-shuka",
-      mode: "dark",
-      tabBarStyle: "docked-cards",
-      tabBarLabels: true,
-      menuIndicatorStyle: "filled-box",
-      fontPair: "condensed",
-      headingTransform: "uppercase",
-      surfaceStyle: "outlined",
-      cardRadius: "sharp",
-      buttonRadius: "subtle",
-      borderWidth: "medium",
-      horizontalScrollbarStyle: "accent-track",
-      pillBarLayout: "two-col-grid",
-      pillShape: "subtle",
-      pillSize: "md",
-      buttonSize: "lg",
-      cardPadding: "md",
-      tabBarSize: "md",
-      appBarSize: "md",
-      iconScale: 1.08,
-      stripeThickness: "thick",
-      appBarStyle: "standard",
-      homeLayout: "large-tiles",
-      headerAlignment: "left",
-      cardAccentStyle: "left-bar",
-      iconBadgeStyle: "accent-solid",
-      inputStyle: "outlined",
-      buttonStyle: "filled",
-      sectionHeaderStyle: "left-bar",
-      progressBarStyle: "sharp",
-      dividerStyle: "accent-fade",
-      accentIntensity: "vivid",
-      quickMenuPosition: "off",
-      cardShadowIntensity: "medium",
-      customColors: {},
-    },
-  },
-  {
-    id: "mt-kenya-alpine",
-    name: "Mt. Kenya Alpine",
-    tagline: "Glacier Daylight · Pine & Amber · Centered Wrap",
-    icon: "snow-outline",
-    swatches: ["#F3F8FB", "#FFFFFF", "#0F766E", "#B45309"],
-    config: {
-      presetId: "mt-kenya-alpine",
-      mode: "light",
-      tabBarStyle: "top-accent",
-      tabBarLabels: true,
-      menuIndicatorStyle: "underline",
-      fontPair: "geometric",
-      surfaceStyle: "crisp",
-      cardRadius: "rounded",
-      buttonRadius: "rounded",
-      borderWidth: "thin",
       horizontalScrollbarStyle: "subtle-bar",
-      pillBarLayout: "centered-wrap",
-      pillShape: "rounded",
-      pillSize: "md",
-      buttonSize: "md",
-      cardPadding: "lg",
-      tabBarSize: "md",
-      appBarSize: "md",
-      iconScale: 1.0,
       stripeThickness: "thin",
-      readingTint: "cool-slate",
-      appBarStyle: "borderless",
-      homeLayout: "editorial-cards",
-      headerAlignment: "center",
-      cardAccentStyle: "top-bar",
-      iconBadgeStyle: "soft-circle",
-      inputStyle: "filled",
-      buttonStyle: "elevated",
-      sectionHeaderStyle: "accent-pill",
-      progressBarStyle: "rounded",
-      dividerStyle: "hairline",
+      iconScale: 1.0,
       quickMenuPosition: "off",
-      cardShadowIntensity: "subtle",
       customColors: {},
     },
   },
   {
-    id: "matatu-neon-night",
-    name: "Matatu Neon Night",
-    tagline: "OLED Black · Electric Lime & Amber · Floating Dock",
+    id: "nairobi-night-express",
+    name: "Nairobi Night Express",
+    tagline: "OLED asphalt · Electric lime & mono · Segmented bar",
     icon: "flash-outline",
-    swatches: ["#000000", "#11161C", "#A3E635", "#FACC15"],
+    swatches: ["#000000", "#11161C", "#A3E635", "#22D3EE"],
     config: {
       presetId: "matatu-neon",
       mode: "dark",
       oledBlack: true,
-      tabBarStyle: "floating-pill",
-      tabBarLabels: true,
-      menuIndicatorStyle: "glow",
-      fontPair: "grotesk",
-      numericStyle: "tabular-mono",
-      surfaceStyle: "elevated",
-      cardRadius: "soft",
-      buttonRadius: "pill",
+      surfaceStyle: "neo-brutal",
+      cardRadius: "sharp",
+      buttonRadius: "sharp",
       borderWidth: "medium",
-      horizontalScrollbarStyle: "glow-rail",
-      pillBarLayout: "floating-dock",
-      pillShape: "pill",
-      pillSize: "md",
-      buttonSize: "lg",
-      cardPadding: "md",
-      tabBarSize: "md",
-      appBarSize: "md",
-      iconScale: 1.12,
-      stripeThickness: "bold",
-      appBarStyle: "floating",
-      homeLayout: "bento-grid",
-      headerAlignment: "left",
-      cardAccentStyle: "glow-edge",
-      iconBadgeStyle: "filled",
-      inputStyle: "pill",
-      buttonStyle: "pill-glow",
+      cardAccentStyle: "offset-edge",
+      cardShadowIntensity: "none",
+      iconBadgeStyle: "keycap",
+      inputStyle: "accent",
+      buttonStyle: "outlined",
+      fontPair: "mono-tech",
+      headingTransform: "uppercase",
+      numericStyle: "tabular-mono",
+      dividerStyle: "accent-fade",
       sectionHeaderStyle: "accent-pill",
       progressBarStyle: "segmented",
-      dividerStyle: "accent-fade",
-      accentIntensity: "vivid",
-      quickMenuPosition: "bottom-right",
-      cardShadowIntensity: "glow",
+      pillBarLayout: "stepper",
+      pillShape: "sharp",
+      pillSize: "sm",
+      buttonSize: "sm",
+      cardPadding: "sm",
+      density: "compact",
+      tabBarStyle: "segmented",
+      tabBarLabels: true,
+      tabBarSize: "sm",
+      menuIndicatorStyle: "bracket",
+      appBarStyle: "accent-tinted",
+      appBarSize: "sm",
+      headerAlignment: "left",
+      homeLayout: "compact-list",
+      horizontalScrollbarStyle: "accent-track",
+      stripeThickness: "thin",
+      iconScale: 0.94,
+      quickMenuPosition: "off",
       customColors: {},
     },
   },
@@ -2144,6 +2216,10 @@ export const THEME_PRESETS: ThemePreset[] = [
   },
 ];
 
+export const THEME_PRESETS_BY_ID = new Map<string, ThemePreset>(
+  THEME_PRESETS.map((p) => [p.id, p])
+);
+
 /**
  * Validates #RGB, #RRGGBB, or #RRGGBBAA hex color strings.
  */
@@ -2195,18 +2271,31 @@ function mixHex(hexA: string, hexB: string, weightB: number): string {
   );
 }
 
+const HEX_TO_RGBA_CACHE = new Map<string, string>();
+const HEX_TO_RGBA_CACHE_MAX = 256;
+
 /**
  * Converts a hex color (#RGB, #RRGGBB, or #RRGGBBAA) into an `rgba(r, g, b, alpha)` string.
  */
 export function hexToRgba(hex: string, alpha: number): string {
   const clampedAlpha = Math.max(0, Math.min(1, Number.isFinite(alpha) ? alpha : 1));
+  const cacheKey = `${hex}|${clampedAlpha}`;
+  const cached = HEX_TO_RGBA_CACHE.get(cacheKey);
+  if (cached !== undefined) return cached;
   const parsed = parseHexToRgb(hex);
-  if (!parsed) {
-    return `rgba(0, 0, 0, ${clampedAlpha})`;
+  const result = !parsed
+    ? `rgba(0, 0, 0, ${clampedAlpha})`
+    : `rgba(${parsed.r}, ${parsed.g}, ${parsed.b}, ${
+        parsed.a !== undefined
+          ? Math.max(0, Math.min(1, Number((parsed.a * clampedAlpha).toFixed(3))))
+          : Number(clampedAlpha.toFixed(3))
+      })`;
+  if (HEX_TO_RGBA_CACHE.size >= HEX_TO_RGBA_CACHE_MAX) {
+    const firstKey = HEX_TO_RGBA_CACHE.keys().next().value;
+    if (firstKey !== undefined) HEX_TO_RGBA_CACHE.delete(firstKey);
   }
-  const finalAlpha =
-    parsed.a !== undefined ? Math.max(0, Math.min(1, Number((parsed.a * clampedAlpha).toFixed(3)))) : Number(clampedAlpha.toFixed(3));
-  return `rgba(${parsed.r}, ${parsed.g}, ${parsed.b}, ${finalAlpha})`;
+  HEX_TO_RGBA_CACHE.set(cacheKey, result);
+  return result;
 }
 
 /**
@@ -2281,7 +2370,7 @@ export function resolveThemeColors(
   resolvedIsDark: boolean
 ): ThemeColorsShape {
   const base = resolvedIsDark ? { ...baseDark } : { ...baseLight };
-  const preset = THEME_PRESETS.find((p) => p.id === config.presetId);
+  const preset = THEME_PRESETS_BY_ID.get(config.presetId);
   const presetOverrides = preset ? (resolvedIsDark ? preset.dark : preset.light) : {};
 
   let resolved: ThemeColorsShape = {
@@ -2421,8 +2510,14 @@ export function resolveThemeColors(
   return resolved;
 }
 
+const CONTRAST_INK_CACHE = new Map<string, "#1A1108" | "#FFFFFF">();
+const CONTRAST_INK_CACHE_MAX = 256;
+
 export function getContrastInk(bgHex: string | undefined | null): "#1A1108" | "#FFFFFF" {
-  if (!bgHex || !isValidHexColor(bgHex)) return "#1A1108";
+  if (!bgHex) return "#1A1108";
+  const cached = CONTRAST_INK_CACHE.get(bgHex);
+  if (cached !== undefined) return cached;
+  if (!isValidHexColor(bgHex)) return "#1A1108";
   const clean = bgHex.trim().replace("#", "");
   const full = clean.length === 3 ? clean.split("").map((c) => c + c).join("") : clean.slice(0, 6);
   const r = parseInt(full.slice(0, 2), 16) / 255;
@@ -2430,7 +2525,13 @@ export function getContrastInk(bgHex: string | undefined | null): "#1A1108" | "#
   const b = parseInt(full.slice(4, 6), 16) / 255;
   const lin = (c: number) => (c <= 0.03928 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4));
   const lum = 0.2126 * lin(r) + 0.7152 * lin(g) + 0.0722 * lin(b);
-  return lum > 0.34 ? "#1A1108" : "#FFFFFF";
+  const result: "#1A1108" | "#FFFFFF" = lum > 0.34 ? "#1A1108" : "#FFFFFF";
+  if (CONTRAST_INK_CACHE.size >= CONTRAST_INK_CACHE_MAX) {
+    const firstKey = CONTRAST_INK_CACHE.keys().next().value;
+    if (firstKey !== undefined) CONTRAST_INK_CACHE.delete(firstKey);
+  }
+  CONTRAST_INK_CACHE.set(bgHex, result);
+  return result;
 }
 
 const CARD_RADIUS_MAP: Record<RadiusPreset, number> = {
@@ -2469,6 +2570,61 @@ const DENSITY_SCALE_MAP: Record<DensityPreset, number> = {
   spacious: 1.18,
 };
 
+const CARD_PAD_SCALE_MAP: Record<SizePreset, number> = {
+  xs: 0.78,
+  sm: 0.88,
+  md: 1.0,
+  lg: 1.15,
+  xl: 1.30,
+};
+
+const PILL_SIZE_MAP: Record<SizePreset, [number, number, number]> = {
+  xs: [24, 3, 7],
+  sm: [28, 4, 9],
+  md: [32, 6, 11],
+  lg: [38, 8, 14],
+  xl: [44, 10, 16],
+};
+
+const BTN_SIZE_MAP: Record<SizePreset, [number, number]> = {
+  xs: [6, 10],
+  sm: [8, 12],
+  md: [10, 16],
+  lg: [13, 20],
+  xl: [16, 24],
+};
+
+const CARD_PAD_MAP: Record<SizePreset, number> = {
+  xs: 8,
+  sm: 10,
+  md: 14,
+  lg: 18,
+  xl: 22,
+};
+
+const TAB_BAR_SIZE_MAP: Record<SizePreset, number> = {
+  xs: 48,
+  sm: 54,
+  md: 64,
+  lg: 72,
+  xl: 80,
+};
+
+const APP_BAR_SIZE_MAP: Record<SizePreset, number> = {
+  xs: 42,
+  sm: 46,
+  md: 52,
+  lg: 62,
+  xl: 72,
+};
+
+const SCREEN_PAD_MAP: Record<ScreenPaddingPreset, number> = {
+  edge: 8,
+  compact: 12,
+  standard: 16,
+  wide: 20,
+};
+
 /**
  * Resolves numeric layout, typography, elevation, and surface opacity metrics from ThemeConfig.
  */
@@ -2479,9 +2635,8 @@ export function resolveThemeMetrics(config: ThemeConfig): ThemeMetrics {
   const borderWidthPx = config.highContrastBorders
     ? Math.max(1.5, baseBorderWidth)
     : baseBorderWidth;
-  const cardPadScaleMap: Record<SizePreset, number> = { xs: 0.78, sm: 0.88, md: 1.0, lg: 1.15, xl: 1.30 };
   const spacingScale = Number(
-    ((DENSITY_SCALE_MAP[config.density] ?? 1.0) * (cardPadScaleMap[config.cardPadding] ?? 1.0)).toFixed(3)
+    ((DENSITY_SCALE_MAP[config.density] ?? 1.0) * (CARD_PAD_SCALE_MAP[config.cardPadding] ?? 1.0)).toFixed(3)
   );
 
   const fontScale =
@@ -2524,35 +2679,27 @@ export function resolveThemeMetrics(config: ThemeConfig): ThemeMetrics {
       elevationPx = 1;
       break;
     case "crisp":
+    case "paper-ink":
+    case "neo-brutal":
+    case "inset-tray":
       elevationPx = 0;
       break;
   }
 
-  const pillSizeMap: Record<SizePreset, [number, number, number]> = {
-    xs: [24, 3, 7],
-    sm: [28, 4, 9],
-    md: [32, 6, 11],
-    lg: [38, 8, 14],
-    xl: [44, 10, 16],
-  };
-  const [pillMinHeightPx, pillPaddingVPx, pillPaddingHPx] = pillSizeMap[config.pillSize] ?? pillSizeMap.md;
-  const btnSizeMap: Record<SizePreset, [number, number]> = {
-    xs: [6, 10],
-    sm: [8, 12],
-    md: [10, 16],
-    lg: [13, 20],
-    xl: [16, 24],
-  };
-  const [buttonPaddingVPx, buttonPaddingHPx] = btnSizeMap[config.buttonSize] ?? btnSizeMap.md;
-  const cardPadMap: Record<SizePreset, number> = { xs: 8, sm: 10, md: 14, lg: 18, xl: 22 };
-  const cardPaddingPx = cardPadMap[config.cardPadding] ?? 14;
-  const tabBarSizeMap: Record<SizePreset, number> = { xs: 48, sm: 54, md: 64, lg: 72, xl: 80 };
-  const tabBarHeightPx = tabBarSizeMap[config.tabBarSize] ?? 64;
-  const appBarSizeMap: Record<SizePreset, number> = { xs: 42, sm: 46, md: 52, lg: 62, xl: 72 };
-  const appBarHeightPx = appBarSizeMap[config.appBarSize] ?? 52;
+  const [pillMinHeightPx, pillPaddingVPx, pillPaddingHPx] = PILL_SIZE_MAP[config.pillSize] ?? PILL_SIZE_MAP.md;
+  const [buttonPaddingVPx, buttonPaddingHPx] = BTN_SIZE_MAP[config.buttonSize] ?? BTN_SIZE_MAP.md;
+  const cardPaddingPx = CARD_PAD_MAP[config.cardPadding] ?? 14;
+  const tabBarHeightPx = TAB_BAR_SIZE_MAP[config.tabBarSize] ?? 64;
+  const appBarHeightPx = APP_BAR_SIZE_MAP[config.appBarSize] ?? 52;
   const iconScale = Number.isFinite(config.iconScale) ? Math.max(0.75, Math.min(1.35, config.iconScale)) : 1.0;
-  const screenPadMap: Record<ScreenPaddingPreset, number> = { edge: 8, compact: 12, standard: 16, wide: 20 };
-  const screenPaddingPx = screenPadMap[config.screenPadding] ?? 16;
+  const screenPaddingPx = SCREEN_PAD_MAP[config.screenPadding] ?? 16;
+  const isFloatingBar = config.tabBarStyle === "floating-pill" || config.tabBarStyle === "segmented";
+  const hasQuickFab = Boolean(config.quickMenuPosition && config.quickMenuPosition !== "off");
+  const floatingTabBarClearancePx = isFloatingBar
+    ? tabBarHeightPx + (hasQuickFab ? 68 : 34)
+    : hasQuickFab
+    ? 68
+    : 0;
 
   return {
     cardRadiusPx,
@@ -2574,6 +2721,7 @@ export function resolveThemeMetrics(config: ThemeConfig): ThemeMetrics {
     tabBarHeightPx,
     appBarHeightPx,
     screenPaddingPx,
+    floatingTabBarClearancePx,
   };
 }
 
@@ -2585,7 +2733,7 @@ export function exportThemeConfigJson(config: ThemeConfig): string {
 }
 
 const VALID_MODES = new Set<ThemeMode>(["system", "light", "dark"]);
-const VALID_SURFACE_STYLES = new Set<SurfaceStyle>(["elevated", "flat", "outlined", "glass", "tonal", "crisp"]);
+const VALID_SURFACE_STYLES = new Set<SurfaceStyle>(["elevated", "flat", "outlined", "glass", "tonal", "crisp", "paper-ink", "neo-brutal", "inset-tray"]);
 const VALID_BORDER_WIDTHS = new Set<BorderWidthPreset>(["none", "hairline", "thin", "medium", "thick", "bold"]);
 const VALID_CARD_RADII = new Set<RadiusPreset>(["square", "sharp", "subtle", "rounded", "soft", "pill"]);
 const VALID_BUTTON_RADII = new Set<ButtonRadiusPreset>(["square", "sharp", "subtle", "rounded", "soft", "pill"]);
@@ -2594,14 +2742,14 @@ const VALID_FONT_PAIRS = new Set<FontPair>([
   "geometric", "humanist", "condensed", "grotesk", "casual", "cursive",
 ]);
 const VALID_SCROLLBAR_STYLES = new Set<HorizontalScrollbarStyle>([
-  "hidden", "native-indicator", "subtle-bar", "accent-track", "glow-rail", "dots",
+  "hidden", "native-indicator", "subtle-bar", "accent-track", "glow-rail", "tick-ruler", "dots",
 ]);
 const VALID_SCROLLBAR_THICKNESS = new Set<ScrollbarThickness>([
   "hairline", "thin", "medium", "thick", "bold", "extra",
 ]);
 const VALID_PILL_BAR_LAYOUTS = new Set<PillBarLayout>([
   "scroll-with-expand", "always-scroll", "always-wrap", "compact-scroll", "centered-wrap", "grid-pills",
-  "dropdown", "underline-tabs", "segmented-bar", "two-col-grid", "vertical-list", "minimal-text", "stepper", "three-col-tiles", "floating-dock", "sidebar-chips",
+  "dropdown", "underline-tabs", "segmented-bar", "two-col-grid", "vertical-list", "minimal-text", "stepper", "three-col-tiles", "floating-dock", "sidebar-chips", "index-tabs",
 ]);
 const VALID_APP_BAR_STYLES = new Set<AppBarStyle>([
   "standard", "compact", "tall-editorial", "borderless", "accent-tinted", "floating",
@@ -2613,11 +2761,11 @@ const VALID_DENSITIES = new Set<DensityPreset>(["ultra-compact", "compact", "com
 const VALID_TAB_BAR_STYLES = new Set<TabBarStyle>([
   "classic", "floating-pill", "compact", "minimal", "top-accent", "docked-cards", "segmented",
 ]);
-const VALID_MENU_INDICATORS = new Set<MenuIndicatorStyle>(["pill", "underline", "dot", "filled-box", "glow", "outline"]);
+const VALID_MENU_INDICATORS = new Set<MenuIndicatorStyle>(["pill", "underline", "dot", "filled-box", "glow", "outline", "bracket"]);
 const VALID_VERT_SB = new Set<VerticalScrollbarStyle>(["hidden", "native", "always-visible"]);
 const VALID_SHADOWS = new Set<CardShadowIntensity>(["none", "subtle", "medium", "strong", "glow", "crisp-3d"]);
 const VALID_INPUT_STYLES = new Set<InputStylePreset>(["outlined", "filled", "underlined", "pill", "minimal", "accent"]);
-const VALID_BUTTON_STYLES = new Set<ButtonStylePreset>(["filled", "tinted", "outlined", "elevated", "pill-glow", "flat"]);
+const VALID_BUTTON_STYLES = new Set<ButtonStylePreset>(["filled", "tinted", "outlined", "elevated", "pill-glow", "flat", "keycap-press", "editorial-link"]);
 const VALID_TRANSITIONS = new Set<PageTransitionPreset>(["slide", "fade", "bottom-sheet", "fast", "none", "default"]);
 const VALID_STATUS_BARS = new Set<StatusBarMode>(["auto", "light", "dark"]);
 const VALID_QUICK_MENUS = new Set<QuickMenuPosition>(["off", "bottom-right", "bottom-left"]);
@@ -2627,10 +2775,10 @@ const VALID_HOME_LAYOUTS = new Set<HomeLayoutPreset>([
 ]);
 const VALID_HEADER_ALIGNMENTS = new Set<HeaderAlignment>(["left", "center"]);
 const VALID_CARD_ACCENT_STYLES = new Set<CardAccentStyle>([
-  "none", "left-bar", "top-bar", "bottom-bar", "tinted-border", "glow-edge",
+  "none", "left-bar", "top-bar", "bottom-bar", "tinted-border", "glow-edge", "corner-frame", "double-rule", "offset-edge",
 ]);
 const VALID_ICON_BADGE_STYLES = new Set<IconBadgeStyle>([
-  "outline", "filled", "soft-circle", "soft-square", "accent-solid", "minimal",
+  "outline", "filled", "soft-circle", "soft-square", "accent-solid", "minimal", "monochrome-ink", "keycap", "hairline-ring", "duotone-wash",
 ]);
 const VALID_HEADING_TRANSFORMS = new Set<HeadingTransform>(["none", "uppercase", "capitalize"]);
 const VALID_NUMERIC_STYLES = new Set<NumericStyle>(["default", "tabular-mono"]);
@@ -2641,7 +2789,7 @@ const VALID_READING_TINTS = new Set<ReadingTint>(["none", "warm-paper", "soft-se
 const VALID_SCREEN_PADDINGS = new Set<ScreenPaddingPreset>(["edge", "compact", "standard", "wide"]);
 const VALID_PROGRESS_STYLES = new Set<ProgressBarStyle>(["rounded", "sharp", "segmented", "thin-line"]);
 const VALID_DIVIDER_STYLES = new Set<DividerStyle>(["hairline", "none", "dashed-soft", "accent-fade"]);
-const VALID_SECTION_HEADER_STYLES = new Set<SectionHeaderStyle>(["eyebrow", "bold-title", "accent-pill", "left-bar"]);
+const VALID_SECTION_HEADER_STYLES = new Set<SectionHeaderStyle>(["eyebrow", "bold-title", "accent-pill", "left-bar", "ruled-line"]);
 const VALID_PRESS_EFFECTS = new Set<PressEffect>(["scale-ripple", "ripple-only", "opacity-only", "none"]);
 
 const CUSTOM_COLOR_KEYS: (keyof CustomColorsConfig)[] = [
@@ -2683,7 +2831,7 @@ export function parseThemeConfigJson(raw: string): ThemeConfig | null {
   if (typeof obj.mode === "string" && VALID_MODES.has(obj.mode as ThemeMode)) {
     merged.mode = obj.mode as ThemeMode;
   }
-  if (typeof obj.presetId === "string" && THEME_PRESETS.some((p) => p.id === obj.presetId)) {
+  if (typeof obj.presetId === "string" && THEME_PRESETS_BY_ID.has(obj.presetId)) {
     merged.presetId = obj.presetId;
   }
   if (typeof obj.customColors === "object" && obj.customColors !== null && !Array.isArray(obj.customColors)) {
@@ -2757,7 +2905,8 @@ export function parseThemeConfigJson(raw: string): ThemeConfig | null {
   }
 
   if (typeof obj.horizontalScrollbarStyle === "string" && VALID_SCROLLBAR_STYLES.has(obj.horizontalScrollbarStyle as HorizontalScrollbarStyle)) {
-    merged.horizontalScrollbarStyle = obj.horizontalScrollbarStyle as HorizontalScrollbarStyle;
+    merged.horizontalScrollbarStyle =
+      obj.horizontalScrollbarStyle === "glow-rail" ? "tick-ruler" : (obj.horizontalScrollbarStyle as HorizontalScrollbarStyle);
   }
   if (typeof obj.horizontalScrollbarThickness === "string" && VALID_SCROLLBAR_THICKNESS.has(obj.horizontalScrollbarThickness as ScrollbarThickness)) {
     merged.horizontalScrollbarThickness = obj.horizontalScrollbarThickness as ScrollbarThickness;
@@ -2766,7 +2915,8 @@ export function parseThemeConfigJson(raw: string): ThemeConfig | null {
     merged.scrollbarTrackVisible = obj.scrollbarTrackVisible;
   }
   if (typeof obj.pillBarLayout === "string" && VALID_PILL_BAR_LAYOUTS.has(obj.pillBarLayout as PillBarLayout)) {
-    merged.pillBarLayout = obj.pillBarLayout as PillBarLayout;
+    merged.pillBarLayout =
+      obj.pillBarLayout === "sidebar-chips" ? "index-tabs" : (obj.pillBarLayout as PillBarLayout);
   }
   if (typeof obj.pillShape === "string" && VALID_BUTTON_RADII.has(obj.pillShape as ButtonRadiusPreset)) {
     merged.pillShape = obj.pillShape as ButtonRadiusPreset;
@@ -2785,7 +2935,8 @@ export function parseThemeConfigJson(raw: string): ThemeConfig | null {
   }
 
   if (typeof obj.menuIndicatorStyle === "string" && VALID_MENU_INDICATORS.has(obj.menuIndicatorStyle as MenuIndicatorStyle)) {
-    merged.menuIndicatorStyle = obj.menuIndicatorStyle as MenuIndicatorStyle;
+    merged.menuIndicatorStyle =
+      obj.menuIndicatorStyle === "glow" ? "bracket" : (obj.menuIndicatorStyle as MenuIndicatorStyle);
   }
   if (typeof obj.verticalScrollbarStyle === "string" && VALID_VERT_SB.has(obj.verticalScrollbarStyle as VerticalScrollbarStyle)) {
     merged.verticalScrollbarStyle = obj.verticalScrollbarStyle as VerticalScrollbarStyle;
@@ -2797,7 +2948,12 @@ export function parseThemeConfigJson(raw: string): ThemeConfig | null {
     merged.inputStyle = obj.inputStyle as InputStylePreset;
   }
   if (typeof obj.buttonStyle === "string" && VALID_BUTTON_STYLES.has(obj.buttonStyle as ButtonStylePreset)) {
-    merged.buttonStyle = obj.buttonStyle as ButtonStylePreset;
+    merged.buttonStyle =
+      obj.buttonStyle === "pill-glow"
+        ? "keycap-press"
+        : obj.buttonStyle === "flat"
+        ? "editorial-link"
+        : (obj.buttonStyle as ButtonStylePreset);
   }
   if (typeof obj.pageTransition === "string" && VALID_TRANSITIONS.has(obj.pageTransition as PageTransitionPreset)) {
     merged.pageTransition = obj.pageTransition as PageTransitionPreset;
@@ -2815,10 +2971,22 @@ export function parseThemeConfigJson(raw: string): ThemeConfig | null {
     merged.headerAlignment = obj.headerAlignment as HeaderAlignment;
   }
   if (typeof obj.cardAccentStyle === "string" && VALID_CARD_ACCENT_STYLES.has(obj.cardAccentStyle as CardAccentStyle)) {
-    merged.cardAccentStyle = obj.cardAccentStyle as CardAccentStyle;
+    merged.cardAccentStyle =
+      obj.cardAccentStyle === "left-bar" || obj.cardAccentStyle === "top-bar"
+        ? "double-rule"
+        : obj.cardAccentStyle === "glow-edge"
+        ? "offset-edge"
+        : (obj.cardAccentStyle as CardAccentStyle);
   }
   if (typeof obj.iconBadgeStyle === "string" && VALID_ICON_BADGE_STYLES.has(obj.iconBadgeStyle as IconBadgeStyle)) {
-    merged.iconBadgeStyle = obj.iconBadgeStyle as IconBadgeStyle;
+    merged.iconBadgeStyle =
+      obj.iconBadgeStyle === "accent-solid"
+        ? "keycap"
+        : obj.iconBadgeStyle === "filled"
+        ? "duotone-wash"
+        : obj.iconBadgeStyle === "soft-square"
+        ? "monochrome-ink"
+        : (obj.iconBadgeStyle as IconBadgeStyle);
   }
   if (typeof obj.headingTransform === "string" && VALID_HEADING_TRANSFORMS.has(obj.headingTransform as HeadingTransform)) {
     merged.headingTransform = obj.headingTransform as HeadingTransform;
@@ -2866,7 +3034,8 @@ export function parseThemeConfigJson(raw: string): ThemeConfig | null {
     merged.dividerStyle = obj.dividerStyle as DividerStyle;
   }
   if (typeof obj.sectionHeaderStyle === "string" && VALID_SECTION_HEADER_STYLES.has(obj.sectionHeaderStyle as SectionHeaderStyle)) {
-    merged.sectionHeaderStyle = obj.sectionHeaderStyle as SectionHeaderStyle;
+    merged.sectionHeaderStyle =
+      obj.sectionHeaderStyle === "left-bar" ? "ruled-line" : (obj.sectionHeaderStyle as SectionHeaderStyle);
   }
   if (typeof obj.pressEffect === "string" && VALID_PRESS_EFFECTS.has(obj.pressEffect as PressEffect)) {
     merged.pressEffect = obj.pressEffect as PressEffect;
@@ -2942,7 +3111,7 @@ export function diffThemeConfig(config: ThemeConfig): ThemeChangeItem[] {
       } else if (typeof cur === "boolean") {
         valueLabel = cur ? "On" : "Off";
       } else if (key === "presetId") {
-        valueLabel = THEME_PRESETS.find((pr) => pr.id === cur)?.name ?? String(cur);
+        valueLabel = THEME_PRESETS_BY_ID.get(String(cur))?.name ?? String(cur);
       }
       diffs.push({ key, label: CHANGE_LABELS[key] || String(key), valueLabel });
     }

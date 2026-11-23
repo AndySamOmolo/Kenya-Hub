@@ -7,6 +7,9 @@ const nextConfig: NextConfig = {
   },
   // Trailing slashes for cleaner URLs on static hosting
   trailingSlash: true,
+  experimental: {
+    optimizePackageImports: ["lucide-react"],
+  },
 };
 
 export default nextConfig;

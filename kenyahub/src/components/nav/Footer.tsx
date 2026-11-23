@@ -4,13 +4,13 @@ import CookieSettingsFooterLink from "@/components/nav/CookieSettingsFooterLink"
 
 export default function Footer() {
   return (
-    <footer className="border-t border-border bg-bg-secondary">
+    <footer className="cv-auto border-t border-border bg-bg-secondary">
       <nav aria-label="Footer navigation" className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 py-8 sm:py-14">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
           {/* Brand */}
           <div className="sm:col-span-2 md:col-span-1">
             <Link href="/" prefetch={false} className="inline-flex items-center gap-2 mb-3 sm:mb-4">
-              <img src="/kenya-flag.svg" alt="" aria-hidden="true" className="w-5 h-auto rounded-[1px] shadow-sm" />
+              <img src="/kenya-flag.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" width={20} height={13} className="w-5 h-auto rounded-[1px] shadow-sm" />
               <span className="text-base font-extrabold font-[family-name:var(--font-outfit)] gradient-text-kenya">
                 KenyaHub
               </span>

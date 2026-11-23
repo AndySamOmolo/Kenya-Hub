@@ -136,21 +136,18 @@ function extractPillOptions(
   return acc;
 }
 
-// Gentle 16-step feather alpha progression for edge fade without harsh vertical lines
-const FADE_STEPS = [
-  0.0, 0.02, 0.05, 0.09, 0.14, 0.2, 0.27, 0.35,
-  0.44, 0.53, 0.62, 0.71, 0.79, 0.85, 0.9, 0.94,
-];
+// Gentle 8-step feather alpha progression for edge fade without harsh vertical lines
+const FADE_STEPS = [0.0, 0.06, 0.16, 0.3, 0.47, 0.65, 0.81, 0.94];
+const LEFT_FADE_STEPS = [...FADE_STEPS].reverse();
 
-function EdgePocketShadow({
+const EdgePocketShadow = React.memo(function EdgePocketShadow({
   side,
   bgColor,
 }: {
   side: "left" | "right";
   bgColor: string;
 }) {
-  const orderedSteps =
-    side === "right" ? FADE_STEPS : [...FADE_STEPS].reverse();
+  const orderedSteps = side === "right" ? FADE_STEPS : LEFT_FADE_STEPS;
 
   return (
     <View
@@ -174,7 +171,7 @@ function EdgePocketShadow({
       </View>
     </View>
   );
-}
+});
 
 export interface ExpandablePillRowProps {
   children: React.ReactNode;
@@ -194,6 +191,7 @@ export function ExpandablePillRow({
   fadeColor,
 }: ExpandablePillRowProps) {
   const { theme, themeConfig, themeMetrics, themeKey, resolvedFonts } = useTheme();
+  const sbStyle = themeConfig?.horizontalScrollbarStyle || "subtle-bar";
   const pillSizePreset = themeConfig?.pillSize || "md";
   const isCustomPillSize = pillSizePreset !== "md";
   const pmMinH = themeMetrics?.pillMinHeightPx ?? 32;
@@ -306,9 +304,66 @@ export function ExpandablePillRow({
     const hasLeft = x > 3;
     const hasRight = maxScroll - x > 3;
 
-    const ratio = maxScroll > 2 ? Math.min(1, Math.max(0, x / maxScroll)) : 0;
-    const thumbFrac = cw > 0 ? Math.min(0.85, Math.max(0.18, lw / cw)) : 0.4;
-    setScrollMetrics({ ratio, thumbFrac, scrollable: maxScroll > 6 });
+    if (sbStyle !== "hidden" && sbStyle !== "native-indicator") {
+      const scrollable = maxScroll > 6;
+      const ratio = maxScroll > 2 ? Math.min(1, Math.max(0, x / maxScroll)) : 0;
+      const thumbFrac = cw > 0 ? Math.min(0.85, Math.max(0.18, lw / cw)) : 0.4;
+      setScrollMetrics((prev) => {
+        if (prev.scrollable !== scrollable) {
+          return { ratio, thumbFrac, scrollable };
+        }
+        if (!scrollable) return prev;
+        if (sbStyle === "tick-ruler" || sbStyle === "glow-rail") {
+      const tickCount = 9;
+      const activeTick = Math.min(
+        tickCount - 1,
+        Math.round(scrollMetrics.ratio * (tickCount - 1))
+      );
+      return (
+        <View
+          style={{
+            flexDirection: "row",
+            justifyContent: "space-between",
+            alignItems: "flex-end",
+            paddingHorizontal: 8,
+            marginTop: 4,
+            height: Math.max(8, sbThickness + 4),
+          }}
+        >
+          {Array.from({ length: tickCount }).map((_, idx) => {
+            const isMajor = idx === 0 || idx === 4 || idx === 8;
+            const isHit = idx === activeTick;
+            return (
+              <View
+                key={`tick-${idx}`}
+                style={{
+                  width: isHit ? Math.max(3, sbThickness) : 1.5,
+                  height: isHit ? Math.max(8, sbThickness + 4) : isMajor ? 6 : 4,
+                  borderRadius: 1,
+                  backgroundColor: isHit ? sbColor : theme.outlineVariant,
+                  opacity: isHit ? 1 : 0.55,
+                }}
+              />
+            );
+          })}
+        </View>
+      );
+    }
+    if (sbStyle === "dots") {
+          const prevDot = Math.min(4, Math.round(prev.ratio * 4));
+          const nextDot = Math.min(4, Math.round(ratio * 4));
+          if (prevDot === nextDot) return prev;
+          return { ratio, thumbFrac, scrollable };
+        }
+        if (
+          Math.round(prev.ratio * 25) === Math.round(ratio * 25) &&
+          Math.round(prev.thumbFrac * 25) === Math.round(thumbFrac * 25)
+        ) {
+          return prev;
+        }
+        return { ratio, thumbFrac, scrollable };
+      });
+    }
     if (maxScroll > 10 && themeConfig?.scrollBounceEnabled !== false) {
       if (!hasLeft && !wasAtLeftRef.current) {
         triggerSpringBounce("left", 11);
@@ -325,7 +380,7 @@ export function ExpandablePillRow({
 
     setCanScrollLeft(hasLeft);
     setCanScrollRight(hasRight);
-  }, [expanded, themeConfig?.scrollBounceEnabled, triggerSpringBounce]);
+  }, [expanded, sbStyle, themeConfig?.scrollBounceEnabled, triggerSpringBounce]);
 
   const handleScrollEndDrag = useCallback(
     (e: NativeSyntheticEvent<NativeScrollEvent>) => {
@@ -391,7 +446,7 @@ export function ExpandablePillRow({
   const isUnderlineTabs = pillLayoutMode === "underline-tabs";
   const isSegmentedBar = pillLayoutMode === "segmented-bar";
   const isFloatingDock = pillLayoutMode === "floating-dock";
-  const isSidebarChips = pillLayoutMode === "sidebar-chips";
+  const isSidebarChips = pillLayoutMode === "sidebar-chips" || pillLayoutMode === "index-tabs";
   const isTwoColGrid = pillLayoutMode === "two-col-grid";
   const isThreeColTiles = pillLayoutMode === "three-col-tiles";
   const isVerticalList = pillLayoutMode === "vertical-list";
@@ -484,14 +539,17 @@ export function ExpandablePillRow({
           };
         } else if (isSidebarChips) {
           modeOverride = {
-            borderRadius: hasCustomPillShape && customPillRadius !== undefined ? customPillRadius : 7,
+            borderTopLeftRadius: hasCustomPillShape && customPillRadius !== undefined ? customPillRadius : 8,
+            borderTopRightRadius: hasCustomPillShape && customPillRadius !== undefined ? customPillRadius : 8,
+            borderBottomLeftRadius: 0,
+            borderBottomRightRadius: 0,
             borderWidth: 1,
-            borderColor: isActive ? theme.gold : theme.outlineVariant,
-            borderLeftWidth: 3.5,
-            borderLeftColor: isActive ? theme.gold : theme.kenyaGreen,
-            backgroundColor: isActive ? theme.primaryContainer : theme.surfaceContainerLow,
+            borderBottomWidth: isActive ? 2 : 1,
+            borderColor: isActive ? theme.outline : theme.outlineVariant,
+            borderBottomColor: isActive ? theme.gold : theme.outlineVariant,
+            backgroundColor: isActive ? theme.bgCard : theme.surfaceContainerLow,
             paddingVertical: isCustomPillSize ? pmPV : 6,
-            paddingHorizontal: isCustomPillSize ? pmPH : 9,
+            paddingHorizontal: isCustomPillSize ? pmPH : 10,
             minHeight: isCustomPillSize ? pmMinH : 32,
           };
         } else if (isTwoColGrid) {
@@ -958,7 +1016,6 @@ export function ExpandablePillRow({
   }
 
   const resolvedFadeColor = fadeColor || theme.bgPrimary;
-  const sbStyle = themeConfig?.horizontalScrollbarStyle || "subtle-bar";
   const sbThickness = resolveScrollbarThicknessPx(
     themeConfig?.horizontalScrollbarThickness || "thin"
   );
@@ -1111,6 +1168,42 @@ export function ExpandablePillRow({
         </View>
       );
     }
+    if ((isTwoColGrid || isThreeColTiles) && count > 6) {
+      return (
+        <View
+          key={`pill-row-${pillLayoutMode}-${themeKey}`}
+          style={[
+            outerSpacing,
+            style,
+            {
+              maxHeight: 148,
+              borderRadius: hasCustomPillShape && customPillRadius !== undefined ? customPillRadius : 12,
+              borderWidth: StyleSheet.hairlineWidth,
+              borderColor: theme.outlineVariant,
+              backgroundColor: theme.surfaceContainerLow,
+              padding: 6,
+            },
+          ]}
+        >
+          <ScrollView
+            nestedScrollEnabled
+            showsVerticalScrollIndicator={showVertSb}
+            contentContainerStyle={[
+              innerContentStyle,
+              {
+                width: "100%",
+                flexDirection: "row",
+                flexWrap: "wrap",
+                justifyContent: "flex-start",
+                gap: isThreeColTiles ? 5 : 6,
+              },
+            ]}
+          >
+            {renderedPills}
+          </ScrollView>
+        </View>
+      );
+    }
     return (
       <View
         key={`pill-row-${pillLayoutMode}-${themeKey}`}
@@ -1175,7 +1268,7 @@ export function ExpandablePillRow({
                 alwaysBounceHorizontal={true}
                 overScrollMode="always"
                 showsHorizontalScrollIndicator={showNativeSb}
-                scrollEventThrottle={16}
+                scrollEventThrottle={48}
                 onLayout={handleLayout}
                 onContentSizeChange={handleContentSizeChange}
                 onScroll={handleScroll}
@@ -1253,7 +1346,7 @@ export function ExpandablePillRow({
                 alwaysBounceHorizontal={true}
                 overScrollMode="always"
                 showsHorizontalScrollIndicator={showNativeSb}
-                scrollEventThrottle={16}
+                scrollEventThrottle={48}
                 onLayout={handleLayout}
                 onContentSizeChange={handleContentSizeChange}
                 onScroll={handleScroll}
@@ -1287,7 +1380,9 @@ export function ExpandablePillRow({
         android_ripple={androidRipple(theme.rippleColor, true)}
         onPress={() => {
           triggerHaptic(8);
-          LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
+          if (!themeConfig?.reduceMotion) {
+            LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
+          }
           setExpanded((prev) => !prev);
         }}
         hitSlop={8}

@@ -2,10 +2,11 @@
 "use client";
 
 import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
-import StagedVarietiesPanel from "@/components/learn/StagedVarietiesPanel";
 import SearchInput from "@/components/ui/SearchInput";
 import { useState, useEffect, useMemo, useCallback } from "react";
+import dynamic from "next/dynamic";
 import Link from "next/link";
+import { useDebouncedValue } from "@/lib/useDebouncedValue";
 import {
   ArrowRight,
   Users,
@@ -19,7 +20,18 @@ import {
   Trophy,
 } from "lucide-react";
 import ToolShell, { type RichGuideEntry } from "@/components/tools/ToolShell";
-import ProverbsView from "@/components/learn/ProverbsView";
+const ProverbsView = dynamic(() => import("@/components/learn/ProverbsView"), {
+  ssr: false,
+  loading: () => (
+    <div className="py-12 text-center text-sm text-text-muted animate-pulse">
+      Loading proverbs &amp; oral wisdom...
+    </div>
+  ),
+});
+
+const StagedVarietiesPanel = dynamic(() => import("@/components/learn/StagedVarietiesPanel"), {
+  ssr: false,
+});
 import type { LanguageConfig } from "@/data/courses/types";
 import { PUBLISHED_COURSE_SUMMARIES } from "@/data/courses/catalog-summary";
 import { getLanguageIdentity } from "@/data/language-identity";
@@ -100,6 +112,7 @@ export default function LearnPage() {
   const [activeHubTab, setActiveHubTab] = useState<"courses" | "proverbs">("courses");
   const [familyFilter, setFamilyFilter] = useState<string>("All");
   const [searchQuery, setSearchQuery] = useState<string>("");
+  const debouncedSearchQuery = useDebouncedValue(searchQuery, 180);
   const [wordIndex, setWordIndex] = useState<number>(() => getDeterministicDailyIndex(INITIAL_RANDOM_WORDS?.length || 0));
 
   useEffect(() => {
@@ -121,7 +134,7 @@ export default function LearnPage() {
   }, [readyLangs]);
 
   const filteredLangs = useMemo(() => {
-    const q = normalizeLanguageQuery(searchQuery.trim());
+    const q = normalizeLanguageQuery(debouncedSearchQuery.trim());
     return readyLangs.filter((l) => {
       if (familyFilter !== "All" && l.family !== familyFilter) return false;
       if (!q) return true;
@@ -133,7 +146,7 @@ export default function LearnPage() {
         l.counties.some((c) => normalizeLanguageQuery(c).includes(q))
       );
     });
-  }, [readyLangs, familyFilter, searchQuery]);
+  }, [readyLangs, familyFilter, debouncedSearchQuery]);
 
   const overallStats = useMemo(() => {
     let totalXp = 0;

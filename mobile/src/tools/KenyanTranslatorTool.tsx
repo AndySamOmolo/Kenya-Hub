@@ -69,6 +69,7 @@ export function KenyanTranslatorTool({
   const [activeCategory, setActiveCategory] = useState<string>("greetings");
   const [categoryPage, setCategoryPage] = useState(1);
   const [categoryFilter, setCategoryFilter] = useState("");
+  const deferredCategoryFilter = useDeferredValue(categoryFilter);
   const [searchPage, setSearchPage] = useState(1);
   const [audioOnly, setAudioOnly] = useState(false);
 
@@ -202,7 +203,7 @@ export function KenyanTranslatorTool({
       }
     };
 
-    const debounceTimer = setTimeout(runBatched, 90);
+    const debounceTimer = setTimeout(runBatched, 240);
     return () => {
       cancelled = true;
       clearTimeout(debounceTimer);
@@ -220,28 +221,39 @@ export function KenyanTranslatorTool({
   const [contribSubmitted, setContribSubmitted] = useState(false);
 
   useEffect(() => {
-    AsyncStorage.getItem("kh-translator-recent").then((raw) => {
-      if (raw) {
-        try {
-          setRecentSearches(JSON.parse(raw));
-        } catch {}
-      }
-    });
-    AsyncStorage.getItem("kh-translator-favs").then((raw) => {
-      if (raw) {
-        try {
-          setFavorites(JSON.parse(raw));
-        } catch {}
-      }
-    });
-    AsyncStorage.getItem("kh-user-contributions").then((raw) => {
-      if (raw) {
-        try {
-          const parsed = JSON.parse(raw);
-          if (Array.isArray(parsed)) setUserContributions(parsed);
-        } catch {}
-      }
-    });
+    let active = true;
+    AsyncStorage.multiGet([
+      "kh-translator-recent",
+      "kh-translator-favs",
+      "kh-user-contributions",
+    ])
+      .then((entries) => {
+        if (!active) return;
+        const map = new Map(entries);
+        const recentRaw = map.get("kh-translator-recent");
+        if (recentRaw) {
+          try {
+            setRecentSearches(JSON.parse(recentRaw));
+          } catch {}
+        }
+        const favsRaw = map.get("kh-translator-favs");
+        if (favsRaw) {
+          try {
+            setFavorites(JSON.parse(favsRaw));
+          } catch {}
+        }
+        const contribRaw = map.get("kh-user-contributions");
+        if (contribRaw) {
+          try {
+            const parsed = JSON.parse(contribRaw);
+            if (Array.isArray(parsed)) setUserContributions(parsed);
+          } catch {}
+        }
+      })
+      .catch(() => {});
+    return () => {
+      active = false;
+    };
   }, []);
 
   const showToast = (msg: string) => {
@@ -614,34 +626,35 @@ export function KenyanTranslatorTool({
     }
   }, [browseDict, activeCategory, browseAudioEntries.length]);
 
-  const categoryEntries = useMemo(() => {
+  const dedupedCategoryEntries = useMemo(() => {
     if (!browseDict) return [];
-    let baseEntries: DictEntry[];
     if (activeCategory === "__audio__") {
-      baseEntries = browseAudioEntries;
-    } else {
-      const cat =
-        browseDict.categories.find((c) => c.id === activeCategory) ||
-        browseDict.categories[0];
-      if (!cat) return [];
-      const seen = new Set<string>();
-      baseEntries = cat.entries.filter((e) => {
-        const k = `${e.english.trim().toLowerCase()}|${e.translation.trim().toLowerCase()}`;
-        if (seen.has(k)) return false;
-        seen.add(k);
-        return true;
-      });
+      return browseAudioEntries;
     }
+    const cat =
+      browseDict.categories.find((c) => c.id === activeCategory) ||
+      browseDict.categories[0];
+    if (!cat) return [];
+    const seen = new Set<string>();
+    return cat.entries.filter((e) => {
+      const k = `${e.english.trim().toLowerCase()}|${e.translation.trim().toLowerCase()}`;
+      if (seen.has(k)) return false;
+      seen.add(k);
+      return true;
+    });
+  }, [browseDict, activeCategory, browseAudioEntries]);
+
+  const categoryEntries = useMemo(() => {
     const stripDia = (s: string) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
-    const q = stripDia(categoryFilter.trim());
-    if (!q) return baseEntries;
-    return baseEntries.filter(
+    const q = stripDia(deferredCategoryFilter.trim());
+    if (!q) return dedupedCategoryEntries;
+    return dedupedCategoryEntries.filter(
       (e) =>
         stripDia(e.english).includes(q) ||
         stripDia(e.translation).includes(q) ||
         (e.context && stripDia(e.context).includes(q))
     );
-  }, [browseDict, activeCategory, browseAudioEntries, categoryFilter]);
+  }, [dedupedCategoryEntries, deferredCategoryFilter]);
 
   const visibleCategoryEntries = useMemo(
     () => categoryEntries.slice(0, categoryPage * CATEGORY_PAGE_SIZE),
@@ -1053,9 +1066,10 @@ export function KenyanTranslatorTool({
               }...`}
               placeholderTextColor={theme.textMuted}
               value={searchQuery}
-              onChangeText={(text) => {
-                setSearchQuery(text);
-                if (text.length > 2) addRecentSearch(text);
+              onChangeText={setSearchQuery}
+              onSubmitEditing={() => {
+                const trimmed = searchQuery.trim();
+                if (trimmed.length >= 2) addRecentSearch(trimmed);
               }}
               style={styles.searchInput}
               returnKeyType="search"

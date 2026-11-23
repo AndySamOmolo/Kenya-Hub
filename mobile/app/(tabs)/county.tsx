@@ -408,12 +408,23 @@ const DirectoryCardItem = React.memo(function DirectoryCardItem({
   );
 });
 
-function renderBudgetCard(item: any, router: any, theme: any, themedCardStyle: ReturnType<typeof getThemedCardStyle>, styles: ReturnType<typeof createCountyStyles>) {
+const BudgetCardItem = React.memo(function BudgetCardItem({
+  item,
+  router,
+  theme,
+  themedCardStyle,
+  styles,
+}: {
+  item: any;
+  router: any;
+  theme: any;
+  themedCardStyle: ReturnType<typeof getThemedCardStyle>;
+  styles: ReturnType<typeof createCountyStyles>;
+}) {
   const b = item.budget;
   if (!b) return null;
   return (
     <Pressable
-      key={item.code}
       android_ripple={androidRipple(theme.rippleColor)}
       onPress={() => router.push(`/county/${item.slug}` as any)}
       style={pressableStyle([
@@ -486,12 +497,23 @@ function renderBudgetCard(item: any, router: any, theme: any, themedCardStyle: R
       </View>
     </Pressable>
   );
-}
+});
 
-function renderConstituencyCard(item: any, router: any, theme: any, themedCardStyle: ReturnType<typeof getThemedCardStyle>, styles: ReturnType<typeof createCountyStyles>) {
+const ConstituencyCardItem = React.memo(function ConstituencyCardItem({
+  item,
+  router,
+  theme,
+  themedCardStyle,
+  styles,
+}: {
+  item: any;
+  router: any;
+  theme: any;
+  themedCardStyle: ReturnType<typeof getThemedCardStyle>;
+  styles: ReturnType<typeof createCountyStyles>;
+}) {
   return (
     <Pressable
-      key={item.code}
       android_ripple={androidRipple(theme.rippleColor)}
       onPress={() => router.push(`/county/${item.slug}` as any)}
       style={pressableStyle([
@@ -599,14 +621,25 @@ function renderConstituencyCard(item: any, router: any, theme: any, themedCardSt
       </View>
     </Pressable>
   );
-}
+});
 
-function renderClimateCard(item: any, router: any, theme: any, themedCardStyle: ReturnType<typeof getThemedCardStyle>, styles: ReturnType<typeof createCountyStyles>) {
+const ClimateCardItem = React.memo(function ClimateCardItem({
+  item,
+  router,
+  theme,
+  themedCardStyle,
+  styles,
+}: {
+  item: any;
+  router: any;
+  theme: any;
+  themedCardStyle: ReturnType<typeof getThemedCardStyle>;
+  styles: ReturnType<typeof createCountyStyles>;
+}) {
   const r = item.rain;
   if (!r) return null;
   return (
     <Pressable
-      key={item.code}
       android_ripple={androidRipple(theme.rippleColor)}
       onPress={() => router.push(`/county/${item.slug}` as any)}
       style={pressableStyle([
@@ -688,7 +721,7 @@ function renderClimateCard(item: any, router: any, theme: any, themedCardStyle: 
       </Text>
     </Pressable>
   );
-}
+});
 
 export default function CountyScreen() {
   const router = useRouter();
@@ -706,6 +739,7 @@ export default function CountyScreen() {
     [theme, themeConfig, themeMetrics]
   );
   const screenPadPx = (themeMetrics as any)?.screenPaddingPx ?? Math.round(14 * (themeMetrics?.spacingScale ?? 1));
+  const floatClearance = themeMetrics?.floatingTabBarClearancePx ?? 0;
   const headingTransform = themeConfig.headingTransform || "none";
   const { height: windowHeight } = useWindowDimensions();
   const [activeTab, setActiveTab] = useState<CountyHubTab>("directory");
@@ -763,11 +797,11 @@ export default function CountyScreen() {
   const renderCountyItem = useCallback(
     ({ item }: { item: any }) => {
       if (activeTab === "budgets")
-        return renderBudgetCard(item, router, theme, themedCardStyle, styles);
+        return <BudgetCardItem item={item} router={router} theme={theme} themedCardStyle={themedCardStyle} styles={styles} />;
       if (activeTab === "constituencies")
-        return renderConstituencyCard(item, router, theme, themedCardStyle, styles);
+        return <ConstituencyCardItem item={item} router={router} theme={theme} themedCardStyle={themedCardStyle} styles={styles} />;
       if (activeTab === "climate")
-        return renderClimateCard(item, router, theme, themedCardStyle, styles);
+        return <ClimateCardItem item={item} router={router} theme={theme} themedCardStyle={themedCardStyle} styles={styles} />;
       return <DirectoryCardItem item={item} router={router} theme={theme} themedCardStyle={themedCardStyle} styles={styles} />;
     },
     [activeTab, router, theme, themedCardStyle, styles]
@@ -1011,7 +1045,11 @@ export default function CountyScreen() {
       {activeTab === "compare" ? (
         <ScrollView
           ref={scrollRef}
-          contentContainerStyle={[styles.listContent, { paddingHorizontal: screenPadPx }]}
+          contentContainerStyle={[
+            styles.listContent,
+            { paddingHorizontal: screenPadPx },
+            floatClearance > 0 ? { paddingBottom: Math.round(32 * (themeMetrics?.spacingScale ?? 1)) + floatClearance } : null,
+          ]}
           showsVerticalScrollIndicator={themeConfig?.verticalScrollbarStyle !== "hidden"}
           persistentScrollbar={themeConfig.verticalScrollbarStyle === "always-visible"}
           keyboardShouldPersistTaps="handled"
@@ -1830,7 +1868,11 @@ export default function CountyScreen() {
           data={filtered}
           extraData={listExtraData}
           keyExtractor={keyExtractor}
-          contentContainerStyle={[styles.listContent, { paddingHorizontal: screenPadPx }]}
+          contentContainerStyle={[
+            styles.listContent,
+            { paddingHorizontal: screenPadPx },
+            floatClearance > 0 ? { paddingBottom: Math.round(32 * (themeMetrics?.spacingScale ?? 1)) + floatClearance } : null,
+          ]}
           showsVerticalScrollIndicator={themeConfig?.verticalScrollbarStyle !== "hidden"}
           persistentScrollbar={themeConfig.verticalScrollbarStyle === "always-visible"}
           keyboardShouldPersistTaps="handled"
@@ -2041,6 +2083,11 @@ export default function CountyScreen() {
               data={pickerFiltered}
               keyExtractor={(item) => `pick-${item.slug}`}
               keyboardShouldPersistTaps="handled"
+              initialNumToRender={10}
+              maxToRenderPerBatch={10}
+              windowSize={5}
+              updateCellsBatchingPeriod={40}
+              removeClippedSubviews={Platform.OS === "android"}
               showsVerticalScrollIndicator={themeConfig?.verticalScrollbarStyle !== "hidden"}
           persistentScrollbar={themeConfig?.verticalScrollbarStyle === "always-visible"}
               renderItem={({ item }) => {

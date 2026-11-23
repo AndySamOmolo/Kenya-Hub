@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback, useMemo } from "react";
 import {
   AccessibilityInfo,
+  AppState,
   LayoutAnimation,
   Linking,
   Platform,
@@ -24,11 +25,11 @@ import {
 } from "../../theme";
 import type { HomeLayoutPreset, ThemeConfig, ThemeMetrics } from "../../lib/theme-engine";
 import { TOOLS, getCategoryInfo } from "../../shared/lib/tools-registry";
+import { INITIAL_RANDOM_WORDS } from "../../shared/data/dictionaries/random-words";
 import {
-  INITIAL_RANDOM_WORDS,
   TOTAL_DICTIONARY_ENTRIES,
   ALL_DICT_METAS,
-} from "../../shared/data/language-sources";
+} from "../../shared/data/dictionaries/catalog";
 import { DynamicIcon } from "../DynamicIcon";
 import { styles as defaultHomeStyles, createHomeStyles } from "./styles";
 
@@ -225,7 +226,7 @@ export function renderInlineMarkdown(
   return nodes;
 }
 
-export function BlogMarkdownContent({
+export const BlogMarkdownContent = React.memo(function BlogMarkdownContent({
   content,
   theme,
   onNavigateLink,
@@ -234,6 +235,7 @@ export function BlogMarkdownContent({
   theme: any;
   onNavigateLink?: (href: string) => void;
 }) {
+  const blocks = useMemo(() => {
   const lines = content.replace(/\r\n/g, "\n").split("\n");
   const blocks: React.ReactNode[] = [];
   let i = 0;
@@ -489,16 +491,20 @@ export function BlogMarkdownContent({
     );
   }
 
+  return blocks;
+  }, [content, theme, onNavigateLink]);
+
   return <View style={{ gap: 8 }}>{blocks}</View>;
-}
+});
 
 /**
  * Isolated Featured Language Card (MOB-4, UX-6)
  * Owns its own state & timer so rotating never re-renders the 1,100+ line HomeScreen.
  */
-export function FeaturedLanguageWidget({
+export const FeaturedLanguageWidget = React.memo(function FeaturedLanguageWidget({
   learnStats,
   paused = false,
+  sharedStyles,
 }: {
   learnStats: {
     langId: string;
@@ -507,6 +513,7 @@ export function FeaturedLanguageWidget({
     streak: number;
   };
   paused?: boolean;
+  sharedStyles?: ReturnType<typeof createHomeStyles>;
 }) {
   const router = useRouter();
   const { theme, themeConfig, themeMetrics, resolvedFonts } = useTheme();
@@ -514,7 +521,10 @@ export function FeaturedLanguageWidget({
     () => getThemedCardStyle(theme, themeConfig, themeMetrics),
     [theme, themeConfig, themeMetrics]
   );
-  const styles = useMemo(() => createHomeStyles(themeMetrics, resolvedFonts), [themeMetrics, resolvedFonts]);
+  const styles = useMemo(
+    () => sharedStyles ?? createHomeStyles(themeMetrics, resolvedFonts),
+    [sharedStyles, themeMetrics, resolvedFonts]
+  );
   const isFocused = useIsFocused();
   const reduceMotion = useReduceMotionEnabled();
   const [featuredLangIdx, setFeaturedLangIdx] = useState<number>(
@@ -523,9 +533,11 @@ export function FeaturedLanguageWidget({
 
   const rotateNext = useCallback(
     (withHaptic = false) => {
-      if (withHaptic) triggerHaptic(8);
-      if (!reduceMotion) {
-        LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
+      if (withHaptic) {
+        triggerHaptic(8);
+        if (!reduceMotion) {
+          LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
+        }
       }
       setFeaturedLangIdx((i) => (i + 1) % ROTATING_LANGUAGES.length);
     },
@@ -535,6 +547,7 @@ export function FeaturedLanguageWidget({
   useEffect(() => {
     if (!isFocused || paused) return;
     const timer = setInterval(() => {
+      if (AppState.currentState !== "active") return;
       rotateNext(false);
     }, 7000);
     return () => clearInterval(timer);
@@ -642,20 +655,29 @@ export function FeaturedLanguageWidget({
       </Pressable>
     </View>
   );
-}
+});
 
 /**
  * Isolated Word of the Moment Card (MOB-4, UX-6)
  * Owns its own state & timer so rotating never re-renders HomeScreen.
  */
-export function WordOfTheMomentWidget({ paused = false }: { paused?: boolean }) {
+export const WordOfTheMomentWidget = React.memo(function WordOfTheMomentWidget({
+  paused = false,
+  sharedStyles,
+}: {
+  paused?: boolean;
+  sharedStyles?: ReturnType<typeof createHomeStyles>;
+}) {
   const router = useRouter();
   const { theme, themeConfig, themeMetrics, resolvedFonts } = useTheme();
   const themedCardStyle = useMemo(
     () => getThemedCardStyle(theme, themeConfig, themeMetrics),
     [theme, themeConfig, themeMetrics]
   );
-  const styles = useMemo(() => createHomeStyles(themeMetrics, resolvedFonts), [themeMetrics, resolvedFonts]);
+  const styles = useMemo(
+    () => sharedStyles ?? createHomeStyles(themeMetrics, resolvedFonts),
+    [sharedStyles, themeMetrics, resolvedFonts]
+  );
   const isFocused = useIsFocused();
   const reduceMotion = useReduceMotionEnabled();
   const [wordIdx, setWordIdx] = useState<number>(() =>
@@ -666,9 +688,11 @@ export function WordOfTheMomentWidget({ paused = false }: { paused?: boolean }) 
 
   const nextWord = useCallback(
     (withHaptic = false) => {
-      if (withHaptic) triggerHaptic(8);
-      if (!reduceMotion) {
-        LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
+      if (withHaptic) {
+        triggerHaptic(8);
+        if (!reduceMotion) {
+          LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
+        }
       }
       setWordIdx((i) => (i + 1) % Math.max(1, INITIAL_RANDOM_WORDS.length));
     },
@@ -678,6 +702,7 @@ export function WordOfTheMomentWidget({ paused = false }: { paused?: boolean }) 
   useEffect(() => {
     if (!isFocused || paused) return;
     const timer = setInterval(() => {
+      if (AppState.currentState !== "active") return;
       nextWord(false);
     }, 7000);
     return () => clearInterval(timer);
@@ -767,23 +792,28 @@ export function WordOfTheMomentWidget({ paused = false }: { paused?: boolean }) 
       </Pressable>
     </View>
   );
-}
+});
 
 /** Compact Bento Tile for Android Home Screen */
-export function PopularToolRow({
+export const PopularToolRow = React.memo(function PopularToolRow({
   tool,
   isPinned,
   onTogglePin,
   homeLayout,
+  sharedStyles,
 }: {
   tool: (typeof TOOLS)[0];
   isPinned: boolean;
   onTogglePin: (slug: string) => void;
   homeLayout?: HomeLayoutPreset;
+  sharedStyles?: ReturnType<typeof createHomeStyles>;
 }) {
   const router = useRouter();
   const { theme, themeConfig, themeMetrics, resolvedFonts } = useTheme();
-  const styles = useMemo(() => createHomeStyles(themeMetrics, resolvedFonts), [themeMetrics, resolvedFonts]);
+  const styles = useMemo(
+    () => sharedStyles ?? createHomeStyles(themeMetrics, resolvedFonts),
+    [sharedStyles, themeMetrics, resolvedFonts]
+  );
   const themedCardStyle = useMemo(
     () => getThemedCardStyle(theme, themeConfig, themeMetrics),
     [theme, themeConfig, themeMetrics]
@@ -902,7 +932,7 @@ export function PopularToolRow({
       </Pressable>
     </View>
   );
-}
+});
 
 export const ROTATING_LANGUAGES = [
   { id: "swahili", name: "Kiswahili", greeting: "Jambo!", region: "Swahili Coast" },
@@ -1009,11 +1039,26 @@ export function SUPER_APP_APP_TILES(
   const iconScale = themeMetrics?.iconScale ?? 1;
 
   return items.map((item) => {
-    const baseSize = layout === "large-tiles" ? 50 : isRowList ? 34 : 46;
+    const baseSize =
+      layout === "large-tiles"
+        ? 36
+        : isRowList
+        ? 28
+        : isTwoCol
+        ? 32
+        : 46;
     const badge = themeConfig
       ? getThemedIconBadgeStyle(theme, themeConfig, item.color, baseSize)
       : null;
-    const iconSize = Math.round((layout === "large-tiles" ? 24 : isRowList ? 18 : 22) * iconScale);
+    const iconSize = Math.round(
+      (layout === "large-tiles"
+        ? 18
+        : isRowList
+        ? 15
+        : isTwoCol
+        ? 16
+        : 22) * iconScale
+    );
 
     return (
       <Pressable
@@ -1038,13 +1083,13 @@ export function SUPER_APP_APP_TILES(
             ? [
                 cardStyle,
                 {
-                  width: "48.2%",
+                  width: "48.5%",
                   flexDirection: layout === "large-tiles" ? "column" : "row",
                   alignItems: "center",
                   justifyContent: layout === "large-tiles" ? "center" : "flex-start",
-                  paddingHorizontal: layout === "editorial-cards" ? 14 : 11,
-                  paddingVertical: layout === "large-tiles" ? 14 : layout === "editorial-cards" ? 13 : 10,
-                  gap: 10,
+                  paddingHorizontal: layout === "large-tiles" ? 10 : 9,
+                  paddingVertical: layout === "large-tiles" ? 9 : 7,
+                  gap: layout === "large-tiles" ? 6 : 8,
                 },
               ]
             : null,
@@ -1052,12 +1097,13 @@ export function SUPER_APP_APP_TILES(
             ? [
                 layout === "compact-list" && cardStyle ? cardStyle : null,
                 {
-                  width: "100%",
+                  width: "48.5%",
                   flexDirection: "row",
                   alignItems: "center",
                   justifyContent: "space-between",
-                  paddingHorizontal: layout === "minimal-rows" ? 4 : 12,
-                  paddingVertical: layout === "minimal-rows" ? 8 : 7,
+                  paddingHorizontal: 8,
+                  paddingVertical: 6,
+                  gap: 7,
                   borderBottomWidth: layout === "minimal-rows" ? 1 : undefined,
                   borderBottomColor: layout === "minimal-rows" ? theme.outlineVariant : undefined,
                 },

@@ -86,7 +86,7 @@ function formatInlineMarkdown(text: string): string {
       const safeSrc = sanitizeUrl(src);
       const safeAlt = escapeHtml(alt);
       mediaSpans.push(
-        `<img src="${safeSrc}" alt="${safeAlt}" loading="lazy" class="rounded-xl my-6" />`
+        `<img src="${safeSrc}" alt="${safeAlt}" loading="lazy" decoding="async" class="rounded-xl my-6" />`
       );
       return `___MEDIASPAN_${mediaSpans.length - 1}___`;
     }

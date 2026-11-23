@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import { Tabs, useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { Modal, Platform, Pressable, StyleSheet, Text, View } from "react-native";
@@ -10,6 +10,131 @@ import {
   type MenuIndicatorStyle,
   type TabBarStyle,
 } from "../../src/lib/theme-engine";
+
+const QUICK_JUMP_ITEMS = [
+  { label: "Home", icon: "home-outline", route: "/" },
+  { label: "Learn", icon: "school-outline", route: "/learn" },
+  { label: "Tools", icon: "grid-outline", route: "/tools" },
+  { label: "Counties", icon: "map-outline", route: "/county" },
+  { label: "Saved", icon: "bookmark-outline", route: "/saved" },
+  { label: "Settings", icon: "settings-outline", route: "/settings" },
+] as const;
+
+const QuickJumpMenu = React.memo(function QuickJumpMenu({
+  quickPos,
+  bottomOffset,
+  iconScale,
+  reduceMotion,
+  gold,
+  outlineVariant,
+  surfaceContainer,
+  surfaceContainerLow,
+  textPrimary,
+  headingFont,
+  bodyFont,
+}: {
+  quickPos: "bottom-right" | "bottom-left";
+  bottomOffset: number;
+  iconScale: number;
+  reduceMotion: boolean;
+  gold: string;
+  outlineVariant: string;
+  surfaceContainer: string;
+  surfaceContainerLow: string;
+  textPrimary: string;
+  headingFont: string;
+  bodyFont: string;
+}) {
+  const router = useRouter();
+  const [quickMenuOpen, setQuickMenuOpen] = useState(false);
+
+  return (
+    <>
+      <Pressable
+        onPress={() => {
+          triggerHaptic(8);
+          setQuickMenuOpen(true);
+        }}
+        accessibilityRole="button"
+        accessibilityLabel="Open quick navigation menu"
+        style={[
+          styles.quickFabWrap,
+          {
+            bottom: bottomOffset,
+            right: quickPos === "bottom-right" ? 16 : undefined,
+            left: quickPos === "bottom-left" ? 16 : undefined,
+          },
+        ]}
+      >
+        <View
+          style={[
+            styles.quickFab,
+            {
+              backgroundColor: gold,
+              borderColor: outlineVariant,
+            },
+          ]}
+        >
+          <Ionicons name="apps" size={Math.round(20 * iconScale)} color={getContrastInk(gold)} />
+        </View>
+      </Pressable>
+
+      <Modal
+        visible={quickMenuOpen}
+        transparent
+        animationType={reduceMotion ? "none" : "fade"}
+        onRequestClose={() => setQuickMenuOpen(false)}
+      >
+        <Pressable
+          style={styles.quickBackdrop}
+          onPress={() => setQuickMenuOpen(false)}
+        >
+          <View
+            style={[
+              styles.quickSheet,
+              {
+                backgroundColor: surfaceContainer,
+                borderColor: outlineVariant,
+              },
+            ]}
+          >
+            <Text style={[styles.quickTitle, { color: textPrimary, fontFamily: headingFont }]}>
+              Quick Jump Menu
+            </Text>
+            <View style={styles.quickGrid}>
+              {QUICK_JUMP_ITEMS.map((item) => (
+                <Pressable
+                  key={item.route}
+                  onPress={() => {
+                    triggerHaptic(6);
+                    setQuickMenuOpen(false);
+                    router.push(item.route as any);
+                  }}
+                  style={styles.quickTileWrap}
+                >
+                  <View
+                    style={[
+                      styles.quickTile,
+                      {
+                        backgroundColor: surfaceContainerLow,
+                        borderColor: outlineVariant,
+                      },
+                    ]}
+                  >
+                    <Ionicons name={item.icon} size={Math.round(20 * iconScale)} color={gold} />
+                    <Text style={[styles.quickTileText, { color: textPrimary, fontFamily: bodyFont }]}>
+                      {item.label}
+                    </Text>
+                  </View>
+                </Pressable>
+              ))}
+            </View>
+          </View>
+        </Pressable>
+      </Modal>
+    </>
+  );
+});
 
 const M3TabIcon = React.memo(function M3TabIcon({
   name,
@@ -40,7 +165,7 @@ const M3TabIcon = React.memo(function M3TabIcon({
 
   return (
     <View style={{ alignItems: "center", justifyContent: "center" }}>
-      {focused && tabBarStyleMode === "top-accent" && (
+      {focused && (tabBarStyleMode === "top-accent" || effectiveIndicator === "bracket") && (
         <View
           style={{
             position: "absolute",
@@ -114,9 +239,7 @@ const M3TabIcon = React.memo(function M3TabIcon({
 
 export default function TabLayout() {
   const { theme, themeConfig, themeMetrics, themeKey, resolvedFonts } = useTheme();
-  const router = useRouter();
   const insets = useSafeAreaInsets();
-  const [quickMenuOpen, setQuickMenuOpen] = useState(false);
 
   const bottomInset = Math.max(insets.bottom, Platform.OS === "android" ? 10 : 24);
   const tabBarStyleMode: TabBarStyle = themeConfig.tabBarStyle || "classic";
@@ -137,77 +260,99 @@ export default function TabLayout() {
   const iconScale = themeMetrics?.iconScale ?? 1.0;
   const tabBarHeight = isFloating ? baseHeight : baseHeight + bottomInset;
   const quickPos = themeConfig.quickMenuPosition || "off";
+  const fontScale = themeMetrics?.fontScale ?? 1;
 
-  return (
-    <View style={{ flex: 1, backgroundColor: theme.bgPrimary }}>
-      <Tabs
-        screenOptions={{
-          headerShown: false,
-          lazy: true,
-          freezeOnBlur: false,
-          sceneStyle: { backgroundColor: theme.bgPrimary },
-          tabBarActiveTintColor: theme.gold,
-          tabBarInactiveTintColor: theme.textSecondary,
-          tabBarShowLabel: showLabels,
-          tabBarHideOnKeyboard: true,
-          tabBarAllowFontScaling: true,
-          tabBarBackground: () => (
-            <View
-              key={`${themeKey}-${tabBarStyleMode}-${indicatorStyle}`}
-              style={[
-                StyleSheet.absoluteFill,
-                {
-                  backgroundColor:
-                    tabBarStyleMode === "segmented"
-                      ? theme.surfaceContainerHigh
-                      : theme.surfaceContainer,
-                  borderRadius:
-                    tabBarStyleMode === "floating-pill"
-                      ? 26
-                      : tabBarStyleMode === "segmented"
-                      ? 16
-                      : 0,
-                },
-              ]}
-            />
-          ),
-          tabBarStyle: [
-            styles.tabBar,
+  const screenOptions = useMemo(
+    () => ({
+      headerShown: false,
+      lazy: true,
+      freezeOnBlur: false,
+      sceneStyle: { backgroundColor: theme.bgPrimary },
+      tabBarActiveTintColor: theme.gold,
+      tabBarInactiveTintColor: theme.textSecondary,
+      tabBarShowLabel: showLabels,
+      tabBarHideOnKeyboard: true,
+      tabBarAllowFontScaling: true,
+      tabBarBackground: () => (
+        <View
+          key={`${themeKey}-${tabBarStyleMode}-${indicatorStyle}`}
+          style={[
+            StyleSheet.absoluteFill,
             {
               backgroundColor:
                 tabBarStyleMode === "segmented"
                   ? theme.surfaceContainerHigh
                   : theme.surfaceContainer,
-              borderTopColor: theme.outlineVariant,
-              minHeight: tabBarHeight,
-              paddingBottom: isFloating ? (isExtraSmall ? 5 : 8) : bottomInset,
-              paddingTop: isExtraSmall ? 3 : isCompact ? 5 : 8,
+              borderRadius:
+                tabBarStyleMode === "floating-pill"
+                  ? 26
+                  : tabBarStyleMode === "segmented"
+                  ? 16
+                  : 0,
             },
-            isFloating && {
-              position: "absolute",
-              left: 14,
-              right: 14,
-              bottom: Math.max(10, bottomInset),
-              borderRadius: tabBarStyleMode === "segmented" ? 16 : 26,
-              borderWidth: 1,
-              borderTopWidth: 1,
-              borderColor: theme.outlineVariant,
-              elevation: 20,
-            },
-            tabBarStyleMode === "docked-cards" && {
-              paddingHorizontal: 8,
-            },
-          ],
-          tabBarLabelStyle: [
-            styles.tabLabel,
-            {
-              fontSize: Math.round((isExtraSmall || isCompact ? 10 : 11) * Math.max(0.85, Math.min(1.2, themeMetrics?.fontScale ?? 1))),
-              fontFamily: resolvedFonts.heading,
-            },
-          ],
-          tabBarItemStyle: styles.tabItem,
-        }}
-      >
+          ]}
+        />
+      ),
+      tabBarStyle: [
+        styles.tabBar,
+        {
+          backgroundColor:
+            tabBarStyleMode === "segmented"
+              ? theme.surfaceContainerHigh
+              : theme.surfaceContainer,
+          borderTopColor: theme.outlineVariant,
+          minHeight: tabBarHeight,
+          paddingBottom: isFloating ? (isExtraSmall ? 5 : 8) : bottomInset,
+          paddingTop: isExtraSmall ? 3 : isCompact ? 5 : 8,
+        },
+        isFloating && {
+          position: "absolute" as const,
+          left: 14,
+          right: 14,
+          bottom: Math.max(10, bottomInset),
+          borderRadius: tabBarStyleMode === "segmented" ? 16 : 26,
+          borderWidth: 1,
+          borderTopWidth: 1,
+          borderColor: theme.outlineVariant,
+          elevation: 20,
+        },
+        tabBarStyleMode === "docked-cards" && {
+          paddingHorizontal: 8,
+        },
+      ],
+      tabBarLabelStyle: [
+        styles.tabLabel,
+        {
+          fontSize: Math.round((isExtraSmall || isCompact ? 10 : 11) * Math.max(0.85, Math.min(1.2, fontScale))),
+          fontFamily: resolvedFonts.heading,
+        },
+      ],
+      tabBarItemStyle: styles.tabItem,
+    }),
+    [
+      theme.bgPrimary,
+      theme.gold,
+      theme.textSecondary,
+      theme.surfaceContainerHigh,
+      theme.surfaceContainer,
+      theme.outlineVariant,
+      showLabels,
+      themeKey,
+      tabBarStyleMode,
+      indicatorStyle,
+      tabBarHeight,
+      isFloating,
+      isExtraSmall,
+      isCompact,
+      bottomInset,
+      fontScale,
+      resolvedFonts.heading,
+    ]
+  );
+
+  return (
+    <View style={{ flex: 1, backgroundColor: theme.bgPrimary }}>
+      <Tabs screenOptions={screenOptions}>
         <Tabs.Screen
           name="index"
           options={{
@@ -327,99 +472,19 @@ export default function TabLayout() {
       </Tabs>
 
       {quickPos !== "off" && (
-        <>
-          <Pressable
-            onPress={() => {
-              triggerHaptic(8);
-              setQuickMenuOpen(true);
-            }}
-            accessibilityRole="button"
-            accessibilityLabel="Open quick navigation menu"
-            style={[
-              styles.quickFabWrap,
-              {
-                bottom: tabBarHeight + (isFloating ? Math.max(10, bottomInset) : 0) + 16,
-                right: quickPos === "bottom-right" ? 16 : undefined,
-                left: quickPos === "bottom-left" ? 16 : undefined,
-              },
-            ]}
-          >
-            <View
-              style={[
-                styles.quickFab,
-                {
-                  backgroundColor: theme.gold,
-                  borderColor: theme.outlineVariant,
-                },
-              ]}
-            >
-              <Ionicons name="apps" size={Math.round(20 * iconScale)} color={getContrastInk(theme.gold)} />
-            </View>
-          </Pressable>
-
-          <Modal
-            visible={quickMenuOpen}
-            transparent
-            animationType={themeConfig.reduceMotion ? "none" : "fade"}
-            onRequestClose={() => setQuickMenuOpen(false)}
-          >
-            <Pressable
-              style={styles.quickBackdrop}
-              onPress={() => setQuickMenuOpen(false)}
-            >
-              <View
-                style={[
-                  styles.quickSheet,
-                  {
-                    backgroundColor: theme.surfaceContainer,
-                    borderColor: theme.outlineVariant,
-                  },
-                ]}
-              >
-                <Text style={[styles.quickTitle, { color: theme.textPrimary, fontFamily: resolvedFonts.heading }]}>
-                  Quick Jump Menu
-                </Text>
-                <View style={styles.quickGrid}>
-                  {(
-                    [
-                      { label: "Home", icon: "home-outline", route: "/" },
-                      { label: "Learn", icon: "school-outline", route: "/learn" },
-                      { label: "Tools", icon: "grid-outline", route: "/tools" },
-                      { label: "Counties", icon: "map-outline", route: "/county" },
-                      { label: "Saved", icon: "bookmark-outline", route: "/saved" },
-                      { label: "Settings", icon: "settings-outline", route: "/settings" },
-                    ] as const
-                  ).map((item) => (
-                    <Pressable
-                      key={item.route}
-                      onPress={() => {
-                        triggerHaptic(6);
-                        setQuickMenuOpen(false);
-                        router.push(item.route as any);
-                      }}
-                      style={styles.quickTileWrap}
-                    >
-                      <View
-                        style={[
-                          styles.quickTile,
-                          {
-                            backgroundColor: theme.surfaceContainerLow,
-                            borderColor: theme.outlineVariant,
-                          },
-                        ]}
-                      >
-                        <Ionicons name={item.icon} size={Math.round(20 * iconScale)} color={theme.gold} />
-                        <Text style={[styles.quickTileText, { color: theme.textPrimary, fontFamily: resolvedFonts.body }]}>
-                          {item.label}
-                        </Text>
-                      </View>
-                    </Pressable>
-                  ))}
-                </View>
-              </View>
-            </Pressable>
-          </Modal>
-        </>
+        <QuickJumpMenu
+          quickPos={quickPos}
+          bottomOffset={tabBarHeight + (isFloating ? Math.max(10, bottomInset) : 0) + 16}
+          iconScale={iconScale}
+          reduceMotion={Boolean(themeConfig.reduceMotion)}
+          gold={theme.gold}
+          outlineVariant={theme.outlineVariant}
+          surfaceContainer={theme.surfaceContainer}
+          surfaceContainerLow={theme.surfaceContainerLow}
+          textPrimary={theme.textPrimary}
+          headingFont={resolvedFonts.heading}
+          bodyFont={resolvedFonts.body}
+        />
       )}
     </View>
   );

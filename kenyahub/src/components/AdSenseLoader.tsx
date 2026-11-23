@@ -122,10 +122,10 @@ export default function AdSenseLoader() {
       );
     };
 
-    const evaluatePageCompliance = () => {
+    const evaluatePageCompliance = (): boolean => {
       if (isBlockedRoute(pathname)) {
         setAdSensePausedState(true);
-        return;
+        return false;
       }
 
       if (
@@ -133,7 +133,7 @@ export default function AdSenseLoader() {
         document.querySelector('[data-adsense-pause="true"]')
       ) {
         setAdSensePausedState(true);
-        return;
+        return false;
       }
 
       const mainEl =
@@ -141,11 +141,17 @@ export default function AdSenseLoader() {
         document.querySelector("main");
       if (!mainEl) {
         setAdSensePausedState(true);
-        return;
+        return false;
       }
 
       const visibleTextLength = getPublisherTextLength(mainEl as HTMLElement);
-      setAdSensePausedState(visibleTextLength < MIN_PUBLISHER_TEXT_CHARS);
+      const isCompliant = visibleTextLength >= MIN_PUBLISHER_TEXT_CHARS;
+      setAdSensePausedState(!isCompliant);
+      if (isCompliant) {
+        mutationObserver?.disconnect();
+        mutationObserver = null;
+      }
+      return isCompliant;
     };
 
     const scheduleEvaluation = () => {
@@ -153,10 +159,10 @@ export default function AdSenseLoader() {
       debounceTimer = setTimeout(evaluatePageCompliance, 250);
     };
 
-    evaluatePageCompliance();
+    const isInitiallyCompliant = evaluatePageCompliance();
 
     const observeRoot = document.getElementById("main-content") || document.body;
-    if (observeRoot) {
+    if (!isInitiallyCompliant && !isBlockedRoute(pathname) && observeRoot) {
       mutationObserver = new MutationObserver((mutations) => {
         if (isAdSenseMutation(mutations)) return;
         scheduleEvaluation();

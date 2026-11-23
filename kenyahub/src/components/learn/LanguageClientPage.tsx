@@ -18,11 +18,8 @@ import ToolShell, { type RichGuideEntry } from "@/components/tools/ToolShell";
 import { playLanguageAudio, hasVerifiedAudio, preloadLanguageAudioIndex } from "@/lib/language-audio";
 import { loadFreqShard } from "@/lib/learning-shards";
 import { getLanguageOpenCorpus } from "@/lib/open-corpus";
-import ListenReadView from "@/components/learn/ListenReadView";
 import SkillTree from "@/components/learn/SkillTree";
-import GamesHub from "@/components/learn/GamesHub";
-import GrammarView from "@/components/learn/GrammarView";
-import ProverbsView from "@/components/learn/ProverbsView";
+import { useDebouncedValue } from "@/lib/useDebouncedValue";
 import CustomSelect from "@/components/ui/CustomSelect";
 import SearchInput from "@/components/ui/SearchInput";
 import type {
@@ -54,6 +51,42 @@ const LessonPlayer = dynamic(() => import("@/components/learn/LessonPlayer"), {
   loading: () => (
     <div className="min-h-[85vh] flex items-center justify-center py-12 text-center text-sm text-text-muted animate-pulse">
       Loading interactive lesson...
+    </div>
+  ),
+});
+
+const ListenReadView = dynamic(() => import("@/components/learn/ListenReadView"), {
+  ssr: false,
+  loading: () => (
+    <div className="py-12 text-center text-sm text-text-muted animate-pulse">
+      Loading listening &amp; reading studio...
+    </div>
+  ),
+});
+
+const GamesHub = dynamic(() => import("@/components/learn/GamesHub"), {
+  ssr: false,
+  loading: () => (
+    <div className="py-12 text-center text-sm text-text-muted animate-pulse">
+      Loading mini-games...
+    </div>
+  ),
+});
+
+const GrammarView = dynamic(() => import("@/components/learn/GrammarView"), {
+  ssr: false,
+  loading: () => (
+    <div className="py-12 text-center text-sm text-text-muted animate-pulse">
+      Loading grammar reference...
+    </div>
+  ),
+});
+
+const ProverbsView = dynamic(() => import("@/components/learn/ProverbsView"), {
+  ssr: false,
+  loading: () => (
+    <div className="py-12 text-center text-sm text-text-muted animate-pulse">
+      Loading proverbs &amp; wisdom...
     </div>
   ),
 });
@@ -107,6 +140,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
   );
   const [view, setView] = useState<PageView>("lessons");
   const [moduleSearch, setModuleSearch] = useState("");
+  const debouncedModuleSearch = useDebouncedValue(moduleSearch, 180);
   const [selectedUnitFilter, setSelectedUnitFilter] = useState<string>("all");
   const [modulesPage, setModulesPage] = useState(1);
   const [refTablePage, setRefTablePage] = useState(1);
@@ -408,7 +442,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
   }, [view, flashcardDeck.length, handleUpdateProgress]);
 
   const filteredModules = useMemo(() => {
-    const q = moduleSearch.trim().toLowerCase();
+    const q = debouncedModuleSearch.trim().toLowerCase();
     return allSkillsFlat.filter((item) => {
       if (selectedUnitFilter !== "all" && item.unitId !== selectedUnitFilter) {
         return false;
@@ -427,11 +461,11 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
           w.source.toLowerCase().includes(q)
       );
     });
-  }, [allSkillsFlat, moduleSearch, selectedUnitFilter]);
+  }, [allSkillsFlat, debouncedModuleSearch, selectedUnitFilter]);
 
   useEffect(() => {
     setModulesPage(1);
-  }, [moduleSearch, selectedUnitFilter, languageId]);
+  }, [debouncedModuleSearch, selectedUnitFilter, languageId]);
 
   const visibleModules = useMemo(
     () => filteredModules.slice(0, modulesPage * MODULES_PAGE_SIZE),
@@ -1199,7 +1233,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
           languageId={course.config.id}
         />
       ) : view === "proverbs" ? (
-        <ProverbsView lockedLanguageId={course.config.id} />
+        <ProverbsView lockedLanguageId={course.config.id} courseUnits={course.units} />
       ) : (
         <SkillTree
           units={combinedUnits}

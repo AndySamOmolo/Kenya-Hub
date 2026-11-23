@@ -190,8 +190,8 @@ const DIVIDER_STYLE_OPTIONS: readonly { value: DividerStyle; label: string }[] =
 const SECTION_HEADER_STYLE_OPTIONS: readonly { value: SectionHeaderStyle; label: string }[] = [
   { value: "eyebrow", label: "Eyebrow" },
   { value: "bold-title", label: "Bold Title" },
-  { value: "accent-pill", label: "Accent Pill" },
-  { value: "left-bar", label: "Left Bar" },
+  { value: "accent-pill", label: "Index Tag" },
+  { value: "ruled-line", label: "Ruled Masthead" },
 ];
 
 const PRESS_EFFECT_OPTIONS: readonly { value: PressEffect; label: string }[] = [
@@ -305,11 +305,11 @@ const HAPTIC_STRENGTH_OPTIONS: readonly { value: HapticStrength; label: string }
 
 const SCROLLBAR_STYLE_OPTIONS: readonly { value: HorizontalScrollbarStyle; label: string }[] = [
   { value: "hidden", label: "Hidden" },
-  { value: "native-indicator", label: "Native Bar" },
-  { value: "subtle-bar", label: "Subtle Bar" },
-  { value: "accent-track", label: "Accent Track" },
-  { value: "glow-rail", label: "Glow Rail" },
-  { value: "dots", label: "Progress Dots" },
+  { value: "native-indicator", label: "System Bar" },
+  { value: "subtle-bar", label: "Hairline Rail" },
+  { value: "accent-track", label: "Solid Track" },
+  { value: "tick-ruler", label: "Precision Ruler" },
+  { value: "dots", label: "Step Dots" },
 ];
 
 const SCROLLBAR_THICKNESS_OPTIONS: readonly { value: ScrollbarThickness; label: string }[] = [
@@ -323,21 +323,17 @@ const SCROLLBAR_THICKNESS_OPTIONS: readonly { value: ScrollbarThickness; label: 
 
 const PILL_BAR_LAYOUT_OPTIONS: readonly { value: PillBarLayout; label: string }[] = [
   { value: "scroll-with-expand", label: "Scroll + Expand" },
-  { value: "always-scroll", label: "Always Scroll" },
-  { value: "always-wrap", label: "Always Wrap" },
-  { value: "compact-scroll", label: "Compact Scroll" },
-  { value: "centered-wrap", label: "Centered Wrap" },
-  { value: "grid-pills", label: "Grid Pills" },
   { value: "dropdown", label: "Dropdown Picker" },
   { value: "stepper", label: "Prev/Next Stepper" },
   { value: "underline-tabs", label: "Underline Tabs" },
   { value: "segmented-bar", label: "Segmented Bar" },
   { value: "floating-dock", label: "Floating Dock" },
-  { value: "sidebar-chips", label: "Accent Strip" },
-  { value: "two-col-grid", label: "2-Col Grid" },
-  { value: "three-col-tiles", label: "3-Col Mini Tiles" },
-  { value: "vertical-list", label: "Vertical List" },
+  { value: "index-tabs", label: "Index File Tabs" },
+  { value: "compact-scroll", label: "Compact Scroll" },
   { value: "minimal-text", label: "Minimal Text" },
+  { value: "two-col-grid", label: "2-Col Grid" },
+  { value: "three-col-tiles", label: "3-Col Tiles" },
+  { value: "vertical-list", label: "Vertical List" },
 ];
 
 const APP_BAR_STYLE_OPTIONS: readonly { value: AppBarStyle; label: string }[] = [
@@ -377,12 +373,14 @@ const LETTER_SPACING_OPTIONS: readonly { value: number; label: string }[] = [
 ];
 
 const SURFACE_STYLE_OPTIONS: readonly { value: SurfaceStyle; label: string }[] = [
-  { value: "elevated", label: "Elevated" },
-  { value: "flat", label: "Flat" },
-  { value: "outlined", label: "Outlined" },
-  { value: "glass", label: "Glass" },
+  { value: "elevated", label: "Elevated Card" },
+  { value: "paper-ink", label: "Paper Ink" },
+  { value: "neo-brutal", label: "Swiss Print" },
+  { value: "inset-tray", label: "Inset Tray" },
   { value: "tonal", label: "Tonal Soft" },
-  { value: "crisp", label: "Crisp High" },
+  { value: "outlined", label: "Crisp Outline" },
+  { value: "crisp", label: "High Clarity" },
+  { value: "flat", label: "Seamless Flat" },
 ];
 
 const CARD_RADIUS_OPTIONS: readonly { value: RadiusPreset; label: string }[] = [
@@ -432,12 +430,12 @@ const TAB_BAR_STYLE_OPTIONS: readonly { value: TabBarStyle; label: string }[] = 
 ];
 
 const MENU_INDICATOR_OPTIONS: readonly { value: MenuIndicatorStyle; label: string }[] = [
-  { value: "pill", label: "M3 Pill" },
-  { value: "underline", label: "Underline" },
-  { value: "dot", label: "Dot" },
-  { value: "filled-box", label: "Filled Box" },
-  { value: "glow", label: "Glow" },
-  { value: "outline", label: "Outline" },
+  { value: "pill", label: "Tonal Pill" },
+  { value: "underline", label: "Bottom Rule" },
+  { value: "bracket", label: "Top Notch" },
+  { value: "dot", label: "Minimal Dot" },
+  { value: "filled-box", label: "Solid Stamp" },
+  { value: "outline", label: "Precision Frame" },
 ];
 
 const VERT_SCROLLBAR_OPTIONS: readonly { value: VerticalScrollbarStyle; label: string }[] = [
@@ -447,12 +445,11 @@ const VERT_SCROLLBAR_OPTIONS: readonly { value: VerticalScrollbarStyle; label: s
 ];
 
 const SHADOW_OPTIONS: readonly { value: CardShadowIntensity; label: string }[] = [
-  { value: "none", label: "None" },
-  { value: "subtle", label: "Subtle" },
-  { value: "medium", label: "Medium" },
-  { value: "strong", label: "Strong" },
-  { value: "glow", label: "Accent Glow" },
-  { value: "crisp-3d", label: "Crisp 3D" },
+  { value: "none", label: "Flat" },
+  { value: "subtle", label: "Soft Lift" },
+  { value: "medium", label: "Elevated" },
+  { value: "crisp-3d", label: "Hard Offset" },
+  { value: "strong", label: "Deep Float" },
 ];
 
 const INPUT_STYLE_OPTIONS: readonly { value: InputStylePreset; label: string }[] = [
@@ -465,12 +462,12 @@ const INPUT_STYLE_OPTIONS: readonly { value: InputStylePreset; label: string }[]
 ];
 
 const BUTTON_STYLE_OPTIONS: readonly { value: ButtonStylePreset; label: string }[] = [
-  { value: "filled", label: "Filled" },
-  { value: "tinted", label: "Tinted" },
-  { value: "outlined", label: "Outlined" },
-  { value: "elevated", label: "Elevated" },
-  { value: "pill-glow", label: "Glow" },
-  { value: "flat", label: "Flat" },
+  { value: "filled", label: "Solid Ink" },
+  { value: "tinted", label: "Soft Tint" },
+  { value: "outlined", label: "Hairline Outline" },
+  { value: "elevated", label: "Raised Card" },
+  { value: "keycap-press", label: "Tactile Keycap" },
+  { value: "editorial-link", label: "Editorial Link" },
 ];
 
 const TRANSITION_OPTIONS: readonly { value: PageTransitionPreset; label: string }[] = [
@@ -509,21 +506,22 @@ const HEADER_ALIGNMENT_OPTIONS: readonly { value: HeaderAlignment; label: string
 ];
 
 const CARD_ACCENT_OPTIONS: readonly { value: CardAccentStyle; label: string }[] = [
-  { value: "none", label: "None" },
-  { value: "left-bar", label: "Left Bar" },
-  { value: "top-bar", label: "Top Bar" },
-  { value: "bottom-bar", label: "Bottom Bar" },
-  { value: "tinted-border", label: "Tinted Border" },
-  { value: "glow-edge", label: "Glow Edge" },
+  { value: "none", label: "Clean" },
+  { value: "double-rule", label: "Editorial Rule" },
+  { value: "corner-frame", label: "Print Frame" },
+  { value: "offset-edge", label: "Hardware Lip" },
+  { value: "tinted-border", label: "Ink Outline" },
+  { value: "bottom-bar", label: "Ledger Foot" },
 ];
 
 const ICON_BADGE_OPTIONS: readonly { value: IconBadgeStyle; label: string }[] = [
-  { value: "outline", label: "Outline" },
-  { value: "filled", label: "Filled" },
   { value: "soft-circle", label: "Soft Circle" },
-  { value: "soft-square", label: "Soft Square" },
-  { value: "accent-solid", label: "Accent Solid" },
-  { value: "minimal", label: "Minimal" },
+  { value: "monochrome-ink", label: "Monochrome Ink" },
+  { value: "keycap", label: "Hardware Keycap" },
+  { value: "hairline-ring", label: "Precision Ring" },
+  { value: "duotone-wash", label: "Duotone Wash" },
+  { value: "outline", label: "Crisp Frame" },
+  { value: "minimal", label: "Bare Glyph" },
 ];
 
 const COLOR_BLIND_OPTIONS: readonly { value: ColorBlindMode; label: string }[] = [
@@ -684,6 +682,9 @@ function isMakeoverActive(
     cfg.homeLayout === profile.config.homeLayout &&
     cfg.fontPair === profile.config.fontPair &&
     cfg.pillBarLayout === profile.config.pillBarLayout &&
+    cfg.surfaceStyle === profile.config.surfaceStyle &&
+    cfg.cardAccentStyle === profile.config.cardAccentStyle &&
+    cfg.iconBadgeStyle === profile.config.iconBadgeStyle &&
     Object.values(cfg.customColors ?? {}).filter(Boolean).length === 0
   );
 }
@@ -708,6 +709,7 @@ export function ThemeSettingsView() {
     deleteSavedTheme,
     resetThemeConfig,
     importThemeJson,
+    exportThemeJson,
   } = themeCtx;
 
   const [previewMode, setPreviewMode] = useState<PreviewMode>("mini-app");
@@ -757,8 +759,8 @@ export function ThemeSettingsView() {
   }, [themeConfig?.customColors]);
 
   const exportedJson = useMemo(
-    () => JSON.stringify(themeConfig ?? {}, null, 2),
-    [themeConfig]
+    () => (openSections.backup ? JSON.stringify(themeConfig ?? {}, null, 2) : ""),
+    [openSections.backup, themeConfig]
   );
 
   const darkCount = useMemo(
@@ -903,12 +905,12 @@ export function ThemeSettingsView() {
     try {
       await Share.share({
         title: "KenyaHub Theme Configuration",
-        message: exportedJson,
+        message: exportThemeJson(),
       });
     } catch {
       // Ignore user cancel
     }
-  }, [doHaptic, exportedJson]);
+  }, [doHaptic, exportThemeJson]);
 
   const handleApplyImport = useCallback(() => {
     const trimmed = importInput.trim();
@@ -1733,6 +1735,8 @@ export function ThemeSettingsView() {
               onToggle={() => handleToggleSection("presets")}
               theme={theme}
             >
+              {openSections.presets && (
+                <>
               <View style={styles.presetFilterRow}>
                 {(
                   [
@@ -1855,6 +1859,8 @@ export function ThemeSettingsView() {
                   );
                 })}
               </View>
+                </>
+              )}
             </AccordionCard>
           )}
 
@@ -1872,6 +1878,8 @@ export function ThemeSettingsView() {
               onToggle={() => handleToggleSection("colors")}
               theme={theme}
             >
+              {openSections.colors && (
+                <>
               <OptionPillGroup
                 label="Accent Vibrancy"
                 options={ACCENT_INTENSITY_OPTIONS}
@@ -2047,6 +2055,8 @@ export function ThemeSettingsView() {
                   );
                 })}
               </View>
+                </>
+              )}
             </AccordionCard>
           )}
 
@@ -2060,6 +2070,8 @@ export function ThemeSettingsView() {
               onToggle={() => handleToggleSection("typography")}
               theme={theme}
             >
+              {openSections.typography && (
+                <>
               <OptionPillGroup
                 label="Font Scale"
                 options={FONT_SCALE_OPTIONS}
@@ -2125,6 +2137,8 @@ export function ThemeSettingsView() {
                 }}
                 theme={theme}
               />
+                </>
+              )}
             </AccordionCard>
           )}
 
@@ -2138,6 +2152,8 @@ export function ThemeSettingsView() {
               onToggle={() => handleToggleSection("layout")}
               theme={theme}
             >
+              {openSections.layout && (
+                <>
               <OptionPillGroup
                 label="Surface Style"
                 options={SURFACE_STYLE_OPTIONS}
@@ -2368,6 +2384,8 @@ export function ThemeSettingsView() {
                 }}
                 theme={theme}
               />
+                </>
+              )}
             </AccordionCard>
           )}
 
@@ -2381,6 +2399,8 @@ export function ThemeSettingsView() {
               onToggle={() => handleToggleSection("navigation")}
               theme={theme}
             >
+              {openSections.navigation && (
+                <>
               <ToggleRow
                 label="Kenyan Flag Stripe"
                 description="Show the subtle Black · Red · Green accent stripe"
@@ -2584,6 +2604,8 @@ export function ThemeSettingsView() {
                 }}
                 theme={theme}
               />
+                </>
+              )}
             </AccordionCard>
           )}
 
@@ -2599,6 +2621,8 @@ export function ThemeSettingsView() {
               onToggle={() => handleToggleSection("accessibility")}
               theme={theme}
             >
+              {openSections.accessibility && (
+                <>
               <OptionPillGroup
                 label="Haptic Strength"
                 options={HAPTIC_STRENGTH_OPTIONS}
@@ -2658,6 +2682,8 @@ export function ThemeSettingsView() {
                 }}
                 theme={theme}
               />
+                </>
+              )}
             </AccordionCard>
           )}
 
@@ -2671,6 +2697,8 @@ export function ThemeSettingsView() {
               onToggle={() => handleToggleSection("backup")}
               theme={theme}
             >
+              {openSections.backup && (
+                <>
               <View style={styles.backupGroup}>
                 <View style={styles.backupHeaderRow}>
                   <Text
@@ -2825,6 +2853,8 @@ export function ThemeSettingsView() {
                   </Text>
                 </View>
               </Pressable>
+                </>
+              )}
             </AccordionCard>
           )}
         </View>
@@ -2833,7 +2863,7 @@ export function ThemeSettingsView() {
   );
 }
 
-function MiniAppLivePreview({
+const MiniAppLivePreview = React.memo(function MiniAppLivePreview({
   previewTheme,
   previewConfig,
   previewMetrics,
@@ -3853,9 +3883,9 @@ function MiniAppLivePreview({
       </View>
     </View>
   );
-}
+});
 
-function CardCompactPreview({
+const CardCompactPreview = React.memo(function CardCompactPreview({
   previewTheme,
   previewConfig,
   previewMetrics,
@@ -3999,9 +4029,9 @@ function CardCompactPreview({
       </View>
     </View>
   );
-}
+});
 
-function AccordionCard({
+const AccordionCard = React.memo(function AccordionCard({
   icon,
   title,
   summary,
@@ -4092,9 +4122,9 @@ function AccordionCard({
       )}
     </View>
   );
-}
+});
 
-function OptionPillGroup<T extends string | number>({
+const OptionPillGroup = React.memo(function OptionPillGroup<T extends string | number>({
   label,
   options,
   selectedValue,
@@ -4150,9 +4180,15 @@ function OptionPillGroup<T extends string | number>({
       </View>
     </View>
   );
-}
+}) as <T extends string | number>(props: {
+  label: string;
+  options: readonly { value: T; label: string }[];
+  selectedValue: T;
+  onSelect: (value: T) => void;
+  theme: ThemeColors;
+}) => React.ReactElement;
 
-function ToggleRow({
+const ToggleRow = React.memo(function ToggleRow({
   label,
   description,
   value,
@@ -4206,7 +4242,7 @@ function ToggleRow({
       </View>
     </Pressable>
   );
-}
+});
 
 const styles = StyleSheet.create({
   root: {
