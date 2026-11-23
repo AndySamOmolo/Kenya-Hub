@@ -754,7 +754,7 @@ const ClimateCardItem = React.memo(function ClimateCardItem({
 
 export default function CountyScreen() {
   const router = useRouter();
-  const { theme, isDark, themeConfig, themeMetrics, resolvedFonts, themeKey } = useTheme();
+  const { theme, isDark, themeConfig, themeMetrics, resolvedFonts } = useTheme();
   const styles = useMemo(
     () => createCountyStyles(themeMetrics, resolvedFonts),
     [themeMetrics, resolvedFonts]
@@ -870,7 +870,6 @@ export default function CountyScreen() {
 
   return (
     <SafeAreaView
-      key={themeKey}
       style={[styles.container, { backgroundColor: theme.bgPrimary }]}
       edges={["top", "left", "right"]}
     >
@@ -1911,7 +1910,7 @@ export default function CountyScreen() {
           keyboardShouldPersistTaps="handled"
           overScrollMode="always"
           initialNumToRender={8}
-          maxToRenderPerBatch={8}
+          maxToRenderPerBatch={6}
           updateCellsBatchingPeriod={40}
           windowSize={5}
           removeClippedSubviews={Platform.OS === "android"}
@@ -2116,8 +2115,8 @@ export default function CountyScreen() {
               data={pickerFiltered}
               keyExtractor={(item) => `pick-${item.slug}`}
               keyboardShouldPersistTaps="handled"
-              initialNumToRender={10}
-              maxToRenderPerBatch={10}
+              initialNumToRender={8}
+              maxToRenderPerBatch={6}
               windowSize={5}
               updateCellsBatchingPeriod={40}
               removeClippedSubviews={Platform.OS === "android"}

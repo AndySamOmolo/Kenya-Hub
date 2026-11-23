@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T20:23:01.822Z",
+  "generatedAt": "2026-11-23T20:53:36.141Z",
   "mobileTsxFilesScanned": 49,
   "toolsWired": "33/33",
   "languagesWired": 23,
@@ -401,45 +401,45 @@
     },
     {
       "domain": "theme",
-      "name": "app/(tabs)/index.tsx has atomic SafeAreaView theme key",
+      "name": "app/(tabs)/index.tsx uses reactive useTheme without destructive full-tree remount",
       "status": "pass",
-      "detail": "Found key={isDark ? \"dark\" : \"light\"} in app/(tabs)/index.tsx"
+      "detail": "Verified reactive useTheme in app/(tabs)/index.tsx"
     },
     {
       "domain": "theme",
-      "name": "app/(tabs)/learn.tsx has atomic SafeAreaView theme key",
+      "name": "app/(tabs)/learn.tsx uses reactive useTheme without destructive full-tree remount",
       "status": "pass",
-      "detail": "Found key={isDark ? \"dark\" : \"light\"} in app/(tabs)/learn.tsx"
+      "detail": "Verified reactive useTheme in app/(tabs)/learn.tsx"
     },
     {
       "domain": "theme",
-      "name": "app/(tabs)/tools.tsx has atomic SafeAreaView theme key",
+      "name": "app/(tabs)/tools.tsx uses reactive useTheme without destructive full-tree remount",
       "status": "pass",
-      "detail": "Found key={isDark ? \"dark\" : \"light\"} in app/(tabs)/tools.tsx"
+      "detail": "Verified reactive useTheme in app/(tabs)/tools.tsx"
     },
     {
       "domain": "theme",
-      "name": "app/(tabs)/county.tsx has atomic SafeAreaView theme key",
+      "name": "app/(tabs)/county.tsx uses reactive useTheme without destructive full-tree remount",
       "status": "pass",
-      "detail": "Found key={isDark ? \"dark\" : \"light\"} in app/(tabs)/county.tsx"
+      "detail": "Verified reactive useTheme in app/(tabs)/county.tsx"
     },
     {
       "domain": "theme",
-      "name": "app/(tabs)/saved.tsx has atomic SafeAreaView theme key",
+      "name": "app/(tabs)/saved.tsx uses reactive useTheme without destructive full-tree remount",
       "status": "pass",
-      "detail": "Found key={isDark ? \"dark\" : \"light\"} in app/(tabs)/saved.tsx"
+      "detail": "Verified reactive useTheme in app/(tabs)/saved.tsx"
     },
     {
       "domain": "theme",
-      "name": "app/tools/[slug].tsx has atomic SafeAreaView theme key",
+      "name": "app/tools/[slug].tsx uses reactive useTheme without destructive full-tree remount",
       "status": "pass",
-      "detail": "Found key={isDark ? \"dark\" : \"light\"} in app/tools/[slug].tsx"
+      "detail": "Verified reactive useTheme in app/tools/[slug].tsx"
     },
     {
       "domain": "theme",
-      "name": "app/matatu/index.tsx has atomic SafeAreaView theme key",
+      "name": "app/matatu/index.tsx uses reactive useTheme without destructive full-tree remount",
       "status": "pass",
-      "detail": "Found key={isDark ? \"dark\" : \"light\"} in app/matatu/index.tsx"
+      "detail": "Verified reactive useTheme in app/matatu/index.tsx"
     },
     {
       "domain": "ergonomics",

@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import React, { useCallback, useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import {
   Alert,
   Platform,
@@ -149,7 +149,7 @@ const MODE_OPTIONS: {
   label: string;
   icon: keyof typeof Ionicons.glyphMap;
 }[] = [
-  { value: "system", label: "System", icon: "phone-portrait-outline" },
+  { value: "system", label: "Auto", icon: "phone-portrait-outline" },
   { value: "light", label: "Light", icon: "sunny-outline" },
   { value: "dark", label: "Dark", icon: "moon-outline" },
 ];
@@ -652,6 +652,125 @@ const DIFF_KEY_LABELS: Partial<Record<keyof ThemeConfig, string>> = {
 };
 
 const HEX_REGEX = /^#[0-9A-Fa-f]{6}$/;
+interface SettingsSearchEntry {
+  id: string;
+  label: string;
+  section: AccordionKey;
+  keywords: string;
+  kind?: "control" | "makeover" | "preset";
+  targetId?: string;
+}
+
+const STATIC_SETTINGS_SEARCH_ENTRIES: readonly SettingsSearchEntry[] = [
+  // Makeovers
+  { id: "ctrl-makeovers", label: "One-Tap Makeovers", section: "makeovers", keywords: "makeovers look profile full redesign style theme" },
+  { id: "ctrl-save-theme", label: "Save Custom Theme", section: "makeovers", keywords: "save custom theme bookmark my themes saved presets" },
+  // Presets
+  { id: "ctrl-presets", label: "Theme Presets", section: "presets", keywords: "presets color palette scheme dark light themes" },
+  // Colors
+  { id: "ctrl-accent-vibrancy", label: "Accent Vibrancy", section: "colors", keywords: "accent vibrancy intensity muted balanced vivid saturation colors" },
+  { id: "ctrl-reading-tint", label: "Reading Comfort Tint", section: "colors", keywords: "reading comfort tint warm paper soft sepia cool slate eye care colors" },
+  { id: "ctrl-primary-accent", label: "Primary Accent Color", section: "colors", keywords: "primary accent color gold button highlight hex custom override" },
+  { id: "ctrl-secondary-accent", label: "Secondary Accent Color", section: "colors", keywords: "secondary accent color green badge success hex custom override" },
+  { id: "ctrl-tertiary-accent", label: "Tertiary Accent Color", section: "colors", keywords: "tertiary accent color blue info tag hex custom override" },
+  { id: "ctrl-danger-accent", label: "Danger Accent Color", section: "colors", keywords: "danger accent color red alert warning error hex custom override" },
+  { id: "ctrl-bg-primary", label: "Background Color", section: "colors", keywords: "background bgPrimary canvas screen hex custom color" },
+  { id: "ctrl-surface-card", label: "Card Surface Color", section: "colors", keywords: "card surface color container sheet hex custom" },
+  { id: "ctrl-text-primary", label: "Primary Text Color", section: "colors", keywords: "primary text color ink copy heading hex custom" },
+  { id: "ctrl-border-color", label: "Border Color", section: "colors", keywords: "border color outline divider stroke hex custom" },
+  { id: "ctrl-scrollbar-color", label: "Horizontal Scrollbar Color", section: "colors", keywords: "horizontal scrollbar color thumb indicator rail hex custom" },
+  // Typography
+  { id: "ctrl-font-scale", label: "Font Scale", section: "typography", keywords: "font scale text size zoom larger smaller 85% 92% 100% 108% 118% 128%" },
+  { id: "ctrl-font-pair", label: "Font Pairing", section: "typography", keywords: "font pairing typeface fonts outfit inter classic sans editorial serif mono tech industrial geometric humanist condensed news grotesk warm casual script cursive" },
+  { id: "ctrl-heading-case", label: "Heading Case", section: "typography", keywords: "heading case transform normal uppercase capitalize title text" },
+  { id: "ctrl-number-style", label: "Number Style", section: "typography", keywords: "number style numeric default tabular mono monospace digits" },
+  { id: "ctrl-line-height", label: "Line Height", section: "typography", keywords: "line height leading compact snug normal relaxed airy editorial spacing" },
+  { id: "ctrl-letter-spacing", label: "Letter Spacing", section: "typography", keywords: "letter spacing tracking condensed tight normal open wide tracked kerning" },
+  // Surfaces & Layout ("layout" section, also matches "surfaces")
+  { id: "ctrl-surface-style", label: "Surface Style", section: "layout", keywords: "surfaces surface style card elevated paper ink neo brutal swiss print inset tray tonal soft crisp outline high clarity seamless flat frameless unboxed" },
+  { id: "ctrl-unboxed-mode", label: "Unboxed / Frameless Mode", section: "layout", keywords: "unboxed frameless borderless bare text minimal strip clean no boxes surfaces" },
+  { id: "ctrl-card-radius", label: "Card Corner Radius", section: "layout", keywords: "card corner radius square sharp subtle rounded soft pill surfaces" },
+  { id: "ctrl-button-radius", label: "Button Radius", section: "layout", keywords: "button radius shape square sharp subtle rounded soft pill" },
+  { id: "ctrl-border-width", label: "Border Thickness", section: "layout", keywords: "border thickness width none hairline thin medium thick bold outline surfaces" },
+  { id: "ctrl-card-shadow", label: "Card Shadow & Depth", section: "layout", keywords: "card shadow depth elevation flat soft lift elevated hard offset crisp 3d deep float surfaces" },
+  { id: "ctrl-input-style", label: "Input Field Style", section: "layout", keywords: "input field style search box outlined filled underlined editorial rule pill minimal accent ink frame unboxed" },
+  { id: "ctrl-button-style", label: "Button Style", section: "layout", keywords: "button style solid ink filled soft tint tinted hairline outline elevated raised card tactile keycap editorial link bare text unboxed" },
+  { id: "ctrl-home-layout", label: "Home & Grid Layout", section: "layout", keywords: "home grid layout classic bento grid compact list editorial cards minimal rows large tiles" },
+  { id: "ctrl-screen-padding", label: "Screen Edge Margins", section: "layout", keywords: "screen edge margins padding edge compact standard wide layout" },
+  { id: "ctrl-progress-bar", label: "Progress Bar Style", section: "layout", keywords: "progress bar style rounded sharp segmented thin line" },
+  { id: "ctrl-divider-style", label: "List Divider Style", section: "layout", keywords: "list divider style hairline none stitched dash dashed soft ink accent fade" },
+  { id: "ctrl-section-header", label: "Section Header Style", section: "layout", keywords: "section header style eyebrow bold title index tag accent pill ruled masthead line" },
+  { id: "ctrl-card-accent", label: "Card Accent Strip", section: "layout", keywords: "card accent strip clean none editorial double rule print corner frame hardware offset lip ink outline ledger bottom bar" },
+  { id: "ctrl-icon-container", label: "Icon Container", section: "layout", keywords: "icon container badge style icons soft circle recessed well postage stamp split disc monogram editorial frame ceramic tile tilted diamond lozenge ink seal floating bare glyph hidden no icons" },
+  { id: "ctrl-icon-pack", label: "Icon Glyph Style", section: "layout", keywords: "icon glyph style pack icons outline filled sharp duotone" },
+  { id: "ctrl-density", label: "Layout Density", section: "layout", keywords: "layout density ultra compact comfortable default balanced relaxed spacious" },
+  { id: "ctrl-pill-size", label: "Pill & Chip Size", section: "layout", keywords: "pill chip size xs sm small md medium lg large xl" },
+  { id: "ctrl-icon-size", label: "Icon Size", section: "layout", keywords: "icon size scale icons 80% 90% 100% 112% 125%" },
+  { id: "ctrl-button-size", label: "Button Size", section: "layout", keywords: "button size xs sm small md medium lg large xl" },
+  { id: "ctrl-card-padding", label: "Card Padding", section: "layout", keywords: "card padding xs sm small md medium lg large xl" },
+  { id: "ctrl-tab-bar-size", label: "Bottom Bar Size", section: "layout", keywords: "bottom bar tab bar size xs sm small md medium lg large xl" },
+  { id: "ctrl-app-bar-size", label: "Top Header Size", section: "layout", keywords: "top header app bar size xs sm small md medium lg large xl" },
+  { id: "ctrl-ultra-minimal", label: "Ultra-Minimal Strip", section: "layout", keywords: "ultra minimal strip down unboxed frameless hide icons visibility" },
+  { id: "ctrl-restore-elements", label: "Restore All Elements", section: "layout", keywords: "restore all elements visibility show icons reset" },
+  { id: "ctrl-vis-card-icons", label: "Card & Tile Icons", section: "layout", keywords: "card tile icons visibility show hide toggle" },
+  { id: "ctrl-vis-tab-icons", label: "Bottom Tab Icons", section: "layout", keywords: "bottom tab icons visibility show hide navigation bar toggle" },
+  { id: "ctrl-vis-descriptions", label: "Card Descriptions", section: "layout", keywords: "card descriptions subtitle summary visibility show hide toggle" },
+  { id: "ctrl-vis-category-tags", label: "Category Tags", section: "layout", keywords: "category tags pills badges eyebrow visibility show hide toggle" },
+  { id: "ctrl-vis-arrows", label: "Trailing Arrows", section: "layout", keywords: "trailing arrows chevrons visibility show hide toggle" },
+  { id: "ctrl-vis-greeting", label: "Home Greeting Hero", section: "layout", keywords: "home greeting hero banner visibility show hide toggle" },
+  { id: "ctrl-vis-daily-widgets", label: "Daily Widgets", section: "layout", keywords: "daily widgets sheng trivia visibility show hide toggle" },
+  { id: "ctrl-vis-offline-pill", label: "Top Bar Offline Pill", section: "layout", keywords: "top bar offline pill status badge visibility show hide toggle" },
+  // Navigation ("navigation" section: Menus & Scrollbars)
+  { id: "ctrl-flag-stripe", label: "Kenyan Flag Stripe", section: "navigation", keywords: "kenyan flag stripe black red green accent bar toggle" },
+  { id: "ctrl-tab-bar-style", label: "Bottom Tab Bar Style", section: "navigation", keywords: "bottom tab bar style classic floating pill top accent segmented docked cards compact minimal soft wash navigation menu" },
+  { id: "ctrl-menu-indicator", label: "Active Menu Indicator", section: "navigation", keywords: "active menu indicator tonal pill bottom rule underline top notch bracket minimal dot solid stamp filled box precision frame outline" },
+  { id: "ctrl-quick-jump", label: "Floating Quick-Jump Menu", section: "navigation", keywords: "floating quick jump menu fab position off bottom right bottom left" },
+  { id: "ctrl-status-bar", label: "Status Bar Icons", section: "navigation", keywords: "status bar icons mode auto light dark" },
+  { id: "ctrl-page-transition", label: "Screen Transition Animation", section: "navigation", keywords: "screen transition animation page slide fade bottom sheet fast instant none os default" },
+  { id: "ctrl-v-scrollbar", label: "Vertical Scrollbar", section: "navigation", keywords: "vertical scrollbar style hidden native always visible show" },
+  { id: "ctrl-tab-labels", label: "Tab Bar Labels", section: "navigation", keywords: "tab bar labels text bottom navigation show hide toggle" },
+  { id: "ctrl-stripe-thickness", label: "Flag Stripe Thickness", section: "navigation", keywords: "flag stripe thickness size hidden hairline thin medium thick bold" },
+  { id: "ctrl-app-bar-style", label: "Top App Bar Style", section: "navigation", keywords: "top app bar header style standard compact tall editorial borderless accent tinted floating" },
+  { id: "ctrl-header-align", label: "Header Alignment", section: "navigation", keywords: "header alignment left center title" },
+  { id: "ctrl-h-scrollbar-style", label: "Horizontal Scrollbar Style", section: "navigation", keywords: "horizontal scrollbar style hidden native system bar hairline rail subtle accent solid track precision tick ruler step dots" },
+  { id: "ctrl-h-scrollbar-thick", label: "Horizontal Scrollbar Thickness", section: "navigation", keywords: "horizontal scrollbar thickness width 2px 3px 4px 6px 8px 10px" },
+  { id: "ctrl-scrollbar-track", label: "Scrollbar Background Track", section: "navigation", keywords: "scrollbar background rail track visible show hide toggle" },
+  { id: "ctrl-pill-bar-layout", label: "Pill Bar Layout", section: "navigation", keywords: "pill bar layout scroll expand dropdown picker prev next stepper underline tabs segmented bar floating dock index file tabs compact minimal text 2-col grid 3-col tiles vertical list" },
+  { id: "ctrl-pill-shape", label: "Pill Corner Shape", section: "navigation", keywords: "pill corner shape radius square sharp subtle rounded soft" },
+  { id: "ctrl-edge-fade", label: "Edge Fade Shadow", section: "navigation", keywords: "edge fade shadow feather gradient horizontal scroll toggle" },
+  { id: "ctrl-scroll-bounce", label: "Elastic Scroll Bounce", section: "navigation", keywords: "elastic scroll bounce spring feedback toggle" },
+  // Accessibility
+  { id: "ctrl-haptics", label: "Haptic Strength", section: "accessibility", keywords: "haptic strength vibration feedback off light medium strong accessibility" },
+  { id: "ctrl-tap-effect", label: "Tap Feedback Effect", section: "accessibility", keywords: "tap press feedback effect scale ripple only opacity none accessibility" },
+  { id: "ctrl-reduce-motion", label: "Reduce Motion", section: "accessibility", keywords: "reduce motion animations accessibility toggle" },
+  { id: "ctrl-high-contrast", label: "High-Contrast Borders", section: "accessibility", keywords: "high contrast borders outlines clarity accessibility toggle" },
+  { id: "ctrl-color-blind", label: "Color-Blind Safe Palette", section: "accessibility", keywords: "color blind safe palette deuteranopia protanopia tritanopia accessibility" },
+  // Backup
+  { id: "ctrl-export-json", label: "Export Theme JSON", section: "backup", keywords: "export theme json code share copy backup" },
+  { id: "ctrl-import-json", label: "Import JSON Theme", section: "backup", keywords: "import paste apply json theme code restore backup" },
+  { id: "ctrl-reset-all", label: "Reset All to Default", section: "backup", keywords: "reset all default restore factory theme backup" },
+];
+
+const SETTINGS_SEARCH_INDEX: readonly SettingsSearchEntry[] = [
+  ...APP_LOOK_PROFILES.map((profile): SettingsSearchEntry => ({
+    id: `makeover-${profile.id}`,
+    label: profile.name,
+    section: "makeovers",
+    keywords: `${profile.name} ${profile.tagline} ${profile.id} makeover look theme`,
+    kind: "makeover",
+    targetId: profile.id,
+  })),
+  ...THEME_PRESETS.map((preset): SettingsSearchEntry => ({
+    id: `preset-${preset.id}`,
+    label: preset.name,
+    section: "presets",
+    keywords: `${preset.name} ${preset.tagline} ${preset.id} ${preset.recommendedMode} preset palette theme`,
+    kind: "preset",
+    targetId: preset.id,
+  })),
+  ...STATIC_SETTINGS_SEARCH_ENTRIES,
+];
+
 
 function normalizeHexInput(raw: string): string {
   const cleaned = raw.trim();
@@ -718,7 +837,6 @@ export function ThemeSettingsView() {
   const {
     theme,
     isDark,
-    toggleTheme,
     setThemeMode,
     themeConfig,
     resolvedFonts,
@@ -741,6 +859,8 @@ export function ThemeSettingsView() {
   const [previewActivePill, setPreviewActivePill] = useState<number>(0);
   const [previewActiveTab, setPreviewActiveTab] = useState<number>(0);
 
+  const [settingsQuery, setSettingsQuery] = useState<string>("");
+  const deferredQuery = useDeferredValue(settingsQuery);
   const [activeFilter, setActiveFilter] = useState<FilterKey>("all");
   const [openSections, setOpenSections] = useState<Record<AccordionKey, boolean>>({
     makeovers: true,
@@ -782,11 +902,6 @@ export function ThemeSettingsView() {
     setHexDrafts(next);
   }, [themeConfig?.customColors]);
 
-  const exportedJson = useMemo(
-    () => (openSections.backup ? JSON.stringify(themeConfig ?? {}, null, 2) : ""),
-    [openSections.backup, themeConfig]
-  );
-
   const darkCount = useMemo(
     () => THEME_PRESETS.filter((p) => p.recommendedMode === "dark").length,
     []
@@ -796,12 +911,72 @@ export function ThemeSettingsView() {
     []
   );
 
-  const filteredPresets = useMemo(
-    () =>
-      THEME_PRESETS.filter(
-        (p) => presetModeFilter === "all" || p.recommendedMode === presetModeFilter
-      ),
-    [presetModeFilter]
+  const trimmedDeferredQuery = deferredQuery.trim();
+  const isSearching = trimmedDeferredQuery.length > 0;
+
+  const searchResults = useMemo(() => {
+    if (!trimmedDeferredQuery) {
+      return {
+        matchedEntries: [] as SettingsSearchEntry[],
+        matchedSections: new Set<AccordionKey>(),
+        matchedMakeoverIds: new Set<string>(),
+        matchedPresetIds: new Set<string>(),
+      };
+    }
+    const tokens = trimmedDeferredQuery.toLowerCase().split(/\s+/).filter(Boolean);
+    const matchedEntries: SettingsSearchEntry[] = [];
+    const matchedSections = new Set<AccordionKey>();
+    const matchedMakeoverIds = new Set<string>();
+    const matchedPresetIds = new Set<string>();
+
+    for (const entry of SETTINGS_SEARCH_INDEX) {
+      const haystack = `${entry.label} ${entry.keywords}`.toLowerCase();
+      if (tokens.every((t) => haystack.includes(t))) {
+        matchedEntries.push(entry);
+        matchedSections.add(entry.section);
+        if (entry.kind === "makeover" && entry.targetId) {
+          matchedMakeoverIds.add(entry.targetId);
+        } else if (entry.kind === "preset" && entry.targetId) {
+          matchedPresetIds.add(entry.targetId);
+        }
+      }
+    }
+
+    return {
+      matchedEntries,
+      matchedSections,
+      matchedMakeoverIds,
+      matchedPresetIds,
+    };
+  }, [trimmedDeferredQuery]);
+
+  const displayedMakeovers = useMemo(() => {
+    if (isSearching && searchResults.matchedMakeoverIds.size > 0) {
+      return APP_LOOK_PROFILES.filter((p) =>
+        searchResults.matchedMakeoverIds.has(p.id)
+      );
+    }
+    return APP_LOOK_PROFILES;
+  }, [isSearching, searchResults.matchedMakeoverIds]);
+
+  const filteredPresets = useMemo(() => {
+    if (isSearching && searchResults.matchedPresetIds.size > 0) {
+      return THEME_PRESETS.filter((p) =>
+        searchResults.matchedPresetIds.has(p.id)
+      );
+    }
+    return THEME_PRESETS.filter(
+      (p) => presetModeFilter === "all" || p.recommendedMode === presetModeFilter
+    );
+  }, [isSearching, searchResults.matchedPresetIds, presetModeFilter]);
+
+  const backupExpanded = isSearching
+    ? searchResults.matchedSections.has("backup")
+    : openSections.backup;
+
+  const exportedJson = useMemo(
+    () => (backupExpanded ? JSON.stringify(themeConfig ?? {}, null, 2) : ""),
+    [backupExpanded, themeConfig]
   );
 
   const allExpanded = useMemo(
@@ -854,6 +1029,42 @@ export function ThemeSettingsView() {
     triggerHaptic();
   }, []);
 
+  const handleSelectPreviewPill = useCallback(
+    (idx: number) => {
+      doHaptic();
+      setPreviewActivePill(idx);
+    },
+    [doHaptic]
+  );
+
+  const handleSelectPreviewTab = useCallback(
+    (idx: number) => {
+      doHaptic();
+      setPreviewActiveTab(idx);
+    },
+    [doHaptic]
+  );
+
+  const handleSettingsQueryChange = useCallback((text: string) => {
+    setSettingsQuery(text);
+    setActiveFilter((prev) => (prev !== "all" ? "all" : prev));
+  }, []);
+
+  const handleClearSearch = useCallback(() => {
+    doHaptic();
+    setSettingsQuery("");
+    setActiveFilter("all");
+  }, [doHaptic]);
+
+  const handleJumpToSearchSection = useCallback(
+    (section: AccordionKey) => {
+      doHaptic();
+      setActiveFilter(section);
+      setOpenSections((prev) => ({ ...prev, [section]: true }));
+    },
+    [doHaptic]
+  );
+
   const handleResetSingleKey = useCallback(
     (key: keyof ThemeConfig) => {
       doHaptic();
@@ -875,6 +1086,20 @@ export function ThemeSettingsView() {
       setOpenSections((prev) => ({ ...prev, [key]: !prev[key] }));
     },
     [doHaptic]
+  );
+
+  const sectionToggleHandlers = useMemo<Record<AccordionKey, () => void>>(
+    () => ({
+      makeovers: () => handleToggleSection("makeovers"),
+      presets: () => handleToggleSection("presets"),
+      colors: () => handleToggleSection("colors"),
+      typography: () => handleToggleSection("typography"),
+      layout: () => handleToggleSection("layout"),
+      navigation: () => handleToggleSection("navigation"),
+      accessibility: () => handleToggleSection("accessibility"),
+      backup: () => handleToggleSection("backup"),
+    }),
+    [handleToggleSection]
   );
 
   const handleFilterSelect = useCallback(
@@ -1050,8 +1275,14 @@ export function ThemeSettingsView() {
   );
 
   const onGoldInk = getContrastInk(theme.gold);
-  const isVisible = (key: AccordionKey) =>
-    activeFilter === "all" || activeFilter === key;
+  const isVisible = (key: AccordionKey) => {
+    if (isSearching && !searchResults.matchedSections.has(key)) {
+      return false;
+    }
+    return activeFilter === "all" || activeFilter === key;
+  };
+  const isExpanded = (key: AccordionKey) =>
+    isSearching ? searchResults.matchedSections.has(key) : openSections[key];
 
   return (
     <View style={[styles.root, { backgroundColor: theme.bgPrimary }]}>
@@ -1159,15 +1390,9 @@ export function ThemeSettingsView() {
             previewMetrics={previewMetrics}
             previewFonts={previewFonts}
             activePill={previewActivePill}
-            onSelectPill={(idx) => {
-              doHaptic();
-              setPreviewActivePill(idx);
-            }}
+            onSelectPill={handleSelectPreviewPill}
             activeTab={previewActiveTab}
-            onSelectTab={(idx) => {
-              doHaptic();
-              setPreviewActiveTab(idx);
-            }}
+            onSelectTab={handleSelectPreviewTab}
             onActionPress={doHaptic}
           />
         )}
@@ -1275,65 +1500,22 @@ export function ThemeSettingsView() {
         keyboardShouldPersistTaps="handled"
       >
         <View style={styles.innerStack}>
-          {/* 1. Compact Night Mode & OLED Header */}
+          {/* 1. Compact Appearance & OLED Card */}
           <View
             style={[
-              styles.compactCard,
+              styles.appearanceCard,
               {
                 backgroundColor: theme.surfaceContainer,
                 borderColor: theme.outlineVariant,
               },
             ]}
           >
-            <View style={styles.nightHeaderRow}>
-              <View style={styles.nightTitleWrap}>
-                <View
-                  style={[
-                    styles.iconBadge,
-                    { backgroundColor: theme.primaryContainer },
-                  ]}
-                >
-                  <Ionicons
-                    name={isDark ? "moon" : "sunny"}
-                    size={16}
-                    color={theme.gold}
-                  />
-                </View>
-                <View style={styles.flexOne}>
-                  <Text style={[styles.cardTitle, { color: theme.textPrimary }]}>
-                    Night Mode
-                  </Text>
-                  <Text
-                    style={[styles.cardSubtitle, { color: theme.textSecondary }]}
-                    numberOfLines={1}
-                  >
-                    {isDark
-                      ? themeConfig?.oledBlack
-                        ? "OLED True Black active"
-                        : "Dark surface active"
-                      : "Warm daylight surface active"}
-                  </Text>
-                </View>
-              </View>
-              <Switch
-                testID="theme-toggle"
-                value={isDark}
-                onValueChange={() => toggleTheme()}
-                trackColor={{
-                  false: theme.surfaceContainerHighest,
-                  true: theme.gold,
-                }}
-                thumbColor={isDark ? theme.kenyaBlack : theme.kenyaWhite}
-                accessibilityLabel="Toggle Night Mode"
-              />
-            </View>
-
             <View
+              testID="theme-toggle"
               style={[
                 styles.segmentedRow,
                 {
                   backgroundColor: theme.surfaceContainerLow,
-                  borderColor: theme.outlineVariant,
                 },
               ]}
             >
@@ -1342,9 +1524,13 @@ export function ThemeSettingsView() {
                 return (
                   <Pressable
                     key={opt.value}
-                    onPress={() => handleModeSelect(opt.value)}
+                    onPress={() => {
+                      doHaptic();
+                      handleModeSelect(opt.value);
+                    }}
                     accessibilityRole="button"
                     accessibilityState={{ selected: active }}
+                    accessibilityLabel={`${opt.label} appearance mode`}
                     android_ripple={androidRipple(theme.rippleColor)}
                     style={pressableStyle(styles.segmentedPressable)}
                   >
@@ -1352,21 +1538,24 @@ export function ThemeSettingsView() {
                       style={[
                         styles.segmentedBtnInner,
                         active && {
-                          backgroundColor: theme.primaryContainer,
-                          borderColor: theme.gold,
-                          borderWidth: 1,
+                          backgroundColor: theme.gold,
                         },
                       ]}
                     >
                       <Ionicons
                         name={opt.icon}
                         size={14}
-                        color={active ? theme.gold : theme.textSecondary}
+                        color={active ? onGoldInk : theme.textSecondary}
                       />
                       <Text
                         style={[
                           styles.segmentedLabel,
-                          { color: active ? theme.gold : theme.textSecondary },
+                          {
+                            color: active ? onGoldInk : theme.textSecondary,
+                            fontFamily: active
+                              ? "Inter_700Bold"
+                              : "Inter_600SemiBold",
+                          },
                         ]}
                       >
                         {opt.label}
@@ -1377,17 +1566,70 @@ export function ThemeSettingsView() {
               })}
             </View>
 
-            <ToggleRow
-              label="OLED True Black"
-              description="Pure #000000 black surfaces in dark mode for AMOLED battery savings"
-              value={Boolean(themeConfig?.oledBlack)}
-              onValueChange={(val) => {
-                doHaptic();
-                updateThemeConfig({ oledBlack: val });
-              }}
-              theme={theme}
+            <View
+              style={[
+                styles.appearanceDivider,
+                { backgroundColor: theme.outlineVariant },
+              ]}
             />
+
+            <Pressable
+              onPress={() => {
+                doHaptic();
+                updateThemeConfig({ oledBlack: !themeConfig?.oledBlack });
+              }}
+              accessibilityRole="switch"
+              accessibilityState={{ checked: Boolean(themeConfig?.oledBlack) }}
+              accessibilityLabel="OLED True Black"
+              android_ripple={androidRipple(theme.rippleColor)}
+              style={[
+                styles.oledSlimRow,
+                { opacity: isDark ? 1 : 0.55 },
+              ]}
+            >
+              <View style={styles.toggleTextCol}>
+                <Text
+                  style={[styles.optionGroupTitle, { color: theme.textPrimary }]}
+                  numberOfLines={1}
+                >
+                  OLED True Black
+                </Text>
+                <Text
+                  style={[styles.optionGroupDesc, { color: theme.textSecondary }]}
+                  numberOfLines={1}
+                >
+                  Pure #000000 surfaces in dark mode
+                </Text>
+              </View>
+              <Switch
+                value={Boolean(themeConfig?.oledBlack)}
+                onValueChange={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ oledBlack: val });
+                }}
+                trackColor={{
+                  false: theme.surfaceContainerHighest,
+                  true: theme.gold,
+                }}
+                thumbColor={
+                  themeConfig?.oledBlack ? theme.kenyaBlack : theme.kenyaWhite
+                }
+                accessibilityLabel="OLED True Black"
+              />
+            </Pressable>
           </View>
+
+          {/* 1b. Instant Settings Search Bar */}
+          <SettingsSearchBar
+            query={settingsQuery}
+            onChangeQuery={handleSettingsQueryChange}
+            onClear={handleClearSearch}
+            isSearching={isSearching}
+            matchedSectionCount={searchResults.matchedSections.size}
+            matchedEntries={searchResults.matchedEntries}
+            onJumpToSection={handleJumpToSearchSection}
+            theme={theme}
+          />
 
           {/* 2. Slim Quick-Filter Bar + Expand/Collapse All */}
           <View style={styles.filterToolbar}>
@@ -1475,6 +1717,53 @@ export function ThemeSettingsView() {
             </Pressable>
           </View>
 
+          {isSearching && searchResults.matchedSections.size === 0 && (
+            <View
+              style={[
+                styles.searchEmptyCard,
+                {
+                  backgroundColor: theme.surfaceContainer,
+                  borderColor: theme.outlineVariant,
+                },
+              ]}
+            >
+              <Ionicons
+                name="search-outline"
+                size={18}
+                color={theme.textMuted}
+              />
+              <Text
+                style={[styles.searchEmptyText, { color: theme.textSecondary }]}
+                numberOfLines={2}
+              >
+                No settings match "{trimmedDeferredQuery}"
+              </Text>
+              <Pressable
+                onPress={handleClearSearch}
+                accessibilityRole="button"
+                accessibilityLabel="Clear Search"
+                android_ripple={androidRipple(theme.rippleColor)}
+                style={pressableStyle(styles.searchClearBtnPressable)}
+              >
+                <View
+                  style={[
+                    styles.searchClearBtnInner,
+                    {
+                      backgroundColor: theme.primaryContainer,
+                      borderColor: theme.gold,
+                    },
+                  ]}
+                >
+                  <Text
+                    style={[styles.searchClearBtnText, { color: theme.gold }]}
+                  >
+                    Clear Search
+                  </Text>
+                </View>
+              </Pressable>
+            </View>
+          )}
+
           {/* Accordion 1: One-Tap Makeovers */}
           {isVisible("makeovers") && (
             <AccordionCard
@@ -1485,14 +1774,14 @@ export function ThemeSettingsView() {
                   ? activeMakeover.name
                   : `Custom · ${APP_LOOK_PROFILES.length} looks`
               }
-              expanded={openSections.makeovers}
-              onToggle={() => handleToggleSection("makeovers")}
+              expanded={isExpanded("makeovers")}
+              onToggle={sectionToggleHandlers.makeovers}
               theme={theme}
             >
-              {openSections.makeovers && (
+              {isExpanded("makeovers") && (
                 <>
               <View style={styles.makeoversGrid}>
-                {APP_LOOK_PROFILES.map((profile) => {
+                {displayedMakeovers.map((profile) => {
                   const isActive = isMakeoverActive(profile, themeConfig);
                   return (
                     <Pressable
@@ -1757,11 +2046,11 @@ export function ThemeSettingsView() {
               icon="color-palette-outline"
               title="Theme Presets"
               summary={`${activePreset?.name ?? "Custom"} · ${THEME_PRESETS.length} themes`}
-              expanded={openSections.presets}
-              onToggle={() => handleToggleSection("presets")}
+              expanded={isExpanded("presets")}
+              onToggle={sectionToggleHandlers.presets}
               theme={theme}
             >
-              {openSections.presets && (
+              {isExpanded("presets") && (
                 <>
               <View style={styles.presetFilterRow}>
                 {(
@@ -1900,11 +2189,11 @@ export function ThemeSettingsView() {
                   ? `${customColorCount} override${customColorCount > 1 ? "s" : ""} · ${accentVibrancyLabel}`
                   : `${accentVibrancyLabel} · Default palette`
               }
-              expanded={openSections.colors}
-              onToggle={() => handleToggleSection("colors")}
+              expanded={isExpanded("colors")}
+              onToggle={sectionToggleHandlers.colors}
               theme={theme}
             >
-              {openSections.colors && (
+              {isExpanded("colors") && (
                 <>
               <OptionPillGroup
                 label="Accent Vibrancy"
@@ -2092,11 +2381,11 @@ export function ThemeSettingsView() {
               icon="text-outline"
               title="Typography & Text"
               summary={`${fontPairLabel} · ${Math.round(fontScale * 100)}%`}
-              expanded={openSections.typography}
-              onToggle={() => handleToggleSection("typography")}
+              expanded={isExpanded("typography")}
+              onToggle={sectionToggleHandlers.typography}
               theme={theme}
             >
-              {openSections.typography && (
+              {isExpanded("typography") && (
                 <>
               <OptionPillGroup
                 label="Font Scale"
@@ -2174,11 +2463,11 @@ export function ThemeSettingsView() {
               icon="layers-outline"
               title="Surfaces & Layout"
               summary={`${surfaceLabel} · ${densityLabel}`}
-              expanded={openSections.layout}
-              onToggle={() => handleToggleSection("layout")}
+              expanded={isExpanded("layout")}
+              onToggle={sectionToggleHandlers.layout}
               theme={theme}
             >
-              {openSections.layout && (
+              {isExpanded("layout") && (
                 <>
               <OptionPillGroup
                 label="Surface Style"
@@ -2736,11 +3025,11 @@ export function ThemeSettingsView() {
               icon="compass-outline"
               title="Menus & Scrollbars"
               summary={`${tabBarLabel} · ${hScrollLabel}`}
-              expanded={openSections.navigation}
-              onToggle={() => handleToggleSection("navigation")}
+              expanded={isExpanded("navigation")}
+              onToggle={sectionToggleHandlers.navigation}
               theme={theme}
             >
-              {openSections.navigation && (
+              {isExpanded("navigation") && (
                 <>
               <ToggleRow
                 label="Kenyan Flag Stripe"
@@ -2958,11 +3247,11 @@ export function ThemeSettingsView() {
               summary={`Haptics ${hapticLabel}${
                 colorBlindLabel !== "None" ? ` · ${colorBlindLabel}` : ""
               }`}
-              expanded={openSections.accessibility}
-              onToggle={() => handleToggleSection("accessibility")}
+              expanded={isExpanded("accessibility")}
+              onToggle={sectionToggleHandlers.accessibility}
               theme={theme}
             >
-              {openSections.accessibility && (
+              {isExpanded("accessibility") && (
                 <>
               <OptionPillGroup
                 label="Haptic Strength"
@@ -3034,11 +3323,11 @@ export function ThemeSettingsView() {
               icon="code-slash-outline"
               title="Backup & Reset"
               summary="Export · Import · Reset"
-              expanded={openSections.backup}
-              onToggle={() => handleToggleSection("backup")}
+              expanded={isExpanded("backup")}
+              onToggle={sectionToggleHandlers.backup}
               theme={theme}
             >
-              {openSections.backup && (
+              {isExpanded("backup") && (
                 <>
               <View style={styles.backupGroup}>
                 <View style={styles.backupHeaderRow}>
@@ -3204,6 +3493,122 @@ export function ThemeSettingsView() {
   );
 }
 
+const SettingsSearchBar = React.memo(function SettingsSearchBar({
+  query,
+  onChangeQuery,
+  onClear,
+  isSearching,
+  matchedSectionCount,
+  matchedEntries,
+  onJumpToSection,
+  theme,
+}: {
+  query: string;
+  onChangeQuery: (text: string) => void;
+  onClear: () => void;
+  isSearching: boolean;
+  matchedSectionCount: number;
+  matchedEntries: readonly SettingsSearchEntry[];
+  onJumpToSection: (section: AccordionKey) => void;
+  theme: ThemeColors;
+}) {
+  const quickJumpEntries = useMemo(
+    () => matchedEntries.slice(0, 12),
+    [matchedEntries]
+  );
+
+  return (
+    <View style={styles.searchBarWrap}>
+      <View
+        style={[
+          styles.searchInputContainer,
+          {
+            backgroundColor: theme.surfaceContainer,
+            borderColor: query.length > 0 ? theme.gold : theme.outlineVariant,
+          },
+        ]}
+      >
+        <Ionicons
+          name="search-outline"
+          size={16}
+          color={query.length > 0 ? theme.gold : theme.textMuted}
+        />
+        <TextInput
+          value={query}
+          onChangeText={onChangeQuery}
+          placeholder="Search settings, themes, icons..."
+          placeholderTextColor={theme.textMuted}
+          autoCapitalize="none"
+          autoCorrect={false}
+          returnKeyType="search"
+          accessibilityLabel="Search settings, themes, and icons"
+          style={[styles.searchInputField, { color: theme.textPrimary }]}
+        />
+        {query.length > 0 && (
+          <Pressable
+            onPress={onClear}
+            hitSlop={8}
+            accessibilityRole="button"
+            accessibilityLabel="Clear search"
+          >
+            <Ionicons name="close-circle" size={17} color={theme.textMuted} />
+          </Pressable>
+        )}
+      </View>
+
+      {isSearching && matchedSectionCount > 0 && (
+        <View style={styles.searchSummaryRow}>
+          <Text
+            style={[styles.searchSummaryCount, { color: theme.gold }]}
+            numberOfLines={1}
+          >
+            {matchedSectionCount} matching{" "}
+            {matchedSectionCount === 1 ? "section" : "sections"}
+          </Text>
+          <ScrollView
+            horizontal
+            nestedScrollEnabled
+            showsHorizontalScrollIndicator={false}
+            contentContainerStyle={styles.searchChipsScroll}
+            style={styles.flexOne}
+          >
+            {quickJumpEntries.map((entry) => (
+              <Pressable
+                key={entry.id}
+                onPress={() => onJumpToSection(entry.section)}
+                accessibilityRole="button"
+                accessibilityLabel={`Jump to ${entry.label}`}
+                android_ripple={androidRipple(theme.rippleColor)}
+                style={pressableStyle(styles.searchChipPressable)}
+              >
+                <View
+                  style={[
+                    styles.searchChipInner,
+                    {
+                      backgroundColor: theme.surfaceContainerHigh,
+                      borderColor: theme.outlineVariant,
+                    },
+                  ]}
+                >
+                  <Text
+                    style={[
+                      styles.searchChipLabel,
+                      { color: theme.textPrimary },
+                    ]}
+                    numberOfLines={1}
+                  >
+                    {entry.label}
+                  </Text>
+                </View>
+              </Pressable>
+            ))}
+          </ScrollView>
+        </View>
+      )}
+    </View>
+  );
+});
+
 const MiniAppLivePreview = React.memo(function MiniAppLivePreview({
   previewTheme,
   previewConfig,
@@ -3227,27 +3632,28 @@ const MiniAppLivePreview = React.memo(function MiniAppLivePreview({
 }) {
   const monoFont = Platform.OS === "ios" ? "Menlo" : "monospace";
   const onGold = getContrastInk(previewTheme.gold);
-  const cardStyle = getThemedCardStyle(
-    previewTheme,
-    previewConfig,
-    previewMetrics
-  );
-  const inputStyle = getThemedInputStyle(
-    previewTheme,
-    previewConfig,
-    previewMetrics
-  );
-  const primaryBtn = getThemedButtonStyle(
-    previewTheme,
-    previewConfig,
-    previewMetrics,
-    "primary"
-  );
-  const secondaryBtn = getThemedButtonStyle(
-    previewTheme,
-    previewConfig,
-    previewMetrics,
-    "secondary"
+  const { cardStyle, inputStyle, primaryBtn, secondaryBtn, badgeStyle } = useMemo(
+    () => ({
+      cardStyle: getThemedCardStyle(previewTheme, previewConfig, previewMetrics),
+      inputStyle: getThemedInputStyle(previewTheme, previewConfig, previewMetrics),
+      primaryBtn: getThemedButtonStyle(
+        previewTheme,
+        previewConfig,
+        previewMetrics,
+        "primary"
+      ),
+      secondaryBtn: getThemedButtonStyle(
+        previewTheme,
+        previewConfig,
+        previewMetrics,
+        "secondary"
+      ),
+      badgeStyle: {
+        backgroundColor: previewTheme.primaryContainer,
+        alignSelf: "flex-start" as const,
+      },
+    }),
+    [previewTheme, previewConfig, previewMetrics]
   );
 
   const frameRadius = Math.max(8, Math.min(18, previewMetrics.cardRadiusPx));
@@ -4219,15 +4625,7 @@ const MiniAppLivePreview = React.memo(function MiniAppLivePreview({
                   ]}
                 >
                   {showCategoryBadges && (
-                    <View
-                      style={[
-                        styles.miniCategoryTag,
-                        {
-                          backgroundColor: previewTheme.primaryContainer,
-                          alignSelf: "flex-start",
-                        },
-                      ]}
-                    >
+                    <View style={[styles.miniCategoryTag, badgeStyle]}>
                       <Text
                         style={[
                           styles.miniCategoryTagText,
@@ -4425,11 +4823,8 @@ const MiniAppLivePreview = React.memo(function MiniAppLivePreview({
                     <View
                       style={[
                         styles.miniCategoryTag,
-                        {
-                          backgroundColor: previewTheme.primaryContainer,
-                          alignSelf: "flex-start",
-                          marginBottom: 1.5,
-                        },
+                        badgeStyle,
+                        { marginBottom: 1.5 },
                       ]}
                     >
                       <Text
@@ -4616,22 +5011,23 @@ const CardCompactPreview = React.memo(function CardCompactPreview({
   onActionPress: () => void;
 }) {
   const monoFont = Platform.OS === "ios" ? "Menlo" : "monospace";
-  const cardStyle = getThemedCardStyle(
-    previewTheme,
-    previewConfig,
-    previewMetrics
-  );
-  const primaryBtn = getThemedButtonStyle(
-    previewTheme,
-    previewConfig,
-    previewMetrics,
-    "primary"
-  );
-  const secondaryBtn = getThemedButtonStyle(
-    previewTheme,
-    previewConfig,
-    previewMetrics,
-    "secondary"
+  const { cardStyle, primaryBtn, secondaryBtn } = useMemo(
+    () => ({
+      cardStyle: getThemedCardStyle(previewTheme, previewConfig, previewMetrics),
+      primaryBtn: getThemedButtonStyle(
+        previewTheme,
+        previewConfig,
+        previewMetrics,
+        "primary"
+      ),
+      secondaryBtn: getThemedButtonStyle(
+        previewTheme,
+        previewConfig,
+        previewMetrics,
+        "secondary"
+      ),
+    }),
+    [previewTheme, previewConfig, previewMetrics]
   );
   const isFramelessSurface = previewConfig.surfaceStyle === "frameless";
   const isUnboxedBtn = previewConfig.buttonStyle === "unboxed-text";
@@ -5209,48 +5605,105 @@ const styles = StyleSheet.create({
   flexOne: {
     flex: 1,
   },
-  compactCard: {
+  appearanceCard: {
     borderRadius: 14,
     borderWidth: 1,
-    padding: 12,
-    gap: 10,
+    paddingHorizontal: 10,
+    paddingVertical: 10,
+    gap: 9,
   },
-  nightHeaderRow: {
+  appearanceDivider: {
+    height: StyleSheet.hairlineWidth,
+    width: "100%",
+  },
+  oledSlimRow: {
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
-    gap: 10,
+    paddingHorizontal: 2,
+    paddingVertical: 1,
   },
-  nightTitleWrap: {
-    flex: 1,
+  searchBarWrap: {
+    gap: 6,
+  },
+  searchInputContainer: {
+    minHeight: 42,
     flexDirection: "row",
     alignItems: "center",
-    gap: 9,
+    gap: 8,
+    paddingHorizontal: 11,
+    borderRadius: 12,
+    borderWidth: 1,
   },
-  iconBadge: {
-    width: 32,
-    height: 32,
-    borderRadius: 9,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  cardTitle: {
-    fontFamily: "Outfit_700Bold",
-    fontSize: 15,
-    lineHeight: 20,
+  searchInputField: {
+    flex: 1,
+    fontFamily: "Inter_400Regular",
+    fontSize: 13,
+    paddingVertical: 6,
     includeFontPadding: false,
   },
-  cardSubtitle: {
-    fontFamily: "Inter_400Regular",
+  searchSummaryRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 8,
+    paddingHorizontal: 2,
+  },
+  searchSummaryCount: {
+    fontFamily: "Inter_700Bold",
+    fontSize: 11,
+    includeFontPadding: false,
+  },
+  searchChipsScroll: {
+    gap: 5,
+    alignItems: "center",
+  },
+  searchChipPressable: {
+    borderRadius: 999,
+    overflow: "hidden",
+  },
+  searchChipInner: {
+    paddingHorizontal: 9,
+    paddingVertical: 4,
+    borderRadius: 999,
+    borderWidth: 1,
+  },
+  searchChipLabel: {
+    fontFamily: "Inter_600SemiBold",
+    fontSize: 10.5,
+    includeFontPadding: false,
+  },
+  searchEmptyCard: {
+    borderRadius: 12,
+    borderWidth: 1,
+    paddingHorizontal: 14,
+    paddingVertical: 14,
+    alignItems: "center",
+    gap: 8,
+  },
+  searchEmptyText: {
+    fontFamily: "Inter_500Medium",
+    fontSize: 12.5,
+    textAlign: "center",
+    includeFontPadding: false,
+  },
+  searchClearBtnPressable: {
+    borderRadius: 9,
+    overflow: "hidden",
+  },
+  searchClearBtnInner: {
+    paddingHorizontal: 12,
+    paddingVertical: 6,
+    borderRadius: 9,
+    borderWidth: 1,
+  },
+  searchClearBtnText: {
+    fontFamily: "Inter_700Bold",
     fontSize: 11.5,
-    lineHeight: 16,
-    marginTop: 1,
     includeFontPadding: false,
   },
   segmentedRow: {
     flexDirection: "row",
     borderRadius: 10,
-    borderWidth: 1,
     padding: 3,
     gap: 3,
   },

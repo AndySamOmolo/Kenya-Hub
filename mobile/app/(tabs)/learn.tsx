@@ -66,7 +66,7 @@ function createLearnStyles(
 }
 
 export default function LearnTabScreen() {
-  const { theme, themeConfig, themeMetrics, resolvedFonts, themeKey } = useTheme();
+  const { theme, themeConfig, themeMetrics, resolvedFonts } = useTheme();
   const styles = useMemo(
     () => createLearnStyles(themeMetrics, resolvedFonts),
     [themeMetrics, resolvedFonts]
@@ -96,7 +96,6 @@ export default function LearnTabScreen() {
 
   return (
     <SafeAreaView
-      key={themeKey}
       style={[styles.screen, { backgroundColor: theme.bgPrimary }]}
       edges={["top", "left", "right"]}
     >

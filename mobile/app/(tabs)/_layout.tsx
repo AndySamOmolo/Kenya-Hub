@@ -341,7 +341,7 @@ export default function TabLayout() {
     () => ({
       headerShown: false,
       lazy: true,
-      freezeOnBlur: false,
+      freezeOnBlur: true,
       sceneStyle: { backgroundColor: theme.bgPrimary },
       tabBarActiveTintColor: theme.gold,
       tabBarInactiveTintColor: theme.textSecondary,

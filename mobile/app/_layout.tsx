@@ -72,7 +72,7 @@ function LayoutContent({ fontsLoaded }: { fontsLoaded: boolean }) {
           ...(Platform.OS === "ios" && !themeConfig.reduceMotion
             ? { animationDuration: themeConfig.pageTransition === "fast" ? 80 : 160 }
             : {}),
-          freezeOnBlur: false,
+          freezeOnBlur: true,
           gestureEnabled: true,
           fullScreenGestureEnabled: true,
         }}

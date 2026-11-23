@@ -176,12 +176,12 @@ for (const screenRel of [
   "app/matatu/index.tsx",
 ]) {
   const src = fs.readFileSync(path.join(mobileRoot, screenRel), "utf8");
-  const hasKey = (src.includes("key={themeKey}") || src.includes('key={isDark ? "dark" : "light"}'));
+  const isReactiveZeroLag = src.includes("useTheme") && !src.includes("key={themeKey}");
   check(
     "theme",
-    `${screenRel} has atomic SafeAreaView theme key`,
-    hasKey,
-    hasKey ? `Found key={isDark ? "dark" : "light"} in ${screenRel}` : `Missing atomic theme key in ${screenRel}`
+    `${screenRel} uses reactive useTheme without destructive full-tree remount`,
+    isReactiveZeroLag,
+    isReactiveZeroLag ? `Verified reactive useTheme in ${screenRel}` : `Destructive key={themeKey} remount found in ${screenRel}`
   );
 }
 

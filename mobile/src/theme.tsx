@@ -540,7 +540,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
         if (toWrite) {
           flushPersistConfig(toWrite);
         }
-      }, 180);
+      }, 300);
     },
     [flushPersistConfig]
   );

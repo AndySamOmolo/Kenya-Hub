@@ -86,7 +86,7 @@ for (const t of TOOLS) {
 export default function HomeScreen() {
   const router = useRouter();
   const insets = useSafeAreaInsets();
-  const { theme, isDark, themeConfig, themeMetrics, resolvedFonts, themeKey } = useTheme();
+  const { theme, isDark, themeConfig, themeMetrics, resolvedFonts } = useTheme();
   const styles = useMemo(
     () => createHomeStyles(themeMetrics, resolvedFonts),
     [themeMetrics, resolvedFonts]
@@ -564,7 +564,6 @@ export default function HomeScreen() {
 
   return (
     <SafeAreaView
-      key={themeKey}
       style={[styles.screen, { backgroundColor: theme.bgPrimary }]}
       edges={["top", "left", "right"]}
     >

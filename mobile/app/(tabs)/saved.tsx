@@ -334,7 +334,7 @@ const SavedToolCard = React.memo(function SavedToolCard({
 
 export default function SavedScreen() {
   const router = useRouter();
-  const { theme, isDark, themeConfig, themeMetrics, resolvedFonts, themeKey } = useTheme();
+  const { theme, isDark, themeConfig, themeMetrics, resolvedFonts } = useTheme();
   const styles = useMemo(
     () => createSavedStyles(themeMetrics, resolvedFonts),
     [themeMetrics, resolvedFonts]
@@ -458,7 +458,6 @@ export default function SavedScreen() {
 
   return (
     <SafeAreaView
-      key={themeKey}
       style={[styles.screen, { backgroundColor: theme.bgPrimary }]}
       edges={["top", "left", "right"]}
     >
