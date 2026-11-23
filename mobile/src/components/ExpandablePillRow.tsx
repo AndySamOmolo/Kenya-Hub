@@ -18,7 +18,7 @@ import {
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useTheme, androidRipple, triggerHaptic } from "../theme";
-import { resolveScrollbarThicknessPx } from "../lib/theme-engine";
+import { hexToRgba, resolveScrollbarThicknessPx } from "../lib/theme-engine";
 
 if (
   Platform.OS === "android" &&
@@ -53,7 +53,12 @@ function resolveBaseStyle(styleProp: any): any {
   return styleProp;
 }
 
-function isPillMarkedActive(props: any, goldColor?: string): boolean {
+function isPillMarkedActive(
+  props: any,
+  goldColor?: string,
+  primaryContainer?: string,
+  secondaryContainer?: string
+): boolean {
   if (!props) return false;
   if (
     props["data-active"] === true ||
@@ -65,6 +70,12 @@ function isPillMarkedActive(props: any, goldColor?: string): boolean {
   }
   const flat = StyleSheet.flatten(resolveBaseStyle(props.style)) || {};
   if (goldColor && (flat.borderColor === goldColor || flat.backgroundColor === goldColor)) {
+    return true;
+  }
+  if (
+    (primaryContainer && flat.backgroundColor === primaryContainer) ||
+    (secondaryContainer && flat.backgroundColor === secondaryContainer)
+  ) {
     return true;
   }
   return false;
@@ -93,12 +104,20 @@ interface ExtractedOption {
 function extractPillOptions(
   nodes: React.ReactNode,
   goldColor: string | undefined,
+  primaryContainer?: string,
+  secondaryContainer?: string,
   acc: ExtractedOption[] = []
 ): ExtractedOption[] {
   React.Children.forEach(nodes, (child) => {
     if (!React.isValidElement(child)) return;
     if (child.type === React.Fragment) {
-      extractPillOptions((child.props as { children?: React.ReactNode }).children, goldColor, acc);
+      extractPillOptions(
+        (child.props as { children?: React.ReactNode }).children,
+        goldColor,
+        primaryContainer,
+        secondaryContainer,
+        acc
+      );
       return;
     }
     const props = child.props as any;
@@ -109,7 +128,7 @@ function extractPillOptions(
     acc.push({
       key: String(child.key ?? `opt-${acc.length}`),
       label: rawLabel.trim(),
-      active: isPillMarkedActive(props, goldColor),
+      active: isPillMarkedActive(props, goldColor, primaryContainer, secondaryContainer),
       disabled: Boolean(props.disabled),
       onPress: typeof props.onPress === "function" ? props.onPress : undefined,
     });
@@ -181,6 +200,23 @@ export function ExpandablePillRow({
   const pmPV = themeMetrics?.pillPaddingVPx ?? 6;
   const pmPH = themeMetrics?.pillPaddingHPx ?? 11;
   const iconScale = themeMetrics?.iconScale ?? 1.0;
+  const lineHeightScale = themeMetrics?.lineHeightScale ?? 1.0;
+  const letterSpacingOffset = themeMetrics?.letterSpacingOffset ?? 0;
+  const showVertSb = themeConfig?.verticalScrollbarStyle !== "hidden";
+  const hasCustomPillShape =
+    Boolean(themeConfig?.pillShape) && themeConfig?.pillShape !== "pill";
+  const customPillRadius =
+    themeConfig?.pillShape === "square"
+      ? 0
+      : themeConfig?.pillShape === "sharp"
+      ? 4
+      : themeConfig?.pillShape === "subtle"
+      ? 8
+      : themeConfig?.pillShape === "rounded"
+      ? 12
+      : themeConfig?.pillShape === "soft"
+      ? 18
+      : undefined;
   const pillFontMult =
     pillSizePreset === "xs"
       ? 0.88
@@ -384,7 +420,12 @@ export function ExpandablePillRow({
 
       if (isRootPill) {
         const pillIdx = runningPillIdx++;
-        const isActive = isPillMarkedActive(props, theme.gold);
+        const isActive = isPillMarkedActive(
+          props,
+          theme.gold,
+          theme.primaryContainer,
+          theme.secondaryContainer
+        );
         if (detectedActiveIdx === -1 && isActive) {
           detectedActiveIdx = pillIdx;
         }
@@ -424,7 +465,7 @@ export function ExpandablePillRow({
           };
         } else if (isSegmentedBar) {
           modeOverride = {
-            borderRadius: 9,
+            borderRadius: hasCustomPillShape && customPillRadius !== undefined ? customPillRadius : 9,
             borderWidth: 0,
             backgroundColor: isActive ? theme.primaryContainer : "transparent",
             paddingVertical: isCustomPillSize ? pmPV : 6,
@@ -433,7 +474,7 @@ export function ExpandablePillRow({
           };
         } else if (isFloatingDock) {
           modeOverride = {
-            borderRadius: 999,
+            borderRadius: hasCustomPillShape && customPillRadius !== undefined ? customPillRadius : 999,
             borderWidth: isActive ? 1 : 0,
             borderColor: isActive ? theme.gold : "transparent",
             backgroundColor: isActive ? theme.primaryContainer : "transparent",
@@ -443,7 +484,7 @@ export function ExpandablePillRow({
           };
         } else if (isSidebarChips) {
           modeOverride = {
-            borderRadius: 7,
+            borderRadius: hasCustomPillShape && customPillRadius !== undefined ? customPillRadius : 7,
             borderWidth: 1,
             borderColor: isActive ? theme.gold : theme.outlineVariant,
             borderLeftWidth: 3.5,
@@ -455,8 +496,8 @@ export function ExpandablePillRow({
           };
         } else if (isTwoColGrid) {
           modeOverride = {
-            width: "48.2%" as any,
-            borderRadius: 10,
+            flexBasis: "48%" as any,
+            borderRadius: hasCustomPillShape && customPillRadius !== undefined ? customPillRadius : 10,
             paddingVertical: isCustomPillSize ? pmPV + 1 : 7,
             paddingHorizontal: isCustomPillSize ? Math.max(6, pmPH - 2) : 8,
             minHeight: isCustomPillSize ? pmMinH + 4 : 36,
@@ -464,17 +505,17 @@ export function ExpandablePillRow({
           };
         } else if (isThreeColTiles) {
           modeOverride = {
-            width: "31.6%" as any,
-            borderRadius: 9,
+            flexBasis: "31.5%" as any,
+            borderRadius: hasCustomPillShape && customPillRadius !== undefined ? customPillRadius : 9,
             paddingVertical: isCustomPillSize ? pmPV : 6,
-            paddingHorizontal: isCustomPillSize ? Math.max(4, pmPH - 5) : 5,
+            paddingHorizontal: isCustomPillSize ? Math.min(6, Math.max(4, pmPH - 5)) : 5,
             minHeight: isCustomPillSize ? pmMinH + 2 : 34,
             justifyContent: "center",
           };
         } else if (isVerticalList) {
           modeOverride = {
             width: "100%" as any,
-            borderRadius: 10,
+            borderRadius: hasCustomPillShape && customPillRadius !== undefined ? customPillRadius : 10,
             paddingVertical: isCustomPillSize ? pmPV + 2 : 8,
             paddingHorizontal: isCustomPillSize ? pmPH : 11,
             minHeight: isCustomPillSize ? pmMinH + 4 : 36,
@@ -494,20 +535,18 @@ export function ExpandablePillRow({
             ? Math.max(flatPillStyle.minHeight, 26)
             : 28,
           borderRadius:
-            themeConfig?.pillShape === "square"
-              ? 0
-              : themeConfig?.pillShape === "sharp"
-              ? 4
-              : themeConfig?.pillShape === "subtle"
-              ? 8
-              : themeConfig?.pillShape === "rounded"
-              ? 12
-              : themeConfig?.pillShape === "soft"
-              ? 18
+            hasCustomPillShape && customPillRadius !== undefined
+              ? customPillRadius
               : isExpanded
               ? 16
               : flatPillStyle.borderRadius ?? 999,
         };
+        const resolvedMinHeight =
+          typeof modeOverride?.minHeight === "number"
+            ? modeOverride.minHeight
+            : typeof normalizedPillExtra.minHeight === "number"
+            ? normalizedPillExtra.minHeight
+            : 28;
         const expandedExtra = isExpanded && !isTwoColGrid && !isThreeColTiles && !isVerticalList
           ? { maxWidth: "100%" as const, flexShrink: 1 }
           : null;
@@ -519,6 +558,9 @@ export function ExpandablePillRow({
         return React.cloneElement(
           child as React.ReactElement<any>,
           {
+            ...(resolvedMinHeight < 40
+              ? { hitSlop: { top: 8, bottom: 8, left: 4, right: 4 } }
+              : {}),
             onLayout: (e: LayoutChangeEvent) => {
               pillLayoutsRef.current[pillIdx] = {
                 x: e.nativeEvent.layout.x,
@@ -549,12 +591,16 @@ export function ExpandablePillRow({
           flatChildStyle.lineHeight >= fontSize + 4
             ? flatChildStyle.lineHeight
             : Math.ceil(fontSize + 5);
+        const baseLetterSpacing =
+          typeof flatChildStyle.letterSpacing === "number"
+            ? flatChildStyle.letterSpacing
+            : 0;
 
         return React.cloneElement(
           child as React.ReactElement<any>,
           {
             ...(isTwoColGrid || isThreeColTiles
-              ? { numberOfLines: 1 }
+              ? { numberOfLines: 2 }
               : isExpanded && props.numberOfLines === 1
               ? { numberOfLines: undefined }
               : {}),
@@ -562,7 +608,10 @@ export function ExpandablePillRow({
               props.style,
               {
                 fontSize: Math.round((isThreeColTiles ? Math.min(fontSize, 10.5) : isTwoColGrid ? Math.min(fontSize, 11.5) : fontSize) * pillFontMult * (themeConfig?.fontScale || 1) * 10) / 10,
-                lineHeight: Math.round(lineHeight * pillFontMult * (themeConfig?.fontScale || 1)),
+                lineHeight: Math.round(lineHeight * pillFontMult * (themeConfig?.fontScale || 1) * lineHeightScale),
+                ...(letterSpacingOffset !== 0
+                  ? { letterSpacing: Number((baseLetterSpacing + letterSpacingOffset).toFixed(2)) }
+                  : {}),
                 includeFontPadding: true,
                 textAlignVertical: "center",
                 ...(themeConfig?.fontPair && themeConfig.fontPair !== "outfit-inter"
@@ -634,9 +683,16 @@ export function ExpandablePillRow({
 
   // Alternatives 1 & 7: Dropdown Picker Modal & Prev/Next Carousel Stepper
   if (pillLayoutMode === "dropdown" || pillLayoutMode === "stepper") {
-    const options = extractPillOptions(children, theme.gold);
+    const options = extractPillOptions(
+      children,
+      theme.gold,
+      theme.primaryContainer,
+      theme.secondaryContainer
+    );
     const activeIdx = Math.max(0, options.findIndex((o) => o.active));
     const activeOpt = options[activeIdx] || options[0];
+    const stepBtnDim = Math.max(34, pmMinH);
+    const chevronSize = Math.round(16 * iconScale);
     const stepBy = (delta: number) => {
       if (options.length <= 1) return;
       const nextIdx = (activeIdx + delta + options.length) % options.length;
@@ -649,7 +705,7 @@ export function ExpandablePillRow({
       }
     };
     return (
-      <View key={`dd-wrap-${themeKey}`} style={[outerSpacing, style]}>
+      <View key={`pill-row-${pillLayoutMode}-${themeKey}`} style={[outerSpacing, style]}>
         {pillLayoutMode === "stepper" ? (
           <View
             style={[
@@ -657,28 +713,35 @@ export function ExpandablePillRow({
               {
                 backgroundColor: theme.surfaceContainerLow,
                 borderColor: theme.outlineVariant,
-                paddingVertical: 5,
-                paddingHorizontal: 6,
+                minHeight: isCustomPillSize ? Math.max(42, pmMinH + 10) : undefined,
+                paddingVertical: isCustomPillSize ? Math.max(4, pmPV) : 5,
+                paddingHorizontal: isCustomPillSize ? Math.max(6, pmPH - 2) : 6,
+                ...(hasCustomPillShape && customPillRadius !== undefined
+                  ? { borderRadius: customPillRadius }
+                  : {}),
               },
             ]}
           >
             <Pressable
               onPress={() => stepBy(-1)}
-              hitSlop={6}
+              hitSlop={10}
               accessibilityRole="button"
               accessibilityLabel="Previous option"
             >
               <View
                 style={{
-                  width: 30,
-                  height: 30,
-                  borderRadius: 8,
+                  width: stepBtnDim,
+                  height: stepBtnDim,
+                  borderRadius:
+                    hasCustomPillShape && customPillRadius !== undefined
+                      ? Math.min(customPillRadius, Math.round(stepBtnDim / 2))
+                      : 8,
                   backgroundColor: theme.surfaceContainerHigh,
                   alignItems: "center",
                   justifyContent: "center",
                 }}
               >
-                <Ionicons name="chevron-back" size={16} color={theme.gold} />
+                <Ionicons name="chevron-back" size={chevronSize} color={theme.gold} />
               </View>
             </Pressable>
             <Pressable
@@ -691,7 +754,9 @@ export function ExpandablePillRow({
               <Text
                 style={{
                   fontFamily: resolvedFonts.bold,
-                  fontSize: Math.round(12.5 * (themeConfig?.fontScale || 1)),
+                  fontSize: Math.round(12.5 * pillFontMult * (themeConfig?.fontScale || 1) * 10) / 10,
+                  lineHeight: Math.round(17 * pillFontMult * (themeConfig?.fontScale || 1) * lineHeightScale),
+                  ...(letterSpacingOffset !== 0 ? { letterSpacing: letterSpacingOffset } : {}),
                   color: theme.textPrimary,
                 }}
                 numberOfLines={1}
@@ -701,7 +766,9 @@ export function ExpandablePillRow({
               <Text
                 style={{
                   fontFamily: resolvedFonts.body,
-                  fontSize: 10,
+                  fontSize: Math.round(10 * pillFontMult * (themeConfig?.fontScale || 1) * 10) / 10,
+                  lineHeight: Math.round(14 * pillFontMult * (themeConfig?.fontScale || 1) * lineHeightScale),
+                  ...(letterSpacingOffset !== 0 ? { letterSpacing: letterSpacingOffset } : {}),
                   color: theme.textMuted,
                 }}
               >
@@ -710,21 +777,24 @@ export function ExpandablePillRow({
             </Pressable>
             <Pressable
               onPress={() => stepBy(1)}
-              hitSlop={6}
+              hitSlop={10}
               accessibilityRole="button"
               accessibilityLabel="Next option"
             >
               <View
                 style={{
-                  width: 30,
-                  height: 30,
-                  borderRadius: 8,
+                  width: stepBtnDim,
+                  height: stepBtnDim,
+                  borderRadius:
+                    hasCustomPillShape && customPillRadius !== undefined
+                      ? Math.min(customPillRadius, Math.round(stepBtnDim / 2))
+                      : 8,
                   backgroundColor: theme.surfaceContainerHigh,
                   alignItems: "center",
                   justifyContent: "center",
                 }}
               >
-                <Ionicons name="chevron-forward" size={16} color={theme.gold} />
+                <Ionicons name="chevron-forward" size={chevronSize} color={theme.gold} />
               </View>
             </Pressable>
           </View>
@@ -746,6 +816,9 @@ export function ExpandablePillRow({
                 minHeight: isCustomPillSize ? Math.max(34, pmMinH + 8) : undefined,
                 paddingVertical: isCustomPillSize ? Math.max(5, pmPV + 2) : 10,
                 paddingHorizontal: isCustomPillSize ? Math.max(9, pmPH + 2) : 13,
+                ...(hasCustomPillShape && customPillRadius !== undefined
+                  ? { borderRadius: customPillRadius }
+                  : {}),
               },
             ]}
           >
@@ -753,7 +826,9 @@ export function ExpandablePillRow({
               <Text
                 style={{
                   fontFamily: resolvedFonts.bold,
-                  fontSize: Math.round(12.5 * (themeConfig?.fontScale || 1)),
+                  fontSize: Math.round(12.5 * pillFontMult * (themeConfig?.fontScale || 1) * 10) / 10,
+                  lineHeight: Math.round(17 * pillFontMult * (themeConfig?.fontScale || 1) * lineHeightScale),
+                  ...(letterSpacingOffset !== 0 ? { letterSpacing: letterSpacingOffset } : {}),
                   color: theme.textPrimary,
                 }}
                 numberOfLines={1}
@@ -765,21 +840,21 @@ export function ExpandablePillRow({
               style={{
                 paddingHorizontal: 7,
                 paddingVertical: 2,
-                borderRadius: 999,
+                borderRadius: hasCustomPillShape && customPillRadius !== undefined ? Math.min(customPillRadius, 999) : 999,
                 backgroundColor: theme.primaryContainer,
               }}
             >
               <Text
                 style={{
                   fontFamily: resolvedFonts.bold,
-                  fontSize: 10.5,
+                  fontSize: Math.round(10.5 * pillFontMult * (themeConfig?.fontScale || 1) * 10) / 10,
                   color: theme.gold,
                 }}
               >
                 {options.length}
               </Text>
             </View>
-            <Ionicons name="chevron-down" size={16} color={theme.gold} />
+            <Ionicons name="chevron-down" size={chevronSize} color={theme.gold} />
           </View>
         </Pressable>
         )}
@@ -787,7 +862,7 @@ export function ExpandablePillRow({
         <Modal
           visible={dropdownOpen}
           transparent
-          animationType="fade"
+          animationType={themeConfig?.reduceMotion ? "none" : "fade"}
           onRequestClose={() => setDropdownOpen(false)}
         >
           <Pressable
@@ -809,20 +884,20 @@ export function ExpandablePillRow({
                   <Text
                     style={{
                       fontFamily: resolvedFonts.heading,
-                      fontSize: 15,
+                      fontSize: Math.round(15 * (themeConfig?.fontScale || 1)),
                       color: theme.textPrimary,
                     }}
                   >
                     Select Option ({options.length})
                   </Text>
                   <Pressable onPress={() => setDropdownOpen(false)} hitSlop={8}>
-                    <Ionicons name="close" size={20} color={theme.textSecondary} />
+                    <Ionicons name="close" size={Math.round(20 * iconScale)} color={theme.textSecondary} />
                   </Pressable>
                 </View>
                 <ScrollView
                   style={{ maxHeight: 340 }}
                   contentContainerStyle={{ gap: 6 }}
-                  showsVerticalScrollIndicator={true}
+                  showsVerticalScrollIndicator={showVertSb}
                 >
                   {options.map((opt) => (
                     <Pressable
@@ -845,6 +920,12 @@ export function ExpandablePillRow({
                               : theme.surfaceContainerLow,
                             borderColor: opt.active ? theme.gold : theme.outlineVariant,
                             opacity: opt.disabled ? 0.45 : 1,
+                            minHeight: isCustomPillSize ? Math.max(36, pmMinH + 8) : undefined,
+                            paddingVertical: isCustomPillSize ? Math.max(6, pmPV + 4) : 11,
+                            paddingHorizontal: isCustomPillSize ? Math.max(10, pmPH + 2) : 13,
+                            ...(hasCustomPillShape && customPillRadius !== undefined
+                              ? { borderRadius: customPillRadius }
+                              : {}),
                           },
                         ]}
                       >
@@ -852,7 +933,9 @@ export function ExpandablePillRow({
                           style={{
                             flex: 1,
                             fontFamily: opt.active ? resolvedFonts.bold : resolvedFonts.body,
-                            fontSize: 13,
+                            fontSize: Math.round(13 * pillFontMult * (themeConfig?.fontScale || 1) * 10) / 10,
+                            lineHeight: Math.round(18 * pillFontMult * (themeConfig?.fontScale || 1) * lineHeightScale),
+                            ...(letterSpacingOffset !== 0 ? { letterSpacing: letterSpacingOffset } : {}),
                             color: opt.active ? theme.gold : theme.textPrimary,
                           }}
                           numberOfLines={2}
@@ -860,7 +943,7 @@ export function ExpandablePillRow({
                           {opt.label}
                         </Text>
                         {opt.active && (
-                          <Ionicons name="checkmark-circle" size={18} color={theme.gold} />
+                          <Ionicons name="checkmark-circle" size={Math.round(18 * iconScale)} color={theme.gold} />
                         )}
                       </View>
                     </Pressable>
@@ -951,7 +1034,7 @@ export function ExpandablePillRow({
           marginTop: 4,
           backgroundColor:
             themeConfig?.scrollbarTrackVisible !== false
-              ? `${theme.outlineVariant}40`
+              ? hexToRgba(theme.outlineVariant, 0.25)
               : "transparent",
           overflow: "hidden",
           position: "relative",
@@ -981,6 +1064,7 @@ export function ExpandablePillRow({
   ) {
     return (
       <View
+        key={`pill-row-${pillLayoutMode}-${themeKey}`}
         style={[
           innerContentStyle,
           outerSpacing,
@@ -1007,12 +1091,13 @@ export function ExpandablePillRow({
     if (isVerticalList && count > 4) {
       return (
         <View
+          key={`pill-row-${pillLayoutMode}-${themeKey}`}
           style={[
             outerSpacing,
             style,
             {
-              maxHeight: 168,
-              borderRadius: 12,
+              maxHeight: Math.min(260, Math.round(Math.max(168, (pmMinH + 10) * 4))),
+              borderRadius: hasCustomPillShape && customPillRadius !== undefined ? customPillRadius : 12,
               borderWidth: StyleSheet.hairlineWidth,
               borderColor: theme.outlineVariant,
               backgroundColor: theme.surfaceContainerLow,
@@ -1020,7 +1105,7 @@ export function ExpandablePillRow({
             },
           ]}
         >
-          <ScrollView nestedScrollEnabled showsVerticalScrollIndicator={true} contentContainerStyle={{ gap: 5 }}>
+          <ScrollView nestedScrollEnabled showsVerticalScrollIndicator={showVertSb} contentContainerStyle={{ gap: 5 }}>
             {renderedPills}
           </ScrollView>
         </View>
@@ -1028,6 +1113,7 @@ export function ExpandablePillRow({
     }
     return (
       <View
+        key={`pill-row-${pillLayoutMode}-${themeKey}`}
         style={[
           innerContentStyle,
           outerSpacing,
@@ -1036,7 +1122,7 @@ export function ExpandablePillRow({
             width: "100%",
             flexDirection: isVerticalList ? "column" : "row",
             flexWrap: isVerticalList ? "nowrap" : "wrap",
-            justifyContent: isTwoColGrid || isThreeColTiles ? "space-between" : "flex-start",
+            justifyContent: "flex-start",
             gap: isThreeColTiles ? 5 : 6,
             paddingVertical: 2,
           },
@@ -1051,6 +1137,7 @@ export function ExpandablePillRow({
   if (!canExpand) {
     return (
       <View
+        key={`pill-row-${pillLayoutMode}-${themeKey}`}
         style={[
           rowStyles.rowWrap,
           outerSpacing,
@@ -1061,14 +1148,14 @@ export function ExpandablePillRow({
           },
           isSegmentedBar && {
             backgroundColor: theme.surfaceContainerLow,
-            borderRadius: 12,
+            borderRadius: hasCustomPillShape && customPillRadius !== undefined ? customPillRadius : 12,
             borderWidth: 1,
             borderColor: theme.outlineVariant,
             padding: 3,
           },
           isFloatingDock && {
             backgroundColor: theme.surfaceContainerHigh,
-            borderRadius: 999,
+            borderRadius: hasCustomPillShape && customPillRadius !== undefined ? customPillRadius : 999,
             borderWidth: 1,
             borderColor: theme.outlineVariant,
             paddingHorizontal: 5,
@@ -1120,8 +1207,12 @@ export function ExpandablePillRow({
     );
   }
 
+  const actionBtnDim = Math.round(28 * Math.max(0.85, Math.min(1.25, iconScale)));
+  const actionBtnRadius = Math.round(14 * Math.max(0.85, Math.min(1.25, iconScale)));
+
   return (
     <View
+      key={`pill-row-${pillLayoutMode}-${themeKey}`}
       style={[
         rowStyles.rowWrap,
         { alignItems: "center" },
@@ -1205,25 +1296,33 @@ export function ExpandablePillRow({
           expanded ? "Collapse pills" : `Expand all ${count} pills vertically`
         }
         style={({ pressed }) => [
-          rowStyles.actionBtn,
           {
-            width: Math.round(28 * Math.max(0.85, Math.min(1.25, iconScale))),
-            height: Math.round(28 * Math.max(0.85, Math.min(1.25, iconScale))),
-            borderRadius: Math.round(14 * Math.max(0.85, Math.min(1.25, iconScale))),
             alignSelf: "center",
-            borderColor: expanded ? theme.gold : theme.outlineVariant,
-            backgroundColor: expanded
-              ? `${theme.gold}26`
-              : theme.surfaceContainerHigh,
+            flexShrink: 0,
             transform: [{ scale: pressed ? 0.92 : 1 }],
           },
         ]}
       >
-        <Ionicons
-          name={expanded ? "chevron-up" : "chevron-down"}
-          size={Math.round(14 * iconScale)}
-          color={theme.gold}
-        />
+        <View
+          style={[
+            rowStyles.actionBtn,
+            {
+              width: actionBtnDim,
+              height: actionBtnDim,
+              borderRadius: actionBtnRadius,
+              borderColor: expanded ? theme.gold : theme.outlineVariant,
+              backgroundColor: expanded
+                ? hexToRgba(theme.gold, 0.15)
+                : theme.surfaceContainerHigh,
+            },
+          ]}
+        >
+          <Ionicons
+            name={expanded ? "chevron-up" : "chevron-down"}
+            size={Math.round(14 * iconScale)}
+            color={theme.gold}
+          />
+        </View>
       </Pressable>
     </View>
   );

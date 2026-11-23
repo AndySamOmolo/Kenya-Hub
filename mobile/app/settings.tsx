@@ -7,15 +7,14 @@ import { ThemeSettingsView } from "../src/components/ThemeSettingsView";
 
 export default function SettingsScreen() {
   const router = useRouter();
-  const { theme, themeConfig } = useTheme();
-  const showKenyaStripe = themeConfig?.showKenyaStripe !== false;
+  const { theme } = useTheme();
 
   return (
     <SafeAreaView
       edges={["top", "bottom"]}
       style={[styles.container, { backgroundColor: theme.bgPrimary }]}
     >
-      {showKenyaStripe && <KenyaStripe />}
+      <KenyaStripe />
       <AndroidTopAppBar
         title="Settings & Theming"
         subtitle="Customize appearance, colors & layout"

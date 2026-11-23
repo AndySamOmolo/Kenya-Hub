@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useMemo, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
   Alert,
   Platform,
@@ -14,43 +14,71 @@ import {
 import { Feather, Ionicons } from "@expo/vector-icons";
 import {
   APP_LOOK_PROFILES,
+  DEFAULT_THEME_CONFIG,
   THEME_PRESETS,
+  diffThemeConfig,
+  getContrastInk,
+  hexToRgba,
+  resolveFontPairFamilies,
+  resolveScrollbarThicknessPx,
+  resolveThemeColors,
+  resolveThemeMetrics,
+  type AccentIntensity,
+  type AppBarStyle,
   type BorderWidthPreset,
   type ButtonRadiusPreset,
+  type ButtonStylePreset,
+  type CardAccentStyle,
+  type CardShadowIntensity,
   type ColorBlindMode,
   type CustomColorsConfig,
   type DensityPreset,
+  type DividerStyle,
   type FontPair,
+  type HapticStrength,
+  type HeaderAlignment,
+  type HeadingTransform,
+  type HomeLayoutPreset,
+  type HorizontalScrollbarStyle,
+  type IconBadgeStyle,
+  type InputStylePreset,
+  type MenuIndicatorStyle,
+  type NumericStyle,
+  type PageTransitionPreset,
+  type PillBarLayout,
+  type PressEffect,
+  type ProgressBarStyle,
+  type QuickMenuPosition,
   type RadiusPreset,
+  type ReadingTint,
+  type ScreenPaddingPreset,
+  type ScrollbarThickness,
+  type SectionHeaderStyle,
+  type SizePreset,
+  type StatusBarMode,
+  type StripeThickness,
   type SurfaceStyle,
   type TabBarStyle,
+  type ThemeConfig,
+  type ThemeMetrics,
   type ThemeMode,
-  type HorizontalScrollbarStyle,
-  type ScrollbarThickness,
-  type PillBarLayout,
-  type AppBarStyle,
-  type StripeThickness,
-  type MenuIndicatorStyle,
   type VerticalScrollbarStyle,
-  type CardShadowIntensity,
-  type InputStylePreset,
-  type ButtonStylePreset,
-  type PageTransitionPreset,
-  type StatusBarMode,
-  type QuickMenuPosition,
-  type HomeLayoutPreset,
-  type HeaderAlignment,
-  type CardAccentStyle,
-  type IconBadgeStyle,
-  type SizePreset,
 } from "../lib/theme-engine";
 import {
   KenyaStripe,
+  ThemedDivider,
+  ThemedProgressBar,
   androidRipple,
+  darkColors,
+  getThemedButtonStyle,
   getThemedCardStyle,
+  getThemedIconBadgeStyle,
+  getThemedInputStyle,
+  lightColors,
   pressableStyle,
   triggerHaptic,
   useTheme,
+  type ThemeColors,
 } from "../theme";
 
 type AccordionKey =
@@ -64,12 +92,23 @@ type AccordionKey =
   | "backup";
 
 type FilterKey = "all" | AccordionKey;
-
-type HeadingTransformOption = "none" | "uppercase" | "capitalize";
-type NumericStyleOption = "default" | "tabular-mono";
-type HapticStrengthOption = "off" | "light" | "medium" | "strong";
-
+type PreviewMode = "mini-app" | "card" | "hide";
 type CustomColorKey = keyof CustomColorsConfig;
+
+type DiffItemRaw =
+  | keyof ThemeConfig
+  | {
+      key: keyof ThemeConfig;
+      label?: string;
+      value?: unknown;
+      current?: unknown;
+      currentValue?: unknown;
+    };
+
+interface NormalizedDiffChip {
+  key: keyof ThemeConfig;
+  label: string;
+}
 
 const ALL_ACCORDION_KEYS: readonly AccordionKey[] = [
   "makeovers",
@@ -98,6 +137,12 @@ const QUICK_FILTER_PILLS: {
   { key: "backup", label: "Backup", icon: "code-slash-outline" },
 ];
 
+const PREVIEW_MODE_OPTIONS: readonly { value: PreviewMode; label: string }[] = [
+  { value: "mini-app", label: "Mini-App" },
+  { value: "card", label: "Card" },
+  { value: "hide", label: "Hide" },
+];
+
 const MODE_OPTIONS: {
   value: ThemeMode;
   label: string;
@@ -106,6 +151,54 @@ const MODE_OPTIONS: {
   { value: "system", label: "System", icon: "phone-portrait-outline" },
   { value: "light", label: "Light", icon: "sunny-outline" },
   { value: "dark", label: "Dark", icon: "moon-outline" },
+];
+
+const ACCENT_INTENSITY_OPTIONS: readonly { value: AccentIntensity; label: string }[] = [
+  { value: "muted", label: "Muted" },
+  { value: "balanced", label: "Balanced" },
+  { value: "vivid", label: "Vivid" },
+];
+
+const READING_TINT_OPTIONS: readonly { value: ReadingTint; label: string }[] = [
+  { value: "none", label: "None" },
+  { value: "warm-paper", label: "Warm Paper" },
+  { value: "soft-sepia", label: "Soft Sepia" },
+  { value: "cool-slate", label: "Cool Slate" },
+];
+
+const SCREEN_PADDING_OPTIONS: readonly { value: ScreenPaddingPreset; label: string }[] = [
+  { value: "edge", label: "Edge" },
+  { value: "compact", label: "Compact" },
+  { value: "standard", label: "Standard" },
+  { value: "wide", label: "Wide" },
+];
+
+const PROGRESS_BAR_STYLE_OPTIONS: readonly { value: ProgressBarStyle; label: string }[] = [
+  { value: "rounded", label: "Rounded" },
+  { value: "sharp", label: "Sharp" },
+  { value: "segmented", label: "Segmented" },
+  { value: "thin-line", label: "Thin Line" },
+];
+
+const DIVIDER_STYLE_OPTIONS: readonly { value: DividerStyle; label: string }[] = [
+  { value: "hairline", label: "Hairline" },
+  { value: "none", label: "None" },
+  { value: "dashed-soft", label: "Dashed Soft" },
+  { value: "accent-fade", label: "Accent Fade" },
+];
+
+const SECTION_HEADER_STYLE_OPTIONS: readonly { value: SectionHeaderStyle; label: string }[] = [
+  { value: "eyebrow", label: "Eyebrow" },
+  { value: "bold-title", label: "Bold Title" },
+  { value: "accent-pill", label: "Accent Pill" },
+  { value: "left-bar", label: "Left Bar" },
+];
+
+const PRESS_EFFECT_OPTIONS: readonly { value: PressEffect; label: string }[] = [
+  { value: "scale-ripple", label: "Scale + Ripple" },
+  { value: "ripple-only", label: "Ripple Only" },
+  { value: "opacity-only", label: "Opacity Only" },
+  { value: "none", label: "None" },
 ];
 
 const COLOR_ROLES: {
@@ -192,18 +285,18 @@ const FONT_PAIR_OPTIONS: readonly { value: FontPair; label: string }[] = [
   { value: "cursive", label: "Script / Cursive" },
 ];
 
-const HEADING_CASE_OPTIONS: readonly { value: HeadingTransformOption; label: string }[] = [
+const HEADING_CASE_OPTIONS: readonly { value: HeadingTransform; label: string }[] = [
   { value: "none", label: "Normal" },
   { value: "uppercase", label: "UPPERCASE" },
   { value: "capitalize", label: "Capitalize" },
 ];
 
-const NUMERIC_STYLE_OPTIONS: readonly { value: NumericStyleOption; label: string }[] = [
+const NUMERIC_STYLE_OPTIONS: readonly { value: NumericStyle; label: string }[] = [
   { value: "default", label: "Default" },
   { value: "tabular-mono", label: "Tabular Mono" },
 ];
 
-const HAPTIC_STRENGTH_OPTIONS: readonly { value: HapticStrengthOption; label: string }[] = [
+const HAPTIC_STRENGTH_OPTIONS: readonly { value: HapticStrength; label: string }[] = [
   { value: "off", label: "Off" },
   { value: "light", label: "Light" },
   { value: "medium", label: "Medium" },
@@ -230,6 +323,11 @@ const SCROLLBAR_THICKNESS_OPTIONS: readonly { value: ScrollbarThickness; label: 
 
 const PILL_BAR_LAYOUT_OPTIONS: readonly { value: PillBarLayout; label: string }[] = [
   { value: "scroll-with-expand", label: "Scroll + Expand" },
+  { value: "always-scroll", label: "Always Scroll" },
+  { value: "always-wrap", label: "Always Wrap" },
+  { value: "compact-scroll", label: "Compact Scroll" },
+  { value: "centered-wrap", label: "Centered Wrap" },
+  { value: "grid-pills", label: "Grid Pills" },
   { value: "dropdown", label: "Dropdown Picker" },
   { value: "stepper", label: "Prev/Next Stepper" },
   { value: "underline-tabs", label: "Underline Tabs" },
@@ -240,8 +338,6 @@ const PILL_BAR_LAYOUT_OPTIONS: readonly { value: PillBarLayout; label: string }[
   { value: "three-col-tiles", label: "3-Col Mini Tiles" },
   { value: "vertical-list", label: "Vertical List" },
   { value: "minimal-text", label: "Minimal Text" },
-  { value: "always-scroll", label: "Always Scroll" },
-  { value: "always-wrap", label: "Always Wrap" },
 ];
 
 const APP_BAR_STYLE_OPTIONS: readonly { value: AppBarStyle; label: string }[] = [
@@ -453,6 +549,87 @@ const ICON_SCALE_OPTIONS: readonly { value: number; label: string }[] = [
   { value: 1.25, label: "125%" },
 ];
 
+const MINI_PILLS = ["All", "Tax", "CBC", "Laws"] as const;
+
+const MINI_TABS: readonly {
+  label: string;
+  icon: keyof typeof Ionicons.glyphMap;
+}[] = [
+  { label: "Home", icon: "home-outline" },
+  { label: "Learn", icon: "book-outline" },
+  { label: "Tools", icon: "construct-outline" },
+  { label: "Saved", icon: "bookmark-outline" },
+];
+
+const PILL_SHAPE_RADIUS: Record<ButtonRadiusPreset, number> = {
+  square: 0,
+  sharp: 3,
+  subtle: 5,
+  rounded: 8,
+  soft: 12,
+  pill: 999,
+};
+
+const DIFF_KEY_LABELS: Partial<Record<keyof ThemeConfig, string>> = {
+  mode: "Mode",
+  presetId: "Preset",
+  customColors: "Custom Colors",
+  oledBlack: "OLED Black",
+  accentIntensity: "Vibrancy",
+  readingTint: "Reading Tint",
+  surfaceStyle: "Surface",
+  borderWidth: "Borders",
+  cardRadius: "Card Radius",
+  buttonRadius: "Btn Radius",
+  fontScale: "Font Scale",
+  fontPair: "Fonts",
+  lineHeightScale: "Line Height",
+  letterSpacingOffset: "Spacing",
+  density: "Density",
+  screenPadding: "Margins",
+  showKenyaStripe: "Flag Stripe",
+  stripeThickness: "Stripe Size",
+  tabBarStyle: "Tab Bar",
+  tabBarLabels: "Tab Labels",
+  tabBarSize: "Tab Size",
+  menuIndicatorStyle: "Indicator",
+  appBarStyle: "App Bar",
+  appBarSize: "Header Size",
+  headerAlignment: "Header Align",
+  pillBarLayout: "Pill Layout",
+  pillShape: "Pill Shape",
+  pillSize: "Pill Size",
+  horizontalScrollbarStyle: "H-Scrollbar",
+  horizontalScrollbarThickness: "Bar Width",
+  scrollbarTrackVisible: "Bar Track",
+  verticalScrollbarStyle: "V-Scrollbar",
+  edgeFadeEnabled: "Edge Fade",
+  scrollBounceEnabled: "Bounce",
+  cardShadowIntensity: "Shadow",
+  inputStyle: "Inputs",
+  buttonStyle: "Btn Style",
+  buttonSize: "Btn Size",
+  cardPadding: "Card Pad",
+  homeLayout: "Home Layout",
+  cardAccentStyle: "Card Accent",
+  iconBadgeStyle: "Icon Badge",
+  iconScale: "Icon Scale",
+  headingTransform: "Heading Case",
+  numericStyle: "Numbers",
+  progressBarStyle: "Progress Bar",
+  dividerStyle: "Dividers",
+  sectionHeaderStyle: "Sec. Headers",
+  pageTransition: "Transitions",
+  statusBarMode: "Status Bar",
+  quickMenuPosition: "Quick Jump",
+  hapticsEnabled: "Haptics",
+  hapticStrength: "Haptic Level",
+  reduceMotion: "Reduce Motion",
+  highContrastBorders: "High Contrast",
+  colorBlindMode: "Color Blind",
+  pressEffect: "Tap Effect",
+};
+
 const HEX_REGEX = /^#[0-9A-Fa-f]{6}$/;
 
 function normalizeHexInput(raw: string): string {
@@ -470,6 +647,45 @@ function findLabel<T extends string | number>(
 ): string {
   if (value === undefined) return fallback;
   return options.find((o) => o.value === value)?.label ?? fallback;
+}
+
+function formatFallbackKeyLabel(key: string): string {
+  return key
+    .replace(/([A-Z])/g, " $1")
+    .replace(/^./, (c) => c.toUpperCase())
+    .trim();
+}
+
+function normalizeDiffItems(raw: readonly DiffItemRaw[]): NormalizedDiffChip[] {
+  const seen = new Set<keyof ThemeConfig>();
+  const out: NormalizedDiffChip[] = [];
+  for (const item of raw) {
+    const key: keyof ThemeConfig =
+      typeof item === "string" ? item : item.key;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    const label =
+      typeof item === "object" && item !== null && typeof item.label === "string" && item.label.trim().length > 0
+        ? item.label
+        : DIFF_KEY_LABELS[key] ?? formatFallbackKeyLabel(String(key));
+    out.push({ key, label });
+  }
+  return out;
+}
+
+function isMakeoverActive(
+  profile: (typeof APP_LOOK_PROFILES)[number],
+  cfg: ThemeConfig | undefined
+): boolean {
+  if (!cfg) return false;
+  return (
+    cfg.presetId === profile.config.presetId &&
+    cfg.tabBarStyle === profile.config.tabBarStyle &&
+    cfg.homeLayout === profile.config.homeLayout &&
+    cfg.fontPair === profile.config.fontPair &&
+    cfg.pillBarLayout === profile.config.pillBarLayout &&
+    Object.values(cfg.customColors ?? {}).filter(Boolean).length === 0
+  );
 }
 
 export function ThemeSettingsView() {
@@ -494,8 +710,10 @@ export function ThemeSettingsView() {
     importThemeJson,
   } = themeCtx;
 
-  const colorKey: string = themeCtx.themeKey || `${isDark ? "d" : "l"}-${themeConfig?.presetId}-${theme.bgPrimary}-${theme.surfaceContainer}-${theme.gold}-${themeConfig?.surfaceStyle}-${themeConfig?.cardAccentStyle}`;
-  const themeKey: string = colorKey;
+  const [previewMode, setPreviewMode] = useState<PreviewMode>("mini-app");
+  const [peekingDefault, setPeekingDefault] = useState<boolean>(false);
+  const [previewActivePill, setPreviewActivePill] = useState<number>(0);
+  const [previewActiveTab, setPreviewActiveTab] = useState<number>(0);
 
   const [activeFilter, setActiveFilter] = useState<FilterKey>("all");
   const [openSections, setOpenSections] = useState<Record<AccordionKey, boolean>>({
@@ -517,6 +735,17 @@ export function ThemeSettingsView() {
     type: "success" | "error";
     message: string;
   } | null>(null);
+
+  const feedbackTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => {
+    return () => {
+      if (feedbackTimerRef.current) {
+        clearTimeout(feedbackTimerRef.current);
+        feedbackTimerRef.current = null;
+      }
+    };
+  }, []);
 
   useEffect(() => {
     const next: Record<string, string> = {};
@@ -554,20 +783,65 @@ export function ThemeSettingsView() {
     [openSections]
   );
 
-  const headingTransform: HeadingTransformOption =
-    ((themeConfig as any)?.headingTransform as HeadingTransformOption | undefined) ?? "none";
-  const numericStyle: NumericStyleOption =
-    ((themeConfig as any)?.numericStyle as NumericStyleOption | undefined) ?? "default";
-  const hapticStrength: HapticStrengthOption =
-    ((themeConfig as any)?.hapticStrength as HapticStrengthOption | undefined) ??
+  const diffChips = useMemo<NormalizedDiffChip[]>(() => {
+    if (!themeConfig) return [];
+    const raw = diffThemeConfig(themeConfig) as readonly DiffItemRaw[];
+    return Array.isArray(raw) ? normalizeDiffItems(raw) : [];
+  }, [themeConfig]);
+
+  const previewConfig: ThemeConfig = peekingDefault
+    ? DEFAULT_THEME_CONFIG
+    : themeConfig;
+
+  const previewTheme: ThemeColors = useMemo(() => {
+    if (!peekingDefault) return theme;
+    return resolveThemeColors(
+      darkColors,
+      lightColors,
+      DEFAULT_THEME_CONFIG,
+      isDark
+    ) as ThemeColors;
+  }, [peekingDefault, theme, isDark]);
+
+  const previewMetrics: ThemeMetrics = useMemo(() => {
+    if (!peekingDefault) return themeMetrics;
+    return resolveThemeMetrics(DEFAULT_THEME_CONFIG);
+  }, [peekingDefault, themeMetrics]);
+
+  const previewFonts = useMemo(() => {
+    if (!peekingDefault) return resolvedFonts;
+    return resolveFontPairFamilies(
+      DEFAULT_THEME_CONFIG.fontPair,
+      Platform.OS === "ios"
+    );
+  }, [peekingDefault, resolvedFonts]);
+
+  const headingTransform: HeadingTransform =
+    themeConfig?.headingTransform ?? "none";
+  const numericStyle: NumericStyle =
+    themeConfig?.numericStyle ?? "default";
+  const hapticStrength: HapticStrength =
+    themeConfig?.hapticStrength ??
     (themeConfig?.hapticsEnabled === false ? "off" : "light");
 
   const doHaptic = useCallback(() => {
-    if (hapticStrength === "off" || themeConfig?.hapticsEnabled === false) return;
-    const duration =
-      hapticStrength === "strong" ? 20 : hapticStrength === "medium" ? 12 : 7;
-    triggerHaptic(duration);
-  }, [hapticStrength, themeConfig?.hapticsEnabled]);
+    triggerHaptic();
+  }, []);
+
+  const handleResetSingleKey = useCallback(
+    (key: keyof ThemeConfig) => {
+      doHaptic();
+      if (key === "customColors") {
+        updateThemeConfig({ customColors: {} });
+        return;
+      }
+      const patch: Partial<ThemeConfig> = {
+        [key]: DEFAULT_THEME_CONFIG[key],
+      };
+      updateThemeConfig(patch);
+    },
+    [doHaptic, updateThemeConfig]
+  );
 
   const handleToggleSection = useCallback(
     (key: AccordionKey) => {
@@ -608,13 +882,9 @@ export function ThemeSettingsView() {
 
   const handleModeSelect = useCallback(
     (mode: ThemeMode) => {
-      doHaptic();
-      updateThemeConfig({ mode });
-      if (mode === "light" || mode === "dark") {
-        setThemeMode(mode);
-      }
+      setThemeMode(mode);
     },
-    [doHaptic, setThemeMode, updateThemeConfig]
+    [setThemeMode]
   );
 
   const handleHexChange = useCallback(
@@ -641,7 +911,6 @@ export function ThemeSettingsView() {
   }, [doHaptic, exportedJson]);
 
   const handleApplyImport = useCallback(() => {
-    doHaptic();
     const trimmed = importInput.trim();
     if (!trimmed) {
       setImportStatus({
@@ -663,10 +932,9 @@ export function ThemeSettingsView() {
         message: "Invalid JSON theme format. Check syntax and try again.",
       });
     }
-  }, [doHaptic, importInput, importThemeJson]);
+  }, [importInput, importThemeJson]);
 
   const handleConfirmReset = useCallback(() => {
-    doHaptic();
     Alert.alert(
       "Reset Theme Settings",
       "Restore all colors, typography, layout, and accessibility settings to KenyaHub defaults?",
@@ -682,69 +950,41 @@ export function ThemeSettingsView() {
         },
       ]
     );
-  }, [doHaptic, resetThemeConfig]);
+  }, [resetThemeConfig]);
+
+  const handleSaveTheme = useCallback(() => {
+    const saved = saveCustomTheme(
+      saveThemeName || `Custom ${savedThemes.length + 1}`
+    );
+    if (saved) {
+      setSaveThemeName("");
+      setSaveThemeFeedback(`Saved "${saved.name}"!`);
+      if (feedbackTimerRef.current) {
+        clearTimeout(feedbackTimerRef.current);
+      }
+      feedbackTimerRef.current = setTimeout(() => {
+        setSaveThemeFeedback(null);
+        feedbackTimerRef.current = null;
+      }, 2600);
+    }
+  }, [saveCustomTheme, saveThemeName, savedThemes.length]);
 
   const fontScale = themeMetrics?.fontScale ?? themeConfig?.fontScale ?? 1;
-  const lineHeightScale =
-    themeMetrics?.lineHeightScale ?? themeConfig?.lineHeightScale ?? 1;
-  const letterSpacingOffset =
-    themeMetrics?.letterSpacingOffset ?? themeConfig?.letterSpacingOffset ?? 0;
-  const previewCardRadius = themeMetrics?.cardRadiusPx ?? 14;
-  const previewButtonRadius = themeMetrics?.buttonRadiusPx ?? 10;
-  const previewBorderWidth = themeMetrics?.borderWidthPx ?? 1;
-  const spacingScale = themeMetrics?.spacingScale ?? 1;
-  const previewPadding = Math.round((themeMetrics?.cardPaddingPx ?? 14) * 0.85);
-  const previewBtnPV = themeMetrics?.buttonPaddingVPx ?? 10;
-  const previewBtnPH = themeMetrics?.buttonPaddingHPx ?? 16;
-  const previewIconScale = themeMetrics?.iconScale ?? 1.0;
-  const previewOpacity = themeMetrics?.cardOpacity ?? 1;
-
-  const monoFont = Platform.OS === "ios" ? "Menlo" : "monospace";
-  const previewHeadingFont =
-    resolvedFonts?.heading ??
-    (themeConfig?.fontPair === "editorial-serif"
-      ? Platform.OS === "ios"
-        ? "Georgia"
-        : "serif"
-      : themeConfig?.fontPair === "mono-tech"
-      ? monoFont
-      : themeConfig?.fontPair === "classic-sans"
-      ? Platform.OS === "ios"
-        ? "System"
-        : "sans-serif"
-      : "Outfit_700Bold");
-
-  const previewBodyFont =
-    resolvedFonts?.body ??
-    (themeConfig?.fontPair === "editorial-serif"
-      ? Platform.OS === "ios"
-        ? "Georgia"
-        : "serif"
-      : themeConfig?.fontPair === "mono-tech"
-      ? monoFont
-      : themeConfig?.fontPair === "classic-sans"
-      ? Platform.OS === "ios"
-        ? "System"
-        : "sans-serif"
-      : "Inter_400Regular");
-
   const currentMode: ThemeMode =
     themeConfig?.mode ?? (isDark ? "dark" : "light");
-  const showKenyaStripe = themeConfig?.showKenyaStripe !== false;
 
-  const activeMakeover = APP_LOOK_PROFILES.find(
-    (profile) =>
-      themeConfig?.presetId === profile.config.presetId &&
-      themeConfig?.tabBarStyle === profile.config.tabBarStyle &&
-      themeConfig?.homeLayout === profile.config.homeLayout &&
-      themeConfig?.fontPair === profile.config.fontPair &&
-      themeConfig?.pillBarLayout === profile.config.pillBarLayout &&
-      Object.values(themeConfig?.customColors ?? {}).filter(Boolean).length === 0
+  const activeMakeover = useMemo(
+    () => APP_LOOK_PROFILES.find((p) => isMakeoverActive(p, themeConfig)),
+    [themeConfig]
   );
-  const activePreset = THEME_PRESETS.find((p) => p.id === themeConfig?.presetId);
-  const customColorCount = Object.values(themeConfig?.customColors ?? {}).filter(
-    Boolean
-  ).length;
+  const activePreset = useMemo(
+    () => THEME_PRESETS.find((p) => p.id === themeConfig?.presetId),
+    [themeConfig?.presetId]
+  );
+  const customColorCount = useMemo(
+    () => Object.values(themeConfig?.customColors ?? {}).filter(Boolean).length,
+    [themeConfig?.customColors]
+  );
 
   const fontPairLabel = findLabel(
     FONT_PAIR_OPTIONS,
@@ -777,1730 +1017,3005 @@ export function ThemeSettingsView() {
     themeConfig?.colorBlindMode,
     "None"
   );
+  const accentVibrancyLabel = findLabel(
+    ACCENT_INTENSITY_OPTIONS,
+    themeConfig?.accentIntensity,
+    "Balanced"
+  );
 
+  const onGoldInk = getContrastInk(theme.gold);
   const isVisible = (key: AccordionKey) =>
     activeFilter === "all" || activeFilter === key;
 
-  const previewCardStyle = getThemedCardStyle(theme, themeConfig, themeMetrics);
-  const innerPreviewRadius = Math.max(0, previewCardRadius - previewBorderWidth);
-
   return (
-    <ScrollView
-      style={[styles.scroll, { backgroundColor: theme.bgPrimary }]}
-      contentContainerStyle={styles.scrollContent}
-      showsVerticalScrollIndicator={themeConfig?.verticalScrollbarStyle !== "hidden"}
-      keyboardShouldPersistTaps="handled"
-    >
-      <View key={themeKey} style={styles.innerStack}>
-        {/* 1. Compact Night Mode Header */}
-        <View
-          style={[
-            styles.compactCard,
-            {
-              backgroundColor: theme.surfaceContainer,
-              borderColor: theme.outlineVariant,
-            },
-          ]}
-        >
-          <View style={styles.nightHeaderRow}>
-            <View style={styles.nightTitleWrap}>
-              <View
-                style={[
-                  styles.iconBadge,
-                  { backgroundColor: theme.primaryContainer },
-                ]}
-              >
-                <Ionicons
-                  name={isDark ? "moon" : "sunny"}
-                  size={16}
-                  color={theme.gold}
-                />
-              </View>
-              <View style={styles.flexOne}>
-                <Text style={[styles.cardTitle, { color: theme.textPrimary }]}>
-                  Night Mode
-                </Text>
-                <Text
-                  style={[styles.cardSubtitle, { color: theme.textSecondary }]}
-                  numberOfLines={1}
-                >
-                  {isDark ? "Dark surface active" : "Warm daylight surface active"}
-                </Text>
-              </View>
-            </View>
-            <Switch
-              testID="theme-toggle"
-              value={isDark}
-              onValueChange={() => {
-                doHaptic();
-                toggleTheme();
-              }}
-              trackColor={{
-                false: theme.surfaceContainerHighest,
-                true: theme.gold,
-              }}
-              thumbColor={isDark ? theme.kenyaBlack : theme.kenyaWhite}
-              accessibilityLabel="Toggle Night Mode"
-            />
-          </View>
-
-          <View
-            style={[
-              styles.segmentedRow,
-              {
-                backgroundColor: theme.surfaceContainerLow,
-                borderColor: theme.outlineVariant,
-              },
-            ]}
-          >
-            {MODE_OPTIONS.map((opt) => {
-              const active = currentMode === opt.value;
-              return (
-                <Pressable
-                  key={`${opt.value}-${active ? "1" : "0"}-${themeKey}`}
-                  onPress={() => handleModeSelect(opt.value)}
-                  accessibilityRole="button"
-                  accessibilityState={{ selected: active }}
-                  android_ripple={androidRipple(theme.rippleColor)}
-                  style={pressableStyle(styles.segmentedPressable)}
-                >
-                  <View
-                    style={[
-                      styles.segmentedBtnInner,
-                      active && {
-                        backgroundColor: theme.primaryContainer,
-                        borderColor: theme.gold,
-                        borderWidth: 1,
-                      },
-                    ]}
-                  >
-                    <Ionicons
-                      name={opt.icon}
-                      size={14}
-                      color={active ? theme.gold : theme.textSecondary}
-                    />
-                    <Text
-                      style={[
-                        styles.segmentedLabel,
-                        { color: active ? theme.gold : theme.textSecondary },
-                      ]}
-                    >
-                      {opt.label}
-                    </Text>
-                  </View>
-                </Pressable>
-              );
-            })}
-          </View>
-        </View>
-
-        {/* 2. Compact Live Interactive Preview (Split Outer/Inner to prevent Android elevation+overflow blank bug) */}
-        <View style={styles.sectionBlock}>
-          <View style={styles.previewEyebrowRow}>
-            <View style={styles.sectionHeaderRow}>
-              <Feather name="eye" size={13} color={theme.gold} />
-              <Text style={[styles.sectionEyebrow, { color: theme.textSecondary }]}>
-                LIVE INTERACTIVE PREVIEW
-              </Text>
-            </View>
+    <View style={[styles.root, { backgroundColor: theme.bgPrimary }]}>
+      {/* Pinned Top Live Preview Dock + Active Changes Summary Bar */}
+      <View
+        style={[
+          styles.previewDock,
+          {
+            backgroundColor: theme.surfaceContainerLow,
+            borderBottomColor: theme.outlineVariant,
+          },
+        ]}
+      >
+        {/* Dock Header: Mode Toggle + Hold to Peek Default */}
+        <View style={styles.dockHeaderRow}>
+          <View style={styles.dockTitleCluster}>
+            <Feather name="eye" size={12} color={theme.gold} />
             <Text
-              style={[styles.previewPresetTag, { color: theme.textMuted }]}
+              style={[styles.dockEyebrow, { color: theme.textSecondary }]}
               numberOfLines={1}
             >
-              {activePreset?.name ?? "Custom"} · {Math.round(fontScale * 100)}%
+              {peekingDefault ? "DEFAULT PEEK" : "LIVE PREVIEW"}
             </Text>
           </View>
 
-          <View
-            style={[
-              styles.previewOuter,
-              previewCardStyle,
-              { opacity: previewOpacity },
-            ]}
-          >
-            <View
+          <View style={styles.dockControlsRow}>
+            <Pressable
+              onPressIn={() => setPeekingDefault(true)}
+              onPressOut={() => setPeekingDefault(false)}
+              accessibilityRole="button"
+              accessibilityLabel="Hold to peek default theme"
+              hitSlop={4}
               style={[
-                styles.previewInnerClip,
+                styles.peekBtn,
                 {
-                  borderRadius: innerPreviewRadius,
-                  elevation: 0,
+                  backgroundColor: peekingDefault
+                    ? theme.gold
+                    : theme.surfaceContainerHigh,
+                  borderColor: peekingDefault
+                    ? theme.gold
+                    : theme.outlineVariant,
                 },
               ]}
             >
-              {showKenyaStripe && <KenyaStripe />}
-              <View
-                style={{
-                  padding: previewPadding,
-                  gap: Math.round(7 * spacingScale),
-                }}
+              <Ionicons
+                name="eye-outline"
+                size={11}
+                color={peekingDefault ? onGoldInk : theme.textSecondary}
+              />
+              <Text
+                style={[
+                  styles.peekBtnText,
+                  { color: peekingDefault ? onGoldInk : theme.textPrimary },
+                ]}
               >
-                <View style={styles.previewTopRow}>
-                  <View
-                    style={[
-                      styles.previewBadge,
-                      {
-                        backgroundColor: theme.secondaryContainer,
-                        borderRadius: previewButtonRadius,
-                      },
-                    ]}
-                  >
-                    <Ionicons
-                      name="sparkles"
-                      size={Math.round(11 * previewIconScale)}
-                      color={theme.onSecondaryContainer}
-                    />
-                    <Text
-                      style={[
-                        styles.previewBadgeText,
-                        {
-                          color: theme.onSecondaryContainer,
-                          fontFamily: previewBodyFont,
-                          fontSize: Math.round(10.5 * fontScale),
-                          letterSpacing: letterSpacingOffset,
-                        },
-                      ]}
-                    >
-                      Nairobi · Live Theme
-                    </Text>
-                  </View>
-                  <Text
-                    style={{
-                      color: theme.textMuted,
-                      fontFamily:
-                        numericStyle === "tabular-mono" ? monoFont : previewBodyFont,
-                      fontVariant:
-                        numericStyle === "tabular-mono" ? ["tabular-nums"] : undefined,
-                      fontSize: Math.round(11 * fontScale),
-                      includeFontPadding: false,
-                    }}
-                  >
-                    KES 12,450 · {Math.round(fontScale * 100)}%
-                  </Text>
-                </View>
+                {peekingDefault ? "Default" : "Hold Peek"}
+              </Text>
+            </Pressable>
 
-                <Text
-                  style={{
-                    color: theme.textPrimary,
-                    fontFamily: previewHeadingFont,
-                    fontSize: Math.round(16 * fontScale),
-                    lineHeight: Math.round(16 * fontScale * 1.3 * lineHeightScale),
-                    letterSpacing: letterSpacingOffset,
-                    textTransform: headingTransform,
-                    includeFontPadding: false,
-                  }}
-                  numberOfLines={1}
-                >
-                  KenyaHub Civic & Utility Suite
-                </Text>
-
-                <Text
-                  style={{
-                    color: theme.textSecondary,
-                    fontFamily: previewBodyFont,
-                    fontSize: Math.round(12.5 * fontScale),
-                    lineHeight: Math.round(12.5 * fontScale * 1.38 * lineHeightScale),
-                    letterSpacing: letterSpacingOffset,
-                    includeFontPadding: false,
-                  }}
-                  numberOfLines={2}
-                >
-                  Live colors, typography, corners, borders & density across cards and actions.
-                </Text>
-
-                <View style={styles.previewActionsRow}>
-                  <Pressable
-                    key={`preview-primary-${themeKey}`}
-                    onPress={doHaptic}
-                    android_ripple={androidRipple(theme.rippleColor)}
-                    style={pressableStyle([
-                      styles.previewBtnPressable,
-                      { borderRadius: previewButtonRadius },
-                    ])}
-                  >
-                    <View
-                      style={[
-                        styles.previewBtnInner,
-                        {
-                          backgroundColor: theme.gold,
-                          borderRadius: previewButtonRadius,
-                          paddingVertical: Math.max(5, Math.round(previewBtnPV * 0.85)),
-                          paddingHorizontal: Math.max(8, Math.round(previewBtnPH * 0.85)),
-                        },
-                      ]}
-                    >
-                      <Text
-                        style={[
-                          styles.previewBtnText,
-                          {
-                            color: theme.kenyaBlack,
-                            fontFamily: previewHeadingFont,
-                            fontSize: Math.round(12 * fontScale),
-                          },
-                        ]}
-                      >
-                        Primary Action
-                      </Text>
-                    </View>
-                  </Pressable>
-
-                  <Pressable
-                    key={`preview-secondary-${themeKey}`}
-                    onPress={doHaptic}
-                    android_ripple={androidRipple(theme.rippleColor)}
-                    style={pressableStyle([
-                      styles.previewBtnPressable,
-                      { borderRadius: previewButtonRadius },
-                    ])}
-                  >
-                    <View
-                      style={[
-                        styles.previewBtnInner,
-                        {
-                          backgroundColor: theme.secondaryContainer,
-                          borderColor: theme.kenyaGreenLight,
-                          borderWidth: 1,
-                          borderRadius: previewButtonRadius,
-                          paddingVertical: Math.max(5, Math.round(previewBtnPV * 0.85)),
-                          paddingHorizontal: Math.max(8, Math.round(previewBtnPH * 0.85)),
-                        },
-                      ]}
-                    >
-                      <Text
-                        style={[
-                          styles.previewBtnText,
-                          {
-                            color: theme.onSecondaryContainer,
-                            fontFamily: previewBodyFont,
-                            fontSize: Math.round(12 * fontScale),
-                          },
-                        ]}
-                      >
-                        Secondary
-                      </Text>
-                    </View>
-                  </Pressable>
-                </View>
-              </View>
-            </View>
-          </View>
-        </View>
-
-        {/* 3. Slim Quick-Filter Bar + Expand/Collapse All */}
-        <View style={styles.filterToolbar}>
-          <ScrollView
-            horizontal
-            showsHorizontalScrollIndicator={
-              themeConfig?.horizontalScrollbarStyle === "native-indicator"
-            }
-            contentContainerStyle={styles.navPillsRow}
-            style={styles.flexOne}
-          >
-            {QUICK_FILTER_PILLS.map((pill) => {
-              const active = activeFilter === pill.key;
-              return (
-                <Pressable
-                  key={`filter-${pill.key}-${active ? "1" : "0"}-${themeKey}`}
-                  onPress={() => handleFilterSelect(pill.key)}
-                  accessibilityRole="button"
-                  accessibilityState={{ selected: active }}
-                  android_ripple={androidRipple(theme.rippleColor)}
-                  style={pressableStyle(styles.navPillPressable)}
-                >
-                  <View
-                    style={[
-                      styles.navPillInner,
-                      {
-                        backgroundColor: active
-                          ? theme.gold
-                          : theme.surfaceContainerHigh,
-                        borderColor: active ? theme.gold : theme.outlineVariant,
-                      },
-                    ]}
-                  >
-                    <Ionicons
-                      name={pill.icon}
-                      size={13}
-                      color={active ? theme.kenyaBlack : theme.textSecondary}
-                    />
-                    <Text
-                      style={[
-                        styles.navPillLabel,
-                        { color: active ? theme.kenyaBlack : theme.textPrimary },
-                      ]}
-                    >
-                      {pill.label}
-                    </Text>
-                  </View>
-                </Pressable>
-              );
-            })}
-          </ScrollView>
-
-          <Pressable
-            key={`expand-toggle-${allExpanded ? "1" : "0"}-${themeKey}`}
-            onPress={handleToggleExpandAll}
-            accessibilityRole="button"
-            accessibilityLabel={allExpanded ? "Collapse All Sections" : "Expand All Sections"}
-            android_ripple={androidRipple(theme.rippleColor)}
-            style={pressableStyle(styles.expandAllPressable)}
-          >
             <View
               style={[
-                styles.expandAllInner,
+                styles.previewModeSwitch,
                 {
                   backgroundColor: theme.surfaceContainer,
                   borderColor: theme.outlineVariant,
                 },
               ]}
             >
-              <Feather
-                name={allExpanded ? "chevrons-up" : "chevrons-down"}
-                size={13}
-                color={theme.gold}
-              />
-              <Text style={[styles.expandAllLabel, { color: theme.textPrimary }]}>
-                {allExpanded ? "Collapse" : "Expand"}
-              </Text>
-            </View>
-          </Pressable>
-        </View>
-
-        {/* Accordion 1: One-Tap Makeovers */}
-        {isVisible("makeovers") && (
-          <AccordionCard
-            sectionKey="makeovers"
-            icon="sparkles-outline"
-            title="One-Tap Makeovers"
-            summary={
-              activeMakeover
-                ? activeMakeover.name
-                : `Custom · ${APP_LOOK_PROFILES.length} looks`
-            }
-            expanded={openSections.makeovers}
-            onToggle={() => handleToggleSection("makeovers")}
-            theme={theme}
-            themeKey={themeKey}
-          >
-            <View style={styles.makeoversGrid}>
-              {APP_LOOK_PROFILES.map((profile) => {
-                const isActive =
-                  themeConfig?.presetId === profile.config.presetId &&
-                  themeConfig?.tabBarStyle === profile.config.tabBarStyle &&
-                  themeConfig?.homeLayout === profile.config.homeLayout &&
-                  themeConfig?.fontPair === profile.config.fontPair;
+              {PREVIEW_MODE_OPTIONS.map((opt) => {
+                const active = previewMode === opt.value;
                 return (
                   <Pressable
-                    key={`${profile.id}-${themeKey}`}
+                    key={opt.value}
                     onPress={() => {
                       doHaptic();
-                      applyAppLookProfile(profile.id);
-                    }}
-                    accessibilityRole="button"
-                    accessibilityState={{ selected: isActive }}
-                    android_ripple={androidRipple(theme.rippleColor)}
-                    style={pressableStyle(styles.makeoverPressable)}
-                  >
-                    <View
-                      style={[
-                        styles.makeoverCardInner,
-                        {
-                          backgroundColor: isActive
-                            ? theme.primaryContainer
-                            : theme.surfaceContainerLow,
-                          borderColor: isActive ? theme.gold : theme.outlineVariant,
-                          borderWidth: isActive ? 1.5 : 1,
-                        },
-                      ]}
-                    >
-                      <View style={styles.presetTopRow}>
-                        <View
-                          style={[
-                            styles.makeoverIconWrap,
-                            {
-                              backgroundColor: isActive
-                                ? theme.gold
-                                : theme.surfaceContainerHigh,
-                            },
-                          ]}
-                        >
-                          <Ionicons
-                            name={profile.icon as keyof typeof Ionicons.glyphMap}
-                            size={14}
-                            color={isActive ? theme.kenyaBlack : theme.gold}
-                          />
-                        </View>
-                        <View style={styles.swatchDotsRow}>
-                          {profile.swatches.map((hex, idx) => (
-                            <View
-                              key={`${profile.id}-swatch-${idx}`}
-                              style={[
-                                styles.swatchDotTiny,
-                                {
-                                  backgroundColor: hex,
-                                  borderColor: theme.outlineVariant,
-                                },
-                              ]}
-                            />
-                          ))}
-                        </View>
-                      </View>
-                      <View style={styles.makeoverNameRow}>
-                        <Text
-                          style={[
-                            styles.presetName,
-                            { color: theme.textPrimary, flex: 1 },
-                          ]}
-                          numberOfLines={1}
-                        >
-                          {profile.name}
-                        </Text>
-                        {isActive && (
-                          <Ionicons
-                            name="checkmark-circle"
-                            size={15}
-                            color={theme.gold}
-                          />
-                        )}
-                      </View>
-                      <Text
-                        style={[
-                          styles.presetTagline,
-                          { color: theme.textSecondary },
-                        ]}
-                        numberOfLines={2}
-                      >
-                        {profile.tagline}
-                      </Text>
-                    </View>
-                  </Pressable>
-                );
-              })}
-            </View>
-
-            {/* Save Current Customized Theme */}
-            <View
-              style={{
-                marginTop: 10,
-                paddingTop: 10,
-                borderTopWidth: StyleSheet.hairlineWidth,
-                borderTopColor: theme.outlineVariant,
-                gap: 8,
-              }}
-            >
-              <Text style={{ fontFamily: "Inter_700Bold", fontSize: 11, color: theme.gold, letterSpacing: 0.4 }}>
-                SAVE CURRENT CUSTOMIZED THEME
-              </Text>
-              <Text style={{ fontFamily: "Inter_400Regular", fontSize: 11.5, color: theme.textSecondary }}>
-                Pick any makeover or preset above, customize any setting below, and save it for one-tap switching.
-              </Text>
-              <View style={{ flexDirection: "row", alignItems: "center", gap: 8 }}>
-                <TextInput
-                  value={saveThemeName}
-                  onChangeText={setSaveThemeName}
-                  placeholder="Name your theme (e.g. My Midnight Gold)"
-                  placeholderTextColor={theme.textMuted}
-                  maxLength={32}
-                  style={{
-                    flex: 1,
-                    backgroundColor: theme.surfaceContainerLow,
-                    borderWidth: 1,
-                    borderColor: theme.outlineVariant,
-                    borderRadius: 10,
-                    paddingHorizontal: 10,
-                    paddingVertical: 8,
-                    fontFamily: "Inter_400Regular",
-                    fontSize: 12.5,
-                    color: theme.textPrimary,
-                  }}
-                />
-                <Pressable
-                  key={`save-theme-btn-${themeKey}`}
-                  onPress={() => {
-                    const saved = saveCustomTheme(saveThemeName || `Custom ${savedThemes.length + 1}`);
-                    if (saved) {
-                      setSaveThemeName("");
-                      setSaveThemeFeedback(`Saved "${saved.name}"!`);
-                      setTimeout(() => setSaveThemeFeedback(null), 2600);
-                    }
-                  }}
-                  accessibilityRole="button"
-                  accessibilityLabel="Save current customized theme"
-                >
-                  <View
-                    style={{
-                      flexDirection: "row",
-                      alignItems: "center",
-                      gap: 5,
-                      paddingHorizontal: 13,
-                      paddingVertical: 9,
-                      borderRadius: 10,
-                      backgroundColor: theme.gold,
-                    }}
-                  >
-                    <Ionicons name="bookmark" size={14} color="#1A1108" />
-                    <Text style={{ fontFamily: "Inter_700Bold", fontSize: 12, color: "#1A1108" }}>
-                      Save
-                    </Text>
-                  </View>
-                </Pressable>
-              </View>
-              {Boolean(saveThemeFeedback) && (
-                <Text style={{ fontFamily: "Inter_600SemiBold", fontSize: 11.5, color: theme.kenyaGreenLight }}>
-                  {saveThemeFeedback}
-                </Text>
-              )}
-
-              {savedThemes.length > 0 && (
-                <View style={{ gap: 6, marginTop: 4 }}>
-                  <Text style={{ fontFamily: "Inter_700Bold", fontSize: 11, color: theme.textSecondary, letterSpacing: 0.4 }}>
-                    YOUR SAVED THEMES ({savedThemes.length})
-                  </Text>
-                  {savedThemes.map((st) => (
-                    <View
-                      key={`${st.id}-${themeKey}`}
-                      style={{
-                        flexDirection: "row",
-                        alignItems: "center",
-                        justifyContent: "space-between",
-                        gap: 8,
-                        backgroundColor: theme.surfaceContainerLow,
-                        borderWidth: 1,
-                        borderColor: theme.outlineVariant,
-                        borderRadius: 11,
-                        paddingHorizontal: 10,
-                        paddingVertical: 8,
-                      }}
-                    >
-                      <Pressable
-                        onPress={() => {
-                          doHaptic();
-                          applySavedTheme(st.id);
-                        }}
-                        style={{ flex: 1, flexDirection: "row", alignItems: "center", gap: 8 }}
-                      >
-                        <View style={{ flexDirection: "row", gap: 3 }}>
-                          {st.swatches.map((hex, si) => (
-                            <View
-                              key={si}
-                              style={{
-                                width: 10,
-                                height: 10,
-                                borderRadius: 5,
-                                backgroundColor: hex,
-                                borderWidth: 0.5,
-                                borderColor: theme.outlineVariant,
-                              }}
-                            />
-                          ))}
-                        </View>
-                        <Text
-                          style={{ fontFamily: "Inter_700Bold", fontSize: 12.5, color: theme.textPrimary, flex: 1 }}
-                          numberOfLines={1}
-                        >
-                          {st.name}
-                        </Text>
-                      </Pressable>
-                      <Pressable
-                        onPress={() => {
-                          doHaptic();
-                          applySavedTheme(st.id);
-                        }}
-                        hitSlop={6}
-                      >
-                        <View style={{ paddingHorizontal: 9, paddingVertical: 5, borderRadius: 8, backgroundColor: theme.primaryContainer, borderWidth: 1, borderColor: theme.gold }}>
-                          <Text style={{ fontFamily: "Inter_700Bold", fontSize: 11, color: theme.gold }}>Apply</Text>
-                        </View>
-                      </Pressable>
-                      <Pressable
-                        onPress={() => {
-                          doHaptic();
-                          deleteSavedTheme(st.id);
-                        }}
-                        hitSlop={6}
-                        accessibilityLabel={`Delete saved theme ${st.name}`}
-                      >
-                        <Ionicons name="trash-outline" size={16} color={theme.kenyaRedLight} />
-                      </Pressable>
-                    </View>
-                  ))}
-                </View>
-              )}
-            </View>
-          </AccordionCard>
-        )}
-
-        {/* Accordion 2: Theme Presets */}
-        {isVisible("presets") && (
-          <AccordionCard
-            sectionKey="presets"
-            icon="color-palette-outline"
-            title="Theme Presets"
-            summary={`${activePreset?.name ?? "Custom"} · ${THEME_PRESETS.length} themes`}
-            expanded={openSections.presets}
-            onToggle={() => handleToggleSection("presets")}
-            theme={theme}
-            themeKey={themeKey}
-          >
-            <View style={styles.presetFilterRow}>
-              {(
-                [
-                  { id: "all", label: `All (${THEME_PRESETS.length})` },
-                  { id: "dark", label: `Dark (${darkCount})` },
-                  { id: "light", label: `Light (${lightCount})` },
-                ] as const
-              ).map((f) => {
-                const act = presetModeFilter === f.id;
-                return (
-                  <Pressable
-                    key={`preset-filter-${f.id}-${act ? "1" : "0"}-${themeKey}`}
-                    onPress={() => {
-                      doHaptic();
-                      setPresetModeFilter(f.id);
-                    }}
-                    accessibilityRole="button"
-                    accessibilityState={{ selected: act }}
-                    android_ripple={androidRipple(theme.rippleColor)}
-                    style={pressableStyle(styles.presetFilterPressable)}
-                  >
-                    <View
-                      style={[
-                        styles.presetFilterBtnInner,
-                        {
-                          borderColor: act ? theme.gold : theme.outlineVariant,
-                          backgroundColor: act
-                            ? theme.primaryContainer
-                            : theme.surfaceContainerLow,
-                        },
-                      ]}
-                    >
-                      <Text
-                        style={[
-                          styles.presetFilterLabel,
-                          { color: act ? theme.gold : theme.textSecondary },
-                        ]}
-                      >
-                        {f.label}
-                      </Text>
-                    </View>
-                  </Pressable>
-                );
-              })}
-            </View>
-
-            <View style={styles.presetsGrid}>
-              {filteredPresets.map((preset) => {
-                const active = themeConfig?.presetId === preset.id;
-                return (
-                  <Pressable
-                    key={`${preset.id}-${themeKey}`}
-                    onPress={() => {
-                      doHaptic();
-                      applyThemePreset(preset.id, preset.recommendedMode);
+                      setPreviewMode(opt.value);
                     }}
                     accessibilityRole="button"
                     accessibilityState={{ selected: active }}
+                    style={[
+                      styles.previewModeBtn,
+                      active && { backgroundColor: theme.gold },
+                    ]}
+                  >
+                    <Text
+                      style={[
+                        styles.previewModeText,
+                        { color: active ? onGoldInk : theme.textSecondary },
+                      ]}
+                    >
+                      {opt.label}
+                    </Text>
+                  </Pressable>
+                );
+              })}
+            </View>
+          </View>
+        </View>
+
+        {/* Preview Stage (Mini-App or Card; hidden when previewMode === "hide") */}
+        {previewMode === "mini-app" && (
+          <MiniAppLivePreview
+            previewTheme={previewTheme}
+            previewConfig={previewConfig}
+            previewMetrics={previewMetrics}
+            previewFonts={previewFonts}
+            peekingDefault={peekingDefault}
+            activePill={previewActivePill}
+            onSelectPill={(idx) => {
+              doHaptic();
+              setPreviewActivePill(idx);
+            }}
+            activeTab={previewActiveTab}
+            onSelectTab={(idx) => {
+              doHaptic();
+              setPreviewActiveTab(idx);
+            }}
+            onActionPress={doHaptic}
+          />
+        )}
+
+        {previewMode === "card" && (
+          <CardCompactPreview
+            previewTheme={previewTheme}
+            previewConfig={previewConfig}
+            previewMetrics={previewMetrics}
+            previewFonts={previewFonts}
+            peekingDefault={peekingDefault}
+            onActionPress={doHaptic}
+          />
+        )}
+
+        {/* Active Changes Diff Bar */}
+        <View style={styles.diffBarRow}>
+          <View
+            style={[
+              styles.diffCountBadge,
+              {
+                backgroundColor:
+                  diffChips.length > 0
+                    ? theme.primaryContainer
+                    : theme.surfaceContainer,
+                borderColor:
+                  diffChips.length > 0 ? theme.gold : theme.outlineVariant,
+              },
+            ]}
+          >
+            <Text
+              style={[
+                styles.diffCountText,
+                {
+                  color:
+                    diffChips.length > 0 ? theme.gold : theme.textSecondary,
+                },
+              ]}
+            >
+              {diffChips.length} changed
+            </Text>
+          </View>
+
+          {diffChips.length > 0 ? (
+            <ScrollView
+              horizontal
+              nestedScrollEnabled
+              showsHorizontalScrollIndicator={false}
+              contentContainerStyle={styles.diffChipsScroll}
+              style={styles.flexOne}
+            >
+              {diffChips.map((chip) => (
+                <Pressable
+                  key={String(chip.key)}
+                  onPress={() => handleResetSingleKey(chip.key)}
+                  accessibilityRole="button"
+                  accessibilityLabel={`Reset ${chip.label} to default`}
+                  android_ripple={androidRipple(theme.rippleColor)}
+                  style={pressableStyle(styles.diffChipPressable)}
+                >
+                  <View
+                    style={[
+                      styles.diffChipInner,
+                      {
+                        backgroundColor: theme.surfaceContainer,
+                        borderColor: theme.outlineVariant,
+                      },
+                    ]}
+                  >
+                    <Text
+                      style={[
+                        styles.diffChipLabel,
+                        { color: theme.textPrimary },
+                      ]}
+                      numberOfLines={1}
+                    >
+                      {chip.label}
+                    </Text>
+                    <Ionicons
+                      name="close-circle"
+                      size={12}
+                      color={theme.textMuted}
+                    />
+                  </View>
+                </Pressable>
+              ))}
+            </ScrollView>
+          ) : (
+            <Text
+              style={[styles.diffEmptyText, { color: theme.textMuted }]}
+              numberOfLines={1}
+            >
+              All settings at KenyaHub defaults
+            </Text>
+          )}
+        </View>
+      </View>
+
+      {/* Main Scrollable Settings Controls (NO key={themeKey} wrapper!) */}
+      <ScrollView
+        style={[styles.scroll, { backgroundColor: theme.bgPrimary }]}
+        contentContainerStyle={styles.scrollContent}
+        showsVerticalScrollIndicator={
+          themeConfig?.verticalScrollbarStyle !== "hidden"
+        }
+        keyboardShouldPersistTaps="handled"
+      >
+        <View style={styles.innerStack}>
+          {/* 1. Compact Night Mode & OLED Header */}
+          <View
+            style={[
+              styles.compactCard,
+              {
+                backgroundColor: theme.surfaceContainer,
+                borderColor: theme.outlineVariant,
+              },
+            ]}
+          >
+            <View style={styles.nightHeaderRow}>
+              <View style={styles.nightTitleWrap}>
+                <View
+                  style={[
+                    styles.iconBadge,
+                    { backgroundColor: theme.primaryContainer },
+                  ]}
+                >
+                  <Ionicons
+                    name={isDark ? "moon" : "sunny"}
+                    size={16}
+                    color={theme.gold}
+                  />
+                </View>
+                <View style={styles.flexOne}>
+                  <Text style={[styles.cardTitle, { color: theme.textPrimary }]}>
+                    Night Mode
+                  </Text>
+                  <Text
+                    style={[styles.cardSubtitle, { color: theme.textSecondary }]}
+                    numberOfLines={1}
+                  >
+                    {isDark
+                      ? themeConfig?.oledBlack
+                        ? "OLED True Black active"
+                        : "Dark surface active"
+                      : "Warm daylight surface active"}
+                  </Text>
+                </View>
+              </View>
+              <Switch
+                testID="theme-toggle"
+                value={isDark}
+                onValueChange={() => toggleTheme()}
+                trackColor={{
+                  false: theme.surfaceContainerHighest,
+                  true: theme.gold,
+                }}
+                thumbColor={isDark ? theme.kenyaBlack : theme.kenyaWhite}
+                accessibilityLabel="Toggle Night Mode"
+              />
+            </View>
+
+            <View
+              style={[
+                styles.segmentedRow,
+                {
+                  backgroundColor: theme.surfaceContainerLow,
+                  borderColor: theme.outlineVariant,
+                },
+              ]}
+            >
+              {MODE_OPTIONS.map((opt) => {
+                const active = currentMode === opt.value;
+                return (
+                  <Pressable
+                    key={opt.value}
+                    onPress={() => handleModeSelect(opt.value)}
+                    accessibilityRole="button"
+                    accessibilityState={{ selected: active }}
                     android_ripple={androidRipple(theme.rippleColor)}
-                    style={pressableStyle(styles.presetPressable)}
+                    style={pressableStyle(styles.segmentedPressable)}
                   >
                     <View
                       style={[
-                        styles.presetCardInner,
-                        {
-                          backgroundColor: active
-                            ? theme.primaryContainer
-                            : theme.surfaceContainerLow,
-                          borderColor: active ? theme.gold : theme.outlineVariant,
-                          borderWidth: active ? 1.5 : 1,
+                        styles.segmentedBtnInner,
+                        active && {
+                          backgroundColor: theme.primaryContainer,
+                          borderColor: theme.gold,
+                          borderWidth: 1,
                         },
                       ]}
                     >
-                      <View style={styles.presetTopRow}>
-                        <View style={styles.swatchDotsRow}>
-                          {preset.swatches.map((hex, idx) => (
-                            <View
-                              key={`${preset.id}-dot-${idx}`}
-                              style={[
-                                styles.swatchDotSmall,
-                                {
-                                  backgroundColor: hex,
-                                  borderColor: theme.outlineVariant,
-                                },
-                              ]}
-                            />
-                          ))}
-                        </View>
-                        {active && (
-                          <Ionicons
-                            name="checkmark-circle"
-                            size={16}
-                            color={theme.gold}
-                          />
-                        )}
-                      </View>
-                      <Text
-                        style={[styles.presetName, { color: theme.textPrimary }]}
-                        numberOfLines={1}
-                      >
-                        {preset.name}
-                      </Text>
+                      <Ionicons
+                        name={opt.icon}
+                        size={14}
+                        color={active ? theme.gold : theme.textSecondary}
+                      />
                       <Text
                         style={[
-                          styles.presetTagline,
-                          { color: theme.textSecondary },
+                          styles.segmentedLabel,
+                          { color: active ? theme.gold : theme.textSecondary },
                         ]}
-                        numberOfLines={2}
                       >
-                        {preset.tagline}
+                        {opt.label}
                       </Text>
                     </View>
                   </Pressable>
                 );
               })}
             </View>
-          </AccordionCard>
-        )}
 
-        {/* Accordion 3: Custom Colors */}
-        {isVisible("colors") && (
-          <AccordionCard
-            sectionKey="colors"
-            icon="eyedrop-outline"
-            title="Custom Colors"
-            summary={
-              customColorCount > 0
-                ? `${customColorCount} custom override${customColorCount > 1 ? "s" : ""}`
-                : "Default palette"
-            }
-            expanded={openSections.colors}
-            onToggle={() => handleToggleSection("colors")}
-            theme={theme}
-            themeKey={themeKey}
-          >
-            <View style={styles.stackList}>
-              {COLOR_ROLES.map((role) => {
-                const activeHex = themeConfig?.customColors?.[role.key];
-                const draft = hexDrafts[role.key] ?? "";
-                const isDraftValid = draft === "" || HEX_REGEX.test(draft);
+            <ToggleRow
+              label="OLED True Black"
+              description="Pure #000000 black surfaces in dark mode for AMOLED battery savings"
+              value={Boolean(themeConfig?.oledBlack)}
+              onValueChange={(val) => {
+                doHaptic();
+                updateThemeConfig({ oledBlack: val });
+              }}
+              theme={theme}
+            />
+          </View>
 
+          {/* 2. Slim Quick-Filter Bar + Expand/Collapse All */}
+          <View style={styles.filterToolbar}>
+            <ScrollView
+              horizontal
+              nestedScrollEnabled
+              showsHorizontalScrollIndicator={
+                themeConfig?.horizontalScrollbarStyle === "native-indicator"
+              }
+              contentContainerStyle={styles.navPillsRow}
+              style={styles.flexOne}
+            >
+              {QUICK_FILTER_PILLS.map((pill) => {
+                const active = activeFilter === pill.key;
                 return (
-                  <View
-                    key={role.key}
-                    style={[
-                      styles.subCard,
-                      {
-                        backgroundColor: theme.surfaceContainerLow,
-                        borderColor: theme.outlineVariant,
-                      },
-                    ]}
+                  <Pressable
+                    key={pill.key}
+                    onPress={() => handleFilterSelect(pill.key)}
+                    accessibilityRole="button"
+                    accessibilityState={{ selected: active }}
+                    android_ripple={androidRipple(theme.rippleColor)}
+                    style={pressableStyle(styles.navPillPressable)}
                   >
-                    <View style={styles.colorRoleHeader}>
-                      <View style={styles.flexOne}>
-                        <Text
-                          style={[
-                            styles.optionGroupTitle,
-                            { color: theme.textPrimary },
-                          ]}
-                        >
-                          {role.label}
-                        </Text>
-                        <Text
-                          style={[
-                            styles.optionGroupDesc,
-                            { color: theme.textSecondary },
-                          ]}
-                        >
-                          {role.description}
-                        </Text>
-                      </View>
-                      {activeHex && (
-                        <View
-                          style={[
-                            styles.activeColorPreview,
-                            {
-                              backgroundColor: activeHex,
-                              borderColor: theme.outline,
-                            },
-                          ]}
-                        />
-                      )}
+                    <View
+                      style={[
+                        styles.navPillInner,
+                        {
+                          backgroundColor: active
+                            ? theme.gold
+                            : theme.surfaceContainerHigh,
+                          borderColor: active
+                            ? theme.gold
+                            : theme.outlineVariant,
+                        },
+                      ]}
+                    >
+                      <Ionicons
+                        name={pill.icon}
+                        size={13}
+                        color={active ? onGoldInk : theme.textSecondary}
+                      />
+                      <Text
+                        style={[
+                          styles.navPillLabel,
+                          { color: active ? onGoldInk : theme.textPrimary },
+                        ]}
+                      >
+                        {pill.label}
+                      </Text>
                     </View>
+                  </Pressable>
+                );
+              })}
+            </ScrollView>
 
-                    <View style={styles.swatchesRow}>
-                      {role.swatches.map((hex) => {
-                        const selected =
-                          activeHex?.toUpperCase() === hex.toUpperCase();
-                        return (
-                          <Pressable
-                            key={`${role.key}-${hex}-${themeKey}`}
-                            onPress={() => {
-                              doHaptic();
-                              setHexDrafts((prev) => ({
-                                ...prev,
-                                [role.key]: hex,
-                              }));
-                              updateCustomColor(role.key, hex);
-                            }}
-                            accessibilityRole="button"
-                            accessibilityLabel={`Set ${role.label} to ${hex}`}
+            <Pressable
+              onPress={handleToggleExpandAll}
+              accessibilityRole="button"
+              accessibilityLabel={
+                allExpanded ? "Collapse All Sections" : "Expand All Sections"
+              }
+              android_ripple={androidRipple(theme.rippleColor)}
+              style={pressableStyle(styles.expandAllPressable)}
+            >
+              <View
+                style={[
+                  styles.expandAllInner,
+                  {
+                    backgroundColor: theme.surfaceContainer,
+                    borderColor: theme.outlineVariant,
+                  },
+                ]}
+              >
+                <Feather
+                  name={allExpanded ? "chevrons-up" : "chevrons-down"}
+                  size={13}
+                  color={theme.gold}
+                />
+                <Text
+                  style={[styles.expandAllLabel, { color: theme.textPrimary }]}
+                >
+                  {allExpanded ? "Collapse" : "Expand"}
+                </Text>
+              </View>
+            </Pressable>
+          </View>
+
+          {/* Accordion 1: One-Tap Makeovers */}
+          {isVisible("makeovers") && (
+            <AccordionCard
+              icon="sparkles-outline"
+              title="One-Tap Makeovers"
+              summary={
+                activeMakeover
+                  ? activeMakeover.name
+                  : `Custom · ${APP_LOOK_PROFILES.length} looks`
+              }
+              expanded={openSections.makeovers}
+              onToggle={() => handleToggleSection("makeovers")}
+              theme={theme}
+            >
+              <View style={styles.makeoversGrid}>
+                {APP_LOOK_PROFILES.map((profile) => {
+                  const isActive = isMakeoverActive(profile, themeConfig);
+                  return (
+                    <Pressable
+                      key={profile.id}
+                      onPress={() => applyAppLookProfile(profile.id)}
+                      accessibilityRole="button"
+                      accessibilityState={{ selected: isActive }}
+                      android_ripple={androidRipple(theme.rippleColor)}
+                      style={pressableStyle(styles.makeoverPressable)}
+                    >
+                      <View
+                        style={[
+                          styles.makeoverCardInner,
+                          {
+                            backgroundColor: isActive
+                              ? theme.primaryContainer
+                              : theme.surfaceContainerLow,
+                            borderColor: isActive
+                              ? theme.gold
+                              : theme.outlineVariant,
+                            borderWidth: isActive ? 1.5 : 1,
+                          },
+                        ]}
+                      >
+                        <View style={styles.presetTopRow}>
+                          <View
                             style={[
-                              styles.swatchCircle,
+                              styles.makeoverIconWrap,
                               {
-                                backgroundColor: hex,
-                                borderColor: selected
+                                backgroundColor: isActive
                                   ? theme.gold
-                                  : theme.outlineVariant,
-                                borderWidth: selected ? 2.5 : 1,
+                                  : theme.surfaceContainerHigh,
                               },
                             ]}
                           >
-                            {selected && (
-                              <Ionicons
-                                name="checkmark"
-                                size={13}
-                                color={
-                                  hex.toUpperCase() === "#FFFFFF" ||
-                                  hex.toUpperCase() === "#FAF7F2" ||
-                                  hex.toUpperCase() === "#F4EFEA"
-                                    ? "#1A1108"
-                                    : "#FFFFFF"
-                                }
+                            <Ionicons
+                              name={
+                                profile.icon as keyof typeof Ionicons.glyphMap
+                              }
+                              size={14}
+                              color={isActive ? onGoldInk : theme.gold}
+                            />
+                          </View>
+                          <View style={styles.swatchDotsRow}>
+                            {profile.swatches.map((hex, idx) => (
+                              <View
+                                key={`${profile.id}-swatch-${idx}`}
+                                style={[
+                                  styles.swatchDotTiny,
+                                  {
+                                    backgroundColor: hex,
+                                    borderColor: theme.outlineVariant,
+                                  },
+                                ]}
                               />
-                            )}
-                          </Pressable>
-                        );
-                      })}
-                    </View>
-
-                    <View style={styles.hexInputRow}>
-                      <TextInput
-                        value={draft}
-                        onChangeText={(text) => handleHexChange(role.key, text)}
-                        placeholder="#RRGGBB"
-                        placeholderTextColor={theme.textMuted}
-                        autoCapitalize="characters"
-                        autoCorrect={false}
-                        maxLength={7}
-                        style={[
-                          styles.hexInput,
-                          {
-                            color: theme.textPrimary,
-                            backgroundColor: theme.surfaceContainer,
-                            borderColor: isDraftValid
-                              ? theme.outlineVariant
-                              : theme.kenyaRed,
-                          },
-                        ]}
-                      />
-                      <Pressable
-                        key={`clear-${role.key}-${themeKey}`}
-                        onPress={() => {
-                          doHaptic();
-                          setHexDrafts((prev) => ({ ...prev, [role.key]: "" }));
-                          updateCustomColor(role.key, undefined);
-                        }}
-                        accessibilityRole="button"
-                        android_ripple={androidRipple(theme.rippleColor)}
-                        style={pressableStyle(styles.clearBtnPressable)}
-                      >
-                        <View
-                          style={[
-                            styles.clearBtnInner,
-                            {
-                              backgroundColor: theme.surfaceContainerHigh,
-                              borderColor: theme.outlineVariant,
-                            },
-                          ]}
-                        >
+                            ))}
+                          </View>
+                        </View>
+                        <View style={styles.makeoverNameRow}>
                           <Text
                             style={[
-                              styles.clearBtnText,
+                              styles.presetName,
+                              { color: theme.textPrimary, flex: 1 },
+                            ]}
+                            numberOfLines={1}
+                          >
+                            {profile.name}
+                          </Text>
+                          {isActive && (
+                            <Ionicons
+                              name="checkmark-circle"
+                              size={15}
+                              color={theme.gold}
+                            />
+                          )}
+                        </View>
+                        <Text
+                          style={[
+                            styles.presetTagline,
+                            { color: theme.textSecondary },
+                          ]}
+                          numberOfLines={2}
+                        >
+                          {profile.tagline}
+                        </Text>
+                      </View>
+                    </Pressable>
+                  );
+                })}
+              </View>
+
+              {/* Save Current Customized Theme */}
+              <View
+                style={[
+                  styles.saveThemeBlock,
+                  { borderTopColor: theme.outlineVariant },
+                ]}
+              >
+                <Text style={[styles.saveThemeEyebrow, { color: theme.gold }]}>
+                  SAVE CURRENT CUSTOMIZED THEME
+                </Text>
+                <Text
+                  style={[
+                    styles.saveThemeDesc,
+                    { color: theme.textSecondary },
+                  ]}
+                >
+                  Pick any makeover or preset above, customize any setting below,
+                  and save it for one-tap switching.
+                </Text>
+                <View style={styles.saveThemeInputRow}>
+                  <TextInput
+                    value={saveThemeName}
+                    onChangeText={setSaveThemeName}
+                    placeholder="Name your theme (e.g. My Midnight Gold)"
+                    placeholderTextColor={theme.textMuted}
+                    maxLength={32}
+                    style={[
+                      styles.saveThemeInput,
+                      {
+                        backgroundColor: theme.surfaceContainerLow,
+                        borderColor: theme.outlineVariant,
+                        color: theme.textPrimary,
+                      },
+                    ]}
+                  />
+                  <Pressable
+                    onPress={handleSaveTheme}
+                    accessibilityRole="button"
+                    accessibilityLabel="Save current customized theme"
+                    android_ripple={androidRipple(theme.rippleColor)}
+                    style={pressableStyle(styles.saveThemeBtnPressable)}
+                  >
+                    <View
+                      style={[
+                        styles.saveThemeBtnInner,
+                        { backgroundColor: theme.gold },
+                      ]}
+                    >
+                      <Ionicons name="bookmark" size={14} color={onGoldInk} />
+                      <Text
+                        style={[
+                          styles.saveThemeBtnText,
+                          { color: onGoldInk },
+                        ]}
+                      >
+                        Save
+                      </Text>
+                    </View>
+                  </Pressable>
+                </View>
+                {Boolean(saveThemeFeedback) && (
+                  <Text
+                    style={[
+                      styles.saveThemeFeedback,
+                      { color: theme.kenyaGreenLight },
+                    ]}
+                  >
+                    {saveThemeFeedback}
+                  </Text>
+                )}
+
+                {savedThemes.length > 0 && (
+                  <View style={styles.savedThemesList}>
+                    <Text
+                      style={[
+                        styles.savedThemesHeading,
+                        { color: theme.textSecondary },
+                      ]}
+                    >
+                      YOUR SAVED THEMES ({savedThemes.length})
+                    </Text>
+                    {savedThemes.map((st) => (
+                      <View
+                        key={st.id}
+                        style={[
+                          styles.savedThemeRow,
+                          {
+                            backgroundColor: theme.surfaceContainerLow,
+                            borderColor: theme.outlineVariant,
+                          },
+                        ]}
+                      >
+                        <Pressable
+                          onPress={() => applySavedTheme(st.id)}
+                          style={styles.savedThemeSelectArea}
+                        >
+                          <View style={styles.savedThemeSwatches}>
+                            {st.swatches.map((hex, si) => (
+                              <View
+                                key={`${st.id}-sw-${si}`}
+                                style={[
+                                  styles.savedThemeDot,
+                                  {
+                                    backgroundColor: hex,
+                                    borderColor: theme.outlineVariant,
+                                  },
+                                ]}
+                              />
+                            ))}
+                          </View>
+                          <Text
+                            style={[
+                              styles.savedThemeName,
+                              { color: theme.textPrimary },
+                            ]}
+                            numberOfLines={1}
+                          >
+                            {st.name}
+                          </Text>
+                        </Pressable>
+                        <Pressable
+                          onPress={() => applySavedTheme(st.id)}
+                          hitSlop={6}
+                          accessibilityRole="button"
+                          accessibilityLabel={`Apply saved theme ${st.name}`}
+                        >
+                          <View
+                            style={[
+                              styles.savedThemeApplyBtn,
+                              {
+                                backgroundColor: theme.primaryContainer,
+                                borderColor: theme.gold,
+                              },
+                            ]}
+                          >
+                            <Text
+                              style={[
+                                styles.savedThemeApplyText,
+                                { color: theme.gold },
+                              ]}
+                            >
+                              Apply
+                            </Text>
+                          </View>
+                        </Pressable>
+                        <Pressable
+                          onPress={() => deleteSavedTheme(st.id)}
+                          hitSlop={6}
+                          accessibilityRole="button"
+                          accessibilityLabel={`Delete saved theme ${st.name}`}
+                        >
+                          <Ionicons
+                            name="trash-outline"
+                            size={16}
+                            color={theme.kenyaRedLight}
+                          />
+                        </Pressable>
+                      </View>
+                    ))}
+                  </View>
+                )}
+              </View>
+            </AccordionCard>
+          )}
+
+          {/* Accordion 2: Theme Presets */}
+          {isVisible("presets") && (
+            <AccordionCard
+              icon="color-palette-outline"
+              title="Theme Presets"
+              summary={`${activePreset?.name ?? "Custom"} · ${THEME_PRESETS.length} themes`}
+              expanded={openSections.presets}
+              onToggle={() => handleToggleSection("presets")}
+              theme={theme}
+            >
+              <View style={styles.presetFilterRow}>
+                {(
+                  [
+                    { id: "all", label: `All (${THEME_PRESETS.length})` },
+                    { id: "dark", label: `Dark (${darkCount})` },
+                    { id: "light", label: `Light (${lightCount})` },
+                  ] as const
+                ).map((f) => {
+                  const act = presetModeFilter === f.id;
+                  return (
+                    <Pressable
+                      key={f.id}
+                      onPress={() => {
+                        doHaptic();
+                        setPresetModeFilter(f.id);
+                      }}
+                      accessibilityRole="button"
+                      accessibilityState={{ selected: act }}
+                      android_ripple={androidRipple(theme.rippleColor)}
+                      style={pressableStyle(styles.presetFilterPressable)}
+                    >
+                      <View
+                        style={[
+                          styles.presetFilterBtnInner,
+                          {
+                            borderColor: act
+                              ? theme.gold
+                              : theme.outlineVariant,
+                            backgroundColor: act
+                              ? theme.primaryContainer
+                              : theme.surfaceContainerLow,
+                          },
+                        ]}
+                      >
+                        <Text
+                          style={[
+                            styles.presetFilterLabel,
+                            { color: act ? theme.gold : theme.textSecondary },
+                          ]}
+                        >
+                          {f.label}
+                        </Text>
+                      </View>
+                    </Pressable>
+                  );
+                })}
+              </View>
+
+              <View style={styles.presetsGrid}>
+                {filteredPresets.map((preset) => {
+                  const active = themeConfig?.presetId === preset.id;
+                  return (
+                    <Pressable
+                      key={preset.id}
+                      onPress={() =>
+                        applyThemePreset(preset.id, preset.recommendedMode)
+                      }
+                      accessibilityRole="button"
+                      accessibilityState={{ selected: active }}
+                      android_ripple={androidRipple(theme.rippleColor)}
+                      style={pressableStyle(styles.presetPressable)}
+                    >
+                      <View
+                        style={[
+                          styles.presetCardInner,
+                          {
+                            backgroundColor: active
+                              ? theme.primaryContainer
+                              : theme.surfaceContainerLow,
+                            borderColor: active
+                              ? theme.gold
+                              : theme.outlineVariant,
+                            borderWidth: active ? 1.5 : 1,
+                          },
+                        ]}
+                      >
+                        <View style={styles.presetTopRow}>
+                          <View style={styles.swatchDotsRow}>
+                            {preset.swatches.map((hex, idx) => (
+                              <View
+                                key={`${preset.id}-dot-${idx}`}
+                                style={[
+                                  styles.swatchDotSmall,
+                                  {
+                                    backgroundColor: hex,
+                                    borderColor: theme.outlineVariant,
+                                  },
+                                ]}
+                              />
+                            ))}
+                          </View>
+                          {active && (
+                            <Ionicons
+                              name="checkmark-circle"
+                              size={16}
+                              color={theme.gold}
+                            />
+                          )}
+                        </View>
+                        <Text
+                          style={[
+                            styles.presetName,
+                            { color: theme.textPrimary },
+                          ]}
+                          numberOfLines={1}
+                        >
+                          {preset.name}
+                        </Text>
+                        <Text
+                          style={[
+                            styles.presetTagline,
+                            { color: theme.textSecondary },
+                          ]}
+                          numberOfLines={2}
+                        >
+                          {preset.tagline}
+                        </Text>
+                      </View>
+                    </Pressable>
+                  );
+                })}
+              </View>
+            </AccordionCard>
+          )}
+
+          {/* Accordion 3: Custom Colors, Vibrancy & Reading Tint */}
+          {isVisible("colors") && (
+            <AccordionCard
+              icon="eyedrop-outline"
+              title="Custom Colors"
+              summary={
+                customColorCount > 0
+                  ? `${customColorCount} override${customColorCount > 1 ? "s" : ""} · ${accentVibrancyLabel}`
+                  : `${accentVibrancyLabel} · Default palette`
+              }
+              expanded={openSections.colors}
+              onToggle={() => handleToggleSection("colors")}
+              theme={theme}
+            >
+              <OptionPillGroup
+                label="Accent Vibrancy"
+                options={ACCENT_INTENSITY_OPTIONS}
+                selectedValue={themeConfig?.accentIntensity ?? "balanced"}
+                onSelect={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ accentIntensity: val });
+                }}
+                theme={theme}
+              />
+
+              <OptionPillGroup
+                label="Reading Comfort Tint"
+                options={READING_TINT_OPTIONS}
+                selectedValue={themeConfig?.readingTint ?? "none"}
+                onSelect={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ readingTint: val });
+                }}
+                theme={theme}
+              />
+
+              <View style={styles.stackList}>
+                {COLOR_ROLES.map((role) => {
+                  const activeHex = themeConfig?.customColors?.[role.key];
+                  const draft = hexDrafts[role.key] ?? "";
+                  const isDraftValid = draft === "" || HEX_REGEX.test(draft);
+
+                  return (
+                    <View
+                      key={role.key}
+                      style={[
+                        styles.subCard,
+                        {
+                          backgroundColor: theme.surfaceContainerLow,
+                          borderColor: theme.outlineVariant,
+                        },
+                      ]}
+                    >
+                      <View style={styles.colorRoleHeader}>
+                        <View style={styles.flexOne}>
+                          <Text
+                            style={[
+                              styles.optionGroupTitle,
                               { color: theme.textPrimary },
                             ]}
                           >
-                            Clear
+                            {role.label}
+                          </Text>
+                          <Text
+                            style={[
+                              styles.optionGroupDesc,
+                              { color: theme.textSecondary },
+                            ]}
+                          >
+                            {role.description}
                           </Text>
                         </View>
-                      </Pressable>
+                        {activeHex && (
+                          <View
+                            style={[
+                              styles.activeColorPreview,
+                              {
+                                backgroundColor: activeHex,
+                                borderColor: theme.outline,
+                              },
+                            ]}
+                          />
+                        )}
+                      </View>
+
+                      <View style={styles.swatchesRow}>
+                        {role.swatches.map((hex) => {
+                          const selected =
+                            activeHex?.toUpperCase() === hex.toUpperCase();
+                          return (
+                            <Pressable
+                              key={`${role.key}-${hex}`}
+                              onPress={() => {
+                                doHaptic();
+                                setHexDrafts((prev) => ({
+                                  ...prev,
+                                  [role.key]: hex,
+                                }));
+                                updateCustomColor(role.key, hex);
+                              }}
+                              hitSlop={8}
+                              android_ripple={androidRipple(
+                                theme.rippleColor,
+                                true
+                              )}
+                              accessibilityRole="button"
+                              accessibilityLabel={`Set ${role.label} to ${hex}`}
+                              style={[
+                                styles.swatchCircle,
+                                {
+                                  backgroundColor: hex,
+                                  borderColor: selected
+                                    ? theme.gold
+                                    : theme.outlineVariant,
+                                  borderWidth: selected ? 2.5 : 1,
+                                },
+                              ]}
+                            >
+                              {selected && (
+                                <Ionicons
+                                  name="checkmark"
+                                  size={15}
+                                  color={getContrastInk(hex)}
+                                />
+                              )}
+                            </Pressable>
+                          );
+                        })}
+                      </View>
+
+                      <View style={styles.hexInputRow}>
+                        <TextInput
+                          value={draft}
+                          onChangeText={(text) =>
+                            handleHexChange(role.key, text)
+                          }
+                          placeholder="#RRGGBB"
+                          placeholderTextColor={theme.textMuted}
+                          autoCapitalize="characters"
+                          autoCorrect={false}
+                          maxLength={7}
+                          style={[
+                            styles.hexInput,
+                            {
+                              color: theme.textPrimary,
+                              backgroundColor: theme.surfaceContainer,
+                              borderColor: isDraftValid
+                                ? theme.outlineVariant
+                                : theme.kenyaRed,
+                            },
+                          ]}
+                        />
+                        <Pressable
+                          onPress={() => {
+                            doHaptic();
+                            setHexDrafts((prev) => ({
+                              ...prev,
+                              [role.key]: "",
+                            }));
+                            updateCustomColor(role.key, undefined);
+                          }}
+                          accessibilityRole="button"
+                          android_ripple={androidRipple(theme.rippleColor)}
+                          style={pressableStyle(styles.clearBtnPressable)}
+                        >
+                          <View
+                            style={[
+                              styles.clearBtnInner,
+                              {
+                                backgroundColor: theme.surfaceContainerHigh,
+                                borderColor: theme.outlineVariant,
+                              },
+                            ]}
+                          >
+                            <Text
+                              style={[
+                                styles.clearBtnText,
+                                { color: theme.textPrimary },
+                              ]}
+                            >
+                              Clear
+                            </Text>
+                          </View>
+                        </Pressable>
+                      </View>
                     </View>
-                  </View>
-                );
-              })}
-            </View>
-          </AccordionCard>
-        )}
+                  );
+                })}
+              </View>
+            </AccordionCard>
+          )}
 
-        {/* Accordion 4: Typography & Text */}
-        {isVisible("typography") && (
-          <AccordionCard
-            sectionKey="typography"
-            icon="text-outline"
-            title="Typography & Text"
-            summary={`${fontPairLabel} · ${Math.round(fontScale * 100)}%`}
-            expanded={openSections.typography}
-            onToggle={() => handleToggleSection("typography")}
-            theme={theme}
-            themeKey={themeKey}
-          >
-            <OptionPillGroup
-              label="Font Scale"
-              options={FONT_SCALE_OPTIONS}
-              selectedValue={themeConfig?.fontScale ?? 1.0}
-              onSelect={(val) => {
-                doHaptic();
-                updateThemeConfig({ fontScale: val });
-              }}
+          {/* Accordion 4: Typography & Text */}
+          {isVisible("typography") && (
+            <AccordionCard
+              icon="text-outline"
+              title="Typography & Text"
+              summary={`${fontPairLabel} · ${Math.round(fontScale * 100)}%`}
+              expanded={openSections.typography}
+              onToggle={() => handleToggleSection("typography")}
               theme={theme}
-              themeKey={themeKey}
-            />
+            >
+              <OptionPillGroup
+                label="Font Scale"
+                options={FONT_SCALE_OPTIONS}
+                selectedValue={themeConfig?.fontScale ?? 1.0}
+                onSelect={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ fontScale: val });
+                }}
+                theme={theme}
+              />
 
-            <OptionPillGroup
-              label="Font Pairing"
-              options={FONT_PAIR_OPTIONS}
-              selectedValue={themeConfig?.fontPair ?? "outfit-inter"}
-              onSelect={(val) => {
-                doHaptic();
-                updateThemeConfig({ fontPair: val });
-              }}
+              <OptionPillGroup
+                label="Font Pairing"
+                options={FONT_PAIR_OPTIONS}
+                selectedValue={themeConfig?.fontPair ?? "outfit-inter"}
+                onSelect={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ fontPair: val });
+                }}
+                theme={theme}
+              />
+
+              <OptionPillGroup
+                label="Heading Case"
+                options={HEADING_CASE_OPTIONS}
+                selectedValue={headingTransform}
+                onSelect={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ headingTransform: val });
+                }}
+                theme={theme}
+              />
+
+              <OptionPillGroup
+                label="Number Style"
+                options={NUMERIC_STYLE_OPTIONS}
+                selectedValue={numericStyle}
+                onSelect={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ numericStyle: val });
+                }}
+                theme={theme}
+              />
+
+              <OptionPillGroup
+                label="Line Height"
+                options={LINE_HEIGHT_OPTIONS}
+                selectedValue={themeConfig?.lineHeightScale ?? 1.0}
+                onSelect={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ lineHeightScale: val });
+                }}
+                theme={theme}
+              />
+
+              <OptionPillGroup
+                label="Letter Spacing"
+                options={LETTER_SPACING_OPTIONS}
+                selectedValue={themeConfig?.letterSpacingOffset ?? 0}
+                onSelect={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ letterSpacingOffset: val });
+                }}
+                theme={theme}
+              />
+            </AccordionCard>
+          )}
+
+          {/* Accordion 5: Surfaces, Borders & Layout */}
+          {isVisible("layout") && (
+            <AccordionCard
+              icon="layers-outline"
+              title="Surfaces & Layout"
+              summary={`${surfaceLabel} · ${densityLabel}`}
+              expanded={openSections.layout}
+              onToggle={() => handleToggleSection("layout")}
               theme={theme}
-              themeKey={themeKey}
-            />
+            >
+              <OptionPillGroup
+                label="Surface Style"
+                options={SURFACE_STYLE_OPTIONS}
+                selectedValue={themeConfig?.surfaceStyle ?? "elevated"}
+                onSelect={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ surfaceStyle: val });
+                }}
+                theme={theme}
+              />
 
-            <OptionPillGroup
-              label="Heading Case"
-              options={HEADING_CASE_OPTIONS}
-              selectedValue={headingTransform}
-              onSelect={(val) => {
-                doHaptic();
-                updateThemeConfig({ headingTransform: val } as any);
-              }}
+              <OptionPillGroup
+                label="Card Corner Radius"
+                options={CARD_RADIUS_OPTIONS}
+                selectedValue={themeConfig?.cardRadius ?? "rounded"}
+                onSelect={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ cardRadius: val });
+                }}
+                theme={theme}
+              />
+
+              <OptionPillGroup
+                label="Button Radius"
+                options={BUTTON_RADIUS_OPTIONS}
+                selectedValue={themeConfig?.buttonRadius ?? "rounded"}
+                onSelect={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ buttonRadius: val });
+                }}
+                theme={theme}
+              />
+
+              <OptionPillGroup
+                label="Border Thickness"
+                options={BORDER_WIDTH_OPTIONS}
+                selectedValue={themeConfig?.borderWidth ?? "thin"}
+                onSelect={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ borderWidth: val });
+                }}
+                theme={theme}
+              />
+
+              <OptionPillGroup
+                label="Card Shadow & Depth"
+                options={SHADOW_OPTIONS}
+                selectedValue={themeConfig?.cardShadowIntensity ?? "subtle"}
+                onSelect={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ cardShadowIntensity: val });
+                }}
+                theme={theme}
+              />
+
+              <OptionPillGroup
+                label="Input Field Style"
+                options={INPUT_STYLE_OPTIONS}
+                selectedValue={themeConfig?.inputStyle ?? "outlined"}
+                onSelect={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ inputStyle: val });
+                }}
+                theme={theme}
+              />
+
+              <OptionPillGroup
+                label="Button Style"
+                options={BUTTON_STYLE_OPTIONS}
+                selectedValue={themeConfig?.buttonStyle ?? "filled"}
+                onSelect={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ buttonStyle: val });
+                }}
+                theme={theme}
+              />
+
+              <OptionPillGroup
+                label="Home & Grid Layout"
+                options={HOME_LAYOUT_OPTIONS}
+                selectedValue={themeConfig?.homeLayout ?? "classic"}
+                onSelect={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ homeLayout: val });
+                }}
+                theme={theme}
+              />
+
+              <OptionPillGroup
+                label="Screen Edge Margins"
+                options={SCREEN_PADDING_OPTIONS}
+                selectedValue={themeConfig?.screenPadding ?? "standard"}
+                onSelect={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ screenPadding: val });
+                }}
+                theme={theme}
+              />
+
+              <OptionPillGroup
+                label="Progress Bar Style"
+                options={PROGRESS_BAR_STYLE_OPTIONS}
+                selectedValue={themeConfig?.progressBarStyle ?? "rounded"}
+                onSelect={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ progressBarStyle: val });
+                }}
+                theme={theme}
+              />
+
+              <OptionPillGroup
+                label="List Divider Style"
+                options={DIVIDER_STYLE_OPTIONS}
+                selectedValue={themeConfig?.dividerStyle ?? "hairline"}
+                onSelect={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ dividerStyle: val });
+                }}
+                theme={theme}
+              />
+
+              <OptionPillGroup
+                label="Section Header Style"
+                options={SECTION_HEADER_STYLE_OPTIONS}
+                selectedValue={themeConfig?.sectionHeaderStyle ?? "eyebrow"}
+                onSelect={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ sectionHeaderStyle: val });
+                }}
+                theme={theme}
+              />
+
+              <OptionPillGroup
+                label="Card Accent Strip"
+                options={CARD_ACCENT_OPTIONS}
+                selectedValue={themeConfig?.cardAccentStyle ?? "none"}
+                onSelect={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ cardAccentStyle: val });
+                }}
+                theme={theme}
+              />
+
+              <OptionPillGroup
+                label="Icon Badge Style"
+                options={ICON_BADGE_OPTIONS}
+                selectedValue={themeConfig?.iconBadgeStyle ?? "soft-circle"}
+                onSelect={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ iconBadgeStyle: val });
+                }}
+                theme={theme}
+              />
+
+              <OptionPillGroup
+                label="Layout Density"
+                options={DENSITY_OPTIONS}
+                selectedValue={themeConfig?.density ?? "comfortable"}
+                onSelect={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ density: val });
+                }}
+                theme={theme}
+              />
+
+              <OptionPillGroup
+                label="Pill & Chip Size"
+                options={SIZE_PRESET_OPTIONS}
+                selectedValue={themeConfig?.pillSize ?? "md"}
+                onSelect={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ pillSize: val });
+                }}
+                theme={theme}
+              />
+
+              <OptionPillGroup
+                label="Icon Size"
+                options={ICON_SCALE_OPTIONS}
+                selectedValue={themeConfig?.iconScale ?? 1.0}
+                onSelect={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ iconScale: val });
+                }}
+                theme={theme}
+              />
+
+              <OptionPillGroup
+                label="Button Size"
+                options={SIZE_PRESET_OPTIONS}
+                selectedValue={themeConfig?.buttonSize ?? "md"}
+                onSelect={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ buttonSize: val });
+                }}
+                theme={theme}
+              />
+
+              <OptionPillGroup
+                label="Card Padding"
+                options={SIZE_PRESET_OPTIONS}
+                selectedValue={themeConfig?.cardPadding ?? "md"}
+                onSelect={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ cardPadding: val });
+                }}
+                theme={theme}
+              />
+
+              <OptionPillGroup
+                label="Bottom Bar Size"
+                options={SIZE_PRESET_OPTIONS}
+                selectedValue={themeConfig?.tabBarSize ?? "md"}
+                onSelect={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ tabBarSize: val });
+                }}
+                theme={theme}
+              />
+
+              <OptionPillGroup
+                label="Top Header Size"
+                options={SIZE_PRESET_OPTIONS}
+                selectedValue={themeConfig?.appBarSize ?? "md"}
+                onSelect={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ appBarSize: val });
+                }}
+                theme={theme}
+              />
+            </AccordionCard>
+          )}
+
+          {/* Accordion 6: Menus & Scrollbars */}
+          {isVisible("navigation") && (
+            <AccordionCard
+              icon="compass-outline"
+              title="Menus & Scrollbars"
+              summary={`${tabBarLabel} · ${hScrollLabel}`}
+              expanded={openSections.navigation}
+              onToggle={() => handleToggleSection("navigation")}
               theme={theme}
-              themeKey={themeKey}
-            />
+            >
+              <ToggleRow
+                label="Kenyan Flag Stripe"
+                description="Show the subtle Black · Red · Green accent stripe"
+                value={themeConfig?.showKenyaStripe !== false}
+                onValueChange={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ showKenyaStripe: val });
+                }}
+                theme={theme}
+              />
 
-            <OptionPillGroup
-              label="Number Style"
-              options={NUMERIC_STYLE_OPTIONS}
-              selectedValue={numericStyle}
-              onSelect={(val) => {
-                doHaptic();
-                updateThemeConfig({ numericStyle: val } as any);
-              }}
-              theme={theme}
-              themeKey={themeKey}
-            />
+              <OptionPillGroup
+                label="Bottom Tab Bar Style"
+                options={TAB_BAR_STYLE_OPTIONS}
+                selectedValue={themeConfig?.tabBarStyle ?? "classic"}
+                onSelect={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ tabBarStyle: val });
+                }}
+                theme={theme}
+              />
 
-            <OptionPillGroup
-              label="Line Height"
-              options={LINE_HEIGHT_OPTIONS}
-              selectedValue={themeConfig?.lineHeightScale ?? 1.0}
-              onSelect={(val) => {
-                doHaptic();
-                updateThemeConfig({ lineHeightScale: val });
-              }}
-              theme={theme}
-              themeKey={themeKey}
-            />
+              <OptionPillGroup
+                label="Active Menu Indicator"
+                options={MENU_INDICATOR_OPTIONS}
+                selectedValue={themeConfig?.menuIndicatorStyle ?? "pill"}
+                onSelect={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ menuIndicatorStyle: val });
+                }}
+                theme={theme}
+              />
 
-            <OptionPillGroup
-              label="Letter Spacing"
-              options={LETTER_SPACING_OPTIONS}
-              selectedValue={themeConfig?.letterSpacingOffset ?? 0}
-              onSelect={(val) => {
-                doHaptic();
-                updateThemeConfig({ letterSpacingOffset: val });
-              }}
-              theme={theme}
-              themeKey={themeKey}
-            />
-          </AccordionCard>
-        )}
+              <OptionPillGroup
+                label="Floating Quick-Jump Menu"
+                options={QUICK_MENU_OPTIONS}
+                selectedValue={themeConfig?.quickMenuPosition ?? "off"}
+                onSelect={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ quickMenuPosition: val });
+                }}
+                theme={theme}
+              />
 
-        {/* Accordion 5: Surfaces, Borders & Layout */}
-        {isVisible("layout") && (
-          <AccordionCard
-            sectionKey="layout"
-            icon="layers-outline"
-            title="Surfaces & Layout"
-            summary={`${surfaceLabel} · ${densityLabel}`}
-            expanded={openSections.layout}
-            onToggle={() => handleToggleSection("layout")}
-            theme={theme}
-            themeKey={themeKey}
-          >
-            <OptionPillGroup
-              label="Surface Style"
-              options={SURFACE_STYLE_OPTIONS}
-              selectedValue={themeConfig?.surfaceStyle ?? "elevated"}
-              onSelect={(val) => {
-                doHaptic();
-                updateThemeConfig({ surfaceStyle: val });
-              }}
-              theme={theme}
-              themeKey={themeKey}
-            />
+              <OptionPillGroup
+                label="Status Bar Icons"
+                options={STATUS_BAR_OPTIONS}
+                selectedValue={themeConfig?.statusBarMode ?? "auto"}
+                onSelect={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ statusBarMode: val });
+                }}
+                theme={theme}
+              />
 
-            <OptionPillGroup
-              label="Card Corner Radius"
-              options={CARD_RADIUS_OPTIONS}
-              selectedValue={themeConfig?.cardRadius ?? "rounded"}
-              onSelect={(val) => {
-                doHaptic();
-                updateThemeConfig({ cardRadius: val });
-              }}
-              theme={theme}
-              themeKey={themeKey}
-            />
+              <OptionPillGroup
+                label="Screen Transition Animation"
+                options={TRANSITION_OPTIONS}
+                selectedValue={themeConfig?.pageTransition ?? "slide"}
+                onSelect={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ pageTransition: val });
+                }}
+                theme={theme}
+              />
 
-            <OptionPillGroup
-              label="Button Radius"
-              options={BUTTON_RADIUS_OPTIONS}
-              selectedValue={themeConfig?.buttonRadius ?? "rounded"}
-              onSelect={(val) => {
-                doHaptic();
-                updateThemeConfig({ buttonRadius: val });
-              }}
-              theme={theme}
-              themeKey={themeKey}
-            />
+              <OptionPillGroup
+                label="Vertical Scrollbar"
+                options={VERT_SCROLLBAR_OPTIONS}
+                selectedValue={themeConfig?.verticalScrollbarStyle ?? "hidden"}
+                onSelect={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ verticalScrollbarStyle: val });
+                }}
+                theme={theme}
+              />
 
-            <OptionPillGroup
-              label="Border Thickness"
-              options={BORDER_WIDTH_OPTIONS}
-              selectedValue={themeConfig?.borderWidth ?? "thin"}
-              onSelect={(val) => {
-                doHaptic();
-                updateThemeConfig({ borderWidth: val });
-              }}
-              theme={theme}
-              themeKey={themeKey}
-            />
+              <ToggleRow
+                label="Tab Bar Labels"
+                description="Display text labels beneath bottom tab icons"
+                value={themeConfig?.tabBarLabels !== false}
+                onValueChange={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ tabBarLabels: val });
+                }}
+                theme={theme}
+              />
 
-            <OptionPillGroup
-              label="Card Shadow & Depth"
-              options={SHADOW_OPTIONS}
-              selectedValue={themeConfig?.cardShadowIntensity ?? "subtle"}
-              onSelect={(val) => {
-                doHaptic();
-                updateThemeConfig({ cardShadowIntensity: val });
-              }}
-              theme={theme}
-              themeKey={themeKey}
-            />
+              <OptionPillGroup
+                label="Flag Stripe Thickness"
+                options={STRIPE_THICKNESS_OPTIONS}
+                selectedValue={themeConfig?.stripeThickness ?? "thin"}
+                onSelect={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ stripeThickness: val });
+                }}
+                theme={theme}
+              />
 
-            <OptionPillGroup
-              label="Input Field Style"
-              options={INPUT_STYLE_OPTIONS}
-              selectedValue={themeConfig?.inputStyle ?? "outlined"}
-              onSelect={(val) => {
-                doHaptic();
-                updateThemeConfig({ inputStyle: val });
-              }}
-              theme={theme}
-              themeKey={themeKey}
-            />
+              <OptionPillGroup
+                label="Top App Bar Style"
+                options={APP_BAR_STYLE_OPTIONS}
+                selectedValue={themeConfig?.appBarStyle ?? "standard"}
+                onSelect={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ appBarStyle: val });
+                }}
+                theme={theme}
+              />
 
-            <OptionPillGroup
-              label="Button Style"
-              options={BUTTON_STYLE_OPTIONS}
-              selectedValue={themeConfig?.buttonStyle ?? "filled"}
-              onSelect={(val) => {
-                doHaptic();
-                updateThemeConfig({ buttonStyle: val });
-              }}
-              theme={theme}
-              themeKey={themeKey}
-            />
+              <OptionPillGroup
+                label="Header Alignment"
+                options={HEADER_ALIGNMENT_OPTIONS}
+                selectedValue={themeConfig?.headerAlignment ?? "left"}
+                onSelect={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ headerAlignment: val });
+                }}
+                theme={theme}
+              />
 
-            <OptionPillGroup
-              label="Home & Grid Layout"
-              options={HOME_LAYOUT_OPTIONS}
-              selectedValue={themeConfig?.homeLayout ?? "classic"}
-              onSelect={(val) => {
-                doHaptic();
-                updateThemeConfig({ homeLayout: val });
-              }}
-              theme={theme}
-              themeKey={themeKey}
-            />
-
-            <OptionPillGroup
-              label="Card Accent Strip"
-              options={CARD_ACCENT_OPTIONS}
-              selectedValue={themeConfig?.cardAccentStyle ?? "none"}
-              onSelect={(val) => {
-                doHaptic();
-                updateThemeConfig({ cardAccentStyle: val });
-              }}
-              theme={theme}
-              themeKey={themeKey}
-            />
-
-            <OptionPillGroup
-              label="Icon Badge Style"
-              options={ICON_BADGE_OPTIONS}
-              selectedValue={themeConfig?.iconBadgeStyle ?? "soft-circle"}
-              onSelect={(val) => {
-                doHaptic();
-                updateThemeConfig({ iconBadgeStyle: val });
-              }}
-              theme={theme}
-              themeKey={themeKey}
-            />
-
-            <OptionPillGroup
-              label="Layout Density"
-              options={DENSITY_OPTIONS}
-              selectedValue={themeConfig?.density ?? "comfortable"}
-              onSelect={(val) => {
-                doHaptic();
-                updateThemeConfig({ density: val });
-              }}
-              theme={theme}
-              themeKey={themeKey}
-            />
-
-            <OptionPillGroup
-              label="Pill & Chip Size"
-              options={SIZE_PRESET_OPTIONS}
-              selectedValue={themeConfig?.pillSize ?? "md"}
-              onSelect={(val) => {
-                doHaptic();
-                updateThemeConfig({ pillSize: val });
-              }}
-              theme={theme}
-              themeKey={themeKey}
-            />
-
-            <OptionPillGroup
-              label="Icon Size"
-              options={ICON_SCALE_OPTIONS}
-              selectedValue={themeConfig?.iconScale ?? 1.0}
-              onSelect={(val) => {
-                doHaptic();
-                updateThemeConfig({ iconScale: val });
-              }}
-              theme={theme}
-              themeKey={themeKey}
-            />
-
-            <OptionPillGroup
-              label="Button Size"
-              options={SIZE_PRESET_OPTIONS}
-              selectedValue={themeConfig?.buttonSize ?? "md"}
-              onSelect={(val) => {
-                doHaptic();
-                updateThemeConfig({ buttonSize: val });
-              }}
-              theme={theme}
-              themeKey={themeKey}
-            />
-
-            <OptionPillGroup
-              label="Card Padding"
-              options={SIZE_PRESET_OPTIONS}
-              selectedValue={themeConfig?.cardPadding ?? "md"}
-              onSelect={(val) => {
-                doHaptic();
-                updateThemeConfig({ cardPadding: val });
-              }}
-              theme={theme}
-              themeKey={themeKey}
-            />
-
-            <OptionPillGroup
-              label="Bottom Bar Size"
-              options={SIZE_PRESET_OPTIONS}
-              selectedValue={themeConfig?.tabBarSize ?? "md"}
-              onSelect={(val) => {
-                doHaptic();
-                updateThemeConfig({ tabBarSize: val });
-              }}
-              theme={theme}
-              themeKey={themeKey}
-            />
-
-            <OptionPillGroup
-              label="Top Header Size"
-              options={SIZE_PRESET_OPTIONS}
-              selectedValue={themeConfig?.appBarSize ?? "md"}
-              onSelect={(val) => {
-                doHaptic();
-                updateThemeConfig({ appBarSize: val });
-              }}
-              theme={theme}
-              themeKey={themeKey}
-            />
-          </AccordionCard>
-        )}
-
-        {/* Accordion 6: Menus & Scrollbars */}
-        {isVisible("navigation") && (
-          <AccordionCard
-            sectionKey="navigation"
-            icon="compass-outline"
-            title="Menus & Scrollbars"
-            summary={`${tabBarLabel} · ${hScrollLabel}`}
-            expanded={openSections.navigation}
-            onToggle={() => handleToggleSection("navigation")}
-            theme={theme}
-            themeKey={themeKey}
-          >
-            <ToggleRow
-              label="Kenyan Flag Stripe"
-              description="Show the subtle Black · Red · Green accent stripe"
-              value={themeConfig?.showKenyaStripe !== false}
-              onValueChange={(val) => {
-                doHaptic();
-                updateThemeConfig({ showKenyaStripe: val });
-              }}
-              theme={theme}
-            />
-
-            <OptionPillGroup
-              label="Bottom Tab Bar Style"
-              options={TAB_BAR_STYLE_OPTIONS}
-              selectedValue={themeConfig?.tabBarStyle ?? "classic"}
-              onSelect={(val) => {
-                doHaptic();
-                updateThemeConfig({ tabBarStyle: val });
-              }}
-              theme={theme}
-              themeKey={themeKey}
-            />
-
-            <OptionPillGroup
-              label="Active Menu Indicator"
-              options={MENU_INDICATOR_OPTIONS}
-              selectedValue={themeConfig?.menuIndicatorStyle ?? "pill"}
-              onSelect={(val) => {
-                doHaptic();
-                updateThemeConfig({ menuIndicatorStyle: val });
-              }}
-              theme={theme}
-              themeKey={themeKey}
-            />
-
-            <OptionPillGroup
-              label="Floating Quick-Jump Menu"
-              options={QUICK_MENU_OPTIONS}
-              selectedValue={themeConfig?.quickMenuPosition ?? "off"}
-              onSelect={(val) => {
-                doHaptic();
-                updateThemeConfig({ quickMenuPosition: val });
-              }}
-              theme={theme}
-              themeKey={themeKey}
-            />
-
-            <OptionPillGroup
-              label="Status Bar Icons"
-              options={STATUS_BAR_OPTIONS}
-              selectedValue={themeConfig?.statusBarMode ?? "auto"}
-              onSelect={(val) => {
-                doHaptic();
-                updateThemeConfig({ statusBarMode: val });
-              }}
-              theme={theme}
-              themeKey={themeKey}
-            />
-
-            <OptionPillGroup
-              label="Screen Transition Animation"
-              options={TRANSITION_OPTIONS}
-              selectedValue={themeConfig?.pageTransition ?? "slide"}
-              onSelect={(val) => {
-                doHaptic();
-                updateThemeConfig({ pageTransition: val });
-              }}
-              theme={theme}
-              themeKey={themeKey}
-            />
-
-            <OptionPillGroup
-              label="Vertical Scrollbar"
-              options={VERT_SCROLLBAR_OPTIONS}
-              selectedValue={themeConfig?.verticalScrollbarStyle ?? "hidden"}
-              onSelect={(val) => {
-                doHaptic();
-                updateThemeConfig({ verticalScrollbarStyle: val });
-              }}
-              theme={theme}
-              themeKey={themeKey}
-            />
-
-            <ToggleRow
-              label="Tab Bar Labels"
-              description="Display text labels beneath bottom tab icons"
-              value={themeConfig?.tabBarLabels !== false}
-              onValueChange={(val) => {
-                doHaptic();
-                updateThemeConfig({ tabBarLabels: val });
-              }}
-              theme={theme}
-            />
-
-            <OptionPillGroup
-              label="Flag Stripe Thickness"
-              options={STRIPE_THICKNESS_OPTIONS}
-              selectedValue={themeConfig?.stripeThickness ?? "thin"}
-              onSelect={(val) => {
-                doHaptic();
-                updateThemeConfig({ stripeThickness: val });
-              }}
-              theme={theme}
-              themeKey={themeKey}
-            />
-
-            <OptionPillGroup
-              label="Top App Bar Style"
-              options={APP_BAR_STYLE_OPTIONS}
-              selectedValue={themeConfig?.appBarStyle ?? "standard"}
-              onSelect={(val) => {
-                doHaptic();
-                updateThemeConfig({ appBarStyle: val });
-              }}
-              theme={theme}
-              themeKey={themeKey}
-            />
-
-            <OptionPillGroup
-              label="Header Alignment"
-              options={HEADER_ALIGNMENT_OPTIONS}
-              selectedValue={themeConfig?.headerAlignment ?? "left"}
-              onSelect={(val) => {
-                doHaptic();
-                updateThemeConfig({ headerAlignment: val });
-              }}
-              theme={theme}
-              themeKey={themeKey}
-            />
-
-            <OptionPillGroup
-              label="Horizontal Scrollbar Style"
-              options={SCROLLBAR_STYLE_OPTIONS}
-              selectedValue={themeConfig?.horizontalScrollbarStyle ?? "subtle-bar"}
-              onSelect={(val) => {
-                doHaptic();
-                updateThemeConfig({ horizontalScrollbarStyle: val });
-              }}
-              theme={theme}
-              themeKey={themeKey}
-            />
-
-            <OptionPillGroup
-              label="Horizontal Scrollbar Thickness"
-              options={SCROLLBAR_THICKNESS_OPTIONS}
-              selectedValue={themeConfig?.horizontalScrollbarThickness ?? "thin"}
-              onSelect={(val) => {
-                doHaptic();
-                updateThemeConfig({ horizontalScrollbarThickness: val });
-              }}
-              theme={theme}
-              themeKey={themeKey}
-            />
-
-            <ToggleRow
-              label="Scrollbar Background Track"
-              description="Show subtle rail track behind horizontal scrollbar thumb"
-              value={themeConfig?.scrollbarTrackVisible !== false}
-              onValueChange={(val) => {
-                doHaptic();
-                updateThemeConfig({ scrollbarTrackVisible: val });
-              }}
-              theme={theme}
-            />
-
-            <OptionPillGroup
-              label="Pill Bar Layout"
-              options={PILL_BAR_LAYOUT_OPTIONS}
-              selectedValue={themeConfig?.pillBarLayout ?? "scroll-with-expand"}
-              onSelect={(val) => {
-                doHaptic();
-                updateThemeConfig({ pillBarLayout: val });
-              }}
-              theme={theme}
-              themeKey={themeKey}
-            />
-
-            <OptionPillGroup
-              label="Pill Corner Shape"
-              options={BUTTON_RADIUS_OPTIONS}
-              selectedValue={themeConfig?.pillShape ?? "pill"}
-              onSelect={(val) => {
-                doHaptic();
-                updateThemeConfig({ pillShape: val });
-              }}
-              theme={theme}
-              themeKey={themeKey}
-            />
-
-            <ToggleRow
-              label="Edge Fade Shadow"
-              description="Soft feather gradient at left/right edges of horizontal bars"
-              value={themeConfig?.edgeFadeEnabled !== false}
-              onValueChange={(val) => {
-                doHaptic();
-                updateThemeConfig({ edgeFadeEnabled: val });
-              }}
-              theme={theme}
-            />
-
-            <ToggleRow
-              label="Elastic Scroll Bounce"
-              description="Spring bounce feedback at horizontal scroll edges"
-              value={themeConfig?.scrollBounceEnabled !== false}
-              onValueChange={(val) => {
-                doHaptic();
-                updateThemeConfig({ scrollBounceEnabled: val });
-              }}
-              theme={theme}
-            />
-          </AccordionCard>
-        )}
-
-        {/* Accordion 7: Accessibility & Feel */}
-        {isVisible("accessibility") && (
-          <AccordionCard
-            sectionKey="accessibility"
-            icon="accessibility-outline"
-            title="Accessibility & Feel"
-            summary={`Haptics ${hapticLabel}${
-              colorBlindLabel !== "None" ? ` · ${colorBlindLabel}` : ""
-            }`}
-            expanded={openSections.accessibility}
-            onToggle={() => handleToggleSection("accessibility")}
-            theme={theme}
-            themeKey={themeKey}
-          >
-            <OptionPillGroup
-              label="Haptic Strength"
-              options={HAPTIC_STRENGTH_OPTIONS}
-              selectedValue={hapticStrength}
-              onSelect={(val) => {
-                if (val !== "off") {
-                  triggerHaptic(val === "strong" ? 20 : val === "medium" ? 12 : 7);
+              <OptionPillGroup
+                label="Horizontal Scrollbar Style"
+                options={SCROLLBAR_STYLE_OPTIONS}
+                selectedValue={
+                  themeConfig?.horizontalScrollbarStyle ?? "subtle-bar"
                 }
-                updateThemeConfig({
-                  hapticStrength: val,
-                  hapticsEnabled: val !== "off",
-                } as any);
-              }}
-              theme={theme}
-              themeKey={themeKey}
-            />
+                onSelect={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ horizontalScrollbarStyle: val });
+                }}
+                theme={theme}
+              />
 
-            <ToggleRow
-              label="Reduce Motion"
-              description="Minimize screen transitions and animated effects"
-              value={Boolean(themeConfig?.reduceMotion)}
-              onValueChange={(val) => {
-                doHaptic();
-                updateThemeConfig({ reduceMotion: val });
-              }}
-              theme={theme}
-            />
+              <OptionPillGroup
+                label="Horizontal Scrollbar Thickness"
+                options={SCROLLBAR_THICKNESS_OPTIONS}
+                selectedValue={
+                  themeConfig?.horizontalScrollbarThickness ?? "thin"
+                }
+                onSelect={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ horizontalScrollbarThickness: val });
+                }}
+                theme={theme}
+              />
 
-            <ToggleRow
-              label="High-Contrast Borders"
-              description="Strengthen card and button outlines for clarity"
-              value={Boolean(themeConfig?.highContrastBorders)}
-              onValueChange={(val) => {
-                doHaptic();
-                updateThemeConfig({ highContrastBorders: val });
-              }}
-              theme={theme}
-            />
+              <ToggleRow
+                label="Scrollbar Background Track"
+                description="Show subtle rail track behind horizontal scrollbar thumb"
+                value={themeConfig?.scrollbarTrackVisible !== false}
+                onValueChange={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ scrollbarTrackVisible: val });
+                }}
+                theme={theme}
+              />
 
-            <OptionPillGroup
-              label="Color-Blind Safe Palette"
-              options={COLOR_BLIND_OPTIONS}
-              selectedValue={themeConfig?.colorBlindMode ?? "none"}
-              onSelect={(val) => {
-                doHaptic();
-                updateThemeConfig({ colorBlindMode: val });
-              }}
-              theme={theme}
-              themeKey={themeKey}
-            />
-          </AccordionCard>
-        )}
+              <OptionPillGroup
+                label="Pill Bar Layout"
+                options={PILL_BAR_LAYOUT_OPTIONS}
+                selectedValue={
+                  themeConfig?.pillBarLayout ?? "scroll-with-expand"
+                }
+                onSelect={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ pillBarLayout: val });
+                }}
+                theme={theme}
+              />
 
-        {/* Accordion 8: Backup & Reset */}
-        {isVisible("backup") && (
-          <AccordionCard
-            sectionKey="backup"
-            icon="code-slash-outline"
-            title="Backup & Reset"
-            summary="Export · Import · Reset"
-            expanded={openSections.backup}
-            onToggle={() => handleToggleSection("backup")}
-            theme={theme}
-            themeKey={themeKey}
-          >
-            <View style={styles.backupGroup}>
-              <View style={styles.backupHeaderRow}>
-                <Text
-                  style={[styles.optionGroupTitle, { color: theme.textPrimary }]}
-                >
-                  Export Theme JSON
-                </Text>
-                <Pressable
-                  key={`share-export-${themeKey}`}
-                  onPress={handleShareExport}
-                  accessibilityRole="button"
-                  android_ripple={androidRipple(theme.rippleColor)}
-                  style={pressableStyle(styles.smallActionPressable)}
-                >
-                  <View
+              <OptionPillGroup
+                label="Pill Corner Shape"
+                options={BUTTON_RADIUS_OPTIONS}
+                selectedValue={themeConfig?.pillShape ?? "pill"}
+                onSelect={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ pillShape: val });
+                }}
+                theme={theme}
+              />
+
+              <ToggleRow
+                label="Edge Fade Shadow"
+                description="Soft feather gradient at left/right edges of horizontal bars"
+                value={themeConfig?.edgeFadeEnabled !== false}
+                onValueChange={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ edgeFadeEnabled: val });
+                }}
+                theme={theme}
+              />
+
+              <ToggleRow
+                label="Elastic Scroll Bounce"
+                description="Spring bounce feedback at horizontal scroll edges"
+                value={themeConfig?.scrollBounceEnabled !== false}
+                onValueChange={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ scrollBounceEnabled: val });
+                }}
+                theme={theme}
+              />
+            </AccordionCard>
+          )}
+
+          {/* Accordion 7: Accessibility & Feel */}
+          {isVisible("accessibility") && (
+            <AccordionCard
+              icon="accessibility-outline"
+              title="Accessibility & Feel"
+              summary={`Haptics ${hapticLabel}${
+                colorBlindLabel !== "None" ? ` · ${colorBlindLabel}` : ""
+              }`}
+              expanded={openSections.accessibility}
+              onToggle={() => handleToggleSection("accessibility")}
+              theme={theme}
+            >
+              <OptionPillGroup
+                label="Haptic Strength"
+                options={HAPTIC_STRENGTH_OPTIONS}
+                selectedValue={hapticStrength}
+                onSelect={(val) => {
+                  if (val !== "off") {
+                    triggerHaptic();
+                  }
+                  updateThemeConfig({
+                    hapticStrength: val,
+                    hapticsEnabled: val !== "off",
+                  });
+                }}
+                theme={theme}
+              />
+
+              <OptionPillGroup
+                label="Tap Feedback Effect"
+                options={PRESS_EFFECT_OPTIONS}
+                selectedValue={themeConfig?.pressEffect ?? "scale-ripple"}
+                onSelect={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ pressEffect: val });
+                }}
+                theme={theme}
+              />
+
+              <ToggleRow
+                label="Reduce Motion"
+                description="Minimize screen transitions and animated effects"
+                value={Boolean(themeConfig?.reduceMotion)}
+                onValueChange={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ reduceMotion: val });
+                }}
+                theme={theme}
+              />
+
+              <ToggleRow
+                label="High-Contrast Borders"
+                description="Strengthen card and button outlines for clarity"
+                value={Boolean(themeConfig?.highContrastBorders)}
+                onValueChange={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ highContrastBorders: val });
+                }}
+                theme={theme}
+              />
+
+              <OptionPillGroup
+                label="Color-Blind Safe Palette"
+                options={COLOR_BLIND_OPTIONS}
+                selectedValue={themeConfig?.colorBlindMode ?? "none"}
+                onSelect={(val) => {
+                  doHaptic();
+                  updateThemeConfig({ colorBlindMode: val });
+                }}
+                theme={theme}
+              />
+            </AccordionCard>
+          )}
+
+          {/* Accordion 8: Backup & Reset */}
+          {isVisible("backup") && (
+            <AccordionCard
+              icon="code-slash-outline"
+              title="Backup & Reset"
+              summary="Export · Import · Reset"
+              expanded={openSections.backup}
+              onToggle={() => handleToggleSection("backup")}
+              theme={theme}
+            >
+              <View style={styles.backupGroup}>
+                <View style={styles.backupHeaderRow}>
+                  <Text
                     style={[
-                      styles.smallActionBtnInner,
+                      styles.optionGroupTitle,
+                      { color: theme.textPrimary },
+                    ]}
+                  >
+                    Export Theme JSON
+                  </Text>
+                  <Pressable
+                    onPress={handleShareExport}
+                    accessibilityRole="button"
+                    android_ripple={androidRipple(theme.rippleColor)}
+                    style={pressableStyle(styles.smallActionPressable)}
+                  >
+                    <View
+                      style={[
+                        styles.smallActionBtnInner,
+                        {
+                          backgroundColor: theme.primaryContainer,
+                          borderColor: theme.gold,
+                        },
+                      ]}
+                    >
+                      <Ionicons
+                        name="share-outline"
+                        size={14}
+                        color={theme.gold}
+                      />
+                      <Text
+                        style={[styles.smallActionText, { color: theme.gold }]}
+                      >
+                        Share / Copy
+                      </Text>
+                    </View>
+                  </Pressable>
+                </View>
+                <TextInput
+                  value={exportedJson}
+                  editable={false}
+                  multiline
+                  nestedScrollEnabled
+                  selectTextOnFocus
+                  style={[
+                    styles.jsonBox,
+                    {
+                      color: theme.textSecondary,
+                      backgroundColor: theme.surfaceContainerLow,
+                      borderColor: theme.outlineVariant,
+                    },
+                  ]}
+                />
+              </View>
+
+              <View style={styles.backupGroup}>
+                <Text
+                  style={[
+                    styles.optionGroupTitle,
+                    { color: theme.textPrimary },
+                  ]}
+                >
+                  Paste & Apply JSON Theme Code
+                </Text>
+                <TextInput
+                  value={importInput}
+                  onChangeText={(text) => {
+                    setImportInput(text);
+                    if (importStatus) setImportStatus(null);
+                  }}
+                  placeholder='{"mode":"dark","presetId":"kenyan-heritage",...}'
+                  placeholderTextColor={theme.textMuted}
+                  multiline
+                  nestedScrollEnabled
+                  autoCapitalize="none"
+                  autoCorrect={false}
+                  style={[
+                    styles.jsonBox,
+                    {
+                      color: theme.textPrimary,
+                      backgroundColor: theme.surfaceContainerLow,
+                      borderColor: theme.outlineVariant,
+                    },
+                  ]}
+                />
+                {importStatus && (
+                  <Text
+                    style={[
+                      styles.importStatusText,
                       {
-                        backgroundColor: theme.primaryContainer,
-                        borderColor: theme.gold,
+                        color:
+                          importStatus.type === "success"
+                            ? theme.kenyaGreenLight
+                            : theme.kenyaRedLight,
                       },
                     ]}
                   >
-                    <Ionicons name="share-outline" size={14} color={theme.gold} />
-                    <Text style={[styles.smallActionText, { color: theme.gold }]}>
-                      Share / Copy
+                    {importStatus.message}
+                  </Text>
+                )}
+                <Pressable
+                  onPress={handleApplyImport}
+                  accessibilityRole="button"
+                  android_ripple={androidRipple(theme.rippleColor)}
+                  style={pressableStyle(styles.fullBtnPressable)}
+                >
+                  <View
+                    style={[
+                      styles.fullBtnInner,
+                      { backgroundColor: theme.gold },
+                    ]}
+                  >
+                    <Ionicons
+                      name="checkmark-done-outline"
+                      size={16}
+                      color={onGoldInk}
+                    />
+                    <Text style={[styles.fullBtnText, { color: onGoldInk }]}>
+                      Apply JSON Theme
                     </Text>
                   </View>
                 </Pressable>
               </View>
-              <TextInput
-                value={exportedJson}
-                editable={false}
-                multiline
-                selectTextOnFocus
-                style={[
-                  styles.jsonBox,
-                  {
-                    color: theme.textSecondary,
-                    backgroundColor: theme.surfaceContainerLow,
-                    borderColor: theme.outlineVariant,
-                  },
-                ]}
-              />
-            </View>
 
-            <View style={styles.backupGroup}>
-              <Text
-                style={[styles.optionGroupTitle, { color: theme.textPrimary }]}
-              >
-                Paste & Apply JSON Theme Code
-              </Text>
-              <TextInput
-                value={importInput}
-                onChangeText={(text) => {
-                  setImportInput(text);
-                  if (importStatus) setImportStatus(null);
-                }}
-                placeholder='{"mode":"dark","presetId":"kenyan-heritage",...}'
-                placeholderTextColor={theme.textMuted}
-                multiline
-                autoCapitalize="none"
-                autoCorrect={false}
-                style={[
-                  styles.jsonBox,
-                  {
-                    color: theme.textPrimary,
-                    backgroundColor: theme.surfaceContainerLow,
-                    borderColor: theme.outlineVariant,
-                  },
-                ]}
-              />
-              {importStatus && (
-                <Text
-                  style={[
-                    styles.importStatusText,
-                    {
-                      color:
-                        importStatus.type === "success"
-                          ? theme.kenyaGreenLight
-                          : theme.kenyaRedLight,
-                    },
-                  ]}
-                >
-                  {importStatus.message}
-                </Text>
-              )}
               <Pressable
-                key={`apply-import-${themeKey}`}
-                onPress={handleApplyImport}
+                onPress={handleConfirmReset}
                 accessibilityRole="button"
                 android_ripple={androidRipple(theme.rippleColor)}
-                style={pressableStyle(styles.fullBtnPressable)}
+                style={pressableStyle(styles.resetBtnPressable)}
               >
                 <View
                   style={[
-                    styles.fullBtnInner,
-                    { backgroundColor: theme.gold },
+                    styles.resetBtnInner,
+                    {
+                      backgroundColor: theme.surfaceContainerLow,
+                      borderColor: theme.kenyaRed,
+                    },
                   ]}
                 >
                   <Ionicons
-                    name="checkmark-done-outline"
+                    name="refresh-outline"
                     size={16}
-                    color={theme.kenyaBlack}
+                    color={theme.kenyaRedLight}
                   />
-                  <Text style={[styles.fullBtnText, { color: theme.kenyaBlack }]}>
-                    Apply JSON Theme
+                  <Text
+                    style={[
+                      styles.resetBtnText,
+                      { color: theme.kenyaRedLight },
+                    ]}
+                  >
+                    Reset All to Default
                   </Text>
                 </View>
               </Pressable>
-            </View>
+            </AccordionCard>
+          )}
+        </View>
+      </ScrollView>
+    </View>
+  );
+}
 
+function MiniAppLivePreview({
+  previewTheme,
+  previewConfig,
+  previewMetrics,
+  previewFonts,
+  peekingDefault,
+  activePill,
+  onSelectPill,
+  activeTab,
+  onSelectTab,
+  onActionPress,
+}: {
+  previewTheme: ThemeColors;
+  previewConfig: ThemeConfig;
+  previewMetrics: ThemeMetrics;
+  previewFonts: { heading: string; body: string; bold: string };
+  peekingDefault: boolean;
+  activePill: number;
+  onSelectPill: (idx: number) => void;
+  activeTab: number;
+  onSelectTab: (idx: number) => void;
+  onActionPress: () => void;
+}) {
+  const monoFont = Platform.OS === "ios" ? "Menlo" : "monospace";
+  const onGold = getContrastInk(previewTheme.gold);
+  const cardStyle = getThemedCardStyle(
+    previewTheme,
+    previewConfig,
+    previewMetrics
+  );
+  const inputStyle = getThemedInputStyle(
+    previewTheme,
+    previewConfig,
+    previewMetrics
+  );
+  const primaryBtn = getThemedButtonStyle(
+    previewTheme,
+    previewConfig,
+    previewMetrics,
+    "primary"
+  );
+  const secondaryBtn = getThemedButtonStyle(
+    previewTheme,
+    previewConfig,
+    previewMetrics,
+    "secondary"
+  );
+  const badgeStyle = getThemedIconBadgeStyle(
+    previewTheme,
+    previewConfig,
+    previewTheme.gold,
+    22
+  );
+
+  const frameRadius = Math.max(8, Math.min(18, previewMetrics.cardRadiusPx));
+  const innerRadius = Math.max(0, frameRadius - 1);
+  const statusColor =
+    previewConfig.statusBarMode === "light"
+      ? "#FFFFFF"
+      : previewConfig.statusBarMode === "dark"
+      ? "#1A1108"
+      : previewTheme.textPrimary;
+
+  const isCenteredHeader = previewConfig.headerAlignment === "center";
+  const appBarMinH =
+    previewConfig.appBarSize === "xs"
+      ? 18
+      : previewConfig.appBarSize === "sm"
+      ? 20
+      : previewConfig.appBarSize === "lg"
+      ? 25
+      : previewConfig.appBarSize === "xl"
+      ? 28
+      : previewConfig.appBarStyle === "compact"
+      ? 19
+      : previewConfig.appBarStyle === "tall-editorial"
+      ? 26
+      : 22;
+
+  const pillRadius = PILL_SHAPE_RADIUS[previewConfig.pillShape] ?? 999;
+  const pillPV =
+    previewConfig.pillSize === "xs"
+      ? 1.5
+      : previewConfig.pillSize === "sm"
+      ? 2
+      : previewConfig.pillSize === "lg"
+      ? 3.5
+      : previewConfig.pillSize === "xl"
+      ? 4.5
+      : 2.5;
+  const pillPH =
+    previewConfig.pillSize === "xs"
+      ? 5
+      : previewConfig.pillSize === "sm"
+      ? 6
+      : previewConfig.pillSize === "lg"
+      ? 9
+      : previewConfig.pillSize === "xl"
+      ? 11
+      : 7;
+
+  const hScrollThick = Math.max(
+    2,
+    Math.min(
+      6,
+      resolveScrollbarThicknessPx(previewConfig.horizontalScrollbarThickness)
+    )
+  );
+  const hScrollColor =
+    previewConfig.customColors?.scrollbarColor || previewTheme.gold;
+
+  const miniCardPad = Math.max(
+    5,
+    Math.min(11, Math.round(previewMetrics.cardPaddingPx * 0.52))
+  );
+  const miniIconScale = Math.max(
+    0.8,
+    Math.min(1.22, previewMetrics.iconScale || 1)
+  );
+  const miniTabBarH =
+    previewConfig.tabBarSize === "xs"
+      ? 24
+      : previewConfig.tabBarSize === "sm"
+      ? 27
+      : previewConfig.tabBarSize === "lg"
+      ? 33
+      : previewConfig.tabBarSize === "xl"
+      ? 36
+      : 30;
+  const showTabLabels = previewConfig.tabBarLabels !== false;
+  const miniBtnPV = Math.max(
+    2.5,
+    Math.min(6, Math.round(previewMetrics.buttonPaddingVPx * 0.36))
+  );
+  const miniBtnPH = Math.max(
+    6,
+    Math.min(12, Math.round(previewMetrics.buttonPaddingHPx * 0.52))
+  );
+
+  const isBentoHome =
+    previewConfig.homeLayout === "bento-grid" ||
+    previewConfig.homeLayout === "large-tiles";
+  const isCompactRowHome =
+    previewConfig.homeLayout === "compact-list" ||
+    previewConfig.homeLayout === "minimal-rows";
+
+  const renderPillItem = (label: string, idx: number, extraStyle?: object) => {
+    const selected = activePill === idx;
+    const isUnderline = previewConfig.pillBarLayout === "underline-tabs";
+    const isMinimal = previewConfig.pillBarLayout === "minimal-text";
+    const isSidebar = previewConfig.pillBarLayout === "sidebar-chips";
+    return (
+      <Pressable
+        key={`mpill-${idx}`}
+        onPress={() => onSelectPill(idx)}
+        style={[
+          {
+            paddingVertical: pillPV,
+            paddingHorizontal: pillPH,
+            borderRadius: isUnderline || isMinimal ? 0 : pillRadius,
+            backgroundColor: isUnderline || isMinimal
+              ? "transparent"
+              : selected
+              ? previewTheme.gold
+              : previewTheme.surfaceContainerHigh,
+            borderWidth: isUnderline || isMinimal ? 0 : 1,
+            borderColor: selected
+              ? previewTheme.gold
+              : previewTheme.outlineVariant,
+            borderBottomWidth: isUnderline ? (selected ? 2 : 0) : isMinimal ? 0 : 1,
+            borderBottomColor: isUnderline && selected
+              ? previewTheme.gold
+              : previewTheme.outlineVariant,
+            borderLeftWidth: isSidebar ? 3 : isUnderline || isMinimal ? 0 : 1,
+            borderLeftColor: isSidebar
+              ? selected
+                ? previewTheme.gold
+                : previewTheme.outline
+              : selected
+              ? previewTheme.gold
+              : previewTheme.outlineVariant,
+            alignItems: "center",
+            justifyContent: "center",
+          },
+          extraStyle,
+        ]}
+      >
+        <Text
+          style={{
+            fontFamily: previewFonts.bold,
+            fontSize: 8.5,
+            color:
+              isUnderline || isMinimal
+                ? selected
+                  ? previewTheme.gold
+                  : previewTheme.textSecondary
+                : selected
+                ? onGold
+                : previewTheme.textPrimary,
+            includeFontPadding: false,
+          }}
+          numberOfLines={1}
+        >
+          {label}
+        </Text>
+      </Pressable>
+    );
+  };
+
+  const renderPillBar = () => {
+    const layout = previewConfig.pillBarLayout;
+    if (layout === "dropdown") {
+      return (
+        <Pressable
+          onPress={() => onSelectPill((activePill + 1) % MINI_PILLS.length)}
+          style={{
+            flexDirection: "row",
+            alignItems: "center",
+            justifyContent: "space-between",
+            paddingHorizontal: 7,
+            paddingVertical: 3,
+            borderRadius: pillRadius,
+            backgroundColor: previewTheme.surfaceContainerHigh,
+            borderWidth: 1,
+            borderColor: previewTheme.gold,
+          }}
+        >
+          <Text
+            style={{
+              fontFamily: previewFonts.bold,
+              fontSize: 8.5,
+              color: previewTheme.textPrimary,
+              includeFontPadding: false,
+            }}
+          >
+            Category: {MINI_PILLS[activePill]}
+          </Text>
+          <Ionicons
+            name="chevron-down"
+            size={10}
+            color={previewTheme.gold}
+          />
+        </Pressable>
+      );
+    }
+
+    if (layout === "stepper") {
+      return (
+        <View
+          style={{
+            flexDirection: "row",
+            alignItems: "center",
+            justifyContent: "space-between",
+            paddingHorizontal: 4,
+            paddingVertical: 2,
+            borderRadius: pillRadius,
+            backgroundColor: previewTheme.surfaceContainerHigh,
+            borderWidth: 1,
+            borderColor: previewTheme.outlineVariant,
+          }}
+        >
+          <Pressable
+            onPress={() =>
+              onSelectPill((activePill + MINI_PILLS.length - 1) % MINI_PILLS.length)
+            }
+            hitSlop={6}
+          >
+            <Ionicons name="chevron-back" size={11} color={previewTheme.gold} />
+          </Pressable>
+          <Text
+            style={{
+              fontFamily: previewFonts.bold,
+              fontSize: 8.5,
+              color: previewTheme.textPrimary,
+              includeFontPadding: false,
+            }}
+          >
+            {MINI_PILLS[activePill]} ({activePill + 1}/{MINI_PILLS.length})
+          </Text>
+          <Pressable
+            onPress={() => onSelectPill((activePill + 1) % MINI_PILLS.length)}
+            hitSlop={6}
+          >
+            <Ionicons
+              name="chevron-forward"
+              size={11}
+              color={previewTheme.gold}
+            />
+          </Pressable>
+        </View>
+      );
+    }
+
+    if (layout === "segmented-bar") {
+      return (
+        <View
+          style={{
+            flexDirection: "row",
+            padding: 2,
+            borderRadius: pillRadius,
+            backgroundColor: previewTheme.surfaceContainerHigh,
+            borderWidth: 1,
+            borderColor: previewTheme.outlineVariant,
+            gap: 2,
+          }}
+        >
+          {MINI_PILLS.map((label, idx) =>
+            renderPillItem(label, idx, { flex: 1, borderWidth: 0 })
+          )}
+        </View>
+      );
+    }
+
+    if (layout === "floating-dock") {
+      return (
+        <View
+          style={{
+            flexDirection: "row",
+            justifyContent: "space-around",
+            paddingVertical: 2.5,
+            paddingHorizontal: 5,
+            borderRadius: 999,
+            backgroundColor: previewTheme.surfaceContainer,
+            borderWidth: 1,
+            borderColor: previewTheme.gold,
+            gap: 4,
+          }}
+        >
+          {MINI_PILLS.map((label, idx) => renderPillItem(label, idx))}
+        </View>
+      );
+    }
+
+    if (layout === "two-col-grid") {
+      return (
+        <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 3 }}>
+          {MINI_PILLS.map((label, idx) =>
+            renderPillItem(label, idx, { width: "48.5%" })
+          )}
+        </View>
+      );
+    }
+
+    if (layout === "three-col-tiles") {
+      return (
+        <View style={{ flexDirection: "row", gap: 3 }}>
+          {MINI_PILLS.slice(0, 3).map((label, idx) =>
+            renderPillItem(label, idx, { flex: 1 })
+          )}
+        </View>
+      );
+    }
+
+    if (layout === "vertical-list") {
+      return (
+        <View style={{ gap: 2 }}>
+          {MINI_PILLS.slice(0, 2).map((label, idx) =>
+            renderPillItem(label, idx, {
+              width: "100%",
+              alignItems: "flex-start",
+            })
+          )}
+        </View>
+      );
+    }
+
+    if (
+      layout === "always-wrap" ||
+      layout === "centered-wrap" ||
+      layout === "grid-pills"
+    ) {
+      return (
+        <View
+          style={{
+            flexDirection: "row",
+            flexWrap: "wrap",
+            justifyContent:
+              layout === "centered-wrap" ? "center" : "flex-start",
+            gap: 4,
+          }}
+        >
+          {MINI_PILLS.map((label, idx) =>
+            renderPillItem(
+              label,
+              idx,
+              layout === "grid-pills" ? { minWidth: "22%", flexGrow: 1 } : undefined
+            )
+          )}
+        </View>
+      );
+    }
+
+    // Horizontal scroll modes: scroll-with-expand, always-scroll, compact-scroll, underline-tabs, sidebar-chips, minimal-text
+    return (
+      <ScrollView
+        horizontal
+        nestedScrollEnabled
+        showsHorizontalScrollIndicator={false}
+        contentContainerStyle={{ gap: 4, alignItems: "center" }}
+      >
+        {MINI_PILLS.map((label, idx) => renderPillItem(label, idx))}
+      </ScrollView>
+    );
+  };
+
+  const renderHorizontalScrollbar = () => {
+    const sbStyle = previewConfig.horizontalScrollbarStyle;
+    if (sbStyle === "hidden") return null;
+    if (sbStyle === "dots") {
+      return (
+        <View
+          style={{
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: 4,
+            marginTop: 3,
+          }}
+        >
+          {MINI_PILLS.map((_, i) => (
+            <View
+              key={`sbdot-${i}`}
+              style={{
+                width: i === activePill ? hScrollThick * 2.2 : hScrollThick,
+                height: hScrollThick,
+                borderRadius: 999,
+                backgroundColor:
+                  i === activePill
+                    ? hScrollColor
+                    : previewTheme.outlineVariant,
+              }}
+            />
+          ))}
+        </View>
+      );
+    }
+
+    const thumbColor =
+      sbStyle === "subtle-bar" || sbStyle === "native-indicator"
+        ? previewConfig.customColors?.scrollbarColor || previewTheme.outline
+        : hScrollColor;
+
+    return (
+      <View
+        style={{
+          width: "100%",
+          height: hScrollThick,
+          borderRadius: 999,
+          marginTop: 3,
+          backgroundColor: previewConfig.scrollbarTrackVisible
+            ? hexToRgba(previewTheme.outlineVariant, 0.35)
+            : "transparent",
+          overflow: "hidden",
+        }}
+      >
+        <View
+          style={{
+            width: "42%",
+            height: "100%",
+            marginLeft: `${activePill * 18}%`,
+            borderRadius: 999,
+            backgroundColor: thumbColor,
+            opacity: sbStyle === "glow-rail" ? 1 : 0.85,
+          }}
+        />
+      </View>
+    );
+  };
+
+  const renderTabBar = () => {
+    const tbStyle = previewConfig.tabBarStyle;
+    const indStyle = previewConfig.menuIndicatorStyle;
+    const isFloating = tbStyle === "floating-pill";
+    const isTopAccent = tbStyle === "top-accent";
+    const isSegmented = tbStyle === "segmented";
+    const isDocked = tbStyle === "docked-cards";
+
+    return (
+      <View
+        style={[
+          {
+            minHeight: miniTabBarH,
+            flexDirection: "row",
+            alignItems: "center",
+            justifyContent: "space-around",
+            paddingHorizontal: isFloating ? 6 : 3,
+            paddingVertical: 2,
+            backgroundColor:
+              tbStyle === "minimal"
+                ? previewTheme.bgPrimary
+                : previewTheme.surfaceContainerLow,
+            borderTopWidth:
+              isFloating || tbStyle === "minimal"
+                ? 0
+                : StyleSheet.hairlineWidth,
+            borderTopColor: isTopAccent
+              ? previewTheme.gold
+              : previewTheme.outlineVariant,
+          },
+          isFloating && {
+            marginHorizontal: 8,
+            marginBottom: 4,
+            borderRadius: 999,
+            borderWidth: 1,
+            borderColor: previewTheme.outlineVariant,
+          },
+        ]}
+      >
+        {MINI_TABS.map((tab, idx) => {
+          const active = activeTab === idx;
+          const isFilledBox = indStyle === "filled-box";
+          const tabColor = active
+            ? isFilledBox
+              ? onGold
+              : previewTheme.gold
+            : previewTheme.textMuted;
+
+          return (
             <Pressable
-              key={`reset-all-${themeKey}`}
-              onPress={handleConfirmReset}
-              accessibilityRole="button"
-              android_ripple={androidRipple(theme.rippleColor)}
-              style={pressableStyle(styles.resetBtnPressable)}
+              key={tab.label}
+              onPress={() => onSelectTab(idx)}
+              style={[
+                {
+                  flex: 1,
+                  alignItems: "center",
+                  justifyContent: "center",
+                  paddingVertical: 2,
+                  borderRadius: isSegmented || isDocked ? 6 : 8,
+                  backgroundColor:
+                    active && (isFilledBox || isSegmented)
+                      ? isFilledBox
+                        ? previewTheme.gold
+                        : previewTheme.primaryContainer
+                      : isDocked
+                      ? previewTheme.surfaceContainer
+                      : "transparent",
+                  borderWidth:
+                    active && indStyle === "outline"
+                      ? 1
+                      : isDocked
+                      ? StyleSheet.hairlineWidth
+                      : 0,
+                  borderColor:
+                    active && indStyle === "outline"
+                      ? previewTheme.gold
+                      : previewTheme.outlineVariant,
+                },
+              ]}
             >
               <View
                 style={[
-                  styles.resetBtnInner,
                   {
-                    backgroundColor: theme.surfaceContainerLow,
-                    borderColor: theme.kenyaRed,
+                    paddingHorizontal: active && indStyle === "pill" ? 7 : 2,
+                    paddingVertical: 1,
+                    borderRadius: 999,
+                    backgroundColor:
+                      active && (indStyle === "pill" || indStyle === "glow")
+                        ? previewTheme.primaryContainer
+                        : "transparent",
                   },
                 ]}
               >
                 <Ionicons
-                  name="refresh-outline"
-                  size={16}
-                  color={theme.kenyaRedLight}
+                  name={tab.icon}
+                  size={Math.round(11 * miniIconScale)}
+                  color={tabColor}
                 />
-                <Text style={[styles.resetBtnText, { color: theme.kenyaRedLight }]}>
-                  Reset All to Default
+              </View>
+              {showTabLabels && (
+                <Text
+                  style={{
+                    fontFamily: previewFonts.bold,
+                    fontSize: 7.5,
+                    color: tabColor,
+                    marginTop: 1,
+                    includeFontPadding: false,
+                  }}
+                  numberOfLines={1}
+                >
+                  {tab.label}
+                </Text>
+              )}
+              {active && indStyle === "underline" && (
+                <View
+                  style={{
+                    width: 14,
+                    height: 1.5,
+                    borderRadius: 999,
+                    backgroundColor: previewTheme.gold,
+                    marginTop: 1,
+                  }}
+                />
+              )}
+              {active && indStyle === "dot" && (
+                <View
+                  style={{
+                    width: 3.5,
+                    height: 3.5,
+                    borderRadius: 2,
+                    backgroundColor: previewTheme.gold,
+                    marginTop: 1,
+                  }}
+                />
+              )}
+            </Pressable>
+          );
+        })}
+      </View>
+    );
+  };
+
+  return (
+    <View
+      style={[
+        styles.miniFrameOuter,
+        {
+          borderRadius: frameRadius,
+          borderColor: previewTheme.outlineVariant,
+          backgroundColor: previewTheme.bgPrimary,
+        },
+      ]}
+    >
+      <View
+        style={[
+          styles.miniFrameInnerClip,
+          {
+            borderRadius: innerRadius,
+            backgroundColor: previewTheme.bgPrimary,
+          },
+        ]}
+      >
+        {/* Mini Status Bar */}
+        <View
+          style={[
+            styles.miniStatusBar,
+            { backgroundColor: previewTheme.surfaceContainerLow },
+          ]}
+        >
+          <Text style={[styles.miniStatusTime, { color: statusColor }]}>
+            9:41
+          </Text>
+          <View style={styles.miniStatusIcons}>
+            <Ionicons name="cellular" size={9} color={statusColor} />
+            <Ionicons name="wifi" size={9} color={statusColor} />
+            <Ionicons name="battery-full" size={10} color={statusColor} />
+          </View>
+        </View>
+
+        {/* Real KenyaStripe */}
+        {peekingDefault ? (
+          <View style={styles.defaultStripeMock} accessible={false}>
+            <View style={{ height: 1.5, backgroundColor: "#000000" }} />
+            <View style={{ height: 0.5, backgroundColor: "#FAF7F2" }} />
+            <View style={{ height: 1.5, backgroundColor: "#BE2126" }} />
+            <View style={{ height: 0.5, backgroundColor: "#FAF7F2" }} />
+            <View style={{ height: 1.5, backgroundColor: "#006B3F" }} />
+          </View>
+        ) : (
+          <KenyaStripe />
+        )}
+
+        {/* Mini Top App Bar */}
+        <View
+          style={[
+            styles.miniAppBar,
+            {
+              minHeight: appBarMinH,
+              backgroundColor:
+                previewConfig.appBarStyle === "accent-tinted"
+                  ? previewTheme.primaryContainer
+                  : previewTheme.surfaceContainerLow,
+              borderBottomWidth:
+                previewConfig.appBarStyle === "borderless"
+                  ? 0
+                  : StyleSheet.hairlineWidth,
+              borderBottomColor: previewTheme.outlineVariant,
+              justifyContent: isCenteredHeader ? "center" : "space-between",
+            },
+            previewConfig.appBarStyle === "floating" && {
+              marginHorizontal: 6,
+              marginTop: 3,
+              borderRadius: 8,
+              borderWidth: 1,
+              borderColor: previewTheme.outlineVariant,
+            },
+          ]}
+        >
+          <Text
+            style={{
+              fontFamily: previewFonts.heading,
+              fontSize: 10.5,
+              color: previewTheme.textPrimary,
+              textTransform: previewConfig.headingTransform || "none",
+              includeFontPadding: false,
+            }}
+            numberOfLines={1}
+          >
+            KenyaHub
+          </Text>
+          {!isCenteredHeader && (
+            <Ionicons
+              name="notifications-outline"
+              size={Math.round(11 * miniIconScale)}
+              color={previewTheme.gold}
+            />
+          )}
+        </View>
+
+        {/* Mini Body Area */}
+        <View style={styles.miniBody}>
+          {/* Mini Search Bar */}
+          <View
+            style={[
+              inputStyle,
+              {
+                flexDirection: "row",
+                alignItems: "center",
+                gap: 5,
+                paddingHorizontal: 7,
+                paddingVertical: 3,
+              },
+            ]}
+          >
+            <Ionicons
+              name="search"
+              size={Math.round(10 * miniIconScale)}
+              color={previewTheme.textMuted}
+            />
+            <Text
+              style={{
+                fontFamily: previewFonts.body,
+                fontSize: 8.5,
+                color: previewTheme.textMuted,
+                includeFontPadding: false,
+              }}
+              numberOfLines={1}
+            >
+              Search KRA, CBC, Laws...
+            </Text>
+          </View>
+
+          {/* Mini Pill Row + Horizontal Scrollbar Indicator */}
+          <View>
+            {renderPillBar()}
+            {renderHorizontalScrollbar()}
+          </View>
+
+          {/* Mini Body Card(s) reflecting homeLayout */}
+          {isBentoHome ? (
+            <View style={{ flexDirection: "row", gap: 6 }}>
+              {[
+                { title: "PAYE Tax", stat: "KES 12,450", icon: "calculator-outline" as const },
+                { title: "CBC Notes", stat: "Grade 8", icon: "school-outline" as const },
+              ].map((tile) => (
+                <View
+                  key={tile.title}
+                  style={[
+                    cardStyle,
+                    {
+                      flex: 1,
+                      padding: miniCardPad,
+                      gap: 3,
+                    },
+                  ]}
+                >
+                  <View style={{ flexDirection: "row", alignItems: "center", gap: 5 }}>
+                    <View style={badgeStyle.container}>
+                      <Ionicons
+                        name={tile.icon}
+                        size={Math.round(11 * miniIconScale)}
+                        color={badgeStyle.iconColor}
+                      />
+                    </View>
+                    <View style={styles.flexOne}>
+                      <Text
+                        style={{
+                          fontFamily: previewFonts.heading,
+                          fontSize: 9.5,
+                          color: previewTheme.textPrimary,
+                          textTransform: previewConfig.headingTransform || "none",
+                          includeFontPadding: false,
+                        }}
+                        numberOfLines={1}
+                      >
+                        {tile.title}
+                      </Text>
+                      <Text
+                        style={{
+                          fontFamily:
+                            previewConfig.numericStyle === "tabular-mono"
+                              ? monoFont
+                              : previewFonts.bold,
+                          fontVariant: ["tabular-nums"],
+                          fontSize: 8.5,
+                          color: previewTheme.gold,
+                          includeFontPadding: false,
+                        }}
+                        numberOfLines={1}
+                      >
+                        {tile.stat}
+                      </Text>
+                    </View>
+                  </View>
+                  <ThemedProgressBar
+                    progress={0.68}
+                    color={previewTheme.gold}
+                    height={3.5}
+                  />
+                </View>
+              ))}
+            </View>
+          ) : isCompactRowHome ? (
+            <View
+              style={[
+                cardStyle,
+                {
+                  flexDirection: "row",
+                  alignItems: "center",
+                  padding: miniCardPad,
+                  gap: 6,
+                },
+              ]}
+            >
+              <View style={badgeStyle.container}>
+                <Ionicons
+                  name="wallet-outline"
+                  size={Math.round(11 * miniIconScale)}
+                  color={badgeStyle.iconColor}
+                />
+              </View>
+              <View style={styles.flexOne}>
+                <Text
+                  style={{
+                    fontFamily: previewFonts.heading,
+                    fontSize: 10,
+                    color: previewTheme.textPrimary,
+                    textTransform: previewConfig.headingTransform || "none",
+                    includeFontPadding: false,
+                  }}
+                  numberOfLines={1}
+                >
+                  PAYE Relief Summary
+                </Text>
+                <Text
+                  style={{
+                    fontFamily:
+                      previewConfig.numericStyle === "tabular-mono"
+                        ? monoFont
+                        : previewFonts.bold,
+                    fontVariant: ["tabular-nums"],
+                    fontSize: 9,
+                    color: previewTheme.gold,
+                    includeFontPadding: false,
+                  }}
+                >
+                  KES 12,450
                 </Text>
               </View>
-            </Pressable>
-          </AccordionCard>
-        )}
+              <Pressable
+                onPress={onActionPress}
+                style={[
+                  primaryBtn.container,
+                  { paddingVertical: miniBtnPV, paddingHorizontal: miniBtnPH },
+                ]}
+              >
+                <Text
+                  style={{
+                    fontFamily: previewFonts.bold,
+                    fontSize: 8.5,
+                    color: primaryBtn.textColor,
+                    includeFontPadding: false,
+                  }}
+                >
+                  Open
+                </Text>
+              </Pressable>
+            </View>
+          ) : (
+            <View
+              style={[
+                cardStyle,
+                {
+                  padding: miniCardPad,
+                  gap: 4,
+                },
+              ]}
+            >
+              <View style={styles.miniCardTopRow}>
+                <View style={badgeStyle.container}>
+                  <Ionicons
+                    name="wallet-outline"
+                    size={Math.round(11 * miniIconScale)}
+                    color={badgeStyle.iconColor}
+                  />
+                </View>
+                <View style={styles.flexOne}>
+                  <Text
+                    style={{
+                      fontFamily: previewFonts.heading,
+                      fontSize: 10.5,
+                      color: previewTheme.textPrimary,
+                      textTransform: previewConfig.headingTransform || "none",
+                      includeFontPadding: false,
+                    }}
+                    numberOfLines={1}
+                  >
+                    Civic & Tax Suite
+                  </Text>
+                </View>
+                <Text
+                  style={{
+                    fontFamily:
+                      previewConfig.numericStyle === "tabular-mono"
+                        ? monoFont
+                        : previewFonts.bold,
+                    fontVariant: ["tabular-nums"],
+                    fontSize: 9.5,
+                    color: previewTheme.gold,
+                    includeFontPadding: false,
+                  }}
+                >
+                  KES 12,450
+                </Text>
+              </View>
+
+              {peekingDefault ? (
+                <View
+                  style={{
+                    width: "100%",
+                    height: StyleSheet.hairlineWidth,
+                    backgroundColor: previewTheme.outlineVariant,
+                    marginVertical: 2,
+                  }}
+                />
+              ) : (
+                <ThemedDivider style={{ marginVertical: 2 }} />
+              )}
+
+              <ThemedProgressBar
+                progress={0.68}
+                color={previewTheme.gold}
+                height={4}
+              />
+
+              <View style={styles.miniCardBtnsRow}>
+                <Pressable
+                  onPress={onActionPress}
+                  style={[
+                    primaryBtn.container,
+                    {
+                      paddingVertical: miniBtnPV,
+                      paddingHorizontal: miniBtnPH,
+                    },
+                  ]}
+                >
+                  <Text
+                    style={{
+                      fontFamily: previewFonts.bold,
+                      fontSize: 8.5,
+                      color: primaryBtn.textColor,
+                      includeFontPadding: false,
+                    }}
+                  >
+                    Primary
+                  </Text>
+                </Pressable>
+                <Pressable
+                  onPress={onActionPress}
+                  style={[
+                    secondaryBtn.container,
+                    {
+                      paddingVertical: miniBtnPV,
+                      paddingHorizontal: miniBtnPH,
+                    },
+                  ]}
+                >
+                  <Text
+                    style={{
+                      fontFamily: previewFonts.bold,
+                      fontSize: 8.5,
+                      color: secondaryBtn.textColor,
+                      includeFontPadding: false,
+                    }}
+                  >
+                    Secondary
+                  </Text>
+                </Pressable>
+              </View>
+            </View>
+          )}
+
+          {/* Mini Floating Quick-Jump Badge */}
+          {previewConfig.quickMenuPosition !== "off" && (
+            <View
+              pointerEvents="none"
+              style={[
+                styles.miniQuickJumpBadge,
+                {
+                  backgroundColor: previewTheme.gold,
+                  right:
+                    previewConfig.quickMenuPosition === "bottom-right"
+                      ? 6
+                      : undefined,
+                  left:
+                    previewConfig.quickMenuPosition === "bottom-left"
+                      ? 6
+                      : undefined,
+                },
+              ]}
+            >
+              <Ionicons name="compass" size={11} color={onGold} />
+            </View>
+          )}
+        </View>
+
+        {/* Interactive 4-Tab Mini Bottom Tab Bar */}
+        {renderTabBar()}
       </View>
-    </ScrollView>
+    </View>
+  );
+}
+
+function CardCompactPreview({
+  previewTheme,
+  previewConfig,
+  previewMetrics,
+  previewFonts,
+  peekingDefault,
+  onActionPress,
+}: {
+  previewTheme: ThemeColors;
+  previewConfig: ThemeConfig;
+  previewMetrics: ThemeMetrics;
+  previewFonts: { heading: string; body: string; bold: string };
+  peekingDefault: boolean;
+  onActionPress: () => void;
+}) {
+  const monoFont = Platform.OS === "ios" ? "Menlo" : "monospace";
+  const cardStyle = getThemedCardStyle(
+    previewTheme,
+    previewConfig,
+    previewMetrics
+  );
+  const primaryBtn = getThemedButtonStyle(
+    previewTheme,
+    previewConfig,
+    previewMetrics,
+    "primary"
+  );
+  const secondaryBtn = getThemedButtonStyle(
+    previewTheme,
+    previewConfig,
+    previewMetrics,
+    "secondary"
+  );
+  const badgeStyle = getThemedIconBadgeStyle(
+    previewTheme,
+    previewConfig,
+    previewTheme.gold,
+    26
+  );
+  const innerRadius = Math.max(
+    0,
+    previewMetrics.cardRadiusPx - previewMetrics.borderWidthPx
+  );
+  const pad = Math.max(8, Math.min(14, Math.round(previewMetrics.cardPaddingPx * 0.72)));
+
+  return (
+    <View style={[styles.previewOuter, cardStyle]}>
+      <View
+        style={[
+          styles.previewInnerClip,
+          { borderRadius: innerRadius, elevation: 0 },
+        ]}
+      >
+        {!peekingDefault && <KenyaStripe />}
+        <View style={{ padding: pad, gap: 6 }}>
+          <View style={styles.miniCardTopRow}>
+            <View style={badgeStyle.container}>
+              <Ionicons
+                name="sparkles"
+                size={13}
+                color={badgeStyle.iconColor}
+              />
+            </View>
+            <View style={styles.flexOne}>
+              <Text
+                style={{
+                  fontFamily: previewFonts.heading,
+                  fontSize: Math.round(13.5 * previewMetrics.fontScale),
+                  color: previewTheme.textPrimary,
+                  textTransform: previewConfig.headingTransform || "none",
+                  letterSpacing: previewMetrics.letterSpacingOffset,
+                  includeFontPadding: false,
+                }}
+                numberOfLines={1}
+              >
+                KenyaHub Civic & Utility Suite
+              </Text>
+            </View>
+            <Text
+              style={{
+                fontFamily:
+                  previewConfig.numericStyle === "tabular-mono"
+                    ? monoFont
+                    : previewFonts.bold,
+                fontVariant: ["tabular-nums"],
+                fontSize: 11,
+                color: previewTheme.gold,
+                includeFontPadding: false,
+              }}
+            >
+              KES 12,450
+            </Text>
+          </View>
+
+          {!peekingDefault && <ThemedDivider style={{ marginVertical: 1 }} />}
+
+          <ThemedProgressBar
+            progress={0.68}
+            color={previewTheme.gold}
+            height={4.5}
+          />
+
+          <View style={styles.miniCardBtnsRow}>
+            <Pressable
+              onPress={onActionPress}
+              style={[
+                primaryBtn.container,
+                { paddingVertical: 5, paddingHorizontal: 11 },
+              ]}
+            >
+              <Text
+                style={{
+                  fontFamily: previewFonts.bold,
+                  fontSize: 11,
+                  color: primaryBtn.textColor,
+                  includeFontPadding: false,
+                }}
+              >
+                Primary Action
+              </Text>
+            </Pressable>
+            <Pressable
+              onPress={onActionPress}
+              style={[
+                secondaryBtn.container,
+                { paddingVertical: 5, paddingHorizontal: 11 },
+              ]}
+            >
+              <Text
+                style={{
+                  fontFamily: previewFonts.bold,
+                  fontSize: 11,
+                  color: secondaryBtn.textColor,
+                  includeFontPadding: false,
+                }}
+              >
+                Secondary
+              </Text>
+            </Pressable>
+          </View>
+        </View>
+      </View>
+    </View>
   );
 }
 
 function AccordionCard({
-  sectionKey,
   icon,
   title,
   summary,
   expanded,
   onToggle,
   theme,
-  themeKey,
   children,
 }: {
-  sectionKey: AccordionKey;
   icon: keyof typeof Ionicons.glyphMap;
   title: string;
   summary: string;
   expanded: boolean;
   onToggle: () => void;
-  theme: ReturnType<typeof useTheme>["theme"];
-  themeKey: string;
+  theme: ThemeColors;
   children: React.ReactNode;
 }) {
   return (
@@ -2514,7 +4029,6 @@ function AccordionCard({
       ]}
     >
       <Pressable
-        key={`accordion-hdr-${sectionKey}-${expanded ? "open" : "closed"}-${themeKey}`}
         onPress={onToggle}
         accessibilityRole="button"
         accessibilityState={{ expanded }}
@@ -2586,14 +4100,12 @@ function OptionPillGroup<T extends string | number>({
   selectedValue,
   onSelect,
   theme,
-  themeKey,
 }: {
   label: string;
   options: readonly { value: T; label: string }[];
   selectedValue: T;
   onSelect: (value: T) => void;
-  theme: ReturnType<typeof useTheme>["theme"];
-  themeKey: string;
+  theme: ThemeColors;
 }) {
   return (
     <View style={styles.optionGroup}>
@@ -2605,7 +4117,7 @@ function OptionPillGroup<T extends string | number>({
           const active = opt.value === selectedValue;
           return (
             <Pressable
-              key={`${label}-${String(opt.value)}-${active ? "1" : "0"}-${themeKey}`}
+              key={`${label}-${String(opt.value)}`}
               onPress={() => onSelect(opt.value)}
               accessibilityRole="button"
               accessibilityState={{ selected: active }}
@@ -2651,41 +4163,222 @@ function ToggleRow({
   description: string;
   value: boolean;
   onValueChange: (val: boolean) => void;
-  theme: ReturnType<typeof useTheme>["theme"];
+  theme: ThemeColors;
 }) {
   return (
-    <View
-      style={[
-        styles.toggleRow,
-        {
-          backgroundColor: theme.surfaceContainerLow,
-          borderColor: theme.outlineVariant,
-        },
-      ]}
+    <Pressable
+      onPress={() => onValueChange(!value)}
+      accessibilityRole="switch"
+      accessibilityState={{ checked: value }}
+      accessibilityLabel={label}
+      android_ripple={androidRipple(theme.rippleColor)}
+      style={pressableStyle(styles.toggleRowPressable, undefined, false)}
     >
-      <View style={styles.toggleTextCol}>
-        <Text style={[styles.optionGroupTitle, { color: theme.textPrimary }]}>
-          {label}
-        </Text>
-        <Text style={[styles.optionGroupDesc, { color: theme.textSecondary }]}>
-          {description}
-        </Text>
+      <View
+        style={[
+          styles.toggleRow,
+          {
+            backgroundColor: theme.surfaceContainerLow,
+            borderColor: theme.outlineVariant,
+          },
+        ]}
+      >
+        <View style={styles.toggleTextCol}>
+          <Text style={[styles.optionGroupTitle, { color: theme.textPrimary }]}>
+            {label}
+          </Text>
+          <Text
+            style={[styles.optionGroupDesc, { color: theme.textSecondary }]}
+          >
+            {description}
+          </Text>
+        </View>
+        <Switch
+          value={value}
+          onValueChange={onValueChange}
+          trackColor={{
+            false: theme.surfaceContainerHighest,
+            true: theme.gold,
+          }}
+          thumbColor={value ? theme.kenyaBlack : theme.kenyaWhite}
+          accessibilityLabel={label}
+        />
       </View>
-      <Switch
-        value={value}
-        onValueChange={onValueChange}
-        trackColor={{
-          false: theme.surfaceContainerHighest,
-          true: theme.gold,
-        }}
-        thumbColor={value ? theme.kenyaBlack : theme.kenyaWhite}
-        accessibilityLabel={label}
-      />
-    </View>
+    </Pressable>
   );
 }
 
 const styles = StyleSheet.create({
+  root: {
+    flex: 1,
+  },
+  previewDock: {
+    paddingHorizontal: 10,
+    paddingTop: 6,
+    paddingBottom: 7,
+    borderBottomWidth: StyleSheet.hairlineWidth,
+    gap: 6,
+  },
+  dockHeaderRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    gap: 6,
+  },
+  dockTitleCluster: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 4,
+    flexShrink: 1,
+  },
+  dockEyebrow: {
+    fontFamily: "Inter_700Bold",
+    fontSize: 10,
+    letterSpacing: 0.6,
+    includeFontPadding: false,
+  },
+  dockControlsRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 6,
+  },
+  peekBtn: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 3,
+    paddingHorizontal: 7,
+    paddingVertical: 4,
+    borderRadius: 999,
+    borderWidth: 1,
+  },
+  peekBtnText: {
+    fontFamily: "Inter_600SemiBold",
+    fontSize: 10,
+    includeFontPadding: false,
+  },
+  previewModeSwitch: {
+    flexDirection: "row",
+    alignItems: "center",
+    borderRadius: 999,
+    borderWidth: 1,
+    padding: 2,
+    gap: 2,
+  },
+  previewModeBtn: {
+    paddingHorizontal: 7,
+    paddingVertical: 3,
+    borderRadius: 999,
+  },
+  previewModeText: {
+    fontFamily: "Inter_700Bold",
+    fontSize: 9.5,
+    includeFontPadding: false,
+  },
+  miniFrameOuter: {
+    width: "100%",
+    borderWidth: 1,
+  },
+  miniFrameInnerClip: {
+    width: "100%",
+    overflow: "hidden",
+  },
+  miniStatusBar: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    paddingHorizontal: 8,
+    paddingVertical: 2,
+  },
+  miniStatusTime: {
+    fontFamily: "Inter_700Bold",
+    fontSize: 8.5,
+    includeFontPadding: false,
+  },
+  miniStatusIcons: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 3,
+  },
+  defaultStripeMock: {
+    width: "100%",
+    overflow: "hidden",
+  },
+  miniAppBar: {
+    flexDirection: "row",
+    alignItems: "center",
+    paddingHorizontal: 8,
+    paddingVertical: 2,
+  },
+  miniBody: {
+    paddingHorizontal: 7,
+    paddingVertical: 5,
+    gap: 5,
+    position: "relative",
+  },
+  miniCardTopRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 6,
+  },
+  miniCardBtnsRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 6,
+  },
+  miniQuickJumpBadge: {
+    position: "absolute",
+    bottom: 5,
+    width: 20,
+    height: 20,
+    borderRadius: 10,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  diffBarRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 6,
+    minHeight: 24,
+  },
+  diffCountBadge: {
+    paddingHorizontal: 7,
+    paddingVertical: 3,
+    borderRadius: 999,
+    borderWidth: 1,
+  },
+  diffCountText: {
+    fontFamily: "Inter_700Bold",
+    fontSize: 10,
+    includeFontPadding: false,
+  },
+  diffChipsScroll: {
+    gap: 5,
+    alignItems: "center",
+  },
+  diffChipPressable: {
+    borderRadius: 999,
+    overflow: "hidden",
+  },
+  diffChipInner: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 4,
+    paddingHorizontal: 7,
+    paddingVertical: 3,
+    borderRadius: 999,
+    borderWidth: 1,
+  },
+  diffChipLabel: {
+    fontFamily: "Inter_600SemiBold",
+    fontSize: 10,
+    includeFontPadding: false,
+  },
+  diffEmptyText: {
+    fontFamily: "Inter_400Regular",
+    fontSize: 10.5,
+    includeFontPadding: false,
+    flex: 1,
+  },
   scroll: {
     flex: 1,
   },
@@ -2762,72 +4455,12 @@ const styles = StyleSheet.create({
     fontSize: 12,
     includeFontPadding: false,
   },
-  sectionBlock: {
-    gap: 6,
-  },
-  previewEyebrowRow: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
-    paddingHorizontal: 2,
-    gap: 8,
-  },
-  sectionHeaderRow: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 5,
-  },
-  sectionEyebrow: {
-    fontFamily: "Inter_600SemiBold",
-    fontSize: 10.5,
-    letterSpacing: 0.7,
-    includeFontPadding: false,
-  },
-  previewPresetTag: {
-    fontFamily: "Inter_500Medium",
-    fontSize: 11,
-    includeFontPadding: false,
-  },
   previewOuter: {
     width: "100%",
   },
   previewInnerClip: {
     width: "100%",
     overflow: "hidden",
-  },
-  previewTopRow: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
-    gap: 8,
-  },
-  previewBadge: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 4,
-    paddingHorizontal: 8,
-    paddingVertical: 3,
-  },
-  previewBadgeText: {
-    includeFontPadding: false,
-  },
-  previewActionsRow: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 8,
-    marginTop: 2,
-  },
-  previewBtnPressable: {
-    overflow: "hidden",
-  },
-  previewBtnInner: {
-    paddingHorizontal: 12,
-    paddingVertical: 7,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  previewBtnText: {
-    includeFontPadding: false,
   },
   filterToolbar: {
     flexDirection: "row",
@@ -2962,6 +4595,113 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     borderWidth: 1,
   },
+  saveThemeBlock: {
+    marginTop: 10,
+    paddingTop: 10,
+    borderTopWidth: StyleSheet.hairlineWidth,
+    gap: 8,
+  },
+  saveThemeEyebrow: {
+    fontFamily: "Inter_700Bold",
+    fontSize: 11,
+    letterSpacing: 0.4,
+    includeFontPadding: false,
+  },
+  saveThemeDesc: {
+    fontFamily: "Inter_400Regular",
+    fontSize: 11.5,
+    lineHeight: 16,
+    includeFontPadding: false,
+  },
+  saveThemeInputRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 8,
+  },
+  saveThemeInput: {
+    flex: 1,
+    borderWidth: 1,
+    borderRadius: 10,
+    paddingHorizontal: 10,
+    paddingVertical: 8,
+    fontFamily: "Inter_400Regular",
+    fontSize: 12.5,
+  },
+  saveThemeBtnPressable: {
+    borderRadius: 10,
+    overflow: "hidden",
+  },
+  saveThemeBtnInner: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 5,
+    paddingHorizontal: 13,
+    paddingVertical: 9,
+    borderRadius: 10,
+  },
+  saveThemeBtnText: {
+    fontFamily: "Inter_700Bold",
+    fontSize: 12,
+    includeFontPadding: false,
+  },
+  saveThemeFeedback: {
+    fontFamily: "Inter_600SemiBold",
+    fontSize: 11.5,
+    includeFontPadding: false,
+  },
+  savedThemesList: {
+    gap: 6,
+    marginTop: 4,
+  },
+  savedThemesHeading: {
+    fontFamily: "Inter_700Bold",
+    fontSize: 11,
+    letterSpacing: 0.4,
+    includeFontPadding: false,
+  },
+  savedThemeRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    gap: 8,
+    borderWidth: 1,
+    borderRadius: 11,
+    paddingHorizontal: 10,
+    paddingVertical: 8,
+  },
+  savedThemeSelectArea: {
+    flex: 1,
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 8,
+  },
+  savedThemeSwatches: {
+    flexDirection: "row",
+    gap: 3,
+  },
+  savedThemeDot: {
+    width: 10,
+    height: 10,
+    borderRadius: 5,
+    borderWidth: 0.5,
+  },
+  savedThemeName: {
+    fontFamily: "Inter_700Bold",
+    fontSize: 12.5,
+    flex: 1,
+    includeFontPadding: false,
+  },
+  savedThemeApplyBtn: {
+    paddingHorizontal: 9,
+    paddingVertical: 5,
+    borderRadius: 8,
+    borderWidth: 1,
+  },
+  savedThemeApplyText: {
+    fontFamily: "Inter_700Bold",
+    fontSize: 11,
+    includeFontPadding: false,
+  },
   presetFilterRow: {
     flexDirection: "row",
     gap: 6,
@@ -3052,14 +4792,15 @@ const styles = StyleSheet.create({
   swatchesRow: {
     flexDirection: "row",
     flexWrap: "wrap",
-    gap: 8,
+    gap: 10,
   },
   swatchCircle: {
-    width: 26,
-    height: 26,
-    borderRadius: 13,
+    width: 32,
+    height: 32,
+    borderRadius: 16,
     alignItems: "center",
     justifyContent: "center",
+    overflow: "hidden",
   },
   hexInputRow: {
     flexDirection: "row",
@@ -3128,6 +4869,10 @@ const styles = StyleSheet.create({
     fontFamily: "Inter_600SemiBold",
     fontSize: 12,
     includeFontPadding: false,
+  },
+  toggleRowPressable: {
+    borderRadius: 11,
+    overflow: "hidden",
   },
   toggleRow: {
     flexDirection: "row",
@@ -3203,7 +4948,6 @@ const styles = StyleSheet.create({
   resetBtnPressable: {
     borderRadius: 10,
     overflow: "hidden",
-    marginTop: 2,
   },
   resetBtnInner: {
     flexDirection: "row",
@@ -3215,7 +4959,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
   },
   resetBtnText: {
-    fontFamily: "Outfit_700Bold",
+    fontFamily: "Inter_700Bold",
     fontSize: 13,
     includeFontPadding: false,
   },

@@ -20,27 +20,38 @@ export function BrandLogo({ size = "md", showText = true }: BrandLogoProps) {
 
   return (
     <View style={styles.container}>
-      {/* Crisp full-bleed rounded Kenya flag emblem */}
+      {/* Outer shadow wrapper separated from inner clipped View to avoid Android elevation + overflow: "hidden" artifacts */}
       <View
         style={[
-          styles.flagFrame,
+          styles.flagShadow,
           {
             width: flagW,
             height: flagH,
             borderRadius: flagRadius,
-            borderColor: isDark ? "rgba(255, 255, 255, 0.16)" : "rgba(26, 22, 18, 0.14)",
-            backgroundColor: isDark ? "#1C1916" : "#FFFFFF",
+            backgroundColor: isDark ? colors.surfaceContainer : colors.kenyaWhite,
           },
         ]}
       >
-        <Image
-          source={require("../../assets/kenya-flag.png")}
-          style={{
-            width: "100%",
-            height: "100%",
-          }}
-          resizeMode="cover"
-        />
+        {/* Crisp full-bleed rounded Kenya flag emblem */}
+        <View
+          style={[
+            styles.flagFrame,
+            {
+              borderRadius: flagRadius,
+              borderColor: isDark ? "rgba(255, 255, 255, 0.16)" : "rgba(26, 22, 18, 0.14)",
+              backgroundColor: isDark ? colors.surfaceContainer : colors.kenyaWhite,
+            },
+          ]}
+        >
+          <Image
+            source={require("../../assets/kenya-flag.png")}
+            style={{
+              width: "100%",
+              height: "100%",
+            }}
+            resizeMode="cover"
+          />
+        </View>
       </View>
 
       {showText && (
@@ -70,14 +81,18 @@ const styles = StyleSheet.create({
     alignItems: "center",
     gap: 9,
   },
-  flagFrame: {
-    borderWidth: StyleSheet.hairlineWidth * 2,
-    overflow: "hidden",
+  flagShadow: {
     shadowColor: "#000",
     shadowOpacity: 0.14,
     shadowRadius: 3,
     shadowOffset: { width: 0, height: 1 },
     elevation: 2,
+  },
+  flagFrame: {
+    width: "100%",
+    height: "100%",
+    borderWidth: StyleSheet.hairlineWidth * 2,
+    overflow: "hidden",
   },
   textWrap: {
     justifyContent: "center",

@@ -132,6 +132,13 @@ export type HeadingTransform = "none" | "uppercase" | "capitalize";
 export type NumericStyle = "default" | "tabular-mono";
 export type HapticStrength = "off" | "light" | "medium" | "strong";
 export type SizePreset = "xs" | "sm" | "md" | "lg" | "xl";
+export type AccentIntensity = "muted" | "balanced" | "vivid";
+export type ReadingTint = "none" | "warm-paper" | "soft-sepia" | "cool-slate";
+export type ScreenPaddingPreset = "edge" | "compact" | "standard" | "wide";
+export type ProgressBarStyle = "rounded" | "sharp" | "segmented" | "thin-line";
+export type DividerStyle = "hairline" | "none" | "dashed-soft" | "accent-fade";
+export type SectionHeaderStyle = "eyebrow" | "bold-title" | "accent-pill" | "left-bar";
+export type PressEffect = "scale-ripple" | "ripple-only" | "opacity-only" | "none";
 
 export interface CustomColorsConfig {
   primaryAccent?: string;
@@ -195,6 +202,14 @@ export interface ThemeConfig {
   cardPadding: SizePreset;
   tabBarSize: SizePreset;
   appBarSize: SizePreset;
+  oledBlack: boolean;
+  accentIntensity: AccentIntensity;
+  readingTint: ReadingTint;
+  screenPadding: ScreenPaddingPreset;
+  progressBarStyle: ProgressBarStyle;
+  dividerStyle: DividerStyle;
+  sectionHeaderStyle: SectionHeaderStyle;
+  pressEffect: PressEffect;
 }
 
 export interface ThemeColorsShape {
@@ -270,6 +285,7 @@ export interface ThemeMetrics {
   cardPaddingPx: number;
   tabBarHeightPx: number;
   appBarHeightPx: number;
+  screenPaddingPx: number;
 }
 
 export const SUPPORTED_FONT_SCALES = [0.85, 0.92, 1.0, 1.08, 1.18, 1.28] as const;
@@ -326,6 +342,14 @@ export const DEFAULT_THEME_CONFIG: ThemeConfig = {
   cardPadding: "md",
   tabBarSize: "md",
   appBarSize: "md",
+  oledBlack: false,
+  accentIntensity: "balanced",
+  readingTint: "none",
+  screenPadding: "standard",
+  progressBarStyle: "rounded",
+  dividerStyle: "hairline",
+  sectionHeaderStyle: "eyebrow",
+  pressEffect: "scale-ripple",
 };
 
 export interface AppLookProfile {
@@ -401,7 +425,13 @@ export const APP_LOOK_PROFILES: AppLookProfile[] = [
       tabBarSize: "sm",
       appBarSize: "sm",
       iconScale: 0.92,
+      showKenyaStripe: false,
       stripeThickness: "hidden",
+      readingTint: "cool-slate",
+      dividerStyle: "none",
+      inputStyle: "minimal",
+      buttonStyle: "flat",
+      sectionHeaderStyle: "eyebrow",
       appBarStyle: "borderless",
       homeLayout: "minimal-rows",
       headerAlignment: "center",
@@ -439,6 +469,14 @@ export const APP_LOOK_PROFILES: AppLookProfile[] = [
       appBarSize: "sm",
       iconScale: 0.95,
       stripeThickness: "hairline",
+      numericStyle: "tabular-mono",
+      headingTransform: "uppercase",
+      inputStyle: "accent",
+      buttonStyle: "outlined",
+      progressBarStyle: "sharp",
+      dividerStyle: "accent-fade",
+      sectionHeaderStyle: "left-bar",
+      accentIntensity: "vivid",
       appBarStyle: "accent-tinted",
       homeLayout: "bento-grid",
       headerAlignment: "left",
@@ -476,6 +514,12 @@ export const APP_LOOK_PROFILES: AppLookProfile[] = [
       appBarSize: "lg",
       iconScale: 1.05,
       stripeThickness: "medium",
+      readingTint: "warm-paper",
+      inputStyle: "underlined",
+      buttonStyle: "outlined",
+      dividerStyle: "dashed-soft",
+      sectionHeaderStyle: "bold-title",
+      progressBarStyle: "thin-line",
       appBarStyle: "tall-editorial",
       homeLayout: "editorial-cards",
       headerAlignment: "center",
@@ -512,7 +556,14 @@ export const APP_LOOK_PROFILES: AppLookProfile[] = [
       tabBarSize: "xs",
       appBarSize: "sm",
       iconScale: 0.9,
+      oledBlack: true,
+      density: "compact",
+      screenPadding: "compact",
       stripeThickness: "hairline",
+      inputStyle: "filled",
+      buttonStyle: "tinted",
+      dividerStyle: "none",
+      progressBarStyle: "thin-line",
       appBarStyle: "compact",
       homeLayout: "compact-list",
       headerAlignment: "left",
@@ -550,6 +601,10 @@ export const APP_LOOK_PROFILES: AppLookProfile[] = [
       appBarSize: "md",
       iconScale: 1.1,
       stripeThickness: "thick",
+      inputStyle: "pill",
+      buttonStyle: "elevated",
+      progressBarStyle: "segmented",
+      sectionHeaderStyle: "accent-pill",
       appBarStyle: "floating",
       homeLayout: "bento-grid",
       headerAlignment: "left",
@@ -587,6 +642,11 @@ export const APP_LOOK_PROFILES: AppLookProfile[] = [
       appBarSize: "lg",
       iconScale: 1.05,
       stripeThickness: "medium",
+      inputStyle: "filled",
+      buttonStyle: "pill-glow",
+      dividerStyle: "accent-fade",
+      sectionHeaderStyle: "bold-title",
+      accentIntensity: "vivid",
       appBarStyle: "floating",
       homeLayout: "editorial-cards",
       headerAlignment: "center",
@@ -629,8 +689,142 @@ export const APP_LOOK_PROFILES: AppLookProfile[] = [
       headerAlignment: "left",
       cardAccentStyle: "top-bar",
       iconBadgeStyle: "soft-square",
+      inputStyle: "filled",
+      buttonStyle: "tinted",
       quickMenuPosition: "off",
       cardShadowIntensity: "subtle",
+      customColors: {},
+    },
+  },
+  {
+    id: "maasai-shuka-bold",
+    name: "Maasai Shuka Bold",
+    tagline: "Charcoal · Crimson & Cobalt · 2-Col Grid · Left Bar",
+    icon: "flame-outline",
+    swatches: ["#120B0C", "#241416", "#D62839", "#3B82F6"],
+    config: {
+      presetId: "maasai-shuka",
+      mode: "dark",
+      tabBarStyle: "docked-cards",
+      tabBarLabels: true,
+      menuIndicatorStyle: "filled-box",
+      fontPair: "condensed",
+      headingTransform: "uppercase",
+      surfaceStyle: "outlined",
+      cardRadius: "sharp",
+      buttonRadius: "subtle",
+      borderWidth: "medium",
+      horizontalScrollbarStyle: "accent-track",
+      pillBarLayout: "two-col-grid",
+      pillShape: "subtle",
+      pillSize: "md",
+      buttonSize: "lg",
+      cardPadding: "md",
+      tabBarSize: "md",
+      appBarSize: "md",
+      iconScale: 1.08,
+      stripeThickness: "thick",
+      appBarStyle: "standard",
+      homeLayout: "large-tiles",
+      headerAlignment: "left",
+      cardAccentStyle: "left-bar",
+      iconBadgeStyle: "accent-solid",
+      inputStyle: "outlined",
+      buttonStyle: "filled",
+      sectionHeaderStyle: "left-bar",
+      progressBarStyle: "sharp",
+      dividerStyle: "accent-fade",
+      accentIntensity: "vivid",
+      quickMenuPosition: "off",
+      cardShadowIntensity: "medium",
+      customColors: {},
+    },
+  },
+  {
+    id: "mt-kenya-alpine",
+    name: "Mt. Kenya Alpine",
+    tagline: "Glacier Daylight · Pine & Amber · Centered Wrap",
+    icon: "snow-outline",
+    swatches: ["#F3F8FB", "#FFFFFF", "#0F766E", "#B45309"],
+    config: {
+      presetId: "mt-kenya-alpine",
+      mode: "light",
+      tabBarStyle: "top-accent",
+      tabBarLabels: true,
+      menuIndicatorStyle: "underline",
+      fontPair: "geometric",
+      surfaceStyle: "crisp",
+      cardRadius: "rounded",
+      buttonRadius: "rounded",
+      borderWidth: "thin",
+      horizontalScrollbarStyle: "subtle-bar",
+      pillBarLayout: "centered-wrap",
+      pillShape: "rounded",
+      pillSize: "md",
+      buttonSize: "md",
+      cardPadding: "lg",
+      tabBarSize: "md",
+      appBarSize: "md",
+      iconScale: 1.0,
+      stripeThickness: "thin",
+      readingTint: "cool-slate",
+      appBarStyle: "borderless",
+      homeLayout: "editorial-cards",
+      headerAlignment: "center",
+      cardAccentStyle: "top-bar",
+      iconBadgeStyle: "soft-circle",
+      inputStyle: "filled",
+      buttonStyle: "elevated",
+      sectionHeaderStyle: "accent-pill",
+      progressBarStyle: "rounded",
+      dividerStyle: "hairline",
+      quickMenuPosition: "off",
+      cardShadowIntensity: "subtle",
+      customColors: {},
+    },
+  },
+  {
+    id: "matatu-neon-night",
+    name: "Matatu Neon Night",
+    tagline: "OLED Black · Electric Lime & Amber · Floating Dock",
+    icon: "flash-outline",
+    swatches: ["#000000", "#11161C", "#A3E635", "#FACC15"],
+    config: {
+      presetId: "matatu-neon",
+      mode: "dark",
+      oledBlack: true,
+      tabBarStyle: "floating-pill",
+      tabBarLabels: true,
+      menuIndicatorStyle: "glow",
+      fontPair: "grotesk",
+      numericStyle: "tabular-mono",
+      surfaceStyle: "elevated",
+      cardRadius: "soft",
+      buttonRadius: "pill",
+      borderWidth: "medium",
+      horizontalScrollbarStyle: "glow-rail",
+      pillBarLayout: "floating-dock",
+      pillShape: "pill",
+      pillSize: "md",
+      buttonSize: "lg",
+      cardPadding: "md",
+      tabBarSize: "md",
+      appBarSize: "md",
+      iconScale: 1.12,
+      stripeThickness: "bold",
+      appBarStyle: "floating",
+      homeLayout: "bento-grid",
+      headerAlignment: "left",
+      cardAccentStyle: "glow-edge",
+      iconBadgeStyle: "filled",
+      inputStyle: "pill",
+      buttonStyle: "pill-glow",
+      sectionHeaderStyle: "accent-pill",
+      progressBarStyle: "segmented",
+      dividerStyle: "accent-fade",
+      accentIntensity: "vivid",
+      quickMenuPosition: "bottom-right",
+      cardShadowIntensity: "glow",
       customColors: {},
     },
   },
@@ -675,6 +869,8 @@ export const THEME_PRESETS: ThemePreset[] = [
       text: "#FFFFFF",
       textSecondary: "#B3B3B3",
       textMuted: "#8C8C8C",
+      lockedText: "#9E9E9E",
+      lockedBadgeText: "#BDBDBD",
       gold: "#F5C542",
       goldLight: "#FFE082",
       primaryContainer: "rgba(245, 197, 66, 0.20)",
@@ -702,6 +898,8 @@ export const THEME_PRESETS: ThemePreset[] = [
       text: "#000000",
       textSecondary: "#404040",
       textMuted: "#666666",
+      lockedText: "#4A4A4A",
+      lockedBadgeText: "#333333",
       gold: "#B45309",
       goldLight: "#D97706",
       primaryContainer: "rgba(180, 83, 9, 0.14)",
@@ -847,7 +1045,7 @@ export const THEME_PRESETS: ThemePreset[] = [
       textPrimary: "#0D2024",
       text: "#0D2024",
       textSecondary: "#3B575E",
-      textMuted: "#547178",
+      textMuted: "#4B676E",
       rippleColor: "rgba(14, 122, 125, 0.14)",
     },
   },
@@ -1147,7 +1345,7 @@ export const THEME_PRESETS: ThemePreset[] = [
       textPrimary: "#2B2114",
       text: "#2B2114",
       textSecondary: "#5C4B35",
-      textMuted: "#75634B",
+      textMuted: "#6B5A43",
       rippleColor: "rgba(148, 98, 31, 0.14)",
     },
   },
@@ -1216,7 +1414,7 @@ export const THEME_PRESETS: ThemePreset[] = [
       textPrimary: "#1B1F11",
       text: "#1B1F11",
       textSecondary: "#4B5238",
-      textMuted: "#656E4E",
+      textMuted: "#5B6445",
       rippleColor: "rgba(179, 122, 18, 0.14)",
     },
   },
@@ -1721,6 +1919,229 @@ export const THEME_PRESETS: ThemePreset[] = [
       rippleColor: "rgba(173, 68, 36, 0.14)",
     },
   },
+  {
+    id: "maasai-shuka",
+    name: "Maasai Shuka",
+    tagline: "Crimson Shuka, Bead Cobalt & Obsidian",
+    recommendedMode: "dark",
+    swatches: ["#120B0C", "#FAF4F2", "#D62839", "#3B82F6"],
+    dark: {
+      bgPrimary: "#11090A",
+      bgSecondary: "#1B0F11",
+      bgCard: "#241417",
+      bgCardHover: "#2F1A1E",
+      bgElevated: "#382025",
+      surface: "#241417",
+      surfaceContainerLowest: "#0A0506",
+      surfaceContainerLow: "#1A0E10",
+      surfaceContainer: "#241417",
+      surfaceContainerHigh: "#301B1F",
+      surfaceContainerHighest: "#3D2328",
+      gold: "#F25C69",
+      goldLight: "#FF8A94",
+      sky: "#60A5FA",
+      skyLight: "#93C5FD",
+      kenyaGreen: "#34D399",
+      kenyaGreenLight: "#6EE7B7",
+      kenyaRed: "#EF4444",
+      kenyaRedLight: "#F87171",
+      primaryContainer: "rgba(242, 92, 105, 0.22)",
+      onPrimaryContainer: "#FFD6DA",
+      secondaryContainer: "rgba(96, 165, 250, 0.20)",
+      onSecondaryContainer: "#DBEAFE",
+      border: "#6B3A42",
+      borderLight: "#804750",
+      borderAccent: "#995661",
+      outline: "#A35D69",
+      outlineVariant: "#6B3A42",
+      textPrimary: "#FAF2F3",
+      text: "#FAF2F3",
+      textSecondary: "#D4BCC0",
+      textMuted: "#B5969B",
+      rippleColor: "rgba(242, 92, 105, 0.20)",
+    },
+    light: {
+      bgPrimary: "#FBF5F4",
+      bgSecondary: "#F3E7E5",
+      bgCard: "#FFFFFF",
+      bgCardHover: "#F8EEEC",
+      bgElevated: "#EDE0DE",
+      surface: "#FFFFFF",
+      surfaceContainerLowest: "#FFFFFF",
+      surfaceContainerLow: "#F7ECEA",
+      surfaceContainer: "#F0E2E0",
+      surfaceContainerHigh: "#E8D7D4",
+      surfaceContainerHighest: "#DFC9C6",
+      gold: "#B91C2C",
+      goldLight: "#D62839",
+      sky: "#1D4ED8",
+      skyLight: "#3B82F6",
+      kenyaGreen: "#047857",
+      kenyaGreenLight: "#059669",
+      primaryContainer: "rgba(185, 28, 44, 0.14)",
+      onPrimaryContainer: "#5C0B14",
+      secondaryContainer: "rgba(29, 78, 216, 0.12)",
+      onSecondaryContainer: "#1E3A8A",
+      border: "#9E8285",
+      borderLight: "#8A6E71",
+      borderAccent: "#73585B",
+      outline: "#826669",
+      outlineVariant: "#9E8285",
+      textPrimary: "#210E10",
+      text: "#210E10",
+      textSecondary: "#573B3E",
+      textMuted: "#6B4C50",
+      rippleColor: "rgba(185, 28, 44, 0.14)",
+    },
+  },
+  {
+    id: "mt-kenya-alpine",
+    name: "Mt. Kenya Alpine",
+    tagline: "Glacier Snow, Alpine Pine & Highland Gold",
+    recommendedMode: "light",
+    swatches: ["#0B1519", "#F3F8FB", "#0F766E", "#B45309"],
+    dark: {
+      bgPrimary: "#081115",
+      bgSecondary: "#0F1D24",
+      bgCard: "#15262F",
+      bgCardHover: "#1D323D",
+      bgElevated: "#233C4A",
+      surface: "#15262F",
+      surfaceContainerLowest: "#050B0E",
+      surfaceContainerLow: "#0F1D24",
+      surfaceContainer: "#15262F",
+      surfaceContainerHigh: "#1E3440",
+      surfaceContainerHighest: "#274352",
+      gold: "#38BDF8",
+      goldLight: "#7DD3FC",
+      kenyaGreen: "#2DD4BF",
+      kenyaGreenLight: "#5EEAD4",
+      sky: "#60A5FA",
+      skyLight: "#93C5FD",
+      primaryContainer: "rgba(56, 189, 248, 0.20)",
+      onPrimaryContainer: "#E0F2FE",
+      secondaryContainer: "rgba(45, 212, 191, 0.20)",
+      onSecondaryContainer: "#CCFBF1",
+      border: "#365463",
+      borderLight: "#45687A",
+      borderAccent: "#567E94",
+      outline: "#618AA1",
+      outlineVariant: "#365463",
+      textPrimary: "#F0F8FC",
+      text: "#F0F8FC",
+      textSecondary: "#B2C8D4",
+      textMuted: "#8CA9B8",
+      rippleColor: "rgba(56, 189, 248, 0.18)",
+    },
+    light: {
+      bgPrimary: "#F3F8FB",
+      bgSecondary: "#E6F0F5",
+      bgCard: "#FFFFFF",
+      bgCardHover: "#EDF5F9",
+      bgElevated: "#DCEAF1",
+      surface: "#FFFFFF",
+      surfaceContainerLowest: "#FFFFFF",
+      surfaceContainerLow: "#ECF4F8",
+      surfaceContainer: "#E2EEF4",
+      surfaceContainerHigh: "#D6E6EE",
+      surfaceContainerHighest: "#C9DDE8",
+      gold: "#0F766E",
+      goldLight: "#14B8A6",
+      kenyaGreen: "#15803D",
+      kenyaGreenLight: "#16A34A",
+      sky: "#0369A1",
+      skyLight: "#0284C7",
+      primaryContainer: "rgba(15, 118, 110, 0.14)",
+      onPrimaryContainer: "#063B37",
+      secondaryContainer: "rgba(3, 105, 161, 0.12)",
+      onSecondaryContainer: "#0C4A6E",
+      border: "#7996A6",
+      borderLight: "#658291",
+      borderAccent: "#506D7D",
+      outline: "#607D8C",
+      outlineVariant: "#7996A6",
+      textPrimary: "#0A1C26",
+      text: "#0A1C26",
+      textSecondary: "#334F5E",
+      textMuted: "#476373",
+      rippleColor: "rgba(15, 118, 110, 0.14)",
+    },
+  },
+  {
+    id: "matatu-neon",
+    name: "Matatu Neon",
+    tagline: "Nairobi Night Asphalt, Electric Lime & Amber",
+    recommendedMode: "dark",
+    swatches: ["#080A10", "#141923", "#A3E635", "#FACC15"],
+    dark: {
+      bgPrimary: "#080A10",
+      bgSecondary: "#0F131D",
+      bgCard: "#151B28",
+      bgCardHover: "#1D2536",
+      bgElevated: "#242E42",
+      surface: "#151B28",
+      surfaceContainerLowest: "#040508",
+      surfaceContainerLow: "#0E121B",
+      surfaceContainer: "#151B28",
+      surfaceContainerHigh: "#1E2638",
+      surfaceContainerHighest: "#28324A",
+      gold: "#A3E635",
+      goldLight: "#BEF264",
+      kenyaGreen: "#22D3EE",
+      kenyaGreenLight: "#67E8F9",
+      sky: "#38BDF8",
+      skyLight: "#7DD3FC",
+      kenyaRed: "#FB7185",
+      kenyaRedLight: "#FDA4AF",
+      primaryContainer: "rgba(163, 230, 53, 0.20)",
+      onPrimaryContainer: "#ECFCCB",
+      secondaryContainer: "rgba(34, 211, 238, 0.18)",
+      onSecondaryContainer: "#CFFAFE",
+      border: "#36435E",
+      borderLight: "#465678",
+      borderAccent: "#596D96",
+      outline: "#667BA6",
+      outlineVariant: "#36435E",
+      textPrimary: "#F4F7FF",
+      text: "#F4F7FF",
+      textSecondary: "#B0BDDB",
+      textMuted: "#8B9AB8",
+      rippleColor: "rgba(163, 230, 53, 0.20)",
+    },
+    light: {
+      bgPrimary: "#F4F7F0",
+      bgSecondary: "#E9EFE2",
+      bgCard: "#FFFFFF",
+      bgCardHover: "#F0F5EA",
+      bgElevated: "#E0E8D7",
+      surface: "#FFFFFF",
+      surfaceContainerLowest: "#FFFFFF",
+      surfaceContainerLow: "#EEF3E8",
+      surfaceContainer: "#E4ECDC",
+      surfaceContainerHigh: "#D9E4CF",
+      surfaceContainerHighest: "#CDD9C1",
+      gold: "#4D7C0F",
+      goldLight: "#65A30D",
+      kenyaGreen: "#0E7490",
+      kenyaGreenLight: "#0891B2",
+      sky: "#0369A1",
+      skyLight: "#0284C7",
+      primaryContainer: "rgba(77, 124, 15, 0.14)",
+      onPrimaryContainer: "#1A2E05",
+      secondaryContainer: "rgba(14, 116, 144, 0.12)",
+      onSecondaryContainer: "#164E63",
+      border: "#7E8F70",
+      borderLight: "#6A7A5D",
+      borderAccent: "#56664A",
+      outline: "#657558",
+      outlineVariant: "#7E8F70",
+      textPrimary: "#111A09",
+      text: "#111A09",
+      textSecondary: "#3F4F32",
+      textMuted: "#516342",
+      rippleColor: "rgba(77, 124, 15, 0.14)",
+    },
+  },
 ];
 
 /**
@@ -1818,6 +2239,7 @@ function applyColorBlindTransform(
       gold: safeGold,
       goldLight: safeGoldLight,
       primaryContainer: hexToRgba(safeGold, isDark ? 0.22 : 0.16),
+      onPrimaryContainer: isDark ? "#FFF2B2" : "#4A3200",
       secondaryContainer: hexToRgba(safeSuccess, isDark ? 0.20 : 0.14),
       onSecondaryContainer: isDark ? "#B3E5FC" : "#01436B",
       warningAmber: isDark ? "#FFD54F" : "#8F5400",
@@ -1955,8 +2377,60 @@ export function resolveThemeColors(
   resolved = applyColorBlindTransform(resolved, config.colorBlindMode);
 
   resolved.text = resolved.textPrimary;
+  if (config.readingTint && config.readingTint !== "none") {
+    const tintTarget =
+      config.readingTint === "warm-paper"
+        ? isDark ? "#2A1F14" : "#F6EBD8"
+        : config.readingTint === "soft-sepia"
+        ? isDark ? "#2E2216" : "#EFE2C6"
+        : isDark ? "#111A26" : "#EBF2F7";
+    const tintAmt = isDark ? 0.16 : 0.22;
+    resolved.bgPrimary = mixHex(resolved.bgPrimary, tintTarget, tintAmt);
+    resolved.bgSecondary = mixHex(resolved.bgSecondary, tintTarget, tintAmt);
+    resolved.bgCard = mixHex(resolved.bgCard, tintTarget, tintAmt * 0.7);
+    resolved.surfaceContainerLow = mixHex(resolved.surfaceContainerLow, tintTarget, tintAmt);
+    resolved.surfaceContainer = mixHex(resolved.surfaceContainer, tintTarget, tintAmt * 0.85);
+  }
+
+  if (isDark && config.oledBlack) {
+    resolved.bgPrimary = "#000000";
+    resolved.surfaceContainerLowest = "#000000";
+    resolved.bgSecondary = "#070707";
+    resolved.surfaceContainerLow = "#080808";
+    resolved.bgCard = "#0E0E0E";
+    resolved.surfaceContainer = "#101010";
+    resolved.surfaceContainerHigh = "#181818";
+    resolved.surfaceContainerHighest = "#222222";
+  }
+
+  if (config.accentIntensity && config.accentIntensity !== "balanced") {
+    const adjustAccent = (hex: string): string => {
+      if (!isValidHexColor(hex)) return hex;
+      if (config.accentIntensity === "muted") {
+        return mixHex(hex, isDark ? "#888888" : "#777777", 0.24);
+      }
+      return mixHex(hex, isDark ? "#FFFFFF" : "#000000", 0.10);
+    };
+    resolved.gold = adjustAccent(resolved.gold);
+    resolved.goldLight = adjustAccent(resolved.goldLight);
+    resolved.kenyaGreen = adjustAccent(resolved.kenyaGreen);
+    resolved.sky = adjustAccent(resolved.sky);
+  }
+
   resolved.surface = resolved.bgCard;
   return resolved;
+}
+
+export function getContrastInk(bgHex: string | undefined | null): "#1A1108" | "#FFFFFF" {
+  if (!bgHex || !isValidHexColor(bgHex)) return "#1A1108";
+  const clean = bgHex.trim().replace("#", "");
+  const full = clean.length === 3 ? clean.split("").map((c) => c + c).join("") : clean.slice(0, 6);
+  const r = parseInt(full.slice(0, 2), 16) / 255;
+  const g = parseInt(full.slice(2, 4), 16) / 255;
+  const b = parseInt(full.slice(4, 6), 16) / 255;
+  const lin = (c: number) => (c <= 0.03928 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4));
+  const lum = 0.2126 * lin(r) + 0.7152 * lin(g) + 0.0722 * lin(b);
+  return lum > 0.34 ? "#1A1108" : "#FFFFFF";
 }
 
 const CARD_RADIUS_MAP: Record<RadiusPreset, number> = {
@@ -2044,7 +2518,13 @@ export function resolveThemeMetrics(config: ThemeConfig): ThemeMetrics {
       break;
     case "glass":
       elevationPx = 2;
-      cardOpacity = 0.78;
+      cardOpacity = 0.88;
+      break;
+    case "tonal":
+      elevationPx = 1;
+      break;
+    case "crisp":
+      elevationPx = 0;
       break;
   }
 
@@ -2071,6 +2551,8 @@ export function resolveThemeMetrics(config: ThemeConfig): ThemeMetrics {
   const appBarSizeMap: Record<SizePreset, number> = { xs: 42, sm: 46, md: 52, lg: 62, xl: 72 };
   const appBarHeightPx = appBarSizeMap[config.appBarSize] ?? 52;
   const iconScale = Number.isFinite(config.iconScale) ? Math.max(0.75, Math.min(1.35, config.iconScale)) : 1.0;
+  const screenPadMap: Record<ScreenPaddingPreset, number> = { edge: 8, compact: 12, standard: 16, wide: 20 };
+  const screenPaddingPx = screenPadMap[config.screenPadding] ?? 16;
 
   return {
     cardRadiusPx,
@@ -2091,6 +2573,7 @@ export function resolveThemeMetrics(config: ThemeConfig): ThemeMetrics {
     cardPaddingPx,
     tabBarHeightPx,
     appBarHeightPx,
+    screenPaddingPx,
   };
 }
 
@@ -2153,6 +2636,13 @@ const VALID_HEADING_TRANSFORMS = new Set<HeadingTransform>(["none", "uppercase",
 const VALID_NUMERIC_STYLES = new Set<NumericStyle>(["default", "tabular-mono"]);
 const VALID_HAPTIC_STRENGTHS = new Set<HapticStrength>(["off", "light", "medium", "strong"]);
 const VALID_SIZE_PRESETS = new Set<SizePreset>(["xs", "sm", "md", "lg", "xl"]);
+const VALID_ACCENT_INTENSITIES = new Set<AccentIntensity>(["muted", "balanced", "vivid"]);
+const VALID_READING_TINTS = new Set<ReadingTint>(["none", "warm-paper", "soft-sepia", "cool-slate"]);
+const VALID_SCREEN_PADDINGS = new Set<ScreenPaddingPreset>(["edge", "compact", "standard", "wide"]);
+const VALID_PROGRESS_STYLES = new Set<ProgressBarStyle>(["rounded", "sharp", "segmented", "thin-line"]);
+const VALID_DIVIDER_STYLES = new Set<DividerStyle>(["hairline", "none", "dashed-soft", "accent-fade"]);
+const VALID_SECTION_HEADER_STYLES = new Set<SectionHeaderStyle>(["eyebrow", "bold-title", "accent-pill", "left-bar"]);
+const VALID_PRESS_EFFECTS = new Set<PressEffect>(["scale-ripple", "ripple-only", "opacity-only", "none"]);
 
 const CUSTOM_COLOR_KEYS: (keyof CustomColorsConfig)[] = [
   "primaryAccent",
@@ -2357,7 +2847,111 @@ export function parseThemeConfigJson(raw: string): ThemeConfig | null {
   if (typeof obj.appBarSize === "string" && VALID_SIZE_PRESETS.has(obj.appBarSize as SizePreset)) {
     merged.appBarSize = obj.appBarSize as SizePreset;
   }
+  if (typeof obj.oledBlack === "boolean") {
+    merged.oledBlack = obj.oledBlack;
+  }
+  if (typeof obj.accentIntensity === "string" && VALID_ACCENT_INTENSITIES.has(obj.accentIntensity as AccentIntensity)) {
+    merged.accentIntensity = obj.accentIntensity as AccentIntensity;
+  }
+  if (typeof obj.readingTint === "string" && VALID_READING_TINTS.has(obj.readingTint as ReadingTint)) {
+    merged.readingTint = obj.readingTint as ReadingTint;
+  }
+  if (typeof obj.screenPadding === "string" && VALID_SCREEN_PADDINGS.has(obj.screenPadding as ScreenPaddingPreset)) {
+    merged.screenPadding = obj.screenPadding as ScreenPaddingPreset;
+  }
+  if (typeof obj.progressBarStyle === "string" && VALID_PROGRESS_STYLES.has(obj.progressBarStyle as ProgressBarStyle)) {
+    merged.progressBarStyle = obj.progressBarStyle as ProgressBarStyle;
+  }
+  if (typeof obj.dividerStyle === "string" && VALID_DIVIDER_STYLES.has(obj.dividerStyle as DividerStyle)) {
+    merged.dividerStyle = obj.dividerStyle as DividerStyle;
+  }
+  if (typeof obj.sectionHeaderStyle === "string" && VALID_SECTION_HEADER_STYLES.has(obj.sectionHeaderStyle as SectionHeaderStyle)) {
+    merged.sectionHeaderStyle = obj.sectionHeaderStyle as SectionHeaderStyle;
+  }
+  if (typeof obj.pressEffect === "string" && VALID_PRESS_EFFECTS.has(obj.pressEffect as PressEffect)) {
+    merged.pressEffect = obj.pressEffect as PressEffect;
+  }
   return merged;
+}
+
+export interface ThemeChangeItem {
+  key: keyof ThemeConfig;
+  label: string;
+  valueLabel: string;
+}
+
+const CHANGE_LABELS: Partial<Record<keyof ThemeConfig, string>> = {
+  mode: "Mode",
+  presetId: "Preset",
+  surfaceStyle: "Surface",
+  borderWidth: "Border",
+  cardRadius: "Radius",
+  buttonRadius: "Btn Radius",
+  fontScale: "Text",
+  fontPair: "Font",
+  lineHeightScale: "Line Ht",
+  letterSpacingOffset: "Spacing",
+  density: "Density",
+  showKenyaStripe: "Stripe",
+  tabBarStyle: "Tab Bar",
+  tabBarLabels: "Tab Labels",
+  menuIndicatorStyle: "Indicator",
+  pillBarLayout: "Pill Row",
+  pillShape: "Pill Shape",
+  pillSize: "Pills",
+  iconScale: "Icons",
+  buttonSize: "Buttons",
+  cardPadding: "Card Pad",
+  tabBarSize: "Bar Size",
+  appBarSize: "Header Size",
+  appBarStyle: "Header",
+  headerAlignment: "Align",
+  homeLayout: "Home",
+  cardAccentStyle: "Accent",
+  iconBadgeStyle: "Badges",
+  inputStyle: "Inputs",
+  buttonStyle: "Btn Style",
+  cardShadowIntensity: "Shadow",
+  horizontalScrollbarStyle: "H-Scroll",
+  verticalScrollbarStyle: "V-Scroll",
+  quickMenuPosition: "Quick Menu",
+  headingTransform: "Case",
+  numericStyle: "Numbers",
+  oledBlack: "OLED Black",
+  accentIntensity: "Vibrancy",
+  readingTint: "Tint",
+  screenPadding: "Margins",
+  progressBarStyle: "Progress",
+  dividerStyle: "Dividers",
+  sectionHeaderStyle: "Headers",
+  pressEffect: "Tap FX",
+  colorBlindMode: "Color Blind",
+  highContrastBorders: "Hi-Contrast",
+  reduceMotion: "Motion",
+};
+
+export function diffThemeConfig(config: ThemeConfig): ThemeChangeItem[] {
+  const diffs: ThemeChangeItem[] = [];
+  for (const key of Object.keys(CHANGE_LABELS) as (keyof ThemeConfig)[]) {
+    const cur = config[key];
+    const def = DEFAULT_THEME_CONFIG[key];
+    if (cur !== def) {
+      let valueLabel = String(cur);
+      if (key === "fontScale" || key === "iconScale" || key === "lineHeightScale") {
+        valueLabel = `${Math.round(Number(cur) * 100)}%`;
+      } else if (typeof cur === "boolean") {
+        valueLabel = cur ? "On" : "Off";
+      } else if (key === "presetId") {
+        valueLabel = THEME_PRESETS.find((pr) => pr.id === cur)?.name ?? String(cur);
+      }
+      diffs.push({ key, label: CHANGE_LABELS[key] || String(key), valueLabel });
+    }
+  }
+  const customCount = Object.values(config.customColors || {}).filter(Boolean).length;
+  if (customCount > 0) {
+    diffs.push({ key: "customColors", label: "Custom Colors", valueLabel: `${customCount}` });
+  }
+  return diffs;
 }
 
 export function resolveFontPairFamilies(pair: FontPair, isIos = false): { heading: string; body: string; bold: string } {

@@ -71,6 +71,8 @@ export default function LearnTabScreen() {
     () => createLearnStyles(themeMetrics, resolvedFonts),
     [themeMetrics, resolvedFonts]
   );
+  const screenPadPx = (themeMetrics as any)?.screenPaddingPx ?? Math.round(12 * (themeMetrics?.spacingScale ?? 1));
+  const headingTransform = themeConfig.headingTransform || "none";
   const params = useLocalSearchParams<{ lang?: string; tab?: string }>();
   const insets = useSafeAreaInsets();
   const safeTop = Math.max(insets.top, Platform.OS === "android" ? StatusBar.currentHeight ?? 24 : 0);
@@ -105,9 +107,9 @@ export default function LearnTabScreen() {
       />
       <ScrollView
         ref={scrollRef}
-        contentContainerStyle={styles.content}
+        contentContainerStyle={[styles.content, { paddingHorizontal: screenPadPx }]}
         showsVerticalScrollIndicator={themeConfig?.verticalScrollbarStyle !== "hidden"}
-        persistentScrollbar={themeConfig?.verticalScrollbarStyle === "always-visible"}
+        persistentScrollbar={themeConfig.verticalScrollbarStyle === "always-visible"}
         keyboardShouldPersistTaps="handled"
         scrollEventThrottle={16}
         onScroll={(e) => {
@@ -139,7 +141,7 @@ export default function LearnTabScreen() {
           ])}
         >
           <Ionicons name="arrow-up" size={16} color={theme.kenyaBlack} />
-          <Text style={[styles.fabTopText, { color: theme.kenyaBlack }]}>
+          <Text style={[styles.fabTopText, { color: theme.kenyaBlack, textTransform: headingTransform }]}>
             Top
           </Text>
         </Pressable>

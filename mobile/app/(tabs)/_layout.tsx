@@ -4,7 +4,12 @@ import { Ionicons } from "@expo/vector-icons";
 import { Modal, Platform, Pressable, StyleSheet, Text, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { triggerHaptic, useTheme } from "../../src/theme";
-import type { MenuIndicatorStyle, TabBarStyle } from "../../src/lib/theme-engine";
+import {
+  hexToRgba,
+  getContrastInk,
+  type MenuIndicatorStyle,
+  type TabBarStyle,
+} from "../../src/lib/theme-engine";
 
 const M3TabIcon = React.memo(function M3TabIcon({
   name,
@@ -14,6 +19,7 @@ const M3TabIcon = React.memo(function M3TabIcon({
   goldColor,
   outlineColor,
   compact = false,
+  extraSmall = false,
   tabBarStyleMode = "classic",
   indicatorStyle = "pill",
   iconScale = 1.0,
@@ -25,20 +31,12 @@ const M3TabIcon = React.memo(function M3TabIcon({
   goldColor: string;
   outlineColor: string;
   compact?: boolean;
+  extraSmall?: boolean;
   tabBarStyleMode?: TabBarStyle;
   indicatorStyle?: MenuIndicatorStyle;
   iconScale?: number;
 }) {
-  const effectiveIndicator: MenuIndicatorStyle =
-    tabBarStyleMode === "top-accent"
-      ? "underline"
-      : tabBarStyleMode === "docked-cards"
-      ? "filled-box"
-      : tabBarStyleMode === "segmented"
-      ? "filled-box"
-      : tabBarStyleMode === "minimal" && indicatorStyle === "pill"
-      ? "dot"
-      : indicatorStyle;
+  const effectiveIndicator: MenuIndicatorStyle = indicatorStyle;
 
   return (
     <View style={{ alignItems: "center", justifyContent: "center" }}>
@@ -58,11 +56,12 @@ const M3TabIcon = React.memo(function M3TabIcon({
         style={[
           styles.iconPill,
           compact && { width: 42, height: 26, borderRadius: 13 },
+          extraSmall && { width: 40, height: 24, borderRadius: 12 },
           focused && effectiveIndicator === "pill" && { backgroundColor: indicatorColor },
           focused && effectiveIndicator === "filled-box" && {
             backgroundColor: goldColor,
             borderRadius: 10,
-            width: compact ? 44 : 52,
+            width: extraSmall ? 42 : compact ? 44 : 52,
           },
           focused && effectiveIndicator === "outline" && {
             borderWidth: 1.5,
@@ -70,21 +69,21 @@ const M3TabIcon = React.memo(function M3TabIcon({
             backgroundColor: "transparent",
           },
           focused && effectiveIndicator === "glow" && {
-            backgroundColor: `${goldColor}28`,
+            backgroundColor: hexToRgba(goldColor, 0.16),
             borderWidth: 1,
-            borderColor: `${goldColor}70`,
+            borderColor: hexToRgba(goldColor, 0.44),
           },
           tabBarStyleMode === "docked-cards" && !focused && {
             borderWidth: 1,
-            borderColor: `${outlineColor}55`,
+            borderColor: hexToRgba(outlineColor, 0.33),
             borderRadius: 10,
           },
         ]}
       >
         <Ionicons
           name={name}
-          color={focused && effectiveIndicator === "filled-box" ? "#1A1108" : color}
-          size={Math.round((compact ? 19 : 21) * Math.max(0.75, Math.min(1.3, iconScale)))}
+          color={focused && effectiveIndicator === "filled-box" ? getContrastInk(goldColor) : color}
+          size={Math.round((extraSmall ? 18 : compact ? 19 : 21) * Math.max(0.75, Math.min(1.3, iconScale)))}
         />
       </View>
       {focused && effectiveIndicator === "dot" && (
@@ -98,7 +97,7 @@ const M3TabIcon = React.memo(function M3TabIcon({
           }}
         />
       )}
-      {focused && effectiveIndicator === "underline" && tabBarStyleMode !== "top-accent" && (
+      {focused && effectiveIndicator === "underline" && (
         <View
           style={{
             width: 22,
@@ -114,7 +113,7 @@ const M3TabIcon = React.memo(function M3TabIcon({
 });
 
 export default function TabLayout() {
-  const { theme, isDark, themeConfig, themeMetrics, themeKey, resolvedFonts } = useTheme();
+  const { theme, themeConfig, themeMetrics, themeKey, resolvedFonts } = useTheme();
   const router = useRouter();
   const insets = useSafeAreaInsets();
   const [quickMenuOpen, setQuickMenuOpen] = useState(false);
@@ -122,9 +121,11 @@ export default function TabLayout() {
   const bottomInset = Math.max(insets.bottom, Platform.OS === "android" ? 10 : 24);
   const tabBarStyleMode: TabBarStyle = themeConfig.tabBarStyle || "classic";
   const indicatorStyle: MenuIndicatorStyle = themeConfig.menuIndicatorStyle || "pill";
+  const effectiveIndicator: MenuIndicatorStyle = indicatorStyle;
   const showLabels = themeConfig.tabBarLabels !== false && tabBarStyleMode !== "minimal";
   const isFloating = tabBarStyleMode === "floating-pill" || tabBarStyleMode === "segmented";
   const isCompact = tabBarStyleMode === "compact" || tabBarStyleMode === "minimal";
+  const isExtraSmall = themeConfig.tabBarSize === "xs";
   const baseHeight =
     themeConfig.tabBarSize && themeConfig.tabBarSize !== "md"
       ? themeMetrics.tabBarHeightPx
@@ -179,8 +180,8 @@ export default function TabLayout() {
                   : theme.surfaceContainer,
               borderTopColor: theme.outlineVariant,
               minHeight: tabBarHeight,
-              paddingBottom: isFloating ? 8 : bottomInset,
-              paddingTop: isCompact ? 5 : 8,
+              paddingBottom: isFloating ? (isExtraSmall ? 5 : 8) : bottomInset,
+              paddingTop: isExtraSmall ? 3 : isCompact ? 5 : 8,
             },
             isFloating && {
               position: "absolute",
@@ -200,7 +201,7 @@ export default function TabLayout() {
           tabBarLabelStyle: [
             styles.tabLabel,
             {
-              fontSize: Math.round((isCompact ? 10 : 11) * Math.max(0.85, Math.min(1.2, themeMetrics?.fontScale ?? 1))),
+              fontSize: Math.round((isExtraSmall || isCompact ? 10 : 11) * Math.max(0.85, Math.min(1.2, themeMetrics?.fontScale ?? 1))),
               fontFamily: resolvedFonts.heading,
             },
           ],
@@ -215,12 +216,13 @@ export default function TabLayout() {
             tabBarIcon: ({ color, focused }) => (
               <M3TabIcon
                 name={focused ? "home" : "home-outline"}
-                color={focused ? theme.onPrimaryContainer : color}
+                color={focused && effectiveIndicator === "pill" ? theme.onPrimaryContainer : color}
                 focused={focused}
                 indicatorColor={theme.primaryContainer}
                 goldColor={theme.gold}
                 outlineColor={theme.outlineVariant}
                 compact={isCompact}
+                extraSmall={isExtraSmall}
                 tabBarStyleMode={tabBarStyleMode}
                 indicatorStyle={indicatorStyle}
                 iconScale={iconScale}
@@ -236,12 +238,13 @@ export default function TabLayout() {
             tabBarIcon: ({ color, focused }) => (
               <M3TabIcon
                 name={focused ? "school" : "school-outline"}
-                color={focused ? theme.onPrimaryContainer : color}
+                color={focused && effectiveIndicator === "pill" ? theme.onPrimaryContainer : color}
                 focused={focused}
                 indicatorColor={theme.primaryContainer}
                 goldColor={theme.gold}
                 outlineColor={theme.outlineVariant}
                 compact={isCompact}
+                extraSmall={isExtraSmall}
                 tabBarStyleMode={tabBarStyleMode}
                 indicatorStyle={indicatorStyle}
                 iconScale={iconScale}
@@ -257,12 +260,13 @@ export default function TabLayout() {
             tabBarIcon: ({ color, focused }) => (
               <M3TabIcon
                 name={focused ? "grid" : "grid-outline"}
-                color={focused ? theme.onPrimaryContainer : color}
+                color={focused && effectiveIndicator === "pill" ? theme.onPrimaryContainer : color}
                 focused={focused}
                 indicatorColor={theme.primaryContainer}
                 goldColor={theme.gold}
                 outlineColor={theme.outlineVariant}
                 compact={isCompact}
+                extraSmall={isExtraSmall}
                 tabBarStyleMode={tabBarStyleMode}
                 indicatorStyle={indicatorStyle}
                 iconScale={iconScale}
@@ -284,12 +288,13 @@ export default function TabLayout() {
             tabBarIcon: ({ color, focused }) => (
               <M3TabIcon
                 name={focused ? "map" : "map-outline"}
-                color={focused ? theme.onPrimaryContainer : color}
+                color={focused && effectiveIndicator === "pill" ? theme.onPrimaryContainer : color}
                 focused={focused}
                 indicatorColor={theme.primaryContainer}
                 goldColor={theme.gold}
                 outlineColor={theme.outlineVariant}
                 compact={isCompact}
+                extraSmall={isExtraSmall}
                 tabBarStyleMode={tabBarStyleMode}
                 indicatorStyle={indicatorStyle}
                 iconScale={iconScale}
@@ -305,12 +310,13 @@ export default function TabLayout() {
             tabBarIcon: ({ color, focused }) => (
               <M3TabIcon
                 name={focused ? "bookmark" : "bookmark-outline"}
-                color={focused ? theme.onPrimaryContainer : color}
+                color={focused && effectiveIndicator === "pill" ? theme.onPrimaryContainer : color}
                 focused={focused}
                 indicatorColor={theme.primaryContainer}
                 goldColor={theme.gold}
                 outlineColor={theme.outlineVariant}
                 compact={isCompact}
+                extraSmall={isExtraSmall}
                 tabBarStyleMode={tabBarStyleMode}
                 indicatorStyle={indicatorStyle}
                 iconScale={iconScale}
@@ -330,23 +336,31 @@ export default function TabLayout() {
             accessibilityRole="button"
             accessibilityLabel="Open quick navigation menu"
             style={[
-              styles.quickFab,
+              styles.quickFabWrap,
               {
-                backgroundColor: theme.gold,
-                borderColor: theme.outlineVariant,
-                bottom: tabBarHeight + 16,
+                bottom: tabBarHeight + (isFloating ? Math.max(10, bottomInset) : 0) + 16,
                 right: quickPos === "bottom-right" ? 16 : undefined,
                 left: quickPos === "bottom-left" ? 16 : undefined,
               },
             ]}
           >
-            <Ionicons name="apps" size={Math.round(20 * iconScale)} color="#1A1108" />
+            <View
+              style={[
+                styles.quickFab,
+                {
+                  backgroundColor: theme.gold,
+                  borderColor: theme.outlineVariant,
+                },
+              ]}
+            >
+              <Ionicons name="apps" size={Math.round(20 * iconScale)} color={getContrastInk(theme.gold)} />
+            </View>
           </Pressable>
 
           <Modal
             visible={quickMenuOpen}
             transparent
-            animationType="fade"
+            animationType={themeConfig.reduceMotion ? "none" : "fade"}
             onRequestClose={() => setQuickMenuOpen(false)}
           >
             <Pressable
@@ -383,18 +397,22 @@ export default function TabLayout() {
                         setQuickMenuOpen(false);
                         router.push(item.route as any);
                       }}
-                      style={[
-                        styles.quickTile,
-                        {
-                          backgroundColor: theme.surfaceContainerLow,
-                          borderColor: theme.outlineVariant,
-                        },
-                      ]}
+                      style={styles.quickTileWrap}
                     >
-                      <Ionicons name={item.icon} size={20} color={theme.gold} />
-                      <Text style={[styles.quickTileText, { color: theme.textPrimary, fontFamily: resolvedFonts.body }]}>
-                        {item.label}
-                      </Text>
+                      <View
+                        style={[
+                          styles.quickTile,
+                          {
+                            backgroundColor: theme.surfaceContainerLow,
+                            borderColor: theme.outlineVariant,
+                          },
+                        ]}
+                      >
+                        <Ionicons name={item.icon} size={Math.round(20 * iconScale)} color={theme.gold} />
+                        <Text style={[styles.quickTileText, { color: theme.textPrimary, fontFamily: resolvedFonts.body }]}>
+                          {item.label}
+                        </Text>
+                      </View>
                     </Pressable>
                   ))}
                 </View>
@@ -435,8 +453,10 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  quickFab: {
+  quickFabWrap: {
     position: "absolute",
+  },
+  quickFab: {
     width: 46,
     height: 46,
     borderRadius: 23,
@@ -469,8 +489,11 @@ const styles = StyleSheet.create({
     flexWrap: "wrap",
     gap: 10,
   },
-  quickTile: {
+  quickTileWrap: {
     width: "30.5%",
+  },
+  quickTile: {
+    width: "100%",
     paddingVertical: 14,
     borderRadius: 14,
     borderWidth: 1,

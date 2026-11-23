@@ -22,6 +22,8 @@ import {
   androidRipple,
   pressableStyle,
   triggerHaptic,
+  getThemedCardStyle,
+  getThemedInputStyle,
 } from "../../src/theme";
 import type { ThemeMetrics } from "../../src/lib/theme-engine";
 import countiesData from "../../src/shared/data/counties.json";
@@ -237,11 +239,13 @@ const DirectoryCardItem = React.memo(function DirectoryCardItem({
   item,
   router,
   theme,
+  themedCardStyle,
   styles,
 }: {
   item: any;
   router: any;
   theme: any;
+  themedCardStyle: ReturnType<typeof getThemedCardStyle>;
   styles: ReturnType<typeof createCountyStyles>;
 }) {
   const codeFormatted = String(item.code).padStart(3, "0");
@@ -254,10 +258,7 @@ const DirectoryCardItem = React.memo(function DirectoryCardItem({
     <View
       style={[
         styles.countyCardWrap,
-        {
-          backgroundColor: theme.surfaceContainer,
-          borderColor: theme.outlineVariant,
-        },
+        themedCardStyle,
       ]}
     >
       <Pressable
@@ -407,7 +408,7 @@ const DirectoryCardItem = React.memo(function DirectoryCardItem({
   );
 });
 
-function renderBudgetCard(item: any, router: any, theme: any, styles: ReturnType<typeof createCountyStyles>) {
+function renderBudgetCard(item: any, router: any, theme: any, themedCardStyle: ReturnType<typeof getThemedCardStyle>, styles: ReturnType<typeof createCountyStyles>) {
   const b = item.budget;
   if (!b) return null;
   return (
@@ -417,11 +418,8 @@ function renderBudgetCard(item: any, router: any, theme: any, styles: ReturnType
       onPress={() => router.push(`/county/${item.slug}` as any)}
       style={pressableStyle([
         styles.countyCardWrap,
-        {
-          backgroundColor: theme.surfaceContainer,
-          borderColor: theme.outlineVariant,
-          padding: 14,
-        },
+        themedCardStyle,
+        { padding: 14 },
       ])}
     >
       <View
@@ -490,7 +488,7 @@ function renderBudgetCard(item: any, router: any, theme: any, styles: ReturnType
   );
 }
 
-function renderConstituencyCard(item: any, router: any, theme: any, styles: ReturnType<typeof createCountyStyles>) {
+function renderConstituencyCard(item: any, router: any, theme: any, themedCardStyle: ReturnType<typeof getThemedCardStyle>, styles: ReturnType<typeof createCountyStyles>) {
   return (
     <Pressable
       key={item.code}
@@ -498,12 +496,8 @@ function renderConstituencyCard(item: any, router: any, theme: any, styles: Retu
       onPress={() => router.push(`/county/${item.slug}` as any)}
       style={pressableStyle([
         styles.countyCardWrap,
-        {
-          backgroundColor: theme.surfaceContainer,
-          borderColor: theme.outlineVariant,
-          padding: 14,
-          gap: 8,
-        },
+        themedCardStyle,
+        { padding: 14, gap: 8 },
       ])}
     >
       <View
@@ -607,7 +601,7 @@ function renderConstituencyCard(item: any, router: any, theme: any, styles: Retu
   );
 }
 
-function renderClimateCard(item: any, router: any, theme: any, styles: ReturnType<typeof createCountyStyles>) {
+function renderClimateCard(item: any, router: any, theme: any, themedCardStyle: ReturnType<typeof getThemedCardStyle>, styles: ReturnType<typeof createCountyStyles>) {
   const r = item.rain;
   if (!r) return null;
   return (
@@ -617,12 +611,8 @@ function renderClimateCard(item: any, router: any, theme: any, styles: ReturnTyp
       onPress={() => router.push(`/county/${item.slug}` as any)}
       style={pressableStyle([
         styles.countyCardWrap,
-        {
-          backgroundColor: theme.surfaceContainer,
-          borderColor: theme.outlineVariant,
-          padding: 14,
-          gap: 8,
-        },
+        themedCardStyle,
+        { padding: 14, gap: 8 },
       ])}
     >
       <View
@@ -707,6 +697,16 @@ export default function CountyScreen() {
     () => createCountyStyles(themeMetrics, resolvedFonts),
     [themeMetrics, resolvedFonts]
   );
+  const themedCardStyle = useMemo(
+    () => getThemedCardStyle(theme, themeConfig, themeMetrics),
+    [theme, themeConfig, themeMetrics]
+  );
+  const themedInputStyle = useMemo(
+    () => getThemedInputStyle(theme, themeConfig, themeMetrics),
+    [theme, themeConfig, themeMetrics]
+  );
+  const screenPadPx = (themeMetrics as any)?.screenPaddingPx ?? Math.round(14 * (themeMetrics?.spacingScale ?? 1));
+  const headingTransform = themeConfig.headingTransform || "none";
   const { height: windowHeight } = useWindowDimensions();
   const [activeTab, setActiveTab] = useState<CountyHubTab>("directory");
   const scrollRef = useRef<ScrollView>(null);
@@ -751,8 +751,8 @@ export default function CountyScreen() {
   }, [deferredQuery, enrichedCounties, sortBy]);
 
   const listExtraData = useMemo(
-    () => ({ activeTab, isDark, themeMetrics, resolvedFonts }),
-    [activeTab, isDark, themeMetrics, resolvedFonts]
+    () => ({ activeTab, isDark, themeConfig, themeMetrics, resolvedFonts, themedCardStyle }),
+    [activeTab, isDark, themeConfig, themeMetrics, resolvedFonts, themedCardStyle]
   );
 
   const keyExtractor = useCallback(
@@ -763,14 +763,14 @@ export default function CountyScreen() {
   const renderCountyItem = useCallback(
     ({ item }: { item: any }) => {
       if (activeTab === "budgets")
-        return renderBudgetCard(item, router, theme, styles);
+        return renderBudgetCard(item, router, theme, themedCardStyle, styles);
       if (activeTab === "constituencies")
-        return renderConstituencyCard(item, router, theme, styles);
+        return renderConstituencyCard(item, router, theme, themedCardStyle, styles);
       if (activeTab === "climate")
-        return renderClimateCard(item, router, theme, styles);
-      return <DirectoryCardItem item={item} router={router} theme={theme} styles={styles} />;
+        return renderClimateCard(item, router, theme, themedCardStyle, styles);
+      return <DirectoryCardItem item={item} router={router} theme={theme} themedCardStyle={themedCardStyle} styles={styles} />;
     },
-    [activeTab, router, theme, styles]
+    [activeTab, router, theme, themedCardStyle, styles]
   );
 
   const pickerFiltered = useMemo(() => {
@@ -910,10 +910,7 @@ export default function CountyScreen() {
             <View
               style={[
                 styles.searchBar,
-                {
-                  backgroundColor: theme.surfaceContainerHigh,
-                  borderColor: theme.outlineVariant,
-                },
+                themedInputStyle,
               ]}
             >
               <Ionicons name="search" size={16} color={theme.gold} />
@@ -1014,9 +1011,9 @@ export default function CountyScreen() {
       {activeTab === "compare" ? (
         <ScrollView
           ref={scrollRef}
-          contentContainerStyle={styles.listContent}
+          contentContainerStyle={[styles.listContent, { paddingHorizontal: screenPadPx }]}
           showsVerticalScrollIndicator={themeConfig?.verticalScrollbarStyle !== "hidden"}
-          persistentScrollbar={themeConfig?.verticalScrollbarStyle === "always-visible"}
+          persistentScrollbar={themeConfig.verticalScrollbarStyle === "always-visible"}
           keyboardShouldPersistTaps="handled"
           overScrollMode="always"
         >
@@ -1025,13 +1022,10 @@ export default function CountyScreen() {
             <View
               style={[
                 styles.notesCard,
-                {
-                  backgroundColor: theme.surfaceContainer,
-                  borderColor: theme.outlineVariant,
-                },
+                themedCardStyle,
               ]}
             >
-              <Text style={[styles.notesHeading, { color: theme.gold }]}>
+              <Text style={[styles.notesHeading, { color: theme.gold, textTransform: headingTransform }]}>
                 Compare Two Counties Side-by-Side
               </Text>
               <Text
@@ -1628,7 +1622,7 @@ export default function CountyScreen() {
                             <Text
                               style={[
                                 styles.compareSectionTitle,
-                                { color: theme.textPrimary },
+                                { color: theme.textPrimary, textTransform: headingTransform },
                               ]}
                             >
                               {section.title}
@@ -1805,13 +1799,10 @@ export default function CountyScreen() {
             <View
               style={[
                 styles.notesCard,
-                {
-                  backgroundColor: theme.surfaceContainer,
-                  borderColor: theme.outlineVariant,
-                },
+                themedCardStyle,
               ]}
             >
-              <Text style={[styles.notesHeading, { color: theme.gold }]}>
+              <Text style={[styles.notesHeading, { color: theme.gold, textTransform: headingTransform }]}>
                 About Kenya&apos;s 47 Counties
               </Text>
               {notes.map((n, idx) => (
@@ -1839,9 +1830,9 @@ export default function CountyScreen() {
           data={filtered}
           extraData={listExtraData}
           keyExtractor={keyExtractor}
-          contentContainerStyle={styles.listContent}
+          contentContainerStyle={[styles.listContent, { paddingHorizontal: screenPadPx }]}
           showsVerticalScrollIndicator={themeConfig?.verticalScrollbarStyle !== "hidden"}
-          persistentScrollbar={themeConfig?.verticalScrollbarStyle === "always-visible"}
+          persistentScrollbar={themeConfig.verticalScrollbarStyle === "always-visible"}
           keyboardShouldPersistTaps="handled"
           overScrollMode="always"
           initialNumToRender={8}
@@ -2006,7 +1997,7 @@ export default function CountyScreen() {
             ]}
           >
             <View style={styles.pickerHeaderRow}>
-              <Text style={[styles.pickerTitle, { color: theme.textPrimary }]}>
+              <Text style={[styles.pickerTitle, { color: theme.textPrimary, textTransform: headingTransform }]}>
                 Select County {pickerTarget === "A" ? "A" : "B"}
               </Text>
               <Pressable
@@ -2022,11 +2013,8 @@ export default function CountyScreen() {
             <View
               style={[
                 styles.searchBar,
-                {
-                  backgroundColor: theme.surfaceContainerHigh,
-                  borderColor: theme.outlineVariant,
-                  marginBottom: 10,
-                },
+                themedInputStyle,
+                { marginBottom: 10 },
               ]}
             >
               <Ionicons name="search" size={18} color={theme.gold} />
@@ -2242,8 +2230,6 @@ function createCountyStyles(
     countyCardWrap: {
       borderRadius: r(16),
       borderWidth: bw,
-      overflow: "hidden",
-      elevation: Platform.OS === "android" ? 2 : 0,
     },
     countyCard: {
       padding: sp(13),

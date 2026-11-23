@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Stack, ErrorBoundaryProps, useRouter } from "expo-router";
 import { StatusBar } from "expo-status-bar";
-import { Appearance, StyleSheet, Text, View, Pressable } from "react-native";
+import { Appearance, Platform, StyleSheet, Text, View, Pressable } from "react-native";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
 import {
@@ -28,7 +28,6 @@ import {
   pressableStyle,
 } from "../src/theme";
 import { VerifiedAudioPlayer } from "../src/components/VerifiedAudioPlayer";
-import { initializeMobileAdsWithConsent } from "../src/lib/mobile-ads";
 
 function LayoutContent({ fontsLoaded }: { fontsLoaded: boolean }) {
   const { theme, isDark, themeReady, themeConfig } = useTheme();
@@ -40,6 +39,22 @@ function LayoutContent({ fontsLoaded }: { fontsLoaded: boolean }) {
       />
     );
   }
+
+  const stackAnimation = themeConfig.reduceMotion
+    ? "none"
+    : themeConfig.pageTransition === "fade"
+    ? "fade"
+    : themeConfig.pageTransition === "bottom-sheet"
+    ? "slide_from_bottom"
+    : themeConfig.pageTransition === "none"
+    ? "none"
+    : themeConfig.pageTransition === "fast"
+    ? Platform.OS === "android"
+      ? "fade_from_bottom"
+      : "fade"
+    : themeConfig.pageTransition === "default"
+    ? "default"
+    : "slide_from_right";
 
   return (
     <>
@@ -53,12 +68,10 @@ function LayoutContent({ fontsLoaded }: { fontsLoaded: boolean }) {
         screenOptions={{
           headerShown: false,
           contentStyle: { backgroundColor: theme.bgPrimary },
-          animation:
-            themeConfig.pageTransition === "fade" ? "fade" :
-            themeConfig.pageTransition === "bottom-sheet" ? "slide_from_bottom" :
-            themeConfig.pageTransition === "none" ? "none" :
-            themeConfig.pageTransition === "default" ? "default" : "slide_from_right",
-          animationDuration: themeConfig.pageTransition === "fast" ? 80 : 160,
+          animation: stackAnimation,
+          ...(Platform.OS === "ios" && !themeConfig.reduceMotion
+            ? { animationDuration: themeConfig.pageTransition === "fast" ? 80 : 160 }
+            : {}),
           freezeOnBlur: false,
           gestureEnabled: true,
           fullScreenGestureEnabled: true,
@@ -120,15 +133,19 @@ export function ErrorBoundary({ error, retry }: ErrorBoundaryProps) {
           accessibilityRole="button"
           accessibilityLabel="Try loading screen again"
           android_ripple={androidRipple()}
-          style={pressableStyle([
-            styles.retryButton,
-            { backgroundColor: colors.gold },
-          ])}
+          style={pressableStyle()}
         >
-          <Ionicons name="refresh" size={16} color={colors.kenyaBlack} />
-          <Text style={[styles.retryText, { color: colors.kenyaBlack }]}>
-            Try again
-          </Text>
+          <View
+            style={[
+              styles.retryButton,
+              { backgroundColor: colors.gold },
+            ]}
+          >
+            <Ionicons name="refresh" size={16} color={colors.kenyaBlack} />
+            <Text style={[styles.retryText, { color: colors.kenyaBlack }]}>
+              Try again
+            </Text>
+          </View>
         </Pressable>
         <Pressable
           onPress={() => {
@@ -141,18 +158,22 @@ export function ErrorBoundary({ error, retry }: ErrorBoundaryProps) {
           accessibilityRole="button"
           accessibilityLabel="Return to KenyaHub Home screen"
           android_ripple={androidRipple()}
-          style={pressableStyle([
-            styles.homeButton,
-            {
-              backgroundColor: colors.surfaceContainerHigh,
-              borderColor: colors.outlineVariant,
-            },
-          ])}
+          style={pressableStyle()}
         >
-          <Ionicons name="home-outline" size={16} color={colors.textPrimary} />
-          <Text style={[styles.homeButtonText, { color: colors.textPrimary }]}>
-            Go Home
-          </Text>
+          <View
+            style={[
+              styles.homeButton,
+              {
+                backgroundColor: colors.surfaceContainerHigh,
+                borderColor: colors.outlineVariant,
+              },
+            ]}
+          >
+            <Ionicons name="home-outline" size={16} color={colors.textPrimary} />
+            <Text style={[styles.homeButtonText, { color: colors.textPrimary }]}>
+              Go Home
+            </Text>
+          </View>
         </Pressable>
       </View>
     </View>

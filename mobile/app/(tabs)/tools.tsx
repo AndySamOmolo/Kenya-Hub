@@ -21,8 +21,11 @@ import {
   androidRipple,
   pressableStyle,
   parseSavedTools,
+  getThemedCardStyle,
+  getThemedInputStyle,
+  getThemedIconBadgeStyle,
 } from "../../src/theme";
-import type { ThemeMetrics } from "../../src/lib/theme-engine";
+import type { ThemeConfig, ThemeMetrics } from "../../src/lib/theme-engine";
 import {
   TOOLS,
   TOOL_CATEGORIES,
@@ -54,26 +57,35 @@ const ToolItem = React.memo(function ToolItem({
   item,
   isPinned = false,
   theme,
+  themeConfig,
+  themeMetrics,
+  themedCardStyle,
   styles,
   onPressTool,
 }: {
   item: (typeof TOOLS)[0];
   isPinned?: boolean;
   theme: ReturnType<typeof useTheme>["theme"];
+  themeConfig: ThemeConfig;
+  themeMetrics: ThemeMetrics;
+  themedCardStyle: ReturnType<typeof getThemedCardStyle>;
   styles: ReturnType<typeof createToolsStyles>;
   onPressTool: (slug: string) => void;
 }) {
   const categoryColor = categoryColorMap[item.category] || theme.gold;
   const catInfo = getCategoryInfo(item.category);
+  const iconBadge = useMemo(
+    () => getThemedIconBadgeStyle(theme, themeConfig, categoryColor, 46),
+    [theme, themeConfig, categoryColor]
+  );
+  const iconPx = Math.round(22 * (themeMetrics?.iconScale ?? 1));
 
   return (
     <View
       style={[
         styles.cardWrap,
-        {
-          backgroundColor: theme.surfaceContainer,
-          borderColor: isPinned ? `${theme.gold}66` : theme.outlineVariant,
-        },
+        themedCardStyle,
+        isPinned ? { borderColor: `${theme.gold}66` } : null,
       ]}
     >
       <Pressable
@@ -82,16 +94,8 @@ const ToolItem = React.memo(function ToolItem({
         style={styles.card}
       >
         <View style={styles.cardHeaderRow}>
-          <View
-            style={[
-              styles.cardIconWrap,
-              {
-                backgroundColor: `${categoryColor}1A`,
-                borderColor: `${categoryColor}38`,
-              },
-            ]}
-          >
-            <DynamicIcon emoji={item.icon} size={22} color={categoryColor} />
+          <View style={iconBadge.container}>
+            <DynamicIcon emoji={item.icon} size={iconPx} color={iconBadge.iconColor} />
           </View>
           <View style={styles.body}>
             <View style={styles.categoryPillWrap}>
@@ -161,9 +165,23 @@ export default function ToolsScreen() {
     () => createToolsStyles(themeMetrics, resolvedFonts),
     [themeMetrics, resolvedFonts]
   );
+  const themedCardStyle = useMemo(
+    () => getThemedCardStyle(theme, themeConfig, themeMetrics),
+    [theme, themeConfig, themeMetrics]
+  );
+  const themedInputStyle = useMemo(
+    () => getThemedInputStyle(theme, themeConfig, themeMetrics),
+    [theme, themeConfig, themeMetrics]
+  );
+  const matatuIconBadge = useMemo(
+    () => getThemedIconBadgeStyle(theme, themeConfig, theme.sky, 46),
+    [theme, themeConfig]
+  );
+  const screenPadPx = (themeMetrics as any)?.screenPaddingPx ?? Math.round(14 * (themeMetrics?.spacingScale ?? 1));
+  const headingTransform = themeConfig.headingTransform || "none";
   const listExtraData = useMemo(
-    () => ({ theme, themeMetrics, resolvedFonts }),
-    [theme, themeMetrics, resolvedFonts]
+    () => ({ theme, themeConfig, themeMetrics, resolvedFonts, themedCardStyle }),
+    [theme, themeConfig, themeMetrics, resolvedFonts, themedCardStyle]
   );
   const params = useLocalSearchParams<{ category?: string; q?: string }>();
   const [query, setQuery] = useState(params.q ?? "");
@@ -189,11 +207,14 @@ export default function ToolsScreen() {
         item={item}
         isPinned={pinnedSet.has(item.slug)}
         theme={theme}
+        themeConfig={themeConfig}
+        themeMetrics={themeMetrics}
+        themedCardStyle={themedCardStyle}
         styles={styles}
         onPressTool={handlePressTool}
       />
     ),
-    [pinnedSet, theme, styles, handlePressTool]
+    [pinnedSet, theme, themeConfig, themeMetrics, themedCardStyle, styles, handlePressTool]
   );
 
   useEffect(() => {
@@ -331,6 +352,7 @@ export default function ToolsScreen() {
           {
             backgroundColor: theme.surfaceContainerLow,
             borderBottomColor: theme.outlineVariant,
+            paddingHorizontal: screenPadPx,
           },
         ]}
       >
@@ -338,10 +360,7 @@ export default function ToolsScreen() {
         <View
           style={[
             styles.searchWrap,
-            {
-              backgroundColor: theme.surfaceContainerHigh,
-              borderColor: theme.outlineVariant,
-            },
+            themedInputStyle,
           ]}
         >
           <Ionicons
@@ -510,9 +529,9 @@ export default function ToolsScreen() {
         data={filtered}
         extraData={listExtraData}
         keyExtractor={(item) => item.slug}
-        contentContainerStyle={styles.list}
+        contentContainerStyle={[styles.list, { paddingHorizontal: screenPadPx }]}
         showsVerticalScrollIndicator={themeConfig?.verticalScrollbarStyle !== "hidden"}
-        persistentScrollbar={themeConfig?.verticalScrollbarStyle === "always-visible"}
+        persistentScrollbar={themeConfig.verticalScrollbarStyle === "always-visible"}
         keyboardShouldPersistTaps="handled"
         overScrollMode="always"
         initialNumToRender={8}
@@ -547,8 +566,8 @@ export default function ToolsScreen() {
               <View
                 style={[
                   styles.cardWrap,
+                  themedCardStyle,
                   {
-                    backgroundColor: theme.surfaceContainer,
                     borderColor: `${theme.gold}66`,
                     marginBottom: 4,
                   },
@@ -569,29 +588,21 @@ export default function ToolsScreen() {
                   style={styles.card}
                 >
                   <View style={styles.cardHeaderRow}>
-                    <View
-                      style={[
-                        styles.cardIconWrap,
-                        {
-                          backgroundColor: "rgba(14, 165, 233, 0.16)",
-                          borderColor: "rgba(14, 165, 233, 0.38)",
-                        },
-                      ]}
-                    >
-                      <Ionicons name="bus" size={22} color="#0EA5E9" />
+                    <View style={matatuIconBadge.container}>
+                      <Ionicons name="bus" size={Math.round(22 * (themeMetrics?.iconScale ?? 1))} color={matatuIconBadge.iconColor} />
                     </View>
                     <View style={styles.body}>
                       <View style={styles.categoryPillWrap}>
                         <View
                           style={[
                             styles.categoryDot,
-                            { backgroundColor: "#0EA5E9" },
+                            { backgroundColor: theme.sky },
                           ]}
                         />
                         <Text
                           style={[
                             styles.categoryPillText,
-                            { color: "#0EA5E9" },
+                            { color: theme.sky },
                           ]}
                         >
                           TRANSPORT & TRAVEL HUB
@@ -645,20 +656,20 @@ export default function ToolsScreen() {
                 <View style={styles.pinnedHeaderRow}>
                   <Ionicons name="bookmark" size={16} color={theme.gold} />
                   <Text
-                    style={[styles.pinnedSectionTitle, { color: theme.textPrimary }]}
+                    style={[styles.pinnedSectionTitle, { color: theme.textPrimary, textTransform: headingTransform }]}
                   >
                     Pinned Tools ({pinnedTools.length})
                   </Text>
                 </View>
                 <View style={{ gap: 10 }}>
                   {pinnedTools.map((pt) => (
-                    <ToolItem key={`pinned-${pt.slug}`} item={pt} isPinned theme={theme} styles={styles} onPressTool={handlePressTool} />
+                    <ToolItem key={`pinned-${pt.slug}`} item={pt} isPinned theme={theme} themeConfig={themeConfig} themeMetrics={themeMetrics} themedCardStyle={themedCardStyle} styles={styles} onPressTool={handlePressTool} />
                   ))}
                 </View>
                 <Text
                   style={[
                     styles.allToolsDividerLabel,
-                    { color: theme.gold },
+                    { color: theme.gold, textTransform: headingTransform },
                   ]}
                 >
                   ALL TOOLS ({filtered.length})
@@ -832,8 +843,6 @@ function createToolsStyles(
     cardWrap: {
       borderRadius: r(16),
       borderWidth: bw,
-      overflow: "hidden",
-      elevation: Platform.OS === "android" ? 2 : 0,
     },
     card: {
       padding: sp(16),

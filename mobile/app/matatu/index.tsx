@@ -788,7 +788,6 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     marginBottom: 10,
     overflow: "hidden",
-    elevation: Platform.OS === "android" ? 2 : 0,
   },
   route: {
     padding: 15,

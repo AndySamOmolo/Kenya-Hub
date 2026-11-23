@@ -23,6 +23,8 @@ import {
   triggerHaptic,
   parseSavedTools,
   serializeSavedTools,
+  getThemedCardStyle,
+  getThemedIconBadgeStyle,
 } from "../../src/theme";
 import type { ThemeMetrics } from "../../src/lib/theme-engine";
 import {
@@ -68,7 +70,6 @@ function createSavedStyles(
       borderWidth: bw,
     },
     clearBtnText: {
-      color: "#E05A5A",
       fontSize: fs(12),
       fontFamily: hf("Outfit_700Bold"),
     },
@@ -87,8 +88,6 @@ function createSavedStyles(
     cardWrap: {
       borderRadius: r(16),
       borderWidth: bw,
-      overflow: "hidden",
-      elevation: Platform.OS === "android" ? 2 : 0,
     },
     card: {
       padding: sp(12),
@@ -180,8 +179,6 @@ function createSavedStyles(
     suggestCardWrap: {
       borderRadius: r(16),
       borderWidth: bw,
-      overflow: "hidden",
-      elevation: Platform.OS === "android" ? 1 : 0,
     },
     suggestCard: {
       flexDirection: "row",
@@ -213,17 +210,22 @@ function SavedToolCard({
   styles: ReturnType<typeof createSavedStyles>;
 }) {
   const router = useRouter();
-  const { theme, themeKey } = useTheme();
+  const { theme, themeConfig, themeMetrics } = useTheme();
+  const themedCardStyle = useMemo(
+    () => getThemedCardStyle(theme, themeConfig, themeMetrics),
+    [theme, themeConfig, themeMetrics]
+  );
   const categoryColor = categoryColorMap[tool.category] || theme.gold;
+  const iconBadge = useMemo(
+    () => getThemedIconBadgeStyle(theme, themeConfig, categoryColor, 42),
+    [theme, themeConfig, categoryColor]
+  );
 
   return (
     <View
       style={[
         styles.cardWrap,
-        {
-          backgroundColor: theme.surfaceContainer,
-          borderColor: theme.outlineVariant,
-        },
+        themedCardStyle,
       ]}
     >
       <Pressable
@@ -238,16 +240,8 @@ function SavedToolCard({
         }
         style={pressableStyle(styles.card)}
       >
-        <View
-          style={[
-            styles.cardIconWrap,
-            {
-              backgroundColor: `${categoryColor}1A`,
-              borderColor: `${categoryColor}38`,
-            },
-          ]}
-        >
-          <DynamicIcon emoji={tool.icon} size={22} color={categoryColor} />
+        <View style={[iconBadge.container, { marginRight: Math.round(12 * (themeMetrics?.spacingScale ?? 1)) }]}>
+          <DynamicIcon emoji={tool.icon} size={Math.round(22 * (themeMetrics?.iconScale ?? 1))} color={iconBadge.iconColor} />
         </View>
         <View style={styles.cardBody}>
           <View style={styles.categoryPillWrap}>
@@ -296,6 +290,12 @@ export default function SavedScreen() {
     () => createSavedStyles(themeMetrics, resolvedFonts),
     [themeMetrics, resolvedFonts]
   );
+  const themedCardStyle = useMemo(
+    () => getThemedCardStyle(theme, themeConfig, themeMetrics),
+    [theme, themeConfig, themeMetrics]
+  );
+  const screenPadPx = (themeMetrics as any)?.screenPaddingPx ?? Math.round(14 * (themeMetrics?.spacingScale ?? 1));
+  const headingTransform = themeConfig.headingTransform || "none";
   const [saved, setSaved] = useState<string[]>([]);
   const popular = getPopularTools(4);
 
@@ -416,16 +416,16 @@ export default function SavedScreen() {
                 { borderColor: `${theme.kenyaRedLight}45` },
               ])}
             >
-              <Text style={styles.clearBtnText}>Clear</Text>
+              <Text style={[styles.clearBtnText, { color: theme.kenyaRedLight }]}>Clear</Text>
             </Pressable>
           ) : undefined
         }
       />
 
       <ScrollView
-        contentContainerStyle={styles.content}
+        contentContainerStyle={[styles.content, { paddingHorizontal: screenPadPx }]}
         showsVerticalScrollIndicator={themeConfig?.verticalScrollbarStyle !== "hidden"}
-        persistentScrollbar={themeConfig?.verticalScrollbarStyle === "always-visible"}
+        persistentScrollbar={themeConfig.verticalScrollbarStyle === "always-visible"}
         keyboardShouldPersistTaps="handled"
         overScrollMode="always"
       >
@@ -458,7 +458,7 @@ export default function SavedScreen() {
             >
               <Ionicons name="bookmark-outline" size={34} color={theme.gold} />
             </View>
-            <Text style={[styles.emptyTitle, { color: theme.textPrimary }]}>
+            <Text style={[styles.emptyTitle, { color: theme.textPrimary, textTransform: headingTransform }]}>
               No pinned tools yet
             </Text>
             <Text
@@ -468,7 +468,7 @@ export default function SavedScreen() {
               for instant offline access.
             </Text>
 
-            <Text style={[styles.suggestHeading, { color: theme.gold }]}>
+            <Text style={[styles.suggestHeading, { color: theme.gold, textTransform: headingTransform }]}>
               POPULAR SUGGESTIONS
             </Text>
             <View style={styles.suggestList}>
@@ -477,10 +477,7 @@ export default function SavedScreen() {
                   key={item.slug}
                   style={[
                     styles.suggestCardWrap,
-                    {
-                      backgroundColor: theme.surfaceContainer,
-                      borderColor: theme.outlineVariant,
-                    },
+                    themedCardStyle,
                   ]}
                 >
                   <Pressable
@@ -529,17 +526,14 @@ export default function SavedScreen() {
 
         {/* Privacy Policy & Local Data Controls (Google Play & Kenya DPA 2019 - P11-05) */}
         <View style={styles.privacySection}>
-          <Text style={[styles.suggestHeading, { color: theme.gold, marginTop: 28 }]}>
+          <Text style={[styles.suggestHeading, { color: theme.gold, marginTop: 28, textTransform: headingTransform }]}>
             PRIVACY & LOCAL DATA (KENYA DPA 2019)
           </Text>
           <View style={styles.suggestList}>
             <View
               style={[
                 styles.suggestCardWrap,
-                {
-                  backgroundColor: theme.surfaceContainer,
-                  borderColor: theme.outlineVariant,
-                },
+                themedCardStyle,
               ]}
             >
               <Pressable
@@ -568,10 +562,7 @@ export default function SavedScreen() {
             <View
               style={[
                 styles.suggestCardWrap,
-                {
-                  backgroundColor: theme.surfaceContainer,
-                  borderColor: theme.outlineVariant,
-                },
+                themedCardStyle,
               ]}
             >
               <Pressable
@@ -600,10 +591,7 @@ export default function SavedScreen() {
             <View
               style={[
                 styles.suggestCardWrap,
-                {
-                  backgroundColor: theme.surfaceContainer,
-                  borderColor: theme.outlineVariant,
-                },
+                themedCardStyle,
               ]}
             >
               <Pressable
@@ -629,10 +617,7 @@ export default function SavedScreen() {
             <View
               style={[
                 styles.suggestCardWrap,
-                {
-                  backgroundColor: theme.surfaceContainer,
-                  borderColor: theme.outlineVariant,
-                },
+                themedCardStyle,
               ]}
             >
               <Pressable
@@ -661,10 +646,8 @@ export default function SavedScreen() {
             <View
               style={[
                 styles.suggestCardWrap,
-                {
-                  backgroundColor: theme.surfaceContainer,
-                  borderColor: `${theme.kenyaRedLight}45`,
-                },
+                themedCardStyle,
+                { borderColor: `${theme.kenyaRedLight}45` },
               ]}
             >
               <Pressable

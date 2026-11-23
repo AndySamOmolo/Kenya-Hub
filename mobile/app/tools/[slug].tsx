@@ -1721,7 +1721,6 @@ const styles = StyleSheet.create({
     borderRadius: 16,
     borderWidth: 1,
     overflow: "hidden",
-    elevation: Platform.OS === "android" ? 1 : 0,
   },
   relatedCard: {
     flexDirection: "row",

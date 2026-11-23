@@ -18,7 +18,11 @@ import {
   androidRipple,
   pressableStyle,
   triggerHaptic,
+  getThemedCardStyle,
+  getThemedIconBadgeStyle,
+  darkColors,
 } from "../../theme";
+import type { HomeLayoutPreset, ThemeConfig, ThemeMetrics } from "../../lib/theme-engine";
 import { TOOLS, getCategoryInfo } from "../../shared/lib/tools-registry";
 import {
   INITIAL_RANDOM_WORDS,
@@ -505,7 +509,11 @@ export function FeaturedLanguageWidget({
   paused?: boolean;
 }) {
   const router = useRouter();
-  const { theme, themeMetrics, resolvedFonts } = useTheme();
+  const { theme, themeConfig, themeMetrics, resolvedFonts } = useTheme();
+  const themedCardStyle = useMemo(
+    () => getThemedCardStyle(theme, themeConfig, themeMetrics),
+    [theme, themeConfig, themeMetrics]
+  );
   const styles = useMemo(() => createHomeStyles(themeMetrics, resolvedFonts), [themeMetrics, resolvedFonts]);
   const isFocused = useIsFocused();
   const reduceMotion = useReduceMotionEnabled();
@@ -541,10 +549,10 @@ export function FeaturedLanguageWidget({
     <View
       style={[
         styles.snapshotWidget,
-        {
-          backgroundColor: theme.surfaceContainer,
-          borderColor: `${theme.gold}45`,
-        },
+        themedCardStyle,
+        themeConfig.cardAccentStyle === "none"
+          ? { borderColor: `${theme.gold}45` }
+          : null,
       ]}
     >
       <View style={styles.widgetHeaderRow}>
@@ -642,7 +650,11 @@ export function FeaturedLanguageWidget({
  */
 export function WordOfTheMomentWidget({ paused = false }: { paused?: boolean }) {
   const router = useRouter();
-  const { theme, themeMetrics, resolvedFonts } = useTheme();
+  const { theme, themeConfig, themeMetrics, resolvedFonts } = useTheme();
+  const themedCardStyle = useMemo(
+    () => getThemedCardStyle(theme, themeConfig, themeMetrics),
+    [theme, themeConfig, themeMetrics]
+  );
   const styles = useMemo(() => createHomeStyles(themeMetrics, resolvedFonts), [themeMetrics, resolvedFonts]);
   const isFocused = useIsFocused();
   const reduceMotion = useReduceMotionEnabled();
@@ -680,21 +692,18 @@ export function WordOfTheMomentWidget({ paused = false }: { paused?: boolean }) 
     <View
       style={[
         styles.snapshotWidget,
-        {
-          backgroundColor: theme.surfaceContainer,
-          borderColor: theme.outlineVariant,
-        },
+        themedCardStyle,
       ]}
     >
       <View style={styles.widgetHeaderRow}>
         <View
           style={[
             styles.widgetBadgePill,
-            { backgroundColor: "rgba(47, 164, 99, 0.16)" },
+            { backgroundColor: `${theme.kenyaGreenLight}29` },
           ]}
         >
-          <Ionicons name="sparkles" size={12} color="#2FA463" />
-          <Text style={[styles.widgetBadgeText, { color: "#2FA463" }]}>
+          <Ionicons name="sparkles" size={12} color={theme.kenyaGreenLight} />
+          <Text style={[styles.widgetBadgeText, { color: theme.kenyaGreenLight }]}>
             {currentWord.langName.toUpperCase()} WORD
           </Text>
         </View>
@@ -749,11 +758,11 @@ export function WordOfTheMomentWidget({ paused = false }: { paused?: boolean }) 
         </View>
 
         <View style={styles.widgetFooterLink}>
-          <Text style={[styles.widgetFooterLinkText, { color: "#2FA463" }]}>
+          <Text style={[styles.widgetFooterLinkText, { color: theme.kenyaGreenLight }]}>
             {TOTAL_DICTIONARY_ENTRIES.toLocaleString()}+ Words in{" "}
             {ALL_DICT_METAS.length} Languages
           </Text>
-          <Ionicons name="arrow-forward" size={13} color="#2FA463" />
+          <Ionicons name="arrow-forward" size={13} color={theme.kenyaGreenLight} />
         </View>
       </Pressable>
     </View>
@@ -765,25 +774,45 @@ export function PopularToolRow({
   tool,
   isPinned,
   onTogglePin,
+  homeLayout,
 }: {
   tool: (typeof TOOLS)[0];
   isPinned: boolean;
   onTogglePin: (slug: string) => void;
+  homeLayout?: HomeLayoutPreset;
 }) {
   const router = useRouter();
-  const { theme, themeMetrics, resolvedFonts } = useTheme();
+  const { theme, themeConfig, themeMetrics, resolvedFonts } = useTheme();
   const styles = useMemo(() => createHomeStyles(themeMetrics, resolvedFonts), [themeMetrics, resolvedFonts]);
+  const themedCardStyle = useMemo(
+    () => getThemedCardStyle(theme, themeConfig, themeMetrics),
+    [theme, themeConfig, themeMetrics]
+  );
   const categoryColor = categoryColorMap[tool.category] || theme.gold;
   const catInfo = getCategoryInfo(tool.category);
+  const activeLayout = homeLayout ?? themeConfig.homeLayout ?? "classic";
+  const isGridTile = activeLayout === "bento-grid" || activeLayout === "large-tiles";
+  const isCompact = activeLayout === "compact-list" || activeLayout === "minimal-rows";
+  const isEditorial = activeLayout === "editorial-cards";
+  const iconBadge = useMemo(
+    () => getThemedIconBadgeStyle(theme, themeConfig, categoryColor, isGridTile ? 42 : isCompact ? 32 : 36),
+    [theme, themeConfig, categoryColor, isGridTile, isCompact]
+  );
+  const iconPx = Math.round((isGridTile ? 22 : isCompact ? 18 : 22) * (themeMetrics?.iconScale ?? 1));
 
   return (
     <View
       style={[
         styles.popularToolCard,
+        themedCardStyle,
         {
-          backgroundColor: theme.surfaceContainer,
-          borderColor: isPinned ? `${theme.gold}55` : theme.outlineVariant,
+          overflow: "visible",
+          borderColor: isPinned ? `${theme.gold}55` : themedCardStyle.borderColor,
         },
+        isGridTile ? { width: "48.5%" } : null,
+        activeLayout === "minimal-rows"
+          ? { borderWidth: 0, borderBottomWidth: 1, borderRadius: 0, backgroundColor: "transparent", elevation: 0 }
+          : null,
       ]}
     >
       <Pressable
@@ -796,35 +825,34 @@ export function PopularToolRow({
             params: { slug: tool.slug },
           })
         }
-        style={pressableStyle(styles.popularToolPressable)}
+        style={pressableStyle([
+          styles.popularToolPressable,
+          isGridTile ? { flexDirection: "column", alignItems: "flex-start", padding: activeLayout === "large-tiles" ? 14 : 11 } : null,
+          isCompact ? { paddingVertical: 7, paddingHorizontal: 8 } : null,
+          isEditorial ? { paddingVertical: 14, paddingHorizontal: 14 } : null,
+        ])}
       >
-        <View
-          style={[
-            styles.popularToolIconWrap,
-            {
-              backgroundColor: `${categoryColor}1A`,
-              borderColor: `${categoryColor}35`,
-            },
-          ]}
-        >
-          <DynamicIcon emoji={tool.icon} size={22} color={categoryColor} />
+        <View style={iconBadge.container}>
+          <DynamicIcon emoji={tool.icon} size={iconPx} color={iconBadge.iconColor} />
         </View>
-        <View style={styles.popularToolBody}>
-          <View
-            style={[
-              styles.miniCategoryPill,
-              {
-                backgroundColor: `${categoryColor}18`,
-                alignSelf: "flex-start",
-                marginBottom: 3,
-              },
-            ]}
-          >
-            <Text style={[styles.miniCategoryText, { color: categoryColor }]}>
-              {catInfo?.name || tool.category}
-            </Text>
-          </View>
-          <Text style={[styles.popularToolTitle, { color: theme.textPrimary }]}>
+        <View style={[styles.popularToolBody, isGridTile ? { width: "100%" } : null]}>
+          {!isCompact && (
+            <View
+              style={[
+                styles.miniCategoryPill,
+                {
+                  backgroundColor: `${categoryColor}18`,
+                  alignSelf: "flex-start",
+                  marginBottom: 3,
+                },
+              ]}
+            >
+              <Text style={[styles.miniCategoryText, { color: categoryColor }]}>
+                {catInfo?.name || tool.category}
+              </Text>
+            </View>
+          )}
+          <Text style={[styles.popularToolTitle, { color: theme.textPrimary }]} numberOfLines={isGridTile ? 1 : 2}>
             {tool.shortTitle || tool.title}
           </Text>
           <Text
@@ -832,7 +860,7 @@ export function PopularToolRow({
               styles.popularToolDesc,
               { color: theme.textSecondary, marginTop: 2 },
             ]}
-            numberOfLines={2}
+            numberOfLines={isCompact ? 1 : isEditorial ? 3 : 2}
           >
             {tool.description}
           </Text>
@@ -899,7 +927,7 @@ export const SUPER_APP_LAUNCHER_ITEMS = [
     id: "paye",
     label: "PAYE Tax",
     icon: "calculator" as const,
-    color: "#2FA463",
+    color: darkColors.kenyaGreenLight,
     route: "/tools/[slug]" as const,
     params: { slug: "paye-calculator" },
   },
@@ -939,7 +967,7 @@ export const SUPER_APP_LAUNCHER_ITEMS = [
     id: "matatu",
     label: "Matatu Fares",
     icon: "bus" as const,
-    color: "#0EA5E9",
+    color: darkColors.sky,
     route: "/matatu" as const,
   },
   {
@@ -969,47 +997,106 @@ export function SUPER_APP_APP_TILES(
   }>,
   router: ReturnType<typeof useRouter>,
   theme: any,
-  customStyles?: ReturnType<typeof createHomeStyles>
+  customStyles?: ReturnType<typeof createHomeStyles>,
+  themeConfig?: ThemeConfig,
+  themeMetrics?: ThemeMetrics
 ) {
   const styles = customStyles ?? defaultHomeStyles;
-  return items.map((item) => (
-    <Pressable
-      key={item.id}
-      android_ripple={androidRipple(theme.rippleColor, true)}
-      accessibilityRole="button"
-      accessibilityLabel={`Open ${item.label}`}
-      onPress={() => {
-        triggerHaptic(8);
-        if (item.params) {
-          router.push({
-            pathname: item.route,
-            params: item.params,
-          });
-        } else {
-          router.push(item.route as any);
-        }
-      }}
-      style={pressableStyle(styles.launcherTile)}
-    >
-      <View
-        style={[
-          styles.launcherSquircle,
-          {
-            backgroundColor: `${item.color}1C`,
-            borderColor: `${item.color}40`,
-          },
-        ]}
+  const layout: HomeLayoutPreset = themeConfig?.homeLayout ?? "classic";
+  const isTwoCol = layout === "bento-grid" || layout === "large-tiles" || layout === "editorial-cards";
+  const isRowList = layout === "compact-list" || layout === "minimal-rows";
+  const cardStyle = themeConfig && themeMetrics ? getThemedCardStyle(theme, themeConfig, themeMetrics) : null;
+  const iconScale = themeMetrics?.iconScale ?? 1;
+
+  return items.map((item) => {
+    const baseSize = layout === "large-tiles" ? 50 : isRowList ? 34 : 46;
+    const badge = themeConfig
+      ? getThemedIconBadgeStyle(theme, themeConfig, item.color, baseSize)
+      : null;
+    const iconSize = Math.round((layout === "large-tiles" ? 24 : isRowList ? 18 : 22) * iconScale);
+
+    return (
+      <Pressable
+        key={item.id}
+        android_ripple={androidRipple(theme.rippleColor, !isTwoCol && !isRowList)}
+        accessibilityRole="button"
+        accessibilityLabel={`Open ${item.label}`}
+        onPress={() => {
+          triggerHaptic(8);
+          if (item.params) {
+            router.push({
+              pathname: item.route,
+              params: item.params,
+            });
+          } else {
+            router.push(item.route as any);
+          }
+        }}
+        style={pressableStyle([
+          styles.launcherTile,
+          isTwoCol && cardStyle
+            ? [
+                cardStyle,
+                {
+                  width: "48.2%",
+                  flexDirection: layout === "large-tiles" ? "column" : "row",
+                  alignItems: "center",
+                  justifyContent: layout === "large-tiles" ? "center" : "flex-start",
+                  paddingHorizontal: layout === "editorial-cards" ? 14 : 11,
+                  paddingVertical: layout === "large-tiles" ? 14 : layout === "editorial-cards" ? 13 : 10,
+                  gap: 10,
+                },
+              ]
+            : null,
+          isRowList
+            ? [
+                layout === "compact-list" && cardStyle ? cardStyle : null,
+                {
+                  width: "100%",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                  paddingHorizontal: layout === "minimal-rows" ? 4 : 12,
+                  paddingVertical: layout === "minimal-rows" ? 8 : 7,
+                  borderBottomWidth: layout === "minimal-rows" ? 1 : undefined,
+                  borderBottomColor: layout === "minimal-rows" ? theme.outlineVariant : undefined,
+                },
+              ]
+            : null,
+        ])}
       >
-        <Ionicons name={item.icon} size={22} color={item.color} />
-      </View>
-      <Text
-        style={[styles.launcherLabel, { color: theme.textPrimary }]}
-        numberOfLines={1}
-        adjustsFontSizeToFit
-        minimumFontScale={0.8}
-      >
-        {item.label}
-      </Text>
-    </Pressable>
-  ));
+        <View
+          style={
+            badge
+              ? badge.container
+              : [
+                  styles.launcherSquircle,
+                  {
+                    backgroundColor: `${item.color}1C`,
+                    borderColor: `${item.color}40`,
+                  },
+                ]
+          }
+        >
+          <Ionicons name={item.icon} size={iconSize} color={badge ? badge.iconColor : item.color} />
+        </View>
+        <Text
+          style={[
+            styles.launcherLabel,
+            { color: theme.textPrimary },
+            isTwoCol && layout !== "large-tiles" ? { textAlign: "left", flex: 1 } : null,
+            isRowList ? { textAlign: "left", flex: 1, fontSize: 13 } : null,
+          ]}
+          numberOfLines={1}
+          adjustsFontSizeToFit
+          minimumFontScale={0.8}
+        >
+          {item.label}
+        </Text>
+        {isRowList && (
+          <Ionicons name="chevron-forward" size={15} color={theme.textMuted} />
+        )}
+      </Pressable>
+    );
+  });
 }

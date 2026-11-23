@@ -26,11 +26,13 @@ import {
   exportThemeConfigJson,
   resolveFontPairFamilies,
   hexToRgba,
+  getContrastInk,
   type ThemeConfig,
   type ThemeMetrics,
   type ThemeMode,
   type CustomColorsConfig,
   type HapticStrength,
+  type PressEffect,
 } from "./lib/theme-engine";
 
 export const darkColors = {
@@ -218,6 +220,7 @@ export const categoryColorMap: Record<string, string> = {
 let _globalHapticsEnabled = true;
 let _globalHapticDurationMs = 8;
 let _globalReduceMotion = false;
+let _globalPressEffect: PressEffect = "scale-ripple";
 
 const HAPTIC_STRENGTH_MS: Record<HapticStrength, number> = {
   off: 0,
@@ -227,6 +230,9 @@ const HAPTIC_STRENGTH_MS: Record<HapticStrength, number> = {
 };
 
 export function androidRipple(color?: string, borderless = false) {
+  if (_globalPressEffect === "none" || _globalPressEffect === "opacity-only") {
+    return { color: "transparent", borderless };
+  }
   return {
     color: color || "rgba(232, 190, 90, 0.16)",
     borderless,
@@ -240,9 +246,17 @@ export function pressableStyle(
 ) {
   return ({ pressed }: { pressed: boolean }): StyleProp<ViewStyle> => [
     baseStyle,
-    pressed && {
-      opacity: _globalReduceMotion ? 0.92 : 0.84,
-      transform: scaleOnPress && !_globalReduceMotion ? [{ scale: 0.985 }] : undefined,
+    pressed && _globalPressEffect !== "none" && {
+      opacity:
+        _globalPressEffect === "ripple-only"
+          ? 0.96
+          : _globalReduceMotion
+          ? 0.92
+          : 0.84,
+      transform:
+        scaleOnPress && !_globalReduceMotion && _globalPressEffect === "scale-ripple"
+          ? [{ scale: 0.985 }]
+          : undefined,
     },
     pressed && pressedStyle,
   ];
@@ -334,11 +348,74 @@ interface ThemeContextType {
 
 const defaultMetrics = resolveThemeMetrics(DEFAULT_THEME_CONFIG);
 
+export function buildThemeKey(cfg: ThemeConfig, colorsObj: ThemeColors, dark: boolean): string {
+  const customSig = Object.entries(cfg.customColors || {})
+    .filter(([, v]) => Boolean(v))
+    .sort(([a], [b]) => a.localeCompare(b))
+    .map(([k, v]) => `${k}:${v}`)
+    .join(",");
+  return [
+    dark ? "d" : "l",
+    cfg.presetId,
+    cfg.oledBlack ? "oled" : "",
+    cfg.accentIntensity,
+    cfg.readingTint,
+    cfg.colorBlindMode,
+    cfg.highContrastBorders ? "hc" : "",
+    colorsObj.bgPrimary,
+    colorsObj.surfaceContainer,
+    colorsObj.gold,
+    colorsObj.kenyaGreen,
+    colorsObj.outlineVariant,
+    cfg.surfaceStyle,
+    cfg.borderWidth,
+    cfg.cardRadius,
+    cfg.buttonRadius,
+    cfg.cardShadowIntensity,
+    cfg.cardAccentStyle,
+    cfg.iconBadgeStyle,
+    cfg.inputStyle,
+    cfg.buttonStyle,
+    cfg.homeLayout,
+    cfg.density,
+    cfg.screenPadding,
+    cfg.pillBarLayout,
+    cfg.pillShape,
+    cfg.pillSize,
+    cfg.iconScale,
+    cfg.buttonSize,
+    cfg.cardPadding,
+    cfg.tabBarSize,
+    cfg.appBarSize,
+    cfg.tabBarStyle,
+    cfg.tabBarLabels ? "1" : "0",
+    cfg.menuIndicatorStyle,
+    cfg.quickMenuPosition,
+    cfg.fontPair,
+    cfg.fontScale,
+    cfg.lineHeightScale,
+    cfg.letterSpacingOffset,
+    cfg.headingTransform,
+    cfg.numericStyle,
+    cfg.headerAlignment,
+    cfg.appBarStyle,
+    cfg.showKenyaStripe ? cfg.stripeThickness : "nostripe",
+    cfg.horizontalScrollbarStyle,
+    cfg.horizontalScrollbarThickness,
+    cfg.verticalScrollbarStyle,
+    cfg.progressBarStyle,
+    cfg.dividerStyle,
+    cfg.sectionHeaderStyle,
+    cfg.pressEffect,
+    customSig,
+  ].join("|");
+}
+
 const ThemeContext = createContext<ThemeContextType>({
   theme: darkColors,
   isDark: true,
   themeReady: false,
-  themeKey: `d-${DEFAULT_THEME_CONFIG.presetId}-${darkColors.bgPrimary}-${darkColors.surfaceContainer}-${darkColors.gold}-${DEFAULT_THEME_CONFIG.surfaceStyle}-${DEFAULT_THEME_CONFIG.cardAccentStyle}`,
+  themeKey: buildThemeKey(DEFAULT_THEME_CONFIG, darkColors, true),
   themeConfig: DEFAULT_THEME_CONFIG,
   themeMetrics: defaultMetrics,
   resolvedFonts: { heading: "Outfit_700Bold", body: "Inter_400Regular", bold: "Inter_700Bold" },
@@ -417,6 +494,8 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     AsyncStorage.setItem(THEME_CONFIG_STORAGE_KEY, JSON.stringify(next)).catch(() => {});
     if (next.mode === "light" || next.mode === "dark") {
       AsyncStorage.setItem("kh-theme", next.mode).catch(() => {});
+    } else {
+      AsyncStorage.removeItem("kh-theme").catch(() => {});
     }
   }, []);
 
@@ -431,13 +510,14 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     _globalHapticsEnabled = themeConfig.hapticsEnabled;
     _globalHapticDurationMs = HAPTIC_STRENGTH_MS[themeConfig.hapticStrength] ?? 8;
     _globalReduceMotion = themeConfig.reduceMotion;
-  }, [themeConfig.hapticsEnabled, themeConfig.hapticStrength, themeConfig.reduceMotion]);
+    _globalPressEffect = themeConfig.pressEffect ?? "scale-ripple";
+  }, [themeConfig.hapticsEnabled, themeConfig.hapticStrength, themeConfig.reduceMotion, themeConfig.pressEffect]);
 
   useEffect(() => {
     try {
-      Appearance.setColorScheme?.(isDark ? "dark" : "light");
+      Appearance.setColorScheme?.(themeConfig.mode === "system" ? null : isDark ? "dark" : "light");
     } catch {}
-  }, [isDark]);
+  }, [isDark, themeConfig.mode]);
 
   const toggleTheme = React.useCallback(() => {
     triggerHaptic(8);
@@ -514,8 +594,20 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
       if (!profile) return;
       triggerHaptic(10);
       if (profile.id === "kenyahub-classic") {
-        setThemeConfig(DEFAULT_THEME_CONFIG);
-        persistConfig(DEFAULT_THEME_CONFIG);
+        setThemeConfig((prev) => {
+          const next: ThemeConfig = {
+            ...DEFAULT_THEME_CONFIG,
+            hapticsEnabled: prev.hapticsEnabled,
+            hapticStrength: prev.hapticStrength,
+            reduceMotion: prev.reduceMotion,
+            highContrastBorders: prev.highContrastBorders,
+            colorBlindMode: prev.colorBlindMode,
+            fontScale: prev.fontScale,
+            customColors: {},
+          };
+          persistConfig(next);
+          return next;
+        });
         return;
       }
       setThemeConfig((prev) => {
@@ -634,7 +726,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     [themeConfig.fontPair]
   );
 
-  const themeKey = `${isDark ? "d" : "l"}-${themeConfig.presetId}-${theme.bgPrimary}-${theme.surfaceContainer}-${theme.gold}-${themeConfig.surfaceStyle}-${themeConfig.cardAccentStyle}-${themeConfig.pillBarLayout}-${themeConfig.pillShape}-${themeConfig.pillSize}-${themeConfig.iconScale}-${themeConfig.buttonSize}-${themeConfig.cardPadding}-${themeConfig.tabBarSize}-${themeConfig.appBarSize}-${themeConfig.tabBarStyle}-${themeConfig.menuIndicatorStyle}-${themeConfig.fontPair}-${themeConfig.fontScale}-${themeConfig.headerAlignment}-${themeConfig.horizontalScrollbarStyle}-${themeConfig.appBarStyle}`;
+  const themeKey = React.useMemo(() => buildThemeKey(themeConfig, theme, isDark), [themeConfig, theme, isDark]);
 
   const ctxValue = React.useMemo(
     () => ({
@@ -698,10 +790,18 @@ export function useTheme() {
 export function useDynamicStyles<
   T extends StyleSheet.NamedStyles<T> | StyleSheet.NamedStyles<any>
 >(
-  creator: (theme: ThemeColors, metrics?: ThemeMetrics) => T
+  creator: (
+    theme: ThemeColors,
+    metrics?: ThemeMetrics,
+    resolvedFonts?: { heading: string; body: string; bold: string },
+    themeConfig?: ThemeConfig
+  ) => T
 ): { theme: ThemeColors; isDark: boolean; metrics: ThemeMetrics; styles: T } {
-  const { theme, isDark, themeMetrics } = useTheme();
-  const styles = React.useMemo(() => creator(theme, themeMetrics), [theme, themeMetrics]);
+  const { theme, isDark, themeMetrics, resolvedFonts, themeConfig } = useTheme();
+  const styles = React.useMemo(
+    () => creator(theme, themeMetrics, resolvedFonts, themeConfig),
+    [theme, themeMetrics, resolvedFonts, themeConfig]
+  );
   return { theme, isDark, metrics: themeMetrics, styles };
 }
 
@@ -809,7 +909,7 @@ export function getThemedCardStyle(
       break;
   }
 
-  const clampedAndroidElevation = isAndroid ? Math.min(3, Math.max(0, elevation)) : 0;
+  const clampedAndroidElevation = isAndroid ? (themeConfig.surfaceStyle === "glass" ? 0 : Math.min(3, Math.max(0, elevation))) : 0;
 
   const cardStyle: ThemedCardStyle = {
     borderRadius,
@@ -863,6 +963,166 @@ export function getThemedCardStyle(
   }
 
   return cardStyle;
+}
+
+export function getThemedInputStyle(
+  theme: ThemeColors,
+  themeConfig: ThemeConfig,
+  themeMetrics: ThemeMetrics
+): ViewStyle {
+  const bw = Math.max(1, themeMetrics.borderWidthPx);
+  switch (themeConfig.inputStyle) {
+    case "filled":
+      return { backgroundColor: theme.surfaceContainerHigh, borderColor: "transparent", borderWidth: 0, borderRadius: themeMetrics.buttonRadiusPx };
+    case "underlined":
+      return { backgroundColor: "transparent", borderWidth: 0, borderBottomWidth: Math.max(1.5, bw), borderBottomColor: theme.outlineVariant, borderRadius: 0 };
+    case "pill":
+      return { backgroundColor: theme.surfaceContainerLow, borderColor: theme.outlineVariant, borderWidth: bw, borderRadius: 999 };
+    case "minimal":
+      return { backgroundColor: theme.surfaceContainerLow, borderColor: "transparent", borderWidth: 0, borderRadius: Math.min(10, themeMetrics.buttonRadiusPx) };
+    case "accent":
+      return { backgroundColor: theme.surfaceContainerLow, borderColor: theme.gold, borderWidth: Math.max(1.25, bw), borderRadius: themeMetrics.buttonRadiusPx };
+    case "outlined":
+    default:
+      return { backgroundColor: theme.surfaceContainerLow, borderColor: theme.outlineVariant, borderWidth: bw, borderRadius: themeMetrics.buttonRadiusPx };
+  }
+}
+
+export function getThemedButtonStyle(
+  theme: ThemeColors,
+  themeConfig: ThemeConfig,
+  themeMetrics: ThemeMetrics,
+  variant: "primary" | "secondary" | "ghost" = "primary"
+): { container: ViewStyle; textColor: string } {
+  const radius = themeMetrics.buttonRadiusPx;
+  const pv = themeMetrics.buttonPaddingVPx;
+  const ph = themeMetrics.buttonPaddingHPx;
+  const base: ViewStyle = { borderRadius: radius, paddingVertical: pv, paddingHorizontal: ph, alignItems: "center", justifyContent: "center" };
+  if (variant === "ghost") {
+    return { container: { ...base, backgroundColor: "transparent", borderWidth: 0 }, textColor: theme.gold };
+  }
+  if (variant === "secondary") {
+    return {
+      container: { ...base, backgroundColor: theme.secondaryContainer, borderWidth: Math.max(1, themeMetrics.borderWidthPx), borderColor: theme.kenyaGreenLight },
+      textColor: theme.onSecondaryContainer,
+    };
+  }
+  const onGold = getContrastInk(theme.gold);
+  switch (themeConfig.buttonStyle) {
+    case "tinted":
+      return { container: { ...base, backgroundColor: theme.primaryContainer, borderWidth: 1, borderColor: hexToRgba(theme.gold, 0.35) }, textColor: theme.onPrimaryContainer };
+    case "outlined":
+      return { container: { ...base, backgroundColor: "transparent", borderWidth: Math.max(1.5, themeMetrics.borderWidthPx), borderColor: theme.gold }, textColor: theme.gold };
+    case "elevated":
+      return { container: { ...base, backgroundColor: theme.surfaceContainerHigh, borderWidth: 1, borderColor: theme.outlineVariant, elevation: Platform.OS === "android" ? 2 : 0 }, textColor: theme.gold };
+    case "pill-glow":
+      return { container: { ...base, borderRadius: 999, backgroundColor: theme.gold, borderWidth: 1.5, borderColor: theme.goldLight }, textColor: onGold };
+    case "flat":
+      return { container: { ...base, backgroundColor: theme.primaryContainer, borderWidth: 0 }, textColor: theme.onPrimaryContainer };
+    case "filled":
+    default:
+      return { container: { ...base, backgroundColor: theme.gold, borderWidth: 0 }, textColor: onGold };
+  }
+}
+
+export function getThemedIconBadgeStyle(
+  theme: ThemeColors,
+  themeConfig: ThemeConfig,
+  accentColor?: string,
+  baseSize = 36
+): { container: ViewStyle; iconColor: string } {
+  const accent = accentColor || theme.gold;
+  const size = Math.round(baseSize * Math.max(0.82, Math.min(1.25, resolveThemeMetrics(themeConfig).iconScale)));
+  const common: ViewStyle = { width: size, height: size, alignItems: "center", justifyContent: "center" };
+  switch (themeConfig.iconBadgeStyle) {
+    case "outline":
+      return { container: { ...common, borderRadius: Math.round(size * 0.28), backgroundColor: "transparent", borderWidth: 1.25, borderColor: accent }, iconColor: accent };
+    case "filled":
+      return { container: { ...common, borderRadius: Math.round(size * 0.28), backgroundColor: hexToRgba(accent, 0.22), borderWidth: 1, borderColor: hexToRgba(accent, 0.42) }, iconColor: accent };
+    case "soft-square":
+      return { container: { ...common, borderRadius: Math.round(size * 0.22), backgroundColor: hexToRgba(accent, 0.14) }, iconColor: accent };
+    case "accent-solid":
+      return { container: { ...common, borderRadius: Math.round(size * 0.28), backgroundColor: accent }, iconColor: getContrastInk(accent) };
+    case "minimal":
+      return { container: { ...common, borderRadius: 0, backgroundColor: "transparent" }, iconColor: accent };
+    case "soft-circle":
+    default:
+      return { container: { ...common, borderRadius: Math.round(size / 2), backgroundColor: hexToRgba(accent, 0.14) }, iconColor: accent };
+  }
+}
+
+export function getThemedHeadingStyle(
+  themeConfig: ThemeConfig,
+  resolvedFonts: { heading: string; body: string; bold: string },
+  baseSize = 16
+): TextStyle {
+  const scaled = Math.round(baseSize * (themeConfig.fontScale || 1) * 10) / 10;
+  return {
+    fontFamily: resolvedFonts.heading,
+    fontSize: scaled,
+    lineHeight: Math.round(scaled * 1.3 * (themeConfig.lineHeightScale || 1)),
+    letterSpacing: themeConfig.letterSpacingOffset || 0,
+    textTransform: themeConfig.headingTransform || "none",
+    includeFontPadding: false,
+  };
+}
+
+export function getThemedNumericStyle(
+  themeConfig: ThemeConfig,
+  resolvedFonts: { heading: string; body: string; bold: string }
+): TextStyle {
+  if (themeConfig.numericStyle === "tabular-mono") {
+    return { fontFamily: Platform.OS === "ios" ? "Menlo" : "monospace", fontVariant: ["tabular-nums"], includeFontPadding: false };
+  }
+  return { fontFamily: resolvedFonts.bold, fontVariant: ["tabular-nums"], includeFontPadding: false };
+}
+
+export function ThemedDivider({ style }: { style?: StyleProp<ViewStyle> }) {
+  const { theme, themeConfig } = useTheme();
+  const mode = themeConfig.dividerStyle || "hairline";
+  if (mode === "none") return null;
+  if (mode === "dashed-soft") {
+    return <View style={[{ width: "100%", borderBottomWidth: 1, borderStyle: "dashed", borderColor: theme.outlineVariant, marginVertical: 8, opacity: 0.7 }, style]} />;
+  }
+  if (mode === "accent-fade") {
+    return <View style={[{ width: "100%", height: 1.5, backgroundColor: hexToRgba(theme.gold, 0.38), borderRadius: 999, marginVertical: 8 }, style]} />;
+  }
+  return <View style={[{ width: "100%", height: StyleSheet.hairlineWidth, backgroundColor: theme.outlineVariant, marginVertical: 8 }, style]} />;
+}
+
+export function ThemedProgressBar({
+  progress,
+  color,
+  height,
+  style,
+}: {
+  progress: number;
+  color?: string;
+  height?: number;
+  style?: StyleProp<ViewStyle>;
+}) {
+  const { theme, themeConfig } = useTheme();
+  const pct = Math.max(0, Math.min(1, Number.isFinite(progress) ? progress : 0));
+  const fill = color || theme.gold;
+  const barStyle = themeConfig.progressBarStyle || "rounded";
+  const barH = height ?? (barStyle === "thin-line" ? 3 : barStyle === "segmented" ? 7 : 6);
+  if (barStyle === "segmented") {
+    const segs = 10;
+    const filledCount = Math.round(pct * segs);
+    return (
+      <View style={[{ flexDirection: "row", gap: 3, width: "100%", height: barH }, style]}>
+        {Array.from({ length: segs }).map((_, idx) => (
+          <View key={`seg-${idx}`} style={{ flex: 1, height: "100%", borderRadius: 2, backgroundColor: idx < filledCount ? fill : theme.surfaceContainerHighest }} />
+        ))}
+      </View>
+    );
+  }
+  const radius = barStyle === "sharp" ? 0 : 999;
+  return (
+    <View style={[{ width: "100%", height: barH, borderRadius: radius, backgroundColor: theme.surfaceContainerHighest, overflow: "hidden" }, style]}>
+      <View style={{ width: `${Math.round(pct * 100)}%`, height: "100%", borderRadius: radius, backgroundColor: fill }} />
+    </View>
+  );
 }
 
 /**
@@ -924,9 +1184,11 @@ export function AndroidTopAppBar({
   const showGear = showThemeToggle && showSettingsButton;
   const isCentered = themeConfig.headerAlignment === "center";
 
+  const barKey = `${theme.surfaceContainerLow}-${theme.primaryContainer}-${themeConfig.appBarStyle}-${themeConfig.headerAlignment}-${themeConfig.appBarSize}-${iconScale}`;
+
   return (
     <View
-      key={themeKey}
+      key={barKey}
       style={[
         appBarStyles.container,
         {
@@ -938,6 +1200,12 @@ export function AndroidTopAppBar({
           borderBottomWidth:
             themeConfig.appBarStyle === "borderless" ? 0 : StyleSheet.hairlineWidth,
           minHeight: resolvedBarHeight,
+          elevation:
+            Platform.OS === "android"
+              ? themeConfig.appBarStyle === "accent-tinted" || themeConfig.appBarStyle === "borderless"
+                ? 0
+                : 1
+              : 0,
         },
         themeConfig.appBarStyle === "floating" && {
           marginHorizontal: 10,
@@ -957,22 +1225,26 @@ export function AndroidTopAppBar({
             }}
             accessibilityRole="button"
             accessibilityLabel="Navigate back"
-            android_ripple={androidRipple(theme.rippleColor, true)}
-            style={pressableStyle([
-              appBarStyles.iconBtn,
-              {
-                width: barBtnSize,
-                height: barBtnSize,
-                borderRadius: Math.round(barBtnSize / 2),
-                backgroundColor: theme.surfaceContainerHigh,
-              },
-            ])}
+            android_ripple={androidRipple(theme.rippleColor, false)}
+            style={pressableStyle()}
             hitSlop={8}
           >
-            <Ionicons name="arrow-back" size={barIconSize} color={theme.textPrimary} />
+            <View
+              style={[
+                appBarStyles.iconBtn,
+                {
+                  width: barBtnSize,
+                  height: barBtnSize,
+                  borderRadius: Math.round(barBtnSize / 2),
+                  backgroundColor: theme.surfaceContainerHigh,
+                },
+              ]}
+            >
+              <Ionicons name="arrow-back" size={barIconSize} color={theme.textPrimary} />
+            </View>
           </Pressable>
         ) : isCentered && (showGear || rightAction) ? (
-          <View style={appBarStyles.iconBtn} accessible={false} />
+          <View style={{ width: barBtnSize, height: barBtnSize }} accessible={false} />
         ) : null}
 
         {showBrandLogo && !title ? (
@@ -995,7 +1267,13 @@ export function AndroidTopAppBar({
                 <Text
                   style={[
                     appBarStyles.title,
-                    { color: theme.textPrimary, fontFamily: resolvedFonts.heading },
+                    {
+                      color: theme.textPrimary,
+                      fontFamily: resolvedFonts.heading,
+                      fontSize: Math.round(16 * Math.max(0.85, Math.min(1.22, themeMetrics.fontScale))),
+                      letterSpacing: themeConfig.letterSpacingOffset || -0.2,
+                      textTransform: themeConfig.headingTransform || "none",
+                    },
                     isCentered && { textAlign: "center" },
                   ]}
                   numberOfLines={1}
@@ -1032,25 +1310,29 @@ export function AndroidTopAppBar({
             }}
             accessibilityRole="button"
             accessibilityLabel="Open settings and theme studio"
-            android_ripple={androidRipple(theme.rippleColor, true)}
-            style={pressableStyle([
-              appBarStyles.iconBtn,
-              {
-                width: barBtnSize,
-                height: barBtnSize,
-                borderRadius: Math.round(barBtnSize / 2),
-                backgroundColor: theme.surfaceContainerHigh,
-                borderColor: theme.outlineVariant,
-                borderWidth: 1,
-              },
-            ])}
+            android_ripple={androidRipple(theme.rippleColor, false)}
+            style={pressableStyle()}
             hitSlop={8}
           >
-            <Ionicons
-              name="settings-outline"
-              size={barIconSize}
-              color={theme.gold}
-            />
+            <View
+              style={[
+                appBarStyles.iconBtn,
+                {
+                  width: barBtnSize,
+                  height: barBtnSize,
+                  borderRadius: Math.round(barBtnSize / 2),
+                  backgroundColor: theme.surfaceContainerHigh,
+                  borderColor: theme.outlineVariant,
+                  borderWidth: 1,
+                },
+              ]}
+            >
+              <Ionicons
+                name="settings-outline"
+                size={barIconSize}
+                color={theme.gold}
+              />
+            </View>
           </Pressable>
         )}
       </View>

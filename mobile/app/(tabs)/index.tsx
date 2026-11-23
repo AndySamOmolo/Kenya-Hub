@@ -24,6 +24,9 @@ import {
   triggerHaptic,
   parseSavedTools,
   serializeSavedTools,
+  getThemedCardStyle,
+  getThemedInputStyle,
+  getThemedIconBadgeStyle,
 } from "../../src/theme";
 import {
   TOOLS,
@@ -81,6 +84,18 @@ export default function HomeScreen() {
     () => createHomeStyles(themeMetrics, resolvedFonts),
     [themeMetrics, resolvedFonts]
   );
+  const themedCardStyle = useMemo(
+    () => getThemedCardStyle(theme, themeConfig, themeMetrics),
+    [theme, themeConfig, themeMetrics]
+  );
+  const themedInputStyle = useMemo(
+    () => getThemedInputStyle(theme, themeConfig, themeMetrics),
+    [theme, themeConfig, themeMetrics]
+  );
+  const homeLayout = themeConfig.homeLayout || "classic";
+  const screenPadPx = (themeMetrics as any)?.screenPaddingPx ?? Math.round(14 * (themeMetrics?.spacingScale ?? 1));
+  const extraScrollPadPx = (themeMetrics as any)?.screenPaddingPx !== undefined ? Math.max(0, (themeMetrics as any).screenPaddingPx - 14) : 0;
+  const headingTransform = themeConfig.headingTransform || "none";
   const [pinnedSlugs, setPinnedSlugs] = useState<string[]>([]);
   const [visitCounts, setVisitCounts] = useState<Record<string, number>>({});
   const [searchQuery, setSearchQuery] = useState("");
@@ -556,9 +571,9 @@ export default function HomeScreen() {
       />
 
       <ScrollView
-        contentContainerStyle={styles.scrollContent}
+        contentContainerStyle={[styles.scrollContent, extraScrollPadPx > 0 ? { paddingHorizontal: extraScrollPadPx } : null]}
         showsVerticalScrollIndicator={themeConfig?.verticalScrollbarStyle !== "hidden"}
-        persistentScrollbar={themeConfig?.verticalScrollbarStyle === "always-visible"}
+        persistentScrollbar={themeConfig.verticalScrollbarStyle === "always-visible"}
         keyboardShouldPersistTaps="handled"
       >
         {/* 1. Native Android Header with Single Clean Greeting */}
@@ -568,7 +583,7 @@ export default function HomeScreen() {
               <Text style={[styles.greetingSub, { color: theme.gold }]}>
                 KENYA SUPER-APP · PUBLIC UTILITIES
               </Text>
-              <Text style={[styles.greetingTitle, { color: theme.textPrimary }]}>
+              <Text style={[styles.greetingTitle, { color: theme.textPrimary, textTransform: headingTransform }]}>
                 {greeting.en}, Mwananchi
               </Text>
             </View>
@@ -595,11 +610,8 @@ export default function HomeScreen() {
           <View
             style={[
               styles.searchInputBar,
-              {
-                backgroundColor: theme.surfaceContainerHigh,
-                borderColor:
-                  searchQuery.length > 0 ? theme.gold : theme.outlineVariant,
-              },
+              themedInputStyle,
+              searchQuery.length > 0 ? { borderColor: theme.gold } : null,
             ]}
           >
             <Ionicons name="search" size={18} color={theme.gold} />
@@ -656,10 +668,7 @@ export default function HomeScreen() {
             <View
               style={[
                 styles.instantResultsCard,
-                {
-                  backgroundColor: theme.surfaceContainer,
-                  borderColor: theme.outlineVariant,
-                },
+                themedCardStyle,
               ]}
             >
               <View style={styles.instantResultsHeader}>
@@ -949,9 +958,19 @@ export default function HomeScreen() {
         </View>
 
         {/* 3. Native Super-App Quick Launcher */}
-        <View style={styles.launcherSection}>
-          <View style={styles.launcherGrid}>
-            {SUPER_APP_APP_TILES(dynamicLauncherItems, router, theme, styles)}
+        <View style={[styles.launcherSection, { paddingHorizontal: screenPadPx }]}>
+          <View
+            style={[
+              styles.launcherGrid,
+              homeLayout === "bento-grid" || homeLayout === "large-tiles" || homeLayout === "editorial-cards"
+                ? { justifyContent: "space-between", rowGap: 10 }
+                : null,
+              homeLayout === "compact-list" || homeLayout === "minimal-rows"
+                ? { flexDirection: "column", rowGap: homeLayout === "minimal-rows" ? 0 : 6 }
+                : null,
+            ]}
+          >
+            {SUPER_APP_APP_TILES(dynamicLauncherItems, router, theme, styles, themeConfig, themeMetrics)}
           </View>
         </View>
 
@@ -961,7 +980,7 @@ export default function HomeScreen() {
             <Text style={[styles.sectionOverline, { color: theme.gold }]}>
               LIVE SNAPSHOT
             </Text>
-            <Text style={[styles.sectionTitle, { color: theme.textPrimary }]}>
+            <Text style={[styles.sectionTitle, { color: theme.textPrimary, textTransform: headingTransform }]}>
               Daily Kenyan Widgets
             </Text>
           </View>
@@ -1018,21 +1037,18 @@ export default function HomeScreen() {
             onPress={() => router.push("/matatu")}
             style={pressableStyle([
               styles.snapshotWidget,
-              {
-                backgroundColor: theme.surfaceContainer,
-                borderColor: theme.outlineVariant,
-              },
+              themedCardStyle,
             ])}
           >
             <View style={styles.widgetHeaderRow}>
               <View
                 style={[
                   styles.widgetBadgePill,
-                  { backgroundColor: "rgba(14, 165, 233, 0.16)" },
+                  { backgroundColor: `${theme.sky}29` },
                 ]}
               >
-                <Ionicons name="bus" size={12} color="#0EA5E9" />
-                <Text style={[styles.widgetBadgeText, { color: "#0EA5E9" }]}>
+                <Ionicons name="bus" size={12} color={theme.sky} />
+                <Text style={[styles.widgetBadgeText, { color: theme.sky }]}>
                   MATATU TRANSIT
                 </Text>
               </View>
@@ -1040,7 +1056,7 @@ export default function HomeScreen() {
                 style={{
                   fontSize: 11,
                   fontFamily: "Outfit_700Bold",
-                  color: "#0EA5E9",
+                  color: theme.sky,
                 }}
               >
                 {matatuSummary.townCount} Cities
@@ -1063,10 +1079,10 @@ export default function HomeScreen() {
             </Text>
 
             <View style={styles.widgetFooterLink}>
-              <Text style={[styles.widgetFooterLinkText, { color: "#0EA5E9" }]}>
+              <Text style={[styles.widgetFooterLinkText, { color: theme.sky }]}>
                 Open Matatu Hub
               </Text>
-              <Ionicons name="arrow-forward" size={13} color="#0EA5E9" />
+              <Ionicons name="arrow-forward" size={13} color={theme.sky} />
             </View>
           </Pressable>
 
@@ -1079,10 +1095,7 @@ export default function HomeScreen() {
               onPress={() => setShowHolidaysModal(true)}
               style={pressableStyle([
                 styles.snapshotWidget,
-                {
-                  backgroundColor: theme.surfaceContainer,
-                  borderColor: theme.outlineVariant,
-                },
+                themedCardStyle,
               ])}
             >
               <View style={styles.widgetHeaderRow}>
@@ -1153,7 +1166,7 @@ export default function HomeScreen() {
                   PINNED BY YOU
                 </Text>
                 <Text
-                  style={[styles.sectionTitle, { color: theme.textPrimary }]}
+                  style={[styles.sectionTitle, { color: theme.textPrimary, textTransform: headingTransform }]}
                 >
                   Saved Shortcuts ({pinnedTools.length})
                 </Text>
@@ -1192,20 +1205,17 @@ export default function HomeScreen() {
                     }
                     style={pressableStyle([
                       styles.pinnedMiniCard,
-                      {
-                        backgroundColor: theme.surfaceContainer,
-                        borderColor: theme.outlineVariant,
-                      },
+                      themedCardStyle,
                     ])}
                   >
-                    <View
-                      style={[
-                        styles.pinnedMiniIcon,
-                        { backgroundColor: `${col}1C` },
-                      ]}
-                    >
-                      <DynamicIcon emoji={t.icon} size={15} color={col} />
-                    </View>
+                    {(() => {
+                      const miniBadge = getThemedIconBadgeStyle(theme, themeConfig, col, 26);
+                      return (
+                        <View style={miniBadge.container}>
+                          <DynamicIcon emoji={t.icon} size={Math.round(15 * (themeMetrics?.iconScale ?? 1))} color={miniBadge.iconColor} />
+                        </View>
+                      );
+                    })()}
                     <Text
                       style={[
                         styles.pinnedMiniTitle,
@@ -1228,7 +1238,7 @@ export default function HomeScreen() {
             <Text style={[styles.sectionOverline, { color: theme.gold }]}>
               MOST USED
             </Text>
-            <Text style={[styles.sectionTitle, { color: theme.textPrimary }]}>
+            <Text style={[styles.sectionTitle, { color: theme.textPrimary, textTransform: headingTransform }]}>
               Popular Kenyan Tools
             </Text>
           </View>
@@ -1249,13 +1259,23 @@ export default function HomeScreen() {
           </Pressable>
         </View>
 
-        <View style={styles.popularToolsList}>
+        <View
+          style={[
+            styles.popularToolsList,
+            homeLayout === "bento-grid" || homeLayout === "large-tiles"
+              ? { flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", rowGap: 10 }
+              : null,
+            homeLayout === "minimal-rows" ? { gap: 0 } : null,
+            homeLayout === "editorial-cards" ? { gap: 12 } : null,
+          ]}
+        >
           {popular.map((t) => (
             <PopularToolRow
               key={t.slug}
               tool={t}
               isPinned={pinnedSlugs.includes(t.slug)}
               onTogglePin={togglePinTool}
+              homeLayout={homeLayout}
             />
           ))}
         </View>
@@ -1266,7 +1286,7 @@ export default function HomeScreen() {
             <Text style={[styles.sectionOverline, { color: theme.gold }]}>
               BROWSE BY TOPIC
             </Text>
-            <Text style={[styles.sectionTitle, { color: theme.textPrimary }]}>
+            <Text style={[styles.sectionTitle, { color: theme.textPrimary, textTransform: headingTransform }]}>
               Tool Categories ({TOOL_CATEGORIES.length})
             </Text>
           </View>
@@ -1289,23 +1309,17 @@ export default function HomeScreen() {
                 }
                 style={pressableStyle([
                   styles.categoryFullCard,
-                  {
-                    backgroundColor: theme.surfaceContainer,
-                    borderColor: theme.outlineVariant,
-                  },
+                  themedCardStyle,
                 ])}
               >
-                <View
-                  style={[
-                    styles.catIconWrap,
-                    {
-                      backgroundColor: `${catColor}18`,
-                      borderColor: `${catColor}35`,
-                    },
-                  ]}
-                >
-                  <DynamicIcon emoji={cat.icon} size={20} color={catColor} />
-                </View>
+                {(() => {
+                  const catBadge = getThemedIconBadgeStyle(theme, themeConfig, catColor, 38);
+                  return (
+                    <View style={catBadge.container}>
+                      <DynamicIcon emoji={cat.icon} size={Math.round(20 * (themeMetrics?.iconScale ?? 1))} color={catBadge.iconColor} />
+                    </View>
+                  );
+                })()}
                 <View style={{ flex: 1, minWidth: 0 }}>
                   <View style={styles.catHeaderLine}>
                     <Text
@@ -1346,7 +1360,7 @@ export default function HomeScreen() {
             <Text style={[styles.sectionOverline, { color: theme.gold }]}>
               KENYAHUB GUIDES
             </Text>
-            <Text style={[styles.sectionTitle, { color: theme.textPrimary }]}>
+            <Text style={[styles.sectionTitle, { color: theme.textPrimary, textTransform: headingTransform }]}>
               Practical Explainers ({sortedPosts.length})
             </Text>
           </View>
@@ -1413,10 +1427,7 @@ export default function HomeScreen() {
               }}
               style={pressableStyle([
                 styles.guideCarouselCard,
-                {
-                  backgroundColor: theme.surfaceContainer,
-                  borderColor: theme.outlineVariant,
-                },
+                themedCardStyle,
               ])}
             >
               <View style={styles.guideTagRow}>
