@@ -634,7 +634,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     [themeConfig.fontPair]
   );
 
-  const themeKey = `${isDark ? "d" : "l"}-${themeConfig.presetId}-${theme.bgPrimary}-${theme.surfaceContainer}-${theme.gold}-${themeConfig.surfaceStyle}-${themeConfig.cardAccentStyle}`;
+  const themeKey = `${isDark ? "d" : "l"}-${themeConfig.presetId}-${theme.bgPrimary}-${theme.surfaceContainer}-${theme.gold}-${themeConfig.surfaceStyle}-${themeConfig.cardAccentStyle}-${themeConfig.pillBarLayout}-${themeConfig.pillShape}-${themeConfig.pillSize}-${themeConfig.iconScale}-${themeConfig.buttonSize}-${themeConfig.cardPadding}-${themeConfig.tabBarSize}-${themeConfig.appBarSize}-${themeConfig.tabBarStyle}-${themeConfig.menuIndicatorStyle}-${themeConfig.fontPair}-${themeConfig.fontScale}-${themeConfig.headerAlignment}-${themeConfig.horizontalScrollbarStyle}-${themeConfig.appBarStyle}`;
 
   const ctxValue = React.useMemo(
     () => ({
@@ -908,7 +908,18 @@ export function AndroidTopAppBar({
   showThemeToggle?: boolean;
   showSettingsButton?: boolean;
 }) {
-  const { theme, themeKey, themeConfig, resolvedFonts } = useTheme();
+  const { theme, themeKey, themeConfig, themeMetrics, resolvedFonts } = useTheme();
+  const iconScale = themeMetrics?.iconScale ?? 1.0;
+  const barIconSize = Math.round(18 * iconScale);
+  const barBtnSize = Math.round(34 * Math.max(0.82, Math.min(1.24, iconScale)));
+  const resolvedBarHeight =
+    themeConfig.appBarSize && themeConfig.appBarSize !== "md"
+      ? themeMetrics.appBarHeightPx
+      : themeConfig.appBarStyle === "compact"
+      ? 44
+      : themeConfig.appBarStyle === "tall-editorial"
+      ? 64
+      : themeMetrics.appBarHeightPx;
   const router = useRouter();
   const showGear = showThemeToggle && showSettingsButton;
   const isCentered = themeConfig.headerAlignment === "center";
@@ -926,12 +937,7 @@ export function AndroidTopAppBar({
           borderBottomColor: theme.outlineVariant,
           borderBottomWidth:
             themeConfig.appBarStyle === "borderless" ? 0 : StyleSheet.hairlineWidth,
-          minHeight:
-            themeConfig.appBarStyle === "compact"
-              ? 44
-              : themeConfig.appBarStyle === "tall-editorial"
-              ? 64
-              : 52,
+          minHeight: resolvedBarHeight,
         },
         themeConfig.appBarStyle === "floating" && {
           marginHorizontal: 10,
@@ -954,11 +960,16 @@ export function AndroidTopAppBar({
             android_ripple={androidRipple(theme.rippleColor, true)}
             style={pressableStyle([
               appBarStyles.iconBtn,
-              { backgroundColor: theme.surfaceContainerHigh },
+              {
+                width: barBtnSize,
+                height: barBtnSize,
+                borderRadius: Math.round(barBtnSize / 2),
+                backgroundColor: theme.surfaceContainerHigh,
+              },
             ])}
             hitSlop={8}
           >
-            <Ionicons name="arrow-back" size={18} color={theme.textPrimary} />
+            <Ionicons name="arrow-back" size={barIconSize} color={theme.textPrimary} />
           </Pressable>
         ) : isCentered && (showGear || rightAction) ? (
           <View style={appBarStyles.iconBtn} accessible={false} />
@@ -1025,6 +1036,9 @@ export function AndroidTopAppBar({
             style={pressableStyle([
               appBarStyles.iconBtn,
               {
+                width: barBtnSize,
+                height: barBtnSize,
+                borderRadius: Math.round(barBtnSize / 2),
                 backgroundColor: theme.surfaceContainerHigh,
                 borderColor: theme.outlineVariant,
                 borderWidth: 1,
@@ -1034,7 +1048,7 @@ export function AndroidTopAppBar({
           >
             <Ionicons
               name="settings-outline"
-              size={18}
+              size={barIconSize}
               color={theme.gold}
             />
           </Pressable>

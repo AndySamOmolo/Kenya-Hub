@@ -16,6 +16,7 @@ const M3TabIcon = React.memo(function M3TabIcon({
   compact = false,
   tabBarStyleMode = "classic",
   indicatorStyle = "pill",
+  iconScale = 1.0,
 }: {
   name: keyof typeof Ionicons.glyphMap;
   focused: boolean;
@@ -26,6 +27,7 @@ const M3TabIcon = React.memo(function M3TabIcon({
   compact?: boolean;
   tabBarStyleMode?: TabBarStyle;
   indicatorStyle?: MenuIndicatorStyle;
+  iconScale?: number;
 }) {
   const effectiveIndicator: MenuIndicatorStyle =
     tabBarStyleMode === "top-accent"
@@ -82,7 +84,7 @@ const M3TabIcon = React.memo(function M3TabIcon({
         <Ionicons
           name={name}
           color={focused && effectiveIndicator === "filled-box" ? "#1A1108" : color}
-          size={compact ? 19 : 21}
+          size={Math.round((compact ? 19 : 21) * Math.max(0.75, Math.min(1.3, iconScale)))}
         />
       </View>
       {focused && effectiveIndicator === "dot" && (
@@ -112,7 +114,7 @@ const M3TabIcon = React.memo(function M3TabIcon({
 });
 
 export default function TabLayout() {
-  const { theme, isDark, themeConfig, resolvedFonts } = useTheme();
+  const { theme, isDark, themeConfig, themeMetrics, themeKey, resolvedFonts } = useTheme();
   const router = useRouter();
   const insets = useSafeAreaInsets();
   const [quickMenuOpen, setQuickMenuOpen] = useState(false);
@@ -123,7 +125,15 @@ export default function TabLayout() {
   const showLabels = themeConfig.tabBarLabels !== false && tabBarStyleMode !== "minimal";
   const isFloating = tabBarStyleMode === "floating-pill" || tabBarStyleMode === "segmented";
   const isCompact = tabBarStyleMode === "compact" || tabBarStyleMode === "minimal";
-  const baseHeight = isCompact ? 54 : Platform.OS === "android" ? 64 : 62;
+  const baseHeight =
+    themeConfig.tabBarSize && themeConfig.tabBarSize !== "md"
+      ? themeMetrics.tabBarHeightPx
+      : isCompact
+      ? 54
+      : Platform.OS === "android"
+      ? 64
+      : 62;
+  const iconScale = themeMetrics?.iconScale ?? 1.0;
   const tabBarHeight = isFloating ? baseHeight : baseHeight + bottomInset;
   const quickPos = themeConfig.quickMenuPosition || "off";
 
@@ -133,7 +143,7 @@ export default function TabLayout() {
         screenOptions={{
           headerShown: false,
           lazy: true,
-          freezeOnBlur: true,
+          freezeOnBlur: false,
           sceneStyle: { backgroundColor: theme.bgPrimary },
           tabBarActiveTintColor: theme.gold,
           tabBarInactiveTintColor: theme.textSecondary,
@@ -142,7 +152,7 @@ export default function TabLayout() {
           tabBarAllowFontScaling: true,
           tabBarBackground: () => (
             <View
-              key={`${isDark ? "dark" : "light"}-${themeConfig.presetId}-${tabBarStyleMode}-${indicatorStyle}`}
+              key={`${themeKey}-${tabBarStyleMode}-${indicatorStyle}`}
               style={[
                 StyleSheet.absoluteFill,
                 {
@@ -190,7 +200,7 @@ export default function TabLayout() {
           tabBarLabelStyle: [
             styles.tabLabel,
             {
-              fontSize: isCompact ? 10 : 11,
+              fontSize: Math.round((isCompact ? 10 : 11) * Math.max(0.85, Math.min(1.2, themeMetrics?.fontScale ?? 1))),
               fontFamily: resolvedFonts.heading,
             },
           ],
@@ -213,6 +223,7 @@ export default function TabLayout() {
                 compact={isCompact}
                 tabBarStyleMode={tabBarStyleMode}
                 indicatorStyle={indicatorStyle}
+                iconScale={iconScale}
               />
             ),
           }}
@@ -233,6 +244,7 @@ export default function TabLayout() {
                 compact={isCompact}
                 tabBarStyleMode={tabBarStyleMode}
                 indicatorStyle={indicatorStyle}
+                iconScale={iconScale}
               />
             ),
           }}
@@ -253,6 +265,7 @@ export default function TabLayout() {
                 compact={isCompact}
                 tabBarStyleMode={tabBarStyleMode}
                 indicatorStyle={indicatorStyle}
+                iconScale={iconScale}
               />
             ),
           }}
@@ -279,6 +292,7 @@ export default function TabLayout() {
                 compact={isCompact}
                 tabBarStyleMode={tabBarStyleMode}
                 indicatorStyle={indicatorStyle}
+                iconScale={iconScale}
               />
             ),
           }}
@@ -299,6 +313,7 @@ export default function TabLayout() {
                 compact={isCompact}
                 tabBarStyleMode={tabBarStyleMode}
                 indicatorStyle={indicatorStyle}
+                iconScale={iconScale}
               />
             ),
           }}
@@ -325,7 +340,7 @@ export default function TabLayout() {
               },
             ]}
           >
-            <Ionicons name="apps" size={20} color="#1A1108" />
+            <Ionicons name="apps" size={Math.round(20 * iconScale)} color="#1A1108" />
           </Pressable>
 
           <Modal

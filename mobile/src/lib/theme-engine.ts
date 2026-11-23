@@ -131,6 +131,7 @@ export type IconBadgeStyle =
 export type HeadingTransform = "none" | "uppercase" | "capitalize";
 export type NumericStyle = "default" | "tabular-mono";
 export type HapticStrength = "off" | "light" | "medium" | "strong";
+export type SizePreset = "xs" | "sm" | "md" | "lg" | "xl";
 
 export interface CustomColorsConfig {
   primaryAccent?: string;
@@ -188,6 +189,12 @@ export interface ThemeConfig {
   headingTransform: HeadingTransform;
   numericStyle: NumericStyle;
   hapticStrength: HapticStrength;
+  pillSize: SizePreset;
+  iconScale: number;
+  buttonSize: SizePreset;
+  cardPadding: SizePreset;
+  tabBarSize: SizePreset;
+  appBarSize: SizePreset;
 }
 
 export interface ThemeColorsShape {
@@ -254,6 +261,15 @@ export interface ThemeMetrics {
   letterSpacingOffset: number;
   elevationPx: number;
   cardOpacity: number;
+  pillMinHeightPx: number;
+  pillPaddingVPx: number;
+  pillPaddingHPx: number;
+  iconScale: number;
+  buttonPaddingVPx: number;
+  buttonPaddingHPx: number;
+  cardPaddingPx: number;
+  tabBarHeightPx: number;
+  appBarHeightPx: number;
 }
 
 export const SUPPORTED_FONT_SCALES = [0.85, 0.92, 1.0, 1.08, 1.18, 1.28] as const;
@@ -304,6 +320,12 @@ export const DEFAULT_THEME_CONFIG: ThemeConfig = {
   headingTransform: "none",
   numericStyle: "default",
   hapticStrength: "light",
+  pillSize: "md",
+  iconScale: 1.0,
+  buttonSize: "md",
+  cardPadding: "md",
+  tabBarSize: "md",
+  appBarSize: "md",
 };
 
 export interface AppLookProfile {
@@ -342,6 +364,14 @@ export const APP_LOOK_PROFILES: AppLookProfile[] = [
       iconBadgeStyle: DEFAULT_THEME_CONFIG.iconBadgeStyle,
       quickMenuPosition: DEFAULT_THEME_CONFIG.quickMenuPosition,
       cardShadowIntensity: DEFAULT_THEME_CONFIG.cardShadowIntensity,
+      pillShape: DEFAULT_THEME_CONFIG.pillShape,
+      pillSize: DEFAULT_THEME_CONFIG.pillSize,
+      buttonSize: DEFAULT_THEME_CONFIG.buttonSize,
+      cardPadding: DEFAULT_THEME_CONFIG.cardPadding,
+      tabBarSize: DEFAULT_THEME_CONFIG.tabBarSize,
+      appBarSize: DEFAULT_THEME_CONFIG.appBarSize,
+      iconScale: DEFAULT_THEME_CONFIG.iconScale,
+      stripeThickness: DEFAULT_THEME_CONFIG.stripeThickness,
       customColors: {},
     },
   },
@@ -363,7 +393,15 @@ export const APP_LOOK_PROFILES: AppLookProfile[] = [
       buttonRadius: "pill",
       borderWidth: "none",
       horizontalScrollbarStyle: "hidden",
-      pillBarLayout: "centered-wrap",
+      pillBarLayout: "minimal-text",
+      pillShape: "pill",
+      pillSize: "sm",
+      buttonSize: "sm",
+      cardPadding: "lg",
+      tabBarSize: "sm",
+      appBarSize: "sm",
+      iconScale: 0.92,
+      stripeThickness: "hidden",
       appBarStyle: "borderless",
       homeLayout: "minimal-rows",
       headerAlignment: "center",
@@ -392,7 +430,15 @@ export const APP_LOOK_PROFILES: AppLookProfile[] = [
       buttonRadius: "sharp",
       borderWidth: "medium",
       horizontalScrollbarStyle: "glow-rail",
-      pillBarLayout: "always-scroll",
+      pillBarLayout: "sidebar-chips",
+      pillShape: "sharp",
+      pillSize: "sm",
+      buttonSize: "sm",
+      cardPadding: "sm",
+      tabBarSize: "sm",
+      appBarSize: "sm",
+      iconScale: 0.95,
+      stripeThickness: "hairline",
       appBarStyle: "accent-tinted",
       homeLayout: "bento-grid",
       headerAlignment: "left",
@@ -421,7 +467,15 @@ export const APP_LOOK_PROFILES: AppLookProfile[] = [
       buttonRadius: "subtle",
       borderWidth: "hairline",
       horizontalScrollbarStyle: "subtle-bar",
-      pillBarLayout: "always-wrap",
+      pillBarLayout: "underline-tabs",
+      pillShape: "subtle",
+      pillSize: "lg",
+      buttonSize: "lg",
+      cardPadding: "xl",
+      tabBarSize: "lg",
+      appBarSize: "lg",
+      iconScale: 1.05,
+      stripeThickness: "medium",
       appBarStyle: "tall-editorial",
       homeLayout: "editorial-cards",
       headerAlignment: "center",
@@ -450,7 +504,15 @@ export const APP_LOOK_PROFILES: AppLookProfile[] = [
       buttonRadius: "pill",
       borderWidth: "hairline",
       horizontalScrollbarStyle: "accent-track",
-      pillBarLayout: "compact-scroll",
+      pillBarLayout: "dropdown",
+      pillShape: "pill",
+      pillSize: "xs",
+      buttonSize: "sm",
+      cardPadding: "sm",
+      tabBarSize: "xs",
+      appBarSize: "sm",
+      iconScale: 0.9,
+      stripeThickness: "hairline",
       appBarStyle: "compact",
       homeLayout: "compact-list",
       headerAlignment: "left",
@@ -479,7 +541,15 @@ export const APP_LOOK_PROFILES: AppLookProfile[] = [
       buttonRadius: "soft",
       borderWidth: "thin",
       horizontalScrollbarStyle: "dots",
-      pillBarLayout: "grid-pills",
+      pillBarLayout: "floating-dock",
+      pillShape: "soft",
+      pillSize: "md",
+      buttonSize: "lg",
+      cardPadding: "lg",
+      tabBarSize: "lg",
+      appBarSize: "md",
+      iconScale: 1.1,
+      stripeThickness: "thick",
       appBarStyle: "floating",
       homeLayout: "bento-grid",
       headerAlignment: "left",
@@ -508,7 +578,15 @@ export const APP_LOOK_PROFILES: AppLookProfile[] = [
       buttonRadius: "pill",
       borderWidth: "thin",
       horizontalScrollbarStyle: "glow-rail",
-      pillBarLayout: "scroll-with-expand",
+      pillBarLayout: "segmented-bar",
+      pillShape: "rounded",
+      pillSize: "md",
+      buttonSize: "lg",
+      cardPadding: "lg",
+      tabBarSize: "md",
+      appBarSize: "lg",
+      iconScale: 1.05,
+      stripeThickness: "medium",
       appBarStyle: "floating",
       homeLayout: "editorial-cards",
       headerAlignment: "center",
@@ -537,7 +615,15 @@ export const APP_LOOK_PROFILES: AppLookProfile[] = [
       buttonRadius: "rounded",
       borderWidth: "thin",
       horizontalScrollbarStyle: "subtle-bar",
-      pillBarLayout: "scroll-with-expand",
+      pillBarLayout: "stepper",
+      pillShape: "rounded",
+      pillSize: "md",
+      buttonSize: "md",
+      cardPadding: "md",
+      tabBarSize: "md",
+      appBarSize: "md",
+      iconScale: 1.0,
+      stripeThickness: "thin",
       appBarStyle: "standard",
       homeLayout: "classic",
       headerAlignment: "left",
@@ -1919,7 +2005,10 @@ export function resolveThemeMetrics(config: ThemeConfig): ThemeMetrics {
   const borderWidthPx = config.highContrastBorders
     ? Math.max(1.5, baseBorderWidth)
     : baseBorderWidth;
-  const spacingScale = DENSITY_SCALE_MAP[config.density] ?? 1.0;
+  const cardPadScaleMap: Record<SizePreset, number> = { xs: 0.78, sm: 0.88, md: 1.0, lg: 1.15, xl: 1.30 };
+  const spacingScale = Number(
+    ((DENSITY_SCALE_MAP[config.density] ?? 1.0) * (cardPadScaleMap[config.cardPadding] ?? 1.0)).toFixed(3)
+  );
 
   const fontScale =
     Number.isFinite(config.fontScale) && config.fontScale >= 0.75 && config.fontScale <= 1.5
@@ -1959,6 +2048,30 @@ export function resolveThemeMetrics(config: ThemeConfig): ThemeMetrics {
       break;
   }
 
+  const pillSizeMap: Record<SizePreset, [number, number, number]> = {
+    xs: [24, 3, 7],
+    sm: [28, 4, 9],
+    md: [32, 6, 11],
+    lg: [38, 8, 14],
+    xl: [44, 10, 16],
+  };
+  const [pillMinHeightPx, pillPaddingVPx, pillPaddingHPx] = pillSizeMap[config.pillSize] ?? pillSizeMap.md;
+  const btnSizeMap: Record<SizePreset, [number, number]> = {
+    xs: [6, 10],
+    sm: [8, 12],
+    md: [10, 16],
+    lg: [13, 20],
+    xl: [16, 24],
+  };
+  const [buttonPaddingVPx, buttonPaddingHPx] = btnSizeMap[config.buttonSize] ?? btnSizeMap.md;
+  const cardPadMap: Record<SizePreset, number> = { xs: 8, sm: 10, md: 14, lg: 18, xl: 22 };
+  const cardPaddingPx = cardPadMap[config.cardPadding] ?? 14;
+  const tabBarSizeMap: Record<SizePreset, number> = { xs: 48, sm: 54, md: 64, lg: 72, xl: 80 };
+  const tabBarHeightPx = tabBarSizeMap[config.tabBarSize] ?? 64;
+  const appBarSizeMap: Record<SizePreset, number> = { xs: 42, sm: 46, md: 52, lg: 62, xl: 72 };
+  const appBarHeightPx = appBarSizeMap[config.appBarSize] ?? 52;
+  const iconScale = Number.isFinite(config.iconScale) ? Math.max(0.75, Math.min(1.35, config.iconScale)) : 1.0;
+
   return {
     cardRadiusPx,
     buttonRadiusPx,
@@ -1969,6 +2082,15 @@ export function resolveThemeMetrics(config: ThemeConfig): ThemeMetrics {
     letterSpacingOffset,
     elevationPx,
     cardOpacity,
+    pillMinHeightPx,
+    pillPaddingVPx,
+    pillPaddingHPx,
+    iconScale,
+    buttonPaddingVPx,
+    buttonPaddingHPx,
+    cardPaddingPx,
+    tabBarHeightPx,
+    appBarHeightPx,
   };
 }
 
@@ -2030,6 +2152,7 @@ const VALID_ICON_BADGE_STYLES = new Set<IconBadgeStyle>([
 const VALID_HEADING_TRANSFORMS = new Set<HeadingTransform>(["none", "uppercase", "capitalize"]);
 const VALID_NUMERIC_STYLES = new Set<NumericStyle>(["default", "tabular-mono"]);
 const VALID_HAPTIC_STRENGTHS = new Set<HapticStrength>(["off", "light", "medium", "strong"]);
+const VALID_SIZE_PRESETS = new Set<SizePreset>(["xs", "sm", "md", "lg", "xl"]);
 
 const CUSTOM_COLOR_KEYS: (keyof CustomColorsConfig)[] = [
   "primaryAccent",
@@ -2215,6 +2338,24 @@ export function parseThemeConfigJson(raw: string): ThemeConfig | null {
   }
   if (typeof obj.hapticStrength === "string" && VALID_HAPTIC_STRENGTHS.has(obj.hapticStrength as HapticStrength)) {
     merged.hapticStrength = obj.hapticStrength as HapticStrength;
+  }
+  if (typeof obj.pillSize === "string" && VALID_SIZE_PRESETS.has(obj.pillSize as SizePreset)) {
+    merged.pillSize = obj.pillSize as SizePreset;
+  }
+  if (typeof obj.iconScale === "number" && Number.isFinite(obj.iconScale) && obj.iconScale >= 0.75 && obj.iconScale <= 1.35) {
+    merged.iconScale = obj.iconScale;
+  }
+  if (typeof obj.buttonSize === "string" && VALID_SIZE_PRESETS.has(obj.buttonSize as SizePreset)) {
+    merged.buttonSize = obj.buttonSize as SizePreset;
+  }
+  if (typeof obj.cardPadding === "string" && VALID_SIZE_PRESETS.has(obj.cardPadding as SizePreset)) {
+    merged.cardPadding = obj.cardPadding as SizePreset;
+  }
+  if (typeof obj.tabBarSize === "string" && VALID_SIZE_PRESETS.has(obj.tabBarSize as SizePreset)) {
+    merged.tabBarSize = obj.tabBarSize as SizePreset;
+  }
+  if (typeof obj.appBarSize === "string" && VALID_SIZE_PRESETS.has(obj.appBarSize as SizePreset)) {
+    merged.appBarSize = obj.appBarSize as SizePreset;
   }
   return merged;
 }

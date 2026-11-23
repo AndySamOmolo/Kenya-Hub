@@ -42,6 +42,7 @@ import {
   type HeaderAlignment,
   type CardAccentStyle,
   type IconBadgeStyle,
+  type SizePreset,
 } from "../lib/theme-engine";
 import {
   KenyaStripe,
@@ -436,6 +437,22 @@ const COLOR_BLIND_OPTIONS: readonly { value: ColorBlindMode; label: string }[] =
   { value: "tritanopia", label: "Tritanopia" },
 ];
 
+const SIZE_PRESET_OPTIONS: readonly { value: SizePreset; label: string }[] = [
+  { value: "xs", label: "XS" },
+  { value: "sm", label: "Small" },
+  { value: "md", label: "Medium" },
+  { value: "lg", label: "Large" },
+  { value: "xl", label: "XL" },
+];
+
+const ICON_SCALE_OPTIONS: readonly { value: number; label: string }[] = [
+  { value: 0.8, label: "80%" },
+  { value: 0.9, label: "90%" },
+  { value: 1.0, label: "100%" },
+  { value: 1.12, label: "112%" },
+  { value: 1.25, label: "125%" },
+];
+
 const HEX_REGEX = /^#[0-9A-Fa-f]{6}$/;
 
 function normalizeHexInput(raw: string): string {
@@ -477,9 +494,8 @@ export function ThemeSettingsView() {
     importThemeJson,
   } = themeCtx;
 
-  const themeKey: string =
-    (themeCtx as any).themeKey ??
-    `${isDark ? "d" : "l"}-${themeConfig?.presetId}-${theme.bgPrimary}-${theme.surfaceContainer}-${theme.gold}`;
+  const colorKey: string = themeCtx.themeKey || `${isDark ? "d" : "l"}-${themeConfig?.presetId}-${theme.bgPrimary}-${theme.surfaceContainer}-${theme.gold}-${themeConfig?.surfaceStyle}-${themeConfig?.cardAccentStyle}`;
+  const themeKey: string = colorKey;
 
   const [activeFilter, setActiveFilter] = useState<FilterKey>("all");
   const [openSections, setOpenSections] = useState<Record<AccordionKey, boolean>>({
@@ -677,7 +693,10 @@ export function ThemeSettingsView() {
   const previewButtonRadius = themeMetrics?.buttonRadiusPx ?? 10;
   const previewBorderWidth = themeMetrics?.borderWidthPx ?? 1;
   const spacingScale = themeMetrics?.spacingScale ?? 1;
-  const previewPadding = Math.round(11 * spacingScale);
+  const previewPadding = Math.round((themeMetrics?.cardPaddingPx ?? 14) * 0.85);
+  const previewBtnPV = themeMetrics?.buttonPaddingVPx ?? 10;
+  const previewBtnPH = themeMetrics?.buttonPaddingHPx ?? 16;
+  const previewIconScale = themeMetrics?.iconScale ?? 1.0;
   const previewOpacity = themeMetrics?.cardOpacity ?? 1;
 
   const monoFont = Platform.OS === "ios" ? "Menlo" : "monospace";
@@ -718,7 +737,9 @@ export function ThemeSettingsView() {
       themeConfig?.presetId === profile.config.presetId &&
       themeConfig?.tabBarStyle === profile.config.tabBarStyle &&
       themeConfig?.homeLayout === profile.config.homeLayout &&
-      themeConfig?.fontPair === profile.config.fontPair
+      themeConfig?.fontPair === profile.config.fontPair &&
+      themeConfig?.pillBarLayout === profile.config.pillBarLayout &&
+      Object.values(themeConfig?.customColors ?? {}).filter(Boolean).length === 0
   );
   const activePreset = THEME_PRESETS.find((p) => p.id === themeConfig?.presetId);
   const customColorCount = Object.values(themeConfig?.customColors ?? {}).filter(
@@ -925,7 +946,7 @@ export function ThemeSettingsView() {
                   >
                     <Ionicons
                       name="sparkles"
-                      size={11}
+                      size={Math.round(11 * previewIconScale)}
                       color={theme.onSecondaryContainer}
                     />
                     <Text
@@ -1002,6 +1023,8 @@ export function ThemeSettingsView() {
                         {
                           backgroundColor: theme.gold,
                           borderRadius: previewButtonRadius,
+                          paddingVertical: Math.max(5, Math.round(previewBtnPV * 0.85)),
+                          paddingHorizontal: Math.max(8, Math.round(previewBtnPH * 0.85)),
                         },
                       ]}
                     >
@@ -1037,6 +1060,8 @@ export function ThemeSettingsView() {
                           borderColor: theme.kenyaGreenLight,
                           borderWidth: 1,
                           borderRadius: previewButtonRadius,
+                          paddingVertical: Math.max(5, Math.round(previewBtnPV * 0.85)),
+                          paddingHorizontal: Math.max(8, Math.round(previewBtnPH * 0.85)),
                         },
                       ]}
                     >
@@ -1929,6 +1954,78 @@ export function ThemeSettingsView() {
               onSelect={(val) => {
                 doHaptic();
                 updateThemeConfig({ density: val });
+              }}
+              theme={theme}
+              themeKey={themeKey}
+            />
+
+            <OptionPillGroup
+              label="Pill & Chip Size"
+              options={SIZE_PRESET_OPTIONS}
+              selectedValue={themeConfig?.pillSize ?? "md"}
+              onSelect={(val) => {
+                doHaptic();
+                updateThemeConfig({ pillSize: val });
+              }}
+              theme={theme}
+              themeKey={themeKey}
+            />
+
+            <OptionPillGroup
+              label="Icon Size"
+              options={ICON_SCALE_OPTIONS}
+              selectedValue={themeConfig?.iconScale ?? 1.0}
+              onSelect={(val) => {
+                doHaptic();
+                updateThemeConfig({ iconScale: val });
+              }}
+              theme={theme}
+              themeKey={themeKey}
+            />
+
+            <OptionPillGroup
+              label="Button Size"
+              options={SIZE_PRESET_OPTIONS}
+              selectedValue={themeConfig?.buttonSize ?? "md"}
+              onSelect={(val) => {
+                doHaptic();
+                updateThemeConfig({ buttonSize: val });
+              }}
+              theme={theme}
+              themeKey={themeKey}
+            />
+
+            <OptionPillGroup
+              label="Card Padding"
+              options={SIZE_PRESET_OPTIONS}
+              selectedValue={themeConfig?.cardPadding ?? "md"}
+              onSelect={(val) => {
+                doHaptic();
+                updateThemeConfig({ cardPadding: val });
+              }}
+              theme={theme}
+              themeKey={themeKey}
+            />
+
+            <OptionPillGroup
+              label="Bottom Bar Size"
+              options={SIZE_PRESET_OPTIONS}
+              selectedValue={themeConfig?.tabBarSize ?? "md"}
+              onSelect={(val) => {
+                doHaptic();
+                updateThemeConfig({ tabBarSize: val });
+              }}
+              theme={theme}
+              themeKey={themeKey}
+            />
+
+            <OptionPillGroup
+              label="Top Header Size"
+              options={SIZE_PRESET_OPTIONS}
+              selectedValue={themeConfig?.appBarSize ?? "md"}
+              onSelect={(val) => {
+                doHaptic();
+                updateThemeConfig({ appBarSize: val });
               }}
               theme={theme}
               themeKey={themeKey}

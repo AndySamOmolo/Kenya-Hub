@@ -174,7 +174,23 @@ export function ExpandablePillRow({
   showExpandButton = true,
   fadeColor,
 }: ExpandablePillRowProps) {
-  const { theme, themeConfig, themeKey, resolvedFonts } = useTheme();
+  const { theme, themeConfig, themeMetrics, themeKey, resolvedFonts } = useTheme();
+  const pillSizePreset = themeConfig?.pillSize || "md";
+  const isCustomPillSize = pillSizePreset !== "md";
+  const pmMinH = themeMetrics?.pillMinHeightPx ?? 32;
+  const pmPV = themeMetrics?.pillPaddingVPx ?? 6;
+  const pmPH = themeMetrics?.pillPaddingHPx ?? 11;
+  const iconScale = themeMetrics?.iconScale ?? 1.0;
+  const pillFontMult =
+    pillSizePreset === "xs"
+      ? 0.88
+      : pillSizePreset === "sm"
+      ? 0.94
+      : pillSizePreset === "lg"
+      ? 1.08
+      : pillSizePreset === "xl"
+      ? 1.16
+      : 1.0;
   const pillLayoutMode = themeConfig?.pillBarLayout || "scroll-with-expand";
   const isWrapMode =
     pillLayoutMode === "always-wrap" ||
@@ -392,16 +408,18 @@ export function ExpandablePillRow({
             borderRadius: 0,
             borderBottomWidth: isActive ? 2.5 : 0,
             borderBottomColor: isActive ? theme.gold : "transparent",
-            paddingVertical: 8,
-            paddingHorizontal: 10,
+            paddingVertical: isCustomPillSize ? pmPV + 2 : 8,
+            paddingHorizontal: isCustomPillSize ? pmPH : 10,
+            minHeight: isCustomPillSize ? pmMinH : 32,
           };
         } else if (isMinimalText) {
           modeOverride = {
             backgroundColor: "transparent",
             borderWidth: 0,
             borderRadius: 0,
-            paddingVertical: 5,
-            paddingHorizontal: 8,
+            paddingVertical: isCustomPillSize ? pmPV : 5,
+            paddingHorizontal: isCustomPillSize ? Math.max(6, pmPH - 2) : 8,
+            minHeight: isCustomPillSize ? pmMinH : 28,
             opacity: isActive ? 1 : 0.72,
           };
         } else if (isSegmentedBar) {
@@ -409,9 +427,9 @@ export function ExpandablePillRow({
             borderRadius: 9,
             borderWidth: 0,
             backgroundColor: isActive ? theme.primaryContainer : "transparent",
-            paddingVertical: 6,
-            paddingHorizontal: 9,
-            minHeight: 32,
+            paddingVertical: isCustomPillSize ? pmPV : 6,
+            paddingHorizontal: isCustomPillSize ? pmPH : 9,
+            minHeight: isCustomPillSize ? pmMinH : 32,
           };
         } else if (isFloatingDock) {
           modeOverride = {
@@ -419,9 +437,9 @@ export function ExpandablePillRow({
             borderWidth: isActive ? 1 : 0,
             borderColor: isActive ? theme.gold : "transparent",
             backgroundColor: isActive ? theme.primaryContainer : "transparent",
-            paddingVertical: 6,
-            paddingHorizontal: 10,
-            minHeight: 32,
+            paddingVertical: isCustomPillSize ? pmPV : 6,
+            paddingHorizontal: isCustomPillSize ? pmPH : 10,
+            minHeight: isCustomPillSize ? pmMinH : 32,
           };
         } else if (isSidebarChips) {
           modeOverride = {
@@ -431,35 +449,35 @@ export function ExpandablePillRow({
             borderLeftWidth: 3.5,
             borderLeftColor: isActive ? theme.gold : theme.kenyaGreen,
             backgroundColor: isActive ? theme.primaryContainer : theme.surfaceContainerLow,
-            paddingVertical: 6,
-            paddingHorizontal: 9,
-            minHeight: 32,
+            paddingVertical: isCustomPillSize ? pmPV : 6,
+            paddingHorizontal: isCustomPillSize ? pmPH : 9,
+            minHeight: isCustomPillSize ? pmMinH : 32,
           };
         } else if (isTwoColGrid) {
           modeOverride = {
             width: "48.2%" as any,
             borderRadius: 10,
-            paddingVertical: 7,
-            paddingHorizontal: 8,
-            minHeight: 36,
+            paddingVertical: isCustomPillSize ? pmPV + 1 : 7,
+            paddingHorizontal: isCustomPillSize ? Math.max(6, pmPH - 2) : 8,
+            minHeight: isCustomPillSize ? pmMinH + 4 : 36,
             justifyContent: "center",
           };
         } else if (isThreeColTiles) {
           modeOverride = {
             width: "31.6%" as any,
             borderRadius: 9,
-            paddingVertical: 6,
-            paddingHorizontal: 5,
-            minHeight: 34,
+            paddingVertical: isCustomPillSize ? pmPV : 6,
+            paddingHorizontal: isCustomPillSize ? Math.max(4, pmPH - 5) : 5,
+            minHeight: isCustomPillSize ? pmMinH + 2 : 34,
             justifyContent: "center",
           };
         } else if (isVerticalList) {
           modeOverride = {
             width: "100%" as any,
             borderRadius: 10,
-            paddingVertical: 8,
-            paddingHorizontal: 11,
-            minHeight: 36,
+            paddingVertical: isCustomPillSize ? pmPV + 2 : 8,
+            paddingHorizontal: isCustomPillSize ? pmPH : 11,
+            minHeight: isCustomPillSize ? pmMinH + 4 : 36,
             justifyContent: "space-between",
           };
         }
@@ -468,12 +486,13 @@ export function ExpandablePillRow({
           flexDirection: flatPillStyle.flexDirection || "row",
           alignItems: "center",
           justifyContent: "center",
-          paddingVertical: pv,
-          paddingHorizontal: ph,
-          minHeight:
-            typeof flatPillStyle.minHeight === "number"
-              ? Math.max(flatPillStyle.minHeight, 26)
-              : 28,
+          paddingVertical: isCustomPillSize ? pmPV : pv,
+          paddingHorizontal: isCustomPillSize ? pmPH : ph,
+          minHeight: isCustomPillSize
+            ? pmMinH
+            : typeof flatPillStyle.minHeight === "number"
+            ? Math.max(flatPillStyle.minHeight, 26)
+            : 28,
           borderRadius:
             themeConfig?.pillShape === "square"
               ? 0
@@ -542,8 +561,8 @@ export function ExpandablePillRow({
             style: [
               props.style,
               {
-                fontSize: Math.round((isThreeColTiles ? Math.min(fontSize, 10.5) : isTwoColGrid ? Math.min(fontSize, 11.5) : fontSize) * (themeConfig?.fontScale || 1) * 10) / 10,
-                lineHeight: Math.round(lineHeight * (themeConfig?.fontScale || 1)),
+                fontSize: Math.round((isThreeColTiles ? Math.min(fontSize, 10.5) : isTwoColGrid ? Math.min(fontSize, 11.5) : fontSize) * pillFontMult * (themeConfig?.fontScale || 1) * 10) / 10,
+                lineHeight: Math.round(lineHeight * pillFontMult * (themeConfig?.fontScale || 1)),
                 includeFontPadding: true,
                 textAlignVertical: "center",
                 ...(themeConfig?.fontPair && themeConfig.fontPair !== "outfit-inter"
@@ -724,6 +743,9 @@ export function ExpandablePillRow({
               {
                 backgroundColor: theme.surfaceContainerLow,
                 borderColor: theme.outlineVariant,
+                minHeight: isCustomPillSize ? Math.max(34, pmMinH + 8) : undefined,
+                paddingVertical: isCustomPillSize ? Math.max(5, pmPV + 2) : 10,
+                paddingHorizontal: isCustomPillSize ? Math.max(9, pmPH + 2) : 13,
               },
             ]}
           >
@@ -862,6 +884,9 @@ export function ExpandablePillRow({
   const showEdgeFade = themeConfig?.edgeFadeEnabled !== false;
   const canExpand =
     pillLayoutMode !== "always-scroll" &&
+    pillLayoutMode !== "always-wrap" &&
+    pillLayoutMode !== "centered-wrap" &&
+    pillLayoutMode !== "grid-pills" &&
     !isUnderlineTabs &&
     !isSegmentedBar &&
     !isFloatingDock &&
@@ -947,6 +972,35 @@ export function ExpandablePillRow({
       </View>
     );
   };
+
+  // Explicit Wrap Modes (Always Wrap, Centered Wrap, Grid Pills) — no redundant collapse chevron
+  if (
+    pillLayoutMode === "always-wrap" ||
+    pillLayoutMode === "centered-wrap" ||
+    pillLayoutMode === "grid-pills"
+  ) {
+    return (
+      <View
+        style={[
+          innerContentStyle,
+          outerSpacing,
+          style,
+          {
+            width: "100%",
+            flexDirection: "row",
+            flexWrap: "wrap",
+            alignItems: "center",
+            justifyContent:
+              pillLayoutMode === "centered-wrap" ? "center" : "flex-start",
+            gap: 6,
+            paddingVertical: 2,
+          },
+        ]}
+      >
+        {renderedPills}
+      </View>
+    );
+  }
 
   // Alternatives: 2-Col Grid, 3-Col Mini Tiles & Phone-Bounded Vertical List
   if (isTwoColGrid || isThreeColTiles || isVerticalList) {
@@ -1153,6 +1207,9 @@ export function ExpandablePillRow({
         style={({ pressed }) => [
           rowStyles.actionBtn,
           {
+            width: Math.round(28 * Math.max(0.85, Math.min(1.25, iconScale))),
+            height: Math.round(28 * Math.max(0.85, Math.min(1.25, iconScale))),
+            borderRadius: Math.round(14 * Math.max(0.85, Math.min(1.25, iconScale))),
             alignSelf: "center",
             borderColor: expanded ? theme.gold : theme.outlineVariant,
             backgroundColor: expanded
@@ -1164,7 +1221,7 @@ export function ExpandablePillRow({
       >
         <Ionicons
           name={expanded ? "chevron-up" : "chevron-down"}
-          size={14}
+          size={Math.round(14 * iconScale)}
           color={theme.gold}
         />
       </Pressable>

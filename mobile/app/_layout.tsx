@@ -59,7 +59,7 @@ function LayoutContent({ fontsLoaded }: { fontsLoaded: boolean }) {
             themeConfig.pageTransition === "none" ? "none" :
             themeConfig.pageTransition === "default" ? "default" : "slide_from_right",
           animationDuration: themeConfig.pageTransition === "fast" ? 80 : 160,
-          freezeOnBlur: true,
+          freezeOnBlur: false,
           gestureEnabled: true,
           fullScreenGestureEnabled: true,
         }}
