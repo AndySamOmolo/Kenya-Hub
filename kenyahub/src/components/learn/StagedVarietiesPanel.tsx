@@ -50,15 +50,20 @@ export default function StagedVarietiesPanel() {
   const [activeVideoId, setActiveVideoId] = useState<string>(
     (OPEN_CORPUS_INDEX.ksl.videos ?? [])[0]?.id ?? ""
   );
+  const [autoPlayVideo, setAutoPlayVideo] = useState<boolean>(false);
   const activeVideo =
     filteredKslVideos.find((v) => v.id === activeVideoId) ?? filteredKslVideos[0] ?? null;
 
   const videoRef = useRef<HTMLVideoElement | null>(null);
   useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.playbackRate = playbackRate;
+    const el = videoRef.current;
+    if (!el) return;
+    el.playbackRate = playbackRate;
+    if (autoPlayVideo) {
+      el.currentTime = 0;
+      el.play().catch(() => {});
     }
-  }, [playbackRate, activeVideo?.id]);
+  }, [playbackRate, activeVideo?.id, autoPlayVideo]);
 
   const activeVariety = OPEN_CORPUS_INDEX.stagedVarieties.find((v) => v.id === selectedId);
   const filteredEntries = (activeVariety?.sampleEntries ?? []).filter((e) => {
@@ -156,9 +161,14 @@ export default function StagedVarietiesPanel() {
                     key={activeVideo.id}
                     src={activeVideo.videoUrl}
                     controls
+                    autoPlay={autoPlayVideo}
                     playsInline
                     loop
-                    preload="metadata"
+                    preload="auto"
+                    onLoadedData={(e) => {
+                      e.currentTarget.playbackRate = playbackRate;
+                      if (autoPlayVideo) e.currentTarget.play().catch(() => {});
+                    }}
                     className="w-full max-h-80 rounded-lg bg-black object-contain"
                   />
                   <div className="flex flex-wrap items-center justify-between gap-2">
@@ -208,7 +218,7 @@ export default function StagedVarietiesPanel() {
                         <button
                           key={vid.id}
                           type="button"
-                          onClick={() => setActiveVideoId(vid.id)}
+                          onClick={() => { setAutoPlayVideo(true); setActiveVideoId(vid.id); }}
                           className={`w-full text-left rounded-lg border p-2.5 transition-all cursor-pointer ${
                             isCurrent
                               ? "border-kenya-green bg-kenya-green/10"

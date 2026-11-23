@@ -278,35 +278,127 @@ def main() -> None:
             continue
         ensure_lang(lid)["grambankFeatures"] = cnt
 
-    # 2. Live R2 Audio counts, curated preview (24), AND full per-language audio shards (ALL 5,871 clips)
+    # 2. Live R2 Audio counts, curated preview (40), AND full per-language audio shards with verified full transcripts
+    import unicodedata as _ud
+
+    def _to_audio_slug(text: str) -> str:
+        cleaned = re.sub(r"\([^)]*\)", " ", str(text or ""))
+        cleaned = re.split(r"[•/;]", cleaned)[0].strip().lower()
+        norm = _ud.normalize("NFD", cleaned)
+        norm = "".join(ch for ch in norm if _ud.category(ch) != "Mn")
+        return re.sub(r"[^a-z0-9]+", "-", norm).strip("-")[:64]
+
+    r2_transcripts_raw = load_json_safe(PUBLIC_DIR / "r2-audio-transcripts.json") or {}
+    dict_dir = ROOT / "src" / "data" / "dictionaries"
+    BAD_SLUGS = {"https", "http", "www", "null", "none", "undefined", "nan"}
+
     r2_langs = r2_raw.get("languages") if (isinstance(r2_raw, dict) and isinstance(r2_raw.get("languages"), dict)) else (r2_raw if isinstance(r2_raw, dict) else {})
     for lid, items in r2_langs.items():
         if not isinstance(items, dict):
             continue
         rec = ensure_lang(lid)
         rec["r2AudioClips"] = len(items)
+
+        # Build slug -> (full_transcript, english_translation) lookup from dictionary & saved transcripts
+        slug_lookup: dict[str, tuple[str, str]] = {}
+        lang_tr_map = r2_transcripts_raw.get(lid) if isinstance(r2_transcripts_raw, dict) else None
+        if isinstance(lang_tr_map, dict):
+            for s_key, s_val in lang_tr_map.items():
+                if isinstance(s_val, str) and s_val.strip():
+                    slug_lookup[str(s_key)] = (s_val.strip(), "")
+        dict_path = dict_dir / f"{lid}.json"
+        if dict_path.exists():
+            d_obj = load_json_safe(dict_path) or {}
+            for cat in d_obj.get("categories") or []:
+                for entry in cat.get("entries") or []:
+                    raw_tr = " ".join(str(entry.get("translation") or "").split())
+                    # Strip parenthetical linguistic notes when matching short audio clips
+                    tr = re.sub(r"\s*\([^)]*(?:ATR|Series|imperative|past|plural|singular|lit\.|dialect|variant|noun|verb)[^)]*\)", "", raw_tr, flags=re.IGNORECASE).strip() or raw_tr
+                    en = " ".join(str(entry.get("english") or "").split())
+                    if not tr:
+                        continue
+                    sl = _to_audio_slug(tr)
+                    if sl:
+                        prev = slug_lookup.get(sl)
+                        if not prev or (en and not prev[1]) or len(tr) > len(prev[0]):
+                            slug_lookup[sl] = (tr, en if en.lower() != tr.lower() else "")
+                    au = str(entry.get("audioUrl") or "")
+                    if "/audio/" in au:
+                        u_sl = au.rsplit("/", 1)[-1].replace(".opus", "").replace(".mp3", "")
+                        if u_sl:
+                            prev = slug_lookup.get(u_sl)
+                            if not prev or (en and not prev[1]) or len(tr) > len(prev[0]):
+                                slug_lookup[u_sl] = (tr, en if en.lower() != tr.lower() else "")
+
         all_clips = []
         preview_candidates = []
         for slug, url in items.items():
             if not isinstance(url, str) or not url.startswith("https://"):
                 continue
-            label = _humanize_slug(slug)
-            if not label:
+            slug_l = str(slug or "").strip().lower()
+            if not slug_l or len(slug_l) < 2 or slug_l in BAD_SLUGS or slug_l.isdigit():
                 continue
-            all_clips.append({"slug": slug, "label": label, "audioUrl": url})
-            if slug.startswith("handbook-kavirondo") or slug.startswith("aporee-"):
+            if slug_l.startswith("handbook-kavirondo") or slug_l.startswith("aporee-"):
                 continue
-            if 3 <= len(label) <= 64:
-                preview_candidates.append((len(label), slug, label, url))
-        all_clips.sort(key=lambda x: (len(x["label"]), x["slug"]))
-        preview_candidates.sort(key=lambda x: (x[0], x[1]))
-        rec["nativeAudioSamples"] = [
-            {"slug": slug, "label": label, "audioUrl": url}
-            for _ln, slug, label, url in preview_candidates[:24]
-        ]
-        if all_clips:
-            audio_shards[lid] = all_clips
-            rec["shards"]["audioCount"] = len(all_clips)
+
+            matched = slug_lookup.get(slug_l)
+            if matched and matched[0]:
+                full_tr, en_tr = matched
+                transcript = full_tr[0].upper() + full_tr[1:] if full_tr and full_tr[0].islower() else full_tr
+                english = en_tr
+                verified = True
+                is_truncated = False
+            else:
+                human = _humanize_slug(slug_l)
+                if not human:
+                    continue
+                is_truncated = len(slug_l) >= 63 and "-" in slug_l
+                if is_truncated:
+                    # Drop potentially cut-off trailing fragment at last space
+                    parts = human.rsplit(" ", 1)
+                    transcript = (parts[0] + "…") if len(parts) == 2 and len(parts[0]) >= 20 else (human + "…")
+                else:
+                    transcript = human
+                english = ""
+                verified = False
+
+            clip_obj = {
+                "slug": slug_l,
+                "label": transcript,
+                "transcript": transcript,
+                "audioUrl": url,
+            }
+            if english:
+                clip_obj["english"] = english
+            if verified:
+                clip_obj["verifiedTranscript"] = True
+
+            # Ranking tier: 0 = verified + english, 1 = verified only, 2 = clean complete phrase (not truncated), 3 = truncated slug
+            words_n = len(transcript.split())
+            if verified and english:
+                tier = 0
+                ideal_dist = abs(words_n - 8)
+            elif verified:
+                tier = 1
+                ideal_dist = abs(words_n - 8)
+            elif not is_truncated:
+                tier = 2 if words_n >= 2 else 3
+                ideal_dist = abs(words_n - 5)
+            else:
+                tier = 4
+                ideal_dist = len(transcript)
+
+            all_clips.append((tier, ideal_dist, slug_l, clip_obj))
+            if len(transcript) >= 3:
+                preview_candidates.append((tier, ideal_dist, slug_l, clip_obj))
+
+        all_clips.sort(key=lambda x: (x[0], x[1], x[2]))
+        preview_candidates.sort(key=lambda x: (x[0], x[1], x[2]))
+        sorted_clips = [x[3] for x in all_clips]
+        rec["nativeAudioSamples"] = [x[3] for x in preview_candidates[:40]]
+        if sorted_clips:
+            audio_shards[lid] = sorted_clips
+            rec["shards"]["audioCount"] = len(sorted_clips)
     for lid, cnt in (lock_raw.get("uploadedAudioLanguageCounts") or {}).items():
         if isinstance(cnt, int) and cnt > ensure_lang(lid)["r2AudioClips"]:
             ensure_lang(lid)["r2AudioClips"] = cnt

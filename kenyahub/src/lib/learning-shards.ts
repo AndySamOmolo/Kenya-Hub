@@ -7,6 +7,9 @@
 export interface AudioShardClip {
   slug: string;
   label: string;
+  transcript?: string;
+  english?: string;
+  verifiedTranscript?: boolean;
   audioUrl: string;
 }
 

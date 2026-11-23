@@ -15,6 +15,9 @@ export interface OpenCorpusFrequencyWord {
 export interface OpenCorpusNativeAudioSample {
   slug: string;
   label: string;
+  transcript?: string;
+  english?: string;
+  verifiedTranscript?: boolean;
   audioUrl: string;
 }
 

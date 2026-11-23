@@ -60,6 +60,7 @@ export default function ListenReadView({ languageId, languageName }: ListenReadV
   const [audioLimit, setAudioLimit] = useState(36);
   const [playingSlug, setPlayingSlug] = useState<string | null>(null);
   const [slowMode, setSlowMode] = useState(false);
+  const [showAudioEnglish, setShowAudioEnglish] = useState(true);
   const [activeChapterId, setActiveChapterId] = useState<string>(chapters[0]?.id ?? "");
   const chapterAudioRef = useRef<HTMLAudioElement | null>(null);
   const [chPlaying, setChPlaying] = useState(false);
@@ -119,8 +120,17 @@ export default function ListenReadView({ languageId, languageName }: ListenReadV
   const filteredClips = useMemo(() => {
     const q = audioSearch.trim().toLowerCase();
     if (!q) return audioClips;
-    return audioClips.filter((c) => c.label.toLowerCase().includes(q));
+    return audioClips.filter(
+      (c) =>
+        (c.transcript || c.label).toLowerCase().includes(q) ||
+        (c.english || "").toLowerCase().includes(q) ||
+        c.slug.includes(q)
+    );
   }, [audioClips, audioSearch]);
+  const hasAnyClipEnglish = useMemo(
+    () => audioClips.some((c) => Boolean(c.english)),
+    [audioClips]
+  );
 
   const filteredQuestions = useMemo(() => {
     if (quizFilter === "all") return questions;
@@ -358,39 +368,41 @@ export default function ListenReadView({ languageId, languageName }: ListenReadV
                 />
 
                 {/* Custom Styled Audio Player Bar */}
-                <div className="rounded-xl border border-border bg-bg-card p-3 sm:p-3.5 space-y-2.5 shadow-sm">
-                  <div className="flex items-center gap-2.5 sm:gap-3">
-                    <button
-                      type="button"
-                      onClick={toggleChapterPlay}
-                      aria-label={chPlaying ? "Pause chapter audio" : "Play chapter audio"}
-                      className="h-10 w-10 shrink-0 rounded-full bg-gold text-black flex items-center justify-center shadow-sm hover:bg-gold-light transition-colors cursor-pointer"
-                    >
-                      {chPlaying ? <Pause className="h-4 w-4" /> : <Play className="h-4 w-4 ml-0.5" />}
-                    </button>
+                <div className="rounded-xl border border-border bg-bg-card p-3 sm:p-3.5 space-y-2.5 shadow-sm overflow-hidden">
+                  <div className="flex flex-wrap items-center justify-between gap-2">
+                    <div className="flex items-center gap-2 shrink-0">
+                      <button
+                        type="button"
+                        onClick={toggleChapterPlay}
+                        aria-label={chPlaying ? "Pause chapter audio" : "Play chapter audio"}
+                        className="h-10 w-10 shrink-0 rounded-full bg-gold text-black flex items-center justify-center shadow-sm hover:bg-gold-light transition-colors cursor-pointer"
+                      >
+                        {chPlaying ? <Pause className="h-4 w-4" /> : <Play className="h-4 w-4 ml-0.5" />}
+                      </button>
 
-                    <div className="flex items-center gap-1 shrink-0">
-                      <button
-                        type="button"
-                        onClick={() => skipChapterTime(-10)}
-                        title="Back 10 seconds"
-                        className="inline-flex items-center gap-0.5 rounded-lg border border-border bg-bg-elevated px-2 py-1 text-[11px] font-semibold text-text-secondary hover:border-gold/50 hover:text-gold cursor-pointer"
-                      >
-                        <RotateCcw className="h-3 w-3" />
-                        <span>10s</span>
-                      </button>
-                      <button
-                        type="button"
-                        onClick={() => skipChapterTime(10)}
-                        title="Forward 10 seconds"
-                        className="inline-flex items-center gap-0.5 rounded-lg border border-border bg-bg-elevated px-2 py-1 text-[11px] font-semibold text-text-secondary hover:border-gold/50 hover:text-gold cursor-pointer"
-                      >
-                        <span>10s</span>
-                        <RotateCw className="h-3 w-3" />
-                      </button>
+                      <div className="flex items-center gap-1 shrink-0">
+                        <button
+                          type="button"
+                          onClick={() => skipChapterTime(-10)}
+                          title="Back 10 seconds"
+                          className="inline-flex items-center gap-0.5 rounded-lg border border-border bg-bg-elevated px-2 py-1 text-[11px] font-semibold text-text-secondary hover:border-gold/50 hover:text-gold cursor-pointer"
+                        >
+                          <RotateCcw className="h-3 w-3" />
+                          <span>10s</span>
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => skipChapterTime(10)}
+                          title="Forward 10 seconds"
+                          className="inline-flex items-center gap-0.5 rounded-lg border border-border bg-bg-elevated px-2 py-1 text-[11px] font-semibold text-text-secondary hover:border-gold/50 hover:text-gold cursor-pointer"
+                        >
+                          <span>10s</span>
+                          <RotateCw className="h-3 w-3" />
+                        </button>
+                      </div>
                     </div>
 
-                    <div className="ml-auto flex items-center gap-1 shrink-0">
+                    <div className="flex items-center gap-1 shrink-0">
                       {[0.75, 1, 1.25].map((r) => (
                         <button
                           key={r}
@@ -508,7 +520,7 @@ export default function ListenReadView({ languageId, languageName }: ListenReadV
                     Tap any word or phrase to hear natural {languageName} pronunciation.
                   </p>
                 </div>
-                <div className="flex items-center gap-2">
+                <div className="flex flex-wrap items-center gap-2">
                   <button
                     type="button"
                     onClick={() => setSlowMode((s) => !s)}
@@ -520,6 +532,19 @@ export default function ListenReadView({ languageId, languageName }: ListenReadV
                   >
                     {slowMode ? "0.75x Slow On" : "1.0x Normal Speed"}
                   </button>
+                  {hasAnyClipEnglish && (
+                    <button
+                      type="button"
+                      onClick={() => setShowAudioEnglish((v) => !v)}
+                      className={`rounded-full border px-3 py-1.5 text-xs font-semibold transition-colors cursor-pointer ${
+                        showAudioEnglish
+                          ? "border-gold/50 bg-gold/15 text-gold"
+                          : "border-border bg-bg-elevated text-text-secondary hover:text-text-primary"
+                      }`}
+                    >
+                      {showAudioEnglish ? "Hide English" : "Show English"}
+                    </button>
+                  )}
                   <span className="whitespace-nowrap shrink-0 rounded-full border border-border bg-bg-elevated px-3 py-1 text-xs font-medium text-text-secondary">
                     {filteredClips.length.toLocaleString("en-KE")} clips
                   </span>
@@ -535,27 +560,45 @@ export default function ListenReadView({ languageId, languageName }: ListenReadV
                     setAudioSearch(e.target.value);
                     setAudioLimit(36);
                   }}
-                  placeholder={`Filter ${audioClips.length.toLocaleString("en-KE")} ${languageName} recordings...`}
+                  placeholder={`Search ${audioClips.length.toLocaleString("en-KE")} ${languageName} recordings & transcripts...`}
                   className="w-full rounded-xl border border-border bg-bg-elevated pl-9 pr-3 py-2 text-sm text-text-primary placeholder:text-text-muted focus:border-gold/60 focus:outline-none"
                 />
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                 {filteredClips.slice(0, audioLimit).map((clip) => {
                   const isPlaying = playingSlug === clip.slug;
+                  const fullText = clip.transcript || clip.label;
                   return (
                     <button
                       key={clip.slug}
                       type="button"
                       onClick={() => handlePlayClip(clip)}
-                      className={`flex items-center justify-between gap-2 min-w-0 overflow-hidden rounded-xl border px-3.5 py-2.5 text-left transition-all cursor-pointer ${
+                      className={`flex items-start justify-between gap-3 min-w-0 rounded-xl border px-3.5 py-3 text-left transition-all cursor-pointer ${
                         isPlaying
-                          ? "border-kenya-green bg-kenya-green/15 text-kenya-green"
-                          : "border-border/70 bg-bg-elevated/60 hover:border-gold/50 text-text-primary"
+                          ? "border-kenya-green bg-kenya-green/12 shadow-sm"
+                          : "border-border/70 bg-bg-elevated/60 hover:border-gold/50"
                       }`}
                     >
-                      <span className="text-xs sm:text-sm font-medium truncate">{clip.label}</span>
-                      <Volume2 className={`h-4 w-4 shrink-0 ${isPlaying ? "text-kenya-green animate-pulse" : "text-gold"}`} />
+                      <div className="min-w-0 flex-1 space-y-1">
+                        <p className={`text-xs sm:text-sm font-semibold leading-snug break-words ${isPlaying ? "text-kenya-green" : "text-text-primary"}`}>
+                          {fullText}
+                        </p>
+                        {showAudioEnglish && clip.english && (
+                          <p className="text-[11.5px] text-text-secondary leading-snug break-words">
+                            {clip.english}
+                          </p>
+                        )}
+                      </div>
+                      <span
+                        className={`mt-0.5 h-8 w-8 shrink-0 rounded-full flex items-center justify-center border transition-colors ${
+                          isPlaying
+                            ? "border-kenya-green bg-kenya-green text-white"
+                            : "border-border bg-bg-card text-gold"
+                        }`}
+                      >
+                        <Volume2 className={`h-4 w-4 ${isPlaying ? "animate-pulse" : ""}`} />
+                      </span>
                     </button>
                   );
                 })}

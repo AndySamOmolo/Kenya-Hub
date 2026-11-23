@@ -234,6 +234,11 @@ export default function KslSignStudio() {
   const [videoLetter, setVideoLetter] = useState<string>("ALL");
   const [videoPage, setVideoPage] = useState<number>(1);
   const [activeVideoId, setActiveVideoId] = useState<string>(initialVideos[0]?.id ?? "");
+  const [autoPlayVideo, setAutoPlayVideo] = useState<boolean>(false);
+  const selectSignVideo = (id: string) => {
+    setAutoPlayVideo(true);
+    setActiveVideoId(id);
+  };
   const [playbackRate, setPlaybackRate] = useState<number>(1);
   const [loopVideo, setLoopVideo] = useState<boolean>(true);
   const [savedVideoIds, setSavedVideoIds] = useState<string[]>([]);
@@ -338,10 +343,14 @@ export default function KslSignStudio() {
     filteredVideos.find((v) => v.id === activeVideoId) ?? filteredVideos[0] ?? null;
 
   useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.playbackRate = playbackRate;
+    const el = videoRef.current;
+    if (!el) return;
+    el.playbackRate = playbackRate;
+    if (autoPlayVideo) {
+      el.currentTime = 0;
+      el.play().catch(() => {});
     }
-  }, [playbackRate, activeVideo?.id]);
+  }, [playbackRate, activeVideo?.id, autoPlayVideo]);
 
   const masenoCount = useMemo(
     () => kslVideos.filter((v) => v.category === "maseno-stickman").length,
@@ -579,9 +588,16 @@ export default function KslSignStudio() {
                   key={activeVideo.id}
                   src={activeVideo.videoUrl}
                   controls
+                  autoPlay={autoPlayVideo}
                   playsInline
                   loop={loopVideo}
-                  preload="metadata"
+                  preload="auto"
+                  onLoadedData={(e) => {
+                    e.currentTarget.playbackRate = playbackRate;
+                    if (autoPlayVideo) {
+                      e.currentTarget.play().catch(() => {});
+                    }
+                  }}
                   className="w-full max-h-96 rounded-xl bg-black object-contain"
                 />
                 <div className="flex flex-wrap items-center justify-between gap-2">
@@ -684,7 +700,7 @@ export default function KslSignStudio() {
                       <button
                         key={vid.id}
                         type="button"
-                        onClick={() => setActiveVideoId(vid.id)}
+                        onClick={() => selectSignVideo(vid.id)}
                         className={`w-full text-left rounded-lg border p-2.5 transition-all cursor-pointer ${
                           isCurrent
                             ? "border-kenya-green bg-kenya-green/10"

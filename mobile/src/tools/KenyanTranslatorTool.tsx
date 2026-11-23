@@ -48,6 +48,11 @@ import {
 } from "./translator/loader";
 import { createStyles } from "./translator/styles";
 import { playVerifiedAudio, hasVerifiedAudio } from "../lib/mobile-audio";
+import {
+  getBundledAudioPreview,
+  loadMobileAudioShard,
+  type MobileAudioShardClip,
+} from "../lib/mobile-learning-shards";
 
 export function KenyanTranslatorTool({
   onScrollToTop,
@@ -535,21 +540,62 @@ export function KenyanTranslatorTool({
 
   const totalEntriesCount = TOTAL_DICTIONARY_ENTRIES;
 
+  const [browseAudioClips, setBrowseAudioClips] = useState<MobileAudioShardClip[]>(
+    () => getBundledAudioPreview(browseMeta.languageId)
+  );
+
+  useEffect(() => {
+    let active = true;
+    const lid = browseMeta.languageId;
+    setBrowseAudioClips(getBundledAudioPreview(lid));
+    loadMobileAudioShard(lid).then((clips) => {
+      if (active && clips.length > 0) {
+        setBrowseAudioClips(clips);
+      }
+    });
+    return () => {
+      active = false;
+    };
+  }, [browseMeta.languageId]);
+
   const browseAudioEntries = useMemo(() => {
-    if (!browseDict) return [];
     const seen = new Set<string>();
+    const seenUrls = new Set<string>();
     const list: DictEntry[] = [];
-    for (const c of browseDict.categories) {
-      for (const e of c.entries) {
-        if (!hasVerifiedAudio(e)) continue;
-        const k = `${e.english.trim().toLowerCase()}|${e.translation.trim().toLowerCase()}`;
-        if (seen.has(k)) continue;
-        seen.add(k);
-        list.push(e);
+    if (browseDict) {
+      for (const c of browseDict.categories) {
+        for (const e of c.entries) {
+          if (!hasVerifiedAudio(e)) continue;
+          const k = `${e.english.trim().toLowerCase()}|${e.translation.trim().toLowerCase()}`;
+          if (seen.has(k)) continue;
+          seen.add(k);
+          const af = (e as any).audioFile || (e as any).audioUrl;
+          if (af) seenUrls.add(af);
+          list.push(e);
+        }
       }
     }
+    for (const clip of browseAudioClips) {
+      if (!clip.audioUrl || seenUrls.has(clip.audioUrl)) continue;
+      const tr = (clip.transcript || clip.label || "").trim();
+      if (!tr) continue;
+      const en = (clip.english || "Spoken Native Recording").trim();
+      const k = `${en.toLowerCase()}|${tr.toLowerCase()}`;
+      if (seen.has(k)) continue;
+      seen.add(k);
+      seenUrls.add(clip.audioUrl);
+      list.push({
+        english: en,
+        translation: tr,
+        pronunciation: "",
+        context: clip.english
+          ? "Spoken Sentence Archive · Native Speaker Audio"
+          : "Spoken Native Recording · Open-Access Audio Archive",
+        audioFile: clip.audioUrl,
+      } as DictEntry);
+    }
     return list;
-  }, [browseDict]);
+  }, [browseDict, browseAudioClips]);
 
   useEffect(() => {
     if (activeCategory === "__audio__") {

@@ -19,7 +19,18 @@ import { useFocusEffect } from 'expo-router';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Feather, Ionicons } from '@expo/vector-icons';
 import { WebView } from 'react-native-webview';
-import { playVerifiedAudio, hasVerifiedAudio } from '../lib/mobile-audio';
+import {
+  playVerifiedAudio,
+  hasVerifiedAudio,
+  pauseVerifiedAudio,
+  resumeVerifiedAudio,
+  seekVerifiedAudio,
+  skipVerifiedAudio,
+  setVerifiedAudioRate,
+  subscribeMobileAudioState,
+  getMobileAudioState,
+  type MobileAudioState,
+} from '../lib/mobile-audio';
 import { useTheme, androidRipple, KenyaStripe } from '../theme';
 import { PUBLISHED_COURSE_SUMMARIES, hasCourseSummary, getCourseLazy, getGrammarSectionsLazy, getPlaceholderCourse, getCanonicalCourseCounts, buildDictUnit } from './language-course/courseLoader';
 import { getLanguageIdentity } from '../shared/data/language-identity';
@@ -27,6 +38,7 @@ import { getSourcesForLanguage, DICT_META_MAP, type Dictionary } from '../shared
 import { loadDictionary, LOADED_DICTS_CACHE } from './translator/loader';
 import kikuyuProverbsData from '../shared/data/kikuyu-proverbs.json';
 import openCorpusIndex from '../shared/data/open-corpus-index.json';
+import { loadMobileAudioShard, type MobileAudioShardClip } from '../lib/mobile-learning-shards';
 import kslIndexData from '../shared/data/ksl-index.json';
 import dholuoChaptersData from '../shared/data/dholuo-audio-chapters.json';
 import learningQuizzesData from '../shared/data/learning-quizzes.json';
@@ -187,6 +199,30 @@ export default function LanguageCourseTool({
     ((kslIndexData as any)?.videos?.[0]?.id as string) || ((openCorpusIndex as any).ksl?.videos?.[0]?.id as string) || ''
   );
   const [kslPlaybackRate, setKslPlaybackRate] = useState<number>(1);
+  const [kslAutoPlay, setKslAutoPlay] = useState<boolean>(false);
+  const [audioState, setAudioState] = useState<MobileAudioState>(() => getMobileAudioState());
+  const [chapterSearchQuery, setChapterSearchQuery] = useState<string>('');
+  const [chapterBarWidth, setChapterBarWidth] = useState<number>(240);
+  const [lrAudioSearch, setLrAudioSearch] = useState<string>('');
+  const [lrSlowMode, setLrSlowMode] = useState<boolean>(false);
+  const [lrShowAudioEn, setLrShowAudioEn] = useState<boolean>(true);
+  const [lrAudioClips, setLrAudioClips] = useState<MobileAudioShardClip[]>([]);
+  const [lrAudioLimit, setLrAudioLimit] = useState<number>(36);
+  useEffect(() => subscribeMobileAudioState(setAudioState), []);
+  useEffect(() => {
+    let active = true;
+    setLrAudioClips([]);
+    setLrAudioLimit(36);
+    setLrAudioSearch('');
+    loadMobileAudioShard(selectedLangId).then((clips) => {
+      if (active && clips.length > 0) {
+        setLrAudioClips(clips);
+      }
+    });
+    return () => {
+      active = false;
+    };
+  }, [selectedLangId]);
   const [kslStudioMode, setKslStudioMode] = useState<'browse' | 'quiz' | 'spell'>('browse');
   const [kslQuizIdx, setKslQuizIdx] = useState<number>(0);
   const [kslQuizPicked, setKslQuizPicked] = useState<string | null>(null);
@@ -2612,7 +2648,7 @@ export default function LanguageCourseTool({
           const activeKsl = (activeIdx >= 0 ? filteredKslVideos[activeIdx] : filteredKslVideos[0]) || null;
           const safeVideoUrl = activeKsl ? activeKsl.videoUrl.replace(/["'<>]/g, '') : '';
           const playerHtml = activeKsl
-            ? `<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><style>html,body{margin:0;padding:0;background:#000;width:100%;height:100%;display:flex;align-items:center;justify-content:center;overflow:hidden}video{width:100%;height:100%;object-fit:contain;background:#000}</style></head><body><video id="v" src="${safeVideoUrl}" controls playsinline loop preload="metadata"></video><script>var v=document.getElementById('v');if(v){v.playbackRate=${kslPlaybackRate};v.addEventListener('loadedmetadata',function(){v.playbackRate=${kslPlaybackRate};});}</script></body></html>`
+            ? `<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><style>html,body{margin:0;padding:0;background:#000;width:100%;height:100%;display:flex;align-items:center;justify-content:center;overflow:hidden}video{width:100%;height:100%;object-fit:contain;background:#000}</style></head><body><video id="v" src="${safeVideoUrl}" controls ${kslAutoPlay ? 'autoplay' : ''} playsinline loop preload="auto"></video><script>var v=document.getElementById('v');if(v){v.playbackRate=${kslPlaybackRate};function tryPlay(){v.playbackRate=${kslPlaybackRate};${kslAutoPlay ? 'var pr=v.play();if(pr&&pr.catch){pr.catch(function(){});}' : ''}}v.addEventListener('loadedmetadata',tryPlay);v.addEventListener('canplay',tryPlay);tryPlay();}</script></body></html>`
             : '';
 
           const handleSpeedChange = (spd: number) => {
@@ -2899,7 +2935,7 @@ export default function LanguageCourseTool({
                       <Pressable
                         disabled={activeIdx <= 0}
                         onPress={() => {
-                          if (activeIdx > 0) setActiveKslVideoId(filteredKslVideos[activeIdx - 1].id);
+                          if (activeIdx > 0) { setKslAutoPlay(true); setActiveKslVideoId(filteredKslVideos[activeIdx - 1].id); }
                         }}
                         style={{ paddingHorizontal: 8, paddingVertical: 5, borderRadius: 8, borderWidth: 1, borderColor: colors.outlineVariant, opacity: activeIdx <= 0 ? 0.4 : 1 }}
                       >
@@ -2909,7 +2945,7 @@ export default function LanguageCourseTool({
                         disabled={activeIdx < 0 || activeIdx + 1 >= filteredKslVideos.length}
                         onPress={() => {
                           if (activeIdx >= 0 && activeIdx + 1 < filteredKslVideos.length) {
-                            setActiveKslVideoId(filteredKslVideos[activeIdx + 1].id);
+                            setKslAutoPlay(true); setActiveKslVideoId(filteredKslVideos[activeIdx + 1].id);
                           }
                         }}
                         style={{ paddingHorizontal: 8, paddingVertical: 5, borderRadius: 8, borderWidth: 1, borderColor: colors.outlineVariant, opacity: activeIdx < 0 || activeIdx + 1 >= filteredKslVideos.length ? 0.4 : 1 }}
@@ -2982,7 +3018,7 @@ export default function LanguageCourseTool({
                   return (
                     <Pressable
                       key={vid.id}
-                      onPress={() => setActiveKslVideoId(vid.id)}
+                      onPress={() => { setKslAutoPlay(true); setActiveKslVideoId(vid.id); }}
                       style={{
                         flexDirection: 'row',
                         alignItems: 'center',
@@ -5007,7 +5043,7 @@ export default function LanguageCourseTool({
         const corpusLang = (openCorpusIndex.languages as Record<string, any>)[selectedLangId] || {};
         const readerShard = (learningReadersData as Record<string, any>)[selectedLangId] || null;
         const quizShard = (learningQuizzesData as Record<string, any>)[selectedLangId] || null;
-        const samples: { slug: string; label: string; audioUrl: string }[] = corpusLang.nativeAudioSamples || [];
+        const samples: MobileAudioShardClip[] = lrAudioClips.length > 0 ? lrAudioClips : (corpusLang.nativeAudioSamples || []);
         const chapters: any[] = selectedLangId === 'luo' ? ((dholuoChaptersData as any)?.chapters || []) : (corpusLang.audioChapters || []);
         const stories: { title: string; text: string; wordCount?: number }[] = readerShard?.stories || [];
         const bilinguals: { title: string; englishTitle?: string; text: string; english: string }[] = readerShard?.bilingualReadings || [];
@@ -5049,79 +5085,461 @@ export default function LanguageCourseTool({
             </View>
 
             {/* 1. LISTENING */}
-            {lrSubTab === 'listen' && (
+            {lrSubTab === 'listen' && (() => {
+              const fmtTime = (sec: number) => {
+                if (!Number.isFinite(sec) || sec < 0) return '0:00';
+                const m = Math.floor(sec / 60);
+                const ss = Math.floor(sec % 60);
+                return `${m}:${ss < 10 ? '0' : ''}${ss}`;
+              };
+              const activeChMeta = chapters.find((c: any) => c.id === dholuoTranscriptChapterId) || chapters[0] || null;
+              const fullChs = selectedLangId === 'luo' ? ((dholuoChaptersData as any)?.chapters || []) : [];
+              const activeChData = activeChMeta
+                ? fullChs.find((c: any) => c.id === activeChMeta.id) || fullChs[0] || null
+                : null;
+              const isChActiveUrl = Boolean(activeChMeta && audioState.url === activeChMeta.audioUrl);
+              const chPlaying = isChActiveUrl && audioState.playing;
+              const chLoading = isChActiveUrl && audioState.loading;
+              const chCur = isChActiveUrl ? audioState.currentTime : 0;
+              const chDur = isChActiveUrl ? audioState.duration : 0;
+              const chPct = chDur > 0 ? Math.min(1, Math.max(0, chCur / chDur)) : 0;
+              const chRate = audioState.rate || 1;
+
+              const rawPhrases: { english: string; dholuo: string }[] = activeChData?.phrases || [];
+              const chQ = chapterSearchQuery.trim().toLowerCase();
+              const filteredPhrases = chQ
+                ? rawPhrases.filter(
+                    (ph) =>
+                      ph.dholuo.toLowerCase().includes(chQ) ||
+                      ph.english.toLowerCase().includes(chQ)
+                  )
+                : rawPhrases;
+              const TX_PAGE = 12;
+              const txPages = Math.max(1, Math.ceil(filteredPhrases.length / TX_PAGE));
+              const safeTxP = Math.min(dholuoTranscriptPage, txPages);
+              const visiblePhrases = filteredPhrases.slice((safeTxP - 1) * TX_PAGE, safeTxP * TX_PAGE);
+
+              const hasAnySampleEn = samples.some((s) => Boolean(s.english));
+              const audQ = lrAudioSearch.trim().toLowerCase();
+              const filteredSamples = audQ
+                ? samples.filter(
+                    (s) =>
+                      (s.transcript || s.label).toLowerCase().includes(audQ) ||
+                      (s.english || '').toLowerCase().includes(audQ)
+                  )
+                : samples;
+
+              return (
               <View style={{ gap: 12 }}>
-                {chapters.length > 0 && (
-                  <View style={{ backgroundColor: colors.surfaceContainer, borderWidth: 1, borderColor: colors.outlineVariant, borderRadius: 16, padding: 14, gap: 8 }}>
-                    <Text style={{ fontFamily: 'Outfit_700Bold', fontSize: 15, color: colors.text }}>
-                      Spoken Phrasebook Chapters ({chapters.length})
-                    </Text>
-                    {chapters.map((ch: any) => {
-                      const cleanTitle = String(ch.title || '').replace(/^\d+\s*[—–-]\s*/, '');
-                      return (
-                        <Pressable
-                          key={ch.id}
-                          onPress={() => {
-                            setDholuoTranscriptChapterId(ch.id);
-                            setDholuoTranscriptPage(1);
-                            const ok = playVerifiedAudio({ translation: cleanTitle, audioFile: ch.audioUrl });
-                            if (!ok) Linking.openURL(ch.audioUrl).catch(() => {});
-                          }}
-                          style={{
-                            flexDirection: 'row',
-                            alignItems: 'center',
-                            justifyContent: 'space-between',
-                            backgroundColor: colors.surface,
-                            borderWidth: 1,
-                            borderColor: dholuoTranscriptChapterId === ch.id ? colors.gold : colors.outlineVariant,
-                            borderRadius: 12,
-                            paddingHorizontal: 12,
-                            paddingVertical: 10,
-                            gap: 8,
-                          }}
-                        >
-                          <Text style={{ fontFamily: 'Inter_600SemiBold', fontSize: 12.5, color: colors.text, flex: 1 }} numberOfLines={2}>
-                            Ch. {ch.number}: {cleanTitle}
+                {chapters.length > 0 && activeChMeta && (
+                  <View style={{ backgroundColor: colors.surfaceContainer, borderWidth: 1, borderColor: colors.outlineVariant, borderRadius: 16, padding: 14, gap: 10 }}>
+                    <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 8 }}>
+                      <View style={{ flex: 1 }}>
+                        <Text style={{ fontFamily: 'Outfit_700Bold', fontSize: 15.5, color: colors.text }}>
+                          Spoken Phrasebook
+                        </Text>
+                        <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 11.5, color: colors.textSecondary, marginTop: 1 }}>
+                          Guided audio chapters with follow-along phrases.
+                        </Text>
+                      </View>
+                      <View style={{ paddingHorizontal: 9, paddingVertical: 4, borderRadius: 999, backgroundColor: `${colors.gold}18`, borderWidth: 1, borderColor: `${colors.gold}45` }}>
+                        <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 11, color: colors.gold }}>
+                          {chapters.length} chapters
+                        </Text>
+                      </View>
+                    </View>
+
+                    {/* Compact Horizontal Chapter Selector */}
+                    <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 7, paddingVertical: 2 }}>
+                      {chapters.map((ch: any) => {
+                        const cleanT = String(ch.title || '').replace(/^\d+\s*[—–-]\s*/, '');
+                        const isAct = ch.id === activeChMeta.id;
+                        return (
+                          <Pressable
+                            key={ch.id}
+                            onPress={() => {
+                              setDholuoTranscriptChapterId(ch.id);
+                              setDholuoTranscriptPage(1);
+                              setChapterSearchQuery('');
+                              if (audioState.url && audioState.url !== ch.audioUrl && audioState.playing) {
+                                pauseVerifiedAudio();
+                              }
+                            }}
+                            style={{
+                              maxWidth: 180,
+                              paddingHorizontal: 11,
+                              paddingVertical: 8,
+                              borderRadius: 12,
+                              borderWidth: 1,
+                              borderColor: isAct ? colors.gold : colors.outlineVariant,
+                              backgroundColor: isAct ? `${colors.gold}1A` : colors.surface,
+                            }}
+                          >
+                            <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 10, color: isAct ? colors.gold : colors.textMuted, letterSpacing: 0.4 }}>
+                              CHAPTER {ch.number}
+                            </Text>
+                            <Text style={{ fontFamily: 'Inter_600SemiBold', fontSize: 12, color: colors.text, marginTop: 2 }} numberOfLines={1}>
+                              {cleanT}
+                            </Text>
+                          </Pressable>
+                        );
+                      })}
+                    </ScrollView>
+
+                    {/* Active Chapter Card + Full Audio Controls */}
+                    <View style={{ backgroundColor: colors.surface, borderRadius: 14, borderWidth: 1, borderColor: `${colors.gold}40`, padding: 12, gap: 10 }}>
+                      <View style={{ flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'space-between', gap: 8 }}>
+                        <Text style={{ fontFamily: 'Outfit_700Bold', fontSize: 14, color: colors.text, flex: 1, lineHeight: 19 }}>
+                          Chapter {activeChMeta.number}: {String(activeChMeta.title || '').replace(/^\d+\s*[—–-]\s*/, '')}
+                        </Text>
+                        {Boolean(activeChMeta.sizeMb) && (
+                          <View style={{ paddingHorizontal: 8, paddingVertical: 3, borderRadius: 999, borderWidth: 1, borderColor: colors.outlineVariant, backgroundColor: colors.surfaceContainer }}>
+                            <Text style={{ fontFamily: 'Inter_600SemiBold', fontSize: 10.5, color: colors.textMuted }}>
+                              {activeChMeta.sizeMb} MB
+                            </Text>
+                          </View>
+                        )}
+                      </View>
+
+                      {Array.isArray(activeChMeta.topics) && activeChMeta.topics.length > 0 && (
+                        <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 5 }}>
+                          {activeChMeta.topics.map((t: string, ti: number) => (
+                            <View key={ti} style={{ paddingHorizontal: 8, paddingVertical: 3, borderRadius: 999, borderWidth: 1, borderColor: colors.outlineVariant, backgroundColor: colors.surfaceContainerLow }}>
+                              <Text style={{ fontFamily: 'Inter_500Medium', fontSize: 10.5, color: colors.textSecondary }}>{t}</Text>
+                            </View>
+                          ))}
+                        </View>
+                      )}
+
+                      {/* Custom Styled Audio Player Controls (wrapped cleanly, zero overflow) */}
+                      <View style={{ backgroundColor: colors.surfaceContainerLow, borderRadius: 12, borderWidth: 1, borderColor: colors.outlineVariant, padding: 10, gap: 10 }}>
+                        <View style={{ flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: 8 }}>
+                          <View style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
+                            <Pressable
+                              onPress={() => {
+                                if (chPlaying) {
+                                  pauseVerifiedAudio();
+                                } else if (isChActiveUrl && chCur > 0) {
+                                  resumeVerifiedAudio();
+                                } else {
+                                  const ok = playVerifiedAudio({ translation: activeChMeta.title, audioFile: activeChMeta.audioUrl }, chRate);
+                                  if (!ok) Linking.openURL(activeChMeta.audioUrl).catch(() => {});
+                                }
+                              }}
+                              style={{
+                                width: 40,
+                                height: 40,
+                                borderRadius: 20,
+                                backgroundColor: colors.gold,
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                              }}
+                            >
+                              <Feather name={chPlaying ? 'pause' : 'play'} size={18} color="#FFFFFF" />
+                            </Pressable>
+                            <Pressable
+                              onPress={() => isChActiveUrl && skipVerifiedAudio(-10)}
+                              style={{ paddingHorizontal: 9, paddingVertical: 6, borderRadius: 8, borderWidth: 1, borderColor: colors.outlineVariant, backgroundColor: colors.surface, flexDirection: 'row', alignItems: 'center', gap: 3, opacity: isChActiveUrl ? 1 : 0.5 }}
+                            >
+                              <Feather name="rotate-ccw" size={12} color={colors.textSecondary} />
+                              <Text style={{ fontFamily: 'Inter_600SemiBold', fontSize: 11, color: colors.textSecondary }}>10s</Text>
+                            </Pressable>
+                            <Pressable
+                              onPress={() => isChActiveUrl && skipVerifiedAudio(10)}
+                              style={{ paddingHorizontal: 9, paddingVertical: 6, borderRadius: 8, borderWidth: 1, borderColor: colors.outlineVariant, backgroundColor: colors.surface, flexDirection: 'row', alignItems: 'center', gap: 3, opacity: isChActiveUrl ? 1 : 0.5 }}
+                            >
+                              <Text style={{ fontFamily: 'Inter_600SemiBold', fontSize: 11, color: colors.textSecondary }}>10s</Text>
+                              <Feather name="rotate-cw" size={12} color={colors.textSecondary} />
+                            </Pressable>
+                          </View>
+
+                          <View style={{ flexDirection: 'row', alignItems: 'center', gap: 5 }}>
+                            {[0.75, 1, 1.25].map((r) => {
+                              const act = Math.abs(chRate - r) < 0.05;
+                              return (
+                                <Pressable
+                                  key={r}
+                                  onPress={() => setVerifiedAudioRate(r)}
+                                  style={{
+                                    paddingHorizontal: 8,
+                                    paddingVertical: 5,
+                                    borderRadius: 8,
+                                    borderWidth: 1,
+                                    borderColor: act ? colors.gold : colors.outlineVariant,
+                                    backgroundColor: act ? `${colors.gold}20` : colors.surface,
+                                  }}
+                                >
+                                  <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 11, color: act ? colors.gold : colors.textMuted }}>
+                                    {r}x
+                                  </Text>
+                                </Pressable>
+                              );
+                            })}
+                          </View>
+                        </View>
+
+                        {/* Interactive Tappable Progress Bar + Time Readout */}
+                        <View style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
+                          <Text style={{ fontFamily: 'Inter_600SemiBold', fontSize: 11, color: colors.textMuted, minWidth: 34 }}>
+                            {fmtTime(chCur)}
                           </Text>
-                          <Feather name="play-circle" size={20} color={colors.kenyaGreen} />
-                        </Pressable>
-                      );
-                    })}
+                          <Pressable
+                            onLayout={(e) => setChapterBarWidth(Math.max(1, e.nativeEvent.layout.width))}
+                            onPress={(e) => {
+                              if (!isChActiveUrl || chDur <= 0) return;
+                              const ratio = Math.max(0, Math.min(1, e.nativeEvent.locationX / chapterBarWidth));
+                              seekVerifiedAudio(ratio * chDur);
+                            }}
+                            style={{ flex: 1, paddingVertical: 8, justifyContent: 'center' }}
+                          >
+                            <View style={{ height: 6, borderRadius: 999, backgroundColor: colors.outlineVariant, overflow: 'hidden' }}>
+                              <View style={{ height: '100%', width: `${Math.round(chPct * 100)}%`, backgroundColor: colors.gold, borderRadius: 999 }} />
+                            </View>
+                          </Pressable>
+                          <Text style={{ fontFamily: 'Inter_600SemiBold', fontSize: 11, color: colors.textMuted, minWidth: 34, textAlign: 'right' }}>
+                            {chLoading ? '…' : fmtTime(chDur)}
+                          </Text>
+                        </View>
+                      </View>
+
+                      {/* Follow-Along Phrasebook inside Listen & Read */}
+                      {rawPhrases.length > 0 && (
+                        <View style={{ borderTopWidth: 1, borderTopColor: colors.outlineVariant, paddingTop: 10, gap: 8 }}>
+                          <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 8 }}>
+                            <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 11.5, color: colors.gold, letterSpacing: 0.4, flex: 1 }}>
+                              FOLLOW-ALONG PHRASEBOOK ({rawPhrases.length})
+                            </Text>
+                            <Pressable
+                              onPress={() => setDholuoShowEnglish((v) => !v)}
+                              style={{ paddingHorizontal: 10, paddingVertical: 5, borderRadius: 999, borderWidth: 1, borderColor: `${colors.gold}55`, backgroundColor: `${colors.gold}15` }}
+                            >
+                              <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 11, color: colors.gold }}>
+                                {dholuoShowEnglish ? 'Hide English' : 'Show English'}
+                              </Text>
+                            </Pressable>
+                          </View>
+
+                          <TextInput
+                            value={chapterSearchQuery}
+                            onChangeText={(txt) => {
+                              setChapterSearchQuery(txt);
+                              setDholuoTranscriptPage(1);
+                            }}
+                            placeholder={`Search ${rawPhrases.length} phrases in Chapter ${activeChMeta.number}...`}
+                            placeholderTextColor={colors.textMuted}
+                            style={{
+                              backgroundColor: colors.surfaceContainerLow,
+                              borderWidth: 1,
+                              borderColor: colors.outlineVariant,
+                              borderRadius: 10,
+                              paddingHorizontal: 11,
+                              paddingVertical: 8,
+                              fontFamily: 'Inter_400Regular',
+                              fontSize: 12.5,
+                              color: colors.text,
+                            }}
+                          />
+
+                          <View style={{ gap: 7 }}>
+                            {visiblePhrases.map((ph, idx) => {
+                              const num = (safeTxP - 1) * TX_PAGE + idx + 1;
+                              return (
+                                <View
+                                  key={`${activeChMeta.id}-${num}`}
+                                  style={{
+                                    backgroundColor: colors.surfaceContainerLow,
+                                    borderRadius: 11,
+                                    borderWidth: 1,
+                                    borderColor: colors.outlineVariant,
+                                    borderLeftWidth: 3,
+                                    borderLeftColor: colors.gold,
+                                    paddingHorizontal: 11,
+                                    paddingVertical: 9,
+                                    gap: 3,
+                                  }}
+                                >
+                                  <View style={{ flexDirection: 'row', alignItems: 'flex-start', gap: 7 }}>
+                                    <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 10.5, color: colors.textMuted, marginTop: 1 }}>
+                                      {String(num).padStart(2, '0')}
+                                    </Text>
+                                    <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 13, color: colors.text, flex: 1, lineHeight: 18 }}>
+                                      {ph.dholuo}
+                                    </Text>
+                                  </View>
+                                  {dholuoShowEnglish && (
+                                    <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 12, color: colors.textSecondary, paddingLeft: 21, lineHeight: 17 }}>
+                                      {ph.english}
+                                    </Text>
+                                  )}
+                                </View>
+                              );
+                            })}
+                          </View>
+
+                          {txPages > 1 && (
+                            <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', paddingTop: 2 }}>
+                              <Pressable
+                                disabled={safeTxP <= 1}
+                                onPress={() => setDholuoTranscriptPage((p) => Math.max(1, p - 1))}
+                                style={{ paddingHorizontal: 12, paddingVertical: 6, borderRadius: 8, borderWidth: 1, borderColor: colors.outlineVariant, opacity: safeTxP <= 1 ? 0.4 : 1 }}
+                              >
+                                <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 11.5, color: colors.text }}>← Prev</Text>
+                              </Pressable>
+                              <Text style={{ fontFamily: 'Inter_600SemiBold', fontSize: 11.5, color: colors.textMuted }}>
+                                Page {safeTxP} / {txPages}
+                              </Text>
+                              <Pressable
+                                disabled={safeTxP >= txPages}
+                                onPress={() => setDholuoTranscriptPage((p) => Math.min(txPages, p + 1))}
+                                style={{ paddingHorizontal: 12, paddingVertical: 6, borderRadius: 8, borderWidth: 1, borderColor: colors.kenyaGreen, opacity: safeTxP >= txPages ? 0.4 : 1 }}
+                              >
+                                <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 11.5, color: colors.kenyaGreen }}>Next →</Text>
+                              </Pressable>
+                            </View>
+                          )}
+                        </View>
+                      )}
+                    </View>
                   </View>
                 )}
 
                 {samples.length > 0 ? (
-                  <View style={{ backgroundColor: colors.surfaceContainer, borderWidth: 1, borderColor: colors.outlineVariant, borderRadius: 16, padding: 14, gap: 8 }}>
-                    <Text style={{ fontFamily: 'Outfit_700Bold', fontSize: 15, color: colors.text }}>
-                      Native Speaker Listening Deck
-                    </Text>
-                    <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 12, color: colors.textSecondary }}>
-                      Tap any phrase to hear authentic pronunciation.
-                    </Text>
-                    <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 7 }}>
-                      {samples.map((s) => (
+                  <View style={{ backgroundColor: colors.surfaceContainer, borderWidth: 1, borderColor: colors.outlineVariant, borderRadius: 16, padding: 14, gap: 10 }}>
+                    <View style={{ gap: 2 }}>
+                      <Text style={{ fontFamily: 'Outfit_700Bold', fontSize: 15.5, color: colors.text }}>
+                        Native Speaker Listening Deck
+                      </Text>
+                      <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 12, color: colors.textSecondary }}>
+                        Tap any recording to hear authentic pronunciation with full transcript.
+                      </Text>
+                    </View>
+
+                    <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 6 }}>
+                      <Pressable
+                        onPress={() => setLrSlowMode((v) => !v)}
+                        style={{
+                          paddingHorizontal: 10,
+                          paddingVertical: 5,
+                          borderRadius: 999,
+                          borderWidth: 1,
+                          borderColor: lrSlowMode ? colors.kenyaGreen : colors.outlineVariant,
+                          backgroundColor: lrSlowMode ? `${colors.kenyaGreen}18` : colors.surface,
+                        }}
+                      >
+                        <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 11, color: lrSlowMode ? colors.kenyaGreen : colors.textSecondary }}>
+                          {lrSlowMode ? '0.75x Slow On' : '1.0x Normal Speed'}
+                        </Text>
+                      </Pressable>
+                      {hasAnySampleEn && (
                         <Pressable
-                          key={s.slug}
-                          onPress={() => playVerifiedAudio({ translation: s.label, audioFile: s.audioUrl })}
+                          onPress={() => setLrShowAudioEn((v) => !v)}
                           style={{
-                            flexDirection: 'row',
-                            alignItems: 'center',
-                            gap: 5,
                             paddingHorizontal: 10,
-                            paddingVertical: 7,
-                            borderRadius: 10,
+                            paddingVertical: 5,
+                            borderRadius: 999,
                             borderWidth: 1,
-                            borderColor: colors.outlineVariant,
-                            backgroundColor: colors.surface,
+                            borderColor: lrShowAudioEn ? colors.gold : colors.outlineVariant,
+                            backgroundColor: lrShowAudioEn ? `${colors.gold}18` : colors.surface,
                           }}
                         >
-                          <Feather name="volume-2" size={14} color={colors.kenyaGreen} />
-                          <Text style={{ fontFamily: 'Inter_600SemiBold', fontSize: 12, color: colors.text }} numberOfLines={1}>
-                            {s.label}
+                          <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 11, color: lrShowAudioEn ? colors.gold : colors.textSecondary }}>
+                            {lrShowAudioEn ? 'Hide English' : 'Show English'}
                           </Text>
                         </Pressable>
-                      ))}
+                      )}
                     </View>
+
+                    <TextInput
+                      value={lrAudioSearch}
+                      onChangeText={setLrAudioSearch}
+                      placeholder="Search recordings & transcripts..."
+                      placeholderTextColor={colors.textMuted}
+                      style={{
+                        backgroundColor: colors.surface,
+                        borderWidth: 1,
+                        borderColor: colors.outlineVariant,
+                        borderRadius: 10,
+                        paddingHorizontal: 11,
+                        paddingVertical: 8,
+                        fontFamily: 'Inter_400Regular',
+                        fontSize: 12.5,
+                        color: colors.text,
+                      }}
+                    />
+
+                    <View style={{ gap: 8 }}>
+                      {filteredSamples.slice(0, lrAudioLimit).map((clip) => {
+                        const isPlayingClip = audioState.url === clip.audioUrl && audioState.playing;
+                        const fullText = clip.transcript || clip.label;
+                        return (
+                          <Pressable
+                            key={clip.slug}
+                            onPress={() => {
+                              if (isPlayingClip) {
+                                pauseVerifiedAudio();
+                              } else {
+                                playVerifiedAudio({ translation: fullText, audioFile: clip.audioUrl }, lrSlowMode ? 0.75 : 1.0);
+                              }
+                            }}
+                            style={{
+                              flexDirection: 'row',
+                              alignItems: 'flex-start',
+                              justifyContent: 'space-between',
+                              gap: 10,
+                              paddingHorizontal: 12,
+                              paddingVertical: 11,
+                              borderRadius: 12,
+                              borderWidth: 1,
+                              borderColor: isPlayingClip ? colors.kenyaGreen : colors.outlineVariant,
+                              backgroundColor: isPlayingClip ? `${colors.kenyaGreen}14` : colors.surface,
+                            }}
+                          >
+                            <View style={{ flex: 1, gap: 3 }}>
+                              <Text style={{ fontFamily: 'Inter_600SemiBold', fontSize: 13, color: isPlayingClip ? colors.kenyaGreen : colors.text, lineHeight: 19 }}>
+                                {fullText}
+                              </Text>
+                              {lrShowAudioEn && Boolean(clip.english) && (
+                                <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 12, color: colors.textSecondary, lineHeight: 17 }}>
+                                  {clip.english}
+                                </Text>
+                              )}
+                            </View>
+                            <View
+                              style={{
+                                width: 32,
+                                height: 32,
+                                borderRadius: 16,
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                backgroundColor: isPlayingClip ? colors.kenyaGreen : colors.surfaceContainer,
+                                borderWidth: 1,
+                                borderColor: isPlayingClip ? colors.kenyaGreen : colors.outlineVariant,
+                                marginTop: 1,
+                              }}
+                            >
+                              <Feather name={isPlayingClip ? 'pause' : 'volume-2'} size={15} color={isPlayingClip ? '#FFFFFF' : colors.kenyaGreen} />
+                            </View>
+                          </Pressable>
+                        );
+                      })}
+                    </View>
+                    {filteredSamples.length > lrAudioLimit && (
+                      <Pressable
+                        onPress={() => setLrAudioLimit((n) => n + 36)}
+                        style={{
+                          paddingVertical: 9,
+                          borderRadius: 10,
+                          borderWidth: 1,
+                          borderColor: `${colors.kenyaGreen}55`,
+                          backgroundColor: `${colors.kenyaGreen}14`,
+                          alignItems: 'center',
+                        }}
+                      >
+                        <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 12, color: colors.kenyaGreen }}>
+                          Show more recordings ({filteredSamples.length - lrAudioLimit} remaining)
+                        </Text>
+                      </Pressable>
+                    )}
                   </View>
                 ) : chapters.length === 0 ? (
                   <View style={{ backgroundColor: colors.surfaceContainer, borderRadius: 14, padding: 16 }}>
@@ -5131,7 +5549,8 @@ export default function LanguageCourseTool({
                   </View>
                 ) : null}
               </View>
-            )}
+              );
+            })()}
 
             {/* 2. STORIES & BILINGUAL READINGS */}
             {lrSubTab === 'read' && (
@@ -5316,198 +5735,222 @@ export default function LanguageCourseTool({
                   gap: 6,
                 }}
               >
-                <Text style={{ fontFamily: "Inter_700Bold", fontSize: 12, color: colors.gold }}>
-                  LISTENING, CALENDAR &amp; READING PRACTICE
-                </Text>
-                {corpusLang.r2AudioClips ? (
-                  <View style={{ gap: 6 }}>
-                    <Text style={{ fontFamily: "Inter_600SemiBold", fontSize: 11.5, color: colors.kenyaGreen }}>
-                      {corpusLang.r2AudioClips.toLocaleString()} native speaker audio clips available
-                    </Text>
-                    {corpusLang.nativeAudioSamples && corpusLang.nativeAudioSamples.length > 0 && (
+                <View style={{ gap: 12 }}>
+                  {/* Calendar: Days of the Week & Months */}
+                  {corpusLang.cldr && ((corpusLang.cldr.days && corpusLang.cldr.days.length > 0) || (corpusLang.cldr.months && corpusLang.cldr.months.length > 0)) && (
+                    <View style={{ gap: 10 }}>
+                      <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
+                        <Text style={{ fontFamily: "Outfit_700Bold", fontSize: 14.5, color: colors.text }}>
+                          Calendar &amp; Time Vocabulary
+                        </Text>
+                        <Text style={{ fontFamily: "Inter_700Bold", fontSize: 10.5, color: colors.gold }}>
+                          DAYS &amp; MONTHS
+                        </Text>
+                      </View>
+                      {corpusLang.cldr.days && corpusLang.cldr.days.length > 0 && (
+                        <View style={{ gap: 6 }}>
+                          <Text style={{ fontFamily: "Inter_700Bold", fontSize: 10.5, color: colors.textMuted, letterSpacing: 0.5 }}>
+                            DAYS OF THE WEEK ({corpusLang.cldr.days.length})
+                          </Text>
+                          <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 6 }}>
+                            {corpusLang.cldr.days.map((day, dIdx) => (
+                              <View
+                                key={`day-${dIdx}`}
+                                style={{
+                                  paddingHorizontal: 10,
+                                  paddingVertical: 5,
+                                  borderRadius: 999,
+                                  borderWidth: 1,
+                                  borderColor: `${colors.gold}45`,
+                                  backgroundColor: colors.surface,
+                                }}
+                              >
+                                <Text style={{ fontFamily: "Inter_600SemiBold", fontSize: 11.5, color: colors.text }}>
+                                  {day}
+                                </Text>
+                              </View>
+                            ))}
+                          </View>
+                        </View>
+                      )}
+                      {corpusLang.cldr.months && corpusLang.cldr.months.length > 0 && (
+                        <View style={{ gap: 6 }}>
+                          <Text style={{ fontFamily: "Inter_700Bold", fontSize: 10.5, color: colors.textMuted, letterSpacing: 0.5 }}>
+                            MONTHS ({Math.min(12, corpusLang.cldr.months.length)})
+                          </Text>
+                          <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 6 }}>
+                            {corpusLang.cldr.months.slice(0, 12).map((mo, mIdx) => (
+                              <View
+                                key={`mo-${mIdx}`}
+                                style={{
+                                  paddingHorizontal: 9,
+                                  paddingVertical: 5,
+                                  borderRadius: 10,
+                                  borderWidth: 1,
+                                  borderColor: colors.outlineVariant,
+                                  backgroundColor: colors.surface,
+                                }}
+                              >
+                                <Text style={{ fontFamily: "Inter_500Medium", fontSize: 11.5, color: colors.text }}>
+                                  {mIdx + 1}. {mo}
+                                </Text>
+                              </View>
+                            ))}
+                          </View>
+                        </View>
+                      )}
+                    </View>
+                  )}
+
+                  {/* Everyday High-Frequency Core Words */}
+                  {corpusLang.topFrequencyWords && corpusLang.topFrequencyWords.length > 0 && (
+                    <View style={{ gap: 6, borderTopWidth: 1, borderTopColor: colors.outlineVariant, paddingTop: 10 }}>
+                      <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
+                        <Text style={{ fontFamily: "Inter_700Bold", fontSize: 10.5, color: colors.kenyaGreen, letterSpacing: 0.5 }}>
+                          EVERYDAY CORE WORDS ({corpusLang.topFrequencyWords.length})
+                        </Text>
+                      </View>
                       <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 6 }}>
-                        {corpusLang.nativeAudioSamples.slice(0, 12).map((sample) => (
-                          <Pressable
-                            key={sample.slug}
-                            onPress={() => playVerifiedAudio({ translation: sample.label, audioFile: sample.audioUrl })}
+                        {corpusLang.topFrequencyWords.slice(0, 24).map((w, wIdx) => (
+                          <View
+                            key={`fw-${wIdx}`}
                             style={{
-                              flexDirection: "row",
-                              alignItems: "center",
-                              gap: 4,
                               paddingHorizontal: 9,
-                              paddingVertical: 5,
+                              paddingVertical: 4,
                               borderRadius: 999,
                               borderWidth: 1,
-                              borderColor: `${colors.kenyaGreen}55`,
+                              borderColor: `${colors.kenyaGreen}35`,
+                              backgroundColor: `${colors.kenyaGreen}10`,
+                            }}
+                          >
+                            <Text style={{ fontFamily: "Inter_600SemiBold", fontSize: 11.5, color: colors.text }}>
+                              {w.word}
+                            </Text>
+                          </View>
+                        ))}
+                      </View>
+                    </View>
+                  )}
+
+                  {/* Sound Inventory (IPA) */}
+                  {corpusLang.phonemes && corpusLang.phonemes.length > 0 && (
+                    <View style={{ gap: 6, borderTopWidth: 1, borderTopColor: colors.outlineVariant, paddingTop: 10 }}>
+                      <Text style={{ fontFamily: "Inter_700Bold", fontSize: 10.5, color: colors.gold, letterSpacing: 0.5 }}>
+                        SOUND INVENTORY (IPA · {corpusLang.phonemes.length})
+                      </Text>
+                      <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 5 }}>
+                        {corpusLang.phonemes.map((ph, pIdx) => (
+                          <View
+                            key={`ph-${pIdx}`}
+                            style={{
+                              paddingHorizontal: 8,
+                              paddingVertical: 3,
+                              borderRadius: 7,
+                              borderWidth: 1,
+                              borderColor: colors.outlineVariant,
                               backgroundColor: colors.surface,
                             }}
                           >
-                            <Feather name="volume-2" size={13} color={colors.kenyaGreen} />
-                            <Text style={{ fontFamily: "Inter_500Medium", fontSize: 11, color: colors.text }} numberOfLines={1}>
-                              {sample.label}
+                            <Text style={{ fontFamily: "Inter_600SemiBold", fontSize: 11.5, color: colors.text }}>
+                              /{ph}/
+                            </Text>
+                          </View>
+                        ))}
+                      </View>
+                    </View>
+                  )}
+
+                  {/* Word Formation / Morphology */}
+                  {corpusLang.morphologySamples && corpusLang.morphologySamples.length > 0 && (
+                    <View style={{ gap: 6, borderTopWidth: 1, borderTopColor: colors.outlineVariant, paddingTop: 10 }}>
+                      <Text style={{ fontFamily: "Inter_700Bold", fontSize: 10.5, color: colors.gold, letterSpacing: 0.5 }}>
+                        WORD FORMATION PATTERNS
+                      </Text>
+                      <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 6 }}>
+                        {corpusLang.morphologySamples.slice(0, 10).map((m, mIdx) => (
+                          <View
+                            key={`mf-${mIdx}`}
+                            style={{
+                              paddingHorizontal: 9,
+                              paddingVertical: 4,
+                              borderRadius: 8,
+                              borderWidth: 1,
+                              borderColor: colors.outlineVariant,
+                              backgroundColor: colors.surface,
+                            }}
+                          >
+                            <Text style={{ fontFamily: "Inter_600SemiBold", fontSize: 11.5, color: colors.text }}>
+                              {m.form} <Text style={{ fontFamily: "Inter_400Regular", color: colors.textSecondary }}>({m.lemma})</Text>
+                            </Text>
+                          </View>
+                        ))}
+                      </View>
+                    </View>
+                  )}
+
+                  {/* Reading Practice */}
+                  {corpusLang.sampleReadings && corpusLang.sampleReadings.length > 0 && (
+                    <View style={{ gap: 7, borderTopWidth: 1, borderTopColor: colors.outlineVariant, paddingTop: 10 }}>
+                      <Text style={{ fontFamily: "Inter_700Bold", fontSize: 10.5, color: colors.kenyaGreen, letterSpacing: 0.5 }}>
+                        READING EXCERPTS ({corpusLang.sampleReadings.length})
+                      </Text>
+                      {corpusLang.sampleReadings.slice(0, 4).map((rd, rIdx) => (
+                        <View
+                          key={`rd-${rIdx}`}
+                          style={{
+                            backgroundColor: colors.surface,
+                            borderRadius: 11,
+                            paddingHorizontal: 11,
+                            paddingVertical: 9,
+                            borderWidth: 1,
+                            borderColor: colors.outlineVariant,
+                            borderLeftWidth: 3,
+                            borderLeftColor: colors.kenyaGreen,
+                            gap: 4,
+                          }}
+                        >
+                          <Text style={{ fontFamily: "Inter_500Medium", fontSize: 12, color: colors.text, lineHeight: 18 }}>
+                            {rd.text}
+                          </Text>
+                          {Boolean(rd.english) && (
+                            <Text style={{ fontFamily: "Inter_400Regular", fontSize: 11.5, color: colors.textSecondary, lineHeight: 17 }}>
+                              {rd.english}
+                            </Text>
+                          )}
+                        </View>
+                      ))}
+                    </View>
+                  )}
+
+                  {/* Open-Access Articles */}
+                  {corpusLang.wikimediaArticles && corpusLang.wikimediaArticles.length > 0 && (
+                    <View style={{ gap: 6, borderTopWidth: 1, borderTopColor: colors.outlineVariant, paddingTop: 10 }}>
+                      <Text style={{ fontFamily: "Inter_700Bold", fontSize: 10.5, color: colors.kenyaGreen, letterSpacing: 0.5 }}>
+                        OPEN-ACCESS ARTICLES ({corpusLang.wikimediaArticles[0]?.source})
+                      </Text>
+                      <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 6 }}>
+                        {corpusLang.wikimediaArticles.map((art, aIdx) => (
+                          <Pressable
+                            key={`wa-${aIdx}`}
+                            onPress={() => Linking.openURL(art.url).catch(() => {})}
+                            style={{
+                              paddingHorizontal: 10,
+                              paddingVertical: 5,
+                              borderRadius: 999,
+                              borderWidth: 1,
+                              borderColor: `${colors.kenyaGreen}45`,
+                              backgroundColor: `${colors.kenyaGreen}12`,
+                            }}
+                          >
+                            <Text style={{ fontFamily: "Inter_600SemiBold", fontSize: 11.5, color: colors.kenyaGreen }}>
+                              {art.title}
                             </Text>
                           </Pressable>
                         ))}
                       </View>
-                    )}
-                  </View>
-                ) : null}
-                {corpusLang.cldr && corpusLang.cldr.days && corpusLang.cldr.days.length > 0 && (
-                  <Text style={{ fontFamily: "Inter_400Regular", fontSize: 11.5, color: colors.textSecondary }}>
-                    Days of the week: {corpusLang.cldr.days.join(" · ")}
-                  </Text>
-                )}
-                {corpusLang.cldr && corpusLang.cldr.months && corpusLang.cldr.months.length > 0 && (
-                  <Text style={{ fontFamily: "Inter_400Regular", fontSize: 11.5, color: colors.textSecondary }}>
-                    Months: {corpusLang.cldr.months.slice(0, 12).join(" · ")}
-                  </Text>
-                )}
-                {corpusLang.topFrequencyWords && corpusLang.topFrequencyWords.length > 0 && (
-                  <Text style={{ fontFamily: "Inter_400Regular", fontSize: 11.5, color: colors.textSecondary }}>
-                    Everyday words ({corpusLang.topFrequencyWords.length}): {corpusLang.topFrequencyWords.slice(0, 24).map((w) => w.word).join(", ")}
-                  </Text>
-                )}
-                {corpusLang.sampleReadings && corpusLang.sampleReadings.length > 0 && (
-                  <View style={{ gap: 4, marginTop: 2 }}>
-                    <Text style={{ fontFamily: "Inter_700Bold", fontSize: 11, color: colors.kenyaGreen }}>
-                      READING PRACTICE ({corpusLang.sampleReadings.length})
-                    </Text>
-                    {corpusLang.sampleReadings.slice(0, 6).map((rd, rIdx) => (
-                      <View key={`rd-${rIdx}`} style={{ backgroundColor: colors.surface, borderRadius: 8, padding: 8, borderWidth: 1, borderColor: colors.outlineVariant }}>
-                        <Text style={{ fontFamily: "Inter_500Medium", fontSize: 11.5, color: colors.text, lineHeight: 16 }}>
-                          {rd.text}
-                        </Text>
-                        {Boolean(rd.english) && (
-                          <Text style={{ fontFamily: "Inter_400Regular", fontSize: 11, color: colors.textSecondary, marginTop: 2 }}>
-                            {rd.english}
-                          </Text>
-                        )}
-                      </View>
-                    ))}
-                  </View>
-                )}
-                {corpusLang.phonemes && corpusLang.phonemes.length > 0 && (
-                  <Text style={{ fontFamily: "Inter_400Regular", fontSize: 11.5, color: colors.textSecondary, marginTop: 2 }}>
-                    Sound Inventory (IPA · {corpusLang.phonemes.length}): {corpusLang.phonemes.map((p) => `/${p}/`).join(" ")}
-                  </Text>
-                )}
-                {corpusLang.morphologySamples && corpusLang.morphologySamples.length > 0 && (
-                  <Text style={{ fontFamily: "Inter_400Regular", fontSize: 11.5, color: colors.textSecondary, marginTop: 2 }}>
-                    Word Formation: {corpusLang.morphologySamples.slice(0, 10).map((m) => `${m.form} (${m.lemma})`).join(" · ")}
-                  </Text>
-                )}
-                {corpusLang.wikimediaArticles && corpusLang.wikimediaArticles.length > 0 && (
-                  <View style={{ gap: 4, marginTop: 4 }}>
-                    <Text style={{ fontFamily: "Inter_700Bold", fontSize: 11, color: colors.kenyaGreen }}>
-                      OPEN-ACCESS ARTICLES ({corpusLang.wikimediaArticles[0]?.source})
-                    </Text>
-                    <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 6 }}>
-                      {corpusLang.wikimediaArticles.map((art, aIdx) => (
-                        <Pressable
-                          key={`wa-${aIdx}`}
-                          onPress={() => Linking.openURL(art.url).catch(() => {})}
-                          style={{
-                            paddingHorizontal: 9,
-                            paddingVertical: 4,
-                            borderRadius: 999,
-                            borderWidth: 1,
-                            borderColor: `${colors.kenyaGreen}45`,
-                            backgroundColor: `${colors.kenyaGreen}12`,
-                          }}
-                        >
-                          <Text style={{ fontFamily: "Inter_600SemiBold", fontSize: 11, color: colors.kenyaGreen }}>
-                            {art.title}
-                          </Text>
-                        </Pressable>
-                      ))}
                     </View>
-                  </View>
-                )}
-                {corpusLang.audioChapters && corpusLang.audioChapters.length > 0 && (
-                  <View style={{ marginTop: 6, gap: 6 }}>
-                    <Text style={{ fontFamily: "Inter_700Bold", fontSize: 11.5, color: colors.kenyaGreen }}>
-                      DHOLUO 1920 SPOKEN PHRASEBOOK ({corpusLang.audioChapters.length} CHAPTERS · PDM 1.0)
-                    </Text>
-                    {corpusLang.audioChapters.map((ch) => (
-                      <Pressable
-                        key={ch.id}
-                        onPress={() => {
-                          const played = playVerifiedAudio({ translation: ch.title, audioFile: ch.audioUrl });
-                          if (!played) {
-                            Linking.openURL(ch.fallbackUrl || ch.audioUrl).catch(() => {});
-                          }
-                        }}
-                        style={{
-                          flexDirection: "row",
-                          alignItems: "center",
-                          justifyContent: "space-between",
-                          borderWidth: 1,
-                          borderColor: `${colors.kenyaGreen}40`,
-                          borderRadius: 10,
-                          paddingHorizontal: 10,
-                          paddingVertical: 7,
-                        }}
-                      >
-                        <Text style={{ fontFamily: "Inter_500Medium", fontSize: 11.5, color: colors.text, flex: 1 }}>
-                          {ch.title}
-                        </Text>
-                        <Feather name="volume-2" size={14} color={colors.kenyaGreen} />
-                      </Pressable>
-                    ))}
-                    {selectedLangId === 'luo' && (() => {
-                      const fullChs = (dholuoChaptersData as any)?.chapters || [];
-                      const activeCh = fullChs.find((c: any) => c.id === dholuoTranscriptChapterId) || fullChs[0];
-                      const phrases: { english: string; dholuo: string }[] = activeCh?.phrases || [];
-                      if (phrases.length === 0) return null;
-                      const TX_PAGE = 10;
-                      const txPages = Math.max(1, Math.ceil(phrases.length / TX_PAGE));
-                      const safeTxP = Math.min(dholuoTranscriptPage, txPages);
-                      const slice = phrases.slice((safeTxP - 1) * TX_PAGE, safeTxP * TX_PAGE);
-                      return (
-                        <View style={{ marginTop: 6, backgroundColor: colors.surface, borderRadius: 10, borderWidth: 1, borderColor: colors.outlineVariant, padding: 10, gap: 6 }}>
-                          <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', gap: 6 }}>
-                            <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 11, color: colors.gold, flex: 1 }} numberOfLines={1}>
-                              TRANSCRIPT: {activeCh.title} ({phrases.length})
-                            </Text>
-                            <Pressable onPress={() => setDholuoShowEnglish((v) => !v)} style={{ paddingHorizontal: 8, paddingVertical: 4, borderRadius: 6, borderWidth: 1, borderColor: colors.outlineVariant }}>
-                              <Text style={{ fontFamily: 'Inter_600SemiBold', fontSize: 10.5, color: colors.textSecondary }}>
-                                {dholuoShowEnglish ? 'Hide EN' : 'Show EN'}
-                              </Text>
-                            </Pressable>
-                          </View>
-                          <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 5 }}>
-                            {fullChs.map((c: any) => (
-                              <Pressable
-                                key={c.id}
-                                onPress={() => { setDholuoTranscriptChapterId(c.id); setDholuoTranscriptPage(1); }}
-                                style={{ paddingHorizontal: 8, paddingVertical: 4, borderRadius: 7, borderWidth: 1, borderColor: c.id === activeCh.id ? colors.gold : colors.outlineVariant, backgroundColor: c.id === activeCh.id ? `${colors.gold}20` : colors.surfaceContainer }}
-                              >
-                                <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 10.5, color: c.id === activeCh.id ? colors.gold : colors.textSecondary }}>Ch. {c.number}</Text>
-                              </Pressable>
-                            ))}
-                          </ScrollView>
-                          {slice.map((ph, idx) => (
-                            <View key={idx} style={{ paddingVertical: 4, borderBottomWidth: 1, borderBottomColor: colors.outlineVariant }}>
-                              <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 12, color: colors.gold }}>{ph.dholuo}</Text>
-                              {dholuoShowEnglish && <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 11.5, color: colors.textSecondary }}>{ph.english}</Text>}
-                            </View>
-                          ))}
-                          {txPages > 1 && (
-                            <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', paddingTop: 4 }}>
-                              <Pressable disabled={safeTxP <= 1} onPress={() => setDholuoTranscriptPage((p) => Math.max(1, p - 1))} style={{ paddingHorizontal: 10, paddingVertical: 5, borderRadius: 7, borderWidth: 1, borderColor: colors.outlineVariant, opacity: safeTxP <= 1 ? 0.4 : 1 }}>
-                                <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 11, color: colors.text }}>← Prev</Text>
-                              </Pressable>
-                              <Text style={{ fontFamily: 'Inter_600SemiBold', fontSize: 11, color: colors.textMuted }}>Page {safeTxP} / {txPages}</Text>
-                              <Pressable disabled={safeTxP >= txPages} onPress={() => setDholuoTranscriptPage((p) => Math.min(txPages, p + 1))} style={{ paddingHorizontal: 10, paddingVertical: 5, borderRadius: 7, borderWidth: 1, borderColor: colors.kenyaGreen, opacity: safeTxP >= txPages ? 0.4 : 1 }}>
-                                <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 11, color: colors.kenyaGreen }}>Next →</Text>
-                              </Pressable>
-                            </View>
-                          )}
-                        </View>
-                      );
-                    })()}
-                  </View>
-                )}
+                  )}
+                </View>
               </View>
             );
           })()}

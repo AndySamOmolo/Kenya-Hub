@@ -23,6 +23,7 @@ import { getLanguageIdentity } from "@/data/language-identity";
 import { addContribution, subscribeContributions } from "@/lib/contributions";
 import { playLanguageAudio, hasVerifiedAudio, preloadLanguageAudioIndex } from "@/lib/language-audio";
 import { OPEN_CORPUS_INDEX } from "@/lib/open-corpus";
+import { loadAudioShard, type AudioShardClip } from "@/lib/learning-shards";
 import { renderInlineMarkdown } from "@/lib/render-markdown";
 import { scrollToTopIfScrolled, scrollToSectionIfNeeded } from "@/lib/scroll";
 import {
@@ -424,21 +425,65 @@ export default function KenyanTranslatorPage() {
   const browseMeta = DICT_META_MAP[browseLangId] || DICT_META_MAP.swahili;
   const browseDict = loadedDicts[browseLangId] || null;
 
+  const [browseAudioClips, setBrowseAudioClips] = useState<AudioShardClip[]>(
+    () => (OPEN_CORPUS_INDEX.languages[browseLangId]?.nativeAudioSamples as AudioShardClip[] | undefined) ?? []
+  );
+
+  useEffect(() => {
+    let active = true;
+    const preview = (OPEN_CORPUS_INDEX.languages[browseLangId]?.nativeAudioSamples as AudioShardClip[] | undefined) ?? [];
+    setBrowseAudioClips(preview);
+    const totalR2 = OPEN_CORPUS_INDEX.languages[browseLangId]?.r2AudioClips ?? 0;
+    if (totalR2 > 0) {
+      loadAudioShard(browseLangId).then((res) => {
+        if (active && res?.clips?.length) {
+          setBrowseAudioClips(res.clips);
+        }
+      });
+    }
+    return () => {
+      active = false;
+    };
+  }, [browseLangId]);
+
   const browseAudioEntries = useMemo(() => {
-    if (!browseDict) return [];
     const seen = new Set<string>();
+    const seenUrls = new Set<string>();
     const list: DictEntry[] = [];
-    for (const c of browseDict.categories) {
-      for (const e of c.entries) {
-        if (!hasVerifiedAudio(e, browseDict.languageId)) continue;
-        const k = `${e.english.trim().toLowerCase()}|${e.translation.trim().toLowerCase()}`;
-        if (seen.has(k)) continue;
-        seen.add(k);
-        list.push(e);
+    if (browseDict) {
+      for (const c of browseDict.categories) {
+        for (const e of c.entries) {
+          if (!hasVerifiedAudio(e, browseDict.languageId)) continue;
+          const k = `${e.english.trim().toLowerCase()}|${e.translation.trim().toLowerCase()}`;
+          if (seen.has(k)) continue;
+          seen.add(k);
+          const af = (e as DictEntry & { audioFile?: string; audioUrl?: string }).audioFile || (e as DictEntry & { audioUrl?: string }).audioUrl;
+          if (af) seenUrls.add(af);
+          list.push(e);
+        }
       }
     }
+    for (const clip of browseAudioClips) {
+      if (!clip.audioUrl || seenUrls.has(clip.audioUrl)) continue;
+      const tr = (clip.transcript || clip.label || "").trim();
+      if (!tr) continue;
+      const en = (clip.english || "Spoken Native Recording").trim();
+      const k = `${en.toLowerCase()}|${tr.toLowerCase()}`;
+      if (seen.has(k)) continue;
+      seen.add(k);
+      seenUrls.add(clip.audioUrl);
+      list.push({
+        english: en,
+        translation: tr,
+        pronunciation: "",
+        context: clip.english
+          ? "Spoken Sentence Archive · Native Speaker Audio"
+          : "Spoken Native Recording · Open-Access Audio Archive",
+        audioFile: clip.audioUrl,
+      });
+    }
     return list;
-  }, [browseDict]);
+  }, [browseDict, browseAudioClips]);
 
   const categoryEntries = useMemo(() => {
     if (!activeCategory || !browseDict) return [];
