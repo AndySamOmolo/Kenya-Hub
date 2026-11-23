@@ -916,8 +916,10 @@ function createToolsStyles(
     },
     resultsBar: {
       flexDirection: "row",
+      flexWrap: "wrap",
       alignItems: "center",
       justifyContent: "space-between",
+      gap: sp(8),
       marginBottom: sp(8),
     },
     resultsText: {

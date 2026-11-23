@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import { ArrowRightLeft } from "lucide-react";
 import ToolShell from "@/components/tools/ToolShell";
+import CustomSelect from "@/components/ui/CustomSelect";
 import { TOOLS } from "@/lib/tools-registry";
 import utilData from "@/data/kenya-utility-tools-2026.json";
 
@@ -146,18 +147,18 @@ export default function IcmsLandedCostArbitragePage() {
               >
                 EAC CET Import Duty Rate
               </label>
-              <select
+              <CustomSelect
                 id="icms-duty-rate"
                 value={selectedHs}
                 onChange={(e) => setSelectedHs(e.target.value)}
-                className="w-full px-3 py-2 rounded-xl border border-border dark:border-white/15 bg-bg-elevated text-xs font-semibold text-text-primary truncate"
+                className="input-field w-full text-xs"
               >
                 {utilData.icms.hsPresets.map((p) => (
                   <option key={p.hs} value={p.hs}>
                     {Math.round(p.dutyRate * 100)}% — {shortenLabel(p.label)} ({p.hs})
                   </option>
                 ))}
-              </select>
+              </CustomSelect>
             </div>
             <div>
               <label
@@ -246,23 +247,23 @@ export default function IcmsLandedCostArbitragePage() {
 
             <div className="rounded-xl border border-border bg-bg-elevated/30 p-4 text-xs space-y-1.5">
               <h2 className="font-bold text-text-primary mb-2">KRA iCMS Cascading Tax Breakdown</h2>
-              <div className="flex justify-between gap-3">
+              <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
                 <span>Customs Value (CIF = FOB + Freight + 1.5% Ins.)</span>
                 <span className="font-semibold tabular-nums whitespace-nowrap">KES {calc.cif.toLocaleString("en-KE")}</span>
               </div>
-              <div className="flex justify-between gap-3">
+              <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
                 <span>Import Duty ({Math.round(calc.dutyPct * 100)}%)</span>
                 <span className="font-semibold tabular-nums whitespace-nowrap">KES {calc.importDuty.toLocaleString("en-KE")}</span>
               </div>
-              <div className="flex justify-between gap-3">
+              <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
                 <span>16% VAT (Cascaded on CIF + Import Duty)</span>
                 <span className="font-semibold tabular-nums whitespace-nowrap">KES {calc.vat.toLocaleString("en-KE")}</span>
               </div>
-              <div className="flex justify-between gap-3">
+              <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
                 <span>2.5% Import Declaration Fee (IDF)</span>
                 <span className="font-semibold tabular-nums whitespace-nowrap">KES {calc.idf.toLocaleString("en-KE")}</span>
               </div>
-              <div className="flex justify-between gap-3">
+              <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
                 <span>2.0% Railway Development Levy (RDL)</span>
                 <span className="font-semibold tabular-nums whitespace-nowrap">KES {calc.rdl.toLocaleString("en-KE")}</span>
               </div>

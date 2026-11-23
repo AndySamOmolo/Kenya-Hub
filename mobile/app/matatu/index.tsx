@@ -86,10 +86,10 @@ const RouteCard = React.memo(function RouteCard({
           </View>
           <View style={styles.routeBody}>
             <View
-              style={{ flexDirection: "row", alignItems: "center", gap: 6 }}
+              style={{ flexDirection: "row", flexWrap: "wrap", alignItems: "center", gap: 6 }}
             >
               <Text
-                style={[styles.routeText, { color: theme.textPrimary, flex: 1 }]}
+                style={[styles.routeText, { color: theme.textPrimary, flexGrow: 1, flexShrink: 1, minWidth: 140 }]}
               >
                 {route.name}
               </Text>
@@ -100,6 +100,8 @@ const RouteCard = React.memo(function RouteCard({
                     paddingHorizontal: 7,
                     paddingVertical: 2,
                     borderRadius: 999,
+                    alignSelf: "flex-start",
+                    flexShrink: 1,
                   }}
                 >
                   <Text
@@ -769,6 +771,7 @@ const styles = StyleSheet.create({
   },
   filterSubRow: {
     flexDirection: "row",
+    flexWrap: "wrap",
     alignItems: "center",
     justifyContent: "space-between",
     marginTop: 6,

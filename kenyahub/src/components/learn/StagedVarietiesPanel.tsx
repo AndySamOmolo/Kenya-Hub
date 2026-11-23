@@ -362,8 +362,8 @@ export default function StagedVarietiesPanel() {
                     key={`${activeVariety.id}-${idx}`}
                     className="rounded-lg border border-border bg-bg-card p-2.5 text-xs space-y-0.5"
                   >
-                    <div className="flex items-start justify-between gap-1.5">
-                      <p className="font-bold text-text-primary">{entry.translation}</p>
+                    <div className="flex flex-wrap items-start justify-between gap-1.5">
+                      <p className="font-bold text-text-primary min-w-0 flex-1">{entry.translation}</p>
                       {entry.category && (
                         <span className="rounded bg-bg-elevated px-1.5 py-0.5 text-[10px] text-text-muted capitalize shrink-0">
                           {entry.category}

@@ -268,8 +268,8 @@ export default function BlogPostContent({ post }: { post: BlogPost | null }) {
         {/* Related Interactive Calculators & Tools */}
         {relatedTools.length > 0 && (
           <section data-adsense-ignore="true" className="mt-10 pt-8 border-t border-border">
-            <div className="flex items-center justify-between gap-2 mb-4">
-              <h2 className="text-base sm:text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2">
+            <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
+              <h2 className="text-base sm:text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2 min-w-0">
                 <DynamicIcon emoji="🧰" className="w-4 h-4 text-gold" /> Related Free Kenyan Calculators &amp; Tools
               </h2>
               <Link href="/tools/" className="text-xs font-semibold text-gold hover:underline shrink-0">
@@ -311,8 +311,8 @@ export default function BlogPostContent({ post }: { post: BlogPost | null }) {
         {/* Related Blog Guides */}
         {relatedPosts.length > 0 && (
           <section data-adsense-ignore="true" className="mt-10 pt-8 border-t border-border">
-            <div className="flex items-center justify-between gap-2 mb-4">
-              <h2 className="text-base sm:text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2">
+            <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
+              <h2 className="text-base sm:text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2 min-w-0">
                 <DynamicIcon emoji="📚" className="w-4 h-4 text-gold" /> More Kenyan Guides &amp; Articles
               </h2>
               <Link href="/blog/" className="text-xs font-semibold text-gold hover:underline shrink-0">
@@ -328,7 +328,7 @@ export default function BlogPostContent({ post }: { post: BlogPost | null }) {
                   className="bg-bg-card border border-border hover:border-gold/50 rounded-xl p-4 transition-all flex flex-col justify-between group"
                 >
                   <div>
-                    <div className="flex items-center justify-between text-[0.625rem] text-text-muted mb-1.5">
+                    <div className="flex flex-wrap items-center justify-between gap-2 text-[0.625rem] text-text-muted mb-1.5">
                       <span className="text-gold font-semibold">{(rp.tags || [])[0] || "Guide"}</span>
                       <span>{rp.readTime} min read</span>
                     </div>

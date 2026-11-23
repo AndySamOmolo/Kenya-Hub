@@ -6,6 +6,7 @@ import type { GrammarSection } from "@/data/courses/types";
 import { renderInlineMarkdown } from "@/lib/render-markdown";
 import { getLanguageOpenCorpus } from "@/lib/open-corpus";
 import { loadGrammarShard, type GrammarShard } from "@/lib/learning-shards";
+import CustomSelect from "@/components/ui/CustomSelect";
 
 /**
  * Renders grammar section content supporting headings, bulleted/numbered lists,
@@ -548,17 +549,17 @@ export default function GrammarView({
                 <h3 className="text-xs font-bold uppercase tracking-wider text-text-muted">
                   Interactive Verb Conjugations ({grammarShard.conjugations.length} verbs)
                 </h3>
-                <select
+                <CustomSelect
                   value={selectedVerbLemma}
                   onChange={(e) => setSelectedVerbLemma(e.target.value)}
-                  className="w-full sm:w-auto max-w-full min-w-0 rounded-xl border border-border bg-bg-elevated px-3 py-1.5 text-xs font-semibold text-text-primary focus:border-gold/60 focus:outline-none"
+                  className="input-field w-full sm:w-auto sm:min-w-[12rem] max-w-full min-w-0 py-1.5 text-xs"
                 >
                   {grammarShard.conjugations.map((g) => (
                     <option key={g.lemma} value={g.lemma}>
                       {g.lemma} ({g.forms.length} forms)
                     </option>
                   ))}
-                </select>
+                </CustomSelect>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
                 {(grammarShard.conjugations.find((g) => g.lemma === selectedVerbLemma) ?? grammarShard.conjugations[0]).forms.map((f, idx) => (

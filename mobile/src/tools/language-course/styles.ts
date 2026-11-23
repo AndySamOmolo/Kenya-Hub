@@ -160,6 +160,7 @@ export const createStyles = (_theme?: ThemeColors, metrics?: ThemeMetrics) => {
     },
     courseInfoHeader: {
       flexDirection: "row",
+      flexWrap: "wrap",
       alignItems: "flex-start",
       justifyContent: "space-between",
       gap: sp(8),
@@ -507,8 +508,10 @@ export const createStyles = (_theme?: ThemeColors, metrics?: ThemeMetrics) => {
     },
     practiceMetaRow: {
       flexDirection: "row",
+      flexWrap: "wrap",
       alignItems: "center",
       justifyContent: "space-between",
+      gap: sp(8),
     },
     streakComboPill: {
       paddingHorizontal: sp(10),
@@ -710,7 +713,9 @@ export const createStyles = (_theme?: ThemeColors, metrics?: ThemeMetrics) => {
     flashcardTopMeta: {
       width: "100%",
       flexDirection: "row",
+      flexWrap: "wrap",
       justifyContent: "space-between",
+      gap: sp(8),
       marginBottom: sp(18),
     },
     flashcardMainWord: {
@@ -758,8 +763,10 @@ export const createStyles = (_theme?: ThemeColors, metrics?: ThemeMetrics) => {
     },
     gameTopHeader: {
       flexDirection: "row",
+      flexWrap: "wrap",
       alignItems: "center",
       justifyContent: "space-between",
+      gap: sp(8),
     },
     backLinkRow: {
       flexDirection: "row",

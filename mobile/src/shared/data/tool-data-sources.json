@@ -165,7 +165,92 @@
       "official": true,
       "sourceUrl": "https://ardhisasa.lands.go.ke/",
       "lastUpdated": "2026-11-19"
+    },
+    "school-fee-cap-auditor": {
+      "official": true,
+      "sourceUrl": "https://www.education.go.ke/",
+      "lastUpdated": "2026-11-24"
+    },
+    "cooking-fuel-comparator": {
+      "official": true,
+      "sourceUrl": "https://www.epra.go.ke/",
+      "lastUpdated": "2026-11-24"
+    },
+    "auctioneer-fee-shield": {
+      "official": true,
+      "sourceUrl": "https://www.kenyalaw.org/lex/",
+      "lastUpdated": "2026-11-24"
+    },
+    "succession-cap160-calculator": {
+      "official": true,
+      "sourceUrl": "https://www.kenyalaw.org/lex/",
+      "lastUpdated": "2026-11-24"
+    },
+    "duka-hustle-ubp-calculator": {
+      "official": true,
+      "sourceUrl": "https://nairobiservices.go.ke/",
+      "lastUpdated": "2026-11-24"
+    },
+    "funeral-harambee-planner": {
+      "official": true,
+      "sourceUrl": "https://www.kutrrh.go.ke/",
+      "lastUpdated": "2026-11-24"
+    },
+    "rainwater-tank-sizer": {
+      "official": true,
+      "sourceUrl": "https://meteo.go.ke/",
+      "lastUpdated": "2026-11-24"
+    },
+    "fertilizer-seed-breakeven": {
+      "official": true,
+      "sourceUrl": "https://www.kalro.org/",
+      "lastUpdated": "2026-11-24"
+    },
+    "dairy-ration-margin": {
+      "official": true,
+      "sourceUrl": "https://www.kdb.go.ke/",
+      "lastUpdated": "2026-11-24"
+    },
+    "land-subdivision-planner": {
+      "official": true,
+      "sourceUrl": "https://ardhisasa.lands.go.ke/",
+      "lastUpdated": "2026-11-24"
+    },
+    "biogas-digester-sizer": {
+      "official": true,
+      "sourceUrl": "https://www.energy.go.ke/",
+      "lastUpdated": "2026-11-24"
+    },
+    "livestock-vaccine-calendar": {
+      "official": true,
+      "sourceUrl": "https://kevevapi.or.ke/",
+      "lastUpdated": "2026-11-24"
+    },
+    "ecitizen-docs-planner": {
+      "official": true,
+      "sourceUrl": "https://www.ecitizen.go.ke/",
+      "lastUpdated": "2026-11-24"
+    },
+    "tvet-kmtc-pathway-matcher": {
+      "official": true,
+      "sourceUrl": "https://kmtc.ac.ke/",
+      "lastUpdated": "2026-11-24"
+    },
+    "used-car-elogbook-checker": {
+      "official": true,
+      "sourceUrl": "https://ntsa.go.ke/",
+      "lastUpdated": "2026-11-24"
+    },
+    "child-maintenance-calculator": {
+      "official": true,
+      "sourceUrl": "https://www.kenyalaw.org/lex/",
+      "lastUpdated": "2026-11-24"
+    },
+    "article49-rights-companion": {
+      "official": true,
+      "sourceUrl": "https://www.ipoa.go.ke/",
+      "lastUpdated": "2026-11-24"
     }
   },
-  "lastAudit": "2026-11-20"
+  "lastAudit": "2026-11-24"
 }

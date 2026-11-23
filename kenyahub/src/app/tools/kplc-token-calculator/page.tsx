@@ -175,7 +175,7 @@ export default function KPLCTokenCalculatorPage() {
 
         {/* Result */}
         <div role="status" aria-live="polite" aria-atomic="true" className="result-box">
-          <div className="flex items-center justify-between mb-4">
+          <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
             <span className="text-sm text-text-secondary">Units You Will Receive</span>
             <span className="text-xs text-text-muted">
               {results.totalUnits > 0

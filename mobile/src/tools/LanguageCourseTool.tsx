@@ -2402,7 +2402,7 @@ export default function LanguageCourseTool({
       <View style={styles.container}>
         {/* Learner Summary & Welcome Banner */}
         <View style={{ gap: 12 }}>
-          <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 8 }}>
+          <View style={{ flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: 8 }}>
             <View
               style={{
                 flexDirection: 'row',
@@ -2908,7 +2908,7 @@ export default function LanguageCourseTool({
                 const opts = [qVid, ...others.slice(start, start + 3)].sort((a, b) => (a.gloss || a.title).localeCompare(b.gloss || b.title));
                 return (
                   <View style={{ gap: 8, backgroundColor: colors.surface, borderRadius: 12, borderWidth: 1, borderColor: colors.outlineVariant, padding: 10 }}>
-                    <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <View style={{ flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center', gap: 6 }}>
                       <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 12, color: colors.gold }}>WATCH &amp; MATCH SIGN</Text>
                       <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 11.5, color: colors.kenyaGreen }}>Score: {kslQuizScore.right}/{kslQuizScore.total}</Text>
                     </View>
@@ -3103,8 +3103,8 @@ export default function LanguageCourseTool({
                     />
                   </View>
 
-                  <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 8 }}>
-                    <View style={{ flex: 1 }}>
+                  <View style={{ flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: 8 }}>
+                    <View style={{ flexGrow: 1, flexShrink: 1, minWidth: 160 }}>
                       <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 13.5, color: colors.text }} numberOfLines={2}>
                         {activeKsl.title}
                       </Text>
@@ -3181,7 +3181,7 @@ export default function LanguageCourseTool({
 
               {/* Fixed-Window Paginated KSL Video List (max 15 rows mounted -> 60fps zero lag) */}
               <View style={{ gap: 6 }}>
-                <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
+                <View style={{ flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: 6 }}>
                   <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 11, color: colors.textMuted }}>
                     {filteredKslVideos.length === 0
                       ? '0 MATCHING SIGNS'
@@ -3577,8 +3577,8 @@ export default function LanguageCourseTool({
                 >
                   <DynamicIcon emoji={ach.icon} size={18} color={isUnlocked ? langColor : colors.textMuted} />
                   <View style={{ flex: 1 }}>
-                    <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 4 }}>
-                      <Text style={{ fontSize: 11, fontWeight: '800', color: colors.text, flex: 1 }}>
+                    <View style={{ flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: 4 }}>
+                      <Text style={{ fontSize: 11, fontWeight: '800', color: colors.text, flexGrow: 1, flexShrink: 1, minWidth: 120 }}>
                         {ach.name}
                       </Text>
                       <Text style={{ fontSize: 10, fontWeight: '800', color: isUnlocked ? '#10B981' : langColor }}>
@@ -4171,8 +4171,8 @@ export default function LanguageCourseTool({
                           },
                         ]}
                       >
-                        <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
-                          <Text style={{ fontSize: 13.5, fontWeight: '800', color: colors.text }}>
+                        <View style={{ flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center', gap: 8 }}>
+                          <Text style={{ fontSize: 13.5, fontWeight: '800', color: colors.text, flexShrink: 1 }}>
                             {sk.title}
                           </Text>
                           <Pressable
@@ -4407,12 +4407,13 @@ export default function LanguageCourseTool({
                   borderRadius: 16,
                   padding: 13,
                   flexDirection: 'row',
+                  flexWrap: 'wrap',
                   alignItems: 'center',
                   justifyContent: 'space-between',
                   gap: 10,
                 }}
               >
-                <View style={{ flex: 1 }}>
+                <View style={{ flexGrow: 1, flexShrink: 1, minWidth: 160 }}>
                   <Text style={{ fontSize: 15, fontWeight: '800', color: colors.text }}>
                     {currentCourse?.config.name} Arcade
                   </Text>
@@ -5285,8 +5286,8 @@ export default function LanguageCourseTool({
               <View style={{ gap: 12 }}>
                 {chapters.length > 0 && activeChMeta && (
                   <View style={{ backgroundColor: colors.surfaceContainer, borderWidth: 1, borderColor: colors.outlineVariant, borderRadius: 16, padding: 14, gap: 10 }}>
-                    <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 8 }}>
-                      <View style={{ flex: 1 }}>
+                    <View style={{ flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: 8 }}>
+                      <View style={{ flexGrow: 1, flexShrink: 1, minWidth: 160 }}>
                         <Text style={{ fontFamily: 'Outfit_700Bold', fontSize: 15.5, color: colors.text }}>
                           Spoken Phrasebook
                         </Text>
@@ -5340,8 +5341,8 @@ export default function LanguageCourseTool({
 
                     {/* Active Chapter Card + Full Audio Controls */}
                     <View style={{ backgroundColor: colors.surface, borderRadius: 14, borderWidth: 1, borderColor: `${colors.gold}40`, padding: 12, gap: 10 }}>
-                      <View style={{ flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'space-between', gap: 8 }}>
-                        <Text style={{ fontFamily: 'Outfit_700Bold', fontSize: 14, color: colors.text, flex: 1, lineHeight: 19 }}>
+                      <View style={{ flexDirection: 'row', flexWrap: 'wrap', alignItems: 'flex-start', justifyContent: 'space-between', gap: 8 }}>
+                        <Text style={{ fontFamily: 'Outfit_700Bold', fontSize: 14, color: colors.text, flexGrow: 1, flexShrink: 1, minWidth: 160, lineHeight: 19 }}>
                           Chapter {activeChMeta.number}: {String(activeChMeta.title || '').replace(/^\d+\s*[—–-]\s*/, '')}
                         </Text>
                         {Boolean(activeChMeta.sizeMb) && (
@@ -5457,8 +5458,8 @@ export default function LanguageCourseTool({
                       {/* Follow-Along Phrasebook inside Listen & Read */}
                       {rawPhrases.length > 0 && (
                         <View style={{ borderTopWidth: 1, borderTopColor: colors.outlineVariant, paddingTop: 10, gap: 8 }}>
-                          <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 8 }}>
-                            <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 11.5, color: colors.gold, letterSpacing: 0.4, flex: 1 }}>
+                          <View style={{ flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: 8 }}>
+                            <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 11.5, color: colors.gold, letterSpacing: 0.4, flexGrow: 1, flexShrink: 1, minWidth: 150 }}>
                               FOLLOW-ALONG PHRASEBOOK ({rawPhrases.length})
                             </Text>
                             <Pressable
@@ -5709,8 +5710,8 @@ export default function LanguageCourseTool({
               <View style={{ gap: 12 }}>
                 {bilinguals.length > 0 && (
                   <View style={{ backgroundColor: colors.surfaceContainer, borderWidth: 1, borderColor: `${colors.gold}45`, borderRadius: 16, padding: 14, gap: 8 }}>
-                    <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', gap: 8 }}>
-                      <Text style={{ fontFamily: 'Outfit_700Bold', fontSize: 15, color: colors.text, flex: 1 }}>
+                    <View style={{ flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center', gap: 8 }}>
+                      <Text style={{ fontFamily: 'Outfit_700Bold', fontSize: 15, color: colors.text, flexGrow: 1, flexShrink: 1, minWidth: 150 }}>
                         Bilingual Readings ({bilinguals.length})
                       </Text>
                       <Pressable
@@ -5785,8 +5786,8 @@ export default function LanguageCourseTool({
             {/* 3. READING & KNOWLEDGE COMPREHENSION QUIZ */}
             {lrSubTab === 'quiz' && currentQ && (
               <View style={{ backgroundColor: colors.surfaceContainer, borderWidth: 1, borderColor: colors.outlineVariant, borderRadius: 16, padding: 14, gap: 10 }}>
-                <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
-                  <Text style={{ fontFamily: 'Outfit_700Bold', fontSize: 15, color: colors.text }}>
+                <View style={{ flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center', gap: 8 }}>
+                  <Text style={{ fontFamily: 'Outfit_700Bold', fontSize: 15, color: colors.text, flexShrink: 1 }}>
                     Reading &amp; Knowledge Quiz
                   </Text>
                   <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 12, color: colors.gold }}>
@@ -5891,8 +5892,8 @@ export default function LanguageCourseTool({
                   {/* Calendar: Days of the Week & Months */}
                   {corpusLang.cldr && ((corpusLang.cldr.days && corpusLang.cldr.days.length > 0) || (corpusLang.cldr.months && corpusLang.cldr.months.length > 0)) && (
                     <View style={{ gap: 10 }}>
-                      <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
-                        <Text style={{ fontFamily: "Outfit_700Bold", fontSize: 14.5, color: colors.text }}>
+                      <View style={{ flexDirection: "row", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", gap: 8 }}>
+                        <Text style={{ fontFamily: "Outfit_700Bold", fontSize: 14.5, color: colors.text, flexShrink: 1 }}>
                           Calendar &amp; Time Vocabulary
                         </Text>
                         <Text style={{ fontFamily: "Inter_700Bold", fontSize: 10.5, color: colors.gold }}>
@@ -6416,7 +6417,7 @@ export default function LanguageCourseTool({
                         },
                       ]}
                     >
-                      <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+                      <View style={{ flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-between', gap: 6 }}>
                         <Text style={{ fontSize: 11, fontWeight: '800', color: '#10B981' }}>
                           Proverb #{p.id}
                         </Text>
@@ -6627,7 +6628,7 @@ export default function LanguageCourseTool({
                         },
                       ]}
                     >
-                      <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+                      <View style={{ flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-between', gap: 6 }}>
                         <Text style={{ fontSize: 11, fontWeight: '800', color: langColor }}>
                           {item.category === 'tradition' ? `Tradition #${idx + 1}` : `Proverb #${idx + 1}`}
                         </Text>

@@ -191,8 +191,8 @@ export default function OdpcHrRetentionVaultPage() {
                 key={i}
                 className="rounded-xl border border-border bg-bg-elevated/50 p-3.5 space-y-2"
               >
-                <div className="flex items-start justify-between gap-2">
-                  <p className="text-xs font-bold text-text-primary leading-snug">{rule.record}</p>
+                <div className="flex flex-wrap items-start justify-between gap-2">
+                  <p className="text-xs font-bold text-text-primary leading-snug min-w-0 flex-1">{rule.record}</p>
                   <span
                     className={`px-2 py-0.5 rounded-full text-[0.65rem] font-bold shrink-0 whitespace-nowrap ${
                       rule.action === "LOCK"

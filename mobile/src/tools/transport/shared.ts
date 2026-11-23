@@ -135,6 +135,7 @@ export const createStyles = (theme: ThemeColors) =>
     },
     ussdRow: {
       flexDirection: "row",
+      flexWrap: "wrap",
       justifyContent: "space-between",
       alignItems: "flex-start",
       gap: 8,
@@ -237,6 +238,7 @@ export const createStyles = (theme: ThemeColors) =>
     },
     fineTop: {
       flexDirection: "row",
+      flexWrap: "wrap",
       justifyContent: "space-between",
       alignItems: "flex-start",
       gap: 10,
@@ -246,12 +248,16 @@ export const createStyles = (theme: ThemeColors) =>
       fontFamily: "Outfit_700Bold",
       fontWeight: "700",
       color: theme.textPrimary,
-      flex: 1,
+      flexGrow: 1,
+      flexShrink: 1,
+      minWidth: 160,
     },
     fineBadge: {
       backgroundColor: `${theme.kenyaRed}20`,
       borderWidth: 1,
       borderColor: `${theme.kenyaRed}40`,
+      alignSelf: "flex-start",
+      flexShrink: 1,
       paddingHorizontal: 8,
       paddingVertical: 4,
       borderRadius: 8,

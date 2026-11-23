@@ -1,5 +1,5 @@
-import React, { useCallback, useMemo, useRef, useState } from "react";
-import { Pressable, ScrollView, StyleSheet, Text } from "react-native";
+import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { InteractionManager, Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 import { useLocalSearchParams } from "expo-router";
 import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
 import {
@@ -62,6 +62,52 @@ function createLearnStyles(
       fontFamily: hf("Outfit_700Bold"),
       fontSize: fs(12),
     },
+    skeletonWrap: {
+      gap: sp(12),
+      paddingTop: sp(4),
+    },
+    skeletonHero: {
+      borderRadius: 16,
+      borderWidth: bw,
+      padding: sp(16),
+      gap: sp(10),
+    },
+    skeletonPillRow: {
+      flexDirection: "row",
+      gap: sp(8),
+    },
+    skeletonPill: {
+      height: 32,
+      width: 78,
+      borderRadius: 999,
+      borderWidth: bw,
+    },
+    skeletonCard: {
+      borderRadius: 14,
+      borderWidth: bw,
+      padding: sp(14),
+      gap: sp(8),
+    },
+    skeletonLineLg: {
+      height: 18,
+      width: "62%",
+      borderRadius: 8,
+    },
+    skeletonLineMd: {
+      height: 14,
+      width: "48%",
+      borderRadius: 6,
+    },
+    skeletonLineFull: {
+      height: 12,
+      width: "92%",
+      borderRadius: 6,
+    },
+    skeletonLineSm: {
+      height: 12,
+      width: "38%",
+      borderRadius: 6,
+    },
   });
 }
 
@@ -82,6 +128,7 @@ export default function LearnTabScreen() {
     floatClearance +
     insets.bottom;
   const scrollRef = useRef<ScrollView>(null);
+  const [contentReady, setContentReady] = useState(false);
   const [showBackToTop, setShowBackToTop] = useState(false);
   const showBackToTopRef = useRef(false);
   const [navState, setNavState] = useState<CourseNavigationState>({
@@ -89,6 +136,25 @@ export default function LearnTabScreen() {
     courseName: "Kenyan Languages",
     backToMenu: () => {},
   });
+
+  useEffect(() => {
+    let cancelled = false;
+    let rafId: number | null = null;
+    const task = InteractionManager.runAfterInteractions(() => {
+      rafId = requestAnimationFrame(() => {
+        if (!cancelled) {
+          setContentReady(true);
+        }
+      });
+    });
+    return () => {
+      cancelled = true;
+      task.cancel();
+      if (rafId !== null) {
+        cancelAnimationFrame(rafId);
+      }
+    };
+  }, []);
 
   const handleScrollToTop = useCallback(() => {
     triggerHaptic(8);
@@ -133,12 +199,59 @@ export default function LearnTabScreen() {
         scrollEventThrottle={64}
         onScroll={handleLearnScroll}
       >
-        <LanguageLearningTool
-          initialLanguageId={typeof params.lang === "string" ? params.lang : undefined}
-          initialTab={typeof params.tab === "string" ? (params.tab as any) : undefined}
-          onScrollToTop={handleScrollToTop}
-          onNavigationStateChange={setNavState}
-        />
+        {contentReady ? (
+          <LanguageLearningTool
+            initialLanguageId={typeof params.lang === "string" ? params.lang : undefined}
+            initialTab={typeof params.tab === "string" ? (params.tab as any) : undefined}
+            onScrollToTop={handleScrollToTop}
+            onNavigationStateChange={setNavState}
+          />
+        ) : (
+          <View style={styles.skeletonWrap} accessibilityLabel="Loading Learn Hub">
+            <View
+              style={[
+                styles.skeletonHero,
+                {
+                  backgroundColor: theme.surfaceContainerLow,
+                  borderColor: theme.outlineVariant,
+                },
+              ]}
+            >
+              <View style={[styles.skeletonLineLg, { backgroundColor: theme.surfaceContainerHigh }]} />
+              <View style={[styles.skeletonLineSm, { backgroundColor: theme.surfaceContainerHigh }]} />
+            </View>
+            <View style={styles.skeletonPillRow}>
+              {[0, 1, 2, 3].map((idx) => (
+                <View
+                  key={`sk-pill-${idx}`}
+                  style={[
+                    styles.skeletonPill,
+                    {
+                      backgroundColor: theme.surfaceContainerLow,
+                      borderColor: theme.outlineVariant,
+                    },
+                  ]}
+                />
+              ))}
+            </View>
+            {[0, 1, 2].map((idx) => (
+              <View
+                key={`sk-card-${idx}`}
+                style={[
+                  styles.skeletonCard,
+                  {
+                    backgroundColor: theme.surfaceContainerLow,
+                    borderColor: theme.outlineVariant,
+                  },
+                ]}
+              >
+                <View style={[styles.skeletonLineMd, { backgroundColor: theme.surfaceContainerHigh }]} />
+                <View style={[styles.skeletonLineFull, { backgroundColor: theme.surfaceContainerHigh }]} />
+                <View style={[styles.skeletonLineSm, { backgroundColor: theme.surfaceContainerHigh }]} />
+              </View>
+            ))}
+          </View>
+        )}
       </ScrollView>
 
       {showBackToTop && (

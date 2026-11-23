@@ -282,35 +282,17 @@ function normalizeFaqKey(q: string): string {
     .trim();
 }
 
-export default function ToolShell({
-  tool,
-  children,
-  faq = [],
-  breadcrumbSuffix = [],
-  breadcrumbParentLabel,
-  hideHeader = false,
-  hideFooter = false,
-  hideSource = false,
-  guideOverride,
-}: ToolShellProps) {
-  if (!tool) {
-    return (
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {children}
-      </div>
-    );
-  }
-  const category = getCategoryInfo(tool.category);
-  const related = getRelatedTools(tool.slug, 4);
-  const relatedBlogPosts = getCuratedBlogPostsForTool(tool, 3);
+const EMPTY_FAQ: FAQItem[] = [];
+const EMPTY_BREADCRUMB_SUFFIX: BreadcrumbItem[] = [];
+
+function resolveGuideAndFaq(
+  tool: Tool,
+  faq: FAQItem[],
+  guideOverride?: RichGuideEntry
+): { guide: RichGuideEntry | undefined; effectiveFaq: FAQItem[] } {
   const guide =
     guideOverride ||
     (toolGuidesData.guides as Record<string, RichGuideEntry>)[tool.slug];
-
-  const sourceEntry = typedToolSources.tools?.[tool.slug];
-  const lastModifiedDate =
-    sourceEntry?.lastUpdated || typedToolSources.lastAudit || "2026-11-15";
-  const officialSourceUrl = sourceEntry?.sourceUrl;
 
   // Deduplicate FAQs: prefer canonical tool-guides.json FAQs and skip near-duplicate inline FAQs (F-034)
   const mergedFaqMap = new Map<string, FAQItem>();
@@ -324,14 +306,69 @@ export default function ToolShell({
       if (normKey) normalizedKeys.add(normKey);
     }
   }
-  const effectiveFaq: FAQItem[] = Array.from(mergedFaqMap.values());
-  const guideNotes: string[] = guide?.notes || [];
-  const overviewParagraphs: string[] = guide?.overview || [];
-  const howItWorksSteps: string[] = guide?.howItWorks || [];
-  const workedExample = guide?.workedExample;
-  const complianceTips: string[] = guide?.complianceTips || [];
-  const isCulturalOrLanguageTool = tool.category === "language-learning";
-  const hasBothGuideCols = guideNotes.length > 0 && complianceTips.length > 0;
+  return { guide, effectiveFaq: Array.from(mergedFaqMap.values()) };
+}
+
+function areFaqArraysEqual(a: FAQItem[], b: FAQItem[]): boolean {
+  if (a === b) return true;
+  if (a.length !== b.length) return false;
+  for (let i = 0; i < a.length; i++) {
+    if (a[i].question !== b[i].question || a[i].answer !== b[i].answer) {
+      return false;
+    }
+  }
+  return true;
+}
+
+function areBreadcrumbsEqual(a: BreadcrumbItem[], b: BreadcrumbItem[]): boolean {
+  if (a === b) return true;
+  if (a.length !== b.length) return false;
+  for (let i = 0; i < a.length; i++) {
+    if (a[i].label !== b[i].label || a[i].href !== b[i].href) {
+      return false;
+    }
+  }
+  return true;
+}
+
+interface ToolShellHeaderProps {
+  tool: Tool;
+  faq: FAQItem[];
+  breadcrumbSuffix: BreadcrumbItem[];
+  breadcrumbParentLabel?: string;
+  hideHeader: boolean;
+  hideSource: boolean;
+  guideOverride?: RichGuideEntry;
+}
+
+function areHeaderPropsEqual(prev: ToolShellHeaderProps, next: ToolShellHeaderProps): boolean {
+  return (
+    prev.tool === next.tool &&
+    prev.hideHeader === next.hideHeader &&
+    prev.hideSource === next.hideSource &&
+    prev.breadcrumbParentLabel === next.breadcrumbParentLabel &&
+    prev.guideOverride === next.guideOverride &&
+    areBreadcrumbsEqual(prev.breadcrumbSuffix, next.breadcrumbSuffix) &&
+    areFaqArraysEqual(prev.faq, next.faq)
+  );
+}
+
+const ToolShellHeader = React.memo(function ToolShellHeader({
+  tool,
+  faq,
+  breadcrumbSuffix,
+  breadcrumbParentLabel,
+  hideHeader,
+  hideSource,
+  guideOverride,
+}: ToolShellHeaderProps) {
+  const category = getCategoryInfo(tool.category);
+  const { effectiveFaq } = resolveGuideAndFaq(tool, faq, guideOverride);
+
+  const sourceEntry = typedToolSources.tools?.[tool.slug];
+  const lastModifiedDate =
+    sourceEntry?.lastUpdated || typedToolSources.lastAudit || "2026-11-15";
+  const officialSourceUrl = sourceEntry?.sourceUrl;
 
   const parentCrumbLabel = breadcrumbParentLabel || tool.shortTitle;
   const dedupedBreadcrumbSuffix = breadcrumbSuffix.filter((b, idx) => {
@@ -482,7 +519,7 @@ export default function ToolShell({
       : null;
 
   return (
-    <div className={`max-w-5xl mx-auto px-3.5 sm:px-6 lg:px-8 ${hideHeader ? "py-2.5 sm:py-5" : "pt-3 pb-4 sm:py-8"}`}>
+    <>
       <ToolAccessTracker tool={tool} />
 
       {/* Structured Data */}
@@ -623,6 +660,328 @@ export default function ToolShell({
           )}
         </header>
       )}
+    </>
+  );
+}, areHeaderPropsEqual);
+ToolShellHeader.displayName = "ToolShellHeader";
+
+interface ToolShellFooterProps {
+  tool: Tool;
+  faq: FAQItem[];
+  guideOverride?: RichGuideEntry;
+}
+
+function areFooterPropsEqual(prev: ToolShellFooterProps, next: ToolShellFooterProps): boolean {
+  return (
+    prev.tool === next.tool &&
+    prev.guideOverride === next.guideOverride &&
+    areFaqArraysEqual(prev.faq, next.faq)
+  );
+}
+
+const ToolShellFooter = React.memo(function ToolShellFooter({
+  tool,
+  faq,
+  guideOverride,
+}: ToolShellFooterProps) {
+  const related = getRelatedTools(tool.slug, 4);
+  const relatedBlogPosts = getCuratedBlogPostsForTool(tool, 3);
+  const { guide, effectiveFaq } = resolveGuideAndFaq(tool, faq, guideOverride);
+
+  const guideNotes: string[] = guide?.notes || [];
+  const overviewParagraphs: string[] = guide?.overview || [];
+  const howItWorksSteps: string[] = guide?.howItWorks || [];
+  const workedExample = guide?.workedExample;
+  const complianceTips: string[] = guide?.complianceTips || [];
+  const isCulturalOrLanguageTool = tool.category === "language-learning";
+  const hasBothGuideCols = guideNotes.length > 0 && complianceTips.length > 0;
+
+  return (
+    <>
+      {/* ── Comprehensive Editorial Guide, Statutory Framework & Worked Examples ── */}
+      <article className="cv-auto mb-8 sm:mb-14 space-y-6">
+        <section className="bg-bg-card border border-border rounded-2xl p-4 sm:p-7 space-y-4">
+          <div>
+            <h2 className="text-base sm:text-xl font-bold font-[family-name:var(--font-outfit)] text-text-primary leading-snug">
+              <DynamicIcon emoji="📘" className="w-5 h-5 text-gold inline-block mr-2 -mt-0.5" />
+              {guide?.notesTitle || (isCulturalOrLanguageTool ? `Learning Guide: ${tool.shortTitle}` : `Guide & Methodology: ${tool.shortTitle}`)}
+            </h2>
+          </div>
+
+          {overviewParagraphs.length > 0 ? (
+            <div className="space-y-3.5 text-sm text-text-secondary leading-relaxed">
+              {overviewParagraphs.map((para, idx) => (
+                <p key={idx}>{renderTextWithOfficialLinks(para)}</p>
+              ))}
+            </div>
+          ) : (
+            <p className="text-sm text-text-secondary leading-relaxed">
+              {isCulturalOrLanguageTool ? (
+                <>
+                  <strong>{tool.title}</strong> is curated by the KenyaHub linguistic and cultural research team using verified publications and open datasets. All lessons, dictionary lookups, and exercises execute locally inside your browser for instant responses and 100% data privacy.
+                </>
+              ) : (
+                <>
+                  The <strong>{tool.title}</strong> is maintained by the KenyaHub research team using official publications from{" "}
+                  <strong>{tool.dataSource}</strong>. All calculations and lookups execute locally inside your browser for instant results and 100% data privacy.
+                </>
+              )}
+            </p>
+          )}
+
+          {howItWorksSteps.length > 0 && (
+            <div className="pt-4 border-t border-border/60 space-y-3">
+              <h3 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">
+                <DynamicIcon emoji="⚙️" className="w-4 h-4 text-gold inline-block mr-1.5 -mt-0.5" />
+                {isCulturalOrLanguageTool
+                  ? "How to Study & Practice Effectively"
+                  : "Step-by-Step Calculation & Verification Formula"}
+              </h3>
+              <ol className="space-y-2.5 text-sm text-text-secondary">
+                {howItWorksSteps.map((step, idx) => (
+                  <li key={idx} className="flex items-start gap-2.5">
+                    <span className="w-5 h-5 rounded-full bg-gold/15 text-gold text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">
+                      {idx + 1}
+                    </span>
+                    <span className="leading-relaxed flex-1 min-w-0">{renderTextWithOfficialLinks(step)}</span>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          )}
+
+          {workedExample && (
+            <div className="pt-4 border-t border-border/60">
+              <div className="bg-bg-elevated/70 border border-border rounded-xl p-4 sm:p-5 space-y-3">
+                <h3 className="text-sm font-bold text-gold font-[family-name:var(--font-outfit)]">
+                  <DynamicIcon emoji="🧮" className="w-4 h-4 inline-block mr-1.5 -mt-0.5" />
+                  {workedExample.title}
+                </h3>
+                <p className="text-sm text-text-primary font-medium leading-relaxed">
+                  {renderTextWithOfficialLinks(workedExample.scenario)}
+                </p>
+                <ul className="space-y-2 text-xs sm:text-sm text-text-secondary">
+                  {workedExample.steps.map((s, idx) => (
+                    <li key={idx} className="flex items-start gap-2">
+                      <span className="text-kenya-green-light font-bold shrink-0">→</span>
+                      <span className="leading-relaxed flex-1 min-w-0">{renderTextWithOfficialLinks(s)}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="text-xs sm:text-sm font-semibold text-kenya-green-light pt-2 border-t border-border/50 leading-relaxed">
+                  Key Takeaway: {renderTextWithOfficialLinks(workedExample.takeaway)}
+                </p>
+              </div>
+            </div>
+          )}
+
+          {(complianceTips.length > 0 || guideNotes.length > 0) && (
+            <div
+              className={`${
+                hasBothGuideCols ? "grid grid-cols-1 md:grid-cols-2 gap-4" : "space-y-4"
+              } pt-4 border-t border-border/60`}
+            >
+              {guideNotes.length > 0 && (
+                <div className="space-y-2">
+                  <h3 className="text-xs font-bold uppercase tracking-wider text-text-primary">
+                    {isCulturalOrLanguageTool ? "Linguistic & Cultural Notes" : "Methodology & Usage Notes"}
+                  </h3>
+                  <ul className="space-y-2 text-xs sm:text-sm text-text-secondary">
+                    {guideNotes.map((note, idx) => (
+                      <li key={idx} className="flex items-start gap-2">
+                        <span className="text-gold font-bold shrink-0">•</span>
+                        <span className="leading-relaxed flex-1 min-w-0">{renderTextWithOfficialLinks(note)}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {complianceTips.length > 0 && (
+                <div className="space-y-2">
+                  <h3 className="text-xs font-bold uppercase tracking-wider text-kenya-green-light">
+                    {isCulturalOrLanguageTool ? "Practical Learning Tips" : "Statutory Compliance & Practical Tips"}
+                  </h3>
+                  <ul className="space-y-2 text-xs sm:text-sm text-text-secondary">
+                    {complianceTips.map((tip, idx) => (
+                      <li key={idx} className="flex items-start gap-2">
+                        <span className="text-kenya-green-light font-bold shrink-0">✓</span>
+                        <span className="leading-relaxed flex-1 min-w-0">{renderTextWithOfficialLinks(tip)}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+          )}
+
+          <p className="text-xs text-text-muted pt-3 border-t border-border/50 leading-relaxed">
+            {isCulturalOrLanguageTool ? (
+              <>
+                Editorial Note: Linguistic vocabularies, grammatical paradigms, and oral proverbs are compiled from verified public-domain monographs and open lexical corpora for educational and cultural preservation purposes. Regional dialectal and orthographical variations exist across Kenyan communities.
+              </>
+            ) : (
+              <>
+                Independent Platform Disclaimer: KenyaHub is an independent private platform and is not affiliated with, endorsed by, or operating on behalf of KRA, SHA, NTSA, KPLC, PPRA, KNEC, KUCCPS, or the Government of Kenya. Figures and schedules are provided for informational planning only—always verify formal filings, tax returns, or legal obligations on the official {tool.dataSource} portal.
+              </>
+            )}
+          </p>
+        </section>
+      </article>
+
+      {/* ── FAQ Section ── */}
+      {effectiveFaq.length > 0 && (
+        <section className="cv-auto mb-8 sm:mb-14">
+          <div className="flex items-center gap-2.5 sm:gap-3 mb-4 sm:mb-6">
+            <div className="w-8 h-8 rounded-lg bg-gold/10 flex items-center justify-center shrink-0">
+              <svg className="w-4 h-4 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h2 className="text-base sm:text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary">
+              Frequently Asked Questions ({effectiveFaq.length})
+            </h2>
+          </div>
+          <div className="space-y-3">
+            {effectiveFaq.map((item, i) => (
+              <details
+                key={i}
+                open={i < 3}
+                className="group bg-bg-card border border-border rounded-xl overflow-hidden"
+              >
+                <summary className="flex items-center justify-between px-4 sm:px-5 py-3.5 sm:py-4 cursor-pointer text-sm font-medium text-text-primary hover:text-gold transition-colors list-none gap-3">
+                  <span className="leading-snug flex-1 min-w-0">{item.question}</span>
+                  <svg
+                    className="w-4 h-4 text-text-muted flex-shrink-0 group-open:rotate-180 transition-transform duration-200"
+                    fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </summary>
+                <div className="px-4 sm:px-5 pb-4 text-sm text-text-secondary leading-relaxed border-t border-border pt-3">
+                  {renderTextWithOfficialLinks(item.answer)}
+                </div>
+              </details>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* ── Related In-Depth Blog Guides ── */}
+      {relatedBlogPosts.length > 0 && (
+        <section data-adsense-ignore="true" className="cv-auto mb-8 sm:mb-12">
+          <div className="section-divider mb-6 sm:mb-8" />
+          <div className="flex flex-wrap items-center justify-between gap-2 mb-4 sm:mb-5">
+            <h2 className="text-base sm:text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary min-w-0">
+              <DynamicIcon emoji="📰" className="w-4 h-4 text-gold inline-block mr-2 -mt-0.5" />
+              Related Kenyan Guides &amp; Worked Articles
+            </h2>
+            <Link href="/blog/" className="text-xs font-semibold text-gold hover:underline shrink-0">
+              All Guides →
+            </Link>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3.5">
+            {relatedBlogPosts.map((post) => (
+              <Link
+                key={post.slug}
+                href={`/blog/${post.slug}/`}
+                prefetch={false}
+                className="bg-bg-card border border-border hover:border-gold/50 rounded-xl p-4 transition-colors flex flex-col justify-between group"
+              >
+                <div>
+                  <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-text-muted mb-1.5">
+                    <span className="text-gold font-semibold">{(post.tags || [])[0] || "Kenya Guide"}</span>
+                    <span>{post.readTime} min read</span>
+                  </div>
+                  <h3 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)] group-hover:text-gold transition-colors leading-snug mb-1.5">
+                    {post.title}
+                  </h3>
+                  <p className="text-xs sm:text-sm text-text-muted line-clamp-2 leading-relaxed">
+                    {post.excerpt}
+                  </p>
+                </div>
+                <span className="text-xs font-semibold text-gold mt-3 inline-block group-hover:underline">
+                  Read Full Guide →
+                </span>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* ── Related Tools ── */}
+      {related.length > 0 && (
+        <section data-adsense-ignore="true" className="cv-auto">
+          <div className="section-divider mb-6 sm:mb-8" />
+          <h2 className="text-base sm:text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-4 sm:mb-5">
+            Related Kenyan Tools
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+            {related.map((rel) => {
+              const relCat = getCategoryInfo(rel.category);
+              return (
+                <Link
+                  key={rel.slug}
+                  href={`/tools/${rel.slug}/`}
+                  className="tool-card bg-bg-card border border-border rounded-xl p-4 block group"
+                >
+                  <div className="flex items-center gap-2.5 mb-2">
+                    <span className="text-xl tool-icon shrink-0">
+                      <DynamicIcon emoji={rel.icon} className="w-[1em] h-[1em] inline-block mb-[0.1em]" />
+                    </span>
+                    <h3 className="text-sm font-semibold text-text-primary font-[family-name:var(--font-outfit)] group-hover:text-gold transition-colors leading-snug">
+                      {rel.shortTitle}
+                    </h3>
+                  </div>
+                  <p className="text-xs sm:text-sm text-text-muted line-clamp-2 leading-relaxed mb-2.5">
+                    {rel.description}
+                  </p>
+                  {relCat && (
+                    <span className={`badge ${relCat.badgeClass}`}>
+                      {relCat.name}
+                    </span>
+                  )}
+                </Link>
+              );
+            })}
+          </div>
+        </section>
+      )}
+    </>
+  );
+}, areFooterPropsEqual);
+ToolShellFooter.displayName = "ToolShellFooter";
+
+export default function ToolShell({
+  tool,
+  children,
+  faq = EMPTY_FAQ,
+  breadcrumbSuffix = EMPTY_BREADCRUMB_SUFFIX,
+  breadcrumbParentLabel,
+  hideHeader = false,
+  hideFooter = false,
+  hideSource = false,
+  guideOverride,
+}: ToolShellProps) {
+  if (!tool) {
+    return (
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        {children}
+      </div>
+    );
+  }
+
+  return (
+    <div className={`max-w-5xl mx-auto px-3.5 sm:px-6 lg:px-8 ${hideHeader ? "py-2.5 sm:py-5" : "pt-3 pb-4 sm:py-8"}`}>
+      <ToolShellHeader
+        tool={tool}
+        faq={faq}
+        breadcrumbSuffix={breadcrumbSuffix}
+        breadcrumbParentLabel={breadcrumbParentLabel}
+        hideHeader={hideHeader}
+        hideSource={hideSource}
+        guideOverride={guideOverride}
+      />
 
       {/* ── Tool Content ── */}
       <div id="tool-interactive-content" className={hideFooter ? "mb-4" : "mb-8 sm:mb-14"}>
@@ -630,257 +989,11 @@ export default function ToolShell({
       </div>
 
       {!hideFooter && (
-        <>
-          {/* ── Comprehensive Editorial Guide, Statutory Framework & Worked Examples ── */}
-          <article className="mb-8 sm:mb-14 space-y-6">
-            <section className="bg-bg-card border border-border rounded-2xl p-4 sm:p-7 space-y-4">
-              <div>
-                <h2 className="text-base sm:text-xl font-bold font-[family-name:var(--font-outfit)] text-text-primary leading-snug">
-                  <DynamicIcon emoji="📘" className="w-5 h-5 text-gold inline-block mr-2 -mt-0.5" />
-                  {guide?.notesTitle || (isCulturalOrLanguageTool ? `Learning Guide: ${tool.shortTitle}` : `Guide & Methodology: ${tool.shortTitle}`)}
-                </h2>
-              </div>
-
-              {overviewParagraphs.length > 0 ? (
-                <div className="space-y-3.5 text-sm text-text-secondary leading-relaxed">
-                  {overviewParagraphs.map((para, idx) => (
-                    <p key={idx}>{renderTextWithOfficialLinks(para)}</p>
-                  ))}
-                </div>
-              ) : (
-                <p className="text-sm text-text-secondary leading-relaxed">
-                  {isCulturalOrLanguageTool ? (
-                    <>
-                      <strong>{tool.title}</strong> is curated by the KenyaHub linguistic and cultural research team using verified publications and open datasets. All lessons, dictionary lookups, and exercises execute locally inside your browser for instant responses and 100% data privacy.
-                    </>
-                  ) : (
-                    <>
-                      The <strong>{tool.title}</strong> is maintained by the KenyaHub research team using official publications from{" "}
-                      <strong>{tool.dataSource}</strong>. All calculations and lookups execute locally inside your browser for instant results and 100% data privacy.
-                    </>
-                  )}
-                </p>
-              )}
-
-              {howItWorksSteps.length > 0 && (
-                <div className="pt-4 border-t border-border/60 space-y-3">
-                  <h3 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">
-                    <DynamicIcon emoji="⚙️" className="w-4 h-4 text-gold inline-block mr-1.5 -mt-0.5" />
-                    {isCulturalOrLanguageTool
-                      ? "How to Study & Practice Effectively"
-                      : "Step-by-Step Calculation & Verification Formula"}
-                  </h3>
-                  <ol className="space-y-2.5 text-sm text-text-secondary">
-                    {howItWorksSteps.map((step, idx) => (
-                      <li key={idx} className="flex items-start gap-2.5">
-                        <span className="w-5 h-5 rounded-full bg-gold/15 text-gold text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">
-                          {idx + 1}
-                        </span>
-                        <span className="leading-relaxed flex-1 min-w-0">{renderTextWithOfficialLinks(step)}</span>
-                      </li>
-                    ))}
-                  </ol>
-                </div>
-              )}
-
-              {workedExample && (
-                <div className="pt-4 border-t border-border/60">
-                  <div className="bg-bg-elevated/70 border border-border rounded-xl p-4 sm:p-5 space-y-3">
-                    <h3 className="text-sm font-bold text-gold font-[family-name:var(--font-outfit)]">
-                      <DynamicIcon emoji="🧮" className="w-4 h-4 inline-block mr-1.5 -mt-0.5" />
-                      {workedExample.title}
-                    </h3>
-                    <p className="text-sm text-text-primary font-medium leading-relaxed">
-                      {renderTextWithOfficialLinks(workedExample.scenario)}
-                    </p>
-                    <ul className="space-y-2 text-xs sm:text-sm text-text-secondary">
-                      {workedExample.steps.map((s, idx) => (
-                        <li key={idx} className="flex items-start gap-2">
-                          <span className="text-kenya-green-light font-bold shrink-0">→</span>
-                          <span className="leading-relaxed flex-1 min-w-0">{renderTextWithOfficialLinks(s)}</span>
-                        </li>
-                      ))}
-                    </ul>
-                    <p className="text-xs sm:text-sm font-semibold text-kenya-green-light pt-2 border-t border-border/50 leading-relaxed">
-                      Key Takeaway: {renderTextWithOfficialLinks(workedExample.takeaway)}
-                    </p>
-                  </div>
-                </div>
-              )}
-
-              {(complianceTips.length > 0 || guideNotes.length > 0) && (
-                <div
-                  className={`${
-                    hasBothGuideCols ? "grid grid-cols-1 md:grid-cols-2 gap-4" : "space-y-4"
-                  } pt-4 border-t border-border/60`}
-                >
-                  {guideNotes.length > 0 && (
-                    <div className="space-y-2">
-                      <h3 className="text-xs font-bold uppercase tracking-wider text-text-primary">
-                        {isCulturalOrLanguageTool ? "Linguistic & Cultural Notes" : "Methodology & Usage Notes"}
-                      </h3>
-                      <ul className="space-y-2 text-xs sm:text-sm text-text-secondary">
-                        {guideNotes.map((note, idx) => (
-                          <li key={idx} className="flex items-start gap-2">
-                            <span className="text-gold font-bold shrink-0">•</span>
-                            <span className="leading-relaxed flex-1 min-w-0">{renderTextWithOfficialLinks(note)}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-
-                  {complianceTips.length > 0 && (
-                    <div className="space-y-2">
-                      <h3 className="text-xs font-bold uppercase tracking-wider text-kenya-green-light">
-                        {isCulturalOrLanguageTool ? "Practical Learning Tips" : "Statutory Compliance & Practical Tips"}
-                      </h3>
-                      <ul className="space-y-2 text-xs sm:text-sm text-text-secondary">
-                        {complianceTips.map((tip, idx) => (
-                          <li key={idx} className="flex items-start gap-2">
-                            <span className="text-kenya-green-light font-bold shrink-0">✓</span>
-                            <span className="leading-relaxed flex-1 min-w-0">{renderTextWithOfficialLinks(tip)}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-                </div>
-              )}
-
-              <p className="text-xs text-text-muted pt-3 border-t border-border/50 leading-relaxed">
-                {isCulturalOrLanguageTool ? (
-                  <>
-                    Editorial Note: Linguistic vocabularies, grammatical paradigms, and oral proverbs are compiled from verified public-domain monographs and open lexical corpora for educational and cultural preservation purposes. Regional dialectal and orthographical variations exist across Kenyan communities.
-                  </>
-                ) : (
-                  <>
-                    Independent Platform Disclaimer: KenyaHub is an independent private platform and is not affiliated with, endorsed by, or operating on behalf of KRA, SHA, NTSA, KPLC, PPRA, KNEC, KUCCPS, or the Government of Kenya. Figures and schedules are provided for informational planning only—always verify formal filings, tax returns, or legal obligations on the official {tool.dataSource} portal.
-                  </>
-                )}
-              </p>
-            </section>
-          </article>
-
-          {/* ── FAQ Section ── */}
-          {effectiveFaq.length > 0 && (
-            <section className="mb-8 sm:mb-14">
-              <div className="flex items-center gap-2.5 sm:gap-3 mb-4 sm:mb-6">
-                <div className="w-8 h-8 rounded-lg bg-gold/10 flex items-center justify-center shrink-0">
-                  <svg className="w-4 h-4 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-                <h2 className="text-base sm:text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary">
-                  Frequently Asked Questions ({effectiveFaq.length})
-                </h2>
-              </div>
-              <div className="space-y-3">
-                {effectiveFaq.map((item, i) => (
-                  <details
-                    key={i}
-                    open={i < 3}
-                    className="group bg-bg-card border border-border rounded-xl overflow-hidden"
-                  >
-                    <summary className="flex items-center justify-between px-4 sm:px-5 py-3.5 sm:py-4 cursor-pointer text-sm font-medium text-text-primary hover:text-gold transition-colors list-none gap-3">
-                      <span className="leading-snug flex-1 min-w-0">{item.question}</span>
-                      <svg
-                        className="w-4 h-4 text-text-muted flex-shrink-0 group-open:rotate-180 transition-transform duration-200"
-                        fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}
-                      >
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-                      </svg>
-                    </summary>
-                    <div className="px-4 sm:px-5 pb-4 text-sm text-text-secondary leading-relaxed border-t border-border pt-3">
-                      {renderTextWithOfficialLinks(item.answer)}
-                    </div>
-                  </details>
-                ))}
-              </div>
-            </section>
-          )}
-
-          {/* ── Related In-Depth Blog Guides ── */}
-          {relatedBlogPosts.length > 0 && (
-            <section data-adsense-ignore="true" className="mb-8 sm:mb-12">
-              <div className="section-divider mb-6 sm:mb-8" />
-              <div className="flex items-center justify-between gap-2 mb-4 sm:mb-5">
-                <h2 className="text-base sm:text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary">
-                  <DynamicIcon emoji="📰" className="w-4 h-4 text-gold inline-block mr-2 -mt-0.5" />
-                  Related Kenyan Guides &amp; Worked Articles
-                </h2>
-                <Link href="/blog/" className="text-xs font-semibold text-gold hover:underline shrink-0">
-                  All Guides →
-                </Link>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-3.5">
-                {relatedBlogPosts.map((post) => (
-                  <Link
-                    key={post.slug}
-                    href={`/blog/${post.slug}/`}
-                    prefetch={false}
-                    className="bg-bg-card border border-border hover:border-gold/50 rounded-xl p-4 transition-colors flex flex-col justify-between group"
-                  >
-                    <div>
-                      <div className="flex items-center justify-between text-xs text-text-muted mb-1.5">
-                        <span className="text-gold font-semibold">{(post.tags || [])[0] || "Kenya Guide"}</span>
-                        <span>{post.readTime} min read</span>
-                      </div>
-                      <h3 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)] group-hover:text-gold transition-colors leading-snug mb-1.5">
-                        {post.title}
-                      </h3>
-                      <p className="text-xs sm:text-sm text-text-muted line-clamp-2 leading-relaxed">
-                        {post.excerpt}
-                      </p>
-                    </div>
-                    <span className="text-xs font-semibold text-gold mt-3 inline-block group-hover:underline">
-                      Read Full Guide →
-                    </span>
-                  </Link>
-                ))}
-              </div>
-            </section>
-          )}
-
-          {/* ── Related Tools ── */}
-          {related.length > 0 && (
-            <section data-adsense-ignore="true">
-              <div className="section-divider mb-6 sm:mb-8" />
-              <h2 className="text-base sm:text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-4 sm:mb-5">
-                Related Kenyan Tools
-              </h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-                {related.map((rel) => {
-                  const relCat = getCategoryInfo(rel.category);
-                  return (
-                    <Link
-                      key={rel.slug}
-                      href={`/tools/${rel.slug}/`}
-                      className="tool-card bg-bg-card border border-border rounded-xl p-4 block group"
-                    >
-                      <div className="flex items-center gap-2.5 mb-2">
-                        <span className="text-xl tool-icon shrink-0">
-                          <DynamicIcon emoji={rel.icon} className="w-[1em] h-[1em] inline-block mb-[0.1em]" />
-                        </span>
-                        <h3 className="text-sm font-semibold text-text-primary font-[family-name:var(--font-outfit)] group-hover:text-gold transition-colors leading-snug">
-                          {rel.shortTitle}
-                        </h3>
-                      </div>
-                      <p className="text-xs sm:text-sm text-text-muted line-clamp-2 leading-relaxed mb-2.5">
-                        {rel.description}
-                      </p>
-                      {relCat && (
-                        <span className={`badge ${relCat.badgeClass}`}>
-                          {relCat.name}
-                        </span>
-                      )}
-                    </Link>
-                  );
-                })}
-              </div>
-            </section>
-          )}
-        </>
+        <ToolShellFooter
+          tool={tool}
+          faq={faq}
+          guideOverride={guideOverride}
+        />
       )}
     </div>
   );

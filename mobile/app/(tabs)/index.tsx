@@ -1642,8 +1642,10 @@ export default function HomeScreen() {
                 <View
                   style={{
                     flexDirection: "row",
+                    flexWrap: "wrap",
                     justifyContent: "space-between",
                     alignItems: "center",
+                    gap: 8,
                     marginBottom: 4,
                   }}
                 >
@@ -1652,6 +1654,7 @@ export default function HomeScreen() {
                       fontFamily: "Outfit_700Bold",
                       fontSize: 15,
                       color: theme.textPrimary,
+                      flexShrink: 1,
                     }}
                   >
                     {h.name}

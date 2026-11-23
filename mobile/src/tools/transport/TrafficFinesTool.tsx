@@ -111,11 +111,11 @@ export function TrafficFinesTool({ onScrollToTop }: { onScrollToTop?: () => void
       </ExpandablePillRow>
 
       {/* Sort By Bar */}
-      <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
+      <View style={{ flexDirection: "row", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", gap: 8 }}>
         <Text style={{ fontSize: 11, color: theme.textMuted }}>
           Showing {filteredOffences.length} offences
         </Text>
-        <View style={{ flexDirection: "row", gap: 6 }}>
+        <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 6 }}>
           {(
             [
               { id: "default", label: "Category" },

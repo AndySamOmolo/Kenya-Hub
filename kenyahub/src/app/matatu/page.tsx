@@ -408,7 +408,7 @@ export default function MatatuPage() {
                       key={idx}
                       className="rounded-xl border border-border bg-bg-elevated/60 p-3.5 space-y-2 text-xs"
                     >
-                      <div className="flex items-center justify-between text-gold font-bold">
+                      <div className="flex flex-wrap items-center justify-between gap-2 text-gold font-bold">
                         <span>{pair.leg1.townName} CBD Connection</span>
                         <span>
                           Combined Est. KES {pair.leg1.fareMin + pair.leg2.fareMin}–{pair.leg1.fareMax + pair.leg2.fareMax}
@@ -442,7 +442,7 @@ export default function MatatuPage() {
       </div>
 
       {/* Town selector (Compact) */}
-      <div className="flex items-center justify-between gap-4 mb-3">
+      <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
         <h2 className="text-base sm:text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary">Explore Routes by City</h2>
         <span className="text-xs text-text-muted">{activeTownsCount} active cities</span>
       </div>
@@ -514,9 +514,9 @@ export default function MatatuPage() {
               open={idx < 2}
               className="group bg-bg-elevated/50 border border-border rounded-xl overflow-hidden"
             >
-              <summary className="flex items-center justify-between px-4 py-3 cursor-pointer text-xs sm:text-sm font-semibold text-text-primary hover:text-gold transition-colors list-none">
-                <span>{item.question}</span>
-                <span className="text-gold ml-2 group-open:rotate-180 transition-transform">▾</span>
+              <summary className="flex items-center justify-between gap-2 px-4 py-3 cursor-pointer text-xs sm:text-sm font-semibold text-text-primary hover:text-gold transition-colors list-none">
+                <span className="min-w-0 flex-1">{item.question}</span>
+                <span className="text-gold shrink-0 group-open:rotate-180 transition-transform">▾</span>
               </summary>
               <div className="px-4 pb-3.5 pt-2 text-xs text-text-secondary leading-relaxed border-t border-border/60">
                 {item.answer}

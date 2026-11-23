@@ -95,7 +95,7 @@ export default function NtsaTransferCalculatorPage() {
           )}
 
           <div className="rounded-xl border border-gold/40 bg-bg-elevated/60 p-5 space-y-3">
-            <div className="flex items-center justify-between border-b border-border/60 pb-3">
+            <div className="flex flex-wrap items-center justify-between gap-2 border-b border-border/60 pb-3">
               <span className="text-xs font-bold text-text-muted uppercase">Total eCitizen Transfer Payable</span>
               <span className="text-2xl font-black text-gold">KES {calc.total.toLocaleString()}</span>
             </div>
@@ -139,7 +139,7 @@ export default function NtsaTransferCalculatorPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {drivingLicenseData.licenseClasses.map((lc) => (
               <div key={lc.class} className="rounded-xl bg-bg-elevated/60 border border-border p-3.5 text-xs space-y-1">
-                <div className="flex items-center justify-between font-bold text-text-primary">
+                <div className="flex flex-wrap items-center justify-between gap-2 font-bold text-text-primary">
                   <span className="text-gold">Class {lc.class}: {lc.name}</span>
                   <span>Min Age: {lc.minimumAge} yrs</span>
                 </div>

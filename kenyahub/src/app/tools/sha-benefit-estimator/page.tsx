@@ -38,12 +38,12 @@ export default function ShaBenefitEstimatorPage() {
           </div>
 
           <div className="rounded-xl border border-border bg-bg-elevated/50 p-4 sm:p-5 mb-6 space-y-3">
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-border/60 pb-3">
-              <div>
+            <div className="flex flex-col sm:flex-row sm:flex-wrap sm:items-center justify-between gap-2 border-b border-border/60 pb-3">
+              <div className="min-w-0">
                 <span className="text-xs font-bold text-gold uppercase tracking-wider">{activeLevel.level}</span>
-                <h3 className="text-base sm:text-lg font-bold text-text-primary">{activeLevel.name}</h3>
+                <h3 className="text-base sm:text-lg font-bold text-text-primary break-words">{activeLevel.name}</h3>
               </div>
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-kenya-green/15 text-kenya-green-light border border-kenya-green/30 self-start sm:self-auto">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-2xl text-xs font-bold bg-kenya-green/15 text-kenya-green-light border border-kenya-green/30 self-start sm:self-auto max-w-full break-words">
                 {activeLevel.copay}
               </span>
             </div>

@@ -765,8 +765,8 @@ export default function KslSignStudio() {
       {tab === "signs" && (
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">
           <div className="lg:col-span-5 rounded-2xl border border-gold/25 bg-bg-card p-4 space-y-3">
-            <div className="flex items-center justify-between">
-              <div>
+            <div className="flex flex-wrap items-center justify-between gap-2">
+              <div className="min-w-0">
                 <p className="text-[0.68rem] uppercase tracking-wider font-bold text-gold">
                   {activeR2Pose ? "Maseno University Motion Sign" : activeStarter.category}
                 </p>
@@ -874,8 +874,8 @@ export default function KslSignStudio() {
 
             {r2Signs.length > 0 && (
               <div className="rounded-2xl border border-kenya-green/30 bg-bg-card p-4 space-y-3">
-                <div className="flex items-center justify-between gap-2">
-                  <h3 className="text-sm font-bold text-kenya-green">
+                <div className="flex flex-wrap items-center justify-between gap-2">
+                  <h3 className="text-sm font-bold text-kenya-green min-w-0">
                     Maseno University Live Motion-Capture Signs ({r2Signs.length})
                   </h3>
                   <a
@@ -970,7 +970,7 @@ export default function KslSignStudio() {
                   className="w-full max-h-72 object-contain"
                 />
               </div>
-              <div className="flex items-center justify-between text-xs text-text-muted">
+              <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-text-muted">
                 <span>Watch the KSL sign and pick the matching word:</span>
                 <div className="flex items-center gap-1">
                   {[0.5, 0.75, 1].map((spd) => (

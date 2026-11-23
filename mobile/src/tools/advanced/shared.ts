@@ -42,18 +42,23 @@ export const styles = StyleSheet.create({
   },
   infoHeaderRow: {
     flexDirection: "row",
+    flexWrap: "wrap",
     justifyContent: "space-between",
     alignItems: "center",
+    gap: 8,
   },
   infoTitle: {
     fontSize: 16,
     fontFamily: fonts.displayBold,
     fontWeight: "800",
+    flexShrink: 1,
   },
   badgePill: {
     paddingHorizontal: 8,
     paddingVertical: 3,
     borderRadius: 6,
+    alignSelf: "flex-start",
+    flexShrink: 1,
   },
   badgeText: {
     fontSize: 10,
@@ -111,13 +116,16 @@ export const styles = StyleSheet.create({
   },
   entryHeaderRow: {
     flexDirection: "row",
+    flexWrap: "wrap",
     justifyContent: "space-between",
     alignItems: "center",
+    gap: 8,
   },
   entryEnglish: {
     fontSize: 15,
     fontFamily: fonts.displayBold,
     fontWeight: "700",
+    flexShrink: 1,
   },
   entryCategory: {
     fontSize: 11,
@@ -404,6 +412,7 @@ export const styles = StyleSheet.create({
   },
   clusterHeaderRow: {
     flexDirection: "row",
+    flexWrap: "wrap",
     justifyContent: "space-between",
     alignItems: "center",
     gap: 8,

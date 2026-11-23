@@ -458,7 +458,7 @@ export function KuccpsClusterTool({
               ]}
             >
               <View style={styles.clusterHeaderRow}>
-                <View style={{ flex: 1 }}>
+                <View style={{ flexGrow: 1, flexShrink: 1, minWidth: 160 }}>
                   <Text
                     style={[styles.clusterName, { color: theme.textPrimary }]}
                   >
@@ -520,14 +520,18 @@ export function KuccpsClusterTool({
                       key={bIdx}
                       style={{
                         flexDirection: "row",
+                        flexWrap: "wrap",
                         justifyContent: "space-between",
+                        gap: 6,
                       }}
                     >
                       <Text
                         style={{
                           fontSize: 11,
                           color: theme.textSecondary,
-                          flex: 1,
+                          flexGrow: 1,
+                          flexShrink: 1,
+                          minWidth: 150,
                         }}
                       >
                         {b.reqName} ({b.matchedSubject})

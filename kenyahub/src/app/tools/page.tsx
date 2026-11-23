@@ -5,7 +5,7 @@ import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import { Suspense, useState, useMemo, useEffect, useRef, useCallback, useDeferredValue } from "react";
 import { scrollToPageTop, scrollToTopIfScrolled } from "@/lib/scroll";
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { TOOLS, TOOL_CATEGORIES, getCategoryInfo, getToolUsageScore } from "@/lib/tools-registry";
 import type { ToolCategory } from "@/lib/types";
 import { getToolVisitCounts, hasAnyVisits } from "@/lib/tool-usage";
@@ -37,6 +37,7 @@ function ToolsUrlSync({
 }
 
 export default function ToolsHubPage() {
+  const router = useRouter();
   const [selectedCategory, setSelectedCategory] = useState("all");
   const _scrollMountRef = useRef(false);
   useEffect(() => {
@@ -264,8 +265,8 @@ export default function ToolsHubPage() {
           </>
         ) : (
           <>
-            <div className="flex items-center justify-between gap-2 mb-1.5 sm:mb-2">
-              <h1 className="text-xl sm:text-3xl font-bold font-[family-name:var(--font-outfit)] flex items-center gap-2">
+            <div className="flex flex-wrap items-center justify-between gap-2 mb-1.5 sm:mb-2">
+              <h1 className="text-xl sm:text-3xl font-bold font-[family-name:var(--font-outfit)] flex items-center gap-2 min-w-0">
                 <Wrench className="w-[0.88em] h-[0.88em] text-gold shrink-0" />
                 <span>All Tools</span>
               </h1>
@@ -273,18 +274,9 @@ export default function ToolsHubPage() {
                 {TOOLS.length} Free Utilities
               </span>
             </div>
-            <div className="max-w-3xl rounded-xl bg-bg-card/70 border border-border/70 border-l-2 border-l-gold px-3.5 py-2.5 space-y-1.5">
-              <p className="text-xs sm:text-sm text-text-secondary leading-relaxed">
-                Free Kenyan calculators, directories, and verified public data utilities — running locally in your browser with official 2026 statutory rates.
-              </p>
-              <div className="flex flex-wrap items-center gap-1.5 text-[10.5px] sm:text-[11px] text-text-muted">
-                {["KRA PAYE & Tax", "M-Pesa Tariffs", "KPLC Tokens", "CBC & KUCCPS", "NTSA & Cars", "SHA Health", "23 Languages"].map((tag) => (
-                  <span key={tag} className="px-2 py-0.5 rounded-md bg-bg-elevated/80 border border-border/60 font-medium text-text-secondary">
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </div>
+            <p className="text-xs sm:text-sm text-text-secondary max-w-2xl leading-relaxed">
+              Free Kenyan calculators, directories, and civic utilities running locally in your browser with official 2026 statutory rates.
+            </p>
           </>
         )}
       </div>
@@ -300,11 +292,14 @@ export default function ToolsHubPage() {
               const tool = TOOLS.find((t) => t.slug === slug);
               if (!tool) return null;
               const cat = getCategoryInfo(tool.category);
+              const href = `/tools/${tool.slug}/`;
               return (
                 <Link
                   key={tool.slug}
-                  href={`/tools/${tool.slug}/`}
+                  href={href}
                   prefetch={false}
+                  onTouchStart={() => router.prefetch(href)}
+                  onMouseEnter={() => router.prefetch(href)}
                   className="tool-card bg-bg-card border border-gold/40 shadow-[0_0_15px_rgba(200,150,30,0.05)] rounded-xl p-3.5 sm:p-5 block group"
                 >
                   <div className="flex items-start gap-3 sm:gap-4">
@@ -486,11 +481,14 @@ export default function ToolsHubPage() {
   "data-reference": "#5BBFEA",
   "agriculture-environment": "#006B3F",
 } as Record<string, string>)[tool.category] || "#C8961E";
+            const href = `/tools/${tool.slug}/`;
             return (
               <Link
                 key={tool.slug}
-                href={`/tools/${tool.slug}/`}
+                href={href}
                 prefetch={false}
+                onTouchStart={() => router.prefetch(href)}
+                onMouseEnter={() => router.prefetch(href)}
                 className="tool-card cv-auto bg-bg-card border border-border rounded-xl sm:rounded-2xl p-3.5 sm:p-4 block group w-full"
               >
                 <div className="flex items-center gap-3 mb-2">

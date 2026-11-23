@@ -2,12 +2,14 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { Pin } from "lucide-react";
 import { TOOLS, getCategoryInfo } from "@/lib/tools-registry";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 import { useMounted } from "@/lib/useMounted";
 
 export default function PinnedToolsHomeSection() {
+  const router = useRouter();
   const [pinnedToolSlugs, setPinnedToolSlugs] = useState<string[]>([]);
   const mounted = useMounted();
 
@@ -34,7 +36,7 @@ export default function PinnedToolsHomeSection() {
 
   return (
     <section className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 pt-6 sm:pt-16">
-      <div className="flex items-end justify-between mb-4 sm:mb-8">
+      <div className="flex flex-wrap items-end justify-between gap-3 mb-4 sm:mb-8">
         <div>
           <p className="text-xs font-bold uppercase tracking-[0.15em] text-gold mb-1 sm:mb-2 flex items-center gap-1.5">
             <Pin className="h-3.5 w-3.5" /> Your Pins
@@ -50,11 +52,14 @@ export default function PinnedToolsHomeSection() {
           const tool = TOOLS.find((t) => t.slug === slug);
           if (!tool) return null;
           const cat = getCategoryInfo(tool.category);
+          const href = `/tools/${tool.slug}/`;
           return (
             <Link
               key={tool.slug}
-              href={`/tools/${tool.slug}/`}
+              href={href}
               prefetch={false}
+              onTouchStart={() => router.prefetch(href)}
+              onMouseEnter={() => router.prefetch(href)}
               className="tool-card bg-bg-card border border-gold/40 shadow-[0_0_15px_rgba(200,150,30,0.05)] rounded-xl sm:rounded-2xl p-3.5 sm:p-6 block group"
             >
               <div className="flex items-start gap-3 sm:gap-4">

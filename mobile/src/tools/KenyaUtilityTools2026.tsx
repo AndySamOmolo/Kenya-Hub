@@ -85,7 +85,7 @@ export function EtimsMpesaReconcilerTool() {
       {rows.map((r) => (
         <View key={r.id} style={styles.card}>
           <View style={styles.rowBetween}>
-            <View style={{ flex: 1 }}>
+            <View style={{ flexGrow: 1, flexShrink: 1, minWidth: 150 }}>
               <Text style={styles.cardTitle}>{r.counterparty}</Text>
               <Text style={styles.cardSub}>{r.date} • {r.ref} • {r.category}</Text>
             </View>
@@ -95,7 +95,7 @@ export function EtimsMpesaReconcilerTool() {
             <Text style={{ fontSize: 11.5, fontWeight: "700", color: r.matched ? theme.kenyaGreenLight : r.exempt ? theme.sky : theme.kenyaRedLight }}>
               {r.matched ? "eTIMS Matched" : r.exempt ? "Statutory Exempt" : `+KES ${Math.round(r.amount * 0.3).toLocaleString()} Risk`}
             </Text>
-            <View style={{ flexDirection: "row", gap: 6 }}>
+            <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 6 }}>
               <Pressable
                 onPress={() => { triggerHaptic(6); setRows((p) => p.map((x) => (x.id === r.id ? { ...x, matched: !x.matched } : x))); }}
                 style={styles.chipBtn}
@@ -164,7 +164,7 @@ export function OdpcHrRetentionVaultTool() {
       {utilData.odpc.retentionRules.map((rule, idx) => (
         <View key={idx} style={styles.card}>
           <View style={styles.rowBetween}>
-            <Text style={[styles.cardTitle, { flex: 1 }]}>{rule.record}</Text>
+            <Text style={[styles.cardTitle, { flexGrow: 1, flexShrink: 1, minWidth: 160 }]}>{rule.record}</Text>
             <Text style={{ fontSize: 11, fontWeight: "800", color: rule.action === "LOCK" ? theme.kenyaGreenLight : rule.action === "AUTO-PURGE" ? theme.kenyaRedLight : warningColor }}>
               {rule.action}
             </Text>
@@ -539,7 +539,7 @@ function createStyles(theme: ThemeColors) {
     kpiValue: { fontSize: 16, fontWeight: "900", color: theme.text, marginTop: 4 },
     kpiSub: { fontSize: 11, color: theme.textSecondary, marginTop: 2 },
     card: { borderWidth: 1, borderColor: theme.border, backgroundColor: theme.bgCard, borderRadius: 14, padding: 12 },
-    rowBetween: { flexDirection: "row", alignItems: "center", justifyContent: "space-between" },
+    rowBetween: { flexDirection: "row", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", gap: 8 },
     cardTitle: { fontSize: 13, fontWeight: "700", color: theme.text },
     cardSub: { fontSize: 11.5, color: theme.textSecondary, marginTop: 3 },
     amountText: { fontSize: 13.5, fontWeight: "800", color: theme.gold },

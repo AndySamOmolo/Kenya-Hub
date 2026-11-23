@@ -588,7 +588,7 @@ export default function PAYECalculatorPage() {
         {/* Result Summary */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div role="status" aria-live="polite" aria-atomic="true" className="result-box">
-            <div className="flex items-center justify-between mb-2">
+            <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
               <span className="text-xs text-text-secondary">
                 {calcMode === "netToGross"
                   ? "Required Gross Salary"
@@ -626,8 +626,8 @@ export default function PAYECalculatorPage() {
         {/* Visual Salary Distribution Stacked Bar */}
         {results.gross > 0 && (
           <div className="bg-bg-card border border-border rounded-xl p-5 space-y-3">
-            <div className="flex items-center justify-between text-xs">
-              <span className="font-semibold text-text-primary">
+            <div className="flex flex-wrap items-center justify-between gap-2 text-xs">
+              <span className="font-semibold text-text-primary min-w-0">
                 Visual Gross Salary Distribution ({fmt(results.gross)})
               </span>
               <span className="text-kenya-green-light font-bold">

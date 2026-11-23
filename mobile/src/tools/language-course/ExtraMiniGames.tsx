@@ -1112,7 +1112,7 @@ function PolyglotBridgeMobile({
     <View style={[localStyles.boardCard, { backgroundColor: colors.surfaceContainerLow, borderColor: colors.outlineVariant }]}>
       <GameHeaderBar title="Polyglot Bridge" score={score} progressText={`${round + 1}/${deck.length}`} onBack={onBack} />
       <View style={[localStyles.promptBox, { backgroundColor: colors.surfaceContainerHigh, borderColor: colors.outlineVariant }]}>
-        <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", width: "100%" }}>
+        <View style={{ flexDirection: "row", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", gap: 6, width: "100%" }}>
           <View style={[localStyles.tagPill, { backgroundColor: `${colors.gold}20`, borderColor: `${colors.gold}45` }]}>
             <Feather name="globe" size={11} color={colors.gold} />
             <Text style={{ fontSize: 10.5, fontWeight: "800", color: colors.gold }}>Concept: {picked !== null ? current.concept : '???'}</Text>
@@ -1683,6 +1683,7 @@ const localStyles = StyleSheet.create({
   },
   topBar: {
     flexDirection: "row",
+    flexWrap: "wrap",
     alignItems: "center",
     justifyContent: "space-between",
     gap: 8,

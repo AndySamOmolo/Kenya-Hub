@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import { CheckCircle2, AlertTriangle, Copy, Check } from "lucide-react";
 import ToolShell from "@/components/tools/ToolShell";
+import CustomSelect from "@/components/ui/CustomSelect";
 import { TOOLS } from "@/lib/tools-registry";
 import utilData from "@/data/kenya-utility-tools-2026.json";
 
@@ -78,16 +79,16 @@ export default function ShaClaimScrubberPage() {
               >
                 Facility Contract Tier
               </label>
-              <select
+              <CustomSelect
                 id="sha-facility-level"
                 value={facilityLevel}
                 onChange={(e) => setFacilityLevel(e.target.value)}
-                className="w-full px-3 py-2 rounded-xl border border-border dark:border-white/15 bg-bg-elevated text-xs font-semibold text-text-primary"
+                className="input-field w-full text-xs"
               >
                 <option value="Level 3">Level 3 (Health Centre / Clinic)</option>
                 <option value="Level 4">Level 4 (Primary / Sub-County Hospital)</option>
                 <option value="Level 5">Level 5 (County Referral / Private)</option>
-              </select>
+              </CustomSelect>
             </div>
             <div>
               <label

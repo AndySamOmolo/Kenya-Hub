@@ -7,6 +7,7 @@ import { scrollToTopIfScrolled } from "@/lib/scroll";
 import Link from "next/link";
 import matatuData from "@/data/matatu-routes.json";
 import SearchInput from "@/components/ui/SearchInput";
+import CustomSelect from "@/components/ui/CustomSelect";
 
 interface TownMatatuViewProps {
   townSlug: string;
@@ -97,17 +98,17 @@ export default function TownMatatuView({ townSlug }: TownMatatuViewProps) {
         {/* Mobile SACCO dropdown (prevents horizontal pill clipping on narrow viewports) */}
         <div className="sm:hidden">
           <label htmlFor="mobile-sacco-filter" className="sr-only">Filter by SACCO</label>
-          <select
+          <CustomSelect
             id="mobile-sacco-filter"
             value={saccoFilter}
             onChange={(e) => setSaccoFilter(e.target.value)}
-            className="select-field w-full text-xs rounded-xl"
+            className="select-field w-full text-xs"
           >
             <option value="all">All SACCOs ({saccos.length})</option>
             {saccos.map((s) => (
               <option key={s} value={s}>{s}</option>
             ))}
-          </select>
+          </CustomSelect>
         </div>
 
         {/* Desktop Horizontal Pill Bar for SACCO Filter */}
@@ -184,7 +185,7 @@ export default function TownMatatuView({ townSlug }: TownMatatuViewProps) {
                     <span className="text-text-muted shrink-0">End:</span>
                     <span className="font-medium text-text-primary text-right break-words">{r.terminusB}</span>
                   </div>
-                  <div className="flex items-center justify-between text-[0.65rem] text-text-muted pt-1 border-t border-border/30">
+                  <div className="flex flex-wrap items-center justify-between gap-2 text-[0.65rem] text-text-muted pt-1 border-t border-border/30">
                     <span>Stages: {r.stages.length}</span>
                     <span>Hours: {r.operatingHours}</span>
                   </div>
@@ -201,7 +202,7 @@ export default function TownMatatuView({ townSlug }: TownMatatuViewProps) {
                 </div>
               </div>
 
-              <div className="flex items-center justify-between gap-2 pt-2.5 border-t border-border/40 text-xs">
+              <div className="flex flex-wrap items-center justify-between gap-2 pt-2.5 border-t border-border/40 text-xs">
                 <a
                   href={mapsUrl}
                   target="_blank"

@@ -404,14 +404,14 @@ export default function GamesHub({
               className="group rounded-2xl border border-border bg-bg-card p-4 sm:p-5 text-left transition-all active:scale-[0.98] sm:hover:border-gold/40 sm:hover:shadow-lg sm:hover:shadow-gold/5 cursor-pointer flex flex-col justify-between"
             >
               <div>
-                <div className="flex items-start justify-between gap-2 mb-2.5">
-                  <div className="flex items-center gap-3">
+                <div className="flex flex-wrap items-start justify-between gap-2 mb-2.5">
+                  <div className="flex items-center gap-3 min-w-0 flex-1">
                     <div
                       className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-xl ${g.badgeColor}`}
                     >
                       {g.icon}
                     </div>
-                    <div>
+                    <div className="min-w-0 flex-1">
                       <h3 className="text-sm sm:text-base font-bold text-text-primary group-hover:text-gold transition-colors">
                         {g.title}
                       </h3>
@@ -434,8 +434,8 @@ export default function GamesHub({
   }
 
   const gameHeader = (title: string, icon: string) => (
-    <div className="mb-4 flex items-center justify-between gap-3 sm:mb-5">
-      <div className="flex items-center gap-2.5">
+    <div className="mb-4 flex flex-wrap items-center justify-between gap-2 sm:mb-5">
+      <div className="flex items-center gap-2.5 min-w-0">
         <button
           type="button"
           onClick={() => setActiveGame("menu")}

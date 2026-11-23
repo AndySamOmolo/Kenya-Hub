@@ -141,8 +141,8 @@ export function KcseCalculatorTool() {
       <View style={styles.card}>
         {subjects.map((sub, idx) => (
           <View key={idx} style={[styles.subjectRow, idx === subjects.length - 1 && { borderBottomWidth: 0 }]}>
-            <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-              <Text style={styles.subjectLabel}>{sub}</Text>
+            <View style={{ flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: 6 }}>
+              <Text style={[styles.subjectLabel, { flexShrink: 1 }]}>{sub}</Text>
               <Text style={{ fontSize: 11, fontWeight: "800", color: theme.gold }}>
                 {grades[idx]} ({gradePoints[grades[idx]]} pts)
               </Text>
@@ -173,9 +173,9 @@ export function KcseCalculatorTool() {
       </View>
 
       {/* Career Eligibility Table */}
-      <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginTop: 14, marginBottom: 8 }}>
-        <Text style={[styles.subHeading, { marginTop: 0, marginBottom: 0 }]}>Degree & Career Eligibility Check</Text>
-        <View style={{ backgroundColor: theme.gold + "22", paddingHorizontal: 10, paddingVertical: 4, borderRadius: 999 }}>
+      <View style={{ flexDirection: "row", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", gap: 8, marginTop: 14, marginBottom: 8 }}>
+        <Text style={[styles.subHeading, { marginTop: 0, marginBottom: 0, flexShrink: 1 }]}>Degree & Career Eligibility Check</Text>
+        <View style={{ backgroundColor: theme.gold + "22", paddingHorizontal: 10, paddingVertical: 4, borderRadius: 999, alignSelf: "flex-start", flexShrink: 1 }}>
           <Text style={{ fontSize: 12, fontWeight: "800", color: theme.gold }}>
             Mean: {calc.meanGrade} ({calc.best7Points}/84)
           </Text>

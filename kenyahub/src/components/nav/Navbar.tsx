@@ -564,39 +564,39 @@ export default function Navbar() {
                 </button>
               </div>
 
-              {/* Mobile: Comfortable right cluster (Search + Learn + Theme + Hamburger) */}
-              <div className="md:hidden flex items-center gap-2">
+              {/* Mobile: Compact right cluster (Search + Learn + Theme + Hamburger) */}
+              <div className="md:hidden flex items-center gap-1.5">
                 <button
                   type="button"
                   data-testid="navbar-search-trigger"
                   onClick={openSearchModal}
-                  className="h-9 w-9 rounded-xl border border-border bg-bg-card/80 inline-flex items-center justify-center text-gold hover:border-gold/50 transition-colors cursor-pointer"
+                  className="h-7 w-7 rounded-lg border border-border bg-bg-card/80 inline-flex items-center justify-center text-gold hover:border-gold/50 transition-colors cursor-pointer"
                   aria-label="Search tools, languages, counties, matatu routes, and guides"
                 >
-                  <Search className="w-4 h-4" aria-hidden="true" />
+                  <Search className="w-3.5 h-3.5" aria-hidden="true" />
                 </button>
 
                 <Link
                   href="/tools/learn/"
-                  className="h-9 px-3 text-xs font-bold text-gold bg-gold/15 border border-gold/30 rounded-xl inline-flex items-center justify-center gap-1.5"
+                  className="h-7 px-2 text-[11px] font-bold text-gold bg-gold/15 border border-gold/30 rounded-lg inline-flex items-center justify-center gap-1"
                 >
-                  <Languages className="w-3.5 h-3.5 text-gold shrink-0" aria-hidden="true" />
+                  <Languages className="w-3 h-3 text-gold shrink-0" aria-hidden="true" />
                   <span>Learn</span>
                 </Link>
 
                 <button
                   type="button"
                   onClick={toggle}
-                  className="theme-toggle !h-9 !w-9 !rounded-xl inline-flex items-center justify-center"
+                  className="theme-toggle !h-7 !w-7 !min-h-0 !min-w-0 !rounded-lg inline-flex items-center justify-center"
                   aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
                   title={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
                 >
                   {theme === "dark" ? (
-                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
+                    <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
                     </svg>
                   ) : (
-                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
+                    <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
                     </svg>
                   )}
@@ -604,15 +604,15 @@ export default function Navbar() {
 
                 <button
                   type="button"
-                  className="relative h-9 w-9 inline-flex items-center justify-center text-text-secondary hover:text-text-primary transition-colors rounded-xl cursor-pointer"
+                  className="relative h-7 w-7 inline-flex items-center justify-center text-text-secondary hover:text-text-primary transition-colors rounded-lg cursor-pointer"
                   onClick={() => setMobileOpen(!mobileOpen)}
                   aria-expanded={mobileOpen}
                   aria-label="Toggle navigation menu"
                 >
-                  <div className="space-y-1.5">
-                    <span className={`block w-5 h-0.5 bg-current transition-transform duration-300 origin-center ${mobileOpen ? "rotate-45 translate-y-[4px]" : ""}`} />
-                    <span className={`block w-5 h-0.5 bg-current transition-[opacity,transform] duration-300 ${mobileOpen ? "opacity-0 scale-0" : ""}`} />
-                    <span className={`block w-5 h-0.5 bg-current transition-transform duration-300 origin-center ${mobileOpen ? "-rotate-45 -translate-y-[4px]" : ""}`} />
+                  <div className="space-y-1">
+                    <span className={`block w-4 h-0.5 bg-current transition-transform duration-300 origin-center ${mobileOpen ? "rotate-45 translate-y-[6px]" : ""}`} />
+                    <span className={`block w-4 h-0.5 bg-current transition-[opacity,transform] duration-300 ${mobileOpen ? "opacity-0 scale-0" : ""}`} />
+                    <span className={`block w-4 h-0.5 bg-current transition-transform duration-300 origin-center ${mobileOpen ? "-rotate-45 -translate-y-[6px]" : ""}`} />
                   </div>
                 </button>
               </div>

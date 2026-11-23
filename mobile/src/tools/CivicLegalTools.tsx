@@ -108,7 +108,7 @@ export function ShaBenefitEstimatorTool() {
 
       <View style={styles.card}>
         <View style={styles.cardTop}>
-          <View style={{ flex: 1 }}>
+          <View style={{ flexGrow: 1, flexShrink: 1, minWidth: 160 }}>
             <Text
               style={{
                 fontSize: 11,
@@ -746,17 +746,17 @@ export function RentalTaxTool() {
       {/* MRI 7.5% vs Net Graduated Income Tax Comparison */}
       <View style={styles.card}>
         <Text style={styles.subHeading}>MRI (7.5% Gross) vs Net Graduated Tax (ITA)</Text>
-        <View style={{ flexDirection: "row", justifyContent: "space-between", paddingVertical: 4 }}>
-          <Text style={{ fontSize: 12, color: theme.textSecondary }}>7.5% MRI (Annual on Gross)</Text>
-          <Text style={{ fontSize: 12.5, fontFamily: "Outfit_700Bold", color: theme.textPrimary }}>
+        <View style={{ flexDirection: "row", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", gap: 8, paddingVertical: 4 }}>
+          <Text style={{ fontSize: 12, color: theme.textSecondary, flexGrow: 1, flexShrink: 1, minWidth: 150 }}>7.5% MRI (Annual on Gross)</Text>
+          <Text style={{ fontSize: 12.5, fontFamily: "Outfit_700Bold", color: theme.textPrimary, flexShrink: 1 }}>
             KES {calc.mriTaxAnnual.toLocaleString()}/yr
           </Text>
         </View>
-        <View style={{ flexDirection: "row", justifyContent: "space-between", paddingVertical: 4 }}>
-          <Text style={{ fontSize: 12, color: theme.textSecondary }}>
+        <View style={{ flexDirection: "row", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", gap: 8, paddingVertical: 4 }}>
+          <Text style={{ fontSize: 12, color: theme.textSecondary, flexGrow: 1, flexShrink: 1, minWidth: 150 }}>
             Net Graduated Tax (on KES {calc.annualNet.toLocaleString()} net)
           </Text>
-          <Text style={{ fontSize: 12.5, fontFamily: "Outfit_700Bold", color: theme.textPrimary }}>
+          <Text style={{ fontSize: 12.5, fontFamily: "Outfit_700Bold", color: theme.textPrimary, flexShrink: 1 }}>
             KES {calc.netGraduatedAnnual.toLocaleString()}/yr
           </Text>
         </View>
@@ -1233,11 +1233,13 @@ export function AirtimeDrainTool() {
         <View
           style={{
             flexDirection: "row",
+            flexWrap: "wrap",
             justifyContent: "space-between",
             alignItems: "center",
+            gap: 8,
           }}
         >
-          <View style={{ flex: 1 }}>
+          <View style={{ flexGrow: 1, flexShrink: 1, minWidth: 160 }}>
             <Text
               style={{
                 fontSize: 10,
@@ -1295,11 +1297,13 @@ export function AirtimeDrainTool() {
         <View
           style={{
             flexDirection: "row",
+            flexWrap: "wrap",
             justifyContent: "space-between",
             alignItems: "center",
+            gap: 8,
           }}
         >
-          <View style={{ flex: 1 }}>
+          <View style={{ flexGrow: 1, flexShrink: 1, minWidth: 160 }}>
             <Text
               style={{
                 fontSize: 10,
@@ -1357,11 +1361,13 @@ export function AirtimeDrainTool() {
         <View
           style={{
             flexDirection: "row",
+            flexWrap: "wrap",
             justifyContent: "space-between",
             alignItems: "center",
+            gap: 8,
           }}
         >
-          <View style={{ flex: 1 }}>
+          <View style={{ flexGrow: 1, flexShrink: 1, minWidth: 160 }}>
             <Text
               style={{
                 fontSize: 10,
@@ -1438,6 +1444,7 @@ function createStyles(colors: ThemeColors) {
     },
     cardTop: {
       flexDirection: "row",
+      flexWrap: "wrap",
       justifyContent: "space-between",
       alignItems: "flex-start",
       gap: 8,
@@ -1453,8 +1460,10 @@ function createStyles(colors: ThemeColors) {
       paddingVertical: 3,
       borderRadius: 999,
       borderWidth: 1,
+      alignSelf: "flex-start",
+      flexShrink: 1,
     },
-    badgeText: { fontSize: 10, fontFamily: "Outfit_800ExtraBold" },
+    badgeText: { fontSize: 10, fontFamily: "Outfit_800ExtraBold", flexShrink: 1 },
     searchBar: {
       backgroundColor: colors.bgSecondary,
       borderWidth: 1,

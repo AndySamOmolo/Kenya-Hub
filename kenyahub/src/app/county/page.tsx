@@ -598,7 +598,7 @@ export default function CountyIndexPage() {
                 prefetch={false}
                 className="cv-auto group block bg-bg-card border border-border rounded-xl p-4 sm:p-5 hover:border-gold/50 transition-colors"
               >
-                <div className="flex items-start justify-between mb-3">
+                <div className="flex flex-wrap items-start justify-between gap-2 mb-3">
                   <span className="text-2xl font-bold font-[family-name:var(--font-outfit)] text-gold/80 group-hover:text-gold transition-colors">
                     {county.code.toString().padStart(3, "0")}
                   </span>
@@ -717,8 +717,8 @@ export default function CountyIndexPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {filtered.map((c) => (
             <div key={c.code} className="cv-auto bg-bg-card border border-border rounded-xl p-5 space-y-4">
-              <div className="flex items-center justify-between border-b border-border pb-3">
-                <div>
+              <div className="flex flex-wrap items-center justify-between gap-2 border-b border-border pb-3">
+                <div className="min-w-0">
                   <Link
                     href={`/county/${c.slug}/`}
                     prefetch={false}
@@ -784,8 +784,8 @@ export default function CountyIndexPage() {
             if (!r) return null;
             return (
               <div key={c.code} className="cv-auto bg-bg-card border border-border rounded-xl p-5 space-y-4">
-                <div className="flex items-start justify-between">
-                  <div>
+                <div className="flex flex-wrap items-start justify-between gap-2">
+                  <div className="min-w-0">
                     <Link
                       href={`/county/${c.slug}/`}
                       prefetch={false}
@@ -1315,9 +1315,9 @@ export default function CountyIndexPage() {
           <div className="space-y-2.5">
             {COUNTY_HUB_FAQS.map((faq, idx) => (
               <details key={idx} className="group bg-bg-elevated/50 border border-border rounded-xl overflow-hidden">
-                <summary className="px-4 py-3 cursor-pointer text-xs sm:text-sm font-semibold text-text-primary hover:text-gold list-none flex items-center justify-between">
-                  <span>{faq.question}</span>
-                  <span className="text-text-muted group-open:rotate-180 transition-transform">▾</span>
+                <summary className="px-4 py-3 cursor-pointer text-xs sm:text-sm font-semibold text-text-primary hover:text-gold list-none flex items-center justify-between gap-2">
+                  <span className="min-w-0 flex-1">{faq.question}</span>
+                  <span className="text-text-muted shrink-0 group-open:rotate-180 transition-transform">▾</span>
                 </summary>
                 <div className="px-4 pb-3.5 pt-2 text-xs text-text-secondary leading-relaxed border-t border-border/60">
                   {faq.answer}

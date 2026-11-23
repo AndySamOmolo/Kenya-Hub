@@ -216,12 +216,12 @@ export default function KUCCPSCalculatorPage() {
                   open={idx < 3}
                   className="bg-bg-card border border-border rounded-xl overflow-hidden group"
                 >
-                  <summary className="flex items-center justify-between px-5 py-4 cursor-pointer list-none">
-                    <div className="flex items-center gap-3">
-                      <span className="text-xl font-bold text-gold font-[family-name:var(--font-outfit)] w-14">
+                  <summary className="flex items-center justify-between gap-3 px-4 sm:px-5 py-4 cursor-pointer list-none">
+                    <div className="flex items-center gap-3 min-w-0 flex-1">
+                      <span className="text-xl font-bold text-gold font-[family-name:var(--font-outfit)] w-14 shrink-0 tabular-nums">
                         {cluster.totalWeight.toFixed(2)}
                       </span>
-                      <div>
+                      <div className="min-w-0 flex-1">
                         <p className="text-sm font-semibold text-text-primary">
                           {cluster.name}
                         </p>
@@ -231,7 +231,7 @@ export default function KUCCPSCalculatorPage() {
                       </div>
                     </div>
                     <svg
-                      className="w-4 h-4 text-text-muted group-open:rotate-180 transition-transform"
+                      className="w-4 h-4 text-text-muted shrink-0 group-open:rotate-180 transition-transform"
                       fill="none" viewBox="0 0 24 24" stroke="currentColor"
                     >
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />

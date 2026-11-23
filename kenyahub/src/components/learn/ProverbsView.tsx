@@ -429,8 +429,8 @@ export default function ProverbsView({
 
         {spotlight && (
           <div className="rounded-2xl border-2 border-gold/45 bg-gradient-to-r from-gold/10 to-kenya-green/10 p-4 space-y-2">
-            <div className="flex items-center justify-between gap-2">
-              <span className="inline-flex items-center gap-1.5 text-xs font-bold text-gold">
+            <div className="flex flex-wrap items-center justify-between gap-2">
+              <span className="inline-flex items-center gap-1.5 text-xs font-bold text-gold min-w-0">
                 <Sparkles className="w-3.5 h-3.5" /> Random Spotlight · {spotlight.badge}
               </span>
               <div className="flex items-center gap-2">
@@ -509,7 +509,7 @@ export default function ProverbsView({
                 key={p.id}
                 className="bg-[var(--bg-card)] border border-[var(--border)] rounded-xl p-4 hover:border-emerald-500/30 transition-all"
               >
-                <div className="flex items-center justify-between gap-2 mb-2">
+                <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
                   <span className="text-[11px] font-bold px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400">
                     #{p.id}
                   </span>
@@ -568,7 +568,7 @@ export default function ProverbsView({
                 key={p.id || idx}
                 className="bg-[var(--bg-card)] border border-[var(--border)] rounded-xl p-4 hover:border-sky-500/30 transition-all"
               >
-                <div className="flex items-center justify-between gap-2 mb-2">
+                <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
                   <span className="text-[11px] font-bold px-2 py-0.5 rounded bg-sky-500/10 text-sky-400">
                     Ngero #{idx + 1}
                   </span>
@@ -617,7 +617,7 @@ export default function ProverbsView({
                   key={key}
                   className="bg-[var(--bg-card)] border border-[var(--border)] rounded-xl p-4 space-y-2.5"
                 >
-                  <div className="flex items-center justify-between">
+                  <div className="flex flex-wrap items-center justify-between gap-2">
                     <span className="text-[11px] font-bold px-2 py-0.5 rounded bg-amber-500/10 text-amber-400">
                       Ngero / Riddle #{idx + 1}
                     </span>
@@ -694,7 +694,7 @@ export default function ProverbsView({
                 key={item.id}
                 className="bg-[var(--bg-card)] border border-[var(--border)] rounded-xl p-4 hover:border-gold/30 transition-all"
               >
-                <div className="flex items-center justify-between gap-2 mb-2">
+                <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
                   <span className="text-[11px] font-bold px-2 py-0.5 rounded bg-gold/10 text-gold">
                     {item.category === "tradition" ? `Tradition #${idx + 1}` : `Proverb #${idx + 1}`}
                   </span>

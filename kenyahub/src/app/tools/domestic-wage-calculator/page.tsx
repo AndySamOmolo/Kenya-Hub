@@ -494,8 +494,8 @@ export default function DomesticWageCalculatorPage() {
           </div>
 
           <div className="rounded-xl border border-border bg-bg-elevated/70 p-4">
-            <div className="flex items-center justify-between mb-2">
-              <span className="text-xs font-bold uppercase tracking-wider text-gold">
+            <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
+              <span className="text-xs font-bold uppercase tracking-wider text-gold min-w-0">
                 Employment Act Sec. 9 Compliant Contract Preview
               </span>
               <span className="text-[0.6875rem] text-text-muted">

@@ -732,11 +732,13 @@ export default function CountyDetailScreen() {
               <View
                 style={{
                   flexDirection: "row",
+                  flexWrap: "wrap",
                   justifyContent: "space-between",
+                  gap: 8,
                   paddingVertical: 5,
                 }}
               >
-                <Text style={{ fontSize: 12.5, color: theme.textSecondary }}>
+                <Text style={{ fontSize: 12.5, color: theme.textSecondary, flexShrink: 1 }}>
                   Equitable Share Allocation
                 </Text>
                 <Text
@@ -752,11 +754,13 @@ export default function CountyDetailScreen() {
               <View
                 style={{
                   flexDirection: "row",
+                  flexWrap: "wrap",
                   justifyContent: "space-between",
+                  gap: 8,
                   paddingVertical: 5,
                 }}
               >
-                <Text style={{ fontSize: 12.5, color: theme.textSecondary }}>
+                <Text style={{ fontSize: 12.5, color: theme.textSecondary, flexShrink: 1 }}>
                   Own-Source Revenue (OSR)
                 </Text>
                 <Text
@@ -772,11 +776,13 @@ export default function CountyDetailScreen() {
               <View
                 style={{
                   flexDirection: "row",
+                  flexWrap: "wrap",
                   justifyContent: "space-between",
+                  gap: 8,
                   paddingVertical: 5,
                 }}
               >
-                <Text style={{ fontSize: 12.5, color: theme.textSecondary }}>
+                <Text style={{ fontSize: 12.5, color: theme.textSecondary, flexShrink: 1 }}>
                   Total County Revenue
                 </Text>
                 <Text
@@ -792,11 +798,13 @@ export default function CountyDetailScreen() {
               <View
                 style={{
                   flexDirection: "row",
+                  flexWrap: "wrap",
                   justifyContent: "space-between",
+                  gap: 8,
                   paddingVertical: 5,
                 }}
               >
-                <Text style={{ fontSize: 12.5, color: theme.textSecondary }}>
+                <Text style={{ fontSize: 12.5, color: theme.textSecondary, flexShrink: 1 }}>
                   Actual Expenditure
                 </Text>
                 <Text
@@ -812,7 +820,9 @@ export default function CountyDetailScreen() {
               <View
                 style={{
                   flexDirection: "row",
+                  flexWrap: "wrap",
                   justifyContent: "space-between",
+                  gap: 8,
                   paddingTop: 8,
                   marginTop: 4,
                   borderTopWidth: 1,
@@ -824,6 +834,7 @@ export default function CountyDetailScreen() {
                     fontSize: 12.5,
                     fontFamily: "Outfit_700Bold",
                     color: theme.textPrimary,
+                    flexShrink: 1,
                   }}
                 >
                   Budget Absorption Rate
@@ -1090,14 +1101,16 @@ export default function CountyDetailScreen() {
                   key={idx}
                   style={{
                     flexDirection: "row",
+                    flexWrap: "wrap",
                     justifyContent: "space-between",
                     alignItems: "center",
+                    gap: 8,
                     paddingBottom: idx < arr.length - 1 ? 8 : 0,
                     borderBottomWidth: idx < arr.length - 1 ? 1 : 0,
                     borderBottomColor: theme.border,
                   }}
                 >
-                  <View style={{ flex: 1, paddingRight: 8 }}>
+                  <View style={{ flexGrow: 1, flexShrink: 1, minWidth: 160 }}>
                     <Text
                       style={{
                         fontSize: 13,

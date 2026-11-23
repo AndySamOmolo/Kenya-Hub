@@ -153,8 +153,10 @@ export function createStyles(colors: ThemeColors) {
     },
     featuredTop: {
       flexDirection: "row",
+      flexWrap: "wrap",
       justifyContent: "space-between",
       alignItems: "center",
+      gap: 8,
       marginBottom: 8,
     },
     featuredLabel: {

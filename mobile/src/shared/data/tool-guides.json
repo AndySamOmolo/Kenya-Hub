@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-19",
+  "lastUpdated": "2026-11-24",
   "guides": {
     "learn": {
       "slug": "learn",
@@ -1706,6 +1706,772 @@
         ],
         "takeaway": "Verifying beacon geometry and Root-of-Title history before paying a deposit prevents costly Ardhisasa rejection and double-allocation disputes."
       }
+    },
+    "school-fee-cap-auditor": {
+      "slug": "school-fee-cap-auditor",
+      "notesTitle": "MoE Special Gazette Notice No. 1449 (Feb 6, 2026) Senior School Fee Caps",
+      "overview": [
+        "Under Special Gazette Notice No. 1449 dated February 6, 2026, the Ministry of Education enforces strict annual parent fee ceilings for all public Senior Schools in Kenya: KES 0 for Public Day schools (backed by KES 22,244 GoK capitation), KES 53,554 for Cluster 1 / Major Urban Boarding schools, KES 40,535 for Other Public Boarding schools, and KES 12,790 for Special Needs Boarding schools (supplemented by KES 57,974 GoK capitation).",
+        "Schools must collect fees strictly along the statutory 50% (Term 1), 30% (Term 2), and 20% (Term 3) schedule and are prohibited from adding unauthorized levies such as remedial tuition, teacher motivation fees, or tied uniform monopolies."
+      ],
+      "howItWorks": [
+        "Select the public Senior School category (Day, Cluster 1 / Major Urban Boarding, Other Boarding, or Special Needs Boarding).",
+        "Enter the school's quoted annual or per-term fee structure and toggle any extra levies listed on the admission or fee circular.",
+        "Review the exact KES overcharge above the Gazette Notice 1449 ceiling, term-by-term legal limits (50/30/20), and flagged illegal levies."
+      ],
+      "workedExample": {
+        "title": "Worked Example: Auditing an Extra-County Boarding School Circular",
+        "scenario": "A County/Extra-County boarding school outside major urban towns quotes KES 56,500 per year including KES 6,000 remedial tuition and KES 4,500 bus fund:",
+        "steps": [
+          "Gazetted parent ceiling for Other Public Boarding Senior Schools: KES 40,535/year (Term 1: KES 20,268, Term 2: KES 12,161, Term 3: KES 8,107).",
+          "Total overcharge above statutory cap: KES 56,500 - KES 40,535 = KES 15,965.",
+          "Both remedial tuition and unapproved bus funds are flagged as unauthorized levies reportable to the County Director of Education."
+        ],
+        "takeaway": "Comparing every fee circular against Gazette Notice 1449 prevents parents from paying tens of thousands in unlawful extra levies."
+      },
+      "complianceTips": [
+        "Request written County Education Board (CEB) authorization before paying any school development or bus levy.",
+        "Schools cannot legally withhold KCSE/KJSEA certificates or school leaving documents over unpaid fee balances."
+      ],
+      "notes": [
+        "Annual parent ceilings under Gazette Notice No. 1449 (Feb 6, 2026): Day KES 0, Cluster 1 Urban Boarding KES 53,554, Other Boarding KES 40,535, Special Needs Boarding KES 12,790.",
+        "Report unlawful levies or tied uniform mandates to the Ministry of Education hotline (0800 720 071) or the Commission on Administrative Justice (CAJ)."
+      ],
+      "faq": [
+        {
+          "question": "What is the maximum legal school fee for public boarding Senior Schools in Kenya in 2026?",
+          "answer": "Under Special Gazette Notice No. 1449 (February 6, 2026), Cluster 1 / Major Urban Boarding schools (Nairobi, Mombasa, Kisumu, Nakuru, Eldoret, Nyeri, Thika) are capped at KES 53,554 per year, while Other Public Boarding schools are capped at KES 40,535 per year."
+        },
+        {
+          "question": "How are public Senior School fees split across Term 1, Term 2, and Term 3?",
+          "answer": "The Ministry of Education mandates a 50% / 30% / 20% payment ratio: 50% in Term 1, 30% in Term 2, and 20% in Term 3."
+        },
+        {
+          "question": "Can a public school force parents to buy uniforms only from the school canteen?",
+          "answer": "No. Ministry of Education circulars expressly bar public schools from monopolizing uniform sales; schools may specify colours and design standards, but parents are free to buy uniforms from any accredited tailor or shop."
+        }
+      ]
+    },
+    "cooking-fuel-comparator": {
+      "slug": "cooking-fuel-comparator",
+      "notesTitle": "Kenyan Household Cooking Fuel Economics & Electric Pressure Cooker (EPC) Payback",
+      "overview": [
+        "Cooking energy is one of the largest recurring monthly expenses for Kenyan households, yet fuel cost comparisons often overlook thermal efficiency. While charcoal (KES 180/debe or KES 2,800/bag) and kerosene (EPRA Nairobi KES 191.38/L) lose over half their energy as waste heat, an Electric Pressure Cooker (EPC) retains pressurized steam at ~85% efficiency.",
+        "Using KPLC domestic tariffs (~KES 24.50/kWh) and TotalEnergies LPG refill benchmarks (KES 1,570 for 6 kg; KES 3,530 for 13 kg), this comparator models exact per-dish and monthly fuel spend across Kenyan staple meals—githeri, dry beans, ugali & sukuma wiki, rice & stew, and chapati."
+      ],
+      "howItWorks": [
+        "Select your household's weekly meal frequency for githeri, dry beans, ugali/sukuma, rice/stew, and chapati.",
+        "Adjust local prices for 6 kg/13 kg LPG refills, charcoal debe/bag, EPRA kerosene, KPLC electricity per kWh, and EPC purchase cost (default KES 9,500).",
+        "Inspect per-dish KES cost, monthly fuel totals, and exact months to recover the cost of an EPC."
+      ],
+      "workedExample": {
+        "title": "Worked Example: Boiling 1 kg Dry Githeri Across 4 Kenyan Fuels",
+        "scenario": "Comparing energy cost to boil 1 kg of dry maize and beans (githeri) on EPC vs LPG vs Charcoal vs Kerosene:",
+        "steps": [
+          "Electric Pressure Cooker (EPC): ~0.48 kWh × KES 24.50 = KES 11.76 (45 minutes).",
+          "Charcoal jiko: ~1.35 kg × KES 40/kg = KES 54.00 (180 minutes).",
+          "LPG 13 kg cylinder: ~0.28 kg × KES 271.54/kg = KES 76.03.",
+          "Kerosene stove: ~0.42 L × KES 191.38/L = KES 80.38."
+        ],
+        "takeaway": "Switching heavy-boil dishes like githeri and dry beans from charcoal or LPG to an EPC cuts per-meal fuel cost by 75%–85% and pays back a KES 9,500 EPC in roughly 4–6 months."
+      },
+      "complianceTips": [
+        "Soaking dry maize and beans overnight reduces cooking time and energy use by 20%–30% across all fuels.",
+        "Always buy LPG refills from licensed EPRA-compliant dealers and verify the cylinder seal before leaving."
+      ],
+      "notes": [
+        "Benchmarks use TotalEnergies 2026 LPG (6 kg KES 1,570; 13 kg KES 3,530), EPRA Nairobi Kerosene (KES 191.38/L), Charcoal (KES 180/debe, KES 2,800/bag), and KPLC Domestic (KES 24.50/kWh).",
+        "Hybrid cooking—using an EPC for heavy boiling/stews and LPG for quick frying/ugali—typically delivers the lowest total monthly household bill."
+      ],
+      "faq": [
+        {
+          "question": "Is an Electric Pressure Cooker (EPC) really cheaper than LPG gas in Kenya?",
+          "answer": "Yes for boiling and stewing dishes. Cooking githeri or dry beans in an insulated EPC uses roughly 0.36–0.48 kWh (KES 9–12 on KPLC domestic tariffs), compared to KES 55–80 on LPG or charcoal."
+        },
+        {
+          "question": "How long does it take for an EPC to pay for itself in a Kenyan household?",
+          "answer": "A typical KES 9,500 EPC saves KES 1,500–2,500 per month for a family of four cooking beans, githeri, and stews regularly, achieving full payback in 4 to 6 months."
+        },
+        {
+          "question": "Does KPLC Lifeline vs Domestic tariff change EPC cooking costs?",
+          "answer": "Yes. Households staying within the KPLC Lifeline band (0–30 kWh/month) pay a lower effective per-kWh rate than the standard KES 24.50/kWh Domestic rate, making EPC cooking even cheaper."
+        }
+      ]
+    },
+    "auctioneer-fee-shield": {
+      "slug": "auctioneer-fee-shield",
+      "notesTitle": "Auctioneers Act (Cap 526) Fourth Schedule Fee Ceilings & Repossession Protections",
+      "overview": [
+        "Under the Auctioneers Act (Cap 526) and the Auctioneers Rules (Fourth Schedule), licensed auctioneers in Kenya are strictly bound by statutory fee scales for attendance, proclamation, and sale commissions on both movable and immovable property. Arbitrary demands for inflated 'storage', 'transport', or 'standby' charges outside court-taxed bills are unlawful.",
+        "The Act also enforces mandatory notice periods—7 days after proclamation of movable goods, 14 days for rent distress sales, and 45 days' redemption notice before auctioning immovable land—and requires a valid annual Auctioneers Licensing Board (ALB) practicing certificate."
+      ],
+      "howItWorks": [
+        "Choose whether the enforcement involves movable goods (vehicles, household items, shop stock) or immovable property (land/buildings).",
+        "Enter the principal debt or proclaimed asset value and the auctioneer's demanded fee.",
+        "Compare the demanded amount against the exact Fourth Schedule statutory cap and run the 5-point illegality red-flag check."
+      ],
+      "workedExample": {
+        "title": "Worked Example: Checking a Movable Goods Attachment on a KES 250,000 Debt",
+        "scenario": "An auctioneer proclaims household goods for a KES 250,000 debt and demands KES 85,000 in fees:",
+        "steps": [
+          "Fourth Schedule attendance fee (movable): KES 4,000; Proclamation fee: KES 2,000.",
+          "Statutory commission: 10% on first KES 100,000 (KES 10,000) + 5% on remaining KES 150,000 (KES 7,500) = KES 17,500.",
+          "Total statutory ceiling before court-taxed disbursements: KES 23,500 — flagging KES 61,500 in excessive demand."
+        ],
+        "takeaway": "If an auctioneer's bill exceeds the Fourth Schedule, you can file a formal Bill of Costs taxation challenge in court and report misconduct to the Auctioneers Licensing Board."
+      },
+      "complianceTips": [
+        "Always demand to inspect the auctioneer's current-year ALB practicing certificate and the signed Court Warrant or Letter of Instruction.",
+        "Under Section 44 of the Civil Procedure Act, basic bedding, clothing, cooking utensils, and essential tools of trade are exempt from attachment."
+      ],
+      "notes": [
+        "Movable commission tiers: 10% up to KES 100,000, 5% on the next KES 900,000, and 2.5% on any excess above KES 1,000,000.",
+        "Immovable commission tiers: 10% up to KES 600,000, 5% between KES 600,001 and KES 3,000,000, and 2% above KES 3,000,000."
+      ],
+      "faq": [
+        {
+          "question": "Can an auctioneer carry away my household goods on the very day they arrive?",
+          "answer": "No. For movable property, the Auctioneers Rules require a formal Proclamation Notice giving the debtor at least 7 days to settle or challenge the debt before goods can be removed for sale."
+        },
+        {
+          "question": "What are the statutory attendance and proclamation fees under Cap 526?",
+          "answer": "Under the Fourth Schedule, standard attendance fees are KES 4,000 for movable property and KES 8,000 for immovable property, plus KES 2,000 for proclamation."
+        },
+        {
+          "question": "Where do I report an unlicensed or abusive auctioneer in Kenya?",
+          "answer": "You can file a formal complaint with the Auctioneers Licensing Board (ALB) under the Judiciary of Kenya and apply to the Magistrates' or High Court to tax down unlawful fees."
+        }
+      ]
+    },
+    "succession-cap160-calculator": {
+      "slug": "succession-cap160-calculator",
+      "notesTitle": "Law of Succession Act (Cap 160) Intestate Distribution & Probate Fee Guide",
+      "overview": [
+        "When a Kenyan citizen passes away without a valid written or oral will (intestate), the Law of Succession Act (Cap 160) governs how net property is shared among surviving spouses, children, parents, and siblings. Sections 35, 38, 39, and 40 establish gender-equal inheritance rights for both sons and daughters—whether married or unmarried.",
+        "Before any bank account, SACCO share, vehicle, or land title can be transferred, administrators must obtain Letters of Administration Intestate from the High Court or Magistrate's Court (jurisdiction up to KES 20M) and wait 6 months for Confirmation of Grant."
+      ],
+      "howItWorks": [
+        "Select the family structure (Section 35 monogamous with spouse & children, Section 38 children only, Section 39 no spouse/children, or Section 40 polygamous houses).",
+        "Enter the net estate value and number of surviving spouses/children per house.",
+        "Review each beneficiary's statutory share, estimated Advocates (Remuneration) Order (ARO) probate fees + 16% VAT, and the P&A filing checklist."
+      ],
+      "workedExample": {
+        "title": "Worked Example: Section 40 Polygamous Intestate Estate of KES 12,000,000",
+        "scenario": "A deceased man leaves 2 houses: House 1 has a surviving wife + 3 children (4 units); House 2 has a surviving wife + 1 child (2 units):",
+        "steps": [
+          "Under Section 40, each surviving wife counts as an extra unit alongside her children: total units = 4 + 2 = 6 units.",
+          "House 1 receives 4/6 (66.67%) = KES 8,000,000; House 2 receives 2/6 (33.33%) = KES 4,000,000.",
+          "Within each house, the surviving wife holds a life interest in her house's share alongside her children under Section 35."
+        ],
+        "takeaway": "Section 40 prevents arbitrary disinheritance by tying every house's share strictly to its unit count."
+      },
+      "complianceTips": [
+        "Never sell or subdivide a deceased person's land before Confirmation of Grant—doing so is criminal intermeddling under Section 45 of Cap 160.",
+        "Obtain the Area Chief's Letter listing every surviving child (including married daughters and children born outside marriage) to avoid grant revocation."
+      ],
+      "notes": [
+        "Statutory Kenya Gazette publication carries a mandatory 30-day objection period before the initial Grant of Letters of Administration issues.",
+        "Confirmation of Grant (Form 108) is ordinarily applied for 6 months after the grant is issued, unless urgent partial confirmation is granted by the court."
+      ],
+      "faq": [
+        {
+          "question": "Do married daughters inherit equally with sons under Kenyan law?",
+          "answer": "Yes. Under Sections 35, 38, and 40 of the Law of Succession Act (Cap 160) and Article 27 of the Constitution of Kenya (2010), all children—sons and daughters, married or unmarried—inherit equally."
+        },
+        {
+          "question": "What does a surviving spouse's 'life interest' under Section 35 mean?",
+          "answer": "A surviving spouse is entitled to personal and household effects absolutely and holds a life interest (right to use and draw income) over the net residue in trust for the children; they cannot sell immovable land without court consent or beneficiaries' agreement."
+        },
+        {
+          "question": "How long does an uncontested succession case take in Kenya?",
+          "answer": "An uncontested intestate succession typically takes 8 to 12 months: ~2–3 months for filing, 30-day Kenya Gazette notice, and initial Grant, followed by the statutory 6-month waiting period before Confirmation of Grant."
+        }
+      ]
+    },
+    "duka-hustle-ubp-calculator": {
+      "slug": "duka-hustle-ubp-calculator",
+      "notesTitle": "Kenyan Micro-Retail Break-Even, Spoilage & 2026 Nairobi UBP Guide",
+      "overview": [
+        "Small Kenyan hustles—neighbourhood dukas, mama mboga stalls, mitumba bale traders, and kinyozis/salons—often appear profitable on daily cash flow while quietly losing money to stock spoilage, unbudgeted rent, and annual County Unified Business Permit (UBP) renewals.",
+        "This calculator combines 2026 Nairobi City County UBP tiers (Kiosk <5 m² KES 3,500–4,000 + KES 200 application fee, Mini Shop KES 5,000, Small Trader KES 10,000, Medium Shop KES 15,000) with real gross-margin and spoilage drag modeling to reveal your exact daily break-even sales target."
+      ],
+      "howItWorks": [
+        "Choose a hustle preset (Neighbourhood Duka, Mama Mboga, Mitumba Bale Trader, or Kinyozi/Salon) or customize your own costs.",
+        "Select your County UBP tier, monthly rent, utilities, gross margin %, and realistic stock spoilage/dead-stock %.",
+        "See the exact daily and monthly revenue required to break even after amortized UBP, rent, and spoilage losses."
+      ],
+      "workedExample": {
+        "title": "Worked Example: Mama Mboga Stall with 12% Fresh-Produce Spoilage",
+        "scenario": "A fresh produce vendor pays KES 4,000/month rent, KES 1,000 utilities, KES 3,700 annual Kiosk UBP + app fee (~KES 308/mo), with 32% gross margin and 12% spoilage:",
+        "steps": [
+          "Total monthly fixed overhead (rent + utilities + amortized UBP): KES 5,308.",
+          "Effective net contribution margin after 12% produce spoilage: 32% - 12% = 20%.",
+          "Monthly break-even sales: KES 5,308 / 0.20 = KES 26,540 (~KES 1,021/day over 26 trading days)."
+        ],
+        "takeaway": "Cutting fresh-produce spoilage from 12% to 6% drops your daily break-even sales target by nearly a quarter."
+      },
+      "complianceTips": [
+        "Renew your County UBP before March 31 each year via Nairobi Services (nairobiservices.go.ke) to avoid late-renewal penalties.",
+        "Food handlers (dukas selling unpacked food, eateries, mama mboga) also require a 6-month Public Health Food Handler's Certificate."
+      ],
+      "notes": [
+        "2026 Nairobi UBP base tiers: Kiosk (<5 m²) KES 3,500–4,000, Mini Shop KES 5,000, Small Trader KES 10,000, Medium Shop KES 15,000, each plus KES 200 application fee.",
+        "Keep a separate M-Pesa Till or business wallet so personal household withdrawals do not mask operating losses."
+      ],
+      "faq": [
+        {
+          "question": "How much is a Nairobi Unified Business Permit (UBP) for a small duka or kiosk in 2026?",
+          "answer": "In 2026, Nairobi City County charges KES 3,500–4,000 for a kiosk under 5 m², KES 5,000 for a mini shop, KES 10,000 for a small trader, and KES 15,000 for a medium shop, plus a KES 200 application fee."
+        },
+        {
+          "question": "Why does spoilage matter so much for mama mboga and mitumba businesses?",
+          "answer": "Spoiled tomatoes or unsellable Grade-C mitumba pieces directly reduce your realized gross margin. A 10% spoilage rate on a 30% margin business cuts your effective profit cushion by one-third."
+        },
+        {
+          "question": "Do small dukas need to pay KRA Turnover Tax (TOT) or eTIMS?",
+          "answer": "Businesses with annual gross turnover between KES 1,000,000 and KES 25,000,000 are subject to KRA Turnover Tax (1.5%) and eTIMS invoicing; micro-traders below KES 1M/year are exempt from TOT."
+        }
+      ]
+    },
+    "funeral-harambee-planner": {
+      "slug": "funeral-harambee-planner",
+      "notesTitle": "Kenya Funeral Costing, Morgue Tariffs (KUFH/KUTRRH 2026) & Harambee Pledge Guide",
+      "overview": [
+        "Planning a Kenyan funeral under emotional pressure often leads to runaway mortuary bills and painful last-minute deficits when WhatsApp/M-Pesa harambee pledges fall short of actual cash collected. Public referral funeral homes like Kenyatta University Funeral Home (KUFH) / KUTRRH charge transparent tiered rates: KES 5,500 adult (KES 3,500 child) for 0–24h transit, KES 10,000 adult (KES 6,000 child) flat for Days 1–10, and KES 1,000/day adult (KES 700/day child) from Day 11 onward.",
+        "This planner estimates total morgue charges by days held, lets committees customize coffin, hearse, tent, and catering tiers, and models realistic cash-in-hand using a pledge-realization factor."
+      ],
+      "howItWorks": [
+        "Select Adult or Child tariff and enter the planned number of days in the morgue.",
+        "Pick a Modest, Standard, or Executive funeral tier and adjust line items (coffin, hearse, tents/chairs, catering, PA/flowers).",
+        "Enter total harambee pledges and expected realization % (default 75%) to see the true funding gap early."
+      ],
+      "workedExample": {
+        "title": "Worked Example: 14-Day Adult Morgue Stay & Standard Funeral Budget",
+        "scenario": "A family plans burial 14 days after admission at KUFH/KUTRRH tariffs with a Standard funeral budget:",
+        "steps": [
+          "Morgue fee: KES 10,000 (Days 1–10 flat) + 4 extra days × KES 1,000 = KES 14,000.",
+          "Standard funeral items (coffin KES 45K, hearse KES 35K, tents KES 35K, catering KES 85K, PA/flowers KES 25K) = KES 225,000; Total = KES 239,000.",
+          "If WhatsApp pledges total KES 260,000 at 75% realization, expected cash is KES 195,000 — revealing a KES 44,000 deficit to close early."
+        ],
+        "takeaway": "Scheduling burial within the 10-day flat morgue window and budgeting for 70%–80% pledge fulfillment prevents stressful burial-eve borrowing."
+      },
+      "complianceTips": [
+        "Secure the Notification of Death (Form B1) and official Burial Permit at least 48 hours before body collection.",
+        "Designate two independent treasurers and share daily M-Pesa statement screenshots with the funeral committee for transparency."
+      ],
+      "notes": [
+        "Morgue benchmarks reflect KUFH/KUTRRH 2026 schedules: Transit 0–24h KES 5,500 (child KES 3,500); Days 1–10 flat KES 10,000 (child KES 6,000); Day 11+ KES 1,000/day (child KES 700/day).",
+        "Private funeral homes in Nairobi and Mombasa typically charge 1.8×–3× public referral mortuary rates."
+      ],
+      "faq": [
+        {
+          "question": "How much does Kenyatta University Funeral Home (KUFH) charge per day?",
+          "answer": "Under the 2026 benchmark schedule, KUFH charges KES 5,500 for 0–24h transit, a flat KES 10,000 for Days 1–10 (KES 6,000 for children), and KES 1,000 per day from Day 11 onward (KES 700/day for children)."
+        },
+        {
+          "question": "What percentage of funeral harambee pledges actually convert to cash in Kenya?",
+          "answer": "Funeral committees typically realize 70% to 80% of pledged amounts before burial day; planning with a 75% realization buffer avoids last-minute shortfalls."
+        },
+        {
+          "question": "What documents are required to clear a body from a Kenyan mortuary?",
+          "answer": "You need the official Burial Permit, copies of the deceased's and next-of-kin's National IDs, the Area Chief's letter (for rural burials), and the paid morgue clearance receipt."
+        }
+      ]
+    },
+    "rainwater-tank-sizer": {
+      "slug": "rainwater-tank-sizer",
+      "notesTitle": "Kenya 47-County Roof Rainwater Harvesting & Tank Sizing Engineering Guide",
+      "overview": [
+        "Every millimetre of rainfall landing on 1 square metre of roof yields 1 litre of gross rainwater. Across Kenya's 47 counties, seasonal rainfall varies dramatically—from ~250 mm/year in arid Turkana and Mandera to 1,350–1,400 mm/year in Kericho, Kisii, and Kakamega—split primarily between the March–April–May (MAM) long rains and October–November–December (OND) short rains.",
+        "By combining your county's MAM/OND rainfall, roof plan area, material runoff coefficient (mabati 0.90, tile 0.85, concrete 0.80), and household daily consumption, this tool calculates harvestable litres and matches you to Kenyan retail tank sizes (1,500 L to 10,000 L)."
+      ],
+      "howItWorks": [
+        "Select your county from all 47 Kenyan counties to load local MAM, OND, annual rainfall, and typical dry-spell length.",
+        "Enter your horizontal roof area (m²), roof material (Mabati, Tile, or Concrete), and household daily water demand (litres/day).",
+        "View seasonal harvestable litres, recommended tank capacity, days of dry-spell autonomy, and 2026 Kenyan tank cost benchmarks."
+      ],
+      "workedExample": {
+        "title": "Worked Example: 100 m² Mabati Roof in Kiambu County",
+        "scenario": "A family of 4 in Kiambu (MAM 480 mm, OND 340 mm, Annual 1,040 mm) has a 100 m² mabati roof (0.90 runoff, 5% first-flush loss):",
+        "steps": [
+          "MAM long-rains harvest: 100 m² × 480 mm × 0.90 × 0.95 = 41,040 litres.",
+          "Annual harvest: 100 m² × 1,040 mm × 0.90 × 0.95 = 88,920 litres.",
+          "A 10,000 L tank (KES 105,000 benchmark) fills over 4× during MAM alone and stores ~50 days of drinking/cooking water at 200 L/day."
+        ],
+        "takeaway": "Even a modest 100 m² mabati roof in central or western Kenya can harvest 80,000+ litres per year—making storage capacity, not roof area, the main bottleneck."
+      },
+      "complianceTips": [
+        "Install a simple first-flush diverter and fine mesh leaf screen on downpipes to keep dust and bird droppings out of the tank.",
+        "Always place 5,000 L and 10,000 L plastic tanks on a level, reinforced concrete slab wider than the tank base to preserve manufacturer warranty."
+      ],
+      "notes": [
+        "Runoff coefficients: Mabati (corrugated iron) 0.90, Clay/Concrete Tiles 0.85, Concrete Flat Roof 0.80.",
+        "2026 Kenyan retail tank benchmarks: 1,500 L (KES 19,185), 3,000 L (KES 29,541), 5,000 L (KES 55,417), and 10,000 L (KES 105,000)."
+      ],
+      "faq": [
+        {
+          "question": "How do I calculate how much rainwater my mabati roof collects in Kenya?",
+          "answer": "Multiply your roof's horizontal footprint (m²) × rainfall (mm) × 0.90 (mabati runoff coefficient) × 0.95 (first-flush allowance). For example, 100 m² × 400 mm × 0.90 × 0.95 = 34,200 litres."
+        },
+        {
+          "question": "What size water tank is best for a typical Kenyan rural or peri-urban home?",
+          "answer": "For a 4-person household, a 5,000 L tank (KES 55,417 benchmark) covers 2–3 weeks of essential use, while a 10,000 L tank (KES 105,000 benchmark) provides 1.5–2 months of dry-spell resilience."
+        },
+        {
+          "question": "Why is rainwater harvesting sizing different between Turkana and Kisii?",
+          "answer": "Kisii receives ~1,400 mm/year with short 35-day dry spells, so tanks refill frequently. Arid counties like Turkana (~250 mm/year) experience 150+ day dry spells and need larger catchment roofs and bigger storage per person."
+        }
+      ]
+    },
+    "fertilizer-seed-breakeven": {
+      "slug": "fertilizer-seed-breakeven",
+      "notesTitle": "NFSP e-Voucher Subsidized Fertilizer (KES 2,500) & KALRO Crop Margin Guide",
+      "overview": [
+        "Input prices make or break smallholder farm profitability in Kenya. Under the National Fertilizer Subsidy Programme (NFSP), registered farmers redeem 50 kg bags via e-Voucher at KES 2,500—less than half the commercial agrovet price of DAP (KES 6,250), NPK (KES 6,000), or CAN (KES 5,490).",
+        "This calculator pairs official KALRO spacing, seed rates per acre, and yield bands for Maize, Beans, Irish Potatoes, and Bulb Onions against NCPB maize floor prices (KES 4,000/90 kg bag) to show your exact break-even yield and net profit per acre."
+      ],
+      "howItWorks": [
+        "Choose your crop (Maize, Beans, Potatoes, or Onions) and acreage.",
+        "Toggle between NFSP e-Voucher subsidized fertilizer (KES 2,500/50 kg) and commercial agrovet prices (DAP KES 6,250, CAN KES 5,490, NPK KES 6,000).",
+        "Review seed/fertilizer quantities, total cost per acre, break-even bags/kg, and net profit across Low, Average, and High KALRO yields."
+      ],
+      "workedExample": {
+        "title": "Worked Example: 1 Acre of Maize — e-Voucher vs Commercial Fertilizer",
+        "scenario": "Planting 1 acre of KALRO H614D maize (10 kg seed, 1 bag planting DAP, 1 bag top-dress CAN, KES 14,000 land prep/weeding/harvest):",
+        "steps": [
+          "Commercial fertilizer cost: KES 6,250 (DAP) + KES 5,490 (CAN) = KES 11,740 -> Total cost = KES 28,740 (break-even 7.2 bags at KES 4,000).",
+          "NFSP e-Voucher cost: 2 bags × KES 2,500 = KES 5,000 -> Total cost = KES 22,000 (break-even 5.5 bags at KES 4,000).",
+          "At an average 22 bags/acre yield sold at KES 4,000/bag (KES 88,000 gross), e-Voucher saves KES 6,740/acre and boosts net margin to KES 66,000/acre."
+        ],
+        "takeaway": "Registering for the NFSP e-Voucher lowers your maize break-even threshold by nearly 2 bags per acre."
+      },
+      "complianceTips": [
+        "Verify certified seed packets by scratching the KEPHIS SMS label and texting the code to 1393 before planting.",
+        "Apply top-dressing CAN only when soil is moist (knee-high maize stage) to avoid nitrogen volatilization losses."
+      ],
+      "notes": [
+        "Fertilizer benchmarks: NFSP e-Voucher KES 2,500/50 kg vs Commercial DAP KES 6,250, CAN KES 5,490, NPK KES 6,000.",
+        "NCPB strategic grain reserve maize benchmark: KES 4,000 per 90 kg bag."
+      ],
+      "faq": [
+        {
+          "question": "How much is subsidized e-Voucher fertilizer in Kenya in 2026?",
+          "answer": "Under the National Fertilizer Subsidy Programme (NFSP), registered farmers pay KES 2,500 per 50 kg bag at NCPB depots and accredited agrovets, compared to KES 5,490–6,250 commercially."
+        },
+        {
+          "question": "How much maize seed and fertilizer do I need per acre according to KALRO?",
+          "answer": "KALRO recommends 10 kg of certified maize seed per acre at 75 cm × 30 cm spacing, 1 bag (50 kg) of DAP/NPK at planting, and 1 bag (50 kg) of CAN for top-dressing."
+        },
+        {
+          "question": "How can I check if my maize or bean seed packet is genuine in Kenya?",
+          "answer": "Scratch the silver KEPHIS verification sticker on the seed packet and SMS the hidden code to 1393 to confirm variety, lot number, and germination validity."
+        }
+      ]
+    },
+    "dairy-ration-margin": {
+      "slug": "dairy-ration-margin",
+      "notesTitle": "KALRO Zero-Grazing Dairy Ration & Milk Margin Guide",
+      "overview": [
+        "Feed accounts for 60%–70% of production costs in Kenyan zero-grazing dairy farms. Underfeeding water or forage caps milk yield regardless of breed genetics, while overfeeding dairy meal (KES 45/kg) without matching yield response erodes net profit.",
+        "This calculator models daily forage (90–110 kg fresh Napier/silage), clean drinking water (60–70 L), mineral licks, and tiered dairy meal (0.5–6 kg/day) for Friesian, Ayrshire, Guernsey, and Jersey cows, incorporating dry-season silage savings against KES 50/L milk payouts."
+      ],
+      "howItWorks": [
+        "Select your dairy breed (Friesian 450 kg, Ayrshire 420 kg, Guernsey 400 kg, or Jersey 350 kg) and herd size.",
+        "Set daily milk yield (litres/cow), milk payout price (default KES 50/L), dairy meal allocation (kg/day at KES 45/kg), and toggle maize silage feeding.",
+        "Inspect daily forage & water requirements, feed cost per litre of milk, and net monthly dairy profit."
+      ],
+      "workedExample": {
+        "title": "Worked Example: Zero-Grazed Friesian Producing 20 Litres/Day",
+        "scenario": "A 450 kg Friesian cow producing 20 L/day at KES 50/L payout, fed 100 kg forage, 4 kg dairy meal (KES 45/kg), and KES 25 mineral salt:",
+        "steps": [
+          "Gross daily milk revenue: 20 L × KES 50 = KES 1,000/day.",
+          "Daily feed cost (without silage): Forage KES 350 + Dairy Meal (4 × 45 = KES 180) + Minerals KES 25 = KES 555/day (KES 27.75/L).",
+          "Net daily margin: KES 445/day (~KES 13,350/month per cow), rising further when maize silage cuts forage cost by ~25%."
+        ],
+        "takeaway": "Maintaining feed cost below 55% of gross milk revenue is the key benchmark for profitable Kenyan zero-grazing."
+      },
+      "complianceTips": [
+        "Provide ad-libitum clean drinking water (at least 60–70 L/day, plus 3 L per extra litre of milk)—milk is ~87% water.",
+        "Follow the KALRO rule of thumb: feed 1 kg of dairy meal for every 2–2.5 litres of milk produced above the 7-litre forage baseline."
+      ],
+      "notes": [
+        "Breed body-weight benchmarks: Friesian 450 kg, Ayrshire 420 kg, Guernsey 400 kg, Jersey 350 kg.",
+        "Benchmarks use KES 45/kg dairy meal, KES 50/L milk payout, and a 25% dry-season silage cost-savings factor."
+      ],
+      "faq": [
+        {
+          "question": "How much dairy meal should I feed a zero-grazing cow per day in Kenya?",
+          "answer": "A standard KALRO guideline is 1 kg of dairy meal for every 2 to 2.5 litres of milk produced above 7 litres/day—typically 2–6 kg/day depending on yield, split across morning and evening milking."
+        },
+        {
+          "question": "How much water does a lactating Friesian or Ayrshire cow need daily?",
+          "answer": "A lactating dairy cow needs at least 60–70 litres of clean, accessible water daily, increasing to 80–100 litres in hot weather or at yields above 25 L/day."
+        },
+        {
+          "question": "Why does making maize silage improve Kenyan dairy margins?",
+          "answer": "Preserving surplus wet-season maize or Napier as silage reduces dry-season forage costs by roughly 25% and prevents sharp milk-yield drops when fresh grass dries up."
+        }
+      ]
+    },
+    "land-subdivision-planner": {
+      "slug": "land-subdivision-planner",
+      "notesTitle": "Land Control Act (Cap 302) 6-Month LCB Cliff & 2025 Lands Charter Fee Guide",
+      "overview": [
+        "Under Sections 6 and 8 of Kenya's Land Control Act (Cap 302), any sale, transfer, partition, or subdivision of agricultural land is automatically void for all purposes if Land Control Board (LCB) consent is not applied for within 6 months (180 days) of signing the agreement. Missing this cliff invalidates the transaction—leaving buyers with only a claim to recover their purchase price.",
+        "This planner tracks your exact 180-day countdown from the agreement date, budgets official Ministry of Lands 2025 Charter fees (Official Search KES 1,000, Map Search KES 500, Regular LCB KES 3,000 / 30 days vs Special LCB KES 10,000 / 2 days, Mutation/RIM KES 5,000+, New Title KES 3,500/plot), and provides a step-by-step subdivision checklist."
+      ],
+      "howItWorks": [
+        "Enter the sale/subdivision agreement date to calculate your exact 180-day Cap 302 LCB void-cliff deadline.",
+        "Choose Regular LCB (KES 3,000, ~30 days) or Special LCB (KES 10,000, ~2 days) and enter the number of resulting plots.",
+        "Review itemized statutory Lands Charter fees, estimated licensed surveyor costs, and the 7-step mutation checklist."
+      ],
+      "workedExample": {
+        "title": "Worked Example: Subdividing a 1-Acre Agricultural Parcel into 4 Plots",
+        "scenario": "A family subdivides 1 acre into 4 quarter-acre plots using Regular LCB consent:",
+        "steps": [
+          "Official Search (KES 1,000) + RIM Map Search (KES 500) + Regular LCB Consent (KES 3,000) = KES 4,500.",
+          "Mutation & RIM amendment registration (KES 5,000 base) + 4 New Title Deeds (4 × KES 3,500 = KES 14,000) = KES 19,000.",
+          "Total statutory Lands fees: KES 23,500 (excluding licensed ISK surveyor professional fees and county PPA2 planning charges)."
+        ],
+        "takeaway": "Applying for LCB consent immediately—or paying KES 10,000 for a 2-day Special LCB if the 180-day cliff is near—protects the entire transaction from becoming legally void."
+      },
+      "complianceTips": [
+        "Always include written Spousal Consent for matrimonial agricultural land before attending the Land Control Board.",
+        "Engage only a licensed surveyor registered with the Institution of Surveyors of Kenya (ISK) / Land Surveyors Board to sign mutation forms."
+      ],
+      "notes": [
+        "Cap 302 Section 8 sets a strict 6-month (180-day) window from agreement date to apply for LCB consent (extendable only by High Court order for sufficient reason).",
+        "2025 Ministry of Lands Charter fees: Official Search KES 1,000, Map Search KES 500, Regular LCB KES 3,000, Special LCB KES 10,000, Mutation/RIM KES 5,000+, New Title KES 3,500/plot."
+      ],
+      "faq": [
+        {
+          "question": "What happens if I miss the 6-month Land Control Board (LCB) deadline in Kenya?",
+          "answer": "Under Section 6 of the Land Control Act (Cap 302), the sale or subdivision agreement becomes void for all purposes after 6 months unless the High Court grants an extension of time under Section 8."
+        },
+        {
+          "question": "What is the difference between a Regular LCB and a Special LCB sitting?",
+          "answer": "A Regular LCB sitting costs KES 3,000 and meets on the sub-county's monthly schedule (~30 days turnaround). A Special LCB sitting costs KES 10,000 and is convened urgently within ~2 working days."
+        },
+        {
+          "question": "How much does each new title deed cost after land subdivision in Kenya?",
+          "answer": "Under the Ministry of Lands 2025 Service Charter, statutory registration and issuance of each new individual title deed costs KES 3,500 per resulting plot, separate from mutation and surveyor fees."
+        }
+      ]
+    },
+    "biogas-digester-sizer": {
+      "slug": "biogas-digester-sizer",
+      "notesTitle": "Kenya Domestic Biogas Digester Sizing & Fuel Payback Guide",
+      "overview": [
+        "Zero-grazing Kenyan dairy households with 2 or more cows sit on a steady daily supply of clean cooking gas. Each zero-grazed cow produces roughly 12 kg of fresh dung per day, yielding ~0.5 m³ (500 litres) of biogas—enough to replace 2.5 kg of firewood or 1 kg of charcoal every single day.",
+        "This sizer matches your cow count and household size to Kenyan prefab biogas digester kits (6 m³ KES 44,500, 9 m³ KES 55,000, 12 m³ KES 75,000), computes daily cooking meal capacity (220 L/person/meal), and models exact payback months against charcoal, firewood, or LPG."
+      ],
+      "howItWorks": [
+        "Enter the number of zero-grazed cattle and household members.",
+        "Select the baseline cooking fuel you are replacing (Charcoal, Firewood, or LPG) and its current monthly spend.",
+        "View daily biogas production (m³), recommended prefab kit size (6 m³, 9 m³, or 12 m³), bio-slurry bonus, and payback period in months."
+      ],
+      "workedExample": {
+        "title": "Worked Example: 3 Zero-Grazed Cows Replacing Charcoal & LPG",
+        "scenario": "A household of 5 with 3 zero-grazed cows currently spending KES 3,800/month on charcoal and LPG:",
+        "steps": [
+          "Daily biogas yield: 3 cows × 0.5 m³/cow = 1.5 m³ (1,500 L/day) — enough for ~6.8 person-meals/day.",
+          "Recommended prefab kit: 6 m³ digester at KES 44,500 benchmark.",
+          "Payback period: KES 44,500 / KES 3,800 = ~11.7 months, followed by years of nearly free cooking gas and rich organic bio-slurry fertilizer."
+        ],
+        "takeaway": "A 6 m³ prefab biogas kit for a 3-cow Kenyan homestead typically pays for itself in under 12 months."
+      },
+      "complianceTips": [
+        "Mix fresh cow dung with water at a 1:1 ratio daily and never flush antibiotics or harsh disinfectants into the digester inlet.",
+        "Use the nutrient-rich bio-slurry outflow as organic fertilizer on Napier grass, kales, or maize to boost farm margins further."
+      ],
+      "notes": [
+        "Engineering conversions: 0.5 m³ biogas/cow/day; 200 L biogas = 1 kg firewood; 500 L biogas = 1 kg charcoal; 220 L biogas = 1 person-meal.",
+        "Kenyan prefab kit benchmarks: 6 m³ (2–4 cows) KES 44,500; 9 m³ (4–6 cows) KES 55,000; 12 m³ (6–10 cows) KES 75,000."
+      ],
+      "faq": [
+        {
+          "question": "How many cows do I need to run a domestic biogas digester in Kenya?",
+          "answer": "You need at least 2 zero-grazed dairy cows (yielding ~1.0 m³ of gas per day) to run a 6 m³ household biogas digester consistently."
+        },
+        {
+          "question": "How much does a prefab biogas digester cost in Kenya in 2026?",
+          "answer": "Prefab domestic biogas kits in Kenya benchmark at approximately KES 44,500 for 6 m³, KES 55,000 for 9 m³, and KES 75,000 for 12 m³."
+        },
+        {
+          "question": "Can I use biogas slurry directly on crops?",
+          "answer": "Yes. Bio-slurry exiting the digester is an odor-free, nitrogen-rich organic fertilizer that improves Napier grass and vegetable yields while cutting synthetic fertilizer bills."
+        }
+      ]
+    },
+    "livestock-vaccine-calendar": {
+      "slug": "livestock-vaccine-calendar",
+      "notesTitle": "Multi-Species Livestock Gestation & DVS / KEVEVAPI Vaccination Guide",
+      "overview": [
+        "Preventable outbreaks of Foot & Mouth Disease (FMD), Lumpy Skin Disease (LSD), Peste des Petits Ruminants (PPR), East Coast Fever (ECF), and Newcastle Disease wipe out millions of shillings in Kenyan livestock every year. Timing vaccinations and preparing for parturition (drying-off, steaming-up, and colostrum care) turns reactive vet bills into predictable herd growth.",
+        "This calendar calculates exact calving (283 days), kidding (150 days), lambing (150 days), and farrowing (114 days) due dates from service date and generates official Directorate of Veterinary Services (DVS) / KEVEVAPI ruminant and Day 1–Week 16 poultry schedules."
+      ],
+      "howItWorks": [
+        "Choose your species (Cattle, Goat, Sheep, Pig, or Poultry) and enter the breeding/service date or chick hatch date.",
+        "View the exact expected birth date, drying-off/steaming-up window, and upcoming DVS/KEVEVAPI vaccine due dates.",
+        "Check off completed doses (FMD every 6 months, PPR/LSD/Blanthrax annually, ECF once, and poultry Day 1–Week 16)."
+      ],
+      "workedExample": {
+        "title": "Worked Example: Dairy Cow Served on March 1, 2026",
+        "scenario": "A Friesian cow is served via AI on March 1, 2026 (283-day gestation):",
+        "steps": [
+          "Expected calving date: December 9, 2026 (+283 days).",
+          "Dry-off target (60 days pre-calving): October 10, 2026; Steam-up begins ~45 days pre-calving.",
+          "Herd vaccination reminders: FMD booster every 6 months, LSD & Blanthrax annually, and lifelong ECF immunization via a licensed vet."
+        ],
+        "takeaway": "Tracking breeding dates alongside 6-month FMD and annual LSD/PPR schedules protects both milk yield and calf survival."
+      },
+      "complianceTips": [
+        "Maintain the cold chain (2°C–8°C) for all KEVEVAPI and poultry vaccines—warm vaccines lose potency quickly.",
+        "East Coast Fever (ECF) ITM vaccination must only be administered by a Kenya Veterinary Board (KVB)-registered veterinary surgeon."
+      ],
+      "notes": [
+        "Gestation baselines: Cattle 283 days, Goats 150 days, Sheep 150 days, Pigs 114 days.",
+        "Poultry schedule covers Day 1 Marek's, Day 7 & 21 Newcastle/IB, Day 14 & 28 Gumboro, Week 6 Fowl Pox, Week 8 Fowl Typhoid, and Week 16 pre-lay booster."
+      ],
+      "faq": [
+        {
+          "question": "How long is the gestation period for cows, goats, sheep, and pigs?",
+          "answer": "Average gestation is 283 days (~9.5 months) for cattle, 150 days (~5 months) for goats and sheep, and 114 days (3 months, 3 weeks, 3 days) for pigs."
+        },
+        {
+          "question": "How often should cattle be vaccinated against Foot and Mouth Disease (FMD) in Kenya?",
+          "answer": "DVS and KEVEVAPI recommend vaccinating cattle against FMD (Fotivax) every 6 months, ideally before peak rainy-season livestock movement."
+        },
+        {
+          "question": "What are the most critical vaccines for chicks in their first 4 weeks?",
+          "answer": "Day 1 Marek's (at hatchery), Day 7 Newcastle + IB (HB1/Lasota), Day 14 Gumboro (1st dose), Day 21 Newcastle + IB booster, and Day 28 Gumboro (2nd dose)."
+        }
+      ]
+    },
+    "ecitizen-docs-planner": {
+      "slug": "ecitizen-docs-planner",
+      "notesTitle": "2026 eCitizen & Huduma Kenya Vital Documents Fee & Bag Checklist",
+      "overview": [
+        "Queues and wasted trips to Nyayo House, Huduma Centres, or DCI headquarters usually happen because applicants bring the wrong supporting document or rely on outdated fee charts. Under Legal Notice No. 76 of 2026, both first-time National ID (Maisha Card) applications and lost/duplicate ID replacements are KES 0 (free of charge).",
+        "This planner compiles exact 2026 statutory fees, realistic turnaround days, and complete document bag checklists for National IDs, 66-page e-Passports (KES 12,500), Birth Certificates (KES 250 / Late KES 700), DCI Good Conduct (KES 1,050), and Civil Marriages (KES 600 notice + KES 3,300 certificate)."
+      ],
+      "howItWorks": [
+        "Select one or more Kenyan vital documents you need to apply for or replace.",
+        "Review exact 2026 eCitizen/Huduma statutory fees, replacement surcharges (e.g., Lost e-Passport KES 12,050, Mutilated KES 10,050), and estimated processing days.",
+        "Tick off every required document in your Huduma/Nyayo House bag checklist before booking your biometric appointment."
+      ],
+      "workedExample": {
+        "title": "Worked Example: Budgeting for a New 66-Page e-Passport + Good Conduct",
+        "scenario": "A Kenyan graduate applying for overseas work needs a 66-page e-Passport and a DCI Police Clearance Certificate:",
+        "steps": [
+          "66-page Series C e-Passport: KES 12,500 (~21 working days turnaround).",
+          "DCI Certificate of Good Conduct: KES 1,050 (~14 working days).",
+          "Combined statutory total: KES 13,550 (plus eCitizen convenience fee), with National ID replacement costing KES 0 under L.N. 76/2026."
+        ],
+        "takeaway": "Checking exact 2026 statutory fees and bringing every original + photocopy eliminates repeat trips and broker markups."
+      },
+      "complianceTips": [
+        "Pay exclusively via official eCitizen Paybill 222222 using your generated invoice reference—never pay cash to brokers outside Huduma or Nyayo House.",
+        "Carry both original documents and two clean photocopies for every biometric appointment."
+      ],
+      "notes": [
+        "Under Legal Notice No. 76 of 2026, first-time National ID and lost/duplicate National ID replacements are KES 0.",
+        "Civil marriage requires a 21-day public notice (KES 600) followed by the marriage certificate fee (KES 3,300)."
+      ],
+      "faq": [
+        {
+          "question": "Is National ID application and replacement free in Kenya in 2026?",
+          "answer": "Yes. Under Legal Notice No. 76 of 2026, both first-time National ID applications and lost/duplicate ID replacements are KES 0 (free)."
+        },
+        {
+          "question": "How much is a 66-page Kenyan e-Passport in 2026?",
+          "answer": "A standard 66-page (Series C) ordinary Kenyan e-Passport costs KES 12,500 on eCitizen. Lost passport replacement is KES 12,050 and mutilated passport replacement is KES 10,050."
+        },
+        {
+          "question": "How much is a Certificate of Good Conduct and how long does it take?",
+          "answer": "A DCI Police Clearance Certificate (Good Conduct) costs KES 1,050 on eCitizen and typically takes around 14 working days after biometric fingerprinting at a Huduma Centre or DCI HQ."
+        }
+      ]
+    },
+    "tvet-kmtc-pathway-matcher": {
+      "slug": "tvet-kmtc-pathway-matcher",
+      "notesTitle": "KNQF Levels 4–6 TVET & KMTC Career Ladder (KCSE C Plain & Below)",
+      "overview": [
+        "Scoring C plain, C-, D+, D, D-, or E in KCSE does not end a learner's career or university path. Under the Kenya National Qualifications Framework (KNQF), learners can enter accredited TVET institutions at Level 4 (Artisan: E/D-), Level 5 (Craft: D/D+), or Level 6 (Diploma: C-/C) and progressively articulate all the way to a Bachelor's degree with credit exemptions.",
+        "Kenya Medical Training College (KMTC) also offers high-demand healthcare programmes from D plain (Mortuary Science) and D+ (Public Health) up to C- (Certificate Nursing, Nutrition, Orthopaedic Trauma) and C plain (Diploma Nursing & Clinical Medicine), eligible for KUCCPS placement and HELB loans."
+      ],
+      "howItWorks": [
+        "Select your KCSE mean grade (E through C+) and key subject cluster grades (English/Kiswahili, Biology, Chemistry/Physics/Math).",
+        "View all eligible KNQF TVET tiers (Artisan, Craft, Diploma) and matching KMTC medical programmes.",
+        "Follow the step-by-step KNQF upgrade ladder from Artisan -> Craft -> Diploma -> Degree."
+      ],
+      "workedExample": {
+        "title": "Worked Example: KCSE D+ Learner Entering KMTC or Craft TVET",
+        "scenario": "A student scores KCSE D+ overall with D+ in English and Biology and D in Chemistry:",
+        "steps": [
+          "Qualifies directly for KMTC Certificate in Public Health (2 years, KNQF Level 5) and Certificate in Mortuary Science.",
+          "Qualifies for all KNQF Level 5 Craft Certificates in accredited National Polytechnics and TVCs (Electrical, Plumbing, ICT, Automotive, Hospitality).",
+          "Upon completing Level 5 Craft, the learner upgrades directly to Level 6 Diploma and later Level 7 Bachelor's Degree."
+        ],
+        "takeaway": "KNQF credit progression turns any KCSE grade into a clear, funded pathway to skilled employment or a degree."
+      },
+      "complianceTips": [
+        "Apply through the official KUCCPS Student Portal (students.kuccps.net) to qualify for GoK TVET capitation and HELB TVET/KMTC loans.",
+        "Verify that any private college is TVETA-accredited (tveta.go.ke) and examines through KNEC or CDACC before paying fees."
+      ],
+      "notes": [
+        "KNQF entry baselines: Level 4 Artisan (E/D-), Level 5 Craft (D/D+), Level 6 Diploma (C-/C).",
+        "KMTC baselines: Diploma Nursing & Clinical Medicine (C plain); Cert Nursing, Nutrition & Orthopaedic Trauma (C-); Cert Public Health (D+); Mortuary Science (D plain)."
+      ],
+      "faq": [
+        {
+          "question": "Can I join KMTC with a KCSE grade of D plain or D+?",
+          "answer": "Yes. KMTC admits D plain learners into Certificate in Mortuary Science and D+ learners into Certificate in Public Health, subject to meeting Biology and English/Kiswahili cluster requirements."
+        },
+        {
+          "question": "Can a TVET Artisan or Craft graduate eventually earn a university degree in Kenya?",
+          "answer": "Yes. Under KNQF articulation rules, a Level 4 Artisan upgrades to Level 5 Craft, then Level 6 Diploma, and can join a Kenyan university Bachelor's degree (Level 7) with credit exemptions."
+        },
+        {
+          "question": "Do TVET and KMTC students qualify for HELB loans?",
+          "answer": "Yes. Students placed in accredited public TVETs and KMTC campuses through KUCCPS are eligible for HELB loans and government capitation grants."
+        }
+      ]
+    },
+    "used-car-elogbook-checker": {
+      "slug": "used-car-elogbook-checker",
+      "notesTitle": "June 10, 2026 NTSA eLogbook Directive, Fraud Checklist & Ownership Cost Guide",
+      "overview": [
+        "Effective June 10, 2026, NTSA's eLogbook framework enforces strict digital ownership transfers: buyers and sellers must complete transfer within 14 days, seller-initiated OTP authorizations expire after 7 days, and every vehicle must be verified via an official KES 550 Form VII Copy of Records on eCitizen before money changes hands.",
+        "Beyond avoiding logbook-loan caveats and cloned VIN plates, buyers must budget for Kenya's real annual running costs—including the 15-year comprehensive insurance cutoff (TPO min KES 5,000 vs Comprehensive min KES 25,000), NTSA KES 750 e-sticker, and EPRA fuel prices (petrol KES 226.96/L, diesel KES 227.76/L)."
+      ],
+      "howItWorks": [
+        "Enter the vehicle's manufacture year, purchase price, fuel type (petrol/diesel), expected monthly kilometres, and fuel economy (km/L).",
+        "Audit the car against the 10-point Kenyan used-car & eLogbook fraud checklist (Form VII, bank lien, 7-day OTP, VIN plate, KRA customs entry).",
+        "Review comprehensive insurance eligibility (<=15 years), annual fuel & insurance totals, and total monthly ownership cost."
+      ],
+      "workedExample": {
+        "title": "Worked Example: Auditing a 2015 Petrol Sedan (1,500 cc) Driven 1,200 km/Month",
+        "scenario": "A buyer inspects a 2015 Toyota Axio (11 years old in 2026, 14 km/L) priced at KES 950,000:",
+        "steps": [
+          "Pre-purchase verification: Form VII Copy of Records (KES 550) + NTSA e-sticker (KES 750); seller triggers 7-day eLogbook OTP live on eCitizen.",
+          "Insurance: At 11 years old (<= 15-year cutoff), the car qualifies for Comprehensive cover (~KES 38,000–45,000/yr vs min KES 25,000).",
+          "Annual petrol at 1,200 km/mo (14,400 km/yr ÷ 14 km/L × KES 226.96) = ~KES 233,445/yr (~KES 19,454/mo before service)."
+        ],
+        "takeaway": "Paying KES 550 for an official Form VII search and checking the 15-year comprehensive insurance threshold prevents buying an uninsurable or bank-encumbered car."
+      },
+      "complianceTips": [
+        "Never accept a screenshot or paper photocopy of a logbook—run a live Form VII Copy of Records on your own eCitizen account.",
+        "Complete the NTSA eLogbook transfer within 14 days of purchase and before the seller's 7-day OTP expires."
+      ],
+      "notes": [
+        "Key June 10, 2026 NTSA eLogbook rules: 14-day transfer deadline, 7-day OTP expiry, KES 550 Form VII search, KES 750 e-sticker.",
+        "Most Kenyan underwriters decline comprehensive cover for private cars older than 15 years, limiting them to Third Party Only (min KES 5,000)."
+      ],
+      "faq": [
+        {
+          "question": "How do I verify a used car's real owner and check for bank loans in Kenya?",
+          "answer": "Log in to your own eCitizen NTSA portal and order a Form VII Copy of Records for KES 550. It displays the registered owner, ID/PIN, chassis and engine numbers, and any active bank caveat or joint ownership."
+        },
+        {
+          "question": "How long is the NTSA eLogbook transfer OTP valid under the 2026 rules?",
+          "answer": "Under the June 10, 2026 NTSA eLogbook directive, the transfer OTP expires after 7 days and the full ownership transfer must be completed within 14 days of sale."
+        },
+        {
+          "question": "Can I get comprehensive insurance for a 16-year-old car in Kenya?",
+          "answer": "Most Kenyan insurers enforce a 15-year maximum age cutoff for new comprehensive policies (minimum ~KES 25,000/yr). Vehicles older than 15 years generally qualify only for Third Party Only (TPO, from KES 5,000/yr) unless specially approved."
+        }
+      ]
+    },
+    "child-maintenance-calculator": {
+      "slug": "child-maintenance-calculator",
+      "notesTitle": "Children Act 2022 (Cap 141) Maintenance & Co-Parenting Assessment Guide",
+      "overview": [
+        "Under Kenya's Children Act, 2022 (Cap 141), both parents bear equal parental responsibility to provide for a child's food, shelter, clothing, education, and medical care (Section 110). When parents live apart, Section 114 directs the Children's Court to apportion costs equitably based on each parent's income, earning capacity, and actual non-monetary caregiving contributions.",
+        "Parents who agree amicably can sign a legally binding Parental Responsibility Agreement (PRA) under Section 33 and register it in court. Willful disobedience of a maintenance order attracts contempt fines up to KES 500,000 or imprisonment."
+      ],
+      "howItWorks": [
+        "Enter both parents' net monthly incomes and the child's monthly expenses across school fees, food, housing share, medical/SHA, clothing, and transport.",
+        "View each parent's proportional share under Section 114 principles (e.g., 60/40 income split) and the net monthly transfer required.",
+        "Use the Affidavit of Means & Section 33 PRA checklist to prepare for mediation or Children's Court filing."
+      ],
+      "workedExample": {
+        "title": "Worked Example: Proportional Split for KES 45,000 Monthly Child Expenses",
+        "scenario": "Parent A (primary caregiver) earns KES 60,000/mo net and Parent B earns KES 90,000/mo net; documented child expenses total KES 45,000/mo:",
+        "steps": [
+          "Combined parental net income: KES 150,000 (Parent A: 40%, Parent B: 60%).",
+          "Proportional financial shares: Parent A = KES 18,000/mo; Parent B = KES 27,000/mo.",
+          "Both parents attach payslips, M-Pesa statements, and school fee structures to their Sworn Affidavit of Means."
+        ],
+        "takeaway": "Documenting every expense with receipts and using proportional income shares accelerates fair Section 33 PRAs and Children's Court orders."
+      },
+      "complianceTips": [
+        "Keep all school fee receipts, hospital bills, and M-Pesa maintenance transfer confirmations in a dedicated folder as admissible evidence.",
+        "Consider court-annexed mediation or the Sub-County Children's Officer first—Section 33 PRAs are faster, cheaper, and legally enforceable."
+      ],
+      "notes": [
+        "Key Children Act 2022 (Cap 141) provisions: s.33 (Parental Responsibility Agreement), s.110 (Maintenance Duty), s.114 (Assessment Criteria).",
+        "Contempt of a Children's Court maintenance order carries a statutory fine ceiling of KES 500,000 and/or imprisonment."
+      ],
+      "faq": [
+        {
+          "question": "Does the Kenyan Children's Court always split child maintenance 50/50?",
+          "answer": "No. Under Section 114 of the Children Act, 2022, the court assesses maintenance proportionally according to each parent's actual income, financial capacity, and the child's reasonable needs—not a rigid 50/50 split."
+        },
+        {
+          "question": "What is a Parental Responsibility Agreement (PRA) under Section 33?",
+          "answer": "A PRA is a written co-parenting agreement signed by both parents covering custody, access, and monthly maintenance. Once adopted by the Children's Court, it is enforceable just like a court judgment."
+        },
+        {
+          "question": "What happens if a parent ignores a Children's Court maintenance order?",
+          "answer": "The court can issue salary attachment orders, freeze assets, or hold the defaulting parent in contempt—carrying fines up to KES 500,000 or committal to civil jail."
+        }
+      ]
+    },
+    "article49-rights-companion": {
+      "slug": "article49-rights-companion",
+      "notesTitle": "Constitution of Kenya (2010) Article 49 Rights, 24-Hour Rule & IPOA 1559 Guide",
+      "overview": [
+        "Article 49 of the Constitution of Kenya (2010) guarantees non-negotiable rights to every arrested person: to be informed promptly of the reason for arrest, to remain silent, to communicate with an advocate and family, and under Article 49(1)(f) to be brought before a court within 24 hours of arrest (or by the end of the next court day if the 24 hours expires on a weekend or public holiday).",
+        "Equally critical, Article 49(1)(h) guarantees release on reasonable bond or bail, and Article 49(2) prohibits remanding anyone in custody for a petty offence punishable only by a fine or imprisonment of 6 months or less. Misconduct or unlawful detention can be reported 24/7 to IPOA toll-free on 1559."
+      ],
+      "howItWorks": [
+        "Enter the exact date and time of arrest to compute the constitutional 24-hour court arraignment deadline (automatically accounting for weekends).",
+        "Check whether the alleged offence triggers Article 49(2) petty-offence no-remand protection (<= 6 months imprisonment or fine only).",
+        "Read or share bilingual Swahili/English rights scripts and one-tap IPOA 1559 / WhatsApp 0742-515-672 emergency contacts."
+      ],
+      "workedExample": {
+        "title": "Worked Example: Checking the 24-Hour Deadline After a Tuesday 10:00 AM Arrest",
+        "scenario": "A citizen is arrested on Tuesday at 10:00 AM for a minor traffic/municipal offence:",
+        "steps": [
+          "Constitutional 24-hour deadline: Wednesday at 10:00 AM (Art. 49(1)(f)).",
+          "Because a minor fine-only offence falls under Art. 49(2), the person must not be remanded in custody and should be granted reasonable police cash bail with an official receipt.",
+          "If held past 24 hours without court production, family or an advocate can report the station & OB number to IPOA (1559) or file a High Court habeas corpus application."
+        ],
+        "takeaway": "Knowing the exact 24-hour deadline, OB number, and IPOA 1559 hotline empowers citizens and families to uphold constitutional safeguards calmly."
+      },
+      "complianceTips": [
+        "Always record the arresting officer's name, service number, police station name, and Occurrence Book (OB) number and share them immediately with a trusted contact.",
+        "Never pay 'bail' without receiving an official numbered Government of Kenya cash bail receipt."
+      ],
+      "notes": [
+        "Key constitutional pillars: Art. 49(1)(f) 24-hour rule, Art. 49(1)(h) reasonable bail/bond, and Art. 49(2) <=6-month petty-offence no-remand rule.",
+        "IPOA 24/7 reporting channels: Toll-Free 1559 | WhatsApp 0742-515-672 | Email complaints@ipoa.go.ke."
+      ],
+      "faq": [
+        {
+          "question": "What happens if police hold someone for more than 24 hours without taking them to court?",
+          "answer": "Detention beyond 24 hours (or beyond the end of the next court day if the 24 hours ends on a weekend/holiday) violates Article 49(1)(f). Families or advocates can demand immediate police bail, report to IPOA on 1559, or petition the High Court."
+        },
+        {
+          "question": "Can police remand me in custody for a petty offence punishable by a fine only?",
+          "answer": "No. Article 49(2) of the Constitution expressly states that a person shall not be remanded in custody for an offence punishable by a fine only or by imprisonment for not more than 6 months."
+        },
+        {
+          "question": "How do I report police misconduct or unlawful arrest to IPOA in Kenya?",
+          "answer": "You can contact the Independent Policing Oversight Authority (IPOA) 24/7 via toll-free hotline 1559, WhatsApp 0742-515-672, or email complaints@ipoa.go.ke."
+        }
+      ]
     }
   }
 }

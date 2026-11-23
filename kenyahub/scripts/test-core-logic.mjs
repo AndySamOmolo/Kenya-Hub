@@ -253,12 +253,12 @@ test("STAT-06: Water Bill Calculator uses WASREB-approved NCWSC KES 67/m³ Block
   assert.ok(/\b67\b/.test(combined), "Water Bill calculator must use NCWSC Block 2 tariff KES 67/m³");
 });
 
-// 13. FAQ-01: All 33 registered tools have guides & >= 3 deduplicated FAQs
-test("FAQ-01: All 33 tools sit under tool-guides.json guides map with >= 3 FAQs each", () => {
+// 13. FAQ-01: All 50 registered tools have guides & >= 3 deduplicated FAQs
+test("FAQ-01: All 50 tools sit under tool-guides.json guides map with >= 3 FAQs each", () => {
   const tg = JSON.parse(fs.readFileSync(path.join(WEB_ROOT, "src/data/tool-guides.json"), "utf8"));
   const reg = fs.readFileSync(path.join(WEB_ROOT, "src/lib/tools-registry.ts"), "utf8");
   const slugs = [...new Set([...reg.matchAll(/slug:\s*['"]([a-z0-9-]+)['"]/g)].map((m) => m[1]))];
-  assert.equal(slugs.length, 33, "Expected 33 registered tools");
+  assert.equal(slugs.length, 50, "Expected 50 registered tools");
   for (const sl of slugs) {
     assert.ok(tg.guides?.[sl]?.faq?.length >= 3, `${sl} must have >= 3 FAQs in tool-guides.json`);
   }

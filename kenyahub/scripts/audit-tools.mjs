@@ -2,7 +2,7 @@
 /**
  * KenyaHub Comprehensive Multi-Platform Audit Engine
  * Audits 12 domains across Next.js Web (kenyahub/) and Expo Mobile (mobile/):
- *  1. Tool Registry, Valid Categories & Route Integrity (33 tools)
+ *  1. Tool Registry, Valid Categories & Route Integrity (50 tools)
  *  2. Tool Guides, FAQ Completeness & Deduplication
  *  3. 23-Language Course, Grammar, Proverb & Dictionary Integrity
  *  4. Commercial License Compliance (Zero CC-BY-NC / JW300 leakage)
@@ -11,7 +11,7 @@
  *  7. UI/UX Overlays, Stacking Contexts & WCAG Contrast Guards
  *  8. Android Theme Atomicity, SafeArea & Mobile Ergonomics
  *  9. Search Placeholder Truncation & Copy Hygiene
- * 10. JSX Structural Integrity Across All 33 Web Tools
+ * 10. JSX Structural Integrity Across All 50 Web Tools
  * 11. Calculator Controls & Math Consistency Guards
  * 12. Audio Manifest & Permissive Dataset Pipeline Health
  */
@@ -394,7 +394,7 @@ for (const [rel, forbidden, reason] of copyChecks) {
   recordCheck("copy", `${rel}: ${reason}`, !txt.includes(forbidden), txt.includes(forbidden) ? `Found "${forbidden}"` : "");
 }
 
-// ── 10. JSX Structural Integrity (Balanced <div> across all 33 Web Tool pages) ──
+// ── 10. JSX Structural Integrity (Balanced <div> across all 50 Web Tool pages) ──
 for (const slug of uniqueRegistrySlugs) {
   const pagePath = join(toolsRoot, slug, "page.tsx");
   if (!existsSync(pagePath)) continue;
@@ -405,7 +405,7 @@ for (const slug of uniqueRegistrySlugs) {
     errors.push(`[jsx] ${slug}/page.tsx: unbalanced <div> tags (${opens} opens vs ${closes} closes)`);
   }
 }
-recordCheck("jsx", "All 33 Web tool pages have balanced <div> tags", !errors.some((e) => e.startsWith("[jsx]")));
+recordCheck("jsx", "All 50 Web tool pages have balanced <div> tags", !errors.some((e) => e.startsWith("[jsx]")));
 
 // ── 11. Calculator Controls & Math Consistency Guards ──
 // Check #65 (F-036 fix): Verify dipMatch branch actually populates rendered county, plateType & yearRange fields

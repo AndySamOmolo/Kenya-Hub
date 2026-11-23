@@ -560,7 +560,7 @@ export default function CountyDetailClient({ slug }: { slug: string }) {
               </div>
             </div>
             <div>
-              <div className="flex justify-between text-xs mb-1.5">
+              <div className="flex flex-wrap justify-between gap-2 text-xs mb-1.5">
                 <span className="text-text-secondary font-medium">Controller of Budget Absorption Rate</span>
                 <span className="font-bold text-kenya-green-light">{budget.absorptionRate}% Absorbed</span>
               </div>
@@ -726,8 +726,8 @@ export default function CountyDetailClient({ slug }: { slug: string }) {
           {countyHospitals.length > 0 ? (
             <div className="space-y-2.5">
               {countyHospitals.map((h: any, idx: number) => (
-                <div key={idx} className="p-3 rounded-xl bg-bg-elevated/60 border border-border/60 flex items-start justify-between gap-2">
-                  <div>
+                <div key={idx} className="p-3 rounded-xl bg-bg-elevated/60 border border-border/60 flex flex-wrap items-start justify-between gap-2">
+                  <div className="min-w-0 flex-1">
                     <p className="text-xs font-bold text-text-primary">{h.name}</p>
                     <p className="text-[0.6875rem] text-text-muted">
                       {h.type} · {h.services?.length ? h.services.slice(0, 4).join(", ") : `${h.subcounty || county.name} Sub-County · SHA Accredited`}
@@ -786,12 +786,12 @@ export default function CountyDetailClient({ slug }: { slug: string }) {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
             {countySchools.length > 0 && (
               <div className="bg-bg-elevated/50 border border-border/60 rounded-xl p-4 space-y-2">
-                <div className="flex items-center justify-between">
+                <div className="flex flex-wrap items-center justify-between gap-2">
                   <span className="font-bold text-gold uppercase tracking-wider inline-flex items-center gap-1.5"><DynamicIcon emoji="🏆" className="w-3.5 h-3.5" /> Top KCSE Schools</span>
                   <Link href="/tools/kcse-grade-calculator/" className="text-gold hover:underline">KCSE Calculator →</Link>
                 </div>
                 {countySchools.map((s: any) => (
-                  <div key={s.name} className="flex justify-between text-text-secondary">
+                  <div key={s.name} className="flex flex-wrap justify-between gap-x-3 gap-y-0.5 text-text-secondary">
                     <span className="font-medium text-text-primary">#{s.rank} {s.name}</span>
                     <span className="font-mono text-kenya-green-light">{s.meanScore.toFixed(2)} ({s.aGrades} As)</span>
                   </div>
@@ -805,13 +805,13 @@ export default function CountyDetailClient({ slug }: { slug: string }) {
                   <span className="inline-flex items-center gap-1.5"><DynamicIcon emoji="🦁" className="w-3.5 h-3.5" /> Parks &amp; Gazetted Forests</span>
                 </span>
                 {countyParks.map((p: any) => (
-                  <div key={p.name} className="flex justify-between">
+                  <div key={p.name} className="flex flex-wrap justify-between gap-x-3 gap-y-0.5">
                     <span className="font-medium text-text-primary">{p.name} ({p.type})</span>
                     <span className="text-text-muted">{p.sizeKm2} km²</span>
                   </div>
                 ))}
                 {countyForests.map((f: any) => (
-                  <div key={f.name} className="flex justify-between">
+                  <div key={f.name} className="flex flex-wrap justify-between gap-x-3 gap-y-0.5">
                     <span className="font-medium text-text-primary">{f.name}</span>
                     <span className="text-text-muted">{f.sizeHa.toLocaleString()} ha</span>
                   </div>
@@ -825,7 +825,7 @@ export default function CountyDetailClient({ slug }: { slug: string }) {
                   <span className="inline-flex items-center gap-1.5"><DynamicIcon emoji="🏪" className="w-3.5 h-3.5" /> Licensed Agrovets in {county.name}</span>
                 </span>
                 {countyAgrovets.map((a: any) => (
-                  <div key={a.name} className="flex justify-between">
+                  <div key={a.name} className="flex flex-wrap justify-between gap-x-3 gap-y-0.5">
                     <span className="font-medium text-text-primary">{a.name} — {a.town}</span>
                     <span className="text-text-muted">{a.phone}</span>
                   </div>
@@ -859,9 +859,9 @@ export default function CountyDetailClient({ slug }: { slug: string }) {
         <div className="space-y-3">
           {countyFaqs.map((faq, idx) => (
             <details key={idx} open={idx < 3} className="group bg-bg-card border border-border rounded-xl overflow-hidden">
-              <summary className="px-5 py-4 cursor-pointer text-sm font-semibold text-text-primary hover:text-gold list-none flex items-center justify-between">
-                <span>{faq.question}</span>
-                <span className="text-text-muted group-open:rotate-180 transition-transform">▾</span>
+              <summary className="px-5 py-4 cursor-pointer text-sm font-semibold text-text-primary hover:text-gold list-none flex items-center justify-between gap-2">
+                <span className="min-w-0 flex-1">{faq.question}</span>
+                <span className="text-text-muted shrink-0 group-open:rotate-180 transition-transform">▾</span>
               </summary>
               <div className="px-5 pb-4 pt-2 text-sm text-text-secondary leading-relaxed border-t border-border">
                 {faq.answer}
@@ -996,7 +996,7 @@ export default function CountyDetailClient({ slug }: { slug: string }) {
           <div className="rounded-xl bg-bg-elevated/60 border border-border p-4 space-y-1.5">
             <h3 className="font-bold text-text-primary">NCPB e-Voucher Fertilizer (50kg)</h3>
             {fertilizerData.fertilizers.slice(0, 5).map((fert) => (
-              <p key={fert.name} className="text-text-secondary flex justify-between gap-2">
+              <p key={fert.name} className="text-text-secondary flex flex-wrap justify-between gap-2">
                 <span>{fert.name}</span>
                 <strong className="text-kenya-green-light">KES {fert.subsidizedPrice.toLocaleString()}</strong>
               </p>
@@ -1005,7 +1005,7 @@ export default function CountyDetailClient({ slug }: { slug: string }) {
           <div className="rounded-xl bg-bg-elevated/60 border border-border p-4 space-y-1.5">
             <h3 className="font-bold text-text-primary">NALMC Livestock Benchmarks</h3>
             {livestockData.livestock.map((lv) => (
-              <p key={lv.type} className="text-text-secondary flex justify-between gap-2">
+              <p key={lv.type} className="text-text-secondary flex flex-wrap justify-between gap-2">
                 <span>{lv.type}</span>
                 <strong className="text-text-primary">
                   KES {(lv.prices[0]?.minPrice || 4000).toLocaleString()}–{(lv.prices[0]?.maxPrice || 15000).toLocaleString()}

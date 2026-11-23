@@ -3,6 +3,7 @@
 
 import { useState, useEffect, useMemo } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { TOOLS, TOOL_CATEGORIES, getPopularTools } from "@/lib/tools-registry";
 import { getToolVisitCounts, hasAnyVisits } from "@/lib/tool-usage";
 import DynamicIcon from "@/components/ui/DynamicIcon";
@@ -17,6 +18,7 @@ import { useMounted } from "@/lib/useMounted";
  * Renders client-side so it can read localStorage visit data.
  */
 export default function PopularToolsSection() {
+  const router = useRouter();
   const [visitCounts, setVisitCounts] = useState<Record<string, number>>({});
   const mounted = useMounted();
 
@@ -48,7 +50,7 @@ export default function PopularToolsSection() {
 
   return (
     <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-20">
-      <div className="flex items-end justify-between mb-4 sm:mb-10">
+      <div className="flex flex-wrap items-end justify-between gap-3 mb-4 sm:mb-10">
         <div>
           <p className="text-xs font-bold uppercase tracking-[0.15em] text-gold mb-1 sm:mb-2">
             {hasUsage ? "Your Most Used" : "Most Popular"}
@@ -72,11 +74,14 @@ export default function PopularToolsSection() {
         {popularTools.map((tool, i) => {
           const cat = TOOL_CATEGORIES.find((c) => c.id === tool.category);
           const visits = visitCounts[tool.slug] ?? 0;
+          const href = `/tools/${tool.slug}/`;
           return (
             <Link
               key={tool.slug}
-              href={`/tools/${tool.slug}/`}
+              href={href}
               prefetch={false}
+              onTouchStart={() => router.prefetch(href)}
+              onMouseEnter={() => router.prefetch(href)}
               className="tool-card bg-bg-card border border-border rounded-2xl p-5 sm:p-6 block group"
               style={{ animationDelay: `${i * 80}ms` }}
             >

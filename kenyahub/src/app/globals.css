@@ -1118,6 +1118,12 @@ table td.text-center {
 }
 
 /* Ensure expanded pill rows wrap cleanly and never clip at the right edge */
+.expandable-pill-row {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+}
+
 .expandable-pill-row--expanded > * {
   max-width: 100% !important;
   min-width: 0 !important;

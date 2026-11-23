@@ -108,7 +108,10 @@ export default function AdSenseLoader() {
     if (typeof window === "undefined" || typeof document === "undefined") return;
 
     let debounceTimer: ReturnType<typeof setTimeout> | null = null;
+    let initialTimer: ReturnType<typeof setTimeout> | null = null;
+    let idleCallbackId: number | null = null;
     let mutationObserver: MutationObserver | null = null;
+    let cancelled = false;
 
     const setAdSensePausedState = (paused: boolean) => {
       window.adsbygoogle = window.adsbygoogle || [];
@@ -159,23 +162,44 @@ export default function AdSenseLoader() {
       debounceTimer = setTimeout(evaluatePageCompliance, 250);
     };
 
-    const isInitiallyCompliant = evaluatePageCompliance();
+    const runInitialEvaluation = () => {
+      if (cancelled) return;
+      const isInitiallyCompliant = evaluatePageCompliance();
 
-    const observeRoot = document.getElementById("main-content") || document.body;
-    if (!isInitiallyCompliant && !isBlockedRoute(pathname) && observeRoot) {
-      mutationObserver = new MutationObserver((mutations) => {
-        if (isAdSenseMutation(mutations)) return;
-        scheduleEvaluation();
-      });
-      mutationObserver.observe(observeRoot, {
-        attributes: true,
-        childList: true,
-        subtree: true,
-        attributeFilter: ["data-error-page", "data-adsense-pause", "open"],
-      });
+      const observeRoot = document.getElementById("main-content") || document.body;
+      if (!isInitiallyCompliant && !isBlockedRoute(pathname) && observeRoot) {
+        mutationObserver = new MutationObserver((mutations) => {
+          if (isAdSenseMutation(mutations)) return;
+          scheduleEvaluation();
+        });
+        mutationObserver.observe(observeRoot, {
+          attributes: true,
+          childList: true,
+          subtree: true,
+          attributeFilter: ["data-error-page", "data-adsense-pause", "open"],
+        });
+      }
+    };
+
+    const win = window as Window & {
+      requestIdleCallback?: (cb: IdleRequestCallback, opts?: IdleRequestOptions) => number;
+      cancelIdleCallback?: (id: number) => void;
+    };
+
+    if (isBlockedRoute(pathname)) {
+      setAdSensePausedState(true);
+    } else if (typeof win.requestIdleCallback === "function") {
+      idleCallbackId = win.requestIdleCallback(runInitialEvaluation, { timeout: 250 });
+    } else {
+      initialTimer = setTimeout(runInitialEvaluation, 250);
     }
 
     return () => {
+      cancelled = true;
+      if (idleCallbackId !== null && typeof win.cancelIdleCallback === "function") {
+        win.cancelIdleCallback(idleCallbackId);
+      }
+      if (initialTimer) clearTimeout(initialTimer);
       if (debounceTimer) clearTimeout(debounceTimer);
       mutationObserver?.disconnect();
     };

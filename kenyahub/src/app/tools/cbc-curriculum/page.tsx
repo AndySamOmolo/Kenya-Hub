@@ -77,7 +77,7 @@ export default function CBCCurriculumPage() {
         {/* Level Info */}
         <div role="status" aria-live="polite" aria-atomic="true" className="result-box">
           <div className="flex items-start justify-between flex-wrap gap-3">
-            <div>
+            <div className="min-w-0">
               <h2 className="text-xl font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-1">
                 {level.name}
               </h2>

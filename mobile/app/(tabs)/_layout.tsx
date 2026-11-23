@@ -1,6 +1,6 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import { Tabs, useRouter } from "expo-router";
-import { Modal, Platform, Pressable, StyleSheet, Text, View } from "react-native";
+import { Animated, Modal, Platform, Pressable, StyleSheet, Text, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { triggerHaptic, useTheme } from "../../src/theme";
 import {
@@ -165,6 +165,7 @@ const M3TabIcon = React.memo(function M3TabIcon({
   iconScale = 1.0,
   iconPack = "outline",
   showIcon = true,
+  reduceMotion = false,
 }: {
   name: IoniconName;
   focused: boolean;
@@ -179,7 +180,40 @@ const M3TabIcon = React.memo(function M3TabIcon({
   iconScale?: number;
   iconPack?: IconPackStyle;
   showIcon?: boolean;
+  reduceMotion?: boolean;
 }) {
+  const focusAnim = useRef(new Animated.Value(focused ? 1 : 0)).current;
+
+  useEffect(() => {
+    if (reduceMotion) {
+      focusAnim.setValue(focused ? 1 : 0);
+      return;
+    }
+    if (focused) {
+      Animated.spring(focusAnim, {
+        toValue: 1,
+        tension: 220,
+        friction: 16,
+        useNativeDriver: true,
+      }).start();
+    } else {
+      Animated.timing(focusAnim, {
+        toValue: 0,
+        duration: 140,
+        useNativeDriver: true,
+      }).start();
+    }
+  }, [focused, reduceMotion, focusAnim]);
+
+  const iconScaleAnim = focusAnim.interpolate({
+    inputRange: [0, 1],
+    outputRange: [0.92, 1.06],
+  });
+  const iconOpacityAnim = focusAnim.interpolate({
+    inputRange: [0, 1],
+    outputRange: [0.78, 1],
+  });
+
   const effectiveIndicator: MenuIndicatorStyle = indicatorStyle;
   const usesTopAccent = tabBarStyleMode === "top-accent" || effectiveIndicator === "bracket";
   const showTopAccent = focused && usesTopAccent;
@@ -246,7 +280,7 @@ const M3TabIcon = React.memo(function M3TabIcon({
           }}
         />
       )}
-      <View
+      <Animated.View
         style={[
           styles.iconPill,
           compact && { width: 42, height: 26, borderRadius: 13 },
@@ -272,6 +306,10 @@ const M3TabIcon = React.memo(function M3TabIcon({
             borderColor: hexToRgba(outlineColor, 0.33),
             borderRadius: 10,
           },
+          {
+            opacity: iconOpacityAnim,
+            transform: [{ scale: iconScaleAnim }],
+          },
         ]}
       >
         <ThemedIcon
@@ -281,7 +319,7 @@ const M3TabIcon = React.memo(function M3TabIcon({
           pack={resolvedPack}
           scaleWithTheme={false}
         />
-      </View>
+      </Animated.View>
       {showDot && (
         <View
           style={{
@@ -454,6 +492,7 @@ export default function TabLayout() {
                 iconScale={iconScale}
                 iconPack={iconPack}
                 showIcon={showTabIcons}
+                reduceMotion={Boolean(themeConfig.reduceMotion)}
               />
             ),
           }}
@@ -478,6 +517,7 @@ export default function TabLayout() {
                 iconScale={iconScale}
                 iconPack={iconPack}
                 showIcon={showTabIcons}
+                reduceMotion={Boolean(themeConfig.reduceMotion)}
               />
             ),
           }}
@@ -502,6 +542,7 @@ export default function TabLayout() {
                 iconScale={iconScale}
                 iconPack={iconPack}
                 showIcon={showTabIcons}
+                reduceMotion={Boolean(themeConfig.reduceMotion)}
               />
             ),
           }}
@@ -532,6 +573,7 @@ export default function TabLayout() {
                 iconScale={iconScale}
                 iconPack={iconPack}
                 showIcon={showTabIcons}
+                reduceMotion={Boolean(themeConfig.reduceMotion)}
               />
             ),
           }}
@@ -556,6 +598,7 @@ export default function TabLayout() {
                 iconScale={iconScale}
                 iconPack={iconPack}
                 showIcon={showTabIcons}
+                reduceMotion={Boolean(themeConfig.reduceMotion)}
               />
             ),
           }}

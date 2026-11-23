@@ -245,37 +245,37 @@ export default function MjengoConstructionCalculatorPage() {
             </h3>
           </div>
           <div className="divide-y divide-[var(--border)] text-sm">
-            <div className="px-5 py-3 flex justify-between items-start gap-3">
+            <div className="px-4 sm:px-5 py-3 flex flex-wrap justify-between items-baseline gap-x-3 gap-y-1">
               <span className="text-[var(--text-secondary)]">Machine-Cut Quarry Stones (9×9×18 inch)</span>
               <span className="font-bold text-[var(--text-primary)]">
                 {calc.machineCutStones.toLocaleString()} pcs (KES {formatKES(calc.machineCutStones * region.stonePrice)})
               </span>
             </div>
-            <div className="px-5 py-3 flex justify-between items-start gap-3">
+            <div className="px-4 sm:px-5 py-3 flex flex-wrap justify-between items-baseline gap-x-3 gap-y-1">
               <span className="text-[var(--text-secondary)]">Portland Pozzolana Cement (50kg Bags)</span>
               <span className="font-bold text-[var(--text-primary)]">
                 {calc.cementBags.toLocaleString()} bags (KES {formatKES(calc.cementBags * region.cementBag)})
               </span>
             </div>
-            <div className="px-5 py-3 flex justify-between items-start gap-3">
+            <div className="px-4 sm:px-5 py-3 flex flex-wrap justify-between items-baseline gap-x-3 gap-y-1">
               <span className="text-[var(--text-secondary)]">Clean River Sand (Plaster & Mortar)</span>
               <span className="font-bold text-[var(--text-primary)]">
                 {calc.sandTonnes} tonnes (KES {formatKES(calc.sandTonnes * region.sandTonne)})
               </span>
             </div>
-            <div className="px-5 py-3 flex justify-between items-start gap-3">
+            <div className="px-4 sm:px-5 py-3 flex flex-wrap justify-between items-baseline gap-x-3 gap-y-1">
               <span className="text-[var(--text-secondary)]">Crushed Ballast (1/2” & 3/4” Aggregate)</span>
               <span className="font-bold text-[var(--text-primary)]">
                 {calc.ballastTonnes} tonnes (KES {formatKES(calc.ballastTonnes * region.ballastTonne)})
               </span>
             </div>
-            <div className="px-5 py-3 flex justify-between items-start gap-3">
+            <div className="px-4 sm:px-5 py-3 flex flex-wrap justify-between items-baseline gap-x-3 gap-y-1">
               <span className="text-[var(--text-secondary)]">Deformed High-Tensile Steel Bars (D12 / D16 & R8 Rings)</span>
               <span className="font-bold text-[var(--text-primary)]">
                 {calc.steelBarsD12} lengths (12m full bars)
               </span>
             </div>
-            <div className="px-5 py-3 flex justify-between items-start gap-3">
+            <div className="px-4 sm:px-5 py-3 flex flex-wrap justify-between items-baseline gap-x-3 gap-y-1">
               <span className="text-[var(--text-secondary)]">28-Gauge Pre-Painted Mabati Sheets (3m equiv.)</span>
               <span className="font-bold text-[var(--text-primary)]">
                 {calc.mabatiSheets3m} sheets
@@ -292,7 +292,7 @@ export default function MjengoConstructionCalculatorPage() {
           </div>
           <div className="divide-y divide-[var(--border)] text-sm">
             {calc.stages.map((s) => (
-              <div key={s.stage} className="px-5 py-3 flex justify-between items-center gap-4">
+              <div key={s.stage} className="px-4 sm:px-5 py-3 flex flex-wrap justify-between items-baseline gap-x-3 gap-y-1">
                 <span className="text-[var(--text-secondary)]">{s.stage}</span>
                 <span className="font-semibold text-[var(--text-primary)] shrink-0">
                   KES {formatKES(s.cost)} ({Math.round(s.pct * 100)}%)
@@ -300,7 +300,7 @@ export default function MjengoConstructionCalculatorPage() {
               </div>
             ))}
             {calc.perimeterCost > 0 && (
-              <div className="px-5 py-3 flex justify-between items-start gap-3">
+              <div className="px-4 sm:px-5 py-3 flex flex-wrap justify-between items-baseline gap-x-3 gap-y-1">
                 <span className="text-[var(--text-secondary)]">
                   Perimeter Stone Wall ({calc.perimMeters}m × 2.4m high + Razor Wire)
                 </span>
@@ -309,13 +309,13 @@ export default function MjengoConstructionCalculatorPage() {
                 </span>
               </div>
             )}
-            <div className="px-5 py-3 flex justify-between items-start gap-3 bg-[var(--bg-elevated)]/40">
+            <div className="px-4 sm:px-5 py-3 flex flex-wrap justify-between items-baseline gap-x-3 gap-y-1 bg-[var(--bg-elevated)]/40">
               <span className="text-[var(--text-secondary)]">Construction Subtotal</span>
               <span className="font-semibold text-[var(--text-primary)]">
                 KES {formatKES(calc.subtotal)}
               </span>
             </div>
-            <div className="px-5 py-3 flex justify-between items-start gap-3">
+            <div className="px-4 sm:px-5 py-3 flex flex-wrap justify-between items-baseline gap-x-3 gap-y-1">
               <span className="text-[var(--text-secondary)]">
                 NCA Construction Levy (0.5% over KES 5M)
               </span>
@@ -323,7 +323,7 @@ export default function MjengoConstructionCalculatorPage() {
                 {calc.ncaLevy > 0 ? `KES ${formatKES(calc.ncaLevy)}` : "KES 0 (Exempt ≤ KES 5M)"}
               </span>
             </div>
-            <div className="px-5 py-4 flex justify-between items-center gap-4 bg-emerald-500/10 font-bold">
+            <div className="px-4 sm:px-5 py-4 flex flex-wrap justify-between items-baseline gap-x-3 gap-y-1 bg-emerald-500/10 font-bold">
               <span className="text-[var(--text-primary)]">
                 Grand Total Estimated Construction Cost (Incl. NCA Levy)
               </span>

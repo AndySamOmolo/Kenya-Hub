@@ -246,13 +246,20 @@ export const ExpandablePillRow = React.memo(function ExpandablePillRow({
 
   const count = countPillChildren(children);
 
-  const scrollViewRef = useRef<ScrollView | null>(null);
+  const scrollViewRef = useRef<any>(null);
   const scrollXRef = useRef(0);
   const contentWidthRef = useRef(0);
   const layoutWidthRef = useRef(0);
   const pillLayoutsRef = useRef<Record<number, { x: number; width: number }>>({});
 
-  // Elastic edge bounce animation value
+  // Native 60fps scroll offset & elastic edge bounce animation values
+  const scrollXAnim = useRef(new Animated.Value(0)).current;
+  const handleAnimatedScroll = useRef(
+    Animated.event(
+      [{ nativeEvent: { contentOffset: { x: scrollXAnim } } }],
+      { useNativeDriver: true }
+    )
+  ).current;
   const bounceAnim = useRef(new Animated.Value(0)).current;
   const wasAtLeftRef = useRef(true);
   const wasAtRightRef = useRef(false);
@@ -260,6 +267,14 @@ export const ExpandablePillRow = React.memo(function ExpandablePillRow({
 
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(count > threshold);
+  const [trackWidth, setTrackWidth] = useState(0);
+  const [scrollDims, setScrollDims] = useState<{
+    contentWidth: number;
+    viewportWidth: number;
+  }>({
+    contentWidth: 0,
+    viewportWidth: 0,
+  });
   const [scrollMetrics, setScrollMetrics] = useState<{
     ratio: number;
     thumbFrac: number;
@@ -385,14 +400,21 @@ export const ExpandablePillRow = React.memo(function ExpandablePillRow({
         maxScroll,
         Math.max(0, layout.x - lw / 2 + layout.width / 2)
       );
-      scrollViewRef.current?.scrollTo({ x: targetX, animated: true });
+      const sv = scrollViewRef.current?.scrollTo
+        ? scrollViewRef.current
+        : scrollViewRef.current?.getNode?.();
+      sv?.scrollTo?.({ x: targetX, animated: true });
     },
     [expanded]
   );
 
   const handleLayout = useCallback(
     (e: LayoutChangeEvent) => {
-      layoutWidthRef.current = e.nativeEvent.layout.width;
+      const w = e.nativeEvent.layout.width;
+      layoutWidthRef.current = w;
+      setScrollDims((prev) =>
+        Math.abs(prev.viewportWidth - w) > 1 ? { ...prev, viewportWidth: w } : prev
+      );
       updateScrollState();
     },
     [updateScrollState]
@@ -401,10 +423,20 @@ export const ExpandablePillRow = React.memo(function ExpandablePillRow({
   const handleContentSizeChange = useCallback(
     (w: number) => {
       contentWidthRef.current = w;
+      setScrollDims((prev) =>
+        Math.abs(prev.contentWidth - w) > 1 ? { ...prev, contentWidth: w } : prev
+      );
       updateScrollState();
     },
     [updateScrollState]
   );
+
+  const handleTrackLayout = useCallback((e: LayoutChangeEvent) => {
+    const w = Math.round(e.nativeEvent.layout.width);
+    if (w > 0) {
+      setTrackWidth((prev) => (Math.abs(prev - w) > 1 ? w : prev));
+    }
+  }, []);
 
   const handleToggleExpanded = useCallback(() => {
     triggerHaptic(8);
@@ -1013,50 +1045,91 @@ export const ExpandablePillRow = React.memo(function ExpandablePillRow({
     (count > threshold || canScrollRight || canScrollLeft || expanded);
 
   const renderCustomScrollbar = () => {
+    const maxScroll = Math.max(0, scrollDims.contentWidth - scrollDims.viewportWidth);
+    const isScrollable = maxScroll > 6 || scrollMetrics.scrollable;
     if (
       expanded ||
-      !scrollMetrics.scrollable ||
+      !isScrollable ||
       sbStyle === "hidden" ||
       sbStyle === "native-indicator"
     ) {
       return null;
     }
-    if (sbStyle === "tick-ruler" || sbStyle === "glow-rail") {
+
+    const resolvedTrackWidth =
+      trackWidth > 0
+        ? trackWidth
+        : scrollDims.viewportWidth > 0
+        ? scrollDims.viewportWidth
+        : 240;
+    const thumbFrac =
+      scrollDims.contentWidth > 0
+        ? Math.min(0.85, Math.max(0.18, scrollDims.viewportWidth / scrollDims.contentWidth))
+        : scrollMetrics.thumbFrac;
+
+    if (sbStyle === "tick-ruler") {
       const tickCount = 9;
-      const activeTick = Math.min(
-        tickCount - 1,
-        Math.round(scrollMetrics.ratio * (tickCount - 1))
-      );
+      const tickHeight = Math.max(8, sbThickness + 4);
+      const tickThumbWidth = Math.max(6, sbThickness + 3);
+      const tickInnerTrack = Math.max(24, resolvedTrackWidth - 16);
+      const tickTranslateX = scrollXAnim.interpolate({
+        inputRange: [0, Math.max(1, maxScroll)],
+        outputRange: [0, Math.max(0, tickInnerTrack - tickThumbWidth)],
+        extrapolate: "clamp",
+      });
       return (
         <View
+          onLayout={handleTrackLayout}
           style={{
-            flexDirection: "row",
-            justifyContent: "space-between",
-            alignItems: "flex-end",
+            width: "100%",
             paddingHorizontal: 8,
             marginTop: 4,
-            height: Math.max(8, sbThickness + 4),
+            height: tickHeight,
+            justifyContent: "flex-end",
+            position: "relative",
           }}
         >
-          {Array.from({ length: tickCount }).map((_, idx) => {
-            const isMajor = idx === 0 || idx === 4 || idx === 8;
-            const isHit = idx === activeTick;
-            return (
-              <View
-                key={`tick-${idx}`}
-                style={{
-                  width: isHit ? Math.max(3, sbThickness) : 1.5,
-                  height: isHit ? Math.max(8, sbThickness + 4) : isMajor ? 6 : 4,
-                  borderRadius: 1,
-                  backgroundColor: isHit ? sbColor : theme.outlineVariant,
-                  opacity: isHit ? 1 : 0.55,
-                }}
-              />
-            );
-          })}
+          <View
+            style={{
+              flexDirection: "row",
+              justifyContent: "space-between",
+              alignItems: "flex-end",
+              width: "100%",
+            }}
+          >
+            {Array.from({ length: tickCount }).map((_, idx) => {
+              const isMajor = idx === 0 || idx === 4 || idx === 8;
+              return (
+                <View
+                  key={`tick-${idx}`}
+                  style={{
+                    width: 1.5,
+                    height: isMajor ? 6 : 4,
+                    borderRadius: 1,
+                    backgroundColor: theme.outlineVariant,
+                    opacity: 0.55,
+                  }}
+                />
+              );
+            })}
+          </View>
+          <Animated.View
+            pointerEvents="none"
+            style={{
+              position: "absolute",
+              left: 8,
+              bottom: 0,
+              width: tickThumbWidth,
+              height: tickHeight,
+              borderRadius: 2,
+              backgroundColor: sbColor,
+              transform: [{ translateX: tickTranslateX }],
+            }}
+          />
         </View>
       );
     }
+
     if (sbStyle === "dots") {
       const dotCount = 5;
       const activeDot = Math.min(
@@ -1088,12 +1161,56 @@ export const ExpandablePillRow = React.memo(function ExpandablePillRow({
         </View>
       );
     }
-    const leftPct = Math.round(
-      scrollMetrics.ratio * (1 - scrollMetrics.thumbFrac) * 100
-    );
-    const widthPct = Math.round(scrollMetrics.thumbFrac * 100);
+
+    const thumbWidth = Math.max(24, Math.round(resolvedTrackWidth * thumbFrac));
+    const thumbTranslateX = scrollXAnim.interpolate({
+      inputRange: [0, Math.max(1, maxScroll)],
+      outputRange: [0, Math.max(0, resolvedTrackWidth - thumbWidth)],
+      extrapolate: "clamp",
+    });
+
+    if (sbStyle === "glow-rail") {
+      return (
+        <View
+          onLayout={handleTrackLayout}
+          style={{
+            height: Math.max(4, sbThickness + 1),
+            width: "100%",
+            borderRadius: 999,
+            marginTop: 4,
+            backgroundColor:
+              themeConfig?.scrollbarTrackVisible !== false
+                ? hexToRgba(sbColor, 0.16)
+                : "transparent",
+            overflow: "hidden",
+            position: "relative",
+          }}
+        >
+          <Animated.View
+            pointerEvents="none"
+            style={{
+              position: "absolute",
+              top: 0,
+              bottom: 0,
+              left: 0,
+              width: thumbWidth,
+              borderRadius: 999,
+              backgroundColor: sbColor,
+              shadowColor: sbColor,
+              shadowOpacity: 0.75,
+              shadowRadius: 4,
+              shadowOffset: { width: 0, height: 0 },
+              elevation: 2,
+              transform: [{ translateX: thumbTranslateX }],
+            }}
+          />
+        </View>
+      );
+    }
+
     return (
       <View
+        onLayout={handleTrackLayout}
         style={{
           height: sbThickness,
           width: "100%",
@@ -1107,16 +1224,18 @@ export const ExpandablePillRow = React.memo(function ExpandablePillRow({
           position: "relative",
         }}
       >
-        <View
+        <Animated.View
+          pointerEvents="none"
           style={{
             position: "absolute",
             top: 0,
             bottom: 0,
-            left: `${leftPct}%`,
-            width: `${widthPct}%`,
+            left: 0,
+            width: thumbWidth,
             borderRadius: 999,
             backgroundColor: sbColor,
             opacity: sbStyle === "subtle-bar" ? 0.65 : 1,
+            transform: [{ translateX: thumbTranslateX }],
           }}
         />
       </View>
@@ -1271,13 +1390,17 @@ export const ExpandablePillRow = React.memo(function ExpandablePillRow({
             <Animated.View
               style={{ flex: 1, transform: [{ translateX: bounceAnim }] }}
             >
-              <ScrollView
+              <Animated.ScrollView
                 ref={scrollViewRef}
                 horizontal
+                nestedScrollEnabled
+                decelerationRate="normal"
                 bounces={true}
                 alwaysBounceHorizontal={true}
                 overScrollMode="always"
                 showsHorizontalScrollIndicator={showNativeSb}
+                scrollEventThrottle={16}
+                onScroll={handleAnimatedScroll}
                 onLayout={handleLayout}
                 onContentSizeChange={handleContentSizeChange}
                 onScrollEndDrag={handleScrollEndDrag}
@@ -1294,7 +1417,7 @@ export const ExpandablePillRow = React.memo(function ExpandablePillRow({
                 ]}
               >
                 {renderedPills}
-              </ScrollView>
+              </Animated.ScrollView>
             </Animated.View>
             {showEdgeFade && canScrollLeft && !isSegmentedBar && !isFloatingDock && (
               <EdgePocketShadow side="left" bgColor={resolvedFadeColor} />
@@ -1348,13 +1471,17 @@ export const ExpandablePillRow = React.memo(function ExpandablePillRow({
             <Animated.View
               style={{ flex: 1, transform: [{ translateX: bounceAnim }] }}
             >
-              <ScrollView
+              <Animated.ScrollView
                 ref={scrollViewRef}
                 horizontal
+                nestedScrollEnabled
+                decelerationRate="normal"
                 bounces={true}
                 alwaysBounceHorizontal={true}
                 overScrollMode="always"
                 showsHorizontalScrollIndicator={showNativeSb}
+                scrollEventThrottle={16}
+                onScroll={handleAnimatedScroll}
                 onLayout={handleLayout}
                 onContentSizeChange={handleContentSizeChange}
                 onScrollEndDrag={handleScrollEndDrag}
@@ -1371,7 +1498,7 @@ export const ExpandablePillRow = React.memo(function ExpandablePillRow({
                 ]}
               >
                 {renderedPills}
-              </ScrollView>
+              </Animated.ScrollView>
             </Animated.View>
             {showEdgeFade && canScrollLeft && (
               <EdgePocketShadow side="left" bgColor={resolvedFadeColor} />

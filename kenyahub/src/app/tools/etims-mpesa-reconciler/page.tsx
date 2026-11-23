@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import { ShieldAlert, CheckCircle2, Download, MessageSquare, Plus, Trash2 } from "lucide-react";
 import ToolShell from "@/components/tools/ToolShell";
+import CustomSelect from "@/components/ui/CustomSelect";
 import { TOOLS } from "@/lib/tools-registry";
 import utilData from "@/data/kenya-utility-tools-2026.json";
 
@@ -185,10 +186,10 @@ export default function EtimsMpesaReconcilerPage() {
               placeholder="Amount (KES)"
               className="px-3 py-2 rounded-lg border border-border bg-bg-card text-xs text-text-primary outline-hidden focus:border-gold"
             />
-            <select
+            <CustomSelect
               value={newCategory}
               onChange={(e) => setNewCategory(e.target.value)}
-              className="px-3 py-2 rounded-lg border border-border bg-bg-card text-xs text-text-primary outline-hidden focus:border-gold"
+              className="input-field w-full text-xs"
             >
               <option value="Supplies">Supplies (eTIMS Required)</option>
               <option value="Logistics">Logistics (eTIMS Required)</option>
@@ -197,7 +198,7 @@ export default function EtimsMpesaReconcilerPage() {
               <option value="Imports">Imports / iCMS (Exempt)</option>
               <option value="Airline Tickets">Airline Tickets (Exempt)</option>
               <option value="Interest / Bank Fees">Interest / Bank Fees (Exempt)</option>
-            </select>
+            </CustomSelect>
             <button
               type="button"
               onClick={addRow}

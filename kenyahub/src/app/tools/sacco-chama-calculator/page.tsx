@@ -245,7 +245,7 @@ export default function SaccoChamaCalculatorPage() {
             </h3>
           </div>
           <div className="divide-y divide-[var(--border)] text-sm">
-            <div className="px-5 py-3 flex justify-between items-start gap-3">
+            <div className="px-4 sm:px-5 py-3 flex flex-wrap justify-between items-baseline gap-x-3 gap-y-1">
               <span className="text-[var(--text-secondary)]">
                 Gross Dividend on Share Capital ({activeSacco.dividendRate}%)
               </span>
@@ -253,7 +253,7 @@ export default function SaccoChamaCalculatorPage() {
                 KES {formatKES(calc.grossShareDividend)}
               </span>
             </div>
-            <div className="px-5 py-3 flex justify-between items-start gap-3">
+            <div className="px-4 sm:px-5 py-3 flex flex-wrap justify-between items-baseline gap-x-3 gap-y-1">
               <span className="text-[var(--text-secondary)]">
                 Gross Interest Rebate on Weighted BOSA Deposits ({activeSacco.rebateRate}%)
               </span>
@@ -261,15 +261,15 @@ export default function SaccoChamaCalculatorPage() {
                 KES {formatKES(calc.grossDepositRebate)}
               </span>
             </div>
-            <div className="px-5 py-3 flex justify-between items-start gap-3">
+            <div className="px-4 sm:px-5 py-3 flex flex-wrap justify-between items-baseline gap-x-3 gap-y-1">
               <span className="text-[var(--text-secondary)]">Statutory Withholding Tax (5% WHT)</span>
               <span className="text-red-400 font-medium">− KES {formatKES(calc.withholdingTax)}</span>
             </div>
-            <div className="px-5 py-3.5 flex justify-between bg-emerald-500/10 font-bold">
+            <div className="px-4 sm:px-5 py-3.5 flex flex-wrap justify-between items-baseline gap-x-3 gap-y-1 bg-emerald-500/10 font-bold">
               <span className="text-[var(--text-primary)]">Net Cash Payout (FOSA Credit)</span>
               <span className="text-emerald-400">KES {formatKES(calc.netAnnualPayout)}</span>
             </div>
-            <div className="px-5 py-3 flex justify-between items-start gap-3">
+            <div className="px-4 sm:px-5 py-3 flex flex-wrap justify-between items-baseline gap-x-3 gap-y-1">
               <span className="text-[var(--text-secondary)]">
                 Total Reducing-Balance Interest on Max Loan ({calc.months} mos @ 1%/mo)
               </span>
@@ -286,7 +286,7 @@ export default function SaccoChamaCalculatorPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5">
             {economicCalendarData.events.slice(0, 6).map((ev) => (
               <div key={ev.name} className="rounded-xl bg-[var(--bg-elevated)]/60 border border-[var(--border)] p-3 text-xs space-y-1">
-                <div className="flex items-center justify-between font-bold text-[var(--text-primary)]">
+                <div className="flex flex-wrap items-center justify-between gap-2 font-bold text-[var(--text-primary)]">
                   <span>{ev.name}</span>
                   <span className="text-[var(--gold)]">{ev.agency}</span>
                 </div>

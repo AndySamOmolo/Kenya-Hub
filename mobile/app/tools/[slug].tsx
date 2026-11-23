@@ -18,6 +18,29 @@ import {
   DomesticWageTool,
   AirtimeDrainTool,
 } from "../../src/tools/CivicLegalTools";
+import {
+  SchoolFeeCapAuditorTool,
+  CookingFuelComparatorTool,
+  AuctioneerFeeShieldTool,
+  SuccessionCap160Tool,
+  DukaHustleUbpTool,
+  FuneralHarambeePlannerTool,
+} from "../../src/tools/EverydayHouseholdTools";
+import {
+  RainwaterTankSizerTool,
+  FertilizerSeedBreakevenTool,
+  DairyRationMarginTool,
+  LandSubdivisionPlannerTool,
+  BiogasDigesterSizerTool,
+  LivestockVaccineCalendarTool,
+} from "../../src/tools/EverydayRuralTools";
+import {
+  EcitizenDocsPlannerTool,
+  TvetKmtcPathwayTool,
+  UsedCarElogbookTool,
+  ChildMaintenanceTool,
+  Article49RightsTool,
+} from "../../src/tools/EverydayCivicTools";
 import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import AsyncStorage from "@react-native-async-storage/async-storage";
@@ -554,6 +577,40 @@ export default function ToolDetailScreen() {
         return <KjseaPathwayEngineTool />;
       case "ardhisasa-cad-title-auditor":
         return <ArdhisasaCadTitleAuditorTool />;
+      case "school-fee-cap-auditor":
+        return <SchoolFeeCapAuditorTool />;
+      case "cooking-fuel-comparator":
+        return <CookingFuelComparatorTool />;
+      case "auctioneer-fee-shield":
+        return <AuctioneerFeeShieldTool />;
+      case "succession-cap160-calculator":
+        return <SuccessionCap160Tool />;
+      case "duka-hustle-ubp-calculator":
+        return <DukaHustleUbpTool />;
+      case "funeral-harambee-planner":
+        return <FuneralHarambeePlannerTool />;
+      case "rainwater-tank-sizer":
+        return <RainwaterTankSizerTool />;
+      case "fertilizer-seed-breakeven":
+        return <FertilizerSeedBreakevenTool />;
+      case "dairy-ration-margin":
+        return <DairyRationMarginTool />;
+      case "land-subdivision-planner":
+        return <LandSubdivisionPlannerTool />;
+      case "biogas-digester-sizer":
+        return <BiogasDigesterSizerTool />;
+      case "livestock-vaccine-calendar":
+        return <LivestockVaccineCalendarTool />;
+      case "ecitizen-docs-planner":
+        return <EcitizenDocsPlannerTool />;
+      case "tvet-kmtc-pathway-matcher":
+        return <TvetKmtcPathwayTool />;
+      case "used-car-elogbook-checker":
+        return <UsedCarElogbookTool />;
+      case "child-maintenance-calculator":
+        return <ChildMaintenanceTool />;
+      case "article49-rights-companion":
+        return <Article49RightsTool />;
       default:
         return (
           <View style={{ padding: 20, alignItems: "center" }}>

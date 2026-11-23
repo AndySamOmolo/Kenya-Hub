@@ -363,55 +363,55 @@ export default function KraCarImportCalculatorPage() {
             </span>
           </div>
           <div className="divide-y divide-[var(--border)] text-sm">
-            <div className="px-5 py-3 flex justify-between items-start gap-3">
+            <div className="px-4 sm:px-5 py-3 flex flex-wrap justify-between items-baseline gap-x-3 gap-y-1">
               <span className="text-[var(--text-secondary)]">KRA Base CRSP (Brand New Showroom Reference)</span>
               <span className="font-semibold text-[var(--text-primary)]">KES {formatKES(calc.crsp)}</span>
             </div>
-            <div className="px-5 py-3 flex justify-between items-start gap-3">
+            <div className="px-4 sm:px-5 py-3 flex flex-wrap justify-between items-baseline gap-x-3 gap-y-1">
               <span className="text-[var(--text-secondary)]">KRA Depreciated Customs Value (CRSP tax-backed value less {Math.round(calc.depBand.rate * 100)}% age depreciation)</span>
               <span className="font-semibold text-[var(--text-primary)]">KES {formatKES(calc.customsValue)}</span>
             </div>
-            <div className="px-5 py-3 flex justify-between items-start gap-3">
+            <div className="px-4 sm:px-5 py-3 flex flex-wrap justify-between items-baseline gap-x-3 gap-y-1">
               <span className="text-[var(--text-secondary)]">1. Import Duty (35% of Customs Value)</span>
               <span className="text-red-400 font-medium">KES {formatKES(calc.importDuty)}</span>
             </div>
-            <div className="px-5 py-3 flex justify-between items-start gap-3">
+            <div className="px-4 sm:px-5 py-3 flex flex-wrap justify-between items-baseline gap-x-3 gap-y-1">
               <span className="text-[var(--text-secondary)]">
                 2. Excise Duty ({Math.round(calc.exciseRate * 100)}% of Customs Value + Import Duty)
               </span>
               <span className="text-red-400 font-medium">KES {formatKES(calc.exciseDuty)}</span>
             </div>
-            <div className="px-5 py-3 flex justify-between items-start gap-3">
+            <div className="px-4 sm:px-5 py-3 flex flex-wrap justify-between items-baseline gap-x-3 gap-y-1">
               <span className="text-[var(--text-secondary)]">
                 3. Value Added Tax — VAT (16% of Customs + Import + Excise)
               </span>
               <span className="text-red-400 font-medium">KES {formatKES(calc.vat)}</span>
             </div>
-            <div className="px-5 py-3 flex justify-between items-start gap-3">
+            <div className="px-4 sm:px-5 py-3 flex flex-wrap justify-between items-baseline gap-x-3 gap-y-1">
               <span className="text-[var(--text-secondary)]">4. Import Declaration Fee — IDF (2.5%)</span>
               <span className="text-red-400 font-medium">KES {formatKES(calc.idf)}</span>
             </div>
-            <div className="px-5 py-3 flex justify-between items-start gap-3">
+            <div className="px-4 sm:px-5 py-3 flex flex-wrap justify-between items-baseline gap-x-3 gap-y-1">
               <span className="text-[var(--text-secondary)]">5. Railway Development Levy — RDL (2.0%)</span>
               <span className="text-red-400 font-medium">KES {formatKES(calc.rdl)}</span>
             </div>
-            <div className="px-5 py-3.5 flex justify-between bg-[var(--bg-elevated)]/60 font-bold">
+            <div className="px-4 sm:px-5 py-3.5 flex flex-wrap justify-between items-baseline gap-x-3 gap-y-1 bg-[var(--bg-elevated)]/60 font-bold">
               <span className="text-[var(--text-primary)]">Total KRA Taxes Payable</span>
               <span className="text-[var(--gold)]">KES {formatKES(calc.totalKraDuty)}</span>
             </div>
-            <div className="px-5 py-3 flex justify-between items-start gap-3">
+            <div className="px-4 sm:px-5 py-3 flex flex-wrap justify-between items-baseline gap-x-3 gap-y-1">
               <span className="text-[var(--text-secondary)]">NTSA Registration & Number Plate ({calc.cc} cc)</span>
               <span className="text-[var(--text-primary)]">KES {formatKES(calc.ntsaFee)}</span>
             </div>
-            <div className="px-5 py-3 flex justify-between items-start gap-3">
+            <div className="px-4 sm:px-5 py-3 flex flex-wrap justify-between items-baseline gap-x-3 gap-y-1">
               <span className="text-[var(--text-secondary)]">KEBS JEVIC/QISJ Inspection + Port & CFS Clearing</span>
               <span className="text-[var(--text-primary)]">KES {formatKES(calc.portAndKebs)}</span>
             </div>
-            <div className="px-5 py-3 flex justify-between items-start gap-3">
+            <div className="px-4 sm:px-5 py-3 flex flex-wrap justify-between items-baseline gap-x-3 gap-y-1">
               <span className="text-[var(--text-secondary)]">Vehicle CIF Cost (Shipped to Mombasa)</span>
               <span className="text-[var(--text-primary)]">KES {formatKES(calc.cifKes)}</span>
             </div>
-            <div className="px-5 py-4 flex justify-between bg-emerald-500/10 font-bold">
+            <div className="px-4 sm:px-5 py-4 flex flex-wrap justify-between items-baseline gap-x-3 gap-y-1 bg-emerald-500/10 font-bold">
               <span className="text-[var(--text-primary)]">Total Estimated Landed Cost (On the Road)</span>
               <span className="text-emerald-400 text-base">KES {formatKES(calc.totalLandedCost)}</span>
             </div>
@@ -427,7 +427,7 @@ export default function KraCarImportCalculatorPage() {
             <div className="space-y-2.5">
               {insuranceRatesData.vehicleClasses.map((vc) => (
                 <div key={vc.id} className="rounded-xl bg-[var(--bg-elevated)]/60 border border-[var(--border)] p-3 text-xs">
-                  <div className="flex items-center justify-between font-bold text-[var(--text-primary)] mb-1">
+                  <div className="flex flex-wrap items-center justify-between gap-2 font-bold text-[var(--text-primary)] mb-1">
                     <span>{vc.name}</span>
                     <span className="text-[var(--gold)]">TPO Min: KES {vc.thirdParty.minimumPremium.toLocaleString()}/yr</span>
                   </div>

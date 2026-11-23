@@ -113,7 +113,7 @@ export default function SkillTree({
       <div className="mb-2.5 sm:mb-4">
         <div className="rounded-xl sm:rounded-2xl border border-border bg-gradient-to-br from-bg-card to-bg-elevated p-2.5 sm:p-3.5 shadow-xs transition-all">
           {/* Row 1: Rank + XP + Hearts + Inline Quests & Badges toggle */}
-          <div className="flex items-center justify-between gap-2">
+          <div className="flex flex-wrap items-center justify-between gap-2">
             <div className="flex items-center gap-1.5 sm:gap-2 min-w-0 flex-wrap">
               <span className="text-base sm:text-lg shrink-0">{levelInfo.current.icon}</span>
               <span className="text-xs sm:text-sm font-bold text-text-primary whitespace-nowrap">
@@ -440,7 +440,7 @@ export default function SkillTree({
 
       {/* ─── Compact Unit Controls & Jump Bar ──────────────────────── */}
       <div className="mb-3 space-y-2">
-        <div className="flex items-center justify-between gap-2 px-0.5">
+        <div className="flex flex-wrap items-center justify-between gap-2 px-0.5">
           <span className="text-xs font-semibold text-text-secondary whitespace-nowrap">
             {units.length} Units
           </span>

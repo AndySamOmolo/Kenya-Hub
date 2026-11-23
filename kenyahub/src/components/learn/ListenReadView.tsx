@@ -306,7 +306,7 @@ export default function ListenReadView({ languageId, languageName }: ListenReadV
           {chapters.length > 0 && activeChapter && (
             <div className="rounded-2xl border border-border bg-bg-card p-4 sm:p-6 shadow-sm space-y-4">
               {/* Header */}
-              <div className="flex items-start justify-between gap-3">
+              <div className="flex flex-wrap items-start justify-between gap-2 sm:gap-3">
                 <div className="min-w-0 flex-1">
                   <h3 className="font-[family-name:var(--font-outfit)] text-base sm:text-lg font-bold text-text-primary flex items-center gap-2">
                     <Headphones className="h-4 w-4 text-gold shrink-0" />
@@ -469,8 +469,8 @@ export default function ListenReadView({ languageId, languageName }: ListenReadV
                 {/* Follow-Along Numbered Phrasebook Transcript */}
                 {rawChapterPhrases.length > 0 && (
                   <div className="pt-3 border-t border-border/60 space-y-3">
-                    <div className="flex items-center justify-between gap-2">
-                      <p className="text-xs font-bold uppercase tracking-wider text-gold">
+                    <div className="flex flex-wrap items-center justify-between gap-2">
+                      <p className="text-xs font-bold uppercase tracking-wider text-gold min-w-0">
                         Follow-Along Phrasebook ({rawChapterPhrases.length})
                       </p>
                       <button
@@ -650,10 +650,10 @@ export default function ListenReadView({ languageId, languageName }: ListenReadV
           {/* Full Stories */}
           {readers && readers.stories.length > 0 && (
             <div className="rounded-2xl border border-border bg-bg-card p-4 sm:p-6 shadow-sm space-y-3">
-              <div className="flex items-center justify-between gap-2">
-                <div>
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <div className="min-w-0 flex-1">
                   <h3 className="font-[family-name:var(--font-outfit)] text-base sm:text-lg font-bold text-text-primary flex items-center gap-2">
-                    <BookOpen className="h-4 w-4 text-gold" />
+                    <BookOpen className="h-4 w-4 text-gold shrink-0" />
                     <span>{languageName} Short Stories</span>
                   </h3>
                   <p className="text-xs text-text-muted mt-0.5">
@@ -788,10 +788,10 @@ export default function ListenReadView({ languageId, languageName }: ListenReadV
           {/* Everyday Practice Sentences */}
           {((readers?.sentences?.length ?? 0) > 0 || (langMeta?.sampleReadings?.length ?? 0) > 0) && (
             <div className="rounded-2xl border border-border bg-bg-card p-4 sm:p-6 shadow-sm space-y-3">
-              <div className="flex items-center justify-between gap-2">
-                <div>
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <div className="min-w-0 flex-1">
                   <h3 className="font-[family-name:var(--font-outfit)] text-base sm:text-lg font-bold text-text-primary flex items-center gap-2">
-                    <Sparkles className="h-4 w-4 text-kenya-green" />
+                    <Sparkles className="h-4 w-4 text-kenya-green shrink-0" />
                     <span>Everyday Reading Sentences</span>
                   </h3>
                   <p className="text-xs text-text-muted mt-0.5">
@@ -836,9 +836,9 @@ export default function ListenReadView({ languageId, languageName }: ListenReadV
           {/* News Articles (Swahili) */}
           {readers && readers.newsArticles.length > 0 && (
             <div className="rounded-2xl border border-border bg-bg-card p-4 sm:p-6 shadow-sm space-y-3">
-              <div className="flex items-center justify-between gap-2">
-                <h3 className="font-[family-name:var(--font-outfit)] text-base sm:text-lg font-bold text-text-primary flex items-center gap-2">
-                  <Newspaper className="h-4 w-4 text-kenya-green" />
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <h3 className="font-[family-name:var(--font-outfit)] text-base sm:text-lg font-bold text-text-primary flex items-center gap-2 min-w-0">
+                  <Newspaper className="h-4 w-4 text-kenya-green shrink-0" />
                   <span>{languageName} News Reading Practice</span>
                 </h3>
                 <span className="text-xs text-text-muted">{readers.newsArticles.length} articles</span>
@@ -963,7 +963,7 @@ export default function ListenReadView({ languageId, languageName }: ListenReadV
 
           {currentQuestion ? (
             <div className="space-y-4 pt-1">
-              <div className="flex items-center justify-between text-xs text-text-muted">
+              <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-text-muted">
                 <span>
                   Question {qIndex + 1} of {filteredQuestions.length}
                 </span>

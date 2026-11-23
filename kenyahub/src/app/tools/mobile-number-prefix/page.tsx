@@ -252,8 +252,8 @@ export default function MobileNumberPrefixPage() {
                 key={net.name}
                 className="rounded-xl border border-border bg-bg-elevated/40 p-4"
               >
-                <div className="flex items-center justify-between gap-2 mb-3">
-                  <div className="flex items-center gap-2">
+                <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
+                  <div className="flex items-center gap-2 min-w-0">
                     <span
                       className="w-3 h-3 rounded-full"
                       style={{ backgroundColor: net.color }}
@@ -301,7 +301,7 @@ export default function MobileNumberPrefixPage() {
               {prefixesData.emergencyNumbers.map((em) => (
                 <div
                   key={em.number}
-                  className="flex items-center justify-between p-2 rounded-lg bg-bg-elevated/50 border border-border/50 text-xs"
+                  className="flex flex-wrap items-center justify-between gap-2 p-2 rounded-lg bg-bg-elevated/50 border border-border/50 text-xs"
                 >
                   <a
                     href={`tel:${em.number.replace(/\s+/g, "")}`}

@@ -172,8 +172,8 @@ export default function RouteDetailView({ townSlug, routeSlug }: RouteDetailView
         {/* Map column (2 cols wide on large) */}
         <div className="lg:col-span-2 space-y-6">
           <div>
-            <div className="flex items-center justify-between mb-3">
-              <h2 className="text-base font-bold text-text-primary font-[family-name:var(--font-outfit)] flex items-center gap-2">
+            <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
+              <h2 className="text-base font-bold text-text-primary font-[family-name:var(--font-outfit)] flex items-center gap-2 min-w-0">
                 <DynamicIcon emoji="🗺️" className="w-4 h-4 text-gold" /> Interactive Route Map
               </h2>
               <span className="text-xs text-text-muted">{route.stages.length} Stage Stopovers · ~{totalCorridorKm} km</span>
@@ -291,9 +291,9 @@ export default function RouteDetailView({ townSlug, routeSlug }: RouteDetailView
                   open={idx < 3}
                   className="group bg-bg-card border border-border rounded-xl overflow-hidden"
                 >
-                  <summary className="flex items-center justify-between px-4 py-3.5 cursor-pointer text-xs sm:text-sm font-medium text-text-primary hover:text-gold transition-colors list-none">
-                    <span className="pr-3">{item.question}</span>
-                    <span className="text-text-muted group-open:rotate-180 transition-transform">▼</span>
+                  <summary className="flex items-center justify-between gap-2 px-4 py-3.5 cursor-pointer text-xs sm:text-sm font-medium text-text-primary hover:text-gold transition-colors list-none">
+                    <span className="min-w-0 flex-1 pr-2">{item.question}</span>
+                    <span className="text-text-muted shrink-0 group-open:rotate-180 transition-transform">▼</span>
                   </summary>
                   <div className="px-4 pb-4 pt-3 text-xs sm:text-sm text-text-secondary leading-relaxed border-t border-border">
                     {item.answer}

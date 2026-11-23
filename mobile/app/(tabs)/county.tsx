@@ -454,11 +454,13 @@ const BudgetCardItem = React.memo(function BudgetCardItem({
       <View
         style={{
           flexDirection: "row",
+          flexWrap: "wrap",
           justifyContent: "space-between",
           alignItems: "center",
+          gap: 8,
         }}
       >
-        <Text style={[styles.countyName, { color: theme.textPrimary }]}>
+        <Text style={[styles.countyName, { color: theme.textPrimary, flexShrink: 1 }]}>
           {String(item.code).padStart(3, "0")}. {item.name} County
         </Text>
         <Text
@@ -488,7 +490,7 @@ const BudgetCardItem = React.memo(function BudgetCardItem({
           }}
         />
       </View>
-      <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
+      <View style={{ flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", gap: 6 }}>
         <Text style={{ fontSize: 11, color: theme.textSecondary }}>
           Share:{" "}
           <Text style={{ fontFamily: resolvedFonts.heading, color: theme.textPrimary }}>
@@ -545,11 +547,13 @@ const ConstituencyCardItem = React.memo(function ConstituencyCardItem({
       <View
         style={{
           flexDirection: "row",
+          flexWrap: "wrap",
           justifyContent: "space-between",
           alignItems: "center",
+          gap: 8,
         }}
       >
-        <Text style={[styles.countyName, { color: theme.textPrimary }]}>
+        <Text style={[styles.countyName, { color: theme.textPrimary, flexShrink: 1 }]}>
           {String(item.code).padStart(3, "0")}. {item.name} County
         </Text>
         <Text
@@ -673,11 +677,13 @@ const ClimateCardItem = React.memo(function ClimateCardItem({
       <View
         style={{
           flexDirection: "row",
+          flexWrap: "wrap",
           justifyContent: "space-between",
           alignItems: "center",
+          gap: 8,
         }}
       >
-        <View>
+        <View style={{ flexGrow: 1, flexShrink: 1, minWidth: 150 }}>
           <Text style={[styles.countyName, { color: theme.textPrimary }]}>
             {String(item.code).padStart(3, "0")}. {item.name} County
           </Text>

@@ -364,8 +364,10 @@ export default function MatatuRouteScreen() {
                       <View
                         style={{
                           flexDirection: "row",
+                          flexWrap: "wrap",
                           alignItems: "center",
                           justifyContent: "space-between",
+                          gap: 6,
                         }}
                       >
                         <Text
@@ -849,8 +851,10 @@ const styles = StyleSheet.create({
   },
   mapHeaderRow: {
     flexDirection: "row",
+    flexWrap: "wrap",
     alignItems: "center",
     justifyContent: "space-between",
+    gap: 8,
     marginBottom: 8,
   },
   mapStageCount: {

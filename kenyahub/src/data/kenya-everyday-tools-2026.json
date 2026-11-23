@@ -1,0 +1,739 @@
+{
+  "lastUpdated": "2026-11-24",
+  "source": "KenyaHub 2026 Everyday Citizen Reference (MoE Gazette 1449, EPRA, Cap 526, Cap 160, Nairobi UBP, KUFH, KALRO, Cap 302, DVS/KEVEVAPI, eCitizen, KNQF/KMTC, NTSA, Cap 141, IPOA)",
+  "schoolFeeCaps": {
+    "gazetteReference": "Special Gazette Notice No. 1449 (February 6, 2026)",
+    "authority": "Ministry of Education (MoE), Republic of Kenya",
+    "termSplits": [0.5, 0.3, 0.2],
+    "categories": [
+      {
+        "id": "day",
+        "label": "Public Day Senior School",
+        "parentCapKes": 0,
+        "gokCapitationKes": 22244,
+        "totalAnnualKes": 22244,
+        "notes": "Free Day Secondary Education (FDSE) covers tuition; optional lunch programme must be parent-approved."
+      },
+      {
+        "id": "cluster1-urban",
+        "label": "Cluster 1 / Major Urban Boarding (Nairobi, Mombasa, Kisumu, Nakuru, Eldoret, Nyeri, Thika)",
+        "parentCapKes": 53554,
+        "gokCapitationKes": 22244,
+        "totalAnnualKes": 75798,
+        "notes": "Maximum annual parent ceiling for National & major urban public boarding senior schools."
+      },
+      {
+        "id": "other-boarding",
+        "label": "Other Public Boarding Senior Schools",
+        "parentCapKes": 40535,
+        "gokCapitationKes": 22244,
+        "totalAnnualKes": 62779,
+        "notes": "Applies to Extra-County and County public boarding schools outside major urban centres."
+      },
+      {
+        "id": "special-needs",
+        "label": "Special Needs Public Boarding School",
+        "parentCapKes": 12790,
+        "gokCapitationKes": 57974,
+        "totalAnnualKes": 70764,
+        "notes": "Enhanced GoK capitation (KES 57,974) subsidizes assistive care and specialized facilities."
+      }
+    ],
+    "illegalLevies": [
+      "Remedial or holiday tuition charges (banned under Basic Education Act)",
+      "Teacher motivation fees or exam-analysis levies",
+      "Mandatory school bus, perimeter wall, or development fund without County Education Board written approval",
+      "Forcing parents to buy uniforms exclusively from the school or a single tied vendor",
+      "Admission, interview, or placement fees for public schools",
+      "Withholding KCSE/KJSEA certificates or school leaving certificates over fee arrears"
+    ],
+    "reportingChannels": {
+      "moeHotline": "0800 720 071",
+      "ombudsman": "Commission on Administrative Justice (CAJ) — 0800 221 349",
+      "countyOffice": "County Director of Education (CDE)"
+    }
+  },
+  "cookingFuel": {
+    "benchmarkDate": "2026-11",
+    "epcPriceBenchmarkKes": 9500,
+    "fuels": {
+      "lpg": {
+        "label": "LPG Gas (TotalEnergies 2026 Refill)",
+        "refill6kgKes": 1570,
+        "refill13kgKes": 3530,
+        "kesPerKg": 261.67,
+        "energyKwhPerKg": 12.8,
+        "thermalEfficiency": 0.55
+      },
+      "kerosene": {
+        "label": "Kerosene (EPRA Nairobi Retail)",
+        "kesPerLitre": 191.38,
+        "energyKwhPerLitre": 9.7,
+        "thermalEfficiency": 0.42
+      },
+      "charcoal": {
+        "label": "Charcoal (Urban Debe / Bag)",
+        "debeKes": 180,
+        "debeKg": 4.5,
+        "bagKes": 2800,
+        "bagKg": 70,
+        "kesPerKg": 40,
+        "energyKwhPerKg": 8.1,
+        "thermalEfficiency": 0.28
+      },
+      "electricityEpc": {
+        "label": "Electric Pressure Cooker (KPLC Domestic)",
+        "kesPerKwh": 24.5,
+        "thermalEfficiency": 0.85
+      }
+    },
+    "dishes": [
+      {
+        "id": "githeri",
+        "label": "Githeri (1 kg dry maize & beans)",
+        "usefulKwh": 1.65,
+        "epcKwh": 0.48,
+        "lpgKg": 0.28,
+        "keroseneL": 0.42,
+        "charcoalKg": 1.35,
+        "epcMinutes": 45,
+        "charcoalMinutes": 180
+      },
+      {
+        "id": "beans",
+        "label": "Dry Beans / Maharagwe (500 g dry)",
+        "usefulKwh": 1.25,
+        "epcKwh": 0.36,
+        "lpgKg": 0.22,
+        "keroseneL": 0.32,
+        "charcoalKg": 1.05,
+        "epcMinutes": 35,
+        "charcoalMinutes": 140
+      },
+      {
+        "id": "ugali_sukuma",
+        "label": "Ugali & Sukuma Wiki (Family of 4)",
+        "usefulKwh": 0.55,
+        "epcKwh": 0.28,
+        "lpgKg": 0.09,
+        "keroseneL": 0.14,
+        "charcoalKg": 0.48,
+        "epcMinutes": 22,
+        "charcoalMinutes": 35
+      },
+      {
+        "id": "rice_stew",
+        "label": "Rice & Beef Stew (Family of 4)",
+        "usefulKwh": 0.85,
+        "epcKwh": 0.34,
+        "lpgKg": 0.15,
+        "keroseneL": 0.22,
+        "charcoalKg": 0.72,
+        "epcMinutes": 30,
+        "charcoalMinutes": 75
+      },
+      {
+        "id": "chapati",
+        "label": "Chapatis (10 pieces, 1 kg flour)",
+        "usefulKwh": 0.75,
+        "epcKwh": 0.45,
+        "lpgKg": 0.14,
+        "keroseneL": 0.2,
+        "charcoalKg": 0.65,
+        "epcMinutes": 35,
+        "charcoalMinutes": 50
+      }
+    ]
+  },
+  "auctioneerCap526": {
+    "statute": "Auctioneers Act (Cap 526) — Fourth Schedule (Scale of Fees)",
+    "attendanceFees": {
+      "movableKes": 4000,
+      "immovableKes": 8000
+    },
+    "proclamationFeeKes": 2000,
+    "movableCommissionBands": [
+      { "label": "First KES 100,000", "upToKes": 100000, "rate": 0.1 },
+      { "label": "Next KES 900,000 (KES 100,001 – 1,000,000)", "upToKes": 1000000, "rate": 0.05 },
+      { "label": "Excess over KES 1,000,000", "upToKes": null, "rate": 0.025 }
+    ],
+    "immovableCommissionBands": [
+      { "label": "First KES 600,000", "upToKes": 600000, "rate": 0.1 },
+      { "label": "KES 600,001 – 3,000,000", "upToKes": 3000000, "rate": 0.05 },
+      { "label": "Excess over KES 3,000,000", "upToKes": null, "rate": 0.02 }
+    ],
+    "statutoryNoticeDays": {
+      "movableProclamationDays": 7,
+      "immovableRedemptionDays": 45,
+      "rentDistressSaleDays": 14
+    },
+    "exemptProperty": [
+      "Necessary wearing apparel, cooking vessels, and bedding of the debtor and family",
+      "Tools of trade and artisan implements necessary to earn a livelihood",
+      "Basic household food provisions for 30 days",
+      "Property belonging to a third party (subject to objection proceedings)"
+    ],
+    "illegalityRedFlags": [
+      "No valid court warrant of attachment or signed letter of instruction from a landlord/chargee",
+      "Expired or missing Auctioneers Licensing Board (ALB) Class A/B annual practicing certificate",
+      "Forcible entry into a residential home without an explicit court break-in order",
+      "Charging arbitrary transport, storage, or 'standby' fees not taxed by the court under Fourth Schedule",
+      "Removing proclaimed goods before the mandatory 7-day proclamation notice expires"
+    ]
+  },
+  "successionCap160": {
+    "statute": "Law of Succession Act (Cap 160), Laws of Kenya",
+    "sections": [
+      {
+        "section": "Section 35",
+        "scenario": "Monogamous intestate leaving surviving spouse and children",
+        "rule": "Surviving spouse receives personal and household effects absolutely plus a life interest in the whole net residue; children share the remainder equally upon termination of life interest (death or remarriage of widow)."
+      },
+      {
+        "section": "Section 38",
+        "scenario": "Intestate leaving children only (no surviving spouse)",
+        "rule": "Net intestate estate is divided equally among all surviving children (sons and daughters equally, regardless of marital status)."
+      },
+      {
+        "section": "Section 39",
+        "scenario": "Intestate leaving no surviving spouse or children",
+        "rule": "Devolves in strict statutory priority: (1) Father, (2) Mother, (3) Brothers and sisters (and children of deceased siblings), (4) Half-brothers/sisters, (5) Relatives up to 6th degree of consanguinity, (6) Consolidated Fund (Bona Vacantia)."
+      },
+      {
+        "section": "Section 40",
+        "scenario": "Polygamous intestate leaving multiple houses",
+        "rule": "Personal effects and net residue are divided among the houses according to the number of children in each house, adding any surviving wife as an additional unit to the number of children in her house."
+      }
+    ],
+    "aroProbateFeeBands": [
+      { "label": "First KES 1,000,000", "upToKes": 1000000, "rate": 0.05, "minFeeKes": 30000 },
+      { "label": "KES 1,000,001 – 5,000,000", "upToKes": 5000000, "rate": 0.03 },
+      { "label": "KES 5,000,001 – 20,000,000", "upToKes": 20000000, "rate": 0.02 },
+      { "label": "Excess over KES 20,000,000", "upToKes": null, "rate": 0.01 }
+    ],
+    "vatRate": 0.16,
+    "confirmationWaitMonths": 6,
+    "gazetteObjectionDays": 30,
+    "paChecklist": [
+      "Original Death Certificate (Civil Registration Services)",
+      "Area Chief's Letter listing all surviving dependants, spouses, children, and estate assets",
+      "Form P&A 80 — Petition for Letters of Administration Intestate",
+      "Form P&A 5 — Affidavit in Support (Schedule of Assets & Liabilities)",
+      "Form P&A 11 & P&A 57 — Guarantee by Personal Sureties",
+      "Form P&A 12 — Written Consent of All Adult Beneficiaries",
+      "Kenya Gazette Notice publication (mandatory 30-day objection window)",
+      "Form 108 — Summons for Confirmation of Grant (filed after 6 months)"
+    ]
+  },
+  "dukaUbp": {
+    "county": "Nairobi City County (2026 Unified Business Permit Schedule)",
+    "applicationFeeKes": 200,
+    "nairobiUbpTiers": [
+      { "id": "kiosk", "label": "Kiosk / Temporary Stall (< 5 m²)", "minFeeKes": 3500, "maxFeeKes": 4000, "defaultFeeKes": 3500 },
+      { "id": "mini-shop", "label": "Mini Shop / Small Duka (5 – 20 m²)", "minFeeKes": 5000, "maxFeeKes": 5000, "defaultFeeKes": 5000 },
+      { "id": "small-trader", "label": "Small Trader / Retail Shop (20 – 50 m²)", "minFeeKes": 10000, "maxFeeKes": 10000, "defaultFeeKes": 10000 },
+      { "id": "medium-shop", "label": "Medium Retail / Wholesale / Salon (50 – 100 m²)", "minFeeKes": 15000, "maxFeeKes": 15000, "defaultFeeKes": 15000 }
+    ],
+    "hustlePresets": [
+      {
+        "id": "duka",
+        "label": "Neighbourhood Duka (Retail)",
+        "defaultTierId": "mini-shop",
+        "grossMarginPct": 18,
+        "spoilagePct": 2,
+        "monthlyRentKes": 10000,
+        "monthlyUtilitiesKes": 2500,
+        "dailySalesBenchmarkKes": 8500
+      },
+      {
+        "id": "mama-mboga",
+        "label": "Mama Mboga (Fresh Produce)",
+        "defaultTierId": "kiosk",
+        "grossMarginPct": 32,
+        "spoilagePct": 12,
+        "monthlyRentKes": 4000,
+        "monthlyUtilitiesKes": 1000,
+        "dailySalesBenchmarkKes": 4500
+      },
+      {
+        "id": "mitumba",
+        "label": "Mitumba Bale Trader",
+        "defaultTierId": "kiosk",
+        "grossMarginPct": 40,
+        "spoilagePct": 8,
+        "monthlyRentKes": 6000,
+        "monthlyUtilitiesKes": 1200,
+        "dailySalesBenchmarkKes": 6000
+      },
+      {
+        "id": "kinyozi-salon",
+        "label": "Kinyozi / Beauty Salon",
+        "defaultTierId": "mini-shop",
+        "grossMarginPct": 65,
+        "spoilagePct": 3,
+        "monthlyRentKes": 12000,
+        "monthlyUtilitiesKes": 3500,
+        "dailySalesBenchmarkKes": 3500
+      }
+    ],
+    "complianceAddons": [
+      { "name": "Fire Clearance Certificate", "typicalKes": 2500 },
+      { "name": "Food Handler's Medical Certificate (6 months)", "typicalKes": 1000 },
+      { "name": "Public Health Hygiene Permit", "typicalKes": 2000 }
+    ]
+  },
+  "funeralHarambee": {
+    "benchmarkSource": "Kenyatta University Funeral Home (KUFH) / KUTRRH Sept 2026 Tariff Benchmarks",
+    "morgueRates": {
+      "transit0To24h": { "adultKes": 5500, "childKes": 3500 },
+      "days1To10Flat": { "adultKes": 10000, "childKes": 6000 },
+      "day11PlusPerDay": { "adultKes": 1000, "childKes": 700 },
+      "privatePostmortemKes": 15000
+    },
+    "costTiers": [
+      {
+        "id": "modest",
+        "label": "Modest / Family Funeral",
+        "coffinKes": 18000,
+        "hearseKes": 15000,
+        "tentsChairsKes": 15000,
+        "cateringKes": 35000,
+        "paProgrammesFlowersKes": 10000
+      },
+      {
+        "id": "standard",
+        "label": "Standard Kenyan Funeral",
+        "coffinKes": 45000,
+        "hearseKes": 35000,
+        "tentsChairsKes": 35000,
+        "cateringKes": 85000,
+        "paProgrammesFlowersKes": 25000
+      },
+      {
+        "id": "executive",
+        "label": "Large / Executive Funeral",
+        "coffinKes": 120000,
+        "hearseKes": 75000,
+        "tentsChairsKes": 80000,
+        "cateringKes": 200000,
+        "paProgrammesFlowersKes": 60000
+      }
+    ],
+    "defaultPledgeRealizationPct": 75,
+    "burialChecklist": [
+      "Notification of Death (B1) & Official Burial Permit",
+      "Deceased's Original National ID & Next-of-Kin ID copies",
+      "Area Chief's Burial Clearance Letter",
+      "Morgue Invoice Clearance & Body Release Form"
+    ]
+  },
+  "rainwater": {
+    "source": "Kenya Meteorological Department (KMD) 47-County Seasonal Averages & Retail Tank Benchmarks (2026)",
+    "roofRunoffCoefficients": {
+      "mabati": 0.9,
+      "tile": 0.85,
+      "concrete": 0.8,
+      "thatch": 0.25
+    },
+    "firstFlushLossPct": 5,
+    "tankBenchmarks": [
+      { "litres": 1500, "priceKes": 19185 },
+      { "litres": 3000, "priceKes": 29541 },
+      { "litres": 5000, "priceKes": 55417 },
+      { "litres": 10000, "priceKes": 105000 }
+    ],
+    "counties": [
+      { "code": 1, "name": "Mombasa", "mamMm": 520, "ondMm": 310, "annualMm": 1060, "drySpellDays": 65 },
+      { "code": 2, "name": "Kwale", "mamMm": 540, "ondMm": 320, "annualMm": 1100, "drySpellDays": 65 },
+      { "code": 3, "name": "Kilifi", "mamMm": 450, "ondMm": 270, "annualMm": 920, "drySpellDays": 75 },
+      { "code": 4, "name": "Tana River", "mamMm": 180, "ondMm": 190, "annualMm": 430, "drySpellDays": 115 },
+      { "code": 5, "name": "Lamu", "mamMm": 510, "ondMm": 240, "annualMm": 950, "drySpellDays": 80 },
+      { "code": 6, "name": "Taita-Taveta", "mamMm": 290, "ondMm": 260, "annualMm": 650, "drySpellDays": 90 },
+      { "code": 7, "name": "Garissa", "mamMm": 135, "ondMm": 155, "annualMm": 330, "drySpellDays": 135 },
+      { "code": 8, "name": "Wajir", "mamMm": 120, "ondMm": 130, "annualMm": 280, "drySpellDays": 145 },
+      { "code": 9, "name": "Mandera", "mamMm": 115, "ondMm": 120, "annualMm": 260, "drySpellDays": 150 },
+      { "code": 10, "name": "Marsabit", "mamMm": 160, "ondMm": 140, "annualMm": 350, "drySpellDays": 135 },
+      { "code": 11, "name": "Isiolo", "mamMm": 190, "ondMm": 180, "annualMm": 420, "drySpellDays": 120 },
+      { "code": 12, "name": "Meru", "mamMm": 520, "ondMm": 460, "annualMm": 1180, "drySpellDays": 60 },
+      { "code": 13, "name": "Tharaka-Nithi", "mamMm": 460, "ondMm": 410, "annualMm": 1020, "drySpellDays": 70 },
+      { "code": 14, "name": "Embu", "mamMm": 490, "ondMm": 390, "annualMm": 1080, "drySpellDays": 65 },
+      { "code": 15, "name": "Kitui", "mamMm": 280, "ondMm": 310, "annualMm": 670, "drySpellDays": 100 },
+      { "code": 16, "name": "Machakos", "mamMm": 330, "ondMm": 310, "annualMm": 760, "drySpellDays": 90 },
+      { "code": 17, "name": "Makueni", "mamMm": 290, "ondMm": 300, "annualMm": 680, "drySpellDays": 95 },
+      { "code": 18, "name": "Nyandarua", "mamMm": 470, "ondMm": 340, "annualMm": 1050, "drySpellDays": 60 },
+      { "code": 19, "name": "Nyeri", "mamMm": 510, "ondMm": 370, "annualMm": 1120, "drySpellDays": 55 },
+      { "code": 20, "name": "Kirinyaga", "mamMm": 540, "ondMm": 410, "annualMm": 1180, "drySpellDays": 55 },
+      { "code": 21, "name": "Murang'a", "mamMm": 560, "ondMm": 420, "annualMm": 1220, "drySpellDays": 55 },
+      { "code": 22, "name": "Kiambu", "mamMm": 480, "ondMm": 340, "annualMm": 1040, "drySpellDays": 65 },
+      { "code": 23, "name": "Turkana", "mamMm": 125, "ondMm": 95, "annualMm": 250, "drySpellDays": 155 },
+      { "code": 24, "name": "West Pokot", "mamMm": 390, "ondMm": 260, "annualMm": 860, "drySpellDays": 80 },
+      { "code": 25, "name": "Samburu", "mamMm": 220, "ondMm": 180, "annualMm": 480, "drySpellDays": 115 },
+      { "code": 26, "name": "Trans-Nzoia", "mamMm": 510, "ondMm": 330, "annualMm": 1180, "drySpellDays": 55 },
+      { "code": 27, "name": "Uasin Gishu", "mamMm": 460, "ondMm": 290, "annualMm": 1080, "drySpellDays": 60 },
+      { "code": 28, "name": "Elgeyo-Marakwet", "mamMm": 440, "ondMm": 280, "annualMm": 1020, "drySpellDays": 65 },
+      { "code": 29, "name": "Nandi", "mamMm": 580, "ondMm": 390, "annualMm": 1350, "drySpellDays": 45 },
+      { "code": 30, "name": "Baringo", "mamMm": 310, "ondMm": 210, "annualMm": 680, "drySpellDays": 95 },
+      { "code": 31, "name": "Laikipia", "mamMm": 320, "ondMm": 250, "annualMm": 720, "drySpellDays": 85 },
+      { "code": 32, "name": "Nakuru", "mamMm": 410, "ondMm": 290, "annualMm": 940, "drySpellDays": 70 },
+      { "code": 33, "name": "Narok", "mamMm": 380, "ondMm": 260, "annualMm": 840, "drySpellDays": 80 },
+      { "code": 34, "name": "Kajiado", "mamMm": 260, "ondMm": 220, "annualMm": 560, "drySpellDays": 105 },
+      { "code": 35, "name": "Kericho", "mamMm": 610, "ondMm": 410, "annualMm": 1400, "drySpellDays": 40 },
+      { "code": 36, "name": "Bomet", "mamMm": 540, "ondMm": 360, "annualMm": 1240, "drySpellDays": 50 },
+      { "code": 37, "name": "Kakamega", "mamMm": 620, "ondMm": 420, "annualMm": 1400, "drySpellDays": 40 },
+      { "code": 38, "name": "Vihiga", "mamMm": 600, "ondMm": 410, "annualMm": 1380, "drySpellDays": 40 },
+      { "code": 39, "name": "Bungoma", "mamMm": 560, "ondMm": 370, "annualMm": 1280, "drySpellDays": 50 },
+      { "code": 40, "name": "Busia", "mamMm": 550, "ondMm": 380, "annualMm": 1260, "drySpellDays": 50 },
+      { "code": 41, "name": "Siaya", "mamMm": 520, "ondMm": 360, "annualMm": 1180, "drySpellDays": 55 },
+      { "code": 42, "name": "Kisumu", "mamMm": 530, "ondMm": 370, "annualMm": 1200, "drySpellDays": 55 },
+      { "code": 43, "name": "Homa Bay", "mamMm": 490, "ondMm": 350, "annualMm": 1120, "drySpellDays": 60 },
+      { "code": 44, "name": "Migori", "mamMm": 510, "ondMm": 370, "annualMm": 1160, "drySpellDays": 55 },
+      { "code": 45, "name": "Kisii", "mamMm": 610, "ondMm": 430, "annualMm": 1400, "drySpellDays": 35 },
+      { "code": 46, "name": "Nyamira", "mamMm": 590, "ondMm": 420, "annualMm": 1360, "drySpellDays": 40 },
+      { "code": 47, "name": "Nairobi", "mamMm": 430, "ondMm": 310, "annualMm": 920, "drySpellDays": 75 }
+    ]
+  },
+  "fertilizerSeed": {
+    "source": "National Fertilizer Subsidy Programme (NFSP) 2026, KALRO & NCPB",
+    "fertilizerPrices50kgKes": {
+      "evoucher": 2500,
+      "commercialDap": 6250,
+      "commercialCan": 5490,
+      "commercialNpk": 6000
+    },
+    "ncpbMaizeFloor90kgKes": 4000,
+    "crops": [
+      {
+        "id": "maize",
+        "label": "Maize (KALRO H614D / H6213 / DK8031)",
+        "spacing": "75 cm × 30 cm",
+        "seedKgPerAcre": 10,
+        "seedPricePerKgKes": 300,
+        "plantingBagsPerAcre": 1,
+        "topDressBagsPerAcre": 1,
+        "plantingFertType": "DAP",
+        "topDressFertType": "CAN",
+        "otherCostsPerAcreKes": 14000,
+        "unitLabel": "90 kg bag",
+        "yieldRange": { "low": 15, "avg": 22, "high": 32 },
+        "defaultFarmgatePriceKes": 4000
+      },
+      {
+        "id": "beans",
+        "label": "Beans (KALRO Nyota / Rosecoco GLP-2)",
+        "spacing": "50 cm × 15 cm",
+        "seedKgPerAcre": 20,
+        "seedPricePerKgKes": 280,
+        "plantingBagsPerAcre": 1,
+        "topDressBagsPerAcre": 0,
+        "plantingFertType": "DAP",
+        "topDressFertType": "None",
+        "otherCostsPerAcreKes": 11000,
+        "unitLabel": "90 kg bag",
+        "yieldRange": { "low": 5, "avg": 8, "high": 12 },
+        "defaultFarmgatePriceKes": 11500
+      },
+      {
+        "id": "potatoes",
+        "label": "Irish Potatoes (KALRO Shangi / Unica)",
+        "spacing": "75 cm × 30 cm",
+        "seedKgPerAcre": 800,
+        "seedPricePerKgKes": 70,
+        "plantingBagsPerAcre": 2,
+        "topDressBagsPerAcre": 1,
+        "plantingFertType": "NPK",
+        "topDressFertType": "CAN",
+        "otherCostsPerAcreKes": 28000,
+        "unitLabel": "50 kg bag",
+        "yieldRange": { "low": 80, "avg": 130, "high": 180 },
+        "defaultFarmgatePriceKes": 2200
+      },
+      {
+        "id": "onions",
+        "label": "Bulb Onions (Red Creole / Jambar F1)",
+        "spacing": "30 cm × 10 cm",
+        "seedKgPerAcre": 1,
+        "seedPricePerKgKes": 14000,
+        "plantingBagsPerAcre": 2,
+        "topDressBagsPerAcre": 2,
+        "plantingFertType": "DAP",
+        "topDressFertType": "CAN",
+        "otherCostsPerAcreKes": 45000,
+        "unitLabel": "kg",
+        "yieldRange": { "low": 6000, "avg": 10000, "high": 14000 },
+        "defaultFarmgatePriceKes": 65
+      }
+    ]
+  },
+  "dairyRation": {
+    "source": "KALRO Dairy Research Institute & Kenya Dairy Board (2026)",
+    "forageBaselineKgRange": [90, 110],
+    "waterBaselineLitres": 60,
+    "dairyMealPricePerKgKes": 45,
+    "dairyMealTiersKg": [0.5, 1, 2, 3, 4, 5, 6],
+    "silageSavingsFactor": 0.25,
+    "milkPayoutBenchmarkKesPerL": 50,
+    "mineralSaltCostPerDayKes": 25,
+    "forageCostPerKgKes": 3.5,
+    "breeds": [
+      { "id": "friesian", "label": "Friesian", "bodyWeightKg": 450, "dailyForageKg": 110, "dailyWaterL": 70, "typicalYieldL": 22 },
+      { "id": "ayrshire", "label": "Ayrshire", "bodyWeightKg": 420, "dailyForageKg": 100, "dailyWaterL": 65, "typicalYieldL": 18 },
+      { "id": "guernsey", "label": "Guernsey", "bodyWeightKg": 400, "dailyForageKg": 95, "dailyWaterL": 60, "typicalYieldL": 16 },
+      { "id": "jersey", "label": "Jersey", "bodyWeightKg": 350, "dailyForageKg": 90, "dailyWaterL": 60, "typicalYieldL": 14 }
+    ]
+  },
+  "landSubdivision": {
+    "statute": "Land Control Act (Cap 302) & Ministry of Lands Service Charter (2025)",
+    "lcbVoidCliffDays": 180,
+    "fees": {
+      "officialSearchKes": 1000,
+      "mapSearchKes": 500,
+      "regularLcbKes": 3000,
+      "regularLcbDays": 30,
+      "specialLcbKes": 10000,
+      "specialLcbDays": 2,
+      "mutationRimMinKes": 5000,
+      "newTitlePerPlotKes": 3500,
+      "licensedSurveyorPerPlotEstimateKes": 12000
+    },
+    "checklist": [
+      "Official Land Search (KES 1,000) & Registry Index Map / RIM Search (KES 500)",
+      "Physical Planning Approval (Form PPA2) from County Lands & Physical Planning Office",
+      "Land Control Board (LCB) Application + Spousal Consent within 6 months (180 days) of agreement",
+      "Licensed Surveyor Mutation Form & Beacon Placement (ISK-registered surveyor)",
+      "Land Rates & Rent Clearance Certificates (where applicable)",
+      "Registration of Mutation & RIM Amendment at Survey of Kenya / Ardhisasa",
+      "Issuance of New Individual Title Deeds (KES 3,500 per resulting plot)"
+    ]
+  },
+  "biogas": {
+    "source": "Kenya Biogas Program (KBP) & Domestic Digester Market Benchmarks (2026)",
+    "gasPerCowPerDayM3": 0.5,
+    "dungPerCowKgPerDay": 12,
+    "biogasLitresPerKgFirewood": 200,
+    "biogasLitresPerKgCharcoal": 500,
+    "biogasLitresPerPersonPerMeal": 220,
+    "prefabKits": [
+      { "id": "6m3", "sizeM3": 6, "minCows": 2, "maxCows": 4, "dailyGasM3": 1.5, "priceKes": 44500, "householdFit": "3–5 people" },
+      { "id": "9m3", "sizeM3": 9, "minCows": 4, "maxCows": 6, "dailyGasM3": 2.5, "priceKes": 55000, "householdFit": "5–8 people" },
+      { "id": "12m3", "sizeM3": 12, "minCows": 6, "maxCows": 10, "dailyGasM3": 3.5, "priceKes": 75000, "householdFit": "8–14 people" }
+    ]
+  },
+  "livestockCalendar": {
+    "source": "Directorate of Veterinary Services (DVS) & KEVEVAPI Official Schedules",
+    "gestationDays": {
+      "cattle": 283,
+      "goat": 150,
+      "sheep": 150,
+      "pig": 114
+    },
+    "ruminantVaccines": [
+      { "id": "fmd", "name": "Foot & Mouth Disease (FMD / Fotivax)", "intervalMonths": 6, "species": ["cattle", "goat", "sheep", "pig"], "notes": "Administer every 6 months ahead of wet-season outbreaks." },
+      { "id": "ppr", "name": "Peste des Petits Ruminants (PPR)", "intervalMonths": 12, "species": ["goat", "sheep"], "notes": "Annual vaccination for all goats and sheep from 3 months of age." },
+      { "id": "lsd", "name": "Lumpy Skin Disease (LSD / Lumpivax)", "intervalMonths": 12, "species": ["cattle"], "notes": "Annual cattle booster before peak biting-fly season." },
+      { "id": "blanthrax", "name": "Anthrax & Blackquarter (Blanthrax)", "intervalMonths": 12, "species": ["cattle", "goat", "sheep"], "notes": "Annual vaccination in endemic grazing zones." },
+      { "id": "ecf", "name": "East Coast Fever (ECF — ITM)", "intervalMonths": 0, "species": ["cattle"], "notes": "Single lifelong immunization administered by a licensed veterinary officer." }
+    ],
+    "poultrySchedule": [
+      { "day": 1, "label": "Day 1", "vaccine": "Marek's Disease", "route": "Subcutaneous (Hatchery)" },
+      { "day": 7, "label": "Day 7", "vaccine": "Newcastle Disease + Infectious Bronchitis (HB1 / Lasota)", "route": "Eye drop / Drinking water" },
+      { "day": 14, "label": "Day 14 (Week 2)", "vaccine": "Gumboro / IBD (1st Dose)", "route": "Drinking water" },
+      { "day": 21, "label": "Day 21 (Week 3)", "vaccine": "Newcastle Disease + IB Booster", "route": "Drinking water" },
+      { "day": 28, "label": "Day 28 (Week 4)", "vaccine": "Gumboro / IBD (2nd Dose)", "route": "Drinking water" },
+      { "day": 42, "label": "Week 6", "vaccine": "Fowl Pox", "route": "Wing-web stab" },
+      { "day": 56, "label": "Week 8", "vaccine": "Fowl Typhoid (Layers / Kienyeji)", "route": "Intramuscular injection" },
+      { "day": 112, "label": "Week 16", "vaccine": "Newcastle + IB + EDS Pre-Lay Booster", "route": "Intramuscular / Drinking water" }
+    ]
+  },
+  "ecitizenDocs": {
+    "source": "eCitizen, Huduma Kenya, NRB (L.N. 76/2026), Immigration, CRS, DCI & OAG",
+    "documents": [
+      {
+        "id": "national-id-new",
+        "label": "National ID (New / First-Time Maisha Card)",
+        "agency": "National Registration Bureau (NRB) / Huduma Centre",
+        "feeKes": 0,
+        "legalAuthority": "Legal Notice No. 76 of 2026",
+        "turnaroundDays": 14,
+        "requiredDocs": ["Original Birth Certificate & copy", "Parents' National ID copies", "KCPE/KCSE or School Leaving Certificate (if requested)", "Applicant present in person for biometrics"]
+      },
+      {
+        "id": "national-id-replacement",
+        "label": "National ID (Lost / Duplicate Replacement)",
+        "agency": "National Registration Bureau (NRB) / Huduma Centre",
+        "feeKes": 0,
+        "legalAuthority": "Legal Notice No. 76 of 2026",
+        "turnaroundDays": 14,
+        "requiredDocs": ["Police Abstract for lost ID (or damaged original ID)", "Copy of lost ID or Birth Certificate", "Applicant present in person for biometrics"]
+      },
+      {
+        "id": "epassport-66",
+        "label": "66-Page Ordinary e-Passport (Series C)",
+        "agency": "Directorate of Immigration Services (eCitizen)",
+        "feeKes": 12500,
+        "lostFeeKes": 12050,
+        "mutilatedFeeKes": 10050,
+        "turnaroundDays": 21,
+        "requiredDocs": ["Printed eCitizen Application Form & Payment Receipt", "Original National ID & Birth Certificate (+ copies)", "Recommender's National ID copy", "2 recent white-background passport photos", "Old passport (for renewals) or Police Abstract (if lost)"]
+      },
+      {
+        "id": "birth-certificate",
+        "label": "Birth Certificate (Current & Late Registration)",
+        "agency": "Civil Registration Services (CRS) / Huduma Centre",
+        "feeKes": 250,
+        "lateFeeKes": 700,
+        "lateBreakdown": "KES 500 late registration + KES 200 certificate fee",
+        "turnaroundDays": 10,
+        "requiredDocs": ["Hospital Notification of Birth (B1)", "Parents' National IDs or Passports", "Immunization card / Chief's letter (for late registration)"]
+      },
+      {
+        "id": "good-conduct",
+        "label": "Police Clearance Certificate (Good Conduct)",
+        "agency": "Directorate of Criminal Investigations (DCI)",
+        "feeKes": 1050,
+        "turnaroundDays": 14,
+        "requiredDocs": ["eCitizen Invoice & Fingerprint Form C24", "Original National ID (citizens) or Passport/Alien Card (foreigners)", "Booked biometric appointment at Huduma Centre or DCI HQ"]
+      },
+      {
+        "id": "civil-marriage",
+        "label": "Civil Marriage Registration (Notice + Certificate)",
+        "agency": "Office of the Registrar of Marriages (OAG)",
+        "noticeFeeKes": 600,
+        "certificateFeeKes": 3300,
+        "feeKes": 3900,
+        "turnaroundDays": 21,
+        "requiredDocs": ["Original National IDs / Passports & Birth Certificates of both parties", "2 coloured passport photos each", "Affidavit of Marital Status (or Divorce Decree Absolute / Death Certificate if previously married)", "2 adult witnesses with original IDs on wedding day"]
+      }
+    ]
+  },
+  "tvetKmtc": {
+    "source": "KNQA (KNQF Levels 4–6), TVETA, KUCCPS & KMTC 2026 Admission Criteria",
+    "knqfLevels": [
+      {
+        "level": 4,
+        "name": "Artisan Certificate",
+        "minKcse": "E / D-",
+        "eligibleGrades": ["E", "D-", "D", "D+", "C-", "C", "C+", "B-", "B", "B+", "A-", "A"],
+        "durationMonths": 12,
+        "upgradePath": "Upgrade directly to KNQF Level 5 (Craft Certificate) after KNEC Artisan assessment."
+      },
+      {
+        "level": 5,
+        "name": "Craft Certificate",
+        "minKcse": "D / D+",
+        "eligibleGrades": ["D", "D+", "C-", "C", "C+", "B-", "B", "B+", "A-", "A"],
+        "durationMonths": 24,
+        "upgradePath": "Upgrade to KNQF Level 6 (Diploma) with TVET credit progression."
+      },
+      {
+        "level": 6,
+        "name": "Diploma",
+        "minKcse": "C- / C",
+        "eligibleGrades": ["C-", "C", "C+", "B-", "B", "B+", "A-", "A"],
+        "durationMonths": 36,
+        "upgradePath": "Articulate into Bachelor's Degree (KNQF Level 7) with university credit exemptions."
+      }
+    ],
+    "kmtcProgrammes": [
+      { "id": "dip-nursing", "name": "Diploma in Kenya Registered Community Health Nursing (KRCHN)", "minMeanGrade": "C", "knqfLevel": 6, "durationYears": 3, "keySubjects": "Eng/Kis C, Bio C, Chem/Phy/Math C-" },
+      { "id": "dip-clinical-med", "name": "Diploma in Clinical Medicine & Surgery", "minMeanGrade": "C", "knqfLevel": 6, "durationYears": 3, "keySubjects": "Eng/Kis C, Bio C, Chem C-, Math/Phy C-" },
+      { "id": "cert-nursing", "name": "Certificate in Community Health Nursing", "minMeanGrade": "C-", "knqfLevel": 5, "durationYears": 2, "keySubjects": "Eng/Kis C-, Bio C-, Chem/Phy/Math D+" },
+      { "id": "cert-nutrition", "name": "Certificate in Nutrition & Dietetics", "minMeanGrade": "C-", "knqfLevel": 5, "durationYears": 2, "keySubjects": "Eng/Kis D+, Bio D+, Chem D+" },
+      { "id": "cert-ortho-trauma", "name": "Certificate in Orthopaedic & Trauma Medicine", "minMeanGrade": "C-", "knqfLevel": 5, "durationYears": 2, "keySubjects": "Eng/Kis C-, Bio C-, Chem/Phy/Math D+" },
+      { "id": "cert-public-health", "name": "Certificate in Public Health", "minMeanGrade": "D+", "knqfLevel": 5, "durationYears": 2, "keySubjects": "Eng/Kis D+, Bio D+, Chem/Math D" },
+      { "id": "cert-mortuary", "name": "Certificate in Mortuary Science", "minMeanGrade": "D", "knqfLevel": 5, "durationYears": 2, "keySubjects": "Eng/Kis D, Bio D, Chem D-" }
+    ]
+  },
+  "usedCarElogbook": {
+    "source": "NTSA eLogbook Directive (June 10, 2026), IRA & EPRA Pump Prices",
+    "elogbookEffectiveDate": "2026-06-10",
+    "transferDeadlineDays": 14,
+    "otpExpiryDays": 7,
+    "formViiCopyOfRecordsKes": 550,
+    "eStickerFeeKes": 750,
+    "comprehensiveAgeCutoffYears": 15,
+    "insuranceMinKes": {
+      "tpo": 5000,
+      "comprehensive": 25000
+    },
+    "epraFuelKesPerL": {
+      "petrol": 226.96,
+      "diesel": 227.76
+    },
+    "redFlagChecks": [
+      "Run official eCitizen NTSA Form VII Copy of Records (KES 550) — confirm owner name, ID, chassis & engine numbers match",
+      "Check for bank chattel mortgage, logbook loan caveat, or joint-ownership encumbrance on TIMS/eCitizen",
+      "Verify seller can initiate the eLogbook transfer OTP live (OTP expires in 7 days; transfer must complete within 14 days)",
+      "Inspect physical VIN/chassis plate and engine block stamp for grinding, re-welding, or mismatched rivets",
+      "Cross-check vehicle manufacture year against the 15-year comprehensive insurance cutoff",
+      "Verify NTSA e-sticker (KES 750) and current inspection/roadworthiness status",
+      "Check KRA customs entry / duty-paid confirmation for recently registered imports",
+      "Inspect odometer history and service records for mileage rollback",
+      "Check paint thickness, chassis rails, and airbag warning lights for hidden salvage/accident repairs",
+      "Confirm seller's National ID & KRA PIN match the registered owner (never pay third-party brokers without verified Power of Attorney)"
+    ]
+  },
+  "childMaintenance": {
+    "statute": "Children Act, 2022 (Cap 141)",
+    "sections": {
+      "s110": "Parental responsibility and duty to maintain the child (food, shelter, clothing, education, medical care)",
+      "s114": "Court criteria for maintenance orders (proportional to each parent's income, earning capacity, and child's needs)",
+      "s33": "Parental Responsibility Agreement (PRA) — legally binding co-parenting agreement enforceable in Children's Court"
+    },
+    "contemptFineCeilingKes": 500000,
+    "expenseCategories": [
+      { "id": "school-fees", "label": "School Fees, Books & Uniforms", "defaultMonthlyKes": 15000 },
+      { "id": "food", "label": "Food & Groceries", "defaultMonthlyKes": 12000 },
+      { "id": "housing", "label": "Child's Share of Housing & Utilities", "defaultMonthlyKes": 10000 },
+      { "id": "medical", "label": "Medical Care / SHA & Dental", "defaultMonthlyKes": 4000 },
+      { "id": "clothing", "label": "Clothing & Personal Care", "defaultMonthlyKes": 3500 },
+      { "id": "transport", "label": "School Transport & Activities", "defaultMonthlyKes": 4500 }
+    ],
+    "checklist": [
+      "Child's Original Birth Certificate (or Acknowledgement of Paternity)",
+      "Sworn Affidavit of Means (payslips, M-Pesa/bank statements, monthly expenses)",
+      "Official School Fee Structures, receipts, and medical invoices",
+      "Draft Parental Responsibility Agreement (PRA) under s.33 or Children's Court Plaint",
+      "Proof of prior maintenance attempts or mediation via Sub-County Children's Officer"
+    ]
+  },
+  "article49Rights": {
+    "statute": "Constitution of Kenya (2010) — Article 49 (Rights of Arrested Persons)",
+    "rules": {
+      "twentyFourHourRule": "Article 49(1)(f): Must be brought before a court as soon as reasonably possible, and not later than 24 hours after arrest (or end of the next court day if the 24 hours ends outside ordinary court hours).",
+      "bailAndBondRule": "Article 49(1)(h): Right to be released on bond or bail on reasonable conditions pending a charge or trial, unless there are compelling reasons not to be released.",
+      "pettyOffenceNoRemandRule": "Article 49(2): A person shall not be remanded in custody for an offence punishable by a fine only or by imprisonment for not more than 6 months."
+    },
+    "ipoa": {
+      "tollFree": "1559",
+      "whatsapp": "0742-515-672",
+      "email": "complaints@ipoa.go.ke",
+      "hours": "24/7 Toll-Free"
+    },
+    "scripts": [
+      {
+        "id": "reason-and-id",
+        "title": "Ask Reason for Arrest & Officer Identification",
+        "english": "Officer, under Article 49(1)(a) of the Constitution, please tell me clearly why I am being arrested, your name, service number, and which police station we are going to.",
+        "swahili": "Afisa, kulingana na Kifungu cha 49(1)(a) cha Katiba, tafadhali nieleze wazi sababu ya kunikamata, jina lako, nambari yako ya kazi, na kituo cha polisi tunachoelekea."
+      },
+      {
+        "id": "call-advocate",
+        "title": "Request to Contact Family or Advocate",
+        "english": "Under Article 49(1)(c), I have the right to communicate with an advocate and a family member. Please allow me to make a phone call and give me the OB number.",
+        "swahili": "Chini ya Kifungu cha 49(1)(c), nina haki ya kuwasiliana na wakili na mtu wa familia. Tafadhali niruhusu kupiga simu na unipe nambari ya OB."
+      },
+      {
+        "id": "remain-silent",
+        "title": "Assert Right to Remain Silent",
+        "english": "Under Article 49(1)(b) and (d), I choose to remain silent and will not sign any statement or confession without my advocate present.",
+        "swahili": "Chini ya Kifungu cha 49(1)(b) na (d), nachagua kukaa kimya na sitatia sahihi taarifa yoyote bila wakili wangu kuwepo."
+      },
+      {
+        "id": "police-bail",
+        "title": "Request Police Cash Bail & 24-Hour Compliance",
+        "english": "Under Article 49(1)(f), (h) and 49(2), I request release on reasonable police cash bail with an official receipt, or arraignment in court within 24 hours.",
+        "swahili": "Chini ya Kifungu cha 49(1)(f), (h) na 49(2), naomba kuachiliwa kwa dhamana ya polisi (cash bail) na risiti rasmi, au kufikishwa mahakamani ndani ya saa 24."
+      }
+    ]
+  }
+}

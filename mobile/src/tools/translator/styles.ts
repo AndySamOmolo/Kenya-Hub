@@ -80,8 +80,10 @@ export const createStyles = (theme: ThemeColors, metrics?: ThemeMetrics) => {
     },
     randomHeaderRow: {
       flexDirection: "row",
+      flexWrap: "wrap",
       justifyContent: "space-between",
       alignItems: "center",
+      gap: sp(6),
       marginBottom: sp(8),
     },
     randomTag: {
@@ -306,6 +308,7 @@ export const createStyles = (theme: ThemeColors, metrics?: ThemeMetrics) => {
     },
     resultHeader: {
       flexDirection: "row",
+      flexWrap: "wrap",
       justifyContent: "space-between",
       alignItems: "flex-start",
       gap: sp(8),
@@ -471,8 +474,10 @@ export const createStyles = (theme: ThemeColors, metrics?: ThemeMetrics) => {
     },
     compareCardHeader: {
       flexDirection: "row",
+      flexWrap: "wrap",
       justifyContent: "space-between",
       alignItems: "center",
+      gap: sp(6),
     },
     compareLangName: {
       fontSize: fs(13),
@@ -497,8 +502,10 @@ export const createStyles = (theme: ThemeColors, metrics?: ThemeMetrics) => {
     },
     missingWordRow: {
       flexDirection: "row",
+      flexWrap: "wrap",
       justifyContent: "space-between",
       alignItems: "center",
+      gap: sp(6),
       marginTop: 2,
     },
     missingWordText: {

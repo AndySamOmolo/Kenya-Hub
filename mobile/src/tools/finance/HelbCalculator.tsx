@@ -260,14 +260,16 @@ export function HelbCalculator() {
                 key={row.year}
                 style={{
                   flexDirection: "row",
+                  flexWrap: "wrap",
                   justifyContent: "space-between",
                   alignItems: "center",
+                  gap: 8,
                   paddingVertical: 7,
                   borderBottomWidth: 1,
                   borderBottomColor: theme.border,
                 }}
               >
-                <View style={{ flex: 1 }}>
+                <View style={{ flexGrow: 1, flexShrink: 1, minWidth: 160 }}>
                   <Text style={{ fontSize: 12.5, fontWeight: "800", color: theme.gold }}>
                     {row.year}
                   </Text>
