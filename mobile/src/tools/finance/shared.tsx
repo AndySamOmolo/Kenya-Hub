@@ -9,14 +9,20 @@ import {
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import {
+  useTheme,
   useDynamicStyles,
   androidRipple,
   pressableStyle,
   triggerHaptic,
+  getContrastInk,
+  getThemedCardStyle,
+  getThemedInputStyle,
+  getThemedNumericStyle,
   type ThemeColors,
+  type ThemeConfig,
+  type ThemeMetrics,
 } from "../../theme";
 import { ExpandablePillRow } from "../../components/ExpandablePillRow";
-import { getContrastInk } from "../../theme";
 
 /**
  * Formats a numeric string with thousands commas (e.g., "2400000" -> "2,400,000")
@@ -276,6 +282,7 @@ export function Row({
   isTotal?: boolean;
 }) {
   const { theme, styles } = useDynamicStyles(createStyles);
+  const { resolvedFonts } = useTheme();
   return (
     <View
       style={[
@@ -290,7 +297,7 @@ export function Row({
       <Text
         style={[
           styles.rowLabel,
-          isTotal && { fontFamily: hf("Outfit_700Bold"), color: theme.textPrimary },
+          isTotal && { fontFamily: resolvedFonts?.heading || "Outfit_700Bold", color: theme.textPrimary },
         ]}
       >
         {label}
@@ -301,7 +308,7 @@ export function Row({
           isDeduction && { color: theme.kenyaRedLight },
           isPositive && { color: theme.kenyaGreenLight },
           isTotal && {
-            fontFamily: hf("Outfit_800ExtraBold"),
+            fontFamily: resolvedFonts?.heading || "Outfit_800ExtraBold",
             color: theme.gold,
             fontSize: 15,
           },
@@ -325,6 +332,7 @@ export function BreakdownBar({
   segments: { label: string; value: number; color: string }[];
 }) {
   const { theme, styles } = useDynamicStyles(createStyles);
+  const { resolvedFonts } = useTheme();
   const validSegments = segments.filter((s) => s.value > 0);
   const total = validSegments.reduce((acc, s) => acc + s.value, 0);
   if (total <= 0 || validSegments.length === 0) return null;
@@ -355,7 +363,7 @@ export function BreakdownBar({
               <View style={[styles.legendDot, { backgroundColor: seg.color }]} />
               <Text style={[styles.legendText, { color: theme.textSecondary }]}>
                 {seg.label}:{" "}
-                <Text style={{ fontFamily: hf("Outfit_700Bold"), color: theme.textPrimary }}>
+                <Text style={{ fontFamily: resolvedFonts?.heading || "Outfit_700Bold", color: theme.textPrimary }}>
                   {pct}%
                 </Text>
               </Text>
@@ -445,8 +453,7 @@ export const createStyles = (
   const cRad = metrics?.cardRadiusPx ?? 16;
   const bRad = metrics?.buttonRadiusPx ?? 12;
   const fScale = metrics?.fontScale ?? 1;
-  return
-  StyleSheet.create({
+  return StyleSheet.create({
     toolWrap: {
       gap: 14,
     },

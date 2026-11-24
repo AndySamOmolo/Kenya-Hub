@@ -38,6 +38,9 @@ import {
   type PressEffect,
 } from "./lib/theme-engine";
 
+export { hexToRgba, mixHex, getContrastInk, isValidHexColor };
+export type { ThemeConfig, ThemeMetrics, ThemeMode, CustomColorsConfig, HapticStrength, PressEffect };
+
 export const darkColors = {
   isDark: true,
   // Cultural Flag Colors

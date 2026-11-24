@@ -893,6 +893,7 @@ export function ThemeSettingsView() {
     backup: false,
   });
   const [presetModeFilter, setPresetModeFilter] = useState<"all" | "dark" | "light">("all");
+  const [presetFullTransform, setPresetFullTransform] = useState<boolean>(true);
   const [saveThemeName, setSaveThemeName] = useState<string>("");
   const [saveThemeFeedback, setSaveThemeFeedback] = useState<string | null>(null);
   const [hexDrafts, setHexDrafts] = useState<Record<string, string>>({});

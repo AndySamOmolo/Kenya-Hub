@@ -19,6 +19,7 @@ import {
   pressableStyle,
   triggerHaptic,
   getThemedCardStyle,
+  hexToRgba,
   darkColors,
 } from "../../theme";
 import type { HomeLayoutPreset, ThemeConfig, ThemeMetrics } from "../../lib/theme-engine";
