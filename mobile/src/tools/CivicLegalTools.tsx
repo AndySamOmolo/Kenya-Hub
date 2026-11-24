@@ -605,7 +605,7 @@ export function BomaYanguTool() {
           style={{ flexDirection: "row", alignItems: "center", gap: 6, marginTop: 4 }}
         >
           <Ionicons name="open-outline" size={14} color={theme.gold} />
-          <Text style={{ fontSize: 12.5, fontFamily: "Outfit_700Bold", color: theme.gold, textDecorationLine: "underline" }}>
+          <Text style={[{ fontSize: 12.5, fontFamily: "Outfit_700Bold", color: theme.gold, textDecorationLine: "underline" }, { flexShrink: 1 }]}>
             bomayangu.go.ke ↗
           </Text>
         </Pressable>

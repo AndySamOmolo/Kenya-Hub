@@ -727,7 +727,7 @@ export function DairyRationMarginTool() {
               size={18}
               color={useSilage ? theme.kenyaGreenLight : theme.textMuted}
             />
-            <Text style={styles.rowLabel}>Home-Grown Maize Silage (-25% forage cost)</Text>
+            <Text style={[styles.rowLabel, { flexShrink: 1 }]}>Home-Grown Maize Silage (-25% forage cost)</Text>
           </View>
           <Text style={[styles.badgeText, { color: theme.kenyaGreenLight }]}>
             {useSilage ? `Saves ${fmtKes(calc.herdMonthlySilageSavings)}/mo` : "Off"}
@@ -925,7 +925,7 @@ export function LandSubdivisionPlannerTool() {
               size={18}
               color={includeSurveyor ? theme.kenyaGreenLight : theme.textMuted}
             />
-            <Text style={styles.rowLabel}>Include Licensed Surveyor Estimate (KES 12,000/plot)</Text>
+            <Text style={[styles.rowLabel, { flexShrink: 1 }]}>Include Licensed Surveyor Estimate (KES 12,000/plot)</Text>
           </View>
           <Text style={styles.amountText}>{fmtKes(calc.surveyorEst)}</Text>
         </View>

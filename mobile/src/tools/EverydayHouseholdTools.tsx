@@ -658,7 +658,7 @@ export function AuctioneerFeeShieldTool() {
               size={18}
               color={includeProclamation ? theme.kenyaGreenLight : theme.textMuted}
             />
-            <Text style={styles.rowLabel}>Include Proclamation Fee (KES 2,000)</Text>
+            <Text style={[styles.rowLabel, { flexShrink: 1 }]}>Include Proclamation Fee (KES 2,000)</Text>
           </View>
           <Text style={styles.cardSub}>
             {includeProclamation ? fmtKes(data.proclamationFeeKes) : "KES 0"}
@@ -972,11 +972,11 @@ export function SuccessionCap160Tool() {
                       size={16}
                       color={h.hasWife ? theme.kenyaGreenLight : theme.textMuted}
                     />
-                    <Text style={styles.cardSub}>Surviving Wife (+1 unit)</Text>
+                    <Text style={[styles.cardSub, { flexShrink: 1 }]}>Surviving Wife (+1 unit)</Text>
                   </Pressable>
                 </View>
                 <View style={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
-                  <Text style={styles.cardSub}>Kids:</Text>
+                  <Text style={[styles.cardSub, { flexShrink: 1 }]}>Kids:</Text>
                   <TextInput
                     value={h.children}
                     onChangeText={(t) =>
@@ -1628,7 +1628,7 @@ export function FuneralHarambeePlannerTool() {
               size={18}
               color={includePostmortem ? theme.kenyaGreenLight : theme.textMuted}
             />
-            <Text style={styles.rowLabel}>Private Postmortem Fee</Text>
+            <Text style={[styles.rowLabel, { flexShrink: 1 }]}>Private Postmortem Fee</Text>
           </View>
           <Text style={styles.amountText}>
             {includePostmortem ? fmtKes(data.morgueRates.privatePostmortemKes) : "KES 0"}

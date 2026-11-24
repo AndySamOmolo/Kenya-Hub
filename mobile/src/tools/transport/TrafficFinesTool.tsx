@@ -106,7 +106,7 @@ export function TrafficFinesTool({ onScrollToTop }: { onScrollToTop?: () => void
                   style={[
                     styles.categoryChipText,
                     { color: active ? theme.kenyaBlack : theme.textPrimary },
-                  ]}
+                  , { flexShrink: 1 }]}
                 >
                   {cat.name}
                 </Text>

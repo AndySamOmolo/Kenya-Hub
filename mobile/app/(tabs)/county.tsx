@@ -1113,6 +1113,7 @@ export default function CountyScreen() {
 
   return (
     <SafeAreaView
+      key={`screen-${theme.isDark ? "d" : "l"}-${themeConfig?.presetId || "def"}-${themeConfig?.surfaceStyle || "elev"}`}
       style={[styles.container, { backgroundColor: theme.bgPrimary }]}
       edges={["top", "left", "right"]}
     >
@@ -1253,7 +1254,7 @@ export default function CountyScreen() {
 
             {/* Sort By Row */}
             <View style={styles.sortRow}>
-              <Text style={[styles.sortLabel, { color: theme.textMuted }]}>
+              <Text style={[styles.sortLabel, { color: theme.textMuted }, { flexShrink: 1 }]}>
                 SORT BY
               </Text>
               <ExpandablePillRow
@@ -1837,11 +1838,11 @@ export default function CountyScreen() {
                               }}
                             />
                             <Text
-                              style={{
+                              style={[{
                                 fontSize: 10,
                                 fontFamily: resolvedFonts.bold,
                                 color: theme.textSecondary,
-                              }}
+                              }, { flexShrink: 1 }]}
                             >
                               {item.metric}:{" "}
                               <Text
@@ -1937,7 +1938,7 @@ export default function CountyScreen() {
                               style={[
                                 styles.compareSectionTitle,
                                 { color: theme.textPrimary, textTransform: headingTransform },
-                              ]}
+                              , { flexShrink: 1 }]}
                             >
                               {section.title}
                             </Text>
@@ -2122,10 +2123,10 @@ export default function CountyScreen() {
               {notes.map((n, idx) => (
                 <View key={idx} style={styles.noteRow}>
                   <Text
-                    style={{
+                    style={[{
                       color: theme.gold,
                       fontFamily: resolvedFonts.heading,
-                    }}
+                    }, { flexShrink: 1 }]}
                   >
                     •
                   </Text>
@@ -2156,7 +2157,7 @@ export default function CountyScreen() {
           maxToRenderPerBatch={6}
           updateCellsBatchingPeriod={40}
           windowSize={5}
-          removeClippedSubviews={Platform.OS === "android"}
+          removeClippedSubviews={false}
           ListHeaderComponent={countyListHeader}
           renderItem={renderCountyItem}
           ListEmptyComponent={
@@ -2195,7 +2196,7 @@ export default function CountyScreen() {
             ]}
           >
             <View style={styles.pickerHeaderRow}>
-              <Text style={[styles.pickerTitle, { color: theme.textPrimary, textTransform: headingTransform }]}>
+              <Text style={[styles.pickerTitle, { color: theme.textPrimary, textTransform: headingTransform }, { flexShrink: 1 }]}>
                 Select County {pickerTarget === "A" ? "A" : "B"}
               </Text>
               <Pressable
@@ -2243,7 +2244,7 @@ export default function CountyScreen() {
               maxToRenderPerBatch={6}
               windowSize={5}
               updateCellsBatchingPeriod={40}
-              removeClippedSubviews={Platform.OS === "android"}
+              removeClippedSubviews={false}
               showsVerticalScrollIndicator={themeConfig?.verticalScrollbarStyle !== "hidden"}
               persistentScrollbar={themeConfig?.verticalScrollbarStyle === "always-visible"}
               renderItem={renderPickerItem}

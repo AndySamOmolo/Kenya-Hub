@@ -298,7 +298,7 @@ const SavedToolCard = React.memo(function SavedToolCard({
               <View
                 style={[styles.categoryDot, { backgroundColor: categoryColor }]}
               />
-              <Text style={[styles.categoryPillText, { color: categoryColor }]}>
+              <Text style={[styles.categoryPillText, { color: categoryColor }, { flexShrink: 1 }]}>
                 {(
                   getCategoryInfo(tool.category)?.name || tool.category
                 ).toUpperCase()}
@@ -506,6 +506,7 @@ export default function SavedScreen() {
 
   return (
     <SafeAreaView
+      key={`screen-${theme.isDark ? "d" : "l"}-${themeConfig?.presetId || "def"}-${themeConfig?.surfaceStyle || "elev"}`}
       style={[styles.screen, { backgroundColor: theme.bgPrimary }]}
       edges={["top", "left", "right"]}
     >

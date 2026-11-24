@@ -1664,7 +1664,7 @@ export function KenyanTranslatorTool({
                     }}
                   >
                     <Ionicons name="volume-high-outline" size={13} color={audioOnly ? "#38BDF8" : theme.textSecondary} />
-                    <Text style={{ fontSize: 11.5, fontWeight: "700", color: audioOnly ? "#38BDF8" : theme.textSecondary }}>
+                    <Text style={[{ fontSize: 11.5, fontWeight: "700", color: audioOnly ? "#38BDF8" : theme.textSecondary }, { flexShrink: 1 }]}>
                       With Audio ({audioSearchCount})
                     </Text>
                   </Pressable>
@@ -1996,7 +1996,7 @@ export function KenyanTranslatorTool({
               >
                 <View style={{ flexDirection: "row", alignItems: "center", gap: 5 }}>
                   <Ionicons name="volume-high-outline" size={13} color="#38BDF8" />
-                  <Text style={[styles.catPillText, { color: "#38BDF8", fontWeight: "700" }]}>
+                  <Text style={[styles.catPillText, { color: "#38BDF8", fontWeight: "700" }, { flexShrink: 1 }]}>
                     With Audio ({browseAudioEntries.length.toLocaleString("en-KE")})
                   </Text>
                 </View>
@@ -2039,7 +2039,7 @@ export function KenyanTranslatorTool({
                           color: theme.kenyaBlack,
                           fontFamily: "Outfit_800ExtraBold",
                         },
-                      ]}
+                      , { flexShrink: 1 }]}
                     >
                       {c.name} ({c.entries ? c.entries.length : c.count})
                     </Text>
@@ -2307,7 +2307,7 @@ export function KenyanTranslatorTool({
                 style={{ flexDirection: "row", alignItems: "center", gap: 8 }}
               >
                 <Ionicons name="add-circle" size={24} color={theme.gold} />
-                <Text style={styles.modalTitle}>{tApp("contrib.title")}</Text>
+                <Text style={[styles.modalTitle, { flexShrink: 1 }]}>{tApp("contrib.title")}</Text>
               </View>
               <Pressable
                 onPress={() => setIsContributeOpen(false)}
@@ -2363,11 +2363,11 @@ export function KenyanTranslatorTool({
                   ]}
                 >
                   <Text
-                    style={{
+                    style={[{
                       color: theme.textPrimary,
                       fontSize: 13,
                       fontWeight: "600",
-                    }}
+                    }, { flexShrink: 1 }]}
                   >
                     {contribLang === OTHER_KENYAN_LANGUAGE_VALUE
                       ? "Other Kenyan Language (Specify)"
@@ -2529,11 +2529,11 @@ export function KenyanTranslatorTool({
                         color={theme.gold}
                       />
                       <Text
-                        style={{
+                        style={[{
                           fontSize: 12,
                           fontWeight: "700",
                           color: theme.gold,
-                        }}
+                        }, { flexShrink: 1 }]}
                       >
                         Other Kenyan Language (Specify)
                       </Text>
@@ -2701,11 +2701,11 @@ export function KenyanTranslatorTool({
                         color={theme.gold}
                       />
                       <Text
-                        style={{
+                        style={[{
                           color: theme.gold,
                           fontSize: 12,
                           fontWeight: "700",
-                        }}
+                        }, { flexShrink: 1 }]}
                       >
                         {showAudioRecorder ? "Hide Recorder" : "Record Audio"}
                       </Text>

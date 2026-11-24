@@ -723,7 +723,7 @@ export default function ToolDetailScreen() {
                   </Text>
                   {tool.description.length > 75 && (
                     <View style={{ flexDirection: "row", alignItems: "center", gap: 4, marginTop: 4 }}>
-                      <Text style={{ fontFamily: "Inter_600SemiBold", fontSize: 11.5, color: theme.gold }}>
+                      <Text style={[{ fontFamily: "Inter_600SemiBold", fontSize: 11.5, color: theme.gold }, { flexShrink: 1 }]}>
                         {descriptionExpanded ? "Show less" : "Full description"}
                       </Text>
                       <Ionicons
@@ -965,7 +965,7 @@ export default function ToolDetailScreen() {
                       {howItWorks.map((step, sIdx) => (
                         <View key={`hiw-${sIdx}`} style={styles.noteRow}>
                           <Text
-                            style={[styles.noteBullet, { color: theme.gold }]}
+                            style={[styles.noteBullet, { color: theme.gold }, { flexShrink: 1 }]}
                           >
                             {sIdx + 1}.
                           </Text>
@@ -1018,7 +1018,7 @@ export default function ToolDetailScreen() {
                             style={[
                               styles.noteBullet,
                               { color: theme.kenyaGreenLight },
-                            ]}
+                            , { flexShrink: 1 }]}
                           >
                             •
                           </Text>
@@ -1063,7 +1063,7 @@ export default function ToolDetailScreen() {
                       {complianceTips.map((tip, tIdx) => (
                         <View key={`ct-${tIdx}`} style={styles.noteRow}>
                           <Text
-                            style={[styles.noteBullet, { color: theme.sky }]}
+                            style={[styles.noteBullet, { color: theme.sky }, { flexShrink: 1 }]}
                           >
                             ✓
                           </Text>
@@ -1115,7 +1115,7 @@ export default function ToolDetailScreen() {
             <View style={styles.notesList}>
               {notes.map((note, idx) => (
                 <View key={idx} style={styles.noteRow}>
-                  <Text style={[styles.noteBullet, { color: theme.gold }]}>
+                  <Text style={[styles.noteBullet, { color: theme.gold }, { flexShrink: 1 }]}>
                     •
                   </Text>
                   <Text
@@ -1145,7 +1145,7 @@ export default function ToolDetailScreen() {
                   color={theme.gold}
                 />
               </View>
-              <Text style={[styles.faqHeading, { color: theme.textPrimary }]}>
+              <Text style={[styles.faqHeading, { color: theme.textPrimary }, { flexShrink: 1 }]}>
                 Frequently Asked Questions
               </Text>
             </View>

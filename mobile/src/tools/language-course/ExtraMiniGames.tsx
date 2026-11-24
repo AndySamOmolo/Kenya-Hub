@@ -78,7 +78,7 @@ function GameHeaderBar({
     <View style={localStyles.topBar}>
       <Pressable onPress={onBack} style={localStyles.backBtn} hitSlop={8}>
         <Feather name="arrow-left" size={16} color={colors.textSecondary} />
-        <Text style={{ color: colors.textSecondary, fontWeight: "700", fontSize: 13 }}>
+        <Text style={[{ color: colors.textSecondary, fontWeight: "700", fontSize: 13 }, { flexShrink: 1 }]}>
           Games
         </Text>
       </Pressable>
@@ -95,7 +95,7 @@ function GameHeaderBar({
         ]}
       >
         <Feather name="award" size={12} color={colors.gold} />
-        <Text style={{ fontSize: 11.5, fontWeight: "800", color: colors.gold }}>
+        <Text style={[{ fontSize: 11.5, fontWeight: "800", color: colors.gold }, { flexShrink: 1 }]}>
           {score}
         </Text>
         {progressText ? (
@@ -152,7 +152,7 @@ function GameCompleteCard({
             { backgroundColor: colors.surfaceContainerHigh, borderColor: colors.outlineVariant, flex: 1 },
           ]}
         >
-          <Text style={{ fontSize: 13, fontWeight: "700", color: colors.textSecondary }}>
+          <Text style={[{ fontSize: 13, fontWeight: "700", color: colors.textSecondary }, { flexShrink: 1 }]}>
             Games Menu
           </Text>
         </Pressable>
@@ -162,7 +162,7 @@ function GameCompleteCard({
           style={[localStyles.primaryBtn, { backgroundColor: langColor, flex: 1 }]}
         >
           <Feather name="rotate-ccw" size={14} color="#000" />
-          <Text style={{ fontSize: 13, fontWeight: "800", color: "#000" }}>{buttonLabel}</Text>
+          <Text style={[{ fontSize: 13, fontWeight: "800", color: "#000" }, { flexShrink: 1 }]}>{buttonLabel}</Text>
         </Pressable>
       </View>
     </View>
@@ -503,7 +503,7 @@ function MethaliBuilderMobile({
             onPress={handleNext}
             style={[localStyles.primaryBtn, { backgroundColor: colors.gold }]}
           >
-            <Text style={{ fontSize: 13, fontWeight: "800", color: "#000" }}>
+            <Text style={[{ fontSize: 13, fontWeight: "800", color: "#000" }, { flexShrink: 1 }]}>
               {round + 1 >= SESSION_ROUNDS ? "Finish Session →" : "Next Proverb →"}
             </Text>
           </Pressable>
@@ -680,7 +680,7 @@ function NounClassSorterMobile({
       <View style={[localStyles.promptBox, { backgroundColor: colors.surfaceContainerHigh, borderColor: colors.outlineVariant }]}>
         <View style={[localStyles.tagPill, { backgroundColor: `${langColor}20`, borderColor: `${langColor}45` }]}>
           <Feather name="layers" size={11} color={langColor} />
-          <Text style={{ fontSize: 10.5, fontWeight: "800", color: langColor }}>
+          <Text style={[{ fontSize: 10.5, fontWeight: "800", color: langColor }, { flexShrink: 1 }]}>
             {familyType === "bantu"
               ? `${languageName} Bantu Noun Class`
               : familyType === "cushitic"
@@ -1133,7 +1133,7 @@ function PolyglotBridgeMobile({
         <View style={{ flexDirection: "row", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", gap: 6, width: "100%" }}>
           <View style={[localStyles.tagPill, { backgroundColor: `${colors.gold}20`, borderColor: `${colors.gold}45` }]}>
             <Feather name="globe" size={11} color={colors.gold} />
-            <Text style={{ fontSize: 10.5, fontWeight: "800", color: colors.gold }}>Concept: {picked !== null ? current.concept : '???'}</Text>
+            <Text style={[{ fontSize: 10.5, fontWeight: "800", color: colors.gold }, { flexShrink: 1 }]}>Concept: {picked !== null ? current.concept : '???'}</Text>
           </View>
           <Text style={{ fontSize: 10.5, color: colors.textMuted, flexShrink: 1 }} numberOfLines={1}>
             {current.family}
@@ -1210,7 +1210,7 @@ function PolyglotBridgeMobile({
             onPress={handleNext}
             style={[localStyles.primaryBtn, { backgroundColor: colors.gold }]}
           >
-            <Text style={{ fontSize: 13, fontWeight: "800", color: "#000" }}>
+            <Text style={[{ fontSize: 13, fontWeight: "800", color: "#000" }, { flexShrink: 1 }]}>
               {round + 1 >= deck.length ? "Finish Bridge →" : "Next Cognate Bridge →"}
             </Text>
           </Pressable>
@@ -1661,7 +1661,7 @@ function TongueTwisterMobile({
             }}
             style={[localStyles.primaryBtn, { backgroundColor: colors.gold }]}
           >
-            <Text style={{ fontSize: 13, fontWeight: "800", color: "#000" }}>
+            <Text style={[{ fontSize: 13, fontWeight: "800", color: "#000" }, { flexShrink: 1 }]}>
               {round + 1 >= deck.length ? "Finish Sprint →" : "Next Tongue Twister →"}
             </Text>
           </Pressable>

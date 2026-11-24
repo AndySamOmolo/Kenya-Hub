@@ -925,6 +925,9 @@ export interface ThemedCardStyle extends ViewStyle {
   borderBottomColor?: string;
   borderRightWidth?: number;
   borderRightColor?: string;
+  borderStyle?: "solid" | "dashed" | "dotted";
+  maxWidth?: "100%";
+  overflow?: "hidden" | "visible";
 }
 
 /**
@@ -996,6 +999,36 @@ export function getThemedCardStyle(
       backgroundColor = theme.isDark ? "#080808" : theme.surfaceContainerLow;
       borderColor = hexToRgba(theme.outline, 0.75);
       borderWidth = Math.max(1, borderWidth);
+      break;
+    case "braun-chassis":
+      backgroundColor = theme.isDark ? theme.surfaceContainer : theme.surfaceContainerLow;
+      borderColor = theme.outline;
+      borderWidth = Math.max(1, borderWidth);
+      break;
+    case "swiss-ledger":
+      backgroundColor = theme.isDark ? theme.bgCard : theme.surfaceContainerLowest;
+      borderColor = theme.textPrimary;
+      borderWidth = Math.max(1.5, borderWidth);
+      break;
+    case "riso-overprint":
+      backgroundColor = theme.bgCard;
+      borderColor = theme.isDark ? theme.gold : theme.outline;
+      borderWidth = Math.max(2, borderWidth);
+      break;
+    case "horology-bezel":
+      backgroundColor = theme.isDark ? theme.surfaceContainer : theme.bgCard;
+      borderColor = theme.gold;
+      borderWidth = Math.max(1.25, borderWidth);
+      break;
+    case "avionics-panel":
+      backgroundColor = theme.isDark ? theme.bgSecondary : theme.surfaceContainerLow;
+      borderColor = theme.outline;
+      borderWidth = Math.max(1.75, borderWidth);
+      break;
+    case "ceramic-glaze":
+      backgroundColor = theme.isDark ? theme.surfaceContainer : theme.bgCard;
+      borderColor = hexToRgba(theme.outline, 0.65);
+      borderWidth = Math.max(1.25, borderWidth);
       break;
     case "elevated":
     default:
@@ -1134,11 +1167,44 @@ export function getThemedCardStyle(
       cardStyle.borderRightColor = edgeColor;
       break;
     }
+    case "ticket-stub":
+      cardStyle.borderStyle = "dashed";
+      cardStyle.borderRightWidth = 3;
+      cardStyle.borderRightColor = theme.gold;
+      break;
+    case "rivet-bezel":
+      cardStyle.borderTopWidth = 2.5;
+      cardStyle.borderBottomWidth = 2.5;
+      cardStyle.borderTopColor = theme.outline;
+      cardStyle.borderBottomColor = theme.isDark ? "#000000" : theme.outline;
+      break;
+    case "hanko-corner":
+      cardStyle.borderTopWidth = 2;
+      cardStyle.borderRightWidth = 3.5;
+      cardStyle.borderTopColor = theme.gold;
+      cardStyle.borderRightColor = theme.gold;
+      break;
+    case "split-flap":
+      cardStyle.borderTopWidth = 2;
+      cardStyle.borderBottomWidth = 3;
+      cardStyle.borderTopColor = theme.gold;
+      cardStyle.borderBottomColor = theme.isDark ? "#0A0C09" : theme.outline;
+      break;
+    case "plinth-slab":
+      cardStyle.borderBottomWidth = 4;
+      cardStyle.borderRightWidth = 3.5;
+      cardStyle.borderBottomColor = theme.textPrimary;
+      cardStyle.borderRightColor = theme.textPrimary;
+      break;
     case "none":
     default:
       break;
   }
 
+  cardStyle.maxWidth = "100%";
+  if (Platform.OS === "android") {
+    cardStyle.overflow = "hidden";
+  }
   return cardStyle;
 }
 
@@ -1167,6 +1233,37 @@ export function getThemedInputStyle(
         borderRadius: 0,
         paddingHorizontal: 2,
       };
+    case "swiss-ledger":
+      return {
+        backgroundColor: theme.isDark ? theme.bgCard : theme.surfaceContainerLowest,
+        borderWidth: 0,
+        borderTopWidth: 2,
+        borderBottomWidth: 1.5,
+        borderTopColor: theme.textPrimary,
+        borderBottomColor: theme.textPrimary,
+        borderRadius: 0,
+      };
+    case "eink-ribbon":
+      return {
+        backgroundColor: theme.isDark ? theme.bgPrimary : theme.surfaceContainerLowest,
+        borderWidth: 1.5,
+        borderColor: theme.textPrimary,
+        borderRadius: 0,
+      };
+    case "ceramic-basin":
+      return {
+        backgroundColor: theme.surfaceContainerHigh,
+        borderWidth: 1,
+        borderColor: theme.outlineVariant,
+        borderRadius: 14,
+      };
+    case "avionics-scratchpad":
+      return {
+        backgroundColor: theme.isDark ? theme.surfaceContainerLowest : theme.surfaceContainerHigh,
+        borderWidth: 1.5,
+        borderColor: theme.gold,
+        borderRadius: 3,
+      };
     case "outlined":
     default:
       return { backgroundColor: theme.surfaceContainerLow, borderColor: theme.outlineVariant, borderWidth: bw, borderRadius: themeMetrics.buttonRadiusPx };
@@ -1182,7 +1279,7 @@ export function getThemedButtonStyle(
   const radius = themeMetrics.buttonRadiusPx;
   const pv = themeMetrics.buttonPaddingVPx;
   const ph = themeMetrics.buttonPaddingHPx;
-  const base: ViewStyle = { borderRadius: radius, paddingVertical: pv, paddingHorizontal: ph, alignItems: "center", justifyContent: "center" };
+  const base: ViewStyle = { borderRadius: radius, paddingVertical: pv, paddingHorizontal: ph, alignItems: "center", justifyContent: "center", maxWidth: "100%", overflow: "hidden" };
   if (variant === "ghost") {
     return { container: { ...base, backgroundColor: "transparent", borderWidth: 0 }, textColor: theme.gold };
   }
@@ -1262,6 +1359,70 @@ export function getThemedButtonStyle(
           paddingHorizontal: 4,
         },
         textColor: theme.gold,
+      };
+    case "braun-keycap":
+      return {
+        container: {
+          ...base,
+          borderRadius: 3,
+          backgroundColor: theme.surfaceContainerHigh,
+          borderWidth: 1,
+          borderColor: theme.outline,
+          borderBottomWidth: 4,
+          borderBottomColor: theme.gold,
+        },
+        textColor: theme.textPrimary,
+      };
+    case "swiss-split":
+      return {
+        container: {
+          ...base,
+          borderRadius: 0,
+          backgroundColor: theme.textPrimary,
+          borderWidth: 1.5,
+          borderColor: theme.textPrimary,
+          borderRightWidth: 5,
+          borderRightColor: theme.gold,
+        },
+        textColor: theme.bgPrimary,
+      };
+    case "riso-stamp":
+      return {
+        container: {
+          ...base,
+          borderRadius: 0,
+          backgroundColor: theme.primaryContainer,
+          borderWidth: 2,
+          borderStyle: "dashed",
+          borderColor: theme.gold,
+          borderBottomWidth: 3.5,
+          borderRightWidth: 3.5,
+        },
+        textColor: theme.onPrimaryContainer,
+      };
+    case "washi-seal":
+      return {
+        container: {
+          ...base,
+          borderRadius: 2,
+          backgroundColor: theme.bgCard,
+          borderWidth: 1.5,
+          borderColor: theme.gold,
+        },
+        textColor: theme.gold,
+      };
+    case "avionics-guard":
+      return {
+        container: {
+          ...base,
+          borderRadius: 3,
+          backgroundColor: theme.gold,
+          borderWidth: 2,
+          borderColor: theme.textPrimary,
+          borderTopWidth: 3,
+          borderBottomWidth: 3,
+        },
+        textColor: onGold,
       };
     case "filled":
     default:
@@ -1593,6 +1754,28 @@ export const AndroidTopAppBar = React.memo(function AndroidTopAppBar({
           borderRadius: 16,
           borderWidth: 1,
           borderColor: theme.outlineVariant,
+        },
+        themeConfig.appBarStyle === "braun-tuner" && {
+          backgroundColor: theme.surfaceContainer,
+          borderBottomWidth: 2.5,
+          borderBottomColor: theme.gold,
+        },
+        themeConfig.appBarStyle === "swiss-masthead" && {
+          backgroundColor: theme.isDark ? theme.bgPrimary : theme.surfaceContainerLowest,
+          borderTopWidth: 3,
+          borderTopColor: theme.textPrimary,
+          borderBottomWidth: 1.5,
+          borderBottomColor: theme.textPrimary,
+        },
+        themeConfig.appBarStyle === "eink-runninghead" && {
+          backgroundColor: theme.bgPrimary,
+          borderBottomWidth: 2,
+          borderBottomColor: theme.textPrimary,
+        },
+        themeConfig.appBarStyle === "avionics-strip" && {
+          backgroundColor: theme.bgSecondary,
+          borderBottomWidth: 2,
+          borderBottomColor: theme.gold,
         },
       ]}
     >

@@ -228,6 +228,9 @@ const M3TabIcon = React.memo(function M3TabIcon({
   const showGlow = focused && !usesTopAccent && effectiveIndicator === "glow";
   const showDot = focused && !usesTopAccent && effectiveIndicator === "dot";
   const showUnderline = focused && !usesTopAccent && effectiveIndicator === "underline";
+  const showHankoSeal = focused && !usesTopAccent && effectiveIndicator === "hanko-seal";
+  const showPlinthLift = focused && !usesTopAccent && effectiveIndicator === "plinth-lift";
+  const showVernierLoupe = focused && !usesTopAccent && effectiveIndicator === "vernier-loupe";
 
   const resolvedPack: IconPackStyle =
     focused && iconPack === "outline" ? "filled" : iconPack;
@@ -306,6 +309,29 @@ const M3TabIcon = React.memo(function M3TabIcon({
             borderWidth: 1,
             borderColor: hexToRgba(goldColor, 0.44),
           },
+          showHankoSeal && {
+            borderWidth: 1.75,
+            borderColor: goldColor,
+            borderRadius: 3,
+            backgroundColor: hexToRgba(goldColor, 0.1),
+            width: extraSmall ? 34 : 38,
+          },
+          showPlinthLift && {
+            backgroundColor: goldColor,
+            borderRadius: 0,
+            borderWidth: 1.5,
+            borderColor: outlineColor,
+            borderBottomWidth: 3.5,
+            width: extraSmall ? 42 : 48,
+          },
+          showVernierLoupe && {
+            borderWidth: 1.5,
+            borderColor: goldColor,
+            borderTopWidth: 2.5,
+            borderRadius: 2,
+            backgroundColor: hexToRgba(goldColor, 0.15),
+            width: extraSmall ? 42 : 48,
+          },
           tabBarStyleMode === "docked-cards" && !focused && {
             borderWidth: 1,
             borderColor: hexToRgba(outlineColor, 0.33),
@@ -319,7 +345,7 @@ const M3TabIcon = React.memo(function M3TabIcon({
       >
         <ThemedIcon
           name={name}
-          color={showFilledBox ? getContrastInk(goldColor) : color}
+          color={(showFilledBox || showPlinthLift) ? getContrastInk(goldColor) : color}
           size={Math.round((extraSmall ? 18 : compact ? 19 : 21) * Math.max(0.75, Math.min(1.3, iconScale)))}
           pack={resolvedPack}
           scaleWithTheme={false}
@@ -392,7 +418,7 @@ export default function TabLayout() {
       tabBarInactiveTintColor: theme.textSecondary,
       tabBarShowLabel: showLabels,
       tabBarHideOnKeyboard: true,
-      tabBarAllowFontScaling: true,
+      tabBarAllowFontScaling: false,
       tabBarBackground: () => (
         <View
           key={`${themeKey}-${tabBarStyleMode}-${indicatorStyle}-${showTabIcons ? "ic" : "tx"}`}
@@ -438,6 +464,29 @@ export default function TabLayout() {
           zIndex: 10,
         },
         tabBarStyleMode === "docked-cards" && {
+          paddingHorizontal: 8,
+        },
+        tabBarStyleMode === "braun-detent" && {
+          borderTopWidth: 2,
+          borderTopColor: theme.outline,
+          backgroundColor: theme.surfaceContainerHigh,
+          paddingHorizontal: 6,
+        },
+        tabBarStyleMode === "swiss-timetable" && {
+          borderTopWidth: 3,
+          borderTopColor: theme.textPrimary,
+          backgroundColor: theme.isDark ? theme.bgPrimary : theme.surfaceContainerLowest,
+        },
+        tabBarStyleMode === "solari-flap" && {
+          borderTopWidth: 2,
+          borderTopColor: theme.gold,
+          backgroundColor: theme.bgSecondary,
+          paddingHorizontal: 6,
+        },
+        tabBarStyleMode === "porcelain-wells" && {
+          borderTopWidth: 1,
+          borderTopColor: theme.outlineVariant,
+          backgroundColor: theme.surfaceContainerLow,
           paddingHorizontal: 8,
         },
       ],

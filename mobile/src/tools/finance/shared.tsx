@@ -361,7 +361,7 @@ export function BreakdownBar({
           return (
             <View key={`leg-${seg.label}-${idx}`} style={styles.legendItem}>
               <View style={[styles.legendDot, { backgroundColor: seg.color }]} />
-              <Text style={[styles.legendText, { color: theme.textSecondary }]}>
+              <Text style={[styles.legendText, { color: theme.textSecondary }, { flexShrink: 1 }]}>
                 {seg.label}:{" "}
                 <Text style={{ fontFamily: resolvedFonts?.heading || "Outfit_700Bold", color: theme.textPrimary }}>
                   {pct}%

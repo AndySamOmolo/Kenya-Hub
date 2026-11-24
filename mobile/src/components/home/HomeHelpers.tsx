@@ -506,12 +506,12 @@ export const BlogMarkdownContent = React.memo(function BlogMarkdownContent({
           }}
         >
           <Text
-            style={{
+            style={[{
               color: theme.gold,
               fontFamily: "Outfit_700Bold",
               fontSize: 13,
               lineHeight: 21,
-            }}
+            }, { flexShrink: 1 }]}
           >
             {marker}
           </Text>
@@ -595,7 +595,7 @@ export const FeaturedLanguageWidget = React.memo(function FeaturedLanguageWidget
       if (withHaptic) {
         triggerHaptic(8);
         if (!reduceMotion) {
-          LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
+          if (Platform.OS === "ios") { LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut); }
         }
       }
       setFeaturedLangIdx((i) => (i + 1) % ROTATING_LANGUAGES.length);
@@ -759,7 +759,7 @@ export const WordOfTheMomentWidget = React.memo(function WordOfTheMomentWidget({
       if (withHaptic) {
         triggerHaptic(8);
         if (!reduceMotion) {
-          LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
+          if (Platform.OS === "ios") { LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut); }
         }
       }
       setWordIdx((i) => (i + 1) % Math.max(1, INITIAL_RANDOM_WORDS.length));

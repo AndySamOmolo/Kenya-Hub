@@ -175,7 +175,7 @@ const ToolItem = React.memo(function ToolItem({
                     ]}
                   >
                     <ThemedIcon name="bookmark" size={10} color={theme.gold} />
-                    <Text style={[styles.pinnedTagText, { color: theme.gold }]}>
+                    <Text style={[styles.pinnedTagText, { color: theme.gold }, { flexShrink: 1 }]}>
                       {t("tools.pinnedBadge")}
                     </Text>
                   </View>
@@ -558,7 +558,7 @@ export default function ToolsScreen() {
                 <View style={styles.pinnedHeaderRow}>
                   <ThemedIcon name="bookmark" size={16} color={theme.gold} />
                   <Text
-                    style={[styles.pinnedSectionTitle, { color: theme.textPrimary, textTransform: headingTransform }]}
+                    style={[styles.pinnedSectionTitle, { color: theme.textPrimary, textTransform: headingTransform }, { flexShrink: 1 }]}
                   >
                     Pinned Tools ({pinnedTools.length})
                   </Text>
@@ -608,6 +608,7 @@ export default function ToolsScreen() {
 
   return (
     <SafeAreaView
+      key={`screen-${theme.isDark ? "d" : "l"}-${themeConfig?.presetId || "def"}-${themeConfig?.surfaceStyle || "elev"}`}
       style={[styles.screen, { backgroundColor: theme.bgPrimary }]}
       edges={["top", "left", "right"]}
     >
@@ -712,7 +713,7 @@ export default function ToolsScreen() {
                   }}
                 />
                 <Text
-                  style={{
+                  style={[{
                     fontSize: 11.5,
                     lineHeight: 16,
                     paddingBottom: 0,
@@ -722,7 +723,7 @@ export default function ToolsScreen() {
                     color: active
                       ? theme.onPrimaryContainer
                       : theme.textSecondary,
-                  }}
+                  }, { flexShrink: 1 }]}
                 >
                   {item.name} ({item.count})
                 </Text>
@@ -788,7 +789,7 @@ export default function ToolsScreen() {
                           ? theme.onPrimaryContainer
                           : theme.textSecondary,
                       },
-                    ]}
+                    , { flexShrink: 1 }]}
                   >
                     {option.label}
                   </Text>
@@ -816,7 +817,7 @@ export default function ToolsScreen() {
         maxToRenderPerBatch={6}
         updateCellsBatchingPeriod={40}
         windowSize={5}
-        removeClippedSubviews={Platform.OS === "android"}
+        removeClippedSubviews={false}
         ListHeaderComponent={toolsListHeader}
         renderItem={renderToolItem}
         ListEmptyComponent={
@@ -984,6 +985,8 @@ function createToolsStyles(
     cardWrap: {
       borderRadius: r(16),
       borderWidth: bw,
+      maxWidth: "100%",
+      overflow: "hidden",
     },
     card: {
       padding: sp(16),
@@ -1010,6 +1013,7 @@ function createToolsStyles(
     },
     body: {
       flex: 1,
+      minWidth: 0,
       marginLeft: sp(12),
       marginRight: sp(4),
     },
@@ -1029,6 +1033,7 @@ function createToolsStyles(
       fontSize: fs(9),
       fontFamily: hf("Outfit_700Bold"),
       letterSpacing: 0.5,
+      flexShrink: 1,
     },
     pinnedTag: {
       flexDirection: "row",
@@ -1046,6 +1051,7 @@ function createToolsStyles(
     title: {
       fontFamily: hf("Outfit_700Bold"),
       fontSize: fs(16),
+      flexShrink: 1,
     },
     description: {
       fontFamily: bf("Inter_400Regular"),
@@ -1064,6 +1070,9 @@ function createToolsStyles(
     source: {
       fontFamily: bf("Inter_400Regular"),
       fontSize: fs(11),
+      flex: 1,
+      flexShrink: 1,
+      minWidth: 0,
     },
     emptyWrap: {
       alignItems: "center",

@@ -1,7 +1,7 @@
 import React from "react";
 import { Stack, ErrorBoundaryProps, useRouter } from "expo-router";
 import { StatusBar } from "expo-status-bar";
-import { Appearance, Platform, StyleSheet, Text, View, Pressable } from "react-native";
+import { Appearance, Platform, StyleSheet, Text, TextInput, View, Pressable } from "react-native";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
 import {
@@ -30,6 +30,15 @@ import {
 } from "../src/theme";
 import { VerifiedAudioPlayer } from "../src/components/VerifiedAudioPlayer";
 import { AppLanguageProvider } from "../src/lib/i18n";
+
+
+// Cap compounded OS + in-app font scaling so text never overflows cards, pills, or tab bars
+try {
+  const TextAny = Text as any;
+  TextAny.defaultProps = { ...(TextAny.defaultProps || {}), maxFontSizeMultiplier: 1.3 };
+  const InputAny = TextInput as any;
+  InputAny.defaultProps = { ...(InputAny.defaultProps || {}), maxFontSizeMultiplier: 1.3 };
+} catch {}
 
 function LayoutContent({ fontsLoaded }: { fontsLoaded: boolean }) {
   const { theme, isDark, themeReady, themeConfig } = useTheme();
@@ -146,7 +155,7 @@ export function ErrorBoundary({ error, retry }: ErrorBoundaryProps) {
             ]}
           >
             <Ionicons name="refresh" size={16} color={colors.kenyaBlack} />
-            <Text style={[styles.retryText, { color: getContrastInk(colors.gold) }]}>
+            <Text style={[styles.retryText, { color: getContrastInk(colors.gold) }, { flexShrink: 1 }]}>
               Try again
             </Text>
           </View>
@@ -174,7 +183,7 @@ export function ErrorBoundary({ error, retry }: ErrorBoundaryProps) {
             ]}
           >
             <Ionicons name="home-outline" size={16} color={colors.textPrimary} />
-            <Text style={[styles.homeButtonText, { color: colors.textPrimary }]}>
+            <Text style={[styles.homeButtonText, { color: colors.textPrimary }, { flexShrink: 1 }]}>
               Go Home
             </Text>
           </View>

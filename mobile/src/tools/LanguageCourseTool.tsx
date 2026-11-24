@@ -236,13 +236,13 @@ const ChapterAudioPlayerBar = React.memo(function ChapterAudioPlayerBar({
             style={{ paddingHorizontal: 9, paddingVertical: 6, borderRadius: 8, borderWidth: 1, borderColor: colors.outlineVariant, backgroundColor: colors.surface, flexDirection: 'row', alignItems: 'center', gap: 3, opacity: isChActiveUrl ? 1 : 0.5 }}
           >
             <Feather name="rotate-ccw" size={12} color={colors.textSecondary} />
-            <Text style={{ fontFamily: 'Inter_600SemiBold', fontSize: 11, color: colors.textSecondary }}>10s</Text>
+            <Text style={[{ fontFamily: 'Inter_600SemiBold', fontSize: 11, color: colors.textSecondary }, { flexShrink: 1 }]}>10s</Text>
           </Pressable>
           <Pressable
             onPress={() => isChActiveUrl && skipVerifiedAudio(10)}
             style={{ paddingHorizontal: 9, paddingVertical: 6, borderRadius: 8, borderWidth: 1, borderColor: colors.outlineVariant, backgroundColor: colors.surface, flexDirection: 'row', alignItems: 'center', gap: 3, opacity: isChActiveUrl ? 1 : 0.5 }}
           >
-            <Text style={{ fontFamily: 'Inter_600SemiBold', fontSize: 11, color: colors.textSecondary }}>10s</Text>
+            <Text style={[{ fontFamily: 'Inter_600SemiBold', fontSize: 11, color: colors.textSecondary }, { flexShrink: 1 }]}>10s</Text>
             <Feather name="rotate-cw" size={12} color={colors.textSecondary} />
           </Pressable>
         </View>
@@ -274,7 +274,7 @@ const ChapterAudioPlayerBar = React.memo(function ChapterAudioPlayerBar({
 
       {/* Interactive Tappable Progress Bar + Time Readout */}
       <View style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
-        <Text style={{ fontFamily: 'Inter_600SemiBold', fontSize: 11, color: colors.textMuted, minWidth: 34 }}>
+        <Text style={[{ fontFamily: 'Inter_600SemiBold', fontSize: 11, color: colors.textMuted, minWidth: 34 }, { flexShrink: 1 }]}>
           {fmtTime(chCur)}
         </Text>
         <Pressable
@@ -290,7 +290,7 @@ const ChapterAudioPlayerBar = React.memo(function ChapterAudioPlayerBar({
             <View style={{ height: '100%', width: `${Math.round(chPct * 100)}%`, backgroundColor: colors.gold, borderRadius: 999 }} />
           </View>
         </Pressable>
-        <Text style={{ fontFamily: 'Inter_600SemiBold', fontSize: 11, color: colors.textMuted, minWidth: 34, textAlign: 'right' }}>
+        <Text style={[{ fontFamily: 'Inter_600SemiBold', fontSize: 11, color: colors.textMuted, minWidth: 34, textAlign: 'right' }, { flexShrink: 1 }]}>
           {chLoading ? '…' : fmtTime(chDur)}
         </Text>
       </View>
@@ -532,6 +532,7 @@ export default function LanguageCourseTool({
   onNavigationStateChange?: (state: CourseNavigationState) => void;
 } = {}) {
   const { colors, isDark, themeConfig, themeMetrics, themeKey, resolvedFonts } = useTheme();
+  const themeSurfaceKey = `${isDark ? "d" : "l"}-${themeConfig.presetId}-${themeConfig.surfaceStyle}`;
   const { t: tApp } = useAppLanguage();
   const themedCardStyle = useMemo(
     () => getThemedCardStyle(colors, themeConfig, themeMetrics),
@@ -2124,7 +2125,7 @@ export default function LanguageCourseTool({
                 ) : null}
 
                 <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 10 }}>
-                  <Text style={[styles.teachTargetWord, { color: colors.text }]}>
+                  <Text style={[styles.teachTargetWord, { color: colors.text }, { flexShrink: 1 }]}>
                     {(teachingDeck.length > 0 ? teachingDeck : activeSkill.words)[learnCardIdx].target}
                   </Text>
                   {hasVerifiedAudio({
@@ -2306,7 +2307,7 @@ export default function LanguageCourseTool({
                 }}
               >
                 <Ionicons name="volume-high-outline" size={17} color={langColor} />
-                <Text style={{ fontSize: 13, fontWeight: '700', color: langColor }}>
+                <Text style={[{ fontSize: 13, fontWeight: '700', color: langColor }, { flexShrink: 1 }]}>
                   Play Native Audio
                 </Text>
               </Pressable>
@@ -2774,7 +2775,7 @@ export default function LanguageCourseTool({
               >
                 <View style={{ flexDirection: 'row', alignItems: 'center', gap: 6 }}>
                   <Feather name="compass" size={14} color={langColor} />
-                  <Text style={{ fontSize: 12, fontWeight: '800', color: langColor }}>
+                  <Text style={[{ fontSize: 12, fontWeight: '800', color: langColor }, { flexShrink: 1 }]}>
                     Cultural & Historical Context
                   </Text>
                 </View>
@@ -3039,11 +3040,11 @@ export default function LanguageCourseTool({
                   }}
                 >
                   <Text
-                    style={{
+                    style={[{
                       fontSize: 11.5,
                       fontWeight: active ? '800' : '600',
                       color: active ? colors.gold : colors.textSecondary,
-                    }}
+                    }, { flexShrink: 1 }]}
                   >
                     {fam === 'All' ? `${tApp('learn.allFamilies')} (${count})` : `${fam} (${count})`}
                   </Text>
@@ -3144,12 +3145,12 @@ export default function LanguageCourseTool({
                     }}
                   >
                     <Text
-                      style={{
+                      style={[{
                         fontSize: 11.5,
                         fontFamily: resolvedFonts.heading,
                         fontWeight: '800',
                         color: courseXp > 0 ? getContrastInk(config.color) : colors.gold,
-                      }}
+                      }, { flexShrink: 1 }]}
                     >
                       {courseXp > 0 ? tApp('learn.continueBtn') : tApp('learn.startBtn')}
                     </Text>
@@ -3180,7 +3181,7 @@ export default function LanguageCourseTool({
                     }}
                   >
                     <Feather name="book-open" size={10.5} color={colors.kenyaGreenLight} />
-                    <Text style={{ fontSize: 10.5, fontFamily: resolvedFonts.body, fontWeight: '700', color: colors.kenyaGreenLight }}>
+                    <Text style={[{ fontSize: 10.5, fontFamily: resolvedFonts.body, fontWeight: '700', color: colors.kenyaGreenLight }, { flexShrink: 1 }]}>
                       {unitsCount} {tApp('learn.units')} · {skillsCount} {tApp('learn.modules')} · {wordsCount.toLocaleString()} {tApp('learn.words')}
                     </Text>
                   </View>
@@ -3199,7 +3200,7 @@ export default function LanguageCourseTool({
                     }}
                   >
                     <Feather name="users" size={10.5} color={colors.gold} />
-                    <Text style={{ fontSize: 10.5, fontWeight: '600', color: colors.textSecondary }}>
+                    <Text style={[{ fontSize: 10.5, fontWeight: '600', color: colors.textSecondary }, { flexShrink: 1 }]}>
                       {config.speakers}
                     </Text>
                   </View>
@@ -3253,7 +3254,7 @@ export default function LanguageCourseTool({
                         }}
                       />
                     </View>
-                    <Text style={{ fontSize: 11, fontWeight: '800', color: colors.gold }}>
+                    <Text style={[{ fontSize: 11, fontWeight: '800', color: colors.gold }, { flexShrink: 1 }]}>
                       ⚡ {courseXp} XP
                     </Text>
                   </View>
@@ -3706,7 +3707,7 @@ export default function LanguageCourseTool({
 
                   {/* Instant Playback Speed Pills */}
                   <View style={{ flexDirection: 'row', alignItems: 'center', gap: 6 }}>
-                    <Text style={{ fontFamily: 'Inter_600SemiBold', fontSize: 11, color: colors.textMuted }}>Speed:</Text>
+                    <Text style={[{ fontFamily: 'Inter_600SemiBold', fontSize: 11, color: colors.textMuted }, { flexShrink: 1 }]}>Speed:</Text>
                     {[0.5, 0.75, 1].map((spd) => {
                       const act = kslPlaybackRate === spd;
                       return (
@@ -4025,7 +4026,7 @@ export default function LanguageCourseTool({
           }}
         >
           <Feather name="grid" size={13} color={colors.gold} />
-          <Text style={{ fontSize: 12, fontWeight: '800', color: colors.gold }}>
+          <Text style={[{ fontSize: 12, fontWeight: '800', color: colors.gold }, { flexShrink: 1 }]}>
             All {PUBLISHED_COURSE_SUMMARIES.length} Languages
           </Text>
           <Feather name="chevron-down" size={13} color={colors.gold} />
@@ -4046,7 +4047,7 @@ export default function LanguageCourseTool({
             }}
           >
             <View style={{ width: 7, height: 7, borderRadius: 4, backgroundColor: langColor }} />
-            <Text style={{ fontSize: 12, fontWeight: '800', color: colors.text }}>
+            <Text style={[{ fontSize: 12, fontWeight: '800', color: colors.text }, { flexShrink: 1 }]}>
               {currentCourse.config.name}
             </Text>
           </View>
@@ -4078,11 +4079,11 @@ export default function LanguageCourseTool({
           <View style={styles.statsRightPills}>
             <View style={[styles.miniStatPill, { backgroundColor: colors.surfaceContainerHigh, flexDirection: "row", alignItems: "center", gap: 3 }]}>
               <Ionicons name="heart" size={12} color="#EF4444" />
-              <Text style={{ fontSize: 12, color: colors.text, fontWeight: "700" }}>{progress.hearts}</Text>
+              <Text style={[{ fontSize: 12, color: colors.text, fontWeight: "700" }, { flexShrink: 1 }]}>{progress.hearts}</Text>
             </View>
             <View style={[styles.miniStatPill, { backgroundColor: colors.surfaceContainerHigh, flexDirection: "row", alignItems: "center", gap: 3 }]}>
               <Feather name="zap" size={12} color="#F59E0B" />
-              <Text style={{ fontSize: 12, color: colors.text, fontWeight: "700" }}>{progress.streak}d</Text>
+              <Text style={[{ fontSize: 12, color: colors.text, fontWeight: "700" }, { flexShrink: 1 }]}>{progress.streak}d</Text>
             </View>
             <Pressable
               android_ripple={ripple}
@@ -4098,7 +4099,7 @@ export default function LanguageCourseTool({
             >
               <View style={{ flexDirection: "row", alignItems: "center", gap: 4 }}>
                 <Feather name="award" size={12} color={colors.gold} />
-                <Text style={{ fontSize: 12, color: colors.text, fontWeight: "700" }}>
+                <Text style={[{ fontSize: 12, color: colors.text, fontWeight: "700" }, { flexShrink: 1 }]}>
                   {progress.unlockedAchievements.length}/{ACHIEVEMENTS.length}
                 </Text>
               </View>
@@ -4209,6 +4210,7 @@ export default function LanguageCourseTool({
       {/* 3. Selected Language Banner + Verified Sources (Path tab only to maximize mobile viewport) */}
       {currentCourse && activeTab === 'learn' && (
         <View
+          key={`course-info-${themeSurfaceKey}`}
           style={[
             styles.courseInfoCard,
             { backgroundColor: colors.surfaceContainerLow, borderColor: colors.outlineVariant },
@@ -4269,7 +4271,7 @@ export default function LanguageCourseTool({
               >
                 <View style={{ flexDirection: 'row', alignItems: 'center', gap: 6, flex: 1 }}>
                   <Feather name="book" size={11} color={colors.gold} />
-                  <Text style={[styles.sourcesText, { color: colors.textSecondary, fontWeight: '600' }]}>
+                  <Text style={[styles.sourcesText, { color: colors.textSecondary, fontWeight: '600' }, { flexShrink: 1 }]}>
                     Built from {languageSources.length} historical & linguistic {languageSources.length === 1 ? 'source' : 'sources'}
                   </Text>
                 </View>
@@ -4293,9 +4295,10 @@ export default function LanguageCourseTool({
           TAB 1: SKILL TREE PATH (UNITS ACCORDION + 5-STAR MASTERY + LESSON LAUNCH)
          ======================================================================== */}
       {activeTab === 'learn' && currentCourse && (
-        <View style={styles.unitListWrap}>
+        <View key={`unit-list-${themeSurfaceKey}`} style={styles.unitListWrap}>
           {/* Progressive Path vs. Unlock All Modules Toggle */}
           <View
+            key={`unlock-banner-${themeSurfaceKey}`}
             style={[
               styles.unlockBannerCard,
               {
@@ -4392,7 +4395,7 @@ export default function LanguageCourseTool({
 
             return (
               <View
-                key={unit.id}
+                key={`${unit.id}-${themeSurfaceKey}`}
                 style={styles.unitSectionGroup}
               >
                 <Pressable
@@ -4842,7 +4845,7 @@ export default function LanguageCourseTool({
                 </View>
 
                 <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 10 }}>
-                  <Text style={[styles.flashcardMainWord, { color: colors.text }]}>
+                  <Text style={[styles.flashcardMainWord, { color: colors.text }, { flexShrink: 1 }]}>
                     {isCardFlipped ? currentFlashcard.source : currentFlashcard.target}
                   </Text>
                   {!isCardFlipped &&
@@ -5984,7 +5987,7 @@ export default function LanguageCourseTool({
                                   }}
                                 >
                                   <View style={{ flexDirection: 'row', alignItems: 'flex-start', gap: 7 }}>
-                                    <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 10.5, color: colors.textMuted, marginTop: 1 }}>
+                                    <Text style={[{ fontFamily: 'Inter_700Bold', fontSize: 10.5, color: colors.textMuted, marginTop: 1 }, { flexShrink: 1 }]}>
                                       {String(num).padStart(2, '0')}
                                     </Text>
                                     <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 13, color: colors.text, flex: 1, lineHeight: 18 }}>
@@ -6010,7 +6013,7 @@ export default function LanguageCourseTool({
                               >
                                 <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 11.5, color: colors.text }}>← Prev</Text>
                               </Pressable>
-                              <Text style={{ fontFamily: 'Inter_600SemiBold', fontSize: 11.5, color: colors.textMuted }}>
+                              <Text style={[{ fontFamily: 'Inter_600SemiBold', fontSize: 11.5, color: colors.textMuted }, { flexShrink: 1 }]}>
                                 Page {safeTxP} / {txPages}
                               </Text>
                               <Pressable
@@ -6381,7 +6384,7 @@ export default function LanguageCourseTool({
                   {corpusLang.topFrequencyWords && corpusLang.topFrequencyWords.length > 0 && (
                     <View style={{ gap: 6, borderTopWidth: 1, borderTopColor: colors.outlineVariant, paddingTop: 10 }}>
                       <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
-                        <Text style={{ fontFamily: "Inter_700Bold", fontSize: 10.5, color: colors.kenyaGreen, letterSpacing: 0.5 }}>
+                        <Text style={[{ fontFamily: "Inter_700Bold", fontSize: 10.5, color: colors.kenyaGreen, letterSpacing: 0.5 }, { flexShrink: 1 }]}>
                           EVERYDAY CORE WORDS ({corpusLang.topFrequencyWords.length})
                         </Text>
                       </View>

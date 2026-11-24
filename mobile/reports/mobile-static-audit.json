@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-24T15:50:34.111Z",
-  "mobileTsxFilesScanned": 54,
+  "generatedAt": "2026-11-24T17:38:57.148Z",
+  "mobileTsxFilesScanned": 55,
   "toolsWired": "50/50",
   "languagesWired": 23,
   "statutoryJsonParity": "58/58",
@@ -467,9 +467,9 @@
     },
     {
       "domain": "hooks",
-      "name": "Zero Rules of Hooks violations across all 54 mobile .tsx files",
+      "name": "Zero Rules of Hooks violations across all 55 mobile .tsx files",
       "status": "pass",
-      "detail": "Scanned 54 .tsx files; found 0 violations"
+      "detail": "Scanned 55 .tsx files; found 0 violations"
     },
     {
       "domain": "theme",
@@ -547,7 +547,7 @@
       "domain": "ergonomics",
       "name": "No overlong static TextInput placeholders (>48ch) across mobile screens",
       "status": "pass",
-      "detail": "Scanned 54 .tsx files; 0 placeholders exceed 48 chars"
+      "detail": "Scanned 55 .tsx files; 0 placeholders exceed 48 chars"
     },
     {
       "domain": "mobile-ux",

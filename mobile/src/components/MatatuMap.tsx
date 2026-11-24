@@ -609,13 +609,13 @@ export function MatatuMap({
             <View
               style={[styles.legendDot, { backgroundColor: theme.kenyaGreen }]}
             />
-            <Text style={[styles.legendText, { color: theme.textPrimary }]}>
+            <Text style={[styles.legendText, { color: theme.textPrimary }, { flexShrink: 1 }]}>
               Start (1)
             </Text>
           </View>
           <View style={styles.legendRow}>
             <View style={[styles.legendDot, { backgroundColor: theme.gold }]} />
-            <Text style={[styles.legendText, { color: theme.textPrimary }]}>
+            <Text style={[styles.legendText, { color: theme.textPrimary }, { flexShrink: 1 }]}>
               Waypoint
             </Text>
           </View>
@@ -623,7 +623,7 @@ export function MatatuMap({
             <View
               style={[styles.legendDot, { backgroundColor: theme.kenyaRed }]}
             />
-            <Text style={[styles.legendText, { color: theme.textPrimary }]}>
+            <Text style={[styles.legendText, { color: theme.textPrimary }, { flexShrink: 1 }]}>
               End ({safeStages.length})
             </Text>
           </View>

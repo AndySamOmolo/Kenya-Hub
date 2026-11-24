@@ -96,6 +96,7 @@ export default function MatatuRouteScreen() {
 
   return (
     <SafeAreaView
+      key={`screen-${theme.isDark ? "d" : "l"}-${themeConfig?.presetId || "def"}-${themeConfig?.surfaceStyle || "elev"}`}
       style={[styles.screen, { backgroundColor: theme.bgPrimary }]}
       edges={["top", "left", "right", "bottom"]}
     >
@@ -193,7 +194,7 @@ export default function MatatuRouteScreen() {
                       </Text>
                     </View>
                   )}
-                  <Text style={{ fontSize: 11, color: theme.textMuted }}>
+                  <Text style={[{ fontSize: 11, color: theme.textMuted }, { flexShrink: 1 }]}>
                     {townName}
                   </Text>
                 </View>
@@ -432,7 +433,7 @@ export default function MatatuRouteScreen() {
                         }}
                       >
                         <Ionicons name="location-outline" size={12} color={theme.sky} />
-                        <Text style={{ fontSize: 11, fontFamily: "Outfit_700Bold", color: theme.sky }}>
+                        <Text style={[{ fontSize: 11, fontFamily: "Outfit_700Bold", color: theme.sky }, { flexShrink: 1 }]}>
                           Open Boarding Stage in Google Maps ↗
                         </Text>
                       </Pressable>
@@ -453,7 +454,7 @@ export default function MatatuRouteScreen() {
             ]}
           >
             <Ionicons name="time-outline" size={18} color={theme.gold} />
-            <Text style={[styles.hoursText, { color: theme.textPrimary }]}>
+            <Text style={[styles.hoursText, { color: theme.textPrimary }, { flexShrink: 1 }]}>
               Operating Hours:{" "}
               <Text style={{ fontFamily: "Outfit_700Bold" }}>
                 {route.operatingHours}

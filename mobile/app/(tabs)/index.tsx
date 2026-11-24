@@ -1034,6 +1034,7 @@ export default function HomeScreen() {
 
   return (
     <SafeAreaView
+      key={`screen-${theme.isDark ? "d" : "l"}-${themeConfig?.presetId || "def"}-${themeConfig?.surfaceStyle || "elev"}`}
       style={[styles.screen, { backgroundColor: theme.bgPrimary }]}
       edges={["top", "left", "right"]}
     >

@@ -433,7 +433,7 @@ export const ExpandablePillRow = React.memo(function ExpandablePillRow({
   const handleToggleExpanded = useCallback(() => {
     triggerHaptic(8);
     if (!themeConfig?.reduceMotion) {
-      LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
+      if (Platform.OS === "ios") { LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut); }
     }
     setExpanded((prev) => !prev);
   }, [themeConfig?.reduceMotion]);
@@ -449,6 +449,9 @@ export const ExpandablePillRow = React.memo(function ExpandablePillRow({
   const isThreeColTiles = pillLayoutMode === "three-col-tiles";
   const isVerticalList = pillLayoutMode === "vertical-list";
   const isMinimalText = pillLayoutMode === "minimal-text";
+  const isBraunKeys = pillLayoutMode === "braun-keys";
+  const isSwissIndex = pillLayoutMode === "swiss-index";
+  const isManilaFolders = pillLayoutMode === "manila-folders";
 
   const renderNormalizedChildren = (
     nodes: React.ReactNode,
@@ -481,7 +484,9 @@ export const ExpandablePillRow = React.memo(function ExpandablePillRow({
             ? theme.gold
             : isSidebarChips
             ? theme.textPrimary
-            : isSegmentedBar || isFloatingDock
+            : isSwissIndex
+            ? theme.bgPrimary
+            : isSegmentedBar || isFloatingDock || isBraunKeys
             ? theme.onPrimaryContainer
             : undefined
           : undefined;
@@ -544,6 +549,42 @@ export const ExpandablePillRow = React.memo(function ExpandablePillRow({
             paddingHorizontal: isCustomPillSize ? pmPH : 10,
             minHeight: isCustomPillSize ? pmMinH : 32,
           };
+        } else if (isBraunKeys) {
+          modeOverride = {
+            borderRadius: 3,
+            borderWidth: 1,
+            borderBottomWidth: isActive ? 1.5 : 3.5,
+            borderTopWidth: isActive ? 2.5 : 1,
+            borderColor: isActive ? theme.gold : theme.outline,
+            backgroundColor: isActive ? theme.primaryContainer : theme.surfaceContainerHigh,
+            paddingVertical: isCustomPillSize ? pmPV : 6,
+            paddingHorizontal: isCustomPillSize ? pmPH : 10,
+            minHeight: isCustomPillSize ? pmMinH : 32,
+          };
+        } else if (isSwissIndex) {
+          modeOverride = {
+            borderRadius: 0,
+            borderWidth: 1.5,
+            borderColor: theme.textPrimary,
+            backgroundColor: isActive ? theme.textPrimary : (theme.isDark ? theme.bgCard : theme.surfaceContainerLowest),
+            paddingVertical: isCustomPillSize ? pmPV : 6,
+            paddingHorizontal: isCustomPillSize ? pmPH : 10,
+            minHeight: isCustomPillSize ? pmMinH : 32,
+          };
+        } else if (isManilaFolders) {
+          modeOverride = {
+            borderTopLeftRadius: 6,
+            borderTopRightRadius: 6,
+            borderBottomLeftRadius: 0,
+            borderBottomRightRadius: 0,
+            borderWidth: 1,
+            borderBottomWidth: isActive ? 0 : 1,
+            borderColor: isActive ? theme.gold : theme.outlineVariant,
+            backgroundColor: isActive ? theme.bgCard : theme.surfaceContainerHigh,
+            paddingVertical: isCustomPillSize ? pmPV : 6,
+            paddingHorizontal: isCustomPillSize ? pmPH : 11,
+            minHeight: isCustomPillSize ? pmMinH : 32,
+          };
         } else if (isSidebarChips) {
           modeOverride = {
             borderTopLeftRadius: hasCustomPillShape && customPillRadius !== undefined ? customPillRadius : 8,
@@ -592,6 +633,8 @@ export const ExpandablePillRow = React.memo(function ExpandablePillRow({
           flexDirection: flatPillStyle.flexDirection || "row",
           alignItems: "center",
           justifyContent: "center",
+          maxWidth: "100%",
+          overflow: "hidden",
           paddingVertical: isCustomPillSize ? pmPV : pv,
           paddingHorizontal: isCustomPillSize ? pmPH : ph,
           minHeight: isCustomPillSize
@@ -668,6 +711,7 @@ export const ExpandablePillRow = React.memo(function ExpandablePillRow({
         return React.cloneElement(
           child as React.ReactElement<any>,
           {
+            ellipsizeMode: "tail",
             ...(isTwoColGrid || isThreeColTiles
               ? { numberOfLines: 2 }
               : isExpanded && props.numberOfLines === 1
@@ -688,7 +732,7 @@ export const ExpandablePillRow = React.memo(function ExpandablePillRow({
                   : {}),
                 ...(forcedInkColor ? { color: forcedInkColor } : {}),
               },
-              isExpanded ? { flexShrink: 1 } : null,
+              { flexShrink: 1 },
             ],
           },
           nextChildren
@@ -959,11 +1003,11 @@ export const ExpandablePillRow = React.memo(function ExpandablePillRow({
               >
                 <View style={rowStyles.modalHeader}>
                   <Text
-                    style={{
+                    style={[{
                       fontFamily: resolvedFonts.heading,
                       fontSize: Math.round(15 * (themeConfig?.fontScale || 1)),
                       color: theme.textPrimary,
-                    }}
+                    }, { flexShrink: 1 }]}
                   >
                     Select Option ({options.length})
                   </Text>
@@ -1426,7 +1470,7 @@ export const ExpandablePillRow = React.memo(function ExpandablePillRow({
                     alignItems: "center",
                     gap: isSegmentedBar ? 3 : isUnderlineTabs ? 4 : 6,
                     paddingVertical: isUnderlineTabs ? 0 : 2,
-                    paddingRight: canScrollRight ? 12 : 2,
+                    paddingRight: 12,
                   },
                 ]}
               >
@@ -1507,7 +1551,7 @@ export const ExpandablePillRow = React.memo(function ExpandablePillRow({
                     alignItems: "center",
                     gap: 6,
                     paddingVertical: 2,
-                    paddingRight: canScrollRight ? 14 : 2,
+                    paddingRight: 12,
                   },
                 ]}
               >

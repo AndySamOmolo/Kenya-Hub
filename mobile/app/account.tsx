@@ -224,7 +224,7 @@ export default function AccountScreen() {
                       }}
                     >
                       <ThemedIcon name="shield-checkmark-outline" size={14} color={theme.kenyaGreenLight || "#10b981"} />
-                      <Text style={{ color: theme.kenyaGreenLight || "#10b981", fontSize: 11, fontWeight: "700" }}>
+                      <Text style={[{ color: theme.kenyaGreenLight || "#10b981", fontSize: 11, fontWeight: "700" }, { flexShrink: 1 }]}>
                         {t("account.activeSession")}
                       </Text>
                     </View>
@@ -328,7 +328,7 @@ export default function AccountScreen() {
                 >
                   <View style={{ flexDirection: "row", alignItems: "center", gap: 12 }}>
                     <ThemedIcon name="school-outline" size={19} color={theme.gold} />
-                    <Text style={{ color: theme.textPrimary, fontWeight: "700", fontSize: 14 }}>
+                    <Text style={[{ color: theme.textPrimary, fontWeight: "700", fontSize: 14 }, { flexShrink: 1 }]}>
                       {t("account.continueLearning")}
                     </Text>
                   </View>
@@ -350,7 +350,7 @@ export default function AccountScreen() {
                 >
                   <View style={{ flexDirection: "row", alignItems: "center", gap: 12 }}>
                     <ThemedIcon name="color-palette-outline" size={19} color={theme.gold} />
-                    <Text style={{ color: theme.textPrimary, fontWeight: "700", fontSize: 14 }}>
+                    <Text style={[{ color: theme.textPrimary, fontWeight: "700", fontSize: 14 }, { flexShrink: 1 }]}>
                       {t("account.customizeTheme")}
                     </Text>
                   </View>
@@ -601,7 +601,7 @@ export default function AccountScreen() {
                         marginBottom: 6,
                       }}
                     >
-                      <Text style={{ color: theme.textSecondary, fontSize: 12, fontWeight: "700" }}>
+                      <Text style={[{ color: theme.textSecondary, fontSize: 12, fontWeight: "700" }, { flexShrink: 1 }]}>
                         {t("account.password")}
                       </Text>
                       {mode === "signin" && (
@@ -750,7 +750,7 @@ export default function AccountScreen() {
           >
             <View style={{ flexDirection: "row", alignItems: "center", gap: 8 }}>
               <ThemedIcon name="language-outline" size={18} color={theme.gold} />
-              <Text style={{ color: theme.textPrimary, fontSize: 13, fontWeight: "700" }}>
+              <Text style={[{ color: theme.textPrimary, fontSize: 13, fontWeight: "700" }, { flexShrink: 1 }]}>
                 {t("lang.title")}
               </Text>
             </View>

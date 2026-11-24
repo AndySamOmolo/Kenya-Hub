@@ -310,7 +310,7 @@ export default function CountyDetailScreen() {
           >
             <Ionicons name="arrow-back" size={22} color={theme.textPrimary} />
           </Pressable>
-          <Text style={[styles.headerBarTitle, { color: theme.textPrimary }]}>
+          <Text style={[styles.headerBarTitle, { color: theme.textPrimary }, { flexShrink: 1 }]}>
             County Not Found
           </Text>
         </View>
@@ -399,6 +399,7 @@ export default function CountyDetailScreen() {
 
   return (
     <SafeAreaView
+      key={`screen-${theme.isDark ? "d" : "l"}-${themeConfig?.presetId || "def"}-${themeConfig?.surfaceStyle || "elev"}`}
       style={[styles.container, { backgroundColor: theme.bgPrimary }]}
       edges={["top", "left", "right", "bottom"]}
     >
@@ -944,7 +945,7 @@ export default function CountyDetailScreen() {
           }}
         >
           <View style={styles.subcountiesHeaderRow}>
-            <Text style={[styles.sectionHeading, { color: theme.gold }]}>
+            <Text style={[styles.sectionHeading, { color: theme.gold }, { flexShrink: 1 }]}>
               Parliamentary Constituencies ({county.constituencies.length})
             </Text>
           </View>
@@ -961,7 +962,7 @@ export default function CountyDetailScreen() {
                   style={[
                     styles.constituencyNumber,
                     { color: theme.gold, backgroundColor: `${theme.gold}18` },
-                  ]}
+                  , { flexShrink: 1 }]}
                 >
                   {i + 1}
                 </Text>
@@ -1197,7 +1198,7 @@ export default function CountyDetailScreen() {
                     style={[
                       styles.constituencyNumber,
                       { color: theme.gold, backgroundColor: `${theme.gold}18` },
-                    ]}
+                    , { flexShrink: 1 }]}
                   >
                     {p.code}
                   </Text>
@@ -1422,7 +1423,7 @@ export default function CountyDetailScreen() {
                     style={[
                       styles.constituencyNumber,
                       { color: theme.gold, backgroundColor: `${theme.gold}18` },
-                    ]}
+                    , { flexShrink: 1 }]}
                   >
                     {String(nb.code).padStart(3, "0")}
                   </Text>

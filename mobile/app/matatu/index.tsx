@@ -492,6 +492,7 @@ export default function MatatuScreen() {
 
   return (
     <SafeAreaView
+      key={`screen-${theme.isDark ? "d" : "l"}-${themeConfig?.presetId || "def"}-${themeConfig?.surfaceStyle || "elev"}`}
       style={[styles.screen, { backgroundColor: theme.bgPrimary }]}
       edges={["top", "left", "right", "bottom"]}
     >
@@ -683,7 +684,7 @@ export default function MatatuScreen() {
         maxToRenderPerBatch={10}
         updateCellsBatchingPeriod={40}
         windowSize={5}
-        removeClippedSubviews={Platform.OS === "android"}
+        removeClippedSubviews={false}
         contentContainerStyle={styles.content}
         showsVerticalScrollIndicator={themeConfig.verticalScrollbarStyle !== "hidden"}
         persistentScrollbar={themeConfig.verticalScrollbarStyle === "always-visible"}

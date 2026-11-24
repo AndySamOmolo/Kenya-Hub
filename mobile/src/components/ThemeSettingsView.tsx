@@ -83,9 +83,11 @@ import {
 } from "../theme";
 import { ThemedIcon, ThemedIconBadge } from "./ThemedIcon";
 import { useAppLanguage, type TranslationKey } from "../lib/i18n";
+import { TactileAtlasShowcase } from "./TactileAtlasShowcase";
 
 type AccordionKey =
   | "makeovers"
+  | "atlas"
   | "presets"
   | "colors"
   | "typography"
@@ -357,6 +359,9 @@ const PILL_BAR_LAYOUT_OPTIONS: readonly { value: PillBarLayout; label: string }[
   { value: "two-col-grid", label: "2-Col Grid" },
   { value: "three-col-tiles", label: "3-Col Tiles" },
   { value: "vertical-list", label: "Vertical List" },
+  { value: "braun-keys", label: "Braun Keys" },
+  { value: "swiss-index", label: "Swiss Index" },
+  { value: "manila-folders", label: "Manila Folders" },
 ];
 
 const APP_BAR_STYLE_OPTIONS: readonly { value: AppBarStyle; label: string }[] = [
@@ -366,6 +371,10 @@ const APP_BAR_STYLE_OPTIONS: readonly { value: AppBarStyle; label: string }[] = 
   { value: "borderless", label: "Borderless" },
   { value: "accent-tinted", label: "Accent Tinted" },
   { value: "floating", label: "Floating" },
+  { value: "braun-tuner", label: "Braun Tuner" },
+  { value: "swiss-masthead", label: "Swiss Masthead" },
+  { value: "eink-runninghead", label: "E-Ink Folio" },
+  { value: "avionics-strip", label: "Avionics Strip" },
 ];
 
 const STRIPE_THICKNESS_OPTIONS: readonly { value: StripeThickness; label: string }[] = [
@@ -405,6 +414,12 @@ const SURFACE_STYLE_OPTIONS: readonly { value: SurfaceStyle; label: string }[] =
   { value: "crisp", label: "High Clarity" },
   { value: "flat", label: "Seamless Flat" },
   { value: "frameless", label: "Unboxed" },
+  { value: "braun-chassis", label: "Braun Chassis" },
+  { value: "swiss-ledger", label: "Swiss Ledger" },
+  { value: "riso-overprint", label: "Riso Overprint" },
+  { value: "horology-bezel", label: "Horology Bezel" },
+  { value: "avionics-panel", label: "Avionics Panel" },
+  { value: "ceramic-glaze", label: "Ceramic Glaze" },
 ];
 
 const CARD_RADIUS_OPTIONS: readonly { value: RadiusPreset; label: string }[] = [
@@ -451,6 +466,10 @@ const TAB_BAR_STYLE_OPTIONS: readonly { value: TabBarStyle; label: string }[] = 
   { value: "docked-cards", label: "Docked Cards" },
   { value: "compact", label: "Compact" },
   { value: "minimal", label: "Soft Wash" },
+  { value: "braun-detent", label: "Braun Detent" },
+  { value: "swiss-timetable", label: "Swiss Timetable" },
+  { value: "solari-flap", label: "Solari Split-Flap" },
+  { value: "porcelain-wells", label: "Porcelain Wells" },
 ];
 
 const MENU_INDICATOR_OPTIONS: readonly { value: MenuIndicatorStyle; label: string }[] = [
@@ -460,6 +479,9 @@ const MENU_INDICATOR_OPTIONS: readonly { value: MenuIndicatorStyle; label: strin
   { value: "dot", label: "Minimal Dot" },
   { value: "filled-box", label: "Solid Stamp" },
   { value: "outline", label: "Precision Frame" },
+  { value: "hanko-seal", label: "Hanko Seal" },
+  { value: "plinth-lift", label: "Plinth Lift" },
+  { value: "vernier-loupe", label: "Vernier Loupe" },
 ];
 
 const VERT_SCROLLBAR_OPTIONS: readonly { value: VerticalScrollbarStyle; label: string }[] = [
@@ -484,6 +506,10 @@ const INPUT_STYLE_OPTIONS: readonly { value: InputStylePreset; label: string }[]
   { value: "minimal", label: "Minimal" },
   { value: "accent", label: "Ink Frame" },
   { value: "unboxed", label: "Unboxed" },
+  { value: "swiss-ledger", label: "Swiss Ledger" },
+  { value: "eink-ribbon", label: "E-Ink Ribbon" },
+  { value: "ceramic-basin", label: "Ceramic Basin" },
+  { value: "avionics-scratchpad", label: "Avionics Pad" },
 ];
 
 const BUTTON_STYLE_OPTIONS: readonly { value: ButtonStylePreset; label: string }[] = [
@@ -494,6 +520,11 @@ const BUTTON_STYLE_OPTIONS: readonly { value: ButtonStylePreset; label: string }
   { value: "keycap-press", label: "Tactile Keycap" },
   { value: "editorial-link", label: "Editorial Link" },
   { value: "unboxed-text", label: "Bare Text" },
+  { value: "braun-keycap", label: "Braun Keycap" },
+  { value: "swiss-split", label: "Swiss Split" },
+  { value: "riso-stamp", label: "Riso Stamp" },
+  { value: "washi-seal", label: "Washi Seal" },
+  { value: "avionics-guard", label: "Avionics Guard" },
 ];
 
 const TRANSITION_OPTIONS: readonly { value: PageTransitionPreset; label: string }[] = [
@@ -538,6 +569,11 @@ const CARD_ACCENT_OPTIONS: readonly { value: CardAccentStyle; label: string }[] 
   { value: "offset-edge", label: "Hardware Lip" },
   { value: "tinted-border", label: "Ink Outline" },
   { value: "bottom-bar", label: "Ledger Foot" },
+  { value: "ticket-stub", label: "Riso Ticket Stub" },
+  { value: "rivet-bezel", label: "Rivet Bezel" },
+  { value: "hanko-corner", label: "Hanko Corner" },
+  { value: "split-flap", label: "Split-Flap Seam" },
+  { value: "plinth-slab", label: "Brutalist Plinth" },
 ];
 
 const ICON_BADGE_OPTIONS: readonly { value: IconBadgeStyle; label: string }[] = [
@@ -884,6 +920,7 @@ export function ThemeSettingsView() {
   const [activeFilter, setActiveFilter] = useState<FilterKey>("all");
   const [openSections, setOpenSections] = useState<Record<AccordionKey, boolean>>({
     makeovers: true,
+    atlas: false,
     presets: false,
     colors: false,
     typography: false,
@@ -1120,6 +1157,7 @@ export function ThemeSettingsView() {
   const sectionToggleHandlers = useMemo<Record<AccordionKey, () => void>>(
     () => ({
       makeovers: () => handleToggleSection("makeovers"),
+      atlas: () => handleToggleSection("atlas"),
       presets: () => handleToggleSection("presets"),
       colors: () => handleToggleSection("colors"),
       typography: () => handleToggleSection("typography"),
@@ -1150,6 +1188,7 @@ export function ThemeSettingsView() {
     }
     setOpenSections({
       makeovers: nextOpen,
+      atlas: nextOpen,
       presets: nextOpen,
       colors: nextOpen,
       typography: nextOpen,
@@ -1365,7 +1404,7 @@ export function ThemeSettingsView() {
                 style={[
                   styles.peekBtnText,
                   { color: peekingDefault ? onGoldInk : theme.textPrimary },
-                ]}
+                , { flexShrink: 1 }]}
               >
                 {peekingDefault ? "Default" : "Peek"}
               </Text>
@@ -1585,7 +1624,7 @@ export function ThemeSettingsView() {
                               ? "Inter_700Bold"
                               : "Inter_600SemiBold",
                           },
-                        ]}
+                        , { flexShrink: 1 }]}
                       >
                         {localizeOptionLabel(opt.value, opt.label, appLang)}
                       </Text>
@@ -1701,9 +1740,9 @@ export function ThemeSettingsView() {
                         style={[
                           styles.navPillLabel,
                           { color: active ? onGoldInk : theme.textPrimary },
-                        ]}
+                        , { flexShrink: 1 }]}
                       >
-                        {appLang === "sw" ? ({ all: "Zote", makeovers: "Mwonekano", presets: "Mandhari", colors: "Rangi", typography: "Maandishi", layout: "Mpangilio", navigation: "Menyu", accessibility: "Ufikiaji", backup: "Hifadhi" }[pill.key] || pill.label) : pill.label}
+                        {appLang === "sw" ? ({ all: "Zote", makeovers: "Mwonekano", atlas: "Atlasi", presets: "Mandhari", colors: "Rangi", typography: "Maandishi", layout: "Mpangilio", navigation: "Menyu", accessibility: "Ufikiaji", backup: "Hifadhi" }[pill.key] || pill.label) : pill.label}
                       </Text>
                     </View>
                   </Pressable>
@@ -1733,7 +1772,7 @@ export function ThemeSettingsView() {
                 ]}
               >
                 <Feather name="shuffle" size={12} color={theme.onPrimaryContainer} />
-                <Text style={[styles.expandAllLabel, { color: theme.onPrimaryContainer }]}>
+                <Text style={[styles.expandAllLabel, { color: theme.onPrimaryContainer }, { flexShrink: 1 }]}>
                   {appLang === "sw" ? "Bahati" : "Surprise"}
                 </Text>
               </View>
@@ -1763,7 +1802,7 @@ export function ThemeSettingsView() {
                   color={theme.gold}
                 />
                 <Text
-                  style={[styles.expandAllLabel, { color: theme.textPrimary }]}
+                  style={[styles.expandAllLabel, { color: theme.textPrimary }, { flexShrink: 1 }]}
                 >
                   {appLang === "sw" ? (allExpanded ? "Kunja" : "Panua") : (allExpanded ? "Collapse" : "Expand")}
                 </Text>
@@ -1980,7 +2019,7 @@ export function ThemeSettingsView() {
                         style={[
                           styles.saveThemeBtnText,
                           { color: onGoldInk },
-                        ]}
+                        , { flexShrink: 1 }]}
                       >
                         Save
                       </Text>
@@ -2095,6 +2134,26 @@ export function ThemeSettingsView() {
           )}
 
           {/* Accordion 2: Theme Presets */}
+          {isVisible("atlas") && (
+            <AccordionCard
+              icon="hardware-chip-outline"
+              title="Tactile Craft Atlas"
+              summary="10 Craft Systems · 20 Interactive Specimens"
+              expanded={isExpanded("atlas")}
+              onToggle={sectionToggleHandlers.atlas}
+              theme={theme}
+            >
+              {isExpanded("atlas") && (
+                <TactileAtlasShowcase
+                  onApplyPreset={(presetId) => {
+                    doHaptic();
+                    applyThemePreset(presetId, presetFullTransform);
+                  }}
+                />
+              )}
+            </AccordionCard>
+          )}
+
           {isVisible("presets") && (
             <AccordionCard
               icon="color-palette-outline"
@@ -3306,7 +3365,7 @@ export function ThemeSettingsView() {
                     style={[
                       styles.optionGroupTitle,
                       { color: theme.textPrimary },
-                    ]}
+                    , { flexShrink: 1 }]}
                   >
                     Export Theme JSON
                   </Text>
@@ -3331,7 +3390,7 @@ export function ThemeSettingsView() {
                         color={theme.gold}
                       />
                       <Text
-                        style={[styles.smallActionText, { color: theme.gold }]}
+                        style={[styles.smallActionText, { color: theme.gold }, { flexShrink: 1 }]}
                       >
                         Share / Copy
                       </Text>
@@ -3417,7 +3476,7 @@ export function ThemeSettingsView() {
                       size={16}
                       color={onGoldInk}
                     />
-                    <Text style={[styles.fullBtnText, { color: onGoldInk }]}>
+                    <Text style={[styles.fullBtnText, { color: onGoldInk }, { flexShrink: 1 }]}>
                       Apply JSON Theme
                     </Text>
                   </View>
@@ -3448,7 +3507,7 @@ export function ThemeSettingsView() {
                     style={[
                       styles.resetBtnText,
                       { color: theme.kenyaRedLight },
-                    ]}
+                    , { flexShrink: 1 }]}
                   >
                     Reset All to Default
                   </Text>
@@ -3828,12 +3887,12 @@ const MiniAppLivePreview = React.memo(function MiniAppLivePreview({
           }}
         >
           <Text
-            style={{
+            style={[{
               fontFamily: previewFonts.bold,
               fontSize: 8.5,
               color: previewTheme.textPrimary,
               includeFontPadding: false,
-            }}
+            }, { flexShrink: 1 }]}
           >
             Category: {MINI_PILLS[activePill]}
           </Text>
@@ -3870,12 +3929,12 @@ const MiniAppLivePreview = React.memo(function MiniAppLivePreview({
             <Ionicons name="chevron-back" size={11} color={previewTheme.gold} />
           </Pressable>
           <Text
-            style={{
+            style={[{
               fontFamily: previewFonts.bold,
               fontSize: 8.5,
               color: previewTheme.textPrimary,
               includeFontPadding: false,
-            }}
+            }, { flexShrink: 1 }]}
           >
             {MINI_PILLS[activePill]} ({activePill + 1}/{MINI_PILLS.length})
           </Text>
@@ -4416,7 +4475,7 @@ const MiniAppLivePreview = React.memo(function MiniAppLivePreview({
             { backgroundColor: previewTheme.surfaceContainerLow },
           ]}
         >
-          <Text style={[styles.miniStatusTime, { color: statusColor }]}>
+          <Text style={[styles.miniStatusTime, { color: statusColor }, { flexShrink: 1 }]}>
             9:41
           </Text>
           <View style={styles.miniStatusIcons}>
@@ -4836,7 +4895,7 @@ const MiniAppLivePreview = React.memo(function MiniAppLivePreview({
                   )}
                 </View>
                 <Text
-                  style={{
+                  style={[{
                     fontFamily:
                       previewConfig.numericStyle === "tabular-mono"
                         ? monoFont
@@ -4845,7 +4904,7 @@ const MiniAppLivePreview = React.memo(function MiniAppLivePreview({
                     fontSize: 9.5,
                     color: previewTheme.gold,
                     includeFontPadding: false,
-                  }}
+                  }, { flexShrink: 1 }]}
                 >
                   KES 12,450
                 </Text>
@@ -5090,7 +5149,7 @@ const CardCompactPreview = React.memo(function CardCompactPreview({
               )}
             </View>
             <Text
-              style={{
+              style={[{
                 fontFamily:
                   previewConfig.numericStyle === "tabular-mono"
                     ? monoFont
@@ -5099,7 +5158,7 @@ const CardCompactPreview = React.memo(function CardCompactPreview({
                 fontSize: 11,
                 color: previewTheme.gold,
                 includeFontPadding: false,
-              }}
+              }, { flexShrink: 1 }]}
             >
               KES 12,450
             </Text>
