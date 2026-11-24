@@ -10,7 +10,7 @@
     "Kajiado",
     "Samburu"
   ],
-  "hasAudio": false,
+  "hasAudio": true,
   "dictionaryVersion": "4.0",
   "lastUpdated": "2026-11-21",
   "contributorNote": "Maasai (ɔl Maa) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), R. N. Cust (1883), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Hildegarde Hinde (1901), Sir Harry H. Johnston (1902), A. C. Hollis (1905), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 49–57), C. W. Hobley (1910, 1922), and BFBS (1921). Expanded and cross-verified with Commercially Permissive Datasets (The Thiomi Dataset Maa (CC-BY-4.0), African Next Voices Kenya Kimasaai (CC-BY-4.0), CLDF ASJP v20 MAASAI & Tsammalex (CC-BY-4.0), SIL Bloom Maa CC-BY-4.0).",

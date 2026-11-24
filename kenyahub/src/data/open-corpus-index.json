@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-23T21:43:31.890362+00:00",
+  "generatedAt": "2026-11-24T01:16:36.312032+00:00",
   "cldrVersion": "49.0.0",
   "stats": {
-    "totalR2AudioClips": 31076,
+    "totalR2AudioClips": 38289,
     "totalAudioChapters": 5,
     "totalKslVideos": 2343,
     "totalStagedVarieties": 4,
@@ -12,12 +12,12 @@
     "totalQuizQuestions": 520,
     "totalCivicDatasets": 10,
     "totalWikimediaDatasets": 6,
-    "pendingGatedCount": 9
+    "pendingGatedCount": 18
   },
   "languages": {
     "swahili": {
       "languageId": "swahili",
-      "r2AudioClips": 12778,
+      "r2AudioClips": 12882,
       "nativeAudioSamples": [
         {
           "slug": "mfalme",
@@ -41,6 +41,30 @@
           "transcript": "Habari za asubuhi? / Habari njema",
           "audioUrl": "https://audio.kenyahub.me/audio/swahili/habari-za-asubuhi.opus",
           "english": "How are you this morning? / Fine. ('good news')",
+          "verifiedTranscript": true
+        },
+        {
+          "slug": "kama",
+          "label": "Kama; with a verb, -vyo, -vyo-. See While, Because, etc",
+          "transcript": "Kama; with a verb, -vyo, -vyo-. See While, Because, etc",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/kama.opus",
+          "english": "As",
+          "verifiedTranscript": true
+        },
+        {
+          "slug": "waziri",
+          "label": "WAZIRI; HUU NI UJUMBE MAALUM KWAKO.",
+          "transcript": "WAZIRI; HUU NI UJUMBE MAALUM KWAKO.",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/waziri.opus",
+          "english": "MINISTRY; HERE'S A SPECIAL MESSAGE FOR YOU.",
+          "verifiedTranscript": true
+        },
+        {
+          "slug": "karibu",
+          "label": "Karibu. / Starehe, starehe, asante",
+          "transcript": "Karibu. / Starehe, starehe, asante",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/karibu.opus",
+          "english": "Come in. / Don't trouble. Thank you.",
           "verifiedTranscript": true
         },
         {
@@ -68,6 +92,14 @@
           "verifiedTranscript": true
         },
         {
+          "slug": "jambo",
+          "label": "Jámbo; ufalme; déraja kú",
+          "transcript": "Jámbo; ufalme; déraja kú",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/jambo.opus",
+          "english": "State",
+          "verifiedTranscript": true
+        },
+        {
           "slug": "mimi",
           "label": "Mimi (subject prefix ni-)",
           "transcript": "Mimi (subject prefix ni-)",
@@ -81,6 +113,14 @@
           "transcript": "(Kwa) sababu (gani) ?",
           "audioUrl": "https://audio.kenyahub.me/audio/swahili/sababu.opus",
           "english": "For what cause ? why ?",
+          "verifiedTranscript": true
+        },
+        {
+          "slug": "dar-es-salaam",
+          "label": "Dar es Salaam",
+          "transcript": "Dar es Salaam",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/dar-es-salaam.opus",
+          "english": "Dar es Salaam (the largest city in Tanzania)",
           "verifiedTranscript": true
         },
         {
@@ -105,6 +145,14 @@
           "transcript": "Mto (pl. mito)",
           "audioUrl": "https://audio.kenyahub.me/audio/swahili/mto.opus",
           "english": "River",
+          "verifiedTranscript": true
+        },
+        {
+          "slug": "mwaka",
+          "label": "Mwaka (pl. miaka)",
+          "transcript": "Mwaka (pl. miaka)",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/mwaka.opus",
+          "english": "Year",
           "verifiedTranscript": true
         },
         {
@@ -188,6 +236,14 @@
           "verifiedTranscript": true
         },
         {
+          "slug": "pia",
+          "label": "Pía; óthe",
+          "transcript": "Pía; óthe",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/pia.opus",
+          "english": "Whole",
+          "verifiedTranscript": true
+        },
+        {
           "slug": "sana",
           "label": "Sána; hálisi",
           "transcript": "Sána; hálisi",
@@ -212,6 +268,14 @@
           "verifiedTranscript": true
         },
         {
+          "slug": "baada",
+          "label": "Baada",
+          "transcript": "Baada",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/baada.opus",
+          "english": "afterwards",
+          "verifiedTranscript": true
+        },
+        {
           "slug": "baadhi",
           "label": "Baadhi",
           "transcript": "Baadhi",
@@ -220,11 +284,43 @@
           "verifiedTranscript": true
         },
         {
+          "slug": "cha",
+          "label": "(Ku)cha",
+          "transcript": "(Ku)cha",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/cha.opus",
+          "english": "To dawn",
+          "verifiedTranscript": true
+        },
+        {
+          "slug": "dini",
+          "label": "Dini",
+          "transcript": "Dini",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/dini.opus",
+          "english": "religion, worship",
+          "verifiedTranscript": true
+        },
+        {
+          "slug": "dodoma",
+          "label": "Dodoma",
+          "transcript": "Dodoma",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/dodoma.opus",
+          "english": "Dodoma (the capital city of Tanzania)",
+          "verifiedTranscript": true
+        },
+        {
           "slug": "elfu",
           "label": "Elfu",
           "transcript": "Elfu",
           "audioUrl": "https://audio.kenyahub.me/audio/swahili/elfu.opus",
           "english": "Thousand",
+          "verifiedTranscript": true
+        },
+        {
+          "slug": "elimu",
+          "label": "Elimu",
+          "transcript": "Elimu",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/elimu.opus",
+          "english": "or elimu-, learning, doctrine",
           "verifiedTranscript": true
         },
         {
@@ -241,102 +337,6 @@
           "transcript": "Hao",
           "audioUrl": "https://audio.kenyahub.me/audio/swahili/hao.opus",
           "english": "or Hawo, these or those before mentioned, referring to animate beings",
-          "verifiedTranscript": true
-        },
-        {
-          "slug": "harusi",
-          "label": "Harusi",
-          "transcript": "Harusi",
-          "audioUrl": "https://audio.kenyahub.me/audio/swahili/harusi.opus",
-          "english": "Marriage, wedding",
-          "verifiedTranscript": true
-        },
-        {
-          "slug": "hata",
-          "label": "Hata",
-          "transcript": "Hata",
-          "audioUrl": "https://audio.kenyahub.me/audio/swahili/hata.opus",
-          "english": "until",
-          "verifiedTranscript": true
-        },
-        {
-          "slug": "hayo",
-          "label": "Hayo",
-          "transcript": "Hayo",
-          "audioUrl": "https://audio.kenyahub.me/audio/swahili/hayo.opus",
-          "english": "these or those before mentioned, referring to plural substantives in ma",
-          "verifiedTranscript": true
-        },
-        {
-          "slug": "hodari",
-          "label": "Hodari",
-          "transcript": "Hodari",
-          "audioUrl": "https://audio.kenyahub.me/audio/swahili/hodari.opus",
-          "english": "Brave",
-          "verifiedTranscript": true
-        },
-        {
-          "slug": "ili",
-          "label": "Ili",
-          "transcript": "Ili",
-          "audioUrl": "https://audio.kenyahub.me/audio/swahili/ili.opus",
-          "english": "in order that, so that",
-          "verifiedTranscript": true
-        },
-        {
-          "slug": "israeli",
-          "label": "Israeli",
-          "transcript": "Israeli",
-          "audioUrl": "https://audio.kenyahub.me/audio/swahili/israeli.opus",
-          "english": "Israel (Country / Territory)",
-          "verifiedTranscript": true
-        },
-        {
-          "slug": "jemadari",
-          "label": "Jemadári",
-          "transcript": "Jemadári",
-          "audioUrl": "https://audio.kenyahub.me/audio/swahili/jemadari.opus",
-          "english": "a commander, commanding-officer, a general",
-          "verifiedTranscript": true
-        },
-        {
-          "slug": "jeshi",
-          "label": "Jeshi",
-          "transcript": "Jeshi",
-          "audioUrl": "https://audio.kenyahub.me/audio/swahili/jeshi.opus",
-          "english": "Army",
-          "verifiedTranscript": true
-        },
-        {
-          "slug": "juu",
-          "label": "Juu",
-          "transcript": "Juu",
-          "audioUrl": "https://audio.kenyahub.me/audio/swahili/juu.opus",
-          "english": "Up",
-          "verifiedTranscript": true
-        },
-        {
-          "slug": "katika",
-          "label": "(Ku)katika",
-          "transcript": "(Ku)katika",
-          "audioUrl": "https://audio.kenyahub.me/audio/swahili/katika.opus",
-          "english": "To be cut, be broken, cut short",
-          "verifiedTranscript": true
-        },
-        {
-          "slug": "kutoka",
-          "label": "Kutoka",
-          "transcript": "Kutoka",
-          "audioUrl": "https://audio.kenyahub.me/audio/swahili/kutoka.opus",
-          "english": "to go out",
-          "verifiedTranscript": true
-        },
-        {
-          "slug": "kuwa",
-          "label": "Kuwa",
-          "transcript": "Kuwa",
-          "audioUrl": "https://audio.kenyahub.me/audio/swahili/kuwa.opus",
-          "english": "to be, is used in Swahili very much as it is in English, the -ki- and -me- tenses of the principal verb being used as present and past participles",
           "verifiedTranscript": true
         }
       ],
@@ -818,7 +818,7 @@
       ],
       "audioChapters": [],
       "shards": {
-        "audioCount": 12777,
+        "audioCount": 12881,
         "storiesCount": 223,
         "sentencesCount": 180,
         "articlesCount": 72,
@@ -1443,7 +1443,7 @@
     },
     "luo": {
       "languageId": "luo",
-      "r2AudioClips": 11984,
+      "r2AudioClips": 18149,
       "nativeAudioSamples": [
         {
           "slug": "agombo-neno-wengegi-chieng-jumapil-ka-oresa-kendo",
@@ -2178,7 +2178,7 @@
         }
       ],
       "shards": {
-        "audioCount": 11979,
+        "audioCount": 18144,
         "storiesCount": 6,
         "sentencesCount": 0,
         "articlesCount": 41,
@@ -2189,7 +2189,7 @@
     },
     "luhya": {
       "languageId": "luhya",
-      "r2AudioClips": 323,
+      "r2AudioClips": 377,
       "nativeAudioSamples": [
         {
           "slug": "bakitwika-the-biggest-bukusu-clan",
@@ -2204,10 +2204,52 @@
           "audioUrl": "https://audio.kenyahub.me/audio/luhya/bona-umusani-walolele-lwatayi-ulwolwo.opus"
         },
         {
+          "slug": "bukusu-artist-wanyonyi-owa-khatundi",
+          "label": "Bukusu artist wanyonyi owa khatundi",
+          "transcript": "Bukusu artist wanyonyi owa khatundi",
+          "audioUrl": "https://audio.kenyahub.me/audio/luhya/bukusu-artist-wanyonyi-owa-khatundi.opus"
+        },
+        {
+          "slug": "bukusu-as-farmers-and-pastrolists",
+          "label": "Bukusu as farmers and pastrolists",
+          "transcript": "Bukusu as farmers and pastrolists",
+          "audioUrl": "https://audio.kenyahub.me/audio/luhya/bukusu-as-farmers-and-pastrolists.opus"
+        },
+        {
+          "slug": "interview-about-benga-masinde-muliro",
+          "label": "Interview about benga masinde muliro",
+          "transcript": "Interview about benga masinde muliro",
+          "audioUrl": "https://audio.kenyahub.me/audio/luhya/interview-about-benga-masinde-muliro.opus"
+        },
+        {
+          "slug": "interview-at-radio-station-cont",
+          "label": "Interview at radio station cont",
+          "transcript": "Interview at radio station cont",
+          "audioUrl": "https://audio.kenyahub.me/audio/luhya/interview-at-radio-station-cont.opus"
+        },
+        {
           "slug": "interview-of-language-in-research",
           "label": "Interview of language in research",
           "transcript": "Interview of language in research",
           "audioUrl": "https://audio.kenyahub.me/audio/luhya/interview-of-language-in-research.opus"
+        },
+        {
+          "slug": "interview-with-man-about-insects",
+          "label": "Interview with man about insects",
+          "transcript": "Interview with man about insects",
+          "audioUrl": "https://audio.kenyahub.me/audio/luhya/interview-with-man-about-insects.opus"
+        },
+        {
+          "slug": "interview-with-man-from-marachi",
+          "label": "Interview with man from marachi",
+          "transcript": "Interview with man from marachi",
+          "audioUrl": "https://audio.kenyahub.me/audio/luhya/interview-with-man-from-marachi.opus"
+        },
+        {
+          "slug": "interview-with-woman-from-ebuhayo",
+          "label": "Interview with woman from ebuhayo",
+          "transcript": "Interview with woman from ebuhayo",
+          "audioUrl": "https://audio.kenyahub.me/audio/luhya/interview-with-woman-from-ebuhayo.opus"
         },
         {
           "slug": "interview-with-women-group-2",
@@ -2246,6 +2288,12 @@
           "audioUrl": "https://audio.kenyahub.me/audio/luhya/lukano-lwa-kukhu-ne-kuka.opus"
         },
         {
+          "slug": "lukuna-lwa-wanakhamuna-nende-enjogu",
+          "label": "Lukuna lwa wanakhamuna nende enjogu",
+          "transcript": "Lukuna lwa wanakhamuna nende enjogu",
+          "audioUrl": "https://audio.kenyahub.me/audio/luhya/lukuna-lwa-wanakhamuna-nende-enjogu.opus"
+        },
+        {
           "slug": "story-of-hen-and-eagle",
           "label": "Story of hen and eagle",
           "transcript": "Story of hen and eagle",
@@ -2256,6 +2304,24 @@
           "label": "Basawu bali uhwata umulwale",
           "transcript": "Basawu bali uhwata umulwale",
           "audioUrl": "https://audio.kenyahub.me/audio/luhya/basawu-bali-uhwata-umulwale.opus"
+        },
+        {
+          "slug": "bukusu-artist-wanyonyi-owa-khatundi-2",
+          "label": "Bukusu artist wanyonyi owa khatundi 2",
+          "transcript": "Bukusu artist wanyonyi owa khatundi 2",
+          "audioUrl": "https://audio.kenyahub.me/audio/luhya/bukusu-artist-wanyonyi-owa-khatundi-2.opus"
+        },
+        {
+          "slug": "bukusu-artist-wanyonyi-owa-khatundi-chabuyabuya",
+          "label": "Bukusu artist wanyonyi owa khatundi chabuyabuya",
+          "transcript": "Bukusu artist wanyonyi owa khatundi chabuyabuya",
+          "audioUrl": "https://audio.kenyahub.me/audio/luhya/bukusu-artist-wanyonyi-owa-khatundi-chabuyabuya.opus"
+        },
+        {
+          "slug": "bukusu-artist-wanyonyi-owa-khatundi-wachonge",
+          "label": "Bukusu artist wanyonyi owa khatundi wachonge",
+          "transcript": "Bukusu artist wanyonyi owa khatundi wachonge",
+          "audioUrl": "https://audio.kenyahub.me/audio/luhya/bukusu-artist-wanyonyi-owa-khatundi-wachonge.opus"
         },
         {
           "slug": "bukusu-mythology-and-proverbs",
@@ -2288,10 +2354,34 @@
           "audioUrl": "https://audio.kenyahub.me/audio/luhya/explaining-bukusu-proverbs-1.opus"
         },
         {
+          "slug": "explaining-bukusu-proverbs-2",
+          "label": "Explaining bukusu proverbs 2",
+          "transcript": "Explaining bukusu proverbs 2",
+          "audioUrl": "https://audio.kenyahub.me/audio/luhya/explaining-bukusu-proverbs-2.opus"
+        },
+        {
+          "slug": "explaining-bukusu-proverbs-3",
+          "label": "Explaining bukusu proverbs 3",
+          "transcript": "Explaining bukusu proverbs 3",
+          "audioUrl": "https://audio.kenyahub.me/audio/luhya/explaining-bukusu-proverbs-3.opus"
+        },
+        {
           "slug": "funeral-announcement-2-continued",
           "label": "Funeral announcement 2 continued",
           "transcript": "Funeral announcement 2 continued",
           "audioUrl": "https://audio.kenyahub.me/audio/luhya/funeral-announcement-2-continued.opus"
+        },
+        {
+          "slug": "history-of-leadership-and-family-lineage",
+          "label": "History of leadership and family lineage",
+          "transcript": "History of leadership and family lineage",
+          "audioUrl": "https://audio.kenyahub.me/audio/luhya/history-of-leadership-and-family-lineage.opus"
+        },
+        {
+          "slug": "how-to-cook-ugali",
+          "label": "How to cook ugali",
+          "transcript": "How to cook ugali",
+          "audioUrl": "https://audio.kenyahub.me/audio/luhya/how-to-cook-ugali.opus"
         },
         {
           "slug": "interview-about-social-work",
@@ -2300,10 +2390,22 @@
           "audioUrl": "https://audio.kenyahub.me/audio/luhya/interview-about-social-work.opus"
         },
         {
+          "slug": "interview-about-woman-body",
+          "label": "Interview about woman body",
+          "transcript": "Interview about woman body",
+          "audioUrl": "https://audio.kenyahub.me/audio/luhya/interview-about-woman-body.opus"
+        },
+        {
           "slug": "interview-about-woman-body-part-2",
           "label": "Interview about woman body part 2",
           "transcript": "Interview about woman body part 2",
           "audioUrl": "https://audio.kenyahub.me/audio/luhya/interview-about-woman-body-part-2.opus"
+        },
+        {
+          "slug": "interview-at-radio-station",
+          "label": "Interview at radio station",
+          "transcript": "Interview at radio station",
+          "audioUrl": "https://audio.kenyahub.me/audio/luhya/interview-at-radio-station.opus"
         },
         {
           "slug": "interview-on-political-issues",
@@ -2328,108 +2430,6 @@
           "label": "Interview with men group",
           "transcript": "Interview with men group",
           "audioUrl": "https://audio.kenyahub.me/audio/luhya/interview-with-men-group.opus"
-        },
-        {
-          "slug": "interview-with-pastor-cont",
-          "label": "Interview with pastor cont",
-          "transcript": "Interview with pastor cont",
-          "audioUrl": "https://audio.kenyahub.me/audio/luhya/interview-with-pastor-cont.opus"
-        },
-        {
-          "slug": "origin-of-bukusu-circumcision",
-          "label": "Origin of bukusu circumcision",
-          "transcript": "Origin of bukusu circumcision",
-          "audioUrl": "https://audio.kenyahub.me/audio/luhya/origin-of-bukusu-circumcision.opus"
-        },
-        {
-          "slug": "process-of-bukusu-circumcision",
-          "label": "Process of bukusu circumcision",
-          "transcript": "Process of bukusu circumcision",
-          "audioUrl": "https://audio.kenyahub.me/audio/luhya/process-of-bukusu-circumcision.opus"
-        },
-        {
-          "slug": "riddle-and-story-khamuna-nende-idhofu",
-          "label": "Riddle and story khamuna nende idhofu",
-          "transcript": "Riddle and story khamuna nende idhofu",
-          "audioUrl": "https://audio.kenyahub.me/audio/luhya/riddle-and-story-khamuna-nende-idhofu.opus"
-        },
-        {
-          "slug": "wachiye-wa-maumbwa-the-bukusu-legend",
-          "label": "Wachiye wa maumbwa the bukusu legend",
-          "transcript": "Wachiye wa maumbwa the bukusu legend",
-          "audioUrl": "https://audio.kenyahub.me/audio/luhya/wachiye-wa-maumbwa-the-bukusu-legend.opus"
-        },
-        {
-          "slug": "bukusu-age-sets",
-          "label": "Bukusu age sets",
-          "transcript": "Bukusu age sets",
-          "audioUrl": "https://audio.kenyahub.me/audio/luhya/bukusu-age-sets.opus"
-        },
-        {
-          "slug": "bukusu-aunt-and-niece-as-co-wives",
-          "label": "Bukusu aunt and niece as co wives",
-          "transcript": "Bukusu aunt and niece as co wives",
-          "audioUrl": "https://audio.kenyahub.me/audio/luhya/bukusu-aunt-and-niece-as-co-wives.opus"
-        },
-        {
-          "slug": "bukusu-play-songs",
-          "label": "Bukusu play songs",
-          "transcript": "Bukusu play songs",
-          "audioUrl": "https://audio.kenyahub.me/audio/luhya/bukusu-play-songs.opus"
-        },
-        {
-          "slug": "emirimo-hair-cut",
-          "label": "Emirimo hair cut",
-          "transcript": "Emirimo hair cut",
-          "audioUrl": "https://audio.kenyahub.me/audio/luhya/emirimo-hair-cut.opus"
-        },
-        {
-          "slug": "funeral-announcement-1",
-          "label": "Funeral announcement 1",
-          "transcript": "Funeral announcement 1",
-          "audioUrl": "https://audio.kenyahub.me/audio/luhya/funeral-announcement-1.opus"
-        },
-        {
-          "slug": "funeral-announcement-2",
-          "label": "Funeral announcement 2",
-          "transcript": "Funeral announcement 2",
-          "audioUrl": "https://audio.kenyahub.me/audio/luhya/funeral-announcement-2.opus"
-        },
-        {
-          "slug": "interview-about-college",
-          "label": "Interview about college",
-          "transcript": "Interview about college",
-          "audioUrl": "https://audio.kenyahub.me/audio/luhya/interview-about-college.opus"
-        },
-        {
-          "slug": "interview-with-butcher",
-          "label": "Interview with butcher",
-          "transcript": "Interview with butcher",
-          "audioUrl": "https://audio.kenyahub.me/audio/luhya/interview-with-butcher.opus"
-        },
-        {
-          "slug": "lubukusu-story-telling",
-          "label": "Lubukusu story telling",
-          "transcript": "Lubukusu story telling",
-          "audioUrl": "https://audio.kenyahub.me/audio/luhya/lubukusu-story-telling.opus"
-        },
-        {
-          "slug": "mutiembu-play-song",
-          "label": "Mutiembu play song",
-          "transcript": "Mutiembu play song",
-          "audioUrl": "https://audio.kenyahub.me/audio/luhya/mutiembu-play-song.opus"
-        },
-        {
-          "slug": "naboone-bipangiri-babirere-atwela-ngabilimu-ni-kametsi",
-          "label": "Naboone bipangiri babirere atwela ngabilimu ni kametsi",
-          "transcript": "Naboone bipangiri babirere atwela ngabilimu ni kametsi",
-          "audioUrl": "https://audio.kenyahub.me/audio/luhya/naboone-bipangiri-babirere-atwela-ngabilimu-ni-kametsi.opus"
-        },
-        {
-          "slug": "ojolijoli-nende-katimba",
-          "label": "Ojolijoli nende katimba",
-          "transcript": "Ojolijoli nende katimba",
-          "audioUrl": "https://audio.kenyahub.me/audio/luhya/ojolijoli-nende-katimba.opus"
         }
       ],
       "cldr": {
@@ -2659,7 +2659,7 @@
       "benchmarks": [],
       "audioChapters": [],
       "shards": {
-        "audioCount": 323,
+        "audioCount": 377,
         "storiesCount": 56,
         "sentencesCount": 0,
         "articlesCount": 0,
@@ -3263,7 +3263,7 @@
     },
     "kalenjin": {
       "languageId": "kalenjin",
-      "r2AudioClips": 2167,
+      "r2AudioClips": 2406,
       "nativeAudioSamples": [
         {
           "slug": "kongoi",
@@ -3364,6 +3364,12 @@
           "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/agot-agilgee-asianyoru-saishek-chekyapeet.opus"
         },
         {
+          "slug": "aiani-kole-amamandai-akoi-ketun",
+          "label": "Aiani kole amamandai akoi ketun",
+          "transcript": "Aiani kole amamandai akoi ketun",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/aiani-kole-amamandai-akoi-ketun.opus"
+        },
+        {
           "slug": "ak-kiimuny-emet-kenyiisyek-artam",
           "label": "Ak kiimuny emet kenyiisyek artam",
           "transcript": "Ak kiimuny emet kenyiisyek artam",
@@ -3410,6 +3416,12 @@
           "label": "Amache awo sukul sait taman",
           "transcript": "Amache awo sukul sait taman",
           "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/amache-awo-sukul-sait-taman.opus"
+        },
+        {
+          "slug": "amat-itilena-mageet-kou-atkinye",
+          "label": "Amat itilena mageet kou atkinye",
+          "transcript": "Amat itilena mageet kou atkinye",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/amat-itilena-mageet-kou-atkinye.opus"
         },
         {
           "slug": "ameche-aam-ngokyet-ne-kikibel",
@@ -3494,18 +3506,6 @@
           "label": "Atindai kasit kamili nebo shakespeare",
           "transcript": "Atindai kasit kamili nebo shakespeare",
           "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/atindai-kasit-kamili-nebo-shakespeare.opus"
-        },
-        {
-          "slug": "atinye-lagok-che-kororon-missing",
-          "label": "Atinye lagok che kororon missing",
-          "transcript": "Atinye lagok che kororon missing",
-          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/atinye-lagok-che-kororon-missing.opus"
-        },
-        {
-          "slug": "ayae-ne-si-asor-kasarta",
-          "label": "Ayae ne si asor kasarta",
-          "transcript": "Ayae ne si asor kasarta",
-          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/ayae-ne-si-asor-kasarta.opus"
         }
       ],
       "cldr": {
@@ -3767,7 +3767,7 @@
       "benchmarks": [],
       "audioChapters": [],
       "shards": {
-        "audioCount": 2167,
+        "audioCount": 2406,
         "storiesCount": 4,
         "sentencesCount": 0,
         "articlesCount": 108,
@@ -5163,8 +5163,249 @@
     },
     "maasai": {
       "languageId": "maasai",
-      "r2AudioClips": 0,
-      "nativeAudioSamples": [],
+      "r2AudioClips": 153,
+      "nativeAudioSamples": [
+        {
+          "slug": "bona-umusani-walolele-lwatayi-ulwolwo",
+          "label": "Bona umusani walolele lwatayi ulwolwo",
+          "transcript": "Bona umusani walolele lwatayi ulwolwo",
+          "audioUrl": "https://audio.kenyahub.me/audio/maasai/bona-umusani-walolele-lwatayi-ulwolwo.opus"
+        },
+        {
+          "slug": "basawu-bali-uhwata-umulwale",
+          "label": "Basawu bali uhwata umulwale",
+          "transcript": "Basawu bali uhwata umulwale",
+          "audioUrl": "https://audio.kenyahub.me/audio/maasai/basawu-bali-uhwata-umulwale.opus"
+        },
+        {
+          "slug": "naboone-bipangiri-babirere-atwela-ngabilimu-ni-kametsi",
+          "label": "Naboone bipangiri babirere atwela ngabilimu ni kametsi",
+          "transcript": "Naboone bipangiri babirere atwela ngabilimu ni kametsi",
+          "audioUrl": "https://audio.kenyahub.me/audio/maasai/naboone-bipangiri-babirere-atwela-ngabilimu-ni-kametsi.opus"
+        },
+        {
+          "slug": "umukhasi-nga-ali-khurambisa-lulwelo-khusesa-nabutama",
+          "label": "Umukhasi nga ali khurambisa lulwelo khusesa nabutama",
+          "transcript": "Umukhasi nga ali khurambisa lulwelo khusesa nabutama",
+          "audioUrl": "https://audio.kenyahub.me/audio/maasai/umukhasi-nga-ali-khurambisa-lulwelo-khusesa-nabutama.opus"
+        },
+        {
+          "slug": "umuzungu-ali-muzinanasi",
+          "label": "Umuzungu ali muzinanasi",
+          "transcript": "Umuzungu ali muzinanasi",
+          "audioUrl": "https://audio.kenyahub.me/audio/maasai/umuzungu-ali-muzinanasi.opus"
+        },
+        {
+          "slug": "anze-musi-batu-mezi-mabale-batelagileko-buyu-buwanga",
+          "label": "Anze musi batu mezi mabale batelagileko buyu buwanga",
+          "transcript": "Anze musi batu mezi mabale batelagileko buyu buwanga",
+          "audioUrl": "https://audio.kenyahub.me/audio/maasai/anze-musi-batu-mezi-mabale-batelagileko-buyu-buwanga.opus"
+        },
+        {
+          "slug": "kisala-kiliko-fenesi-elenga-asi-aligawo-bunyasi-bushitemagako",
+          "label": "Kisala kiliko fenesi elenga asi aligawo bunyasi bushitemagako",
+          "transcript": "Kisala kiliko fenesi elenga asi aligawo bunyasi bushitemagako",
+          "audioUrl": "https://audio.kenyahub.me/audio/maasai/kisala-kiliko-fenesi-elenga-asi-aligawo-bunyasi-bushitemagako.opus"
+        },
+        {
+          "slug": "tsinzukhi-tsibili-nga-tsilikhurura-ndwela-ili-ukhwingila-skip",
+          "label": "Tsinzukhi tsibili nga tsilikhurura ndwela ili ukhwingila skip",
+          "transcript": "Tsinzukhi tsibili nga tsilikhurura ndwela ili ukhwingila skip",
+          "audioUrl": "https://audio.kenyahub.me/audio/maasai/tsinzukhi-tsibili-nga-tsilikhurura-ndwela-ili-ukhwingila-skip.opus"
+        },
+        {
+          "slug": "naboone-kimisaala-kamatoore-tsinzu-nibibi-tsili-ambi-ni-lukudo",
+          "label": "Naboone kimisaala kamatoore tsinzu nibibi tsili ambi ni lukudo",
+          "transcript": "Naboone kimisaala kamatoore tsinzu nibibi tsili ambi ni lukudo",
+          "audioUrl": "https://audio.kenyahub.me/audio/maasai/naboone-kimisaala-kamatoore-tsinzu-nibibi-tsili-ambi-ni-lukudo.opus"
+        },
+        {
+          "slug": "bibindu-bye-giminyongo-tsi-muga-tsi-ndebe-tsi-saapa-bitengi",
+          "label": "Bibindu bye giminyongo tsi muga tsi ndebe tsi saapa bitengi",
+          "transcript": "Bibindu bye giminyongo tsi muga tsi ndebe tsi saapa bitengi",
+          "audioUrl": "https://audio.kenyahub.me/audio/maasai/bibindu-bye-giminyongo-tsi-muga-tsi-ndebe-tsi-saapa-bitengi.opus"
+        },
+        {
+          "slug": "umutu-a-ambile-litaaka-akubile-zi-buloka-aliwo-chi-chi-domoola",
+          "label": "Umutu a ambile litaaka akubile zi buloka aliwo chi chi domoola",
+          "transcript": "Umutu a ambile litaaka akubile zi buloka aliwo chi chi domoola",
+          "audioUrl": "https://audio.kenyahub.me/audio/maasai/umutu-a-ambile-litaaka-akubile-zi-buloka-aliwo-chi-chi-domoola.opus"
+        },
+        {
+          "slug": "inzukhi-ili-shabimuli-inzukhi-yi-yafanile-uri-ili-khupambulukha-",
+          "label": "Inzukhi ili shabimuli inzukhi yi yafanile uri ili…",
+          "transcript": "Inzukhi ili shabimuli inzukhi yi yafanile uri ili…",
+          "audioUrl": "https://audio.kenyahub.me/audio/maasai/inzukhi-ili-shabimuli-inzukhi-yi-yafanile-uri-ili-khupambulukha-.opus"
+        },
+        {
+          "slug": "anobalikwogesa-abaana-nga-bamakuddaya-mezi-bitikire-balikunjende",
+          "label": "Anobalikwogesa abaana nga bamakuddaya mezi bitikire…",
+          "transcript": "Anobalikwogesa abaana nga bamakuddaya mezi bitikire…",
+          "audioUrl": "https://audio.kenyahub.me/audio/maasai/anobalikwogesa-abaana-nga-bamakuddaya-mezi-bitikire-balikunjende.opus"
+        },
+        {
+          "slug": "ku-statue-kwesi-baapa-khuma-khu-shilingi-tse-uganda-ukushebulisa",
+          "label": "Ku statue kwesi baapa khuma khu shilingi tse uganda…",
+          "transcript": "Ku statue kwesi baapa khuma khu shilingi tse uganda…",
+          "audioUrl": "https://audio.kenyahub.me/audio/maasai/ku-statue-kwesi-baapa-khuma-khu-shilingi-tse-uganda-ukushebulisa.opus"
+        },
+        {
+          "slug": "mabaale-magali-gali-ku-litaka-mabaale-igakyina-baga-shepingagamo",
+          "label": "Mabaale magali gali ku litaka mabaale igakyina baga…",
+          "transcript": "Mabaale magali gali ku litaka mabaale igakyina baga…",
+          "audioUrl": "https://audio.kenyahub.me/audio/maasai/mabaale-magali-gali-ku-litaka-mabaale-igakyina-baga-shepingagamo.opus"
+        },
+        {
+          "slug": "tsingobi-tsakonile-itsindi-tsekhale-mu-bunyaasi-nga-tsilikhulya-",
+          "label": "Tsingobi tsakonile itsindi tsekhale mu bunyaasi nga…",
+          "transcript": "Tsingobi tsakonile itsindi tsekhale mu bunyaasi nga…",
+          "audioUrl": "https://audio.kenyahub.me/audio/maasai/tsingobi-tsakonile-itsindi-tsekhale-mu-bunyaasi-nga-tsilikhulya-.opus"
+        },
+        {
+          "slug": "baatu-beseza-nga-bawambile-katiimba-akakweesa-zinyeni-bagwatile-",
+          "label": "Baatu beseza nga bawambile katiimba akakweesa zinyeni…",
+          "transcript": "Baatu beseza nga bawambile katiimba akakweesa zinyeni…",
+          "audioUrl": "https://audio.kenyahub.me/audio/maasai/baatu-beseza-nga-bawambile-katiimba-akakweesa-zinyeni-bagwatile-.opus"
+        },
+        {
+          "slug": "basani-bataru-bali-mushigango-she-tsikhafu-iwunwa-ili-khayilukhi",
+          "label": "Basani bataru bali mushigango she tsikhafu iwunwa ili…",
+          "transcript": "Basani bataru bali mushigango she tsikhafu iwunwa ili…",
+          "audioUrl": "https://audio.kenyahub.me/audio/maasai/basani-bataru-bali-mushigango-she-tsikhafu-iwunwa-ili-khayilukhi.opus"
+        },
+        {
+          "slug": "mushifanani-nabone-binyunyi-bitaru-bili-khubukha-bili-khupamburu",
+          "label": "Mushifanani nabone binyunyi bitaru bili khubukha bili…",
+          "transcript": "Mushifanani nabone binyunyi bitaru bili khubukha bili…",
+          "audioUrl": "https://audio.kenyahub.me/audio/maasai/mushifanani-nabone-binyunyi-bitaru-bili-khubukha-bili-khupamburu.opus"
+        },
+        {
+          "slug": "tsino-lisomelo-lyetsitsushi-nga-tsitsushi-tsabusanebo-kimilundi-",
+          "label": "Tsino lisomelo lyetsitsushi nga tsitsushi tsabusanebo…",
+          "transcript": "Tsino lisomelo lyetsitsushi nga tsitsushi tsabusanebo…",
+          "audioUrl": "https://audio.kenyahub.me/audio/maasai/tsino-lisomelo-lyetsitsushi-nga-tsitsushi-tsabusanebo-kimilundi-.opus"
+        },
+        {
+          "slug": "babana-besomelo-balekelwa-bakwarile-uniform-nga-babili-bakwarile",
+          "label": "Babana besomelo balekelwa bakwarile uniform nga babili…",
+          "transcript": "Babana besomelo balekelwa bakwarile uniform nga babili…",
+          "audioUrl": "https://audio.kenyahub.me/audio/maasai/babana-besomelo-balekelwa-bakwarile-uniform-nga-babili-bakwarile.opus"
+        },
+        {
+          "slug": "liduuka-lye-bibindu-nga-abaana-bali-khubira-iburangisi-bakwarile",
+          "label": "Liduuka lye bibindu nga abaana bali khubira iburangisi…",
+          "transcript": "Liduuka lye bibindu nga abaana bali khubira iburangisi…",
+          "audioUrl": "https://audio.kenyahub.me/audio/maasai/liduuka-lye-bibindu-nga-abaana-bali-khubira-iburangisi-bakwarile.opus"
+        },
+        {
+          "slug": "lukudo-lweli-looba-busa-nga-khulukudo-khuno-khulikho-i-pikipiki-",
+          "label": "Lukudo lweli looba busa nga khulukudo khuno khulikho i…",
+          "transcript": "Lukudo lweli looba busa nga khulukudo khuno khulikho i…",
+          "audioUrl": "https://audio.kenyahub.me/audio/maasai/lukudo-lweli-looba-busa-nga-khulukudo-khuno-khulikho-i-pikipiki-.opus"
+        },
+        {
+          "slug": "bilimwa-bisili-bingana-amala-byabyalibwa-mumu-mumukunda-kumukund",
+          "label": "Bilimwa bisili bingana amala byabyalibwa mumu mumukunda…",
+          "transcript": "Bilimwa bisili bingana amala byabyalibwa mumu mumukunda…",
+          "audioUrl": "https://audio.kenyahub.me/audio/maasai/bilimwa-bisili-bingana-amala-byabyalibwa-mumu-mumukunda-kumukund.opus"
+        },
+        {
+          "slug": "i-meri-imboofu-ingene-nga-ili-khukendela-khu-meetsi-nga-yasutile",
+          "label": "I meri imboofu ingene nga ili khukendela khu meetsi nga…",
+          "transcript": "I meri imboofu ingene nga ili khukendela khu meetsi nga…",
+          "audioUrl": "https://audio.kenyahub.me/audio/maasai/i-meri-imboofu-ingene-nga-ili-khukendela-khu-meetsi-nga-yasutile.opus"
+        },
+        {
+          "slug": "inyantsa-imboofu-yabonekhele-nga-kameetsi-kali-kha-blue-khalikho",
+          "label": "Inyantsa imboofu yabonekhele nga kameetsi kali kha blue…",
+          "transcript": "Inyantsa imboofu yabonekhele nga kameetsi kali kha blue…",
+          "audioUrl": "https://audio.kenyahub.me/audio/maasai/inyantsa-imboofu-yabonekhele-nga-kameetsi-kali-kha-blue-khalikho.opus"
+        },
+        {
+          "slug": "khakhubona-basani-khebenyaya-ne-babana-umwana-wemikhike-khulwany",
+          "label": "Khakhubona basani khebenyaya ne babana umwana wemikhike…",
+          "transcript": "Khakhubona basani khebenyaya ne babana umwana wemikhike…",
+          "audioUrl": "https://audio.kenyahub.me/audio/maasai/khakhubona-basani-khebenyaya-ne-babana-umwana-wemikhike-khulwany.opus"
+        },
+        {
+          "slug": "kumukhono-kwo-muzungu-kwarurakho-bubwoya-buwanga-bukali-khutwela",
+          "label": "Kumukhono kwo muzungu kwarurakho bubwoya buwanga bukali…",
+          "transcript": "Kumukhono kwo muzungu kwarurakho bubwoya buwanga bukali…",
+          "audioUrl": "https://audio.kenyahub.me/audio/maasai/kumukhono-kwo-muzungu-kwarurakho-bubwoya-buwanga-bukali-khutwela.opus"
+        },
+        {
+          "slug": "kunyunyi-kwaleyi-imunywa-kulimo-kamapala-kali-kamawanga-kwabamo-",
+          "label": "Kunyunyi kwaleyi imunywa kulimo kamapala kali kamawanga…",
+          "transcript": "Kunyunyi kwaleyi imunywa kulimo kamapala kali kamawanga…",
+          "audioUrl": "https://audio.kenyahub.me/audio/maasai/kunyunyi-kwaleyi-imunywa-kulimo-kamapala-kali-kamawanga-kwabamo-.opus"
+        },
+        {
+          "slug": "umusaani-wakwarire-i-t-shirt-imaali-wa-ambile-shipaande-mukhoono",
+          "label": "Umusaani wakwarire i t shirt imaali wa ambile shipaande…",
+          "transcript": "Umusaani wakwarire i t shirt imaali wa ambile shipaande…",
+          "audioUrl": "https://audio.kenyahub.me/audio/maasai/umusaani-wakwarire-i-t-shirt-imaali-wa-ambile-shipaande-mukhoono.opus"
+        },
+        {
+          "slug": "umusani-mutwela-awambile-inyeni-humulobo-akari-wenyanza-nihakoye",
+          "label": "Umusani mutwela awambile inyeni humulobo akari wenyanza…",
+          "transcript": "Umusani mutwela awambile inyeni humulobo akari wenyanza…",
+          "audioUrl": "https://audio.kenyahub.me/audio/maasai/umusani-mutwela-awambile-inyeni-humulobo-akari-wenyanza-nihakoye.opus"
+        },
+        {
+          "slug": "abana-bakali-bekhale-eranga-khubana-bano-babili-khulikho-umusind",
+          "label": "Abana bakali bekhale eranga khubana bano babili khulikho…",
+          "transcript": "Abana bakali bekhale eranga khubana bano babili khulikho…",
+          "audioUrl": "https://audio.kenyahub.me/audio/maasai/abana-bakali-bekhale-eranga-khubana-bano-babili-khulikho-umusind.opus"
+        },
+        {
+          "slug": "ino-waliwo-bahasi-babili-umuhasi-mutwela-wamemele-umwana-humukon",
+          "label": "Ino waliwo bahasi babili umuhasi mutwela wamemele umwana…",
+          "transcript": "Ino waliwo bahasi babili umuhasi mutwela wamemele umwana…",
+          "audioUrl": "https://audio.kenyahub.me/audio/maasai/ino-waliwo-bahasi-babili-umuhasi-mutwela-wamemele-umwana-humukon.opus"
+        },
+        {
+          "slug": "inzu-indeyi-ili-inyuma-iliko-zinzu-asi-kungaji-zibili-ni-izindi-",
+          "label": "Inzu indeyi ili inyuma iliko zinzu asi kungaji zibili ni…",
+          "transcript": "Inzu indeyi ili inyuma iliko zinzu asi kungaji zibili ni…",
+          "audioUrl": "https://audio.kenyahub.me/audio/maasai/inzu-indeyi-ili-inyuma-iliko-zinzu-asi-kungaji-zibili-ni-izindi-.opus"
+        },
+        {
+          "slug": "isogo-yemile-ku-wotolo-isogo-yene-ili-iliko-ni-gamoya-ga-yellow-",
+          "label": "Isogo yemile ku wotolo isogo yene ili iliko ni gamoya ga…",
+          "transcript": "Isogo yemile ku wotolo isogo yene ili iliko ni gamoya ga…",
+          "audioUrl": "https://audio.kenyahub.me/audio/maasai/isogo-yemile-ku-wotolo-isogo-yene-ili-iliko-ni-gamoya-ga-yellow-.opus"
+        },
+        {
+          "slug": "kameetsi-kamanji-nabi-namwe-i-nyaanza-nga-i-nyaanza-yino-ilikho-",
+          "label": "Kameetsi kamanji nabi namwe i nyaanza nga i nyaanza yino…",
+          "transcript": "Kameetsi kamanji nabi namwe i nyaanza nga i nyaanza yino…",
+          "audioUrl": "https://audio.kenyahub.me/audio/maasai/kameetsi-kamanji-nabi-namwe-i-nyaanza-nga-i-nyaanza-yino-ilikho-.opus"
+        },
+        {
+          "slug": "tsi-motookha-tsi-motookha-taxi-tse-tsisuta-babandu-tsili-musifa-",
+          "label": "Tsi motookha tsi motookha taxi tse tsisuta babandu tsili…",
+          "transcript": "Tsi motookha tsi motookha taxi tse tsisuta babandu tsili…",
+          "audioUrl": "https://audio.kenyahub.me/audio/maasai/tsi-motookha-tsi-motookha-taxi-tse-tsisuta-babandu-tsili-musifa-.opus"
+        },
+        {
+          "slug": "umukhasi-mutwela-amemele-umwana-khumukongo-ali-khuba-nga-akhula-",
+          "label": "Umukhasi mutwela amemele umwana khumukongo ali khuba nga…",
+          "transcript": "Umukhasi mutwela amemele umwana khumukongo ali khuba nga…",
+          "audioUrl": "https://audio.kenyahub.me/audio/maasai/umukhasi-mutwela-amemele-umwana-khumukongo-ali-khuba-nga-akhula-.opus"
+        },
+        {
+          "slug": "babaana-besomelo-ela-nga-bawkwala-uniform-umulala-walakho-kumusw",
+          "label": "Babaana besomelo ela nga bawkwala uniform umulala walakho…",
+          "transcript": "Babaana besomelo ela nga bawkwala uniform umulala walakho…",
+          "audioUrl": "https://audio.kenyahub.me/audio/maasai/babaana-besomelo-ela-nga-bawkwala-uniform-umulala-walakho-kumusw.opus"
+        },
+        {
+          "slug": "babanu-babili-bekhale-akhunu-akulisibwawo-bilyo-byekhulya-akhunu",
+          "label": "Babanu babili bekhale akhunu akulisibwawo bilyo byekhulya…",
+          "transcript": "Babanu babili bekhale akhunu akulisibwawo bilyo byekhulya…",
+          "audioUrl": "https://audio.kenyahub.me/audio/maasai/babanu-babili-bekhale-akhunu-akulisibwawo-bilyo-byekhulya-akhunu.opus"
+        }
+      ],
       "cldr": {
         "locale": "mas",
         "months": [
@@ -5425,7 +5666,7 @@
       "benchmarks": [],
       "audioChapters": [],
       "shards": {
-        "audioCount": 0,
+        "audioCount": 153,
         "storiesCount": 38,
         "sentencesCount": 0,
         "articlesCount": 0,
@@ -6279,13 +6520,247 @@
     },
     "taita": {
       "languageId": "taita",
-      "r2AudioClips": 1,
+      "r2AudioClips": 250,
       "nativeAudioSamples": [
         {
-          "slug": "napoilwa-kukuw-ona-sena",
-          "label": "Napoilwa kukuw ona sena",
-          "transcript": "Napoilwa kukuw ona sena",
-          "audioUrl": "https://audio.kenyahub.me/audio/taita/napoilwa-kukuw-ona-sena.opus"
+          "slug": "bonyenyi-kazi-na-ngolo-yose",
+          "label": "Bonyenyi kazi na ngolo yose",
+          "transcript": "Bonyenyi kazi na ngolo yose",
+          "audioUrl": "https://audio.kenyahub.me/audio/taita/bonyenyi-kazi-na-ngolo-yose.opus"
+        },
+        {
+          "slug": "dasow-a-w-ulalo-hotelinyi",
+          "label": "Dasow a w ulalo hotelinyi",
+          "transcript": "Dasow a w ulalo hotelinyi",
+          "audioUrl": "https://audio.kenyahub.me/audio/taita/dasow-a-w-ulalo-hotelinyi.opus"
+        },
+        {
+          "slug": "dibonye-dighale-vua-yadakamba-ngi",
+          "label": "Dibonye dighale vua yadakamba ngi",
+          "transcript": "Dibonye dighale vua yadakamba ngi",
+          "audioUrl": "https://audio.kenyahub.me/audio/taita/dibonye-dighale-vua-yadakamba-ngi.opus"
+        },
+        {
+          "slug": "idime-nyumba-esinda-kabwa-rangi",
+          "label": "Idime nyumba esinda kabwa rangi",
+          "transcript": "Idime nyumba esinda kabwa rangi",
+          "audioUrl": "https://audio.kenyahub.me/audio/taita/idime-nyumba-esinda-kabwa-rangi.opus"
+        },
+        {
+          "slug": "iji-ituku-jikaia-ivui-sana",
+          "label": "Iji ituku jikaia ivui sana",
+          "transcript": "Iji ituku jikaia ivui sana",
+          "audioUrl": "https://audio.kenyahub.me/audio/taita/iji-ituku-jikaia-ivui-sana.opus"
+        },
+        {
+          "slug": "imbiri-yake-ndomko-kilambo-chingi",
+          "label": "Imbiri yake ndomko kilambo chingi",
+          "transcript": "Imbiri yake ndomko kilambo chingi",
+          "audioUrl": "https://audio.kenyahub.me/audio/taita/imbiri-yake-ndomko-kilambo-chingi.opus"
+        },
+        {
+          "slug": "ini-naw-emanya-andu-nilale",
+          "label": "Ini naw emanya andu nilale",
+          "transcript": "Ini naw emanya andu nilale",
+          "audioUrl": "https://audio.kenyahub.me/audio/taita/ini-naw-emanya-andu-nilale.opus"
+        },
+        {
+          "slug": "iruw-a-jaringa-demu-kose",
+          "label": "Iruw a jaringa demu kose",
+          "transcript": "Iruw a jaringa demu kose",
+          "audioUrl": "https://audio.kenyahub.me/audio/taita/iruw-a-jaringa-demu-kose.opus"
+        },
+        {
+          "slug": "kaka-kusepatire-magome-ghapo-kuseche",
+          "label": "Kaka kusepatire magome ghapo kuseche",
+          "transcript": "Kaka kusepatire magome ghapo kuseche",
+          "audioUrl": "https://audio.kenyahub.me/audio/taita/kaka-kusepatire-magome-ghapo-kuseche.opus"
+        },
+        {
+          "slug": "kusekimbirie-kulow-olwa-kusevikie-miaka",
+          "label": "Kusekimbirie kulow olwa kusevikie miaka",
+          "transcript": "Kusekimbirie kulow olwa kusevikie miaka",
+          "audioUrl": "https://audio.kenyahub.me/audio/taita/kusekimbirie-kulow-olwa-kusevikie-miaka.opus"
+        },
+        {
+          "slug": "kusesow-e-mana-yekaia-moyo",
+          "label": "Kusesow e mana yekaia moyo",
+          "transcript": "Kusesow e mana yekaia moyo",
+          "audioUrl": "https://audio.kenyahub.me/audio/taita/kusesow-e-mana-yekaia-moyo.opus"
+        },
+        {
+          "slug": "kwachuria-kilo-sana-agha-matuku",
+          "label": "Kwachuria kilo sana agha matuku",
+          "transcript": "Kwachuria kilo sana agha matuku",
+          "audioUrl": "https://audio.kenyahub.me/audio/taita/kwachuria-kilo-sana-agha-matuku.opus"
+        },
+        {
+          "slug": "kwadunga-vindo-mwachaka-ubirie-shuu",
+          "label": "Kwadunga vindo mwachaka ubirie shuu",
+          "transcript": "Kwadunga vindo mwachaka ubirie shuu",
+          "audioUrl": "https://audio.kenyahub.me/audio/taita/kwadunga-vindo-mwachaka-ubirie-shuu.opus"
+        },
+        {
+          "slug": "kwaki-kusezerie-mayo-w-uloli",
+          "label": "Kwaki kusezerie mayo w uloli",
+          "transcript": "Kwaki kusezerie mayo w uloli",
+          "audioUrl": "https://audio.kenyahub.me/audio/taita/kwaki-kusezerie-mayo-w-uloli.opus"
+        },
+        {
+          "slug": "kwaki-kwaw-enikotia-huw-o",
+          "label": "Kwaki kwaw enikotia huw o",
+          "transcript": "Kwaki kwaw enikotia huw o",
+          "audioUrl": "https://audio.kenyahub.me/audio/taita/kwaki-kwaw-enikotia-huw-o.opus"
+        },
+        {
+          "slug": "leka-churia-machi-ghangi-modonyi",
+          "label": "Leka churia machi ghangi modonyi",
+          "transcript": "Leka churia machi ghangi modonyi",
+          "audioUrl": "https://audio.kenyahub.me/audio/taita/leka-churia-machi-ghangi-modonyi.opus"
+        },
+        {
+          "slug": "leka-nikuneke-ichi-kwaw-ekunda",
+          "label": "Leka nikuneke ichi kwaw ekunda",
+          "transcript": "Leka nikuneke ichi kwaw ekunda",
+          "audioUrl": "https://audio.kenyahub.me/audio/taita/leka-nikuneke-ichi-kwaw-ekunda.opus"
+        },
+        {
+          "slug": "lumalwakenyi-ni-ngelo-ipoiye-yehoresha",
+          "label": "Lumalwakenyi ni ngelo ipoiye yehoresha",
+          "transcript": "Lumalwakenyi ni ngelo ipoiye yehoresha",
+          "audioUrl": "https://audio.kenyahub.me/audio/taita/lumalwakenyi-ni-ngelo-ipoiye-yehoresha.opus"
+        },
+        {
+          "slug": "lumi-lwake-loka-na-vonda",
+          "label": "Lumi lwake loka na vonda",
+          "transcript": "Lumi lwake loka na vonda",
+          "audioUrl": "https://audio.kenyahub.me/audio/taita/lumi-lwake-loka-na-vonda.opus"
+        },
+        {
+          "slug": "makongo-gha-kwaru-ghechua-pacha",
+          "label": "Makongo gha kwaru ghechua pacha",
+          "transcript": "Makongo gha kwaru ghechua pacha",
+          "audioUrl": "https://audio.kenyahub.me/audio/taita/makongo-gha-kwaru-ghechua-pacha.opus"
+        },
+        {
+          "slug": "mapemba-ghose-ghajhilwa-ni-nguku",
+          "label": "Mapemba ghose ghajhilwa ni nguku",
+          "transcript": "Mapemba ghose ghajhilwa ni nguku",
+          "audioUrl": "https://audio.kenyahub.me/audio/taita/mapemba-ghose-ghajhilwa-ni-nguku.opus"
+        },
+        {
+          "slug": "mbew-a-yecha-yameria-kishoo",
+          "label": "Mbew a yecha yameria kishoo",
+          "transcript": "Mbew a yecha yameria kishoo",
+          "audioUrl": "https://audio.kenyahub.me/audio/taita/mbew-a-yecha-yameria-kishoo.opus"
+        },
+        {
+          "slug": "naw-ekunda-nikudume-vilambo-idukenyi",
+          "label": "Naw ekunda nikudume vilambo idukenyi",
+          "transcript": "Naw ekunda nikudume vilambo idukenyi",
+          "audioUrl": "https://audio.kenyahub.me/audio/taita/naw-ekunda-nikudume-vilambo-idukenyi.opus"
+        },
+        {
+          "slug": "nderoghoagha-w-andu-agha-matuku",
+          "label": "Nderoghoagha w andu agha matuku",
+          "transcript": "Nderoghoagha w andu agha matuku",
+          "audioUrl": "https://audio.kenyahub.me/audio/taita/nderoghoagha-w-andu-agha-matuku.opus"
+        },
+        {
+          "slug": "nekunda-nidime-kupuruka-sa-nyonyi",
+          "label": "Nekunda nidime kupuruka sa nyonyi",
+          "transcript": "Nekunda nidime kupuruka sa nyonyi",
+          "audioUrl": "https://audio.kenyahub.me/audio/taita/nekunda-nidime-kupuruka-sa-nyonyi.opus"
+        },
+        {
+          "slug": "nguku-rava-maghi-ga-henga",
+          "label": "Nguku rava maghi ga henga",
+          "transcript": "Nguku rava maghi ga henga",
+          "audioUrl": "https://audio.kenyahub.me/audio/taita/nguku-rava-maghi-ga-henga.opus"
+        },
+        {
+          "slug": "ni-suti-nim-mbone-niseendie",
+          "label": "Ni suti nim mbone niseendie",
+          "transcript": "Ni suti nim mbone niseendie",
+          "audioUrl": "https://audio.kenyahub.me/audio/taita/ni-suti-nim-mbone-niseendie.opus"
+        },
+        {
+          "slug": "niw-onyere-kusarigha-ughu-msarigho",
+          "label": "Niw onyere kusarigha ughu msarigho",
+          "transcript": "Niw onyere kusarigha ughu msarigho",
+          "audioUrl": "https://audio.kenyahub.me/audio/taita/niw-onyere-kusarigha-ughu-msarigho.opus"
+        },
+        {
+          "slug": "okumbilwa-sheshe-ni-mghenyu-wape",
+          "label": "Okumbilwa sheshe ni mghenyu wape",
+          "transcript": "Okumbilwa sheshe ni mghenyu wape",
+          "audioUrl": "https://audio.kenyahub.me/audio/taita/okumbilwa-sheshe-ni-mghenyu-wape.opus"
+        },
+        {
+          "slug": "olemwa-ni-kumeria-chaghu-chake",
+          "label": "Olemwa ni kumeria chaghu chake",
+          "transcript": "Olemwa ni kumeria chaghu chake",
+          "audioUrl": "https://audio.kenyahub.me/audio/taita/olemwa-ni-kumeria-chaghu-chake.opus"
+        },
+        {
+          "slug": "sikunde-kukulwa-maghegho-ni-mndungi",
+          "label": "Sikunde kukulwa maghegho ni mndungi",
+          "transcript": "Sikunde kukulwa maghegho ni mndungi",
+          "audioUrl": "https://audio.kenyahub.me/audio/taita/sikunde-kukulwa-maghegho-ni-mndungi.opus"
+        },
+        {
+          "slug": "siw-emanya-chia-eenda-modenyi",
+          "label": "Siw emanya chia eenda modenyi",
+          "transcript": "Siw emanya chia eenda modenyi",
+          "audioUrl": "https://audio.kenyahub.me/audio/taita/siw-emanya-chia-eenda-modenyi.opus"
+        },
+        {
+          "slug": "w-ika-mabemba-iruwenyi-ghiome",
+          "label": "W ika mabemba iruwenyi ghiome",
+          "transcript": "W ika mabemba iruwenyi ghiome",
+          "audioUrl": "https://audio.kenyahub.me/audio/taita/w-ika-mabemba-iruwenyi-ghiome.opus"
+        },
+        {
+          "slug": "walegha-kuchaw-onana-na-mbaha",
+          "label": "Walegha kuchaw onana na mbaha",
+          "transcript": "Walegha kuchaw onana na mbaha",
+          "audioUrl": "https://audio.kenyahub.me/audio/taita/walegha-kuchaw-onana-na-mbaha.opus"
+        },
+        {
+          "slug": "chuo-cha-ngano-ndechiw-adie-picha",
+          "label": "Chuo cha ngano ndechiw adie picha",
+          "transcript": "Chuo cha ngano ndechiw adie picha",
+          "audioUrl": "https://audio.kenyahub.me/audio/taita/chuo-cha-ngano-ndechiw-adie-picha.opus"
+        },
+        {
+          "slug": "dawikua-w-iendie-nakio",
+          "label": "Dawikua w iendie nakio",
+          "transcript": "Dawikua w iendie nakio",
+          "audioUrl": "https://audio.kenyahub.me/audio/taita/dawikua-w-iendie-nakio.opus"
+        },
+        {
+          "slug": "diw-ose-davika-ikanisenyi",
+          "label": "Diw ose davika ikanisenyi",
+          "transcript": "Diw ose davika ikanisenyi",
+          "audioUrl": "https://audio.kenyahub.me/audio/taita/diw-ose-davika-ikanisenyi.opus"
+        },
+        {
+          "slug": "ela-itanaha-moka-mwengerenyi",
+          "label": "Ela itanaha moka mwengerenyi",
+          "transcript": "Ela itanaha moka mwengerenyi",
+          "audioUrl": "https://audio.kenyahub.me/audio/taita/ela-itanaha-moka-mwengerenyi.opus"
+        },
+        {
+          "slug": "enda-kuzighane-vindo-viselunguo",
+          "label": "Enda kuzighane vindo viselunguo",
+          "transcript": "Enda kuzighane vindo viselunguo",
+          "audioUrl": "https://audio.kenyahub.me/audio/taita/enda-kuzighane-vindo-viselunguo.opus"
+        },
+        {
+          "slug": "ghenda-kuw-aye-w-eke-ongolua",
+          "label": "Ghenda kuw aye w eke ongolua",
+          "transcript": "Ghenda kuw aye w eke ongolua",
+          "audioUrl": "https://audio.kenyahub.me/audio/taita/ghenda-kuw-aye-w-eke-ongolua.opus"
         }
       ],
       "cldr": {
@@ -6354,7 +6829,7 @@
       "benchmarks": [],
       "audioChapters": [],
       "shards": {
-        "audioCount": 1,
+        "audioCount": 250,
         "storiesCount": 0,
         "sentencesCount": 0,
         "articlesCount": 0,
@@ -6464,8 +6939,88 @@
     },
     "borana": {
       "languageId": "borana",
-      "r2AudioClips": 393,
+      "r2AudioClips": 642,
       "nativeAudioSamples": [
+        {
+          "slug": "shan",
+          "label": "Shan (z'ani)",
+          "transcript": "Shan (z'ani)",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/shan.opus",
+          "english": "Five",
+          "verifiedTranscript": true
+        },
+        {
+          "slug": "a-a",
+          "label": "Aʼa",
+          "transcript": "Aʼa",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/a-a.opus",
+          "english": "painful voice of sharp pain.",
+          "verifiedTranscript": true
+        },
+        {
+          "slug": "a-aa",
+          "label": "A'aa",
+          "transcript": "A'aa",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/a-aa.opus",
+          "english": "agh",
+          "verifiedTranscript": true
+        },
+        {
+          "slug": "a-ama",
+          "label": "A'ama",
+          "transcript": "A'ama",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/a-ama.opus",
+          "english": "Jaw",
+          "verifiedTranscript": true
+        },
+        {
+          "slug": "aabbee",
+          "label": "Aabbee",
+          "transcript": "Aabbee",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/aabbee.opus",
+          "english": "buddy",
+          "verifiedTranscript": true
+        },
+        {
+          "slug": "aada",
+          "label": "Aada",
+          "transcript": "Aada",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/aada.opus",
+          "english": "moan, painful voice of sharp pain.",
+          "verifiedTranscript": true
+        },
+        {
+          "slug": "aadaa",
+          "label": "Aadaa",
+          "transcript": "Aadaa",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/aadaa.opus",
+          "english": "custom",
+          "verifiedTranscript": true
+        },
+        {
+          "slug": "aadnaa",
+          "label": "Aadnaa",
+          "transcript": "Aadnaa",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/aadnaa.opus",
+          "english": "moan, painful voice of sharp pain.",
+          "verifiedTranscript": true
+        },
+        {
+          "slug": "aaduu",
+          "label": "Aaduu",
+          "transcript": "Aaduu",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/aaduu.opus",
+          "english": "to moan, groan",
+          "verifiedTranscript": true
+        },
+        {
+          "slug": "dha",
+          "label": ".dha",
+          "transcript": ".dha",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/dha.opus",
+          "english": "it is",
+          "verifiedTranscript": true
+        },
         {
           "slug": "gaala",
           "label": "Gaala",
@@ -6475,238 +7030,184 @@
           "verifiedTranscript": true
         },
         {
+          "slug": "icha",
+          "label": "-icha",
+          "transcript": "-icha",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/icha.opus",
+          "english": "the",
+          "verifiedTranscript": true
+        },
+        {
+          "slug": "nuu",
+          "label": "Nuu",
+          "transcript": "Nuu",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/nuu.opus",
+          "english": "for us: dative of nu",
+          "verifiedTranscript": true
+        },
+        {
+          "slug": "uu",
+          "label": "-uu",
+          "transcript": "-uu",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/uu.opus",
+          "english": "infinitive marker",
+          "verifiedTranscript": true
+        },
+        {
+          "slug": "a-osoo-hin-tuqin-b",
+          "label": "A osoo hin tuqin b",
+          "transcript": "A osoo hin tuqin b",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/a-osoo-hin-tuqin-b.opus"
+        },
+        {
+          "slug": "abbaan-koo-barreessa-ganda-keessatti",
+          "label": "Abbaan koo barreessa ganda keessatti",
+          "transcript": "Abbaan koo barreessa ganda keessatti",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/abbaan-koo-barreessa-ganda-keessatti.opus"
+        },
+        {
+          "slug": "abbaan-koo-gargaara-karaa-irratti",
+          "label": "Abbaan koo gargaara karaa irratti",
+          "transcript": "Abbaan koo gargaara karaa irratti",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/abbaan-koo-gargaara-karaa-irratti.opus"
+        },
+        {
+          "slug": "adda-ciran-cimanu-jette-gaagurtiin",
+          "label": "Adda ciran cimanu jette gaagurtiin",
+          "transcript": "Adda ciran cimanu jette gaagurtiin",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/adda-ciran-cimanu-jette-gaagurtiin.opus"
+        },
+        {
           "slug": "afaan-oromoo-ifa-boruu-qaba",
           "label": "Afaan oromoo ifa boruu qaba",
           "transcript": "Afaan oromoo ifa boruu qaba",
           "audioUrl": "https://audio.kenyahub.me/audio/borana/afaan-oromoo-ifa-boruu-qaba.opus"
         },
         {
+          "slug": "akka-dhabduun-ilmoo-garbaati-guddifti",
+          "label": "Akka dhabduun ilmoo garbaati guddifti",
+          "transcript": "Akka dhabduun ilmoo garbaati guddifti",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/akka-dhabduun-ilmoo-garbaati-guddifti.opus"
+        },
+        {
+          "slug": "booyyeen-quufte-tapha-leencaa-dhaqxi",
+          "label": "Booyyeen quufte tapha leencaa dhaqxi",
+          "transcript": "Booyyeen quufte tapha leencaa dhaqxi",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/booyyeen-quufte-tapha-leencaa-dhaqxi.opus"
+        },
+        {
+          "slug": "dhibba-lamaa-fi-jaatamii-sagal",
+          "label": "Dhibba lamaa fi jaatamii sagal",
+          "transcript": "Dhibba lamaa fi jaatamii sagal",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/dhibba-lamaa-fi-jaatamii-sagal.opus"
+        },
+        {
+          "slug": "diraamaa-lazzaa-ilaaluu-nan-jaaladha",
+          "label": "Diraamaa lazzaa ilaaluu nan jaaladha",
+          "transcript": "Diraamaa lazzaa ilaaluu nan jaaladha",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/diraamaa-lazzaa-ilaaluu-nan-jaaladha.opus"
+        },
+        {
+          "slug": "dubartiin-deebi-a-mana-keessatti",
+          "label": "Dubartiin deebi a mana keessatti",
+          "transcript": "Dubartiin deebi a mana keessatti",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/dubartiin-deebi-a-mana-keessatti.opus"
+        },
+        {
+          "slug": "gadheen-ulfas-dhabdeeti-uifinas-dhabdi",
+          "label": "Gadheen ulfas dhabdeeti uifinas dhabdi",
+          "transcript": "Gadheen ulfas dhabdeeti uifinas dhabdi",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/gadheen-ulfas-dhabdeeti-uifinas-dhabdi.opus"
+        },
+        {
+          "slug": "gara-jabeessa-heexoon-hin-aibaasu",
+          "label": "Gara jabeessa heexoon hin aibaasu",
+          "transcript": "Gara jabeessa heexoon hin aibaasu",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/gara-jabeessa-heexoon-hin-aibaasu.opus"
+        },
+        {
+          "slug": "hiriyaan-koo-magaalattii-keessatti-arga",
+          "label": "Hiriyaan koo magaalattii keessatti arga",
+          "transcript": "Hiriyaan koo magaalattii keessatti arga",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/hiriyaan-koo-magaalattii-keessatti-arga.opus"
+        },
+        {
+          "slug": "iccitii-intala-durbaa-beekuun-rakkisaadha",
+          "label": "Iccitii intala durbaa beekuun rakkisaadha",
+          "transcript": "Iccitii intala durbaa beekuun rakkisaadha",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/iccitii-intala-durbaa-beekuun-rakkisaadha.opus"
+        },
+        {
+          "slug": "intalli-ilaala-mana-barumsaa-keessatti",
+          "label": "Intalli ilaala mana barumsaa keessatti",
+          "transcript": "Intalli ilaala mana barumsaa keessatti",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/intalli-ilaala-mana-barumsaa-keessatti.opus"
+        },
+        {
+          "slug": "kuma-tokkoo-fi-afurtamii-saddeet",
+          "label": "Kuma tokkoo fi afurtamii saddeet",
+          "transcript": "Kuma tokkoo fi afurtamii saddeet",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/kuma-tokkoo-fi-afurtamii-saddeet.opus"
+        },
+        {
+          "slug": "kuma-tokkoo-fi-sagaltamii-torba",
+          "label": "Kuma tokkoo fi sagaltamii torba",
+          "transcript": "Kuma tokkoo fi sagaltamii torba",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/kuma-tokkoo-fi-sagaltamii-torba.opus"
+        },
+        {
+          "slug": "mana-manaa-baatee-xuwwee-guutte",
+          "label": "Mana manaa baatee xuwwee guutte",
+          "transcript": "Mana manaa baatee xuwwee guutte",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/mana-manaa-baatee-xuwwee-guutte.opus"
+        },
+        {
+          "slug": "miila-hin-qabduu-laboobaa-dharraati",
+          "label": "Miila hin qabduu laboobaa dharraati",
+          "transcript": "Miila hin qabduu laboobaa dharraati",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/miila-hin-qabduu-laboobaa-dharraati.opus"
+        },
+        {
+          "slug": "milkoofneen-yoo-bakkaan-gahatani-jechuudha",
+          "label": "Milkoofneen yoo bakkaan gahatani jechuudha",
+          "transcript": "Milkoofneen yoo bakkaan gahatani jechuudha",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/milkoofneen-yoo-bakkaan-gahatani-jechuudha.opus"
+        },
+        {
+          "slug": "niitii-irraa-bahan-gabaatti-dhaanan",
+          "label": "Niitii irraa bahan gabaatti dhaanan",
+          "transcript": "Niitii irraa bahan gabaatti dhaanan",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/niitii-irraa-bahan-gabaatti-dhaanan.opus"
+        },
+        {
+          "slug": "obboleessi-koo-barreessa-barii-keessa",
+          "label": "Obboleessi koo barreessa barii keessa",
+          "transcript": "Obboleessi koo barreessa barii keessa",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/obboleessi-koo-barreessa-barii-keessa.opus"
+        },
+        {
+          "slug": "onneellee-dhaban-sombatu-nama-duta",
+          "label": "Onneellee dhaban sombatu nama duta",
+          "transcript": "Onneellee dhaban sombatu nama duta",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/onneellee-dhaban-sombatu-nama-duta.opus"
+        },
+        {
+          "slug": "qotee-bulaa-barata-mana-keessatti",
+          "label": "Qotee bulaa barata mana keessatti",
+          "transcript": "Qotee bulaa barata mana keessatti",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/qotee-bulaa-barata-mana-keessatti.opus"
+        },
+        {
+          "slug": "tan-humnaan-waa-fudhattu-shifttaa",
+          "label": "Tan humnaan waa fudhattu shifttaa",
+          "transcript": "Tan humnaan waa fudhattu shifttaa",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/tan-humnaan-waa-fudhattu-shifttaa.opus"
+        },
+        {
           "slug": "turkii-awurooppaa-3-biyyattii-qabaata",
           "label": "Turkii awurooppaa 3 biyyattii qabaata",
           "transcript": "Turkii awurooppaa 3 biyyattii qabaata",
           "audioUrl": "https://audio.kenyahub.me/audio/borana/turkii-awurooppaa-3-biyyattii-qabaata.opus"
-        },
-        {
-          "slug": "iddoo-kanarratti-kan-argamummoo",
-          "label": "Iddoo kanarratti kan argamummoo",
-          "transcript": "Iddoo kanarratti kan argamummoo",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/iddoo-kanarratti-kan-argamummoo.opus"
-        },
-        {
-          "slug": "ch-letter",
-          "label": "Ch letter",
-          "transcript": "Ch letter",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/ch-letter.opus"
-        },
-        {
-          "slug": "dh-letter",
-          "label": "Dh letter",
-          "transcript": "Dh letter",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/dh-letter.opus"
-        },
-        {
-          "slug": "kun-fedhiin",
-          "label": "Kun fedhiin",
-          "transcript": "Kun fedhiin",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/kun-fedhiin.opus"
-        },
-        {
-          "slug": "liigiins-daandii-abbaasaa-hordofuun-hojii-fayyaa-keessa-gale",
-          "label": "Liigiins daandii abbaasaa hordofuun hojii fayyaa keessa gale",
-          "transcript": "Liigiins daandii abbaasaa hordofuun hojii fayyaa keessa gale",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/liigiins-daandii-abbaasaa-hordofuun-hojii-fayyaa-keessa-gale.opus"
-        },
-        {
-          "slug": "m-mixxii",
-          "label": "M mixxii",
-          "transcript": "M mixxii",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/m-mixxii.opus"
-        },
-        {
-          "slug": "nuti-hundi-salphaamatti-naasuu-keessa-turre-jette-haati",
-          "label": "Nuti hundi salphaamatti naasuu keessa turre jette haati",
-          "transcript": "Nuti hundi salphaamatti naasuu keessa turre jette haati",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/nuti-hundi-salphaamatti-naasuu-keessa-turre-jette-haati.opus"
-        },
-        {
-          "slug": "suuraa-armaan-olitti-argamu-irraa-waanti-mul-atu",
-          "label": "Suuraa armaan olitti argamu irraa waanti mul atu",
-          "transcript": "Suuraa armaan olitti argamu irraa waanti mul atu",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/suuraa-armaan-olitti-argamu-irraa-waanti-mul-atu.opus"
-        },
-        {
-          "slug": "namni-tokko-illee-mana-waliin-jireenyaa-keessa-hin-turre",
-          "label": "Namni tokko illee mana waliin jireenyaa keessa hin turre",
-          "transcript": "Namni tokko illee mana waliin jireenyaa keessa hin turre",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/namni-tokko-illee-mana-waliin-jireenyaa-keessa-hin-turre.opus"
-        },
-        {
-          "slug": "hubadhu",
-          "label": "Hubadhu",
-          "transcript": "Hubadhu",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/hubadhu.opus"
-        },
-        {
-          "slug": "kanariyaan",
-          "label": "Kanariyaan",
-          "transcript": "Kanariyaan",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/kanariyaan.opus"
-        },
-        {
-          "slug": "lalisee",
-          "label": "Lalisee",
-          "transcript": "Lalisee",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/lalisee.opus"
-        },
-        {
-          "slug": "tokkoon-tokkoon-fiigicha-olii-gadii-ykn-hiriira-tikfatteewwanii-",
-          "label": "Tokkoon tokkoon fiigicha olii gadii ykn hiriira…",
-          "transcript": "Tokkoon tokkoon fiigicha olii gadii ykn hiriira…",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/tokkoon-tokkoon-fiigicha-olii-gadii-ykn-hiriira-tikfatteewwanii-.opus"
-        },
-        {
-          "slug": "addunyaa-irrattii-kitaabni-beekamaan-inni-jalqabaa-saaniskiritii",
-          "label": "Addunyaa irrattii kitaabni beekamaan inni jalqabaa…",
-          "transcript": "Addunyaa irrattii kitaabni beekamaan inni jalqabaa…",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/addunyaa-irrattii-kitaabni-beekamaan-inni-jalqabaa-saaniskiritii.opus"
-        },
-        {
-          "slug": "daldalaan-nama-hojii-daldalummaa-yookiis-bittaa-fi-gurgurtummaa-",
-          "label": "Daldalaan nama hojii daldalummaa yookiis bittaa fi…",
-          "transcript": "Daldalaan nama hojii daldalummaa yookiis bittaa fi…",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/daldalaan-nama-hojii-daldalummaa-yookiis-bittaa-fi-gurgurtummaa-.opus"
-        },
-        {
-          "slug": "dorgommicha-hordofuun-keseelowiskiin-qabxii-2-250n-shaanpiyoonsh",
-          "label": "Dorgommicha hordofuun keseelowiskiin qabxii 2 250n…",
-          "transcript": "Dorgommicha hordofuun keseelowiskiin qabxii 2 250n…",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/dorgommicha-hordofuun-keseelowiskiin-qabxii-2-250n-shaanpiyoonsh.opus"
-        },
-        {
-          "slug": "tiyooriiwwan-qabiyyee-bebbeekamoon-lamaan-gulantaa-fedhiiwwanii-",
-          "label": "Tiyooriiwwan qabiyyee bebbeekamoon lamaan gulantaa…",
-          "transcript": "Tiyooriiwwan qabiyyee bebbeekamoon lamaan gulantaa…",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/tiyooriiwwan-qabiyyee-bebbeekamoon-lamaan-gulantaa-fedhiiwwanii-.opus"
-        },
-        {
-          "slug": "bishaan-keessa-lubbu-qabeeyyii-adda-addaatu-jiraata-fakkeenyaaf-",
-          "label": "Bishaan keessa lubbu qabeeyyii adda addaatu jiraata…",
-          "transcript": "Bishaan keessa lubbu qabeeyyii adda addaatu jiraata…",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/bishaan-keessa-lubbu-qabeeyyii-adda-addaatu-jiraata-fakkeenyaaf-.opus"
-        },
-        {
-          "slug": "dunkaana-qabeenya-dhunfaa-irratti-ykn-magaala-hanga-barbaadameyy",
-          "label": "Dunkaana qabeenya dhunfaa irratti ykn magaala hanga…",
-          "transcript": "Dunkaana qabeenya dhunfaa irratti ykn magaala hanga…",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/dunkaana-qabeenya-dhunfaa-irratti-ykn-magaala-hanga-barbaadameyy.opus"
-        },
-        {
-          "slug": "hooggantoota-beekamoo-hooggantoota-beekamoo-jechuun-hoggantummaa",
-          "label": "Hooggantoota beekamoo hooggantoota beekamoo jechuun…",
-          "transcript": "Hooggantoota beekamoo hooggantoota beekamoo jechuun…",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/hooggantoota-beekamoo-hooggantoota-beekamoo-jechuun-hoggantummaa.opus"
-        },
-        {
-          "slug": "ijoollota-haadhaa-fi-abbaa-hin-qabne-guddisuun-itti-gaafatamumma",
-          "label": "Ijoollota haadhaa fi abbaa hin qabne guddisuun itti…",
-          "transcript": "Ijoollota haadhaa fi abbaa hin qabne guddisuun itti…",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/ijoollota-haadhaa-fi-abbaa-hin-qabne-guddisuun-itti-gaafatamumma.opus"
-        },
-        {
-          "slug": "kun-mala-teekinooloojii-ittiin-annisaan-elektirikii-maddisiifamu",
-          "label": "Kun mala teekinooloojii ittiin annisaan elektirikii…",
-          "transcript": "Kun mala teekinooloojii ittiin annisaan elektirikii…",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/kun-mala-teekinooloojii-ittiin-annisaan-elektirikii-maddisiifamu.opus"
-        },
-        {
-          "slug": "kuni-dargaggoota-oromoo-alaabaa-abbaa-gadaan-kootii-hojjatatanii",
-          "label": "Kuni dargaggoota oromoo alaabaa abbaa gadaan kootii…",
-          "transcript": "Kuni dargaggoota oromoo alaabaa abbaa gadaan kootii…",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/kuni-dargaggoota-oromoo-alaabaa-abbaa-gadaan-kootii-hojjatatanii.opus"
-        },
-        {
-          "slug": "qorannoon-bakka-itti-nageenya-qoratamanitti-godhamu-ergafulbaana",
-          "label": "Qorannoon bakka itti nageenya qoratamanitti godhamu…",
-          "transcript": "Qorannoon bakka itti nageenya qoratamanitti godhamu…",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/qorannoon-bakka-itti-nageenya-qoratamanitti-godhamu-ergafulbaana.opus"
-        },
-        {
-          "slug": "wanti-baay-ee-bara-duriitti-inni-akka-nama-i-baayee-barbaachisaa",
-          "label": "Wanti baay ee bara duriitti inni akka nama i baayee…",
-          "transcript": "Wanti baay ee bara duriitti inni akka nama i baayee…",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/wanti-baay-ee-bara-duriitti-inni-akka-nama-i-baayee-barbaachisaa.opus"
-        },
-        {
-          "slug": "wanti-nuti-suuraa-kanarratti-argaa-jirru-yeroo-itti-barattoonni-",
-          "label": "Wanti nuti suuraa kanarratti argaa jirru yeroo itti…",
-          "transcript": "Wanti nuti suuraa kanarratti argaa jirru yeroo itti…",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/wanti-nuti-suuraa-kanarratti-argaa-jirru-yeroo-itti-barattoonni-.opus"
-        },
-        {
-          "slug": "asii-gaditti-kan-arginu-yommuu-abbaan-tokko-qotiyyoo-fayyadamuud",
-          "label": "Asii gaditti kan arginu yommuu abbaan tokko qotiyyoo…",
-          "transcript": "Asii gaditti kan arginu yommuu abbaan tokko qotiyyoo…",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/asii-gaditti-kan-arginu-yommuu-abbaan-tokko-qotiyyoo-fayyadamuud.opus"
-        },
-        {
-          "slug": "bulchaan-duraanii-massachusetts-mitt-romney-filannoo-pirezedaant",
-          "label": "Bulchaan duraanii massachusetts mitt romney filannoo…",
-          "transcript": "Bulchaan duraanii massachusetts mitt romney filannoo…",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/bulchaan-duraanii-massachusetts-mitt-romney-filannoo-pirezedaant.opus"
-        },
-        {
-          "slug": "jecha-warreen-giriinlaandiin-afaan-hiikkatanii-yooma-dhageesseyy",
-          "label": "Jecha warreen giriinlaandiin afaan hiikkatanii yooma…",
-          "transcript": "Jecha warreen giriinlaandiin afaan hiikkatanii yooma…",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/jecha-warreen-giriinlaandiin-afaan-hiikkatanii-yooma-dhageesseyy.opus"
-        },
-        {
-          "slug": "meeshotni-afaan-hiikaan-haala-aja-ibsiisan-jijjirama-fiidaniiru-",
-          "label": "Meeshotni afaan hiikaan haala aja ibsiisan jijjirama…",
-          "transcript": "Meeshotni afaan hiikaan haala aja ibsiisan jijjirama…",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/meeshotni-afaan-hiikaan-haala-aja-ibsiisan-jijjirama-fiidaniiru-.opus"
-        },
-        {
-          "slug": "suuraa-kanarratti-kan-arginu-suuraa-namoonni-yookiin-weellistoon",
-          "label": "Suuraa kanarratti kan arginu suuraa namoonni yookiin…",
-          "transcript": "Suuraa kanarratti kan arginu suuraa namoonni yookiin…",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/suuraa-kanarratti-kan-arginu-suuraa-namoonni-yookiin-weellistoon.opus"
-        },
-        {
-          "slug": "appilikeeshinoota-barreeffama-hiikan-kan-yeroo-dhugaa-applikeesh",
-          "label": "Appilikeeshinoota barreeffama hiikan kan yeroo dhugaa…",
-          "transcript": "Appilikeeshinoota barreeffama hiikan kan yeroo dhugaa…",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/appilikeeshinoota-barreeffama-hiikan-kan-yeroo-dhugaa-applikeesh.opus"
-        },
-        {
-          "slug": "darbiinsi-aangikoor-gara-mana-mootummatti-seenuuf-nii-barbaachis",
-          "label": "Darbiinsi aangikoor gara mana mootummatti seenuuf nii…",
-          "transcript": "Darbiinsi aangikoor gara mana mootummatti seenuuf nii…",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/darbiinsi-aangikoor-gara-mana-mootummatti-seenuuf-nii-barbaachis.opus"
-        },
-        {
-          "slug": "gama-haala-faayinaansii-addunyaan-zaapaateeroon-sirni-faayinaans",
-          "label": "Gama haala faayinaansii addunyaan zaapaateeroon sirni…",
-          "transcript": "Gama haala faayinaansii addunyaan zaapaateeroon sirni…",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/gama-haala-faayinaansii-addunyaan-zaapaateeroon-sirni-faayinaans.opus"
-        },
-        {
-          "slug": "ji-a-darbe-koomishiniin-pireezidaantii-akka-paakeejii-tarkaanfii",
-          "label": "Ji a darbe koomishiniin pireezidaantii akka paakeejii…",
-          "transcript": "Ji a darbe koomishiniin pireezidaantii akka paakeejii…",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/ji-a-darbe-koomishiniin-pireezidaantii-akka-paakeejii-tarkaanfii.opus"
-        },
-        {
-          "slug": "lammiileen-veenzuweelaa-parsantii-kudha-saddeet-hojii-dhabeeyyii",
-          "label": "Lammiileen veenzuweelaa parsantii kudha saddeet hojii…",
-          "transcript": "Lammiileen veenzuweelaa parsantii kudha saddeet hojii…",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/lammiileen-veenzuweelaa-parsantii-kudha-saddeet-hojii-dhabeeyyii.opus"
-        },
-        {
-          "slug": "riichaardi-veermaan-dubbataan-ogeeyyii-fayyaa-daangaa-hinqabnee-",
-          "label": "Riichaardi veermaan dubbataan ogeeyyii fayyaa daangaa…",
-          "transcript": "Riichaardi veermaan dubbataan ogeeyyii fayyaa daangaa…",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/riichaardi-veermaan-dubbataan-ogeeyyii-fayyaa-daangaa-hinqabnee-.opus"
         }
       ],
       "cldr": {
@@ -6991,7 +7492,7 @@
       ],
       "audioChapters": [],
       "shards": {
-        "audioCount": 393,
+        "audioCount": 637,
         "storiesCount": 49,
         "sentencesCount": 0,
         "articlesCount": 0,
@@ -12567,14 +13068,15 @@
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-164",
         "title": "A Woman Washes Jesus' Feet",
         "gloss": "A Woman Washes Jesus' Feet",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-164.mp4",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-164.mp4?v=2",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
         "reference": "A Woman Washes Jesus' Feet",
         "transcript": "Then one of the Pharisees invited Jesus to eat with him, and He entered the Pharisee’s house and reclined at the table. When a sinful woman from that town learned that Jesus was dining there, she brought an alabaster jar of perfume. As she stood behind Him at His feet weeping, she began to wet His feet with her tears and wipe them with her hair. Then she kissed His feet and anointed them with the perfume. When the Pharisee who had invited Jesus saw this, he said to himself, “If this man were a prophet, He would know who this is and what kind of woman is touching Him—for she is a sinner!” But Jesus answered him, “Simon, I have something to tell you.” “Tell me, Teacher,” he said. “Two men were debtors to a certain moneylender. One owed him five hundred denarii, and the other fifty. When they were unable to repay him, he forgave both of them. Which one, then, will love him more?” “I suppose the one who was forgiven more,” Simon replied. “You have judged correctly,” Jesus said. And turning toward the woman, He said to Simon, “Do you see this woman? When I entered your house, you did not give Me water for My feet, but she wet My feet with her tears and wiped them with her hair. You did not greet Me with a kiss, but she has not stopped kissing My feet since I arrived. You did not anoint My head with oil, but she has anointed My feet with perfume. Therefore I tell you, because her many sins have been forgiven, she has loved much. But he who has been forgiven little loves little.” Then Jesus said to her, “Your sins are forgiven.” But those at the table began to say to themselves, “Who is this who even forgives sins?” And Jesus told the woman, “Your faith has saved you; go in peace.”",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles",
+        "fullDurationV2": true
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-532",
@@ -12660,14 +13162,15 @@
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-97",
         "title": "Achan'S Sin And Defeat Of Ai",
         "gloss": "Achan'S Sin And Defeat Of Ai",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-97.mp4",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-97.mp4?v=2",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
         "reference": "Achan'S Sin And Defeat Of Ai",
         "transcript": "Meanwhile, Joshua sent men from Jericho to Ai, which is near Beth-aven to the east of Bethel, and told them, “Go up and spy out the land.” So the men went up and spied out Ai. On returning to Joshua, they reported, “There is no need to send all the people; two or three thousand men are enough to go up and attack Ai. Since the people of Ai are so few, you need not wear out all our people there.” So about three thousand men went up, but they fled before the men of Ai. And the men of Ai struck down about thirty-six of them, chasing them from the gate as far as the quarries and striking them down on the slopes. So the hearts of the people melted and became like water. Then Joshua tore his clothes and fell facedown before the ark of the LORD until evening, as did the elders of Israel; and they all sprinkled dust on their heads. “O, Lord GOD,” Joshua said, “why did You ever bring this people across the Jordan to deliver us into the hand of the Amorites to be destroyed? If only we had been content to stay on the other side of the Jordan! O Lord, what can I say, now that Israel has turned its back and run from its enemies? When the Canaanites and all who live in the land hear about this, they will surround us and wipe out our name from the earth. Then what will You do for Your great name?” But the LORD said to Joshua, “Stand up! Why have you fallen on your face? Israel has sinned; they have transgressed My covenant that I commanded them, and they have taken some of what was devoted to destruction. Indeed, they have stolen and lied, and they have put these things with their own possessions. This is why the Israelites cannot stand against their enemies. They will turn their backs and run from their enemies, because they themselves have been set apart for destruction. I will no longer be with you unless you remove from among you whatever is devoted to destruction. Get up and consecrate the people, saying, ‘Consecrate yourselves for tomorrow, for this is what the LORD, the God of Israel, says: Among you, O Israel, there are things devoted to destruction. You cannot stand against your enemies until you remove them. In the morning you must present yourselves tribe by tribe.",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles",
+        "fullDurationV2": true
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-398",
@@ -12894,14 +13397,15 @@
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-174",
         "title": "Bleeding Woman And Jairus' Daughter",
         "gloss": "Bleeding Woman And Jairus' Daughter",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-174.mp4",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-174.mp4?v=2",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
         "reference": "Bleeding Woman And Jairus' Daughter",
         "transcript": "When Jesus had again crossed by boat to the other side, a large crowd gathered around Him beside the sea. A synagogue leader named Jairus arrived, and seeing Jesus, he fell at His feet and pleaded with Him urgently, “My little daughter is near death. Please come and place Your hands on her, so that she will be healed and live.” So Jesus went with him, and a large crowd followed and pressed around Him. And a woman was there who had suffered from bleeding for twelve years. She had borne much agony under the care of many physicians and had spent all she had, but to no avail. Instead, her condition had only grown worse. When the woman heard about Jesus, she came up through the crowd behind Him and touched His cloak. For she kept saying, “If only I touch His garments, I will be healed.” Immediately her bleeding stopped, and she sensed in her body that she was healed of her affliction. At once Jesus was aware that power had gone out from Him. Turning to the crowd, He asked, “Who touched My garments?” His disciples answered, “You can see the crowd pressing in on You, and yet You ask, ‘Who touched Me?’” But He kept looking around to see who had done this. Then the woman, knowing what had happened to her, came and fell down before Him trembling in fear, and she told Him the whole truth. “Daughter,” said Jesus, “your faith has healed you. Go in peace and be free of your affliction.” While He was still speaking, messengers from the house of Jairus arrived and said, “Your daughter is dead; why bother the Teacher anymore?” But Jesus overheard their conversation and said to Jairus, “Do not be afraid; just believe.” And He did not allow anyone to accompany Him except Peter, James, and John the brother of James. When they arrived at the house of the synagogue leader, Jesus saw the commotion and the people weeping and wailing loudly. He went inside and asked, “Why all this commotion and weeping? The child is not dead, but asleep.” And they laughed at Him. After He had put them all outside, He took the child’s father and mother and His own companions, and went in to see the child. Taking her by the hand, Jesus said, “Talitha koum!” which means, “Little girl, I say to you, get up!” Immediately the girl got up and began to walk around. She was twelve years old, and at once they were utterly astounded.",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles",
+        "fullDurationV2": true
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-542",

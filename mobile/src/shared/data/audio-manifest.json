@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "generatedAt": "2026-11-23",
+  "generatedAt": "2026-11-24",
   "storageArchitecture": "Cloudflare R2 Free Tier (10 GB free storage, 10M free Class B reads/mo, $0.00 egress)",
   "codec": "Opus 24kbps mono 24kHz (.opus)",
   "estimatedCapacityHours": 925,
@@ -10,7 +10,7 @@
       "totalEntries": 31845,
       "addressableR2Keys": 31830,
       "r2Prefix": "audio/borana/",
-      "directAudioEntries": 114,
+      "directAudioEntries": 120,
       "openAccessDatasets": [
         {
           "id": "cv27-om",
@@ -191,7 +191,7 @@
       "totalEntries": 17313,
       "addressableR2Keys": 17305,
       "r2Prefix": "audio/luo/",
-      "directAudioEntries": 262,
+      "directAudioEntries": 264,
       "openAccessDatasets": [
         {
           "id": "anv-ke-luo",
@@ -388,7 +388,7 @@
       "totalEntries": 61075,
       "addressableR2Keys": 61053,
       "r2Prefix": "audio/swahili/",
-      "directAudioEntries": 1098,
+      "directAudioEntries": 1123,
       "openAccessDatasets": [
         {
           "id": "cv27-sw",
