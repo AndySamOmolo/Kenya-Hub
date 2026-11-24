@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-24T02:59:40.640973+00:00",
+  "generatedAt": "2026-11-24T06:30:32.949825+00:00",
   "cldrVersion": "49.0.0",
   "stats": {
     "totalR2AudioClips": 38306,
     "totalAudioChapters": 5,
-    "totalKslVideos": 2343,
+    "totalKslVideos": 2385,
     "totalStagedVarieties": 4,
     "totalStagedEntries": 650,
     "totalBenchmarkRows": 26618,
@@ -13084,27 +13084,29 @@
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-532",
         "title": "A Woman Washes Jesus' Feet",
         "gloss": "A Woman Washes Jesus' Feet",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-532.mp4",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-532.mp4?v=2",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
         "reference": "A Woman Washes Jesus' Feet",
         "transcript": "Then one of the Pharisees invited Jesus to eat with him, and He entered the Pharisee’s house and reclined at the table. When a sinful woman from that town learned that Jesus was dining there, she brought an alabaster jar of perfume. As she stood behind Him at His feet weeping, she began to wet His feet with her tears and wipe them with her hair. Then she kissed His feet and anointed them with the perfume. When the Pharisee who had invited Jesus saw this, he said to himself, “If this man were a prophet, He would know who this is and what kind of woman is touching Him—for she is a sinner!” But Jesus answered him, “Simon, I have something to tell you.” “Tell me, Teacher,” he said. “Two men were debtors to a certain moneylender. One owed him five hundred denarii, and the other fifty. When they were unable to repay him, he forgave both of them. Which one, then, will love him more?” “I suppose the one who was forgiven more,” Simon replied. “You have judged correctly,” Jesus said. And turning toward the woman, He said to Simon, “Do you see this woman? When I entered your house, you did not give Me water for My feet, but she wet My feet with her tears and wiped them with her hair. You did not greet Me with a kiss, but she has not stopped kissing My feet since I arrived. You did not anoint My head with oil, but she has anointed My feet with perfume. Therefore I tell you, because her many sins have been forgiven, she has loved much. But he who has been forgiven little loves little.” Then Jesus said to her, “Your sins are forgiven.” But those at the table began to say to themselves, “Who is this who even forgives sins?” And Jesus told the woman, “Your faith has saved you; go in peace.”",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles",
+        "fullDurationV2": true
       },
       {
         "id": "sign-bible-xki-dd8a4f0311",
         "title": "A Woman Washes Jesus' Feet",
         "gloss": "A Woman Washes Jesus' Feet",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-dd8a4f0311.mp4",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-dd8a4f0311.mp4?v=2",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
         "reference": "A Woman Washes Jesus' Feet",
         "transcript": "Then one of the Pharisees invited Jesus to eat with him, and He entered the Pharisee’s house and reclined at the table. When a sinful woman from that town learned that Jesus was dining there, she brought an alabaster jar of perfume. As she stood behind Him at His feet weeping, she began to wet His feet with her tears and wipe them with her hair. Then she kissed His feet and anointed them with the perfume. When the Pharisee who had invited Jesus saw this, he said to himself, “If this man were a prophet, He would know who this is and what kind of woman is touching Him—for she is a sinner!” But Jesus answered him, “Simon, I have something to tell you.” “Tell me, Teacher,” he said. “Two men were debtors to a certain moneylender. One owed him five hundred denarii, and the other fifty. When they were unable to repay him, he forgave both of them. Which one, then, will love him more?” “I suppose the one who was forgiven more,” Simon replied. “You have judged correctly,” Jesus said. And turning toward the woman, He said to Simon, “Do you see this woman? When I entered your house, you did not give Me water for My feet, but she wet My feet with her tears and wiped them with her hair. You did not greet Me with a kiss, but she has not stopped kissing My feet since I arrived. You did not anoint My head with oil, but she has anointed My feet with perfume. Therefore I tell you, because her many sins have been forgiven, she has loved much. But he who has been forgiven little loves little.” Then Jesus said to her, “Your sins are forgiven.” But those at the table began to say to themselves, “Who is this who even forgives sins?” And Jesus told the woman, “Your faith has saved you; go in peace.”",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles",
+        "fullDurationV2": true
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-40",
@@ -13138,27 +13140,29 @@
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-403",
         "title": "Abram, Sarai And Hagar",
         "gloss": "Abram, Sarai And Hagar",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-403.mp4",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-403.mp4?v=2",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
         "reference": "Abram, Sarai And Hagar",
         "transcript": "Now Abram’s wife Sarai had borne him no children, but she had an Egyptian maidservant named Hagar. So Sarai said to Abram, “Look now, the LORD has prevented me from bearing children. Please go to my maidservant; perhaps I can build a family by her.” And Abram listened to the voice of Sarai. So after he had lived in Canaan for ten years, his wife Sarai took her Egyptian maidservant Hagar and gave her to Abram to be his wife. And he slept with Hagar, and she conceived. But when Hagar realized that she was pregnant, she began to despise her mistress. Then Sarai said to Abram, “May the wrong done to me be upon you! I delivered my servant into your arms, and ever since she saw that she was pregnant, she has treated me with contempt. May the LORD judge between you and me.” “Here,” said Abram, “your servant is in your hands. Do whatever you want with her.” Then Sarai treated Hagar so harshly that she fled from her. Now the angel of the LORD found Hagar by a spring of water in the desert—the spring along the road to Shur. “Hagar, servant of Sarai,” he said, “where have you come from, and where are you going?” “I am running away from my mistress Sarai,” she replied. So the angel of the LORD told her, “Return to your mistress and submit to her authority.” Then the angel added, “I will greatly multiply your offspring so that they will be too numerous to count.” The angel of the LORD proceeded: “Behold, you have conceived and will bear a son. And you shall name him Ishmael, for the LORD has heard your cry of affliction. He will be a wild donkey of a man, and his hand will be against everyone, and everyone’s hand against him; he will live in hostility toward all his brothers.” So Hagar gave this name to the LORD who had spoken to her: “You are the God who sees me,” for she said, “Here I have seen the One who sees me!” Therefore the well was called Beer-lahai-roi. It is located between Kadesh and Bered. And Hagar bore Abram a son, and Abram gave the name Ishmael to the son she had borne. Abram was eighty-six years old when Hagar bore Ishmael to him.",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles",
+        "fullDurationV2": true
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-465",
         "title": "Achan'S Sin And Defeat Of Ai",
         "gloss": "Achan'S Sin And Defeat Of Ai",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-465.mp4",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-465.mp4?v=2",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
         "reference": "Achan'S Sin And Defeat Of Ai",
         "transcript": "Meanwhile, Joshua sent men from Jericho to Ai, which is near Beth-aven to the east of Bethel, and told them, “Go up and spy out the land.” So the men went up and spied out Ai. On returning to Joshua, they reported, “There is no need to send all the people; two or three thousand men are enough to go up and attack Ai. Since the people of Ai are so few, you need not wear out all our people there.” So about three thousand men went up, but they fled before the men of Ai. And the men of Ai struck down about thirty-six of them, chasing them from the gate as far as the quarries and striking them down on the slopes. So the hearts of the people melted and became like water. Then Joshua tore his clothes and fell facedown before the ark of the LORD until evening, as did the elders of Israel; and they all sprinkled dust on their heads. “O, Lord GOD,” Joshua said, “why did You ever bring this people across the Jordan to deliver us into the hand of the Amorites to be destroyed? If only we had been content to stay on the other side of the Jordan! O Lord, what can I say, now that Israel has turned its back and run from its enemies? When the Canaanites and all who live in the land hear about this, they will surround us and wipe out our name from the earth. Then what will You do for Your great name?” But the LORD said to Joshua, “Stand up! Why have you fallen on your face? Israel has sinned; they have transgressed My covenant that I commanded them, and they have taken some of what was devoted to destruction. Indeed, they have stolen and lied, and they have put these things with their own possessions. This is why the Israelites cannot stand against their enemies. They will turn their backs and run from their enemies, because they themselves have been set apart for destruction. I will no longer be with you unless you remove from among you whatever is devoted to destruction. Get up and consecrate the people, saying, ‘Consecrate yourselves for tomorrow, for this is what the LORD, the God of Israel, says: Among you, O Israel, there are things devoted to destruction. You cannot stand against your enemies until you remove them. In the morning you must present yourselves tribe by tribe.",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles",
+        "fullDurationV2": true
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-97",
@@ -13373,27 +13377,29 @@
         "id": "sign-bible-xki-46d8f73df6",
         "title": "Avoid Sexual Sins",
         "gloss": "Avoid Sexual Sins",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-46d8f73df6.mp4",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-46d8f73df6.mp4?v=2",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
         "reference": "Avoid Sexual Sins",
         "transcript": "Do you not know that the wicked will not inherit the kingdom of God? Do not be deceived: Neither the sexually immoral, nor idolaters, nor adulterers, nor men who submit to or perform homosexual acts, nor thieves, nor the greedy, nor drunkards, nor verbal abusers, nor swindlers, will inherit the kingdom of God. And that is what some of you were. But you were washed, you were sanctified, you were justified, in the name of the Lord Jesus Christ and by the Spirit of our God. “Everything is permissible for me,” but not everything is beneficial. “Everything is permissible for me,” but I will not be mastered by anything. “Food for the stomach and the stomach for food,” but God will destroy them both. The body is not intended for sexual immorality, but for the Lord, and the Lord for the body. By His power God raised the Lord from the dead, and He will raise us also. Do you not know that your bodies are members of Christ? Shall I then take the members of Christ and unite them with a prostitute? Never! Or don’t you know that he who unites himself with a prostitute is one with her in body? For it is said, “The two will become one flesh.” But he who unites himself with the Lord is one with Him in spirit. Flee from sexual immorality. Every other sin a man can commit is outside his body, but he who sins sexually sins against his own body. Do you not know that your body is a temple of the Holy Spirit who is in you, whom you have received from God? You are not your own; you were bought at a price. Therefore glorify God with your body.",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles",
+        "fullDurationV2": true
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-323",
         "title": "Avoid Sexual Sins",
         "gloss": "Avoid Sexual Sins",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-323.mp4",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-323.mp4?v=2",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
         "reference": "Avoid Sexual Sins",
         "transcript": "Do you not know that the wicked will not inherit the kingdom of God? Do not be deceived: Neither the sexually immoral, nor idolaters, nor adulterers, nor men who submit to or perform homosexual acts, nor thieves, nor the greedy, nor drunkards, nor verbal abusers, nor swindlers, will inherit the kingdom of God. And that is what some of you were. But you were washed, you were sanctified, you were justified, in the name of the Lord Jesus Christ and by the Spirit of our God. “Everything is permissible for me,” but not everything is beneficial. “Everything is permissible for me,” but I will not be mastered by anything. “Food for the stomach and the stomach for food,” but God will destroy them both. The body is not intended for sexual immorality, but for the Lord, and the Lord for the body. By His power God raised the Lord from the dead, and He will raise us also. Do you not know that your bodies are members of Christ? Shall I then take the members of Christ and unite them with a prostitute? Never! Or don’t you know that he who unites himself with a prostitute is one with her in body? For it is said, “The two will become one flesh.” But he who unites himself with the Lord is one with Him in spirit. Flee from sexual immorality. Every other sin a man can commit is outside his body, but he who sins sexually sins against his own body. Do you not know that your body is a temple of the Holy Spirit who is in you, whom you have received from God? You are not your own; you were bought at a price. Therefore glorify God with your body.",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles",
+        "fullDurationV2": true
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-174",
@@ -13413,14 +13419,15 @@
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-542",
         "title": "Bleeding Woman And Jairus' Daughter",
         "gloss": "Bleeding Woman And Jairus' Daughter",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-542.mp4",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-542.mp4?v=2",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
         "reference": "Bleeding Woman And Jairus' Daughter",
         "transcript": "When Jesus had again crossed by boat to the other side, a large crowd gathered around Him beside the sea. A synagogue leader named Jairus arrived, and seeing Jesus, he fell at His feet and pleaded with Him urgently, “My little daughter is near death. Please come and place Your hands on her, so that she will be healed and live.” So Jesus went with him, and a large crowd followed and pressed around Him. And a woman was there who had suffered from bleeding for twelve years. She had borne much agony under the care of many physicians and had spent all she had, but to no avail. Instead, her condition had only grown worse. When the woman heard about Jesus, she came up through the crowd behind Him and touched His cloak. For she kept saying, “If only I touch His garments, I will be healed.” Immediately her bleeding stopped, and she sensed in her body that she was healed of her affliction. At once Jesus was aware that power had gone out from Him. Turning to the crowd, He asked, “Who touched My garments?” His disciples answered, “You can see the crowd pressing in on You, and yet You ask, ‘Who touched Me?’” But He kept looking around to see who had done this. Then the woman, knowing what had happened to her, came and fell down before Him trembling in fear, and she told Him the whole truth. “Daughter,” said Jesus, “your faith has healed you. Go in peace and be free of your affliction.” While He was still speaking, messengers from the house of Jairus arrived and said, “Your daughter is dead; why bother the Teacher anymore?” But Jesus overheard their conversation and said to Jairus, “Do not be afraid; just believe.” And He did not allow anyone to accompany Him except Peter, James, and John the brother of James. When they arrived at the house of the synagogue leader, Jesus saw the commotion and the people weeping and wailing loudly. He went inside and asked, “Why all this commotion and weeping? The child is not dead, but asleep.” And they laughed at Him. After He had put them all outside, He took the child’s father and mother and His own companions, and went in to see the child. Taking her by the hand, Jesus said, “Talitha koum!” which means, “Little girl, I say to you, get up!” Immediately the girl got up and began to walk around. She was twelve years old, and at once they were utterly astounded.",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles",
+        "fullDurationV2": true
       },
       {
         "id": "sign-bible-xki-8a5a025bc6",
@@ -13440,131 +13447,141 @@
         "id": "sign-bible-xki-ecd428cbe0",
         "title": "Cain And Abel",
         "gloss": "Cain And Abel",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ecd428cbe0.mp4",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ecd428cbe0.mp4?v=2",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
         "reference": "Cain And Abel",
         "transcript": "And Adam had relations with his wife Eve, and she conceived and gave birth to Cain. “With the help of the LORD I have brought forth a man,” she said. Later she gave birth to Cain’s brother Abel. Now Abel was a keeper of sheep, while Cain was a tiller of the soil. So in the course of time, Cain brought some of the fruit of the soil as an offering to the LORD, while Abel brought the best portions of the firstborn of his flock. And the LORD looked with favor on Abel and his offering, but He had no regard for Cain and his offering. So Cain became very angry, and his countenance fell. “Why are you angry,” said the LORD to Cain, “and why has your countenance fallen? If you do what is right, will you not be accepted? But if you refuse to do what is right, sin is crouching at your door; it desires you, but you must master it.” Then Cain said to his brother Abel, “Let us go out to the field.” And while they were in the field, Cain rose up against his brother Abel and killed him. And the LORD said to Cain, “Where is your brother Abel?” “I do not know!” he answered. “Am I my brother’s keeper?” “What have you done?” replied the LORD. “The voice of your brother’s blood cries out to Me from the ground. Now you are cursed and banished from the ground, which has opened its mouth to receive your brother’s blood from your hand. When you till the ground, it will no longer yield its produce to you. You will be a fugitive and a wanderer on the earth.” But Cain said to the LORD, “My punishment is greater than I can bear. Behold, this day You have driven me from the face of the earth, and from Your face I will be hidden; I will be a fugitive and a wanderer on the earth, and whoever finds me will kill me.” “Not so!” replied the LORD. “If anyone slays Cain, then Cain will be avenged sevenfold.” And the LORD placed a mark on Cain, so that no one who found him would kill him. So Cain went out from the presence of the LORD and settled in the land of Nod, east of Eden. And Cain had relations with his wife, and she conceived and gave birth to Enoch. Then Cain built a city and named it after his son Enoch. And Adam again had relations with his wife, and she gave birth to a son and named him Seth, saying, “God has granted me another seed in place of Abel, since Cain killed him.” And to Seth also a son was born, and he called him Enosh.",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles",
+        "fullDurationV2": true
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-372",
         "title": "Cbs 000 Xki 2 Intro 2   Timeline",
         "gloss": "Cbs 000 Xki 2 Intro 2   Timeline",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-372.mp4",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-372.mp4?v=2",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
         "reference": "chronological bible translation in kenyan sign l",
         "transcript": "Kenyan Sign Language (KSL) human-signed passage for chronological bible translation in kenyan sign l (Open Sign Bibles, CC-BY-SA-4.0).",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles",
+        "fullDurationV2": true
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-374",
         "title": "Cbs 001 Xki 2 Intro   God'S Creation",
         "gloss": "Cbs 001 Xki 2 Intro   God'S Creation",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-374.mp4",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-374.mp4?v=2",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
         "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "In the beginning God created the heavens and the earth. Now the earth was formless and void, and darkness was over the surface of the deep. And the Spirit of God was hovering over the surface of the waters. And God said, “Let there be light,” and there was light. And God saw that the light was good, and He separated the light from the darkness. God called the light “day,” and the darkness He called “night.” And there was evening, and there was morning—the first day. And God said, “Let there be an expanse between the waters, to separate the waters from the waters.” So God made the expanse and separated the waters beneath it from the waters above. And it was so. God called the expanse “sky.” And there was evening, and there was morning—the second day. And God said, “Let the waters under the sky be gathered into one place, so that the dry land may appear.” And it was so. God called the dry land “earth,” and the gathering of waters He called “seas.” And God saw that it was good. Then God said, “Let the earth bring forth vegetation: seed-bearing plants and fruit trees, each bearing fruit with seed according to its kind.” And it was so. The earth produced vegetation: seed-bearing plants according to their kinds and trees bearing fruit with seed according to their kinds. And God saw that it was good. And there was evening, and there was morning—the third day. And God said, “Let there be lights in the expanse of the sky to distinguish between the day and the night, and let them be signs to mark the seasons and days and years. And let them serve as lights in the expanse of the sky to shine upon the earth.” And it was so. God made two great lights: the greater light to rule the day and the lesser light to rule the night. And He made the stars as well. God set these lights in the expanse of the sky to shine upon the earth, to preside over the day and the night, and to separate the light from the darkness. And God saw that it was good. And there was evening, and there was morning—the fourth day. And God said, “Let the waters teem with living creatures, and let birds fly above the earth in the open expanse of the sky.” So God created the great sea creatures and every living thing that moves, with which the waters teemed according to their kinds, and every bird of flight after its kind. And God saw that it was good.",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles",
+        "fullDurationV2": true
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-375",
         "title": "Cbs 001 Xki 3 Passage   God'S Creation",
         "gloss": "Cbs 001 Xki 3 Passage   God'S Creation",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-375.mp4",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-375.mp4?v=2",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
         "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "In the beginning God created the heavens and the earth. Now the earth was formless and void, and darkness was over the surface of the deep. And the Spirit of God was hovering over the surface of the waters. And God said, “Let there be light,” and there was light. And God saw that the light was good, and He separated the light from the darkness. God called the light “day,” and the darkness He called “night.” And there was evening, and there was morning—the first day. And God said, “Let there be an expanse between the waters, to separate the waters from the waters.” So God made the expanse and separated the waters beneath it from the waters above. And it was so. God called the expanse “sky.” And there was evening, and there was morning—the second day. And God said, “Let the waters under the sky be gathered into one place, so that the dry land may appear.” And it was so. God called the dry land “earth,” and the gathering of waters He called “seas.” And God saw that it was good. Then God said, “Let the earth bring forth vegetation: seed-bearing plants and fruit trees, each bearing fruit with seed according to its kind.” And it was so. The earth produced vegetation: seed-bearing plants according to their kinds and trees bearing fruit with seed according to their kinds. And God saw that it was good. And there was evening, and there was morning—the third day. And God said, “Let there be lights in the expanse of the sky to distinguish between the day and the night, and let them be signs to mark the seasons and days and years. And let them serve as lights in the expanse of the sky to shine upon the earth.” And it was so. God made two great lights: the greater light to rule the day and the lesser light to rule the night. And He made the stars as well. God set these lights in the expanse of the sky to shine upon the earth, to preside over the day and the night, and to separate the light from the darkness. And God saw that it was good. And there was evening, and there was morning—the fourth day. And God said, “Let the waters teem with living creatures, and let birds fly above the earth in the open expanse of the sky.” So God created the great sea creatures and every living thing that moves, with which the waters teemed according to their kinds, and every bird of flight after its kind. And God saw that it was good.",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles",
+        "fullDurationV2": true
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-376",
         "title": "Cbs 001 Xki 4 More Info   God'S Creation",
         "gloss": "Cbs 001 Xki 4 More Info   God'S Creation",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-376.mp4",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-376.mp4?v=2",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
         "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "In the beginning God created the heavens and the earth. Now the earth was formless and void, and darkness was over the surface of the deep. And the Spirit of God was hovering over the surface of the waters. And God said, “Let there be light,” and there was light. And God saw that the light was good, and He separated the light from the darkness. God called the light “day,” and the darkness He called “night.” And there was evening, and there was morning—the first day. And God said, “Let there be an expanse between the waters, to separate the waters from the waters.” So God made the expanse and separated the waters beneath it from the waters above. And it was so. God called the expanse “sky.” And there was evening, and there was morning—the second day. And God said, “Let the waters under the sky be gathered into one place, so that the dry land may appear.” And it was so. God called the dry land “earth,” and the gathering of waters He called “seas.” And God saw that it was good. Then God said, “Let the earth bring forth vegetation: seed-bearing plants and fruit trees, each bearing fruit with seed according to its kind.” And it was so. The earth produced vegetation: seed-bearing plants according to their kinds and trees bearing fruit with seed according to their kinds. And God saw that it was good. And there was evening, and there was morning—the third day. And God said, “Let there be lights in the expanse of the sky to distinguish between the day and the night, and let them be signs to mark the seasons and days and years. And let them serve as lights in the expanse of the sky to shine upon the earth.” And it was so. God made two great lights: the greater light to rule the day and the lesser light to rule the night. And He made the stars as well. God set these lights in the expanse of the sky to shine upon the earth, to preside over the day and the night, and to separate the light from the darkness. And God saw that it was good. And there was evening, and there was morning—the fourth day. And God said, “Let the waters teem with living creatures, and let birds fly above the earth in the open expanse of the sky.” So God created the great sea creatures and every living thing that moves, with which the waters teemed according to their kinds, and every bird of flight after its kind. And God saw that it was good.",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles",
+        "fullDurationV2": true
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-377",
         "title": "Cbs 001 Xki 5 Dialogue   God'S Creation",
         "gloss": "Cbs 001 Xki 5 Dialogue   God'S Creation",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-377.mp4",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-377.mp4?v=2",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
         "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "In the beginning God created the heavens and the earth. Now the earth was formless and void, and darkness was over the surface of the deep. And the Spirit of God was hovering over the surface of the waters. And God said, “Let there be light,” and there was light. And God saw that the light was good, and He separated the light from the darkness. God called the light “day,” and the darkness He called “night.” And there was evening, and there was morning—the first day. And God said, “Let there be an expanse between the waters, to separate the waters from the waters.” So God made the expanse and separated the waters beneath it from the waters above. And it was so. God called the expanse “sky.” And there was evening, and there was morning—the second day. And God said, “Let the waters under the sky be gathered into one place, so that the dry land may appear.” And it was so. God called the dry land “earth,” and the gathering of waters He called “seas.” And God saw that it was good. Then God said, “Let the earth bring forth vegetation: seed-bearing plants and fruit trees, each bearing fruit with seed according to its kind.” And it was so. The earth produced vegetation: seed-bearing plants according to their kinds and trees bearing fruit with seed according to their kinds. And God saw that it was good. And there was evening, and there was morning—the third day. And God said, “Let there be lights in the expanse of the sky to distinguish between the day and the night, and let them be signs to mark the seasons and days and years. And let them serve as lights in the expanse of the sky to shine upon the earth.” And it was so. God made two great lights: the greater light to rule the day and the lesser light to rule the night. And He made the stars as well. God set these lights in the expanse of the sky to shine upon the earth, to preside over the day and the night, and to separate the light from the darkness. And God saw that it was good. And there was evening, and there was morning—the fourth day. And God said, “Let the waters teem with living creatures, and let birds fly above the earth in the open expanse of the sky.” So God created the great sea creatures and every living thing that moves, with which the waters teemed according to their kinds, and every bird of flight after its kind. And God saw that it was good.",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles",
+        "fullDurationV2": true
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-379",
         "title": "Cbs 002 Xki 2 Intro   God Made Man And Woman",
         "gloss": "Cbs 002 Xki 2 Intro   God Made Man And Woman",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-379.mp4",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-379.mp4?v=2",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
         "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "Then the LORD God formed man from the dust of the ground and breathed the breath of life into his nostrils, and the man became a living being. And the LORD God planted a garden in Eden, in the east, where He placed the man He had formed. Out of the ground the LORD God gave growth to every tree that is pleasing to the eye and good for food. And in the middle of the garden were the tree of life and the tree of the knowledge of good and evil. Now a river flowed out of Eden to water the garden, and from there it branched into four headwaters: The name of the first river is Pishon; it winds through the whole land of Havilah, where there is gold. And the gold of that land is pure, and bdellium and onyx are found there. The name of the second river is Gihon; it winds through the whole land of Cush. The name of the third river is Hiddekel; it runs along the east side of Assyria. And the fourth river is the Euphrates. Then the LORD God took the man and placed him in the Garden of Eden to cultivate and keep it. And the LORD God commanded him, “You may eat freely from every tree of the garden, but you must not eat from the tree of the knowledge of good and evil; for in the day that you eat of it, you will surely die.” The LORD God also said, “It is not good for the man to be alone. I will make for him a suitable helper.” And out of the ground the LORD God formed every beast of the field and every bird of the air, and He brought them to the man to see what he would name each one. And whatever the man called each living creature, that was its name. The man gave names to all the livestock, to the birds of the air, and to every beast of the field. But for Adam no suitable helper was found. So the LORD God caused the man to fall into a deep sleep, and while he slept, He took one of the man’s ribs and closed up the area with flesh. And from the rib that the LORD God had taken from the man, He made a woman and brought her to him. And the man said: “This is now bone of my bones and flesh of my flesh; she shall be called ‘woman,’ for out of man she was taken.” For this reason a man will leave his father and mother and be united to his wife, and they will become one flesh. And the man and his wife were both naked, and they were not ashamed.",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles",
+        "fullDurationV2": true
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-380",
         "title": "Cbs 002 Xki 3 Passage   God Made Man And Woman",
         "gloss": "Cbs 002 Xki 3 Passage   God Made Man And Woman",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-380.mp4",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-380.mp4?v=2",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
         "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "Then the LORD God formed man from the dust of the ground and breathed the breath of life into his nostrils, and the man became a living being. And the LORD God planted a garden in Eden, in the east, where He placed the man He had formed. Out of the ground the LORD God gave growth to every tree that is pleasing to the eye and good for food. And in the middle of the garden were the tree of life and the tree of the knowledge of good and evil. Now a river flowed out of Eden to water the garden, and from there it branched into four headwaters: The name of the first river is Pishon; it winds through the whole land of Havilah, where there is gold. And the gold of that land is pure, and bdellium and onyx are found there. The name of the second river is Gihon; it winds through the whole land of Cush. The name of the third river is Hiddekel; it runs along the east side of Assyria. And the fourth river is the Euphrates. Then the LORD God took the man and placed him in the Garden of Eden to cultivate and keep it. And the LORD God commanded him, “You may eat freely from every tree of the garden, but you must not eat from the tree of the knowledge of good and evil; for in the day that you eat of it, you will surely die.” The LORD God also said, “It is not good for the man to be alone. I will make for him a suitable helper.” And out of the ground the LORD God formed every beast of the field and every bird of the air, and He brought them to the man to see what he would name each one. And whatever the man called each living creature, that was its name. The man gave names to all the livestock, to the birds of the air, and to every beast of the field. But for Adam no suitable helper was found. So the LORD God caused the man to fall into a deep sleep, and while he slept, He took one of the man’s ribs and closed up the area with flesh. And from the rib that the LORD God had taken from the man, He made a woman and brought her to him. And the man said: “This is now bone of my bones and flesh of my flesh; she shall be called ‘woman,’ for out of man she was taken.” For this reason a man will leave his father and mother and be united to his wife, and they will become one flesh. And the man and his wife were both naked, and they were not ashamed.",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles",
+        "fullDurationV2": true
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-381",
         "title": "Cbs 002 Xki 4 More Info   God Made Man And Woman",
         "gloss": "Cbs 002 Xki 4 More Info   God Made Man And Woman",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-381.mp4",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-381.mp4?v=2",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
         "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "Then the LORD God formed man from the dust of the ground and breathed the breath of life into his nostrils, and the man became a living being. And the LORD God planted a garden in Eden, in the east, where He placed the man He had formed. Out of the ground the LORD God gave growth to every tree that is pleasing to the eye and good for food. And in the middle of the garden were the tree of life and the tree of the knowledge of good and evil. Now a river flowed out of Eden to water the garden, and from there it branched into four headwaters: The name of the first river is Pishon; it winds through the whole land of Havilah, where there is gold. And the gold of that land is pure, and bdellium and onyx are found there. The name of the second river is Gihon; it winds through the whole land of Cush. The name of the third river is Hiddekel; it runs along the east side of Assyria. And the fourth river is the Euphrates. Then the LORD God took the man and placed him in the Garden of Eden to cultivate and keep it. And the LORD God commanded him, “You may eat freely from every tree of the garden, but you must not eat from the tree of the knowledge of good and evil; for in the day that you eat of it, you will surely die.” The LORD God also said, “It is not good for the man to be alone. I will make for him a suitable helper.” And out of the ground the LORD God formed every beast of the field and every bird of the air, and He brought them to the man to see what he would name each one. And whatever the man called each living creature, that was its name. The man gave names to all the livestock, to the birds of the air, and to every beast of the field. But for Adam no suitable helper was found. So the LORD God caused the man to fall into a deep sleep, and while he slept, He took one of the man’s ribs and closed up the area with flesh. And from the rib that the LORD God had taken from the man, He made a woman and brought her to him. And the man said: “This is now bone of my bones and flesh of my flesh; she shall be called ‘woman,’ for out of man she was taken.” For this reason a man will leave his father and mother and be united to his wife, and they will become one flesh. And the man and his wife were both naked, and they were not ashamed.",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles",
+        "fullDurationV2": true
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-382",
         "title": "Cbs 002 Xki 5 Dialogue   God Made Man And Woman",
         "gloss": "Cbs 002 Xki 5 Dialogue   God Made Man And Woman",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-382.mp4",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-382.mp4?v=2",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
         "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "Then the LORD God formed man from the dust of the ground and breathed the breath of life into his nostrils, and the man became a living being. And the LORD God planted a garden in Eden, in the east, where He placed the man He had formed. Out of the ground the LORD God gave growth to every tree that is pleasing to the eye and good for food. And in the middle of the garden were the tree of life and the tree of the knowledge of good and evil. Now a river flowed out of Eden to water the garden, and from there it branched into four headwaters: The name of the first river is Pishon; it winds through the whole land of Havilah, where there is gold. And the gold of that land is pure, and bdellium and onyx are found there. The name of the second river is Gihon; it winds through the whole land of Cush. The name of the third river is Hiddekel; it runs along the east side of Assyria. And the fourth river is the Euphrates. Then the LORD God took the man and placed him in the Garden of Eden to cultivate and keep it. And the LORD God commanded him, “You may eat freely from every tree of the garden, but you must not eat from the tree of the knowledge of good and evil; for in the day that you eat of it, you will surely die.” The LORD God also said, “It is not good for the man to be alone. I will make for him a suitable helper.” And out of the ground the LORD God formed every beast of the field and every bird of the air, and He brought them to the man to see what he would name each one. And whatever the man called each living creature, that was its name. The man gave names to all the livestock, to the birds of the air, and to every beast of the field. But for Adam no suitable helper was found. So the LORD God caused the man to fall into a deep sleep, and while he slept, He took one of the man’s ribs and closed up the area with flesh. And from the rib that the LORD God had taken from the man, He made a woman and brought her to him. And the man said: “This is now bone of my bones and flesh of my flesh; she shall be called ‘woman,’ for out of man she was taken.” For this reason a man will leave his father and mother and be united to his wife, and they will become one flesh. And the man and his wife were both naked, and they were not ashamed.",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles",
+        "fullDurationV2": true
       },
       {
         "id": "sign-bible-xki-283edb23b2",
@@ -13603,7 +13620,7 @@
       "M537x543S14250507x458S14258462x513S2e800506x488S2e810487x489S2fc04496x527",
       "M532x519S10050467x489S26806482x481"
     ],
-    "videoCount": 2343,
+    "videoCount": 2385,
     "extractedSignCount": 0,
     "glossCount": 0
   },
