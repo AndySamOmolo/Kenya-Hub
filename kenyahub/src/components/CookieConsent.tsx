@@ -171,13 +171,20 @@ export function applyGoogleConsent(prefs: CookiePreferences) {
   }
 
   if (typeof window.gtag === "function") {
+    const adState = prefs.advertising ? "granted" : "denied";
     window.gtag("consent", "update", {
       analytics_storage: prefs.analytics ? "granted" : "denied",
+      ad_storage: adState,
+      ad_user_data: adState,
+      ad_personalization: adState,
     });
   }
 
   if (!prefs.analytics) {
     expireCookieNames(["_ga", "_gid", "_gat"]);
+  }
+  if (!prefs.advertising) {
+    expireCookieNames(["__gads", "__gpi", "__eoi"]);
   }
   // Advertising consent & cookies are managed by Google certified CMP (IAB TCF v2.4)
 }

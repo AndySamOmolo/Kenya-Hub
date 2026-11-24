@@ -916,15 +916,19 @@ export async function deleteMobileAccountDataAndSignOut(): Promise<void> {
   try {
     await appwriteRequest("/account/prefs", {
       method: "PATCH",
-      body: JSON.stringify({ prefs: {} }),
+      body: { prefs: {} },
     });
   } catch {
     // Best-effort clear when online
   }
   try {
-    await appwriteRequest("/account/sessions/current", { method: "DELETE" });
+    await appwriteRequest("/account/sessions", { method: "DELETE" });
   } catch {
-    // Ignore if already expired
+    try {
+      await appwriteRequest("/account/sessions/current", { method: "DELETE" });
+    } catch {
+      // Ignore if already expired
+    }
   }
   await storeCredentials(null);
 }

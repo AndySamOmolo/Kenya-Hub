@@ -256,12 +256,17 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     inLanguage: "en-KE",
     wordCount,
     timeRequired: `PT${Math.max(1, post.readTime || 5)}M`,
-    author: {
-      "@type": "Person",
-      name: post.author || "KenyaHub Statutory & Linguistic Research Desk",
-      jobTitle: "Senior Statutory & Linguistic Research Editor",
-      url: "https://kenyahub.me/about/",
-    },
+    author: /KenyaHub|Desk|Team|Editorial/i.test(post.author || "KenyaHub")
+      ? {
+          "@type": "Organization",
+          name: post.author || "KenyaHub Statutory & Linguistic Research Desk",
+          url: "https://kenyahub.me/about/",
+        }
+      : {
+          "@type": "Person",
+          name: post.author,
+          url: "https://kenyahub.me/about/",
+        },
     reviewedBy: {
       "@type": "Organization",
       name: "KenyaHub Statutory & Editorial Review Board",
@@ -272,7 +277,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     publisher: {
       "@type": "Organization",
       name: "KenyaHub",
-      url: "https://kenyahub.me",
+      url: "https://kenyahub.me/",
       logo: {
         "@type": "ImageObject",
         url: "https://kenyahub.me/icon-512.png",

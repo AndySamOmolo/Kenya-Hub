@@ -69,7 +69,7 @@ function toolEmojiToIonicon(emoji?: string): string {
   }
 }
 
-import { showAdPrivacyOptionsForm } from "../../src/lib/mobile-ads";
+import { getMobileAdsModule, showAdPrivacyOptionsForm } from "../../src/lib/mobile-ads";
 
 function createSavedStyles(
   metrics?: ThemeMetrics,
@@ -460,7 +460,7 @@ export default function SavedScreen() {
               const preserveKeys = new Set([
                 "kh-appwrite-session-secret",
                 "kh-appwrite-fallback-cookies",
-                "kh-appwrite-user",
+                "kh-appwrite-user-cache",
                 "kh-app-language",
               ]);
               const toRemove = allKeys.filter((k) => !preserveKeys.has(k));
@@ -743,6 +743,7 @@ export default function SavedScreen() {
               </Pressable>
             </View>
 
+            {Boolean(getMobileAdsModule()) && (
             <View
               style={[
                 styles.suggestCardWrap,
@@ -779,6 +780,7 @@ export default function SavedScreen() {
                 )}
               </Pressable>
             </View>
+            )}
 
             <View
               style={[

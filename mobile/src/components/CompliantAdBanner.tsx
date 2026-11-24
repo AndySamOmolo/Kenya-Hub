@@ -65,7 +65,7 @@ export function CompliantAdBanner({
       <BannerAd
         unitId={resolvedUnitId}
         size={BannerAdSize.ANCHORED_ADAPTIVE_BANNER}
-        requestOptions={{ requestNonPersonalizedAdsOnly: false }}
+        requestOptions={{ requestNonPersonalizedAdsOnly: adsState.requestNonPersonalizedAdsOnly }}
         onAdFailedToLoad={() => setFailed(true)}
       />
     </View>
@@ -76,14 +76,12 @@ const styles = StyleSheet.create({
   wrapper: {
     marginVertical: 16, // >= 16dp separation from nearby buttons, inputs & tabs
     paddingVertical: 8,
-    borderRadius: 14,
     borderWidth: 1,
     alignItems: "center",
-    overflow: "hidden",
   },
   adLabel: {
     fontFamily: "Inter_500Medium",
-    fontSize: 9.5,
+    fontSize: 10.5,
     letterSpacing: 1.1,
     marginBottom: 4,
   },

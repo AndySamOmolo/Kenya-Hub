@@ -3,10 +3,30 @@ import KslSignStudio from "@/components/learn/KslSignStudio";
 import { OPEN_CORPUS_INDEX } from "@/lib/open-corpus";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "https://kenyahub.me/tools/learn/ksl/" },
+  alternates: {
+    canonical: "https://kenyahub.me/tools/learn/ksl/",
+    languages: {
+      "en-KE": "https://kenyahub.me/tools/learn/ksl/",
+      en: "https://kenyahub.me/tools/learn/ksl/",
+      "x-default": "https://kenyahub.me/tools/learn/ksl/",
+    },
+  },
   openGraph: {
+    title: "Kenyan Sign Language (KSL) Video Course & Dictionary | KenyaHub",
+    description:
+      "Learn Kenyan Sign Language (KSL) free with 2,340+ real sign videos, 5 structured units, interactive video quizzes, A–Z fingerspelling, and Deaf culture grammar guides.",
     url: "https://kenyahub.me/tools/learn/ksl/",
     type: "website",
+    locale: "en_KE",
+    siteName: "KenyaHub",
+    images: [{ url: "https://kenyahub.me/og-image.png", width: 1200, height: 630, alt: "Kenyan Sign Language Video Course on KenyaHub" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kenyan Sign Language (KSL) Video Course & Dictionary",
+    description:
+      "Free KSL video course with 2,340+ real sign videos, 5 units, quizzes, fingerspelling, and grammar notes.",
+    images: ["https://kenyahub.me/og-image.png"],
   },
   title: "Learn Kenyan Sign Language (KSL) — Interactive Sign Studio",
   description:

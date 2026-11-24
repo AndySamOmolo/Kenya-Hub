@@ -158,7 +158,7 @@ export default async function LanguagePage({
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema).replace(/</g, "\u003c") }}
       />
       <LanguageClientPage
         languageId={language}

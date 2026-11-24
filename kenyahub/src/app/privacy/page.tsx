@@ -47,7 +47,7 @@ export default function PrivacyPage() {
     <div className="max-w-3xl mx-auto px-3.5 sm:px-6 lg:px-8 py-10">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema).replace(/</g, "\u003c") }}
       />
       <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-xs text-text-muted mb-6">
         <Link href="/" className="hover:text-gold transition-colors">
@@ -94,7 +94,7 @@ export default function PrivacyPage() {
             </p>
           </div>
           <p className="mt-3">
-            KenyaHub does <strong className="text-text-primary">not</strong> require user registration or accounts to use any calculator, guide, or language course. If you optionally create a free KenyaHub Cloud account (powered by Appwrite Cloud, Frankfurt) to sync pinned tools, themes, and course progress across devices, we store only your email address, display name, and synced app preferences.
+            KenyaHub does <strong className="text-text-primary">not</strong> require user registration or accounts to use any calculator, guide, or language course. If you optionally create a free KenyaHub Cloud account (powered by Appwrite Cloud, Frankfurt) to sync pinned tools, themes, and course progress across devices, we store your email address, display name, and optional synced app data (pinned tools, theme configuration, language course progress, Harambee pledge tracker entries, Huduma document checklists, recent translator searches, and tool visit counts). Optional community dictionary submissions and voice pronunciation recordings are stored in Appwrite Cloud when explicitly submitted by you.
           </p>
         </section>
 
@@ -234,7 +234,7 @@ export default function PrivacyPage() {
               <strong className="text-text-secondary">Google AdMob SDK &amp; Advertising ID (AAID):</strong> The current offline Android release build does not bundle the Google Mobile Ads (AdMob) SDK and explicitly removes the <code className="font-mono text-gold">AD_ID</code> permission. If mobile ads are enabled in a future update, Google UMP consent will be requested before any ad identifier is accessed.
             </li>
             <li>
-              <strong className="text-text-secondary">Google UMP SDK Consent:</strong> Users in the EEA, UK, Switzerland, and applicable US states are presented with Google&apos;s certified User Messaging Platform (UMP) SDK consent dialog before personalized mobile ads are requested, and can update or revoke choices anytime via the in-app Manage Ad Privacy setting.
+              <strong className="text-text-secondary">Google UMP SDK Consent (Future Ad Releases):</strong> When mobile ads are enabled in a future release (publisher ID <code className="font-mono text-gold">pub-5895990873842803</code>, verified at <code className="font-mono text-gold">https://kenyahub.me/app-ads.txt</code>), users in the EEA, UK, Switzerland, and applicable US states will be presented with Google&apos;s certified User Messaging Platform (UMP) SDK consent dialog before any personalized ads are requested, with an in-app Manage Ad Privacy option.
             </li>
             <li>
               <strong className="text-text-secondary">Resetting or Limiting AAID:</strong> You can reset or delete your Android Advertising ID at any time in Android Settings under <strong className="text-text-secondary">Settings → Google → Ads</strong>.

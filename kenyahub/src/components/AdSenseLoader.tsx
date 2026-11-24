@@ -176,8 +176,6 @@ export default function AdSenseLoader() {
       setAdSensePausedState(!isCompliant);
       if (isCompliant) {
         ensureAdSenseScriptLoaded();
-        mutationObserver?.disconnect();
-        mutationObserver = null;
       }
       return isCompliant;
     };
@@ -191,8 +189,8 @@ export default function AdSenseLoader() {
       if (cancelled) return;
       const isInitiallyCompliant = evaluatePageCompliance();
 
-      const observeRoot = document.getElementById("main-content") || document.body;
-      if (!isInitiallyCompliant && !isBlockedRoute(pathname) && observeRoot) {
+      const observeRoot = document.body;
+      if (!isBlockedRoute(pathname) && observeRoot) {
         mutationObserver = new MutationObserver((mutations) => {
           if (isAdSenseMutation(mutations)) return;
           scheduleEvaluation();
@@ -211,8 +209,9 @@ export default function AdSenseLoader() {
       cancelIdleCallback?: (id: number) => void;
     };
 
+    setAdSensePausedState(true);
     if (isBlockedRoute(pathname)) {
-      setAdSensePausedState(true);
+      return () => { cancelled = true; };
     } else if (typeof win.requestIdleCallback === "function") {
       idleCallbackId = win.requestIdleCallback(runInitialEvaluation, { timeout: 1500 });
     } else {

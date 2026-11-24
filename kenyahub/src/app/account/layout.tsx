@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Account & Sign In — KenyaHub",
+  title: "Account & Sign In",
   description: "Sign in to your KenyaHub account with email and password to manage your profile and tools.",
   robots: { index: false, follow: false },
 };

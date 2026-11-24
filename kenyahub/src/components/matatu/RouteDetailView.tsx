@@ -109,7 +109,7 @@ export default function RouteDetailView({ townSlug, townInfo, route, otherRoutes
     <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 pt-3 pb-6 sm:py-8 space-y-4 sm:space-y-8">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema).replace(/</g, "\u003c") }}
       />
 
       {/* Site-wide ChevronRight Breadcrumb (Single-Line Scrollable on Mobile) */}

@@ -1,16 +1,24 @@
 import { Platform } from "react-native";
 
 /** Set EXPO_PUBLIC_ADMOB_BANNER_ANDROID in .env / EAS secrets after registering KenyaHub in Google AdMob. */
+const PROD_UNIT_RE = /^ca-app-pub-5895990873842803\/\d{10}$/;
+function sanitizeProdUnitId(raw: string | undefined): string | undefined {
+  if (!raw) return undefined;
+  const trimmed = raw.trim();
+  return PROD_UNIT_RE.test(trimmed) ? trimmed : undefined;
+}
+
 export const ADMOB_BANNER_UNIT_ID: string | undefined =
   Platform.OS === "android"
-    ? process.env.EXPO_PUBLIC_ADMOB_BANNER_ANDROID || undefined
-    : process.env.EXPO_PUBLIC_ADMOB_BANNER_IOS || undefined;
+    ? sanitizeProdUnitId(process.env.EXPO_PUBLIC_ADMOB_BANNER_ANDROID)
+    : sanitizeProdUnitId(process.env.EXPO_PUBLIC_ADMOB_BANNER_IOS);
 
 export interface MobileAdsState {
   sdkAvailable: boolean;
   initialized: boolean;
   canRequestAds: boolean;
   privacyOptionsRequired: boolean;
+  requestNonPersonalizedAdsOnly: boolean;
 }
 
 import type { ComponentType } from "react";
@@ -52,6 +60,7 @@ let currentState: MobileAdsState = {
   initialized: false,
   canRequestAds: false,
   privacyOptionsRequired: false,
+  requestNonPersonalizedAdsOnly: true,
 };
 
 export function getMobileAdsModule(): GmaModule | null {
@@ -83,6 +92,7 @@ export async function initializeMobileAdsWithConsent(): Promise<MobileAdsState> 
         initialized: false,
         canRequestAds: false,
         privacyOptionsRequired: false,
+        requestNonPersonalizedAdsOnly: true,
       };
       return currentState;
     }
@@ -122,11 +132,22 @@ export async function initializeMobileAdsWithConsent(): Promise<MobileAdsState> 
       }
     }
 
+    let requestNonPersonalizedAdsOnly = true;
+    try {
+      if (typeof (AdsConsent as any).getUserChoices === "function") {
+        const choices = await (AdsConsent as any).getUserChoices();
+        requestNonPersonalizedAdsOnly = !Boolean(choices?.selectPersonalizedAds);
+      }
+    } catch {
+      requestNonPersonalizedAdsOnly = true;
+    }
+
     currentState = {
       sdkAvailable: true,
       initialized,
       canRequestAds,
       privacyOptionsRequired,
+      requestNonPersonalizedAdsOnly,
     };
     if (!initialized) {
       initPromise = null;

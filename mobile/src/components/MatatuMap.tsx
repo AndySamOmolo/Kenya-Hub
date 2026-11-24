@@ -453,10 +453,10 @@ export function MatatuMap({
           }
         }}
         style={styles.webview}
-        javaScriptEnabled
+        javaScriptEnabled={true}
             mixedContentMode="never"
             allowFileAccess={false}
-            setSupportMultipleWindows={false}={true}
+            setSupportMultipleWindows={false}
         domStorageEnabled={true}
         scrollEnabled={interactivePan}
         nestedScrollEnabled={interactivePan}

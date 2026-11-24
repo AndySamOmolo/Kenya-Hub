@@ -462,7 +462,7 @@ function EditPostContent() {
                 Delete Post
               </button>
               <Link
-                href={`/blog/${slug}`}
+                href={`/blog/${slug}/`}
                 target="_blank"
                 className="text-sm text-text-secondary hover:text-gold sm:ml-auto w-full sm:w-auto text-center"
               >

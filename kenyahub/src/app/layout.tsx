@@ -144,6 +144,12 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://audio.kenyahub.me" />
         <link rel="dns-prefetch" href="https://fra.cloud.appwrite.io" />
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});",
+          }}
+        />
         <meta name="google-adsense-account" content="ca-pub-5895990873842803" />
       </head>
       <body className="min-h-screen flex flex-col">

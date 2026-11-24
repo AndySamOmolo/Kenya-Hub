@@ -178,11 +178,11 @@ export default async function RouteDetailPage({
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema).replace(/</g, "\u003c") }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(busTripSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(busTripSchema).replace(/</g, "\u003c") }}
       />
       <RouteDetailView townSlug={townSlug} townInfo={townObj} route={routeObj} otherRoutes={townRoutes.filter((r) => r.slug !== routeObj.slug).slice(0, 4)} />
     </>

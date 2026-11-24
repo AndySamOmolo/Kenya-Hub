@@ -1342,3 +1342,10 @@ body.kh-cookie-banner-open {
     animation: none !important;
   }
 }
+
+/* AdSense Policy Compliance: immediately hide any auto-placed ads when paused on legal/error/account/thin routes */
+html[data-adsense-state="paused"] .google-auto-placed,
+html[data-adsense-state="paused"] ins.adsbygoogle {
+  display: none !important;
+  visibility: hidden !important;
+}

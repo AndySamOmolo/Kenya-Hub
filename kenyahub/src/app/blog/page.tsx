@@ -167,11 +167,11 @@ export default async function BlogPage() {
     <div className="max-w-5xl mx-auto px-3.5 sm:px-6 lg:px-8 pt-7 pb-10 sm:py-10">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema).replace(/</g, "\u003c") }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogItemListSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogItemListSchema).replace(/</g, "\u003c") }}
       />
       {/* Breadcrumbs */}
       <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-xs text-text-muted mb-8">
