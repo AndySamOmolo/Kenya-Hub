@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-24T01:16:36.312032+00:00",
+  "generatedAt": "2026-11-24T02:59:40.640973+00:00",
   "cldrVersion": "49.0.0",
   "stats": {
-    "totalR2AudioClips": 38289,
+    "totalR2AudioClips": 38306,
     "totalAudioChapters": 5,
     "totalKslVideos": 2343,
     "totalStagedVarieties": 4,
@@ -6939,7 +6939,7 @@
     },
     "borana": {
       "languageId": "borana",
-      "r2AudioClips": 642,
+      "r2AudioClips": 659,
       "nativeAudioSamples": [
         {
           "slug": "shan",
@@ -7011,6 +7011,14 @@
           "transcript": "Aaduu",
           "audioUrl": "https://audio.kenyahub.me/audio/borana/aaduu.opus",
           "english": "to moan, groan",
+          "verifiedTranscript": true
+        },
+        {
+          "slug": "aagomaa",
+          "label": "Aagomaa",
+          "transcript": "Aagomaa",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/aagomaa.opus",
+          "english": "Fortunate / Lucky person",
           "verifiedTranscript": true
         },
         {
@@ -7202,12 +7210,6 @@
           "label": "Tan humnaan waa fudhattu shifttaa",
           "transcript": "Tan humnaan waa fudhattu shifttaa",
           "audioUrl": "https://audio.kenyahub.me/audio/borana/tan-humnaan-waa-fudhattu-shifttaa.opus"
-        },
-        {
-          "slug": "turkii-awurooppaa-3-biyyattii-qabaata",
-          "label": "Turkii awurooppaa 3 biyyattii qabaata",
-          "transcript": "Turkii awurooppaa 3 biyyattii qabaata",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/turkii-awurooppaa-3-biyyattii-qabaata.opus"
         }
       ],
       "cldr": {
@@ -7492,7 +7494,7 @@
       ],
       "audioChapters": [],
       "shards": {
-        "audioCount": 637,
+        "audioCount": 654,
         "storiesCount": 49,
         "sentencesCount": 0,
         "articlesCount": 0,
