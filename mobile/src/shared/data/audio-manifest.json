@@ -10,7 +10,7 @@
       "totalEntries": 31845,
       "addressableR2Keys": 31830,
       "r2Prefix": "audio/borana/",
-      "directAudioEntries": 120,
+      "directAudioEntries": 123,
       "openAccessDatasets": [
         {
           "id": "cv27-om",

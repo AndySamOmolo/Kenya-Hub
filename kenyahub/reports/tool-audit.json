@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-24T01:16:36.821Z",
+  "generatedAt": "2026-11-24T02:59:41.150Z",
   "registryCount": 50,
   "routeCount": 50,
   "courseCount": 23,
   "totalFaqs": 197,
   "totalDictEntries": 239211,
-  "totalAudioLinked": 2581,
+  "totalAudioLinked": 2584,
   "checksPassed": 91,
   "checksTotal": 91,
   "okCount": 50,
@@ -707,7 +707,12 @@
           "source": "https://archive.org/"
         },
         {
-          "file": "src/data/dictionaries/metadata.ts",
+          "file": "src/data/dictionaries/catalog.ts",
+          "lastUpdated": "2026-10-31",
+          "source": "https://archive.org/"
+        },
+        {
+          "file": "src/data/dictionaries/random-words.ts",
           "lastUpdated": "2026-10-31",
           "source": "https://archive.org/"
         },
@@ -834,18 +839,8 @@
       "routeExists": true,
       "sourceUrl": "https://cldr.unicode.org/",
       "maxAgeDays": 365,
-      "ageDays": 35,
+      "ageDays": 5,
       "data": [
-        {
-          "file": "src/data/dictionaries/metadata.ts",
-          "lastUpdated": "2026-10-20",
-          "source": "https://cldr.unicode.org/"
-        },
-        {
-          "file": "src/data/language-identity.ts",
-          "lastUpdated": "2026-10-20",
-          "source": "https://cldr.unicode.org/"
-        },
         {
           "file": "src/data/dictionaries/borana.json",
           "lastUpdated": "2026-11-21",
@@ -1725,7 +1720,7 @@
     {
       "languageId": "borana",
       "dictionaryEntries": 31845,
-      "audioLinked": 120,
+      "audioLinked": 123,
       "status": "ok"
     },
     {
