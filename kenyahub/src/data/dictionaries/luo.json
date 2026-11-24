@@ -30082,8 +30082,7 @@
         {
           "english": "plane",
           "translation": "ndege, kalapapla",
-          "context": "Google Research GATITOS Lexicon (gatitos__en_luo, CC-BY-4.0, https://huggingface.co/datasets/google/smol)",
-          "audioFile": "https://audio.kenyahub.me/audio/luo/ndege.opus"
+          "context": "Google Research GATITOS Lexicon (gatitos__en_luo, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
         },
         {
           "english": "smile",
@@ -33363,8 +33362,7 @@
         {
           "english": "flight",
           "translation": "ng'wech, ndege",
-          "context": "Google Research GATITOS Lexicon (gatitos__en_luo, CC-BY-4.0, https://huggingface.co/datasets/google/smol)",
-          "audioFile": "https://audio.kenyahub.me/audio/luo/ndege.opus"
+          "context": "Google Research GATITOS Lexicon (gatitos__en_luo, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
         },
         {
           "english": "essay",

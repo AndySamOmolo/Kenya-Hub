@@ -138,10 +138,16 @@ export default function AdSenseLoader() {
     let cancelled = false;
 
     const setAdSensePausedState = (paused: boolean) => {
-      window.adsbygoogle = window.adsbygoogle || [];
-      if (lastPausedRef.current !== paused) {
-        window.adsbygoogle.push({ pauseAdRequests: paused ? 1 : 0 });
-        lastPausedRef.current = paused;
+      try {
+        const ads = (window.adsbygoogle = (window.adsbygoogle || []) as unknown as Record<string, unknown>[] & {
+          pauseAdRequests?: number;
+        });
+        if (lastPausedRef.current !== paused) {
+          ads.pauseAdRequests = paused ? 1 : 0;
+          lastPausedRef.current = paused;
+        }
+      } catch {
+        // Never allow AdSense queue state updates to crash the UI
       }
       document.documentElement.setAttribute(
         "data-adsense-state",
