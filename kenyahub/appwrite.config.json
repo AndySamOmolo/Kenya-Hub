@@ -203,6 +203,47 @@
                     "required": true,
                     "default": "pending",
                     "size": 32
+                },
+                {
+                    "key": "customLanguageName",
+                    "type": "varchar",
+                    "required": false,
+                    "default": null,
+                    "size": 120
+                },
+                {
+                    "key": "audioFileId",
+                    "type": "varchar",
+                    "required": false,
+                    "default": null,
+                    "size": 120
+                },
+                {
+                    "key": "audioUrl",
+                    "type": "varchar",
+                    "required": false,
+                    "default": null,
+                    "size": 500
+                },
+                {
+                    "key": "audioMimeType",
+                    "type": "varchar",
+                    "required": false,
+                    "default": null,
+                    "size": 64
+                },
+                {
+                    "key": "syncedToR2",
+                    "type": "boolean",
+                    "required": false,
+                    "default": false
+                },
+                {
+                    "key": "reviewNotes",
+                    "type": "varchar",
+                    "required": false,
+                    "default": null,
+                    "size": 500
                 }
             ],
             "indexes": [
@@ -219,6 +260,32 @@
                     "columns": ["language"]
                 }
             ]
+        }
+    ],
+    "buckets": [
+        {
+            "$id": "contribution-audio",
+            "name": "Contribution Audio",
+            "enabled": true,
+            "maximumFileSize": 5242880,
+            "allowedFileExtensions": [
+                "mp3",
+                "wav",
+                "m4a",
+                "ogg",
+                "opus",
+                "webm",
+                "aac"
+            ],
+            "$permissions": [
+                "create(\"any\")",
+                "read(\"any\")",
+                "delete(\"team:admins\")",
+                "delete(\"label:admin\")"
+            ],
+            "fileSecurity": false,
+            "antivirus": true,
+            "encryption": true
         }
     ]
 }

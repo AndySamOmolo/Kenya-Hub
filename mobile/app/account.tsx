@@ -18,14 +18,18 @@ import {
   signInWithEmail,
   signOutMobile,
   signUpWithEmail,
+  syncMobileUserData,
   type MobileAuthUser,
+  type MobileCloudSyncSummary,
 } from "../src/lib/appwrite-auth";
 
 export default function AccountScreen() {
-  const { theme } = useTheme();
+  const { theme, updateThemeConfig } = useTheme();
   const router = useRouter();
   const [user, setUser] = useState<MobileAuthUser | null>(null);
   const [loading, setLoading] = useState(true);
+  const [syncing, setSyncing] = useState(false);
+  const [syncSummary, setSyncSummary] = useState<MobileCloudSyncSummary | null>(null);
   const [mode, setMode] = useState<"signin" | "signup" | "forgot">("signin");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -36,15 +40,31 @@ export default function AccountScreen() {
   const [successMsg, setSuccessMsg] = useState<string | null>(null);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
+  const applySyncSummary = useCallback(
+    (s: MobileCloudSyncSummary | null) => {
+      if (!s) return;
+      setSyncSummary(s);
+      if (s.syncedThemeConfig) {
+        updateThemeConfig(s.syncedThemeConfig);
+      }
+    },
+    [updateThemeConfig]
+  );
+
   const loadUser = useCallback(async () => {
     setLoading(true);
     try {
       const current = await getCurrentUser();
       setUser(current);
+      if (current) {
+        syncMobileUserData()
+          .then((s) => applySyncSummary(s))
+          .catch(() => {});
+      }
     } finally {
       setLoading(false);
     }
-  }, []);
+  }, [applySyncSummary]);
 
   useEffect(() => {
     void loadUser();
@@ -95,19 +115,23 @@ export default function AccountScreen() {
           : await signUpWithEmail(name, email, password);
       setUser(loggedIn);
       setPassword("");
+      syncMobileUserData()
+        .then((s) => applySyncSummary(s))
+        .catch(() => {});
       setConfirmPassword("");
     } catch (err) {
       setErrorMsg(err instanceof Error ? err.message : "Authentication failed.");
     } finally {
       setSubmitting(false);
     }
-  }, [confirmPassword, email, mode, name, password]);
+  }, [applySyncSummary, confirmPassword, email, mode, name, password]);
 
   const handleSignOut = useCallback(async () => {
     setSubmitting(true);
     try {
       await signOutMobile();
       setUser(null);
+      setSyncSummary(null);
     } finally {
       setSubmitting(false);
     }
@@ -171,6 +195,63 @@ export default function AccountScreen() {
                   {user.email}
                 </Text>
               </View>
+            </View>
+
+            <View
+              style={{
+                backgroundColor: theme.bgElevated,
+                borderColor: theme.border,
+                borderWidth: 1,
+                borderRadius: 12,
+                padding: 14,
+                marginBottom: 14,
+              }}
+            >
+              <Text style={{ color: theme.textPrimary, fontWeight: "700", fontSize: 14 }}>
+                Cloud Account Sync
+              </Text>
+              <Text style={{ color: theme.textSecondary, fontSize: 12, marginTop: 4, marginBottom: 10, lineHeight: 18 }}>
+                {syncSummary
+                  ? `Synced: ${syncSummary.themeSynced ? "Active theme" : "Default theme"}${
+                      syncSummary.savedThemesCount > 0
+                        ? ` + ${syncSummary.savedThemesCount} saved ${
+                            syncSummary.savedThemesCount === 1 ? "theme" : "themes"
+                          }`
+                        : ""
+                    } · ${syncSummary.pinnedCount} pinned ${
+                      syncSummary.pinnedCount === 1 ? "tool" : "tools"
+                    } · ${syncSummary.languagesSynced} ${
+                      syncSummary.languagesSynced === 1 ? "language" : "languages"
+                    } · ${syncSummary.favoritesCount} ${
+                      syncSummary.favoritesCount === 1 ? "favorite" : "favorites"
+                    }.`
+                  : "Themes, pinned tools, language progress, translator favorites, Huduma bag & Harambee pledges sync automatically."}
+              </Text>
+              <Pressable
+                disabled={syncing}
+                onPress={async () => {
+                  setSyncing(true);
+                  try {
+                    const s = await syncMobileUserData();
+                    applySyncSummary(s);
+                  } finally {
+                    setSyncing(false);
+                  }
+                }}
+                style={{
+                  backgroundColor: `${theme.gold}22`,
+                  borderColor: `${theme.gold}55`,
+                  borderWidth: 1,
+                  borderRadius: 10,
+                  paddingVertical: 9,
+                  alignItems: "center",
+                  opacity: syncing ? 0.6 : 1,
+                }}
+              >
+                <Text style={{ color: theme.gold, fontWeight: "700", fontSize: 13 }}>
+                  {syncing ? "Syncing..." : "Sync Now"}
+                </Text>
+              </Pressable>
             </View>
 
             <Pressable

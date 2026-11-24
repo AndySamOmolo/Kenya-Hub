@@ -21,6 +21,9 @@ import {
   CheckCheck,
   FileCode,
   RotateCcw,
+  Volume2,
+  Cloud,
+  Globe,
 } from "lucide-react";
 import {
   getStoredContributions,
@@ -29,8 +32,25 @@ import {
   subscribeContributions,
   resetStoredContributions,
   syncCloudContributions,
+  getContributionAudioUrl,
   type ContributionItem,
 } from "@/lib/contributions";
+import { ALL_DICT_METAS } from "@/data/dictionaries/catalog";
+
+const CORE_23_LANGUAGE_KEYS = new Set(
+  ALL_DICT_METAS.flatMap((d) => [
+    d.languageId.toLowerCase(),
+    d.languageName.split("(")[0].trim().toLowerCase(),
+  ])
+);
+
+function isNewLanguageContribution(item: ContributionItem): boolean {
+  if (item.customLanguageName && item.customLanguageName.trim().length > 0) {
+    return true;
+  }
+  const base = item.language.split("(")[0].trim().toLowerCase();
+  return !CORE_23_LANGUAGE_KEYS.has(base);
+}
 
 const STANDARD_CATEGORIES = [
   { id: "greetings", name: "Greetings & Basics" },
@@ -114,7 +134,7 @@ export default function AdminTranslationsPage() {
     checkAuth();
   }, []);
 
-  // Load contributions from store
+  // Load contributions from local store
   const loadContributions = useCallback(() => {
     setLoading(true);
     try {
@@ -123,6 +143,21 @@ export default function AdminTranslationsPage() {
     } catch (err) {
       console.error("Failed to load contributions:", err);
       showToast("Failed to fetch contributions", "error");
+    } finally {
+      setLoading(false);
+    }
+  }, [showToast]);
+
+  // Refresh button: pull latest mobile & web submissions from Appwrite Cloud
+  const handleRefreshCloud = useCallback(async () => {
+    setLoading(true);
+    try {
+      const synced = await syncCloudContributions();
+      setContributions(synced);
+      showToast("Synced latest contributions from Appwrite");
+    } catch (err) {
+      console.error("Failed to sync cloud contributions:", err);
+      showToast("Failed to sync from Appwrite", "error");
     } finally {
       setLoading(false);
     }
@@ -154,7 +189,8 @@ export default function AdminTranslationsPage() {
         const matchesTranslation = item.translation?.toLowerCase().includes(q);
         const matchesContributor = item.contributorName?.toLowerCase().includes(q);
         const matchesLang = item.language?.toLowerCase().includes(q);
-        if (!matchesEnglish && !matchesTranslation && !matchesContributor && !matchesLang) {
+        const matchesCustomLang = item.customLanguageName?.toLowerCase().includes(q);
+        if (!matchesEnglish && !matchesTranslation && !matchesContributor && !matchesLang && !matchesCustomLang) {
           return false;
         }
       }
@@ -314,7 +350,7 @@ export default function AdminTranslationsPage() {
       translation: c.translation,
       pronunciation: c.pronunciation || "",
       context: c.context || "",
-      audioFile: null,
+      audioFile: c.audioUrl || (c.audioFileId ? getContributionAudioUrl(c.audioFileId) : null),
       category: c.category || "phrases",
     }));
 
@@ -404,7 +440,7 @@ export default function AdminTranslationsPage() {
             <div className="flex flex-wrap items-center gap-2 w-full sm:w-auto">
               <button
                 type="button"
-                onClick={loadContributions}
+                onClick={handleRefreshCloud}
                 disabled={loading}
                 className="px-3 py-1.5 rounded-lg text-xs font-medium bg-bg-elevated border border-border text-text-secondary hover:text-text-primary flex items-center gap-1.5 transition-colors"
               >
@@ -574,6 +610,11 @@ export default function AdminTranslationsPage() {
                 const isApproved = item.status === "approved";
                 const isRejected = item.status === "rejected";
                 const isActionLoading = actionLoadingId === item.id;
+                const displayLanguage = item.customLanguageName || item.language;
+                const isNewLang = isNewLanguageContribution(item);
+                const audioSrc =
+                  item.audioUrl ||
+                  (item.audioFileId ? getContributionAudioUrl(item.audioFileId) : null);
 
                 return (
                   <div
@@ -593,8 +634,16 @@ export default function AdminTranslationsPage() {
                           {/* Language Badge */}
                           <span className="px-2.5 py-0.5 rounded-full text-xs font-bold bg-gold/15 text-gold border border-gold/30 flex items-center gap-1.5">
                             <span className="w-1.5 h-1.5 rounded-full bg-gold" />
-                            <span>{item.language}</span>
+                            <span>{displayLanguage}</span>
                           </span>
+
+                          {/* New / Unlisted Language Badge */}
+                          {isNewLang && (
+                            <span className="px-2 py-0.5 rounded-full text-[0.65rem] font-bold bg-sky/15 text-sky border border-sky/30 flex items-center gap-1">
+                              <Globe className="w-3 h-3" />
+                              <span>New Language</span>
+                            </span>
+                          )}
 
                           {/* Type Badge */}
                           <span className="px-2 py-0.5 rounded-md text-[0.65rem] bg-bg-elevated border border-border text-text-secondary uppercase font-semibold">
@@ -635,6 +684,19 @@ export default function AdminTranslationsPage() {
                               <span>Approved &amp; Merged</span>
                             </span>
                           )}
+
+                          {/* Cloudflare R2 Audio Sync Status Badge */}
+                          {item.syncedToR2 ? (
+                            <span className="px-2 py-0.5 rounded-full text-[0.65rem] font-bold bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 flex items-center gap-1">
+                              <Cloud className="w-3 h-3" />
+                              <span>Cloudflare R2 Synced</span>
+                            </span>
+                          ) : isApproved && audioSrc ? (
+                            <span className="px-2 py-0.5 rounded-full text-[0.65rem] font-bold bg-sky/15 text-sky border border-sky/30 flex items-center gap-1">
+                              <Cloud className="w-3 h-3" />
+                              <span>Queued for R2</span>
+                            </span>
+                          ) : null}
                         </div>
 
                         {/* Word / Term Highlight */}
@@ -653,6 +715,27 @@ export default function AdminTranslationsPage() {
                             )}
                           </div>
                         </div>
+
+                        {/* Attached Pronunciation Audio Player */}
+                        {audioSrc && (
+                          <div className="bg-bg-elevated/50 rounded-lg p-2.5 border border-border/50 space-y-1.5">
+                            <div className="flex items-center justify-between gap-2 text-[0.65rem] text-text-muted">
+                              <span className="font-semibold text-sky flex items-center gap-1.5">
+                                <Volume2 className="w-3.5 h-3.5" />
+                                <span>Pronunciation Audio</span>
+                              </span>
+                              {item.audioMimeType && (
+                                <span className="font-mono text-[0.6rem]">{item.audioMimeType}</span>
+                              )}
+                            </div>
+                            <audio
+                              controls
+                              preload="none"
+                              src={audioSrc}
+                              className="w-full h-9"
+                            />
+                          </div>
+                        )}
 
                         {/* Context / Dialect / Notes */}
                         {item.context && (

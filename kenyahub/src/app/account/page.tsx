@@ -2,14 +2,17 @@
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { LogOut, Mail, ShieldCheck, User, ArrowRight, BookOpen, Wrench, Eye, EyeOff, KeyRound, CheckCircle2 } from "lucide-react";
+import { LogOut, Mail, ShieldCheck, User, ArrowRight, BookOpen, Wrench, Eye, EyeOff, KeyRound, CheckCircle2, RefreshCw } from "lucide-react";
 import { useAuth } from "@/components/AuthProvider";
 
 export default function AccountPage() {
   const {
     user,
     loading,
+    syncing,
+    syncSummary,
     authError,
+    syncUserData,
     signInWithEmail,
     signUpWithEmail,
     sendPasswordRecovery,
@@ -195,6 +198,26 @@ export default function AccountPage() {
               </div>
               <ArrowRight className="w-4 h-4 text-text-muted" />
             </Link>
+          </div>
+
+          <div className="mb-6 p-4 rounded-xl bg-bg-elevated/80 border border-border-default flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div>
+              <div className="text-sm font-semibold text-text-primary">Cloud Account Sync</div>
+              <div className="text-xs text-text-secondary mt-0.5">
+                {syncSummary
+                  ? `Synced ${syncSummary.pinnedCount} pinned tools & ${syncSummary.languagesSynced} language courses to your Appwrite account.`
+                  : "Pinned tools, language progress, KSL signs & preferences sync automatically with your account."}
+              </div>
+            </div>
+            <button
+              type="button"
+              disabled={syncing}
+              onClick={() => void syncUserData()}
+              className="inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold bg-gold/15 text-gold border border-gold/30 hover:bg-gold/25 disabled:opacity-50 transition-colors cursor-pointer shrink-0"
+            >
+              <RefreshCw className={`w-3.5 h-3.5 ${syncing ? "animate-spin" : ""}`} />
+              {syncing ? "Syncing..." : "Sync Now"}
+            </button>
           </div>
 
           <div className="flex items-center justify-between pt-4 border-t border-border-default">

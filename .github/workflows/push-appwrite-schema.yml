@@ -1,0 +1,30 @@
+name: Push Appwrite Schema & Audio Bucket (One-Time)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  push-schema:
+    name: Create Contributions Columns & Audio Bucket in Appwrite
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install requests
+        run: pip install --no-cache-dir requests
+
+      - name: Push Appwrite Contributions Schema & contribution-audio Bucket
+        env:
+          APPWRITE_API_KEY: ${{ secrets.APPWRITE_API_KEY }}
+        run: python3 -u kenyahub/scripts/push-appwrite-schema.py

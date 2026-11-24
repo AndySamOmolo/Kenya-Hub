@@ -48,11 +48,163 @@ import {
 } from "./translator/loader";
 import { createStyles } from "./translator/styles";
 import { playVerifiedAudio, hasVerifiedAudio } from "../lib/mobile-audio";
+import { WebView, type WebViewMessageEvent } from "react-native-webview";
 import {
   getBundledAudioPreview,
   loadMobileAudioShard,
   type MobileAudioShardClip,
 } from "../lib/mobile-learning-shards";
+import {
+  getCachedUser,
+  submitContributionToAppwrite,
+  uploadContributionAudioMobile,
+} from "../lib/appwrite-auth";
+
+const EMERGING_KENYAN_LANGUAGES = [
+  "Kuria",
+  "Maay",
+  "Kinubi",
+  "Yaaku",
+  "Suba",
+  "Taveta",
+  "Ogiek",
+  "El Molo",
+  "Sengwer",
+  "Dahalo",
+  "Orma",
+  "Waata",
+  "Burji",
+  "Gabra",
+  "Daasanach",
+] as const;
+
+const OTHER_KENYAN_LANGUAGE_VALUE = "__other__";
+
+function buildAudioRecorderHtml(bgColor: string, cardColor: string, textColor: string, goldColor: string): string {
+  return `<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"/>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, sans-serif; }
+  body { background: ${bgColor}; color: ${textColor}; padding: 10px; }
+  .box { background: ${cardColor}; border-radius: 10px; padding: 10px; display: flex; flex-direction: column; gap: 8px; }
+  .row { display: flex; align-items: center; gap: 8px; }
+  button { border: none; border-radius: 8px; padding: 8px 14px; font-weight: 700; font-size: 13px; cursor: pointer; }
+  #recBtn { background: ${goldColor}; color: #1A1108; flex: 1; }
+  #recBtn.recording { background: #dc2626; color: #ffffff; }
+  .status { font-size: 12px; opacity: 0.85; }
+  audio { width: 100%; height: 34px; display: none; }
+</style>
+</head>
+<body>
+<div class="box">
+  <div class="row">
+    <button id="recBtn" type="button">Tap to Record (Max 30s)</button>
+    <span id="timer" class="status">0:00</span>
+  </div>
+  <div id="status" class="status">Speak the native word or phrase clearly.</div>
+  <audio id="preview" controls></audio>
+</div>
+<script>
+  var mediaRecorder = null;
+  var chunks = [];
+  var streamRef = null;
+  var timerId = null;
+  var seconds = 0;
+  var recBtn = document.getElementById('recBtn');
+  var timerEl = document.getElementById('timer');
+  var statusEl = document.getElementById('status');
+  var previewEl = document.getElementById('preview');
+
+  function post(obj) {
+    if (window.ReactNativeWebView && window.ReactNativeWebView.postMessage) {
+      window.ReactNativeWebView.postMessage(JSON.stringify(obj));
+    }
+  }
+
+  function stopTracks() {
+    if (streamRef) {
+      streamRef.getTracks().forEach(function(t) { t.stop(); });
+      streamRef = null;
+    }
+    if (timerId) {
+      clearInterval(timerId);
+      timerId = null;
+    }
+  }
+
+  recBtn.addEventListener('click', function() {
+    if (mediaRecorder && mediaRecorder.state === 'recording') {
+      mediaRecorder.stop();
+      return;
+    }
+    if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia || typeof MediaRecorder === 'undefined') {
+      statusEl.textContent = 'Microphone recording is not supported in this WebView. You can paste an audio URL below instead.';
+      post({ type: 'error', message: 'Microphone recording unavailable in WebView.' });
+      return;
+    }
+    navigator.mediaDevices.getUserMedia({ audio: true }).then(function(stream) {
+      streamRef = stream;
+      chunks = [];
+      seconds = 0;
+      var mime = MediaRecorder.isTypeSupported('audio/webm;codecs=opus')
+        ? 'audio/webm;codecs=opus'
+        : (MediaRecorder.isTypeSupported('audio/webm') ? 'audio/webm' : 'audio/mp4');
+      try {
+        mediaRecorder = new MediaRecorder(stream, { mimeType: mime });
+      } catch (e) {
+        mediaRecorder = new MediaRecorder(stream);
+        mime = mediaRecorder.mimeType || 'audio/webm';
+      }
+      mediaRecorder.ondataavailable = function(ev) {
+        if (ev.data && ev.data.size > 0) chunks.push(ev.data);
+      };
+      mediaRecorder.onstop = function() {
+        stopTracks();
+        recBtn.className = '';
+        recBtn.textContent = 'Re-record Audio';
+        var cleanMime = (mime || 'audio/webm').split(';')[0];
+        var ext = cleanMime.indexOf('mp4') !== -1 ? 'm4a' : (cleanMime.indexOf('ogg') !== -1 ? 'ogg' : 'webm');
+        var blob = new Blob(chunks, { type: cleanMime });
+        previewEl.src = URL.createObjectURL(blob);
+        previewEl.style.display = 'block';
+        statusEl.textContent = 'Recording ready and attached.';
+        var reader = new FileReader();
+        reader.onloadend = function() {
+          post({
+            type: 'audio',
+            base64: reader.result,
+            mimeType: cleanMime,
+            filename: 'pronunciation_' + Date.now() + '.' + ext
+          });
+        };
+        reader.readAsDataURL(blob);
+      };
+      mediaRecorder.start();
+      recBtn.className = 'recording';
+      recBtn.textContent = 'Stop Recording';
+      statusEl.textContent = 'Recording... tap Stop when done.';
+      timerEl.textContent = '0:00';
+      timerId = setInterval(function() {
+        seconds++;
+        var m = Math.floor(seconds / 60);
+        var s = seconds % 60;
+        timerEl.textContent = m + ':' + (s < 10 ? '0' : '') + s;
+        if (seconds >= 30 && mediaRecorder && mediaRecorder.state === 'recording') {
+          mediaRecorder.stop();
+        }
+      }, 1000);
+    }).catch(function(err) {
+      stopTracks();
+      statusEl.textContent = 'Microphone permission denied. You can paste an audio URL below instead.';
+      post({ type: 'error', message: (err && err.message) ? err.message : 'Microphone permission denied.' });
+    });
+  });
+</script>
+</body>
+</html>`;
+}
 
 function stripDiacritics(s: string): string {
   return s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
@@ -320,6 +472,9 @@ export function KenyanTranslatorTool({
     pronunciation?: string;
     context?: string;
     contributor?: string;
+    cloudSynced?: boolean;
+    syncStatus?: string;
+    audioAttached?: boolean;
   }[]>([]);
   const userContributionsCount = userContributions.length;
   const [toastMessage, setToastMessage] = useState<string | null>(null);
@@ -433,12 +588,23 @@ export function KenyanTranslatorTool({
   // Contribute Modal
   const [isContributeOpen, setIsContributeOpen] = useState(false);
   const [contribLang, setContribLang] = useState("Swahili");
+  const [contribCustomLang, setContribCustomLang] = useState("");
+  const [showContribLangPicker, setShowContribLangPicker] = useState(false);
   const [contribEnglish, setContribEnglish] = useState("");
   const [contribTranslation, setContribTranslation] = useState("");
   const [contribPronounce, setContribPronounce] = useState("");
   const [contribContext, setContribContext] = useState("");
   const [contribName, setContribName] = useState("");
+  const [contribEmail, setContribEmail] = useState("");
   const [contribSubmitted, setContribSubmitted] = useState(false);
+  const [contribSubmitting, setContribSubmitting] = useState(false);
+  const [contribLastCloudSynced, setContribLastCloudSynced] = useState(false);
+  const [showAudioRecorder, setShowAudioRecorder] = useState(false);
+  const [contribAudioBase64, setContribAudioBase64] = useState<string | null>(null);
+  const [contribAudioMime, setContribAudioMime] = useState("audio/webm");
+  const [contribAudioFilename, setContribAudioFilename] = useState("");
+  const [contribAudioUrl, setContribAudioUrl] = useState("");
+  const [contribAudioError, setContribAudioError] = useState<string | null>(null);
 
   useEffect(() => {
     let active = true;
@@ -928,19 +1094,95 @@ export function KenyanTranslatorTool({
     setContribLang(
       browseDict?.languageName?.split("(")[0]?.trim() || "Swahili"
     );
+    setContribCustomLang("");
+    setShowContribLangPicker(false);
     setContribEnglish(defaultEng || searchQuery || "");
     setContribTranslation("");
     setContribPronounce("");
     setContribContext("");
     setContribSubmitted(false);
+    setContribSubmitting(false);
+    setContribLastCloudSynced(false);
+    setShowAudioRecorder(false);
+    setContribAudioBase64(null);
+    setContribAudioMime("audio/webm");
+    setContribAudioFilename("");
+    setContribAudioUrl("");
+    setContribAudioError(null);
     setIsContributeOpen(true);
+
+    getCachedUser()
+      .then((cached) => {
+        if (!cached) return;
+        setContribName((prev) => (prev.trim() ? prev : cached.name || ""));
+        setContribEmail((prev) => (prev.trim() ? prev : cached.email || ""));
+      })
+      .catch(() => {});
   };
 
+  const handleRecorderMessage = useCallback((event: WebViewMessageEvent) => {
+    try {
+      const payload = JSON.parse(event.nativeEvent.data);
+      if (payload?.type === "audio" && typeof payload.base64 === "string" && payload.base64) {
+        setContribAudioBase64(payload.base64);
+        setContribAudioMime(typeof payload.mimeType === "string" ? payload.mimeType : "audio/webm");
+        setContribAudioFilename(
+          typeof payload.filename === "string" ? payload.filename : `pronunciation_${Date.now()}.webm`
+        );
+        setContribAudioError(null);
+      } else if (payload?.type === "error" && typeof payload.message === "string") {
+        setContribAudioError(payload.message);
+      }
+    } catch {
+      // Ignore malformed bridge messages
+    }
+  }, []);
+
   const handleSubmitContribute = async () => {
-    if (!contribEnglish.trim() || !contribTranslation.trim()) return;
+    if (contribSubmitting) return;
+    const isOtherLang = contribLang === OTHER_KENYAN_LANGUAGE_VALUE;
+    const resolvedLanguage = isOtherLang ? contribCustomLang.trim() : contribLang.trim();
+    if (!resolvedLanguage || !contribEnglish.trim() || !contribTranslation.trim()) return;
     triggerHaptic(12);
+    setContribSubmitting(true);
 
     try {
+      const submittedAt = new Date().toISOString();
+      const isEmerging = (EMERGING_KENYAN_LANGUAGES as readonly string[]).includes(resolvedLanguage);
+      const customLanguageName = isOtherLang || isEmerging ? resolvedLanguage : undefined;
+
+      let uploadedAudio: { fileId: string; viewUrl: string } | null = null;
+      if (contribAudioBase64) {
+        uploadedAudio = await uploadContributionAudioMobile(
+          contribAudioBase64,
+          contribAudioMime,
+          contribAudioFilename || `pronunciation_${Date.now()}.webm`
+        );
+      }
+
+      const contextParts: string[] = [];
+      if (contribContext.trim()) contextParts.push(contribContext.trim());
+      if (contribAudioUrl.trim() && !uploadedAudio) {
+        contextParts.push(`[Audio URL: ${contribAudioUrl.trim()}]`);
+      }
+      const combinedContext = contextParts.join(" ");
+
+      const cloudRes = await submitContributionToAppwrite({
+        language: resolvedLanguage,
+        customLanguageName,
+        type: "new_word",
+        english: contribEnglish.trim(),
+        translation: contribTranslation.trim(),
+        pronunciation: contribPronounce.trim() || undefined,
+        context: combinedContext || undefined,
+        category: activeCategory || "phrases",
+        contributorName: contribName.trim() || "Community Contributor",
+        contributorEmail: contribEmail.trim() || undefined,
+        audioFileId: uploadedAudio?.fileId,
+        audioMimeType: uploadedAudio ? contribAudioMime : undefined,
+        submittedAt,
+      });
+
       const stored = await AsyncStorage.getItem("kh-user-contributions");
       const parsedStored = stored ? JSON.parse(stored) : [];
       const list = Array.isArray(parsedStored)
@@ -949,15 +1191,17 @@ export function KenyanTranslatorTool({
           )
         : [];
       const newEntry = {
-        id: Date.now().toString(),
-        language: contribLang,
+        id: cloudRes.documentId || Date.now().toString(),
+        language: resolvedLanguage,
         english: contribEnglish.trim(),
         translation: contribTranslation.trim(),
         pronunciation: contribPronounce.trim(),
-        context: contribContext.trim(),
+        context: combinedContext,
         contributor: contribName.trim() || "Community Contributor",
-        syncStatus: "saved_locally",
-        timestamp: new Date().toISOString(),
+        cloudSynced: cloudRes.synced,
+        audioAttached: Boolean(uploadedAudio || contribAudioBase64 || contribAudioUrl.trim()),
+        syncStatus: cloudRes.synced ? "submitted_for_review" : "saved_locally",
+        timestamp: submittedAt,
       };
       const updatedList = [newEntry, ...list];
       await AsyncStorage.setItem(
@@ -965,14 +1209,23 @@ export function KenyanTranslatorTool({
         JSON.stringify(updatedList)
       );
       setUserContributions(updatedList);
+      setContribLastCloudSynced(cloudRes.synced);
       setContribSubmitted(true);
-      showToast("Saved locally to your device dictionary!");
+      showToast(
+        cloudRes.synced
+          ? "Submitted for admin review!"
+          : "Saved offline — will sync when online"
+      );
       if (contribTimerRef.current) clearTimeout(contribTimerRef.current);
       contribTimerRef.current = setTimeout(() => {
         contribTimerRef.current = null;
         setIsContributeOpen(false);
-      }, 1600);
-    } catch {}
+      }, 1800);
+    } catch {
+      showToast("Saved offline — will sync when online");
+    } finally {
+      setContribSubmitting(false);
+    }
   };
 
   return (
@@ -1998,7 +2251,9 @@ export function KenyanTranslatorTool({
                     <View style={styles.resultHeader}>
                       <View style={styles.resultTagRow}>
                         <View style={styles.catBadge}>
-                          <Text style={styles.catBadgeText}>My Device Dictionary</Text>
+                          <Text style={styles.catBadgeText}>
+                            {uItem.cloudSynced ? "Submitted for Review" : "Saved Offline"}
+                          </Text>
                         </View>
                         <View style={[styles.familyBadge, { backgroundColor: `${theme.gold}20` }]}>
                           <Text style={[styles.familyBadgeText, { color: theme.gold }]}>
@@ -2033,7 +2288,7 @@ export function KenyanTranslatorTool({
         </View>
       )}
 
-      {/* ────────────────── CONTRIBUTE MODAL WITH KEYBOARD AVOIDANCE & LOCAL STORAGE CLARITY (MOB-11, UX-3) ────────────────── */}
+      {/* ────────────────── CONTRIBUTE MODAL (APPWRITE CLOUD + ANY KENYAN LANGUAGE + AUDIO) ────────────────── */}
       <Modal
         visible={isContributeOpen}
         animationType="slide"
@@ -2050,7 +2305,7 @@ export function KenyanTranslatorTool({
                 style={{ flexDirection: "row", alignItems: "center", gap: 8 }}
               >
                 <Ionicons name="add-circle" size={24} color={theme.gold} />
-                <Text style={styles.modalTitle}>Add Word to Device</Text>
+                <Text style={styles.modalTitle}>Contribute a Word</Text>
               </View>
               <Pressable
                 onPress={() => setIsContributeOpen(false)}
@@ -2071,40 +2326,252 @@ export function KenyanTranslatorTool({
                 />
                 <Text style={styles.successTitle}>Asante Sana!</Text>
                 <Text style={styles.successDesc}>
-                  Saved locally to your device ({userContributionsCount} custom{" "}
-                  {userContributionsCount === 1 ? "entry" : "entries"} stored
-                  offline).
+                  {contribLastCloudSynced
+                    ? `Submitted for admin review! A copy is also saved on your device (${userContributionsCount} total).`
+                    : `Saved offline — will sync when online (${userContributionsCount} ${
+                        userContributionsCount === 1 ? "entry" : "entries"
+                      } stored on device).`}
                 </Text>
               </View>
             ) : (
               <ScrollView
-                style={{ maxHeight: 430 }}
+                style={{ maxHeight: 470 }}
                 showsVerticalScrollIndicator={false}
                 keyboardShouldPersistTaps="handled"
               >
                 <Text style={styles.modalSub}>
-                  Saved directly to your device&apos;s offline storage
-                  (kh-user-contributions) so you can build your own dialect
-                  notes anytime.
+                  Contribute words or phrases in any Kenyan language for admin
+                  review and dictionary inclusion. A local receipt is also saved
+                  on your device.
                 </Text>
 
-                <Text style={styles.inputLabel}>Language</Text>
-                <View style={{ position: "relative", justifyContent: "center" }}>
-                  <TextInput
-                    multiline={false}
-                    numberOfLines={1}
-                    value={contribLang}
-                    onChangeText={setContribLang}
-                    placeholder="e.g. Kikuyu, Luo, Turkana..."
-                    placeholderTextColor={theme.textMuted}
-                    style={[styles.modalInput, { paddingRight: 36 }]}
+                <Text style={styles.inputLabel}>Kenyan Language *</Text>
+                <Pressable
+                  onPress={() => {
+                    triggerHaptic(6);
+                    setShowContribLangPicker((v) => !v);
+                  }}
+                  style={[
+                    styles.modalInput,
+                    {
+                      flexDirection: "row",
+                      alignItems: "center",
+                      justifyContent: "space-between",
+                    },
+                  ]}
+                >
+                  <Text
+                    style={{
+                      color: theme.textPrimary,
+                      fontSize: 13,
+                      fontWeight: "600",
+                    }}
+                  >
+                    {contribLang === OTHER_KENYAN_LANGUAGE_VALUE
+                      ? "Other Kenyan Language (Specify)"
+                      : contribLang}
+                  </Text>
+                  <Ionicons
+                    name={showContribLangPicker ? "chevron-up" : "chevron-down"}
+                    size={16}
+                    color={theme.textMuted}
                   />
-                  {contribLang.length > 0 && (
-                    <Pressable onPress={() => setContribLang("")} hitSlop={8} style={{ position: "absolute", right: 10 }}>
-                      <Ionicons name="close-circle" size={18} color={theme.textMuted} />
+                </Pressable>
+
+                {showContribLangPicker && (
+                  <View
+                    style={{
+                      backgroundColor: theme.bgElevated,
+                      borderColor: theme.border,
+                      borderWidth: 1,
+                      borderRadius: 10,
+                      padding: 10,
+                      marginTop: 6,
+                      gap: 8,
+                    }}
+                  >
+                    <Text
+                      style={{
+                        color: theme.gold,
+                        fontSize: 11,
+                        fontWeight: "700",
+                        textTransform: "uppercase",
+                      }}
+                    >
+                      23 KenyaHub Languages
+                    </Text>
+                    <View
+                      style={{
+                        flexDirection: "row",
+                        flexWrap: "wrap",
+                        gap: 6,
+                      }}
+                    >
+                      {ALL_DICT_METAS.map((meta) => {
+                        const cleanName = meta.languageName.split("(")[0].trim();
+                        const active = contribLang === cleanName;
+                        return (
+                          <Pressable
+                            key={meta.languageId}
+                            onPress={() => {
+                              triggerHaptic(6);
+                              setContribLang(cleanName);
+                              setShowContribLangPicker(false);
+                            }}
+                            style={{
+                              paddingHorizontal: 10,
+                              paddingVertical: 5,
+                              borderRadius: 14,
+                              backgroundColor: active
+                                ? theme.gold
+                                : theme.bgCard,
+                              borderWidth: 1,
+                              borderColor: active ? theme.gold : theme.border,
+                            }}
+                          >
+                            <Text
+                              style={{
+                                fontSize: 12,
+                                fontWeight: "600",
+                                color: active ? "#1A1108" : theme.textPrimary,
+                              }}
+                            >
+                              {cleanName}
+                            </Text>
+                          </Pressable>
+                        );
+                      })}
+                    </View>
+
+                    <Text
+                      style={{
+                        color: theme.sky,
+                        fontSize: 11,
+                        fontWeight: "700",
+                        textTransform: "uppercase",
+                        marginTop: 4,
+                      }}
+                    >
+                      Emerging / Unlisted Kenyan Languages
+                    </Text>
+                    <View
+                      style={{
+                        flexDirection: "row",
+                        flexWrap: "wrap",
+                        gap: 6,
+                      }}
+                    >
+                      {EMERGING_KENYAN_LANGUAGES.map((langName) => {
+                        const active = contribLang === langName;
+                        return (
+                          <Pressable
+                            key={langName}
+                            onPress={() => {
+                              triggerHaptic(6);
+                              setContribLang(langName);
+                              setShowContribLangPicker(false);
+                            }}
+                            style={{
+                              paddingHorizontal: 10,
+                              paddingVertical: 5,
+                              borderRadius: 14,
+                              backgroundColor: active
+                                ? theme.gold
+                                : theme.bgCard,
+                              borderWidth: 1,
+                              borderColor: active ? theme.gold : theme.border,
+                            }}
+                          >
+                            <Text
+                              style={{
+                                fontSize: 12,
+                                fontWeight: "600",
+                                color: active ? "#1A1108" : theme.textPrimary,
+                              }}
+                            >
+                              {langName}
+                            </Text>
+                          </Pressable>
+                        );
+                      })}
+                    </View>
+
+                    <Pressable
+                      onPress={() => {
+                        triggerHaptic(6);
+                        setContribLang(OTHER_KENYAN_LANGUAGE_VALUE);
+                        setShowContribLangPicker(false);
+                      }}
+                      style={{
+                        marginTop: 4,
+                        paddingVertical: 8,
+                        paddingHorizontal: 10,
+                        borderRadius: 8,
+                        backgroundColor:
+                          contribLang === OTHER_KENYAN_LANGUAGE_VALUE
+                            ? `${theme.gold}25`
+                            : theme.bgCard,
+                        borderWidth: 1,
+                        borderColor:
+                          contribLang === OTHER_KENYAN_LANGUAGE_VALUE
+                            ? theme.gold
+                            : theme.border,
+                        flexDirection: "row",
+                        alignItems: "center",
+                        gap: 6,
+                      }}
+                    >
+                      <Ionicons
+                        name="create-outline"
+                        size={15}
+                        color={theme.gold}
+                      />
+                      <Text
+                        style={{
+                          fontSize: 12,
+                          fontWeight: "700",
+                          color: theme.gold,
+                        }}
+                      >
+                        Other Kenyan Language (Specify)
+                      </Text>
                     </Pressable>
-                  )}
-                </View>
+                  </View>
+                )}
+
+                {contribLang === OTHER_KENYAN_LANGUAGE_VALUE && (
+                  <View style={{ marginTop: 6 }}>
+                    <Text style={styles.inputLabel}>
+                      Specify Kenyan Language *
+                    </Text>
+                    <View
+                      style={{ position: "relative", justifyContent: "center" }}
+                    >
+                      <TextInput
+                        multiline={false}
+                        numberOfLines={1}
+                        value={contribCustomLang}
+                        onChangeText={setContribCustomLang}
+                        placeholder="e.g. Suba-Suna, Chonyi, Boni, Sakuye..."
+                        placeholderTextColor={theme.textMuted}
+                        style={[styles.modalInput, { paddingRight: 36 }]}
+                      />
+                      {contribCustomLang.length > 0 && (
+                        <Pressable
+                          onPress={() => setContribCustomLang("")}
+                          hitSlop={8}
+                          style={{ position: "absolute", right: 10 }}
+                        >
+                          <Ionicons
+                            name="close-circle"
+                            size={18}
+                            color={theme.textMuted}
+                          />
+                        </Pressable>
+                      )}
+                    </View>
+                  </View>
+                )}
 
                 <Text style={styles.inputLabel}>English Phrase / Term *</Text>
                 <View style={{ position: "relative", justifyContent: "center" }}>
@@ -2118,8 +2585,16 @@ export function KenyanTranslatorTool({
                     style={[styles.modalInput, { paddingRight: 36 }]}
                   />
                   {contribEnglish.length > 0 && (
-                    <Pressable onPress={() => setContribEnglish("")} hitSlop={8} style={{ position: "absolute", right: 10 }}>
-                      <Ionicons name="close-circle" size={18} color={theme.textMuted} />
+                    <Pressable
+                      onPress={() => setContribEnglish("")}
+                      hitSlop={8}
+                      style={{ position: "absolute", right: 10 }}
+                    >
+                      <Ionicons
+                        name="close-circle"
+                        size={18}
+                        color={theme.textMuted}
+                      />
                     </Pressable>
                   )}
                 </View>
@@ -2136,8 +2611,16 @@ export function KenyanTranslatorTool({
                     style={[styles.modalInput, { paddingRight: 36 }]}
                   />
                   {contribTranslation.length > 0 && (
-                    <Pressable onPress={() => setContribTranslation("")} hitSlop={8} style={{ position: "absolute", right: 10 }}>
-                      <Ionicons name="close-circle" size={18} color={theme.textMuted} />
+                    <Pressable
+                      onPress={() => setContribTranslation("")}
+                      hitSlop={8}
+                      style={{ position: "absolute", right: 10 }}
+                    >
+                      <Ionicons
+                        name="close-circle"
+                        size={18}
+                        color={theme.textMuted}
+                      />
                     </Pressable>
                   )}
                 </View>
@@ -2156,9 +2639,185 @@ export function KenyanTranslatorTool({
                     style={[styles.modalInput, { paddingRight: 36 }]}
                   />
                   {contribPronounce.length > 0 && (
-                    <Pressable onPress={() => setContribPronounce("")} hitSlop={8} style={{ position: "absolute", right: 10 }}>
-                      <Ionicons name="close-circle" size={18} color={theme.textMuted} />
+                    <Pressable
+                      onPress={() => setContribPronounce("")}
+                      hitSlop={8}
+                      style={{ position: "absolute", right: 10 }}
+                    >
+                      <Ionicons
+                        name="close-circle"
+                        size={18}
+                        color={theme.textMuted}
+                      />
                     </Pressable>
+                  )}
+                </View>
+
+                {/* Optional Pronunciation Audio */}
+                <Text style={styles.inputLabel}>
+                  Optional Pronunciation Audio
+                </Text>
+                <View
+                  style={{
+                    backgroundColor: theme.bgElevated,
+                    borderColor: theme.border,
+                    borderWidth: 1,
+                    borderRadius: 10,
+                    padding: 10,
+                    gap: 8,
+                  }}
+                >
+                  <View
+                    style={{
+                      flexDirection: "row",
+                      alignItems: "center",
+                      justifyContent: "space-between",
+                      gap: 8,
+                    }}
+                  >
+                    <Pressable
+                      onPress={() => {
+                        triggerHaptic(8);
+                        setShowAudioRecorder((v) => !v);
+                        setContribAudioError(null);
+                      }}
+                      style={{
+                        flexDirection: "row",
+                        alignItems: "center",
+                        gap: 6,
+                        backgroundColor: `${theme.gold}22`,
+                        borderColor: `${theme.gold}55`,
+                        borderWidth: 1,
+                        borderRadius: 8,
+                        paddingHorizontal: 10,
+                        paddingVertical: 7,
+                      }}
+                    >
+                      <Ionicons
+                        name={showAudioRecorder ? "mic-off-outline" : "mic-outline"}
+                        size={15}
+                        color={theme.gold}
+                      />
+                      <Text
+                        style={{
+                          color: theme.gold,
+                          fontSize: 12,
+                          fontWeight: "700",
+                        }}
+                      >
+                        {showAudioRecorder ? "Hide Recorder" : "Record Audio"}
+                      </Text>
+                    </Pressable>
+
+                    {(contribAudioBase64 || contribAudioUrl.trim().length > 0) && (
+                      <Pressable
+                        onPress={() => {
+                          setContribAudioBase64(null);
+                          setContribAudioFilename("");
+                          setContribAudioUrl("");
+                          setShowAudioRecorder(false);
+                        }}
+                        hitSlop={8}
+                      >
+                        <Text
+                          style={{
+                            color: theme.kenyaRedLight,
+                            fontSize: 11,
+                            fontWeight: "700",
+                          }}
+                        >
+                          Remove Audio
+                        </Text>
+                      </Pressable>
+                    )}
+                  </View>
+
+                  {showAudioRecorder && (
+                    <View
+                      style={{
+                        height: 126,
+                        borderRadius: 8,
+                        overflow: "hidden",
+                        borderWidth: 1,
+                        borderColor: theme.border,
+                      }}
+                    >
+                      <WebView
+                        originWhitelist={["*"]}
+                        javaScriptEnabled={true}
+                        mediaPlaybackRequiresUserAction={false}
+                        allowsInlineMediaPlayback={true}
+                        onMessage={handleRecorderMessage}
+                        source={{
+                          html: buildAudioRecorderHtml(
+                            theme.bgElevated,
+                            theme.bgCard,
+                            theme.textPrimary,
+                            theme.gold
+                          ),
+                        }}
+                        style={{ flex: 1, backgroundColor: theme.bgElevated }}
+                      />
+                    </View>
+                  )}
+
+                  {contribAudioError ? (
+                    <Text
+                      style={{
+                        color: theme.kenyaRedLight,
+                        fontSize: 11,
+                      }}
+                    >
+                      {contribAudioError}
+                    </Text>
+                  ) : null}
+
+                  <TextInput
+                    multiline={false}
+                    numberOfLines={1}
+                    autoCapitalize="none"
+                    keyboardType="url"
+                    value={contribAudioUrl}
+                    onChangeText={setContribAudioUrl}
+                    placeholder="Or paste an optional audio URL (https://...)"
+                    placeholderTextColor={theme.textMuted}
+                    style={[
+                      styles.modalInput,
+                      { backgroundColor: theme.bgCard, fontSize: 12 },
+                    ]}
+                  />
+
+                  {(contribAudioBase64 || contribAudioUrl.trim().length > 0) && (
+                    <View
+                      style={{
+                        flexDirection: "row",
+                        alignItems: "center",
+                        gap: 6,
+                        backgroundColor: `${theme.kenyaGreen}22`,
+                        borderColor: `${theme.kenyaGreen}55`,
+                        borderWidth: 1,
+                        borderRadius: 8,
+                        paddingHorizontal: 8,
+                        paddingVertical: 6,
+                      }}
+                    >
+                      <Ionicons
+                        name="checkmark-circle"
+                        size={15}
+                        color={theme.kenyaGreenLight}
+                      />
+                      <Text
+                        style={{
+                          color: theme.kenyaGreenLight,
+                          fontSize: 11,
+                          fontWeight: "600",
+                          flex: 1,
+                        }}
+                      >
+                        Audio attached (will be pushed to Cloudflare R2 upon
+                        admin approval)
+                      </Text>
+                    </View>
                   )}
                 </View>
 
@@ -2176,8 +2835,16 @@ export function KenyanTranslatorTool({
                     style={[styles.modalInput, { paddingRight: 36 }]}
                   />
                   {contribContext.length > 0 && (
-                    <Pressable onPress={() => setContribContext("")} hitSlop={8} style={{ position: "absolute", right: 10 }}>
-                      <Ionicons name="close-circle" size={18} color={theme.textMuted} />
+                    <Pressable
+                      onPress={() => setContribContext("")}
+                      hitSlop={8}
+                      style={{ position: "absolute", right: 10 }}
+                    >
+                      <Ionicons
+                        name="close-circle"
+                        size={18}
+                        color={theme.textMuted}
+                      />
                     </Pressable>
                   )}
                 </View>
@@ -2192,22 +2859,79 @@ export function KenyanTranslatorTool({
                     placeholder="Your Name"
                     placeholderTextColor={theme.textMuted}
                     style={[styles.modalInput, { paddingRight: 36 }]}
+                  />
+                  {contribName.length > 0 && (
+                    <Pressable
+                      onPress={() => setContribName("")}
+                      hitSlop={8}
+                      style={{ position: "absolute", right: 10 }}
+                    >
+                      <Ionicons
+                        name="close-circle"
+                        size={18}
+                        color={theme.textMuted}
+                      />
+                    </Pressable>
+                  )}
+                </View>
+
+                <Text style={styles.inputLabel}>Your Email (optional)</Text>
+                <View style={{ position: "relative", justifyContent: "center" }}>
+                  <TextInput
+                    multiline={false}
+                    numberOfLines={1}
+                    autoCapitalize="none"
+                    keyboardType="email-address"
+                    value={contribEmail}
+                    onChangeText={setContribEmail}
+                    placeholder="you@example.com"
+                    placeholderTextColor={theme.textMuted}
+                    style={[styles.modalInput, { paddingRight: 36 }]}
                     returnKeyType="done"
                     onSubmitEditing={handleSubmitContribute}
                   />
-                  {contribName.length > 0 && (
-                    <Pressable onPress={() => setContribName("")} hitSlop={8} style={{ position: "absolute", right: 10 }}>
-                      <Ionicons name="close-circle" size={18} color={theme.textMuted} />
+                  {contribEmail.length > 0 && (
+                    <Pressable
+                      onPress={() => setContribEmail("")}
+                      hitSlop={8}
+                      style={{ position: "absolute", right: 10 }}
+                    >
+                      <Ionicons
+                        name="close-circle"
+                        size={18}
+                        color={theme.textMuted}
+                      />
                     </Pressable>
                   )}
                 </View>
 
                 <Pressable
+                  disabled={
+                    contribSubmitting ||
+                    !contribEnglish.trim() ||
+                    !contribTranslation.trim() ||
+                    (contribLang === OTHER_KENYAN_LANGUAGE_VALUE &&
+                      !contribCustomLang.trim())
+                  }
                   onPress={handleSubmitContribute}
-                  style={pressableStyle(styles.submitBtn)}
+                  style={[
+                    pressableStyle(styles.submitBtn),
+                    {
+                      opacity:
+                        contribSubmitting ||
+                        !contribEnglish.trim() ||
+                        !contribTranslation.trim() ||
+                        (contribLang === OTHER_KENYAN_LANGUAGE_VALUE &&
+                          !contribCustomLang.trim())
+                          ? 0.55
+                          : 1,
+                    },
+                  ]}
                 >
                   <Text style={styles.submitBtnText}>
-                    Save Locally to Device
+                    {contribSubmitting
+                      ? "Submitting..."
+                      : "Submit Contribution"}
                   </Text>
                 </Pressable>
               </ScrollView>

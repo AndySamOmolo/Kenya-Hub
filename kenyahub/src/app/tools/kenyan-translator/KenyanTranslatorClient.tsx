@@ -4,12 +4,12 @@ import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 import SearchInput from "@/components/ui/SearchInput";
 
-import { useState, useMemo, useCallback, useEffect } from "react";
+import { useState, useMemo, useCallback, useEffect, useRef } from "react";
 import { useDebouncedValue } from "@/lib/useDebouncedValue";
 import ToolShell, { type RichGuideEntry } from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import CustomSelect from "@/components/ui/CustomSelect";
-import { BookOpen, Dices, Folder, Hash, Plus, X, Check, Send, ArrowRight, ChevronLeft, ChevronRight, Volume2 } from "lucide-react";
+import { BookOpen, Dices, Folder, Hash, Plus, X, Check, Send, ArrowRight, ChevronLeft, ChevronRight, Volume2, Mic, Square, Upload, Trash2 } from "lucide-react";
 
 import {
   ALL_DICT_METAS,
@@ -21,7 +21,8 @@ import {
 } from "@/data/dictionaries/catalog";
 import { INITIAL_RANDOM_WORDS } from "@/data/dictionaries/random-words";
 import { getLanguageIdentity } from "@/data/language-identity";
-import { addContribution, subscribeContributions } from "@/lib/contributions";
+import { useAuth } from "@/components/AuthProvider";
+import { addContributionAsync, uploadContributionAudio, subscribeContributions } from "@/lib/contributions";
 import { playLanguageAudio, hasVerifiedAudio, preloadLanguageAudioIndex } from "@/lib/language-audio";
 import { loadAudioShard, type AudioShardClip } from "@/lib/learning-shards";
 import { renderInlineMarkdown } from "@/lib/render-markdown";
@@ -47,6 +48,41 @@ import {
 
 const tool = TOOLS.find((t) => t.slug === "kenyan-translator")!;
 
+const EMERGING_KENYAN_LANGUAGES = [
+  "Kuria",
+  "Maay",
+  "Kinubi",
+  "Yaaku/Mogogodo",
+  "Suba",
+  "Taveta",
+  "Ogiek",
+  "El Molo",
+  "Sengwer",
+  "Dahalo",
+  "Orma",
+  "Waata",
+  "Burji",
+  "Gabra",
+  "Daasanach",
+] as const;
+
+const CORE_23_LANGUAGE_NAMES = ALL_DICT_METAS.map((d) => d.languageName.split("(")[0].trim());
+const CORE_23_LANGUAGE_SET = new Set(CORE_23_LANGUAGE_NAMES.map((l) => l.toLowerCase()));
+const CONTRIBUTE_LANGUAGE_OPTIONS = [
+  ...CORE_23_LANGUAGE_NAMES.map((l) => ({ value: l, label: l })),
+  ...EMERGING_KENYAN_LANGUAGES.filter((l) => !CORE_23_LANGUAGE_SET.has(l.toLowerCase())).map((l) => ({
+    value: l,
+    label: `${l} (Emerging / New)`,
+  })),
+  ...ALL_CONTRIBUTE_LANGUAGES.filter(
+    (l) =>
+      !CORE_23_LANGUAGE_SET.has(l.toLowerCase()) &&
+      !EMERGING_KENYAN_LANGUAGES.some((e) => e.toLowerCase() === l.toLowerCase())
+  ).map((l) => ({ value: l, label: `${l} (Emerging / New)` })),
+  { value: "Other", label: "Other Kenyan Language (Specify)" },
+];
+const MAX_CONTRIBUTE_AUDIO_BYTES = 3 * 1024 * 1024; // 3 MB
+
 // ─── Component ───
 export default function KenyanTranslatorClient({
   r2AudioCounts = {},
@@ -71,9 +107,12 @@ export default function KenyanTranslatorClient({
   const [isLoadingDicts, setIsLoadingDicts] = useState(false);
   const [audioIndexTick, setAudioIndexTick] = useState(0);
 
+  const { user: authUser } = useAuth();
+
   // ─── Contribute Modal State ───
   const [isContributeOpen, setIsContributeOpen] = useState(false);
   const [contributeLanguage, setContributeLanguage] = useState("Swahili");
+  const [customLanguageName, setCustomLanguageName] = useState("");
   const [contributeType, setContributeType] = useState<"new_word" | "correction" | "pronunciation" | "reviewer">("new_word");
   const [contributeEnglish, setContributeEnglish] = useState("");
   const [contributeTranslation, setContributeTranslation] = useState("");
@@ -83,6 +122,24 @@ export default function KenyanTranslatorClient({
   const [contributorEmail, setContributorEmail] = useState("");
   const [contributeSubmitted, setContributeSubmitted] = useState(false);
   const [contributeMailtoUrl, setContributeMailtoUrl] = useState<string | null>(null);
+  const [isSubmittingContribution, setIsSubmittingContribution] = useState(false);
+  const [contributeError, setContributeError] = useState<string | null>(null);
+  const [submittedLanguageLabel, setSubmittedLanguageLabel] = useState("");
+  const [submittedWithAudio, setSubmittedWithAudio] = useState(false);
+
+  // ─── Optional Pronunciation Audio State (MediaRecorder + File Upload) ───
+  const [isRecordingAudio, setIsRecordingAudio] = useState(false);
+  const [recordingSeconds, setRecordingSeconds] = useState(0);
+  const [contributeAudioBlob, setContributeAudioBlob] = useState<File | Blob | null>(null);
+  const [contributeAudioName, setContributeAudioName] = useState<string | null>(null);
+  const [contributeAudioPreviewUrl, setContributeAudioPreviewUrl] = useState<string | null>(null);
+  const [contributeAudioError, setContributeAudioError] = useState<string | null>(null);
+
+  const mediaRecorderRef = useRef<MediaRecorder | null>(null);
+  const mediaStreamRef = useRef<MediaStream | null>(null);
+  const audioChunksRef = useRef<Blob[]>([]);
+  const recordingTimerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const audioPreviewUrlRef = useRef<string | null>(null);
 
   const ensureDictionariesLoaded = useCallback(async (langIds: string[]) => {
     const missing = langIds.filter((id) => id && id !== "english" && id !== "all" && !DICT_CACHE[id]);
@@ -203,35 +260,271 @@ export default function KenyanTranslatorClient({
     return () => { active = false; };
   }, [sourceLanguage, targetLanguage, r2AudioCounts]);
 
-  const openContributeModal = useCallback((langName?: string, defaultEnglish?: string) => {
-    if (langName) setContributeLanguage(langName.split("(")[0].trim());
-    if (defaultEnglish) setContributeEnglish(defaultEnglish);
-    setContributeSubmitted(false);
-    setIsContributeOpen(true);
+  // Pre-fill contributor name & email from signed-in account
+  useEffect(() => {
+    if (!authUser) return;
+    if (authUser.name) {
+      setContributorName((prev) => prev || authUser.name);
+    }
+    if (authUser.email) {
+      setContributorEmail((prev) => prev || authUser.email);
+    }
+  }, [authUser]);
+
+  const stopAudioTracks = useCallback(() => {
+    if (recordingTimerRef.current) {
+      clearInterval(recordingTimerRef.current);
+      recordingTimerRef.current = null;
+    }
+    if (mediaRecorderRef.current && mediaRecorderRef.current.state !== "inactive") {
+      try {
+        mediaRecorderRef.current.stop();
+      } catch { /* ignore */ }
+    }
+    mediaRecorderRef.current = null;
+    if (mediaStreamRef.current) {
+      mediaStreamRef.current.getTracks().forEach((track) => track.stop());
+      mediaStreamRef.current = null;
+    }
+    setIsRecordingAudio(false);
   }, []);
 
+  const clearContributeAudio = useCallback(() => {
+    stopAudioTracks();
+    if (audioPreviewUrlRef.current) {
+      URL.revokeObjectURL(audioPreviewUrlRef.current);
+      audioPreviewUrlRef.current = null;
+    }
+    setContributeAudioBlob(null);
+    setContributeAudioName(null);
+    setContributeAudioPreviewUrl(null);
+    setContributeAudioError(null);
+    setRecordingSeconds(0);
+  }, [stopAudioTracks]);
+
+  // Clean up media stream tracks, timers, and object URLs on unmount
+  useEffect(() => {
+    return () => {
+      if (recordingTimerRef.current) clearInterval(recordingTimerRef.current);
+      if (mediaRecorderRef.current && mediaRecorderRef.current.state !== "inactive") {
+        try {
+          mediaRecorderRef.current.stop();
+        } catch { /* ignore */ }
+      }
+      if (mediaStreamRef.current) {
+        mediaStreamRef.current.getTracks().forEach((track) => track.stop());
+        mediaStreamRef.current = null;
+      }
+      if (audioPreviewUrlRef.current) {
+        URL.revokeObjectURL(audioPreviewUrlRef.current);
+        audioPreviewUrlRef.current = null;
+      }
+    };
+  }, []);
+
+  const startRecordingAudio = useCallback(async () => {
+    setContributeAudioError(null);
+    if (
+      typeof window === "undefined" ||
+      !navigator.mediaDevices?.getUserMedia ||
+      typeof MediaRecorder === "undefined"
+    ) {
+      setContributeAudioError("Microphone recording is not supported in this browser. You can upload an audio file instead.");
+      return;
+    }
+
+    try {
+      clearContributeAudio();
+      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      mediaStreamRef.current = stream;
+
+      const preferredTypes = [
+        "audio/webm;codecs=opus",
+        "audio/webm",
+        "audio/mp4",
+        "audio/ogg;codecs=opus",
+      ];
+      const mimeType = preferredTypes.find(
+        (t) => typeof MediaRecorder.isTypeSupported === "function" && MediaRecorder.isTypeSupported(t)
+      );
+      const recorder = mimeType ? new MediaRecorder(stream, { mimeType }) : new MediaRecorder(stream);
+      mediaRecorderRef.current = recorder;
+      audioChunksRef.current = [];
+
+      recorder.ondataavailable = (event) => {
+        if (event.data && event.data.size > 0) {
+          audioChunksRef.current.push(event.data);
+        }
+      };
+
+      recorder.onstop = () => {
+        if (recordingTimerRef.current) {
+          clearInterval(recordingTimerRef.current);
+          recordingTimerRef.current = null;
+        }
+        if (mediaStreamRef.current) {
+          mediaStreamRef.current.getTracks().forEach((track) => track.stop());
+          mediaStreamRef.current = null;
+        }
+        setIsRecordingAudio(false);
+
+        const resolvedMime = recorder.mimeType || mimeType || "audio/webm";
+        const blob = new Blob(audioChunksRef.current, { type: resolvedMime });
+        audioChunksRef.current = [];
+
+        if (blob.size === 0) return;
+        if (blob.size > MAX_CONTRIBUTE_AUDIO_BYTES) {
+          setContributeAudioError("Recording exceeded the 3 MB limit. Please record a shorter pronunciation clip.");
+          return;
+        }
+
+        if (audioPreviewUrlRef.current) {
+          URL.revokeObjectURL(audioPreviewUrlRef.current);
+        }
+        const previewUrl = URL.createObjectURL(blob);
+        audioPreviewUrlRef.current = previewUrl;
+        const ext = resolvedMime.includes("mp4") ? "m4a" : resolvedMime.includes("ogg") ? "ogg" : "webm";
+        setContributeAudioBlob(blob);
+        setContributeAudioName(`recording-${Date.now()}.${ext}`);
+        setContributeAudioPreviewUrl(previewUrl);
+      };
+
+      recorder.start();
+      setIsRecordingAudio(true);
+      setRecordingSeconds(0);
+      recordingTimerRef.current = setInterval(() => {
+        setRecordingSeconds((s) => s + 1);
+      }, 1000);
+    } catch {
+      stopAudioTracks();
+      setContributeAudioError("Microphone access was denied or unavailable. Check browser permissions or upload an audio file.");
+    }
+  }, [clearContributeAudio, stopAudioTracks]);
+
+  const stopRecordingAudio = useCallback(() => {
+    if (recordingTimerRef.current) {
+      clearInterval(recordingTimerRef.current);
+      recordingTimerRef.current = null;
+    }
+    if (mediaRecorderRef.current && mediaRecorderRef.current.state !== "inactive") {
+      try {
+        mediaRecorderRef.current.stop();
+      } catch {
+        stopAudioTracks();
+      }
+    } else {
+      stopAudioTracks();
+    }
+  }, [stopAudioTracks]);
+
+  const handleAudioFileUpload = useCallback(
+    (e: React.ChangeEvent<HTMLInputElement>) => {
+      setContributeAudioError(null);
+      const file = e.target.files?.[0];
+      e.target.value = "";
+      if (!file) return;
+      if (!file.type.startsWith("audio/")) {
+        setContributeAudioError("Please select a valid audio file (MP3, WAV, M4A, OGG, or WebM).");
+        return;
+      }
+      if (file.size > MAX_CONTRIBUTE_AUDIO_BYTES) {
+        setContributeAudioError("Audio file exceeds the 3 MB limit. Please choose a smaller clip.");
+        return;
+      }
+      clearContributeAudio();
+      const previewUrl = URL.createObjectURL(file);
+      audioPreviewUrlRef.current = previewUrl;
+      setContributeAudioBlob(file);
+      setContributeAudioName(file.name);
+      setContributeAudioPreviewUrl(previewUrl);
+    },
+    [clearContributeAudio]
+  );
+
+  const openContributeModal = useCallback(
+    (langName?: string, defaultEnglish?: string) => {
+      if (langName) {
+        const cleaned = langName.split("(")[0].trim();
+        const existsInOptions = CONTRIBUTE_LANGUAGE_OPTIONS.some(
+          (opt) => opt.value.toLowerCase() === cleaned.toLowerCase()
+        );
+        if (existsInOptions) {
+          const matched = CONTRIBUTE_LANGUAGE_OPTIONS.find(
+            (opt) => opt.value.toLowerCase() === cleaned.toLowerCase()
+          );
+          setContributeLanguage(matched ? matched.value : cleaned);
+          setCustomLanguageName("");
+        } else {
+          setContributeLanguage("Other");
+          setCustomLanguageName(cleaned);
+        }
+      }
+      if (defaultEnglish) setContributeEnglish(defaultEnglish);
+      if (authUser?.name) setContributorName((prev) => prev || authUser.name);
+      if (authUser?.email) setContributorEmail((prev) => prev || authUser.email);
+      setContributeError(null);
+      setContributeAudioError(null);
+      setContributeSubmitted(false);
+      setIsContributeOpen(true);
+    },
+    [authUser]
+  );
+
   const closeContributeModal = useCallback(() => {
+    clearContributeAudio();
     setIsContributeOpen(false);
     setContributeSubmitted(false);
-  }, []);
+    setContributeError(null);
+  }, [clearContributeAudio]);
 
   const handleSubmitContribution = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!contributeLanguage) return;
+    if (isSubmittingContribution) return;
+
+    const effectiveLanguage =
+      contributeLanguage === "Other" ? customLanguageName.trim() : contributeLanguage.trim();
+    if (!effectiveLanguage) {
+      setContributeError("Please specify the Kenyan language name before submitting.");
+      return;
+    }
+
+    setContributeError(null);
+    setContributeAudioError(null);
+    setIsSubmittingContribution(true);
+
+    let uploadedAudio: { fileId: string; viewUrl: string } | null = null;
+    if (contributeAudioBlob) {
+      uploadedAudio = await uploadContributionAudio(
+        contributeAudioBlob,
+        contributeAudioName || undefined
+      );
+      if (!uploadedAudio) {
+        setContributeAudioError("Audio could not be uploaded to cloud storage; your text contribution will still be submitted.");
+      }
+    }
+
+    const isCustomOrEmerging =
+      contributeLanguage === "Other" || !CORE_23_LANGUAGE_SET.has(effectiveLanguage.toLowerCase());
 
     try {
-      addContribution({
-        language: contributeLanguage,
+      await addContributionAsync({
+        language: effectiveLanguage,
+        customLanguageName: isCustomOrEmerging ? effectiveLanguage : undefined,
         type: contributeType,
         english: contributeEnglish,
         translation: contributeTranslation,
         pronunciation: contributePronunciation,
         context: contributeContext,
-        contributorName: contributorName || "Anonymous Contributor",
-        contributorEmail: contributorEmail,
+        contributorName: contributorName || authUser?.name || "Anonymous Contributor",
+        contributorEmail: contributorEmail || authUser?.email || undefined,
+        audioFileId: uploadedAudio?.fileId,
+        audioUrl: uploadedAudio?.viewUrl,
+        audioMimeType: uploadedAudio ? contributeAudioBlob?.type || "audio/webm" : undefined,
       });
     } catch (err) {
       console.error("Failed to add contribution:", err);
+    } finally {
+      setIsSubmittingContribution(false);
     }
 
     const typeLabel =
@@ -242,23 +535,27 @@ export default function KenyanTranslatorClient({
         : contributeType === "pronunciation"
         ? "Pronunciation"
         : "Native Reviewer";
-    const subjectLine = `[KenyaHub Translation Contribution - ${contributeLanguage}] ${contributeEnglish || typeLabel}`;
+    const subjectLine = `[KenyaHub Translation Contribution - ${effectiveLanguage}] ${contributeEnglish || typeLabel}`;
     const bodyText = [
-      `Language: ${contributeLanguage}`,
+      `Language: ${effectiveLanguage}`,
       `Contribution Type: ${typeLabel}`,
       `English Term: ${contributeEnglish || "N/A"}`,
       `Native Translation: ${contributeTranslation || "N/A"}`,
       `Pronunciation Guide: ${contributePronunciation || "N/A"}`,
       `Dialect / Context / Note: ${contributeContext || "N/A"}`,
+      `Audio Attached: ${uploadedAudio ? uploadedAudio.viewUrl : "No"}`,
       ``,
-      `Contributor Name: ${contributorName || "Anonymous"}`,
-      `Email: ${contributorEmail || "N/A"}`,
+      `Contributor Name: ${contributorName || authUser?.name || "Anonymous"}`,
+      `Email: ${contributorEmail || authUser?.email || "N/A"}`,
       ``,
       `Submitted via Kenya-Hub Translator Module`,
     ].join("\n");
 
     const mailtoUrl = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subjectLine)}&body=${encodeURIComponent(bodyText)}`;
     setContributeMailtoUrl(mailtoUrl);
+    setSubmittedLanguageLabel(effectiveLanguage);
+    setSubmittedWithAudio(Boolean(uploadedAudio));
+    clearContributeAudio();
     setContributeSubmitted(true);
   };
 
@@ -1563,10 +1860,10 @@ export default function KenyanTranslatorClient({
                     <span className="text-[0.65rem] uppercase tracking-wider text-gold font-bold">Community Linguistic Contribution</span>
                   </div>
                   <h3 id="contribute-modal-title" className="text-base sm:text-lg font-bold text-text-primary font-[family-name:var(--font-outfit)]">
-                    Contribute to {contributeLanguage}
+                    Contribute to {contributeLanguage === "Other" ? customLanguageName.trim() || "Any Kenyan Language" : contributeLanguage}
                   </h3>
                   <p className="text-xs text-text-muted mt-0.5">
-                    Help expand KenyaHub&apos;s open dictionaries. All submitted vocabulary is reviewed and approved in the admin panel.
+                    Help expand KenyaHub&apos;s open dictionaries across all Kenyan languages. Submissions go to the Admin moderation queue, and approved audio is pushed to Cloudflare R2.
                   </p>
                 </div>
 
@@ -1603,13 +1900,32 @@ export default function KenyanTranslatorClient({
                   </label>
                   <CustomSelect
                     value={contributeLanguage}
-                    onValueChange={setContributeLanguage}
-                    options={[
-                      ...ALL_CONTRIBUTE_LANGUAGES.map((l) => ({ value: l, label: l })),
-                      { value: "Other", label: "Other Kenyan Language..." },
-                    ]}
+                    onValueChange={(val) => {
+                      setContributeLanguage(val);
+                      if (val !== "Other") setCustomLanguageName("");
+                      setContributeError(null);
+                    }}
+                    options={CONTRIBUTE_LANGUAGE_OPTIONS}
                     id="contribute-lang"
                   />
+                  {contributeLanguage === "Other" && (
+                    <div className="mt-2">
+                      <label className="block text-[0.65rem] uppercase tracking-wider text-text-muted mb-1 font-semibold">
+                        Specify Kenyan Language Name <span className="text-kenya-red">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        required
+                        value={customLanguageName}
+                        onChange={(e) => {
+                          setCustomLanguageName(e.target.value);
+                          setContributeError(null);
+                        }}
+                        placeholder="e.g. Suba, Yaaku, Sengwer, El Molo, Dahalo..."
+                        className="input-field text-xs w-full"
+                      />
+                    </div>
+                  )}
                 </div>
 
                 {contributeType !== "reviewer" ? (
@@ -1643,7 +1959,7 @@ export default function KenyanTranslatorClient({
 
                     <div>
                       <label className="block text-[0.65rem] uppercase tracking-wider text-text-muted mb-1 font-semibold">
-                        {contributeLanguage} Translation <span className="text-kenya-red">*</span>
+                        {contributeLanguage === "Other" ? customLanguageName.trim() || "Kenyan Language" : contributeLanguage} Translation <span className="text-kenya-red">*</span>
                       </label>
                       <div className="relative">
                         <input
@@ -1651,7 +1967,7 @@ export default function KenyanTranslatorClient({
                           required
                           value={contributeTranslation}
                           onChange={(e) => setContributeTranslation(e.target.value)}
-                          placeholder={`Word or phrase in ${contributeLanguage}...`}
+                          placeholder={`Word or phrase in ${contributeLanguage === "Other" ? customLanguageName.trim() || "your language" : contributeLanguage}...`}
                           className="input-field text-sm w-full pr-10!"
                           style={{ paddingRight: "2.5rem" }}
                         />
@@ -1742,6 +2058,82 @@ export default function KenyanTranslatorClient({
                   </div>
                 )}
 
+                {/* Optional Pronunciation Audio (Record or Upload) */}
+                {contributeType !== "reviewer" && (
+                  <div className="bg-bg-elevated/60 border border-border rounded-xl p-3 space-y-2.5">
+                    <div className="flex items-center justify-between gap-2">
+                      <span className="text-[0.65rem] uppercase tracking-wider text-text-muted font-semibold flex items-center gap-1.5">
+                        <Volume2 className="w-3.5 h-3.5 text-gold" />
+                        <span>Optional Pronunciation Audio</span>
+                      </span>
+                      <span className="text-[0.6rem] text-text-muted">Max 3 MB</span>
+                    </div>
+
+                    <div className="flex flex-wrap items-center gap-2">
+                      {!isRecordingAudio ? (
+                        <button
+                          type="button"
+                          onClick={startRecordingAudio}
+                          className="px-3 py-1.5 rounded-lg text-xs font-semibold bg-gold/15 hover:bg-gold/25 text-gold border border-gold/30 flex items-center gap-1.5 transition-colors cursor-pointer"
+                        >
+                          <Mic className="w-3.5 h-3.5" />
+                          <span>Record with Microphone</span>
+                        </button>
+                      ) : (
+                        <button
+                          type="button"
+                          onClick={stopRecordingAudio}
+                          className="px-3 py-1.5 rounded-lg text-xs font-semibold bg-kenya-red text-white hover:opacity-90 flex items-center gap-1.5 transition-colors cursor-pointer"
+                        >
+                          <span className="w-2 h-2 rounded-full bg-white animate-pulse" />
+                          <Square className="w-3 h-3 fill-current" />
+                          <span>
+                            Stop ({Math.floor(recordingSeconds / 60)}:{String(recordingSeconds % 60).padStart(2, "0")})
+                          </span>
+                        </button>
+                      )}
+
+                      <label className="px-3 py-1.5 rounded-lg text-xs font-medium bg-bg-card hover:bg-border text-text-secondary hover:text-text-primary border border-border flex items-center gap-1.5 transition-colors cursor-pointer">
+                        <Upload className="w-3.5 h-3.5" />
+                        <span>Upload Audio File</span>
+                        <input
+                          type="file"
+                          accept="audio/*"
+                          onChange={handleAudioFileUpload}
+                          className="hidden"
+                        />
+                      </label>
+                    </div>
+
+                    {contributeAudioError && (
+                      <p className="text-[0.7rem] text-kenya-red-light">{contributeAudioError}</p>
+                    )}
+
+                    {contributeAudioPreviewUrl && (
+                      <div className="space-y-1.5 pt-1">
+                        <div className="flex items-center justify-between gap-2 text-[0.65rem] text-text-muted">
+                          <span className="truncate font-medium text-text-secondary">
+                            {contributeAudioName || "Recorded pronunciation"}
+                          </span>
+                          <button
+                            type="button"
+                            onClick={clearContributeAudio}
+                            className="text-kenya-red-light hover:underline flex items-center gap-1 shrink-0 cursor-pointer"
+                          >
+                            <Trash2 className="w-3 h-3" />
+                            <span>Clear</span>
+                          </button>
+                        </div>
+                        <audio controls src={contributeAudioPreviewUrl} className="w-full h-9" />
+                      </div>
+                    )}
+                  </div>
+                )}
+
+                {contributeError && (
+                  <p className="text-xs text-kenya-red-light font-medium">{contributeError}</p>
+                )}
+
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1 border-t border-border/60">
                   <div>
                     <label className="block text-[0.65rem] uppercase tracking-wider text-text-muted mb-1 font-semibold">
@@ -1805,10 +2197,11 @@ export default function KenyanTranslatorClient({
                   </button>
                   <button
                     type="submit"
-                    className="px-4 py-2 rounded-lg text-xs font-semibold bg-gold text-kenya-black hover:bg-gold-light transition-all shadow-md flex items-center gap-1.5 cursor-pointer"
+                    disabled={isSubmittingContribution || isRecordingAudio}
+                    className="px-4 py-2 rounded-lg text-xs font-semibold bg-gold text-kenya-black hover:bg-gold-light transition-all shadow-md flex items-center gap-1.5 cursor-pointer disabled:opacity-50"
                   >
                     <Send className="w-3.5 h-3.5" />
-                    <span>Submit Contribution</span>
+                    <span>{isSubmittingContribution ? "Submitting..." : "Submit Contribution"}</span>
                   </button>
                 </div>
               </form>
@@ -1822,7 +2215,10 @@ export default function KenyanTranslatorClient({
                     Asante Sana! Thank You!
                   </h3>
                   <p className="text-xs text-text-muted max-w-sm mx-auto mt-1 leading-relaxed">
-                    Your contribution for <strong className="text-gold">{contributeLanguage}</strong> has been submitted to the admin panel for review and saved on this device.
+                    Your contribution for <strong className="text-gold">{submittedLanguageLabel || contributeLanguage}</strong> has been sent to the Admin moderation queue and saved on this device.{" "}
+                    {submittedWithAudio
+                      ? "Your pronunciation audio was uploaded and will be pushed to Cloudflare R2 once approved."
+                      : "Any approved pronunciation audio contributions are automatically published to Cloudflare R2."}
                   </p>
                 </div>
 
