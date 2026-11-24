@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-24T15:50:30.546Z",
+  "generatedAt": "2026-11-24T17:50:05.424Z",
   "registryCount": 50,
   "routeCount": 50,
   "courseCount": 23,
   "totalFaqs": 197,
   "totalDictEntries": 239211,
-  "totalAudioLinked": 2548,
+  "totalAudioLinked": 2584,
   "checksPassed": 91,
   "checksTotal": 91,
   "okCount": 50,
@@ -1618,7 +1618,7 @@
     {
       "languageId": "swahili",
       "dictionaryEntries": 61075,
-      "audioLinked": 1098,
+      "audioLinked": 1123,
       "status": "ok"
     },
     {
@@ -1630,7 +1630,7 @@
     {
       "languageId": "luo",
       "dictionaryEntries": 17313,
-      "audioLinked": 262,
+      "audioLinked": 264,
       "status": "ok"
     },
     {
@@ -1720,7 +1720,7 @@
     {
       "languageId": "borana",
       "dictionaryEntries": 31845,
-      "audioLinked": 114,
+      "audioLinked": 123,
       "status": "ok"
     },
     {
