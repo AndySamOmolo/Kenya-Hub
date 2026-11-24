@@ -1,9 +1,9 @@
 {
-  "ingestedAt": "2026-11-24T09:34:11.174759+00:00",
-  "scriptsHash": "4652cd0a0b0337fe319a533c1b1ee4615844c807c63e848580c9a935f3794b80",
+  "ingestedAt": "2026-11-24T13:29:51.197326+00:00",
+  "scriptsHash": "e610ffb342ca3f4f5769e88716d7059d1799b94e4d1fc8093079eccb649744c0",
   "bucket": "kenyahub-audio",
   "cdnBase": "https://audio.kenyahub.me",
-  "elapsedSeconds": 192,
+  "elapsedSeconds": 191,
   "textEntriesAddedByLanguage": {},
   "uploadedAudioLanguageCounts": {
     "kikuyu": 450,
@@ -318,19 +318,19 @@
     "mendeley/makerere-swahili-tts::sw::swahili": {
       "status": "completed_no_new_clips",
       "lang_id": "swahili",
-      "updatedAt": "2026-11-24T09:33:58.858203+00:00"
+      "updatedAt": "2026-11-24T13:29:43.344531+00:00"
     },
     "mendeley/rono-swahili-tts::sw::swahili": {
       "status": "completed_no_new_clips",
       "lang_id": "swahili",
-      "updatedAt": "2026-11-24T09:33:59.050240+00:00"
+      "updatedAt": "2026-11-24T13:29:43.532447+00:00"
     },
     "ksl/xki::metadata::ksl": {
       "status": "completed",
       "glossCount": 0,
       "zenodoFileCount": 1,
       "lang_id": "ksl",
-      "updatedAt": "2026-11-24T09:34:08.295432+00:00"
+      "updatedAt": "2026-11-24T13:29:47.765433+00:00"
     },
     "mozilla-data-collective/bibletts-luo-mdc::cmvi269po002607mi7oaodk1z::luo": {
       "status": "completed",
@@ -349,13 +349,13 @@
       "status": "completed_no_new_clips",
       "clipsUploaded": 0,
       "lang_id": "swahili",
-      "updatedAt": "2026-11-24T09:34:02.714011+00:00"
+      "updatedAt": "2026-11-24T13:29:47.020277+00:00"
     },
     "tatoeba/audio::som::somali": {
       "status": "completed_no_new_clips",
       "clipsUploaded": 0,
       "lang_id": "somali",
-      "updatedAt": "2026-11-24T09:34:02.869424+00:00"
+      "updatedAt": "2026-11-24T13:29:47.156472+00:00"
     },
     "archive.org/handbook_kavirondo3_1203::luo::luo": {
       "status": "completed",
@@ -454,63 +454,63 @@
       "gated": true,
       "lang_id": "kikuyu",
       "reason": "Dataset 'MCAA1-MSU/anv_data_ke' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke to ask for access.",
-      "updatedAt": "2026-11-24T09:31:36.607966+00:00"
+      "updatedAt": "2026-11-24T13:27:17.948413+00:00"
     },
     "MCAA1-MSU/anv_data_ke::luo::train::luo": {
       "status": "pending_gated_approval",
       "gated": true,
       "lang_id": "luo",
       "reason": "Dataset 'MCAA1-MSU/anv_data_ke' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke to ask for access.",
-      "updatedAt": "2026-11-24T09:31:36.800310+00:00"
+      "updatedAt": "2026-11-24T13:27:18.132612+00:00"
     },
     "MCAA1-MSU/anv_data_ke::kalenjin::train::kalenjin": {
       "status": "pending_gated_approval",
       "gated": true,
       "lang_id": "kalenjin",
       "reason": "Dataset 'MCAA1-MSU/anv_data_ke' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke to ask for access.",
-      "updatedAt": "2026-11-24T09:31:36.992909+00:00"
+      "updatedAt": "2026-11-24T13:27:18.318632+00:00"
     },
     "MCAA1-MSU/anv_data_ke::maasai::train::maasai": {
       "status": "pending_gated_approval",
       "gated": true,
       "lang_id": "maasai",
       "reason": "Dataset 'MCAA1-MSU/anv_data_ke' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke to ask for access.",
-      "updatedAt": "2026-11-24T09:31:37.186296+00:00"
+      "updatedAt": "2026-11-24T13:27:18.497603+00:00"
     },
     "MCAA1-MSU/anv_data_ke::maasai::train::samburu": {
       "status": "pending_gated_approval",
       "gated": true,
       "lang_id": "samburu",
       "reason": "Dataset 'MCAA1-MSU/anv_data_ke' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke to ask for access.",
-      "updatedAt": "2026-11-24T09:31:37.373079+00:00"
+      "updatedAt": "2026-11-24T13:27:18.673767+00:00"
     },
     "MCAA1-MSU/anv_data_ke::somali::train::somali": {
       "status": "pending_gated_approval",
       "gated": true,
       "lang_id": "somali",
       "reason": "Dataset 'MCAA1-MSU/anv_data_ke' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke to ask for access.",
-      "updatedAt": "2026-11-24T09:31:37.557519+00:00"
+      "updatedAt": "2026-11-24T13:27:18.858590+00:00"
     },
     "Digital-Divide-Data/Luhya-ASR-Data-subset-642H::default::train::luhya": {
       "status": "pending_gated_approval",
       "gated": true,
       "lang_id": "luhya",
       "reason": "Dataset 'Digital-Divide-Data/Luhya-ASR-Data-subset-642H' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/Digital-Divide-Data/Luhya-ASR-Data-subset-642H to ask for access.",
-      "updatedAt": "2026-11-24T09:31:37.839956+00:00"
+      "updatedAt": "2026-11-24T13:27:19.148769+00:00"
     },
     "Digital-Divide-Data/Kamba-ASR-Data-Subset-484H::default::train::kamba": {
       "status": "pending_gated_approval",
       "gated": true,
       "lang_id": "kamba",
       "reason": "Dataset 'Digital-Divide-Data/Kamba-ASR-Data-Subset-484H' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/Digital-Divide-Data/Kamba-ASR-Data-Subset-484H to ask for access.",
-      "updatedAt": "2026-11-24T09:31:38.125186+00:00"
+      "updatedAt": "2026-11-24T13:27:19.512585+00:00"
     },
     "Digital-Divide-Data/Gusii-ASR-Data-Subset-470H::default::train::kisii": {
       "status": "pending_gated_approval",
       "gated": true,
       "lang_id": "kisii",
       "reason": "Dataset 'Digital-Divide-Data/Gusii-ASR-Data-Subset-470H' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/Digital-Divide-Data/Gusii-ASR-Data-Subset-470H to ask for access.",
-      "updatedAt": "2026-11-24T09:31:38.414509+00:00"
+      "updatedAt": "2026-11-24T13:27:19.798362+00:00"
     },
     "edinburghcstr/edacc::default::validation::english-ke": {
       "status": "completed_no_new_clips",
@@ -518,7 +518,7 @@
       "clipsFailed": 0,
       "gated": false,
       "lang_id": "english-ke",
-      "updatedAt": "2026-11-24T09:32:30.757457+00:00"
+      "updatedAt": "2026-11-24T13:28:31.776413+00:00"
     },
     "edinburghcstr/edacc::default::test::english-ke": {
       "status": "completed_no_new_clips",
@@ -526,7 +526,7 @@
       "clipsFailed": 0,
       "gated": false,
       "lang_id": "english-ke",
-      "updatedAt": "2026-11-24T09:33:58.514721+00:00"
+      "updatedAt": "2026-11-24T13:29:42.558055+00:00"
     }
   }
 }
