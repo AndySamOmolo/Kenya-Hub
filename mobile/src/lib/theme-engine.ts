@@ -3085,7 +3085,53 @@ export function resolveThemeColors(
   }
 
   resolved.surface = resolved.bgCard;
+
+  const textSurfaces = [
+    resolved.bgPrimary,
+    resolved.bgSecondary,
+    resolved.bgCard,
+    resolved.bgElevated,
+    resolved.surfaceContainer,
+    resolved.surfaceContainerHigh,
+  ];
+  const ensureTextContrast = (foreground: string): string => {
+    if (textSurfaces.every((background) => getContrastRatio(foreground, background) >= 4.5)) {
+      return foreground;
+    }
+
+    const candidates = ["#1A1108", "#FFFFFF"];
+    return candidates.reduce((best, candidate) => {
+      const candidateContrast = Math.min(
+        ...textSurfaces.map((background) => getContrastRatio(candidate, background))
+      );
+      const bestContrast = Math.min(
+        ...textSurfaces.map((background) => getContrastRatio(best, background))
+      );
+      return candidateContrast > bestContrast ? candidate : best;
+    });
+  };
+
+  resolved.textPrimary = ensureTextContrast(resolved.textPrimary);
+  resolved.text = resolved.textPrimary;
+  resolved.textSecondary = ensureTextContrast(resolved.textSecondary);
+  resolved.textMuted = ensureTextContrast(resolved.textMuted);
   return resolved;
+}
+
+function getContrastRatio(foreground: string, background: string): number {
+  if (!isValidHexColor(foreground) || !isValidHexColor(background)) return 1;
+  const luminance = (hex: string) => {
+    const clean = hex.trim().replace("#", "");
+    const full = clean.length === 3 ? clean.split("").map((c) => c + c).join("") : clean.slice(0, 6);
+    const channels = [0, 2, 4].map((index) => parseInt(full.slice(index, index + 2), 16) / 255);
+    const linear = channels.map((channel) =>
+      channel <= 0.04045 ? channel / 12.92 : Math.pow((channel + 0.055) / 1.055, 2.4)
+    );
+    return 0.2126 * linear[0] + 0.7152 * linear[1] + 0.0722 * linear[2];
+  };
+  const first = luminance(foreground);
+  const second = luminance(background);
+  return (Math.max(first, second) + 0.05) / (Math.min(first, second) + 0.05);
 }
 
 const CONTRAST_INK_CACHE = new Map<string, "#1A1108" | "#FFFFFF">();
@@ -3096,15 +3142,8 @@ export function getContrastInk(bgHex: string | undefined | null): "#1A1108" | "#
   const cached = CONTRAST_INK_CACHE.get(bgHex);
   if (cached !== undefined) return cached;
   if (!isValidHexColor(bgHex)) return "#1A1108";
-  const clean = bgHex.trim().replace("#", "");
-  const full = clean.length === 3 ? clean.split("").map((c) => c + c).join("") : clean.slice(0, 6);
-  const r = parseInt(full.slice(0, 2), 16) / 255;
-  const g = parseInt(full.slice(2, 4), 16) / 255;
-  const b = parseInt(full.slice(4, 6), 16) / 255;
-  const lin = (c: number) => (c <= 0.03928 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4));
-  const lum = 0.2126 * lin(r) + 0.7152 * lin(g) + 0.0722 * lin(b);
-  const contrastOnWhite = 1.05 / (lum + 0.05);
-  const contrastOnDark = (lum + 0.05) / 0.058;
+  const contrastOnWhite = getContrastRatio("#FFFFFF", bgHex);
+  const contrastOnDark = getContrastRatio("#1A1108", bgHex);
   const result: "#1A1108" | "#FFFFFF" = contrastOnDark >= contrastOnWhite ? "#1A1108" : "#FFFFFF";
   if (CONTRAST_INK_CACHE.size >= CONTRAST_INK_CACHE_MAX) {
     const firstKey = CONTRAST_INK_CACHE.keys().next().value;

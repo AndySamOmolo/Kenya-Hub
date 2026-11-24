@@ -2862,7 +2862,7 @@ export default function LanguageCourseTool({
               }}
             >
               <Feather name="globe" size={12} color={colors.gold} />
-              <Text numberOfLines={1} style={{ fontSize: 11, fontWeight: '800', color: colors.gold }}>
+              <Text numberOfLines={1} style={{ fontSize: 11, fontWeight: '800', color: colors.textPrimary }}>
                 {PUBLISHED_COURSE_SUMMARIES.length} Courses
               </Text>
             </View>
@@ -2916,7 +2916,7 @@ export default function LanguageCourseTool({
             >
               <View style={{ flexDirection: 'row', alignItems: 'center', gap: 3 }}>
                 <Feather name="zap" size={11} color={colors.gold} />
-                <Text numberOfLines={1} adjustsFontSizeToFit style={{ fontSize: 13, fontWeight: '800', color: colors.gold }}>
+                <Text numberOfLines={1} adjustsFontSizeToFit style={{ fontSize: 13, fontWeight: '800', color: colors.textPrimary }}>
                   {overallMenuStats.totalXp}
                 </Text>
               </View>
@@ -2939,7 +2939,7 @@ export default function LanguageCourseTool({
             >
               <View style={{ flexDirection: 'row', alignItems: 'center', gap: 3 }}>
                 <Feather name="trending-up" size={11} color={colors.gold} />
-                <Text numberOfLines={1} adjustsFontSizeToFit style={{ fontSize: 13, fontFamily: resolvedFonts.heading, fontWeight: '800', color: colors.gold }}>
+                <Text numberOfLines={1} adjustsFontSizeToFit style={{ fontSize: 13, fontFamily: resolvedFonts.heading, fontWeight: '800', color: colors.textPrimary }}>
                   {overallMenuStats.bestStreak}d
                 </Text>
               </View>
@@ -2962,7 +2962,7 @@ export default function LanguageCourseTool({
             >
               <View style={{ flexDirection: 'row', alignItems: 'center', gap: 3 }}>
                 <Feather name="award" size={11} color={colors.kenyaGreenLight} />
-                <Text numberOfLines={1} adjustsFontSizeToFit style={{ fontSize: 13, fontFamily: resolvedFonts.heading, fontWeight: '800', color: colors.kenyaGreenLight }}>
+                <Text numberOfLines={1} adjustsFontSizeToFit style={{ fontSize: 13, fontFamily: resolvedFonts.heading, fontWeight: '800', color: colors.textPrimary }}>
                   {overallMenuStats.totalWords}
                 </Text>
               </View>
@@ -3044,7 +3044,7 @@ export default function LanguageCourseTool({
                     style={[{
                       fontSize: 11.5,
                       fontWeight: active ? '800' : '600',
-                      color: active ? colors.gold : colors.textSecondary,
+                      color: colors.textPrimary,
                     }, { flexShrink: 1 }]}
                   >
                     {fam === 'All' ? `${tApp('learn.allFamilies')} (${count})` : `${fam} (${count})`}
@@ -3102,7 +3102,7 @@ export default function LanguageCourseTool({
                           borderColor: `${config.color}45`,
                         }}
                       >
-                        <Text style={{ fontSize: 10, fontWeight: '800', color: config.color }}>
+                        <Text style={{ fontSize: 10, fontWeight: '800', color: colors.textPrimary }}>
                           “{iden.greeting}”
                         </Text>
                       </View>
@@ -3150,7 +3150,7 @@ export default function LanguageCourseTool({
                         fontSize: 11.5,
                         fontFamily: resolvedFonts.heading,
                         fontWeight: '800',
-                        color: courseXp > 0 ? getContrastInk(config.color) : colors.gold,
+                        color: courseXp > 0 ? getContrastInk(config.color) : colors.textPrimary,
                       }, { flexShrink: 1 }]}
                     >
                       {courseXp > 0 ? tApp('learn.continueBtn') : tApp('learn.startBtn')}
@@ -3158,7 +3158,7 @@ export default function LanguageCourseTool({
                     <Feather
                       name="arrow-right"
                       size={12}
-                      color={courseXp > 0 ? getContrastInk(config.color) : colors.gold}
+                      color={courseXp > 0 ? getContrastInk(config.color) : colors.textPrimary}
                     />
                   </View>
                 </View>
@@ -3182,7 +3182,7 @@ export default function LanguageCourseTool({
                     }}
                   >
                     <Feather name="book-open" size={10.5} color={colors.kenyaGreenLight} />
-                    <Text style={[{ fontSize: 10.5, fontFamily: resolvedFonts.body, fontWeight: '700', color: colors.kenyaGreenLight }, { flexShrink: 1 }]}>
+                    <Text style={[{ fontSize: 10.5, fontFamily: resolvedFonts.body, fontWeight: '700', color: colors.textPrimary }, { flexShrink: 1 }]}>
                       {unitsCount} {tApp('learn.units')} · {skillsCount} {tApp('learn.modules')} · {wordsCount.toLocaleString()} {tApp('learn.words')}
                     </Text>
                   </View>
@@ -3255,7 +3255,7 @@ export default function LanguageCourseTool({
                         }}
                       />
                     </View>
-                    <Text style={[{ fontSize: 11, fontWeight: '800', color: colors.gold }, { flexShrink: 1 }]}>
+                    <Text style={[{ fontSize: 11, fontWeight: '800', color: colors.textPrimary }, { flexShrink: 1 }]}>
                       ⚡ {courseXp} XP
                     </Text>
                   </View>
