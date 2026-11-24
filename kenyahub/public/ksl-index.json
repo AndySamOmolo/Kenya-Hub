@@ -1,7 +1,7 @@
 {
   "languageId": "ksl",
   "iso639_3": "xki",
-  "updatedAt": "2026-11-24T06:30:25.877784+00:00",
+  "updatedAt": "2026-11-24T07:57:22.781741+00:00",
   "sources": [
     {
       "id": "maseno-ksl-pose-14338329",
@@ -7086,14 +7086,15 @@
       "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-365",
       "title": "Cbs 109 Xki 3 Passage   The Seven Churches",
       "gloss": "Cbs 109 Xki 3 Passage   The Seven Churches",
-      "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-365.mp4",
+      "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-365.mp4?v=2",
       "category": "human-sign-bible",
       "register": "religious_liturgical",
       "reference": "Kenyan Sign Language Signed Passage",
       "transcript": "This is the revelation of Jesus Christ, which God gave Him to show His servants what must soon come to pass. He made it known by sending His angel to His servant John, who testifies to everything he saw. This is the word of God and the testimony of Jesus Christ. Blessed is the one who reads aloud the words of this prophecy, and blessed are those who hear and obey what is written in it, because the time is near. John, To the seven churches in the province of Asia: Grace and peace to you from Him who is and was and is to come, and from the seven Spirits before His throne, and from Jesus Christ, the faithful witness, the firstborn from the dead, and the ruler of the kings of the earth. To Him who loves us and has released us from our sins by His blood, who has made us to be a kingdom, priests to His God and Father—to Him be the glory and power forever and ever! Amen. Behold, He is coming with the clouds, and every eye will see Him—even those who pierced Him. And all the tribes of the earth will mourn because of Him. So shall it be! Amen. “I am the Alpha and the Omega,” says the Lord God, who is and was and is to come—the Almighty. I, John, your brother and partner in the tribulation and kingdom and perseverance that are in Jesus, was on the island of Patmos because of the word of God and my testimony about Jesus. On the Lord’s day I was in the Spirit, and I heard behind me a loud voice like a trumpet, saying, “Write on a scroll what you see and send it to the seven churches: to Ephesus, Smyrna, Pergamum, Thyatira, Sardis, Philadelphia, and Laodicea.” Then I turned to see the voice that was speaking with me. And having turned, I saw seven golden lampstands, and among the lampstands was One like the Son of Man, dressed in a long robe, with a golden sash around His chest. The hair of His head was white like wool, as white as snow, and His eyes were like a blazing fire. His feet were like polished bronze refined in a furnace, and His voice was like the roar of many waters. He held in His right hand seven stars, and a sharp double-edged sword came from His mouth. His face was like the sun shining at its brightest. When I saw Him, I fell at His feet like a dead man. But He placed His right hand on me and said, “Do not be afraid. I am the First and the Last, the Living One. I was dead, and behold, now I am alive forever and ever!",
       "license": "CC-BY-SA-4.0",
       "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-      "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+      "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles",
+      "fullDurationV2": true
     },
     {
       "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-366",
@@ -28825,7 +28826,7 @@
       "fullDurationV2": true,
       "uploadedVideos": 899,
       "totalScanned": 859,
-      "updatedAt": "2026-11-24T06:30:25.785994+00:00"
+      "updatedAt": "2026-11-24T07:57:22.574992+00:00"
     },
     "maseno": {
       "completed": true,
