@@ -1,4 +1,4 @@
-import { useAppLanguage, translateToolShortTitle } from "../../src/lib/i18n";
+import { useAppLanguage, translateCategoryDescription, translateCategoryName, translateToolShortTitle } from "../../src/lib/i18n";
 import { ExpandablePillRow } from "../../src/components/ExpandablePillRow";
 import React, { useCallback, useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import { useRouter, useFocusEffect } from "expo-router";
@@ -993,7 +993,7 @@ export default function HomeScreen() {
                 { color: theme.onSecondaryContainer },
               ]}
             >
-              Offline
+              {t("home.offline")}
             </Text>
           </View>
         </View>
@@ -1499,12 +1499,12 @@ export default function HomeScreen() {
             <View style={[styles.sectionHeader, { marginTop: 18 }]}>
               <View>
                 <Text style={[styles.sectionOverline, { color: theme.gold }]}>
-                  PINNED BY YOU
+                  {t("home.pinnedByYou")}
                 </Text>
                 <Text
                   style={[styles.sectionTitle, { color: theme.textPrimary, textTransform: headingTransform }]}
                 >
-                  Saved Shortcuts ({pinnedTools.length})
+                  {t("home.savedShortcuts")} ({pinnedTools.length})
                 </Text>
               </View>
               <Pressable
@@ -1513,7 +1513,7 @@ export default function HomeScreen() {
                 style={pressableStyle(styles.seeAllBtn)}
               >
                 <Text style={[styles.seeAllText, { color: theme.gold }]}>
-                  Manage
+                  {t("home.manage")}
                 </Text>
                 {showTrailingArrows && (
                   <ThemedIcon name="arrow-forward" size={14} color={theme.gold} scaleWithTheme={false} />
@@ -1564,7 +1564,7 @@ export default function HomeScreen() {
                       ]}
                       numberOfLines={1}
                     >
-                      {t.shortTitle || t.title}
+                      {translateToolShortTitle(t.slug, t.shortTitle || t.title, language)}
                     </Text>
                   </Pressable>
                 );
@@ -1577,10 +1577,10 @@ export default function HomeScreen() {
         <View style={[styles.sectionHeader, { marginTop: 20 }]}>
           <View>
             <Text style={[styles.sectionOverline, { color: theme.gold }]}>
-              MOST USED
+              {t("home.mostUsed")}
             </Text>
             <Text style={[styles.sectionTitle, { color: theme.textPrimary, textTransform: headingTransform }]}>
-              Popular Kenyan Tools
+              {t("home.popularKenyanTools")}
             </Text>
           </View>
           <Pressable
@@ -1594,7 +1594,7 @@ export default function HomeScreen() {
             style={pressableStyle(styles.seeAllBtn)}
           >
             <Text style={[styles.seeAllText, { color: theme.gold }]}>
-              All {TOOLS.length}
+              {t("home.allCountPrefix")} {TOOLS.length}
             </Text>
             {showTrailingArrows && (
               <ThemedIcon name="arrow-forward" size={14} color={theme.gold} scaleWithTheme={false} />
@@ -1625,22 +1625,36 @@ export default function HomeScreen() {
           ))}
         </View>
 
-        {/* 7. Topic Categories */}
+        {/* 7. Topic Categories (Themed with homeLayout, surfaceStyle, icon/desc toggles & Swahili) */}
         <View style={[styles.sectionHeader, { marginTop: 22 }]}>
           <View>
             <Text style={[styles.sectionOverline, { color: theme.gold }]}>
-              BROWSE BY TOPIC
+              {t("home.browseByTopic")}
             </Text>
             <Text style={[styles.sectionTitle, { color: theme.textPrimary, textTransform: headingTransform }]}>
-              Tool Categories ({TOOL_CATEGORIES.length})
+              {t("home.toolCategories")} ({TOOL_CATEGORIES.length})
             </Text>
           </View>
         </View>
 
-        <View style={[styles.categoriesFullList, isFrameless && { gap: 0 }]}>
+        <View
+          style={[
+            styles.categoriesFullList,
+            (isFrameless || homeLayout === "minimal-rows") && { gap: 0 },
+            (homeLayout === "bento-grid" || homeLayout === "large-tiles") && {
+              flexDirection: "row",
+              flexWrap: "wrap",
+              justifyContent: "space-between",
+              rowGap: 10,
+            },
+            homeLayout === "editorial-cards" && { gap: 12 },
+          ]}
+        >
           {TOOL_CATEGORIES.map((cat) => {
             const count = CATEGORY_TOOL_COUNTS[cat.id] || 0;
             const catColor = categoryColorMap[cat.id] || theme.gold;
+            const isGridTile = homeLayout === "bento-grid" || homeLayout === "large-tiles";
+            const isMinimalRow = isFrameless || homeLayout === "minimal-rows";
 
             return (
               <Pressable
@@ -1654,46 +1668,70 @@ export default function HomeScreen() {
                 }
                 style={pressableStyle([
                   styles.categoryFullCard,
-                  themedCardStyle,
-                  isFrameless && {
-                    paddingHorizontal: 2,
-                    paddingVertical: 12,
-                    borderBottomWidth: StyleSheet.hairlineWidth,
-                    borderBottomColor: theme.outlineVariant,
+                  isMinimalRow
+                    ? {
+                        backgroundColor: "transparent",
+                        borderWidth: 0,
+                        borderRadius: 0,
+                        elevation: 0,
+                        shadowOpacity: 0,
+                        paddingHorizontal: 2,
+                        paddingVertical: 12,
+                        borderBottomWidth: StyleSheet.hairlineWidth,
+                        borderBottomColor: theme.outlineVariant,
+                      }
+                    : themedCardStyle,
+                  isGridTile && {
+                    width: "48.5%",
+                    flexDirection: "column",
+                    alignItems: "flex-start",
+                    gap: 8,
+                    padding: 12,
                   },
                 ])}
               >
-                <ThemedIconBadge
-                  name={resolveToolIoniconName(cat.icon)}
-                  accentColor={catColor}
-                  baseSize={38}
-                  iconSize={19}
-                />
-                <View style={{ flex: 1, minWidth: 0 }}>
+                {themeConfig.showCardIcons !== false && themeConfig.iconBadgeStyle !== "hidden" && (
+                  <ThemedIconBadge
+                    name={resolveToolIoniconName(cat.icon)}
+                    accentColor={catColor}
+                    baseSize={isGridTile ? 34 : 38}
+                    iconSize={isGridTile ? 17 : 19}
+                  />
+                )}
+                <View style={{ flex: 1, minWidth: 0, width: isGridTile ? "100%" : undefined }}>
                   <View style={styles.catHeaderLine}>
                     <Text
-                      style={[styles.catTitle, { color: theme.textPrimary }]}
+                      style={[styles.catTitle, { color: theme.textPrimary, fontFamily: resolvedFonts.heading }]}
+                      numberOfLines={isGridTile ? 2 : undefined}
                     >
-                      {cat.name}
+                      {translateCategoryName(cat.id, cat.name, language)}
                     </Text>
-                    <View
-                      style={[
-                        styles.catCountBadge,
-                        { backgroundColor: `${catColor}18` },
-                      ]}
-                    >
-                      <Text style={[styles.catCountSub, { color: catColor }]}>
-                        {count} {count === 1 ? "tool" : "tools"}
-                      </Text>
-                    </View>
+                    {themeConfig.showCategoryBadges !== false && (
+                      <View
+                        style={[
+                          styles.catCountBadge,
+                          {
+                            backgroundColor: `${catColor}18`,
+                            borderRadius: Math.min(999, themeMetrics.buttonRadiusPx),
+                          },
+                        ]}
+                      >
+                        <Text style={[styles.catCountSub, { color: catColor, fontFamily: resolvedFonts.bold }]}>
+                          {count} {count === 1 ? t("home.toolSingular") : t("home.toolPlural")}
+                        </Text>
+                      </View>
+                    )}
                   </View>
-                  <Text
-                    style={[styles.catDescText, { color: theme.textSecondary }]}
-                  >
-                    {cat.description}
-                  </Text>
+                  {themeConfig.showCardDescriptions !== false && (
+                    <Text
+                      style={[styles.catDescText, { color: theme.textSecondary, fontFamily: resolvedFonts.body }]}
+                      numberOfLines={isGridTile ? 2 : undefined}
+                    >
+                      {translateCategoryDescription(cat.id, cat.description, language)}
+                    </Text>
+                  )}
                 </View>
-                {showTrailingArrows && (
+                {showTrailingArrows && !isGridTile && (
                   <ThemedIcon
                     name="chevron-forward"
                     size={16}
@@ -1710,10 +1748,10 @@ export default function HomeScreen() {
         <View style={[styles.sectionHeader, { marginTop: 24 }]}>
           <View>
             <Text style={[styles.sectionOverline, { color: theme.gold }]}>
-              KENYAHUB GUIDES
+              {t("home.guidesOverline")}
             </Text>
             <Text style={[styles.sectionTitle, { color: theme.textPrimary, textTransform: headingTransform }]}>
-              Practical Explainers ({sortedPosts.length})
+              {t("home.practicalExplainers")} ({sortedPosts.length})
             </Text>
           </View>
         </View>

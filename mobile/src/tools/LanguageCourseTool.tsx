@@ -31,7 +31,9 @@ import {
   getMobileAudioState,
   type MobileAudioState,
 } from '../lib/mobile-audio';
-import { useTheme, androidRipple, KenyaStripe } from '../theme';
+import { useTheme, androidRipple, KenyaStripe, getThemedCardStyle, getThemedButtonStyle, getThemedInputStyle } from '../theme';
+import { getContrastInk } from '../lib/theme-engine';
+import { useAppLanguage } from '../lib/i18n';
 import { PUBLISHED_COURSE_SUMMARIES, hasCourseSummary, getCourseLazy, getGrammarSectionsLazy, getPlaceholderCourse, getCanonicalCourseCounts, buildDictUnit } from './language-course/courseLoader';
 import { getLanguageIdentity } from '../shared/data/language-identity';
 import type { Dictionary } from '../shared/data/language-sources';
@@ -515,6 +517,7 @@ export default function LanguageCourseTool({
   onNavigationStateChange?: (state: CourseNavigationState) => void;
 } = {}) {
   const { colors, isDark, themeConfig, themeMetrics, themeKey, resolvedFonts } = useTheme();
+  const { t: tApp } = useAppLanguage();
   const themedCardStyle = useMemo(
     () => getThemedCardStyle(colors, themeConfig, themeMetrics),
     [colors, themeConfig, themeMetrics]
@@ -2863,7 +2866,7 @@ export default function LanguageCourseTool({
                 ]}
               >
                 <Text numberOfLines={1} style={{ fontSize: 11.5, fontFamily: resolvedFonts.heading, fontWeight: '800', color: themedPrimaryBtnStyle.textColor, flexShrink: 1 }}>
-                  Resume {overallMenuStats.resumeCourse.config.name}
+                  {tApp('learn.resume')} {overallMenuStats.resumeCourse.config.name}
                 </Text>
                 <Feather name="arrow-right" size={13} color={themedPrimaryBtnStyle.textColor} />
               </Pressable>
@@ -2872,10 +2875,10 @@ export default function LanguageCourseTool({
 
           <View>
             <Text style={{ fontSize: 18, fontFamily: resolvedFonts.heading, fontWeight: '800', color: colors.text, lineHeight: 24 }}>
-              Choose a Kenyan Language to Learn
+              {tApp('learn.chooseHeading')}
             </Text>
             <Text style={{ fontSize: 13, fontFamily: resolvedFonts.body, color: colors.textSecondary, lineHeight: 19, marginTop: 4 }}>
-              Select any of {PUBLISHED_COURSE_SUMMARIES.length} interactive courses below to unlock guided skill trees, flashcards, phonetic guides, grammar tables, mini-games, and oral proverbs.
+              {tApp('learn.chooseSub')}
             </Text>
           </View>
 
@@ -2900,7 +2903,7 @@ export default function LanguageCourseTool({
                 </Text>
               </View>
               <Text numberOfLines={1} style={{ fontSize: 9.5, color: colors.textMuted, marginTop: 1, fontWeight: '700' }}>
-                Total XP
+                {tApp('learn.totalXp')}
               </Text>
             </View>
 
@@ -2923,7 +2926,7 @@ export default function LanguageCourseTool({
                 </Text>
               </View>
               <Text numberOfLines={1} style={{ fontSize: 9.5, color: colors.textMuted, marginTop: 1, fontWeight: '700' }}>
-                Best Streak
+                {tApp('learn.bestStreak')}
               </Text>
             </View>
 
@@ -2946,7 +2949,7 @@ export default function LanguageCourseTool({
                 </Text>
               </View>
               <Text numberOfLines={1} style={{ fontSize: 9.5, color: colors.textMuted, marginTop: 1, fontWeight: '700' }}>
-                Words Learned
+                {tApp('learn.wordsLearned')}
               </Text>
             </View>
           </View>
@@ -2971,7 +2974,7 @@ export default function LanguageCourseTool({
               key={`menu-search-${themeKey}`}
               value={menuSearchQuery}
               onChangeText={setMenuSearchQuery}
-              placeholder="Search language or county..."
+              placeholder={tApp('learn.searchPlaceholder')}
               placeholderTextColor={colors.textMuted}
               style={{
                 flex: 1,
@@ -3026,7 +3029,7 @@ export default function LanguageCourseTool({
                       color: active ? colors.gold : colors.textSecondary,
                     }}
                   >
-                    {fam === 'All' ? `All Families (${count})` : `${fam} (${count})`}
+                    {fam === 'All' ? `${tApp('learn.allFamilies')} (${count})` : `${fam} (${count})`}
                   </Text>
                 </Pressable>
               );
@@ -3132,7 +3135,7 @@ export default function LanguageCourseTool({
                         color: courseXp > 0 ? getContrastInk(config.color) : colors.gold,
                       }}
                     >
-                      {courseXp > 0 ? 'Continue' : 'Start'}
+                      {courseXp > 0 ? tApp('learn.continueBtn') : tApp('learn.startBtn')}
                     </Text>
                     <Feather
                       name="arrow-right"
@@ -3162,7 +3165,7 @@ export default function LanguageCourseTool({
                   >
                     <Feather name="book-open" size={10.5} color={colors.kenyaGreenLight} />
                     <Text style={{ fontSize: 10.5, fontFamily: resolvedFonts.body, fontWeight: '700', color: colors.kenyaGreenLight }}>
-                      {unitsCount} units · {skillsCount} modules · {wordsCount.toLocaleString()} words
+                      {unitsCount} {tApp('learn.units')} · {skillsCount} {tApp('learn.modules')} · {wordsCount.toLocaleString()} {tApp('learn.words')}
                     </Text>
                   </View>
 

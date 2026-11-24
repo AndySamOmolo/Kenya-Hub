@@ -404,7 +404,7 @@ export default function SavedScreen() {
   const handleClearAll = useCallback(() => {
     triggerHaptic(12);
     Alert.alert(
-      "Clear Pinned Tools?",
+      t("saved.clearAlertTitle"),
       "Remove all saved tool shortcuts from your device?",
       [
         { text: "Cancel", style: "cancel" },
@@ -535,10 +535,10 @@ export default function SavedScreen() {
             <ThemedIconBadge name="person-circle-outline" accentColor={theme.gold} baseSize={40} iconSize={20} />
             <View style={{ flex: 1 }}>
               <Text style={{ color: theme.textPrimary, fontWeight: "700", fontSize: 14 }}>
-                KenyaHub Account
+                {t("saved.accountTitle")}
               </Text>
               <Text style={{ color: theme.textSecondary, fontSize: 12, marginTop: 1 }}>
-                Sign in with email & password
+                {t("saved.accountSub")}
               </Text>
             </View>
           </View>
@@ -571,17 +571,16 @@ export default function SavedScreen() {
               iconSize={30}
             />
             <Text style={[styles.emptyTitle, { color: theme.textPrimary, textTransform: headingTransform }]}>
-              No pinned tools yet
+              {t("saved.emptyTitle")}
             </Text>
             <Text
               style={[styles.emptySubtitle, { color: theme.textSecondary }]}
             >
-              Tap the bookmark icon on any calculator or guide to pin it here
-              for instant offline access.
+              {t("saved.emptyHelp")}
             </Text>
 
             <Text style={[styles.suggestHeading, { color: theme.gold, textTransform: headingTransform }]}>
-              POPULAR SUGGESTIONS
+              {t("saved.popularSuggestions")}
             </Text>
             <View style={styles.suggestList}>
               {popular.map((item) => (
@@ -599,7 +598,7 @@ export default function SavedScreen() {
                   <Pressable
                     android_ripple={androidRipple(theme.rippleColor)}
                     accessibilityRole="button"
-                    accessibilityLabel={`Open ${item.shortTitle}`}
+                    accessibilityLabel={`Open ${translateToolShortTitle(item.slug, item.shortTitle, language)}`}
                     style={pressableStyle([
                       styles.suggestCard,
                       isFrameless && { paddingHorizontal: 0 },
@@ -624,7 +623,7 @@ export default function SavedScreen() {
                           { color: theme.textPrimary },
                         ]}
                       >
-                        {item.shortTitle}
+                        {translateToolShortTitle(item.slug, item.shortTitle, language)}
                       </Text>
                       {showCardDescriptions && (
                         <Text

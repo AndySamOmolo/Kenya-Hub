@@ -5,7 +5,9 @@ import {
   Home,
   Edit3,
   Landmark,
+  Download,
   Mail,
+  Smartphone,
   Wrench,
   Info,
   Languages,
@@ -20,6 +22,7 @@ import dynamic from "next/dynamic";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { TOOL_CATEGORIES, TOOLS } from "@/lib/tools-registry";
+import { GITHUB_APK_RELEASES_URL, AMAZON_APPSTORE_URL } from "@/lib/app-downloads";
 import { useTheme } from "@/components/ThemeProvider";
 import CategoryIcon from "@/components/ui/CategoryIcon";
 
@@ -447,6 +450,30 @@ export default function Navbar() {
                 <Link href="/contact/" className="group flex items-center gap-3 px-3 py-2.5 text-sm font-medium text-text-secondary hover:text-text-primary rounded-xl hover:bg-black/[0.04] dark:hover:bg-white/[0.04] transition-colors" onClick={() => setMobileOpen(false)}>
                   <span className="w-7 flex items-center justify-center shrink-0"><Mail className="w-4 h-4 text-text-muted group-hover:text-gold transition-colors shrink-0" /></span> Contact
                 </Link>
+
+                <div className="section-divider my-2.5" />
+
+                <p className="px-3 py-1 text-xs font-bold text-text-muted uppercase tracking-[0.12em]">
+                  Android App
+                </p>
+                <a
+                  href={AMAZON_APPSTORE_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center gap-3 px-3 py-2.5 text-sm font-semibold text-gold hover:text-gold-light rounded-xl hover:bg-gold/10 transition-colors"
+                  onClick={() => setMobileOpen(false)}
+                >
+                  <span className="w-7 flex items-center justify-center shrink-0"><Smartphone className="w-4 h-4 text-gold shrink-0" /></span> Amazon Appstore
+                </a>
+                <a
+                  href={GITHUB_APK_RELEASES_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center gap-3 px-3 py-2.5 text-sm font-medium text-text-secondary hover:text-text-primary rounded-xl hover:bg-black/[0.04] dark:hover:bg-white/[0.04] transition-colors"
+                  onClick={() => setMobileOpen(false)}
+                >
+                  <span className="w-7 flex items-center justify-center shrink-0"><Download className="w-4 h-4 text-text-muted group-hover:text-gold transition-colors shrink-0" /></span> Download APK (GitHub)
+                </a>
 
                 <div className="section-divider my-2.5" />
 

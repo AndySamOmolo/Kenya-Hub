@@ -241,17 +241,21 @@ const DirectoryCardItem = React.memo(function DirectoryCardItem({
   router,
   theme,
   themeConfig,
+  themeMetrics,
   resolvedFonts,
   themedCardStyle,
   styles,
+  t,
 }: {
   item: any;
   router: any;
   theme: any;
   themeConfig: ThemeConfig;
+  themeMetrics: ThemeMetrics;
   resolvedFonts: { heading: string; body: string; bold: string };
   themedCardStyle: ReturnType<typeof getThemedCardStyle>;
   styles: ReturnType<typeof createCountyStyles>;
+  t: (k: any) => string;
 }) {
   const codeFormatted = String(item.code).padStart(3, "0");
   const popFormatted =
@@ -349,7 +353,7 @@ const DirectoryCardItem = React.memo(function DirectoryCardItem({
               style={[styles.governorText, { color: theme.textSecondary }]}
               numberOfLines={1}
             >
-              Gov.{" "}
+              {t("counties.govPrefix")}{" "}
               <Text style={{ color: theme.textPrimary, fontFamily: resolvedFonts.bold }}>
                 {item.governor}
               </Text>
@@ -905,9 +909,9 @@ export default function CountyScreen() {
         return <ConstituencyCardItem item={item} router={router} theme={theme} resolvedFonts={resolvedFonts} themedCardStyle={themedCardStyle} styles={styles} />;
       if (activeTab === "climate")
         return <ClimateCardItem item={item} router={router} theme={theme} resolvedFonts={resolvedFonts} themedCardStyle={themedCardStyle} styles={styles} />;
-      return <DirectoryCardItem item={item} router={router} theme={theme} themeConfig={themeConfig} resolvedFonts={resolvedFonts} themedCardStyle={themedCardStyle} styles={styles} />;
+      return <DirectoryCardItem item={item} router={router} theme={theme} themeConfig={themeConfig} themeMetrics={themeMetrics} resolvedFonts={resolvedFonts} themedCardStyle={themedCardStyle} styles={styles} t={t} />;
     },
-    [activeTab, router, theme, themeConfig, resolvedFonts, themedCardStyle, styles]
+    [activeTab, router, theme, themeConfig, themeMetrics, resolvedFonts, themedCardStyle, styles, t]
   );
 
   const pickerFiltered = useMemo(() => {
@@ -992,7 +996,7 @@ export default function CountyScreen() {
                       color: theme.textMuted,
                     }}
                   >
-                    EQUITABLE SHARE
+                    {t("counties.equitableShare")}
                   </Text>
                   <Text
                     numberOfLines={1}
@@ -1028,7 +1032,7 @@ export default function CountyScreen() {
                       color: theme.textMuted,
                     }}
                   >
-                    OWN REVENUE
+                    {t("counties.ownRevenue")}
                   </Text>
                   <Text
                     numberOfLines={1}
@@ -1064,7 +1068,7 @@ export default function CountyScreen() {
                       color: theme.textMuted,
                     }}
                   >
-                    ABSORPTION
+                    {t("counties.absorption")}
                   </Text>
                   <Text
                     numberOfLines={1}
@@ -1143,17 +1147,17 @@ export default function CountyScreen() {
             [
               {
                 id: "directory",
-                label: "Directory",
+                label: t("counties.tabDirectory"),
                 icon: "grid-outline" as const,
               },
               {
                 id: "budgets",
-                label: "Budgets (FY 25/26)",
+                label: t("counties.tabBudgets"),
                 icon: "wallet-outline" as const,
               },
               {
                 id: "constituencies",
-                label: "290 Constituencies",
+                label: t("counties.tabConstituencies"),
                 icon: "people-outline" as const,
               },
               {
@@ -1264,12 +1268,12 @@ export default function CountyScreen() {
               >
                 {(
                   [
-                    { id: "code", label: "Code" },
+                    { id: "code", label: t("counties.sortCode") },
                     { id: "name", label: "A–Z" },
-                    { id: "population", label: "Pop." },
-                    { id: "area", label: "Area" },
-                    { id: "budget", label: "Budget" },
-                    { id: "rainfall", label: "Rain" },
+                    { id: "population", label: t("counties.sortPop") },
+                    { id: "area", label: t("counties.sortArea") },
+                    { id: "budget", label: t("counties.sortBudget") },
+                    { id: "rainfall", label: t("counties.sortRain") },
                   ] as const
                 ).map((option) => {
                   const active = sortBy === option.id;

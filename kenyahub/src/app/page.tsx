@@ -4,6 +4,7 @@ import {
   MapPin,
   ShieldCheck,
   BadgeCheck,
+  Download,
   Smartphone,
   Landmark,
   BusFront,
@@ -16,6 +17,7 @@ import {
   ArrowRight,
   Wrench,
 } from "lucide-react";
+import { GITHUB_APK_RELEASES_URL, AMAZON_APPSTORE_URL } from "@/lib/app-downloads";
 import { TOOLS, TOOL_CATEGORIES } from "@/lib/tools-registry";
 import { PUBLISHED_COURSE_SUMMARIES } from "@/data/courses/catalog-summary";
 import { getLanguageIdentity } from "@/data/language-identity";
@@ -530,6 +532,31 @@ export default function HomePage() {
               <Link href="/tools/" className="btn-outline text-sm sm:text-base px-6 py-3 sm:px-8 sm:py-4">
                 Browse All {TOOLS.length} Tools
               </Link>
+            </div>
+            <div className="mt-6 pt-6 border-t border-border/60 flex flex-col items-center gap-2.5">
+              <p className="text-xs font-semibold uppercase tracking-[0.12em] text-text-muted">
+                Get the Offline Android App
+              </p>
+              <div className="flex flex-wrap justify-center gap-2.5">
+                <a
+                  href={AMAZON_APPSTORE_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-xl border border-gold/40 bg-gold/10 px-4 py-2 text-xs sm:text-sm font-bold text-gold hover:bg-gold/20 transition-colors"
+                >
+                  <Smartphone className="w-4 h-4 shrink-0" />
+                  <span>Amazon Appstore</span>
+                </a>
+                <a
+                  href={GITHUB_APK_RELEASES_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-xl border border-border bg-bg-card px-4 py-2 text-xs sm:text-sm font-semibold text-text-secondary hover:border-gold/50 hover:text-text-primary transition-colors"
+                >
+                  <Download className="w-4 h-4 shrink-0" />
+                  <span>Download APK (GitHub)</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>

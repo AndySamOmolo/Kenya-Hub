@@ -82,6 +82,7 @@ import {
   type ThemeColors,
 } from "../theme";
 import { ThemedIcon, ThemedIconBadge } from "./ThemedIcon";
+import { useAppLanguage, type TranslationKey } from "../lib/i18n";
 
 type AccordionKey =
   | "makeovers"
@@ -834,6 +835,7 @@ function isMakeoverActive(
 }
 
 export function ThemeSettingsView() {
+  const { language: appLang, t: tApp } = useAppLanguage();
   const themeCtx = useTheme();
   const {
     theme,
@@ -1384,7 +1386,7 @@ export function ThemeSettingsView() {
                         { color: active ? onGoldInk : theme.textSecondary },
                       ]}
                     >
-                      {opt.label}
+                      {appLang === "sw" ? ({ system: "Otomatiki", light: "Mwanga", dark: "Giza", "mini-app": "Programu", card: "Kadi", hide: "Ficha", muted: "Laini", balanced: "Wastani", vivid: "Mkali" }[String((opt as any).value)] || opt.label) : opt.label}
                     </Text>
                   </Pressable>
                 );
@@ -1541,7 +1543,7 @@ export function ThemeSettingsView() {
                     }}
                     accessibilityRole="button"
                     accessibilityState={{ selected: active }}
-                    accessibilityLabel={`${opt.label} appearance mode`}
+                    accessibilityLabel={`${appLang === "sw" ? ({ system: "Otomatiki", light: "Mwanga", dark: "Giza", "mini-app": "Programu", card: "Kadi", hide: "Ficha", muted: "Laini", balanced: "Wastani", vivid: "Mkali" }[String((opt as any).value)] || opt.label) : opt.label} appearance mode`}
                     android_ripple={androidRipple(theme.rippleColor)}
                     style={pressableStyle(styles.segmentedPressable)}
                   >
@@ -1569,7 +1571,7 @@ export function ThemeSettingsView() {
                           },
                         ]}
                       >
-                        {opt.label}
+                        {appLang === "sw" ? ({ system: "Otomatiki", light: "Mwanga", dark: "Giza", "mini-app": "Programu", card: "Kadi", hide: "Ficha", muted: "Laini", balanced: "Wastani", vivid: "Mkali" }[String((opt as any).value)] || opt.label) : opt.label}
                       </Text>
                     </View>
                   </Pressable>
@@ -1686,7 +1688,7 @@ export function ThemeSettingsView() {
                           { color: active ? onGoldInk : theme.textPrimary },
                         ]}
                       >
-                        {pill.label}
+                        {appLang === "sw" ? ({ all: "Zote", makeovers: "Mwonekano", presets: "Mandhari", colors: "Rangi", typography: "Maandishi", layout: "Mpangilio", navigation: "Menyu", accessibility: "Ufikiaji", backup: "Hifadhi" }[pill.key] || pill.label) : pill.label}
                       </Text>
                     </View>
                   </Pressable>
@@ -2603,7 +2605,7 @@ export function ThemeSettingsView() {
                         }}
                         accessibilityRole="button"
                         accessibilityState={{ selected: active }}
-                        accessibilityLabel={`Icon container ${opt.label}`}
+                        accessibilityLabel={`Icon container ${appLang === "sw" ? ({ system: "Otomatiki", light: "Mwanga", dark: "Giza", "mini-app": "Programu", card: "Kadi", hide: "Ficha", muted: "Laini", balanced: "Wastani", vivid: "Mkali" }[String((opt as any).value)] || opt.label) : opt.label}`}
                         android_ripple={androidRipple(theme.rippleColor)}
                         style={pressableStyle(styles.visualSwatchPressable)}
                       >
@@ -2640,7 +2642,7 @@ export function ThemeSettingsView() {
                             ]}
                             numberOfLines={1}
                           >
-                            {opt.label}
+                            {appLang === "sw" ? ({ system: "Otomatiki", light: "Mwanga", dark: "Giza", "mini-app": "Programu", card: "Kadi", hide: "Ficha", muted: "Laini", balanced: "Wastani", vivid: "Mkali" }[String((opt as any).value)] || opt.label) : opt.label}
                           </Text>
                         </View>
                       </Pressable>
@@ -2666,7 +2668,7 @@ export function ThemeSettingsView() {
                         }}
                         accessibilityRole="button"
                         accessibilityState={{ selected: active }}
-                        accessibilityLabel={`Icon glyph style ${opt.label}`}
+                        accessibilityLabel={`Icon glyph style ${appLang === "sw" ? ({ system: "Otomatiki", light: "Mwanga", dark: "Giza", "mini-app": "Programu", card: "Kadi", hide: "Ficha", muted: "Laini", balanced: "Wastani", vivid: "Mkali" }[String((opt as any).value)] || opt.label) : opt.label}`}
                         android_ripple={androidRipple(theme.rippleColor)}
                         style={pressableStyle(styles.visualGlyphPressable)}
                       >
@@ -2700,7 +2702,7 @@ export function ThemeSettingsView() {
                             ]}
                             numberOfLines={1}
                           >
-                            {opt.label}
+                            {appLang === "sw" ? ({ system: "Otomatiki", light: "Mwanga", dark: "Giza", "mini-app": "Programu", card: "Kadi", hide: "Ficha", muted: "Laini", balanced: "Wastani", vivid: "Mkali" }[String((opt as any).value)] || opt.label) : opt.label}
                           </Text>
                         </View>
                       </Pressable>
@@ -5256,7 +5258,7 @@ const OptionPillGroup = React.memo(function OptionPillGroup<T extends string | n
                     { color: active ? theme.gold : theme.textSecondary },
                   ]}
                 >
-                  {opt.label}
+                  {appLang === "sw" ? ({ system: "Otomatiki", light: "Mwanga", dark: "Giza", "mini-app": "Programu", card: "Kadi", hide: "Ficha", muted: "Laini", balanced: "Wastani", vivid: "Mkali" }[String((opt as any).value)] || opt.label) : opt.label}
                 </Text>
               </View>
             </Pressable>

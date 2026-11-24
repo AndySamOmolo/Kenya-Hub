@@ -232,6 +232,112 @@ const DICT = {
   },
   "contrib.successTitle": { en: "Asante Sana!", sw: "Asante Sana!" },
 
+  // Home extra sections
+  "home.browseByTopic": { en: "BROWSE BY TOPIC", sw: "VINJARI KWA MADA" },
+  "home.toolCategories": { en: "Tool Categories", sw: "Aina za Zana" },
+  "home.guidesOverline": { en: "KENYAHUB GUIDES", sw: "MIONGOZO YA KENYAHUB" },
+  "home.practicalExplainers": { en: "Practical Explainers", sw: "Maelezo ya Vitendo" },
+  "home.toolSingular": { en: "tool", sw: "zana" },
+  "home.toolPlural": { en: "tools", sw: "zana" },
+  "home.offline": { en: "Offline", sw: "Nje ya Mtandao" },
+
+  // Learn Hub extra strings
+  "learn.coursesCount": { en: "Courses", sw: "Kozi" },
+  "learn.resume": { en: "Resume", sw: "Endelea" },
+  "learn.chooseHeading": {
+    en: "Choose a Kenyan Language to Learn",
+    sw: "Chagua Lugha ya Kenya ya Kujifunza",
+  },
+  "learn.chooseSub": {
+    en: "Select any interactive course below to unlock guided skill trees, flashcards, phonetic guides, grammar tables, mini-games, and oral proverbs.",
+    sw: "Chagua kozi yoyote hapa chini kufungua masomo, kadi za maneno, matamshi, sarufi, michezo midogo na methali za Kiafrika.",
+  },
+  "learn.totalXp": { en: "Total XP", sw: "Jumla ya XP" },
+  "learn.bestStreak": { en: "Best Streak", sw: "Mfululizo Bora" },
+  "learn.wordsLearned": { en: "Words Learned", sw: "Maneno Uliyojifunza" },
+  "learn.searchPlaceholder": {
+    en: "Search language or county...",
+    sw: "Tafuta lugha au kaunti...",
+  },
+  "learn.allFamilies": { en: "All Families", sw: "Familia Zote" },
+  "learn.continueBtn": { en: "Continue", sw: "Endelea" },
+  "learn.startBtn": { en: "Start", sw: "Anza" },
+  "learn.units": { en: "units", sw: "vitengo" },
+  "learn.modules": { en: "modules", sw: "moduli" },
+  "learn.words": { en: "words", sw: "maneno" },
+
+  // Counties Hub extra strings
+  "counties.tabDirectory": { en: "Directory", sw: "Orodha" },
+  "counties.tabBudgets": { en: "Budgets (FY 25/26)", sw: "Bajeti (25/26)" },
+  "counties.tabConstituencies": { en: "290 Constituencies", sw: "Majimbo 290" },
+  "counties.tabClimate": { en: "Climate", sw: "Hali ya Hewa" },
+  "counties.tabCompare": { en: "Compare", sw: "Linganisha" },
+  "counties.sortBy": { en: "SORT BY", sw: "PANGA KWA" },
+  "counties.equitableShare": { en: "EQUITABLE SHARE", sw: "MGAO SAWA" },
+  "counties.ownRevenue": { en: "OWN REVENUE", sw: "MAPATO YA NDANI" },
+  "counties.absorption": { en: "ABSORPTION", sw: "MATUMIZI" },
+  "counties.metricPop": { en: "POPULATION", sw: "IDADI YA WATU" },
+  "counties.metricBudget": { en: "FY 25/26 BUDGET", sw: "BAJETI 25/26" },
+  "counties.metricRain": { en: "RAINFALL", sw: "MVUA" },
+
+  // Additional Home, Tools, Saved, Counties, Settings & Translator keys
+  "home.liveSnapshot": { en: "LIVE SNAPSHOT", sw: "MUHTASARI WA LEO" },
+  "home.dailyWidgets": { en: "Daily Kenyan Widgets", sw: "Kadi za Kila Siku" },
+  "home.fullHolidayCal": { en: "Full Holiday Calendar", sw: "Kalenda Kamili ya Sikukuu" },
+  "home.pinnedByYou": { en: "PINNED BY YOU", sw: "ZIMEBANDIKWA NAWE" },
+  "home.savedShortcuts": { en: "Saved Shortcuts", sw: "Njia za Mkato" },
+  "home.manage": { en: "Manage", sw: "Dhibiti" },
+  "home.mostUsed": { en: "MOST USED", sw: "ZINAZOTUMIKA ZAIDI" },
+  "home.popularKenyanTools": { en: "Popular Kenyan Tools", sw: "Zana Maarufu za Kenya" },
+  "home.allCountPrefix": { en: "All", sw: "Zote" },
+  "tools.freeBuiltForKenya": {
+    en: "free tools built for Kenya",
+    sw: "zana za bure zilizoundwa kwa Kenya",
+  },
+  "tools.sortMostUsed": { en: "Most used", sw: "Maarufu" },
+  "tools.sortCategory": { en: "Category", sw: "Aina" },
+  "tools.pinnedBadge": { en: "PINNED", sw: "IMEBANDIKWA" },
+  "tools.clearFilter": { en: "Clear filter", sw: "Futa kichujio" },
+  "tools.noResultsPrefix": { en: "No tools found matching", sw: "Hakuna zana iliyopatikana kwa" },
+  "tools.noResultsSub": {
+    en: "Try clearing your search or selecting another category.",
+    sw: "Jaribu kufuta utafutaji au chagua aina nyingine.",
+  },
+  "saved.accountTitle": { en: "KenyaHub Account", sw: "Akaunti ya KenyaHub" },
+  "saved.accountSub": {
+    en: "Sign in with email & password",
+    sw: "Ingia kwa barua pepe na nenosiri",
+  },
+  "saved.emptyHelp": {
+    en: "Tap the bookmark icon on any calculator or guide to pin it here for instant offline access.",
+    sw: "Gusa alama ya alamisho kwenye kikokotoo au mwongozo wowote kuubandika hapa kwa ufikiaji wa haraka bila mtandao.",
+  },
+  "saved.popularSuggestions": { en: "POPULAR SUGGESTIONS", sw: "MAPENDEKEZO MAARUFU" },
+  "saved.clearAlertTitle": { en: "Clear Pinned Tools?", sw: "Futa Zana Zilizobandikwa?" },
+  "saved.pinnedCountLabel": { en: "pinned", sw: "zimebandikwa" },
+  "learn.barSubtitle": {
+    en: "Kenyan Languages & Proverbs",
+    sw: "Lugha za Kenya na Methali",
+  },
+  "counties.sortCode": { en: "Code", sw: "Nambari" },
+  "counties.sortPop": { en: "Pop.", sw: "Watu" },
+  "counties.sortArea": { en: "Area", sw: "Eneo" },
+  "counties.sortBudget": { en: "Budget", sw: "Bajeti" },
+  "counties.sortRain": { en: "Rain", sw: "Mvua" },
+  "counties.govPrefix": { en: "Gov.", sw: "Gavana" },
+  "settings.filterAll": { en: "All", sw: "Zote" },
+  "settings.filterMakeovers": { en: "Makeovers", sw: "Mwonekano" },
+  "settings.filterPresets": { en: "Presets", sw: "Mandhari" },
+  "settings.filterColors": { en: "Colors", sw: "Rangi" },
+  "settings.filterText": { en: "Text", sw: "Maandishi" },
+  "settings.filterLayout": { en: "Layout", sw: "Mpangilio" },
+  "settings.filterMenus": { en: "Menus", sw: "Menyu" },
+  "settings.filterAccess": { en: "Access", sw: "Ufikiaji" },
+  "settings.filterBackup": { en: "Backup", sw: "Hifadhi" },
+  "settings.modeAuto": { en: "Auto", sw: "Otomatiki" },
+  "settings.modeLight": { en: "Light", sw: "Mwanga" },
+  "settings.modeDark": { en: "Dark", sw: "Giza" },
+
   // Error Boundary
   "error.title": { en: "Something went wrong", sw: "Hitilafu imetokea" },
   "error.message": {
@@ -404,4 +510,24 @@ export function translateToolShortTitle(
 ): string {
   if (language !== "sw") return fallback;
   return TOOL_SHORT_SW[slug] || fallback;
+}
+
+const CATEGORY_DESC_SW: Record<string, string> = {
+  "language-learning": "Kozi shirikishi za lugha 23 za Kenya, mtafsiri wa pande mbili, miongozo ya sarufi na methali.",
+  "finance-tax": "Kikokotoo cha mshahara PAYE 2026, ada za M-Pesa, mikopo ya SACCO, HELB na ushuru wa stempu.",
+  "education-cbc": "Mtaala wa CBC na umri wa madarasa, alama za KUCCPS na kikokotoo cha alama za KCSE.",
+  "transport-travel": "Kikokotoo cha ushuru wa kuagiza gari KRA CRSP, mtafsiri wa nambari za gari na faini za NTSA.",
+  "business-investment": "Kikokotoo cha vifaa vya ujenzi (Mjengo) na makadirio ya gharama za BORAQS Kenya.",
+  "utilities-energy": "Kikokotoo cha tokeni za umeme KPLC, makadirio ya vifaa vya nyumbani na kinga ya salio.",
+  "government-legal": "Ada za Mahakama ya Madai Madogo, haki za mpangaji, mikataba ya wafanyakazi na huduma za umma.",
+  "health-wellness": "Vifurushi vya manufaa ya SHA (Taifa Care), ngazi za hospitali na viwango vya malipo.",
+};
+
+export function translateCategoryDescription(
+  categoryId: string,
+  fallback: string,
+  language: AppLanguage
+): string {
+  if (language !== "sw") return fallback;
+  return CATEGORY_DESC_SW[categoryId] || fallback;
 }

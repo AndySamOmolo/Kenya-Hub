@@ -280,7 +280,7 @@ export default function LearnTabScreen() {
         subtitle={
           navState.inCourse
             ? "Tap back for all courses"
-            : "Kenyan Languages & Proverbs"
+            : t("learn.barSubtitle")
         }
         onBack={navState.inCourse ? navState.backToMenu : undefined}
       />

@@ -32,7 +32,7 @@ import {
 } from "../../src/shared/lib/tools-registry";
 import matatuData from "../../src/shared/data/matatu-routes.json";
 import { ThemedIcon, ThemedIconBadge } from "../../src/components/ThemedIcon";
-import { useAppLanguage, translateCategoryName, translateToolShortTitle } from "../../src/lib/i18n";
+import { useAppLanguage, translateCategoryDescription, translateCategoryName, translateToolShortTitle } from "../../src/lib/i18n";
 
 function toolEmojiToIonicon(emoji?: string): string {
   const clean = (emoji || "").replace(/[\uFE0F]/g, "").trim();
@@ -118,7 +118,7 @@ const ToolItem = React.memo(function ToolItem({
   const showCategoryBadges = themeConfig.showCategoryBadges !== false;
   const showCardDescriptions = themeConfig.showCardDescriptions !== false;
   const showTrailingArrows = themeConfig.showTrailingArrows !== false;
-  const { language } = useAppLanguage();
+  const { language, t } = useAppLanguage();
 
   return (
     <View
@@ -176,7 +176,7 @@ const ToolItem = React.memo(function ToolItem({
                   >
                     <ThemedIcon name="bookmark" size={10} color={theme.gold} />
                     <Text style={[styles.pinnedTagText, { color: theme.gold }]}>
-                      PINNED
+                      {t("tools.pinnedBadge")}
                     </Text>
                   </View>
                 )}
@@ -437,7 +437,7 @@ export default function ToolsScreen() {
                     hitSlop={8}
                   >
                     <Text style={[styles.clearFilterText, { color: theme.gold }]}>
-                      Clear filter
+                      {t("tools.clearFilter")}
                     </Text>
                   </Pressable>
                 </View>
@@ -617,8 +617,8 @@ export default function ToolsScreen() {
         title={category !== "all" ? translateCategoryName(category, getCategoryInfo(category)?.name || t("tools.allTitle"), language) : t("tools.allTitle")}
         subtitle={
           category !== "all"
-            ? getCategoryInfo(category)?.description || "Filtered Kenya utilities"
-            : `${TOOLS.length} free tools built for Kenya`
+            ? translateCategoryDescription(category, getCategoryInfo(category)?.description || "", language)
+            : `${TOOLS.length} ${t("tools.freeBuiltForKenya")}`
         }
       />
 
@@ -748,9 +748,9 @@ export default function ToolsScreen() {
           >
             {(
               [
-                { id: "popular", label: "Most used", icon: "trending-up" as const },
+                { id: "popular", label: t("tools.sortMostUsed"), icon: "trending-up" as const },
                 { id: "alphabetical", label: "A–Z", icon: "text" as const },
-                { id: "category", label: "Category", icon: "list" as const },
+                { id: "category", label: t("tools.sortCategory"), icon: "list" as const },
               ] as const
             ).map((option) => {
               const active = sortBy === option.id;
@@ -824,10 +824,10 @@ export default function ToolsScreen() {
             <View style={styles.emptyWrap}>
               <ThemedIcon name="search-outline" size={44} color={theme.textMuted} />
               <Text style={[styles.emptyTitle, { color: theme.textPrimary }]}>
-                No tools found matching &ldquo;{query}&rdquo;
+                {t("tools.noResultsPrefix")} &ldquo;{query}&rdquo;
               </Text>
               <Text style={[styles.emptySub, { color: theme.textSecondary }]}>
-                Try clearing your search or selecting another category.
+                {t("tools.noResultsSub")}
               </Text>
               <Pressable
                 onPress={() => {

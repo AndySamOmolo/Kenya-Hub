@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { TOOL_CATEGORIES } from "@/lib/tools-registry";
+import { Download, Smartphone } from "lucide-react";
 import CookieSettingsFooterLink from "@/components/nav/CookieSettingsFooterLink";
+import { GITHUB_APK_RELEASES_URL, AMAZON_APPSTORE_URL } from "@/lib/app-downloads";
 
 export default function Footer() {
   return (
@@ -18,6 +20,26 @@ export default function Footer() {
             <p className="text-xs sm:text-sm text-text-muted leading-relaxed max-w-xs">
               Interactive Kenyan language learning platform (23 languages, proverbs &amp; dictionaries) and verified statutory calculators built for Kenya.
             </p>
+            <div className="mt-4 flex flex-wrap gap-2">
+              <a
+                href={AMAZON_APPSTORE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 rounded-xl border border-gold/40 bg-gold/10 px-3 py-1.5 text-xs font-bold text-gold hover:bg-gold/20 transition-colors"
+              >
+                <Smartphone className="w-3.5 h-3.5 shrink-0" />
+                <span>Amazon Appstore</span>
+              </a>
+              <a
+                href={GITHUB_APK_RELEASES_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 rounded-xl border border-border bg-bg-card px-3 py-1.5 text-xs font-semibold text-text-secondary hover:border-gold/50 hover:text-text-primary transition-colors"
+              >
+                <Download className="w-3.5 h-3.5 shrink-0" />
+                <span>GitHub APK</span>
+              </a>
+            </div>
           </div>
 
           {/* Flagship Language Courses */}
