@@ -43,6 +43,11 @@ on:
         required: false
         default: "true"
         type: string
+      only_ksl:
+        description: "Run ONLY KSL (xki) full-duration re-import & mobile sync (skips text/CLDF/audio steps)"
+        required: false
+        default: false
+        type: boolean
       include_kaikki_raw:
         description: "Stream-filter Kaikki.org raw Wiktextract dump (180s cap) for all Kenyan ISO codes & Sheng"
         required: false
@@ -116,7 +121,7 @@ jobs:
             LOCKED_HASH=$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1])).get("scriptsHash",""))' "$LOCK_FILE" 2>/dev/null || echo "")
           fi
 
-          if [ -f "$LOCK_FILE" ] && [ "$LOCKED_HASH" = "$CURRENT_HASH" ] && [ "${{ inputs.force_reingest }}" != "true" ]; then
+          if [ -f "$LOCK_FILE" ] && [ "$LOCKED_HASH" = "$CURRENT_HASH" ] && [ "${{ inputs.force_reingest }}" != "true" ] && [ "${{ inputs.only_ksl }}" != "true" ]; then
             echo "Ingestion already completed for current script fingerprint ($CURRENT_HASH). Skipping."
             echo "skip=true" >> "$GITHUB_OUTPUT"
           else
@@ -218,14 +223,18 @@ jobs:
           INCLUDE_KSL_METADATA: ${{ inputs.include_ksl_metadata || 'true' }}
           MAX_KSL_MASENO_VIDEOS: "0"
           MAX_KSL_HUMAN_VIDEOS: "0"
-          KSL_TIME_BUDGET_SEC: "14400"
+          KSL_TIME_BUDGET_SEC: "${{ inputs.only_ksl && '18000' || '14400' }}"
           PER_DATASET_TIMEOUT_SEC: "900"
           GLOBAL_TIME_BUDGET_SEC: "10800"
           INGESTION_SCRIPTS_HASH: ${{ steps.lock_check.outputs.scripts_hash }}
           R2_READY: ${{ steps.secrets_check.outputs.r2_ready }}
         run: |
           if [ "${{ inputs.include_audio_ingestion || 'true' }}" = "true" ]; then
+            if [ "${{ inputs.only_ksl || 'false' }}" != "true" ]; then
             python3 -u scripts/ci-ingest-audio-and-text-r2.py
+          else
+            echo "only_ksl=true: skipping general audio ingestion and jumping directly to full-duration KSL re-import."
+          fi
           fi
           if [ "${{ inputs.include_ksl_metadata || 'true' }}" = "true" ]; then
             python3 -u scripts/ingest-ksl-pose-r2.py

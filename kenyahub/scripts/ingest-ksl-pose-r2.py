@@ -356,7 +356,9 @@ def save_ksl_index(existing: dict, videos_out: list[dict], signs_out: list[dict]
                 seen_signs[sid] = s
         existing["signs"] = sorted(seen_signs.values(), key=lambda x: (x.get("gloss", ""), x.get("id", "")))
         existing["extractedSignCount"] = len(existing["signs"])
-    KSL_INDEX_PATH.write_text(json.dumps(existing, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    tmp_path = KSL_INDEX_PATH.with_suffix(".json.tmp")
+    tmp_path.write_text(json.dumps(existing, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    os.replace(tmp_path, KSL_INDEX_PATH)
 
 
 def ingest_maseno_zenodo(s3_client, existing: dict, videos_out: list[dict], signs_out: list[dict], ingestion_state: dict, existing_r2_keys: set[str] | None = None) -> None:
@@ -898,7 +900,8 @@ def ingest_open_sign_bibles_xki(s3_client, existing: dict, videos_out: list[dict
             for fut in done:
                 try:
                     res = fut.result()
-                except Exception:
+                except Exception as exc:
+                    print(f"  [warn] OSB worker error: {exc}")
                     res = None
                 if not res:
                     continue
@@ -976,10 +979,13 @@ def ingest_open_sign_bibles_xki(s3_client, existing: dict, videos_out: list[dict
                           mp4_raw_ex = mp4_raw_ex.get("bytes")
                       if isinstance(mp4_raw_ex, (bytes, bytearray)) and len(mp4_raw_ex) >= 1024:
                           ex_key = f"ksl/human-full/{existing_item.get('id', vid_id)}.mp4"
-                          if ex_key in existing_r2_keys:
-                              existing_item["videoUrl"] = f"{R2_PUBLIC_URL}/{ex_key}"
-                              existing_item["fullDuration"] = True
+                          if existing_r2_keys and ex_key in existing_r2_keys:
+                              existing_item["videoUrl"] = f"{CDN_BASE}/{ex_key}"
+                              existing_item["fullDurationV2"] = True
                               existing_item["fullDurationPathV3"] = True
+                              enriched += 1
+                              if enriched % 25 == 0:
+                                  _save_osb_checkpoint()
                               continue
                           osb_in_flight.add(
                               osb_pool.submit(_transcode_and_upload_osb, "upgrade", existing_item, ex_key, bytes(mp4_raw_ex), None)
@@ -1016,6 +1022,13 @@ def ingest_open_sign_bibles_xki(s3_client, existing: dict, videos_out: list[dict
                   "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles",
               }
               by_id[vid_id] = new_item_meta
+              if existing_r2_keys and r2_key in existing_r2_keys:
+                  new_item_meta["videoUrl"] = f"{CDN_BASE}/{r2_key}"
+                  videos_out.append(new_item_meta)
+                  added += 1
+                  if added % 25 == 0:
+                      _save_osb_checkpoint()
+                  continue
               osb_in_flight.add(
                   osb_pool.submit(_transcode_and_upload_osb, "new", None, r2_key, bytes(mp4_raw), new_item_meta)
               )
