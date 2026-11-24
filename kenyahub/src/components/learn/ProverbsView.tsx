@@ -102,7 +102,8 @@ export default function ProverbsView({
 
   useEffect(() => {
     if (lockedLanguageId) {
-      setSelectedLang(lockedLanguageId);
+      // Reset filters when the externally locked language changes.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setSelectedCategory("All");
       setSearch("");
       setSpotlight(null);

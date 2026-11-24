@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState } from "react";
 import { X } from "lucide-react";
 import { TOOLS } from "@/lib/tools-registry";
 import plateData from "@/data/number-plate-prefixes.json";
@@ -13,7 +13,7 @@ export default function NumberPlateDecoderPage() {
   const [input, setInput] = useState("KDU 450A");
   const [showAllPrefixes, setShowAllPrefixes] = useState(false);
 
-  const result = useMemo(() => {
+  const result = (() => {
     const trimmed = input.trim().toUpperCase().replace(/\s+/g, " ");
     const cleaned = trimmed.replace(/\s/g, "").replace(/[^A-Z0-9]/g, "");
     if (cleaned.length < 2) return null;
@@ -93,7 +93,7 @@ export default function NumberPlateDecoderPage() {
     }
 
     return null;
-  }, [input]);
+  })();
 
   const formattedPlate = input.trim().toUpperCase() || result?.prefix || "";
 

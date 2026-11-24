@@ -224,6 +224,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   }, [syncUserData]);
 
   useEffect(() => {
+    // The initial account lookup must run in the browser after provider hydration.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     void refreshUser();
   }, [refreshUser]);
 

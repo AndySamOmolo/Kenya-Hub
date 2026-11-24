@@ -61,7 +61,9 @@ export function ScrambleGame({
   const [perfectWords, setPerfectWords] = useState(0);
 
   const progressRef = useRef(progress);
-  progressRef.current = progress;
+  useEffect(() => {
+    progressRef.current = progress;
+  }, [progress]);
   const usedTargetsRef = useRef<Set<string>>(new Set());
 
   const initRound = useCallback(() => {

@@ -64,14 +64,14 @@ export default function BlogPostContent({ post }: { post: BlogPost | null }) {
     window.open(`https://twitter.com/intent/tweet?text=${text}&url=${url}`, "_blank");
   };
 
+  const postContent = post?.content;
   const tocHeadings = useMemo(
-    () => (post?.content ? extractMarkdownToc(post.content) : []),
-    [post?.content]
+    () => (postContent ? extractMarkdownToc(postContent) : []),
+    [postContent]
   );
-
   const contentHtml = useMemo(
-    () => (post?.content ? markdownToHtml(post.content) : ""),
-    [post?.content]
+    () => (postContent ? markdownToHtml(postContent) : ""),
+    [postContent]
   );
 
   const relatedTools = useMemo(

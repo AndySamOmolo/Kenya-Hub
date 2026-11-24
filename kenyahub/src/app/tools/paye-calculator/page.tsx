@@ -183,6 +183,8 @@ export default function PAYECalculatorPage() {
     const netParam = Number(params.get("net"));
     const pensionParam = Number(params.get("pension"));
     if (Number.isFinite(grossParam) && grossParam > 0) {
+      // URL hashes and query values are only available in the browser.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setCalcMode("grossToNet");
       setGrossInput(grossParam);
     } else if (Number.isFinite(netParam) && netParam > 0) {

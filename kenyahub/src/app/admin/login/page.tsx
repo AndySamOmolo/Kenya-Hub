@@ -15,6 +15,7 @@ export default function AdminLoginPage() {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const [lockedUntil, setLockedUntil] = useState<number>(0);
+  const [now, setNow] = useState(0);
   const router = useRouter();
 
   useEffect(() => {
@@ -23,6 +24,8 @@ export default function AdminLoginPage() {
       if (raw) {
         const parsed = JSON.parse(raw);
         if (parsed.lockedUntil && parsed.lockedUntil > Date.now()) {
+          // Session storage is only available after hydration.
+          // eslint-disable-next-line react-hooks/set-state-in-effect
           setLockedUntil(parsed.lockedUntil);
         }
       }
@@ -30,6 +33,16 @@ export default function AdminLoginPage() {
       /* ignore */
     }
   }, []);
+
+  useEffect(() => {
+    if (!lockedUntil) return;
+    const timer = window.setInterval(() => {
+      const currentTime = Date.now();
+      setNow(currentTime);
+      if (currentTime >= lockedUntil) window.clearInterval(timer);
+    }, 1000);
+    return () => window.clearInterval(timer);
+  }, [lockedUntil]);
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -64,6 +77,7 @@ export default function AdminLoginPage() {
         );
         if (nextLock) {
           setLockedUntil(nextLock);
+          setNow(Date.now());
           setError("Too many failed attempts. Locked for 60 seconds.");
         } else {
           setError("Invalid credentials");
@@ -124,7 +138,7 @@ export default function AdminLoginPage() {
             )}
             <button
               type="submit"
-              disabled={loading || lockedUntil > Date.now()}
+              disabled={loading || lockedUntil > now}
               className="btn-primary w-full disabled:opacity-50"
             >
               {loading ? "Signing in..." : "Sign In"}

@@ -99,6 +99,8 @@ const COUNTY_SELECT_OPTIONS = counties.map((c) => ({ value: c.name, label: c.nam
   const [copiedIpoa, setCopiedIpoa] = useState(false);
 
   useEffect(() => {
+    // The local date and saved log are browser-only initial state.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setArrestDate(getTodayDateString());
     setArrestTime(getNowTimeString());
     try {

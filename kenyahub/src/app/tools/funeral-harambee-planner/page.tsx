@@ -65,6 +65,8 @@ export default function FuneralHarambeePlannerPage() {
       if (saved) {
         const parsed = JSON.parse(saved);
         if (Array.isArray(parsed)) {
+          // Load persisted pledge state only after client hydration.
+          // eslint-disable-next-line react-hooks/set-state-in-effect
           setPledges(parsed);
         }
       }

@@ -74,6 +74,8 @@ export default function KslSignStudio({
     try {
       const raw = window.localStorage.getItem("kh-ksl-completed-units");
       const parsed = raw ? JSON.parse(raw) : [];
+      // Load saved progress only after client hydration to avoid mismatching SSR.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       if (Array.isArray(parsed)) setCompletedUnits(parsed);
     } catch {}
   }, []);
@@ -130,6 +132,8 @@ export default function KslSignStudio({
       const raw = window.localStorage.getItem("kenyahub_ksl_saved_v1");
       if (raw) {
         const parsed = JSON.parse(raw);
+        // Load saved video IDs only after client hydration to avoid mismatching SSR.
+        // eslint-disable-next-line react-hooks/set-state-in-effect
         if (Array.isArray(parsed)) setSavedVideoIds(parsed.filter((x): x is string => typeof x === "string"));
       }
     } catch {

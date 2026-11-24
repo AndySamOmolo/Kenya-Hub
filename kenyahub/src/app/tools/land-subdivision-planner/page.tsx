@@ -53,6 +53,8 @@ export default function LandSubdivisionPlannerPage() {
   });
 
   useEffect(() => {
+    // Browser-local current dates must not differ between SSR and hydration.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setAgreementDate(getDefaultAgreementDate());
     setTodayIso(new Date().toISOString().slice(0, 10));
   }, []);

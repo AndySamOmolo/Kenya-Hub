@@ -82,11 +82,12 @@ export function MemoryGame({
       setIsChecking(false);
       setGameWon(false);
       setIsPeeking(true);
-      setStartTime(Date.now() + 2200);
+      setStartTime(0);
       setEndTime(0);
 
       const timer = setTimeout(() => {
         setIsPeeking(false);
+        setStartTime(performance.now());
       }, 2200);
       return () => clearTimeout(timer);
     },
@@ -106,7 +107,7 @@ export function MemoryGame({
     );
   }
 
-  const handleFlip = (cardId: number) => {
+  const handleFlip = (cardId: number, eventTime: number) => {
     if (isPeeking || isChecking || flipped.has(cardId) || matched.has(cardId))
       return;
 
@@ -140,7 +141,7 @@ export function MemoryGame({
         if (newMatched.size === cards.length) {
           playCelebrationSfx();
           setGameWon(true);
-          setEndTime(Date.now());
+          setEndTime(eventTime);
           const baseXp = pairCount === 10 ? 40 : pairCount === 8 ? 30 : 25;
           onAwardXp?.(baseXp + nextBonusXp);
           onUpdateGameStats?.((prev) => ({
@@ -285,7 +286,7 @@ export function MemoryGame({
             <button
               key={card.id}
               type="button"
-              onClick={() => handleFlip(card.id)}
+              onClick={(event) => handleFlip(card.id, event.timeStamp)}
               className={`relative flex min-h-[5.25rem] sm:min-h-[6rem] items-center justify-center rounded-xl border-2 px-2 pt-2 pb-5 text-center transition-all cursor-pointer ${
                 isMatched
                   ? "border-kenya-green/40 bg-kenya-green/10"

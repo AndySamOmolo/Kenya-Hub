@@ -3,7 +3,7 @@
 import DynamicIcon from "@/components/ui/DynamicIcon";
 import CustomSelect from "@/components/ui/CustomSelect";
 import { scrollToTopIfScrolled } from "@/lib/scroll";
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import {
   ArrowLeft,
   Gamepad2,
@@ -92,6 +92,7 @@ export default function GamesHub({
   onBack,
 }: GamesHubProps) {
   const [activeGame, setActiveGame] = useState<GameType>("menu");
+  const [gameWords, setGameWords] = useState<WordPair[]>([]);
   useEffect(() => {
     if (typeof document === "undefined") return;
     if (activeGame !== "menu") {
@@ -140,11 +141,10 @@ export default function GamesHub({
   );
 
   // Snapshot active pool while inside a game so mid-game XP/SRS updates never reset or re-shuffle an active board
-  const activePoolRef = useRef(scopedWords);
-  if (activeGame === "menu") {
-    activePoolRef.current = scopedWords;
-  }
-  const gameWords = activeGame === "menu" ? scopedWords : activePoolRef.current;
+  const startGame = (game: GameType) => {
+    setGameWords(scopedWords);
+    setActiveGame(game);
+  };
 
   const handleToggleMute = () => {
     const next = !sfxMuted;
@@ -400,7 +400,7 @@ export default function GamesHub({
             <button
               key={g.id}
               type="button"
-              onClick={() => setActiveGame(g.id)}
+              onClick={() => startGame(g.id)}
               className="group rounded-2xl border border-border bg-bg-card p-4 sm:p-5 text-left transition-all active:scale-[0.98] sm:hover:border-gold/40 sm:hover:shadow-lg sm:hover:shadow-gold/5 cursor-pointer flex flex-col justify-between"
             >
               <div>

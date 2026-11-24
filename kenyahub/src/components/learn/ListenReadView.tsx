@@ -61,19 +61,6 @@ const ChapterAudioPlayer = memo(function ChapterAudioPlayer({
   const [chRate, setChRate] = useState<number>(1.0);
 
   useEffect(() => {
-    const el = chapterAudioRef.current;
-    if (el) {
-      el.pause();
-      el.currentTime = 0;
-      el.playbackRate = chRate;
-    }
-    setChPlaying(false);
-    setChLoading(false);
-    setChCurrentTime(0);
-    setChDuration(0);
-  }, [chapterId]);
-
-  useEffect(() => {
     if (chapterAudioRef.current) {
       chapterAudioRef.current.playbackRate = chRate;
     }
@@ -331,10 +318,6 @@ export default function ListenReadView({
   }, [rawChapterPhrases, debouncedChapterSearch]);
 
   useEffect(() => {
-    setPhraseLimit(30);
-  }, [activeChapter?.id]);
-
-  useEffect(() => {
     return () => {
       stopLanguageAudio();
     };
@@ -460,7 +443,10 @@ export default function ListenReadView({
                     <button
                       key={ch.id}
                       type="button"
-                      onClick={() => setActiveChapterId(ch.id)}
+                      onClick={() => {
+                        setActiveChapterId(ch.id);
+                        setPhraseLimit(30);
+                      }}
                       className={`shrink-0 rounded-xl px-3 py-2 text-left border transition-all cursor-pointer max-w-[210px] ${
                         active
                           ? "border-gold bg-gold/15 text-text-primary shadow-sm"
@@ -503,7 +489,11 @@ export default function ListenReadView({
                   )}
                 </div>
 
-                <ChapterAudioPlayer chapterId={activeChapter.id} audioUrl={activeChapter.audioUrl} />
+                <ChapterAudioPlayer
+                  key={activeChapter.id}
+                  chapterId={activeChapter.id}
+                  audioUrl={activeChapter.audioUrl}
+                />
 
                 {/* Follow-Along Numbered Phrasebook Transcript */}
                 {rawChapterPhrases.length > 0 && (

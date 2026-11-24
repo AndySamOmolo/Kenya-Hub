@@ -44,14 +44,6 @@ export default function CookingFuelComparatorPage() {
     const kplcPerKwh = Math.max(0, Number(kplcStr) || 0);
     const epcPrice = Math.max(0, Number(epcPriceStr) || 0);
 
-    let weeklyLpg = 0;
-    let weeklyCharcoal = 0;
-    let weeklyKerosene = 0;
-    let weeklyEpc = 0;
-    let weeklyStack = 0;
-    let weeklyEpcMins = 0;
-    let weeklyCharcoalMins = 0;
-
     const dishBreakdown = fuelData.dishes.map((dish) => {
       const count = Math.max(0, dishCounts[dish.id] ?? 0);
       const lpgDish = dish.lpgKg * lpgPerKg * portionScale;
@@ -59,20 +51,10 @@ export default function CookingFuelComparatorPage() {
       const keroseneDish = dish.keroseneL * kerosenePerL * portionScale;
       const epcDish = dish.epcKwh * kplcPerKwh * portionScale;
 
-      weeklyLpg += lpgDish * count;
-      weeklyCharcoal += charcoalDish * count;
-      weeklyKerosene += keroseneDish * count;
-      weeklyEpc += epcDish * count;
-
       // Optimal Kenyan Fuel-Stacking Plan:
       // Heavy-boil dishes (githeri, beans, rice_stew) on EPC; quick/flatbread dishes (ugali_sukuma, chapati) on LPG
       const bestFuelForStack =
         dish.id === "chapati" || dish.id === "ugali_sukuma" ? "LPG" : "EPC";
-      const stackDish = bestFuelForStack === "LPG" ? lpgDish : epcDish;
-      weeklyStack += stackDish * count;
-
-      weeklyEpcMins += dish.epcMinutes * count;
-      weeklyCharcoalMins += dish.charcoalMinutes * count;
 
       return {
         ...dish,
@@ -84,6 +66,22 @@ export default function CookingFuelComparatorPage() {
         bestFuelForStack,
       };
     });
+
+    const weeklyTotals = dishBreakdown.reduce(
+      (totals, dish) => ({
+        lpg: totals.lpg + dish.lpgDish * dish.count,
+        charcoal: totals.charcoal + dish.charcoalDish * dish.count,
+        kerosene: totals.kerosene + dish.keroseneDish * dish.count,
+        epc: totals.epc + dish.epcDish * dish.count,
+        stack:
+          totals.stack +
+          (dish.bestFuelForStack === "LPG" ? dish.lpgDish : dish.epcDish) * dish.count,
+        epcMins: totals.epcMins + dish.epcMinutes * dish.count,
+        charcoalMins: totals.charcoalMins + dish.charcoalMinutes * dish.count,
+      }),
+      { lpg: 0, charcoal: 0, kerosene: 0, epc: 0, stack: 0, epcMins: 0, charcoalMins: 0 }
+    );
+    const { lpg: weeklyLpg, charcoal: weeklyCharcoal, kerosene: weeklyKerosene, epc: weeklyEpc, stack: weeklyStack, epcMins: weeklyEpcMins, charcoalMins: weeklyCharcoalMins } = weeklyTotals;
 
     const monthlyLpg = weeklyLpg * WEEKS_PER_MONTH;
     const monthlyCharcoal = weeklyCharcoal * WEEKS_PER_MONTH;

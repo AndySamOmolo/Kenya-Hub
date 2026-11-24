@@ -37,6 +37,8 @@ export default function AccountPage() {
     const uid = params.get("userId");
     const sec = params.get("secret");
     if (uid && sec) {
+      // Recovery credentials are browser-URL state and must be read after hydration.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setRecoveryParams({ userId: uid, secret: sec });
       setMode("reset");
     }

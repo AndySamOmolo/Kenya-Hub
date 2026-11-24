@@ -39,6 +39,8 @@ export default function EcitizenDocsPlannerPage() {
       if (saved) {
         const parsed = JSON.parse(saved);
         if (parsed && typeof parsed === "object") {
+          // Load persisted checklist state only after client hydration.
+          // eslint-disable-next-line react-hooks/set-state-in-effect
           setCheckedBagItems(parsed);
         }
       }

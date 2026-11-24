@@ -108,6 +108,8 @@ export default function LivestockVaccineCalendarPage() {
   const [baseDateStr, setBaseDateStr] = useState<string>(DEFAULT_BASE_DATE);
 
   useEffect(() => {
+    // Use the browser's current date after hydration to keep SSR deterministic.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setBaseDateStr(new Date().toISOString().slice(0, 10));
   }, []);
 

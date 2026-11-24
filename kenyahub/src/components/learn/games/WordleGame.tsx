@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/set-state-in-effect */
 "use client";
 import DynamicIcon from "@/components/ui/DynamicIcon";
-import { useCallback, useEffect, useMemo, useState , useRef } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Delete, RotateCcw, Share2, Sparkles, Calendar, Shuffle } from "lucide-react";
 import type { WordPair } from "@/data/courses/types";
 import { getPrimaryForm, transliterateToAscii } from "@/lib/learn-engine";
@@ -71,7 +71,9 @@ export function WordleGame({
   const [keyStatuses, setKeyStatuses] = useState<Record<string, LetterStatus>>({});
 
   const progressRef = useRef(progress);
-  progressRef.current = progress;
+  useEffect(() => {
+    progressRef.current = progress;
+  }, [progress]);
 
   const pickNextTarget = useCallback(
     (mode: "daily" | "free") => {

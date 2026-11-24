@@ -30,7 +30,9 @@ export default function MatatuMap({
   const mapInstanceRef = useRef<unknown>(null);
   const markersByOrderRef = useRef<Map<number, { openPopup: () => void }>>(new Map());
   const onSelectStageRef = useRef(onSelectStage);
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(
+    () => typeof IntersectionObserver === "undefined"
+  );
 
   useEffect(() => {
     onSelectStageRef.current = onSelectStage;
@@ -43,7 +45,6 @@ export default function MatatuMap({
     if (typeof window === "undefined" || !container) return;
 
     if (typeof IntersectionObserver === "undefined") {
-      setIsVisible(true);
       return;
     }
 

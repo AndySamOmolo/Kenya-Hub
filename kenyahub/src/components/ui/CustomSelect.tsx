@@ -109,6 +109,7 @@ function CustomSelect({
     const handleClickOutside = (event: MouseEvent) => {
       if (containerRef.current && !containerRef.current.contains(event.target as Node)) {
         setIsOpen(false);
+        setFilterText("");
       }
     };
     if (isOpen) {
@@ -116,8 +117,6 @@ function CustomSelect({
       if (showTypeahead && typeof window !== "undefined" && window.matchMedia?.("(pointer: fine)").matches) {
         focusTimer = setTimeout(() => filterInputRef.current?.focus(), 30);
       }
-    } else {
-      setFilterText("");
     }
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
@@ -150,6 +149,7 @@ function CustomSelect({
     if (e.key === "Escape") {
       e.preventDefault();
       setIsOpen(false);
+      setFilterText("");
     } else if (e.key === "ArrowDown") {
       e.preventDefault();
       setHighlightedIndex((prev) => Math.min(visibleOptions.length - 1, prev + 1));
@@ -213,6 +213,7 @@ function CustomSelect({
         onClick={() => {
           const next = !isOpen;
           setIsOpen(next);
+          if (!next) setFilterText("");
           if (next) {
             const currentIdx = parsedOptions.findIndex((o) => o.value === String(value));
             setHighlightedIndex(Math.max(0, Math.min(currentIdx, MAX_VISIBLE - 1)));

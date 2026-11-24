@@ -57,18 +57,31 @@ export default function RouteDetailView({ townSlug, townInfo, route, otherRoutes
   const stageNamesList = route.stages.map((s) => s.name).join(" → ");
 
   // Compute corridor road distance and stage-by-stage cumulative distance
-  let cumulativeKm = 0;
-  const stageDistances = route.stages.map((stage, idx) => {
-    if (idx === 0) return { ...stage, legKm: 0, cumulativeKm: 0 };
+  const { cumulativeKm, stageDistances } = route.stages.reduce<{
+    cumulativeKm: number;
+    stageDistances: Array<MatatuRouteItem["stages"][number] & { legKm: number; cumulativeKm: number }>;
+  }>((acc, stage, idx) => {
+    if (idx === 0) {
+      return {
+        cumulativeKm: 0,
+        stageDistances: [...acc.stageDistances, { ...stage, legKm: 0, cumulativeKm: 0 }],
+      };
+    }
     const prev = route.stages[idx - 1];
     const legKm = Math.max(0.4, haversineKm(prev.lat, prev.lng, stage.lat, stage.lng));
-    cumulativeKm += legKm;
+    const cumulativeKm = acc.cumulativeKm + legKm;
     return {
-      ...stage,
-      legKm: Math.round(legKm * 10) / 10,
-      cumulativeKm: Math.round(cumulativeKm * 10) / 10,
+      cumulativeKm,
+      stageDistances: [
+        ...acc.stageDistances,
+        {
+          ...stage,
+          legKm: Math.round(legKm * 10) / 10,
+          cumulativeKm: Math.round(cumulativeKm * 10) / 10,
+        },
+      ],
     };
-  });
+  }, { cumulativeKm: 0, stageDistances: [] });
   const totalCorridorKm = Math.max(2.5, Math.round(cumulativeKm * 10) / 10);
   const estOffPeakMins = Math.max(12, Math.round((totalCorridorKm / 26) * 60 + route.stages.length * 1.5));
   const estPeakMins = Math.max(22, Math.round((totalCorridorKm / 14) * 60 + route.stages.length * 2.5));

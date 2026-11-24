@@ -9,7 +9,7 @@ import {
   playWrongSfx,
   playCelebrationSfx,
 } from "@/lib/game-sfx";
-import { type GameProps, shuffle, cleanQuizGloss, isValidQuizPair, pickBalancedDistractors } from "./shared";
+import { type GameProps, cleanQuizGloss, isValidQuizPair, pickBalancedDistractors, seededRandom } from "./shared";
 
 interface ClozeChallenge {
   maskedSentence: string;
@@ -17,6 +17,17 @@ interface ClozeChallenge {
   missingWord: string;
   options: string[];
   skillTitle: string;
+}
+
+function shuffleWithSeed<T>(items: T[], seed: string): T[] {
+  return items
+    .map((item, index) => ({
+      item,
+      index,
+      rank: seededRandom(`${seed}:${index}`)(),
+    }))
+    .sort((a, b) => a.rank - b.rank || a.index - b.index)
+    .map(({ item }) => item);
 }
 
 export function SentenceSafariGame({
@@ -61,7 +72,8 @@ export function SentenceSafariGame({
             .filter((c) => c.clean.length >= 3);
           if (candidates.length === 0) continue;
 
-          const chosen = candidates[Math.floor(Math.random() * candidates.length)];
+          const sentenceSeed = `${languageName}:${sessionSeed}:${targetSent}`;
+          const chosen = candidates[Math.floor(seededRandom(`${sentenceSeed}:word`)() * candidates.length)];
           const maskedTokens = [...tokens];
           maskedTokens[chosen.idx] = "_____";
 
@@ -72,7 +84,7 @@ export function SentenceSafariGame({
             maskedSentence: maskedTokens.join(" "),
             englishSentence: sourceSent,
             missingWord: chosen.clean,
-            options: shuffle([chosen.clean, ...distractors]),
+            options: shuffleWithSeed([chosen.clean, ...distractors], `${sentenceSeed}:options`),
             skillTitle: skill.title,
           });
         }
@@ -92,7 +104,10 @@ export function SentenceSafariGame({
                 maskedSentence: masked,
                 englishSentence: `Meaning of missing word: "${cleanQuizGloss(w.source)}"`,
                 missingWord: primaryTarget,
-                options: shuffle([primaryTarget, ...distractors]),
+                options: shuffleWithSeed(
+                  [primaryTarget, ...distractors],
+                  `${languageName}:${sessionSeed}:${w.example}:options`
+                ),
                 skillTitle: skill.title,
               });
             }
@@ -100,9 +115,8 @@ export function SentenceSafariGame({
         }
       }
     }
-    return shuffle(pool).slice(0, SESSION_ROUNDS);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [courseUnits, allUnits, allWords, sessionSeed]);
+    return shuffleWithSeed(pool, `${languageName}:${sessionSeed}:pool`).slice(0, SESSION_ROUNDS);
+  }, [courseUnits, allUnits, allWords, languageName, sessionSeed]);
 
   const current = challenges[round];
 
