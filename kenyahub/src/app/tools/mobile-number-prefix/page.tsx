@@ -74,6 +74,13 @@ export default function MobileNumberPrefixPage() {
   const [selectedNetworkTab, setSelectedNetworkTab] = useState("All");
   const [copiedCode, setCopiedCode] = useState<string | null>(null);
 
+  const handleSelectPrefix = useCallback((p: string) => {
+    setInputNumber(`${p} 123 456`);
+    if (typeof window !== "undefined") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }, []);
+
   const cleanDigits = useMemo(() => {
     return inputNumber.trim().replace(/[^0-9]/g, "");
   }, [inputNumber]);

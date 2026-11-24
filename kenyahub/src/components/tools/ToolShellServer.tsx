@@ -270,7 +270,7 @@ export function resolveToolGuideAndFaq(
     guideOverride ||
     (toolGuidesData.guides as Record<string, RichGuideEntry>)[tool.slug];
 
-  const mergedFaqMap = new Map<string, FAQItem>();
+  const mergedFaqMap = new globalThis.Map<string, FAQItem>();
   const normalizedKeys = new Set<string>();
   const primaryFaqs = guide?.faq && guide.faq.length > 0 ? guide.faq : faq;
   for (const item of primaryFaqs) {

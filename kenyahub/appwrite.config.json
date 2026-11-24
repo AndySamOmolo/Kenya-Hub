@@ -101,13 +101,17 @@
                     "key": "idx_slug",
                     "type": "unique",
                     "status": "available",
-                    "columns": ["slug"]
+                    "columns": [
+                        "slug"
+                    ]
                 },
                 {
                     "key": "idx_published_at",
                     "type": "key",
                     "status": "available",
-                    "columns": ["publishedAt"]
+                    "columns": [
+                        "publishedAt"
+                    ]
                 }
             ]
         },
@@ -251,24 +255,36 @@
                     "key": "idx_status",
                     "type": "key",
                     "status": "available",
-                    "columns": ["status"]
+                    "columns": [
+                        "status"
+                    ]
                 },
                 {
                     "key": "idx_language",
                     "type": "key",
                     "status": "available",
-                    "columns": ["language"]
+                    "columns": [
+                        "language"
+                    ]
                 }
             ]
         }
     ],
     "buckets": [
         {
-            "$id": "contribution-audio",
-            "name": "Contribution Audio",
+            "$id": "blog-images",
+            "name": "KenyaHub Media & Contribution Audio",
             "enabled": true,
+            "fileSecurity": false,
             "maximumFileSize": 5242880,
             "allowedFileExtensions": [
+                "jpg",
+                "jpeg",
+                "png",
+                "webp",
+                "gif",
+                "avif",
+                "svg",
                 "mp3",
                 "wav",
                 "m4a",
@@ -283,9 +299,8 @@
                 "delete(\"team:admins\")",
                 "delete(\"label:admin\")"
             ],
-            "fileSecurity": false,
-            "antivirus": true,
-            "encryption": true
+            "encryption": true,
+            "antivirus": true
         }
     ]
 }

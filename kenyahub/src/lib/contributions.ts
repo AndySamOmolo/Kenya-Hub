@@ -27,7 +27,7 @@ export interface ContributionItem {
   cloudDocId?: string;
 }
 
-export const CONTRIBUTION_AUDIO_BUCKET_ID = "contribution-audio";
+export const CONTRIBUTION_AUDIO_BUCKET_ID = "blog-images";
 
 const STORAGE_KEY = "kenyahub_contributions_v1";
 const EVENT_NAME = "kenyahub_contributions_updated";
@@ -108,7 +108,7 @@ function parseContextMetadata(rawContext?: string): {
 
 /**
  * Upload an optional pronunciation audio recording or file (capped at 5 MB)
- * to Appwrite Storage (`contribution-audio` bucket).
+ * to Appwrite Storage (`blog-images` bucket).
  */
 export async function uploadContributionAudio(
   file: File | Blob,

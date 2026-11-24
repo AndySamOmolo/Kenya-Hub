@@ -9,7 +9,7 @@ const APPWRITE_ENDPOINT = "https://fra.cloud.appwrite.io/v1";
 const APPWRITE_PROJECT_ID = "6a3290500003e21b7fe1";
 const APPWRITE_DATABASE_ID = "kenyahub-db";
 const CONTRIBUTIONS_COLLECTION_ID = "contributions";
-const CONTRIBUTION_AUDIO_BUCKET_ID = "contribution-audio";
+const CONTRIBUTION_AUDIO_BUCKET_ID = "blog-images";
 
 const SESSION_STORAGE_KEY = "kh-appwrite-session-secret";
 const FALLBACK_COOKIE_KEY = "kh-appwrite-fallback-cookies";

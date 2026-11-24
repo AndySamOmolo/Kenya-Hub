@@ -3,7 +3,7 @@
 Sync Approved Appwrite Language Contributions -> Cloudflare R2 & Dictionaries.
 
 Connects to Appwrite REST API, fetches all documents in `contributions` where
-`status == "approved"`, transcodes any attached `contribution-audio` files to
+`status == "approved"`, transcodes any attached `blog-images` files to
 24 kbps mono Opus, uploads them to Cloudflare R2 (boto3 S3 with retry/backoff
 and Cloudflare v4 REST fallback), updates `kenyahub/public/r2-audio-index.json`,
 merges entries into existing dictionaries (`kenyahub/src/data/dictionaries/<lang>.json`)
@@ -49,7 +49,7 @@ APPWRITE_ENDPOINT = os.environ.get("APPWRITE_ENDPOINT", "https://fra.cloud.appwr
 APPWRITE_PROJECT_ID = os.environ.get("APPWRITE_PROJECT_ID", "6a3290500003e21b7fe1").strip()
 APPWRITE_DATABASE_ID = os.environ.get("APPWRITE_DATABASE_ID", "kenyahub-db").strip()
 APPWRITE_COLLECTION_ID = os.environ.get("APPWRITE_CONTRIBUTIONS_COLLECTION_ID", "contributions").strip()
-APPWRITE_AUDIO_BUCKET_ID = os.environ.get("APPWRITE_AUDIO_BUCKET_ID", "contribution-audio").strip()
+APPWRITE_AUDIO_BUCKET_ID = os.environ.get("APPWRITE_AUDIO_BUCKET_ID", "blog-images").strip()
 APPWRITE_API_KEY = os.environ.get("APPWRITE_API_KEY", "").strip()
 
 # Cloudflare R2 configuration

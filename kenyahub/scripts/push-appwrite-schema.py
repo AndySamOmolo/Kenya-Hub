@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-One-time idempotent Appwrite schema setup for KenyaHub:
-- Ensures `kenyahub-db` -> `contributions` collection has all core + audio/custom-language columns and indexes.
-- Ensures `contribution-audio` storage bucket exists (5 MB max, audio formats).
-Safe to re-run: HTTP 409 (already exists) is treated as OK.
+One-time idempotent Appwrite schema setup for KenyaHub (Free-Plan Friendly):
+- Verifies existing `kenyahub-db` database without hitting the 1-database plan limit.
+- Ensures `contributions` collection has all 17 columns & indexes.
+- Updates existing `blog-images` storage bucket (Free plan = 1 bucket) to allow both images & contribution audio.
 """
 
 from __future__ import annotations
@@ -16,7 +16,7 @@ ENDPOINT = "https://fra.cloud.appwrite.io/v1"
 PROJECT_ID = "6a3290500003e21b7fe1"
 DATABASE_ID = "kenyahub-db"
 COLLECTION_ID = "contributions"
-BUCKET_ID = "contribution-audio"
+BUCKET_ID = "blog-images"
 
 API_KEY = os.environ.get("APPWRITE_API_KEY", "").strip()
 
@@ -48,14 +48,18 @@ def main() -> int:
         return 1
 
     ok = True
-    print("=== Pushing Appwrite Contributions Schema & Audio Bucket ===")
+    print("=== Pushing Appwrite Contributions Schema & Updating Media/Audio Bucket ===")
 
-    # 1. Database
-    ok &= post_idempotent(
-        f"Database {DATABASE_ID}",
-        "/databases",
-        {"databaseId": DATABASE_ID, "name": "KenyaHub Database", "enabled": True},
-    )
+    # 1. Check Database first (avoids 403 max-databases limit when it already exists)
+    db_check = requests.get(f"{ENDPOINT}/databases/{DATABASE_ID}", headers=headers(), timeout=30)
+    if db_check.status_code == 200:
+        print(f"  [exists]  Database {DATABASE_ID}")
+    else:
+        ok &= post_idempotent(
+            f"Database {DATABASE_ID}",
+            "/databases",
+            {"databaseId": DATABASE_ID, "name": "KenyaHub Database", "enabled": True},
+        )
 
     # 2. Collection
     ok &= post_idempotent(
@@ -78,7 +82,7 @@ def main() -> int:
         },
     )
 
-    # 3. String attributes (core 11 + 5 new optional string columns)
+    # 3. String attributes
     string_attrs = [
         ("language", 64, True),
         ("type", 32, True),
@@ -98,14 +102,13 @@ def main() -> int:
         ("reviewNotes", 500, False),
     ]
     for key, size, required in string_attrs:
-        payload = {"key": key, "size": size, "required": required}
         ok &= post_idempotent(
             f"Attribute {COLLECTION_ID}.{key}",
             f"/databases/{DATABASE_ID}/collections/{COLLECTION_ID}/attributes/string",
-            payload,
+            {"key": key, "size": size, "required": required},
         )
 
-    # 4. Boolean attribute: syncedToR2
+    # 4. Boolean attribute
     ok &= post_idempotent(
         f"Attribute {COLLECTION_ID}.syncedToR2",
         f"/databases/{DATABASE_ID}/collections/{COLLECTION_ID}/attributes/boolean",
@@ -120,33 +123,50 @@ def main() -> int:
             {"key": idx_key, "type": "key", "attributes": [attr]},
         )
 
-    # 6. Storage bucket: contribution-audio
-    ok &= post_idempotent(
-        f"Storage bucket {BUCKET_ID}",
-        "/storage/buckets",
-        {
-            "bucketId": BUCKET_ID,
-            "name": "Contribution Audio",
-            "permissions": [
-                'create("any")',
-                'read("any")',
-                'delete("team:admins")',
-                'delete("label:admin")',
-            ],
-            "fileSecurity": False,
-            "enabled": True,
-            "maximumFileSize": 5242880,
-            "allowedFileExtensions": ["mp3", "wav", "m4a", "ogg", "opus", "webm", "aac"],
-            "encryption": True,
-            "antivirus": True,
-        },
-    )
+    # 6. Update existing free-tier bucket `blog-images` to allow both images & contribution audio
+    bucket_payload = {
+        "name": "KenyaHub Media & Contribution Audio",
+        "permissions": [
+            'create("any")',
+            'read("any")',
+            'delete("team:admins")',
+            'delete("label:admin")',
+        ],
+        "fileSecurity": False,
+        "enabled": True,
+        "maximumFileSize": 5242880,
+        "allowedFileExtensions": [
+            "jpg", "jpeg", "png", "webp", "gif", "avif", "svg",
+            "mp3", "wav", "m4a", "ogg", "opus", "webm", "aac",
+        ],
+        "encryption": True,
+        "antivirus": True,
+    }
+    b_check = requests.get(f"{ENDPOINT}/storage/buckets/{BUCKET_ID}", headers=headers(), timeout=30)
+    if b_check.status_code == 200:
+        b_put = requests.put(
+            f"{ENDPOINT}/storage/buckets/{BUCKET_ID}",
+            headers=headers(),
+            json=bucket_payload,
+            timeout=30,
+        )
+        if b_put.status_code in (200, 201):
+            print(f"  [updated] Storage bucket {BUCKET_ID} (now accepts images + contribution audio)")
+        else:
+            print(f"  [error]   Update bucket {BUCKET_ID}: HTTP {b_put.status_code} — {b_put.text[:300]}")
+            ok = False
+    else:
+        ok &= post_idempotent(
+            f"Storage bucket {BUCKET_ID}",
+            "/storage/buckets",
+            {"bucketId": BUCKET_ID, **bucket_payload},
+        )
 
     if not ok:
-        print("\nCompleted with errors — verify your APPWRITE_API_KEY has databases.write, collections.write, attributes.write, and buckets.write scopes.")
+        print("\nCompleted with errors — check APPWRITE_API_KEY scopes.")
         return 1
 
-    print("\nAppwrite schema & contribution-audio bucket are ready!")
+    print("\nAppwrite contributions schema & blog-images audio/media bucket are 100% ready!")
     return 0
 
 

@@ -11,6 +11,7 @@ const REVERSED_PREFIXES = [...plateData.prefixes].reverse();
 
 export default function NumberPlateDecoderPage() {
   const [input, setInput] = useState("KDU 450A");
+  const [showAllPrefixes, setShowAllPrefixes] = useState(false);
 
   const result = useMemo(() => {
     const trimmed = input.trim().toUpperCase().replace(/\s+/g, " ");

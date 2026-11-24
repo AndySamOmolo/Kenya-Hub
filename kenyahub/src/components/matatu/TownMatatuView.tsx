@@ -26,6 +26,7 @@ export interface MatatuRouteItem {
   fareMax: number;
   operatingHours: string;
   stages: MatatuStage[];
+  verified?: boolean;
 }
 
 export interface MatatuTownInfo {

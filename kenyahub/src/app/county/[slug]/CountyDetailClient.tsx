@@ -163,7 +163,7 @@ export default function CountyDetailClient({
       "@type": "Country",
       name: "Kenya",
     },
-    containsPlace: county.constituencies.map((cName) => ({
+    containsPlace: county.constituencies.map((cName: string) => ({
       "@type": "AdministrativeArea",
       name: `${cName} Constituency`,
     })),
@@ -484,7 +484,7 @@ export default function CountyDetailClient({
           </div>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5">
-          {sortedConstituencies.map((c) => (
+          {sortedConstituencies.map((c: string) => (
             <div
               key={c.num}
               className="flex items-center gap-3 px-4 py-3 bg-bg-card border border-border rounded-xl text-sm text-text-primary font-medium"
