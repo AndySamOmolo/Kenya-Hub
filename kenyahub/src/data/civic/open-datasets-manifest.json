@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T17:11:41.299971+00:00",
+  "updatedAt": "2026-11-24T13:26:38.951394+00:00",
   "excludedWatchlistCount": 83,
   "excludedCldfConstituents": [
     "grollemundbantu",
@@ -135,12 +135,6 @@
       "name": "Wikimedia Incubator (Wp/luo, Wp/niq)",
       "license": "CC-BY-SA-4.0",
       "url": "https://incubator.wikimedia.org/wiki/Category:Wp/luo"
-    },
-    {
-      "id": "freedict-sw",
-      "name": "FreeDict Swahili TEI",
-      "license": "GPL/CC-BY-SA",
-      "url": "https://freedict.org/downloads/"
     }
   ],
   "civicAgriSources": [
@@ -203,12 +197,6 @@
       "name": "GeoNames KE.zip & alternateNamesV2.zip",
       "license": "CC-BY-4.0",
       "url": "https://download.geonames.org/export/dump/KE.zip"
-    },
-    {
-      "id": "osm-geofabrik-kenya",
-      "name": "OpenStreetMap (Geofabrik Kenya Extract)",
-      "license": "ODbL-1.0",
-      "url": "https://download.geofabrik.de/africa/kenya.html"
     },
     {
       "id": "gbif-kenya-filtered",
