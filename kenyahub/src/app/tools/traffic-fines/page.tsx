@@ -3,7 +3,7 @@ import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 
 
-import { useState, useMemo, useEffect, useRef } from "react";
+import { useState, useMemo, useEffect, useRef, useDeferredValue } from "react";
 import { scrollToTopIfScrolled } from "@/lib/scroll";
 import { TOOLS } from "@/lib/tools-registry";
 import finesData from "@/data/traffic-fines.json";

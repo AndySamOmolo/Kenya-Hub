@@ -218,7 +218,7 @@ jobs:
           INCLUDE_KSL_METADATA: ${{ inputs.include_ksl_metadata || 'true' }}
           MAX_KSL_MASENO_VIDEOS: "0"
           MAX_KSL_HUMAN_VIDEOS: "0"
-          KSL_TIME_BUDGET_SEC: ${{ inputs.include_audio_ingestion == 'false' && '14400' || '5400' }}
+          KSL_TIME_BUDGET_SEC: "14400"
           PER_DATASET_TIMEOUT_SEC: "900"
           GLOBAL_TIME_BUDGET_SEC: "10800"
           INGESTION_SCRIPTS_HASH: ${{ steps.lock_check.outputs.scripts_hash }}
