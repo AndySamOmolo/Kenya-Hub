@@ -370,7 +370,7 @@ const AudioClipList = React.memo(function AudioClipList({
     </View>
   );
 });
-import { KSL_ALPHABET, KSL_CATEGORY_LABELS, KSL_GRAMMAR_NOTES, KSL_LESSONS, KSL_NUMBERS, KSL_STARTER_SIGNS, type KslSignCategory } from '../shared/data/ksl-starter';
+import { KSL_ALPHABET, KSL_GRAMMAR_NOTES, KSL_LESSONS, KSL_NUMBERS } from '../shared/data/ksl-starter';
 import { luoProverbs } from '../shared/data/courses/luo/proverbs';
 import { luoRiddles } from '../shared/data/courses/luo/riddles';
 import { luoTongueTwisters } from '../shared/data/courses/luo/tongue-twisters';
@@ -626,11 +626,9 @@ export default function LanguageCourseTool({
     return id;
   }, []);
   useEffect(() => clearFeedbackTimers, [clearFeedbackTimers]);
-  const [kslStudioMode, setKslStudioMode] = useState<'browse' | 'lessons' | 'guided' | 'quiz' | 'spell'>('browse');
+  const [kslStudioMode, setKslStudioMode] = useState<'browse' | 'lessons' | 'quiz' | 'spell'>('browse');
   const [kslActiveUnitId, setKslActiveUnitId] = useState<string>(KSL_LESSONS[0].id);
   const [kslCompletedUnits, setKslCompletedUnits] = useState<string[]>([]);
-  const [kslGuidedCategory, setKslGuidedCategory] = useState<'all' | KslSignCategory>('all');
-  const [kslSelectedGuidedId, setKslSelectedGuidedId] = useState<string>(KSL_STARTER_SIGNS[0].id);
   const [kslQuizIdx, setKslQuizIdx] = useState<number>(0);
   const [kslQuizPicked, setKslQuizPicked] = useState<string | null>(null);
   const [kslQuizScore, setKslQuizScore] = useState<{ right: number; total: number }>({ right: 0, total: 0 });
@@ -3291,7 +3289,6 @@ export default function LanguageCourseTool({
                   [
                     { id: 'browse', label: 'Videos' },
                     { id: 'lessons', label: `Units (${kslCompletedUnits.length}/${KSL_LESSONS.length})` },
-                    { id: 'guided', label: `Guided (${KSL_STARTER_SIGNS.length})` },
                     { id: 'quiz', label: 'Quiz' },
                     { id: 'spell', label: 'A–Z & 123' },
                   ] as const
@@ -3409,99 +3406,6 @@ export default function LanguageCourseTool({
                         {isDone ? '✓ Unit Completed' : 'Mark Unit Complete'}
                       </Text>
                     </Pressable>
-                  </View>
-                );
-              })()}
-
-              {kslStudioMode === 'guided' && (() => {
-                const filtered =
-                  kslGuidedCategory === 'all'
-                    ? KSL_STARTER_SIGNS
-                    : KSL_STARTER_SIGNS.filter((sg) => sg.category === kslGuidedCategory);
-                const activeSign =
-                  filtered.find((sg) => sg.id === kslSelectedGuidedId) || filtered[0] || KSL_STARTER_SIGNS[0];
-                return (
-                  <View style={{ gap: 10, backgroundColor: colors.surface, borderRadius: 12, borderWidth: 1, borderColor: colors.outlineVariant, padding: 12 }}>
-                    <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 5 }}>
-                      <Pressable
-                        onPress={() => setKslGuidedCategory('all')}
-                        style={{
-                          paddingHorizontal: 8,
-                          paddingVertical: 5,
-                          borderRadius: 7,
-                          borderWidth: 1,
-                          borderColor: kslGuidedCategory === 'all' ? colors.gold : colors.outlineVariant,
-                          backgroundColor: kslGuidedCategory === 'all' ? `${colors.gold}22` : colors.surfaceContainer,
-                        }}
-                      >
-                        <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 10.5, color: kslGuidedCategory === 'all' ? colors.gold : colors.textSecondary }}>
-                          All ({KSL_STARTER_SIGNS.length})
-                        </Text>
-                      </Pressable>
-                      {(Object.keys(KSL_CATEGORY_LABELS) as KslSignCategory[]).map((cat) => (
-                        <Pressable
-                          key={cat}
-                          onPress={() => setKslGuidedCategory(cat)}
-                          style={{
-                            paddingHorizontal: 8,
-                            paddingVertical: 5,
-                            borderRadius: 7,
-                            borderWidth: 1,
-                            borderColor: kslGuidedCategory === cat ? colors.gold : colors.outlineVariant,
-                            backgroundColor: kslGuidedCategory === cat ? `${colors.gold}22` : colors.surfaceContainer,
-                          }}
-                        >
-                          <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 10.5, color: kslGuidedCategory === cat ? colors.gold : colors.textSecondary }}>
-                            {KSL_CATEGORY_LABELS[cat]}
-                          </Text>
-                        </Pressable>
-                      ))}
-                    </View>
-
-                    {activeSign && (
-                      <View style={{ backgroundColor: colors.surfaceContainer, borderRadius: 10, borderWidth: 1, borderColor: `${colors.gold}55`, padding: 12, gap: 5 }}>
-                        <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', gap: 8 }}>
-                          <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 15, color: colors.text }}>{activeSign.gloss}</Text>
-                          <Text style={{ fontFamily: 'Inter_600SemiBold', fontSize: 11.5, color: colors.gold }}>{activeSign.swahiliEquivalent}</Text>
-                        </View>
-                        <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 12, color: colors.textSecondary, lineHeight: 17 }}>
-                          <Text style={{ fontFamily: 'Inter_700Bold', color: colors.gold }}>Handshape: </Text>{activeSign.handshape}
-                        </Text>
-                        <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 12, color: colors.textSecondary, lineHeight: 17 }}>
-                          <Text style={{ fontFamily: 'Inter_700Bold', color: colors.gold }}>Location: </Text>{activeSign.location}
-                        </Text>
-                        <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 12, color: colors.textSecondary, lineHeight: 17 }}>
-                          <Text style={{ fontFamily: 'Inter_700Bold', color: colors.gold }}>Movement: </Text>{activeSign.movement}
-                        </Text>
-                        <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 12, color: colors.kenyaGreen, lineHeight: 17 }}>
-                          <Text style={{ fontFamily: 'Inter_700Bold' }}>Facial / Non-Manual: </Text>{activeSign.nonManual}
-                        </Text>
-                      </View>
-                    )}
-
-                    <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 6 }}>
-                      {filtered.map((sg) => {
-                        const sel = sg.id === activeSign.id;
-                        return (
-                          <Pressable
-                            key={sg.id}
-                            onPress={() => setKslSelectedGuidedId(sg.id)}
-                            style={{
-                              paddingHorizontal: 10,
-                              paddingVertical: 7,
-                              borderRadius: 9,
-                              borderWidth: 1,
-                              borderColor: sel ? colors.gold : colors.outlineVariant,
-                              backgroundColor: sel ? `${colors.gold}20` : colors.surfaceContainer,
-                            }}
-                          >
-                            <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 11.5, color: sel ? colors.gold : colors.text }}>
-                              {sg.gloss}
-                            </Text>
-                          </Pressable>
-                        );
-                      })}
-                    </View>
                   </View>
                 );
               })()}

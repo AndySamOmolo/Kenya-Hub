@@ -324,8 +324,10 @@ def deduplicate_videos(videos: list[dict]) -> list[dict]:
             continue
         if vid_id in by_id:
             prev = by_id[vid_id]
-            if not prev.get("fullDurationV2") and v.get("fullDurationV2"):
+            if (not prev.get("fullDurationPathV3") and v.get("fullDurationPathV3")) or (not prev.get("fullDurationV2") and v.get("fullDurationV2")):
                 prev["fullDurationV2"] = True
+                if v.get("fullDurationPathV3"):
+                    prev["fullDurationPathV3"] = True
                 prev["videoUrl"] = url
             if not prev.get("transcript") and v.get("transcript"):
                 prev["transcript"] = v["transcript"]
@@ -830,10 +832,13 @@ def ingest_open_sign_bibles_xki(s3_client, existing: dict, videos_out: list[dict
         for v in videos_out
     )
     has_unupgraded_duration = any(
-        v.get("category") == "human-sign-bible" and not v.get("fullDurationV2")
+        v.get("category") == "human-sign-bible" and (
+            not v.get("fullDurationPathV3")
+            or "/ksl/human-full/" not in str(v.get("videoUrl") or "")
+        )
         for v in videos_out
     )
-    if osb_state.get("completed") and osb_state.get("fullDurationV2") and not has_incomplete_context and not has_unupgraded_duration and not FORCE_REINGEST:
+    if osb_state.get("completed") and osb_state.get("fullDurationPathV3") and not has_incomplete_context and not has_unupgraded_duration and not FORCE_REINGEST:
         print(
             f"[skip-done] Open Sign Bibles (xki) already fully ingested "
             f"({osb_state.get('uploadedVideos', 0)} videos across {osb_state.get('totalScanned', 0)} rows)."
@@ -863,6 +868,7 @@ def ingest_open_sign_bibles_xki(s3_client, existing: dict, videos_out: list[dict
             ingestion_state["openSignBibles"] = {
                 "completed": False,
                 "fullDurationV2": False,
+                "fullDurationPathV3": False,
                 "uploadedVideos": sum(1 for v in videos_out if v.get("category") == "human-sign-bible"),
                 "totalScanned": total_scanned,
                 "updatedAt": datetime.now(timezone.utc).isoformat(),
@@ -877,7 +883,7 @@ def ingest_open_sign_bibles_xki(s3_client, existing: dict, videos_out: list[dict
             up_url = upload_bytes_to_r2(s3_client, r2_key, full_bytes, "video/mp4")
             if not up_url:
                 return None
-            return (mode, existing_ref, f"{up_url}?v=2", new_meta)
+            return (mode, existing_ref, up_url, new_meta)
 
         def _drain_osb_futures(wait_all: bool = False):
             nonlocal added, enriched
@@ -900,6 +906,7 @@ def ingest_open_sign_bibles_xki(s3_client, existing: dict, videos_out: list[dict
                 if mode == "upgrade" and existing_ref is not None:
                     existing_ref["videoUrl"] = v2_url
                     existing_ref["fullDurationV2"] = True
+                    existing_ref["fullDurationPathV3"] = True
                     enriched += 1
                     if enriched % 25 == 0:
                         _save_osb_checkpoint()
@@ -962,13 +969,13 @@ def ingest_open_sign_bibles_xki(s3_client, existing: dict, videos_out: list[dict
                   if transcript_text and existing_item.get("transcript") != transcript_text:
                       existing_item["transcript"] = transcript_text
                       updated = True
-                  # Re-upload full-duration MP4 (max_seconds=0) if this clip was previously capped at 15s
-                  if not existing_item.get("fullDurationV2") or FORCE_REINGEST:
+                  # Re-upload full-duration MP4 (max_seconds=0) to fresh ksl/human-full/ path to bypass 1-yr immutable CDN cache
+                  if not existing_item.get("fullDurationPathV3") or "/ksl/human-full/" not in str(existing_item.get("videoUrl") or "") or FORCE_REINGEST:
                       mp4_raw_ex = row.get("mp4")
                       if isinstance(mp4_raw_ex, dict):
                           mp4_raw_ex = mp4_raw_ex.get("bytes")
                       if isinstance(mp4_raw_ex, (bytes, bytearray)) and len(mp4_raw_ex) >= 1024:
-                          ex_key = f"ksl/human/{existing_item.get('id', vid_id)}.mp4"
+                          ex_key = f"ksl/human-full/{existing_item.get('id', vid_id)}.mp4"
                           osb_in_flight.add(
                               osb_pool.submit(_transcode_and_upload_osb, "upgrade", existing_item, ex_key, bytes(mp4_raw_ex), None)
                           )
@@ -988,12 +995,13 @@ def ingest_open_sign_bibles_xki(s3_client, existing: dict, videos_out: list[dict
                   continue
 
               # Always transcode full-duration (max_seconds=0) and overwrite any stale 15s object at ksl/human/{vid_id}.mp4
-              r2_key = f"ksl/human/{vid_id}.mp4"
+              r2_key = f"ksl/human-full/{vid_id}.mp4"
               new_item_meta = {
                   "id": vid_id,
                   "title": title_core,
                   "gloss": title_core,
                   "fullDurationV2": True,
+                  "fullDurationPathV3": True,
                   "category": "human-sign-bible",
                   "register": "religious_liturgical",
                   "reference": ref,
@@ -1013,6 +1021,7 @@ def ingest_open_sign_bibles_xki(s3_client, existing: dict, videos_out: list[dict
         ingestion_state["openSignBibles"] = {
             "completed": not hit_budget_or_cap,
             "fullDurationV2": not hit_budget_or_cap,
+            "fullDurationPathV3": not hit_budget_or_cap,
             "uploadedVideos": total_human,
             "totalScanned": total_scanned,
             "updatedAt": datetime.now(timezone.utc).isoformat(),
