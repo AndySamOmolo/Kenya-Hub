@@ -75,7 +75,6 @@ WIKIMEDIA_SOURCES: list[dict[str, Any]] = [
     {"id": "native-wiktionaries", "name": "Native Wiktionaries (sw, so, om)", "license": "CC-BY-SA-4.0", "url": "https://meta.wikimedia.org/wiki/Wiktionary"},
     {"id": "swahili-wikisource", "name": "Swahili Wikisource", "license": "CC-BY-SA-4.0", "url": "https://wikisource.org/wiki/Category:Kiswahili"},
     {"id": "wikimedia-incubator-ke", "name": "Wikimedia Incubator (Wp/luo, Wp/niq)", "license": "CC-BY-SA-4.0", "url": "https://incubator.wikimedia.org/wiki/Category:Wp/luo"},
-    {"id": "freedict-sw", "name": "FreeDict Swahili TEI", "license": "GPL/CC-BY-SA", "url": "https://freedict.org/downloads/"},
 ]
 
 CIVIC_AGRI_SOURCES: list[dict[str, Any]] = [
@@ -89,7 +88,6 @@ CIVIC_AGRI_SOURCES: list[dict[str, Any]] = [
     {"id": "hdx-kenya-worldpop-v2", "name": "HDX Kenya WorldPop v2.0", "license": "CC-BY-4.0", "url": "https://data.humdata.org/dataset/gridded-disaggregated-population-estimates-for-kenya-version-2-0"},
     {"id": "who-bulletin-ccby3-igo", "name": "Bulletin of the World Health Organization (Bulletin ONLY)", "license": "CC-BY-3.0-IGO", "url": "https://www.who.int/publications/journals/bulletin/rights-and-permissions"},
     {"id": "geonames-ke", "name": "GeoNames KE.zip & alternateNamesV2.zip", "license": "CC-BY-4.0", "url": "https://download.geonames.org/export/dump/KE.zip"},
-    {"id": "osm-geofabrik-kenya", "name": "OpenStreetMap (Geofabrik Kenya Extract)", "license": "ODbL-1.0", "url": "https://download.geofabrik.de/africa/kenya.html"},
     {"id": "gbif-kenya-filtered", "name": "GBIF Kenya Occurrences (CC0_1_0 / CC_BY_4_0 only)", "license": "CC0-1.0 / CC-BY-4.0", "url": "https://api.gbif.org/v1/occurrence/search?country=KE&license=CC0_1_0&license=CC_BY_4_0&limit=300"},
     {"id": "vascular-flora-kenya-mdpi", "name": "Vascular Flora of Kenya & FTEA Checklists (MDPI Plants 12/6/1336)", "license": "CC-BY-4.0", "url": "https://www.mdpi.com/2223-7747/12/6/1336"},
     {"id": "global-useful-native-trees-globunt", "name": "GlobalUsefulNativeTrees (GlobUNT, CIFOR-ICRAF, PMC10400654)", "license": "CC-BY-4.0", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10400654/"},

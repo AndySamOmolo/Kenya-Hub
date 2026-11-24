@@ -1,7 +1,9 @@
 import React, { useCallback, useEffect, useState } from "react";
 import {
   ActivityIndicator,
+  Alert,
   KeyboardAvoidingView,
+  Linking,
   Platform,
   Pressable,
   ScrollView,
@@ -26,6 +28,7 @@ import {
   sendPasswordRecovery,
   signInWithEmail,
   signOutMobile,
+  deleteMobileAccountDataAndSignOut,
   signUpWithEmail,
   syncMobileUserData,
   type MobileAuthUser,
@@ -79,6 +82,8 @@ export default function AccountScreen() {
       if (current) {
         syncMobileUserData().then(applySyncSummary).catch(() => {});
       }
+    } catch {
+      setErrorMsg("Unable to load account details. Please try again.");
     } finally {
       setLoading(false);
     }
@@ -150,13 +155,15 @@ export default function AccountScreen() {
       setUser(null);
       setSyncSummary(null);
       triggerHaptic(8);
+    } catch {
+      setErrorMsg("Sign-out failed. Please try again.");
     } finally {
       setSubmitting(false);
     }
   }, []);
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: theme.bgPrimary }} edges={["top", "left", "right"]}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: theme.bgPrimary }} edges={["top", "bottom", "left", "right"]}>
       <Stack.Screen options={{ headerShown: false }} />
       <KenyaStripe />
       <AndroidTopAppBar
@@ -371,6 +378,54 @@ export default function AccountScreen() {
                 <ThemedIcon name="log-out-outline" size={18} color="#ef4444" />
                 <Text style={{ color: "#ef4444", fontWeight: "800", fontSize: 14 }}>
                   {submitting ? t("account.signingOut") : t("account.signOut")}
+                </Text>
+              </Pressable>
+
+              {/* Delete Account & Cloud Data (Google Play Account Deletion Compliance) */}
+              <Pressable
+                onPress={() => {
+                  Alert.alert(
+                    "Delete Account & Cloud Data",
+                    "This clears your synced KenyaHub cloud preferences, signs you out on this device, and opens the permanent account deletion page so your Appwrite account record can be erased.",
+                    [
+                      { text: "Cancel", style: "cancel" },
+                      {
+                        text: "Delete & Sign Out",
+                        style: "destructive",
+                        onPress: async () => {
+                          setSubmitting(true);
+                          try {
+                            await deleteMobileAccountDataAndSignOut();
+                            setUser(null);
+                            setSyncSummary(null);
+                            triggerHaptic(8);
+                            Linking.openURL("https://kenyahub.me/privacy/#account-deletion").catch(() => {});
+                          } catch {
+                            setErrorMsg("Unable to clear cloud data. Please try again.");
+                          } finally {
+                            setSubmitting(false);
+                          }
+                        },
+                      },
+                    ]
+                  );
+                }}
+                disabled={submitting}
+                style={({ pressed }) => ({
+                  borderColor: theme.border,
+                  borderWidth: 1,
+                  borderRadius: 14,
+                  paddingVertical: 12,
+                  alignItems: "center",
+                  flexDirection: "row",
+                  justifyContent: "center",
+                  gap: 8,
+                  opacity: submitting ? 0.5 : pressed ? 0.8 : 1,
+                })}
+              >
+                <ThemedIcon name="trash-outline" size={16} color={theme.textMuted} />
+                <Text style={{ color: theme.textMuted, fontWeight: "700", fontSize: 13 }}>
+                  Delete Account & Cloud Data
                 </Text>
               </Pressable>
             </View>

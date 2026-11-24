@@ -89,7 +89,7 @@ async function mergeAndSyncWebPrefs(): Promise<CloudSyncSummary | null> {
       : [];
     const mergedPinned = Array.from(new Set([...remotePinnedList, ...localPinnedList])).slice(0, 50);
     localStorage.setItem("kh-pinned-tools", JSON.stringify(mergedPinned));
-    window.dispatchEvent(new Event("kh-pinned-tools-updated"));
+    if (JSON.stringify(mergedPinned) !== JSON.stringify(localPinnedList)) { window.dispatchEvent(new CustomEvent("kh-pinned-tools-updated", { detail: { source: "cloud-sync" } })); }
 
     // 2. Merge last visited language
     const localLang = localStorage.getItem("kenyahub_last_visited_lang") || "";
@@ -231,7 +231,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     if (!user || typeof window === "undefined") return;
     let timer: ReturnType<typeof setTimeout> | null = null;
-    const onPinnedChanged = () => {
+    const onPinnedChanged = (ev?: Event) => {
+      if ((ev as CustomEvent)?.detail?.source === "cloud-sync") return;
       if (timer) clearTimeout(timer);
       timer = setTimeout(() => {
         void mergeAndSyncWebPrefs().then((s) => {

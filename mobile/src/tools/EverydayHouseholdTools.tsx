@@ -1457,8 +1457,8 @@ export function FuneralHarambeePlannerTool() {
                     ...p,
                     id: typeof p.id === "string" && p.id ? p.id : `pledge-${idx}`,
                     name: typeof p.name === "string" ? p.name : "Contributor",
-                    pledged: Number(p?.pledged) || 0,
-                    paid: Number(p?.paid) || 0,
+                    amount: Math.max(0, Number(p?.amount ?? p?.pledged) || 0),
+                    paid: Boolean(p?.paid),
                   }))
               );
             }

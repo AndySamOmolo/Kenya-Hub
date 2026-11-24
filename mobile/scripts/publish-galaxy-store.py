@@ -179,7 +179,7 @@ def register_binary_and_update(
     binary_list.append(
         {
             "filekey": file_key,
-            "gms": "Y",
+            "gms": "N",
         }
     )
 

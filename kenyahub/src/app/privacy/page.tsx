@@ -94,7 +94,7 @@ export default function PrivacyPage() {
             </p>
           </div>
           <p className="mt-3">
-            KenyaHub does <strong className="text-text-primary">not</strong> require user registration, accounts, or personal contact details to access any of our tools, calculators, guides, or public datasets.
+            KenyaHub does <strong className="text-text-primary">not</strong> require user registration or accounts to use any calculator, guide, or language course. If you optionally create a free KenyaHub Cloud account (powered by Appwrite Cloud, Frankfurt) to sync pinned tools, themes, and course progress across devices, we store only your email address, display name, and synced app preferences.
           </p>
         </section>
 
@@ -209,6 +209,19 @@ export default function PrivacyPage() {
             </li>
           </ul>
         </section>
+        <section id="account-deletion">
+          <h2 className="text-base font-semibold text-text-primary mb-3 font-[family-name:var(--font-outfit)]">
+            4a. Optional Account Deletion &amp; Cloud Data Erasure
+          </h2>
+          <p>
+            If you created an optional KenyaHub Cloud account on web or Android, you can clear your synced cloud preferences and request permanent erasure of your account record at any time:
+          </p>
+          <ul className="mt-3 space-y-2 ml-4 list-disc text-text-muted">
+            <li><strong className="text-text-secondary">In the Android App:</strong> Open <strong className="text-text-secondary">Account → Delete Account &amp; Cloud Data</strong> to wipe synced preferences and sign out immediately.</li>
+            <li><strong className="text-text-secondary">On the Web:</strong> Submit your account email via our <a href="/contact/" className="text-gold underline">Contact page</a> with subject &ldquo;Account Deletion Request&rdquo; — all Appwrite user records, preferences, and sessions are permanently deleted within 7 days.</li>
+          </ul>
+        </section>
+
         <section>
           <h2 className="text-base font-semibold text-text-primary mb-3 font-[family-name:var(--font-outfit)]">
             4b. KenyaHub Android App, Google AdMob &amp; Device Identifiers
@@ -218,7 +231,7 @@ export default function PrivacyPage() {
           </p>
           <ul className="mt-3 space-y-2.5 ml-4 list-disc text-text-muted">
             <li>
-              <strong className="text-text-secondary">Google AdMob SDK &amp; Advertising ID (AAID):</strong> The Android app integrates the Google Mobile Ads (AdMob) SDK to serve banner and interstitial ads. Depending on your region and consent choices, AdMob may access your device&apos;s Android Advertising ID (AAID), approximate location, and ad-interaction diagnostics for ad delivery, frequency capping, and fraud prevention.
+              <strong className="text-text-secondary">Google AdMob SDK &amp; Advertising ID (AAID):</strong> The current offline Android release build does not bundle the Google Mobile Ads (AdMob) SDK and explicitly removes the <code className="font-mono text-gold">AD_ID</code> permission. If mobile ads are enabled in a future update, Google UMP consent will be requested before any ad identifier is accessed.
             </li>
             <li>
               <strong className="text-text-secondary">Google UMP SDK Consent:</strong> Users in the EEA, UK, Switzerland, and applicable US states are presented with Google&apos;s certified User Messaging Platform (UMP) SDK consent dialog before personalized mobile ads are requested, and can update or revoke choices anytime via the in-app Manage Ad Privacy setting.

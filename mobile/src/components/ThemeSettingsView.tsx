@@ -113,6 +113,26 @@ interface NormalizedDiffChip {
   label: string;
 }
 
+const SW_OPTION_LABELS: Record<string, string> = {
+  system: "Otomatiki",
+  light: "Mwanga",
+  dark: "Giza",
+  "mini-app": "Programu",
+  card: "Kadi",
+  hide: "Ficha",
+  muted: "Laini",
+  balanced: "Wastani",
+  vivid: "Mkali",
+};
+
+function localizeOptionLabel(
+  value: string | number,
+  fallback: string,
+  lang: string
+): string {
+  return lang === "sw" ? SW_OPTION_LABELS[String(value)] || fallback : fallback;
+}
+
 const ALL_ACCORDION_KEYS: readonly AccordionKey[] = [
   "makeovers",
   "presets",
@@ -1386,7 +1406,7 @@ export function ThemeSettingsView() {
                         { color: active ? onGoldInk : theme.textSecondary },
                       ]}
                     >
-                      {appLang === "sw" ? ({ system: "Otomatiki", light: "Mwanga", dark: "Giza", "mini-app": "Programu", card: "Kadi", hide: "Ficha", muted: "Laini", balanced: "Wastani", vivid: "Mkali" }[String((opt as any).value)] || opt.label) : opt.label}
+                      {localizeOptionLabel(opt.value, opt.label, appLang)}
                     </Text>
                   </Pressable>
                 );
@@ -1543,7 +1563,7 @@ export function ThemeSettingsView() {
                     }}
                     accessibilityRole="button"
                     accessibilityState={{ selected: active }}
-                    accessibilityLabel={`${appLang === "sw" ? ({ system: "Otomatiki", light: "Mwanga", dark: "Giza", "mini-app": "Programu", card: "Kadi", hide: "Ficha", muted: "Laini", balanced: "Wastani", vivid: "Mkali" }[String((opt as any).value)] || opt.label) : opt.label} appearance mode`}
+                    accessibilityLabel={`${localizeOptionLabel(opt.value, opt.label, appLang)} appearance mode`}
                     android_ripple={androidRipple(theme.rippleColor)}
                     style={pressableStyle(styles.segmentedPressable)}
                   >
@@ -1571,7 +1591,7 @@ export function ThemeSettingsView() {
                           },
                         ]}
                       >
-                        {appLang === "sw" ? ({ system: "Otomatiki", light: "Mwanga", dark: "Giza", "mini-app": "Programu", card: "Kadi", hide: "Ficha", muted: "Laini", balanced: "Wastani", vivid: "Mkali" }[String((opt as any).value)] || opt.label) : opt.label}
+                        {localizeOptionLabel(opt.value, opt.label, appLang)}
                       </Text>
                     </View>
                   </Pressable>
@@ -1722,7 +1742,7 @@ export function ThemeSettingsView() {
                 <Text
                   style={[styles.expandAllLabel, { color: theme.textPrimary }]}
                 >
-                  {allExpanded ? "Collapse" : "Expand"}
+                  {appLang === "sw" ? (allExpanded ? "Kunja" : "Panua") : (allExpanded ? "Collapse" : "Expand")}
                 </Text>
               </View>
             </Pressable>
@@ -2605,7 +2625,7 @@ export function ThemeSettingsView() {
                         }}
                         accessibilityRole="button"
                         accessibilityState={{ selected: active }}
-                        accessibilityLabel={`Icon container ${appLang === "sw" ? ({ system: "Otomatiki", light: "Mwanga", dark: "Giza", "mini-app": "Programu", card: "Kadi", hide: "Ficha", muted: "Laini", balanced: "Wastani", vivid: "Mkali" }[String((opt as any).value)] || opt.label) : opt.label}`}
+                        accessibilityLabel={`Icon container ${localizeOptionLabel(opt.value, opt.label, appLang)}`}
                         android_ripple={androidRipple(theme.rippleColor)}
                         style={pressableStyle(styles.visualSwatchPressable)}
                       >
@@ -2642,7 +2662,7 @@ export function ThemeSettingsView() {
                             ]}
                             numberOfLines={1}
                           >
-                            {appLang === "sw" ? ({ system: "Otomatiki", light: "Mwanga", dark: "Giza", "mini-app": "Programu", card: "Kadi", hide: "Ficha", muted: "Laini", balanced: "Wastani", vivid: "Mkali" }[String((opt as any).value)] || opt.label) : opt.label}
+                            {localizeOptionLabel(opt.value, opt.label, appLang)}
                           </Text>
                         </View>
                       </Pressable>
@@ -2668,7 +2688,7 @@ export function ThemeSettingsView() {
                         }}
                         accessibilityRole="button"
                         accessibilityState={{ selected: active }}
-                        accessibilityLabel={`Icon glyph style ${appLang === "sw" ? ({ system: "Otomatiki", light: "Mwanga", dark: "Giza", "mini-app": "Programu", card: "Kadi", hide: "Ficha", muted: "Laini", balanced: "Wastani", vivid: "Mkali" }[String((opt as any).value)] || opt.label) : opt.label}`}
+                        accessibilityLabel={`Icon glyph style ${localizeOptionLabel(opt.value, opt.label, appLang)}`}
                         android_ripple={androidRipple(theme.rippleColor)}
                         style={pressableStyle(styles.visualGlyphPressable)}
                       >
@@ -2702,7 +2722,7 @@ export function ThemeSettingsView() {
                             ]}
                             numberOfLines={1}
                           >
-                            {appLang === "sw" ? ({ system: "Otomatiki", light: "Mwanga", dark: "Giza", "mini-app": "Programu", card: "Kadi", hide: "Ficha", muted: "Laini", balanced: "Wastani", vivid: "Mkali" }[String((opt as any).value)] || opt.label) : opt.label}
+                            {localizeOptionLabel(opt.value, opt.label, appLang)}
                           </Text>
                         </View>
                       </Pressable>
@@ -5217,6 +5237,7 @@ const OptionPillGroup = React.memo(function OptionPillGroup<T extends string | n
   onConfigSelect?: (key: keyof ThemeConfig, value: any) => void;
   theme: ThemeColors;
 }) {
+  const { language: appLang } = useAppLanguage();
   const handleSelect = (val: T) => {
     if (configKey && onConfigSelect) {
       onConfigSelect(configKey, val);
@@ -5255,10 +5276,10 @@ const OptionPillGroup = React.memo(function OptionPillGroup<T extends string | n
                 <Text
                   style={[
                     styles.optionPillText,
-                    { color: active ? theme.gold : theme.textSecondary },
+                    { color: active ? theme.onPrimaryContainer : theme.textSecondary },
                   ]}
                 >
-                  {appLang === "sw" ? ({ system: "Otomatiki", light: "Mwanga", dark: "Giza", "mini-app": "Programu", card: "Kadi", hide: "Ficha", muted: "Laini", balanced: "Wastani", vivid: "Mkali" }[String((opt as any).value)] || opt.label) : opt.label}
+                  {localizeOptionLabel(opt.value, opt.label, appLang)}
                 </Text>
               </View>
             </Pressable>

@@ -45,6 +45,16 @@ const AUDIO_HOST_HTML = `<!DOCTYPE html>
         el.addEventListener('seeked', function() { post(true); });
         el.addEventListener('ratechange', function() { post(true); });
         el.addEventListener('timeupdate', function() { post(false); });
+        el.addEventListener('error', function() {
+          try {
+            if (window.ReactNativeWebView) {
+              window.ReactNativeWebView.postMessage(JSON.stringify({
+                type: 'state', playing: false, loading: false,
+                position: 0, duration: 0, rate: 1
+              }));
+            }
+          } catch (e) {}
+        });
       })();
     </script>
   </body>

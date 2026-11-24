@@ -2745,7 +2745,10 @@ export function KenyanTranslatorTool({
                       }}
                     >
                       <WebView
-                        originWhitelist={["*"]}
+                        originWhitelist={["about:blank", "https://kenyahub.me", "https://audio.kenyahub.me"]}
+                      mixedContentMode="never"
+                      allowFileAccess={false}
+                      setSupportMultipleWindows={false}
                         javaScriptEnabled={true}
                         mediaPlaybackRequiresUserAction={false}
                         allowsInlineMediaPlayback={true}

@@ -14,7 +14,7 @@ declare global {
 }
 
 const BLOCKED_PATH_PREFIXES = [
-  "/admin",
+  "/admin", "/account",
   "/privacy",
   "/terms",
   "/contact",

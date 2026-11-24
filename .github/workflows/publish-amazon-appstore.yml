@@ -99,7 +99,7 @@ jobs:
           src = gradle_path.read_text(encoding="utf-8")
 
           raw_vc = os.environ.get("INPUT_VERSION_CODE", "").strip()
-          vc = int(raw_vc) if raw_vc.isdigit() else (int(os.environ.get("RUN_NUMBER", "1")) + 10)
+          import subprocess; vc = int(raw_vc) if raw_vc.isdigit() else (int(subprocess.check_output(["git", "rev-list", "--count", "HEAD"], text=True).strip()) + 500)
           src, n_vc = re.subn(r"versionCode\s+\d+", f"versionCode {vc}", src, count=1)
           assert n_vc == 1, "Could not update versionCode in build.gradle"
 

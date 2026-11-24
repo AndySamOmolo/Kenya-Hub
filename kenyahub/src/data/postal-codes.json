@@ -303,12 +303,6 @@
       "region": "Central"
     },
     {
-      "code": "10101",
-      "town": "Mukurweini",
-      "county": "Nyeri",
-      "region": "Central"
-    },
-    {
       "code": "10103",
       "town": "Othaya",
       "county": "Nyeri",
@@ -579,13 +573,13 @@
       "region": "Coast"
     },
     {
-      "code": "80108",
+      "code": "80401",
       "town": "Diani Beach",
       "county": "Kwale",
       "region": "Coast"
     },
     {
-      "code": "80108",
+      "code": "80107",
       "town": "Kilindini",
       "county": "Mombasa",
       "region": "Coast"

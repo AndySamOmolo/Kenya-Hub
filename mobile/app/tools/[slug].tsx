@@ -7,6 +7,7 @@ import {
   Modal,
   Platform,
   Pressable,
+  KeyboardAvoidingView,
   ScrollView,
   StatusBar,
   StyleSheet,
@@ -495,7 +496,7 @@ export default function ToolDetailScreen() {
             Tool not found
           </Text>
           <Pressable
-            onPress={() => router.back()}
+            onPress={() => (router.canGoBack() ? router.back() : router.replace("/(tabs)"))}
             style={pressableStyle([
               styles.backButton,
               { backgroundColor: theme.gold },
@@ -610,7 +611,7 @@ export default function ToolDetailScreen() {
           categoryInfo?.name.toUpperCase() ||
           tool.category.replace("-", " & ").toUpperCase()
         }
-        onBack={() => router.back()}
+        onBack={() => (router.canGoBack() ? router.back() : router.replace("/(tabs)"))}
         rightAction={
           <Pressable
             onPress={toggleSaved}
@@ -639,11 +640,16 @@ export default function ToolDetailScreen() {
         }
       />
 
+      <KeyboardAvoidingView
+        style={{ flex: 1 }}
+        behavior={Platform.OS === "ios" ? "padding" : "height"}
+      >
       <ScrollView
         ref={scrollRef}
         contentContainerStyle={styles.content}
         showsVerticalScrollIndicator={false}
         keyboardShouldPersistTaps="handled"
+        keyboardDismissMode="on-drag"
         scrollEventThrottle={16}
         onScroll={(e) => {
           const y = e.nativeEvent.contentOffset.y;
@@ -1434,6 +1440,7 @@ export default function ToolDetailScreen() {
           </View>
         )}
       </ScrollView>
+      </KeyboardAvoidingView>
 
       {/* Floating Back-to-Top Pill Button (UX-10) */}
       {showBackToTop && (
@@ -1450,6 +1457,7 @@ export default function ToolDetailScreen() {
             {
               backgroundColor: theme.gold,
               borderColor: theme.kenyaBlack,
+              bottom: 20 + insets.bottom,
             },
           ])}
         >

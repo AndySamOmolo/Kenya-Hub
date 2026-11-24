@@ -10,27 +10,27 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: ["/", "/_next/static/"],
-        disallow: ["/api/", "/admin/"],
+        disallow: ["/api/", "/admin/", "/account/"],
       },
       {
         userAgent: "Mediapartners-Google",
         allow: "/",
-        disallow: ["/admin/"],
+        disallow: ["/admin/", "/account/"],
       },
       {
         userAgent: "Google-Display-Ads-Bot",
         allow: "/",
-        disallow: ["/admin/"],
+        disallow: ["/admin/", "/account/"],
       },
       {
         userAgent: "AdsBot-Google",
         allow: "/",
-        disallow: ["/admin/"],
+        disallow: ["/admin/", "/account/"],
       },
       {
         userAgent: "Googlebot",
         allow: ["/", "/_next/static/"],
-        disallow: ["/api/", "/admin/"],
+        disallow: ["/api/", "/admin/", "/account/"],
       },
     ],
     sitemap: `${BASE_URL}/sitemap.xml`,

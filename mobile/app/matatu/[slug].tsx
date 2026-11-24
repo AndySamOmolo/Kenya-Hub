@@ -27,6 +27,9 @@ export default function MatatuRouteScreen() {
   const router = useRouter();
   const { theme } = useTheme();
   const [reported, setReported] = useState(false);
+  useEffect(() => {
+    setReported(false);
+  }, [slug]);
   const scrollRef = useRef<ScrollView>(null);
   useEffect(() => {
     scrollRef.current?.scrollTo({ y: 0, animated: false });
@@ -64,7 +67,7 @@ export default function MatatuRouteScreen() {
             Route not found
           </Text>
           <Pressable
-            onPress={() => router.back()}
+            onPress={() => (router.canGoBack() ? router.back() : router.replace("/(tabs)"))}
             style={pressableStyle([
               styles.backButton,
               { backgroundColor: theme.gold },
@@ -100,7 +103,7 @@ export default function MatatuRouteScreen() {
       <AndroidTopAppBar
         title={`Route ${route.routeNumber}`}
         subtitle={townName}
-        onBack={() => router.back()}
+        onBack={() => (router.canGoBack() ? router.back() : router.replace("/(tabs)"))}
         rightAction={
           <Pressable
             onPress={handleShareRoute}

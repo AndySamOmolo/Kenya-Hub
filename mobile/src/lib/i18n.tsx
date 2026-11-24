@@ -434,12 +434,13 @@ const AppLanguageContext = createContext<AppLanguageContextValue>({
 
 export function AppLanguageProvider({ children }: { children: React.ReactNode }) {
   const [language, setLanguageState] = useState<AppLanguage>("en");
+  const userDirtyRef = React.useRef(false);
 
   useEffect(() => {
     let active = true;
     AsyncStorage.getItem(APP_LANGUAGE_STORAGE_KEY)
       .then((stored) => {
-        if (!active) return;
+        if (!active || userDirtyRef.current) return;
         if (stored === "sw" || stored === "en") {
           setLanguageState(stored);
         }
@@ -451,11 +452,13 @@ export function AppLanguageProvider({ children }: { children: React.ReactNode })
   }, []);
 
   const setLanguage = useCallback((lang: AppLanguage) => {
+    userDirtyRef.current = true;
     setLanguageState(lang);
     AsyncStorage.setItem(APP_LANGUAGE_STORAGE_KEY, lang).catch(() => {});
   }, []);
 
   const toggleLanguage = useCallback(() => {
+    userDirtyRef.current = true;
     setLanguageState((prev) => {
       const next: AppLanguage = prev === "sw" ? "en" : "sw";
       AsyncStorage.setItem(APP_LANGUAGE_STORAGE_KEY, next).catch(() => {});

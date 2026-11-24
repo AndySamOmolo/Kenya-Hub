@@ -188,8 +188,8 @@ export function EudrCoopGeojsonPackagerTool() {
   const check = useMemo(() => {
     const pts = coordText
       .split("\n")
-      .map((l) => l.trim().split(/[,\s]+/).map(Number))
-      .filter((p) => p.length >= 2 && !Number.isNaN(p[0]) && !Number.isNaN(p[1]));
+      .map((l) => l.trim().split(/[,\s]+/).filter(Boolean).map(Number))
+      .filter((p) => p.length >= 2 && Number.isFinite(p[0]) && Number.isFinite(p[1]) && p[0] >= -90 && p[0] <= 90 && p[1] >= -180 && p[1] <= 180);
     const reqPoly = (Number(ha) || 0) >= utilData.eudr.polygonThresholdHa;
     const closed = pts.length >= 4 && Math.abs(pts[0][0] - pts[pts.length - 1][0]) < 1e-6 && Math.abs(pts[0][1] - pts[pts.length - 1][1]) < 1e-6;
     const gnssOk = (Number(acc) || 0) > 0 && (Number(acc) || 0) <= utilData.eudr.maxGnssAccuracyMeters;
@@ -266,7 +266,7 @@ export function IcmsLandedCostArbitrageTool() {
         </View>
         <View style={{ flex: 0.7 }}>
           <Text style={styles.label}>CBM</Text>
-          <TextInput value={cbm} onChangeText={setCbm} keyboardType="decimal-pad" style={styles.input} placeholderTextColor={theme.textMuted} />
+          <TextInput value={cbm} onChangeText={(v) => setCbm(v.replace(/[^0-9.]/g, "").replace(/(\..*)\./g, "$1"))} keyboardType="decimal-pad" maxLength={8} style={styles.input} placeholderTextColor={theme.textMuted} />
         </View>
       </View>
       <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 6 }}>
@@ -421,15 +421,15 @@ export function KjseaPathwayEngineTool() {
       <View style={styles.inputRow}>
         <View style={{ flex: 1 }}>
           <Text style={styles.label}>KPSEA (20%)</Text>
-          <TextInput value={kpsea} onChangeText={setKpsea} keyboardType="numeric" style={styles.input} placeholderTextColor={theme.textMuted} />
+          <TextInput value={kpsea} onChangeText={(v) => setKpsea(v.replace(/[^0-9.]/g, "").replace(/(\..*)\./g, "$1"))} keyboardType="decimal-pad" maxLength={6} style={styles.input} placeholderTextColor={theme.textMuted} />
         </View>
         <View style={{ flex: 1 }}>
           <Text style={styles.label}>SBA (20%)</Text>
-          <TextInput value={sba} onChangeText={setSba} keyboardType="numeric" style={styles.input} placeholderTextColor={theme.textMuted} />
+          <TextInput value={sba} onChangeText={(v) => setSba(v.replace(/[^0-9.]/g, "").replace(/(\..*)\./g, "$1"))} keyboardType="decimal-pad" maxLength={6} style={styles.input} placeholderTextColor={theme.textMuted} />
         </View>
         <View style={{ flex: 1 }}>
           <Text style={styles.label}>KJSEA (60%)</Text>
-          <TextInput value={kjsea} onChangeText={setKjsea} keyboardType="numeric" style={styles.input} placeholderTextColor={theme.textMuted} />
+          <TextInput value={kjsea} onChangeText={(v) => setKjsea(v.replace(/[^0-9.]/g, "").replace(/(\..*)\./g, "$1"))} keyboardType="decimal-pad" maxLength={6} style={styles.input} placeholderTextColor={theme.textMuted} />
         </View>
       </View>
 
@@ -474,6 +474,23 @@ export function ArdhisasaCadTitleAuditorTool() {
   const [checks, setChecks] = useState<boolean[]>([true, true, false, true, false]);
   const passed = checks.filter(Boolean).length;
   const warningTextColor = isDark ? "#FBBF24" : "#92400E";
+  const areaAudit = useMemo(() => {
+    const pts = utmCoords
+      .split("\n")
+      .map((l) => l.trim().split(/[,\s]+/).filter(Boolean).map(Number))
+      .filter((p) => p.length >= 2 && Number.isFinite(p[0]) && Number.isFinite(p[1]));
+    let twiceArea = 0;
+    if (pts.length >= 3) {
+      for (let i = 0; i < pts.length; i++) {
+        const j = (i + 1) % pts.length;
+        twiceArea += pts[i][0] * pts[j][1] - pts[j][0] * pts[i][1];
+      }
+    }
+    const computedSqm = Math.round(Math.abs(twiceArea) / 2);
+    const decl = Math.max(0, Number(declaredSqm) || 0);
+    const diffPct = decl > 0 && computedSqm > 0 ? Math.abs(computedSqm - decl) / decl * 100 : 0;
+    return { ptsCount: pts.length, computedSqm, decl, diffPct };
+  }, [utmCoords, declaredSqm]);
 
   return (
     <View style={styles.wrap}>
@@ -498,6 +515,11 @@ export function ArdhisasaCadTitleAuditorTool() {
           placeholderTextColor={theme.textMuted}
           style={[styles.input, { minHeight: 84, textAlignVertical: "top", fontFamily: "monospace" }]}
         />
+        {areaAudit.ptsCount >= 3 && (
+          <Text style={{ fontSize: 12, marginTop: 6, color: areaAudit.diffPct <= 2 ? theme.kenyaGreenLight : warningTextColor }}>
+            Computed UTM Polygon: {areaAudit.computedSqm.toLocaleString()} m² ({areaAudit.ptsCount} vertices) · Variance vs Declared: {areaAudit.diffPct.toFixed(1)}%
+          </Text>
+        )}
       </View>
       {TITLE_CHECKS.map((label, idx) => (
         <Pressable

@@ -976,6 +976,11 @@ def ingest_open_sign_bibles_xki(s3_client, existing: dict, videos_out: list[dict
                           mp4_raw_ex = mp4_raw_ex.get("bytes")
                       if isinstance(mp4_raw_ex, (bytes, bytearray)) and len(mp4_raw_ex) >= 1024:
                           ex_key = f"ksl/human-full/{existing_item.get('id', vid_id)}.mp4"
+                    if ex_key in existing_r2_keys:
+                        existing_item["videoUrl"] = f"{R2_PUBLIC_URL}/{ex_key}"
+                        existing_item["fullDuration"] = True
+                        existing_item["fullDurationPathV3"] = True
+                        continue
                           osb_in_flight.add(
                               osb_pool.submit(_transcode_and_upload_osb, "upgrade", existing_item, ex_key, bytes(mp4_raw_ex), None)
                           )

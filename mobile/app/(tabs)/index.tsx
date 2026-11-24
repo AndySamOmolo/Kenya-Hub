@@ -802,8 +802,6 @@ export default function HomeScreen() {
         const blogSlug = pathOnly.replace("/blog/", "").split("/")[0];
         const targetPost = STATIC_BLOG_POSTS.find((p) => p.slug === blogSlug);
         if (targetPost) {
-          lastReaderProgressRef.current = 0;
-          setReaderProgress(0);
           setSelectedPost(targetPost);
         }
       }
@@ -850,7 +848,7 @@ export default function HomeScreen() {
 
   const nextHoliday = useMemo(() => {
     const now = new Date();
-    const todayIso = now.toISOString().slice(0, 10);
+    const todayIso = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
     const upcoming = allHolidaysList.filter((h) => h.date >= todayIso);
     const pick = upcoming[0] || allHolidaysList[0];
     if (!pick) return null;
@@ -1070,7 +1068,7 @@ export default function HomeScreen() {
                   KENYA SUPER-APP · PUBLIC UTILITIES
                 </Text>
                 <Text style={[styles.greetingTitle, { color: theme.textPrimary, textTransform: headingTransform }]}>
-                  {greeting.en}, Mwananchi
+                  {language === "sw" ? greeting.sw : greeting.en}, Mwananchi
                 </Text>
               </View>
               <Pressable

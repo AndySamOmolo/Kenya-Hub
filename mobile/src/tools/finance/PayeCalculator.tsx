@@ -78,7 +78,8 @@ export function PayeCalculator() {
     if (mode === "grossToNet" || inputAmount <= 0) return inputAmount;
     let lo = inputAmount;
     let hi = (inputAmount + pension) * 2.2 + 50000;
-    while (computeFromGross(hi) < inputAmount && hi < 1e10) {
+    const maxHi = Math.max(1e10, lo * 10);
+    while (computeFromGross(hi) < inputAmount && hi < maxHi) {
       hi *= 2;
     }
     for (let i = 0; i < 60; i++) {
@@ -148,6 +149,7 @@ export function PayeCalculator() {
       totalNssf: totalNssf * mult,
       housingLevy: housingLevy * mult,
       sha: sha * mult,
+      pension: pension * mult,
       taxableIncome: taxableIncome * mult,
       grossTax: grossTax * mult,
       personalRelief: personalRelief * mult,
@@ -412,6 +414,13 @@ export function PayeCalculator() {
           value={`− KES ${Math.round(calc.housingLevy).toLocaleString()}`}
           isDeduction
         />
+        {calc.pension > 0 && (
+          <Row
+            label="Voluntary Pension Contribution"
+            value={`− KES ${Math.round(calc.pension).toLocaleString()}`}
+            isDeduction
+          />
+        )}
         <Row
           label="Taxable Income (after pre-tax deductions)"
           value={`KES ${Math.round(calc.taxableIncome).toLocaleString()}`}

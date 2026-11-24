@@ -81,7 +81,7 @@ export function MatatuMap({
   const htmlContent = useMemo(() => {
     if (safeStages.length === 0) return "";
 
-    const stagesJson = JSON.stringify(safeStages);
+    const stagesJson = JSON.stringify(safeStages).replace(/</g, "\\u003c");
     const tileUrl = isDark
       ? "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
       : "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png";
@@ -453,7 +453,10 @@ export function MatatuMap({
           }
         }}
         style={styles.webview}
-        javaScriptEnabled={true}
+        javaScriptEnabled
+            mixedContentMode="never"
+            allowFileAccess={false}
+            setSupportMultipleWindows={false}={true}
         domStorageEnabled={true}
         scrollEnabled={interactivePan}
         nestedScrollEnabled={interactivePan}

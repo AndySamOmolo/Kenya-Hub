@@ -110,7 +110,7 @@ jobs:
           from pathlib import Path
           gradle_path = Path("mobile/android/app/build.gradle")
           src = gradle_path.read_text(encoding="utf-8")
-          vc = int(os.environ.get("RUN_NUMBER", "1")) + 10
+          import subprocess; vc = int(subprocess.check_output(["git", "rev-list", "--count", "HEAD"], text=True).strip()) + 500
           src, n = re.subn(r"versionCode\s+\d+", f"versionCode {vc}", src, count=1)
           assert n == 1, "Could not update versionCode"
           gradle_path.write_text(src, encoding="utf-8")
@@ -172,6 +172,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -- mobile/android/app/build.gradle || true
           git add mobile/src/shared
           if ! git diff --staged --quiet; then
             git commit -m "chore(mobile): sync web course data [skip ci]"

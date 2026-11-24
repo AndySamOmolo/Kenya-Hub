@@ -162,7 +162,7 @@ export default function KPLCTokenCalculatorPage() {
             min={0}
             max={10000}
             step={50}
-            value={amount}
+            value={Math.min(10000, amount)}
             onChange={(e) => setAmount(Number(e.target.value))}
             className="w-full mt-3 accent-gold"
           />

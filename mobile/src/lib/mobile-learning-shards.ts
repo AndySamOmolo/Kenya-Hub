@@ -40,9 +40,13 @@ export async function loadMobileAudioShard(
         if (clips && clips.length > 0) {
           return clips as MobileAudioShardClip[];
         }
+        audioShardCache.delete(lid);
         return fallback;
       })
-      .catch(() => fallback);
+      .catch(() => {
+        audioShardCache.delete(lid);
+        return fallback;
+      });
     audioShardCache.set(lid, p);
   }
 

@@ -75,9 +75,11 @@ async function storeCredentials(
     }
     if (creds.sessionSecret) {
       await AsyncStorage.setItem(SESSION_STORAGE_KEY, creds.sessionSecret);
+      if (!creds.fallbackCookies) await AsyncStorage.removeItem(FALLBACK_COOKIE_KEY);
     }
     if (creds.fallbackCookies) {
       await AsyncStorage.setItem(FALLBACK_COOKIE_KEY, creds.fallbackCookies);
+      if (!creds.sessionSecret) await AsyncStorage.removeItem(SESSION_STORAGE_KEY);
     }
   } catch {
     // Ignore storage errors
@@ -154,7 +156,9 @@ async function appwriteRequest<T>(
   }
 
   if (!res.ok) {
-    throw new Error(formatMobileAuthError(data, res.status));
+    const err = new Error(formatMobileAuthError(data, res.status)) as Error & { status?: number };
+    err.status = res.status;
+    throw err;
   }
 
   return { data: data as T, headers: res.headers };
@@ -194,7 +198,11 @@ export async function getCurrentUser(): Promise<MobileAuthUser | null> {
       return user;
     }
     return null;
-  } catch {
+  } catch (err: any) {
+    if (err?.status === 401 || err?.status === 403) {
+      await storeCredentials(null);
+      return null;
+    }
     return await getCachedUser();
   }
 }
@@ -423,7 +431,7 @@ export async function syncMobileUserData(): Promise<MobileCloudSyncSummary | nul
     }
     let mergedSavedThemes = Array.from(savedThemesById.values())
       .sort((a, b) => b.createdAt.localeCompare(a.createdAt))
-      .slice(0, 10);
+      .slice(0, 20);
 
     // 3. Pinned tools (kh-saved-tools)
     const localPinnedRaw = safeJson<unknown>(
@@ -897,4 +905,26 @@ export async function submitContributionToAppwrite(
   } catch {
     return { synced: false };
   }
+}
+
+/**
+ * Clears synced cloud preferences, ends the active Appwrite session, and wipes local
+ * auth credentials. Full permanent Appwrite user deletion is completed via
+ * https://kenyahub.me/privacy/#account-deletion (or server deletion endpoint when configured).
+ */
+export async function deleteMobileAccountDataAndSignOut(): Promise<void> {
+  try {
+    await appwriteRequest("/account/prefs", {
+      method: "PATCH",
+      body: JSON.stringify({ prefs: {} }),
+    });
+  } catch {
+    // Best-effort clear when online
+  }
+  try {
+    await appwriteRequest("/account/sessions/current", { method: "DELETE" });
+  } catch {
+    // Ignore if already expired
+  }
+  await storeCredentials(null);
 }

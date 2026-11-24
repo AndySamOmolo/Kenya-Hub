@@ -2160,7 +2160,7 @@ export const THEME_PRESETS: ThemePreset[] = [
       gold: "#0F766E",
       goldLight: "#14B8A6",
       kenyaGreen: "#15803D",
-      kenyaGreenLight: "#16A34A",
+      kenyaGreenLight: "#167A40",
       sky: "#0369A1",
       skyLight: "#0284C7",
       primaryContainer: "rgba(15, 118, 110, 0.14)",
@@ -2522,6 +2522,8 @@ export function resolveThemeColors(
     resolved.surfaceContainerLow = "#080808";
     resolved.bgCard = "#0E0E0E";
     resolved.surfaceContainer = "#101010";
+    resolved.bgCardHover = "#0D0D0D";
+    resolved.bgElevated = "#0A0A0A";
     resolved.surfaceContainerHigh = "#181818";
     resolved.surfaceContainerHighest = "#222222";
   }

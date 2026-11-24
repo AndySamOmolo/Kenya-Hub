@@ -421,7 +421,7 @@ export default function SavedScreen() {
         },
       ]
     );
-  }, []);
+  }, [t]);
 
   const handleManageAdPrivacy = useCallback(async () => {
     triggerHaptic(8);
@@ -456,7 +456,17 @@ export default function SavedScreen() {
           style: "destructive",
           onPress: async () => {
             try {
-              await AsyncStorage.clear();
+              const allKeys = await AsyncStorage.getAllKeys();
+              const preserveKeys = new Set([
+                "kh-appwrite-session-secret",
+                "kh-appwrite-fallback-cookies",
+                "kh-appwrite-user",
+                "kh-app-language",
+              ]);
+              const toRemove = allKeys.filter((k) => !preserveKeys.has(k));
+              if (toRemove.length > 0) {
+                await AsyncStorage.multiRemove(toRemove);
+              }
               resetThemeConfig();
               lastSavedRawRef.current = null;
               setSaved([]);

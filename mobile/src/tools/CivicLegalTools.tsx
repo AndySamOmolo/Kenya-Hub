@@ -208,7 +208,7 @@ export function SmallClaimsTool() {
         break;
       }
     }
-    if (amount > sccData.maxClaimLimit) fee = 2500;
+    if (amount > sccData.maxClaimLimit) fee = -1;
     return { amount, isEligible, fee };
   }, [claimText]);
 
@@ -1054,10 +1054,11 @@ export function DomesticWageTool() {
         `Applicable Gross Cash Wage: KES ${grossPayable.toLocaleString()} (Daily: KES ${z.dailyRate} · Hourly: KES ${z.hourlyRate})`,
         `Employee SHA Deduction (2.75% / min KES 300): −KES ${sha.toLocaleString()}`,
         `Employee NSSF Deduction (6% Unified Rate): −KES ${nssf.toLocaleString()}`,
+        `Employee Affordable Housing Levy (1.5%): −KES ${ahl.toLocaleString()}`,
         `Net Take-Home Pay to Worker: KES ${Math.round(net).toLocaleString()}`,
         `Statutory Leave Entitlements: ${domesticData.statutoryDeductions.leaveDaysAnnual} paid annual leave days, ${domesticData.statutoryDeductions.paidMaternityMonths} months maternity leave, 1 rest day per week.`,
       ].join("\n"),
-    [z, isLiveIn, consolidatedGross, housingAllowance, basicWage, grossPayable, sha, nssf, net]
+    [z, isLiveIn, consolidatedGross, housingAllowance, basicWage, grossPayable, sha, nssf, ahl, net]
   );
 
   return (
@@ -1155,7 +1156,7 @@ export function DomesticWageTool() {
           15/115 Housing Element: KES {housingAllowance.toLocaleString()} · Basic: KES {basicWage.toLocaleString()}
         </Text>
         <Text style={{ fontSize: 11, color: theme.textSecondary, marginTop: 2 }}>
-          Daily: KES {z.dailyRate} · SHA (2.75%): −KES {sha.toLocaleString()} · NSSF (6%): −KES {nssf.toLocaleString()} · Net Take-Home: KES {Math.round(net).toLocaleString()}
+          Daily: KES {z.dailyRate} · SHA: −KES {sha.toLocaleString()} · NSSF: −KES {nssf.toLocaleString()} · AHL (1.5%): −KES {ahl.toLocaleString()} · Net: KES {Math.round(net).toLocaleString()}
         </Text>
       </View>
 
@@ -1168,8 +1169,8 @@ export function DomesticWageTool() {
             color: theme.kenyaGreenLight,
           },
           {
-            label: "SHA + NSSF (6%)",
-            value: Math.round(sha + nssf),
+            label: "SHA + NSSF + AHL",
+            value: Math.round(sha + nssf + ahl),
             color: theme.gold,
           },
         ]}

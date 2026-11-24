@@ -41,14 +41,13 @@ export function HelbCalculator() {
     const monthlyBySalary = Math.round(
       grossSalary * ((helbData.minimumSalaryPercent || 10) / 100)
     );
-    const monthlyObligation = Math.max(
-      helbData.minimumMonthly || 1500,
-      monthlyBySalary
-    );
+    const monthlyObligation = loanAmount <= 0
+      ? 0
+      : Math.max(helbData.minimumMonthly || 1500, monthlyBySalary);
 
     // Reducing-balance 4% p.a. + KES 1,000/yr ledger fee during repayment
     const monthlyRate = annualRate / 12;
-    const monthlyLedger = HELB_ANNUAL_LEDGER_FEE / 12;
+    const monthlyLedger = annualLedger / 12;
     let balance = currentBalance;
     let monthsToRepay = 0;
     let repaymentInterestTotal = 0;

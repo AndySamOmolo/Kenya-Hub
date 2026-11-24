@@ -399,7 +399,7 @@ export async function syncCloudContributions(): Promise<ContributionItem[]> {
           ? indexByCloudId.get(cloudDocId)
           : undefined) ?? indexByComposite.get(compositeKey);
 
-      if (existingIdx !== undefined) {
+      if (existingIdx !== undefined && existingIdx >= 0) {
         const currentItem = merged[existingIdx];
         const nextItem: ContributionItem = {
           ...currentItem,

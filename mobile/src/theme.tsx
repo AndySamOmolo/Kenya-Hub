@@ -28,6 +28,7 @@ import {
   hexToRgba,
   mixHex,
   getContrastInk,
+  isValidHexColor,
   type ThemeConfig,
   type ThemeMetrics,
   type ThemeMode,
@@ -90,7 +91,7 @@ export const lightColors = {
   kenyaRed: "#BE2126",
   kenyaRedLight: "#B91C1C",
   kenyaGreen: "#006B3F",
-  kenyaGreenLight: "#1E8E4F",
+  kenyaGreenLight: "#167A40",
   kenyaWhite: "#FFFFFF",
   gold: "#B8860B",
   goldLight: "#C8961E",
@@ -631,8 +632,10 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
         const nextCustom = { ...prev.customColors };
         if (!hex || !hex.trim()) {
           delete nextCustom[key];
-        } else {
+        } else if (isValidHexColor(hex.trim())) {
           nextCustom[key] = hex.trim();
+        } else {
+          return prev;
         }
         const next = { ...prev, customColors: nextCustom };
         persistConfig(next);
@@ -650,6 +653,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
         const next: ThemeConfig = {
           ...prev,
           presetId,
+          customColors: {},
           mode: forceMode ? forceMode : prev.mode,
         };
         persistConfig(next);

@@ -69,16 +69,14 @@ export default function KslSignStudio({
   );
 
   const [activeUnitId, setActiveUnitId] = useState<string>(KSL_LESSONS[0].id);
-  const [completedUnits, setCompletedUnits] = useState<string[]>(() => {
-    if (typeof window === "undefined") return [];
+  const [completedUnits, setCompletedUnits] = useState<string[]>([]);
+  useEffect(() => {
     try {
       const raw = window.localStorage.getItem("kh-ksl-completed-units");
       const parsed = raw ? JSON.parse(raw) : [];
-      return Array.isArray(parsed) ? parsed.filter((x): x is string => typeof x === "string") : [];
-    } catch {
-      return [];
-    }
-  });
+      if (Array.isArray(parsed)) setCompletedUnits(parsed);
+    } catch {}
+  }, []);
   const toggleUnitComplete = useCallback((unitId: string) => {
     setCompletedUnits((prev) => {
       const next = prev.includes(unitId) ? prev.filter((id) => id !== unitId) : [...prev, unitId];

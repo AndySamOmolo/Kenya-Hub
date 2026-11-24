@@ -14,7 +14,7 @@ export function WaterBillCalculator() {
   const [utilityId, setUtilityId] = useState("ncwsc");
   const [unitsText, setUnitsText] = useState("15");
   const [connectedToSewer, setConnectedToSewer] = useState(true);
-  const consumption = Math.max(0, Number(unitsText) || 0);
+  const consumption = Math.max(0, Number(unitsText.replace(/,/g, "")) || 0);
 
   const calc = useMemo(() => {
     const rawUtility =

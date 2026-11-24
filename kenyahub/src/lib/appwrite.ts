@@ -24,11 +24,10 @@ export async function verifyAdminAccount(): Promise<string | null> {
     const configuredAdminEmail =
       typeof process !== "undefined" ? process.env?.NEXT_PUBLIC_ADMIN_EMAIL : undefined;
     const hasAdminLabel = Array.isArray(u.labels) && u.labels.includes("admin");
-    if (
-      configuredAdminEmail &&
-      u.email.toLowerCase() !== configuredAdminEmail.toLowerCase() &&
-      !hasAdminLabel
-    ) {
+    const matchesConfiguredEmail =
+      Boolean(configuredAdminEmail) &&
+      u.email.toLowerCase() === configuredAdminEmail!.toLowerCase();
+    if (!hasAdminLabel && !matchesConfiguredEmail) {
       return null;
     }
     return u.email;

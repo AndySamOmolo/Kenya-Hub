@@ -100,7 +100,7 @@ export default function MpesaFeeCalculatorPage() {
       ([key, value]) => {
         const f = getFee(
           includeWithdrawal && numAmount <= 250000
-            ? Math.min(250000, adjustedAmountToSend)
+            ? adjustedAmountToSend
             : adjustedAmountToSend,
           key as TransactionType
         );

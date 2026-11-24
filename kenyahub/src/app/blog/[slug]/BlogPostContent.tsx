@@ -159,6 +159,7 @@ export default function BlogPostContent({ post }: { post: BlogPost | null }) {
             <span className="hidden sm:inline">•</span>
             <time dateTime={post.publishedAt}>
               {new Date(post.publishedAt).toLocaleDateString("en-KE", {
+                        timeZone: "Africa/Nairobi",
                 year: "numeric",
                 month: "long",
                 day: "numeric",
@@ -171,6 +172,7 @@ export default function BlogPostContent({ post }: { post: BlogPost | null }) {
                 <span className="hidden sm:inline">•</span>
                 <span className="text-gold">
                   Updated {new Date(post.updatedAt).toLocaleDateString("en-KE", {
+                        timeZone: "Africa/Nairobi",
                     month: "short",
                     day: "numeric",
                     year: "numeric",

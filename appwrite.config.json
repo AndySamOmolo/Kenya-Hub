@@ -150,7 +150,7 @@
         {
             "$id": "contributions",
             "$permissions": [
-                "create(\"any\")",
+                "create(\"users\")",
                 "read(\"team:admins\")",
                 "update(\"team:admins\")",
                 "delete(\"team:admins\")",
@@ -300,7 +300,6 @@
                 "webp",
                 "gif",
                 "avif",
-                "svg",
                 "mp3",
                 "wav",
                 "m4a",
@@ -310,7 +309,7 @@
                 "aac"
             ],
             "$permissions": [
-                "create(\"any\")",
+                "create(\"users\")",
                 "read(\"any\")",
                 "delete(\"team:admins\")",
                 "delete(\"label:admin\")"

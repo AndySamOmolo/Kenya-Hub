@@ -102,6 +102,7 @@ const QuickJumpMenu = React.memo(function QuickJumpMenu({
           onPress={() => setQuickMenuOpen(false)}
         >
           <View
+            onStartShouldSetResponder={() => true}
             style={[
               styles.quickSheet,
               {

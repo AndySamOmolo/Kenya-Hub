@@ -48,6 +48,7 @@ export default function BlogListClient({ posts }: { posts: BlogListItem[] }) {
                   <span className="hidden sm:inline">•</span>
                   <time dateTime={post.publishedAt}>
                     {new Date(post.publishedAt).toLocaleDateString("en-KE", {
+                        timeZone: "Africa/Nairobi",
                       year: "numeric",
                       month: "short",
                       day: "numeric",

@@ -164,10 +164,15 @@ export function KESInput({
           multiline={false}
           numberOfLines={1}
           keyboardType="numeric"
+          returnKeyType="done"
+          maxLength={14}
           accessibilityLabel={label}
           value={displayValue}
           onChangeText={(txt) => {
-            const rawDigits = txt.replace(/,/g, "").replace(/[^0-9.]/g, "").replace(/^0+(?=\d)/, "");
+            const cleaned = txt.replace(/,/g, "").replace(/[^0-9.]/g, "");
+            const dotIdx = cleaned.indexOf(".");
+            const singleDot = dotIdx === -1 ? cleaned : cleaned.slice(0, dotIdx + 1) + cleaned.slice(dotIdx + 1).replace(/\./g, "");
+            const rawDigits = singleDot.replace(/^0+(?=\d)/, "");
             onChangeText(rawDigits === "0" ? "" : rawDigits);
           }}
           placeholder={placeholder}

@@ -123,14 +123,26 @@ const KslVideoWebView = React.memo(function KslVideoWebView({
       const urlChanged = forceLoad || lastUrlRef.current !== safeUrl;
       lastUrlRef.current = safeUrl;
       const js = urlChanged
-        ? `(function(){var v=document.getElementById('v');if(!v)return;v.src=${JSON.stringify(safeUrl)};v.playbackRate=${playbackRate};v.load();${autoPlay || muted ? 'var pr=v.play();if(pr&&pr.catch){pr.catch(function(){});}' : ''}})();true;`
-        : `(function(){var v=document.getElementById('v');if(!v)return;v.playbackRate=${playbackRate};})();true;`;
+        ? `(function(){var v=document.getElementById('v');if(!v)return;v.src=${JSON.stringify(safeUrl)};v.defaultPlaybackRate=${playbackRate};v.load();v.playbackRate=${playbackRate};v.onloadedmetadata=function(){v.playbackRate=${playbackRate};};${autoPlay || muted ? 'var pr=v.play();if(pr&&pr.catch){pr.catch(function(){});}' : ''}})();true;`
+        : `(function(){var v=document.getElementById('v');if(!v)return;v.defaultPlaybackRate=${playbackRate};v.playbackRate=${playbackRate};})();true;`;
       try {
         webViewRef.current.injectJavaScript(js);
       } catch {}
     },
     [videoUrl, playbackRate, autoPlay, muted]
   );
+
+  useEffect(() => {
+    loadedRef.current = false;
+  }, [source]);
+
+  useEffect(() => {
+    return () => {
+      try {
+        webViewRef.current?.injectJavaScript("(function(){var v=document.getElementById('v');if(v){v.pause();v.removeAttribute('src');v.load();}})();true;");
+      } catch {}
+    };
+  }, []);
 
   useEffect(() => {
     if (loadedRef.current) {
@@ -153,6 +165,9 @@ const KslVideoWebView = React.memo(function KslVideoWebView({
       javaScriptEnabled
       domStorageEnabled={domStorageEnabled}
       originWhitelist={['https://*', 'about:blank']}
+      mixedContentMode="never"
+      allowFileAccess={false}
+      setSupportMultipleWindows={false}
       style={{ flex: 1, backgroundColor: '#000000' }}
     />
   );
@@ -924,10 +939,13 @@ export default function LanguageCourseTool({
       setLoadedDict(LOADED_DICTS_CACHE[selectedLangId]);
       return;
     }
+    setLoadedDict(null);
     const timer = setTimeout(() => {
-      loadDictionary(selectedLangId).then((d) => {
-        if (active && d) setLoadedDict(d);
-      });
+      loadDictionary(selectedLangId)
+        .then((d) => {
+          if (active && d) setLoadedDict(d);
+        })
+        .catch(() => {});
     }, 60);
     return () => {
       active = false;
@@ -3415,11 +3433,11 @@ export default function LanguageCourseTool({
                 const pool = vocabPool.length >= 4 ? vocabPool : allKslVideos;
                 const qVid = pool[kslQuizIdx % Math.max(1, pool.length)];
                 if (!qVid || pool.length < 4) return null;
-                const qUrl = qVid.videoUrl;
-                const targetLbl = (qVid.gloss || qVid.title).trim().toLowerCase();
-                const others = pool.filter((v) => (v.gloss || v.title).trim().toLowerCase() !== targetLbl);
+                const qUrl = ensureFullDurationKslUrl(qVid);
+                const targetLbl = (qVid.gloss || qVid.title || "").trim().toLowerCase();
+                const others = pool.filter((v) => (v.gloss || v.title || "").trim().toLowerCase() !== targetLbl);
                 const start = others.length > 3 ? (kslQuizIdx * 5) % (others.length - 3) : 0;
-                const opts = [qVid, ...others.slice(start, start + 3)].sort((a, b) => (a.gloss || a.title).localeCompare(b.gloss || b.title));
+                const opts = [qVid, ...others.slice(start, start + 3)].sort((a, b) => (a.gloss || a.title || "").localeCompare(b.gloss || b.title || ""));
                 return (
                   <View style={{ gap: 8, backgroundColor: colors.surface, borderRadius: 12, borderWidth: 1, borderColor: colors.outlineVariant, padding: 10 }}>
                     <View style={{ flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center', gap: 6 }}>

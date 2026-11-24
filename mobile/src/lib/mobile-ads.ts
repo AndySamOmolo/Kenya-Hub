@@ -128,6 +128,9 @@ export async function initializeMobileAdsWithConsent(): Promise<MobileAdsState> 
       canRequestAds,
       privacyOptionsRequired,
     };
+    if (!initialized) {
+      initPromise = null;
+    }
     return currentState;
   })();
 

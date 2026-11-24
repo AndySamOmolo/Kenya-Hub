@@ -134,6 +134,7 @@ export default function CountyDetailScreen() {
 
   useEffect(() => {
     scrollRef.current?.scrollTo({ y: 0, animated: false });
+    sectionOffsetsRef.current = {};
     setActiveSection("overview");
     setVisibleCount(30);
     setPostalVisibleCount(30);
@@ -301,7 +302,7 @@ export default function CountyDetailScreen() {
           ]}
         >
           <Pressable
-            onPress={() => router.back()}
+            onPress={() => (router.canGoBack() ? router.back() : router.replace("/(tabs)"))}
             style={[
               styles.backButton,
               { backgroundColor: theme.bgCard, borderColor: theme.border },
@@ -406,7 +407,7 @@ export default function CountyDetailScreen() {
       <AndroidTopAppBar
         title={`${county.name} County`}
         subtitle={`County ${codeFormatted} · HQ: ${county.capital}`}
-        onBack={() => router.back()}
+        onBack={() => (router.canGoBack() ? router.back() : router.replace("/(tabs)"))}
       />
 
       {/* Sticky Section Jump-Pills Bar (UX-12) */}
@@ -1183,9 +1184,9 @@ export default function CountyDetailScreen() {
               {countyPostalCodes.length})
             </Text>
             <View style={styles.constituenciesWrap}>
-              {filteredPostal.slice(0, postalVisibleCount).map((p: any) => (
+              {filteredPostal.slice(0, postalVisibleCount).map((p: any, idx: number) => (
                 <View
-                  key={`${p.code}-${p.town}`}
+                  key={`${p.code}-${p.town}-${idx}`}
                   style={[
                     styles.constituencyChip,
                     { backgroundColor: theme.bgCard, borderColor: theme.border },

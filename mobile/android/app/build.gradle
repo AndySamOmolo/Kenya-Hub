@@ -122,15 +122,14 @@ android {
             if (signingConfigs.release.storeFile) {
                 signingConfig signingConfigs.release
             } else if (System.getenv("CI") == "true" && System.getenv("ALLOW_DEBUG_SIGNED_RELEASE") != "true") {
-                logger.warn("WARNING: MYAPP_UPLOAD_STORE_FILE is not set in CI; falling back to debug keystore unless release keystore is configured.")
-                signingConfig signingConfigs.debug
+                throw new GradleException("MYAPP_UPLOAD_STORE_FILE must be set for CI release builds (set ALLOW_DEBUG_SIGNED_RELEASE=true to override).")
             } else {
                 signingConfig signingConfigs.debug
             }
             def enableShrinkResources = findProperty('android.enableShrinkResourcesInReleaseBuilds') ?: 'true'
             shrinkResources enableShrinkResources.toBoolean()
             minifyEnabled enableMinifyInReleaseBuilds
-            proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+            proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
             def enablePngCrunchInRelease = findProperty('android.enablePngCrunchInReleaseBuilds') ?: 'true'
             crunchPngs enablePngCrunchInRelease.toBoolean()
         }

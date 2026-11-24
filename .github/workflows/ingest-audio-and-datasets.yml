@@ -174,7 +174,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-          HF_DATASETS_TRUST_REMOTE_CODE: "1"
+          HF_DATASETS_TRUST_REMOTE_CODE: "0"
           INCLUDE_CLDF: ${{ inputs.include_cldf_wikimedia_civic || 'true' }}
           INCLUDE_KAIKKI: ${{ inputs.include_kaikki_raw || 'true' }}
           INCLUDE_FREQ: ${{ inputs.include_freq_lists || 'true' }}
@@ -206,7 +206,7 @@ jobs:
           R2_BUCKET_NAME: ${{ secrets.R2_BUCKET_NAME || 'kenyahub-audio' }}
           NEXT_PUBLIC_AUDIO_CDN_URL: ${{ secrets.NEXT_PUBLIC_AUDIO_CDN_URL }}
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-          HF_DATASETS_TRUST_REMOTE_CODE: "1"
+          HF_DATASETS_TRUST_REMOTE_CODE: "0"
           MDC_API_KEY: ${{ secrets.MDC_API_KEY }}
           ZENODO_TOKEN: ${{ secrets.ZENODO_TOKEN }}
           MAX_CLIPS_PER_DATASET: ${{ inputs.max_clips_per_dataset || '0' }}
