@@ -83,6 +83,442 @@ for (const t of TOOLS) {
   CATEGORY_TOOL_COUNTS[t.category] = (CATEGORY_TOOL_COUNTS[t.category] || 0) + 1;
 }
 
+interface FormattedHolidayItem {
+  date: string;
+  name: string;
+  description: string;
+  type?: string;
+  formattedDate: string;
+  formattedWeekdayDate: string;
+}
+
+const DailyWidgetsCarousel = React.memo(function DailyWidgetsCarousel({
+  isHomeFocused,
+  theme,
+  themeConfig,
+  styles,
+  themedCardStyle,
+  isFrameless,
+  headingTransform,
+  showTrailingArrows,
+  learnStats,
+  matatuSummary,
+  nextHoliday,
+  onOpenMatatu,
+  onOpenHolidays,
+}: {
+  isHomeFocused: boolean;
+  theme: any;
+  themeConfig: any;
+  styles: any;
+  themedCardStyle: any;
+  isFrameless: boolean;
+  headingTransform: any;
+  showTrailingArrows: boolean;
+  learnStats: {
+    langId: string;
+    langName: string;
+    totalXP: number;
+    streak: number;
+    greeting?: string;
+    region?: string;
+  };
+  matatuSummary: { routeCount: number; stageCount: number; townCount: number };
+  nextHoliday: (FormattedHolidayItem & { daysAway: number }) | null;
+  onOpenMatatu: () => void;
+  onOpenHolidays: () => void;
+}) {
+  const widgetsScrollRef = useRef<ScrollView>(null);
+  const [activeWidgetPage, setActiveWidgetPage] = useState(0);
+  const activeWidgetPageRef = useRef(activeWidgetPage);
+  activeWidgetPageRef.current = activeWidgetPage;
+  const [widgetsTouchPaused, setWidgetsTouchPaused] = useState(false);
+  const resumeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const pauseWidgetsTemporarily = useCallback(() => {
+    setWidgetsTouchPaused(true);
+    if (resumeTimerRef.current) clearTimeout(resumeTimerRef.current);
+    resumeTimerRef.current = setTimeout(() => {
+      setWidgetsTouchPaused(false);
+    }, 6000);
+  }, []);
+
+  useEffect(() => {
+    return () => {
+      if (resumeTimerRef.current) clearTimeout(resumeTimerRef.current);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!isHomeFocused || widgetsTouchPaused) return;
+    const timer = setInterval(() => {
+      if (AppState.currentState !== "active") return;
+      const next = (activeWidgetPageRef.current + 1) % 4;
+      activeWidgetPageRef.current = next;
+      setActiveWidgetPage(next);
+      widgetsScrollRef.current?.scrollTo({
+        x: next * WIDGET_SNAP_INTERVAL,
+        animated: true,
+      });
+    }, 5500);
+    return () => clearInterval(timer);
+  }, [isHomeFocused, widgetsTouchPaused]);
+
+  const handleWidgetMomentumEnd = useCallback((e: any) => {
+    const page = Math.round(e.nativeEvent.contentOffset.x / WIDGET_SNAP_INTERVAL);
+    setActiveWidgetPage(Math.max(0, Math.min(3, page)));
+  }, []);
+
+  return (
+    <>
+      <View style={styles.sectionHeader}>
+        <View>
+          <Text style={[styles.sectionOverline, { color: theme.gold }]}>
+            LIVE SNAPSHOT
+          </Text>
+          <Text style={[styles.sectionTitle, { color: theme.textPrimary, textTransform: headingTransform }]}>
+            Daily Kenyan Widgets
+          </Text>
+        </View>
+        <View style={{ flexDirection: "row", alignItems: "center", gap: 5, paddingBottom: 4 }}>
+          {[0, 1, 2, 3].map((dotIdx) => {
+            const active = activeWidgetPage === dotIdx;
+            return (
+              <View
+                key={dotIdx}
+                style={{
+                  width: active ? 16 : 6,
+                  height: 6,
+                  borderRadius: 3,
+                  backgroundColor: active ? theme.gold : theme.outlineVariant,
+                }}
+              />
+            );
+          })}
+        </View>
+      </View>
+
+      <ScrollView
+        ref={widgetsScrollRef}
+        horizontal
+        showsHorizontalScrollIndicator={themeConfig?.horizontalScrollbarStyle === "native-indicator"}
+        snapToInterval={WIDGET_SNAP_INTERVAL}
+        decelerationRate="fast"
+        bounces={true}
+        alwaysBounceHorizontal={true}
+        overScrollMode="always"
+        onScrollBeginDrag={pauseWidgetsTemporarily}
+        onMomentumScrollEnd={handleWidgetMomentumEnd}
+        contentContainerStyle={styles.widgetsScrollContent}
+      >
+        {/* Widget A: Isolated Featured Language Card (MOB-4, UX-6) */}
+        <FeaturedLanguageWidget
+          learnStats={learnStats}
+          paused={widgetsTouchPaused}
+          sharedStyles={styles}
+        />
+
+        {/* Widget B: Isolated Word of the Moment Card (MOB-4, UX-6) */}
+        <WordOfTheMomentWidget paused={widgetsTouchPaused} sharedStyles={styles} />
+
+        {/* Widget C: Matatu Routes & SACCO Fares Explorer */}
+        <Pressable
+          android_ripple={androidRipple(theme.rippleColor)}
+          accessibilityRole="button"
+          accessibilityLabel="Open Matatu Transit Routes and Fares Hub"
+          onPress={onOpenMatatu}
+          style={pressableStyle([
+            styles.snapshotWidget,
+            themedCardStyle,
+            isFrameless && {
+              paddingHorizontal: 4,
+              borderBottomWidth: StyleSheet.hairlineWidth,
+              borderBottomColor: theme.outlineVariant,
+            },
+          ])}
+        >
+          <View style={styles.widgetHeaderRow}>
+            <View
+              style={[
+                styles.widgetBadgePill,
+                { backgroundColor: `${theme.sky}29` },
+              ]}
+            >
+              <ThemedIcon name="bus" size={12} color={theme.sky} scaleWithTheme={false} />
+              <Text style={[styles.widgetBadgeText, { color: theme.sky }]}>
+                MATATU TRANSIT
+              </Text>
+            </View>
+            <Text
+              style={{
+                fontSize: 11,
+                fontFamily: "Outfit_700Bold",
+                color: theme.sky,
+              }}
+            >
+              {matatuSummary.townCount} Cities
+            </Text>
+          </View>
+
+          <Text
+            style={[styles.widgetMainTitle, { color: theme.textPrimary }]}
+            numberOfLines={1}
+          >
+            {matatuSummary.routeCount} Routes · {matatuSummary.stageCount}{" "}
+            Stages
+          </Text>
+          <Text
+            style={[styles.widgetSubText, { color: theme.textSecondary }]}
+            numberOfLines={2}
+          >
+            Interactive route maps, stage stopovers, SACCO operators, and
+            off-peak/peak fares across Kenya.
+          </Text>
+
+          <View style={styles.widgetFooterLink}>
+            <Text style={[styles.widgetFooterLinkText, { color: theme.sky }]}>
+              Open Matatu Hub
+            </Text>
+            {showTrailingArrows && (
+              <ThemedIcon name="arrow-forward" size={13} color={theme.sky} scaleWithTheme={false} />
+            )}
+          </View>
+        </Pressable>
+
+        {/* Widget D: Next Kenyan Public Holiday Countdown */}
+        {nextHoliday && (
+          <Pressable
+            android_ripple={androidRipple(theme.rippleColor)}
+            accessibilityRole="button"
+            accessibilityLabel={`Next Kenyan public holiday: ${nextHoliday.name}`}
+            onPress={onOpenHolidays}
+            style={pressableStyle([
+              styles.snapshotWidget,
+              themedCardStyle,
+              isFrameless && {
+                paddingHorizontal: 4,
+                borderBottomWidth: StyleSheet.hairlineWidth,
+                borderBottomColor: theme.outlineVariant,
+              },
+            ])}
+          >
+            <View style={styles.widgetHeaderRow}>
+              <View
+                style={[
+                  styles.widgetBadgePill,
+                  { backgroundColor: "rgba(14, 165, 233, 0.16)" },
+                ]}
+              >
+                <ThemedIcon name="calendar" size={12} color={theme.sky} scaleWithTheme={false} />
+                <Text style={[styles.widgetBadgeText, { color: theme.sky }]}>
+                  NEXT HOLIDAY
+                </Text>
+              </View>
+              <Text
+                style={{
+                  fontSize: 11,
+                  fontFamily: "Outfit_700Bold",
+                  color: theme.sky,
+                }}
+              >
+                {nextHoliday.daysAway === 0
+                  ? "Today!"
+                  : `In ${nextHoliday.daysAway} days`}
+              </Text>
+            </View>
+
+            <Text
+              style={[styles.widgetMainTitle, { color: theme.textPrimary }]}
+              numberOfLines={1}
+            >
+              {nextHoliday.name}
+            </Text>
+            <Text
+              style={[styles.widgetSubText, { color: theme.textSecondary }]}
+              numberOfLines={2}
+            >
+              {nextHoliday.formattedWeekdayDate} — {nextHoliday.description}
+            </Text>
+
+            <View style={styles.widgetFooterLink}>
+              <Text
+                style={[styles.widgetFooterLinkText, { color: theme.sky }]}
+              >
+                Full Holiday Calendar
+              </Text>
+              {showTrailingArrows && (
+                <ThemedIcon name="arrow-forward" size={13} color={theme.sky} scaleWithTheme={false} />
+              )}
+            </View>
+          </Pressable>
+        )}
+      </ScrollView>
+    </>
+  );
+});
+
+const HomeBlogReaderModal = React.memo(function HomeBlogReaderModal({
+  post,
+  theme,
+  themeConfig,
+  styles,
+  onClose,
+  onNavigateLink,
+}: {
+  post: StaticBlogPost;
+  theme: any;
+  themeConfig: any;
+  styles: any;
+  onClose: () => void;
+  onNavigateLink: (url: string) => void;
+}) {
+  const [readerProgress, setReaderProgress] = useState(0);
+  const lastReaderProgressRef = useRef(0);
+
+  useEffect(() => {
+    lastReaderProgressRef.current = 0;
+    setReaderProgress(0);
+  }, [post.slug]);
+
+  return (
+    <Modal
+      visible={true}
+      animationType="slide"
+      accessibilityViewIsModal={true}
+      onRequestClose={onClose}
+    >
+      <SafeAreaView
+        style={[styles.screen, { backgroundColor: theme.bgPrimary }]}
+        edges={["top", "left", "right", "bottom"]}
+      >
+        <KenyaStripe />
+        <AndroidTopAppBar
+          title={post.title || "Guide"}
+          subtitle={`${post.author} · ${post.readTime} min read`}
+          onBack={onClose}
+        />
+        {/* 3dp Gold Reading Progress Bar (UX-13) */}
+        <View
+          style={{
+            height: 3,
+            width: "100%",
+            backgroundColor: theme.surfaceContainerHigh,
+          }}
+        >
+          <View
+            style={{
+              height: "100%",
+              width: `${Math.min(100, Math.max(4, readerProgress * 100))}%`,
+              backgroundColor: theme.gold,
+            }}
+          />
+        </View>
+
+        <ScrollView
+          contentContainerStyle={{ padding: 16, paddingBottom: 48 }}
+          showsVerticalScrollIndicator={themeConfig?.verticalScrollbarStyle !== "hidden"}
+          persistentScrollbar={themeConfig?.verticalScrollbarStyle === "always-visible"}
+          scrollEventThrottle={48}
+          onScroll={(e) => {
+            const { contentOffset, contentSize, layoutMeasurement } =
+              e.nativeEvent;
+            const maxScroll = Math.max(
+              1,
+              contentSize.height - layoutMeasurement.height
+            );
+            const next = Math.min(1, Math.max(0, contentOffset.y / maxScroll));
+            if (
+              Math.abs(next - lastReaderProgressRef.current) >= 0.03 ||
+              ((next === 0 || next === 1) && next !== lastReaderProgressRef.current)
+            ) {
+              lastReaderProgressRef.current = next;
+              setReaderProgress(next);
+            }
+          }}
+        >
+          <View
+            style={[
+              styles.readerHeroCard,
+              {
+                backgroundColor: theme.surfaceContainer,
+                borderColor: theme.outlineVariant,
+                marginBottom: 16,
+              },
+            ]}
+          >
+            <View
+              style={{
+                flexDirection: "row",
+                flexWrap: "wrap",
+                gap: 6,
+                marginBottom: 8,
+              }}
+            >
+              {(post.tags || []).map((t) => (
+                <View
+                  key={t}
+                  style={{
+                    backgroundColor: `${theme.gold}20`,
+                    paddingHorizontal: 8,
+                    paddingVertical: 3,
+                    borderRadius: 6,
+                  }}
+                >
+                  <Text
+                    style={{
+                      fontSize: 10,
+                      fontFamily: "Outfit_700Bold",
+                      color: theme.gold,
+                    }}
+                  >
+                    {t}
+                  </Text>
+                </View>
+              ))}
+            </View>
+            <Text
+              style={{
+                fontFamily: "Outfit_800ExtraBold",
+                fontSize: 20,
+                color: theme.textPrimary,
+                lineHeight: 26,
+              }}
+            >
+              {post.title}
+            </Text>
+            <Text
+              style={{
+                fontSize: 13,
+                color: theme.textSecondary,
+                marginTop: 6,
+                lineHeight: 19,
+              }}
+            >
+              {post.excerpt}
+            </Text>
+          </View>
+
+          <View
+            style={[
+              styles.readerHeroCard,
+              {
+                backgroundColor: theme.surfaceContainer,
+                borderColor: theme.outlineVariant,
+              },
+            ]}
+          >
+            <BlogMarkdownContent
+              content={post.content}
+              theme={theme}
+              onNavigateLink={onNavigateLink}
+            />
+          </View>
+        </ScrollView>
+      </SafeAreaView>
+    </Modal>
+  );
+});
+
 export default function HomeScreen() {
   const router = useRouter();
   const insets = useSafeAreaInsets();
@@ -114,8 +550,6 @@ export default function HomeScreen() {
   const [searchQuery, setSearchQuery] = useState("");
   const deferredSearchQuery = useDeferredValue(searchQuery);
   const [selectedPost, setSelectedPost] = useState<StaticBlogPost | null>(null);
-  const [readerProgress, setReaderProgress] = useState(0);
-  const lastReaderProgressRef = useRef(0);
   const lastStorageRawRef = useRef<{
     saved?: string | null;
     visits?: string | null;
@@ -124,41 +558,6 @@ export default function HomeScreen() {
   const [showHolidaysModal, setShowHolidaysModal] = useState(false);
   const [selectedBlogTag, setSelectedBlogTag] = useState<string>("All");
   const isHomeFocused = useIsFocused();
-  const widgetsScrollRef = useRef<ScrollView>(null);
-  const [activeWidgetPage, setActiveWidgetPage] = useState(0);
-  const activeWidgetPageRef = useRef(activeWidgetPage);
-  activeWidgetPageRef.current = activeWidgetPage;
-  const [widgetsTouchPaused, setWidgetsTouchPaused] = useState(false);
-  const resumeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-
-  const pauseWidgetsTemporarily = useCallback(() => {
-    setWidgetsTouchPaused(true);
-    if (resumeTimerRef.current) clearTimeout(resumeTimerRef.current);
-    resumeTimerRef.current = setTimeout(() => {
-      setWidgetsTouchPaused(false);
-    }, 6000);
-  }, []);
-
-  useEffect(() => {
-    return () => {
-      if (resumeTimerRef.current) clearTimeout(resumeTimerRef.current);
-    };
-  }, []);
-
-  useEffect(() => {
-    if (!showDailyWidgets || !isHomeFocused || widgetsTouchPaused) return;
-    const timer = setInterval(() => {
-      if (AppState.currentState !== "active") return;
-      const next = (activeWidgetPageRef.current + 1) % 4;
-      activeWidgetPageRef.current = next;
-      setActiveWidgetPage(next);
-      widgetsScrollRef.current?.scrollTo({
-        x: next * WIDGET_SNAP_INTERVAL,
-        animated: true,
-      });
-    }, 5500);
-    return () => clearInterval(timer);
-  }, [showDailyWidgets, isHomeFocused, widgetsTouchPaused]);
 
   const [learnStats, setLearnStats] = useState<{
     langId: string;
@@ -202,7 +601,7 @@ export default function HomeScreen() {
             } else {
               try {
                 const parsed = JSON.parse(visitsRaw);
-                setVisitCounts(parsed && typeof parsed === "object" ? parsed : {});
+                setVisitCounts(parsed && typeof parsed === "object" && !Array.isArray(parsed) ? parsed : {});
               } catch {
                 setVisitCounts({});
               }
@@ -215,7 +614,7 @@ export default function HomeScreen() {
             if (progRaw) {
               try {
                 const parsed = JSON.parse(progRaw);
-                if (parsed && typeof parsed === "object") {
+                if (parsed && typeof parsed === "object" && !Array.isArray(parsed)) {
                   let totalXP = 0;
                   let bestStreak = 0;
                   let activeLang = "swahili";
@@ -417,7 +816,7 @@ export default function HomeScreen() {
     return { sw: "Habari ya Jioni", en: "Good evening" };
   }, []);
 
-  const allHolidaysList = useMemo(() => {
+  const allHolidaysList = useMemo<FormattedHolidayItem[]>(() => {
     const allYears = Object.values(
       (holidaysData as any).holidays || {}
     ).flat() as {
@@ -426,7 +825,25 @@ export default function HomeScreen() {
       description: string;
       type?: string;
     }[];
-    return [...allYears].sort((a, b) => a.date.localeCompare(b.date));
+    return [...allYears]
+      .sort((a, b) => a.date.localeCompare(b.date))
+      .map((h) => {
+        const dt = new Date(h.date + "T00:00:00");
+        return {
+          ...h,
+          formattedDate: dt.toLocaleDateString("en-KE", {
+            month: "short",
+            day: "numeric",
+            year: "numeric",
+          }),
+          formattedWeekdayDate: dt.toLocaleDateString("en-KE", {
+            weekday: "short",
+            month: "short",
+            day: "numeric",
+            year: "numeric",
+          }),
+        };
+      });
   }, []);
 
   const nextHoliday = useMemo(() => {
@@ -543,12 +960,10 @@ export default function HomeScreen() {
   );
 
   const handleClearSearch = useCallback(() => setSearchQuery(""), []);
+  const handleOpenHolidays = useCallback(() => setShowHolidaysModal(true), []);
+  const handleOpenMatatu = useCallback(() => router.push("/matatu"), [router]);
   const handleCloseHolidays = useCallback(() => setShowHolidaysModal(false), []);
   const handleClosePost = useCallback(() => setSelectedPost(null), []);
-  const handleWidgetMomentumEnd = useCallback((e: any) => {
-    const page = Math.round(e.nativeEvent.contentOffset.x / WIDGET_SNAP_INTERVAL);
-    setActiveWidgetPage(Math.max(0, Math.min(3, page)));
-  }, []);
 
   const offlineRightAction = useMemo(
     () =>
@@ -1059,199 +1474,21 @@ export default function HomeScreen() {
 
         {/* 4. Live Kenyan Snapshot Horizontal Widgets (Swipe-snapped + Page Dots - MOB-4, UX-6) */}
         {showDailyWidgets && (
-          <>
-        <View style={styles.sectionHeader}>
-          <View>
-            <Text style={[styles.sectionOverline, { color: theme.gold }]}>
-              LIVE SNAPSHOT
-            </Text>
-            <Text style={[styles.sectionTitle, { color: theme.textPrimary, textTransform: headingTransform }]}>
-              Daily Kenyan Widgets
-            </Text>
-          </View>
-          <View style={{ flexDirection: "row", alignItems: "center", gap: 5, paddingBottom: 4 }}>
-            {[0, 1, 2, 3].map((dotIdx) => {
-              const active = activeWidgetPage === dotIdx;
-              return (
-                <View
-                  key={dotIdx}
-                  style={{
-                    width: active ? 16 : 6,
-                    height: 6,
-                    borderRadius: 3,
-                    backgroundColor: active ? theme.gold : theme.outlineVariant,
-                  }}
-                />
-              );
-            })}
-          </View>
-        </View>
-
-        <ScrollView
-          ref={widgetsScrollRef}
-          horizontal
-          showsHorizontalScrollIndicator={themeConfig?.horizontalScrollbarStyle === "native-indicator"}
-          snapToInterval={WIDGET_SNAP_INTERVAL}
-          decelerationRate="fast"
-          bounces={true}
-          alwaysBounceHorizontal={true}
-          overScrollMode="always"
-          onScrollBeginDrag={pauseWidgetsTemporarily}
-          onMomentumScrollEnd={handleWidgetMomentumEnd}
-          contentContainerStyle={styles.widgetsScrollContent}
-        >
-          {/* Widget A: Isolated Featured Language Card (MOB-4, UX-6) */}
-          <FeaturedLanguageWidget
+          <DailyWidgetsCarousel
+            isHomeFocused={isHomeFocused}
+            theme={theme}
+            themeConfig={themeConfig}
+            styles={styles}
+            themedCardStyle={themedCardStyle}
+            isFrameless={isFrameless}
+            headingTransform={headingTransform}
+            showTrailingArrows={showTrailingArrows}
             learnStats={learnStats}
-            paused={widgetsTouchPaused}
-            sharedStyles={styles}
+            matatuSummary={matatuSummary}
+            nextHoliday={nextHoliday}
+            onOpenMatatu={handleOpenMatatu}
+            onOpenHolidays={handleOpenHolidays}
           />
-
-          {/* Widget B: Isolated Word of the Moment Card (MOB-4, UX-6) */}
-          <WordOfTheMomentWidget paused={widgetsTouchPaused} sharedStyles={styles} />
-
-          {/* Widget C: Matatu Routes & SACCO Fares Explorer */}
-          <Pressable
-            android_ripple={androidRipple(theme.rippleColor)}
-            accessibilityRole="button"
-            accessibilityLabel="Open Matatu Transit Routes and Fares Hub"
-            onPress={() => router.push("/matatu")}
-            style={pressableStyle([
-              styles.snapshotWidget,
-              themedCardStyle,
-              isFrameless && {
-                paddingHorizontal: 4,
-                borderBottomWidth: StyleSheet.hairlineWidth,
-                borderBottomColor: theme.outlineVariant,
-              },
-            ])}
-          >
-            <View style={styles.widgetHeaderRow}>
-              <View
-                style={[
-                  styles.widgetBadgePill,
-                  { backgroundColor: `${theme.sky}29` },
-                ]}
-              >
-                <ThemedIcon name="bus" size={12} color={theme.sky} scaleWithTheme={false} />
-                <Text style={[styles.widgetBadgeText, { color: theme.sky }]}>
-                  MATATU TRANSIT
-                </Text>
-              </View>
-              <Text
-                style={{
-                  fontSize: 11,
-                  fontFamily: "Outfit_700Bold",
-                  color: theme.sky,
-                }}
-              >
-                {matatuSummary.townCount} Cities
-              </Text>
-            </View>
-
-            <Text
-              style={[styles.widgetMainTitle, { color: theme.textPrimary }]}
-              numberOfLines={1}
-            >
-              {matatuSummary.routeCount} Routes · {matatuSummary.stageCount}{" "}
-              Stages
-            </Text>
-            <Text
-              style={[styles.widgetSubText, { color: theme.textSecondary }]}
-              numberOfLines={2}
-            >
-              Interactive route maps, stage stopovers, SACCO operators, and
-              off-peak/peak fares across Kenya.
-            </Text>
-
-            <View style={styles.widgetFooterLink}>
-              <Text style={[styles.widgetFooterLinkText, { color: theme.sky }]}>
-                Open Matatu Hub
-              </Text>
-              {showTrailingArrows && (
-                <ThemedIcon name="arrow-forward" size={13} color={theme.sky} scaleWithTheme={false} />
-              )}
-            </View>
-          </Pressable>
-
-          {/* Widget D: Next Kenyan Public Holiday Countdown */}
-          {nextHoliday && (
-            <Pressable
-              android_ripple={androidRipple(theme.rippleColor)}
-              accessibilityRole="button"
-              accessibilityLabel={`Next Kenyan public holiday: ${nextHoliday.name}`}
-              onPress={() => setShowHolidaysModal(true)}
-              style={pressableStyle([
-                styles.snapshotWidget,
-                themedCardStyle,
-                isFrameless && {
-                  paddingHorizontal: 4,
-                  borderBottomWidth: StyleSheet.hairlineWidth,
-                  borderBottomColor: theme.outlineVariant,
-                },
-              ])}
-            >
-              <View style={styles.widgetHeaderRow}>
-                <View
-                  style={[
-                    styles.widgetBadgePill,
-                    { backgroundColor: "rgba(14, 165, 233, 0.16)" },
-                  ]}
-                >
-                  <ThemedIcon name="calendar" size={12} color={theme.sky} scaleWithTheme={false} />
-                  <Text style={[styles.widgetBadgeText, { color: theme.sky }]}>
-                    NEXT HOLIDAY
-                  </Text>
-                </View>
-                <Text
-                  style={{
-                    fontSize: 11,
-                    fontFamily: "Outfit_700Bold",
-                    color: theme.sky,
-                  }}
-                >
-                  {nextHoliday.daysAway === 0
-                    ? "Today!"
-                    : `In ${nextHoliday.daysAway} days`}
-                </Text>
-              </View>
-
-              <Text
-                style={[styles.widgetMainTitle, { color: theme.textPrimary }]}
-                numberOfLines={1}
-              >
-                {nextHoliday.name}
-              </Text>
-              <Text
-                style={[styles.widgetSubText, { color: theme.textSecondary }]}
-                numberOfLines={2}
-              >
-                {new Date(nextHoliday.date + "T00:00:00").toLocaleDateString(
-                  "en-KE",
-                  {
-                    weekday: "short",
-                    month: "short",
-                    day: "numeric",
-                    year: "numeric",
-                  }
-                )}{" "}
-                — {nextHoliday.description}
-              </Text>
-
-              <View style={styles.widgetFooterLink}>
-                <Text
-                  style={[styles.widgetFooterLinkText, { color: theme.sky }]}
-                >
-                  Full Holiday Calendar
-                </Text>
-                {showTrailingArrows && (
-                  <ThemedIcon name="arrow-forward" size={13} color={theme.sky} scaleWithTheme={false} />
-                )}
-              </View>
-            </Pressable>
-          )}
-        </ScrollView>
-          </>
         )}
 
         {/* 5. Pinned / Saved Quick Access Strip */}
@@ -1534,11 +1771,7 @@ export default function HomeScreen() {
             <Pressable
               key={post.slug}
               android_ripple={androidRipple(theme.rippleColor)}
-              onPress={() => {
-                lastReaderProgressRef.current = 0;
-                setReaderProgress(0);
-                setSelectedPost(post);
-              }}
+              onPress={() => setSelectedPost(post)}
               style={pressableStyle([
                 styles.guideCarouselCard,
                 themedCardStyle,
@@ -1609,232 +1842,96 @@ export default function HomeScreen() {
       </ScrollView>
 
       {/* Kenyan Statutory Public Holidays Modal */}
-      <Modal
-        visible={showHolidaysModal}
-        animationType="slide"
-        accessibilityViewIsModal={true}
-        onRequestClose={() => setShowHolidaysModal(false)}
-      >
-        <SafeAreaView
-          style={[styles.screen, { backgroundColor: theme.bgPrimary }]}
-          edges={["top", "left", "right", "bottom"]}
+      {showHolidaysModal && (
+        <Modal
+          visible={true}
+          animationType="slide"
+          accessibilityViewIsModal={true}
+          onRequestClose={handleCloseHolidays}
         >
-          <KenyaStripe />
-          <AndroidTopAppBar
-            title="Kenyan Public Holidays"
-            subtitle="Statutory National & Religious Holidays"
-            onBack={handleCloseHolidays}
-          />
-          <ScrollView
-            contentContainerStyle={{ padding: 16, paddingBottom: 48, gap: 10 }}
-            showsVerticalScrollIndicator={themeConfig?.verticalScrollbarStyle !== "hidden"}
-        persistentScrollbar={themeConfig?.verticalScrollbarStyle === "always-visible"}
+          <SafeAreaView
+            style={[styles.screen, { backgroundColor: theme.bgPrimary }]}
+            edges={["top", "left", "right", "bottom"]}
           >
-            {allHolidaysList.map((h, idx) => (
-              <View
-                key={`${h.date}-${idx}`}
-                style={[
-                  styles.readerHeroCard,
-                  {
-                    backgroundColor: theme.surfaceContainer,
-                    borderColor: theme.outlineVariant,
-                  },
-                ]}
-              >
-                <View
-                  style={{
-                    flexDirection: "row",
-                    flexWrap: "wrap",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    gap: 8,
-                    marginBottom: 4,
-                  }}
-                >
-                  <Text
-                    style={{
-                      fontFamily: "Outfit_700Bold",
-                      fontSize: 15,
-                      color: theme.textPrimary,
-                      flexShrink: 1,
-                    }}
-                  >
-                    {h.name}
-                  </Text>
-                  <Text
-                    style={{
-                      fontSize: 11.5,
-                      fontFamily: "Outfit_700Bold",
-                      color: theme.sky,
-                    }}
-                  >
-                    {new Date(h.date + "T00:00:00").toLocaleDateString(
-                      "en-KE",
-                      {
-                        month: "short",
-                        day: "numeric",
-                        year: "numeric",
-                      }
-                    )}
-                  </Text>
-                </View>
-                <Text
-                  style={{
-                    fontSize: 12.5,
-                    color: theme.textSecondary,
-                    lineHeight: 18,
-                  }}
-                >
-                  {h.description}
-                </Text>
-              </View>
-            ))}
-          </ScrollView>
-        </SafeAreaView>
-      </Modal>
-
-      {/* Full-Screen Blog Guide Reader Modal with Reading Progress Bar & Tappable Links (MOB-10, UX-2, UX-13) */}
-      <Modal
-        visible={!!selectedPost}
-        animationType="slide"
-        accessibilityViewIsModal={true}
-        onRequestClose={() => setSelectedPost(null)}
-      >
-        <SafeAreaView
-          style={[styles.screen, { backgroundColor: theme.bgPrimary }]}
-          edges={["top", "left", "right", "bottom"]}
-        >
-          <KenyaStripe />
-          <AndroidTopAppBar
-            title={selectedPost?.title || "Guide"}
-            subtitle={
-              selectedPost
-                ? `${selectedPost.author} · ${selectedPost.readTime} min read`
-                : ""
-            }
-            onBack={handleClosePost}
-          />
-          {/* 3dp Gold Reading Progress Bar (UX-13) */}
-          <View
-            style={{
-              height: 3,
-              width: "100%",
-              backgroundColor: theme.surfaceContainerHigh,
-            }}
-          >
-            <View
-              style={{
-                height: "100%",
-                width: `${Math.min(100, Math.max(4, readerProgress * 100))}%`,
-                backgroundColor: theme.gold,
-              }}
+            <KenyaStripe />
+            <AndroidTopAppBar
+              title="Kenyan Public Holidays"
+              subtitle="Statutory National & Religious Holidays"
+              onBack={handleCloseHolidays}
             />
-          </View>
-
-          {selectedPost && (
             <ScrollView
-              contentContainerStyle={{ padding: 16, paddingBottom: 48 }}
+              contentContainerStyle={{ padding: 16, paddingBottom: 48, gap: 10 }}
               showsVerticalScrollIndicator={themeConfig?.verticalScrollbarStyle !== "hidden"}
-        persistentScrollbar={themeConfig?.verticalScrollbarStyle === "always-visible"}
-              scrollEventThrottle={48}
-              onScroll={(e) => {
-                const { contentOffset, contentSize, layoutMeasurement } =
-                  e.nativeEvent;
-                const maxScroll = Math.max(
-                  1,
-                  contentSize.height - layoutMeasurement.height
-                );
-                const next = Math.min(1, Math.max(0, contentOffset.y / maxScroll));
-                if (
-                  Math.abs(next - lastReaderProgressRef.current) >= 0.03 ||
-                  ((next === 0 || next === 1) && next !== lastReaderProgressRef.current)
-                ) {
-                  lastReaderProgressRef.current = next;
-                  setReaderProgress(next);
-                }
-              }}
+              persistentScrollbar={themeConfig?.verticalScrollbarStyle === "always-visible"}
             >
-              <View
-                style={[
-                  styles.readerHeroCard,
-                  {
-                    backgroundColor: theme.surfaceContainer,
-                    borderColor: theme.outlineVariant,
-                    marginBottom: 16,
-                  },
-                ]}
-              >
+              {allHolidaysList.map((h, idx) => (
                 <View
-                  style={{
-                    flexDirection: "row",
-                    flexWrap: "wrap",
-                    gap: 6,
-                    marginBottom: 8,
-                  }}
+                  key={`${h.date}-${idx}`}
+                  style={[
+                    styles.readerHeroCard,
+                    {
+                      backgroundColor: theme.surfaceContainer,
+                      borderColor: theme.outlineVariant,
+                    },
+                  ]}
                 >
-                  {(selectedPost.tags || []).map((t) => (
-                    <View
-                      key={t}
+                  <View
+                    style={{
+                      flexDirection: "row",
+                      flexWrap: "wrap",
+                      justifyContent: "space-between",
+                      alignItems: "center",
+                      gap: 8,
+                      marginBottom: 4,
+                    }}
+                  >
+                    <Text
                       style={{
-                        backgroundColor: `${theme.gold}20`,
-                        paddingHorizontal: 8,
-                        paddingVertical: 3,
-                        borderRadius: 6,
+                        fontFamily: "Outfit_700Bold",
+                        fontSize: 15,
+                        color: theme.textPrimary,
+                        flexShrink: 1,
                       }}
                     >
-                      <Text
-                        style={{
-                          fontSize: 10,
-                          fontFamily: "Outfit_700Bold",
-                          color: theme.gold,
-                        }}
-                      >
-                        {t}
-                      </Text>
-                    </View>
-                  ))}
+                      {h.name}
+                    </Text>
+                    <Text
+                      style={{
+                        fontSize: 11.5,
+                        fontFamily: "Outfit_700Bold",
+                        color: theme.sky,
+                      }}
+                    >
+                      {h.formattedDate}
+                    </Text>
+                  </View>
+                  <Text
+                    style={{
+                      fontSize: 12.5,
+                      color: theme.textSecondary,
+                      lineHeight: 18,
+                    }}
+                  >
+                    {h.description}
+                  </Text>
                 </View>
-                <Text
-                  style={{
-                    fontFamily: "Outfit_800ExtraBold",
-                    fontSize: 20,
-                    color: theme.textPrimary,
-                    lineHeight: 26,
-                  }}
-                >
-                  {selectedPost.title}
-                </Text>
-                <Text
-                  style={{
-                    fontSize: 13,
-                    color: theme.textSecondary,
-                    marginTop: 6,
-                    lineHeight: 19,
-                  }}
-                >
-                  {selectedPost.excerpt}
-                </Text>
-              </View>
-
-              <View
-                style={[
-                  styles.readerHeroCard,
-                  {
-                    backgroundColor: theme.surfaceContainer,
-                    borderColor: theme.outlineVariant,
-                  },
-                ]}
-              >
-                <BlogMarkdownContent
-                  content={selectedPost.content}
-                  theme={theme}
-                  onNavigateLink={handleBlogLinkNavigation}
-                />
-              </View>
+              ))}
             </ScrollView>
-          )}
-        </SafeAreaView>
-      </Modal>
+          </SafeAreaView>
+        </Modal>
+      )}
+
+      {/* Full-Screen Blog Guide Reader Modal with Reading Progress Bar & Tappable Links (MOB-10, UX-2, UX-13) */}
+      {selectedPost && (
+        <HomeBlogReaderModal
+          post={selectedPost}
+          theme={theme}
+          themeConfig={themeConfig}
+          styles={styles}
+          onClose={handleClosePost}
+          onNavigateLink={handleBlogLinkNavigation}
+        />
+      )}
     </SafeAreaView>
   );
 }

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import DynamicIcon from "@/components/ui/DynamicIcon";
+import { Flag, Lightbulb, Landmark, Lock, Zap, Globe, Search, ShieldCheck, BarChart, Scale } from "lucide-react";
 import { TOOLS } from "@/lib/tools-registry";
 
 export const metadata: Metadata = {
@@ -112,7 +112,7 @@ export default function AboutPage() {
       {/* Hero */}
       <div className="text-center space-y-4">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold/10 border border-gold/20 text-gold text-xs font-semibold">
-          <DynamicIcon emoji="🇰🇪" className="w-3 h-3 inline-block mr-1" /> Built in Nairobi for Kenya · Powered by Open Public Data
+          <Flag className="w-3 h-3 inline-block mr-1" aria-hidden="true" /> Built in Nairobi for Kenya · Powered by Open Public Data
         </div>
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-[family-name:var(--font-outfit)] text-text-primary tracking-tight">
           About <span className="gradient-text-kenya">KenyaHub</span>
@@ -128,7 +128,7 @@ export default function AboutPage() {
       {/* 6 Core Pillars */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         <div className="bg-bg-card border border-border rounded-xl p-5 space-y-2">
-          <div className="w-10 h-10 rounded-lg bg-kenya-green/10 flex items-center justify-center text-xl"><DynamicIcon emoji="💡" /></div>
+          <div className="w-10 h-10 rounded-lg bg-kenya-green/10 flex items-center justify-center text-xl"><Lightbulb className="w-[1em] h-[1em] inline-block" aria-hidden="true" /></div>
           <h2 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">100% Free Public Access</h2>
           <p className="text-xs text-text-secondary leading-relaxed">
             All {TOOLS.length} specialized tools, 47 county profiles, 64+ matatu route maps, and 23 language courses on KenyaHub are free to use without accounts or paywalls.
@@ -136,7 +136,7 @@ export default function AboutPage() {
         </div>
 
         <div className="bg-bg-card border border-border rounded-xl p-5 space-y-2">
-          <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center text-xl"><DynamicIcon emoji="🏛️" /></div>
+          <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center text-xl"><Landmark className="w-[1em] h-[1em] inline-block" aria-hidden="true" /></div>
           <h2 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">Statutory Precision</h2>
           <p className="text-xs text-text-secondary leading-relaxed">
             Every formula is directly modeled on published Kenyan legislation — including the Income Tax Act (Cap 470), Tax Laws (Amendment) Act 2024, Stamp Duty Act (Cap 480), and Traffic Act (Cap 403).
@@ -144,7 +144,7 @@ export default function AboutPage() {
         </div>
 
         <div className="bg-bg-card border border-border rounded-xl p-5 space-y-2">
-          <div className="w-10 h-10 rounded-lg bg-sky/10 flex items-center justify-center text-xl"><DynamicIcon emoji="🔒" /></div>
+          <div className="w-10 h-10 rounded-lg bg-sky/10 flex items-center justify-center text-xl"><Lock className="w-[1em] h-[1em] inline-block" aria-hidden="true" /></div>
           <h2 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">100% Local Browser Privacy</h2>
           <p className="text-xs text-text-secondary leading-relaxed">
             All financial and academic calculations execute locally inside your browser. Your salary figures, loan balances, and grades never leave your device.
@@ -152,7 +152,7 @@ export default function AboutPage() {
         </div>
 
         <div className="bg-bg-card border border-border rounded-xl p-5 space-y-2">
-          <div className="w-10 h-10 rounded-lg bg-kenya-red/10 flex items-center justify-center text-xl"><DynamicIcon emoji="⚡" /></div>
+          <div className="w-10 h-10 rounded-lg bg-kenya-red/10 flex items-center justify-center text-xl"><Zap className="w-[1em] h-[1em] inline-block" aria-hidden="true" /></div>
           <h2 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">Edge-First Speed</h2>
           <p className="text-xs text-text-secondary leading-relaxed">
             Compiled as a static-first web application and served across global edge nodes so pages load instantaneously even on 3G rural mobile connections.
@@ -160,7 +160,7 @@ export default function AboutPage() {
         </div>
 
         <div className="bg-bg-card border border-border rounded-xl p-5 space-y-2">
-          <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center text-xl"><DynamicIcon emoji="🌍" /></div>
+          <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center text-xl"><Globe className="w-[1em] h-[1em] inline-block" aria-hidden="true" /></div>
           <h2 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">Cultural &amp; Linguistic Heritage</h2>
           <p className="text-xs text-text-secondary leading-relaxed">
             Preserves 23 Kenyan languages through structured interactive courses, 208,776+ verified dictionary and course entries, and authenticated historical oral literature (1840–2026).
@@ -168,7 +168,7 @@ export default function AboutPage() {
         </div>
 
         <div className="bg-bg-card border border-border rounded-xl p-5 space-y-2">
-          <div className="w-10 h-10 rounded-lg bg-kenya-green/10 flex items-center justify-center text-xl"><DynamicIcon emoji="🔍" /></div>
+          <div className="w-10 h-10 rounded-lg bg-kenya-green/10 flex items-center justify-center text-xl"><Search className="w-[1em] h-[1em] inline-block" aria-hidden="true" /></div>
           <h2 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">Continuous Statutory Audits</h2>
           <p className="text-xs text-text-secondary leading-relaxed">
             Our automated data-freshness auditor tracks Finance Act revisions, EPRA tariff adjustments, NSSF tiers, and KRA CRSP schedules.
@@ -179,7 +179,7 @@ export default function AboutPage() {
       {/* Editorial Research & Verification Methodology */}
       <div className="bg-bg-card border border-border rounded-2xl p-6 sm:p-8 space-y-4">
         <h2 className="text-xl font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2">
-          <DynamicIcon emoji="🛡️" className="w-5 h-5 text-kenya-green-light" /> Editorial Methodology &amp; Verification Process
+          <ShieldCheck className="w-5 h-5 text-kenya-green-light" aria-hidden="true" /> Editorial Methodology &amp; Verification Process
         </h2>
         <div className="space-y-3 text-xs sm:text-sm text-text-secondary leading-relaxed">
           <p>
@@ -203,7 +203,7 @@ export default function AboutPage() {
       <div className="bg-bg-card border border-border rounded-2xl p-6 sm:p-8 space-y-6">
         <div>
           <h2 className="text-xl font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-2">
-            <DynamicIcon emoji="📊" className="w-5 h-5 inline-block mr-2" /> Primary Public Data Sources
+            <BarChart className="w-5 h-5 inline-block mr-2" aria-hidden="true" /> Primary Public Data Sources
           </h2>
           <p className="text-xs text-text-muted">
             KenyaHub synthesizes public-domain records and statutory schedules from the following Kenyan institutions:
@@ -224,7 +224,7 @@ export default function AboutPage() {
       {/* Editorial Standards & Non-Affiliation Disclaimer */}
       <div className="bg-bg-card border border-border rounded-2xl p-6 sm:p-8 space-y-4">
         <h2 className="text-xl font-bold font-[family-name:var(--font-outfit)] text-text-primary">
-          <DynamicIcon emoji="⚖️" className="w-5 h-5 inline-block mr-2" /> Independence &amp; Professional Disclaimer
+          <Scale className="w-5 h-5 inline-block mr-2" aria-hidden="true" /> Independence &amp; Professional Disclaimer
         </h2>
         <p className="text-xs sm:text-sm text-text-secondary leading-relaxed">
           <strong>Non-Affiliation Notice:</strong> KenyaHub is an independent private civic-technology and educational publication based in Nairobi, Kenya. We are not affiliated with, endorsed by, or contracted by the Government of the Republic of Kenya, KRA, NTSA, KICD, KNEC, KUCCPS, Safaricom PLC, or any county government.

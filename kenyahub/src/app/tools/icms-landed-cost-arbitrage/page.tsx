@@ -2,7 +2,6 @@
 
 import { useState, useMemo } from "react";
 import { ArrowRightLeft } from "lucide-react";
-import ToolShell from "@/components/tools/ToolShell";
 import CustomSelect from "@/components/ui/CustomSelect";
 import { TOOLS } from "@/lib/tools-registry";
 import utilData from "@/data/kenya-utility-tools-2026.json";
@@ -67,7 +66,7 @@ export default function IcmsLandedCostArbitragePage() {
   }, [fobKes, freightKes, cbmOrKg, selectedHs, clearingFeeKes, consolidatorRate]);
 
   return (
-    <ToolShell tool={tool}>
+    <>
       <div className="space-y-6">
         <div className="rounded-2xl border border-gold/30 bg-bg-card p-5 sm:p-7 shadow-xs">
           {/* Mode Toggle */}
@@ -271,6 +270,6 @@ export default function IcmsLandedCostArbitragePage() {
           </div>
         </div>
       </div>
-    </ToolShell>
+    </>
   );
 }

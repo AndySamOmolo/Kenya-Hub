@@ -2,7 +2,6 @@
 
 import { useState, useMemo } from "react";
 import { X } from "lucide-react";
-import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import waterData from "@/data/water-tariffs.json";
 
@@ -48,7 +47,7 @@ export default function WaterBillCalculatorPage() {
     `KES ${n.toLocaleString("en-KE", { minimumFractionDigits: 0, maximumFractionDigits: 0 })}`;
 
   return (
-    <ToolShell tool={tool}>
+    <>
       <div className="space-y-6">
         {/* Utility selector */}
         <div className="bg-bg-card border border-border rounded-xl p-5 sm:p-6">
@@ -228,6 +227,6 @@ export default function WaterBillCalculatorPage() {
           </ul>
         </div>
       </div>
-    </ToolShell>
+    </>
   );
 }

@@ -2,7 +2,6 @@
 
 import { useState, useMemo } from "react";
 import { Copy, Check, AlertTriangle } from "lucide-react";
-import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import utilData from "@/data/kenya-utility-tools-2026.json";
 
@@ -76,7 +75,7 @@ export default function PpraEgpTenderSerializerPage() {
   };
 
   return (
-    <ToolShell tool={cleanTool}>
+    <>
       <div className="space-y-6">
         <div className="rounded-2xl border border-gold/30 bg-bg-card p-5 sm:p-7 shadow-xs">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-5">
@@ -215,6 +214,6 @@ export default function PpraEgpTenderSerializerPage() {
           </button>
         </div>
       </div>
-    </ToolShell>
+    </>
   );
 }

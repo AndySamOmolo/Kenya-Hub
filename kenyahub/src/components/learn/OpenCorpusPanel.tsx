@@ -2,15 +2,19 @@
 
 import React, { useState } from "react";
 import { BookOpen, Calendar, ExternalLink, Headphones, Sparkles, Volume2 } from "lucide-react";
-import { getLanguageOpenCorpus } from "@/lib/open-corpus";
+import type { OpenCorpusLanguageData } from "@/lib/open-corpus";
 
 interface OpenCorpusPanelProps {
   languageId?: string;
   languageName: string;
+  openCorpusData?: OpenCorpusLanguageData | null;
 }
 
-export default function OpenCorpusPanel({ languageId, languageName }: OpenCorpusPanelProps) {
-  const data = getLanguageOpenCorpus(languageId);
+export default function OpenCorpusPanel({
+  languageName,
+  openCorpusData = null,
+}: OpenCorpusPanelProps) {
+  const data = openCorpusData ?? null;
   const chapters = data?.audioChapters ?? [];
   const [activeChapterId, setActiveChapterId] = useState<string>(chapters[0]?.id ?? "");
 

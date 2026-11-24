@@ -2,7 +2,6 @@
 
 import { useState, useMemo } from "react";
 import { Copy, Check, Printer, FileText, Mail, MessageCircle } from "lucide-react";
-import ToolShell from "@/components/tools/ToolShell";
 import CustomSelect from "@/components/ui/CustomSelect";
 import { TOOLS } from "@/lib/tools-registry";
 import domesticWageData from "@/data/domestic-wage-data.json";
@@ -173,7 +172,7 @@ export default function DomesticWageCalculatorPage() {
   )}&body=${encodeURIComponent(contractText)}`;
 
   return (
-    <ToolShell tool={tool}>
+    <>
       <div className="space-y-6">
         <div className="rounded-2xl border border-gold/30 bg-bg-card p-5 sm:p-7 shadow-xs">
           <div className="flex flex-wrap gap-2 mb-4">
@@ -508,6 +507,6 @@ export default function DomesticWageCalculatorPage() {
           </div>
         </div>
       </div>
-    </ToolShell>
+    </>
   );
 }

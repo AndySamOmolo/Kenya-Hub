@@ -12,7 +12,6 @@ import {
   Languages,
   RotateCcw,
 } from "lucide-react";
-import ToolShell from "@/components/tools/ToolShell";
 import CustomSelect from "@/components/ui/CustomSelect";
 import { getToolBySlug } from "@/lib/tools-registry";
 import everydayData from "@/data/kenya-everyday-tools-2026.json";
@@ -88,6 +87,7 @@ const DEFAULT_LOG: IpoaLog = {
 export default function Article49RightsCompanionPage() {
   const art49 = everydayData.article49Rights;
   const counties = everydayData.rainwater.counties;
+const COUNTY_SELECT_OPTIONS = counties.map((c) => ({ value: c.name, label: c.name }));
 
   const [arrestDate, setArrestDate] = useState("2026-11-24");
   const [arrestTime, setArrestTime] = useState("09:00");
@@ -211,7 +211,7 @@ export default function Article49RightsCompanionPage() {
   };
 
   return (
-    <ToolShell tool={tool}>
+    <>
       <div className="space-y-6">
         {/* 1. 24-Hour Custody Deadline Calculator */}
         <div className="rounded-2xl border border-gold/30 bg-bg-card p-5 sm:p-7 shadow-xs space-y-5">
@@ -493,14 +493,9 @@ export default function Article49RightsCompanionPage() {
                 onValueChange={(v) =>
                   setIpoaLog((prev) => ({ ...prev, county: v }))
                 }
+                options={COUNTY_SELECT_OPTIONS}
                 className="w-full text-xs"
-              >
-                {counties.map((c) => (
-                  <option key={c.code} value={c.name}>
-                    {c.name}
-                  </option>
-                ))}
-              </CustomSelect>
+              />
             </div>
 
             <div>
@@ -608,6 +603,6 @@ export default function Article49RightsCompanionPage() {
           </div>
         </div>
       </div>
-    </ToolShell>
+    </>
   );
 }

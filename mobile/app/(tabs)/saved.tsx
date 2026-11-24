@@ -336,7 +336,7 @@ const SavedToolCard = React.memo(function SavedToolCard({
 
 export default function SavedScreen() {
   const router = useRouter();
-  const { theme, isDark, themeConfig, themeMetrics, resolvedFonts } = useTheme();
+  const { theme, isDark, themeConfig, themeMetrics, resolvedFonts, resetThemeConfig } = useTheme();
   const styles = useMemo(
     () => createSavedStyles(themeMetrics, resolvedFonts),
     [themeMetrics, resolvedFonts]
@@ -454,6 +454,7 @@ export default function SavedScreen() {
           onPress: async () => {
             try {
               await AsyncStorage.clear();
+              resetThemeConfig();
               lastSavedRawRef.current = null;
               setSaved([]);
             } catch {}
@@ -461,7 +462,7 @@ export default function SavedScreen() {
         },
       ]
     );
-  }, []);
+  }, [resetThemeConfig]);
 
   const tools = useMemo(
     () =>
@@ -509,10 +510,38 @@ export default function SavedScreen() {
           { paddingHorizontal: screenPadPx, paddingBottom: bottomClearance },
         ]}
         showsVerticalScrollIndicator={themeConfig?.verticalScrollbarStyle !== "hidden"}
-        persistentScrollbar={themeConfig.verticalScrollbarStyle === "always-visible"}
+        persistentScrollbar={themeConfig?.verticalScrollbarStyle === "always-visible"}
         keyboardShouldPersistTaps="handled"
         overScrollMode="always"
       >
+        <Pressable
+          onPress={() => router.push("/account")}
+          style={({ pressed }) => [
+            themedCardStyle,
+            {
+              flexDirection: "row",
+              alignItems: "center",
+              justifyContent: "space-between",
+              padding: 14,
+              marginBottom: 14,
+              opacity: pressed ? 0.85 : 1,
+            },
+          ]}
+        >
+          <View style={{ flexDirection: "row", alignItems: "center", gap: 12, flex: 1 }}>
+            <ThemedIconBadge name="person-circle-outline" accentColor={theme.gold} baseSize={40} iconSize={20} />
+            <View style={{ flex: 1 }}>
+              <Text style={{ color: theme.textPrimary, fontWeight: "700", fontSize: 14 }}>
+                KenyaHub Account
+              </Text>
+              <Text style={{ color: theme.textSecondary, fontSize: 12, marginTop: 1 }}>
+                Sign in with email & password
+              </Text>
+            </View>
+          </View>
+          <Ionicons name="chevron-forward" size={18} color={theme.textMuted} />
+        </Pressable>
+
         {tools.length > 0 ? (
           <>
             <Text style={[styles.countText, { color: theme.textMuted }]}>

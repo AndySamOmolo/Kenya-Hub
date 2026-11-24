@@ -1,7 +1,7 @@
 import Link from "next/link";
+import { FileText } from "lucide-react";
 import { Client, Databases, Query } from "node-appwrite";
-import { STATIC_BLOG_POSTS } from "@/data/blog-posts";
-import DynamicIcon from "@/components/ui/DynamicIcon";
+import { STATIC_BLOG_POST_SUMMARIES } from "@/data/blog-posts-summary";
 import BlogListClient from "./BlogListClient";
 import { Metadata } from "next";
 
@@ -55,6 +55,7 @@ export const metadata: Metadata = {
 
 const DATABASE_ID = "kenyahub-db";
 const BLOGS_COLLECTION_ID = "blogs";
+const APPWRITE_TIMEOUT_MS = 5000;
 const EXCLUDED_SLUGS = new Set([
   "greatest-kenyan-hiphop-albums-of-all-time",
   "traditional-bantu-beliefs-and-magic-in-kenya",
@@ -85,11 +86,16 @@ export default async function BlogPage() {
 
     const databases = new Databases(client);
 
-    const response = await databases.listDocuments(
-      DATABASE_ID,
-      BLOGS_COLLECTION_ID,
-      [Query.limit(100), Query.orderDesc("publishedAt")]
-    );
+    const response = await Promise.race([
+      databases.listDocuments(
+        DATABASE_ID,
+        BLOGS_COLLECTION_ID,
+        [Query.limit(100), Query.orderDesc("publishedAt")]
+      ),
+      new Promise<never>((_, reject) =>
+        setTimeout(() => reject(new Error("Appwrite query timed out")), APPWRITE_TIMEOUT_MS)
+      ),
+    ]);
 
     appwritePosts = response.documents
       .filter(isHighQualityAppwritePost)
@@ -106,16 +112,16 @@ export default async function BlogPage() {
         tags: doc.tags || [],
       }));
   } catch {
-    // Static fallback when Appwrite is offline or paused
+    // Static fallback when Appwrite is offline, paused, or times out
   }
 
   const allPostsMap = new Map();
 
-  for (const post of STATIC_BLOG_POSTS) {
+  for (const post of STATIC_BLOG_POST_SUMMARIES) {
     allPostsMap.set(post.slug, post);
   }
 
-  // Allow Appwrite remote posts to update/override STATIC_BLOG_POSTS when post.slug matches
+  // Allow Appwrite remote posts to update/override STATIC_BLOG_POST_SUMMARIES when post.slug matches
   for (const post of appwritePosts) {
     const existing = allPostsMap.get(post.slug);
     allPostsMap.set(post.slug, existing ? { ...existing, ...post } : post);
@@ -180,7 +186,7 @@ export default async function BlogPage() {
 
       <header className="mb-10">
         <h1 className="text-3xl sm:text-4xl font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-2 flex items-center gap-2">
-          <DynamicIcon emoji="📝" className="w-8 h-8 text-gold" /> Kenya Guides, Tax &amp; Heritage Blog
+          <FileText className="w-8 h-8 text-gold" aria-hidden="true" /> Kenya Guides, Tax &amp; Heritage Blog
         </h1>
         <p className="text-text-secondary text-sm sm:text-base leading-relaxed">
           In-depth editorial guides, worked statutory calculations, and linguistic research covering Kenyan personal finance, KRA taxes, education, housing, healthcare, and cultural heritage.

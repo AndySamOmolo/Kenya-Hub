@@ -140,26 +140,22 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <head suppressHydrationWarning>
-        <link rel="preconnect" href="https://audio.kenyahub.me" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://audio.kenyahub.me" />
         <link rel="dns-prefetch" href="https://fra.cloud.appwrite.io" />
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         <meta name="google-adsense-account" content="ca-pub-5895990873842803" />
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5895990873842803"
-          crossOrigin="anonymous"
-        />
       </head>
       <body className="min-h-screen flex flex-col">
         <a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:px-4 focus:py-2 focus:rounded-lg focus:bg-gold focus:text-black focus:font-bold focus:text-xs">Skip to main content</a>
         <ThemeProvider>
+          <AuthProvider>
           <ScrollReset />
           <AdSenseLoader />
           <Navbar />
           <main id="main-content" className="flex-1 w-full min-w-0 max-w-full overflow-x-hidden">{children}</main>
           <Footer />
           <CookieConsent />
+          </AuthProvider>
         </ThemeProvider>
       </body>
     </html>

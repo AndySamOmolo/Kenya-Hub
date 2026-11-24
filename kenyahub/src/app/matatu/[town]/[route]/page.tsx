@@ -184,7 +184,7 @@ export default async function RouteDetailPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(busTripSchema) }}
       />
-      <RouteDetailView townSlug={townSlug} routeSlug={routeSlug} />
+      <RouteDetailView townSlug={townSlug} townInfo={townObj} route={routeObj} otherRoutes={townRoutes.filter((r) => r.slug !== routeObj.slug).slice(0, 4)} />
     </>
   );
 }

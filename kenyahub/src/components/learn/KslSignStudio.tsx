@@ -28,7 +28,7 @@ import {
   KSL_STARTER_SIGNS,
   type KslStarterSign,
 } from "@/data/ksl-starter";
-import { OPEN_CORPUS_INDEX, type KslStorybookItem, type KslVideoItem } from "@/lib/open-corpus";
+import type { KslStorybookItem, KslVideoItem } from "@/lib/open-corpus";
 import { loadKslIndex } from "@/lib/learning-shards";
 
 interface R2KslSignMeta {
@@ -217,8 +217,15 @@ function drawR2PoseFrame(
 type VideoFilterTab = "all" | "maseno-stickman" | "human-sign-bible" | "saved";
 const VIDEOS_PER_PAGE = 40;
 
-export default function KslSignStudio() {
-  const initialVideos: KslVideoItem[] = OPEN_CORPUS_INDEX.ksl.videos ?? [];
+interface KslSignStudioProps {
+  initialVideos?: KslVideoItem[];
+  storybooks?: KslStorybookItem[];
+}
+
+export default function KslSignStudio({
+  initialVideos = [],
+  storybooks = [],
+}: KslSignStudioProps) {
   const [tab, setTab] = useState<"videos" | "signs" | "quiz" | "alphabet" | "grammar">(
     initialVideos.length > 0 ? "videos" : "signs"
   );
@@ -242,9 +249,7 @@ export default function KslSignStudio() {
   const [playbackRate, setPlaybackRate] = useState<number>(1);
   const [loopVideo, setLoopVideo] = useState<boolean>(true);
   const [savedVideoIds, setSavedVideoIds] = useState<string[]>([]);
-  const [kslStorybooks, setKslStorybooks] = useState<KslStorybookItem[]>(
-    (OPEN_CORPUS_INDEX.ksl?.storybooks ?? []) as KslStorybookItem[]
-  );
+  const [kslStorybooks, setKslStorybooks] = useState<KslStorybookItem[]>(storybooks);
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const quizVideoRef = useRef<HTMLVideoElement | null>(null);
 

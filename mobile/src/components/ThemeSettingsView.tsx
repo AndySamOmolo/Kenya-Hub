@@ -1032,6 +1032,14 @@ export function ThemeSettingsView() {
     triggerHaptic();
   }, []);
 
+  const handleConfigFieldChange = useCallback(
+    (key: keyof ThemeConfig, val: any) => {
+      doHaptic();
+      updateThemeConfig({ [key]: val } as Partial<ThemeConfig>);
+    },
+    [doHaptic, updateThemeConfig]
+  );
+
   const handleSelectPreviewPill = useCallback(
     (idx: number) => {
       doHaptic();
@@ -1606,10 +1614,8 @@ export function ThemeSettingsView() {
               </View>
               <Switch
                 value={Boolean(themeConfig?.oledBlack)}
-                onValueChange={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ oledBlack: val });
-                }}
+                configKey="oledBlack"
+                onConfigChange={handleConfigFieldChange}
                 trackColor={{
                   false: theme.surfaceContainerHighest,
                   true: theme.gold,
@@ -2202,10 +2208,8 @@ export function ThemeSettingsView() {
                 label="Accent Vibrancy"
                 options={ACCENT_INTENSITY_OPTIONS}
                 selectedValue={themeConfig?.accentIntensity ?? "balanced"}
-                onSelect={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ accentIntensity: val });
-                }}
+                configKey="accentIntensity"
+                onConfigSelect={handleConfigFieldChange}
                 theme={theme}
               />
 
@@ -2213,10 +2217,8 @@ export function ThemeSettingsView() {
                 label="Reading Comfort Tint"
                 options={READING_TINT_OPTIONS}
                 selectedValue={themeConfig?.readingTint ?? "none"}
-                onSelect={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ readingTint: val });
-                }}
+                configKey="readingTint"
+                onConfigSelect={handleConfigFieldChange}
                 theme={theme}
               />
 
@@ -2394,10 +2396,8 @@ export function ThemeSettingsView() {
                 label="Font Scale"
                 options={FONT_SCALE_OPTIONS}
                 selectedValue={themeConfig?.fontScale ?? 1.0}
-                onSelect={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ fontScale: val });
-                }}
+                configKey="fontScale"
+                onConfigSelect={handleConfigFieldChange}
                 theme={theme}
               />
 
@@ -2405,10 +2405,8 @@ export function ThemeSettingsView() {
                 label="Font Pairing"
                 options={FONT_PAIR_OPTIONS}
                 selectedValue={themeConfig?.fontPair ?? "outfit-inter"}
-                onSelect={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ fontPair: val });
-                }}
+                configKey="fontPair"
+                onConfigSelect={handleConfigFieldChange}
                 theme={theme}
               />
 
@@ -2416,10 +2414,8 @@ export function ThemeSettingsView() {
                 label="Heading Case"
                 options={HEADING_CASE_OPTIONS}
                 selectedValue={headingTransform}
-                onSelect={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ headingTransform: val });
-                }}
+                configKey="headingTransform"
+                onConfigSelect={handleConfigFieldChange}
                 theme={theme}
               />
 
@@ -2427,10 +2423,8 @@ export function ThemeSettingsView() {
                 label="Number Style"
                 options={NUMERIC_STYLE_OPTIONS}
                 selectedValue={numericStyle}
-                onSelect={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ numericStyle: val });
-                }}
+                configKey="numericStyle"
+                onConfigSelect={handleConfigFieldChange}
                 theme={theme}
               />
 
@@ -2438,10 +2432,8 @@ export function ThemeSettingsView() {
                 label="Line Height"
                 options={LINE_HEIGHT_OPTIONS}
                 selectedValue={themeConfig?.lineHeightScale ?? 1.0}
-                onSelect={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ lineHeightScale: val });
-                }}
+                configKey="lineHeightScale"
+                onConfigSelect={handleConfigFieldChange}
                 theme={theme}
               />
 
@@ -2449,10 +2441,8 @@ export function ThemeSettingsView() {
                 label="Letter Spacing"
                 options={LETTER_SPACING_OPTIONS}
                 selectedValue={themeConfig?.letterSpacingOffset ?? 0}
-                onSelect={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ letterSpacingOffset: val });
-                }}
+                configKey="letterSpacingOffset"
+                onConfigSelect={handleConfigFieldChange}
                 theme={theme}
               />
                 </>
@@ -2476,10 +2466,8 @@ export function ThemeSettingsView() {
                 label="Surface Style"
                 options={SURFACE_STYLE_OPTIONS}
                 selectedValue={themeConfig?.surfaceStyle ?? "elevated"}
-                onSelect={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ surfaceStyle: val });
-                }}
+                configKey="surfaceStyle"
+                onConfigSelect={handleConfigFieldChange}
                 theme={theme}
               />
 
@@ -2487,10 +2475,8 @@ export function ThemeSettingsView() {
                 label="Card Corner Radius"
                 options={CARD_RADIUS_OPTIONS}
                 selectedValue={themeConfig?.cardRadius ?? "rounded"}
-                onSelect={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ cardRadius: val });
-                }}
+                configKey="cardRadius"
+                onConfigSelect={handleConfigFieldChange}
                 theme={theme}
               />
 
@@ -2498,10 +2484,8 @@ export function ThemeSettingsView() {
                 label="Button Radius"
                 options={BUTTON_RADIUS_OPTIONS}
                 selectedValue={themeConfig?.buttonRadius ?? "rounded"}
-                onSelect={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ buttonRadius: val });
-                }}
+                configKey="buttonRadius"
+                onConfigSelect={handleConfigFieldChange}
                 theme={theme}
               />
 
@@ -2509,10 +2493,8 @@ export function ThemeSettingsView() {
                 label="Border Thickness"
                 options={BORDER_WIDTH_OPTIONS}
                 selectedValue={themeConfig?.borderWidth ?? "thin"}
-                onSelect={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ borderWidth: val });
-                }}
+                configKey="borderWidth"
+                onConfigSelect={handleConfigFieldChange}
                 theme={theme}
               />
 
@@ -2520,10 +2502,8 @@ export function ThemeSettingsView() {
                 label="Card Shadow & Depth"
                 options={SHADOW_OPTIONS}
                 selectedValue={themeConfig?.cardShadowIntensity ?? "subtle"}
-                onSelect={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ cardShadowIntensity: val });
-                }}
+                configKey="cardShadowIntensity"
+                onConfigSelect={handleConfigFieldChange}
                 theme={theme}
               />
 
@@ -2531,10 +2511,8 @@ export function ThemeSettingsView() {
                 label="Input Field Style"
                 options={INPUT_STYLE_OPTIONS}
                 selectedValue={themeConfig?.inputStyle ?? "outlined"}
-                onSelect={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ inputStyle: val });
-                }}
+                configKey="inputStyle"
+                onConfigSelect={handleConfigFieldChange}
                 theme={theme}
               />
 
@@ -2542,10 +2520,8 @@ export function ThemeSettingsView() {
                 label="Button Style"
                 options={BUTTON_STYLE_OPTIONS}
                 selectedValue={themeConfig?.buttonStyle ?? "filled"}
-                onSelect={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ buttonStyle: val });
-                }}
+                configKey="buttonStyle"
+                onConfigSelect={handleConfigFieldChange}
                 theme={theme}
               />
 
@@ -2553,10 +2529,8 @@ export function ThemeSettingsView() {
                 label="Home & Grid Layout"
                 options={HOME_LAYOUT_OPTIONS}
                 selectedValue={themeConfig?.homeLayout ?? "classic"}
-                onSelect={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ homeLayout: val });
-                }}
+                configKey="homeLayout"
+                onConfigSelect={handleConfigFieldChange}
                 theme={theme}
               />
 
@@ -2564,10 +2538,8 @@ export function ThemeSettingsView() {
                 label="Screen Edge Margins"
                 options={SCREEN_PADDING_OPTIONS}
                 selectedValue={themeConfig?.screenPadding ?? "standard"}
-                onSelect={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ screenPadding: val });
-                }}
+                configKey="screenPadding"
+                onConfigSelect={handleConfigFieldChange}
                 theme={theme}
               />
 
@@ -2575,10 +2547,8 @@ export function ThemeSettingsView() {
                 label="Progress Bar Style"
                 options={PROGRESS_BAR_STYLE_OPTIONS}
                 selectedValue={themeConfig?.progressBarStyle ?? "rounded"}
-                onSelect={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ progressBarStyle: val });
-                }}
+                configKey="progressBarStyle"
+                onConfigSelect={handleConfigFieldChange}
                 theme={theme}
               />
 
@@ -2586,10 +2556,8 @@ export function ThemeSettingsView() {
                 label="List Divider Style"
                 options={DIVIDER_STYLE_OPTIONS}
                 selectedValue={themeConfig?.dividerStyle ?? "hairline"}
-                onSelect={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ dividerStyle: val });
-                }}
+                configKey="dividerStyle"
+                onConfigSelect={handleConfigFieldChange}
                 theme={theme}
               />
 
@@ -2597,10 +2565,8 @@ export function ThemeSettingsView() {
                 label="Section Header Style"
                 options={SECTION_HEADER_STYLE_OPTIONS}
                 selectedValue={themeConfig?.sectionHeaderStyle ?? "eyebrow"}
-                onSelect={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ sectionHeaderStyle: val });
-                }}
+                configKey="sectionHeaderStyle"
+                onConfigSelect={handleConfigFieldChange}
                 theme={theme}
               />
 
@@ -2608,10 +2574,8 @@ export function ThemeSettingsView() {
                 label="Card Accent Strip"
                 options={CARD_ACCENT_OPTIONS}
                 selectedValue={themeConfig?.cardAccentStyle ?? "none"}
-                onSelect={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ cardAccentStyle: val });
-                }}
+                configKey="cardAccentStyle"
+                onConfigSelect={handleConfigFieldChange}
                 theme={theme}
               />
 
@@ -2749,10 +2713,8 @@ export function ThemeSettingsView() {
                 label="Layout Density"
                 options={DENSITY_OPTIONS}
                 selectedValue={themeConfig?.density ?? "comfortable"}
-                onSelect={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ density: val });
-                }}
+                configKey="density"
+                onConfigSelect={handleConfigFieldChange}
                 theme={theme}
               />
 
@@ -2760,10 +2722,8 @@ export function ThemeSettingsView() {
                 label="Pill & Chip Size"
                 options={SIZE_PRESET_OPTIONS}
                 selectedValue={themeConfig?.pillSize ?? "md"}
-                onSelect={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ pillSize: val });
-                }}
+                configKey="pillSize"
+                onConfigSelect={handleConfigFieldChange}
                 theme={theme}
               />
 
@@ -2771,10 +2731,8 @@ export function ThemeSettingsView() {
                 label="Icon Size"
                 options={ICON_SCALE_OPTIONS}
                 selectedValue={themeConfig?.iconScale ?? 1.0}
-                onSelect={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ iconScale: val });
-                }}
+                configKey="iconScale"
+                onConfigSelect={handleConfigFieldChange}
                 theme={theme}
               />
 
@@ -2782,10 +2740,8 @@ export function ThemeSettingsView() {
                 label="Button Size"
                 options={SIZE_PRESET_OPTIONS}
                 selectedValue={themeConfig?.buttonSize ?? "md"}
-                onSelect={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ buttonSize: val });
-                }}
+                configKey="buttonSize"
+                onConfigSelect={handleConfigFieldChange}
                 theme={theme}
               />
 
@@ -2793,10 +2749,8 @@ export function ThemeSettingsView() {
                 label="Card Padding"
                 options={SIZE_PRESET_OPTIONS}
                 selectedValue={themeConfig?.cardPadding ?? "md"}
-                onSelect={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ cardPadding: val });
-                }}
+                configKey="cardPadding"
+                onConfigSelect={handleConfigFieldChange}
                 theme={theme}
               />
 
@@ -2804,10 +2758,8 @@ export function ThemeSettingsView() {
                 label="Bottom Bar Size"
                 options={SIZE_PRESET_OPTIONS}
                 selectedValue={themeConfig?.tabBarSize ?? "md"}
-                onSelect={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ tabBarSize: val });
-                }}
+                configKey="tabBarSize"
+                onConfigSelect={handleConfigFieldChange}
                 theme={theme}
               />
 
@@ -2815,10 +2767,8 @@ export function ThemeSettingsView() {
                 label="Top Header Size"
                 options={SIZE_PRESET_OPTIONS}
                 selectedValue={themeConfig?.appBarSize ?? "md"}
-                onSelect={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ appBarSize: val });
-                }}
+                configKey="appBarSize"
+                onConfigSelect={handleConfigFieldChange}
                 theme={theme}
               />
 
@@ -2933,10 +2883,8 @@ export function ThemeSettingsView() {
                   label="Card & Tile Icons"
                   description="Show decorative icon badges inside cards, tiles, and list rows"
                   value={themeConfig?.showCardIcons !== false}
-                  onValueChange={(val) => {
-                    doHaptic();
-                    updateThemeConfig({ showCardIcons: val });
-                  }}
+                  configKey="showCardIcons"
+                onConfigChange={handleConfigFieldChange}
                   theme={theme}
                 />
 
@@ -2944,10 +2892,8 @@ export function ThemeSettingsView() {
                   label="Bottom Tab Icons"
                   description="Show icons in the bottom navigation bar (hiding forces text labels)"
                   value={themeConfig?.showTabIcons !== false}
-                  onValueChange={(val) => {
-                    doHaptic();
-                    updateThemeConfig({ showTabIcons: val });
-                  }}
+                  configKey="showTabIcons"
+                onConfigChange={handleConfigFieldChange}
                   theme={theme}
                 />
 
@@ -2955,10 +2901,8 @@ export function ThemeSettingsView() {
                   label="Card Descriptions"
                   description="Show secondary subtitle and summary lines on cards"
                   value={themeConfig?.showCardDescriptions !== false}
-                  onValueChange={(val) => {
-                    doHaptic();
-                    updateThemeConfig({ showCardDescriptions: val });
-                  }}
+                  configKey="showCardDescriptions"
+                onConfigChange={handleConfigFieldChange}
                   theme={theme}
                 />
 
@@ -2966,10 +2910,8 @@ export function ThemeSettingsView() {
                   label="Category Tags"
                   description="Show category pills and eyebrow labels above card titles"
                   value={themeConfig?.showCategoryBadges !== false}
-                  onValueChange={(val) => {
-                    doHaptic();
-                    updateThemeConfig({ showCategoryBadges: val });
-                  }}
+                  configKey="showCategoryBadges"
+                onConfigChange={handleConfigFieldChange}
                   theme={theme}
                 />
 
@@ -2977,10 +2919,8 @@ export function ThemeSettingsView() {
                   label="Trailing Arrows"
                   description="Show right-hand chevron arrows on tappable rows and cards"
                   value={themeConfig?.showTrailingArrows !== false}
-                  onValueChange={(val) => {
-                    doHaptic();
-                    updateThemeConfig({ showTrailingArrows: val });
-                  }}
+                  configKey="showTrailingArrows"
+                onConfigChange={handleConfigFieldChange}
                   theme={theme}
                 />
 
@@ -2988,10 +2928,8 @@ export function ThemeSettingsView() {
                   label="Home Greeting Hero"
                   description="Show the greeting banner and header summary on the Home screen"
                   value={themeConfig?.showHomeGreeting !== false}
-                  onValueChange={(val) => {
-                    doHaptic();
-                    updateThemeConfig({ showHomeGreeting: val });
-                  }}
+                  configKey="showHomeGreeting"
+                onConfigChange={handleConfigFieldChange}
                   theme={theme}
                 />
 
@@ -2999,10 +2937,8 @@ export function ThemeSettingsView() {
                   label="Daily Widgets"
                   description="Show daily quick widgets such as Sheng word and Kenyan trivia"
                   value={themeConfig?.showDailyWidgets !== false}
-                  onValueChange={(val) => {
-                    doHaptic();
-                    updateThemeConfig({ showDailyWidgets: val });
-                  }}
+                  configKey="showDailyWidgets"
+                onConfigChange={handleConfigFieldChange}
                   theme={theme}
                 />
 
@@ -3010,10 +2946,8 @@ export function ThemeSettingsView() {
                   label="Top Bar Offline Pill"
                   description="Show the offline-ready status pill in the top header bar"
                   value={themeConfig?.showOfflinePill !== false}
-                  onValueChange={(val) => {
-                    doHaptic();
-                    updateThemeConfig({ showOfflinePill: val });
-                  }}
+                  configKey="showOfflinePill"
+                onConfigChange={handleConfigFieldChange}
                   theme={theme}
                 />
               </View>
@@ -3038,10 +2972,8 @@ export function ThemeSettingsView() {
                 label="Kenyan Flag Stripe"
                 description="Show the subtle Black · Red · Green accent stripe"
                 value={themeConfig?.showKenyaStripe !== false}
-                onValueChange={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ showKenyaStripe: val });
-                }}
+                configKey="showKenyaStripe"
+                onConfigChange={handleConfigFieldChange}
                 theme={theme}
               />
 
@@ -3049,10 +2981,8 @@ export function ThemeSettingsView() {
                 label="Bottom Tab Bar Style"
                 options={TAB_BAR_STYLE_OPTIONS}
                 selectedValue={themeConfig?.tabBarStyle ?? "classic"}
-                onSelect={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ tabBarStyle: val });
-                }}
+                configKey="tabBarStyle"
+                onConfigSelect={handleConfigFieldChange}
                 theme={theme}
               />
 
@@ -3060,10 +2990,8 @@ export function ThemeSettingsView() {
                 label="Active Menu Indicator"
                 options={MENU_INDICATOR_OPTIONS}
                 selectedValue={themeConfig?.menuIndicatorStyle ?? "pill"}
-                onSelect={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ menuIndicatorStyle: val });
-                }}
+                configKey="menuIndicatorStyle"
+                onConfigSelect={handleConfigFieldChange}
                 theme={theme}
               />
 
@@ -3071,10 +2999,8 @@ export function ThemeSettingsView() {
                 label="Floating Quick-Jump Menu"
                 options={QUICK_MENU_OPTIONS}
                 selectedValue={themeConfig?.quickMenuPosition ?? "off"}
-                onSelect={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ quickMenuPosition: val });
-                }}
+                configKey="quickMenuPosition"
+                onConfigSelect={handleConfigFieldChange}
                 theme={theme}
               />
 
@@ -3082,10 +3008,8 @@ export function ThemeSettingsView() {
                 label="Status Bar Icons"
                 options={STATUS_BAR_OPTIONS}
                 selectedValue={themeConfig?.statusBarMode ?? "auto"}
-                onSelect={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ statusBarMode: val });
-                }}
+                configKey="statusBarMode"
+                onConfigSelect={handleConfigFieldChange}
                 theme={theme}
               />
 
@@ -3093,10 +3017,8 @@ export function ThemeSettingsView() {
                 label="Screen Transition Animation"
                 options={TRANSITION_OPTIONS}
                 selectedValue={themeConfig?.pageTransition ?? "slide"}
-                onSelect={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ pageTransition: val });
-                }}
+                configKey="pageTransition"
+                onConfigSelect={handleConfigFieldChange}
                 theme={theme}
               />
 
@@ -3104,10 +3026,8 @@ export function ThemeSettingsView() {
                 label="Vertical Scrollbar"
                 options={VERT_SCROLLBAR_OPTIONS}
                 selectedValue={themeConfig?.verticalScrollbarStyle ?? "hidden"}
-                onSelect={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ verticalScrollbarStyle: val });
-                }}
+                configKey="verticalScrollbarStyle"
+                onConfigSelect={handleConfigFieldChange}
                 theme={theme}
               />
 
@@ -3115,10 +3035,8 @@ export function ThemeSettingsView() {
                 label="Tab Bar Labels"
                 description="Display text labels beneath bottom tab icons"
                 value={themeConfig?.tabBarLabels !== false}
-                onValueChange={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ tabBarLabels: val });
-                }}
+                configKey="tabBarLabels"
+                onConfigChange={handleConfigFieldChange}
                 theme={theme}
               />
 
@@ -3126,10 +3044,8 @@ export function ThemeSettingsView() {
                 label="Flag Stripe Thickness"
                 options={STRIPE_THICKNESS_OPTIONS}
                 selectedValue={themeConfig?.stripeThickness ?? "thin"}
-                onSelect={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ stripeThickness: val });
-                }}
+                configKey="stripeThickness"
+                onConfigSelect={handleConfigFieldChange}
                 theme={theme}
               />
 
@@ -3137,10 +3053,8 @@ export function ThemeSettingsView() {
                 label="Top App Bar Style"
                 options={APP_BAR_STYLE_OPTIONS}
                 selectedValue={themeConfig?.appBarStyle ?? "standard"}
-                onSelect={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ appBarStyle: val });
-                }}
+                configKey="appBarStyle"
+                onConfigSelect={handleConfigFieldChange}
                 theme={theme}
               />
 
@@ -3148,10 +3062,8 @@ export function ThemeSettingsView() {
                 label="Header Alignment"
                 options={HEADER_ALIGNMENT_OPTIONS}
                 selectedValue={themeConfig?.headerAlignment ?? "left"}
-                onSelect={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ headerAlignment: val });
-                }}
+                configKey="headerAlignment"
+                onConfigSelect={handleConfigFieldChange}
                 theme={theme}
               />
 
@@ -3161,10 +3073,8 @@ export function ThemeSettingsView() {
                 selectedValue={
                   themeConfig?.horizontalScrollbarStyle ?? "subtle-bar"
                 }
-                onSelect={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ horizontalScrollbarStyle: val });
-                }}
+                configKey="horizontalScrollbarStyle"
+                onConfigSelect={handleConfigFieldChange}
                 theme={theme}
               />
 
@@ -3174,10 +3084,8 @@ export function ThemeSettingsView() {
                 selectedValue={
                   themeConfig?.horizontalScrollbarThickness ?? "thin"
                 }
-                onSelect={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ horizontalScrollbarThickness: val });
-                }}
+                configKey="horizontalScrollbarThickness"
+                onConfigSelect={handleConfigFieldChange}
                 theme={theme}
               />
 
@@ -3185,10 +3093,8 @@ export function ThemeSettingsView() {
                 label="Scrollbar Background Track"
                 description="Show subtle rail track behind horizontal scrollbar thumb"
                 value={themeConfig?.scrollbarTrackVisible !== false}
-                onValueChange={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ scrollbarTrackVisible: val });
-                }}
+                configKey="scrollbarTrackVisible"
+                onConfigChange={handleConfigFieldChange}
                 theme={theme}
               />
 
@@ -3198,10 +3104,8 @@ export function ThemeSettingsView() {
                 selectedValue={
                   themeConfig?.pillBarLayout ?? "scroll-with-expand"
                 }
-                onSelect={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ pillBarLayout: val });
-                }}
+                configKey="pillBarLayout"
+                onConfigSelect={handleConfigFieldChange}
                 theme={theme}
               />
 
@@ -3209,10 +3113,8 @@ export function ThemeSettingsView() {
                 label="Pill Corner Shape"
                 options={BUTTON_RADIUS_OPTIONS}
                 selectedValue={themeConfig?.pillShape ?? "pill"}
-                onSelect={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ pillShape: val });
-                }}
+                configKey="pillShape"
+                onConfigSelect={handleConfigFieldChange}
                 theme={theme}
               />
 
@@ -3220,10 +3122,8 @@ export function ThemeSettingsView() {
                 label="Edge Fade Shadow"
                 description="Soft feather gradient at left/right edges of horizontal bars"
                 value={themeConfig?.edgeFadeEnabled !== false}
-                onValueChange={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ edgeFadeEnabled: val });
-                }}
+                configKey="edgeFadeEnabled"
+                onConfigChange={handleConfigFieldChange}
                 theme={theme}
               />
 
@@ -3231,10 +3131,8 @@ export function ThemeSettingsView() {
                 label="Elastic Scroll Bounce"
                 description="Spring bounce feedback at horizontal scroll edges"
                 value={themeConfig?.scrollBounceEnabled !== false}
-                onValueChange={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ scrollBounceEnabled: val });
-                }}
+                configKey="scrollBounceEnabled"
+                onConfigChange={handleConfigFieldChange}
                 theme={theme}
               />
                 </>
@@ -3276,10 +3174,8 @@ export function ThemeSettingsView() {
                 label="Tap Feedback Effect"
                 options={PRESS_EFFECT_OPTIONS}
                 selectedValue={themeConfig?.pressEffect ?? "scale-ripple"}
-                onSelect={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ pressEffect: val });
-                }}
+                configKey="pressEffect"
+                onConfigSelect={handleConfigFieldChange}
                 theme={theme}
               />
 
@@ -3287,10 +3183,8 @@ export function ThemeSettingsView() {
                 label="Reduce Motion"
                 description="Minimize screen transitions and animated effects"
                 value={Boolean(themeConfig?.reduceMotion)}
-                onValueChange={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ reduceMotion: val });
-                }}
+                configKey="reduceMotion"
+                onConfigChange={handleConfigFieldChange}
                 theme={theme}
               />
 
@@ -3298,10 +3192,8 @@ export function ThemeSettingsView() {
                 label="High-Contrast Borders"
                 description="Strengthen card and button outlines for clarity"
                 value={Boolean(themeConfig?.highContrastBorders)}
-                onValueChange={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ highContrastBorders: val });
-                }}
+                configKey="highContrastBorders"
+                onConfigChange={handleConfigFieldChange}
                 theme={theme}
               />
 
@@ -3309,10 +3201,8 @@ export function ThemeSettingsView() {
                 label="Color-Blind Safe Palette"
                 options={COLOR_BLIND_OPTIONS}
                 selectedValue={themeConfig?.colorBlindMode ?? "none"}
-                onSelect={(val) => {
-                  doHaptic();
-                  updateThemeConfig({ colorBlindMode: val });
-                }}
+                configKey="colorBlindMode"
+                onConfigSelect={handleConfigFieldChange}
                 theme={theme}
               />
                 </>
@@ -5313,14 +5203,25 @@ const OptionPillGroup = React.memo(function OptionPillGroup<T extends string | n
   options,
   selectedValue,
   onSelect,
+  configKey,
+  onConfigSelect,
   theme,
 }: {
   label: string;
   options: readonly { value: T; label: string }[];
   selectedValue: T;
-  onSelect: (value: T) => void;
+  onSelect?: (value: T) => void;
+  configKey?: keyof ThemeConfig;
+  onConfigSelect?: (key: keyof ThemeConfig, value: any) => void;
   theme: ThemeColors;
 }) {
+  const handleSelect = (val: T) => {
+    if (configKey && onConfigSelect) {
+      onConfigSelect(configKey, val);
+    } else if (onSelect) {
+      onSelect(val);
+    }
+  };
   return (
     <View style={styles.optionGroup}>
       <Text style={[styles.optionGroupTitle, { color: theme.textPrimary }]}>
@@ -5332,7 +5233,7 @@ const OptionPillGroup = React.memo(function OptionPillGroup<T extends string | n
           return (
             <Pressable
               key={`${label}-${String(opt.value)}`}
-              onPress={() => onSelect(opt.value)}
+              onPress={() => handleSelect(opt.value)}
               accessibilityRole="button"
               accessibilityState={{ selected: active }}
               android_ripple={androidRipple(theme.rippleColor)}
@@ -5368,7 +5269,9 @@ const OptionPillGroup = React.memo(function OptionPillGroup<T extends string | n
   label: string;
   options: readonly { value: T; label: string }[];
   selectedValue: T;
-  onSelect: (value: T) => void;
+  onSelect?: (value: T) => void;
+  configKey?: keyof ThemeConfig;
+  onConfigSelect?: (key: keyof ThemeConfig, value: any) => void;
   theme: ThemeColors;
 }) => React.ReactElement;
 
@@ -5377,17 +5280,31 @@ const ToggleRow = React.memo(function ToggleRow({
   description,
   value,
   onValueChange,
+  configKey,
+  onConfigChange,
   theme,
 }: {
   label: string;
   description: string;
   value: boolean;
-  onValueChange: (val: boolean) => void;
+  onValueChange?: (val: boolean) => void;
+  configKey?: keyof ThemeConfig;
+  onConfigChange?: (key: keyof ThemeConfig, value: boolean) => void;
   theme: ThemeColors;
 }) {
+  const handleToggle = useCallback(
+    (next: boolean) => {
+      if (configKey && onConfigChange) {
+        onConfigChange(configKey, next);
+      } else if (onValueChange) {
+        onValueChange(next);
+      }
+    },
+    [configKey, onConfigChange, onValueChange]
+  );
   return (
     <Pressable
-      onPress={() => onValueChange(!value)}
+      onPress={() => handleToggle(!value)}
       accessibilityRole="switch"
       accessibilityState={{ checked: value }}
       accessibilityLabel={label}
@@ -5415,7 +5332,7 @@ const ToggleRow = React.memo(function ToggleRow({
         </View>
         <Switch
           value={value}
-          onValueChange={onValueChange}
+          onValueChange={handleToggle}
           trackColor={{
             false: theme.surfaceContainerHighest,
             true: theme.gold,

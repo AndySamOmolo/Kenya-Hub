@@ -5,8 +5,6 @@ import DynamicIcon from "@/components/ui/DynamicIcon";
 
 import { useState, useMemo, useEffect, useRef } from "react";
 import { scrollToTopIfScrolled } from "@/lib/scroll";
-import ToolShell from "@/components/tools/ToolShell";
-import CustomSelect from "@/components/ui/CustomSelect";
 import { TOOLS } from "@/lib/tools-registry";
 import finesData from "@/data/traffic-fines.json";
 import SearchInput from "@/components/ui/SearchInput";
@@ -16,6 +14,7 @@ const tool = TOOLS.find((t) => t.slug === "traffic-fines")!;
 
 export default function TrafficFinesPage() {
   const [searchQuery, setSearchQuery] = useState("");
+  const deferredSearchQuery = useDeferredValue(searchQuery);
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
   const _scrollMountRef = useRef(false);
   useEffect(() => {
@@ -30,8 +29,8 @@ export default function TrafficFinesPage() {
       categories = categories.filter((c) => c.id === selectedCategory);
     }
 
-    if (searchQuery.trim()) {
-      const q = searchQuery.toLowerCase();
+    if (deferredSearchQuery.trim()) {
+      const q = deferredSearchQuery.toLowerCase();
       categories = categories
         .map((cat) => ({
           ...cat,
@@ -43,7 +42,7 @@ export default function TrafficFinesPage() {
     }
 
     return categories;
-  }, [searchQuery, selectedCategory]);
+  }, [deferredSearchQuery, selectedCategory]);
 
   const totalOffences = filteredCategories.reduce((sum, c) => sum + c.offences.length, 0);
 
@@ -51,7 +50,7 @@ export default function TrafficFinesPage() {
     `KES ${n.toLocaleString("en-KE", { minimumFractionDigits: 0, maximumFractionDigits: 0 })}`;
 
   return (
-    <ToolShell tool={tool}>
+    <>
       <div className="space-y-6">
         {/* Search */}
         <div className="bg-bg-card border border-border rounded-xl p-6">
@@ -190,6 +189,6 @@ export default function TrafficFinesPage() {
           </ul>
         </div>
       </div>
-    </ToolShell>
+    </>
   );
 }

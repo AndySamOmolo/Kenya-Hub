@@ -2,7 +2,6 @@
 
 import { useState, useMemo } from "react";
 import { X } from "lucide-react";
-import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import bomaData from "@/data/boma-yangu-data.json";
 import housingLevyData from "@/data/housing-levy-rates.json";
@@ -75,7 +74,7 @@ export default function BomaYanguCalculatorPage() {
   }, [monthlySalary, unitCost, termYears, activeTier]);
 
   return (
-    <ToolShell tool={cleanTool}>
+    <>
       <div className="space-y-6">
         <div className="rounded-2xl border border-gold/30 bg-bg-card p-5 sm:p-7 shadow-xs">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 mb-6">
@@ -288,6 +287,6 @@ export default function BomaYanguCalculatorPage() {
           </p>
         </div>
       </div>
-    </ToolShell>
+    </>
   );
 }

@@ -5,17 +5,43 @@ import { BusFront, Check, ChevronRight, MapPin } from "lucide-react";
 import { useState, useMemo, useEffect, useRef, useDeferredValue } from "react";
 import { scrollToTopIfScrolled } from "@/lib/scroll";
 import Link from "next/link";
-import matatuData from "@/data/matatu-routes.json";
 import SearchInput from "@/components/ui/SearchInput";
 import CustomSelect from "@/components/ui/CustomSelect";
 
-interface TownMatatuViewProps {
-  townSlug: string;
+export interface MatatuStage {
+  name: string;
+  lat: number;
+  lng: number;
+  order: number;
 }
 
-export default function TownMatatuView({ townSlug }: TownMatatuViewProps) {
-  const townInfo = matatuData.towns.find((t) => t.slug === townSlug);
-  const routes = (matatuData.routes as Record<string, typeof matatuData.routes.nairobi>)[townSlug] || [];
+export interface MatatuRouteItem {
+  routeNumber: string;
+  name: string;
+  slug: string;
+  terminusA: string;
+  terminusB: string;
+  saccoName: string;
+  fareMin: number;
+  fareMax: number;
+  operatingHours: string;
+  stages: MatatuStage[];
+}
+
+export interface MatatuTownInfo {
+  slug: string;
+  name: string;
+  description: string;
+  county?: string;
+}
+
+interface TownMatatuViewProps {
+  townSlug: string;
+  townInfo: MatatuTownInfo;
+  routes: MatatuRouteItem[];
+}
+
+export default function TownMatatuView({ townSlug, townInfo, routes }: TownMatatuViewProps) {
 
   const [search, setSearch] = useState("");
   const deferredSearch = useDeferredValue(search);

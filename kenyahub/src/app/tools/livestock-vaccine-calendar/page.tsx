@@ -2,7 +2,6 @@
 
 import { useEffect, useState, useMemo } from "react";
 import { Calendar, Download, Syringe, HeartPulse, Info } from "lucide-react";
-import ToolShell from "@/components/tools/ToolShell";
 import CustomSelect from "@/components/ui/CustomSelect";
 import { getToolBySlug } from "@/lib/tools-registry";
 import everydayData from "@/data/kenya-everyday-tools-2026.json";
@@ -314,7 +313,7 @@ export default function LivestockVaccineCalendarPage() {
   };
 
   return (
-    <ToolShell tool={tool}>
+    <>
       <div className="space-y-6">
         <div className="rounded-2xl border border-gold/30 bg-bg-card p-5 sm:p-7 shadow-xs">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-5">
@@ -456,6 +455,6 @@ export default function LivestockVaccineCalendarPage() {
           </div>
         </div>
       </div>
-    </ToolShell>
+    </>
   );
 }

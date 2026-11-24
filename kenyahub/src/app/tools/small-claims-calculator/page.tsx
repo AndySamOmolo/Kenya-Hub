@@ -2,7 +2,6 @@
 
 import { useState, useMemo } from "react";
 import { X } from "lucide-react";
-import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import sccData from "@/data/small-claims-data.json";
 
@@ -34,7 +33,7 @@ export default function SmallClaimsCalculatorPage() {
   }, [claimAmount]);
 
   return (
-    <ToolShell tool={tool}>
+    <>
       <div className="space-y-6">
         <div className="rounded-2xl border border-gold/30 bg-bg-card p-5 sm:p-7 shadow-xs">
           <div className="max-w-md mb-6">
@@ -165,6 +164,6 @@ export default function SmallClaimsCalculatorPage() {
           </div>
         </div>
       </div>
-    </ToolShell>
+    </>
   );
 }

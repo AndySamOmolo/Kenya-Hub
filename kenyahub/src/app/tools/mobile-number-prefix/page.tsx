@@ -1,7 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
-import ToolShell from "@/components/tools/ToolShell";
+import React, { useState, useMemo, useCallback } from "react";
 import { TOOLS } from "@/lib/tools-registry";
 import prefixesData from "@/data/mobile-prefixes.json";
 import { Search, ShieldAlert, Globe, Copy, Check, Info, X } from "lucide-react";
@@ -17,6 +16,58 @@ const SAMPLE_NUMBERS = [
   { label: "0110 (Safaricom 011x)", value: "0110 556 677" },
   { label: "0100 (Airtel 010x)", value: "0100 223 344" },
 ];
+
+const NETWORK_TABS = ["All", ...prefixesData.networks.map((n) => n.name)];
+
+interface PrefixDirectoryProps {
+  networks: typeof prefixesData.networks;
+  onSelectPrefix: (prefix: string) => void;
+}
+
+const PrefixDirectory = React.memo(function PrefixDirectory({
+  networks,
+  onSelectPrefix,
+}: PrefixDirectoryProps) {
+  return (
+    <div className="space-y-4">
+      {networks.map((net) => (
+        <div
+          key={net.name}
+          className="rounded-xl border border-border bg-bg-elevated/40 p-4"
+        >
+          <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
+            <div className="flex items-center gap-2 min-w-0">
+              <span
+                className="w-3 h-3 rounded-full"
+                style={{ backgroundColor: net.color }}
+              />
+              <h3 className="text-sm font-bold text-text-primary">
+                {net.name}
+              </h3>
+            </div>
+            <span className="text-xs text-text-muted font-medium tabular-nums">
+              {net.prefixes.length} {net.prefixes.length === 1 ? "allocated prefix" : "allocated prefixes"}
+            </span>
+          </div>
+
+          <div className="flex flex-wrap gap-1.5">
+            {net.prefixes.map((p) => (
+              <button
+                key={p}
+                type="button"
+                onClick={() => onSelectPrefix(p)}
+                title={`Test prefix ${p}`}
+                className="px-2.5 py-1 rounded-md text-xs font-mono font-semibold bg-bg-surface border border-border text-text-primary hover:border-gold hover:text-gold transition-colors cursor-pointer"
+              >
+                {p}
+              </button>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+});
 
 export default function MobileNumberPrefixPage() {
   const [inputNumber, setInputNumber] = useState("0722 123 456");
@@ -68,7 +119,7 @@ export default function MobileNumberPrefixPage() {
   }, [selectedNetworkTab]);
 
   return (
-    <ToolShell tool={tool}>
+    <>
       <div className="space-y-6">
         {/* Main Checker Card */}
         <div className="rounded-2xl border border-gold/30 bg-bg-card p-5 sm:p-7 shadow-xs">
@@ -228,7 +279,7 @@ export default function MobileNumberPrefixPage() {
 
             {/* Filter Tabs */}
             <div className="flex items-center gap-1.5 flex-wrap">
-              {["All", ...prefixesData.networks.map((n) => n.name)].map((tab) => (
+              {NETWORK_TABS.map((tab) => (
                 <button
                   key={tab}
                   type="button"
@@ -246,46 +297,7 @@ export default function MobileNumberPrefixPage() {
             </div>
           </div>
 
-          <div className="space-y-4">
-            {filteredNetworks.map((net) => (
-              <div
-                key={net.name}
-                className="rounded-xl border border-border bg-bg-elevated/40 p-4"
-              >
-                <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
-                  <div className="flex items-center gap-2 min-w-0">
-                    <span
-                      className="w-3 h-3 rounded-full"
-                      style={{ backgroundColor: net.color }}
-                    />
-                    <h3 className="text-sm font-bold text-text-primary">
-                      {net.name}
-                    </h3>
-                  </div>
-                  <span className="text-xs text-text-muted font-medium tabular-nums">
-                    {net.prefixes.length} {net.prefixes.length === 1 ? "allocated prefix" : "allocated prefixes"}
-                  </span>
-                </div>
-
-                <div className="flex flex-wrap gap-1.5">
-                  {net.prefixes.map((p) => (
-                    <button
-                      key={p}
-                      type="button"
-                      onClick={() => {
-                        setInputNumber(`${p} 000 000`);
-                        window.scrollTo({ top: 0, behavior: "smooth" });
-                      }}
-                      title={`Test prefix ${p}`}
-                      className="px-2.5 py-1 rounded-md text-xs font-mono font-semibold bg-bg-surface border border-border text-text-primary hover:border-gold hover:text-gold transition-colors cursor-pointer"
-                    >
-                      {p}
-                    </button>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
+          <PrefixDirectory networks={filteredNetworks} onSelectPrefix={handleSelectPrefix} />
         </div>
 
         {/* Emergency Numbers & International Dialing */}
@@ -341,6 +353,6 @@ export default function MobileNumberPrefixPage() {
           </div>
         </div>
       </div>
-    </ToolShell>
+    </>
   );
 }

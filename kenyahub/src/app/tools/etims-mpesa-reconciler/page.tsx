@@ -2,7 +2,6 @@
 
 import { useState, useMemo } from "react";
 import { ShieldAlert, CheckCircle2, Download, MessageSquare, Plus, Trash2 } from "lucide-react";
-import ToolShell from "@/components/tools/ToolShell";
 import CustomSelect from "@/components/ui/CustomSelect";
 import { TOOLS } from "@/lib/tools-registry";
 import utilData from "@/data/kenya-utility-tools-2026.json";
@@ -120,7 +119,7 @@ export default function EtimsMpesaReconcilerPage() {
   };
 
   return (
-    <ToolShell tool={tool}>
+    <>
       <div className="space-y-6">
         <div className="rounded-2xl border border-gold/30 bg-bg-card p-5 sm:p-7 shadow-xs">
           <div className="flex flex-wrap items-center justify-between gap-3 mb-3">
@@ -308,6 +307,6 @@ export default function EtimsMpesaReconcilerPage() {
           </div>
         </div>
       </div>
-    </ToolShell>
+    </>
   );
 }

@@ -453,20 +453,41 @@ export function KenyanTranslatorTool({
         const recentRaw = map.get("kh-translator-recent");
         if (recentRaw) {
           try {
-            setRecentSearches(JSON.parse(recentRaw));
+            const parsed = JSON.parse(recentRaw);
+            if (Array.isArray(parsed)) {
+              setRecentSearches(
+                parsed.filter((x: unknown): x is string => typeof x === "string" && x.trim().length > 0)
+              );
+            }
           } catch {}
         }
         const favsRaw = map.get("kh-translator-favs");
         if (favsRaw) {
           try {
-            setFavorites(JSON.parse(favsRaw));
+            const parsed = JSON.parse(favsRaw);
+            if (Array.isArray(parsed)) {
+              setFavorites(
+                parsed.filter((x: unknown): x is string => typeof x === "string" && x.trim().length > 0)
+              );
+            }
           } catch {}
         }
         const contribRaw = map.get("kh-user-contributions");
         if (contribRaw) {
           try {
             const parsed = JSON.parse(contribRaw);
-            if (Array.isArray(parsed)) setUserContributions(parsed);
+            if (Array.isArray(parsed)) {
+              setUserContributions(
+                parsed.filter(
+                  (c: unknown) =>
+                    Boolean(c) &&
+                    typeof c === "object" &&
+                    !Array.isArray(c) &&
+                    typeof (c as any).english === "string" &&
+                    typeof (c as any).translation === "string"
+                )
+              );
+            }
           } catch {}
         }
       })
@@ -921,7 +942,12 @@ export function KenyanTranslatorTool({
 
     try {
       const stored = await AsyncStorage.getItem("kh-user-contributions");
-      const list = stored ? JSON.parse(stored) : [];
+      const parsedStored = stored ? JSON.parse(stored) : [];
+      const list = Array.isArray(parsedStored)
+        ? parsedStored.filter(
+            (c: unknown) => Boolean(c) && typeof c === "object" && !Array.isArray(c)
+          )
+        : [];
       const newEntry = {
         id: Date.now().toString(),
         language: contribLang,

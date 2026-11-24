@@ -2,7 +2,6 @@
 
 import { useState, useMemo } from "react";
 import { AlertTriangle, Copy, Check } from "lucide-react";
-import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import utilData from "@/data/kenya-utility-tools-2026.json";
 
@@ -60,7 +59,7 @@ export default function OdpcHrRetentionVaultPage() {
   };
 
   return (
-    <ToolShell tool={tool}>
+    <>
       <div className="space-y-6">
         <div className="rounded-2xl border border-gold/30 bg-bg-card p-5 sm:p-7 shadow-xs">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
@@ -252,6 +251,6 @@ export default function OdpcHrRetentionVaultPage() {
           </div>
         </div>
       </div>
-    </ToolShell>
+    </>
   );
 }

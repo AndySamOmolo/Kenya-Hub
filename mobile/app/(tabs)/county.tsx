@@ -959,6 +959,146 @@ export default function CountyScreen() {
     [enrichedCounties, compareSlugB]
   );
 
+  const countyListHeader = useMemo(
+    () => (
+            <>
+              {/* National Summary Strip */}
+              <View style={{ flexDirection: "row", gap: 6, marginBottom: 8 }}>
+                <View
+                  style={[
+                    styles.miniStat,
+                    {
+                      backgroundColor: theme.surfaceContainer,
+                      borderColor: theme.outlineVariant,
+                    },
+                  ]}
+                >
+                  <Text
+                    numberOfLines={1}
+                    adjustsFontSizeToFit
+                    minimumFontScale={0.75}
+                    style={{
+                      fontSize: 9.5,
+                      fontFamily: resolvedFonts.heading,
+                      letterSpacing: 0.3,
+                      color: theme.textMuted,
+                    }}
+                  >
+                    EQUITABLE SHARE
+                  </Text>
+                  <Text
+                    numberOfLines={1}
+                    adjustsFontSizeToFit
+                    minimumFontScale={0.8}
+                    style={{
+                      fontSize: 15,
+                      fontFamily: resolvedFonts.heading,
+                      color: theme.gold,
+                      marginTop: 2,
+                    }}
+                  >
+                    KES {(nationalTotals.totalAlloc / 1000).toFixed(1)}B
+                  </Text>
+                </View>
+                <View
+                  style={[
+                    styles.miniStat,
+                    {
+                      backgroundColor: theme.surfaceContainer,
+                      borderColor: theme.outlineVariant,
+                    },
+                  ]}
+                >
+                  <Text
+                    numberOfLines={1}
+                    adjustsFontSizeToFit
+                    minimumFontScale={0.75}
+                    style={{
+                      fontSize: 9.5,
+                      fontFamily: resolvedFonts.heading,
+                      letterSpacing: 0.3,
+                      color: theme.textMuted,
+                    }}
+                  >
+                    OWN REVENUE
+                  </Text>
+                  <Text
+                    numberOfLines={1}
+                    adjustsFontSizeToFit
+                    minimumFontScale={0.8}
+                    style={{
+                      fontSize: 15,
+                      fontFamily: resolvedFonts.heading,
+                      color: theme.sky,
+                      marginTop: 2,
+                    }}
+                  >
+                    KES {(nationalTotals.totalOsr / 1000).toFixed(1)}B
+                  </Text>
+                </View>
+                <View
+                  style={[
+                    styles.miniStat,
+                    {
+                      backgroundColor: theme.surfaceContainer,
+                      borderColor: theme.outlineVariant,
+                    },
+                  ]}
+                >
+                  <Text
+                    numberOfLines={1}
+                    adjustsFontSizeToFit
+                    minimumFontScale={0.75}
+                    style={{
+                      fontSize: 9.5,
+                      fontFamily: resolvedFonts.heading,
+                      letterSpacing: 0.3,
+                      color: theme.textMuted,
+                    }}
+                  >
+                    ABSORPTION
+                  </Text>
+                  <Text
+                    numberOfLines={1}
+                    adjustsFontSizeToFit
+                    minimumFontScale={0.8}
+                    style={{
+                      fontSize: 15,
+                      fontFamily: resolvedFonts.heading,
+                      color: theme.kenyaGreenLight,
+                      marginTop: 2,
+                    }}
+                  >
+                    {nationalTotals.avgAbs}%
+                  </Text>
+                </View>
+              </View>
+
+              {query.trim().length > 0 && (
+                <Text style={[styles.countText, { color: theme.textMuted }]}>
+                  Showing {filtered.length} of 47 counties
+                </Text>
+              )}
+            </>
+    ),
+    [
+      styles.miniStat,
+      styles.countText,
+      theme.surfaceContainer,
+      theme.outlineVariant,
+      theme.textMuted,
+      theme.gold,
+      theme.sky,
+      theme.kenyaGreenLight,
+      resolvedFonts.heading,
+      nationalTotals.totalAlloc,
+      nationalTotals.totalOsr,
+      nationalTotals.avgAbs,
+      query,
+      filtered.length,
+    ]
+  );
+
   return (
     <SafeAreaView
       style={[styles.container, { backgroundColor: theme.bgPrimary }]}
@@ -1175,7 +1315,7 @@ export default function CountyScreen() {
             { paddingHorizontal: screenPadPx, paddingBottom: bottomClearance },
           ]}
           showsVerticalScrollIndicator={themeConfig?.verticalScrollbarStyle !== "hidden"}
-          persistentScrollbar={themeConfig.verticalScrollbarStyle === "always-visible"}
+          persistentScrollbar={themeConfig?.verticalScrollbarStyle === "always-visible"}
           keyboardShouldPersistTaps="handled"
           overScrollMode="always"
         >
@@ -1997,7 +2137,7 @@ export default function CountyScreen() {
             { paddingHorizontal: screenPadPx, paddingBottom: bottomClearance },
           ]}
           showsVerticalScrollIndicator={themeConfig?.verticalScrollbarStyle !== "hidden"}
-          persistentScrollbar={themeConfig.verticalScrollbarStyle === "always-visible"}
+          persistentScrollbar={themeConfig?.verticalScrollbarStyle === "always-visible"}
           keyboardShouldPersistTaps="handled"
           overScrollMode="always"
           initialNumToRender={8}
@@ -2005,127 +2145,7 @@ export default function CountyScreen() {
           updateCellsBatchingPeriod={40}
           windowSize={5}
           removeClippedSubviews={Platform.OS === "android"}
-          ListHeaderComponent={
-            <>
-              {/* National Summary Strip */}
-              <View style={{ flexDirection: "row", gap: 6, marginBottom: 8 }}>
-                <View
-                  style={[
-                    styles.miniStat,
-                    {
-                      backgroundColor: theme.surfaceContainer,
-                      borderColor: theme.outlineVariant,
-                    },
-                  ]}
-                >
-                  <Text
-                    numberOfLines={1}
-                    adjustsFontSizeToFit
-                    minimumFontScale={0.75}
-                    style={{
-                      fontSize: 9.5,
-                      fontFamily: resolvedFonts.heading,
-                      letterSpacing: 0.3,
-                      color: theme.textMuted,
-                    }}
-                  >
-                    EQUITABLE SHARE
-                  </Text>
-                  <Text
-                    numberOfLines={1}
-                    adjustsFontSizeToFit
-                    minimumFontScale={0.8}
-                    style={{
-                      fontSize: 15,
-                      fontFamily: resolvedFonts.heading,
-                      color: theme.gold,
-                      marginTop: 2,
-                    }}
-                  >
-                    KES {(nationalTotals.totalAlloc / 1000).toFixed(1)}B
-                  </Text>
-                </View>
-                <View
-                  style={[
-                    styles.miniStat,
-                    {
-                      backgroundColor: theme.surfaceContainer,
-                      borderColor: theme.outlineVariant,
-                    },
-                  ]}
-                >
-                  <Text
-                    numberOfLines={1}
-                    adjustsFontSizeToFit
-                    minimumFontScale={0.75}
-                    style={{
-                      fontSize: 9.5,
-                      fontFamily: resolvedFonts.heading,
-                      letterSpacing: 0.3,
-                      color: theme.textMuted,
-                    }}
-                  >
-                    OWN REVENUE
-                  </Text>
-                  <Text
-                    numberOfLines={1}
-                    adjustsFontSizeToFit
-                    minimumFontScale={0.8}
-                    style={{
-                      fontSize: 15,
-                      fontFamily: resolvedFonts.heading,
-                      color: theme.sky,
-                      marginTop: 2,
-                    }}
-                  >
-                    KES {(nationalTotals.totalOsr / 1000).toFixed(1)}B
-                  </Text>
-                </View>
-                <View
-                  style={[
-                    styles.miniStat,
-                    {
-                      backgroundColor: theme.surfaceContainer,
-                      borderColor: theme.outlineVariant,
-                    },
-                  ]}
-                >
-                  <Text
-                    numberOfLines={1}
-                    adjustsFontSizeToFit
-                    minimumFontScale={0.75}
-                    style={{
-                      fontSize: 9.5,
-                      fontFamily: resolvedFonts.heading,
-                      letterSpacing: 0.3,
-                      color: theme.textMuted,
-                    }}
-                  >
-                    ABSORPTION
-                  </Text>
-                  <Text
-                    numberOfLines={1}
-                    adjustsFontSizeToFit
-                    minimumFontScale={0.8}
-                    style={{
-                      fontSize: 15,
-                      fontFamily: resolvedFonts.heading,
-                      color: theme.kenyaGreenLight,
-                      marginTop: 2,
-                    }}
-                  >
-                    {nationalTotals.avgAbs}%
-                  </Text>
-                </View>
-              </View>
-
-              {query.trim().length > 0 && (
-                <Text style={[styles.countText, { color: theme.textMuted }]}>
-                  Showing {filtered.length} of 47 counties
-                </Text>
-              )}
-            </>
-          }
+          ListHeaderComponent={countyListHeader}
           renderItem={renderCountyItem}
           ListEmptyComponent={
             <View style={styles.emptyWrap}>
@@ -2143,8 +2163,9 @@ export default function CountyScreen() {
       )}
 
       {/* Searchable 47-County Picker Modal for Compare Tab (UX-12) */}
+      {pickerTarget !== null && (
       <Modal
-        visible={pickerTarget !== null}
+        visible={true}
         animationType="slide"
         transparent
         accessibilityViewIsModal={true}
@@ -2218,6 +2239,7 @@ export default function CountyScreen() {
           </View>
         </View>
       </Modal>
+      )}
     </SafeAreaView>
   );
 }

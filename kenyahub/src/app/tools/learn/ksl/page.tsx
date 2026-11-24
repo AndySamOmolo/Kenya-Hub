@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import KslSignStudio from "@/components/learn/KslSignStudio";
+import { OPEN_CORPUS_INDEX } from "@/lib/open-corpus";
 
 export const metadata: Metadata = {
   title: "Learn Kenyan Sign Language (KSL) — Interactive Sign Studio | KenyaHub",
@@ -8,6 +9,7 @@ export const metadata: Metadata = {
 };
 
 export default function KslCoursePage() {
+  const kslData = OPEN_CORPUS_INDEX.ksl;
   return (
     <main id="main-content" className="mx-auto max-w-6xl px-4 py-8 sm:px-6 lg:px-8 space-y-6">
       <header className="space-y-2">
@@ -30,7 +32,10 @@ export default function KslCoursePage() {
         </p>
       </header>
 
-      <KslSignStudio />
+      <KslSignStudio
+        initialVideos={kslData?.videos ?? []}
+        storybooks={kslData?.storybooks ?? []}
+      />
     </main>
   );
 }

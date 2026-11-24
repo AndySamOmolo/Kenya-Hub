@@ -2,75 +2,10 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
-import { notFound } from "next/navigation";
-import countiesData from "@/data/counties.json";
-import budgetsData from "@/data/county-budgets.json";
-import rainfallData from "@/data/rainfall-patterns.json";
-import soilsData from "@/data/soil-types.json";
-import hospitalsData from "@/data/nhif-hospitals.json";
-import postalData from "@/data/postal-codes.json";
-import rankingsData from "@/data/kcse-rankings.json";
-import parksData from "@/data/national-parks.json";
-import forestsData from "@/data/forest-reserves.json";
-import agrovetsData from "@/data/agrovets.json";
-import languagesData from "@/data/kenya-languages.json";
-import cropCalendarData from "@/data/crop-planting-calendar.json";
-import fertilizerData from "@/data/fertilizer-subsidy.json";
-import livestockData from "@/data/livestock-prices.json";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 
 const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 const MONTH_KEYS = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
-
-const BORDERING_COUNTIES: Record<string, string[]> = {
-  "mombasa": ["kilifi", "kwale"],
-  "kwale": ["mombasa", "kilifi", "taita-taveta"],
-  "kilifi": ["mombasa", "kwale", "taita-taveta", "tana-river"],
-  "tana-river": ["kilifi", "lamu", "garissa", "isiolo", "kitui", "taita-taveta"],
-  "lamu": ["tana-river", "garissa"],
-  "taita-taveta": ["kwale", "kilifi", "tana-river", "kitui", "makueni", "kajiado"],
-  "garissa": ["wajir", "isiolo", "tana-river", "lamu"],
-  "wajir": ["mandera", "marsabit", "isiolo", "garissa"],
-  "mandera": ["wajir"],
-  "marsabit": ["turkana", "samburu", "isiolo", "wajir"],
-  "isiolo": ["marsabit", "wajir", "garissa", "tana-river", "meru", "laikipia", "samburu"],
-  "meru": ["isiolo", "tharaka-nithi", "nyeri", "laikipia"],
-  "tharaka-nithi": ["meru", "embu", "kitui"],
-  "embu": ["tharaka-nithi", "kitui", "machakos", "kirinyaga"],
-  "kitui": ["tharaka-nithi", "embu", "machakos", "makueni", "taita-taveta", "tana-river"],
-  "machakos": ["embu", "kitui", "makueni", "kajiado", "nairobi", "kiambu", "muranga", "kirinyaga"],
-  "makueni": ["machakos", "kitui", "taita-taveta", "kajiado"],
-  "nyandarua": ["laikipia", "nyeri", "muranga", "kiambu", "nakuru"],
-  "nyeri": ["laikipia", "meru", "kirinyaga", "muranga", "nyandarua"],
-  "kirinyaga": ["nyeri", "embu", "machakos", "muranga"],
-  "muranga": ["nyeri", "kirinyaga", "machakos", "kiambu", "nyandarua"],
-  "kiambu": ["nyandarua", "muranga", "machakos", "nairobi", "kajiado", "nakuru"],
-  "turkana": ["west-pokot", "baringo", "samburu", "marsabit"],
-  "west-pokot": ["turkana", "baringo", "elgeyo-marakwet", "trans-nzoia"],
-  "samburu": ["turkana", "marsabit", "isiolo", "laikipia", "baringo"],
-  "trans-nzoia": ["west-pokot", "elgeyo-marakwet", "uasin-gishu", "kakamega", "bungoma"],
-  "uasin-gishu": ["trans-nzoia", "elgeyo-marakwet", "baringo", "kericho", "nandi", "kakamega"],
-  "elgeyo-marakwet": ["west-pokot", "baringo", "uasin-gishu", "trans-nzoia"],
-  "nandi": ["uasin-gishu", "kericho", "kisumu", "vihiga", "kakamega"],
-  "baringo": ["turkana", "samburu", "laikipia", "nakuru", "kericho", "uasin-gishu", "elgeyo-marakwet", "west-pokot"],
-  "laikipia": ["samburu", "isiolo", "meru", "nyeri", "nyandarua", "nakuru", "baringo"],
-  "nakuru": ["baringo", "laikipia", "nyandarua", "kiambu", "kajiado", "narok", "bomet", "kericho"],
-  "narok": ["nakuru", "kajiado", "bomet", "nyamira", "kisii", "migori"],
-  "kajiado": ["kiambu", "nairobi", "machakos", "makueni", "taita-taveta", "narok", "nakuru"],
-  "kericho": ["baringo", "nakuru", "bomet", "nyamira", "homa-bay", "kisumu", "nandi", "uasin-gishu"],
-  "bomet": ["kericho", "nakuru", "narok", "nyamira"],
-  "kakamega": ["bungoma", "trans-nzoia", "uasin-gishu", "nandi", "vihiga", "siaya", "busia"],
-  "vihiga": ["kakamega", "nandi", "kisumu", "siaya"],
-  "bungoma": ["trans-nzoia", "kakamega", "busia"],
-  "busia": ["bungoma", "kakamega", "siaya"],
-  "siaya": ["busia", "kakamega", "vihiga", "kisumu", "homa-bay"],
-  "kisumu": ["siaya", "vihiga", "nandi", "kericho", "homa-bay"],
-  "homa-bay": ["siaya", "kisumu", "kericho", "nyamira", "kisii", "migori"],
-  "migori": ["homa-bay", "kisii", "narok"],
-  "kisii": ["homa-bay", "nyamira", "narok", "migori"],
-  "nyamira": ["kisii", "homa-bay", "kericho", "bomet", "narok"],
-  "nairobi": ["kiambu", "machakos", "kajiado"],
-};
 
 const URBAN_UTILITIES: Record<
   string,
@@ -122,42 +57,46 @@ const URBAN_UTILITIES: Record<
   },
 };
 
-function computeAnnualRainfall(rain: any): number {
-  if (!rain) return 0;
-  if (rain.monthly && typeof rain.monthly === "object") {
-    return MONTH_KEYS.reduce((sum, mk) => sum + Number(rain.monthly[mk] || 0), 0);
-  }
-  if (Array.isArray(rain.monthlyAvg)) {
-    return rain.monthlyAvg.reduce((sum: number, v: number) => sum + Number(v || 0), 0);
-  }
-  return Number(rain.annualRainfall || 0);
+export interface CountyDetailProps {
+  county: any;
+  budget: any;
+  budgetFiscalYear: string;
+  rainfall: any;
+  countySoils: any[];
+  countyHospitals: any[];
+  countyPostalCodes: any[];
+  countySchools: any[];
+  countyParks: any[];
+  countyForests: any[];
+  countyAgrovets: any[];
+  countyLanguages: any[];
+  otherCounties: any[];
+  agriBenchmarks: {
+    cropSource: string;
+    fertilizerRegSystem: string;
+    crops: any[];
+    fertilizers: any[];
+    livestock: any[];
+  };
 }
 
-function normalizeCountyName(s: string): string {
-  return String(s || "")
-    .toLowerCase()
-    .replace(/['’\-]+/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
-}
-
-export default function CountyDetailClient({ slug }: { slug: string }) {
+export default function CountyDetailClient({
+  county,
+  budget,
+  budgetFiscalYear,
+  rainfall,
+  countySoils,
+  countyHospitals,
+  countyPostalCodes,
+  countySchools,
+  countyParks,
+  countyForests,
+  countyAgrovets,
+  countyLanguages,
+  otherCounties,
+  agriBenchmarks,
+}: CountyDetailProps) {
   const [constSort, setConstSort] = useState<"order" | "alpha">("order");
-  const county = countiesData.counties.find((c) => c.slug === slug);
-  const normCounty = county ? normalizeCountyName(county.name) : "";
-
-  // 1. County Budget (FY 2025/26)
-  const budget = useMemo(
-    () =>
-      county
-        ? ((budgetsData as any).budgets || []).find(
-            (b: any) =>
-              b.code === county.code ||
-              normalizeCountyName(b.county) === normCounty
-          )
-        : null,
-    [county, normCounty]
-  );
 
   const perCapitaEquitableShare = useMemo(() => {
     if (!budget || !county?.population) return 0;
@@ -169,135 +108,14 @@ export default function CountyDetailClient({ slug }: { slug: string }) {
     return Math.round((budget.ownSourceRevenue / budget.totalRevenue) * 1000) / 10;
   }, [budget]);
 
-  // 2. County Rainfall & Climate (annual total dynamically computed from 12-month sum)
-  const rainfall = useMemo(() => {
-    if (!county) return null;
-    const found = ((rainfallData as any).counties || []).find(
-      (r: any) =>
-        r.code === county.code ||
-        normalizeCountyName(r.name) === normCounty
-    );
-    if (!found) return null;
-    return {
-      ...found,
-      annualRainfall: computeAnnualRainfall(found),
-    };
-  }, [county, normCounty]);
-
-  // 3. Matching Agricultural Soil Types
-  const countySoils = useMemo(
-    () =>
-      county
-        ? ((soilsData as any).soilTypes || []).filter((s: any) =>
-            (s.counties || s.whereFound || []).some((w: string) =>
-              normalizeCountyName(w).includes(normCounty)
-            )
-          )
-        : [],
-    [county, normCounty]
-  );
-
-  // 4. SHA / SHIF Accredited Hospitals in County
-  const countyHospitals = useMemo(
-    () =>
-      county
-        ? ((hospitalsData as any).hospitals || []).filter(
-            (h: any) => normalizeCountyName(h.county) === normCounty
-          )
-        : [],
-    [county, normCounty]
-  );
-
-  // 5. Posta Kenya Postal Codes in County
-  const countyPostalCodes = useMemo(
-    () =>
-      county
-        ? ((postalData as any).codes || []).filter(
-            (p: any) => normalizeCountyName(p.county) === normCounty
-          )
-        : [],
-    [county, normCounty]
-  );
-
-  // 6. Top KCSE Schools in County
-  const countySchools = useMemo(
-    () =>
-      county
-        ? ((rankingsData as any).schools || []).filter(
-            (s: any) => normalizeCountyName(s.county) === normCounty
-          )
-        : [],
-    [county, normCounty]
-  );
-
-  // 7. National Parks, Forest Reserves & Agrovets in County
-  const countyParks = useMemo(
-    () =>
-      county
-        ? ((parksData as any).parks || []).filter((p: any) =>
-            normalizeCountyName(p.county).includes(normCounty)
-          )
-        : [],
-    [county, normCounty]
-  );
-
-  const countyForests = useMemo(
-    () =>
-      county
-        ? ((forestsData as any).forests || []).filter((f: any) =>
-            normalizeCountyName(f.county).includes(normCounty)
-          )
-        : [],
-    [county, normCounty]
-  );
-
-  const countyAgrovets = useMemo(
-    () =>
-      county
-        ? ((agrovetsData as any).agrovets || []).filter(
-            (a: any) => normalizeCountyName(a.county) === normCounty
-          )
-        : [],
-    [county, normCounty]
-  );
-
-  // 8. Languages spoken in County
-  const countyLanguages = useMemo(
-    () =>
-      county
-        ? ((languagesData as any).languages || []).filter((l: any) =>
-            (l.counties || []).some((cn: string) =>
-              normalizeCountyName(cn).includes(normCounty)
-            )
-          )
-        : [],
-    [county, normCounty]
-  );
-
   const sortedConstituencies = useMemo(() => {
     if (!county) return [];
-    const indexed = county.constituencies.map((name, i) => ({ name, num: i + 1 }));
+    const indexed = county.constituencies.map((name: string, i: number) => ({ name, num: i + 1 }));
     if (constSort === "alpha") {
       return [...indexed].sort((a, b) => a.name.localeCompare(b.name));
     }
     return indexed;
   }, [county, constSort]);
-
-  // True geographically bordering counties for internal linking (F-042)
-  const otherCounties = useMemo(() => {
-    if (!county) return [];
-    const neighborSlugs = BORDERING_COUNTIES[county.slug] || [];
-    const neighbors = neighborSlugs
-      .map((s) => countiesData.counties.find((c) => c.slug === s))
-      .filter((c): c is (typeof countiesData.counties)[number] => Boolean(c));
-    if (neighbors.length > 0) return neighbors.slice(0, 6);
-    const idx = countiesData.counties.findIndex((c) => c.code === county.code);
-    return [1, 2, 3, 4].map((offset) => countiesData.counties[(idx + offset) % countiesData.counties.length]);
-  }, [county]);
-
-  if (!county) {
-    notFound();
-  }
 
   const codeStr = county.code.toString().padStart(3, "0");
   const density = county.area > 0 ? Math.round(county.population / county.area) : 0;
@@ -319,8 +137,8 @@ export default function CountyDetailClient({ slug }: { slug: string }) {
     ...(budget
       ? [
           {
-            question: `What is ${county.name} County's budget allocation for FY ${(budgetsData as any).fiscalYear || "2025/26"}?`,
-            answer: `In FY ${(budgetsData as any).fiscalYear || "2025/26"}, ${county.name} County has an Equitable Share allocation of KES ${budget.allocation.toLocaleString()}M (approximately KES ${perCapitaEquitableShare.toLocaleString()} per resident) and projected Own-Source Revenue (OSR) of KES ${budget.ownSourceRevenue.toLocaleString()}M (${osrSharePct}% of total revenue of KES ${budget.totalRevenue.toLocaleString()}M), with a Controller of Budget absorption rate of ${budget.absorptionRate}%.`,
+            question: `What is ${county.name} County's budget allocation for FY ${budgetFiscalYear}?`,
+            answer: `In FY ${budgetFiscalYear}, ${county.name} County has an Equitable Share allocation of KES ${budget.allocation.toLocaleString()}M (approximately KES ${perCapitaEquitableShare.toLocaleString()} per resident) and projected Own-Source Revenue (OSR) of KES ${budget.ownSourceRevenue.toLocaleString()}M (${osrSharePct}% of total revenue of KES ${budget.totalRevenue.toLocaleString()}M), with a Controller of Budget absorption rate of ${budget.absorptionRate}%.`,
           },
         ]
       : []),
@@ -482,7 +300,7 @@ export default function CountyDetailClient({ slug }: { slug: string }) {
             In the National Assembly and Senate, {county.name} County is represented by <strong>{county.constituencies.length} parliamentary constituencies</strong> ({county.constituencies.join(", ")}), averaging <strong>{popPerConstituency.toLocaleString()} residents per constituency MP</strong>, alongside County Senator <strong>{county.senator}</strong> and Woman Representative <strong>{county.womenRep}</strong>. The County Executive is headed by Governor <strong>{county.governor}</strong> and Deputy Governor <strong>{county.deputyGovernor}</strong>.
             {budget ? (
               <>
-                {" "}Under the County Allocation of Revenue Act (CARA) for FY {(budgetsData as any).fiscalYear || "2025/26"}, {county.name} receives <strong>KES {budget.allocation.toLocaleString()}M</strong> in Equitable Share transfers (equivalent to <strong>KES {perCapitaEquitableShare.toLocaleString()} per resident</strong>) and generates <strong>KES {budget.ownSourceRevenue.toLocaleString()}M</strong> in local Own-Source Revenue (<strong>{osrSharePct}%</strong> of its total KES {budget.totalRevenue.toLocaleString()}M resource envelope).
+                {" "}Under the County Allocation of Revenue Act (CARA) for FY {budgetFiscalYear}, {county.name} receives <strong>KES {budget.allocation.toLocaleString()}M</strong> in Equitable Share transfers (equivalent to <strong>KES {perCapitaEquitableShare.toLocaleString()} per resident</strong>) and generates <strong>KES {budget.ownSourceRevenue.toLocaleString()}M</strong> in local Own-Source Revenue (<strong>{osrSharePct}%</strong> of its total KES {budget.totalRevenue.toLocaleString()}M resource envelope).
               </>
             ) : null}
           </p>
@@ -519,7 +337,7 @@ export default function CountyDetailClient({ slug }: { slug: string }) {
         <section>
           <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
             <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2">
-              <DynamicIcon emoji="📊" className="w-5 h-5 text-gold" /> FY {(budgetsData as any).fiscalYear || "2025/26"} Budget &amp; Fiscal Performance
+              <DynamicIcon emoji="📊" className="w-5 h-5 text-gold" /> FY {budgetFiscalYear} Budget &amp; Fiscal Performance
             </h2>
             <Link href="/county/" className="text-xs font-semibold text-gold hover:underline">
               Compare All 47 Budgets →
@@ -981,13 +799,13 @@ export default function CountyDetailClient({ slug }: { slug: string }) {
             KALRO Crop Planting Calendar, NCPB Fertilizer Subsidy &amp; Livestock Markets
           </h2>
           <span className="text-xs text-gold font-semibold">
-            {cropCalendarData.source} • {fertilizerData.subsidyProgram.registrationSystem}
+            {agriBenchmarks.cropSource} • {agriBenchmarks.fertilizerRegSystem}
           </span>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
           <div className="rounded-xl bg-bg-elevated/60 border border-border p-4 space-y-1.5">
             <h3 className="font-bold text-text-primary">Staple &amp; Cash Crops</h3>
-            {cropCalendarData.crops.slice(0, 5).map((crop) => (
+            {agriBenchmarks.crops.map((crop) => (
               <p key={crop.name} className="text-text-secondary">
                 <strong className="text-gold">{crop.name} ({crop.category}):</strong> {crop.maturityDays}
               </p>
@@ -995,7 +813,7 @@ export default function CountyDetailClient({ slug }: { slug: string }) {
           </div>
           <div className="rounded-xl bg-bg-elevated/60 border border-border p-4 space-y-1.5">
             <h3 className="font-bold text-text-primary">NCPB e-Voucher Fertilizer (50kg)</h3>
-            {fertilizerData.fertilizers.slice(0, 5).map((fert) => (
+            {agriBenchmarks.fertilizers.map((fert) => (
               <p key={fert.name} className="text-text-secondary flex flex-wrap justify-between gap-2">
                 <span>{fert.name}</span>
                 <strong className="text-kenya-green-light">KES {fert.subsidizedPrice.toLocaleString()}</strong>
@@ -1004,7 +822,7 @@ export default function CountyDetailClient({ slug }: { slug: string }) {
           </div>
           <div className="rounded-xl bg-bg-elevated/60 border border-border p-4 space-y-1.5">
             <h3 className="font-bold text-text-primary">NALMC Livestock Benchmarks</h3>
-            {livestockData.livestock.map((lv) => (
+            {agriBenchmarks.livestock.map((lv) => (
               <p key={lv.type} className="text-text-secondary flex flex-wrap justify-between gap-2">
                 <span>{lv.type}</span>
                 <strong className="text-text-primary">

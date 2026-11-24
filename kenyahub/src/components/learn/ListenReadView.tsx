@@ -19,7 +19,7 @@ import {
   Volume2,
   XCircle,
 } from "lucide-react";
-import { getLanguageOpenCorpus, type OpenCorpusAudioChapter } from "@/lib/open-corpus";
+import type { OpenCorpusAudioChapter, OpenCorpusLanguageData } from "@/lib/open-corpus";
 import {
   loadAudioShard,
   loadQuizzesShard,
@@ -34,6 +34,7 @@ import { useDebouncedValue } from "@/lib/useDebouncedValue";
 interface ListenReadViewProps {
   languageId: string;
   languageName: string;
+  openCorpusData?: OpenCorpusLanguageData | null;
 }
 
 type SubTab = "listen" | "read" | "quiz";
@@ -215,8 +216,12 @@ const ChapterAudioPlayer = memo(function ChapterAudioPlayer({
   );
 });
 
-export default function ListenReadView({ languageId, languageName }: ListenReadViewProps) {
-  const langMeta = getLanguageOpenCorpus(languageId);
+export default function ListenReadView({
+  languageId,
+  languageName,
+  openCorpusData = null,
+}: ListenReadViewProps) {
+  const langMeta = openCorpusData ?? null;
   const chapters: OpenCorpusAudioChapter[] = langMeta?.audioChapters ?? [];
   const shards = langMeta?.shards;
 

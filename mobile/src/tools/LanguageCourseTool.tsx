@@ -34,10 +34,24 @@ import {
 import { useTheme, androidRipple, KenyaStripe } from '../theme';
 import { PUBLISHED_COURSE_SUMMARIES, hasCourseSummary, getCourseLazy, getGrammarSectionsLazy, getPlaceholderCourse, getCanonicalCourseCounts, buildDictUnit } from './language-course/courseLoader';
 import { getLanguageIdentity } from '../shared/data/language-identity';
-import { getSourcesForLanguage, DICT_META_MAP, type Dictionary } from '../shared/data/language-sources';
+import type { Dictionary } from '../shared/data/language-sources';
+
+let _languageSourcesMod: typeof import('../shared/data/language-sources') | null = null;
+function getLanguageSourcesMod() {
+  if (!_languageSourcesMod) {
+    _languageSourcesMod = require('../shared/data/language-sources');
+  }
+  return _languageSourcesMod!;
+}
 import { loadDictionary, LOADED_DICTS_CACHE } from './translator/loader';
 import kikuyuProverbsData from '../shared/data/kikuyu-proverbs.json';
-import openCorpusIndex from '../shared/data/open-corpus-index.json';
+let _openCorpusIndexCache: any = null;
+function getOpenCorpusIndexData(): any {
+  if (!_openCorpusIndexCache) {
+    _openCorpusIndexCache = require('../shared/data/open-corpus-index.json');
+  }
+  return _openCorpusIndexCache;
+}
 import { loadMobileAudioShard, type MobileAudioShardClip } from '../lib/mobile-learning-shards';
 import dholuoChaptersData from '../shared/data/dholuo-audio-chapters.json';
 
@@ -347,11 +361,14 @@ const AudioClipList = React.memo(function AudioClipList({
   );
 });
 import { KSL_ALPHABET } from '../shared/data/ksl-starter';
-import { KIKUYU_PROVERBS as KIKUYU_CW_ITEMS, LUO_PROVERBS as LUO_CW_ITEMS } from '../shared/data/courses/proverbs';
 import { luoProverbs } from '../shared/data/courses/luo/proverbs';
 import { luoRiddles } from '../shared/data/courses/luo/riddles';
 import { luoTongueTwisters } from '../shared/data/courses/luo/tongue-twisters';
-import { getCulturalWisdomForLanguage, type CulturalWisdomItem } from '../shared/data/courses/cultural-wisdom';
+import {
+  getCulturalWisdomForLanguageLazy,
+  getProverbsForLanguageLazy,
+} from './language-course/proverbsLoader';
+import type { CulturalWisdomItem } from '../shared/data/courses/proverbs/types';
 import { getRiddlesForLanguage } from '../shared/data/courses/riddles-bank';
 import { generateExercises, checkAnswer, checkAnswerWithFeedback, getLevelProfile, getTeachingDeckForLevel, getPrimaryForm, cleanExerciseText, isCleanLexicalWordPair, isSingleWordLexical, KENYAN_SPECIAL_CHARS } from '../shared/lib/learn-engine';
 import {
@@ -392,29 +409,41 @@ import {
 import { createStyles } from "./language-course/styles";
 import ExtraMiniGames from "./language-course/ExtraMiniGames";
 
-const ALL_KIKUYU_PROVERBS = [
-  ...(Array.isArray(kikuyuProverbsData) ? (kikuyuProverbsData as any[]) : []),
-  ...KIKUYU_CW_ITEMS.map((item, idx) => ({
-    id: 1001 + idx,
-    kikuyu: item.indigenous,
-    translation: item.literalTranslation,
-    explanation: item.meaning,
-    englishEquivalent: item.englishEquivalent || null,
-    category: item.theme || "wisdom",
-  })),
-];
+let _allKikuyuProverbsCache: any[] | null = null;
+function getAllKikuyuProverbs(): any[] {
+  if (!_allKikuyuProverbsCache) {
+    _allKikuyuProverbsCache = [
+      ...(Array.isArray(kikuyuProverbsData) ? (kikuyuProverbsData as any[]) : []),
+      ...getProverbsForLanguageLazy("kikuyu").map((item, idx) => ({
+        id: 1001 + idx,
+        kikuyu: item.indigenous,
+        translation: item.literalTranslation,
+        explanation: item.meaning,
+        englishEquivalent: item.englishEquivalent || null,
+        category: item.theme || "wisdom",
+      })),
+    ];
+  }
+  return _allKikuyuProverbsCache;
+}
 
-const ALL_LUO_PROVERBS = [
-  ...luoProverbs,
-  ...LUO_CW_ITEMS.map((item, idx) => ({
-    id: 10000 + idx + 1,
-    luo: item.indigenous,
-    english: item.literalTranslation,
-    meaning: item.meaning,
-    explanation: item.englishEquivalent || item.meaning,
-    category: (item.theme || "wisdom") as any,
-  })),
-];
+let _allLuoProverbsCache: any[] | null = null;
+function getAllLuoProverbs(): any[] {
+  if (!_allLuoProverbsCache) {
+    _allLuoProverbsCache = [
+      ...luoProverbs,
+      ...getProverbsForLanguageLazy("luo").map((item, idx) => ({
+        id: 10000 + idx + 1,
+        luo: item.indigenous,
+        english: item.literalTranslation,
+        meaning: item.meaning,
+        explanation: item.englishEquivalent || item.meaning,
+        category: (item.theme || "wisdom") as any,
+      })),
+    ];
+  }
+  return _allLuoProverbsCache;
+}
 
 const MENU_FAMILY_COUNTS: Record<string, number> = (() => {
   const counts: Record<string, number> = { All: PUBLISHED_COURSE_SUMMARIES.length };
@@ -426,7 +455,7 @@ const MENU_FAMILY_COUNTS: Record<string, number> = (() => {
   return counts;
 })();
 
-const STAGED_VARIETIES: {
+type StagedVarietyItem = {
   id: string;
   name: string;
   nativeName: string;
@@ -434,7 +463,10 @@ const STAGED_VARIETIES: {
   counties: string[];
   totalEntries: number;
   sampleEntries: { english: string; translation: string; context?: string }[];
-}[] = (openCorpusIndex as any).stagedVarieties || [];
+};
+function getStagedVarieties(): StagedVarietyItem[] {
+  return (getOpenCorpusIndexData() as any)?.stagedVarieties || [];
+}
 
 export interface CourseNavigationState {
   inCourse: boolean;
@@ -442,7 +474,7 @@ export interface CourseNavigationState {
   backToMenu: () => void;
 }
 
-export function LanguageLearningTool({
+export const LanguageLearningTool = React.memo(function LanguageLearningTool({
   onScrollToTop,
   initialLanguageId,
   initialTab,
@@ -461,7 +493,7 @@ export function LanguageLearningTool({
       onNavigationStateChange={onNavigationStateChange}
     />
   );
-}
+});
 
 export default function LanguageCourseTool({
   onScrollToTop,
@@ -486,7 +518,7 @@ export default function LanguageCourseTool({
   const deferredMenuSearchQuery = useDeferredValue(menuSearchQuery);
   const [menuFamilyFilter, setMenuFamilyFilter] = useState<string>('All');
   const [selectedEmergingId, setSelectedEmergingId] = useState<string>(
-    ((openCorpusIndex as any).stagedVarieties?.[0]?.id as string) || 'nubi'
+    'nubi'
   );
   const [kslTab, setKslTab] = useState<'all' | 'maseno-stickman' | 'human-sign-bible'>('all');
   const [kslSearchQuery, setKslSearchQuery] = useState<string>('');
@@ -505,7 +537,7 @@ export default function LanguageCourseTool({
       source?: string;
       reference?: string;
       transcript?: string;
-    }[] = Array.isArray(full) && full.length > 0 ? full : ((openCorpusIndex as any).ksl?.videos || []);
+    }[] = Array.isArray(full) && full.length > 0 ? full : (getOpenCorpusIndexData()?.ksl?.videos || []);
     return list;
   }, [showLanguageMenu]);
   const kslCategoryCounts = useMemo(() => {
@@ -544,7 +576,7 @@ export default function LanguageCourseTool({
     });
   }, [allKslVideos, kslTab, kslLetter, deferredKslSearchQuery]);
   const [activeKslVideoId, setActiveKslVideoId] = useState<string>(
-    ((openCorpusIndex as any).ksl?.videos?.[0]?.id as string) || ''
+    ''
   );
   const [kslPlaybackRate, setKslPlaybackRate] = useState<number>(1);
   const [kslAutoPlay, setKslAutoPlay] = useState<boolean>(false);
@@ -627,7 +659,7 @@ export default function LanguageCourseTool({
   }, [initialTab]);
 
   useEffect(() => {
-    const cl = (openCorpusIndex.languages as Record<string, any>)[selectedLangId];
+    const cl = (getOpenCorpusIndexData()?.languages as Record<string, any>)?.[selectedLangId];
     const hasAud = Boolean((cl?.r2AudioClips || 0) > 0 || (cl?.nativeAudioSamples?.length || 0) > 0 || selectedLangId === 'luo');
     setLrSubTab(hasAud ? 'listen' : 'read');
     setLrQuizIdx(0);
@@ -637,7 +669,41 @@ export default function LanguageCourseTool({
 
   // ── Progress Store (All Languages) ──
   const [allProgress, setAllProgress] = useState<Record<string, LanguageProgress>>({});
+  const pendingProgressSaveRef = useRef(false);
   const [lastVisitedLangId, setLastVisitedLangId] = useState<string | null>(null);
+
+  const sanitizeLanguageProgress = useCallback((lid: string, raw: unknown): LanguageProgress => {
+    const base = createDefaultLanguageProgress(lid);
+    if (!raw || typeof raw !== 'object' || Array.isArray(raw)) return base;
+    const r = raw as Record<string, any>;
+    return {
+      ...base,
+      ...r,
+      languageId: typeof r.languageId === 'string' && r.languageId ? r.languageId : lid,
+      totalXP: Number.isFinite(Number(r.totalXP)) ? Number(r.totalXP) : base.totalXP,
+      streak: Number.isFinite(Number(r.streak)) ? Number(r.streak) : base.streak,
+      lastPracticeDate: typeof r.lastPracticeDate === 'string' ? r.lastPracticeDate : base.lastPracticeDate,
+      dailyXP: Number.isFinite(Number(r.dailyXP)) ? Number(r.dailyXP) : base.dailyXP,
+      dailyDate: typeof r.dailyDate === 'string' ? r.dailyDate : base.dailyDate,
+      dailyGoal: Number.isFinite(Number(r.dailyGoal)) && Number(r.dailyGoal) > 0 ? Number(r.dailyGoal) : base.dailyGoal,
+      hearts: Number.isFinite(Number(r.hearts)) ? Number(r.hearts) : base.hearts,
+      heartsLastRefill: Number.isFinite(Number(r.heartsLastRefill)) ? Number(r.heartsLastRefill) : base.heartsLastRefill,
+      perfectLessons: Number.isFinite(Number(r.perfectLessons)) ? Number(r.perfectLessons) : base.perfectLessons,
+      gamesPlayed: Number.isFinite(Number(r.gamesPlayed)) ? Number(r.gamesPlayed) : base.gamesPlayed,
+      skills: r.skills && typeof r.skills === 'object' && !Array.isArray(r.skills) ? r.skills : base.skills,
+      wordStrengths: r.wordStrengths && typeof r.wordStrengths === 'object' && !Array.isArray(r.wordStrengths) ? r.wordStrengths : base.wordStrengths,
+      unlockedAchievements: Array.isArray(r.unlockedAchievements)
+        ? r.unlockedAchievements.filter((a: any) => typeof a === 'string')
+        : base.unlockedAchievements,
+    };
+  }, []);
+
+  // Persist progress outside React state updater
+  useEffect(() => {
+    if (!pendingProgressSaveRef.current) return;
+    pendingProgressSaveRef.current = false;
+    AsyncStorage.setItem(STORAGE_KEY_V2, JSON.stringify(allProgress)).catch(() => {});
+  }, [allProgress]);
 
   // Load & migrate progress from AsyncStorage
   useEffect(() => {
@@ -657,41 +723,58 @@ export default function LanguageCourseTool({
         }
         const rawV2 = map.get(STORAGE_KEY_V2);
         if (rawV2) {
-          setAllProgress(JSON.parse(rawV2));
-          return;
+          const parsed = JSON.parse(rawV2);
+          if (parsed && typeof parsed === 'object' && !Array.isArray(parsed)) {
+            const sanitized: Record<string, LanguageProgress> = {};
+            for (const [lid, val] of Object.entries(parsed)) {
+              if (typeof lid === 'string' && lid) {
+                sanitized[lid] = sanitizeLanguageProgress(lid, val);
+              }
+            }
+            setAllProgress(sanitized);
+            return;
+          }
         }
         // Migrate from v1 if present
         const rawV1 = map.get(STORAGE_KEY_V1);
         if (rawV1) {
           const v1 = JSON.parse(rawV1);
-          const migrated: Record<string, LanguageProgress> = {};
-          for (const course of PUBLISHED_COURSE_SUMMARIES) {
-            const lid = course.config.id;
-            const base = createDefaultLanguageProgress(lid);
-            base.totalXP = v1.xp || 0;
-            base.streak = v1.streak || 0;
-            base.lastPracticeDate = v1.lastPracticeDate || '';
-            const completedList: string[] = v1.completedSkills?.[lid] || [];
-            for (const sid of completedList) {
-              base.skills[sid] = {
-                skillId: sid,
-                level: 1,
-                lessonsCompleted: 1,
-                lastPracticed: Date.now(),
-                bestAccuracy: 100,
-              };
+          if (v1 && typeof v1 === 'object' && !Array.isArray(v1)) {
+            const migrated: Record<string, LanguageProgress> = {};
+            for (const course of PUBLISHED_COURSE_SUMMARIES) {
+              const lid = course.config.id;
+              const base = createDefaultLanguageProgress(lid);
+              base.totalXP = Number.isFinite(Number(v1.xp)) ? Number(v1.xp) : 0;
+              base.streak = Number.isFinite(Number(v1.streak)) ? Number(v1.streak) : 0;
+              base.lastPracticeDate = typeof v1.lastPracticeDate === 'string' ? v1.lastPracticeDate : '';
+              const rawCompleted =
+                v1.completedSkills && typeof v1.completedSkills === 'object' && !Array.isArray(v1.completedSkills)
+                  ? v1.completedSkills[lid]
+                  : [];
+              const completedList: string[] = Array.isArray(rawCompleted)
+                ? rawCompleted.filter((s: any) => typeof s === 'string')
+                : [];
+              for (const sid of completedList) {
+                base.skills[sid] = {
+                  skillId: sid,
+                  level: 1,
+                  lessonsCompleted: 1,
+                  lastPracticed: Date.now(),
+                  bestAccuracy: 100,
+                };
+              }
+              migrated[lid] = base;
             }
-            migrated[lid] = base;
+            setAllProgress(migrated);
+            await AsyncStorage.setItem(STORAGE_KEY_V2, JSON.stringify(migrated));
           }
-          setAllProgress(migrated);
-          await AsyncStorage.setItem(STORAGE_KEY_V2, JSON.stringify(migrated));
         }
       } catch {}
     })();
     return () => {
       active = false;
     };
-  }, []);
+  }, [sanitizeLanguageProgress]);
 
   const currentCourse = useMemo(
     () =>
@@ -704,7 +787,7 @@ export default function LanguageCourseTool({
   const langColor = currentCourse?.config.color || colors.gold;
   const languageSources = useMemo(() => {
     if (showLanguageMenu) return [];
-    const raw = getSourcesForLanguage(selectedLangId) || [];
+    const raw = getLanguageSourcesMod().getSourcesForLanguage(selectedLangId) || [];
     const target = selectedLangId.toLowerCase();
     return raw.filter((s: any) => {
       if (s.languageId && String(s.languageId).toLowerCase() !== target) return false;
@@ -792,7 +875,7 @@ export default function LanguageCourseTool({
         updated.unlockedAchievements = Array.from(unlocked);
 
         const nextAll = { ...prevAll, [selectedLangId]: updated };
-        AsyncStorage.setItem(STORAGE_KEY_V2, JSON.stringify(nextAll)).catch(() => {});
+        pendingProgressSaveRef.current = true;
         return nextAll;
       });
     },
@@ -1752,7 +1835,7 @@ export default function LanguageCourseTool({
 
 
   const activeEmergingVariety = useMemo(
-    () => STAGED_VARIETIES.find((v) => v.id === selectedEmergingId) || STAGED_VARIETIES[0] || null,
+    () => { const list = getStagedVarieties(); return list.find((v) => v.id === selectedEmergingId) || list[0] || null; },
     [selectedEmergingId]
   );
 
@@ -1789,7 +1872,7 @@ export default function LanguageCourseTool({
   const filteredKikuyuProverbs = useMemo(() => {
     if (showLanguageMenu || activeTab !== 'proverbs' || selectedLangId !== 'kikuyu') return [];
     const q = deferredProverbSearch.trim().toLowerCase();
-    return ALL_KIKUYU_PROVERBS.filter((p: any) => {
+    return getAllKikuyuProverbs().filter((p: any) => {
       if (proverbCategory !== 'All' && p.category !== proverbCategory) return false;
       if (!q) return true;
       return (
@@ -1805,7 +1888,7 @@ export default function LanguageCourseTool({
   const filteredLuoProverbs = useMemo(() => {
     if (showLanguageMenu || activeTab !== 'proverbs' || selectedLangId !== 'luo' || luoSubTab !== 'proverbs') return [];
     const q = deferredProverbSearch.trim().toLowerCase();
-    return ALL_LUO_PROVERBS.filter((p) => {
+    return getAllLuoProverbs().filter((p) => {
       if (proverbCategory !== 'All' && p.category !== proverbCategory) return false;
       if (!q) return true;
       return (
@@ -1831,7 +1914,7 @@ export default function LanguageCourseTool({
   const filteredCulturalWisdom = useMemo(() => {
     if (showLanguageMenu || activeTab !== 'proverbs' || selectedLangId === 'kikuyu' || selectedLangId === 'luo') return [];
     const q = deferredProverbSearch.trim().toLowerCase();
-    const baseItems = getCulturalWisdomForLanguage(selectedLangId);
+    const baseItems = getCulturalWisdomForLanguageLazy(selectedLangId);
     const noteItems: CulturalWisdomItem[] = [];
     if (currentCourse) {
       const seen = new Set<string>();
@@ -3569,7 +3652,7 @@ export default function LanguageCourseTool({
 
         {/* More Kenyan Languages — Starter Phrasebooks (Kinubi, Kuria, Kenyan Maay, Yaaku · 1:1 Web Parity) */}
         {(() => {
-          const varieties = STAGED_VARIETIES;
+          const varieties = getStagedVarieties();
           if (varieties.length === 0 || !activeEmergingVariety) return null;
           const activeVar = activeEmergingVariety;
           const filteredEmerging = filteredEmergingEntries;
@@ -4179,7 +4262,7 @@ export default function LanguageCourseTool({
                           Boolean(progress.unlockAll)
                         );
                       const dictCatMeta = skill.id.startsWith('dict-cat-')
-                        ? DICT_META_MAP[selectedLangId]?.categories.find(
+                        ? getLanguageSourcesMod().DICT_META_MAP[selectedLangId]?.categories.find(
                             (c) => `dict-cat-${c.id}` === skill.id
                           )
                         : undefined;
@@ -5491,7 +5574,7 @@ export default function LanguageCourseTool({
           TAB 1B: LISTEN & READ (1:1 WEB PARITY — AUDIO, STORIES & COMPREHENSION QUIZ)
          ======================================================================== */}
       {activeTab === 'listen-read' && (() => {
-        const corpusLang = (openCorpusIndex.languages as Record<string, any>)[selectedLangId] || {};
+        const corpusLang = (getOpenCorpusIndexData()?.languages as Record<string, any>)?.[selectedLangId] || {};
         const readerShard = getLearningReadersData()[selectedLangId] || null;
         const quizShard = getLearningQuizzesData()[selectedLangId] || null;
         const samples: MobileAudioShardClip[] = lrAudioClips.length > 0 ? lrAudioClips : (corpusLang.nativeAudioSamples || []);
@@ -6011,7 +6094,7 @@ export default function LanguageCourseTool({
         <View style={styles.grammarTabWrap}>
           {(() => {
             const corpusLang = (
-              openCorpusIndex.languages as Record<
+              (getOpenCorpusIndexData()?.languages || {}) as Record<
                 string,
                 {
                   r2AudioClips?: number;
@@ -6505,7 +6588,7 @@ export default function LanguageCourseTool({
                     'All',
                     ...Array.from(
                       new Set(
-                        getCulturalWisdomForLanguage(selectedLangId)
+                        getCulturalWisdomForLanguageLazy(selectedLangId)
                           .map((item) => item.category)
                           .filter(Boolean)
                       )

@@ -1,7 +1,8 @@
 import { notFound } from "next/navigation";
 import LanguageClientPage from "@/components/learn/LanguageClientPage";
 import { getCourse, PUBLISHED_COURSES } from "@/data/courses/registry";
-import { DICT_META_MAP } from "@/data/language-sources";
+import { DICT_META_MAP, getSourcesForLanguage } from "@/data/language-sources";
+import { getLanguageOpenCorpus } from "@/lib/open-corpus";
 import type { Metadata } from "next";
 
 export function generateStaticParams() {
@@ -159,7 +160,12 @@ export default async function LanguagePage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }}
       />
-      <LanguageClientPage languageId={language} course={course} />
+      <LanguageClientPage
+        languageId={language}
+        course={course}
+        openCorpusData={getLanguageOpenCorpus(language)}
+        languageSources={getSourcesForLanguage(language)}
+      />
     </>
   );
 }

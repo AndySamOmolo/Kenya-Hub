@@ -3,7 +3,6 @@
 import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import { useState, useMemo } from "react";
 import { X } from "lucide-react";
-import ToolShell from "@/components/tools/ToolShell";
 import CustomSelect from "@/components/ui/CustomSelect";
 import { TOOLS } from "@/lib/tools-registry";
 import crspData from "@/data/kra-car-import-crsp.json";
@@ -108,7 +107,7 @@ export default function KraCarImportCalculatorPage() {
   }, [customMode, customCrsp, customCc, customFuel, activePreset, ageIndex, cifUsd, usdRate]);
 
   return (
-    <ToolShell tool={tool}>
+    <>
       <div className="space-y-6">
         <div className="bg-[var(--bg-card)] border border-[var(--border)] rounded-xl p-5 space-y-5">
           <div className="flex flex-wrap items-center justify-between gap-3">
@@ -464,6 +463,6 @@ export default function KraCarImportCalculatorPage() {
           </span>
         </div>
       </div>
-    </ToolShell>
+    </>
   );
 }

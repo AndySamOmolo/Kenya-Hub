@@ -3,7 +3,6 @@
 import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import { useState, useMemo, useEffect } from "react";
 import { Copy, Check, Share2, X } from "lucide-react";
-import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import payeData from "@/data/paye-bands.json";
 import housingLevyData from "@/data/housing-levy-rates.json";
@@ -287,7 +286,7 @@ export default function PAYECalculatorPage() {
   const ahlPct = Math.max(0, Math.round((results.housingLevy / grossBase) * 1000) / 10);
 
   return (
-    <ToolShell tool={tool}>
+    <>
       <div className="space-y-6">
         {/* Calculation Direction Mode Switcher */}
         <div className="bg-bg-card border border-border rounded-xl p-6 space-y-5">
@@ -818,6 +817,6 @@ export default function PAYECalculatorPage() {
           </span>
         </div>
       </div>
-    </ToolShell>
+    </>
   );
 }

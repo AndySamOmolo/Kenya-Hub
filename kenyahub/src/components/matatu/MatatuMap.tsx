@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import "leaflet/dist/leaflet.css";
 import { escapeHtml } from "@/lib/markdown";
 
@@ -29,8 +29,40 @@ export default function MatatuMap({
   const mapContainerRef = useRef<HTMLDivElement>(null);
   const mapInstanceRef = useRef<unknown>(null);
   const markersByOrderRef = useRef<Map<number, { openPopup: () => void }>>(new Map());
+  const onSelectStageRef = useRef(onSelectStage);
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+    onSelectStageRef.current = onSelectStage;
+  }, [onSelectStage]);
+
+  // Defer Leaflet bundle import until the map container approaches the viewport
+  useEffect(() => {
+    if (isVisible) return;
+    const container = mapContainerRef.current;
+    if (typeof window === "undefined" || !container) return;
+
+    if (typeof IntersectionObserver === "undefined") {
+      setIsVisible(true);
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "200px" }
+    );
+
+    observer.observe(container);
+    return () => observer.disconnect();
+  }, [isVisible]);
+
+  useEffect(() => {
+    if (!isVisible) return;
     let cancelled = false;
     const container = mapContainerRef.current;
     if (typeof window === "undefined" || !container || stages.length === 0) return;
@@ -144,7 +176,7 @@ export default function MatatuMap({
             .bindPopup(popupContent);
 
           marker.on("click", () => {
-            onSelectStage?.(stage.order);
+            onSelectStageRef.current?.(stage.order);
           });
 
           markersMap.set(stage.order, marker);
@@ -163,7 +195,7 @@ export default function MatatuMap({
         mapInstanceRef.current = null;
       }
     };
-  }, [stages, routeName, routeNumber, onSelectStage]);
+  }, [isVisible, stages, routeName, routeNumber]);
 
   // Pan to activeStageOrder when a user clicks a stage in the sidebar timeline
   useEffect(() => {

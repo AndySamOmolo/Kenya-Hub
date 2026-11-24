@@ -251,34 +251,51 @@ const VERIFIED_AUDIO_HOSTS = [
   "archive.org",
 ];
 
-// Lazy in-memory per-language slug -> verified R2 URL index loaded from /data/learning/audio/<langId>.json
+// Shared self-contained audio shard cache (safe for both Web and Mobile sync-data.mjs)
+const sharedAudioShardCache = new Map<string, Promise<unknown>>();
 const languageAudioIndexCache = new Map<string, Map<string, string>>();
-const languageAudioLoading = new Set<string>();
+const languageAudioInFlight = new Map<string, Promise<number>>();
+
+export async function fetchSharedAudioShard<
+  T = { languageId?: string; total?: number; clips?: Array<{ slug?: string; audioUrl?: string; [key: string]: unknown }> }
+>(languageId: string): Promise<T | null> {
+  if (typeof window === "undefined" || typeof fetch !== "function" || !languageId) return null;
+  const lid = languageId.trim().toLowerCase();
+  if (!sharedAudioShardCache.has(lid)) {
+    const p = fetch(`/data/learning/audio/${encodeURIComponent(lid)}.json`)
+      .then((res) => (res.ok ? res.json() : null))
+      .catch(() => null);
+    sharedAudioShardCache.set(lid, p);
+  }
+  return (await sharedAudioShardCache.get(lid)) as T | null;
+}
 
 export async function preloadLanguageAudioIndex(langId?: string | null): Promise<number> {
   if (typeof window === "undefined" || !langId) return 0;
   const lid = langId.trim().toLowerCase();
   const existing = languageAudioIndexCache.get(lid);
   if (existing) return existing.size;
-  if (languageAudioLoading.has(lid)) return 0;
-  languageAudioLoading.add(lid);
-  try {
-    const res = await fetch(`/data/learning/audio/${encodeURIComponent(lid)}.json`);
-    if (!res.ok) return 0;
-    const data = await res.json();
-    const map = new Map<string, string>();
-    for (const clip of data?.clips ?? []) {
-      if (clip?.slug && typeof clip?.audioUrl === "string") {
-        map.set(String(clip.slug), clip.audioUrl);
+  const inflight = languageAudioInFlight.get(lid);
+  if (inflight) return inflight;
+
+  const task = fetchSharedAudioShard(lid)
+    .then((data) => {
+      const map = new Map<string, string>();
+      for (const clip of data?.clips ?? []) {
+        if (clip?.slug && typeof clip?.audioUrl === "string") {
+          map.set(String(clip.slug), clip.audioUrl);
+        }
       }
-    }
-    languageAudioIndexCache.set(lid, map);
-    return map.size;
-  } catch {
-    return 0;
-  } finally {
-    languageAudioLoading.delete(lid);
-  }
+      languageAudioIndexCache.set(lid, map);
+      return map.size;
+    })
+    .catch(() => 0)
+    .finally(() => {
+      languageAudioInFlight.delete(lid);
+    });
+
+  languageAudioInFlight.set(lid, task);
+  return task;
 }
 
 function lookupDynamicAudioUrl(entry?: AudioPlayableEntry | null, langId?: string | null): string | null {

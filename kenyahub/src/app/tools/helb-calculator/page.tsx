@@ -2,7 +2,6 @@
 
 import { useState, useMemo } from "react";
 import { X } from "lucide-react";
-import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import helbData from "@/data/helb-rates.json";
 import CustomSelect from "@/components/ui/CustomSelect";
@@ -134,7 +133,7 @@ export default function HELBCalculatorPage() {
     `KES ${Math.round(n).toLocaleString("en-KE", { minimumFractionDigits: 0, maximumFractionDigits: 0 })}`;
 
   return (
-    <ToolShell tool={tool}>
+    <>
       <div className="space-y-6">
         {/* Inputs */}
         <div className="bg-bg-card border border-border rounded-xl p-4 sm:p-6 space-y-5">
@@ -415,6 +414,6 @@ export default function HELBCalculatorPage() {
           </ul>
         </div>
       </div>
-    </ToolShell>
+    </>
   );
 }

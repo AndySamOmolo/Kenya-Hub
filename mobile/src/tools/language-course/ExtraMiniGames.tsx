@@ -21,11 +21,8 @@ import { View, Text, Pressable, StyleSheet } from "react-native";
 import { Feather } from "@expo/vector-icons";
 import { useTheme, androidRipple } from "../../theme";
 import type { CourseUnit, WordPair } from "../../shared/data/courses/types";
-import {
-  CULTURAL_WISDOM,
-  getCulturalWisdomForLanguage,
-  type CulturalWisdomItem,
-} from "../../shared/data/courses/cultural-wisdom";
+import { getCulturalWisdomForLanguageLazy } from "./proverbsLoader";
+import type { CulturalWisdomItem } from "../../shared/data/courses/proverbs/types";
 import { luoTongueTwisters } from "../../shared/data/courses/luo/tongue-twisters";
 import {
   cleanExerciseText,
@@ -204,11 +201,11 @@ function MethaliBuilderMobile({
   const [pickedEnding, setPickedEnding] = useState<string | null>(null);
 
   const proverbsPool = useMemo(() => {
-    const langItems = getCulturalWisdomForLanguage(languageId || "swahili").filter(
+    const langItems = getCulturalWisdomForLanguageLazy(languageId || "swahili").filter(
       (p) => p.nativeText && p.nativeText.trim().split(/\s+/).length >= 3
     );
     if (langItems.length >= 3) return langItems;
-    return CULTURAL_WISDOM.filter(
+    return getCulturalWisdomForLanguageLazy("swahili").filter(
       (p) => p.nativeText && p.nativeText.trim().split(/\s+/).length >= 3
     );
   }, [languageId]);

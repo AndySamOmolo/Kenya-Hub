@@ -1,6 +1,6 @@
 "use client";
 import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
-import { getSourcesForLanguage } from "@/data/language-sources";
+import type { LanguageSource } from "@/data/language-sources";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 
 import { useState } from "react";
@@ -36,6 +36,7 @@ interface SkillTreeProps {
   units: CourseUnit[];
   progress: UserProgress;
   config: LanguageConfig;
+  languageSources?: LanguageSource[];
   onStartLesson: (skillId: string, level: number) => void;
   onStartReview: () => void;
   onToggleUnlockAll: () => void;
@@ -46,11 +47,12 @@ export default function SkillTree({
   units,
   progress,
   config,
+  languageSources = [],
   onStartLesson,
   onStartReview,
   onToggleUnlockAll,
 }: SkillTreeProps) {
-  const sources = getSourcesForLanguage(config.id);
+  const sources = languageSources;
   const [expandedUnits, setExpandedUnits] = useState<Set<number>>(() => new Set([0]));
   const [showAchievements, setShowAchievements] = useState(false);
   const [showDashboard, setShowDashboard] = useState(false);

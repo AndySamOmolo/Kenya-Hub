@@ -2,7 +2,6 @@
 
 import { useState, useMemo } from "react";
 import { GraduationCap, Compass } from "lucide-react";
-import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import utilData from "@/data/kenya-utility-tools-2026.json";
 
@@ -46,7 +45,7 @@ export default function KjseaPathwayEnginePage() {
   }, [kpsea, sba, kjsea, stemAffinity, socialAffinity, artsAffinity]);
 
   return (
-    <ToolShell tool={tool}>
+    <>
       <div className="space-y-6">
         <div className="rounded-2xl border border-gold/30 bg-bg-card p-5 sm:p-7 shadow-xs">
 
@@ -160,6 +159,6 @@ export default function KjseaPathwayEnginePage() {
           </div>
         </div>
       </div>
-    </ToolShell>
+    </>
   );
 }

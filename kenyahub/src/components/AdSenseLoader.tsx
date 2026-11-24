@@ -4,6 +4,8 @@ import { useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 
 const MIN_PUBLISHER_TEXT_CHARS = 800;
+const ADSENSE_SCRIPT_SRC =
+  "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5895990873842803";
 
 declare global {
   interface Window {
@@ -49,17 +51,39 @@ const IGNORED_SELECTOR = [
   "iframe",
 ].join(", ");
 
+let adSenseScriptInjected = false;
+
+function ensureAdSenseScriptLoaded() {
+  if (adSenseScriptInjected || typeof document === "undefined") return;
+  if (document.querySelector(`script[src^="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"]`)) {
+    adSenseScriptInjected = true;
+    return;
+  }
+  adSenseScriptInjected = true;
+  const script = document.createElement("script");
+  script.async = true;
+  script.src = ADSENSE_SCRIPT_SRC;
+  script.crossOrigin = "anonymous";
+  document.head.appendChild(script);
+}
+
 function getPublisherTextLength(mainEl: HTMLElement): number {
   let total = 0;
-  const walker = document.createTreeWalker(mainEl, NodeFilter.SHOW_TEXT, {
-    acceptNode(node) {
-      const parent = node.parentElement;
-      if (!parent || parent.closest(IGNORED_SELECTOR)) {
-        return NodeFilter.FILTER_REJECT;
-      }
-      return NodeFilter.FILTER_ACCEPT;
-    },
-  });
+  const walker = document.createTreeWalker(
+    mainEl,
+    NodeFilter.SHOW_ELEMENT | NodeFilter.SHOW_TEXT,
+    {
+      acceptNode(node) {
+        if (node.nodeType === Node.ELEMENT_NODE) {
+          if ((node as Element).matches(IGNORED_SELECTOR)) {
+            return NodeFilter.FILTER_REJECT;
+          }
+          return NodeFilter.FILTER_SKIP;
+        }
+        return NodeFilter.FILTER_ACCEPT;
+      },
+    }
+  );
   let current = walker.nextNode();
   while (current) {
     const chunk = (current.nodeValue || "").replace(/\s+/g, " ").trim();
@@ -151,6 +175,7 @@ export default function AdSenseLoader() {
       const isCompliant = visibleTextLength >= MIN_PUBLISHER_TEXT_CHARS;
       setAdSensePausedState(!isCompliant);
       if (isCompliant) {
+        ensureAdSenseScriptLoaded();
         mutationObserver?.disconnect();
         mutationObserver = null;
       }
@@ -189,9 +214,9 @@ export default function AdSenseLoader() {
     if (isBlockedRoute(pathname)) {
       setAdSensePausedState(true);
     } else if (typeof win.requestIdleCallback === "function") {
-      idleCallbackId = win.requestIdleCallback(runInitialEvaluation, { timeout: 250 });
+      idleCallbackId = win.requestIdleCallback(runInitialEvaluation, { timeout: 1500 });
     } else {
-      initialTimer = setTimeout(runInitialEvaluation, 250);
+      initialTimer = setTimeout(runInitialEvaluation, 1500);
     }
 
     return () => {

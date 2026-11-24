@@ -2,7 +2,6 @@
 
 import DynamicIcon from "@/components/ui/DynamicIcon";
 import { useState, useMemo } from "react";
-import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import kuccpsData from "@/data/kuccps-clusters.json";
 import CustomSelect from "@/components/ui/CustomSelect";
@@ -11,6 +10,11 @@ const tool = TOOLS.find((t) => t.slug === "kuccps-cluster-calculator")!;
 
 const gradePoints: Record<string, number> = kuccpsData.gradePoints as Record<string, number>;
 const grades = ["A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "D-", "E"];
+const GRADE_OPTIONS = [
+  { value: "", label: "—" },
+  ...grades.map((g) => ({ value: g, label: `${g} (${gradePoints[g]} pts)` })),
+];
+
 const subjects = kuccpsData.subjects;
 
 const DEFAULT_CLUSTER_GRADES: Record<string, string> = {
@@ -129,14 +133,18 @@ export default function KUCCPSCalculatorPage() {
     });
   }, [selectedGrades, best7Sum]);
 
-  const sortedResults = [...clusterResults]
-    .filter((c) => c.calculable)
-    .sort((a, b) => b.totalWeight - a.totalWeight);
+  const sortedResults = useMemo(
+    () =>
+      [...clusterResults]
+        .filter((c) => c.calculable)
+        .sort((a, b) => b.totalWeight - a.totalWeight),
+    [clusterResults]
+  );
 
   const hasGrades = Object.keys(selectedGrades).length > 0;
 
   return (
-    <ToolShell tool={tool}>
+    <>
       <div className="space-y-6">
         {/* Grade Entry */}
         <div className="bg-bg-card border border-border rounded-xl p-6">
@@ -175,15 +183,9 @@ export default function KUCCPSCalculatorPage() {
                 <CustomSelect
                   value={selectedGrades[subject] || ""}
                   onChange={(e) => updateGrade(subject, e.target.value)}
+                  options={GRADE_OPTIONS}
                   className="select-field text-sm py-1.5"
-                >
-                  <option value="">—</option>
-                  {grades.map((g) => (
-                    <option key={g} value={g}>
-                      {g} ({gradePoints[g]} pts)
-                    </option>
-                  ))}
-                </CustomSelect>
+                />
               </div>
             ))}
           </div>
@@ -311,6 +313,6 @@ export default function KUCCPSCalculatorPage() {
           </div>
         )}
       </div>
-    </ToolShell>
+    </>
   );
 }

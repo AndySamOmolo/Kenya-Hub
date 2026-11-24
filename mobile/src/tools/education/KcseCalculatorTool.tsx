@@ -4,6 +4,8 @@ import { Text, View, Pressable } from "react-native";
 import { useDynamicStyles } from "../../theme";
 import { createStyles } from "./shared";
 
+const GRADE_ROW_STYLE = { flexDirection: "row", alignItems: "center", gap: 4 } as const;
+
 /** 2. KCSE Grade Calculator — Strict KNEC 7-Subject / 84-Point Scale */
 const KCSE_CAREERS = [
   { career: "Medicine & Dental Surgery", minGrade: "A-", minPoints: 11 },
@@ -147,7 +149,7 @@ export function KcseCalculatorTool() {
                 {grades[idx]} ({gradePoints[grades[idx]]} pts)
               </Text>
             </View>
-            <ExpandablePillRow contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 4 }}>
+            <ExpandablePillRow contentContainerStyle={GRADE_ROW_STYLE}>
               {possibleGrades.map((g) => (
                 <Pressable
                   key={g}

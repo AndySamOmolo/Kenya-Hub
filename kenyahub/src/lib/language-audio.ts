@@ -11,8 +11,6 @@
  * - Never falls back to synthetic browser Text-to-Speech (`window.speechSynthesis`).
  */
 
-import { loadAudioShard } from "@/lib/learning-shards";
-
 export interface AudioPlayableEntry {
   english?: string | null;
   translation: string;
@@ -253,9 +251,24 @@ const VERIFIED_AUDIO_HOSTS = [
   "archive.org",
 ];
 
-// Lazy in-memory per-language slug -> verified R2 URL index backed by shared learning-shards cache
+// Shared self-contained audio shard cache (safe for both Web and Mobile sync-data.mjs)
+const sharedAudioShardCache = new Map<string, Promise<unknown>>();
 const languageAudioIndexCache = new Map<string, Map<string, string>>();
 const languageAudioInFlight = new Map<string, Promise<number>>();
+
+export async function fetchSharedAudioShard<
+  T = { languageId?: string; total?: number; clips?: Array<{ slug?: string; audioUrl?: string; [key: string]: unknown }> }
+>(languageId: string): Promise<T | null> {
+  if (typeof window === "undefined" || typeof fetch !== "function" || !languageId) return null;
+  const lid = languageId.trim().toLowerCase();
+  if (!sharedAudioShardCache.has(lid)) {
+    const p = fetch(`/data/learning/audio/${encodeURIComponent(lid)}.json`)
+      .then((res) => (res.ok ? res.json() : null))
+      .catch(() => null);
+    sharedAudioShardCache.set(lid, p);
+  }
+  return (await sharedAudioShardCache.get(lid)) as T | null;
+}
 
 export async function preloadLanguageAudioIndex(langId?: string | null): Promise<number> {
   if (typeof window === "undefined" || !langId) return 0;
@@ -265,7 +278,7 @@ export async function preloadLanguageAudioIndex(langId?: string | null): Promise
   const inflight = languageAudioInFlight.get(lid);
   if (inflight) return inflight;
 
-  const task = loadAudioShard(lid)
+  const task = fetchSharedAudioShard(lid)
     .then((data) => {
       const map = new Map<string, string>();
       for (const clip of data?.clips ?? []) {

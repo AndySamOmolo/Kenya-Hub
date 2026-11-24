@@ -17,7 +17,7 @@ import {
 import ToolShell, { type RichGuideEntry } from "@/components/tools/ToolShell";
 import { playLanguageAudio, hasVerifiedAudio, preloadLanguageAudioIndex } from "@/lib/language-audio";
 import { loadFreqShard } from "@/lib/learning-shards";
-import { getLanguageOpenCorpus } from "@/lib/open-corpus";
+import type { OpenCorpusLanguageData } from "@/lib/open-corpus";
 import SkillTree from "@/components/learn/SkillTree";
 import { useDebouncedValue } from "@/lib/useDebouncedValue";
 import CustomSelect from "@/components/ui/CustomSelect";
@@ -42,7 +42,8 @@ import { TOOLS } from "@/lib/tools-registry";
 import type { Tool } from "@/lib/types";
 import type { CourseDefinition } from "@/data/courses/registry";
 import { PUBLISHED_COURSE_SUMMARIES } from "@/data/courses/catalog-summary";
-import { getSourcesForLanguage, DICT_META_MAP, type Dictionary } from "@/data/language-sources";
+import { DICT_META_MAP, type Dictionary } from "@/data/dictionaries/catalog";
+import type { LanguageSource } from "@/data/language-sources";
 import { loadDictionary, DICT_CACHE } from "@/lib/dictionary-loader";
 import { playCorrectSfx, playBadgeUnlockSfx } from "@/lib/game-sfx";
 import Link from "next/link";
@@ -135,9 +136,13 @@ function formatLanguageHeader(name: string, nativeName: string): string {
 export default function LanguageClientPage({
   languageId,
   course,
+  openCorpusData = null,
+  languageSources = [],
 }: {
   languageId: string;
   course?: CourseDefinition;
+  openCorpusData?: OpenCorpusLanguageData | null;
+  languageSources?: LanguageSource[];
 }) {
   const router = useRouter();
 
@@ -652,6 +657,108 @@ export default function LanguageClientPage({
     return list;
   }, [course]);
 
+  const dictMeta = course ? DICT_META_MAP[course.config.id] : undefined;
+  const courseWordsCount = useMemo(
+    () =>
+      course
+        ? course.units.reduce(
+            (sum, u) => sum + u.skills.reduce((s, sk) => s + sk.words.length, 0),
+            0
+          )
+        : 0,
+    [course]
+  );
+  // Single canonical counts (identical on SSR and client hydration — zero flicker)
+  const totalWords = Math.max(courseWordsCount, dictMeta?.totalEntries || 0);
+  const totalUnits = combinedUnits.length;
+  const totalSkills = useMemo(
+    () => combinedUnits.reduce((sum, u) => sum + u.skills.length, 0),
+    [combinedUnits]
+  );
+  const sources = languageSources;
+  const langHeading = course
+    ? formatLanguageHeader(course.config.name, course.config.nativeName)
+    : "";
+
+  const courseTool: Tool = useMemo(
+    () =>
+      course
+        ? {
+            ...LEARN_TOOL,
+            title: `Learn ${langHeading} — Free Interactive Course`,
+            shortTitle: `Learn ${course.config.name}`,
+            description: course.config.description,
+            dataSource: `Verified ${course.config.name} Verified Dictionaries & Courses`,
+          }
+        : LEARN_TOOL,
+    [course, langHeading]
+  );
+
+  const courseFaq = useMemo(() => {
+    if (!course) return [];
+    return [
+      {
+        question: `How is the ${langHeading} course structured on KenyaHub?`,
+        answer: `The ${course.config.name} course is organized into ${totalUnits} structured ${totalUnits === 1 ? "unit" : "units"} and ${totalSkills} skill ${totalSkills === 1 ? "module" : "modules"} teaching ${totalWords.toLocaleString("en-KE")}+ verified vocabulary items, sentence patterns, grammar paradigms, and cultural proverbs. Learners progress from foundational greetings and numerals to verb conjugations, kinship, and oral literature.`,
+      },
+      {
+        question: `Where is ${course.config.name} spoken in Kenya and which language family does it belong to?`,
+        answer: `${langHeading} is a ${course.config.family} language spoken by approximately ${course.config.speakers} speakers across ${course.config.counties.join(", ")} in Kenya.`,
+      },
+      {
+        question: `What primary linguistic sources are used for the ${course.config.name} lessons and grammar reference?`,
+        answer:
+          sources.length > 0
+            ? `The ${course.config.name} curriculum is compiled from ${sources.length} verified public-domain monographs and verified Kenyan dictionaries, including ${sources.slice(0, 4).map((s) => `${s.title} (${s.published})`).join("; ")}.`
+            : `The ${course.config.name} curriculum is compiled from verified Kenyan linguistic monographs and verified Kenyan dictionaries.`,
+      },
+      {
+        question: `Is the ${course.config.name} language course completely free to use?`,
+        answer: `Yes. All ${totalSkills} ${course.config.name} skill modules, vocabulary flashcards, grammar reference chapters, cultural proverbs, and mini-games are 100% free with no account registration required. Progress is saved automatically in your browser.`,
+      },
+    ];
+  }, [course, langHeading, totalUnits, totalSkills, totalWords, sources]);
+
+  // Suppress calculator-specific ToolShell headings (Step-by-Step Calculation, Statutory Compliance)
+  // and uncollapsed bibliography wall; render language-learning study guide & collapsed <details> bibliography below.
+  const courseGuideOverride: RichGuideEntry = useMemo(() => {
+    if (!course) {
+      return { notesTitle: "", overview: [], howItWorks: [], complianceTips: [], notes: [], faq: [] };
+    }
+    const grammarTitles = (course.grammarSections || [])
+      .slice(0, 4)
+      .map((g) => g.title)
+      .join("; ");
+    const unitNames = course.units
+      .slice(0, 6)
+      .map((u) => u.title.replace(/^Unit \d+:\s*/i, ""))
+      .join(", ");
+    return {
+      notesTitle: `About the ${langHeading} Curriculum`,
+      overview: [
+        `${langHeading} belongs to the ${course.config.family} language family and is spoken by approximately ${course.config.speakers} people across ${course.config.counties.join(", ")} in Kenya.`,
+        `This interactive course covers ${totalUnits} structured units (${unitNames}) and ${totalSkills} skill modules spanning ${totalWords.toLocaleString("en-KE")}+ verified vocabulary entries, sentence patterns, and cultural idioms${grammarTitles ? `, alongside grammar reference chapters on ${grammarTitles}` : ""}.`,
+      ],
+      howItWorks: [],
+      complianceTips: [],
+      notes: [],
+      faq: courseFaq,
+    };
+  }, [course, langHeading, totalUnits, totalSkills, totalWords, courseFaq]);
+
+  const breadcrumbSuffix = useMemo(
+    () =>
+      course
+        ? [
+            {
+              label: course.config.name,
+              href: `/tools/learn/${course.config.id}/`,
+            },
+          ]
+        : [],
+    [course]
+  );
+
   if (!course) {
     return (
       <div
@@ -678,50 +785,6 @@ export default function LanguageClientPage({
     course.grammarSections && course.grammarSections.length > 0
   );
 
-  const dictMeta = DICT_META_MAP[course.config.id];
-  const courseWordsCount = course.units.reduce(
-    (sum, u) => sum + u.skills.reduce((s, sk) => s + sk.words.length, 0),
-    0
-  );
-  // Single canonical counts (identical on SSR and client hydration — zero flicker)
-  const totalWords = Math.max(courseWordsCount, dictMeta?.totalEntries || 0);
-  const totalUnits = combinedUnits.length;
-  const totalSkills = combinedUnits.reduce((sum, u) => sum + u.skills.length, 0);
-  const sources = getSourcesForLanguage(course.config.id);
-  const langHeading = formatLanguageHeader(course.config.name, course.config.nativeName);
-
-  const courseTool: Tool = {
-    ...LEARN_TOOL,
-    title: `Learn ${langHeading} — Free Interactive Course`,
-    shortTitle: `Learn ${course.config.name}`,
-    description: course.config.description,
-    dataSource: `Verified ${course.config.name} Verified Dictionaries & Courses`,
-  };
-
-  const courseFaq = [
-    {
-      question: `How is the ${langHeading} course structured on KenyaHub?`,
-      answer: `The ${course.config.name} course is organized into ${totalUnits} structured ${totalUnits === 1 ? "unit" : "units"} and ${totalSkills} skill ${totalSkills === 1 ? "module" : "modules"} teaching ${totalWords.toLocaleString("en-KE")}+ verified vocabulary items, sentence patterns, grammar paradigms, and cultural proverbs. Learners progress from foundational greetings and numerals to verb conjugations, kinship, and oral literature.`,
-    },
-    {
-      question: `Where is ${course.config.name} spoken in Kenya and which language family does it belong to?`,
-      answer: `${langHeading} is a ${course.config.family} language spoken by approximately ${course.config.speakers} speakers across ${course.config.counties.join(", ")} in Kenya.`,
-    },
-    {
-      question: `What primary linguistic sources are used for the ${course.config.name} lessons and grammar reference?`,
-      answer:
-        sources.length > 0
-          ? `The ${course.config.name} curriculum is compiled from ${sources.length} verified public-domain monographs and verified Kenyan dictionaries, including ${sources.slice(0, 4).map((s) => `${s.title} (${s.published})`).join("; ")}.`
-          : `The ${course.config.name} curriculum is compiled from verified Kenyan linguistic monographs and verified Kenyan dictionaries.`,
-    },
-    {
-      question: `Is the ${course.config.name} language course completely free to use?`,
-      answer: `Yes. All ${totalSkills} ${course.config.name} skill modules, vocabulary flashcards, grammar reference chapters, cultural proverbs, and mini-games are 100% free with no account registration required. Progress is saved automatically in your browser.`,
-    },
-  ];
-
-
-
   const totalRefTablePages = Math.max(1, Math.ceil(dedupedCourseWords.length / REF_TABLE_PAGE_SIZE));
   const safeRefTablePage = Math.min(refTablePage, totalRefTablePages);
   const paginatedRefWords = dedupedCourseWords.slice(
@@ -729,41 +792,13 @@ export default function LanguageClientPage({
     safeRefTablePage * REF_TABLE_PAGE_SIZE
   );
 
-  const grammarTitles = (course.grammarSections || [])
-    .slice(0, 4)
-    .map((g) => g.title)
-    .join("; ");
-  const unitNames = course.units
-    .slice(0, 6)
-    .map((u) => u.title.replace(/^Unit \d+:\s*/i, ""))
-    .join(", ");
-
-  // Suppress calculator-specific ToolShell headings (Step-by-Step Calculation, Statutory Compliance)
-  // and uncollapsed bibliography wall; render language-learning study guide & collapsed <details> bibliography below.
-  const courseGuideOverride: RichGuideEntry = {
-    notesTitle: `About the ${langHeading} Curriculum`,
-    overview: [
-      `${langHeading} belongs to the ${course.config.family} language family and is spoken by approximately ${course.config.speakers} people across ${course.config.counties.join(", ")} in Kenya.`,
-      `This interactive course covers ${totalUnits} structured units (${unitNames}) and ${totalSkills} skill modules spanning ${totalWords.toLocaleString("en-KE")}+ verified vocabulary entries, sentence patterns, and cultural idioms${grammarTitles ? `, alongside grammar reference chapters on ${grammarTitles}` : ""}.`,
-    ],
-    howItWorks: [],
-    complianceTips: [],
-    notes: [],
-    faq: courseFaq,
-  };
-
   return (
     <ToolShell
       tool={courseTool}
       faq={courseFaq}
       guideOverride={courseGuideOverride}
       breadcrumbParentLabel="Learn"
-      breadcrumbSuffix={[
-        {
-          label: course.config.name,
-          href: `/tools/learn/${course.config.id}/`,
-        },
-      ]}
+      breadcrumbSuffix={breadcrumbSuffix}
       hideHeader={view === "playing"}
       hideFooter={view === "playing"}
       hideSource
@@ -819,7 +854,7 @@ export default function LanguageClientPage({
       {view !== "playing" && (
         <ExpandablePillRow className="mb-3 sm:mb-5 [&>button]:!h-7 [&>button]:!w-7 sm:[&>button]:!h-8 sm:[&>button]:!w-8 [&>button]:rounded-full [&_.expandable-pill-row]:px-1 [&_.expandable-pill-row]:scroll-pl-1">
           {(() => {
-            const langCorpus = getLanguageOpenCorpus(course.config.id);
+            const langCorpus = openCorpusData;
             const hasListenRead = Boolean(
               langCorpus &&
                 ((langCorpus.r2AudioClips ?? 0) > 0 ||
@@ -876,7 +911,7 @@ export default function LanguageClientPage({
           />
         </div>
       ) : view === "listen-read" ? (
-        <ListenReadView languageId={course.config.id} languageName={course.config.name} />
+        <ListenReadView languageId={course.config.id} languageName={course.config.name} openCorpusData={openCorpusData} />
       ) : view === "flashcards" ? (
         /* ── Interactive 3D Flashcards Deck View (No Audio Buttons) ── */
         <div data-adsense-pause="true" className="mx-auto max-w-2xl space-y-5 pb-8">
@@ -1288,6 +1323,7 @@ export default function LanguageClientPage({
           sections={course.grammarSections}
           languageName={course.config.name}
           languageId={course.config.id}
+          openCorpusData={openCorpusData}
         />
       ) : view === "proverbs" ? (
         <ProverbsView lockedLanguageId={course.config.id} courseUnits={course.units} />
@@ -1296,6 +1332,7 @@ export default function LanguageClientPage({
           units={combinedUnits}
           progress={progress}
           config={course.config}
+          languageSources={sources}
           onStartLesson={handleStartLesson}
           onStartReview={handleStartReview}
           onToggleUnlockAll={handleToggleUnlockAll}

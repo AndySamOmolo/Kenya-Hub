@@ -11,140 +11,33 @@ import {
   Languages,
   Globe,
   Search,
-  X,
+  User,
   ArrowRight,
   BookOpen,
 } from "lucide-react";
-import { useState, useEffect, useMemo, useRef, useDeferredValue } from "react";
+import { useState, useEffect, useRef } from "react";
+import dynamic from "next/dynamic";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { TOOL_CATEGORIES, TOOLS } from "@/lib/tools-registry";
+import { useTheme } from "@/components/ThemeProvider";
+import CategoryIcon from "@/components/ui/CategoryIcon";
+
+// Lazy-loaded Command-K dialog (renders at z-[121] above backdrop; ranks title.startsWith(q) ahead of descriptions)
+const GlobalSearchModal = dynamic(() => import("./GlobalSearchModal"), {
+  ssr: false,
+});
 
 const TOOLS_BY_CATEGORY: Record<string, typeof TOOLS> = Object.fromEntries(
   TOOL_CATEGORIES.map((cat) => [cat.id, TOOLS.filter((t) => t.category === cat.id)])
 );
-import { useTheme } from "@/components/ThemeProvider";
-import DynamicIcon from "@/components/ui/DynamicIcon";
-
-interface QuickSearchItem {
-  id: string;
-  title: string;
-  subtitle: string;
-  href: string;
-  badge: string;
-  icon: string;
-  titleNorm: string;
-  badgeNorm: string;
-  subNorm: string;
-  titleTokens: string[];
-}
-
-function stripDiacritics(input: string): string {
-  return input
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .toLowerCase();
-}
-
-function buildSearchItem(raw: Omit<QuickSearchItem, "titleNorm" | "badgeNorm" | "subNorm" | "titleTokens">): QuickSearchItem {
-  const titleNorm = stripDiacritics(raw.title);
-  return {
-    ...raw,
-    titleNorm,
-    badgeNorm: stripDiacritics(raw.badge),
-    subNorm: stripDiacritics(raw.subtitle),
-    titleTokens: titleNorm.split(/[\s\-–—/(),.:]+/).filter(Boolean),
-  };
-}
-
-let cachedExtraSearchItems: QuickSearchItem[] | null = null;
-let extraSearchItemsPromise: Promise<QuickSearchItem[]> | null = null;
-
-function loadExtraSearchItems(): Promise<QuickSearchItem[]> {
-  if (cachedExtraSearchItems) return Promise.resolve(cachedExtraSearchItems);
-  if (!extraSearchItemsPromise) {
-    extraSearchItemsPromise = Promise.all([
-      import("@/data/courses/catalog-summary"),
-      import("@/data/blog-posts-summary"),
-      import("@/data/counties.json"),
-      import("@/data/matatu-routes.json"),
-    ]).then(([coursesMod, blogMod, countiesMod, matatuMod]) => {
-      const items: QuickSearchItem[] = [];
-      for (const c of coursesMod.PUBLISHED_COURSE_SUMMARIES) {
-        items.push(buildSearchItem({
-          id: `lang-${c.config.id}`,
-          title: `Learn ${c.config.name} (${c.config.nativeName})`,
-          subtitle: `${c.config.family} • ${c.config.counties.slice(0, 3).join(", ")}`,
-          href: `/tools/learn/${c.config.id}/`,
-          badge: "Language",
-          icon: "🗣️",
-        }));
-      }
-      for (const county of countiesMod.default.counties) {
-        const codeStr = String(county.code).padStart(3, "0");
-        items.push(buildSearchItem({
-          id: `county-${county.slug}`,
-          title: `${county.name} County (#${codeStr})`,
-          subtitle: `HQ: ${county.capital} • Gov. ${county.governor}`,
-          href: `/county/${county.slug}/`,
-          badge: "County",
-          icon: "🏛️",
-        }));
-      }
-      for (const post of blogMod.STATIC_BLOG_POST_SUMMARIES) {
-        items.push(buildSearchItem({
-          id: `blog-${post.slug}`,
-          title: post.title,
-          subtitle: post.excerpt,
-          href: `/blog/${post.slug}/`,
-          badge: "Guide",
-          icon: "📖",
-        }));
-      }
-      const routesByTown = (matatuMod.default.routes || {}) as Record<
-        string,
-        Array<{
-          routeNumber: string;
-          name: string;
-          slug: string;
-          terminusA: string;
-          terminusB: string;
-          saccoName?: string;
-        }>
-      >;
-      for (const [townSlug, townRoutes] of Object.entries(routesByTown)) {
-        if (!Array.isArray(townRoutes)) continue;
-        const townLabel = townSlug.charAt(0).toUpperCase() + townSlug.slice(1);
-        for (const route of townRoutes) {
-          items.push(buildSearchItem({
-            id: `matatu-${townSlug}-${route.slug}`,
-            title: `Route ${route.routeNumber}: ${route.name} (${townLabel})`,
-            subtitle: `${route.terminusA} → ${route.terminusB}${route.saccoName ? ` • ${route.saccoName}` : ""}`,
-            href: `/matatu/${townSlug}/${route.slug}/`,
-            badge: "Matatu",
-            icon: "🚌",
-          }));
-        }
-      }
-      cachedExtraSearchItems = items;
-      return items;
-    });
-  }
-  return extraSearchItemsPromise;
-}
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [toolsOpen, setToolsOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
-  const [searchQuery, setSearchQuery] = useState("");
-  const [extraSearchItems, setExtraSearchItems] = useState<QuickSearchItem[]>(() => cachedExtraSearchItems ?? []);
-  const deferredSearchQuery = useDeferredValue(searchQuery);
-  const searchInputRef = useRef<HTMLInputElement>(null);
-  const searchDialogRef = useRef<HTMLDivElement>(null);
   const previousFocusRef = useRef<HTMLElement | null>(null);
   const pathname = usePathname();
-  const router = useRouter();
   const { theme, toggle } = useTheme();
 
   const notifyCategorySelect = (catId: string) => {
@@ -176,50 +69,10 @@ export default function Navbar() {
   }, []);
 
   useEffect(() => {
-    if (searchOpen) {
-      const timer = setTimeout(() => searchInputRef.current?.focus(), 30);
-      return () => clearTimeout(timer);
-    } else {
-      setSearchQuery("");
-      if (previousFocusRef.current && typeof previousFocusRef.current.focus === "function") {
-        previousFocusRef.current.focus();
-        previousFocusRef.current = null;
-      }
+    if (!searchOpen && previousFocusRef.current && typeof previousFocusRef.current.focus === "function") {
+      previousFocusRef.current.focus();
+      previousFocusRef.current = null;
     }
-  }, [searchOpen]);
-
-  // Focus trap for Command-K modal dialog (Tab / Shift+Tab)
-  useEffect(() => {
-    if (!searchOpen) return;
-    const handleTrapKeyDown = (e: KeyboardEvent) => {
-      if (e.key !== "Tab") return;
-      const dialog = searchDialogRef.current;
-      if (!dialog) return;
-      const focusables = Array.from(
-        dialog.querySelectorAll<HTMLElement>(
-          'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'
-        )
-      ).filter((el) => el.offsetParent !== null);
-      if (focusables.length === 0) return;
-
-      const first = focusables[0];
-      const last = focusables[focusables.length - 1];
-      const active = document.activeElement as HTMLElement | null;
-
-      if (e.shiftKey) {
-        if (!active || active === first || !dialog.contains(active)) {
-          e.preventDefault();
-          last.focus();
-        }
-      } else {
-        if (!active || active === last || !dialog.contains(active)) {
-          e.preventDefault();
-          first.focus();
-        }
-      }
-    };
-    document.addEventListener("keydown", handleTrapKeyDown);
-    return () => document.removeEventListener("keydown", handleTrapKeyDown);
   }, [searchOpen]);
 
   useEffect(() => {
@@ -240,96 +93,6 @@ export default function Navbar() {
     setMobileOpen(false);
     setSearchOpen(true);
   };
-
-  useEffect(() => {
-    if (!searchOpen || extraSearchItems.length > 0) return;
-    let cancelled = false;
-    loadExtraSearchItems()
-      .then((items) => {
-        if (!cancelled) setExtraSearchItems(items);
-      })
-      .catch(() => {});
-    return () => {
-      cancelled = true;
-    };
-  }, [searchOpen, extraSearchItems.length]);
-
-  const toolSearchItems = useMemo<QuickSearchItem[]>(() => {
-    if (!searchOpen) return [];
-    const items: QuickSearchItem[] = [];
-    for (const t of TOOLS) {
-      if (!t.isLive) continue;
-      items.push(buildSearchItem({
-        id: `tool-${t.slug}`,
-        title: t.shortTitle,
-        subtitle: t.description,
-        href: `/tools/${t.slug}/`,
-        badge: "Tool",
-        icon: t.icon,
-      }));
-    }
-    return items;
-  }, [searchOpen]);
-
-  const quickSearchItems = useMemo<QuickSearchItem[]>(() => {
-    if (!searchOpen) return [];
-    return extraSearchItems.length > 0 ? [...toolSearchItems, ...extraSearchItems] : toolSearchItems;
-  }, [searchOpen, toolSearchItems, extraSearchItems]);
-
-  const filteredSearchResults = useMemo(() => {
-    if (!searchOpen) return [];
-    const q = stripDiacritics(deferredSearchQuery.trim());
-    if (!q) return quickSearchItems.slice(0, 10);
-
-    const typeTitleBoost: Record<string, number> = {
-      Tool: 45,
-      Language: 22,
-      County: 15,
-      Matatu: 10,
-      Guide: 0,
-    };
-
-    const scored: { item: QuickSearchItem; score: number }[] = [];
-    for (const item of quickSearchItems) {
-      const title = item.titleNorm;
-      const badge = item.badgeNorm;
-      const sub = item.subNorm;
-      const titleTokens = item.titleTokens;
-
-      let score = 0;
-      let matchedTitle = false;
-
-      if (title === q) {
-        score = 200;
-        matchedTitle = true;
-      } else if (title.startsWith(q)) {
-        score = 130;
-        matchedTitle = true;
-      } else if (titleTokens.includes(q)) {
-        score = 100;
-        matchedTitle = true;
-      } else if (titleTokens.some((w) => w.startsWith(q))) {
-        score = 80;
-        matchedTitle = true;
-      } else if (title.includes(q)) {
-        score = 55;
-        matchedTitle = true;
-      } else if (badge.includes(q)) {
-        score = 25;
-      } else if (sub.includes(q)) {
-        score = 10;
-      }
-
-      if (score > 0) {
-        if (matchedTitle) {
-          score += typeTitleBoost[item.badge] ?? 0;
-        }
-        scored.push({ item, score });
-      }
-    }
-    scored.sort((a, b) => b.score - a.score || a.item.title.localeCompare(b.item.title));
-    return scored.slice(0, 14).map((x) => x.item);
-  }, [quickSearchItems, deferredSearchQuery, searchOpen]);
 
   const isActivePath = (href: string) => {
     if (!pathname) return false;
@@ -460,7 +223,7 @@ export default function Navbar() {
                                   }}
                                   className="flex items-center gap-1.5 text-[0.8125rem] font-semibold text-text-primary hover:text-gold transition-colors mb-1.5"
                                 >
-                                  <span className="text-gold"><DynamicIcon emoji={cat.icon} className="w-4 h-4 inline-block mb-[0.1em]" /></span>
+                                  <span className="text-gold"><CategoryIcon emoji={cat.icon} className="w-4 h-4 inline-block mb-[0.1em]" /></span>
                                   {cat.name}
                                 </Link>
                                 <div className="space-y-1 pl-6">
@@ -534,6 +297,16 @@ export default function Navbar() {
 
               {/* Desktop Utility Actions (Search + Theme) */}
               <div className="hidden md:flex items-center gap-2 shrink-0 pl-3 border-l border-border/50">
+                <Link
+                  href="/account/"
+                  aria-current={isActivePath("/account/") ? "page" : undefined}
+                  className="h-9 lg:h-10 inline-flex items-center gap-1.5 rounded-xl border border-border bg-bg-card/80 px-3 text-xs font-semibold text-text-primary hover:border-gold/50 hover:text-gold transition-colors"
+                  aria-label="Account and Sign In"
+                >
+                  <User className="w-3.5 h-3.5 text-gold shrink-0" aria-hidden="true" />
+                  <span className="hidden lg:inline">Account</span>
+                </Link>
+
                 <button
                   type="button"
                   data-testid="navbar-search-trigger"
@@ -680,7 +453,7 @@ export default function Navbar() {
                     }}
                   >
                     <span className="w-7 flex items-center justify-center shrink-0">
-                      <DynamicIcon emoji={cat.icon} className="w-4 h-4 text-text-muted group-hover:text-gold transition-colors shrink-0" />
+                      <CategoryIcon emoji={cat.icon} className="w-4 h-4 text-text-muted group-hover:text-gold transition-colors shrink-0" />
                     </span>
                     {cat.name}
                   </Link>
@@ -691,111 +464,8 @@ export default function Navbar() {
         </nav>
       </header>
 
-      {/* Global Command-K Quick Search Modal */}
-      {searchOpen && (
-        <div
-          data-adsense-pause="true"
-          className="fixed inset-0 z-[120] bg-black/75 sm:bg-black/65 sm:backdrop-blur-sm flex items-start justify-center p-3 pt-14 sm:p-4 sm:pt-24"
-          onClick={() => setSearchOpen(false)}
-          role="dialog"
-          aria-modal="true"
-          aria-label="Site search"
-        >
-          <div
-            ref={searchDialogRef}
-            className="relative z-[121] w-full max-w-xl max-h-[calc(100vh-5rem)] max-h-[calc(100dvh-5rem)] rounded-2xl border border-border bg-bg-card shadow-2xl overflow-hidden flex flex-col"
-            style={{ backgroundColor: "var(--bg-card)" }}
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="flex items-center gap-2 sm:gap-2.5 px-3 sm:px-4 py-3 border-b border-border bg-bg-elevated/60 shrink-0">
-              <Search className="w-4 h-4 text-gold shrink-0" aria-hidden="true" />
-              <input
-                ref={searchInputRef}
-                type="text"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                onKeyDown={(e) => {
-                  if (e.key === "Enter" && filteredSearchResults[0]) {
-                    setSearchOpen(false);
-                    router.push(filteredSearchResults[0].href);
-                  }
-                }}
-                placeholder="Search tools, languages, or counties..."
-                aria-label="Search tools, languages, counties, matatu routes, and guides"
-                className="flex-1 min-w-0 bg-transparent text-sm text-text-primary placeholder:text-text-muted rounded-md px-1"
-              />
-              {searchQuery && (
-                <button
-                  type="button"
-                  onClick={() => {
-                    setSearchQuery("");
-                    searchInputRef.current?.focus();
-                  }}
-                  className="shrink-0 text-text-muted hover:text-gold text-xs font-medium px-2 py-1 rounded-md hover:bg-bg-card transition-colors cursor-pointer"
-                >
-                  Clear
-                </button>
-              )}
-              <button
-                type="button"
-                onClick={() => setSearchOpen(false)}
-                className="shrink-0 w-7 h-7 rounded-lg border border-border bg-bg-card flex items-center justify-center text-text-muted hover:text-text-primary hover:border-gold/50 transition-colors cursor-pointer"
-                aria-label="Close search"
-              >
-                <X className="w-4 h-4 shrink-0" aria-hidden="true" />
-              </button>
-            </div>
-
-            <div
-              role="status"
-              aria-live="polite"
-              className="px-4 py-1.5 text-[0.7rem] text-text-muted border-b border-border/60 bg-bg-secondary/50 shrink-0"
-            >
-              {searchQuery.trim()
-                ? `${filteredSearchResults.length} result${filteredSearchResults.length === 1 ? "" : "s"} for "${searchQuery.trim()}"`
-                : `Showing ${filteredSearchResults.length} popular tools & shortcuts`}
-            </div>
-
-            <div className="max-h-[60vh] overflow-y-auto divide-y divide-border/50 flex-1">
-              {filteredSearchResults.length === 0 ? (
-                <div className="p-8 text-center text-sm text-text-muted">
-                  No matching tools, languages, counties, matatu routes, or guides found for &ldquo;{searchQuery}&rdquo;.
-                </div>
-              ) : (
-                filteredSearchResults.map((item) => (
-                  <Link
-                    key={item.id}
-                    href={item.href}
-                    prefetch={false}
-                    onClick={() => setSearchOpen(false)}
-                    className="flex items-center justify-between gap-3 px-4 py-3 hover:bg-bg-elevated transition-colors group"
-                  >
-                    <div className="flex items-center gap-3 min-w-0 flex-1">
-                      <span className="w-8 h-8 rounded-lg bg-bg-elevated border border-border flex items-center justify-center shrink-0 text-base">
-                        <DynamicIcon emoji={item.icon} className="w-4 h-4 text-gold" />
-                      </span>
-                      <div className="min-w-0 flex-1">
-                        <div className="flex items-center gap-2">
-                          <span className="text-xs sm:text-sm font-semibold text-text-primary group-hover:text-gold transition-colors truncate">
-                            {item.title}
-                          </span>
-                          <span className="micro-badge text-[0.625rem] px-1.5 py-0.5 rounded bg-gold/15 text-gold font-semibold shrink-0">
-                            {item.badge}
-                          </span>
-                        </div>
-                        <p className="text-xs text-text-muted truncate mt-0.5">
-                          {item.subtitle}
-                        </p>
-                      </div>
-                    </div>
-                    <ArrowRight className="w-4 h-4 text-text-muted group-hover:text-gold shrink-0 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
-                  </Link>
-                ))
-              )}
-            </div>
-          </div>
-        </div>
-      )}
+      {/* Global Command-K Quick Search Modal (dynamically loaded only when opened) */}
+      {searchOpen && <GlobalSearchModal onClose={() => setSearchOpen(false)} />}
     </>
   );
 }

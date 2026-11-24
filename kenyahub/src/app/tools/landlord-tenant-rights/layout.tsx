@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { generateToolMetadata } from "@/lib/seo";
+import ToolShellServer from "@/components/tools/ToolShellServer";
 
 export const metadata: Metadata = generateToolMetadata("landlord-tenant-rights");
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-  return children;
+  return <ToolShellServer slug="landlord-tenant-rights">{children}</ToolShellServer>;
 }

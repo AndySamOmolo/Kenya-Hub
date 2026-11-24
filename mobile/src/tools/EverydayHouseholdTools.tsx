@@ -1449,7 +1449,19 @@ export function FuneralHarambeePlannerTool() {
         if (raw) {
           try {
             const parsed = JSON.parse(raw);
-            if (Array.isArray(parsed)) setPledges(parsed);
+            if (Array.isArray(parsed)) {
+              setPledges(
+                parsed
+                  .filter((p: unknown) => Boolean(p) && typeof p === "object" && !Array.isArray(p))
+                  .map((p: any, idx: number) => ({
+                    ...p,
+                    id: typeof p.id === "string" && p.id ? p.id : `pledge-${idx}`,
+                    name: typeof p.name === "string" ? p.name : "Contributor",
+                    pledged: Number(p?.pledged) || 0,
+                    paid: Number(p?.paid) || 0,
+                  }))
+              );
+            }
           } catch {}
         }
         setLoadedPledges(true);

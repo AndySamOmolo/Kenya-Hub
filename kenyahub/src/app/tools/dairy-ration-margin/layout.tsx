@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { generateToolMetadata } from "@/lib/seo";
+import ToolShellServer from "@/components/tools/ToolShellServer";
 
 export const metadata: Metadata = generateToolMetadata("dairy-ration-margin");
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-  return children;
+  return <ToolShellServer slug="dairy-ration-margin">{children}</ToolShellServer>;
 }

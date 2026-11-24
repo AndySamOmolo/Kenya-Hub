@@ -1,0 +1,72 @@
+name: Pull Appwrite Blogs to Web & Mobile
+
+on:
+  schedule:
+    # Weekly sync keeps Appwrite active (prevents inactivity pause) and pulls new CMS posts into Git + Mobile
+    - cron: "0 3 * * 0"
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  pull-blogs:
+    name: Pull Appwrite Blogs -> Static Web & Mobile Data
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: kenyahub/package-lock.json
+
+      - name: Install web dependencies
+        working-directory: kenyahub
+        run: npm ci --prefer-offline --no-audit --no-fund
+
+      - name: Pull Appwrite blogs into blog-posts.ts & summary
+        working-directory: kenyahub
+        env:
+          APPWRITE_API_KEY: ${{ secrets.APPWRITE_API_KEY }}
+        run: npx tsx scripts/pull-appwrite-blogs.ts
+
+      - name: Sync updated blogs into Mobile app & verify
+        run: |
+          node mobile/scripts/sync-data.mjs
+          npm --prefix kenyahub run audit:tools:strict
+          npm --prefix kenyahub test
+
+      - name: Commit & push synced blogs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add kenyahub/src/data/blog-posts.ts kenyahub/src/data/blog-posts-summary.ts mobile/src/shared/data/blog-posts.ts mobile/src/shared/data/blog-posts-summary.ts
+          if ! git diff --staged --quiet; then
+            git commit -m "chore(blog): pull Appwrite blogs to web and mobile"
+            for attempt in 1 2 3; do
+              git fetch origin "${GITHUB_REF_NAME}"
+              git rebase --autostash "origin/${GITHUB_REF_NAME}"
+              if git push origin HEAD:"${GITHUB_REF_NAME}"; then
+                break
+              fi
+              if [ "$attempt" -eq 3 ]; then
+                echo "::error::Failed to push synced blogs after 3 attempts."
+                exit 1
+              fi
+              sleep 5
+            done
+          else
+            echo "No new or updated Appwrite blogs to commit."
+          fi

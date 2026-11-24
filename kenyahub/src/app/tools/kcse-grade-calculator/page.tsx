@@ -2,7 +2,6 @@
 
 import DynamicIcon from "@/components/ui/DynamicIcon";
 import { useState, useMemo } from "react";
-import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import CustomSelect from "@/components/ui/CustomSelect";
 
@@ -109,7 +108,7 @@ export default function KCSEGradeCalculatorPage() {
   }, [subjectGrades]);
 
   return (
-    <ToolShell tool={tool}>
+    <>
       <div className="space-y-6">
         {/* Grade Entry */}
         <div className="bg-bg-card border border-border rounded-xl p-5 sm:p-6">
@@ -258,6 +257,6 @@ export default function KCSEGradeCalculatorPage() {
           </div>
         </div>
       </div>
-    </ToolShell>
+    </>
   );
 }

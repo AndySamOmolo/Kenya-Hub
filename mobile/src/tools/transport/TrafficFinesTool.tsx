@@ -16,6 +16,11 @@ export function TrafficFinesTool({ onScrollToTop }: { onScrollToTop?: () => void
   const [sortBy, setSortBy] = useState<"default" | "fineDesc" | "fineAsc" | "points">(
     "default"
   );
+  const [visibleCount, setVisibleCount] = useState(20);
+
+  useEffect(() => {
+    setVisibleCount(20);
+  }, [deferredSearch, selectedCat, sortBy]);
   const categories = finesData.categories || [];
 
   const filteredOffences = useMemo(() => {
@@ -154,8 +159,8 @@ export function TrafficFinesTool({ onScrollToTop }: { onScrollToTop?: () => void
         </View>
       </View>
 
-      {filteredOffences.map((item: any, i: number) => (
-        <View key={i} style={styles.fineCard}>
+      {filteredOffences.slice(0, visibleCount).map((item: any) => (
+        <View key={`${item.categoryName}-${item.offence}`} style={styles.fineCard}>
           <View style={styles.fineTop}>
             <Text style={styles.fineTitle}>{item.offence}</Text>
             <View style={styles.fineBadge}>
@@ -191,6 +196,25 @@ export function TrafficFinesTool({ onScrollToTop }: { onScrollToTop?: () => void
           )}
         </View>
       ))}
+
+      {filteredOffences.length > visibleCount && (
+        <Pressable
+          onPress={() => setVisibleCount((prev) => prev + 20)}
+          accessibilityRole="button"
+          style={{
+            paddingVertical: 10,
+            borderRadius: 10,
+            borderWidth: 1,
+            borderColor: theme.gold,
+            backgroundColor: `${theme.gold}18`,
+            alignItems: "center",
+          }}
+        >
+          <Text style={{ fontSize: 12, fontWeight: "800", color: theme.gold }}>
+            Show more ({filteredOffences.length - visibleCount} remaining)
+          </Text>
+        </Pressable>
+      )}
 
       {/* NTSA Demerit Points System (from web traffic-fines/page.tsx) */}
       <Text style={styles.subHeading}>

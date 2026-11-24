@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { X, Copy, Check, Mail, MessageCircle } from "lucide-react";
-import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import tenantData from "@/data/tenant-rights-data.json";
 
@@ -37,7 +36,7 @@ TAKE NOTICE that failure to transfer the full sum within seven (7) days from the
   )}&body=${encodeURIComponent(noticeText)}`;
 
   return (
-    <ToolShell tool={tool}>
+    <>
       <div className="space-y-6">
         <div className="rounded-2xl border border-gold/30 bg-bg-card p-5 sm:p-7 shadow-xs">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
@@ -250,6 +249,6 @@ TAKE NOTICE that failure to transfer the full sum within seven (7) days from the
           </div>
         </div>
       </div>
-    </ToolShell>
+    </>
   );
 }

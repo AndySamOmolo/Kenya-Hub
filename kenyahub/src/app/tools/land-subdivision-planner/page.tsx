@@ -10,7 +10,6 @@ import {
   ShieldCheck,
   Info,
 } from "lucide-react";
-import ToolShell from "@/components/tools/ToolShell";
 import { getToolBySlug } from "@/lib/tools-registry";
 import everydayData from "@/data/kenya-everyday-tools-2026.json";
 
@@ -119,7 +118,7 @@ export default function LandSubdivisionPlannerPage() {
   }, [tenure, plotCountStr, lcbMode, agreementDate, todayIso, checkedSteps]);
 
   return (
-    <ToolShell tool={tool}>
+    <>
       <div className="space-y-6">
         <div className="rounded-2xl border border-gold/30 bg-bg-card p-5 sm:p-7 shadow-xs">
           {/* Tenure Toggle */}
@@ -416,6 +415,6 @@ export default function LandSubdivisionPlannerPage() {
           </div>
         </div>
       </div>
-    </ToolShell>
+    </>
   );
 }

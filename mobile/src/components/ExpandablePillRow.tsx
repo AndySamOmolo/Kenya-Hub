@@ -915,8 +915,9 @@ export const ExpandablePillRow = React.memo(function ExpandablePillRow({
         </Pressable>
         )}
 
+        {dropdownOpen && (
         <Modal
-          visible={dropdownOpen}
+          visible={true}
           transparent
           animationType={themeConfig?.reduceMotion ? "none" : "fade"}
           onRequestClose={() => setDropdownOpen(false)}
@@ -1009,6 +1010,7 @@ export const ExpandablePillRow = React.memo(function ExpandablePillRow({
             </Pressable>
           </Pressable>
         </Modal>
+        )}
       </View>
     );
   }

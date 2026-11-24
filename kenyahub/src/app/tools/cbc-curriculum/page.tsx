@@ -4,7 +4,6 @@ import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import { useState, useEffect, useRef, useMemo } from "react";
 import { X } from "lucide-react";
 import { scrollToTopIfScrolled } from "@/lib/scroll";
-import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import cbcData from "@/data/cbc-curriculum.json";
 import schoolTermsData from "@/data/school-terms.json";
@@ -50,7 +49,7 @@ export default function CBCCurriculumPage() {
   const hasPathways = "pathways" in level && Array.isArray(level.pathways) && level.pathways.length > 0;
 
   return (
-    <ToolShell tool={tool}>
+    <>
       <div className="space-y-6">
         {/* Level Selector — Horizontal Scrolling Pills */}
         <ExpandablePillRow>
@@ -348,6 +347,6 @@ export default function CBCCurriculumPage() {
           </div>
         </div>
       </div>
-    </ToolShell>
+    </>
   );
 }

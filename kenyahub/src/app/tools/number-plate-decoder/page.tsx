@@ -2,11 +2,12 @@
 
 import { useState, useMemo } from "react";
 import { X } from "lucide-react";
-import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import plateData from "@/data/number-plate-prefixes.json";
 
 const tool = TOOLS.find((t) => t.slug === "number-plate-decoder")!;
+
+const REVERSED_PREFIXES = [...plateData.prefixes].reverse();
 
 export default function NumberPlateDecoderPage() {
   const [input, setInput] = useState("KDU 450A");
@@ -96,7 +97,7 @@ export default function NumberPlateDecoderPage() {
   const formattedPlate = input.trim().toUpperCase() || result?.prefix || "";
 
   return (
-    <ToolShell tool={tool}>
+    <>
       <div className="space-y-6">
         {/* Input */}
         <div className="bg-bg-card border border-border rounded-xl p-5 sm:p-6">
@@ -234,7 +235,7 @@ export default function NumberPlateDecoderPage() {
                 </tr>
               </thead>
               <tbody>
-                {[...plateData.prefixes].reverse().map((p) => (
+                {(showAllPrefixes ? REVERSED_PREFIXES : REVERSED_PREFIXES.slice(0, 20)).map((p) => (
                   <tr key={p.prefix}>
                     <td className="font-mono font-bold text-gold whitespace-nowrap">{p.prefix}</td>
                     <td className="text-text-primary font-medium whitespace-nowrap tabular-nums">{p.yearRange}</td>
@@ -244,6 +245,20 @@ export default function NumberPlateDecoderPage() {
               </tbody>
             </table>
           </div>
+          {REVERSED_PREFIXES.length > 20 && (
+            <div className="px-5 py-2.5 border-t border-border bg-bg-elevated/50 flex items-center justify-between text-xs">
+              <span className="text-text-muted">
+                Showing {showAllPrefixes ? REVERSED_PREFIXES.length : 20} of {REVERSED_PREFIXES.length} series
+              </span>
+              <button
+                type="button"
+                onClick={() => setShowAllPrefixes((v) => !v)}
+                className="font-semibold text-gold hover:text-gold-light transition-colors cursor-pointer"
+              >
+                {showAllPrefixes ? "Show latest 20" : `Show all ${REVERSED_PREFIXES.length}`}
+              </button>
+            </div>
+          )}
         </div>
 
         {/* Plate Types Reference */}
@@ -318,6 +333,6 @@ export default function NumberPlateDecoderPage() {
           </ul>
         </div>
       </div>
-    </ToolShell>
+    </>
   );
 }

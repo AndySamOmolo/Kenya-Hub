@@ -3,7 +3,6 @@
 import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import { useState, useMemo } from "react";
 import { X } from "lucide-react";
-import ToolShell from "@/components/tools/ToolShell";
 import CustomSelect from "@/components/ui/CustomSelect";
 import { TOOLS } from "@/lib/tools-registry";
 import mjengoData from "@/data/mjengo-construction-rates.json";
@@ -79,7 +78,7 @@ export default function MjengoConstructionCalculatorPage() {
   }, [floorArea, perimeterWallMeters, region, finish]);
 
   return (
-    <ToolShell tool={tool}>
+    <>
       <div className="space-y-6">
         <div className="bg-[var(--bg-card)] border border-[var(--border)] rounded-xl p-5 space-y-5">
           <div>
@@ -346,6 +345,6 @@ export default function MjengoConstructionCalculatorPage() {
           </span>
         </div>
       </div>
-    </ToolShell>
+    </>
   );
 }

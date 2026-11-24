@@ -240,7 +240,7 @@ export function EcitizenDocsPlannerTool() {
         if (raw) {
           try {
             const parsed = JSON.parse(raw);
-            if (parsed && typeof parsed === "object") {
+            if (parsed && typeof parsed === "object" && !Array.isArray(parsed)) {
               setPackedMap(parsed);
             }
           } catch {}

@@ -4,7 +4,7 @@ import { useState, useMemo, useDeferredValue } from "react";
 import Link from "next/link";
 import matatuData from "@/data/matatu-routes.json";
 import SearchInput from "@/components/ui/SearchInput";
-import DynamicIcon from "@/components/ui/DynamicIcon";
+import { BusFront } from "lucide-react";
 import { ArrowRight, Navigation, Search, X } from "lucide-react";
 
 interface RouteItem {
@@ -195,7 +195,7 @@ export default function MatatuPage() {
 
       {/* Hero (Compact) */}
       <div className="relative mb-6 overflow-hidden rounded-2xl bg-gradient-to-br from-gold/10 via-kenya-green/5 to-kenya-red/5 border border-border p-4 sm:p-7">
-        <DynamicIcon emoji="🚌" className="absolute top-3 right-3 w-20 h-20 opacity-10 rotate-12 select-none text-gold pointer-events-none" />
+        <BusFront className=\"absolute top-3 right-3 w-20 h-20 opacity-10 rotate-12 select-none text-gold pointer-events-none\" aria-hidden=\"true\" />
         <div className="relative z-10">
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold font-[family-name:var(--font-outfit)] mb-2 gradient-text-kenya tracking-tight">
             Kenya Matatu Routes &amp; Stages
@@ -245,7 +245,7 @@ export default function MatatuPage() {
                     prefetch={false}
                     className="flex items-center gap-3 px-4 py-3 hover:bg-bg-elevated transition-colors border-b border-border/50 last:border-0"
                   >
-                    <DynamicIcon emoji="🚌" className="w-5 h-5 text-gold flex-shrink-0" />
+                    <BusFront className=\"w-5 h-5 text-gold flex-shrink-0\" aria-hidden=\"true\" />
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2">
                         <span className="text-xs font-semibold text-text-primary break-words">Route {r.routeNumber}: {r.name}</span>
@@ -449,7 +449,7 @@ export default function MatatuPage() {
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2.5 mb-7">
         {matatuData.towns.filter((town) => town.isActive).map((town) => (
           <Link key={town.slug} href={`/matatu/${town.slug}/`} prefetch={false} className="bg-bg-card border border-gold/30 rounded-xl p-3 text-center group hover:border-gold transition-[border-color,box-shadow] hover:shadow-md hover:shadow-gold/5">
-            <div className="flex justify-center mb-1.5"><DynamicIcon emoji="🚌" className="w-6 h-6 text-gold" /></div>
+            <div className="flex justify-center mb-1.5"><BusFront className=\"w-6 h-6 text-gold\" aria-hidden=\"true\" /></div>
             <p className="text-xs sm:text-sm font-bold text-text-primary group-hover:text-gold transition-colors">{town.name}</p>
             <p className="text-[0.65rem] text-gold mt-0.5 font-semibold">{((matatuData.routes as Record<string, unknown[]>)[town.slug]?.length ?? town.routeCount)} routes</p>
           </Link>

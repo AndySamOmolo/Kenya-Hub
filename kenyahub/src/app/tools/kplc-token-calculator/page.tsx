@@ -2,7 +2,6 @@
 
 import { useState, useMemo } from "react";
 import { X } from "lucide-react";
-import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import tariffData from "@/data/kplc-tariff.json";
 import solarIrradianceData from "@/data/solar-irradiance.json";
@@ -99,7 +98,7 @@ export default function KPLCTokenCalculatorPage() {
     `KES ${n.toLocaleString("en-KE", { minimumFractionDigits: 0, maximumFractionDigits: 0 })}`;
 
   return (
-    <ToolShell tool={tool}>
+    <>
       <div className="space-y-6">
         {/* Input */}
         <div className="bg-bg-card border border-border rounded-xl p-6">
@@ -329,6 +328,6 @@ export default function KPLCTokenCalculatorPage() {
           </div>
         </div>
       </div>
-    </ToolShell>
+    </>
   );
 }

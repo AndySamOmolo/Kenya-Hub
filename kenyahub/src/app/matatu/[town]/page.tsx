@@ -160,7 +160,7 @@ export default async function TownMatatuPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      <TownMatatuView townSlug={townSlug} />
+      <TownMatatuView townSlug={townSlug} townInfo={townObj} routes={routes} />
     </>
   );
 }

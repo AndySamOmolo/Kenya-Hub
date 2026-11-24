@@ -1,12 +1,6 @@
 name: Sync Blogs to Appwrite
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'kenyahub/src/data/blog-posts.ts'
-      - 'kenyahub/scripts/upload-blogs.ts'
   workflow_dispatch:
 
 permissions:
@@ -30,7 +24,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'
+          cache: npm
           cache-dependency-path: './kenyahub/package-lock.json'
 
       - name: Install dependencies

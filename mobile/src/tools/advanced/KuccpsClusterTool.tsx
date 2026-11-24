@@ -1,28 +1,105 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useCallback } from "react";
 import { Text, View, Pressable } from "react-native";
 import { useTheme, pressableStyle, triggerHaptic } from "../../theme";
 import { styles } from "./shared";
 import kuccpsData from "../../shared/data/kuccps-clusters.json";
+
+const KCSE_GRADES = [
+  "A",
+  "A-",
+  "B+",
+  "B",
+  "B-",
+  "C+",
+  "C",
+  "C-",
+  "D+",
+  "D",
+  "D-",
+  "E",
+] as const;
+
+const SubjectGradeCard = React.memo(function SubjectGradeCard({
+  subject,
+  selectedGrade,
+  theme,
+  onSelectGrade,
+}: {
+  subject: string;
+  selectedGrade?: string;
+  theme: any;
+  onSelectGrade: (subject: string, grade: string | null) => void;
+}) {
+  return (
+    <View
+      style={[
+        styles.subjCard,
+        { backgroundColor: theme.bgCard, borderColor: theme.border },
+      ]}
+    >
+      <Text style={[styles.subjName, { color: theme.textPrimary }]}>
+        {subject}
+      </Text>
+      <View
+        style={[
+          styles.gradeScroll,
+          { flexDirection: "row", flexWrap: "wrap" },
+        ]}
+      >
+        <Pressable
+          onPress={() => onSelectGrade(subject, null)}
+          style={[
+            styles.gradeBtn,
+            {
+              backgroundColor: !selectedGrade
+                ? theme.bgSecondary
+                : theme.bgElevated,
+              borderColor: theme.border,
+            },
+          ]}
+        >
+          <Text style={[styles.gradeBtnText, { color: theme.textMuted }]}>
+            —
+          </Text>
+        </Pressable>
+        {KCSE_GRADES.map((g) => {
+          const active = selectedGrade === g;
+          return (
+            <Pressable
+              key={g}
+              onPress={() => onSelectGrade(subject, g)}
+              style={[
+                styles.gradeBtn,
+                {
+                  backgroundColor: active ? theme.gold : theme.bgElevated,
+                  borderColor: theme.border,
+                },
+              ]}
+            >
+              <Text
+                style={[
+                  styles.gradeBtnText,
+                  {
+                    color: active ? theme.kenyaBlack : theme.textPrimary,
+                  },
+                ]}
+              >
+                {g}
+              </Text>
+            </Pressable>
+          );
+        })}
+      </View>
+    </View>
+  );
+});
 
 // ─── KUCCPS CLUSTER POINTS CALCULATOR TOOL (Official Weighted Formula) ───
 export function KuccpsClusterTool({
   onScrollToTop,
 }: { onScrollToTop?: () => void } = {}) {
   const { theme } = useTheme();
-  const grades = [
-    "A",
-    "A-",
-    "B+",
-    "B",
-    "B-",
-    "C+",
-    "C",
-    "C-",
-    "D+",
-    "D",
-    "D-",
-    "E",
-  ];
+
   const allSubjects: string[] = (kuccpsData as any).subjects || [
     "Mathematics",
     "English",
@@ -52,6 +129,23 @@ export function KuccpsClusterTool({
     History: "B+",
     "Business Studies": "A-",
   });
+
+  const handleSelectGrade = useCallback(
+    (subject: string, grade: string | null) => {
+      triggerHaptic(6);
+      setSelectedGrades((prev) => {
+        if (!grade) {
+          if (!(subject in prev)) return prev;
+          const next = { ...prev };
+          delete next[subject];
+          return next;
+        }
+        if (prev[subject] === grade) return prev;
+        return { ...prev, [subject]: grade };
+      });
+    },
+    []
+  );
 
   const gradePoints: Record<string, number> = kuccpsData.gradePoints as any;
 
@@ -306,76 +400,13 @@ export function KuccpsClusterTool({
 
       <View style={styles.subjectsGrid}>
         {displayedSubjects.map((subj) => (
-          <View
+          <SubjectGradeCard
             key={subj}
-            style={[
-              styles.subjCard,
-              { backgroundColor: theme.bgCard, borderColor: theme.border },
-            ]}
-          >
-            <Text style={[styles.subjName, { color: theme.textPrimary }]}>
-              {subj}
-            </Text>
-            <View
-              style={[
-                styles.gradeScroll,
-                { flexDirection: "row", flexWrap: "wrap" },
-              ]}
-            >
-              <Pressable
-                onPress={() =>
-                  setSelectedGrades((prev) => {
-                    const next = { ...prev };
-                    delete next[subj];
-                    return next;
-                  })
-                }
-                style={[
-                  styles.gradeBtn,
-                  {
-                    backgroundColor: !selectedGrades[subj]
-                      ? theme.bgSecondary
-                      : theme.bgElevated,
-                    borderColor: theme.border,
-                  },
-                ]}
-              >
-                <Text style={[styles.gradeBtnText, { color: theme.textMuted }]}>
-                  —
-                </Text>
-              </Pressable>
-              {grades.map((g) => {
-                const active = selectedGrades[subj] === g;
-                return (
-                  <Pressable
-                    key={g}
-                    onPress={() => {
-                      triggerHaptic(6);
-                      setSelectedGrades((prev) => ({ ...prev, [subj]: g }));
-                    }}
-                    style={[
-                      styles.gradeBtn,
-                      {
-                        backgroundColor: active ? theme.gold : theme.bgElevated,
-                        borderColor: theme.border,
-                      },
-                    ]}
-                  >
-                    <Text
-                      style={[
-                        styles.gradeBtnText,
-                        {
-                          color: active ? theme.kenyaBlack : theme.textPrimary,
-                        },
-                      ]}
-                    >
-                      {g}
-                    </Text>
-                  </Pressable>
-                );
-              })}
-            </View>
-          </View>
+            subject={subj}
+            selectedGrade={selectedGrades[subj]}
+            theme={theme}
+            onSelectGrade={handleSelectGrade}
+          />
         ))}
       </View>
 

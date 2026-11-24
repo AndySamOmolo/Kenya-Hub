@@ -316,7 +316,7 @@ export default function ToolsScreen() {
             } else {
               try {
                 const parsed = JSON.parse(visitsRaw);
-                setVisitCounts(parsed && typeof parsed === "object" ? parsed : {});
+                setVisitCounts(parsed && typeof parsed === "object" && !Array.isArray(parsed) ? parsed : {});
               } catch {
                 setVisitCounts({});
               }
@@ -415,6 +415,193 @@ export default function ToolsScreen() {
 
   const showPinnedSection =
     pinnedTools.length > 0 && query.trim() === "" && category === "all";
+
+  const toolsListHeader = useMemo(
+    () => (
+          <>
+            {(query.trim() !== "" || category !== "all") &&
+              (filtered.length > 0 || showMatatuHubCard) && (
+                <View style={styles.resultsBar}>
+                  <Text style={[styles.resultsText, { color: theme.textMuted }]}>
+                    Showing {filtered.length} of {TOOLS.length} tools
+                    {query.trim() ? ` matching "${query.trim()}"` : ""}
+                  </Text>
+                  <Pressable
+                    onPress={() => {
+                      setQuery("");
+                      setCategory("all");
+                    }}
+                    hitSlop={8}
+                  >
+                    <Text style={[styles.clearFilterText, { color: theme.gold }]}>
+                      Clear filter
+                    </Text>
+                  </Pressable>
+                </View>
+              )}
+
+            {showMatatuHubCard && (
+              <View
+                style={[
+                  styles.cardWrap,
+                  themedCardStyle,
+                  isFrameless
+                    ? {
+                        borderBottomWidth: StyleSheet.hairlineWidth,
+                        borderBottomColor: theme.outlineVariant,
+                        marginBottom: 4,
+                      }
+                    : {
+                        borderColor: `${theme.gold}66`,
+                        marginBottom: 4,
+                      },
+                ]}
+              >
+                <Pressable
+                  android_ripple={androidRipple(theme.rippleColor)}
+                  onPress={() => {
+                    const q = query.trim();
+                    router.push({
+                      pathname: "/matatu",
+                      params:
+                        q && !MATATU_KEYWORDS.includes(q.toLowerCase())
+                          ? { q }
+                          : undefined,
+                    });
+                  }}
+                  style={[styles.card, isFrameless && { paddingHorizontal: 0 }]}
+                >
+                  <View style={styles.cardHeaderRow}>
+                    <ThemedIconBadge
+                      name="bus"
+                      accentColor={theme.sky}
+                      baseSize={46}
+                      iconSize={22}
+                    />
+                    <View
+                      style={[
+                        styles.body,
+                        !showCardIcons && { marginLeft: 0 },
+                        !showTrailingArrows && { marginRight: 0 },
+                      ]}
+                    >
+                      {showCategoryBadges && (
+                        <View style={styles.categoryPillWrap}>
+                          <View
+                            style={[
+                              styles.categoryDot,
+                              { backgroundColor: theme.sky },
+                            ]}
+                          />
+                          <Text
+                            style={[
+                              styles.categoryPillText,
+                              { color: theme.sky },
+                            ]}
+                          >
+                            TRANSPORT & TRAVEL HUB
+                          </Text>
+                        </View>
+                      )}
+                      <Text style={[styles.title, { color: theme.textPrimary }]}>
+                        Matatu Routes & SACCO Fares
+                      </Text>
+                    </View>
+                    {showTrailingArrows && (
+                      <View
+                        style={[
+                          styles.trailingCircle,
+                          { backgroundColor: theme.surfaceContainerHigh },
+                        ]}
+                      >
+                        <ThemedIcon
+                          name="arrow-forward"
+                          size={16}
+                          color={theme.textSecondary}
+                        />
+                      </View>
+                    )}
+                  </View>
+
+                  {showCardDescriptions && (
+                    <Text
+                      style={[styles.description, { color: theme.textSecondary }]}
+                    >
+                      Explore {matatuSummary.routeCount} verified matatu routes, {matatuSummary.stageCount} stage stopovers, interactive maps, and off-peak/peak fares across {matatuSummary.townCount} Kenyan cities.
+                    </Text>
+                  )}
+
+                  <View
+                    style={[
+                      styles.sourceBadge,
+                      { borderTopColor: theme.outlineVariant },
+                    ]}
+                  >
+                    <ThemedIcon
+                      name="shield-checkmark"
+                      size={13}
+                      color={theme.kenyaGreenLight}
+                    />
+                    <Text style={[styles.source, { color: theme.textMuted }]}>
+                      NTSA Registered SACCOs & Commuter Stage Directory
+                    </Text>
+                  </View>
+                </Pressable>
+              </View>
+            )}
+
+            {showPinnedSection && (
+              <View style={styles.pinnedSection}>
+                <View style={styles.pinnedHeaderRow}>
+                  <ThemedIcon name="bookmark" size={16} color={theme.gold} />
+                  <Text
+                    style={[styles.pinnedSectionTitle, { color: theme.textPrimary, textTransform: headingTransform }]}
+                  >
+                    Pinned Tools ({pinnedTools.length})
+                  </Text>
+                </View>
+                <View style={{ gap: 10 }}>
+                  {pinnedTools.map((pt) => (
+                    <ToolItem key={`pinned-${pt.slug}`} item={pt} isPinned theme={theme} themeConfig={themeConfig} themeMetrics={themeMetrics} themedCardStyle={themedCardStyle} styles={styles} onPressTool={handlePressTool} />
+                  ))}
+                </View>
+                <Text
+                  style={[
+                    styles.allToolsDividerLabel,
+                    { color: theme.gold, textTransform: headingTransform },
+                  ]}
+                >
+                  ALL TOOLS ({filtered.length})
+                </Text>
+              </View>
+            )}
+          </>
+    ),
+    [
+      query,
+      category,
+      filtered.length,
+      showMatatuHubCard,
+      styles,
+      theme,
+      themeConfig,
+      themeMetrics,
+      themedCardStyle,
+      isFrameless,
+      router,
+      showCardIcons,
+      showTrailingArrows,
+      showCategoryBadges,
+      showCardDescriptions,
+      matatuSummary.routeCount,
+      matatuSummary.stageCount,
+      matatuSummary.townCount,
+      showPinnedSection,
+      headingTransform,
+      pinnedTools,
+      handlePressTool,
+    ]
+  );
 
   return (
     <SafeAreaView
@@ -619,7 +806,7 @@ export default function ToolsScreen() {
           { paddingHorizontal: screenPadPx, paddingBottom: bottomClearance },
         ]}
         showsVerticalScrollIndicator={themeConfig?.verticalScrollbarStyle !== "hidden"}
-        persistentScrollbar={themeConfig.verticalScrollbarStyle === "always-visible"}
+        persistentScrollbar={themeConfig?.verticalScrollbarStyle === "always-visible"}
         keyboardShouldPersistTaps="handled"
         overScrollMode="always"
         initialNumToRender={8}
@@ -627,166 +814,7 @@ export default function ToolsScreen() {
         updateCellsBatchingPeriod={40}
         windowSize={5}
         removeClippedSubviews={Platform.OS === "android"}
-        ListHeaderComponent={
-          <>
-            {(query.trim() !== "" || category !== "all") &&
-              (filtered.length > 0 || showMatatuHubCard) && (
-                <View style={styles.resultsBar}>
-                  <Text style={[styles.resultsText, { color: theme.textMuted }]}>
-                    Showing {filtered.length} of {TOOLS.length} tools
-                    {query.trim() ? ` matching "${query.trim()}"` : ""}
-                  </Text>
-                  <Pressable
-                    onPress={() => {
-                      setQuery("");
-                      setCategory("all");
-                    }}
-                    hitSlop={8}
-                  >
-                    <Text style={[styles.clearFilterText, { color: theme.gold }]}>
-                      Clear filter
-                    </Text>
-                  </Pressable>
-                </View>
-              )}
-
-            {showMatatuHubCard && (
-              <View
-                style={[
-                  styles.cardWrap,
-                  themedCardStyle,
-                  isFrameless
-                    ? {
-                        borderBottomWidth: StyleSheet.hairlineWidth,
-                        borderBottomColor: theme.outlineVariant,
-                        marginBottom: 4,
-                      }
-                    : {
-                        borderColor: `${theme.gold}66`,
-                        marginBottom: 4,
-                      },
-                ]}
-              >
-                <Pressable
-                  android_ripple={androidRipple(theme.rippleColor)}
-                  onPress={() => {
-                    const q = query.trim();
-                    router.push({
-                      pathname: "/matatu",
-                      params:
-                        q && !MATATU_KEYWORDS.includes(q.toLowerCase())
-                          ? { q }
-                          : undefined,
-                    });
-                  }}
-                  style={[styles.card, isFrameless && { paddingHorizontal: 0 }]}
-                >
-                  <View style={styles.cardHeaderRow}>
-                    <ThemedIconBadge
-                      name="bus"
-                      accentColor={theme.sky}
-                      baseSize={46}
-                      iconSize={22}
-                    />
-                    <View
-                      style={[
-                        styles.body,
-                        !showCardIcons && { marginLeft: 0 },
-                        !showTrailingArrows && { marginRight: 0 },
-                      ]}
-                    >
-                      {showCategoryBadges && (
-                        <View style={styles.categoryPillWrap}>
-                          <View
-                            style={[
-                              styles.categoryDot,
-                              { backgroundColor: theme.sky },
-                            ]}
-                          />
-                          <Text
-                            style={[
-                              styles.categoryPillText,
-                              { color: theme.sky },
-                            ]}
-                          >
-                            TRANSPORT & TRAVEL HUB
-                          </Text>
-                        </View>
-                      )}
-                      <Text style={[styles.title, { color: theme.textPrimary }]}>
-                        Matatu Routes & SACCO Fares
-                      </Text>
-                    </View>
-                    {showTrailingArrows && (
-                      <View
-                        style={[
-                          styles.trailingCircle,
-                          { backgroundColor: theme.surfaceContainerHigh },
-                        ]}
-                      >
-                        <ThemedIcon
-                          name="arrow-forward"
-                          size={16}
-                          color={theme.textSecondary}
-                        />
-                      </View>
-                    )}
-                  </View>
-
-                  {showCardDescriptions && (
-                    <Text
-                      style={[styles.description, { color: theme.textSecondary }]}
-                    >
-                      Explore {matatuSummary.routeCount} verified matatu routes, {matatuSummary.stageCount} stage stopovers, interactive maps, and off-peak/peak fares across {matatuSummary.townCount} Kenyan cities.
-                    </Text>
-                  )}
-
-                  <View
-                    style={[
-                      styles.sourceBadge,
-                      { borderTopColor: theme.outlineVariant },
-                    ]}
-                  >
-                    <ThemedIcon
-                      name="shield-checkmark"
-                      size={13}
-                      color={theme.kenyaGreenLight}
-                    />
-                    <Text style={[styles.source, { color: theme.textMuted }]}>
-                      NTSA Registered SACCOs & Commuter Stage Directory
-                    </Text>
-                  </View>
-                </Pressable>
-              </View>
-            )}
-
-            {showPinnedSection && (
-              <View style={styles.pinnedSection}>
-                <View style={styles.pinnedHeaderRow}>
-                  <ThemedIcon name="bookmark" size={16} color={theme.gold} />
-                  <Text
-                    style={[styles.pinnedSectionTitle, { color: theme.textPrimary, textTransform: headingTransform }]}
-                  >
-                    Pinned Tools ({pinnedTools.length})
-                  </Text>
-                </View>
-                <View style={{ gap: 10 }}>
-                  {pinnedTools.map((pt) => (
-                    <ToolItem key={`pinned-${pt.slug}`} item={pt} isPinned theme={theme} themeConfig={themeConfig} themeMetrics={themeMetrics} themedCardStyle={themedCardStyle} styles={styles} onPressTool={handlePressTool} />
-                  ))}
-                </View>
-                <Text
-                  style={[
-                    styles.allToolsDividerLabel,
-                    { color: theme.gold, textTransform: headingTransform },
-                  ]}
-                >
-                  ALL TOOLS ({filtered.length})
-                </Text>
-              </View>
-            )}
-          </>
-        }
+        ListHeaderComponent={toolsListHeader}
         renderItem={renderToolItem}
         ListEmptyComponent={
           !showMatatuHubCard ? (

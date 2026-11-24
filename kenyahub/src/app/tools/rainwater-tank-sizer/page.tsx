@@ -2,7 +2,6 @@
 
 import { useState, useMemo } from "react";
 import { CloudRain, Droplets, Sun, CheckCircle2, Info } from "lucide-react";
-import ToolShell from "@/components/tools/ToolShell";
 import CustomSelect from "@/components/ui/CustomSelect";
 import { getToolBySlug } from "@/lib/tools-registry";
 import everydayData from "@/data/kenya-everyday-tools-2026.json";
@@ -20,6 +19,16 @@ const ROOF_OPTIONS: { id: RoofType; label: string }[] = [
 ];
 
 const SQM_PER_MABATI_SHEET = 2.55; // 3.0m x 0.85m effective laid width
+
+const COUNTY_SELECT_OPTIONS = rainData.counties.map((c) => ({
+  value: String(c.code),
+  label: `${String(c.code).padStart(2, "0")} — ${c.name} (${c.annualMm} mm/yr)`,
+}));
+
+const ROOF_SELECT_OPTIONS = ROOF_OPTIONS.map((r) => ({
+  value: r.id,
+  label: r.label,
+}));
 
 export default function RainwaterTankSizerPage() {
   const [countyCode, setCountyCode] = useState("47");
@@ -111,7 +120,7 @@ export default function RainwaterTankSizerPage() {
   }, [countyCode, roofType, inputMode, roofAreaSqm, mabatiSheets, householdSize, litresPerPerson]);
 
   return (
-    <ToolShell tool={tool}>
+    <>
       <div className="space-y-6">
         <div className="rounded-2xl border border-gold/30 bg-bg-card p-5 sm:p-7 shadow-xs">
           {/* Roof Area Input Mode Toggle */}
@@ -154,14 +163,9 @@ export default function RainwaterTankSizerPage() {
                 id="rain-county"
                 value={countyCode}
                 onChange={(e) => setCountyCode(e.target.value)}
+                options={COUNTY_SELECT_OPTIONS}
                 className="input-field w-full text-xs"
-              >
-                {rainData.counties.map((c) => (
-                  <option key={c.code} value={String(c.code)}>
-                    {String(c.code).padStart(2, "0")} — {c.name} ({c.annualMm} mm/yr)
-                  </option>
-                ))}
-              </CustomSelect>
+              />
             </div>
 
             <div>
@@ -175,14 +179,9 @@ export default function RainwaterTankSizerPage() {
                 id="rain-roof-type"
                 value={roofType}
                 onChange={(e) => setRoofType(e.target.value as RoofType)}
+                options={ROOF_SELECT_OPTIONS}
                 className="input-field w-full text-xs"
-              >
-                {ROOF_OPTIONS.map((r) => (
-                  <option key={r.id} value={r.id}>
-                    {r.label}
-                  </option>
-                ))}
-              </CustomSelect>
+              />
             </div>
 
             {inputMode === "sqm" ? (
@@ -406,6 +405,6 @@ export default function RainwaterTankSizerPage() {
           </div>
         </div>
       </div>
-    </ToolShell>
+    </>
   );
 }

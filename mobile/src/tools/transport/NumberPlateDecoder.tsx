@@ -182,6 +182,8 @@ export function NumberPlateDecoder() {
     };
   }, [clean, normalizedSpaces, platePosition, theme]);
 
+  const [showAllSeries, setShowAllSeries] = useState(false);
+
   const filteredSeries = useMemo(() => {
     const q = deferredSeriesSearch.trim().toLowerCase();
     const list = platesData.prefixes as any[];
@@ -193,6 +195,11 @@ export function NumberPlateDecoder() {
         p.county.toLowerCase().includes(q)
     );
   }, [deferredSeriesSearch]);
+
+  const displayedSeries = useMemo(
+    () => (showAllSeries ? filteredSeries : filteredSeries.slice(0, 24)),
+    [filteredSeries, showAllSeries]
+  );
 
   const isCivilian = result?.classification.includes("Civilian");
 
@@ -408,7 +415,7 @@ export function NumberPlateDecoder() {
           multiline={false}
           numberOfLines={1}
           value={seriesSearch}
-          onChangeText={setSeriesSearch}
+          onChangeText={(txt) => { setSeriesSearch(txt); setShowAllSeries(false); }}
           placeholder="Search prefix or year (e.g. KDA)..."
           placeholderTextColor={theme.textMuted}
           style={styles.searchInput}
@@ -425,8 +432,8 @@ export function NumberPlateDecoder() {
         )}
       </View>
       <View style={styles.card}>
-        {filteredSeries.map((item, idx) => (
-          <View key={item.prefix + idx} style={styles.tableRow}>
+        {displayedSeries.map((item, idx) => (
+          <View key={`${item.prefix}-${item.yearRange}-${idx}`} style={styles.tableRow}>
             <Text style={{ fontSize: 13, fontWeight: "800", color: theme.gold, width: 56 }}>
               {item.prefix}
             </Text>
@@ -436,6 +443,27 @@ export function NumberPlateDecoder() {
             <Text style={{ fontSize: 12, color: theme.textSecondary }}>{item.county}</Text>
           </View>
         ))}
+        {filteredSeries.length > 24 && (
+          <Pressable
+            onPress={() => setShowAllSeries((prev) => !prev)}
+            accessibilityRole="button"
+            style={{
+              marginTop: 8,
+              paddingVertical: 9,
+              borderRadius: 10,
+              borderWidth: 1,
+              borderColor: theme.gold,
+              backgroundColor: `${theme.gold}18`,
+              alignItems: "center",
+            }}
+          >
+            <Text style={{ fontSize: 12, fontWeight: "800", color: theme.gold }}>
+              {showAllSeries
+                ? "Show fewer series"
+                : `Show more (${filteredSeries.length - 24} more series)`}
+            </Text>
+          </Pressable>
+        )}
       </View>
     </View>
   );

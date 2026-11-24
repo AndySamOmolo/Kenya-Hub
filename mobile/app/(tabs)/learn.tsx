@@ -1,4 +1,12 @@
-import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import React, {
+  forwardRef,
+  useCallback,
+  useEffect,
+  useImperativeHandle,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 import { InteractionManager, Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 import { useLocalSearchParams } from "expo-router";
 import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
@@ -12,10 +20,92 @@ import {
 } from "../../src/theme";
 import { getContrastInk, type ThemeMetrics } from "../../src/lib/theme-engine";
 import { ThemedIcon } from "../../src/components/ThemedIcon";
-import {
-  LanguageLearningTool,
-  type CourseNavigationState,
-} from "../../src/tools/LanguageCourseTool";
+import type { CourseNavigationState } from "../../src/tools/LanguageCourseTool";
+
+type LanguageLearningToolComponent = React.ComponentType<{
+  onScrollToTop?: () => void;
+  initialLanguageId?: string;
+  initialTab?: any;
+  onNavigationStateChange?: (state: CourseNavigationState) => void;
+}>;
+
+let _cachedLanguageLearningTool: LanguageLearningToolComponent | null = null;
+function getLanguageLearningTool(): LanguageLearningToolComponent {
+  if (!_cachedLanguageLearningTool) {
+    _cachedLanguageLearningTool = require("../../src/tools/LanguageCourseTool").LanguageLearningTool;
+  }
+  return _cachedLanguageLearningTool!;
+}
+
+interface BackToTopHandle {
+  setVisible: (next: boolean) => void;
+}
+
+const LearnBackToTopFab = React.memo(
+  forwardRef<
+    BackToTopHandle,
+    {
+      onPress: () => void;
+      bottom: number;
+      backgroundColor: string;
+      borderColor: string;
+      rippleColor: string;
+      textColor: string;
+      headingTransform: any;
+      fabStyle: any;
+      fabTextStyle: any;
+    }
+  >(function LearnBackToTopFab(
+    {
+      onPress,
+      bottom,
+      backgroundColor,
+      borderColor,
+      rippleColor,
+      textColor,
+      headingTransform,
+      fabStyle,
+      fabTextStyle,
+    },
+    ref
+  ) {
+    const [visible, setVisible] = useState(false);
+
+    useImperativeHandle(
+      ref,
+      () => ({
+        setVisible: (next: boolean) => {
+          setVisible((prev) => (prev === next ? prev : next));
+        },
+      }),
+      []
+    );
+
+    if (!visible) return null;
+
+    return (
+      <Pressable
+        onPress={onPress}
+        accessibilityRole="button"
+        accessibilityLabel="Scroll back to top"
+        android_ripple={androidRipple(rippleColor)}
+        style={pressableStyle([
+          fabStyle,
+          {
+            backgroundColor,
+            borderColor,
+            bottom,
+          },
+        ])}
+      >
+        <ThemedIcon name="arrow-up" size={16} color={textColor} />
+        <Text style={[fabTextStyle, { color: textColor, textTransform: headingTransform }]}>
+          Top
+        </Text>
+      </Pressable>
+    );
+  })
+);
 
 function createLearnStyles(
   metrics?: ThemeMetrics,
@@ -119,7 +209,7 @@ export default function LearnTabScreen() {
   );
   const screenPadPx = (themeMetrics as any)?.screenPaddingPx ?? Math.round(12 * (themeMetrics?.spacingScale ?? 1));
   const floatClearance = themeMetrics?.floatingTabBarClearancePx ?? 0;
-  const headingTransform = themeConfig.headingTransform || "none";
+  const headingTransform = themeConfig?.headingTransform || "none";
   const goldInk = getContrastInk(theme.gold);
   const params = useLocalSearchParams<{ lang?: string; tab?: string }>();
   const insets = useSafeAreaInsets();
@@ -128,8 +218,8 @@ export default function LearnTabScreen() {
     floatClearance +
     insets.bottom;
   const scrollRef = useRef<ScrollView>(null);
+  const fabRef = useRef<BackToTopHandle>(null);
   const [contentReady, setContentReady] = useState(false);
-  const [showBackToTop, setShowBackToTop] = useState(false);
   const showBackToTopRef = useRef(false);
   const [navState, setNavState] = useState<CourseNavigationState>({
     inCourse: false,
@@ -156,6 +246,11 @@ export default function LearnTabScreen() {
     };
   }, []);
 
+  const DeferredLanguageLearningTool = useMemo(
+    () => (contentReady ? getLanguageLearningTool() : null),
+    [contentReady]
+  );
+
   const handleScrollToTop = useCallback(() => {
     triggerHaptic(8);
     scrollRef.current?.scrollTo({ y: 0, animated: true });
@@ -165,10 +260,10 @@ export default function LearnTabScreen() {
     const y = e.nativeEvent.contentOffset.y;
     if (y > 700 && !showBackToTopRef.current) {
       showBackToTopRef.current = true;
-      setShowBackToTop(true);
+      fabRef.current?.setVisible(true);
     } else if (y <= 700 && showBackToTopRef.current) {
       showBackToTopRef.current = false;
-      setShowBackToTop(false);
+      fabRef.current?.setVisible(false);
     }
   }, []);
 
@@ -194,13 +289,13 @@ export default function LearnTabScreen() {
           { paddingHorizontal: screenPadPx, paddingBottom: bottomClearance },
         ]}
         showsVerticalScrollIndicator={themeConfig?.verticalScrollbarStyle !== "hidden"}
-        persistentScrollbar={themeConfig.verticalScrollbarStyle === "always-visible"}
+        persistentScrollbar={themeConfig?.verticalScrollbarStyle === "always-visible"}
         keyboardShouldPersistTaps="handled"
         scrollEventThrottle={64}
         onScroll={handleLearnScroll}
       >
-        {contentReady ? (
-          <LanguageLearningTool
+        {DeferredLanguageLearningTool ? (
+          <DeferredLanguageLearningTool
             initialLanguageId={typeof params.lang === "string" ? params.lang : undefined}
             initialTab={typeof params.tab === "string" ? (params.tab as any) : undefined}
             onScrollToTop={handleScrollToTop}
@@ -254,27 +349,18 @@ export default function LearnTabScreen() {
         )}
       </ScrollView>
 
-      {showBackToTop && (
-        <Pressable
-          onPress={handleScrollToTop}
-          accessibilityRole="button"
-          accessibilityLabel="Scroll back to top"
-          android_ripple={androidRipple(theme.rippleColor)}
-          style={pressableStyle([
-            styles.fabTopBtn,
-            {
-              backgroundColor: theme.gold,
-              borderColor: goldInk,
-              bottom: 18 + floatClearance + insets.bottom,
-            },
-          ])}
-        >
-          <ThemedIcon name="arrow-up" size={16} color={goldInk} />
-          <Text style={[styles.fabTopText, { color: goldInk, textTransform: headingTransform }]}>
-            Top
-          </Text>
-        </Pressable>
-      )}
+      <LearnBackToTopFab
+        ref={fabRef}
+        onPress={handleScrollToTop}
+        bottom={18 + floatClearance + insets.bottom}
+        backgroundColor={theme.gold}
+        borderColor={goldInk}
+        rippleColor={theme.rippleColor}
+        textColor={goldInk}
+        headingTransform={headingTransform}
+        fabStyle={styles.fabTopBtn}
+        fabTextStyle={styles.fabTopText}
+      />
     </SafeAreaView>
   );
 }

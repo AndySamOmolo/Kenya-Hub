@@ -4,7 +4,6 @@ import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 import { useState, useMemo } from "react";
 import { X } from "lucide-react";
-import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import mpesaData from "@/data/mpesa-tariffs.json";
 
@@ -57,6 +56,13 @@ function findOptimalSplit(amount: number, type: TransactionType) {
   return bestSplitDesc;
 }
 
+
+const txTypeOptions = Object.entries(mpesaData.transactionTypes).map(
+  ([key, value]) => ({
+    key: key as TransactionType,
+    label: value.label,
+  })
+);
 
 export default function MpesaFeeCalculatorPage() {
   const [amount, setAmount] = useState<number>(5000);
@@ -113,15 +119,9 @@ export default function MpesaFeeCalculatorPage() {
     };
   }, [amount, txType, includeWithdrawal]);
 
-  const txTypeOptions = Object.entries(mpesaData.transactionTypes).map(
-    ([key, value]) => ({
-      key: key as TransactionType,
-      label: value.label,
-    })
-  );
 
   return (
-    <ToolShell tool={tool}>
+    <>
       <div className="space-y-6">
         {/* Inputs */}
         <div className="bg-bg-card border border-border rounded-xl p-6 space-y-4">
@@ -328,6 +328,6 @@ export default function MpesaFeeCalculatorPage() {
           </div>
         </div>
       </div>
-    </ToolShell>
+    </>
   );
 }

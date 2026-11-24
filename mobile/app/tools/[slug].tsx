@@ -403,7 +403,7 @@ export default function ToolDetailScreen() {
         .then((raw) => {
           const parsed = raw ? JSON.parse(raw) : {};
           const counts =
-            parsed && typeof parsed === "object" ? parsed : {};
+            parsed && typeof parsed === "object" && !Array.isArray(parsed) ? parsed : {};
           counts[tool.slug] = (Number(counts[tool.slug]) || 0) + 1;
           return AsyncStorage.setItem(
             "kh-tool-visits",
@@ -1459,8 +1459,9 @@ export default function ToolDetailScreen() {
       )}
 
       {/* Full-Screen Offline Blog Guide Reader Modal (UX-13) */}
+      {selectedPost && (
       <Modal
-        visible={!!selectedPost}
+        visible={true}
         animationType="slide"
         accessibilityViewIsModal={true}
         onRequestClose={() => setSelectedPost(null)}
@@ -1569,6 +1570,7 @@ export default function ToolDetailScreen() {
           )}
         </SafeAreaView>
       </Modal>
+      )}
     </SafeAreaView>
   );
 }

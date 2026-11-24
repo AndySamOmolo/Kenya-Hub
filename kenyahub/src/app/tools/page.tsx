@@ -12,13 +12,47 @@ import { getToolVisitCounts, hasAnyVisits } from "@/lib/tool-usage";
 import { ArrowDownAZ, LayoutList, Pin, TrendingUp, Wrench } from "lucide-react";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 import SearchInput from "@/components/ui/SearchInput";
-import CustomSelect from "@/components/ui/CustomSelect";
 import { useMounted } from "@/lib/useMounted";
 
 const CATEGORY_COUNTS: Record<string, number> = TOOLS.reduce((acc, t) => {
   acc[t.category] = (acc[t.category] ?? 0) + 1;
   return acc;
 }, {} as Record<string, number>);
+
+const CATEGORY_ACCENT_COLORS: Record<string, string> = {
+  "language-learning": "#C75B39",
+  "finance-tax": "#C8961E",
+  "education-cbc": "#1A8BD1",
+  "transport-travel": "#2FA463",
+  "business-investment": "#B87A4B",
+  "utilities-energy": "#F5A623",
+  "government-legal": "#BE2126",
+  "health-wellness": "#E05A5A",
+  "data-reference": "#5BBFEA",
+  "agriculture-environment": "#006B3F",
+};
+
+const BREADCRUMB_SCHEMA_JSON = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://kenyahub.me/" },
+    { "@type": "ListItem", position: 2, name: "Tools", item: "https://kenyahub.me/tools/" },
+  ],
+});
+
+const ITEM_LIST_SCHEMA_JSON = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "KenyaHub Free Online Tools for Kenya",
+  numberOfItems: TOOLS.length,
+  itemListElement: TOOLS.map((tool, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    name: tool.title,
+    url: `https://kenyahub.me/tools/${tool.slug}/`,
+  })),
+});
 
 function ToolsUrlSync({
   onSync,
@@ -203,27 +237,7 @@ export default function ToolsHubPage() {
     });
   }, [selectedCategory, deferredSearchQuery, sortBy, visitCounts, mounted]);
 
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://kenyahub.me/" },
-      { "@type": "ListItem", position: 2, name: "Tools", item: "https://kenyahub.me/tools/" },
-    ],
-  };
 
-  const itemListSchema = {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    name: "KenyaHub Free Online Tools for Kenya",
-    numberOfItems: TOOLS.length,
-    itemListElement: TOOLS.map((tool, index) => ({
-      "@type": "ListItem",
-      position: index + 1,
-      name: tool.title,
-      url: `https://kenyahub.me/tools/${tool.slug}/`,
-    })),
-  };
 
   return (
     <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 pt-3 pb-10 sm:py-10">
@@ -232,11 +246,11 @@ export default function ToolsHubPage() {
       </Suspense>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        dangerouslySetInnerHTML={{ __html: BREADCRUMB_SCHEMA_JSON }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+        dangerouslySetInnerHTML={{ __html: ITEM_LIST_SCHEMA_JSON }}
       />
       {/* Header */}
       <div className="mb-3.5 sm:mb-6">
@@ -469,18 +483,7 @@ export default function ToolsHubPage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
           {filteredTools.map((tool) => {
             const cat = getCategoryInfo(tool.category);
-            const accentColor = ({
-  "language-learning": "#C75B39",
-  "finance-tax": "#C8961E",
-  "education-cbc": "#1A8BD1",
-  "transport-travel": "#2FA463",
-  "business-investment": "#B87A4B",
-  "utilities-energy": "#F5A623",
-  "government-legal": "#BE2126",
-  "health-wellness": "#E05A5A",
-  "data-reference": "#5BBFEA",
-  "agriculture-environment": "#006B3F",
-} as Record<string, string>)[tool.category] || "#C8961E";
+            const accentColor = CATEGORY_ACCENT_COLORS[tool.category] || "#C8961E";
             const href = `/tools/${tool.slug}/`;
             return (
               <Link

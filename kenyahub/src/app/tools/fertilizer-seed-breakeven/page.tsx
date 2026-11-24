@@ -2,7 +2,6 @@
 
 import { useState, useMemo } from "react";
 import { Sprout, ShoppingBag, TrendingUp, AlertTriangle, Info } from "lucide-react";
-import ToolShell from "@/components/tools/ToolShell";
 import CustomSelect from "@/components/ui/CustomSelect";
 import { getToolBySlug } from "@/lib/tools-registry";
 import everydayData from "@/data/kenya-everyday-tools-2026.json";
@@ -120,7 +119,7 @@ export default function FertilizerSeedBreakevenPage() {
   }, [cropId, acreageStr, pricingMode, otherCostsPerAcreStr, farmgatePriceStr]);
 
   return (
-    <ToolShell tool={tool}>
+    <>
       <div className="space-y-6">
         <div className="rounded-2xl border border-gold/30 bg-bg-card p-5 sm:p-7 shadow-xs">
           {/* Fertilizer Pricing Toggle */}
@@ -423,6 +422,6 @@ export default function FertilizerSeedBreakevenPage() {
           </div>
         </div>
       </div>
-    </ToolShell>
+    </>
   );
 }

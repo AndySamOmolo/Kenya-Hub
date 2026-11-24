@@ -35,7 +35,8 @@ const StagedVarietiesPanel = dynamic(() => import("@/components/learn/StagedVari
 import type { LanguageConfig } from "@/data/courses/types";
 import { PUBLISHED_COURSE_SUMMARIES } from "@/data/courses/catalog-summary";
 import { getLanguageIdentity } from "@/data/language-identity";
-import { INITIAL_RANDOM_WORDS, DICT_META_MAP, ALL_DICT_METAS, TOTAL_DICTIONARY_ENTRIES } from "@/data/dictionaries/metadata";
+import { DICT_META_MAP, ALL_DICT_METAS, TOTAL_DICTIONARY_ENTRIES } from "@/data/dictionaries/catalog";
+import { INITIAL_RANDOM_WORDS } from "@/data/dictionaries/random-words";
 import { TOOLS } from "@/lib/tools-registry";
 import { scrollToTopIfScrolled } from "@/lib/scroll";
 

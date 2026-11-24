@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import shaData from "@/data/sha-benefit-data.json";
 import vaccinationData from "@/data/vaccination-schedule.json";
@@ -17,7 +16,7 @@ export default function ShaBenefitEstimatorPage() {
   const activePackage = shaData.packages.find((p) => p.id === selectedPackage) || shaData.packages[0];
 
   return (
-    <ToolShell tool={tool}>
+    <>
       <div className="space-y-6">
         <div className="rounded-2xl border border-gold/30 bg-bg-card p-5 sm:p-7 shadow-xs">
 
@@ -134,6 +133,6 @@ export default function ShaBenefitEstimatorPage() {
           </div>
         </div>
       </div>
-    </ToolShell>
+    </>
   );
 }

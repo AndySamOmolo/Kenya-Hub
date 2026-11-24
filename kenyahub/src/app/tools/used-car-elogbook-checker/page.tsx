@@ -10,7 +10,6 @@ import {
   ClipboardCheck,
   RotateCcw,
 } from "lucide-react";
-import ToolShell from "@/components/tools/ToolShell";
 import CustomSelect from "@/components/ui/CustomSelect";
 import { getToolBySlug } from "@/lib/tools-registry";
 import everydayData from "@/data/kenya-everyday-tools-2026.json";
@@ -155,7 +154,7 @@ export default function UsedCarElogbookCheckerPage() {
   }, []);
 
   return (
-    <ToolShell tool={tool}>
+    <>
       <div className="space-y-6">
         {/* Two-Tab Navigation */}
         <div className="flex flex-wrap gap-2">
@@ -595,6 +594,6 @@ export default function UsedCarElogbookCheckerPage() {
           </div>
         )}
       </div>
-    </ToolShell>
+    </>
   );
 }

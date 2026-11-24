@@ -22,7 +22,7 @@ import { getLanguageIdentity } from "@/data/language-identity";
 import { STATIC_BLOG_POST_SUMMARIES as STATIC_BLOG_POSTS } from "@/data/blog-posts-summary";
 import PinnedToolsHomeSection from "@/components/tools/PinnedToolsHomeSection";
 import PopularToolsSection from "@/components/tools/PopularToolsSection";
-import DynamicIcon from "@/components/ui/DynamicIcon";
+import CategoryIcon from "@/components/ui/CategoryIcon";
 
 export const metadata: Metadata = {
   alternates: {
@@ -375,7 +375,7 @@ export default function HomePage() {
                 className="tool-card bg-bg-card border border-border rounded-2xl p-4 sm:p-6 flex items-start gap-3.5 sm:gap-4 group"
               >
                 <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-white/[0.04] flex items-center justify-center flex-shrink-0 group-hover:bg-white/[0.07] transition-colors">
-                  <span className="text-xl sm:text-2xl tool-icon"><DynamicIcon emoji={cat.icon} className="w-[1em] h-[1em] inline-block mb-[0.1em]" /></span>
+                  <span className="text-xl sm:text-2xl tool-icon"><CategoryIcon emoji={cat.icon} className="w-[1em] h-[1em] inline-block mb-[0.1em]" /></span>
                 </div>
                 <div className="min-w-0 flex-1">
                   <h3 id={`home-cat-${cat.id}`} className="text-base font-semibold text-text-primary font-[family-name:var(--font-outfit)] group-hover:text-gold transition-colors mb-1">

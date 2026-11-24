@@ -2,7 +2,6 @@
 
 import { useState, useMemo } from "react";
 import { Flame, Droplets, Sprout, AlertTriangle, CheckCircle2, Info } from "lucide-react";
-import ToolShell from "@/components/tools/ToolShell";
 import { getToolBySlug } from "@/lib/tools-registry";
 import everydayData from "@/data/kenya-everyday-tools-2026.json";
 
@@ -90,7 +89,7 @@ export default function BiogasDigesterSizerPage() {
   }, [cowsStr, grazingMode, householdStr, monthlyFuelSpendStr]);
 
   return (
-    <ToolShell tool={tool}>
+    <>
       <div className="space-y-6">
         <div className="rounded-2xl border border-gold/30 bg-bg-card p-5 sm:p-7 shadow-xs">
           {/* Grazing System Toggle */}
@@ -328,6 +327,6 @@ export default function BiogasDigesterSizerPage() {
           </div>
         </div>
       </div>
-    </ToolShell>
+    </>
   );
 }

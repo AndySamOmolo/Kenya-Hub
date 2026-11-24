@@ -3,9 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import dynamic from "next/dynamic";
-import matatuData from "@/data/matatu-routes.json";
-import DynamicIcon from "@/components/ui/DynamicIcon";
-import { ChevronRight, MapPin } from "lucide-react";
+import { Calculator, Check, ChevronRight, Clock, Compass, Flag, Map, MapPin } from "lucide-react";
 
 // Dynamic import for Leaflet map component (CSR only)
 const MatatuMap = dynamic(() => import("@/components/matatu/MatatuMap"), {
@@ -18,9 +16,13 @@ const MatatuMap = dynamic(() => import("@/components/matatu/MatatuMap"), {
   ),
 });
 
+import type { MatatuRouteItem, MatatuTownInfo } from "./TownMatatuView";
+
 interface RouteDetailViewProps {
   townSlug: string;
-  routeSlug: string;
+  townInfo: MatatuTownInfo;
+  route: MatatuRouteItem;
+  otherRoutes: MatatuRouteItem[];
 }
 
 function haversineKm(lat1: number, lon1: number, lat2: number, lon2: number): number {
@@ -37,11 +39,8 @@ function haversineKm(lat1: number, lon1: number, lat2: number, lon2: number): nu
   return R * c * 1.25;
 }
 
-export default function RouteDetailView({ townSlug, routeSlug }: RouteDetailViewProps) {
+export default function RouteDetailView({ townSlug, townInfo, route, otherRoutes }: RouteDetailViewProps) {
   const [activeStageOrder, setActiveStageOrder] = useState<number | null>(null);
-  const townInfo = matatuData.towns.find((t) => t.slug === townSlug);
-  const townRoutes = (matatuData.routes as Record<string, typeof matatuData.routes.nairobi>)[townSlug] || [];
-  const route = townRoutes.find((r) => r.slug === routeSlug);
 
   if (!route || !townInfo) {
     return (
@@ -49,13 +48,11 @@ export default function RouteDetailView({ townSlug, routeSlug }: RouteDetailView
         <h1 className="text-2xl font-bold text-text-primary mb-2">Route Not Found</h1>
         <p className="text-text-muted text-sm mb-6">The requested matatu route could not be found.</p>
         <Link href={`/matatu/${townSlug}/`} className="text-xs font-semibold text-gold hover:underline">
-          ← Back to {townInfo?.name || "City"} Routes
+          ← Back to City Routes
         </Link>
       </div>
     );
   }
-
-  const otherRoutes = townRoutes.filter((r) => r.slug !== route.slug).slice(0, 4);
   const intermediateStages = route.stages.slice(1, -1).map((s) => s.name);
   const stageNamesList = route.stages.map((s) => s.name).join(" → ");
 
@@ -132,7 +129,7 @@ export default function RouteDetailView({ townSlug, routeSlug }: RouteDetailView
           <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 mb-1.5">
             {route.verified && (
               <span className="text-[11px] sm:text-xs bg-kenya-green/15 text-kenya-green-light px-2 py-0.5 rounded-full font-semibold inline-flex items-center gap-1 micro-badge">
-                <DynamicIcon emoji="✓" className="w-3 h-3" /> Verified
+                <Check className="w-3 h-3" aria-hidden="true" /> Verified
               </span>
             )}
             <span className="text-[11px] sm:text-xs bg-bg-elevated border border-border text-text-secondary px-2 py-0.5 rounded-full font-medium micro-badge">
@@ -162,7 +159,7 @@ export default function RouteDetailView({ townSlug, routeSlug }: RouteDetailView
             </span>
           </div>
           <p className="text-[0.65rem] text-text-muted flex items-center justify-center md:justify-end gap-1">
-            <DynamicIcon emoji="⏰" className="w-3 h-3" /> {route.operatingHours}
+            <Clock className="w-3 h-3" aria-hidden="true" /> {route.operatingHours}
           </p>
         </div>
       </div>
@@ -174,7 +171,7 @@ export default function RouteDetailView({ townSlug, routeSlug }: RouteDetailView
           <div>
             <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
               <h2 className="text-base font-bold text-text-primary font-[family-name:var(--font-outfit)] flex items-center gap-2 min-w-0">
-                <DynamicIcon emoji="🗺️" className="w-4 h-4 text-gold" /> Interactive Route Map
+                <Map className="w-4 h-4 text-gold" aria-hidden="true" /> Interactive Route Map
               </h2>
               <span className="text-xs text-text-muted">{route.stages.length} Stage Stopovers · ~{totalCorridorKm} km</span>
             </div>
@@ -205,7 +202,7 @@ export default function RouteDetailView({ townSlug, routeSlug }: RouteDetailView
           <section className="bg-bg-card border border-border rounded-2xl overflow-hidden">
             <div className="px-5 py-3.5 border-b border-border bg-bg-elevated flex items-center justify-between flex-wrap gap-2">
               <h2 className="text-sm sm:text-base font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2">
-                <DynamicIcon emoji="🧮" className="w-4 h-4 text-gold" /> Commuter Fare &amp; Monthly Budget Estimator (Route {route.routeNumber})
+                <Calculator className="w-4 h-4 text-gold" aria-hidden="true" /> Commuter Fare &amp; Monthly Budget Estimator (Route {route.routeNumber})
               </h2>
               <span className="text-[0.65rem] text-text-muted">
                 KES {offPeakPerKm}–{peakPerKm} per km
@@ -252,7 +249,7 @@ export default function RouteDetailView({ townSlug, routeSlug }: RouteDetailView
           {/* Detailed Commuter Guide & Corridor Breakdown */}
           <section className="bg-bg-card border border-border rounded-2xl p-6 space-y-4">
             <h2 className="text-base sm:text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2">
-              <DynamicIcon emoji="🧭" className="w-4 h-4 text-gold" /> Commuter Guide: {route.terminusA} to {route.terminusB} (Route {route.routeNumber})
+              <Compass className="w-4 h-4 text-gold" aria-hidden="true" /> Commuter Guide: {route.terminusA} to {route.terminusB} (Route {route.routeNumber})
             </h2>
             <p className="text-xs sm:text-sm text-text-secondary leading-relaxed">
               <strong>Route {route.routeNumber} ({route.name})</strong> is a key public service vehicle (PSV) transit corridor in{" "}
@@ -308,7 +305,7 @@ export default function RouteDetailView({ townSlug, routeSlug }: RouteDetailView
         <div className="space-y-6">
           <div className="bg-bg-card border border-border rounded-2xl p-6">
             <h2 className="text-base font-bold text-text-primary font-[family-name:var(--font-outfit)] mb-4 flex items-center gap-2">
-              <DynamicIcon emoji="🚏" className="w-4 h-4 text-gold" /> Stage Stopovers ({stageDistances.length})
+              <MapPin className="w-4 h-4 text-gold" aria-hidden="true" /> Stage Stopovers ({stageDistances.length})
             </h2>
 
             <div className="relative pl-7 space-y-6 before:absolute before:left-2.5 before:top-3 before:bottom-3 before:w-0.5 before:bg-gradient-to-b before:from-kenya-green before:via-gold before:to-kenya-red">
@@ -379,7 +376,7 @@ export default function RouteDetailView({ townSlug, routeSlug }: RouteDetailView
               href="/contact/"
               className="px-4 py-2 bg-bg-elevated hover:bg-gold/20 border border-border text-xs text-text-primary rounded-lg transition-colors inline-flex items-center gap-1.5 mx-auto"
             >
-              <DynamicIcon emoji="🚩" className="w-3.5 h-3.5 text-kenya-red-light" /> Submit Route Update
+              <Flag className="w-3.5 h-3.5 text-kenya-red-light" aria-hidden="true" /> Submit Route Update
             </Link>
           </div>
         </div>
