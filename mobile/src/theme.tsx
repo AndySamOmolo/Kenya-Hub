@@ -19,6 +19,7 @@ import { BrandLogo } from "./components/BrandLogo";
 import {
   DEFAULT_THEME_CONFIG,
   THEME_PRESETS,
+  PRESET_SIGNATURE_LOOKS,
   APP_LOOK_PROFILES,
   resolveThemeColors,
   resolveThemeMetrics,
@@ -352,7 +353,7 @@ interface ThemeContextType {
   setThemeMode: (mode: ThemeMode) => void;
   updateThemeConfig: (patch: Partial<ThemeConfig>) => void;
   updateCustomColor: (key: keyof CustomColorsConfig, hex: string | undefined) => void;
-  applyThemePreset: (presetId: string, forceMode?: "dark" | "light") => void;
+  applyThemePreset: (presetId: string, forceMode?: "dark" | "light", applyFullLook?: boolean) => void;
   applyAppLookProfile: (profileId: string) => void;
   resetThemeConfig: () => void;
   importThemeJson: (raw: string) => boolean;
@@ -646,16 +647,31 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   );
 
   const applyThemePreset = React.useCallback(
-    (presetId: string, forceMode?: "dark" | "light") => {
-      triggerHaptic(8);
+    (presetId: string, forceMode?: "dark" | "light", applyFullLook = true) => {
+      triggerHaptic(10);
       if (!THEME_PRESETS.some((p) => p.id === presetId)) return;
+      const sigLook = applyFullLook ? PRESET_SIGNATURE_LOOKS[presetId] : undefined;
       setThemeConfig((prev) => {
-        const next: ThemeConfig = {
-          ...prev,
-          presetId,
-          customColors: {},
-          mode: forceMode ? forceMode : prev.mode,
-        };
+        const next: ThemeConfig = sigLook
+          ? {
+              ...DEFAULT_THEME_CONFIG,
+              ...sigLook,
+              presetId,
+              customColors: {},
+              mode: forceMode ? forceMode : prev.mode,
+              // Preserve user accessibility & visibility preferences
+              fontScale: prev.fontScale,
+              colorBlindMode: prev.colorBlindMode,
+              reduceMotion: prev.reduceMotion,
+              hapticsEnabled: prev.hapticsEnabled,
+              hapticStrength: prev.hapticStrength,
+            }
+          : {
+              ...prev,
+              presetId,
+              customColors: {},
+              mode: forceMode ? forceMode : prev.mode,
+            };
         persistConfig(next);
         return next;
       });
@@ -940,35 +956,43 @@ export function getThemedCardStyle(
   switch (themeConfig.surfaceStyle) {
     case "flat":
       backgroundColor = theme.bgSecondary;
+      borderWidth = 0;
+      borderColor = "transparent";
       break;
     case "outlined":
-      backgroundColor = theme.bgCard;
-      borderWidth = Math.max(1, borderWidth);
+      backgroundColor = "transparent";
+      borderColor = themeConfig.highContrastBorders ? theme.textPrimary : theme.outline;
+      borderWidth = Math.max(1.5, borderWidth);
       break;
     case "glass":
-      backgroundColor = hexToRgba(theme.surfaceContainer, 0.88);
+      backgroundColor = hexToRgba(theme.surfaceContainer, theme.isDark ? 0.62 : 0.74);
+      borderColor = hexToRgba(theme.textPrimary, theme.isDark ? 0.2 : 0.14);
+      borderWidth = Math.max(1, borderWidth);
       break;
     case "tonal":
-      backgroundColor = theme.surfaceContainerHigh;
+      backgroundColor = mixHex(theme.surfaceContainer, theme.gold, theme.isDark ? 0.11 : 0.08);
+      borderWidth = 0;
+      borderColor = "transparent";
       break;
     case "crisp":
       backgroundColor = theme.surfaceContainerLowest;
       borderColor = theme.outline;
+      borderWidth = Math.max(1, borderWidth);
       break;
     case "paper-ink":
-      backgroundColor = theme.bgCard;
-      borderColor = theme.outline;
-      borderWidth = Math.max(0.75, borderWidth);
+      backgroundColor = mixHex(theme.bgCard, theme.isDark ? "#231B12" : "#F8F0DF", 0.35);
+      borderColor = hexToRgba(theme.textPrimary, 0.24);
+      borderWidth = Math.max(1, borderWidth);
       break;
     case "neo-brutal":
       backgroundColor = theme.isDark ? theme.surfaceContainerHigh : theme.bgCard;
-      borderColor = theme.isDark ? theme.outline : theme.textPrimary;
-      borderWidth = Math.max(1.5, borderWidth);
+      borderColor = theme.textPrimary;
+      borderWidth = Math.max(2, borderWidth);
       break;
     case "inset-tray":
-      backgroundColor = theme.surfaceContainerLow;
-      borderColor = hexToRgba(theme.outlineVariant, 0.55);
-      borderWidth = Math.max(0.5, borderWidth);
+      backgroundColor = theme.isDark ? "#080808" : theme.surfaceContainerLow;
+      borderColor = hexToRgba(theme.outline, 0.75);
+      borderWidth = Math.max(1, borderWidth);
       break;
     case "elevated":
     default:
@@ -1041,6 +1065,15 @@ export function getThemedCardStyle(
     },
   };
 
+  if (themeConfig.surfaceStyle === "neo-brutal") {
+    cardStyle.borderBottomWidth = Math.max(4, borderWidth + 2);
+    cardStyle.borderRightWidth = Math.max(3, borderWidth + 1);
+  } else if (themeConfig.surfaceStyle === "inset-tray") {
+    cardStyle.borderTopWidth = Math.max(2, borderWidth + 1);
+  } else if (themeConfig.surfaceStyle === "paper-ink") {
+    cardStyle.borderBottomWidth = Math.max(2, borderWidth + 0.75);
+  }
+
   switch (themeConfig.cardAccentStyle) {
     case "left-bar":
       cardStyle.borderLeftWidth = 4;
@@ -1056,7 +1089,10 @@ export function getThemedCardStyle(
       break;
     case "tinted-border":
       cardStyle.borderColor = theme.gold;
-      cardStyle.borderWidth = Math.max(1.25, borderWidth);
+      cardStyle.borderWidth = Math.max(1.5, borderWidth);
+      if (cardStyle.backgroundColor && cardStyle.backgroundColor !== "transparent" && isValidHexColor(String(cardStyle.backgroundColor))) {
+        cardStyle.backgroundColor = mixHex(String(cardStyle.backgroundColor), theme.gold, theme.isDark ? 0.08 : 0.06);
+      }
       break;
     case "glow-edge":
       if (isAndroid) {
@@ -1073,15 +1109,15 @@ export function getThemedCardStyle(
       }
       break;
     case "corner-frame":
-      cardStyle.borderTopWidth = Math.max(1.5, borderWidth);
-      cardStyle.borderBottomWidth = Math.max(1.5, borderWidth);
-      cardStyle.borderTopColor = theme.outline;
-      cardStyle.borderBottomColor = theme.outline;
+      cardStyle.borderLeftWidth = 3.5;
+      cardStyle.borderTopWidth = 3.5;
+      cardStyle.borderLeftColor = theme.gold;
+      cardStyle.borderTopColor = theme.gold;
       break;
     case "double-rule":
-      cardStyle.borderTopWidth = StyleSheet.hairlineWidth;
-      cardStyle.borderTopColor = theme.outline;
-      cardStyle.borderBottomWidth = StyleSheet.hairlineWidth;
+      cardStyle.borderTopWidth = 2.5;
+      cardStyle.borderTopColor = theme.gold;
+      cardStyle.borderBottomWidth = 1.25;
       cardStyle.borderBottomColor = theme.outline;
       break;
     case "offset-edge": {
@@ -1161,21 +1197,44 @@ export function getThemedButtonStyle(
       return { container: { ...base, backgroundColor: "transparent", borderWidth: Math.max(1.5, themeMetrics.borderWidthPx), borderColor: theme.gold }, textColor: theme.gold };
     case "elevated":
       return { container: { ...base, backgroundColor: theme.surfaceContainerHigh, borderWidth: 1, borderColor: theme.outlineVariant, elevation: Platform.OS === "android" ? 2 : 0 }, textColor: theme.gold };
-    case "keycap-press":
     case "pill-glow":
       return {
         container: {
           ...base,
+          borderRadius: 999,
+          backgroundColor: theme.gold,
+          borderWidth: 1.5,
+          borderColor: theme.goldLight,
+          shadowColor: theme.gold,
+          shadowOpacity: Platform.OS === "android" ? 0 : 0.45,
+          shadowRadius: Platform.OS === "android" ? 0 : 10,
+          elevation: Platform.OS === "android" ? 3 : 4,
+        },
+        textColor: onGold,
+      };
+    case "keycap-press":
+      return {
+        container: {
+          ...base,
           backgroundColor: theme.bgCard,
-          borderWidth: 1.25,
+          borderWidth: 1.5,
           borderColor: theme.outline,
-          borderBottomWidth: 3,
-          borderBottomColor: theme.isDark ? "#000000" : theme.outline,
+          borderBottomWidth: 4,
+          borderBottomColor: theme.isDark ? "#000000" : theme.textPrimary,
+        },
+        textColor: theme.textPrimary,
+      };
+    case "flat":
+      return {
+        container: {
+          ...base,
+          backgroundColor: theme.surfaceContainerHigh,
+          borderWidth: 0,
+          elevation: 0,
         },
         textColor: theme.textPrimary,
       };
     case "editorial-link":
-    case "flat":
       return {
         container: {
           ...base,

@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, TextInput, Pressable } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useDynamicStyles, triggerHaptic, type ThemeColors } from "../theme";
 import utilData from "../shared/data/kenya-utility-tools-2026.json";
+import { getContrastInk } from "../theme";
 
 const EXEMPT_CATS = new Set(["Emoluments", "Imports", "Airline Tickets", "Investment Allowances", "Interest / Bank Fees"]);
 
@@ -554,7 +555,7 @@ function createStyles(theme: ThemeColors) {
       fontWeight: "600",
     },
     primaryBtn: { backgroundColor: theme.gold, paddingHorizontal: 14, paddingVertical: 11, borderRadius: 12 },
-    primaryBtnText: { color: "#000", fontWeight: "800", fontSize: 12.5 },
+    primaryBtnText: { color: getContrastInk(theme.gold), fontWeight: "800", fontSize: 12.5 },
     kpiRow: { flexDirection: "row", gap: 10 },
     kpiCard: { flex: 1, borderWidth: 1, borderColor: theme.border, backgroundColor: theme.bgCard, borderRadius: 14, padding: 12 },
     kpiLabel: { fontSize: 10, fontWeight: "800", color: theme.textMuted, letterSpacing: 0.4 },

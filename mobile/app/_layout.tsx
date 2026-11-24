@@ -26,6 +26,7 @@ import {
   lightColors,
   androidRipple,
   pressableStyle,
+  getContrastInk,
 } from "../src/theme";
 import { VerifiedAudioPlayer } from "../src/components/VerifiedAudioPlayer";
 import { AppLanguageProvider } from "../src/lib/i18n";
@@ -145,7 +146,7 @@ export function ErrorBoundary({ error, retry }: ErrorBoundaryProps) {
             ]}
           >
             <Ionicons name="refresh" size={16} color={colors.kenyaBlack} />
-            <Text style={[styles.retryText, { color: colors.kenyaBlack }]}>
+            <Text style={[styles.retryText, { color: getContrastInk(colors.gold) }]}>
               Try again
             </Text>
           </View>

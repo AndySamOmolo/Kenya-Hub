@@ -19,6 +19,7 @@ import {
   androidRipple,
   pressableStyle,
   triggerHaptic,
+  getContrastInk,
 } from "../../src/theme";
 import matatuData from "../../src/shared/data/matatu-routes.json";
 
@@ -44,7 +45,7 @@ const RouteCard = React.memo(function RouteCard({
   route: RouteItem & { townId?: string; townName?: string };
 }) {
   const router = useRouter();
-  const { theme, isDark } = useTheme();
+  const { theme, isDark, themeConfig } = useTheme();
   const rNum = route.routeNumber || route.number || "—";
 
   return (
@@ -386,8 +387,8 @@ export default function MatatuScreen() {
                 gap: 6,
               })}
             >
-              <Ionicons name="navigate" size={14} color={theme.kenyaBlack} />
-              <Text style={{ fontSize: 12.5, fontFamily: "Outfit_800ExtraBold", color: theme.kenyaBlack }}>
+              <Ionicons name="navigate" size={14} color={getContrastInk(theme.gold)} />
+              <Text style={{ fontSize: 12.5, fontFamily: "Outfit_800ExtraBold", color: getContrastInk(theme.gold) }}>
                 Find Route
               </Text>
             </Pressable>
@@ -684,7 +685,8 @@ export default function MatatuScreen() {
         windowSize={5}
         removeClippedSubviews={Platform.OS === "android"}
         contentContainerStyle={styles.content}
-        showsVerticalScrollIndicator={false}
+        showsVerticalScrollIndicator={themeConfig.verticalScrollbarStyle !== "hidden"}
+        persistentScrollbar={themeConfig.verticalScrollbarStyle === "always-visible"}
         keyboardShouldPersistTaps="handled"
         ListHeaderComponent={listHeader}
         ListEmptyComponent={

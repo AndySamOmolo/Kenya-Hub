@@ -293,7 +293,7 @@ export function MatatuMap({
             <View
               style={[
                 styles.offlineBadgeIcon,
-                { backgroundColor: `${theme.gold}20` },
+                { backgroundColor: hexToRgba(theme.gold, 0.125) },
               ]}
             >
               <Ionicons name="git-commit-outline" size={16} color={theme.gold} />

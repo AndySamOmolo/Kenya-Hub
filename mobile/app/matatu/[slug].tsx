@@ -18,6 +18,7 @@ import {
   androidRipple,
   pressableStyle,
   triggerHaptic,
+  getContrastInk,
 } from "../../src/theme";
 import matatuData from "../../src/shared/data/matatu-routes.json";
 import { MatatuMap } from "../../src/components/MatatuMap";
@@ -25,7 +26,7 @@ import { MatatuMap } from "../../src/components/MatatuMap";
 export default function MatatuRouteScreen() {
   const { slug } = useLocalSearchParams<{ slug: string }>();
   const router = useRouter();
-  const { theme } = useTheme();
+  const { theme, themeConfig } = useTheme();
   const [reported, setReported] = useState(false);
   useEffect(() => {
     setReported(false);
@@ -73,7 +74,7 @@ export default function MatatuRouteScreen() {
               { backgroundColor: theme.gold },
             ])}
           >
-            <Text style={styles.backButtonText}>Go back</Text>
+            <Text style={[styles.backButtonText, { color: getContrastInk(theme.gold) }]}>Go back</Text>
           </Pressable>
         </View>
       </SafeAreaView>
@@ -130,7 +131,8 @@ export default function MatatuRouteScreen() {
       <ScrollView
         ref={scrollRef}
         contentContainerStyle={styles.content}
-        showsVerticalScrollIndicator={false}
+        showsVerticalScrollIndicator={themeConfig.verticalScrollbarStyle !== "hidden"}
+        persistentScrollbar={themeConfig.verticalScrollbarStyle === "always-visible"}
         keyboardShouldPersistTaps="handled"
         overScrollMode="always"
       >

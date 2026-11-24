@@ -16,6 +16,7 @@ import {
   type ThemeColors,
 } from "../../theme";
 import { ExpandablePillRow } from "../../components/ExpandablePillRow";
+import { getContrastInk } from "../../theme";
 
 /**
  * Formats a numeric string with thousands commas (e.g., "2400000" -> "2,400,000")
@@ -289,7 +290,7 @@ export function Row({
       <Text
         style={[
           styles.rowLabel,
-          isTotal && { fontFamily: "Outfit_700Bold", color: theme.textPrimary },
+          isTotal && { fontFamily: hf("Outfit_700Bold"), color: theme.textPrimary },
         ]}
       >
         {label}
@@ -300,7 +301,7 @@ export function Row({
           isDeduction && { color: theme.kenyaRedLight },
           isPositive && { color: theme.kenyaGreenLight },
           isTotal && {
-            fontFamily: "Outfit_800ExtraBold",
+            fontFamily: hf("Outfit_800ExtraBold"),
             color: theme.gold,
             fontSize: 15,
           },
@@ -354,7 +355,7 @@ export function BreakdownBar({
               <View style={[styles.legendDot, { backgroundColor: seg.color }]} />
               <Text style={[styles.legendText, { color: theme.textSecondary }]}>
                 {seg.label}:{" "}
-                <Text style={{ fontFamily: "Outfit_700Bold", color: theme.textPrimary }}>
+                <Text style={{ fontFamily: hf("Outfit_700Bold"), color: theme.textPrimary }}>
                   {pct}%
                 </Text>
               </Text>
@@ -428,7 +429,23 @@ export function ShareCopyBar({
   );
 }
 
-export const createStyles = (theme: ThemeColors) =>
+export const createStyles = (
+  theme: ThemeColors,
+  metrics?: ThemeMetrics,
+  resolvedFonts?: { heading: string; body: string; bold: string },
+  themeConfig?: ThemeConfig
+) => {
+  const hf = (fallback: string) => resolvedFonts?.heading || fallback;
+  const bf = (fallback: string) => resolvedFonts?.body || fallback;
+  const bdf = (fallback: string) => resolvedFonts?.bold || fallback;
+  const cardTheme = themeConfig && metrics ? getThemedCardStyle(theme, themeConfig, metrics) : null;
+  const inputTheme = themeConfig && metrics ? getThemedInputStyle(theme, themeConfig, metrics) : null;
+  const numStyle = themeConfig ? getThemedNumericStyle(themeConfig, resolvedFonts) : {};
+  const pad = metrics?.cardPaddingPx ?? 16;
+  const cRad = metrics?.cardRadiusPx ?? 16;
+  const bRad = metrics?.buttonRadiusPx ?? 12;
+  const fScale = metrics?.fontScale ?? 1;
+  return
   StyleSheet.create({
     toolWrap: {
       gap: 14,
@@ -438,13 +455,13 @@ export const createStyles = (theme: ThemeColors) =>
     },
     inputLabel: {
       fontSize: 12,
-      fontFamily: "Outfit_700Bold",
+      fontFamily: hf("Outfit_700Bold"),
       color: theme.textSecondary,
       marginBottom: 6,
     },
     inputHint: {
       fontSize: 11,
-      fontFamily: "Inter_400Regular",
+      fontFamily: bf("Inter_400Regular"),
       color: theme.textMuted,
       marginTop: 4,
     },
@@ -466,13 +483,14 @@ export const createStyles = (theme: ThemeColors) =>
     },
     kesPrefix: {
       fontSize: 12,
-      fontFamily: "Outfit_800ExtraBold",
+      fontFamily: hf("Outfit_800ExtraBold"),
       color: theme.gold,
     },
     textInput: {
+    ...numStyle,
       flex: 1,
       fontSize: 16,
-      fontFamily: "Outfit_700Bold",
+      fontFamily: hf("Outfit_700Bold"),
       color: theme.textPrimary,
       paddingHorizontal: 14,
       paddingVertical: 10,
@@ -502,7 +520,7 @@ export const createStyles = (theme: ThemeColors) =>
     },
     presetChipText: {
       fontSize: 11,
-      fontFamily: "Outfit_700Bold",
+      fontFamily: hf("Outfit_700Bold"),
       color: theme.textSecondary,
     },
     presetChipTextActive: {
@@ -522,19 +540,20 @@ export const createStyles = (theme: ThemeColors) =>
     },
     statLabel: {
       fontSize: 11,
-      fontFamily: "Outfit_800ExtraBold",
+      fontFamily: hf("Outfit_800ExtraBold"),
       letterSpacing: 1,
       color: theme.textSecondary,
       marginBottom: 4,
     },
     statValue: {
+    ...numStyle,
       fontSize: 20,
-      fontFamily: "Outfit_800ExtraBold",
+      fontFamily: hf("Outfit_800ExtraBold"),
       color: theme.textPrimary,
     },
     statSubtext: {
       fontSize: 11,
-      fontFamily: "Inter_400Regular",
+      fontFamily: bf("Inter_400Regular"),
       color: theme.textMuted,
       marginTop: 4,
       textAlign: "center",
@@ -555,15 +574,16 @@ export const createStyles = (theme: ThemeColors) =>
     },
     rowLabel: {
       fontSize: 12.5,
-      fontFamily: "Inter_400Regular",
+      fontFamily: bf("Inter_400Regular"),
       color: theme.textSecondary,
       flex: 1,
       flexShrink: 1,
       paddingRight: 8,
     },
     rowValue: {
+    ...numStyle,
       fontSize: 12.5,
-      fontFamily: "Outfit_700Bold",
+      fontFamily: hf("Outfit_700Bold"),
       color: theme.textPrimary,
       flexShrink: 0,
       maxWidth: "48%",
@@ -571,7 +591,7 @@ export const createStyles = (theme: ThemeColors) =>
     },
     subHeading: {
       fontSize: 13,
-      fontFamily: "Outfit_800ExtraBold",
+      fontFamily: hf("Outfit_800ExtraBold"),
       color: theme.gold,
       letterSpacing: 0.5,
       marginTop: 6,
@@ -597,11 +617,11 @@ export const createStyles = (theme: ThemeColors) =>
     },
     pillBtnText: {
       fontSize: 12,
-      fontFamily: "Outfit_700Bold",
+      fontFamily: hf("Outfit_700Bold"),
       color: theme.textSecondary,
     },
     pillBtnTextActive: {
-      color: theme.kenyaBlack,
+      color: getContrastInk(theme.gold),
     },
     tipCard: {
       flexDirection: "row",
@@ -616,7 +636,7 @@ export const createStyles = (theme: ThemeColors) =>
     tipText: {
       flex: 1,
       fontSize: 12,
-      fontFamily: "Inter_400Regular",
+      fontFamily: bf("Inter_400Regular"),
       color: theme.textPrimary,
       lineHeight: 17,
     },
@@ -630,7 +650,7 @@ export const createStyles = (theme: ThemeColors) =>
     },
     breakdownTitle: {
       fontSize: 11,
-      fontFamily: "Outfit_700Bold",
+      fontFamily: hf("Outfit_700Bold"),
       color: theme.textSecondary,
       letterSpacing: 0.5,
       textTransform: "uppercase",
@@ -660,7 +680,7 @@ export const createStyles = (theme: ThemeColors) =>
     },
     legendText: {
       fontSize: 11,
-      fontFamily: "Inter_500Medium",
+      fontFamily: bf("Inter_500Medium"),
     },
     shareBarRow: {
       flexDirection: "row",
@@ -681,7 +701,8 @@ export const createStyles = (theme: ThemeColors) =>
     },
     sharePrimaryBtnText: {
       fontSize: 12,
-      fontFamily: "Outfit_700Bold",
+      fontFamily: hf("Outfit_700Bold"),
       color: theme.gold,
     },
   });
+}

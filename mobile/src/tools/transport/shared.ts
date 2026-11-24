@@ -1,5 +1,6 @@
 import { StyleSheet } from "react-native";
 import type { ThemeColors } from "../../theme";
+import { getContrastInk } from "../../theme";
 
 export function daysUntilHoliday(dateStr: string) {
   const target = new Date(dateStr + "T00:00:00");
@@ -373,6 +374,6 @@ export const createStyles = (theme: ThemeColors) =>
       fontSize: 13,
       fontFamily: "Outfit_700Bold",
       fontWeight: "800",
-      color: "#1A1108",
+      color: getContrastInk(theme.gold),
     },
   });

@@ -389,7 +389,7 @@ export const BlogMarkdownContent = React.memo(function BlogMarkdownContent({
           style={{
             borderLeftWidth: 3,
             borderLeftColor: theme.gold,
-            backgroundColor: `${theme.gold}12`,
+            backgroundColor: hexToRgba(theme.gold, 0.07),
             paddingHorizontal: 12,
             paddingVertical: 8,
             borderRadius: 8,
@@ -624,7 +624,7 @@ export const FeaturedLanguageWidget = React.memo(function FeaturedLanguageWidget
         styles.snapshotWidget,
         themedCardStyle,
         !isFrameless && themeConfig.cardAccentStyle === "none"
-          ? { borderColor: `${theme.gold}45` }
+          ? { borderColor: hexToRgba(theme.gold, 0.27) }
           : null,
         isFrameless && {
           paddingHorizontal: 4,
@@ -638,7 +638,7 @@ export const FeaturedLanguageWidget = React.memo(function FeaturedLanguageWidget
           <View
             style={[
               styles.widgetBadgePill,
-              { backgroundColor: `${theme.gold}22` },
+              { backgroundColor: hexToRgba(theme.gold, 0.13) },
             ]}
           >
             <ThemedIcon name="school" size={12} color={theme.gold} scaleWithTheme={false} />
@@ -648,7 +648,7 @@ export const FeaturedLanguageWidget = React.memo(function FeaturedLanguageWidget
           </View>
           <View
             style={{
-              backgroundColor: `${theme.gold}18`,
+              backgroundColor: hexToRgba(theme.gold, 0.09),
               paddingHorizontal: 6,
               paddingVertical: 1.5,
               borderRadius: 999,
@@ -798,7 +798,7 @@ export const WordOfTheMomentWidget = React.memo(function WordOfTheMomentWidget({
         <View
           style={[
             styles.widgetBadgePill,
-            { backgroundColor: `${theme.kenyaGreenLight}29` },
+            { backgroundColor: hexToRgba(theme.kenyaGreenLight, 0.16) },
           ]}
         >
           <ThemedIcon name="sparkles" size={12} color={theme.kenyaGreenLight} scaleWithTheme={false} />
@@ -916,7 +916,7 @@ export const PopularToolRow = React.memo(function PopularToolRow({
         themedCardStyle,
         {
           overflow: "visible",
-          borderColor: !isFrameless && isPinned ? `${theme.gold}55` : themedCardStyle.borderColor,
+          borderColor: !isFrameless && isPinned ? hexToRgba(theme.gold, 0.33) : themedCardStyle.borderColor,
         },
         isGridTile ? { width: "48.5%" } : null,
         activeLayout === "minimal-rows"
@@ -961,7 +961,7 @@ export const PopularToolRow = React.memo(function PopularToolRow({
               style={[
                 styles.miniCategoryPill,
                 {
-                  backgroundColor: `${categoryColor}18`,
+                  backgroundColor: hexToRgba(categoryColor, 0.09),
                   alignSelf: "flex-start",
                   marginBottom: 3,
                 },
@@ -1004,7 +1004,7 @@ export const PopularToolRow = React.memo(function PopularToolRow({
               styles.popularToolPinBtn,
               {
                 backgroundColor: isPinned
-                  ? `${theme.gold}22`
+                  ? hexToRgba(theme.gold, 0.13)
                   : theme.surfaceContainerHigh,
               },
             ])}

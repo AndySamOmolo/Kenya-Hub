@@ -570,7 +570,7 @@ export const ExpandablePillRow = React.memo(function ExpandablePillRow({
           };
         } else if (isThreeColTiles) {
           modeOverride = {
-            flexBasis: "31.5%" as any,
+            flexBasis: "30.5%" as any,
             borderRadius: hasCustomPillShape && customPillRadius !== undefined ? customPillRadius : 9,
             paddingVertical: isCustomPillSize ? pmPV : 6,
             paddingHorizontal: isCustomPillSize ? Math.min(6, Math.max(4, pmPH - 5)) : 5,
@@ -924,7 +924,7 @@ export const ExpandablePillRow = React.memo(function ExpandablePillRow({
                 style={{
                   fontFamily: resolvedFonts.bold,
                   fontSize: Math.round(10.5 * pillFontMult * (themeConfig?.fontScale || 1) * 10) / 10,
-                  color: theme.gold,
+                  color: theme.onPrimaryContainer,
                 }}
               >
                 {options.length}
@@ -1319,7 +1319,7 @@ export const ExpandablePillRow = React.memo(function ExpandablePillRow({
             outerSpacing,
             style,
             {
-              maxHeight: 148,
+              maxHeight: Math.min(260, Math.round(Math.max(148, (pmMinH + 10) * 3.5))),
               borderRadius: hasCustomPillShape && customPillRadius !== undefined ? customPillRadius : 12,
               borderWidth: StyleSheet.hairlineWidth,
               borderColor: theme.outlineVariant,

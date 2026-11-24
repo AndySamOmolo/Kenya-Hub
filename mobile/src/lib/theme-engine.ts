@@ -492,7 +492,7 @@ export const APP_LOOK_PROFILES: AppLookProfile[] = [
     name: "Braun Field Unit",
     tagline: "Tactile hardware · Keycap buttons · Tabular mono",
     icon: "hardware-chip-outline",
-    swatches: ["#F5F2EB", "#FFFFFF", "#1A1815", "#B37A12"],
+    swatches: ["#F5F2EB", "#FFFFFF", "#1A1815", "#8C5E08"],
     config: {
       presetId: "nairobi-linen",
       mode: "light",
@@ -944,6 +944,161 @@ export const APP_LOOK_PROFILES: AppLookProfile[] = [
   },
 ];
 
+export const PRESET_SIGNATURE_LOOKS: Record<string, Partial<ThemeConfig>> = {
+  "kenyan-heritage": {
+    surfaceStyle: "elevated", fontPair: "outfit-inter", cardRadius: "rounded", buttonRadius: "rounded",
+    borderWidth: "thin", buttonStyle: "filled", inputStyle: "outlined", tabBarStyle: "classic",
+    menuIndicatorStyle: "pill", pillBarLayout: "scroll-with-expand", iconBadgeStyle: "soft-circle",
+    iconPack: "outline", cardAccentStyle: "none", appBarStyle: "standard", homeLayout: "classic",
+    horizontalScrollbarStyle: "subtle-bar", readingTint: "none", headingTransform: "none",
+    numericStyle: "default", density: "comfortable", cardShadowIntensity: "subtle", oledBlack: false,
+  },
+  "amoled-pitch": {
+    oledBlack: true, surfaceStyle: "inset-tray", fontPair: "mono-tech", cardRadius: "sharp", buttonRadius: "sharp",
+    borderWidth: "thin", buttonStyle: "keycap-press", inputStyle: "filled", tabBarStyle: "floating-pill",
+    menuIndicatorStyle: "bracket", pillBarLayout: "compact-scroll", iconBadgeStyle: "recessed-well",
+    iconPack: "sharp", cardAccentStyle: "none", appBarStyle: "borderless", homeLayout: "compact-list",
+    horizontalScrollbarStyle: "tick-ruler", readingTint: "none", headingTransform: "uppercase",
+    numericStyle: "tabular-mono", density: "compact", cardShadowIntensity: "none",
+  },
+  "rift-valley-dawn": {
+    surfaceStyle: "paper-ink", fontPair: "editorial-serif", cardRadius: "soft", buttonRadius: "soft",
+    borderWidth: "hairline", buttonStyle: "editorial-link", inputStyle: "underlined", tabBarStyle: "minimal",
+    menuIndicatorStyle: "underline", pillBarLayout: "underline-tabs", iconBadgeStyle: "ink-seal",
+    iconPack: "outline", cardAccentStyle: "double-rule", appBarStyle: "tall-editorial", homeLayout: "editorial-cards",
+    horizontalScrollbarStyle: "subtle-bar", readingTint: "warm-paper", headingTransform: "none",
+    numericStyle: "default", density: "relaxed", cardShadowIntensity: "none", oledBlack: false,
+  },
+  "coastal-lamu": {
+    surfaceStyle: "inset-tray", fontPair: "humanist", cardRadius: "pill", buttonRadius: "pill",
+    borderWidth: "thin", buttonStyle: "tinted", inputStyle: "pill", tabBarStyle: "floating-pill",
+    menuIndicatorStyle: "dot", pillBarLayout: "floating-dock", iconBadgeStyle: "ceramic-tile",
+    iconPack: "duotone", cardAccentStyle: "none", appBarStyle: "floating", homeLayout: "bento-grid",
+    horizontalScrollbarStyle: "dots", readingTint: "cool-slate", headingTransform: "none",
+    numericStyle: "default", density: "comfortable", cardShadowIntensity: "subtle", oledBlack: false,
+  },
+  "mount-kenya-mist": {
+    surfaceStyle: "glass", fontPair: "classic-sans", cardRadius: "soft", buttonRadius: "pill",
+    borderWidth: "hairline", buttonStyle: "outlined", inputStyle: "minimal", tabBarStyle: "minimal",
+    menuIndicatorStyle: "dot", pillBarLayout: "minimal-text", iconBadgeStyle: "split-disc",
+    iconPack: "outline", cardAccentStyle: "none", appBarStyle: "borderless", homeLayout: "minimal-rows",
+    horizontalScrollbarStyle: "subtle-bar", readingTint: "cool-slate", headingTransform: "none",
+    numericStyle: "default", density: "relaxed", cardShadowIntensity: "subtle", oledBlack: false,
+  },
+  "nairobi-cyber": {
+    surfaceStyle: "outlined", fontPair: "geometric", cardRadius: "rounded", buttonRadius: "rounded",
+    borderWidth: "medium", buttonStyle: "elevated", inputStyle: "accent", tabBarStyle: "docked-cards",
+    menuIndicatorStyle: "filled-box", pillBarLayout: "segmented-bar", iconBadgeStyle: "postage-stamp",
+    iconPack: "filled", cardAccentStyle: "tinted-border", appBarStyle: "accent-tinted", homeLayout: "bento-grid",
+    horizontalScrollbarStyle: "accent-track", accentIntensity: "vivid", headingTransform: "none",
+    numericStyle: "tabular-mono", density: "balanced", cardShadowIntensity: "medium", oledBlack: false,
+  },
+  "high-contrast": {
+    surfaceStyle: "neo-brutal", fontPair: "condensed", cardRadius: "square", buttonRadius: "square",
+    borderWidth: "thick", buttonStyle: "keycap-press", inputStyle: "outlined", tabBarStyle: "top-accent",
+    menuIndicatorStyle: "bracket", pillBarLayout: "stepper", iconBadgeStyle: "monogram-frame",
+    iconPack: "sharp", cardAccentStyle: "none", appBarStyle: "compact", homeLayout: "compact-list",
+    horizontalScrollbarStyle: "tick-ruler", headingTransform: "uppercase", numericStyle: "tabular-mono",
+    density: "compact", cardShadowIntensity: "crisp-3d", highContrastBorders: true, oledBlack: false,
+  },
+  "sepia-parchment": {
+    surfaceStyle: "paper-ink", fontPair: "editorial-serif", cardRadius: "sharp", buttonRadius: "sharp",
+    borderWidth: "hairline", buttonStyle: "editorial-link", inputStyle: "underlined", tabBarStyle: "classic",
+    menuIndicatorStyle: "underline", pillBarLayout: "index-tabs", iconBadgeStyle: "postage-stamp",
+    iconPack: "outline", cardAccentStyle: "double-rule", appBarStyle: "tall-editorial", homeLayout: "editorial-cards",
+    horizontalScrollbarStyle: "subtle-bar", readingTint: "soft-sepia", headingTransform: "none",
+    numericStyle: "default", density: "comfortable", cardShadowIntensity: "none", sectionHeaderStyle: "ruled-line", oledBlack: false,
+  },
+  "safari-olive": {
+    surfaceStyle: "neo-brutal", fontPair: "mono-tech", cardRadius: "sharp", buttonRadius: "sharp",
+    borderWidth: "medium", buttonStyle: "keycap-press", inputStyle: "filled", tabBarStyle: "segmented",
+    menuIndicatorStyle: "filled-box", pillBarLayout: "two-col-grid", iconBadgeStyle: "recessed-well",
+    iconPack: "sharp", cardAccentStyle: "none", appBarStyle: "compact", homeLayout: "compact-list",
+    horizontalScrollbarStyle: "tick-ruler", headingTransform: "uppercase", numericStyle: "tabular-mono",
+    density: "compact", cardShadowIntensity: "crisp-3d", oledBlack: false,
+  },
+  "maasai-ochre": {
+    surfaceStyle: "tonal", fontPair: "geometric", cardRadius: "rounded", buttonRadius: "soft",
+    borderWidth: "thin", buttonStyle: "elevated", inputStyle: "accent", tabBarStyle: "docked-cards",
+    menuIndicatorStyle: "pill", pillBarLayout: "three-col-tiles", iconBadgeStyle: "tilted-lozenge",
+    iconPack: "filled", cardAccentStyle: "bottom-bar", appBarStyle: "accent-tinted", homeLayout: "large-tiles",
+    horizontalScrollbarStyle: "accent-track", readingTint: "warm-paper", headingTransform: "none",
+    numericStyle: "default", density: "comfortable", cardShadowIntensity: "medium", oledBlack: false,
+  },
+  "sakura-rose": {
+    surfaceStyle: "elevated", fontPair: "casual", cardRadius: "pill", buttonRadius: "pill",
+    borderWidth: "thin", buttonStyle: "tinted", inputStyle: "pill", tabBarStyle: "floating-pill",
+    menuIndicatorStyle: "dot", pillBarLayout: "floating-dock", iconBadgeStyle: "ceramic-tile",
+    iconPack: "duotone", cardAccentStyle: "none", appBarStyle: "floating", homeLayout: "large-tiles",
+    horizontalScrollbarStyle: "dots", readingTint: "none", headingTransform: "none",
+    numericStyle: "default", density: "relaxed", cardShadowIntensity: "subtle", oledBlack: false,
+  },
+  "forest-canopy": {
+    surfaceStyle: "tonal", fontPair: "humanist", cardRadius: "soft", buttonRadius: "pill",
+    borderWidth: "none", buttonStyle: "tinted", inputStyle: "minimal", tabBarStyle: "minimal",
+    menuIndicatorStyle: "dot", pillBarLayout: "minimal-text", iconBadgeStyle: "bare-glyph",
+    iconPack: "duotone", cardAccentStyle: "none", appBarStyle: "floating", homeLayout: "minimal-rows",
+    horizontalScrollbarStyle: "subtle-bar", readingTint: "none", headingTransform: "none",
+    numericStyle: "default", density: "relaxed", cardShadowIntensity: "none", oledBlack: false,
+  },
+  "swahili-twilight": {
+    surfaceStyle: "inset-tray", fontPair: "editorial-serif", cardRadius: "rounded", buttonRadius: "rounded",
+    borderWidth: "thin", buttonStyle: "outlined", inputStyle: "underlined", tabBarStyle: "segmented",
+    menuIndicatorStyle: "filled-box", pillBarLayout: "underline-tabs", iconBadgeStyle: "ink-seal",
+    iconPack: "outline", cardAccentStyle: "corner-frame", appBarStyle: "tall-editorial", homeLayout: "editorial-cards",
+    horizontalScrollbarStyle: "accent-track", readingTint: "none", headingTransform: "none",
+    numericStyle: "default", density: "comfortable", cardShadowIntensity: "strong", oledBlack: false,
+  },
+  "tsavo-night": {
+    surfaceStyle: "neo-brutal", fontPair: "grotesk", cardRadius: "square", buttonRadius: "square",
+    borderWidth: "bold", buttonStyle: "keycap-press", inputStyle: "outlined", tabBarStyle: "top-accent",
+    menuIndicatorStyle: "bracket", pillBarLayout: "two-col-grid", iconBadgeStyle: "monogram-frame",
+    iconPack: "sharp", cardAccentStyle: "offset-edge", appBarStyle: "compact", homeLayout: "bento-grid",
+    horizontalScrollbarStyle: "tick-ruler", headingTransform: "uppercase", numericStyle: "tabular-mono",
+    density: "balanced", cardShadowIntensity: "crisp-3d", oledBlack: false,
+  },
+  "naivasha-mist": {
+    surfaceStyle: "frameless", fontPair: "classic-sans", cardRadius: "subtle", buttonRadius: "subtle",
+    borderWidth: "hairline", buttonStyle: "unboxed-text", inputStyle: "unboxed", tabBarStyle: "minimal",
+    menuIndicatorStyle: "underline", pillBarLayout: "minimal-text", iconBadgeStyle: "bare-glyph",
+    iconPack: "outline", cardAccentStyle: "none", appBarStyle: "borderless", homeLayout: "minimal-rows",
+    horizontalScrollbarStyle: "hidden", readingTint: "none", headingTransform: "none",
+    numericStyle: "default", density: "spacious", cardShadowIntensity: "none", oledBlack: false,
+  },
+  "nairobi-linen": {
+    surfaceStyle: "crisp", fontPair: "grotesk", cardRadius: "sharp", buttonRadius: "sharp",
+    borderWidth: "thin", buttonStyle: "keycap-press", inputStyle: "filled", tabBarStyle: "compact",
+    menuIndicatorStyle: "outline", pillBarLayout: "index-tabs", iconBadgeStyle: "recessed-well",
+    iconPack: "sharp", cardAccentStyle: "none", appBarStyle: "compact", homeLayout: "compact-list",
+    horizontalScrollbarStyle: "tick-ruler", headingTransform: "uppercase", numericStyle: "tabular-mono",
+    density: "compact", cardShadowIntensity: "none", oledBlack: false,
+  },
+  "maasai-shuka": {
+    surfaceStyle: "outlined", fontPair: "geometric", cardRadius: "subtle", buttonRadius: "subtle",
+    borderWidth: "bold", buttonStyle: "filled", inputStyle: "accent", tabBarStyle: "docked-cards",
+    menuIndicatorStyle: "filled-box", pillBarLayout: "three-col-tiles", iconBadgeStyle: "tilted-lozenge",
+    iconPack: "filled", cardAccentStyle: "offset-edge", appBarStyle: "accent-tinted", homeLayout: "large-tiles",
+    horizontalScrollbarStyle: "accent-track", accentIntensity: "vivid", headingTransform: "none",
+    numericStyle: "default", density: "comfortable", cardShadowIntensity: "medium", oledBlack: false,
+  },
+  "mt-kenya-alpine": {
+    surfaceStyle: "crisp", fontPair: "condensed", cardRadius: "subtle", buttonRadius: "sharp",
+    borderWidth: "thin", buttonStyle: "outlined", inputStyle: "underlined", tabBarStyle: "compact",
+    menuIndicatorStyle: "underline", pillBarLayout: "segmented-bar", iconBadgeStyle: "split-disc",
+    iconPack: "outline", cardAccentStyle: "none", appBarStyle: "standard", homeLayout: "classic",
+    horizontalScrollbarStyle: "accent-track", readingTint: "cool-slate", headingTransform: "none",
+    numericStyle: "tabular-mono", density: "balanced", cardShadowIntensity: "subtle", oledBlack: false,
+  },
+  "matatu-neon": {
+    surfaceStyle: "tonal", fontPair: "mono-tech", cardRadius: "rounded", buttonRadius: "pill",
+    borderWidth: "medium", buttonStyle: "filled", inputStyle: "accent", tabBarStyle: "top-accent",
+    menuIndicatorStyle: "bracket", pillBarLayout: "floating-dock", iconBadgeStyle: "tilted-lozenge",
+    iconPack: "duotone", cardAccentStyle: "offset-edge", appBarStyle: "accent-tinted", homeLayout: "bento-grid",
+    horizontalScrollbarStyle: "tick-ruler", accentIntensity: "vivid", headingTransform: "none",
+    numericStyle: "tabular-mono", density: "balanced", cardShadowIntensity: "strong", oledBlack: false,
+  },
+};
+
 export const THEME_PRESETS: ThemePreset[] = [
   {
     id: "kenyan-heritage",
@@ -953,7 +1108,7 @@ export const THEME_PRESETS: ThemePreset[] = [
     swatches: ["#0E0C0A", "#FAF7F2", "#C8961E", "#006B3F"],
     dark: {},
     light: {
-      gold: "#9C7005",
+      gold: "#8F6500",
     },
   },
   {
@@ -1070,7 +1225,7 @@ export const THEME_PRESETS: ThemePreset[] = [
       surfaceContainer: "#F4E7DD",
       surfaceContainerHigh: "#ECDCD0",
       surfaceContainerHighest: "#E4D0C2",
-      gold: "#C2592B",
+      gold: "#B54E22",
       goldLight: "#D96B43",
       earth: "#8C3B1E",
       earthLight: "#A84E2D",
@@ -1097,9 +1252,9 @@ export const THEME_PRESETS: ThemePreset[] = [
     recommendedMode: "light",
     swatches: ["#0B171A", "#F5F9FA", "#0E8A8D", "#C89B3C"],
     dark: {
-      bgPrimary: "#081214",
+      bgPrimary: "#05171A",
       bgSecondary: "#0E1D21",
-      bgCard: "#13262B",
+      bgCard: "#0E2D32",
       bgCardHover: "#1A3238",
       bgElevated: "#1F3B42",
       surface: "#13262B",
@@ -1130,9 +1285,9 @@ export const THEME_PRESETS: ThemePreset[] = [
       rippleColor: "rgba(92, 212, 214, 0.18)",
     },
     light: {
-      bgPrimary: "#F5F9FA",
+      bgPrimary: "#EDF6F8",
       bgSecondary: "#E9F1F3",
-      bgCard: "#FFFFFF",
+      bgCard: "#F9FEFF",
       bgCardHover: "#F0F6F7",
       bgElevated: "#E2ECEE",
       surface: "#FFFFFF",
@@ -1146,7 +1301,7 @@ export const THEME_PRESETS: ThemePreset[] = [
       sky: "#0E7A7D",
       skyLight: "#159A9E",
       kenyaGreen: "#0D7377",
-      kenyaGreenLight: "#149196",
+      kenyaGreenLight: "#0F7E82",
       primaryContainer: "rgba(179, 134, 41, 0.15)",
       onPrimaryContainer: "#523B08",
       secondaryContainer: "rgba(13, 115, 119, 0.13)",
@@ -1168,11 +1323,11 @@ export const THEME_PRESETS: ThemePreset[] = [
     name: "Mount Kenya Mist",
     tagline: "Alpine Slate, Glacier Blue & Emerald",
     recommendedMode: "dark",
-    swatches: ["#0F141A", "#F4F7FA", "#4B8FCC", "#2E9E6B"],
+    swatches: ["#0F141A", "#F4F7FA", "#4B8FCC", "#1B7B4F"],
     dark: {
-      bgPrimary: "#0B0F14",
+      bgPrimary: "#0C151A",
       bgSecondary: "#121821",
-      bgCard: "#18202B",
+      bgCard: "#192831",
       bgCardHover: "#202A38",
       bgElevated: "#263242",
       surface: "#18202B",
@@ -1185,7 +1340,7 @@ export const THEME_PRESETS: ThemePreset[] = [
       goldLight: "#8AC2F5",
       sky: "#4B8FCC",
       skyLight: "#7DB9ED",
-      kenyaGreen: "#2E9E6B",
+      kenyaGreen: "#1B7B4F",
       kenyaGreenLight: "#52C791",
       primaryContainer: "rgba(92, 164, 230, 0.22)",
       onPrimaryContainer: "#C4E2FC",
@@ -1203,9 +1358,9 @@ export const THEME_PRESETS: ThemePreset[] = [
       rippleColor: "rgba(138, 194, 245, 0.18)",
     },
     light: {
-      bgPrimary: "#F4F7FA",
+      bgPrimary: "#EAEFF6",
       bgSecondary: "#E8EEF5",
-      bgCard: "#FFFFFF",
+      bgCard: "#F7FAFE",
       bgCardHover: "#EFF4F9",
       bgElevated: "#E1E9F2",
       surface: "#FFFFFF",
@@ -1219,7 +1374,7 @@ export const THEME_PRESETS: ThemePreset[] = [
       sky: "#236299",
       skyLight: "#3B82BF",
       kenyaGreen: "#1D7D52",
-      kenyaGreenLight: "#2E9E6B",
+      kenyaGreenLight: "#1B7B4F",
       primaryContainer: "rgba(45, 111, 168, 0.14)",
       onPrimaryContainer: "#103759",
       secondaryContainer: "rgba(29, 125, 82, 0.12)",
@@ -1243,9 +1398,9 @@ export const THEME_PRESETS: ThemePreset[] = [
     recommendedMode: "dark",
     swatches: ["#0E131B", "#171E2B", "#D9A84E", "#4FA8A6"],
     dark: {
-      bgPrimary: "#0E131B",
+      bgPrimary: "#070D1F",
       bgSecondary: "#131924",
-      bgCard: "#171E2B",
+      bgCard: "#121C38",
       bgCardHover: "#1F2838",
       bgElevated: "#253042",
       surface: "#171E2B",
@@ -1276,9 +1431,9 @@ export const THEME_PRESETS: ThemePreset[] = [
       rippleColor: "rgba(217, 168, 78, 0.16)",
     },
     light: {
-      bgPrimary: "#F3F5F8",
+      bgPrimary: "#ECEFF7",
       bgSecondary: "#E8ECF2",
-      bgCard: "#FFFFFF",
+      bgCard: "#F6F8FE",
       bgCardHover: "#EFF2F7",
       bgElevated: "#E0E6EF",
       surface: "#FFFFFF",
@@ -1292,7 +1447,7 @@ export const THEME_PRESETS: ThemePreset[] = [
       sky: "#225B8C",
       skyLight: "#3574AB",
       kenyaGreen: "#146E6C",
-      kenyaGreenLight: "#228F8D",
+      kenyaGreenLight: "#167876",
       primaryContainer: "rgba(140, 97, 18, 0.13)",
       onPrimaryContainer: "#473005",
       secondaryContainer: "rgba(20, 110, 108, 0.12)",
@@ -1432,7 +1587,7 @@ export const THEME_PRESETS: ThemePreset[] = [
     light: {
       bgPrimary: "#F6F1E7",
       bgSecondary: "#EDE6D9",
-      bgCard: "#FDFBF7",
+      bgCard: "#FBF5E6",
       bgCardHover: "#F4EFE5",
       bgElevated: "#E6DEC8",
       surface: "#FDFBF7",
@@ -1444,7 +1599,7 @@ export const THEME_PRESETS: ThemePreset[] = [
       gold: "#8C4A27",
       goldLight: "#B06238",
       kenyaGreen: "#3A5F41",
-      kenyaGreenLight: "#4E7D57",
+      kenyaGreenLight: "#42714C",
       primaryContainer: "rgba(140, 74, 39, 0.13)",
       onPrimaryContainer: "#45210E",
       secondaryContainer: "rgba(58, 95, 65, 0.12)",
@@ -1481,7 +1636,7 @@ export const THEME_PRESETS: ThemePreset[] = [
       surfaceContainerHighest: "#333C27",
       gold: "#D99A26",
       goldLight: "#F0BA54",
-      kenyaGreen: "#6B8E3D",
+      kenyaGreen: "#527029",
       kenyaGreenLight: "#8EB55B",
       primaryContainer: "rgba(217, 154, 38, 0.22)",
       onPrimaryContainer: "#F7DC9E",
@@ -1501,7 +1656,7 @@ export const THEME_PRESETS: ThemePreset[] = [
     light: {
       bgPrimary: "#F5F5EB",
       bgSecondary: "#EAEBD9",
-      bgCard: "#FCFDF7",
+      bgCard: "#F9FCF0",
       bgCardHover: "#F2F3E6",
       bgElevated: "#E3E5D1",
       surface: "#FCFDF7",
@@ -1510,10 +1665,10 @@ export const THEME_PRESETS: ThemePreset[] = [
       surfaceContainer: "#EAEBD9",
       surfaceContainerHigh: "#E0E2CD",
       surfaceContainerHighest: "#D5D8BF",
-      gold: "#B37A12",
+      gold: "#8C5E08",
       goldLight: "#CC8F21",
       kenyaGreen: "#526E2B",
-      kenyaGreenLight: "#6B8E3D",
+      kenyaGreenLight: "#527029",
       primaryContainer: "rgba(179, 122, 18, 0.16)",
       onPrimaryContainer: "#4D3203",
       secondaryContainer: "rgba(82, 110, 43, 0.14)",
@@ -1579,7 +1734,7 @@ export const THEME_PRESETS: ThemePreset[] = [
       surfaceContainer: "#F0E4DD",
       surfaceContainerHigh: "#E8D9D0",
       surfaceContainerHighest: "#DFCEC4",
-      gold: "#B86E14",
+      gold: "#9A5A0A",
       goldLight: "#D4882A",
       kenyaRed: "#B32418",
       kenyaRedLight: "#CC3629",
@@ -1606,9 +1761,9 @@ export const THEME_PRESETS: ThemePreset[] = [
     recommendedMode: "light",
     swatches: ["#FAF5F4", "#FFFFFF", "#A63D55", "#2A6B54"],
     dark: {
-      bgPrimary: "#151012",
+      bgPrimary: "#1C0E16",
       bgSecondary: "#1B1417",
-      bgCard: "#20181B",
+      bgCard: "#2A1622",
       bgCardHover: "#291F23",
       bgElevated: "#302429",
       surface: "#20181B",
@@ -1639,9 +1794,9 @@ export const THEME_PRESETS: ThemePreset[] = [
       rippleColor: "rgba(224, 120, 144, 0.16)",
     },
     light: {
-      bgPrimary: "#FAF5F4",
+      bgPrimary: "#FCF2F4",
       bgSecondary: "#F1E9E8",
-      bgCard: "#FFFFFF",
+      bgCard: "#FFF9FA",
       bgCardHover: "#F7F0EF",
       bgElevated: "#EAE0DF",
       surface: "#FFFFFF",
@@ -1653,7 +1808,7 @@ export const THEME_PRESETS: ThemePreset[] = [
       gold: "#A63D55",
       goldLight: "#C75670",
       kenyaGreen: "#2A6B54",
-      kenyaGreenLight: "#3A8C6F",
+      kenyaGreenLight: "#29765B",
       sky: "#6E4A6B",
       skyLight: "#8C6288",
       primaryContainer: "rgba(166, 61, 85, 0.12)",
@@ -1714,7 +1869,7 @@ export const THEME_PRESETS: ThemePreset[] = [
     light: {
       bgPrimary: "#F3F8F5",
       bgSecondary: "#E6F0EA",
-      bgCard: "#FFFFFF",
+      bgCard: "#F8FCF9",
       bgCardHover: "#EDF5F0",
       bgElevated: "#DCEAE2",
       surface: "#FFFFFF",
@@ -1726,7 +1881,7 @@ export const THEME_PRESETS: ThemePreset[] = [
       gold: "#147A4B",
       goldLight: "#1E9E63",
       kenyaGreen: "#0D6B40",
-      kenyaGreenLight: "#1A8C58",
+      kenyaGreenLight: "#127849",
       primaryContainer: "rgba(20, 122, 75, 0.14)",
       onPrimaryContainer: "#073B22",
       secondaryContainer: "rgba(13, 107, 64, 0.12)",
@@ -1750,9 +1905,9 @@ export const THEME_PRESETS: ThemePreset[] = [
     recommendedMode: "dark",
     swatches: ["#131012", "#1D181B", "#D6A756", "#5CA89A"],
     dark: {
-      bgPrimary: "#131012",
+      bgPrimary: "#0D0B1D",
       bgSecondary: "#181416",
-      bgCard: "#1D181B",
+      bgCard: "#1A1636",
       bgCardHover: "#262024",
       bgElevated: "#2D262A",
       surface: "#1D181B",
@@ -1781,9 +1936,9 @@ export const THEME_PRESETS: ThemePreset[] = [
       rippleColor: "rgba(214, 167, 86, 0.16)",
     },
     light: {
-      bgPrimary: "#F7F3F2",
+      bgPrimary: "#F4EFF6",
       bgSecondary: "#EFE8E6",
-      bgCard: "#FFFFFF",
+      bgCard: "#FAF7FC",
       bgCardHover: "#F5EFEE",
       bgElevated: "#E8E0DE",
       surface: "#FFFFFF",
@@ -1795,7 +1950,7 @@ export const THEME_PRESETS: ThemePreset[] = [
       gold: "#8C5E14",
       goldLight: "#B07A22",
       kenyaGreen: "#1F6E62",
-      kenyaGreenLight: "#2E8F80",
+      kenyaGreenLight: "#1E786A",
       primaryContainer: "rgba(140, 94, 20, 0.13)",
       onPrimaryContainer: "#472E06",
       secondaryContainer: "rgba(31, 110, 98, 0.12)",
@@ -1819,9 +1974,9 @@ export const THEME_PRESETS: ThemePreset[] = [
     recommendedMode: "dark",
     swatches: ["#121211", "#1C1B19", "#D49A52", "#5CA374"],
     dark: {
-      bgPrimary: "#121211",
+      bgPrimary: "#17130E",
       bgSecondary: "#171614",
-      bgCard: "#1C1B19",
+      bgCard: "#272017",
       bgCardHover: "#242320",
       bgElevated: "#2B2926",
       surface: "#1C1B19",
@@ -1852,9 +2007,9 @@ export const THEME_PRESETS: ThemePreset[] = [
       rippleColor: "rgba(212, 154, 82, 0.16)",
     },
     light: {
-      bgPrimary: "#F6F4F0",
+      bgPrimary: "#F5EFE6",
       bgSecondary: "#ECE9E2",
-      bgCard: "#FFFFFF",
+      bgCard: "#FCF8F2",
       bgCardHover: "#F4F2ED",
       bgElevated: "#E5E1D9",
       surface: "#FFFFFF",
@@ -1868,7 +2023,7 @@ export const THEME_PRESETS: ThemePreset[] = [
       earth: "#7A4C22",
       earthLight: "#996332",
       kenyaGreen: "#236B42",
-      kenyaGreenLight: "#338C5A",
+      kenyaGreenLight: "#227546",
       primaryContainer: "rgba(148, 94, 26, 0.13)",
       onPrimaryContainer: "#4A2C06",
       secondaryContainer: "rgba(35, 107, 66, 0.12)",
@@ -1927,7 +2082,7 @@ export const THEME_PRESETS: ThemePreset[] = [
     light: {
       bgPrimary: "#F4F4F0",
       bgSecondary: "#EAEAE4",
-      bgCard: "#FDFDFB",
+      bgCard: "#F6FAF8",
       bgCardHover: "#F2F2ED",
       bgElevated: "#E3E3DC",
       surface: "#FDFDFB",
@@ -1941,7 +2096,7 @@ export const THEME_PRESETS: ThemePreset[] = [
       sky: "#355C7D",
       skyLight: "#4B789E",
       kenyaGreen: "#2E6B56",
-      kenyaGreenLight: "#3F8C72",
+      kenyaGreenLight: "#2C755C",
       primaryContainer: "rgba(53, 92, 125, 0.13)",
       onPrimaryContainer: "#162C40",
       secondaryContainer: "rgba(46, 107, 86, 0.12)",
@@ -1998,9 +2153,9 @@ export const THEME_PRESETS: ThemePreset[] = [
       rippleColor: "rgba(222, 118, 82, 0.18)",
     },
     light: {
-      bgPrimary: "#FAF8F5",
+      bgPrimary: "#F5F1EB",
       bgSecondary: "#F2EEE8",
-      bgCard: "#FFFFFF",
+      bgCard: "#FDFBF8",
       bgCardHover: "#F6F3EE",
       bgElevated: "#EAE4DC",
       surface: "#FFFFFF",
@@ -2014,7 +2169,7 @@ export const THEME_PRESETS: ThemePreset[] = [
       earth: "#6E4730",
       earthLight: "#8A5B40",
       kenyaGreen: "#266B44",
-      kenyaGreenLight: "#388A5C",
+      kenyaGreenLight: "#287549",
       primaryContainer: "rgba(173, 68, 36, 0.14)",
       onPrimaryContainer: "#521C0C",
       secondaryContainer: "rgba(110, 71, 48, 0.13)",
@@ -2073,9 +2228,9 @@ export const THEME_PRESETS: ThemePreset[] = [
       rippleColor: "rgba(242, 92, 105, 0.20)",
     },
     light: {
-      bgPrimary: "#FBF5F4",
+      bgPrimary: "#FDF3F0",
       bgSecondary: "#F3E7E5",
-      bgCard: "#FFFFFF",
+      bgCard: "#FFF8F6",
       bgCardHover: "#F8EEEC",
       bgElevated: "#EDE0DE",
       surface: "#FFFFFF",
@@ -2089,7 +2244,7 @@ export const THEME_PRESETS: ThemePreset[] = [
       sky: "#1D4ED8",
       skyLight: "#3B82F6",
       kenyaGreen: "#047857",
-      kenyaGreenLight: "#059669",
+      kenyaGreenLight: "#047854",
       primaryContainer: "rgba(185, 28, 44, 0.14)",
       onPrimaryContainer: "#5C0B14",
       secondaryContainer: "rgba(29, 78, 216, 0.12)",
@@ -2113,9 +2268,9 @@ export const THEME_PRESETS: ThemePreset[] = [
     recommendedMode: "light",
     swatches: ["#0B1519", "#F3F8FB", "#0F766E", "#B45309"],
     dark: {
-      bgPrimary: "#081115",
+      bgPrimary: "#0A1412",
       bgSecondary: "#0F1D24",
-      bgCard: "#15262F",
+      bgCard: "#162A25",
       bgCardHover: "#1D323D",
       bgElevated: "#233C4A",
       surface: "#15262F",
@@ -2146,9 +2301,9 @@ export const THEME_PRESETS: ThemePreset[] = [
       rippleColor: "rgba(56, 189, 248, 0.18)",
     },
     light: {
-      bgPrimary: "#F3F8FB",
+      bgPrimary: "#EDF5FA",
       bgSecondary: "#E6F0F5",
-      bgCard: "#FFFFFF",
+      bgCard: "#F8FCFF",
       bgCardHover: "#EDF5F9",
       bgElevated: "#DCEAF1",
       surface: "#FFFFFF",
@@ -2186,9 +2341,9 @@ export const THEME_PRESETS: ThemePreset[] = [
     recommendedMode: "dark",
     swatches: ["#121315", "#1C1E21", "#E3643B", "#4CA67A"],
     dark: {
-      bgPrimary: "#121315",
-      bgSecondary: "#17191C",
-      bgCard: "#1C1E21",
+      bgPrimary: "#0B0F18",
+      bgSecondary: "#111724",
+      bgCard: "#171F30",
       bgCardHover: "#23262A",
       bgElevated: "#292C31",
       surface: "#1C1E21",
@@ -2217,9 +2372,9 @@ export const THEME_PRESETS: ThemePreset[] = [
       rippleColor: "rgba(227, 100, 59, 0.16)",
     },
     light: {
-      bgPrimary: "#F4F2ED",
+      bgPrimary: "#F0F1F4",
       bgSecondary: "#EAE7E0",
-      bgCard: "#FFFFFF",
+      bgCard: "#F8F9FB",
       bgCardHover: "#F2F0EB",
       bgElevated: "#E5E1D9",
       surface: "#FFFFFF",
@@ -2231,7 +2386,7 @@ export const THEME_PRESETS: ThemePreset[] = [
       gold: "#B8401C",
       goldLight: "#D65A34",
       kenyaGreen: "#1F6E4A",
-      kenyaGreenLight: "#2E8F63",
+      kenyaGreenLight: "#1F764F",
       primaryContainer: "rgba(184, 64, 28, 0.12)",
       onPrimaryContainer: "#521A08",
       secondaryContainer: "rgba(31, 110, 74, 0.12)",
@@ -2503,11 +2658,11 @@ export function resolveThemeColors(
   if (config.readingTint && config.readingTint !== "none") {
     const tintTarget =
       config.readingTint === "warm-paper"
-        ? resolvedIsDark ? "#2A1F14" : "#F6EBD8"
+        ? resolvedIsDark ? "#261E14" : "#F9EFE0"
         : config.readingTint === "soft-sepia"
-        ? resolvedIsDark ? "#2E2216" : "#EFE2C6"
-        : resolvedIsDark ? "#111A26" : "#EBF2F7";
-    const tintAmt = resolvedIsDark ? 0.16 : 0.22;
+        ? resolvedIsDark ? "#332415" : "#EBD8B7"
+        : resolvedIsDark ? "#0F1B2B" : "#E3EEF7";
+    const tintAmt = resolvedIsDark ? 0.28 : 0.36;
     resolved.bgPrimary = mixHex(resolved.bgPrimary, tintTarget, tintAmt);
     resolved.bgSecondary = mixHex(resolved.bgSecondary, tintTarget, tintAmt);
     resolved.bgCard = mixHex(resolved.bgCard, tintTarget, tintAmt * 0.7);
@@ -2534,7 +2689,15 @@ export function resolveThemeColors(
       if (config.accentIntensity === "muted") {
         return mixHex(hex, resolvedIsDark ? "#888888" : "#777777", 0.24);
       }
-      return mixHex(hex, resolvedIsDark ? "#FFFFFF" : "#000000", 0.10);
+      // Vivid: boost RGB saturation away from channel mean without washing out luminance
+      const clean = hex.trim().replace("#", "");
+      const r = parseInt(clean.slice(0, 2), 16);
+      const g = parseInt(clean.slice(2, 4), 16);
+      const b = parseInt(clean.slice(4, 6), 16);
+      const avg = (r + g + b) / 3;
+      const boost = 1.28;
+      const clamp = (v: number) => Math.max(0, Math.min(255, Math.round(avg + (v - avg) * boost)));
+      return `#${[clamp(r), clamp(g), clamp(b)].map((c) => c.toString(16).padStart(2, "0")).join("")}`;
     };
     resolved.gold = adjustAccent(resolved.gold);
     resolved.goldLight = adjustAccent(resolved.goldLight);
@@ -2965,7 +3128,7 @@ export function parseThemeConfigJson(raw: string): ThemeConfig | null {
 
   if (typeof obj.horizontalScrollbarStyle === "string" && VALID_SCROLLBAR_STYLES.has(obj.horizontalScrollbarStyle as HorizontalScrollbarStyle)) {
     merged.horizontalScrollbarStyle =
-      obj.horizontalScrollbarStyle === "glow-rail" ? "tick-ruler" : (obj.horizontalScrollbarStyle as HorizontalScrollbarStyle);
+      (obj.horizontalScrollbarStyle as HorizontalScrollbarStyle);
   }
   if (typeof obj.horizontalScrollbarThickness === "string" && VALID_SCROLLBAR_THICKNESS.has(obj.horizontalScrollbarThickness as ScrollbarThickness)) {
     merged.horizontalScrollbarThickness = obj.horizontalScrollbarThickness as ScrollbarThickness;
@@ -2975,7 +3138,7 @@ export function parseThemeConfigJson(raw: string): ThemeConfig | null {
   }
   if (typeof obj.pillBarLayout === "string" && VALID_PILL_BAR_LAYOUTS.has(obj.pillBarLayout as PillBarLayout)) {
     merged.pillBarLayout =
-      obj.pillBarLayout === "sidebar-chips" ? "index-tabs" : (obj.pillBarLayout as PillBarLayout);
+      (obj.pillBarLayout as PillBarLayout);
   }
   if (typeof obj.pillShape === "string" && VALID_BUTTON_RADII.has(obj.pillShape as ButtonRadiusPreset)) {
     merged.pillShape = obj.pillShape as ButtonRadiusPreset;
@@ -2995,7 +3158,7 @@ export function parseThemeConfigJson(raw: string): ThemeConfig | null {
 
   if (typeof obj.menuIndicatorStyle === "string" && VALID_MENU_INDICATORS.has(obj.menuIndicatorStyle as MenuIndicatorStyle)) {
     merged.menuIndicatorStyle =
-      obj.menuIndicatorStyle === "glow" ? "bracket" : (obj.menuIndicatorStyle as MenuIndicatorStyle);
+      (obj.menuIndicatorStyle as MenuIndicatorStyle);
   }
   if (typeof obj.verticalScrollbarStyle === "string" && VALID_VERT_SB.has(obj.verticalScrollbarStyle as VerticalScrollbarStyle)) {
     merged.verticalScrollbarStyle = obj.verticalScrollbarStyle as VerticalScrollbarStyle;
@@ -3007,12 +3170,7 @@ export function parseThemeConfigJson(raw: string): ThemeConfig | null {
     merged.inputStyle = obj.inputStyle as InputStylePreset;
   }
   if (typeof obj.buttonStyle === "string" && VALID_BUTTON_STYLES.has(obj.buttonStyle as ButtonStylePreset)) {
-    merged.buttonStyle =
-      obj.buttonStyle === "pill-glow"
-        ? "keycap-press"
-        : obj.buttonStyle === "flat"
-        ? "editorial-link"
-        : (obj.buttonStyle as ButtonStylePreset);
+    merged.buttonStyle = obj.buttonStyle as ButtonStylePreset;
   }
   if (typeof obj.pageTransition === "string" && VALID_TRANSITIONS.has(obj.pageTransition as PageTransitionPreset)) {
     merged.pageTransition = obj.pageTransition as PageTransitionPreset;
@@ -3030,12 +3188,7 @@ export function parseThemeConfigJson(raw: string): ThemeConfig | null {
     merged.headerAlignment = obj.headerAlignment as HeaderAlignment;
   }
   if (typeof obj.cardAccentStyle === "string" && VALID_CARD_ACCENT_STYLES.has(obj.cardAccentStyle as CardAccentStyle)) {
-    merged.cardAccentStyle =
-      obj.cardAccentStyle === "left-bar" ||
-      obj.cardAccentStyle === "top-bar" ||
-      obj.cardAccentStyle === "glow-edge"
-        ? "none"
-        : (obj.cardAccentStyle as CardAccentStyle);
+    merged.cardAccentStyle = obj.cardAccentStyle as CardAccentStyle;
   }
   if (typeof obj.iconBadgeStyle === "string" && VALID_ICON_BADGE_STYLES.has(obj.iconBadgeStyle as IconBadgeStyle)) {
     const rawBadge = obj.iconBadgeStyle as IconBadgeStyle;
@@ -3181,6 +3334,15 @@ const CHANGE_LABELS: Partial<Record<keyof ThemeConfig, string>> = {
   oledBlack: "OLED Black",
   accentIntensity: "Vibrancy",
   readingTint: "Tint",
+  hapticsEnabled: "Haptics",
+  hapticStrength: "Haptic FX",
+  horizontalScrollbarThickness: "H-Scroll Size",
+  scrollbarTrackVisible: "Scroll Track",
+  edgeFadeEnabled: "Edge Fade",
+  scrollBounceEnabled: "Bounce",
+  stripeThickness: "Stripe Size",
+  pageTransition: "Transition",
+  statusBarMode: "Status Bar",
   screenPadding: "Margins",
   progressBarStyle: "Progress",
   dividerStyle: "Dividers",
@@ -3230,11 +3392,11 @@ export function resolveFontPairFamilies(pair: FontPair, isIos = false): { headin
     case "editorial-serif":
       return { heading: isIos ? "Georgia" : "serif", body: "Inter_400Regular", bold: "Inter_600SemiBold" };
     case "mono-tech":
-      return { heading: isIos ? "Helvetica Neue" : "sans-serif-medium", body: "Inter_400Regular", bold: "Inter_600SemiBold" };
+      return { heading: isIos ? "Menlo-Bold" : "monospace", body: "Inter_400Regular", bold: isIos ? "Menlo-Bold" : "monospace" };
     case "geometric":
       return { heading: "Outfit_800ExtraBold", body: "Outfit_400Regular", bold: "Outfit_700Bold" };
     case "humanist":
-      return { heading: "Outfit_600SemiBold", body: "Inter_400Regular", bold: "Inter_600SemiBold" };
+      return { heading: isIos ? "AvenirNext-DemiBold" : "sans-serif-light", body: isIos ? "AvenirNext-Regular" : "sans-serif", bold: isIos ? "AvenirNext-Bold" : "sans-serif-medium" };
     case "condensed":
       return { heading: isIos ? "AvenirNextCondensed-Bold" : "sans-serif-condensed", body: isIos ? "AvenirNextCondensed-Regular" : "sans-serif-condensed", bold: isIos ? "AvenirNextCondensed-DemiBold" : "sans-serif-condensed" };
     case "grotesk":

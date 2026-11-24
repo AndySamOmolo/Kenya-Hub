@@ -219,7 +219,8 @@ const M3TabIcon = React.memo(function M3TabIcon({
   });
 
   const effectiveIndicator: MenuIndicatorStyle = indicatorStyle;
-  const usesTopAccent = tabBarStyleMode === "top-accent" || effectiveIndicator === "bracket";
+  const usesTopAccent = tabBarStyleMode === "top-accent";
+  const isBracket = effectiveIndicator === "bracket";
   const showTopAccent = focused && usesTopAccent;
   const showPill = focused && !usesTopAccent && effectiveIndicator === "pill";
   const showFilledBox = focused && !usesTopAccent && effectiveIndicator === "filled-box";
@@ -359,7 +360,8 @@ export default function TabLayout() {
   const tabBarStyleMode: TabBarStyle = themeConfig.tabBarStyle || "classic";
   const indicatorStyle: MenuIndicatorStyle = themeConfig.menuIndicatorStyle || "pill";
   const effectiveIndicator: MenuIndicatorStyle = indicatorStyle;
-  const usesTopAccent = tabBarStyleMode === "top-accent" || effectiveIndicator === "bracket";
+  const usesTopAccent = tabBarStyleMode === "top-accent";
+  const isBracket = effectiveIndicator === "bracket";
   const iconPack: IconPackStyle = themeConfig.iconPack || "outline";
   const showTabIcons = themeConfig.showTabIcons !== false;
   const effectiveTabLabels = !showTabIcons ? true : themeConfig.tabBarLabels !== false;

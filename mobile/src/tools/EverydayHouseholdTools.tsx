@@ -8,6 +8,7 @@ import {
   triggerHaptic,
   pressableStyle,
   type ThemeColors,
+  getContrastInk,
 } from "../theme";
 import { ExpandablePillRow } from "../components/ExpandablePillRow";
 import { ThemedIcon } from "../components/ThemedIcon";
@@ -1860,7 +1861,7 @@ function createStyles(theme: ThemeColors) {
       paddingVertical: 10,
       borderRadius: 12,
     },
-    primaryBtnText: { color: "#000", fontWeight: "800", fontSize: 12.5 },
+    primaryBtnText: { color: getContrastInk(theme.gold), fontWeight: "800", fontSize: 12.5 },
     kpiRow: { flexDirection: "row", flexWrap: "wrap", gap: 10 },
     kpiCard: { flexGrow: 1, flexBasis: "45%", minWidth: 140, padding: 12 },
     kpiLabel: { fontSize: 10, fontWeight: "800", color: theme.textMuted, letterSpacing: 0.4 },

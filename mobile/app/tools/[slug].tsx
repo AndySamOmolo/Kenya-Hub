@@ -26,6 +26,7 @@ import {
   triggerHaptic,
   parseSavedTools,
   serializeSavedTools,
+  getContrastInk,
 } from "../../src/theme";
 import {
   TOOLS,
@@ -307,7 +308,7 @@ export default function ToolDetailScreen() {
     tab?: string;
   }>();
   const router = useRouter();
-  const { theme, isDark } = useTheme();
+  const { theme, isDark, themeConfig } = useTheme();
   const { language } = useAppLanguage();
   const insets = useSafeAreaInsets();
   const safeTop = Math.max(insets.top, Platform.OS === "android" ? StatusBar.currentHeight ?? 24 : 0);
@@ -502,7 +503,7 @@ export default function ToolDetailScreen() {
               { backgroundColor: theme.gold },
             ])}
           >
-            <Text style={[styles.backButtonText, { color: theme.kenyaBlack }]}>
+            <Text style={[styles.backButtonText, { color: getContrastInk(theme.gold) }]}>
               Go back
             </Text>
           </Pressable>
@@ -647,7 +648,8 @@ export default function ToolDetailScreen() {
       <ScrollView
         ref={scrollRef}
         contentContainerStyle={styles.content}
-        showsVerticalScrollIndicator={false}
+        showsVerticalScrollIndicator={themeConfig.verticalScrollbarStyle !== "hidden"}
+        persistentScrollbar={themeConfig.verticalScrollbarStyle === "always-visible"}
         keyboardShouldPersistTaps="handled"
         keyboardDismissMode="on-drag"
         scrollEventThrottle={16}
@@ -1461,8 +1463,8 @@ export default function ToolDetailScreen() {
             },
           ])}
         >
-          <Ionicons name="arrow-up" size={16} color={theme.kenyaBlack} />
-          <Text style={[styles.fabTopText, { color: theme.kenyaBlack }]}>
+          <Ionicons name="arrow-up" size={16} color={getContrastInk(theme.gold)} />
+          <Text style={[styles.fabTopText, { color: getContrastInk(theme.gold) }]}>
             Top
           </Text>
         </Pressable>
@@ -1509,7 +1511,8 @@ export default function ToolDetailScreen() {
           {selectedPost && (
             <ScrollView
               contentContainerStyle={{ padding: 16, paddingBottom: 48 }}
-              showsVerticalScrollIndicator={false}
+              showsVerticalScrollIndicator={themeConfig.verticalScrollbarStyle !== "hidden"}
+        persistentScrollbar={themeConfig.verticalScrollbarStyle === "always-visible"}
               scrollEventThrottle={48}
               onScroll={(e) => {
                 const { contentOffset, contentSize, layoutMeasurement } =

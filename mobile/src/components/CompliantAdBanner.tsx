@@ -43,6 +43,7 @@ export function CompliantAdBanner({
   const gma = getMobileAdsModule();
   if (!gma) return null;
 
+  const adsState = getMobileAdsState();
   const { BannerAd, BannerAdSize, TestIds } = gma;
   const resolvedUnitId = __DEV__ ? TestIds.ADAPTIVE_BANNER : unitId;
   if (!resolvedUnitId) return null;

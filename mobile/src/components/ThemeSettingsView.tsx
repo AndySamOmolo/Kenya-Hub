@@ -840,18 +840,13 @@ function isMakeoverActive(
   cfg: ThemeConfig | undefined
 ): boolean {
   if (!cfg) return false;
-  return (
-    cfg.presetId === profile.config.presetId &&
-    cfg.tabBarStyle === profile.config.tabBarStyle &&
-    cfg.homeLayout === profile.config.homeLayout &&
-    cfg.fontPair === profile.config.fontPair &&
-    cfg.pillBarLayout === profile.config.pillBarLayout &&
-    cfg.surfaceStyle === profile.config.surfaceStyle &&
-    cfg.cardAccentStyle === profile.config.cardAccentStyle &&
-    cfg.iconBadgeStyle === profile.config.iconBadgeStyle &&
-    (cfg.iconPack ?? "outline") === (profile.config.iconPack ?? "outline") &&
-    Object.values(cfg.customColors ?? {}).filter(Boolean).length === 0
-  );
+  if (Object.values(cfg.customColors ?? {}).filter(Boolean).length > 0) return false;
+  for (const [key, val] of Object.entries(profile.config)) {
+    if (key === "customColors") continue;
+    const curVal = (cfg as Record<string, unknown>)[key];
+    if (curVal !== val) return false;
+  }
+  return true;
 }
 
 export function ThemeSettingsView() {
@@ -1636,8 +1631,7 @@ export function ThemeSettingsView() {
               </View>
               <Switch
                 value={Boolean(themeConfig?.oledBlack)}
-                configKey="oledBlack"
-                onConfigChange={handleConfigFieldChange}
+                onValueChange={(val) => handleConfigFieldChange("oledBlack", val)}
                 trackColor={{
                   false: theme.surfaceContainerHighest,
                   true: theme.gold,
@@ -1715,6 +1709,34 @@ export function ThemeSettingsView() {
                 );
               })}
             </ScrollView>
+
+            <Pressable
+              onPress={() => {
+                doHaptic();
+                const otherPresets = THEME_PRESETS.filter((p) => p.id !== themeConfig?.presetId);
+                const pick = otherPresets[Math.floor(Math.random() * otherPresets.length)] || THEME_PRESETS[0];
+                applyThemePreset(pick.id, pick.recommendedMode, true);
+              }}
+              accessibilityRole="button"
+              accessibilityLabel="Surprise Me with a Random Theme"
+              android_ripple={androidRipple(theme.rippleColor)}
+              style={pressableStyle(styles.expandAllPressable)}
+            >
+              <View
+                style={[
+                  styles.expandAllInner,
+                  {
+                    backgroundColor: theme.primaryContainer,
+                    borderColor: theme.gold,
+                  },
+                ]}
+              >
+                <Feather name="shuffle" size={12} color={theme.onPrimaryContainer} />
+                <Text style={[styles.expandAllLabel, { color: theme.onPrimaryContainer }]}>
+                  {appLang === "sw" ? "Bahati" : "Surprise"}
+                </Text>
+              </View>
+            </Pressable>
 
             <Pressable
               onPress={handleToggleExpandAll}
@@ -2131,14 +2153,47 @@ export function ThemeSettingsView() {
                 })}
               </View>
 
-              <View style={styles.presetsGrid}>
+              <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginBottom: 10, gap: 8 }}>
+                    <Text style={{ fontSize: 11.5, color: theme.textSecondary, flex: 1 }}>
+                      {presetFullTransform
+                        ? "Full Look: each preset transforms layout, surfaces, fonts, icons & colors"
+                        : "Colors Only: swaps color palette while keeping your layout & fonts"}
+                    </Text>
+                    <View style={{ flexDirection: "row", borderRadius: 999, borderWidth: 1, borderColor: theme.outlineVariant, overflow: "hidden" }}>
+                      <Pressable
+                        onPress={() => { doHaptic(); setPresetFullTransform(true); }}
+                        style={{
+                          paddingHorizontal: 9,
+                          paddingVertical: 5,
+                          backgroundColor: presetFullTransform ? theme.gold : "transparent",
+                        }}
+                      >
+                        <Text style={{ fontSize: 10.5, fontWeight: "800", color: presetFullTransform ? getContrastInk(theme.gold) : theme.textSecondary }}>
+                          Full Look
+                        </Text>
+                      </Pressable>
+                      <Pressable
+                        onPress={() => { doHaptic(); setPresetFullTransform(false); }}
+                        style={{
+                          paddingHorizontal: 9,
+                          paddingVertical: 5,
+                          backgroundColor: !presetFullTransform ? theme.gold : "transparent",
+                        }}
+                      >
+                        <Text style={{ fontSize: 10.5, fontWeight: "800", color: !presetFullTransform ? getContrastInk(theme.gold) : theme.textSecondary }}>
+                          Colors Only
+                        </Text>
+                      </Pressable>
+                    </View>
+                  </View>
+                  <View style={styles.presetsGrid}>
                 {filteredPresets.map((preset) => {
                   const active = themeConfig?.presetId === preset.id;
                   return (
                     <Pressable
                       key={preset.id}
                       onPress={() =>
-                        applyThemePreset(preset.id, preset.recommendedMode)
+                        applyThemePreset(preset.id, preset.recommendedMode, presetFullTransform)
                       }
                       accessibilityRole="button"
                       accessibilityState={{ selected: active }}

@@ -124,7 +124,7 @@ interface County {
 
 export default function CountyDetailScreen() {
   const router = useRouter();
-  const { theme } = useTheme();
+  const { theme, themeConfig } = useTheme();
   const { slug } = useLocalSearchParams<{ slug: string }>();
   const scrollRef = useRef<ScrollView>(null);
   const sectionOffsetsRef = useRef<Record<string, number>>({});
@@ -467,7 +467,8 @@ export default function CountyDetailScreen() {
       <ScrollView
         ref={scrollRef}
         contentContainerStyle={styles.content}
-        showsVerticalScrollIndicator={false}
+        showsVerticalScrollIndicator={themeConfig.verticalScrollbarStyle !== "hidden"}
+        persistentScrollbar={themeConfig.verticalScrollbarStyle === "always-visible"}
         keyboardShouldPersistTaps="handled"
         overScrollMode="always"
       >
