@@ -281,6 +281,9 @@ export interface ThemeColorsShape {
   bgCard: string;
   bgCardHover: string;
   bgElevated: string;
+  bgGlass?: string;
+  tertiaryContainer?: string;
+  onTertiaryContainer?: string;
   surfaceContainerLowest: string;
   surfaceContainerLow: string;
   surfaceContainer: string;
@@ -416,8 +419,9 @@ export interface AppLookProfile {
   id: string;
   name: string;
   tagline: string;
-  icon: string;
-  swatches: [string, string, string, string];
+  badge?: string;
+  icon?: string;
+  swatches?: [string, string, string, string];
   config: Partial<ThemeConfig>;
 }
 

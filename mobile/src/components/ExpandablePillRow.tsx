@@ -1514,8 +1514,7 @@ export const ExpandablePillRow = React.memo(function ExpandablePillRow({
               flexDirection: "row",
               flexWrap: "wrap",
               alignItems: "center",
-              justifyContent:
-                pillLayoutMode === "centered-wrap" ? "center" : "flex-start",
+              justifyContent: "flex-start",
               gap: 6,
               paddingVertical: 2,
             },

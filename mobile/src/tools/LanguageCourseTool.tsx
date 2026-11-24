@@ -1978,6 +1978,7 @@ export default function LanguageCourseTool({
               literalTranslation: s.title,
               meaning: s.culturalNote,
               category: 'tradition',
+              source: 'KenyaHub language course',
             });
           }
         });
@@ -4767,7 +4768,7 @@ export default function LanguageCourseTool({
                         </View>
                         {sk.words.slice(0, expandedVocabRows[sk.id] || VOCAB_ROW_PAGE_SIZE).map((w, wIdx) => (
                           <View
-                            key={w.id || wIdx}
+                            key={`${sk.id}-word-${wIdx}`}
                             style={{
                               flexDirection: 'row',
                               justifyContent: 'space-between',
@@ -6748,7 +6749,6 @@ export default function LanguageCourseTool({
               }}
               placeholder="Search proverbs or meanings..."
               placeholderTextColor={colors.textMuted}
-              numberOfLines={1}
               style={{ flex: 1, minWidth: 0, fontSize: 13, color: colors.text, paddingVertical: 6, paddingHorizontal: 0 }}
             />
             {proverbSearch.length > 0 && (

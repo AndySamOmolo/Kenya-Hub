@@ -879,7 +879,7 @@ function isMakeoverActive(
   if (Object.values(cfg.customColors ?? {}).filter(Boolean).length > 0) return false;
   for (const [key, val] of Object.entries(profile.config)) {
     if (key === "customColors") continue;
-    const curVal = (cfg as Record<string, unknown>)[key];
+    const curVal = cfg[key as keyof ThemeConfig];
     if (curVal !== val) return false;
   }
   return true;
@@ -1911,15 +1911,15 @@ export function ThemeSettingsView() {
                             ]}
                           >
                             <Ionicons
-                              name={
-                                profile.icon as keyof typeof Ionicons.glyphMap
-                              }
+                              name={(profile.icon ?? "color-palette-outline") as keyof typeof Ionicons.glyphMap}
                               size={14}
                               color={isActive ? onGoldInk : theme.gold}
                             />
                           </View>
                           <View style={styles.swatchDotsRow}>
-                            {profile.swatches.map((hex, idx) => (
+                            {(profile.swatches ??
+                              THEME_PRESETS.find((preset) => preset.id === profile.config.presetId)?.swatches ??
+                              THEME_PRESETS[0].swatches).map((hex, idx) => (
                               <View
                                 key={`${profile.id}-swatch-${idx}`}
                                 style={[
@@ -2147,7 +2147,7 @@ export function ThemeSettingsView() {
                 <TactileAtlasShowcase
                   onApplyPreset={(presetId) => {
                     doHaptic();
-                    applyThemePreset(presetId, presetFullTransform);
+                    applyThemePreset(presetId, undefined, presetFullTransform);
                   }}
                 />
               )}
@@ -3401,7 +3401,6 @@ export function ThemeSettingsView() {
                   value={exportedJson}
                   editable={false}
                   multiline
-                  nestedScrollEnabled
                   selectTextOnFocus
                   style={[
                     styles.jsonBox,
@@ -3432,7 +3431,6 @@ export function ThemeSettingsView() {
                   placeholder='{"mode":"dark","presetId":"kenyan-heritage",...}'
                   placeholderTextColor={theme.textMuted}
                   multiline
-                  nestedScrollEnabled
                   autoCapitalize="none"
                   autoCorrect={false}
                   style={[

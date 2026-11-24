@@ -448,7 +448,16 @@ export const createStyles = (
   const bdf = (fallback: string) => resolvedFonts?.bold || fallback;
   const cardTheme = themeConfig && metrics ? getThemedCardStyle(theme, themeConfig, metrics) : null;
   const inputTheme = themeConfig && metrics ? getThemedInputStyle(theme, themeConfig, metrics) : null;
-  const numStyle = themeConfig ? getThemedNumericStyle(themeConfig, resolvedFonts) : {};
+  const numStyle = themeConfig
+    ? getThemedNumericStyle(
+        themeConfig,
+        resolvedFonts ?? {
+          heading: "Outfit_700Bold",
+          body: "Inter_400Regular",
+          bold: "Inter_700Bold",
+        }
+      )
+    : {};
   const pad = metrics?.cardPaddingPx ?? 16;
   const cRad = metrics?.cardRadiusPx ?? 16;
   const bRad = metrics?.buttonRadiusPx ?? 12;

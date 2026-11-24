@@ -81,11 +81,11 @@ export function SaccoChamaCalculator() {
                 key={m}
                 onPress={() => setLoanMonths(m)}
                 style={[
-                  styles.chip,
+                  styles.presetChip,
                   active && { backgroundColor: theme.primaryContainer, borderColor: theme.gold },
                 ]}
               >
-                <Text style={[styles.chipText, active && { color: theme.gold, fontFamily: "Outfit_700Bold" }]}>
+                <Text style={[styles.presetChipText, active && { color: theme.gold, fontFamily: "Outfit_700Bold" }]}>
                   {m} mos
                 </Text>
               </Pressable>

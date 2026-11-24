@@ -126,7 +126,7 @@ function GameCompleteCard({
   onBack: () => void;
 }) {
   const { colors, isDark } = useTheme();
-  const ripple = androidRipple(isDark);
+  const ripple = androidRipple(colors.rippleColor);
   return (
     <View
       style={[
@@ -181,7 +181,7 @@ function MethaliBuilderMobile({
   onBack,
 }: Omit<ExtraMiniGamesProps, "activeGame">) {
   const { colors, isDark } = useTheme();
-  const ripple = androidRipple(isDark);
+  const ripple = androidRipple(colors.rippleColor);
   const SESSION_ROUNDS = 6;
   const scheduleTimeout = useSafeTimeout();
   const [mode, setMode] = useState<"tiles" | "complete">("tiles");
@@ -531,7 +531,7 @@ function NounClassSorterMobile({
   onBack,
 }: Omit<ExtraMiniGamesProps, "activeGame">) {
   const { colors, isDark } = useTheme();
-  const ripple = androidRipple(isDark);
+  const ripple = androidRipple(colors.rippleColor);
   const SESSION_ROUNDS = 10;
   const scheduleTimeout = useSafeTimeout();
   const [round, setRound] = useState(0);
@@ -752,7 +752,7 @@ function OddWordOutMobile({
   onBack,
 }: Omit<ExtraMiniGamesProps, "activeGame">) {
   const { colors, isDark } = useTheme();
-  const ripple = androidRipple(isDark);
+  const ripple = androidRipple(colors.rippleColor);
   const SESSION_ROUNDS = 8;
   const scheduleTimeout = useSafeTimeout();
   const [round, setRound] = useState(0);
@@ -1070,7 +1070,7 @@ function PolyglotBridgeMobile({
   onBack,
 }: Omit<ExtraMiniGamesProps, "activeGame">) {
   const { colors, isDark } = useTheme();
-  const ripple = androidRipple(isDark);
+  const ripple = androidRipple(colors.rippleColor);
   const [round, setRound] = useState(0);
   const [score, setScore] = useState(0);
   const [picked, setPicked] = useState<string | null>(null);
@@ -1233,7 +1233,7 @@ function SentenceSafariMobile({
   onBack,
 }: Omit<ExtraMiniGamesProps, "activeGame">) {
   const { colors, isDark } = useTheme();
-  const ripple = androidRipple(isDark);
+  const ripple = androidRipple(colors.rippleColor);
   const scheduleTimeout = useSafeTimeout();
   const SESSION_ROUNDS = 8;
   const [round, setRound] = useState(0);
@@ -1495,7 +1495,7 @@ function TongueTwisterMobile({
   onBack,
 }: Omit<ExtraMiniGamesProps, "activeGame">) {
   const { colors, isDark } = useTheme();
-  const ripple = androidRipple(isDark);
+  const ripple = androidRipple(colors.rippleColor);
   const scheduleTimeout = useSafeTimeout();
   const [round, setRound] = useState(0);
   const [score, setScore] = useState(0);

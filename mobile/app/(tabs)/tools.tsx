@@ -30,6 +30,7 @@ import {
   getToolUsageScore,
   getCategoryInfo,
 } from "../../src/shared/lib/tools-registry";
+import type { ToolCategory } from "../../src/shared/lib/types";
 import matatuData from "../../src/shared/data/matatu-routes.json";
 import { ThemedIcon, ThemedIconBadge } from "../../src/components/ThemedIcon";
 import { useAppLanguage, translateCategoryDescription, translateCategoryName, translateToolShortTitle } from "../../src/lib/i18n";
@@ -90,6 +91,11 @@ const MATATU_KEYWORDS = [
 ];
 
 const toolKeyExtractor = (item: (typeof TOOLS)[0]) => item.slug;
+
+function normalizeToolCategory(value: string | undefined): ToolCategory | "all" {
+  if (value === "all") return value;
+  return TOOL_CATEGORIES.find((category) => category.id === value)?.id ?? "all";
+}
 
 const ToolItem = React.memo(function ToolItem({
   item,
@@ -261,7 +267,9 @@ export default function ToolsScreen() {
   );
   const params = useLocalSearchParams<{ category?: string; q?: string }>();
   const [query, setQuery] = useState(params.q ?? "");
-  const [category, setCategory] = useState(params.category ?? "all");
+  const [category, setCategory] = useState<ToolCategory | "all">(
+    normalizeToolCategory(params.category)
+  );
   const deferredQuery = useDeferredValue(query);
   const listRef = useRef<FlatList>(null);
   const [sortBy, setSortBy] = useState<"popular" | "alphabetical" | "category">(
@@ -295,7 +303,7 @@ export default function ToolsScreen() {
   );
 
   useEffect(() => {
-    setCategory(params.category || "all");
+    setCategory(normalizeToolCategory(params.category));
     if (params.q !== undefined) setQuery(params.q);
   }, [params.category, params.q]);
 
@@ -687,7 +695,7 @@ export default function ToolsScreen() {
               <Pressable
                 key={item.id}
                 android_ripple={androidRipple(theme.rippleColor)}
-                onPress={() => setCategory(item.id)}
+                onPress={() => setCategory(normalizeToolCategory(item.id))}
                 style={{
                   flexDirection: "row",
                   alignItems: "center",

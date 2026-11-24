@@ -70,7 +70,7 @@ export function getMobileAdsModule(): GmaModule | null {
     // Dynamic require prevents crash in Expo Go / unit tests without native binary
     // eslint-disable-next-line @typescript-eslint/no-require-imports
     const mod = require("react-native-google-mobile-ads") as GmaModule;
-    cachedModule = mod?.default ? mod : null;
+    cachedModule = mod;
   } catch {
     cachedModule = null;
   }

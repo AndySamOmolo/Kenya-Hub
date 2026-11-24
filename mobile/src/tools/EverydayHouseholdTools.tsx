@@ -268,6 +268,14 @@ export function SchoolFeeCapAuditorTool() {
 // 2. Cooking Fuel Comparator & EPC Payback Engine
 // ============================================================================
 type FuelKey = "lpg" | "kerosene" | "charcoal" | "electricityEpc";
+type FuelCostRow = {
+  key: FuelKey;
+  label: string;
+  perDish: number;
+  monthly: number;
+  annual: number;
+  usageNote: string;
+};
 
 export function CookingFuelComparatorTool() {
   const { theme, cardBase, inputBase, styles } = useEverydayToolTheme();
@@ -298,14 +306,7 @@ export function CookingFuelComparatorTool() {
       electricityEpc: parseNum(kplcPerKwh) || data.fuels.electricityEpc.kesPerKwh,
     };
 
-    const rows: {
-      key: FuelKey;
-      label: string;
-      perDish: number;
-      monthly: number;
-      annual: number;
-      usageNote: string;
-    }[] = [
+    const rows = ([
       {
         key: "electricityEpc",
         label: data.fuels.electricityEpc.label,
@@ -338,7 +339,7 @@ export function CookingFuelComparatorTool() {
         annual: dish.keroseneL * rates.kerosene * monthlyMeals * 12,
         usageNote: `${dish.keroseneL} L kerosene/dish`,
       },
-    ].sort((a, b) => a.monthly - b.monthly);
+    ] satisfies FuelCostRow[]).sort((a, b) => a.monthly - b.monthly);
 
     const epcRow = rows.find((r) => r.key === "electricityEpc")!;
     const currentRow = rows.find((r) => r.key === currentFuel)!;

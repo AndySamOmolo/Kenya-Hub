@@ -94,7 +94,7 @@ export function KplcTokenCalculator() {
               key={t.id}
               onPress={() => setTariffMode(t.id)}
               style={[
-                styles.chip,
+                styles.presetChip,
                 active && {
                   backgroundColor: theme.primaryContainer,
                   borderColor: theme.gold,
@@ -103,7 +103,7 @@ export function KplcTokenCalculator() {
             >
               <Text
                 style={[
-                  styles.chipText,
+                  styles.presetChipText,
                   active && { color: theme.gold, fontFamily: "Outfit_700Bold" },
                 ]}
               >
