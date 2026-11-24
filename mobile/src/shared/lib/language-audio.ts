@@ -447,11 +447,11 @@ export function playLanguageAudio(
     audio.playbackRate = rate;
     activeHtmlAudio = audio;
     audio.onended = () => {
-      activeHtmlAudio = null;
+      if (activeHtmlAudio === audio) activeHtmlAudio = null;
       onEnd?.();
     };
     audio.onerror = () => {
-      activeHtmlAudio = null;
+      if (activeHtmlAudio === audio) activeHtmlAudio = null;
       onEnd?.();
     };
     audio.play().catch(() => {
