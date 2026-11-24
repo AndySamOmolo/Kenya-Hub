@@ -539,7 +539,7 @@ export default function SavedScreen() {
               </Text>
             </View>
           </View>
-          <Ionicons name="chevron-forward" size={18} color={theme.textMuted} />
+          <ThemedIcon name="chevron-forward" size={18} color={theme.textMuted} />
         </Pressable>
 
         {tools.length > 0 ? (

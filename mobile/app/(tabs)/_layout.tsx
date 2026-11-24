@@ -18,6 +18,7 @@ const QUICK_JUMP_ITEMS = [
   { label: "Tools", icon: "grid-outline", route: "/tools" },
   { label: "Counties", icon: "map-outline", route: "/county" },
   { label: "Saved", icon: "bookmark-outline", route: "/saved" },
+  { label: "Account", icon: "person-circle-outline", route: "/account" },
   { label: "Settings", icon: "settings-outline", route: "/settings" },
 ] as const;
 

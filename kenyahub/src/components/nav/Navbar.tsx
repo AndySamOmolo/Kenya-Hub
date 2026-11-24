@@ -354,6 +354,15 @@ export default function Navbar() {
                 </button>
 
                 <Link
+                  href="/account/"
+                  className="h-7 w-7 rounded-lg border border-border bg-bg-card/80 inline-flex items-center justify-center text-gold hover:border-gold/50 transition-colors"
+                  aria-label="Account and Sign In"
+                  title="Account & Sign In"
+                >
+                  <User className="w-3.5 h-3.5" aria-hidden="true" />
+                </Link>
+
+                <Link
                   href="/tools/learn/"
                   className="h-7 px-2 text-[11px] font-bold text-gold bg-gold/15 border border-gold/30 rounded-lg inline-flex items-center justify-center gap-1"
                 >
@@ -402,6 +411,9 @@ export default function Navbar() {
               <div className="flex-1 overflow-y-auto px-4 py-4 pb-16 space-y-1">
                 <Link href="/" className="group flex items-center gap-3 px-3 py-2.5 text-sm font-medium text-text-secondary hover:text-text-primary rounded-xl hover:bg-black/[0.04] dark:hover:bg-white/[0.04] transition-colors" onClick={() => setMobileOpen(false)}>
                   <span className="w-7 flex items-center justify-center shrink-0"><Home className="w-4 h-4 text-text-muted group-hover:text-gold transition-colors shrink-0" /></span> Home
+                </Link>
+                <Link href="/account/" className="group flex items-center gap-3 px-3 py-2.5 text-sm font-semibold text-gold hover:text-gold-light rounded-xl bg-gold/10 border border-gold/25 transition-colors" onClick={() => setMobileOpen(false)}>
+                  <span className="w-7 flex items-center justify-center shrink-0"><User className="w-4 h-4 text-gold shrink-0" /></span> Account &amp; Sign In
                 </Link>
                 <Link href="/tools/learn/" className="group flex items-center gap-3 px-3 py-2.5 text-sm font-medium text-text-secondary hover:text-text-primary rounded-xl hover:bg-black/[0.04] dark:hover:bg-white/[0.04] transition-colors" onClick={() => setMobileOpen(false)}>
                   <span className="w-7 flex items-center justify-center shrink-0"><Languages className="w-4 h-4 text-gold shrink-0" /></span>
