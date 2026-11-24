@@ -1,3 +1,4 @@
+import { useAppLanguage, translateToolShortTitle } from "../../src/lib/i18n";
 import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import AsyncStorage from "@react-native-async-storage/async-storage";
@@ -306,6 +307,7 @@ export default function ToolDetailScreen() {
   }>();
   const router = useRouter();
   const { theme, isDark } = useTheme();
+  const { language } = useAppLanguage();
   const insets = useSafeAreaInsets();
   const safeTop = Math.max(insets.top, Platform.OS === "android" ? StatusBar.currentHeight ?? 24 : 0);
   const effectiveSlug = slug === "cbc-grade-age" ? "cbc-curriculum" : slug;
@@ -603,7 +605,7 @@ export default function ToolDetailScreen() {
       <KenyaStripe />
 
       <AndroidTopAppBar
-        title={tool.shortTitle}
+        title={translateToolShortTitle(tool.slug, tool.shortTitle, language)}
         subtitle={
           categoryInfo?.name.toUpperCase() ||
           tool.category.replace("-", " & ").toUpperCase()

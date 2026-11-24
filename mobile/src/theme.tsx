@@ -274,10 +274,15 @@ export function pressableStyle(
 
 export function triggerHaptic(durationMs?: number) {
   if (!_globalHapticsEnabled || _globalHapticDurationMs <= 0) return;
+  const numericDuration =
+    typeof durationMs === "number" && Number.isFinite(durationMs)
+      ? durationMs
+      : undefined;
   const effectiveDuration =
-    durationMs !== undefined
-      ? Math.max(1, Math.round((durationMs / 10) * _globalHapticDurationMs))
+    numericDuration !== undefined
+      ? Math.max(1, Math.round((numericDuration / 10) * _globalHapticDurationMs))
       : _globalHapticDurationMs;
+  if (!Number.isFinite(effectiveDuration) || effectiveDuration <= 0) return;
   try {
     if (Platform.OS === "android" || Platform.OS === "ios") {
       Vibration.vibrate(effectiveDuration);

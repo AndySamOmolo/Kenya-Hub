@@ -1,3 +1,4 @@
+import { useAppLanguage } from "../lib/i18n";
 import { ExpandablePillRow } from "../components/ExpandablePillRow";
 import { DynamicIcon } from "../components/DynamicIcon";
 import React, { useState, useMemo, useCallback, useEffect, useDeferredValue, useRef } from "react";
@@ -426,6 +427,7 @@ export function KenyanTranslatorTool({
   onScrollToTop,
 }: { onScrollToTop?: () => void } = {}) {
   const { theme, styles } = useDynamicStyles(createStyles);
+  const { t: tApp } = useAppLanguage();
 
   const [viewMode, setViewMode] = useState<"translate" | "browse" | "favorites">(
     "translate"
@@ -2305,7 +2307,7 @@ export function KenyanTranslatorTool({
                 style={{ flexDirection: "row", alignItems: "center", gap: 8 }}
               >
                 <Ionicons name="add-circle" size={24} color={theme.gold} />
-                <Text style={styles.modalTitle}>Contribute a Word</Text>
+                <Text style={styles.modalTitle}>{tApp("contrib.title")}</Text>
               </View>
               <Pressable
                 onPress={() => setIsContributeOpen(false)}
@@ -2905,6 +2907,33 @@ export function KenyanTranslatorTool({
                   )}
                 </View>
 
+                <View style={{ height: 12 }} />
+              </ScrollView>
+            )}
+            {!contribSubmitted && (
+              <View
+                style={{
+                  borderTopWidth: 1,
+                  borderTopColor: theme.border,
+                  paddingTop: 10,
+                  marginTop: 6,
+                }}
+              >
+                {(!contribEnglish.trim() ||
+                  !contribTranslation.trim() ||
+                  (contribLang === OTHER_KENYAN_LANGUAGE_VALUE &&
+                    !contribCustomLang.trim())) && (
+                  <Text
+                    style={{
+                      color: theme.textMuted,
+                      fontSize: 11,
+                      textAlign: "center",
+                      marginBottom: 6,
+                    }}
+                  >
+                    {tApp("contrib.fillRequiredHint")}
+                  </Text>
+                )}
                 <Pressable
                   disabled={
                     contribSubmitting ||
@@ -2914,27 +2943,36 @@ export function KenyanTranslatorTool({
                       !contribCustomLang.trim())
                   }
                   onPress={handleSubmitContribute}
-                  style={[
-                    pressableStyle(styles.submitBtn),
+                  android_ripple={androidRipple()}
+                  style={({ pressed }) => [
+                    styles.submitBtn,
                     {
+                      marginTop: 0,
+                      marginBottom: 2,
+                      flexDirection: "row",
+                      justifyContent: "center",
+                      gap: 8,
                       opacity:
                         contribSubmitting ||
                         !contribEnglish.trim() ||
                         !contribTranslation.trim() ||
                         (contribLang === OTHER_KENYAN_LANGUAGE_VALUE &&
                           !contribCustomLang.trim())
-                          ? 0.55
+                          ? 0.5
+                          : pressed
+                          ? 0.85
                           : 1,
                     },
                   ]}
                 >
+                  <Ionicons name="send-outline" size={16} color="#1A1108" />
                   <Text style={styles.submitBtnText}>
                     {contribSubmitting
-                      ? "Submitting..."
-                      : "Submit Contribution"}
+                      ? tApp("contrib.submitting")
+                      : tApp("contrib.submitBtn")}
                   </Text>
                 </Pressable>
-              </ScrollView>
+              </View>
             )}
           </View>
         </KeyboardAvoidingView>

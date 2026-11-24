@@ -24,8 +24,12 @@ import {
 } from "lucide-react";
 import {
   KSL_ALPHABET,
+  KSL_CATEGORY_LABELS,
   KSL_GRAMMAR_NOTES,
+  KSL_LESSONS,
+  KSL_NUMBERS,
   KSL_STARTER_SIGNS,
+  type KslSignCategory,
   type KslStarterSign,
 } from "@/data/ksl-starter";
 import type { KslStorybookItem, KslVideoItem } from "@/lib/open-corpus";
@@ -234,10 +238,40 @@ export default function KslSignStudio({
   initialVideos = [],
   storybooks = [],
 }: KslSignStudioProps) {
-  const [tab, setTab] = useState<"videos" | "signs" | "quiz" | "alphabet" | "grammar">(
-    initialVideos.length > 0 ? "videos" : "signs"
+  const [tab, setTab] = useState<"videos" | "lessons" | "signs" | "quiz" | "alphabet" | "grammar">(
+    initialVideos.length > 0 ? "videos" : "lessons"
   );
   const [selectedId, setSelectedId] = useState<string>(KSL_STARTER_SIGNS[0].id);
+  const [starterCategory, setStarterCategory] = useState<"all" | KslSignCategory>("all");
+  const [activeUnitId, setActiveUnitId] = useState<string>(KSL_LESSONS[0].id);
+  const [completedUnits, setCompletedUnits] = useState<string[]>(() => {
+    if (typeof window === "undefined") return [];
+    try {
+      const raw = window.localStorage.getItem("kh-ksl-completed-units");
+      const parsed = raw ? JSON.parse(raw) : [];
+      return Array.isArray(parsed) ? parsed.filter((x): x is string => typeof x === "string") : [];
+    } catch {
+      return [];
+    }
+  });
+  const toggleUnitComplete = useCallback((unitId: string) => {
+    setCompletedUnits((prev) => {
+      const next = prev.includes(unitId) ? prev.filter((id) => id !== unitId) : [...prev, unitId];
+      try {
+        window.localStorage.setItem("kh-ksl-completed-units", JSON.stringify(next));
+      } catch {
+        // Ignore storage errors
+      }
+      return next;
+    });
+  }, []);
+  const filteredStarterSigns = useMemo(
+    () =>
+      starterCategory === "all"
+        ? KSL_STARTER_SIGNS
+        : KSL_STARTER_SIGNS.filter((sign) => sign.category === starterCategory),
+    [starterCategory]
+  );
   const [playing, setPlaying] = useState(true);
   const [slowMo, setSlowMo] = useState(false);
 
@@ -516,9 +550,10 @@ export default function KslSignStudio({
       <div className="flex flex-wrap gap-2 border-b border-border pb-3">
         {[
           { id: "videos" as const, label: `KSL Video Library (${kslVideos.length})`, icon: Film },
-          { id: "signs" as const, label: "Sign Studio", icon: Hand },
+          { id: "lessons" as const, label: `Course Units (${completedUnits.length}/${KSL_LESSONS.length})`, icon: BookOpen },
+          { id: "signs" as const, label: `Sign Studio (${KSL_STARTER_SIGNS.length})`, icon: Hand },
           { id: "quiz" as const, label: "Visual Sign Quiz", icon: Sparkles },
-          { id: "alphabet" as const, label: "Fingerspelling (A–Z)", icon: BookOpen },
+          { id: "alphabet" as const, label: "A–Z & Numbers", icon: BookOpen },
           { id: "grammar" as const, label: "KSL Grammar & Culture", icon: HelpCircle },
         ].map((item) => {
           const Icon = item.icon;
@@ -785,6 +820,144 @@ export default function KslSignStudio({
       )}
 
       {/* TAB 1: SIGN STUDIO */}
+            {/* TAB: STRUCTURED KSL COURSE UNITS (5 UNITS · 20 PHRASES) */}
+      {tab === "lessons" && (() => {
+        const activeUnit = KSL_LESSONS.find((u) => u.id === activeUnitId) || KSL_LESSONS[0];
+        const isDone = completedUnits.includes(activeUnit.id);
+        const pct = Math.round((completedUnits.length / KSL_LESSONS.length) * 100);
+        return (
+          <div className="space-y-4">
+            {/* Course Progress Bar */}
+            <div className="rounded-2xl border border-gold/25 bg-bg-card p-4 space-y-2.5">
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <div>
+                  <h3 className="text-sm font-bold text-text-primary">
+                    Structured KSL Curriculum (5 Units · {KSL_STARTER_SIGNS.length} Core Signs)
+                  </h3>
+                  <p className="text-xs text-text-muted">
+                    Learn authentic Kenyan Sign Language sentence order (Topic–Comment / OSV) with Swahili equivalents and facial grammar cues.
+                  </p>
+                </div>
+                <span className="rounded-lg border border-kenya-green/40 bg-kenya-green/10 px-2.5 py-1 text-xs font-bold text-kenya-green">
+                  {completedUnits.length}/{KSL_LESSONS.length} Units ({pct}%)
+                </span>
+              </div>
+              <div className="h-2 w-full rounded-full bg-bg-elevated overflow-hidden">
+                <div
+                  className="h-full rounded-full bg-gold transition-all duration-300"
+                  style={{ width: `${pct}%` }}
+                />
+              </div>
+            </div>
+
+            {/* Unit Selector Cards */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-2">
+              {KSL_LESSONS.map((unit) => {
+                const selected = unit.id === activeUnit.id;
+                const unitDone = completedUnits.includes(unit.id);
+                return (
+                  <button
+                    key={unit.id}
+                    type="button"
+                    onClick={() => setActiveUnitId(unit.id)}
+                    className={`rounded-xl border p-3 text-left transition-all cursor-pointer ${
+                      selected
+                        ? "border-gold bg-gold/15"
+                        : "border-border bg-bg-card hover:border-gold/50"
+                    }`}
+                  >
+                    <div className="flex items-center justify-between gap-1 text-[10px] font-bold uppercase tracking-wider">
+                      <span className={selected ? "text-gold" : "text-text-muted"}>
+                        Unit {unit.unitNumber} · {unit.level}
+                      </span>
+                      {unitDone && <CheckCircle2 className="h-3.5 w-3.5 text-kenya-green shrink-0" />}
+                    </div>
+                    <p className="text-xs font-bold text-text-primary mt-1">{unit.title}</p>
+                    <p className="text-[11px] text-text-muted mt-0.5">{unit.swahiliTitle}</p>
+                  </button>
+                );
+              })}
+            </div>
+
+            {/* Active Unit Detail */}
+            <div className="rounded-2xl border border-border bg-bg-card p-5 space-y-4">
+              <div className="flex flex-wrap items-start justify-between gap-3">
+                <div className="space-y-1">
+                  <span className="inline-block rounded-md bg-gold/15 px-2 py-0.5 text-[11px] font-bold text-gold">
+                    Unit {activeUnit.unitNumber} · {activeUnit.level}
+                  </span>
+                  <h3 className="text-base font-bold text-text-primary">
+                    {activeUnit.title} <span className="text-text-muted font-normal">({activeUnit.swahiliTitle})</span>
+                  </h3>
+                  <p className="text-xs text-text-secondary max-w-2xl">{activeUnit.summary}</p>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => toggleUnitComplete(activeUnit.id)}
+                  className={`inline-flex items-center gap-1.5 rounded-xl px-3.5 py-2 text-xs font-bold transition-all cursor-pointer ${
+                    isDone
+                      ? "border border-kenya-green/50 bg-kenya-green/15 text-kenya-green"
+                      : "bg-gold text-black hover:opacity-90"
+                  }`}
+                >
+                  <CheckCircle2 className="h-3.5 w-3.5" />
+                  {isDone ? "Completed" : "Mark Unit Complete"}
+                </button>
+              </div>
+
+              {/* Key Signs in Unit (clickable -> jumps to Sign Studio) */}
+              <div className="space-y-1.5">
+                <p className="text-[11px] font-bold uppercase tracking-wider text-text-muted">
+                  Key Signs in Unit {activeUnit.unitNumber} (tap to practice in Sign Studio)
+                </p>
+                <div className="flex flex-wrap gap-1.5">
+                  {activeUnit.keySignIds.map((signId) => {
+                    const found = KSL_STARTER_SIGNS.find((x) => x.id === signId);
+                    if (!found) return null;
+                    return (
+                      <button
+                        key={signId}
+                        type="button"
+                        onClick={() => {
+                          setActiveR2Pose(null);
+                          setSelectedId(found.id);
+                          setStarterCategory("all");
+                          progressRef.current = 0;
+                          setPlaying(true);
+                          setTab("signs");
+                        }}
+                        className="rounded-lg border border-border bg-bg-elevated px-2.5 py-1 text-xs font-semibold text-text-primary hover:border-gold hover:text-gold transition-colors cursor-pointer"
+                      >
+                        {found.gloss} <span className="text-text-muted">({found.swahiliEquivalent})</span>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+
+              {/* Conversational Phrases & KSL Gloss Order */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                {activeUnit.phrases.map((phrase, idx) => (
+                  <div
+                    key={idx}
+                    className="rounded-xl border border-border bg-bg-elevated/50 p-3.5 space-y-1.5"
+                  >
+                    <p className="text-sm font-bold text-text-primary">{phrase.english}</p>
+                    <p className="text-xs text-text-secondary">Kiswahili: {phrase.swahili}</p>
+                    <div className="rounded-lg border border-gold/30 bg-gold/10 px-2.5 py-1.5 font-mono text-xs font-bold text-gold">
+                      KSL Gloss: {phrase.kslGloss}
+                    </div>
+                    <p className="text-[11px] text-kenya-green leading-relaxed">
+                      <strong>Facial / Non-Manual:</strong> {phrase.nonManual}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        );
+      })()}
+
       {tab === "signs" && (
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">
           <div className="lg:col-span-5 rounded-2xl border border-gold/25 bg-bg-card p-4 space-y-3">
@@ -866,11 +1039,40 @@ export default function KslSignStudio({
 
           <div className="lg:col-span-7 space-y-4">
             <div className="rounded-2xl border border-border bg-bg-card p-4 space-y-3">
-              <h3 className="text-sm font-bold text-text-primary">
-                Core KSL Starter Vocabulary ({KSL_STARTER_SIGNS.length} Guided Signs)
-              </h3>
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <h3 className="text-sm font-bold text-text-primary">
+                  Core KSL Vocabulary ({filteredStarterSigns.length} of {KSL_STARTER_SIGNS.length} Guided Signs)
+                </h3>
+              </div>
+              <div className="flex flex-wrap gap-1.5">
+                <button
+                  type="button"
+                  onClick={() => setStarterCategory("all")}
+                  className={`rounded-lg border px-2.5 py-1 text-[11px] font-bold cursor-pointer ${
+                    starterCategory === "all"
+                      ? "border-gold bg-gold text-black"
+                      : "border-border bg-bg-elevated text-text-secondary hover:border-gold/50"
+                  }`}
+                >
+                  All ({KSL_STARTER_SIGNS.length})
+                </button>
+                {(Object.keys(KSL_CATEGORY_LABELS) as KslSignCategory[]).map((cat) => (
+                  <button
+                    key={cat}
+                    type="button"
+                    onClick={() => setStarterCategory(cat)}
+                    className={`rounded-lg border px-2.5 py-1 text-[11px] font-bold cursor-pointer ${
+                      starterCategory === cat
+                        ? "border-gold bg-gold text-black"
+                        : "border-border bg-bg-elevated text-text-secondary hover:border-gold/50"
+                    }`}
+                  >
+                    {KSL_CATEGORY_LABELS[cat]}
+                  </button>
+                ))}
+              </div>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-                {KSL_STARTER_SIGNS.map((sign) => {
+                {filteredStarterSigns.map((sign) => {
                   const active = !activeR2Pose && sign.id === selectedId;
                   return (
                     <button
@@ -1162,6 +1364,29 @@ export default function KslSignStudio({
               <p className="text-xs text-text-secondary leading-relaxed">{item.cue}</p>
             </div>
           ))}
+          </div>
+
+          {/* KSL Numbers 0–1,000 */}
+          <div className="rounded-2xl border border-kenya-green/30 bg-bg-card p-4 space-y-3">
+            <div>
+              <h3 className="text-sm font-bold text-kenya-green">KSL Numbers (0 – 1,000)</h3>
+              <p className="text-xs text-text-muted">
+                Pay close attention to palm orientation and finger-thumb contact for 3 vs 6–9.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5">
+              {KSL_NUMBERS.map((num) => (
+                <div key={num.number} className="rounded-xl border border-border bg-bg-elevated/50 p-3 flex items-start gap-3">
+                  <div className="min-w-11 h-9 px-2 rounded-lg bg-kenya-green/15 border border-kenya-green/30 flex items-center justify-center font-bold text-kenya-green shrink-0 text-xs">
+                    {num.number}
+                  </div>
+                  <div className="space-y-0.5">
+                    <p className="text-xs font-bold text-text-primary">{num.swahili}</p>
+                    <p className="text-[11px] text-text-secondary leading-relaxed">{num.cue}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       )}

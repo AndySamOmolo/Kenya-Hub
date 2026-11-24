@@ -2537,7 +2537,10 @@ export function resolveThemeColors(
     resolved.gold = adjustAccent(resolved.gold);
     resolved.goldLight = adjustAccent(resolved.goldLight);
     resolved.kenyaGreen = adjustAccent(resolved.kenyaGreen);
+    resolved.kenyaGreenLight = adjustAccent(resolved.kenyaGreenLight);
     resolved.sky = adjustAccent(resolved.sky);
+    resolved.primaryContainer = hexToRgba(resolved.gold, resolvedIsDark ? 0.22 : 0.16);
+    resolved.onPrimaryContainer = mixHex(resolved.gold, resolvedIsDark ? "#FFFFFF" : "#000000", resolvedIsDark ? 0.58 : 0.45);
   }
 
   resolved.surface = resolved.bgCard;

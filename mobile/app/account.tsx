@@ -19,6 +19,8 @@ import {
   triggerHaptic,
 } from "../src/theme";
 import { ThemedIcon, ThemedIconBadge } from "../src/components/ThemedIcon";
+import { useAppLanguage } from "../src/lib/i18n";
+import { getContrastInk } from "../src/lib/theme-engine";
 import {
   getCurrentUser,
   sendPasswordRecovery,
@@ -32,6 +34,7 @@ import {
 
 export default function AccountScreen() {
   const { theme, themeConfig, themeMetrics, updateThemeConfig } = useTheme();
+  const { t, language, setLanguage } = useAppLanguage();
   const router = useRouter();
   const [user, setUser] = useState<MobileAuthUser | null>(null);
   const [loading, setLoading] = useState(true);
@@ -48,6 +51,14 @@ export default function AccountScreen() {
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
   const themedCardStyle = getThemedCardStyle(theme, themeConfig, themeMetrics);
+
+  const handleGoBack = useCallback(() => {
+    if (router.canGoBack()) {
+      router.back();
+    } else {
+      router.replace("/(tabs)");
+    }
+  }, [router]);
 
   const applySyncSummary = useCallback(
     (summary: MobileCloudSyncSummary | null) => {
@@ -82,7 +93,7 @@ export default function AccountScreen() {
     setSuccessMsg(null);
 
     if (!email.trim() || !email.includes("@")) {
-      setErrorMsg("Enter a valid email address.");
+      setErrorMsg(t("account.errInvalidEmail"));
       return;
     }
 
@@ -90,9 +101,9 @@ export default function AccountScreen() {
       setSubmitting(true);
       try {
         await sendPasswordRecovery(email);
-        setSuccessMsg("Password reset link sent! Check your email inbox.");
+        setSuccessMsg(t("account.resetSent"));
       } catch (err) {
-        setErrorMsg(err instanceof Error ? err.message : "Could not send password reset email.");
+        setErrorMsg(err instanceof Error ? err.message : t("account.errAuthFailed"));
       } finally {
         setSubmitting(false);
       }
@@ -100,16 +111,16 @@ export default function AccountScreen() {
     }
 
     if (password.length < 8) {
-      setErrorMsg("Password must be at least 8 characters.");
+      setErrorMsg(t("account.errPasswordShort"));
       return;
     }
     if (mode === "signup") {
       if (name.trim().length < 2) {
-        setErrorMsg("Please enter your full name.");
+        setErrorMsg(t("account.errNameShort"));
         return;
       }
       if (password !== confirmPassword) {
-        setErrorMsg("Passwords do not match.");
+        setErrorMsg(t("account.errPasswordMismatch"));
         return;
       }
     }
@@ -123,14 +134,14 @@ export default function AccountScreen() {
       setUser(loggedIn);
       setPassword("");
       setConfirmPassword("");
-      triggerHaptic("light");
+      triggerHaptic(8);
       syncMobileUserData().then(applySyncSummary).catch(() => {});
     } catch (err) {
-      setErrorMsg(err instanceof Error ? err.message : "Authentication failed.");
+      setErrorMsg(err instanceof Error ? err.message : t("account.errAuthFailed"));
     } finally {
       setSubmitting(false);
     }
-  }, [applySyncSummary, confirmPassword, email, mode, name, password]);
+  }, [applySyncSummary, confirmPassword, email, mode, name, password, t]);
 
   const handleSignOut = useCallback(async () => {
     setSubmitting(true);
@@ -138,7 +149,7 @@ export default function AccountScreen() {
       await signOutMobile();
       setUser(null);
       setSyncSummary(null);
-      triggerHaptic("light");
+      triggerHaptic(8);
     } finally {
       setSubmitting(false);
     }
@@ -149,16 +160,16 @@ export default function AccountScreen() {
       <Stack.Screen options={{ headerShown: false }} />
       <KenyaStripe />
       <AndroidTopAppBar
-        title="Account"
-        subtitle={user ? "Synced with Appwrite Cloud" : "Sign in to sync themes, progress & tools"}
-        showBack
+        title={t("account.title")}
+        subtitle={user ? t("account.subtitleSignedIn") : t("account.subtitleSignedOut")}
+        onBack={handleGoBack}
       />
       <KeyboardAvoidingView
         style={{ flex: 1 }}
         behavior={Platform.OS === "ios" ? "padding" : undefined}
       >
         <ScrollView
-          contentContainerStyle={{ padding: 18, paddingBottom: 48 }}
+          contentContainerStyle={{ paddingHorizontal: 20, paddingTop: 14, paddingBottom: 48 }}
           keyboardShouldPersistTaps="handled"
           showsVerticalScrollIndicator={themeConfig?.verticalScrollbarStyle !== "hidden"}
         >
@@ -166,7 +177,7 @@ export default function AccountScreen() {
             <View style={{ paddingVertical: 64, alignItems: "center" }}>
               <ActivityIndicator size="large" color={theme.gold} />
               <Text style={{ color: theme.textSecondary, marginTop: 12, fontSize: 14 }}>
-                Checking your KenyaHub account...
+                {t("account.checking")}
               </Text>
             </View>
           ) : user ? (
@@ -192,7 +203,7 @@ export default function AccountScreen() {
                   </View>
                   <View style={{ flex: 1 }}>
                     <Text style={{ color: theme.textPrimary, fontSize: 18, fontWeight: "800" }}>
-                      {user.name || "KenyaHub Member"}
+                      {user.name || t("account.memberFallback")}
                     </Text>
                     <Text style={{ color: theme.textSecondary, fontSize: 13, marginTop: 2 }}>
                       {user.email}
@@ -207,7 +218,7 @@ export default function AccountScreen() {
                     >
                       <ThemedIcon name="shield-checkmark-outline" size={14} color={theme.kenyaGreenLight || "#10b981"} />
                       <Text style={{ color: theme.kenyaGreenLight || "#10b981", fontSize: 11, fontWeight: "700" }}>
-                        Active Appwrite Session
+                        {t("account.activeSession")}
                       </Text>
                     </View>
                   </View>
@@ -220,10 +231,10 @@ export default function AccountScreen() {
                   <ThemedIconBadge name="cloud-done-outline" accentColor={theme.gold} baseSize={36} iconSize={18} />
                   <View style={{ flex: 1 }}>
                     <Text style={{ color: theme.textPrimary, fontWeight: "800", fontSize: 15 }}>
-                      Cloud Account Sync
+                      {t("account.cloudSyncTitle")}
                     </Text>
                     <Text style={{ color: theme.textSecondary, fontSize: 12, marginTop: 1 }}>
-                      Themes, pinned tools, language XP, favorites & checklists
+                      {t("account.cloudSyncDesc")}
                     </Text>
                   </View>
                 </View>
@@ -238,10 +249,10 @@ export default function AccountScreen() {
                     }}
                   >
                     {[
-                      { label: "Pinned Tools", val: String(syncSummary.pinnedCount) },
-                      { label: "Languages", val: String(syncSummary.languagesSynced) },
-                      { label: "Saved Themes", val: String(syncSummary.savedThemesCount) },
-                      { label: "Active Theme", val: syncSummary.themeSynced ? "Synced" : "Local" },
+                      { label: t("account.statPinned"), val: String(syncSummary.pinnedCount) },
+                      { label: t("account.statLanguages"), val: String(syncSummary.languagesSynced) },
+                      { label: t("account.statSavedThemes"), val: String(syncSummary.savedThemesCount) },
+                      { label: t("account.statActiveTheme"), val: syncSummary.themeSynced ? t("account.synced") : t("account.local") },
                     ].map((stat) => (
                       <View
                         key={stat.label}
@@ -269,7 +280,7 @@ export default function AccountScreen() {
                     try {
                       const s = await syncMobileUserData();
                       applySyncSummary(s);
-                      triggerHaptic("light");
+                      triggerHaptic(8);
                     } finally {
                       setSyncing(false);
                     }
@@ -290,7 +301,7 @@ export default function AccountScreen() {
                 >
                   <ThemedIcon name="sync-outline" size={16} color={theme.gold} />
                   <Text style={{ color: theme.gold, fontWeight: "800", fontSize: 13 }}>
-                    {syncing ? "Syncing..." : "Sync Now"}
+                    {syncing ? t("account.syncing") : t("account.syncNow")}
                   </Text>
                 </Pressable>
               </View>
@@ -311,7 +322,7 @@ export default function AccountScreen() {
                   <View style={{ flexDirection: "row", alignItems: "center", gap: 12 }}>
                     <ThemedIcon name="school-outline" size={19} color={theme.gold} />
                     <Text style={{ color: theme.textPrimary, fontWeight: "700", fontSize: 14 }}>
-                      Continue Language Learning
+                      {t("account.continueLearning")}
                     </Text>
                   </View>
                   <ThemedIcon name="chevron-forward" size={16} color={theme.textMuted} />
@@ -333,7 +344,7 @@ export default function AccountScreen() {
                   <View style={{ flexDirection: "row", alignItems: "center", gap: 12 }}>
                     <ThemedIcon name="color-palette-outline" size={19} color={theme.gold} />
                     <Text style={{ color: theme.textPrimary, fontWeight: "700", fontSize: 14 }}>
-                      Customize App Theme
+                      {t("account.customizeTheme")}
                     </Text>
                   </View>
                   <ThemedIcon name="chevron-forward" size={16} color={theme.textMuted} />
@@ -359,19 +370,19 @@ export default function AccountScreen() {
               >
                 <ThemedIcon name="log-out-outline" size={18} color="#ef4444" />
                 <Text style={{ color: "#ef4444", fontWeight: "800", fontSize: 14 }}>
-                  {submitting ? "Signing out..." : "Sign Out"}
+                  {submitting ? t("account.signingOut") : t("account.signOut")}
                 </Text>
               </Pressable>
             </View>
           ) : (
-            <View style={{ gap: 16 }}>
+            <View style={{ gap: 18 }}>
               {/* Hero Badge */}
-              <View style={{ alignItems: "center", paddingTop: 6 }}>
+              <View style={{ alignItems: "center", paddingTop: 4 }}>
                 <ThemedIconBadge
                   name={mode === "forgot" ? "key-outline" : "person-circle-outline"}
                   accentColor={theme.gold}
-                  baseSize={60}
-                  iconSize={30}
+                  baseSize={56}
+                  iconSize={28}
                 />
                 <Text
                   style={{
@@ -379,14 +390,14 @@ export default function AccountScreen() {
                     fontSize: 22,
                     fontWeight: "800",
                     textAlign: "center",
-                    marginTop: 12,
+                    marginTop: 10,
                   }}
                 >
                   {mode === "signin"
-                    ? "Welcome back"
+                    ? t("account.welcomeBack")
                     : mode === "signup"
-                    ? "Create KenyaHub Account"
-                    : "Reset Password"}
+                    ? t("account.createTitle")
+                    : t("account.resetTitle")}
                 </Text>
                 <Text
                   style={{
@@ -394,18 +405,59 @@ export default function AccountScreen() {
                     fontSize: 13,
                     textAlign: "center",
                     marginTop: 4,
-                    maxWidth: 300,
+                    maxWidth: 310,
                     lineHeight: 19,
                   }}
                 >
-                  {mode === "forgot"
-                    ? "Enter your email and Appwrite will send you a password reset link."
-                    : "Back up your themes, pinned tools, favorites & language progress across devices."}
+                  {mode === "forgot" ? t("account.forgotSubtitle") : t("account.authSubtitle")}
                 </Text>
               </View>
 
-              {/* Form Card */}
-              <View style={[themedCardStyle, { padding: 18 }]}>
+              {/* Clean Unboxed Mode Tabs */}
+              {mode !== "forgot" && (
+                <View
+                  style={{
+                    flexDirection: "row",
+                    borderBottomWidth: 1,
+                    borderBottomColor: theme.border,
+                  }}
+                >
+                  {(["signin", "signup"] as const).map((tab) => {
+                    const active = mode === tab;
+                    return (
+                      <Pressable
+                        key={tab}
+                        onPress={() => {
+                          triggerHaptic(6);
+                          setMode(tab);
+                          setErrorMsg(null);
+                          setSuccessMsg(null);
+                        }}
+                        style={{
+                          flex: 1,
+                          paddingVertical: 12,
+                          alignItems: "center",
+                          borderBottomWidth: 2.5,
+                          borderBottomColor: active ? theme.gold : "transparent",
+                        }}
+                      >
+                        <Text
+                          style={{
+                            color: active ? theme.gold : theme.textSecondary,
+                            fontWeight: active ? "800" : "600",
+                            fontSize: 14,
+                          }}
+                        >
+                          {tab === "signin" ? t("account.signInTab") : t("account.createTab")}
+                        </Text>
+                      </Pressable>
+                    );
+                  })}
+                </View>
+              )}
+
+              {/* Open Unboxed Auth Form */}
+              <View>
                 {errorMsg ? (
                   <View
                     style={{
@@ -436,61 +488,15 @@ export default function AccountScreen() {
                   </View>
                 ) : null}
 
-                {mode !== "forgot" && (
-                  <View
-                    style={{
-                      flexDirection: "row",
-                      backgroundColor: theme.bgElevated,
-                      borderColor: theme.border,
-                      borderWidth: 1,
-                      borderRadius: 12,
-                      padding: 4,
-                      marginBottom: 18,
-                    }}
-                  >
-                    {(["signin", "signup"] as const).map((tab) => {
-                      const active = mode === tab;
-                      return (
-                        <Pressable
-                          key={tab}
-                          onPress={() => {
-                            triggerHaptic("light");
-                            setMode(tab);
-                            setErrorMsg(null);
-                            setSuccessMsg(null);
-                          }}
-                          style={{
-                            flex: 1,
-                            paddingVertical: 10,
-                            borderRadius: 9,
-                            backgroundColor: active ? theme.gold : "transparent",
-                            alignItems: "center",
-                          }}
-                        >
-                          <Text
-                            style={{
-                              color: active ? "#000000" : theme.textSecondary,
-                              fontWeight: "800",
-                              fontSize: 13,
-                            }}
-                          >
-                            {tab === "signin" ? "Sign In" : "Create Account"}
-                          </Text>
-                        </Pressable>
-                      );
-                    })}
-                  </View>
-                )}
-
                 {mode === "signup" && (
                   <View style={{ marginBottom: 14 }}>
                     <Text style={{ color: theme.textSecondary, fontSize: 12, fontWeight: "700", marginBottom: 6 }}>
-                      Full Name
+                      {t("account.fullName")}
                     </Text>
                     <TextInput
                       value={name}
                       onChangeText={setName}
-                      placeholder="Wanjiku Kamau"
+                      placeholder={t("account.fullNamePlaceholder")}
                       placeholderTextColor={theme.textMuted}
                       style={{
                         backgroundColor: theme.bgElevated,
@@ -508,14 +514,14 @@ export default function AccountScreen() {
 
                 <View style={{ marginBottom: 14 }}>
                   <Text style={{ color: theme.textSecondary, fontSize: 12, fontWeight: "700", marginBottom: 6 }}>
-                    Email Address
+                    {t("account.email")}
                   </Text>
                   <TextInput
                     value={email}
                     onChangeText={setEmail}
                     autoCapitalize="none"
                     keyboardType="email-address"
-                    placeholder="you@example.com"
+                    placeholder={t("account.emailPlaceholder")}
                     placeholderTextColor={theme.textMuted}
                     style={{
                       backgroundColor: theme.bgElevated,
@@ -541,18 +547,19 @@ export default function AccountScreen() {
                       }}
                     >
                       <Text style={{ color: theme.textSecondary, fontSize: 12, fontWeight: "700" }}>
-                        Password
+                        {t("account.password")}
                       </Text>
                       {mode === "signin" && (
                         <Pressable
                           onPress={() => {
+                            triggerHaptic(6);
                             setMode("forgot");
                             setErrorMsg(null);
                             setSuccessMsg(null);
                           }}
                         >
                           <Text style={{ color: theme.gold, fontSize: 12, fontWeight: "700" }}>
-                            Forgot password?
+                            {t("account.forgotPassword")}
                           </Text>
                         </Pressable>
                       )}
@@ -562,7 +569,7 @@ export default function AccountScreen() {
                         value={password}
                         onChangeText={setPassword}
                         secureTextEntry={!showPassword}
-                        placeholder="At least 8 characters"
+                        placeholder={t("account.passwordPlaceholder")}
                         placeholderTextColor={theme.textMuted}
                         style={{
                           backgroundColor: theme.bgElevated,
@@ -593,13 +600,13 @@ export default function AccountScreen() {
                 {mode === "signup" && (
                   <View style={{ marginBottom: 18 }}>
                     <Text style={{ color: theme.textSecondary, fontSize: 12, fontWeight: "700", marginBottom: 6 }}>
-                      Confirm Password
+                      {t("account.confirmPassword")}
                     </Text>
                     <TextInput
                       value={confirmPassword}
                       onChangeText={setConfirmPassword}
                       secureTextEntry={!showPassword}
-                      placeholder="Re-enter password"
+                      placeholder={t("account.confirmPasswordPlaceholder")}
                       placeholderTextColor={theme.textMuted}
                       style={{
                         backgroundColor: theme.bgElevated,
@@ -627,20 +634,21 @@ export default function AccountScreen() {
                     marginTop: mode === "signup" ? 0 : 4,
                   })}
                 >
-                  <Text style={{ color: "#000000", fontWeight: "800", fontSize: 14 }}>
+                  <Text style={{ color: getContrastInk(theme.gold), fontWeight: "800", fontSize: 14 }}>
                     {submitting
-                      ? "Please wait..."
+                      ? t("account.pleaseWait")
                       : mode === "signin"
-                      ? "Sign In"
+                      ? t("account.signInTab")
                       : mode === "signup"
-                      ? "Create Account"
-                      : "Send Reset Link"}
+                      ? t("account.createTab")
+                      : t("account.sendResetLink")}
                   </Text>
                 </Pressable>
 
                 {mode === "forgot" && (
                   <Pressable
                     onPress={() => {
+                      triggerHaptic(6);
                       setMode("signin");
                       setErrorMsg(null);
                       setSuccessMsg(null);
@@ -648,21 +656,82 @@ export default function AccountScreen() {
                     style={{ paddingVertical: 12, alignItems: "center", marginTop: 4 }}
                   >
                     <Text style={{ color: theme.textSecondary, fontSize: 12, fontWeight: "700" }}>
-                      ← Back to Sign In
+                      {t("account.backToSignIn")}
                     </Text>
                   </Pressable>
                 )}
               </View>
 
               {/* Sync perks strip */}
-              <View style={[themedCardStyle, { padding: 14, flexDirection: "row", alignItems: "center", gap: 12 }]}>
-                <ThemedIcon name="cloud-upload-outline" size={20} color={theme.gold} />
+              <View
+                style={{
+                  flexDirection: "row",
+                  alignItems: "center",
+                  gap: 10,
+                  paddingHorizontal: 4,
+                  paddingTop: 2,
+                }}
+              >
+                <ThemedIcon name="cloud-upload-outline" size={18} color={theme.gold} />
                 <Text style={{ color: theme.textSecondary, fontSize: 12, flex: 1, lineHeight: 17 }}>
-                  Your custom themes, pinned tools, dictionary favorites & language progress sync automatically once signed in.
+                  {t("account.syncPerks")}
                 </Text>
               </View>
             </View>
           )}
+
+          {/* Quick Language Switcher at Bottom of Account */}
+          <View
+            style={{
+              marginTop: 24,
+              paddingTop: 16,
+              borderTopWidth: 1,
+              borderTopColor: theme.border,
+              flexDirection: "row",
+              alignItems: "center",
+              justifyContent: "space-between",
+              gap: 12,
+            }}
+          >
+            <View style={{ flexDirection: "row", alignItems: "center", gap: 8 }}>
+              <ThemedIcon name="language-outline" size={18} color={theme.gold} />
+              <Text style={{ color: theme.textPrimary, fontSize: 13, fontWeight: "700" }}>
+                {t("lang.title")}
+              </Text>
+            </View>
+            <View style={{ flexDirection: "row", gap: 6 }}>
+              {(["en", "sw"] as const).map((lang) => {
+                const active = language === lang;
+                return (
+                  <Pressable
+                    key={lang}
+                    onPress={() => {
+                      triggerHaptic(6);
+                      setLanguage(lang);
+                    }}
+                    style={{
+                      paddingHorizontal: 12,
+                      paddingVertical: 6,
+                      borderRadius: 999,
+                      backgroundColor: active ? theme.gold : theme.bgElevated,
+                      borderWidth: 1,
+                      borderColor: active ? theme.gold : theme.border,
+                    }}
+                  >
+                    <Text
+                      style={{
+                        color: active ? getContrastInk(theme.gold) : theme.textSecondary,
+                        fontSize: 12,
+                        fontWeight: "700",
+                      }}
+                    >
+                      {lang === "en" ? "English" : "Kiswahili"}
+                    </Text>
+                  </Pressable>
+                );
+              })}
+            </View>
+          </View>
         </ScrollView>
       </KeyboardAvoidingView>
     </SafeAreaView>

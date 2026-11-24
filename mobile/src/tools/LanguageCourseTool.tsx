@@ -368,7 +368,7 @@ const AudioClipList = React.memo(function AudioClipList({
     </View>
   );
 });
-import { KSL_ALPHABET } from '../shared/data/ksl-starter';
+import { KSL_ALPHABET, KSL_CATEGORY_LABELS, KSL_GRAMMAR_NOTES, KSL_LESSONS, KSL_NUMBERS, KSL_STARTER_SIGNS, type KslSignCategory } from '../shared/data/ksl-starter';
 import { luoProverbs } from '../shared/data/courses/luo/proverbs';
 import { luoRiddles } from '../shared/data/courses/luo/riddles';
 import { luoTongueTwisters } from '../shared/data/courses/luo/tongue-twisters';
@@ -514,7 +514,19 @@ export default function LanguageCourseTool({
   initialTab?: MainTab;
   onNavigationStateChange?: (state: CourseNavigationState) => void;
 } = {}) {
-  const { colors, isDark, themeConfig, themeMetrics, themeKey } = useTheme();
+  const { colors, isDark, themeConfig, themeMetrics, themeKey, resolvedFonts } = useTheme();
+  const themedCardStyle = useMemo(
+    () => getThemedCardStyle(colors, themeConfig, themeMetrics),
+    [colors, themeConfig, themeMetrics]
+  );
+  const themedInputStyle = useMemo(
+    () => getThemedInputStyle(colors, themeConfig, themeMetrics),
+    [colors, themeConfig, themeMetrics]
+  );
+  const themedPrimaryBtnStyle = useMemo(
+    () => getThemedButtonStyle(colors, themeConfig, themeMetrics, 'primary'),
+    [colors, themeConfig, themeMetrics]
+  );
   const styles = useMemo(() => createStyles(colors, themeMetrics), [colors, themeMetrics]);
   const ripple = useMemo(() => androidRipple(colors.rippleColor), [colors.rippleColor]);
 
@@ -611,7 +623,11 @@ export default function LanguageCourseTool({
     return id;
   }, []);
   useEffect(() => clearFeedbackTimers, [clearFeedbackTimers]);
-  const [kslStudioMode, setKslStudioMode] = useState<'browse' | 'quiz' | 'spell'>('browse');
+  const [kslStudioMode, setKslStudioMode] = useState<'browse' | 'lessons' | 'guided' | 'quiz' | 'spell'>('browse');
+  const [kslActiveUnitId, setKslActiveUnitId] = useState<string>(KSL_LESSONS[0].id);
+  const [kslCompletedUnits, setKslCompletedUnits] = useState<string[]>([]);
+  const [kslGuidedCategory, setKslGuidedCategory] = useState<'all' | KslSignCategory>('all');
+  const [kslSelectedGuidedId, setKslSelectedGuidedId] = useState<string>(KSL_STARTER_SIGNS[0].id);
   const [kslQuizIdx, setKslQuizIdx] = useState<number>(0);
   const [kslQuizPicked, setKslQuizPicked] = useState<string | null>(null);
   const [kslQuizScore, setKslQuizScore] = useState<{ right: number; total: number }>({ right: 0, total: 0 });
@@ -2833,30 +2849,32 @@ export default function LanguageCourseTool({
               <Pressable
                 android_ripple={ripple}
                 onPress={() => handleSelectLanguageFromMenu(overallMenuStats.resumeCourse.config.id)}
-                style={{
-                  flexDirection: 'row',
-                  alignItems: 'center',
-                  gap: 5,
-                  paddingHorizontal: 11,
-                  paddingVertical: 5,
-                  borderRadius: 999,
-                  backgroundColor: colors.gold,
-                  flexShrink: 1,
-                }}
+                style={[
+                  themedPrimaryBtnStyle.container,
+                  {
+                    flexDirection: 'row',
+                    alignItems: 'center',
+                    gap: 5,
+                    paddingHorizontal: 11,
+                    paddingVertical: 5.5,
+                    borderRadius: themeMetrics.buttonRadiusPx,
+                    flexShrink: 1,
+                  },
+                ]}
               >
-                <Text numberOfLines={1} style={{ fontSize: 11.5, fontWeight: '800', color: '#000', flexShrink: 1 }}>
+                <Text numberOfLines={1} style={{ fontSize: 11.5, fontFamily: resolvedFonts.heading, fontWeight: '800', color: themedPrimaryBtnStyle.textColor, flexShrink: 1 }}>
                   Resume {overallMenuStats.resumeCourse.config.name}
                 </Text>
-                <Feather name="arrow-right" size={13} color="#000" />
+                <Feather name="arrow-right" size={13} color={themedPrimaryBtnStyle.textColor} />
               </Pressable>
             )}
           </View>
 
           <View>
-            <Text style={{ fontSize: 18, fontWeight: '800', color: colors.text, lineHeight: 24 }}>
+            <Text style={{ fontSize: 18, fontFamily: resolvedFonts.heading, fontWeight: '800', color: colors.text, lineHeight: 24 }}>
               Choose a Kenyan Language to Learn
             </Text>
-            <Text style={{ fontSize: 13, color: colors.textSecondary, lineHeight: 19, marginTop: 4 }}>
+            <Text style={{ fontSize: 13, fontFamily: resolvedFonts.body, color: colors.textSecondary, lineHeight: 19, marginTop: 4 }}>
               Select any of {PUBLISHED_COURSE_SUMMARIES.length} interactive courses below to unlock guided skill trees, flashcards, phonetic guides, grammar tables, mini-games, and oral proverbs.
             </Text>
           </View>
@@ -2864,16 +2882,16 @@ export default function LanguageCourseTool({
           {/* 3-Column Learner Summary (Compact) */}
           <View style={{ flexDirection: 'row', gap: 6 }}>
             <View
-              style={{
-                flex: 1,
-                backgroundColor: colors.surfaceContainerHigh,
-                borderRadius: 10,
-                paddingVertical: 5.5,
-                paddingHorizontal: 6,
-                alignItems: 'center',
-                borderWidth: 1,
-                borderColor: colors.outlineVariant,
-              }}
+              style={[
+                themedCardStyle,
+                {
+                  flex: 1,
+                  borderRadius: Math.max(4, Math.round(themeMetrics.cardRadiusPx * 0.78)),
+                  paddingVertical: 6.5,
+                  paddingHorizontal: 6,
+                  alignItems: 'center',
+                },
+              ]}
             >
               <View style={{ flexDirection: 'row', alignItems: 'center', gap: 3 }}>
                 <Feather name="zap" size={11} color={colors.gold} />
@@ -2887,20 +2905,20 @@ export default function LanguageCourseTool({
             </View>
 
             <View
-              style={{
-                flex: 1,
-                backgroundColor: colors.surfaceContainerHigh,
-                borderRadius: 10,
-                paddingVertical: 5.5,
-                paddingHorizontal: 6,
-                alignItems: 'center',
-                borderWidth: 1,
-                borderColor: colors.outlineVariant,
-              }}
+              style={[
+                themedCardStyle,
+                {
+                  flex: 1,
+                  borderRadius: Math.max(4, Math.round(themeMetrics.cardRadiusPx * 0.78)),
+                  paddingVertical: 6.5,
+                  paddingHorizontal: 6,
+                  alignItems: 'center',
+                },
+              ]}
             >
               <View style={{ flexDirection: 'row', alignItems: 'center', gap: 3 }}>
-                <Feather name="trending-up" size={11} color="#F59E0B" />
-                <Text numberOfLines={1} adjustsFontSizeToFit style={{ fontSize: 13, fontWeight: '800', color: '#F59E0B' }}>
+                <Feather name="trending-up" size={11} color={colors.gold} />
+                <Text numberOfLines={1} adjustsFontSizeToFit style={{ fontSize: 13, fontFamily: resolvedFonts.heading, fontWeight: '800', color: colors.gold }}>
                   {overallMenuStats.bestStreak}d
                 </Text>
               </View>
@@ -2910,20 +2928,20 @@ export default function LanguageCourseTool({
             </View>
 
             <View
-              style={{
-                flex: 1,
-                backgroundColor: colors.surfaceContainerHigh,
-                borderRadius: 10,
-                paddingVertical: 5.5,
-                paddingHorizontal: 6,
-                alignItems: 'center',
-                borderWidth: 1,
-                borderColor: colors.outlineVariant,
-              }}
+              style={[
+                themedCardStyle,
+                {
+                  flex: 1,
+                  borderRadius: Math.max(4, Math.round(themeMetrics.cardRadiusPx * 0.78)),
+                  paddingVertical: 6.5,
+                  paddingHorizontal: 6,
+                  alignItems: 'center',
+                },
+              ]}
             >
               <View style={{ flexDirection: 'row', alignItems: 'center', gap: 3 }}>
-                <Feather name="award" size={11} color="#10B981" />
-                <Text numberOfLines={1} adjustsFontSizeToFit style={{ fontSize: 13, fontWeight: '800', color: '#10B981' }}>
+                <Feather name="award" size={11} color={colors.kenyaGreenLight} />
+                <Text numberOfLines={1} adjustsFontSizeToFit style={{ fontSize: 13, fontFamily: resolvedFonts.heading, fontWeight: '800', color: colors.kenyaGreenLight }}>
                   {overallMenuStats.totalWords}
                 </Text>
               </View>
@@ -2937,17 +2955,16 @@ export default function LanguageCourseTool({
         {/* Search & Language Family Filter Controls (Compact) */}
         <View style={{ gap: 7 }}>
           <View
-            style={{
-              flexDirection: 'row',
-              alignItems: 'center',
-              backgroundColor: colors.surfaceContainerHigh,
-              borderColor: colors.outlineVariant,
-              borderWidth: 1,
-              borderRadius: 999,
-              paddingHorizontal: 12,
-              minHeight: 38,
-              gap: 7,
-            }}
+            style={[
+              themedInputStyle,
+              {
+                flexDirection: 'row',
+                alignItems: 'center',
+                paddingHorizontal: 12,
+                minHeight: 40,
+                gap: 7,
+              },
+            ]}
           >
             <Feather name="search" size={14} color={colors.gold} />
             <TextInput
@@ -3040,14 +3057,16 @@ export default function LanguageCourseTool({
                 key={config.id}
                 android_ripple={ripple}
                 onPress={() => handleSelectLanguageFromMenu(config.id)}
-                style={{
-                  backgroundColor: colors.surfaceContainerLow,
-                  borderColor: courseXp > 0 ? `${config.color}88` : `${config.color}45`,
-                  borderWidth: 1,
-                  borderRadius: 15,
-                  padding: 12,
-                  gap: 7,
-                }}
+                style={[
+                  themedCardStyle,
+                  {
+                    ...(themeConfig.surfaceStyle !== 'frameless' && courseXp > 0
+                      ? { borderColor: `${config.color}88` }
+                      : {}),
+                    padding: 12,
+                    gap: 7,
+                  },
+                ]}
               >
                 <View style={{ flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'space-between', gap: 8 }}>
                   <View style={{ flex: 1, gap: 4 }}>
@@ -3082,10 +3101,10 @@ export default function LanguageCourseTool({
                       </View>
                     </View>
 
-                    <Text style={{ fontSize: 15.5, fontWeight: '800', color: colors.text, lineHeight: 20 }}>
+                    <Text style={{ fontSize: 15.5, fontFamily: resolvedFonts.heading, fontWeight: '800', color: colors.text, lineHeight: 20 }}>
                       {config.name}
                       {showNative ? (
-                        <Text style={{ fontSize: 12.5, fontWeight: '500', color: colors.textMuted }}>
+                        <Text style={{ fontSize: 12.5, fontFamily: resolvedFonts.body, fontWeight: '500', color: colors.textMuted }}>
                           {` (${config.nativeName})`}
                         </Text>
                       ) : null}
@@ -3099,17 +3118,18 @@ export default function LanguageCourseTool({
                       gap: 4,
                       paddingHorizontal: 10,
                       paddingVertical: 5.5,
-                      borderRadius: 10,
+                      borderRadius: themeMetrics.buttonRadiusPx,
                       backgroundColor: courseXp > 0 ? config.color : `${colors.gold}20`,
-                      borderWidth: 1,
-                      borderColor: courseXp > 0 ? config.color : `${colors.gold}45`,
+                      borderWidth: themeMetrics.borderWidthPx,
+                      borderColor: courseXp > 0 ? config.color : `${colors.gold}55`,
                     }}
                   >
                     <Text
                       style={{
                         fontSize: 11.5,
+                        fontFamily: resolvedFonts.heading,
                         fontWeight: '800',
-                        color: courseXp > 0 ? '#000' : colors.gold,
+                        color: courseXp > 0 ? getContrastInk(config.color) : colors.gold,
                       }}
                     >
                       {courseXp > 0 ? 'Continue' : 'Start'}
@@ -3117,12 +3137,12 @@ export default function LanguageCourseTool({
                     <Feather
                       name="arrow-right"
                       size={12}
-                      color={courseXp > 0 ? '#000' : colors.gold}
+                      color={courseXp > 0 ? getContrastInk(config.color) : colors.gold}
                     />
                   </View>
                 </View>
 
-                <Text numberOfLines={2} style={{ fontSize: 12, color: colors.textSecondary, lineHeight: 17 }}>
+                <Text numberOfLines={2} style={{ fontSize: 12, fontFamily: resolvedFonts.body, color: colors.textSecondary, lineHeight: 17 }}>
                   {config.description}
                 </Text>
 
@@ -3140,8 +3160,8 @@ export default function LanguageCourseTool({
                       borderColor: colors.outlineVariant,
                     }}
                   >
-                    <Feather name="book-open" size={10.5} color="#10B981" />
-                    <Text style={{ fontSize: 10.5, fontWeight: '700', color: '#10B981' }}>
+                    <Feather name="book-open" size={10.5} color={colors.kenyaGreenLight} />
+                    <Text style={{ fontSize: 10.5, fontFamily: resolvedFonts.body, fontWeight: '700', color: colors.kenyaGreenLight }}>
                       {unitsCount} units · {skillsCount} modules · {wordsCount.toLocaleString()} words
                     </Text>
                   </View>
@@ -3263,12 +3283,14 @@ export default function LanguageCourseTool({
               </View>
 
               {/* Web-Parity KSL Studio Mode Switcher */}
-              <View style={{ flexDirection: 'row', gap: 6 }}>
+              <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 6 }}>
                 {(
                   [
-                    { id: 'browse', label: 'Browse Signs' },
-                    { id: 'quiz', label: 'Sign Quiz' },
-                    { id: 'spell', label: 'A–Z Speller' },
+                    { id: 'browse', label: 'Videos' },
+                    { id: 'lessons', label: `Units (${kslCompletedUnits.length}/${KSL_LESSONS.length})` },
+                    { id: 'guided', label: `Guided (${KSL_STARTER_SIGNS.length})` },
+                    { id: 'quiz', label: 'Quiz' },
+                    { id: 'spell', label: 'A–Z & 123' },
                   ] as const
                 ).map((md) => {
                   const act = kslStudioMode === md.id;
@@ -3277,7 +3299,7 @@ export default function LanguageCourseTool({
                       key={md.id}
                       onPress={() => setKslStudioMode(md.id)}
                       style={{
-                        flex: 1,
+                        paddingHorizontal: 10,
                         paddingVertical: 7,
                         borderRadius: 9,
                         alignItems: 'center',
@@ -3293,6 +3315,193 @@ export default function LanguageCourseTool({
                   );
                 })}
               </View>
+
+              {kslStudioMode === 'lessons' && (() => {
+                const activeUnit = KSL_LESSONS.find((u) => u.id === kslActiveUnitId) || KSL_LESSONS[0];
+                const isDone = kslCompletedUnits.includes(activeUnit.id);
+                return (
+                  <View style={{ gap: 10, backgroundColor: colors.surface, borderRadius: 12, borderWidth: 1, borderColor: colors.outlineVariant, padding: 12 }}>
+                    <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 6 }}>
+                      {KSL_LESSONS.map((u) => {
+                        const sel = u.id === activeUnit.id;
+                        const done = kslCompletedUnits.includes(u.id);
+                        return (
+                          <Pressable
+                            key={u.id}
+                            onPress={() => setKslActiveUnitId(u.id)}
+                            style={{
+                              paddingHorizontal: 9,
+                              paddingVertical: 6,
+                              borderRadius: 8,
+                              borderWidth: 1,
+                              borderColor: sel ? colors.gold : done ? colors.kenyaGreen : colors.outlineVariant,
+                              backgroundColor: sel ? `${colors.gold}22` : colors.surfaceContainer,
+                            }}
+                          >
+                            <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 11, color: sel ? colors.gold : done ? colors.kenyaGreen : colors.textSecondary }}>
+                              {done ? '✓ ' : ''}Unit {u.unitNumber}
+                            </Text>
+                          </Pressable>
+                        );
+                      })}
+                    </View>
+
+                    <View style={{ gap: 3 }}>
+                      <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 14, color: colors.text }}>
+                        Unit {activeUnit.unitNumber}: {activeUnit.title}
+                      </Text>
+                      <Text style={{ fontFamily: 'Inter_600SemiBold', fontSize: 11.5, color: colors.gold }}>
+                        {activeUnit.swahiliTitle} · {activeUnit.level}
+                      </Text>
+                      <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 12, color: colors.textSecondary, lineHeight: 17 }}>
+                        {activeUnit.summary}
+                      </Text>
+                    </View>
+
+                    <View style={{ gap: 8 }}>
+                      {activeUnit.phrases.map((ph, idx) => (
+                        <View
+                          key={idx}
+                          style={{
+                            backgroundColor: colors.surfaceContainer,
+                            borderRadius: 10,
+                            borderWidth: 1,
+                            borderColor: colors.outlineVariant,
+                            padding: 10,
+                            gap: 4,
+                          }}
+                        >
+                          <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 13, color: colors.text }}>{ph.english}</Text>
+                          <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 11.5, color: colors.textSecondary }}>Kiswahili: {ph.swahili}</Text>
+                          <View style={{ backgroundColor: `${colors.gold}18`, borderRadius: 7, paddingHorizontal: 8, paddingVertical: 5 }}>
+                            <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 11.5, color: colors.gold }}>
+                              KSL Gloss: {ph.kslGloss}
+                            </Text>
+                          </View>
+                          <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 11, color: colors.kenyaGreen, lineHeight: 16 }}>
+                            Facial / Non-Manual: {ph.nonManual}
+                          </Text>
+                        </View>
+                      ))}
+                    </View>
+
+                    <Pressable
+                      onPress={() =>
+                        setKslCompletedUnits((prev) =>
+                          prev.includes(activeUnit.id)
+                            ? prev.filter((id) => id !== activeUnit.id)
+                            : [...prev, activeUnit.id]
+                        )
+                      }
+                      style={{
+                        backgroundColor: isDone ? `${colors.kenyaGreen}22` : colors.gold,
+                        borderWidth: isDone ? 1 : 0,
+                        borderColor: colors.kenyaGreen,
+                        borderRadius: 10,
+                        paddingVertical: 10,
+                        alignItems: 'center',
+                      }}
+                    >
+                      <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 12.5, color: isDone ? colors.kenyaGreen : getContrastInk(colors.gold) }}>
+                        {isDone ? '✓ Unit Completed' : 'Mark Unit Complete'}
+                      </Text>
+                    </Pressable>
+                  </View>
+                );
+              })()}
+
+              {kslStudioMode === 'guided' && (() => {
+                const filtered =
+                  kslGuidedCategory === 'all'
+                    ? KSL_STARTER_SIGNS
+                    : KSL_STARTER_SIGNS.filter((sg) => sg.category === kslGuidedCategory);
+                const activeSign =
+                  filtered.find((sg) => sg.id === kslSelectedGuidedId) || filtered[0] || KSL_STARTER_SIGNS[0];
+                return (
+                  <View style={{ gap: 10, backgroundColor: colors.surface, borderRadius: 12, borderWidth: 1, borderColor: colors.outlineVariant, padding: 12 }}>
+                    <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 5 }}>
+                      <Pressable
+                        onPress={() => setKslGuidedCategory('all')}
+                        style={{
+                          paddingHorizontal: 8,
+                          paddingVertical: 5,
+                          borderRadius: 7,
+                          borderWidth: 1,
+                          borderColor: kslGuidedCategory === 'all' ? colors.gold : colors.outlineVariant,
+                          backgroundColor: kslGuidedCategory === 'all' ? `${colors.gold}22` : colors.surfaceContainer,
+                        }}
+                      >
+                        <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 10.5, color: kslGuidedCategory === 'all' ? colors.gold : colors.textSecondary }}>
+                          All ({KSL_STARTER_SIGNS.length})
+                        </Text>
+                      </Pressable>
+                      {(Object.keys(KSL_CATEGORY_LABELS) as KslSignCategory[]).map((cat) => (
+                        <Pressable
+                          key={cat}
+                          onPress={() => setKslGuidedCategory(cat)}
+                          style={{
+                            paddingHorizontal: 8,
+                            paddingVertical: 5,
+                            borderRadius: 7,
+                            borderWidth: 1,
+                            borderColor: kslGuidedCategory === cat ? colors.gold : colors.outlineVariant,
+                            backgroundColor: kslGuidedCategory === cat ? `${colors.gold}22` : colors.surfaceContainer,
+                          }}
+                        >
+                          <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 10.5, color: kslGuidedCategory === cat ? colors.gold : colors.textSecondary }}>
+                            {KSL_CATEGORY_LABELS[cat]}
+                          </Text>
+                        </Pressable>
+                      ))}
+                    </View>
+
+                    {activeSign && (
+                      <View style={{ backgroundColor: colors.surfaceContainer, borderRadius: 10, borderWidth: 1, borderColor: `${colors.gold}55`, padding: 12, gap: 5 }}>
+                        <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', gap: 8 }}>
+                          <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 15, color: colors.text }}>{activeSign.gloss}</Text>
+                          <Text style={{ fontFamily: 'Inter_600SemiBold', fontSize: 11.5, color: colors.gold }}>{activeSign.swahiliEquivalent}</Text>
+                        </View>
+                        <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 12, color: colors.textSecondary, lineHeight: 17 }}>
+                          <Text style={{ fontFamily: 'Inter_700Bold', color: colors.gold }}>Handshape: </Text>{activeSign.handshape}
+                        </Text>
+                        <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 12, color: colors.textSecondary, lineHeight: 17 }}>
+                          <Text style={{ fontFamily: 'Inter_700Bold', color: colors.gold }}>Location: </Text>{activeSign.location}
+                        </Text>
+                        <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 12, color: colors.textSecondary, lineHeight: 17 }}>
+                          <Text style={{ fontFamily: 'Inter_700Bold', color: colors.gold }}>Movement: </Text>{activeSign.movement}
+                        </Text>
+                        <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 12, color: colors.kenyaGreen, lineHeight: 17 }}>
+                          <Text style={{ fontFamily: 'Inter_700Bold' }}>Facial / Non-Manual: </Text>{activeSign.nonManual}
+                        </Text>
+                      </View>
+                    )}
+
+                    <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 6 }}>
+                      {filtered.map((sg) => {
+                        const sel = sg.id === activeSign.id;
+                        return (
+                          <Pressable
+                            key={sg.id}
+                            onPress={() => setKslSelectedGuidedId(sg.id)}
+                            style={{
+                              paddingHorizontal: 10,
+                              paddingVertical: 7,
+                              borderRadius: 9,
+                              borderWidth: 1,
+                              borderColor: sel ? colors.gold : colors.outlineVariant,
+                              backgroundColor: sel ? `${colors.gold}20` : colors.surfaceContainer,
+                            }}
+                          >
+                            <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 11.5, color: sel ? colors.gold : colors.text }}>
+                              {sg.gloss}
+                            </Text>
+                          </Pressable>
+                        );
+                      })}
+                    </View>
+                  </View>
+                );
+              })()}
 
               {kslStudioMode === 'quiz' && (() => {
                 const vocabPool = allKslVideos.filter((v) => v.category === 'maseno-stickman' && v.videoUrl);
@@ -3346,7 +3555,7 @@ export default function LanguageCourseTool({
                         onPress={() => { setKslQuizPicked(null); setKslQuizIdx((i) => i + 1); }}
                         style={{ backgroundColor: colors.gold, borderRadius: 10, paddingVertical: 10, alignItems: 'center' }}
                       >
-                        <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 12.5, color: '#000000' }}>Next KSL Sign →</Text>
+                        <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 12.5, color: getContrastInk(colors.gold) }}>Next KSL Sign →</Text>
                       </Pressable>
                     )}
                   </View>
@@ -3375,7 +3584,7 @@ export default function LanguageCourseTool({
                           onPress={() => setKslSpellIdx(idx)}
                           style={{ width: 34, height: 34, borderRadius: 8, alignItems: 'center', justifyContent: 'center', borderWidth: 1, borderColor: idx === safeI ? colors.gold : colors.outlineVariant, backgroundColor: idx === safeI ? colors.gold : colors.surfaceContainer }}
                         >
-                          <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 13, color: idx === safeI ? '#000000' : colors.text }}>{ch}</Text>
+                          <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 13, color: idx === safeI ? getContrastInk(colors.gold) : colors.text }}>{ch}</Text>
                         </Pressable>
                       ))}
                     </View>
@@ -3385,6 +3594,51 @@ export default function LanguageCourseTool({
                         <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 12, color: colors.textSecondary, lineHeight: 17 }}>{cueItem.cue}</Text>
                       </View>
                     )}
+                    <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 12, color: colors.kenyaGreen, marginTop: 6 }}>
+                      KSL NUMBERS (0 – 1,000)
+                    </Text>
+                    <View style={{ gap: 6 }}>
+                      {KSL_NUMBERS.map((num) => (
+                        <View
+                          key={num.number}
+                          style={{
+                            flexDirection: 'row',
+                            alignItems: 'flex-start',
+                            gap: 8,
+                            backgroundColor: colors.surfaceContainer,
+                            borderRadius: 9,
+                            padding: 8,
+                          }}
+                        >
+                          <View style={{ minWidth: 38, paddingHorizontal: 6, paddingVertical: 4, borderRadius: 7, backgroundColor: `${colors.kenyaGreen}22`, alignItems: 'center' }}>
+                            <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 12, color: colors.kenyaGreen }}>{num.number}</Text>
+                          </View>
+                          <View style={{ flex: 1, gap: 2 }}>
+                            <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 11.5, color: colors.text }}>{num.swahili}</Text>
+                            <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 11, color: colors.textSecondary, lineHeight: 16 }}>{num.cue}</Text>
+                          </View>
+                        </View>
+                      ))}
+                    </View>
+                    <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 12, color: colors.gold, marginTop: 6 }}>
+                      KSL GRAMMAR &amp; KENYAN DEAF CULTURE ({KSL_GRAMMAR_NOTES.length})
+                    </Text>
+                    <View style={{ gap: 6 }}>
+                      {KSL_GRAMMAR_NOTES.map((note) => (
+                        <View
+                          key={note.title}
+                          style={{
+                            backgroundColor: colors.surfaceContainer,
+                            borderRadius: 9,
+                            padding: 10,
+                            gap: 3,
+                          }}
+                        >
+                          <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 12, color: colors.gold }}>{note.title}</Text>
+                          <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 11.5, color: colors.textSecondary, lineHeight: 16 }}>{note.body}</Text>
+                        </View>
+                      ))}
+                    </View>
                   </View>
                 );
               })()}

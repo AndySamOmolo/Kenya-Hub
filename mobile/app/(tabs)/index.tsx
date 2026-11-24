@@ -1,3 +1,4 @@
+import { useAppLanguage, translateToolShortTitle } from "../../src/lib/i18n";
 import { ExpandablePillRow } from "../../src/components/ExpandablePillRow";
 import React, { useCallback, useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import { useRouter, useFocusEffect } from "expo-router";
@@ -523,6 +524,7 @@ export default function HomeScreen() {
   const router = useRouter();
   const insets = useSafeAreaInsets();
   const { theme, isDark, themeConfig, themeMetrics, resolvedFonts } = useTheme();
+  const { language, t } = useAppLanguage();
   const styles = useMemo(
     () => createHomeStyles(themeMetrics, resolvedFonts),
     [themeMetrics, resolvedFonts]
@@ -1104,7 +1106,7 @@ export default function HomeScreen() {
               value={searchQuery}
               onChangeText={setSearchQuery}
               accessibilityLabel="Search Kenyan calculators, language courses, and Matatu routes"
-              placeholder="Search tools, courses..."
+              placeholder={t("home.searchPlaceholder")}
               placeholderTextColor={theme.textSecondary}
               numberOfLines={1}
               multiline={false}
@@ -1855,8 +1857,8 @@ export default function HomeScreen() {
           >
             <KenyaStripe />
             <AndroidTopAppBar
-              title="Kenyan Public Holidays"
-              subtitle="Statutory National & Religious Holidays"
+              title={t("home.publicHolidays")}
+              subtitle={t("home.publicHolidaysSub")}
               onBack={handleCloseHolidays}
             />
             <ScrollView

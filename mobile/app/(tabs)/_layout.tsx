@@ -11,16 +11,17 @@ import {
   type TabBarStyle,
 } from "../../src/lib/theme-engine";
 import { ThemedIcon, type IoniconName } from "../../src/components/ThemedIcon";
+import { useAppLanguage, type TranslationKey } from "../../src/lib/i18n";
 
-const QUICK_JUMP_ITEMS = [
-  { label: "Home", icon: "home-outline", route: "/" },
-  { label: "Learn", icon: "school-outline", route: "/learn" },
-  { label: "Tools", icon: "grid-outline", route: "/tools" },
-  { label: "Counties", icon: "map-outline", route: "/county" },
-  { label: "Saved", icon: "bookmark-outline", route: "/saved" },
-  { label: "Account", icon: "person-circle-outline", route: "/account" },
-  { label: "Settings", icon: "settings-outline", route: "/settings" },
-] as const;
+const QUICK_JUMP_ITEMS: readonly { labelKey: TranslationKey; icon: IoniconName; route: string }[] = [
+  { labelKey: "nav.home", icon: "home-outline", route: "/" },
+  { labelKey: "nav.learn", icon: "school-outline", route: "/learn" },
+  { labelKey: "nav.tools", icon: "grid-outline", route: "/tools" },
+  { labelKey: "nav.counties", icon: "map-outline", route: "/county" },
+  { labelKey: "nav.saved", icon: "bookmark-outline", route: "/saved" },
+  { labelKey: "nav.account", icon: "person-circle-outline", route: "/account" },
+  { labelKey: "nav.settings", icon: "settings-outline", route: "/settings" },
+];
 
 const QuickJumpMenu = React.memo(function QuickJumpMenu({
   quickPos,
@@ -50,6 +51,7 @@ const QuickJumpMenu = React.memo(function QuickJumpMenu({
   bodyFont: string;
 }) {
   const router = useRouter();
+  const { t } = useAppLanguage();
   const [quickMenuOpen, setQuickMenuOpen] = useState(false);
 
   return (
@@ -109,7 +111,7 @@ const QuickJumpMenu = React.memo(function QuickJumpMenu({
             ]}
           >
             <Text style={[styles.quickTitle, { color: textPrimary, fontFamily: headingFont }]}>
-              Quick Jump Menu
+              {t("nav.quickJump")}
             </Text>
             <View style={styles.quickGrid}>
               {QUICK_JUMP_ITEMS.map((item) => (
@@ -139,7 +141,7 @@ const QuickJumpMenu = React.memo(function QuickJumpMenu({
                       scaleWithTheme={false}
                     />
                     <Text style={[styles.quickTileText, { color: textPrimary, fontFamily: bodyFont }]}>
-                      {item.label}
+                      {t(item.labelKey)}
                     </Text>
                   </View>
                 </Pressable>
@@ -349,6 +351,7 @@ const M3TabIcon = React.memo(function M3TabIcon({
 
 export default function TabLayout() {
   const { theme, themeConfig, themeMetrics, themeKey, resolvedFonts } = useTheme();
+  const { t } = useAppLanguage();
   const insets = useSafeAreaInsets();
 
   const bottomInset = Math.max(insets.bottom, Platform.OS === "android" ? 16 : 24);
@@ -476,7 +479,7 @@ export default function TabLayout() {
         <Tabs.Screen
           name="index"
           options={{
-            title: "Home",
+            title: t("nav.home"),
             tabBarAccessibilityLabel: "Home tab",
             tabBarIcon: ({ color, focused }) => (
               <M3TabIcon
@@ -501,7 +504,7 @@ export default function TabLayout() {
         <Tabs.Screen
           name="learn"
           options={{
-            title: "Learn",
+            title: t("nav.learn"),
             tabBarAccessibilityLabel: "Learn Kenyan Languages tab",
             tabBarIcon: ({ color, focused }) => (
               <M3TabIcon
@@ -526,7 +529,7 @@ export default function TabLayout() {
         <Tabs.Screen
           name="tools"
           options={{
-            title: "Tools",
+            title: t("nav.tools"),
             tabBarAccessibilityLabel: "Calculators and Tools tab",
             tabBarIcon: ({ color, focused }) => (
               <M3TabIcon
@@ -557,7 +560,7 @@ export default function TabLayout() {
         <Tabs.Screen
           name="county"
           options={{
-            title: "Counties",
+            title: t("nav.counties"),
             tabBarAccessibilityLabel: "47 Kenyan Counties tab",
             tabBarIcon: ({ color, focused }) => (
               <M3TabIcon
@@ -582,7 +585,7 @@ export default function TabLayout() {
         <Tabs.Screen
           name="saved"
           options={{
-            title: "Saved",
+            title: t("nav.saved"),
             tabBarAccessibilityLabel: "Pinned and Saved Tools tab",
             tabBarIcon: ({ color, focused }) => (
               <M3TabIcon

@@ -1,3 +1,4 @@
+import { useAppLanguage } from "../../src/lib/i18n";
 import { ExpandablePillRow } from "../../src/components/ExpandablePillRow";
 import React, { useCallback, useDeferredValue, useMemo, useRef, useState } from "react";
 import {
@@ -361,8 +362,14 @@ const DirectoryCardItem = React.memo(function DirectoryCardItem({
           style={[
             styles.countyMetricsStrip,
             {
-              backgroundColor: theme.surfaceContainerHigh,
+              backgroundColor:
+                themeConfig.surfaceStyle === "flat" || themeConfig.surfaceStyle === "frameless"
+                  ? theme.surfaceContainerLow
+                  : theme.surfaceContainerHigh,
               borderColor: theme.outlineVariant,
+              borderWidth:
+                themeConfig.surfaceStyle === "frameless" ? 0 : themeMetrics.borderWidthPx,
+              borderRadius: Math.max(4, Math.round(themeMetrics.cardRadiusPx * 0.72)),
             },
           ]}
         >
@@ -814,6 +821,7 @@ const PickerCountyRow = React.memo(function PickerCountyRow({
 export default function CountyScreen() {
   const router = useRouter();
   const { theme, isDark, themeConfig, themeMetrics, resolvedFonts } = useTheme();
+  const { t } = useAppLanguage();
   const styles = useMemo(
     () => createCountyStyles(themeMetrics, resolvedFonts),
     [themeMetrics, resolvedFonts]
@@ -967,9 +975,9 @@ export default function CountyScreen() {
                 <View
                   style={[
                     styles.miniStat,
+                    themedCardStyle,
                     {
-                      backgroundColor: theme.surfaceContainer,
-                      borderColor: theme.outlineVariant,
+                      borderRadius: Math.max(4, Math.round(themeMetrics.cardRadiusPx * 0.85)),
                     },
                   ]}
                 >
@@ -1003,9 +1011,9 @@ export default function CountyScreen() {
                 <View
                   style={[
                     styles.miniStat,
+                    themedCardStyle,
                     {
-                      backgroundColor: theme.surfaceContainer,
-                      borderColor: theme.outlineVariant,
+                      borderRadius: Math.max(4, Math.round(themeMetrics.cardRadiusPx * 0.85)),
                     },
                   ]}
                 >
@@ -1039,9 +1047,9 @@ export default function CountyScreen() {
                 <View
                   style={[
                     styles.miniStat,
+                    themedCardStyle,
                     {
-                      backgroundColor: theme.surfaceContainer,
-                      borderColor: theme.outlineVariant,
+                      borderRadius: Math.max(4, Math.round(themeMetrics.cardRadiusPx * 0.85)),
                     },
                   ]}
                 >
@@ -1107,8 +1115,8 @@ export default function CountyScreen() {
       <KenyaStripe />
 
       <AndroidTopAppBar
-        title="47 Counties Hub"
-        subtitle="Budgets · 290 Constituencies · Climate · Compare"
+        title={t("counties.title")}
+        subtitle={t("counties.subtitle")}
       />
 
       <View
@@ -1216,7 +1224,7 @@ export default function CountyScreen() {
               <TextInput
                 multiline={false}
                 accessibilityLabel="Search county or headquarters"
-                placeholder="Search county or HQ..."
+                placeholder={t("counties.searchPlaceholder")}
                 numberOfLines={1}
                 placeholderTextColor={theme.textMuted}
                 value={query}
@@ -2207,7 +2215,7 @@ export default function CountyScreen() {
               <TextInput
                 value={pickerSearch}
                 onChangeText={setPickerSearch}
-                placeholder="Search county, code, or HQ..."
+                placeholder={t("counties.searchDetailedPlaceholder")}
                 placeholderTextColor={theme.textMuted}
                 style={[styles.searchInput, { color: theme.textPrimary }]}
                 autoFocus

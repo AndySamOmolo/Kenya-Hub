@@ -31,6 +31,7 @@ import {
   getCategoryInfo,
 } from "../../src/shared/lib/tools-registry";
 import { ThemedIcon, ThemedIconBadge } from "../../src/components/ThemedIcon";
+import { useAppLanguage, translateToolShortTitle } from "../../src/lib/i18n";
 
 function toolEmojiToIonicon(emoji?: string): string {
   const clean = (emoji || "").replace(/[\uFE0F]/g, "").trim();
@@ -248,6 +249,7 @@ const SavedToolCard = React.memo(function SavedToolCard({
 }) {
   const router = useRouter();
   const { theme, themeConfig, themeMetrics } = useTheme();
+  const { language } = useAppLanguage();
   const themedCardStyle = useMemo(
     () => passedCardStyle ?? getThemedCardStyle(theme, themeConfig, themeMetrics),
     [passedCardStyle, theme, themeConfig, themeMetrics]
@@ -271,7 +273,7 @@ const SavedToolCard = React.memo(function SavedToolCard({
       <Pressable
         android_ripple={androidRipple(theme.rippleColor)}
         accessibilityRole="button"
-        accessibilityLabel={`Open ${tool.shortTitle}`}
+        accessibilityLabel={`Open ${translateToolShortTitle(tool.slug, tool.shortTitle, language)}`}
         onPress={() =>
           router.push({
             pathname: "/tools/[slug]",
@@ -304,7 +306,7 @@ const SavedToolCard = React.memo(function SavedToolCard({
             </View>
           )}
           <Text style={[styles.title, { color: theme.textPrimary }]}>
-            {tool.shortTitle}
+            {translateToolShortTitle(tool.slug, tool.shortTitle, language)}
           </Text>
           {showCardDescriptions && (
             <Text style={[styles.description, { color: theme.textSecondary }]}>
@@ -315,7 +317,7 @@ const SavedToolCard = React.memo(function SavedToolCard({
         <Pressable
           android_ripple={androidRipple(theme.rippleColor, true)}
           accessibilityRole="button"
-          accessibilityLabel={`Unpin ${tool.shortTitle}`}
+          accessibilityLabel={`Unpin ${translateToolShortTitle(tool.slug, tool.shortTitle, language)}`}
           onPress={(e) => {
             e.stopPropagation();
             triggerHaptic(12);
@@ -337,6 +339,7 @@ const SavedToolCard = React.memo(function SavedToolCard({
 export default function SavedScreen() {
   const router = useRouter();
   const { theme, isDark, themeConfig, themeMetrics, resolvedFonts, resetThemeConfig } = useTheme();
+  const { language, t } = useAppLanguage();
   const styles = useMemo(
     () => createSavedStyles(themeMetrics, resolvedFonts),
     [themeMetrics, resolvedFonts]
@@ -499,8 +502,8 @@ export default function SavedScreen() {
       <KenyaStripe />
 
       <AndroidTopAppBar
-        title="Pinned Tools"
-        subtitle="Saved offline for 1-tap access"
+        title={t("saved.title")}
+        subtitle={t("saved.subtitle")}
         rightAction={clearRightAction}
       />
 

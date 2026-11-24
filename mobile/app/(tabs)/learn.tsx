@@ -1,3 +1,4 @@
+import { useAppLanguage } from "../../src/lib/i18n";
 import React, {
   forwardRef,
   useCallback,
@@ -203,6 +204,7 @@ function createLearnStyles(
 
 export default function LearnTabScreen() {
   const { theme, themeConfig, themeMetrics, resolvedFonts } = useTheme();
+  const { t } = useAppLanguage();
   const styles = useMemo(
     () => createLearnStyles(themeMetrics, resolvedFonts),
     [themeMetrics, resolvedFonts]
@@ -274,7 +276,7 @@ export default function LearnTabScreen() {
     >
       <KenyaStripe />
       <AndroidTopAppBar
-        title={navState.inCourse ? navState.courseName : "Learn Hub"}
+        title={navState.inCourse ? navState.courseName : t("learn.title")}
         subtitle={
           navState.inCourse
             ? "Tap back for all courses"

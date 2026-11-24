@@ -453,13 +453,14 @@ export const ExpandablePillRow = React.memo(function ExpandablePillRow({
   const renderNormalizedChildren = (
     nodes: React.ReactNode,
     isExpanded: boolean,
-    isRootPill = true
+    isRootPill = true,
+    forcedInkColor?: string
   ): React.ReactNode => {
     return React.Children.map(nodes, (child) => {
       if (!React.isValidElement(child)) return child;
       if (child.type === React.Fragment) {
         const fragProps = child.props as { children?: React.ReactNode };
-        return <>{renderNormalizedChildren(fragProps.children, isExpanded, isRootPill)}</>;
+        return <>{renderNormalizedChildren(fragProps.children, isExpanded, isRootPill, forcedInkColor)}</>;
       }
       const props = child.props as {
         style?: StyleProp<any>;
@@ -467,10 +468,6 @@ export const ExpandablePillRow = React.memo(function ExpandablePillRow({
         numberOfLines?: number;
         onLayout?: (e: LayoutChangeEvent) => void;
       };
-      const nextChildren = props.children
-        ? renderNormalizedChildren(props.children, isExpanded, false)
-        : props.children;
-
       if (isRootPill) {
         const pillIdx = runningPillIdx++;
         const isActive = isPillMarkedActive(
@@ -479,6 +476,18 @@ export const ExpandablePillRow = React.memo(function ExpandablePillRow({
           theme.primaryContainer,
           theme.secondaryContainer
         );
+        const childForcedInk = isActive
+          ? isUnderlineTabs || isMinimalText
+            ? theme.gold
+            : isSidebarChips
+            ? theme.textPrimary
+            : isSegmentedBar || isFloatingDock
+            ? theme.onPrimaryContainer
+            : undefined
+          : undefined;
+        const rootNextChildren = props.children
+          ? renderNormalizedChildren(props.children, isExpanded, false, childForcedInk)
+          : props.children;
         if (detectedActiveIdx === -1 && isActive) {
           detectedActiveIdx = pillIdx;
         }
@@ -626,9 +635,13 @@ export const ExpandablePillRow = React.memo(function ExpandablePillRow({
             },
             style: composedStyle,
           },
-          nextChildren
+          rootNextChildren
         );
       }
+
+      const nextChildren = props.children
+        ? renderNormalizedChildren(props.children, isExpanded, false, forcedInkColor)
+        : props.children;
 
       const flatChildStyle = StyleSheet.flatten(resolveBaseStyle(props.style)) || {};
       const isTextNode =
@@ -673,6 +686,7 @@ export const ExpandablePillRow = React.memo(function ExpandablePillRow({
                 ...(themeConfig?.fontPair && themeConfig.fontPair !== "outfit-inter"
                   ? { fontFamily: resolvedFonts.bold }
                   : {}),
+                ...(forcedInkColor ? { color: forcedInkColor } : {}),
               },
               isExpanded ? { flexShrink: 1 } : null,
             ],
@@ -681,9 +695,15 @@ export const ExpandablePillRow = React.memo(function ExpandablePillRow({
         );
       }
 
+      const childAnyProps = child.props as Record<string, any>;
+      const iconColorOverride =
+        forcedInkColor && typeof childAnyProps?.name === "string" && typeof childAnyProps?.color === "string"
+          ? { color: forcedInkColor }
+          : {};
       return React.cloneElement(
         child as React.ReactElement<any>,
         {
+          ...iconColorOverride,
           ...(isExpanded && props.numberOfLines === 1
             ? { numberOfLines: undefined }
             : {}),

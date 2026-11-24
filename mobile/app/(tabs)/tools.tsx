@@ -32,6 +32,7 @@ import {
 } from "../../src/shared/lib/tools-registry";
 import matatuData from "../../src/shared/data/matatu-routes.json";
 import { ThemedIcon, ThemedIconBadge } from "../../src/components/ThemedIcon";
+import { useAppLanguage, translateCategoryName, translateToolShortTitle } from "../../src/lib/i18n";
 
 function toolEmojiToIonicon(emoji?: string): string {
   const clean = (emoji || "").replace(/[\uFE0F]/g, "").trim();
@@ -117,6 +118,7 @@ const ToolItem = React.memo(function ToolItem({
   const showCategoryBadges = themeConfig.showCategoryBadges !== false;
   const showCardDescriptions = themeConfig.showCardDescriptions !== false;
   const showTrailingArrows = themeConfig.showTrailingArrows !== false;
+  const { language } = useAppLanguage();
 
   return (
     <View
@@ -181,7 +183,7 @@ const ToolItem = React.memo(function ToolItem({
               </View>
             )}
             <Text style={[styles.title, { color: theme.textPrimary }]}>
-              {item.shortTitle}
+              {translateToolShortTitle(item.slug, item.shortTitle, language)}
             </Text>
           </View>
           {showTrailingArrows && (
@@ -226,6 +228,7 @@ const ToolItem = React.memo(function ToolItem({
 export default function ToolsScreen() {
   const router = useRouter();
   const { theme, isDark, themeConfig, themeMetrics, resolvedFonts } = useTheme();
+  const { language, t } = useAppLanguage();
   const styles = useMemo(
     () => createToolsStyles(themeMetrics, resolvedFonts),
     [themeMetrics, resolvedFonts]
@@ -611,7 +614,7 @@ export default function ToolsScreen() {
       <KenyaStripe />
 
       <AndroidTopAppBar
-        title={category !== "all" ? getCategoryInfo(category)?.name || "All Tools" : "All Tools"}
+        title={category !== "all" ? translateCategoryName(category, getCategoryInfo(category)?.name || t("tools.allTitle"), language) : t("tools.allTitle")}
         subtitle={
           category !== "all"
             ? getCategoryInfo(category)?.description || "Filtered Kenya utilities"
@@ -645,7 +648,7 @@ export default function ToolsScreen() {
           <TextInput
             value={query}
             onChangeText={setQuery}
-            placeholder={`Search ${TOOLS.length} tools...`}
+            placeholder={language === "sw" ? `Tafuta zana ${TOOLS.length}...` : `Search ${TOOLS.length} tools...`}
             numberOfLines={1}
             multiline={false}
             placeholderTextColor={theme.textMuted}

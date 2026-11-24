@@ -28,6 +28,7 @@ import {
   pressableStyle,
 } from "../src/theme";
 import { VerifiedAudioPlayer } from "../src/components/VerifiedAudioPlayer";
+import { AppLanguageProvider } from "../src/lib/i18n";
 
 function LayoutContent({ fontsLoaded }: { fontsLoaded: boolean }) {
   const { theme, isDark, themeReady, themeConfig } = useTheme();
@@ -97,9 +98,11 @@ export default function RootLayout() {
 
   return (
     <SafeAreaProvider>
-      <ThemeProvider>
-        <LayoutContent fontsLoaded={fontsLoaded || Boolean(fontError)} />
-      </ThemeProvider>
+      <AppLanguageProvider>
+        <ThemeProvider>
+          <LayoutContent fontsLoaded={fontsLoaded || Boolean(fontError)} />
+        </ThemeProvider>
+      </AppLanguageProvider>
     </SafeAreaProvider>
   );
 }
