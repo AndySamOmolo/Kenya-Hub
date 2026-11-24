@@ -222,6 +222,14 @@ interface KslSignStudioProps {
   storybooks?: KslStorybookItem[];
 }
 
+function ensureFullDurationKslUrl(v: { category?: string; videoUrl?: string }): string {
+  const url = String(v?.videoUrl || "");
+  if (v?.category === "human-sign-bible" && url && !url.includes("?v=")) {
+    return `${url}?v=2`;
+  }
+  return url;
+}
+
 export default function KslSignStudio({
   initialVideos = [],
   storybooks = [],
@@ -607,7 +615,7 @@ export default function KslSignStudio({
                 <video
                   ref={videoRef}
                   key={activeVideo.id}
-                  src={activeVideo.videoUrl}
+                  src={ensureFullDurationKslUrl(activeVideo)}
                   controls
                   autoPlay={autoPlayVideo}
                   playsInline

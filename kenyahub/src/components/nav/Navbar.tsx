@@ -341,8 +341,16 @@ export default function Navbar() {
                 </button>
               </div>
 
-              {/* Mobile: Compact right cluster (Search + Learn + Theme + Hamburger) */}
+              {/* Mobile: Compact right cluster (Learn + Search + Account + Theme + Hamburger) */}
               <div className="md:hidden flex items-center gap-1.5">
+                <Link
+                  href="/tools/learn/"
+                  className="h-7 px-2 text-[11px] font-bold text-gold bg-gold/15 border border-gold/30 rounded-lg inline-flex items-center justify-center gap-1"
+                >
+                  <Languages className="w-3 h-3 text-gold shrink-0" aria-hidden="true" />
+                  <span>Learn</span>
+                </Link>
+
                 <button
                   type="button"
                   data-testid="navbar-search-trigger"
@@ -360,14 +368,6 @@ export default function Navbar() {
                   title="Account & Sign In"
                 >
                   <User className="w-3.5 h-3.5" aria-hidden="true" />
-                </Link>
-
-                <Link
-                  href="/tools/learn/"
-                  className="h-7 px-2 text-[11px] font-bold text-gold bg-gold/15 border border-gold/30 rounded-lg inline-flex items-center justify-center gap-1"
-                >
-                  <Languages className="w-3 h-3 text-gold shrink-0" aria-hidden="true" />
-                  <span>Learn</span>
                 </Link>
 
                 <button

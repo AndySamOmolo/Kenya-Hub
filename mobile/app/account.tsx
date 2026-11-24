@@ -10,8 +10,15 @@ import {
   View,
 } from "react-native";
 import { Stack, useRouter } from "expo-router";
-import { Ionicons } from "@expo/vector-icons";
-import { useTheme } from "../src/theme";
+import { SafeAreaView } from "react-native-safe-area-context";
+import {
+  useTheme,
+  KenyaStripe,
+  AndroidTopAppBar,
+  getThemedCardStyle,
+  triggerHaptic,
+} from "../src/theme";
+import { ThemedIcon, ThemedIconBadge } from "../src/components/ThemedIcon";
 import {
   getCurrentUser,
   sendPasswordRecovery,
@@ -24,7 +31,7 @@ import {
 } from "../src/lib/appwrite-auth";
 
 export default function AccountScreen() {
-  const { theme, updateThemeConfig } = useTheme();
+  const { theme, themeConfig, themeMetrics, updateThemeConfig } = useTheme();
   const router = useRouter();
   const [user, setUser] = useState<MobileAuthUser | null>(null);
   const [loading, setLoading] = useState(true);
@@ -40,12 +47,14 @@ export default function AccountScreen() {
   const [successMsg, setSuccessMsg] = useState<string | null>(null);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
+  const themedCardStyle = getThemedCardStyle(theme, themeConfig, themeMetrics);
+
   const applySyncSummary = useCallback(
-    (s: MobileCloudSyncSummary | null) => {
-      if (!s) return;
-      setSyncSummary(s);
-      if (s.syncedThemeConfig) {
-        updateThemeConfig(s.syncedThemeConfig);
+    (summary: MobileCloudSyncSummary | null) => {
+      if (!summary) return;
+      setSyncSummary(summary);
+      if (summary.syncedThemeConfig) {
+        updateThemeConfig(summary.syncedThemeConfig);
       }
     },
     [updateThemeConfig]
@@ -57,9 +66,7 @@ export default function AccountScreen() {
       const current = await getCurrentUser();
       setUser(current);
       if (current) {
-        syncMobileUserData()
-          .then((s) => applySyncSummary(s))
-          .catch(() => {});
+        syncMobileUserData().then(applySyncSummary).catch(() => {});
       }
     } finally {
       setLoading(false);
@@ -115,10 +122,9 @@ export default function AccountScreen() {
           : await signUpWithEmail(name, email, password);
       setUser(loggedIn);
       setPassword("");
-      syncMobileUserData()
-        .then((s) => applySyncSummary(s))
-        .catch(() => {});
       setConfirmPassword("");
+      triggerHaptic("light");
+      syncMobileUserData().then(applySyncSummary).catch(() => {});
     } catch (err) {
       setErrorMsg(err instanceof Error ? err.message : "Authentication failed.");
     } finally {
@@ -132,328 +138,384 @@ export default function AccountScreen() {
       await signOutMobile();
       setUser(null);
       setSyncSummary(null);
+      triggerHaptic("light");
     } finally {
       setSubmitting(false);
     }
   }, []);
 
   return (
-    <KeyboardAvoidingView
-      style={{ flex: 1, backgroundColor: theme.bgPrimary }}
-      behavior={Platform.OS === "ios" ? "padding" : undefined}
-    >
-      <Stack.Screen
-        options={{
-          title: "Account",
-          headerStyle: { backgroundColor: theme.bgCard },
-          headerTintColor: theme.textPrimary,
-        }}
+    <SafeAreaView style={{ flex: 1, backgroundColor: theme.bgPrimary }} edges={["top", "left", "right"]}>
+      <Stack.Screen options={{ headerShown: false }} />
+      <KenyaStripe />
+      <AndroidTopAppBar
+        title="Account"
+        subtitle={user ? "Synced with Appwrite Cloud" : "Sign in to sync themes, progress & tools"}
+        showBack
       />
-      <ScrollView
-        contentContainerStyle={{ padding: 20, paddingBottom: 48 }}
-        keyboardShouldPersistTaps="handled"
+      <KeyboardAvoidingView
+        style={{ flex: 1 }}
+        behavior={Platform.OS === "ios" ? "padding" : undefined}
       >
-        {loading ? (
-          <View style={{ paddingVertical: 64, alignItems: "center" }}>
-            <ActivityIndicator size="large" color={theme.gold} />
-            <Text style={{ color: theme.textSecondary, marginTop: 12, fontSize: 14 }}>
-              Checking your KenyaHub account...
-            </Text>
-          </View>
-        ) : user ? (
-          <View
-            style={{
-              backgroundColor: theme.bgCard,
-              borderColor: theme.border,
-              borderWidth: 1,
-              borderRadius: 18,
-              padding: 20,
-            }}
-          >
-            <View style={{ flexDirection: "row", alignItems: "center", gap: 14, marginBottom: 18 }}>
-              <View
-                style={{
-                  width: 52,
-                  height: 52,
-                  borderRadius: 16,
-                  backgroundColor: `${theme.gold}22`,
-                  borderColor: `${theme.gold}66`,
-                  borderWidth: 1,
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                <Text style={{ color: theme.gold, fontSize: 18, fontWeight: "800" }}>
-                  {(user.name || user.email || "KH").slice(0, 2).toUpperCase()}
-                </Text>
-              </View>
-              <View style={{ flex: 1 }}>
-                <Text style={{ color: theme.textPrimary, fontSize: 18, fontWeight: "800" }}>
-                  {user.name || "KenyaHub Member"}
-                </Text>
-                <Text style={{ color: theme.textSecondary, fontSize: 13, marginTop: 2 }}>
-                  {user.email}
-                </Text>
-              </View>
+        <ScrollView
+          contentContainerStyle={{ padding: 18, paddingBottom: 48 }}
+          keyboardShouldPersistTaps="handled"
+          showsVerticalScrollIndicator={themeConfig?.verticalScrollbarStyle !== "hidden"}
+        >
+          {loading ? (
+            <View style={{ paddingVertical: 64, alignItems: "center" }}>
+              <ActivityIndicator size="large" color={theme.gold} />
+              <Text style={{ color: theme.textSecondary, marginTop: 12, fontSize: 14 }}>
+                Checking your KenyaHub account...
+              </Text>
             </View>
+          ) : user ? (
+            <View style={{ gap: 14 }}>
+              {/* Profile Header Card */}
+              <View style={[themedCardStyle, { padding: 18 }]}>
+                <View style={{ flexDirection: "row", alignItems: "center", gap: 14 }}>
+                  <View
+                    style={{
+                      width: 54,
+                      height: 54,
+                      borderRadius: 18,
+                      backgroundColor: `${theme.gold}22`,
+                      borderColor: `${theme.gold}66`,
+                      borderWidth: 1.5,
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <Text style={{ color: theme.gold, fontSize: 19, fontWeight: "800" }}>
+                      {(user.name || user.email || "KH").slice(0, 2).toUpperCase()}
+                    </Text>
+                  </View>
+                  <View style={{ flex: 1 }}>
+                    <Text style={{ color: theme.textPrimary, fontSize: 18, fontWeight: "800" }}>
+                      {user.name || "KenyaHub Member"}
+                    </Text>
+                    <Text style={{ color: theme.textSecondary, fontSize: 13, marginTop: 2 }}>
+                      {user.email}
+                    </Text>
+                    <View
+                      style={{
+                        flexDirection: "row",
+                        alignItems: "center",
+                        gap: 5,
+                        marginTop: 6,
+                      }}
+                    >
+                      <ThemedIcon name="shield-checkmark-outline" size={14} color={theme.kenyaGreenLight || "#10b981"} />
+                      <Text style={{ color: theme.kenyaGreenLight || "#10b981", fontSize: 11, fontWeight: "700" }}>
+                        Active Appwrite Session
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+              </View>
 
-            <View
-              style={{
-                backgroundColor: theme.bgElevated,
-                borderColor: theme.border,
-                borderWidth: 1,
-                borderRadius: 12,
-                padding: 14,
-                marginBottom: 14,
-              }}
-            >
-              <Text style={{ color: theme.textPrimary, fontWeight: "700", fontSize: 14 }}>
-                Cloud Account Sync
-              </Text>
-              <Text style={{ color: theme.textSecondary, fontSize: 12, marginTop: 4, marginBottom: 10, lineHeight: 18 }}>
-                {syncSummary
-                  ? `Synced: ${syncSummary.themeSynced ? "Active theme" : "Default theme"}${
-                      syncSummary.savedThemesCount > 0
-                        ? ` + ${syncSummary.savedThemesCount} saved ${
-                            syncSummary.savedThemesCount === 1 ? "theme" : "themes"
-                          }`
-                        : ""
-                    } · ${syncSummary.pinnedCount} pinned ${
-                      syncSummary.pinnedCount === 1 ? "tool" : "tools"
-                    } · ${syncSummary.languagesSynced} ${
-                      syncSummary.languagesSynced === 1 ? "language" : "languages"
-                    } · ${syncSummary.favoritesCount} ${
-                      syncSummary.favoritesCount === 1 ? "favorite" : "favorites"
-                    }.`
-                  : "Themes, pinned tools, language progress, translator favorites, Huduma bag & Harambee pledges sync automatically."}
-              </Text>
+              {/* Cloud Sync Card */}
+              <View style={[themedCardStyle, { padding: 18 }]}>
+                <View style={{ flexDirection: "row", alignItems: "center", gap: 10, marginBottom: 8 }}>
+                  <ThemedIconBadge name="cloud-done-outline" accentColor={theme.gold} baseSize={36} iconSize={18} />
+                  <View style={{ flex: 1 }}>
+                    <Text style={{ color: theme.textPrimary, fontWeight: "800", fontSize: 15 }}>
+                      Cloud Account Sync
+                    </Text>
+                    <Text style={{ color: theme.textSecondary, fontSize: 12, marginTop: 1 }}>
+                      Themes, pinned tools, language XP, favorites & checklists
+                    </Text>
+                  </View>
+                </View>
+
+                {syncSummary ? (
+                  <View
+                    style={{
+                      flexDirection: "row",
+                      flexWrap: "wrap",
+                      gap: 8,
+                      marginVertical: 10,
+                    }}
+                  >
+                    {[
+                      { label: "Pinned Tools", val: String(syncSummary.pinnedCount) },
+                      { label: "Languages", val: String(syncSummary.languagesSynced) },
+                      { label: "Saved Themes", val: String(syncSummary.savedThemesCount) },
+                      { label: "Active Theme", val: syncSummary.themeSynced ? "Synced" : "Local" },
+                    ].map((stat) => (
+                      <View
+                        key={stat.label}
+                        style={{
+                          flexGrow: 1,
+                          minWidth: "45%",
+                          backgroundColor: theme.bgElevated,
+                          borderColor: theme.border,
+                          borderWidth: 1,
+                          borderRadius: 12,
+                          padding: 10,
+                        }}
+                      >
+                        <Text style={{ color: theme.gold, fontSize: 16, fontWeight: "800" }}>{stat.val}</Text>
+                        <Text style={{ color: theme.textMuted, fontSize: 11, marginTop: 2 }}>{stat.label}</Text>
+                      </View>
+                    ))}
+                  </View>
+                ) : null}
+
+                <Pressable
+                  disabled={syncing}
+                  onPress={async () => {
+                    setSyncing(true);
+                    try {
+                      const s = await syncMobileUserData();
+                      applySyncSummary(s);
+                      triggerHaptic("light");
+                    } finally {
+                      setSyncing(false);
+                    }
+                  }}
+                  style={({ pressed }) => ({
+                    backgroundColor: `${theme.gold}22`,
+                    borderColor: `${theme.gold}55`,
+                    borderWidth: 1,
+                    borderRadius: 12,
+                    paddingVertical: 11,
+                    flexDirection: "row",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: 8,
+                    opacity: syncing ? 0.6 : pressed ? 0.85 : 1,
+                    marginTop: 6,
+                  })}
+                >
+                  <ThemedIcon name="sync-outline" size={16} color={theme.gold} />
+                  <Text style={{ color: theme.gold, fontWeight: "800", fontSize: 13 }}>
+                    {syncing ? "Syncing..." : "Sync Now"}
+                  </Text>
+                </Pressable>
+              </View>
+
+              {/* Quick Actions */}
+              <View style={[themedCardStyle, { padding: 6 }]}>
+                <Pressable
+                  onPress={() => router.replace("/(tabs)/learn")}
+                  style={({ pressed }) => ({
+                    padding: 14,
+                    borderRadius: 12,
+                    flexDirection: "row",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                    opacity: pressed ? 0.75 : 1,
+                  })}
+                >
+                  <View style={{ flexDirection: "row", alignItems: "center", gap: 12 }}>
+                    <ThemedIcon name="school-outline" size={19} color={theme.gold} />
+                    <Text style={{ color: theme.textPrimary, fontWeight: "700", fontSize: 14 }}>
+                      Continue Language Learning
+                    </Text>
+                  </View>
+                  <ThemedIcon name="chevron-forward" size={16} color={theme.textMuted} />
+                </Pressable>
+
+                <View style={{ height: 1, backgroundColor: theme.border, marginHorizontal: 14 }} />
+
+                <Pressable
+                  onPress={() => router.push("/settings")}
+                  style={({ pressed }) => ({
+                    padding: 14,
+                    borderRadius: 12,
+                    flexDirection: "row",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                    opacity: pressed ? 0.75 : 1,
+                  })}
+                >
+                  <View style={{ flexDirection: "row", alignItems: "center", gap: 12 }}>
+                    <ThemedIcon name="color-palette-outline" size={19} color={theme.gold} />
+                    <Text style={{ color: theme.textPrimary, fontWeight: "700", fontSize: 14 }}>
+                      Customize App Theme
+                    </Text>
+                  </View>
+                  <ThemedIcon name="chevron-forward" size={16} color={theme.textMuted} />
+                </Pressable>
+              </View>
+
+              {/* Sign Out */}
               <Pressable
-                disabled={syncing}
-                onPress={async () => {
-                  setSyncing(true);
-                  try {
-                    const s = await syncMobileUserData();
-                    applySyncSummary(s);
-                  } finally {
-                    setSyncing(false);
-                  }
-                }}
-                style={{
-                  backgroundColor: `${theme.gold}22`,
-                  borderColor: `${theme.gold}55`,
-                  borderWidth: 1,
-                  borderRadius: 10,
-                  paddingVertical: 9,
-                  alignItems: "center",
-                  opacity: syncing ? 0.6 : 1,
-                }}
-              >
-                <Text style={{ color: theme.gold, fontWeight: "700", fontSize: 13 }}>
-                  {syncing ? "Syncing..." : "Sync Now"}
-                </Text>
-              </Pressable>
-            </View>
-
-            <Pressable
-              onPress={() => router.replace("/(tabs)/learn")}
-              style={{
-                backgroundColor: theme.bgElevated,
-                borderColor: theme.border,
-                borderWidth: 1,
-                borderRadius: 12,
-                padding: 14,
-                flexDirection: "row",
-                alignItems: "center",
-                justifyContent: "space-between",
-                marginBottom: 14,
-              }}
-            >
-              <View style={{ flexDirection: "row", alignItems: "center", gap: 10 }}>
-                <Ionicons name="book-outline" size={18} color={theme.gold} />
-                <Text style={{ color: theme.textPrimary, fontWeight: "700", fontSize: 14 }}>
-                  Continue Language Learning
-                </Text>
-              </View>
-              <Ionicons name="chevron-forward" size={16} color={theme.textMuted} />
-            </Pressable>
-
-            <Pressable
-              onPress={handleSignOut}
-              disabled={submitting}
-              style={{
-                backgroundColor: "#ef444418",
-                borderColor: "#ef444444",
-                borderWidth: 1,
-                borderRadius: 12,
-                paddingVertical: 13,
-                alignItems: "center",
-                flexDirection: "row",
-                justifyContent: "center",
-                gap: 8,
-              }}
-            >
-              <Ionicons name="log-out-outline" size={18} color="#ef4444" />
-              <Text style={{ color: "#ef4444", fontWeight: "700", fontSize: 14 }}>
-                {submitting ? "Signing out..." : "Sign Out"}
-              </Text>
-            </Pressable>
-          </View>
-        ) : (
-          <View
-            style={{
-              backgroundColor: theme.bgCard,
-              borderColor: theme.border,
-              borderWidth: 1,
-              borderRadius: 18,
-              padding: 20,
-            }}
-          >
-            <Text style={{ color: theme.textPrimary, fontSize: 22, fontWeight: "800", textAlign: "center" }}>
-              {mode === "signin"
-                ? "Sign in to KenyaHub"
-                : mode === "signup"
-                ? "Create KenyaHub Account"
-                : "Reset Password"}
-            </Text>
-            <Text style={{ color: theme.textSecondary, fontSize: 13, textAlign: "center", marginTop: 6, marginBottom: 18 }}>
-              {mode === "forgot"
-                ? "Enter your email and we'll send you a reset link."
-                : "Sign in or create an account with your email and password."}
-            </Text>
-
-            {errorMsg ? (
-              <View
-                style={{
+                onPress={handleSignOut}
+                disabled={submitting}
+                style={({ pressed }) => ({
                   backgroundColor: "#ef444418",
                   borderColor: "#ef444444",
                   borderWidth: 1,
-                  borderRadius: 12,
-                  padding: 12,
-                  marginBottom: 14,
-                }}
+                  borderRadius: 14,
+                  paddingVertical: 14,
+                  alignItems: "center",
+                  flexDirection: "row",
+                  justifyContent: "center",
+                  gap: 8,
+                  opacity: submitting ? 0.6 : pressed ? 0.8 : 1,
+                })}
               >
-                <Text style={{ color: "#ef4444", fontSize: 12 }}>{errorMsg}</Text>
-              </View>
-            ) : null}
-
-            {successMsg ? (
-              <View
-                style={{
-                  backgroundColor: "#10b98118",
-                  borderColor: "#10b98144",
-                  borderWidth: 1,
-                  borderRadius: 12,
-                  padding: 12,
-                  marginBottom: 14,
-                }}
-              >
-                <Text style={{ color: "#10b981", fontSize: 12 }}>{successMsg}</Text>
-              </View>
-            ) : null}
-
-            {mode !== "forgot" && (
-              <>
-                <View
+                <ThemedIcon name="log-out-outline" size={18} color="#ef4444" />
+                <Text style={{ color: "#ef4444", fontWeight: "800", fontSize: 14 }}>
+                  {submitting ? "Signing out..." : "Sign Out"}
+                </Text>
+              </Pressable>
+            </View>
+          ) : (
+            <View style={{ gap: 16 }}>
+              {/* Hero Badge */}
+              <View style={{ alignItems: "center", paddingTop: 6 }}>
+                <ThemedIconBadge
+                  name={mode === "forgot" ? "key-outline" : "person-circle-outline"}
+                  accentColor={theme.gold}
+                  baseSize={60}
+                  iconSize={30}
+                />
+                <Text
                   style={{
-                    flexDirection: "row",
-                    backgroundColor: theme.bgElevated,
-                    borderColor: theme.border,
-                    borderWidth: 1,
-                    borderRadius: 12,
-                    padding: 4,
-                    marginBottom: 16,
+                    color: theme.textPrimary,
+                    fontSize: 22,
+                    fontWeight: "800",
+                    textAlign: "center",
+                    marginTop: 12,
                   }}
                 >
-                  {(["signin", "signup"] as const).map((tab) => {
-                    const active = mode === tab;
-                    return (
-                      <Pressable
-                        key={tab}
-                        onPress={() => { setMode(tab); setErrorMsg(null); setSuccessMsg(null); }}
-                        style={{
-                          flex: 1,
-                          paddingVertical: 9,
-                          borderRadius: 9,
-                          backgroundColor: active ? theme.gold : "transparent",
-                          alignItems: "center",
-                        }}
-                      >
-                        <Text style={{ color: active ? "#000000" : theme.textSecondary, fontWeight: "700", fontSize: 12 }}>
-                          {tab === "signin" ? "Sign In" : "Create Account"}
-                        </Text>
-                      </Pressable>
-                    );
-                  })}
-                </View>
-              </>
-            )}
-
-            {mode === "signup" && (
-              <View style={{ marginBottom: 12 }}>
-                <Text style={{ color: theme.textSecondary, fontSize: 12, fontWeight: "600", marginBottom: 6 }}>
-                  Full Name
+                  {mode === "signin"
+                    ? "Welcome back"
+                    : mode === "signup"
+                    ? "Create KenyaHub Account"
+                    : "Reset Password"}
                 </Text>
-                <TextInput
-                  value={name}
-                  onChangeText={setName}
-                  placeholder="Wanjiku Kamau"
-                  placeholderTextColor={theme.textMuted}
+                <Text
                   style={{
-                    backgroundColor: theme.bgElevated,
-                    borderColor: theme.border,
-                    borderWidth: 1,
-                    borderRadius: 12,
-                    paddingHorizontal: 14,
-                    paddingVertical: 11,
-                    color: theme.textPrimary,
-                    fontSize: 14,
+                    color: theme.textSecondary,
+                    fontSize: 13,
+                    textAlign: "center",
+                    marginTop: 4,
+                    maxWidth: 300,
+                    lineHeight: 19,
                   }}
-                />
+                >
+                  {mode === "forgot"
+                    ? "Enter your email and Appwrite will send you a password reset link."
+                    : "Back up your themes, pinned tools, favorites & language progress across devices."}
+                </Text>
               </View>
-            )}
 
-            <View style={{ marginBottom: 12 }}>
-              <Text style={{ color: theme.textSecondary, fontSize: 12, fontWeight: "600", marginBottom: 6 }}>
-                Email Address
-              </Text>
-              <TextInput
-                value={email}
-                onChangeText={setEmail}
-                autoCapitalize="none"
-                keyboardType="email-address"
-                placeholder="you@example.com"
-                placeholderTextColor={theme.textMuted}
-                style={{
-                  backgroundColor: theme.bgElevated,
-                  borderColor: theme.border,
-                  borderWidth: 1,
-                  borderRadius: 12,
-                  paddingHorizontal: 14,
-                  paddingVertical: 11,
-                  color: theme.textPrimary,
-                  fontSize: 14,
-                }}
-              />
-            </View>
+              {/* Form Card */}
+              <View style={[themedCardStyle, { padding: 18 }]}>
+                {errorMsg ? (
+                  <View
+                    style={{
+                      backgroundColor: "#ef444418",
+                      borderColor: "#ef444444",
+                      borderWidth: 1,
+                      borderRadius: 12,
+                      padding: 12,
+                      marginBottom: 14,
+                    }}
+                  >
+                    <Text style={{ color: "#ef4444", fontSize: 12, lineHeight: 17 }}>{errorMsg}</Text>
+                  </View>
+                ) : null}
 
-            {mode !== "forgot" && (
-              <View style={{ marginBottom: 12 }}>
-                <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginBottom: 6 }}>
-                  <Text style={{ color: theme.textSecondary, fontSize: 12, fontWeight: "600" }}>
-                    Password
+                {successMsg ? (
+                  <View
+                    style={{
+                      backgroundColor: "#10b98118",
+                      borderColor: "#10b98144",
+                      borderWidth: 1,
+                      borderRadius: 12,
+                      padding: 12,
+                      marginBottom: 14,
+                    }}
+                  >
+                    <Text style={{ color: "#10b981", fontSize: 12, lineHeight: 17 }}>{successMsg}</Text>
+                  </View>
+                ) : null}
+
+                {mode !== "forgot" && (
+                  <View
+                    style={{
+                      flexDirection: "row",
+                      backgroundColor: theme.bgElevated,
+                      borderColor: theme.border,
+                      borderWidth: 1,
+                      borderRadius: 12,
+                      padding: 4,
+                      marginBottom: 18,
+                    }}
+                  >
+                    {(["signin", "signup"] as const).map((tab) => {
+                      const active = mode === tab;
+                      return (
+                        <Pressable
+                          key={tab}
+                          onPress={() => {
+                            triggerHaptic("light");
+                            setMode(tab);
+                            setErrorMsg(null);
+                            setSuccessMsg(null);
+                          }}
+                          style={{
+                            flex: 1,
+                            paddingVertical: 10,
+                            borderRadius: 9,
+                            backgroundColor: active ? theme.gold : "transparent",
+                            alignItems: "center",
+                          }}
+                        >
+                          <Text
+                            style={{
+                              color: active ? "#000000" : theme.textSecondary,
+                              fontWeight: "800",
+                              fontSize: 13,
+                            }}
+                          >
+                            {tab === "signin" ? "Sign In" : "Create Account"}
+                          </Text>
+                        </Pressable>
+                      );
+                    })}
+                  </View>
+                )}
+
+                {mode === "signup" && (
+                  <View style={{ marginBottom: 14 }}>
+                    <Text style={{ color: theme.textSecondary, fontSize: 12, fontWeight: "700", marginBottom: 6 }}>
+                      Full Name
+                    </Text>
+                    <TextInput
+                      value={name}
+                      onChangeText={setName}
+                      placeholder="Wanjiku Kamau"
+                      placeholderTextColor={theme.textMuted}
+                      style={{
+                        backgroundColor: theme.bgElevated,
+                        borderColor: theme.border,
+                        borderWidth: 1,
+                        borderRadius: 12,
+                        paddingHorizontal: 14,
+                        paddingVertical: 12,
+                        color: theme.textPrimary,
+                        fontSize: 14,
+                      }}
+                    />
+                  </View>
+                )}
+
+                <View style={{ marginBottom: 14 }}>
+                  <Text style={{ color: theme.textSecondary, fontSize: 12, fontWeight: "700", marginBottom: 6 }}>
+                    Email Address
                   </Text>
-                  {mode === "signin" && (
-                    <Pressable onPress={() => { setMode("forgot"); setErrorMsg(null); setSuccessMsg(null); }}>
-                      <Text style={{ color: theme.gold, fontSize: 12, fontWeight: "600" }}>Forgot password?</Text>
-                    </Pressable>
-                  )}
-                </View>
-                <View style={{ position: "relative" }}>
                   <TextInput
-                    value={password}
-                    onChangeText={setPassword}
-                    secureTextEntry={!showPassword}
-                    placeholder="At least 8 characters"
+                    value={email}
+                    onChangeText={setEmail}
+                    autoCapitalize="none"
+                    keyboardType="email-address"
+                    placeholder="you@example.com"
                     placeholderTextColor={theme.textMuted}
                     style={{
                       backgroundColor: theme.bgElevated,
@@ -461,83 +523,148 @@ export default function AccountScreen() {
                       borderWidth: 1,
                       borderRadius: 12,
                       paddingHorizontal: 14,
-                      paddingRight: 44,
-                      paddingVertical: 11,
+                      paddingVertical: 12,
                       color: theme.textPrimary,
                       fontSize: 14,
                     }}
                   />
-                  <Pressable
-                    onPress={() => setShowPassword((v) => !v)}
-                    style={{ position: "absolute", right: 12, top: 11, padding: 2 }}
-                  >
-                    <Ionicons name={showPassword ? "eye-off-outline" : "eye-outline"} size={20} color={theme.textMuted} />
-                  </Pressable>
                 </View>
-              </View>
-            )}
 
-            {mode === "signup" && (
-              <View style={{ marginBottom: 18 }}>
-                <Text style={{ color: theme.textSecondary, fontSize: 12, fontWeight: "600", marginBottom: 6 }}>
-                  Confirm Password
-                </Text>
-                <TextInput
-                  value={confirmPassword}
-                  onChangeText={setConfirmPassword}
-                  secureTextEntry={!showPassword}
-                  placeholder="Re-enter password"
-                  placeholderTextColor={theme.textMuted}
-                  style={{
-                    backgroundColor: theme.bgElevated,
-                    borderColor: theme.border,
-                    borderWidth: 1,
+                {mode !== "forgot" && (
+                  <View style={{ marginBottom: 14 }}>
+                    <View
+                      style={{
+                        flexDirection: "row",
+                        justifyContent: "space-between",
+                        alignItems: "center",
+                        marginBottom: 6,
+                      }}
+                    >
+                      <Text style={{ color: theme.textSecondary, fontSize: 12, fontWeight: "700" }}>
+                        Password
+                      </Text>
+                      {mode === "signin" && (
+                        <Pressable
+                          onPress={() => {
+                            setMode("forgot");
+                            setErrorMsg(null);
+                            setSuccessMsg(null);
+                          }}
+                        >
+                          <Text style={{ color: theme.gold, fontSize: 12, fontWeight: "700" }}>
+                            Forgot password?
+                          </Text>
+                        </Pressable>
+                      )}
+                    </View>
+                    <View style={{ position: "relative" }}>
+                      <TextInput
+                        value={password}
+                        onChangeText={setPassword}
+                        secureTextEntry={!showPassword}
+                        placeholder="At least 8 characters"
+                        placeholderTextColor={theme.textMuted}
+                        style={{
+                          backgroundColor: theme.bgElevated,
+                          borderColor: theme.border,
+                          borderWidth: 1,
+                          borderRadius: 12,
+                          paddingHorizontal: 14,
+                          paddingRight: 44,
+                          paddingVertical: 12,
+                          color: theme.textPrimary,
+                          fontSize: 14,
+                        }}
+                      />
+                      <Pressable
+                        onPress={() => setShowPassword((v) => !v)}
+                        style={{ position: "absolute", right: 12, top: 12, padding: 2 }}
+                      >
+                        <ThemedIcon
+                          name={showPassword ? "eye-off-outline" : "eye-outline"}
+                          size={20}
+                          color={theme.textMuted}
+                        />
+                      </Pressable>
+                    </View>
+                  </View>
+                )}
+
+                {mode === "signup" && (
+                  <View style={{ marginBottom: 18 }}>
+                    <Text style={{ color: theme.textSecondary, fontSize: 12, fontWeight: "700", marginBottom: 6 }}>
+                      Confirm Password
+                    </Text>
+                    <TextInput
+                      value={confirmPassword}
+                      onChangeText={setConfirmPassword}
+                      secureTextEntry={!showPassword}
+                      placeholder="Re-enter password"
+                      placeholderTextColor={theme.textMuted}
+                      style={{
+                        backgroundColor: theme.bgElevated,
+                        borderColor: theme.border,
+                        borderWidth: 1,
+                        borderRadius: 12,
+                        paddingHorizontal: 14,
+                        paddingVertical: 12,
+                        color: theme.textPrimary,
+                        fontSize: 14,
+                      }}
+                    />
+                  </View>
+                )}
+
+                <Pressable
+                  onPress={handleEmailSubmit}
+                  disabled={submitting}
+                  style={({ pressed }) => ({
+                    backgroundColor: theme.gold,
                     borderRadius: 12,
-                    paddingHorizontal: 14,
-                    paddingVertical: 11,
-                    color: theme.textPrimary,
-                    fontSize: 14,
-                  }}
-                />
+                    paddingVertical: 14,
+                    alignItems: "center",
+                    opacity: submitting ? 0.6 : pressed ? 0.85 : 1,
+                    marginTop: mode === "signup" ? 0 : 4,
+                  })}
+                >
+                  <Text style={{ color: "#000000", fontWeight: "800", fontSize: 14 }}>
+                    {submitting
+                      ? "Please wait..."
+                      : mode === "signin"
+                      ? "Sign In"
+                      : mode === "signup"
+                      ? "Create Account"
+                      : "Send Reset Link"}
+                  </Text>
+                </Pressable>
+
+                {mode === "forgot" && (
+                  <Pressable
+                    onPress={() => {
+                      setMode("signin");
+                      setErrorMsg(null);
+                      setSuccessMsg(null);
+                    }}
+                    style={{ paddingVertical: 12, alignItems: "center", marginTop: 4 }}
+                  >
+                    <Text style={{ color: theme.textSecondary, fontSize: 12, fontWeight: "700" }}>
+                      ← Back to Sign In
+                    </Text>
+                  </Pressable>
+                )}
               </View>
-            )}
 
-            <Pressable
-              onPress={handleEmailSubmit}
-              disabled={submitting}
-              style={{
-                backgroundColor: theme.gold,
-                borderRadius: 12,
-                paddingVertical: 13,
-                alignItems: "center",
-                opacity: submitting ? 0.6 : 1,
-                marginTop: mode === "signup" ? 0 : 6,
-              }}
-            >
-              <Text style={{ color: "#000000", fontWeight: "800", fontSize: 14 }}>
-                {submitting
-                  ? "Please wait..."
-                  : mode === "signin"
-                  ? "Sign In"
-                  : mode === "signup"
-                  ? "Create Account"
-                  : "Send Reset Link"}
-              </Text>
-            </Pressable>
-
-            {mode === "forgot" && (
-              <Pressable
-                onPress={() => { setMode("signin"); setErrorMsg(null); setSuccessMsg(null); }}
-                style={{ paddingVertical: 12, alignItems: "center", marginTop: 4 }}
-              >
-                <Text style={{ color: theme.textSecondary, fontSize: 12, fontWeight: "600" }}>
-                  ← Back to Sign In
+              {/* Sync perks strip */}
+              <View style={[themedCardStyle, { padding: 14, flexDirection: "row", alignItems: "center", gap: 12 }]}>
+                <ThemedIcon name="cloud-upload-outline" size={20} color={theme.gold} />
+                <Text style={{ color: theme.textSecondary, fontSize: 12, flex: 1, lineHeight: 17 }}>
+                  Your custom themes, pinned tools, dictionary favorites & language progress sync automatically once signed in.
                 </Text>
-              </Pressable>
-            )}
-          </View>
-        )}
-      </ScrollView>
-    </KeyboardAvoidingView>
+              </View>
+            </View>
+          )}
+        </ScrollView>
+      </KeyboardAvoidingView>
+    </SafeAreaView>
   );
 }

@@ -82,6 +82,14 @@ function getLearningQuizzesData(): Record<string, any> {
 const KSL_PLAYER_STATIC_HTML = `<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><style>html,body{margin:0;padding:0;background:#000;width:100%;height:100%;display:flex;align-items:center;justify-content:center;overflow:hidden}video{width:100%;height:100%;object-fit:contain;background:#000}</style></head><body><video id="v" controls playsinline loop preload="auto"></video></body></html>`;
 const KSL_QUIZ_STATIC_HTML = `<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><style>html,body{margin:0;padding:0;background:#000;width:100%;height:100%;display:flex;align-items:center;justify-content:center;overflow:hidden}video{width:100%;height:100%;object-fit:contain;background:#000}</style></head><body><video id="v" controls autoplay muted playsinline loop preload="auto"></video></body></html>`;
 
+function ensureFullDurationKslUrl(v?: { category?: string; videoUrl?: string } | null): string {
+  const url = String(v?.videoUrl || "");
+  if (v?.category === "human-sign-bible" && url && !url.includes("?v=")) {
+    return `${url}?v=2`;
+  }
+  return url;
+}
+
 const KslVideoWebView = React.memo(function KslVideoWebView({
   videoUrl,
   playbackRate = 1,
@@ -3477,7 +3485,7 @@ export default function LanguageCourseTool({
                 <View style={{ gap: 8, backgroundColor: colors.surface, borderRadius: 12, borderWidth: 1, borderColor: colors.outlineVariant, padding: 10 }}>
                   <View style={{ height: 220, borderRadius: 10, overflow: 'hidden', backgroundColor: '#000000' }}>
                     <KslVideoWebView
-                      videoUrl={activeKsl.videoUrl}
+                      videoUrl={ensureFullDurationKslUrl(activeKsl)}
                       playbackRate={kslPlaybackRate}
                       autoPlay={kslAutoPlay}
                       domStorageEnabled

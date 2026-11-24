@@ -235,11 +235,11 @@ def transcode_to_compact_mp4(raw_bytes: bytes, in_ext: str = ".mp4", max_seconds
             *(["-t", str(max_seconds)] if max_seconds and max_seconds > 0 else []),
             "-an",
             "-vf", "scale='min(480,iw)':-2,fps=20",
-            "-c:v", "libx264", "-preset", "veryfast", "-crf", "28",
+            "-c:v", "libx264", "-preset", ("veryfast" if (max_seconds and max_seconds > 0) else "ultrafast"), "-crf", "28",
             "-pix_fmt", "yuv420p", "-movflags", "+faststart",
             out_path,
         ]
-        ffmpeg_timeout = 120 if (max_seconds and max_seconds > 0) else 600
+        ffmpeg_timeout = 120 if (max_seconds and max_seconds > 0) else 900
         try:
             subprocess.run(cmd, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=ffmpeg_timeout)
             if os.path.exists(out_path) and os.path.getsize(out_path) > 0:
