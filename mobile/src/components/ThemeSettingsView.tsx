@@ -1061,12 +1061,12 @@ export function ThemeSettingsView() {
       DEFAULT_THEME_CONFIG,
       isDark
     ) as ThemeColors;
-  }, [peekingDefault, theme, isDark]);
+  }, [peekingDefault, theme, isDark, themeConfigVersion]);
 
   const previewMetrics: ThemeMetrics = useMemo(() => {
     if (!peekingDefault) return themeMetrics;
     return resolveThemeMetrics(DEFAULT_THEME_CONFIG);
-  }, [peekingDefault, themeMetrics]);
+  }, [peekingDefault, themeMetrics, themeConfigVersion]);
 
   const previewFonts = useMemo(() => {
     if (!peekingDefault) return resolvedFonts;
@@ -1074,7 +1074,7 @@ export function ThemeSettingsView() {
       DEFAULT_THEME_CONFIG.fontPair,
       Platform.OS === "ios"
     );
-  }, [peekingDefault, resolvedFonts]);
+  }, [peekingDefault, resolvedFonts, themeConfigVersion]);
 
   const headingTransform: HeadingTransform =
     themeConfig?.headingTransform ?? "none";
@@ -1454,6 +1454,7 @@ export function ThemeSettingsView() {
         {/* Preview Stage (Mini-App or Card; hidden when previewMode === "hide") */}
         {previewMode === "mini-app" && (
           <MiniAppLivePreview
+            key={`mini-preview-${themeConfigVersion}`}
             previewTheme={previewTheme}
             previewConfig={previewConfig}
             previewMetrics={previewMetrics}
@@ -1468,6 +1469,7 @@ export function ThemeSettingsView() {
 
         {previewMode === "card" && (
           <CardCompactPreview
+            key={`card-preview-${themeConfigVersion}`}
             previewTheme={previewTheme}
             previewConfig={previewConfig}
             previewMetrics={previewMetrics}
