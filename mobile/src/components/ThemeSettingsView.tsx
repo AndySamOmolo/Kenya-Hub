@@ -893,6 +893,7 @@ export function ThemeSettingsView() {
     isDark,
     setThemeMode,
     themeConfig,
+    themeConfigVersion,
     resolvedFonts,
     themeMetrics,
     updateThemeConfig,
@@ -1558,8 +1559,9 @@ export function ThemeSettingsView() {
         </View>
       </View>
 
-      {/* Main Scrollable Settings Controls (NO key={themeKey} wrapper!) */}
+      {/* Main Scrollable Settings Controls (key forces re-render on theme config change) */}
       <ScrollView
+        key={`settings-scroll-${themeConfigVersion}`}
         style={[styles.scroll, { backgroundColor: theme.bgPrimary }]}
         contentContainerStyle={styles.scrollContent}
         showsVerticalScrollIndicator={

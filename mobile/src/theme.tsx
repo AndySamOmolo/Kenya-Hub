@@ -350,6 +350,7 @@ interface ThemeContextType {
   themeReady: boolean;
   themeKey: string;
   themeConfig: ThemeConfig;
+  themeConfigVersion: number;
   themeMetrics: ThemeMetrics;
   resolvedFonts: { heading: string; body: string; bold: string };
   toggleTheme: () => void;
@@ -444,6 +445,7 @@ const ThemeContext = createContext<ThemeContextType>({
   themeReady: false,
   themeKey: buildThemeKey(DEFAULT_THEME_CONFIG, darkColors, true),
   themeConfig: DEFAULT_THEME_CONFIG,
+  themeConfigVersion: 0,
   themeMetrics: defaultMetrics,
   resolvedFonts: { heading: "Outfit_700Bold", body: "Inter_400Regular", bold: "Inter_700Bold" },
   toggleTheme: () => {},
@@ -476,6 +478,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [themeConfig, setThemeConfig] = useState<ThemeConfig>(DEFAULT_THEME_CONFIG);
   const [savedThemes, setSavedThemes] = useState<SavedCustomTheme[]>([]);
   const [themeReady, setThemeReady] = useState<boolean>(false);
+  const [themeConfigVersion, setThemeConfigVersion] = useState(0);
 
   useEffect(() => {
     let mounted = true;
@@ -626,6 +629,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
         persistConfig(next);
         return next;
       });
+      setThemeConfigVersion((v) => v + 1);
     },
     [persistConfig]
   );
@@ -831,6 +835,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
       themeReady,
       themeKey,
       themeConfig,
+      themeConfigVersion,
       themeMetrics,
       resolvedFonts,
       toggleTheme,
@@ -849,6 +854,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
       themeReady,
       themeKey,
       themeConfig,
+      themeConfigVersion,
       themeMetrics,
       resolvedFonts,
       toggleTheme,
