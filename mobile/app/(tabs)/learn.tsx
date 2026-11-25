@@ -222,6 +222,7 @@ export default function LearnTabScreen() {
   const scrollRef = useRef<ScrollView>(null);
   const fabRef = useRef<BackToTopHandle>(null);
   const [contentReady, setContentReady] = useState(false);
+  const [themeVersion, setThemeVersion] = useState(0);
   const showBackToTopRef = useRef(false);
   const [navState, setNavState] = useState<CourseNavigationState>({
     inCourse: false,
@@ -248,9 +249,14 @@ export default function LearnTabScreen() {
     };
   }, []);
 
+  // Bump themeVersion when theme config changes to force re-mount of deferred tool
+  useEffect(() => {
+    setThemeVersion((v) => v + 1);
+  }, [themeConfig]);
+
   const DeferredLanguageLearningTool = useMemo(
     () => (contentReady ? getLanguageLearningTool() : null),
-    [contentReady]
+    [contentReady, themeVersion]
   );
 
   const handleScrollToTop = useCallback(() => {

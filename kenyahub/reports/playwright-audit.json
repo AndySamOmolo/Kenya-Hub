@@ -1,0 +1,293 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\Admin\\Documents\\Coding\\Kenya-Hub\\kenyahub\\node_modules\\@playwright\\test\\cli.js",
+      "test"
+    ],
+    "configFile": "C:\\Users\\Admin\\Documents\\Coding\\Kenya-Hub\\kenyahub\\playwright.config.ts",
+    "rootDir": "C:/Users/Admin/Documents/Coding/Kenya-Hub/kenyahub/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "failures-only",
+    "projects": [
+      {
+        "outputDir": "C:/Users/Admin/Documents/Coding/Kenya-Hub/kenyahub/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "desktop-dark",
+        "name": "desktop-dark",
+        "testDir": "C:/Users/Admin/Documents/Coding/Kenya-Hub/kenyahub/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/Admin/Documents/Coding/Kenya-Hub/kenyahub/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "desktop-light",
+        "name": "desktop-light",
+        "testDir": "C:/Users/Admin/Documents/Coding/Kenya-Hub/kenyahub/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/Admin/Documents/Coding/Kenya-Hub/kenyahub/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "mobile-dark",
+        "name": "mobile-dark",
+        "testDir": "C:/Users/Admin/Documents/Coding/Kenya-Hub/kenyahub/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/Admin/Documents/Coding/Kenya-Hub/kenyahub/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "mobile-light",
+        "name": "mobile-light",
+        "testDir": "C:/Users/Admin/Documents/Coding/Kenya-Hub/kenyahub/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\Admin\\Documents\\Coding\\Kenya-Hub\\kenyahub\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "name": "desktop-dark",
+        "testDir": "C:\\Users\\Admin\\Documents\\Coding\\Kenya-Hub\\kenyahub\\tests\\e2e",
+        "snapshotDir": "C:\\Users\\Admin\\Documents\\Coding\\Kenya-Hub\\kenyahub\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:3000",
+          "screenshot": "off",
+          "video": "off",
+          "trace": "on-first-retry",
+          "reducedMotion": "reduce",
+          "actionTimeout": 12000,
+          "navigationTimeout": 25000,
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/159.0.8154.6 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 800
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "colorScheme": "dark"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "desktop-dark"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\Admin\\Documents\\Coding\\Kenya-Hub\\kenyahub\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "name": "desktop-light",
+        "testDir": "C:\\Users\\Admin\\Documents\\Coding\\Kenya-Hub\\kenyahub\\tests\\e2e",
+        "snapshotDir": "C:\\Users\\Admin\\Documents\\Coding\\Kenya-Hub\\kenyahub\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:3000",
+          "screenshot": "off",
+          "video": "off",
+          "trace": "on-first-retry",
+          "reducedMotion": "reduce",
+          "actionTimeout": 12000,
+          "navigationTimeout": 25000,
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/159.0.8154.6 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 800
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "colorScheme": "light"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "desktop-light"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\Admin\\Documents\\Coding\\Kenya-Hub\\kenyahub\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "name": "mobile-dark",
+        "testDir": "C:\\Users\\Admin\\Documents\\Coding\\Kenya-Hub\\kenyahub\\tests\\e2e",
+        "snapshotDir": "C:\\Users\\Admin\\Documents\\Coding\\Kenya-Hub\\kenyahub\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:3000",
+          "screenshot": "off",
+          "video": "off",
+          "trace": "on-first-retry",
+          "reducedMotion": "reduce",
+          "actionTimeout": 12000,
+          "navigationTimeout": 25000,
+          "userAgent": "Mozilla/5.0 (Linux; Android 14; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/159.0.8154.6 Mobile Safari/537.36",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "screen": {
+            "width": 412,
+            "height": 915
+          },
+          "deviceScaleFactor": 2.625,
+          "isMobile": true,
+          "hasTouch": true,
+          "defaultBrowserType": "chromium",
+          "colorScheme": "dark"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "mobile-dark"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\Admin\\Documents\\Coding\\Kenya-Hub\\kenyahub\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "name": "mobile-light",
+        "testDir": "C:\\Users\\Admin\\Documents\\Coding\\Kenya-Hub\\kenyahub\\tests\\e2e",
+        "snapshotDir": "C:\\Users\\Admin\\Documents\\Coding\\Kenya-Hub\\kenyahub\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:3000",
+          "screenshot": "off",
+          "video": "off",
+          "trace": "on-first-retry",
+          "reducedMotion": "reduce",
+          "actionTimeout": 12000,
+          "navigationTimeout": 25000,
+          "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Mobile/15E148 Safari/604.1",
+          "viewport": {
+            "width": 390,
+            "height": 664
+          },
+          "screen": {
+            "width": 390,
+            "height": 844
+          },
+          "deviceScaleFactor": 3,
+          "isMobile": true,
+          "hasTouch": true,
+          "defaultBrowserType": "chromium",
+          "colorScheme": "light"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "mobile-light"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "reports/playwright-html",
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/playwright-audit.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.1",
+    "workers": 4,
+    "webServer": {
+      "command": "npx serve out -l 3000",
+      "url": "http://127.0.0.1:3000",
+      "reuseExistingServer": true,
+      "timeout": 60000
+    }
+  },
+  "suites": [],
+  "errors": [
+    {
+      "message": "Error: Process from config.webServer was not able to start. Exit code: 1",
+      "stack": "Error: Process from config.webServer was not able to start. Exit code: 1"
+    }
+  ],
+  "stats": {
+    "startTime": "2026-11-25T07:19:55.028Z",
+    "duration": 1341.571,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

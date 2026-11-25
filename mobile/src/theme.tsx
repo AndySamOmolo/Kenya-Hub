@@ -652,7 +652,8 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const applyThemePreset = React.useCallback(
     (presetId: string, forceMode?: "dark" | "light", applyFullLook = true) => {
       triggerHaptic(10);
-      if (!THEME_PRESETS.some((p) => p.id === presetId)) return;
+      const isCraftPreset = presetId in PRESET_SIGNATURE_LOOKS;
+      if (!isCraftPreset && !THEME_PRESETS.some((p) => p.id === presetId)) return;
       const sigLook = applyFullLook ? PRESET_SIGNATURE_LOOKS[presetId] : undefined;
       setThemeConfig((prev) => {
         const next: ThemeConfig = sigLook

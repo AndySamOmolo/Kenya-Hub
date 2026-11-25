@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T17:38:52.291Z",
+  "generatedAt": "2026-11-25T08:33:28.589Z",
   "registryCount": 50,
   "routeCount": 50,
   "courseCount": 23,
@@ -569,7 +569,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kra.go.ke/",
       "maxAgeDays": 90,
-      "ageDays": 5,
+      "ageDays": 6,
       "data": [
         {
           "file": "src/data/kenya-utility-tools-2026.json",
@@ -584,7 +584,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.odpc.go.ke/",
       "maxAgeDays": 90,
-      "ageDays": 5,
+      "ageDays": 6,
       "data": [
         {
           "file": "src/data/kenya-utility-tools-2026.json",
@@ -599,7 +599,7 @@
       "routeExists": true,
       "sourceUrl": "https://environment.ec.europa.eu/topics/forests/deforestation/regulation-deforestation-free-products_en",
       "maxAgeDays": 90,
-      "ageDays": 5,
+      "ageDays": 6,
       "data": [
         {
           "file": "src/data/kenya-utility-tools-2026.json",
@@ -614,7 +614,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kra.go.ke/",
       "maxAgeDays": 90,
-      "ageDays": 5,
+      "ageDays": 6,
       "data": [
         {
           "file": "src/data/kenya-utility-tools-2026.json",
@@ -629,7 +629,7 @@
       "routeExists": true,
       "sourceUrl": "https://sha.go.ke/contracted-facilities",
       "maxAgeDays": 90,
-      "ageDays": 5,
+      "ageDays": 6,
       "data": [
         {
           "file": "src/data/kenya-utility-tools-2026.json",
@@ -644,7 +644,7 @@
       "routeExists": true,
       "sourceUrl": "https://e-gp.go.ke/",
       "maxAgeDays": 90,
-      "ageDays": 5,
+      "ageDays": 6,
       "data": [
         {
           "file": "src/data/kenya-utility-tools-2026.json",
@@ -659,7 +659,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.knec.ac.ke/",
       "maxAgeDays": 90,
-      "ageDays": 5,
+      "ageDays": 6,
       "data": [
         {
           "file": "src/data/kenya-utility-tools-2026.json",
@@ -674,7 +674,7 @@
       "routeExists": true,
       "sourceUrl": "https://ardhisasa.lands.go.ke/",
       "maxAgeDays": 90,
-      "ageDays": 5,
+      "ageDays": 6,
       "data": [
         {
           "file": "src/data/kenya-utility-tools-2026.json",
@@ -689,7 +689,7 @@
       "routeExists": true,
       "sourceUrl": "https://archive.org/",
       "maxAgeDays": 365,
-      "ageDays": 24,
+      "ageDays": 25,
       "data": [
         {
           "file": "src/data/courses/types.ts",
@@ -839,7 +839,7 @@
       "routeExists": true,
       "sourceUrl": "https://cldr.unicode.org/",
       "maxAgeDays": 365,
-      "ageDays": 5,
+      "ageDays": 6,
       "data": [
         {
           "file": "src/data/dictionaries/borana.json",
@@ -964,7 +964,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kra.go.ke/individual/calculate-tax/calculating-tax/paye",
       "maxAgeDays": 90,
-      "ageDays": 35,
+      "ageDays": 36,
       "data": [
         {
           "file": "src/data/paye-bands.json",
@@ -984,7 +984,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.safaricom.co.ke/main-mpesa/m-pesa-for-you/tariffs-limits/consumer-tariffs-limits",
       "maxAgeDays": 90,
-      "ageDays": 35,
+      "ageDays": 36,
       "data": [
         {
           "file": "src/data/mpesa-tariffs.json",
@@ -999,7 +999,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.sasra.go.ke/",
       "maxAgeDays": 90,
-      "ageDays": 54,
+      "ageDays": 55,
       "data": [
         {
           "file": "src/data/sacco-chama-rates.json",
@@ -1019,7 +1019,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.helb.co.ke/",
       "maxAgeDays": 90,
-      "ageDays": 4,
+      "ageDays": 5,
       "data": [
         {
           "file": "src/data/helb-rates.json",
@@ -1034,7 +1034,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kenyalaw.org/lex/",
       "maxAgeDays": 90,
-      "ageDays": 35,
+      "ageDays": 36,
       "data": [
         {
           "file": "src/data/stamp-duty-rates.json",
@@ -1054,7 +1054,7 @@
       "routeExists": true,
       "sourceUrl": "https://kicd.ac.ke/",
       "maxAgeDays": 90,
-      "ageDays": 35,
+      "ageDays": 36,
       "data": [
         {
           "file": "src/data/cbc-curriculum.json",
@@ -1079,7 +1079,7 @@
       "routeExists": true,
       "sourceUrl": "https://students.kuccps.net/",
       "maxAgeDays": 90,
-      "ageDays": 35,
+      "ageDays": 36,
       "data": [
         {
           "file": "src/data/kuccps-clusters.json",
@@ -1094,7 +1094,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.knec.ac.ke/",
       "maxAgeDays": 90,
-      "ageDays": 4,
+      "ageDays": 5,
       "data": [],
       "status": "ok"
     },
@@ -1103,7 +1103,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kra.go.ke/individual/import-export/import-duty-on-motor-vehicles",
       "maxAgeDays": 90,
-      "ageDays": 54,
+      "ageDays": 55,
       "data": [
         {
           "file": "src/data/kra-car-import-crsp.json",
@@ -1128,7 +1128,7 @@
       "routeExists": true,
       "sourceUrl": "https://ntsa.go.ke/",
       "maxAgeDays": 90,
-      "ageDays": 35,
+      "ageDays": 36,
       "data": [
         {
           "file": "src/data/number-plate-prefixes.json",
@@ -1143,7 +1143,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kenyalaw.org/lex/",
       "maxAgeDays": 90,
-      "ageDays": 35,
+      "ageDays": 36,
       "data": [
         {
           "file": "src/data/traffic-fines.json",
@@ -1158,7 +1158,7 @@
       "routeExists": true,
       "sourceUrl": "https://nca.go.ke/",
       "maxAgeDays": 90,
-      "ageDays": 54,
+      "ageDays": 55,
       "data": [
         {
           "file": "src/data/mjengo-construction-rates.json",
@@ -1173,7 +1173,7 @@
       "routeExists": true,
       "sourceUrl": "https://kplc.co.ke/faq/tariff",
       "maxAgeDays": 90,
-      "ageDays": 35,
+      "ageDays": 36,
       "data": [
         {
           "file": "src/data/kplc-tariff.json",
@@ -1193,7 +1193,7 @@
       "routeExists": true,
       "sourceUrl": "https://wasreb.go.ke/",
       "maxAgeDays": 90,
-      "ageDays": 4,
+      "ageDays": 5,
       "data": [
         {
           "file": "src/data/water-tariffs.json",
@@ -1208,7 +1208,7 @@
       "routeExists": true,
       "sourceUrl": "https://sha.go.ke/",
       "maxAgeDays": 90,
-      "ageDays": 35,
+      "ageDays": 36,
       "data": [
         {
           "file": "src/data/sha-benefit-data.json",
@@ -1233,7 +1233,7 @@
       "routeExists": true,
       "sourceUrl": "https://judiciary.go.ke/small-claims-court/",
       "maxAgeDays": 90,
-      "ageDays": 4,
+      "ageDays": 5,
       "data": [
         {
           "file": "src/data/small-claims-data.json",
@@ -1248,7 +1248,7 @@
       "routeExists": true,
       "sourceUrl": "https://ntsa.go.ke/",
       "maxAgeDays": 90,
-      "ageDays": 34,
+      "ageDays": 35,
       "data": [
         {
           "file": "src/data/ntsa-transfer-data.json",
@@ -1268,7 +1268,7 @@
       "routeExists": true,
       "sourceUrl": "https://bomayangu.go.ke/",
       "maxAgeDays": 90,
-      "ageDays": 35,
+      "ageDays": 36,
       "data": [
         {
           "file": "src/data/boma-yangu-data.json",
@@ -1288,7 +1288,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kra.go.ke/",
       "maxAgeDays": 90,
-      "ageDays": 4,
+      "ageDays": 5,
       "data": [
         {
           "file": "src/data/rental-tax-data.json",
@@ -1303,7 +1303,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kenyalaw.org/lex/",
       "maxAgeDays": 90,
-      "ageDays": 34,
+      "ageDays": 35,
       "data": [
         {
           "file": "src/data/tenant-rights-data.json",
@@ -1318,7 +1318,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.labour.go.ke/",
       "maxAgeDays": 90,
-      "ageDays": 4,
+      "ageDays": 5,
       "data": [
         {
           "file": "src/data/domestic-wage-data.json",
@@ -1333,7 +1333,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.ca.go.ke/",
       "maxAgeDays": 90,
-      "ageDays": 4,
+      "ageDays": 5,
       "data": [
         {
           "file": "src/data/airtime-drain-data.json",
@@ -1348,7 +1348,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.ca.go.ke/",
       "maxAgeDays": 90,
-      "ageDays": 4,
+      "ageDays": 5,
       "data": [
         {
           "file": "src/data/mobile-prefixes.json",
@@ -1363,7 +1363,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.education.go.ke/",
       "maxAgeDays": 90,
-      "ageDays": 0,
+      "ageDays": 1,
       "data": [
         {
           "file": "src/data/kenya-everyday-tools-2026.json",
@@ -1378,7 +1378,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.epra.go.ke/",
       "maxAgeDays": 90,
-      "ageDays": 0,
+      "ageDays": 1,
       "data": [
         {
           "file": "src/data/kenya-everyday-tools-2026.json",
@@ -1393,7 +1393,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kenyalaw.org/lex/",
       "maxAgeDays": 90,
-      "ageDays": 0,
+      "ageDays": 1,
       "data": [
         {
           "file": "src/data/kenya-everyday-tools-2026.json",
@@ -1408,7 +1408,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kenyalaw.org/lex/",
       "maxAgeDays": 90,
-      "ageDays": 0,
+      "ageDays": 1,
       "data": [
         {
           "file": "src/data/kenya-everyday-tools-2026.json",
@@ -1423,7 +1423,7 @@
       "routeExists": true,
       "sourceUrl": "https://nairobiservices.go.ke/",
       "maxAgeDays": 90,
-      "ageDays": 0,
+      "ageDays": 1,
       "data": [
         {
           "file": "src/data/kenya-everyday-tools-2026.json",
@@ -1438,7 +1438,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kutrrh.go.ke/",
       "maxAgeDays": 90,
-      "ageDays": 0,
+      "ageDays": 1,
       "data": [
         {
           "file": "src/data/kenya-everyday-tools-2026.json",
@@ -1453,7 +1453,7 @@
       "routeExists": true,
       "sourceUrl": "https://meteo.go.ke/",
       "maxAgeDays": 90,
-      "ageDays": 0,
+      "ageDays": 1,
       "data": [
         {
           "file": "src/data/kenya-everyday-tools-2026.json",
@@ -1468,7 +1468,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kalro.org/",
       "maxAgeDays": 90,
-      "ageDays": 0,
+      "ageDays": 1,
       "data": [
         {
           "file": "src/data/kenya-everyday-tools-2026.json",
@@ -1483,7 +1483,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kdb.go.ke/",
       "maxAgeDays": 90,
-      "ageDays": 0,
+      "ageDays": 1,
       "data": [
         {
           "file": "src/data/kenya-everyday-tools-2026.json",
@@ -1498,7 +1498,7 @@
       "routeExists": true,
       "sourceUrl": "https://ardhisasa.lands.go.ke/",
       "maxAgeDays": 90,
-      "ageDays": 0,
+      "ageDays": 1,
       "data": [
         {
           "file": "src/data/kenya-everyday-tools-2026.json",
@@ -1513,7 +1513,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.energy.go.ke/",
       "maxAgeDays": 90,
-      "ageDays": 0,
+      "ageDays": 1,
       "data": [
         {
           "file": "src/data/kenya-everyday-tools-2026.json",
@@ -1528,7 +1528,7 @@
       "routeExists": true,
       "sourceUrl": "https://kevevapi.or.ke/",
       "maxAgeDays": 90,
-      "ageDays": 0,
+      "ageDays": 1,
       "data": [
         {
           "file": "src/data/kenya-everyday-tools-2026.json",
@@ -1543,7 +1543,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.ecitizen.go.ke/",
       "maxAgeDays": 90,
-      "ageDays": 0,
+      "ageDays": 1,
       "data": [
         {
           "file": "src/data/kenya-everyday-tools-2026.json",
@@ -1558,7 +1558,7 @@
       "routeExists": true,
       "sourceUrl": "https://kmtc.ac.ke/",
       "maxAgeDays": 90,
-      "ageDays": 0,
+      "ageDays": 1,
       "data": [
         {
           "file": "src/data/kenya-everyday-tools-2026.json",
@@ -1573,7 +1573,7 @@
       "routeExists": true,
       "sourceUrl": "https://ntsa.go.ke/",
       "maxAgeDays": 90,
-      "ageDays": 0,
+      "ageDays": 1,
       "data": [
         {
           "file": "src/data/kenya-everyday-tools-2026.json",
@@ -1588,7 +1588,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kenyalaw.org/lex/",
       "maxAgeDays": 90,
-      "ageDays": 0,
+      "ageDays": 1,
       "data": [
         {
           "file": "src/data/kenya-everyday-tools-2026.json",
@@ -1603,7 +1603,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.ipoa.go.ke/",
       "maxAgeDays": 90,
-      "ageDays": 0,
+      "ageDays": 1,
       "data": [
         {
           "file": "src/data/kenya-everyday-tools-2026.json",
