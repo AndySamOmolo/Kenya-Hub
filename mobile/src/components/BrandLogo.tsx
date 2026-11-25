@@ -8,47 +8,56 @@ interface BrandLogoProps {
 }
 
 export function BrandLogo({ size = "md", showText = true }: BrandLogoProps) {
-  const { isDark } = useTheme();
+  const { colors, isDark } = useTheme();
 
   const isSmall = size === "sm";
   const isLarge = size === "lg";
 
-  const badgeSize = isSmall ? 30 : isLarge ? 48 : 36;
-  const flagW = isSmall ? 20 : isLarge ? 32 : 24;
-  const flagH = Math.round(flagW * (2 / 3));
-  const fontSize = isSmall ? 16 : isLarge ? 26 : 20;
+  const flagW = isSmall ? 28 : isLarge ? 42 : 34;
+  const flagH = Math.round(flagW * 0.68);
+  const flagRadius = isSmall ? 6 : isLarge ? 9 : 7;
+  const fontSize = isSmall ? 18 : isLarge ? 26 : 21;
 
   return (
     <View style={styles.container}>
-      {/* Glow Aura Ring matching website: rounded-full bg-gradient-to-br from-kenya-green via-gold to-kenya-red */}
+      {/* Outer shadow wrapper separated from inner clipped View to avoid Android elevation + overflow: "hidden" artifacts */}
       <View
         style={[
-          styles.emblemRing,
+          styles.flagShadow,
           {
-            width: badgeSize,
-            height: badgeSize,
-            borderRadius: badgeSize / 2,
-            backgroundColor: isDark ? "rgba(200, 150, 30, 0.15)" : "rgba(200, 150, 30, 0.1)",
-            borderColor: isDark ? "rgba(200, 150, 30, 0.4)" : "rgba(200, 150, 30, 0.45)",
+            width: flagW,
+            height: flagH,
+            borderRadius: flagRadius,
+            backgroundColor: isDark ? colors.surfaceContainer : colors.kenyaWhite,
           },
         ]}
       >
-        {/* Official Kenya Flag matching website's /kenya-flag.svg */}
-        <Image
-          source={require("../../assets/kenya-flag.png")}
-          style={{
-            width: flagW,
-            height: flagH,
-            borderRadius: 1.5,
-          }}
-          resizeMode="cover"
-        />
+        {/* Crisp full-bleed rounded Kenya flag emblem */}
+        <View
+          style={[
+            styles.flagFrame,
+            {
+              borderRadius: flagRadius,
+              borderColor: isDark ? "rgba(255, 255, 255, 0.16)" : "rgba(26, 22, 18, 0.14)",
+              backgroundColor: isDark ? colors.surfaceContainer : colors.kenyaWhite,
+            },
+          ]}
+        >
+          <Image
+            source={require("../../assets/kenya-flag.png")}
+            style={{
+              width: "100%",
+              height: "100%",
+            }}
+            resizeMode="cover"
+          />
+        </View>
       </View>
 
-      {/* Brand Text: KenyaHub matching website's .gradient-text-kenya */}
       {showText && (
         <View style={styles.textWrap}>
           <Text
+            numberOfLines={1}
             style={[
               styles.brandText,
               {
@@ -56,9 +65,9 @@ export function BrandLogo({ size = "md", showText = true }: BrandLogoProps) {
               },
             ]}
           >
-            <Text style={{ color: isDark ? "#2FA463" : "#006B3F" }}>Kenya</Text>
-            <Text style={{ color: "#C8961E" }}>H</Text>
-            <Text style={{ color: "#BE2126" }}>ub</Text>
+            <Text style={{ color: isDark ? colors.kenyaGreenLight : colors.kenyaGreen }}>Kenya</Text>
+            <Text style={{ color: colors.gold }}>H</Text>
+            <Text style={{ color: colors.kenyaRed }}>ub</Text>
           </Text>
         </View>
       )}
@@ -70,17 +79,19 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: "row",
     alignItems: "center",
-    gap: 10,
+    gap: 9,
   },
-  emblemRing: {
-    borderWidth: 1.5,
-    alignItems: "center",
-    justifyContent: "center",
-    shadowColor: "#C8961E",
-    shadowOpacity: 0.25,
-    shadowRadius: 5,
+  flagShadow: {
+    shadowColor: "#000",
+    shadowOpacity: 0.14,
+    shadowRadius: 3,
     shadowOffset: { width: 0, height: 1 },
-    elevation: 3,
+    elevation: 2,
+  },
+  flagFrame: {
+    width: "100%",
+    height: "100%",
+    borderWidth: StyleSheet.hairlineWidth * 2,
     overflow: "hidden",
   },
   textWrap: {
@@ -89,7 +100,6 @@ const styles = StyleSheet.create({
   brandText: {
     fontFamily: "Outfit_900Black",
     fontWeight: "900",
-    letterSpacing: -0.5,
+    letterSpacing: -0.4,
   },
 });
-

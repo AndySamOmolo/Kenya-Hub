@@ -25,22 +25,22 @@
         },
         "auth": {
             "methods": {
-                "jwt": true,
-                "phone": true,
+                "jwt": false,
+                "phone": false,
                 "invites": true,
-                "anonymous": true,
-                "email-otp": true,
-                "magic-url": true,
+                "anonymous": false,
+                "email-otp": false,
+                "magic-url": false,
                 "email-password": true
             },
             "security": {
-                "duration": 31536000,
-                "limit": 0,
-                "sessionsLimit": 0,
-                "passwordHistory": 0,
-                "passwordDictionary": false,
-                "personalDataCheck": false,
-                "sessionAlerts": false,
+                "duration": 2592000,
+                "limit": 2,
+                "sessionsLimit": 5,
+                "passwordHistory": 3,
+                "passwordDictionary": true,
+                "personalDataCheck": true,
+                "sessionAlerts": true,
                 "mockNumbers": []
             }
         }
@@ -57,9 +57,12 @@
             "$id": "blogs",
             "$permissions": [
                 "read(\"any\")",
-                "create(\"users\")",
-                "update(\"users\")",
-                "delete(\"users\")"
+                "create(\"team:admins\")",
+                "update(\"team:admins\")",
+                "delete(\"team:admins\")",
+                "create(\"label:admin\")",
+                "update(\"label:admin\")",
+                "delete(\"label:admin\")"
             ],
             "databaseId": "kenyahub-db",
             "name": "Blogs",
@@ -130,15 +133,189 @@
                     "key": "idx_slug",
                     "type": "unique",
                     "status": "available",
-                    "attributes": ["slug"]
+                    "attributes": [
+                        "slug"
+                    ]
                 },
                 {
                     "key": "idx_published_at",
                     "type": "key",
                     "status": "available",
-                    "attributes": ["publishedAt"]
+                    "attributes": [
+                        "publishedAt"
+                    ]
                 }
             ]
+        },
+        {
+            "$id": "contributions",
+            "$permissions": [
+                "create(\"users\")",
+                "read(\"team:admins\")",
+                "update(\"team:admins\")",
+                "delete(\"team:admins\")",
+                "read(\"label:admin\")",
+                "update(\"label:admin\")",
+                "delete(\"label:admin\")"
+            ],
+            "databaseId": "kenyahub-db",
+            "name": "Language Contributions",
+            "enabled": true,
+            "rowSecurity": false,
+            "columns": [
+                {
+                    "key": "language",
+                    "type": "varchar",
+                    "required": true,
+                    "size": 64
+                },
+                {
+                    "key": "type",
+                    "type": "varchar",
+                    "required": true,
+                    "size": 32
+                },
+                {
+                    "key": "english",
+                    "type": "varchar",
+                    "required": true,
+                    "size": 500
+                },
+                {
+                    "key": "translation",
+                    "type": "varchar",
+                    "required": true,
+                    "size": 500
+                },
+                {
+                    "key": "pronunciation",
+                    "type": "varchar",
+                    "required": false,
+                    "size": 255
+                },
+                {
+                    "key": "context",
+                    "type": "varchar",
+                    "required": false,
+                    "size": 1000
+                },
+                {
+                    "key": "category",
+                    "type": "varchar",
+                    "required": false,
+                    "size": 64
+                },
+                {
+                    "key": "contributorName",
+                    "type": "varchar",
+                    "required": true,
+                    "size": 120
+                },
+                {
+                    "key": "contributorEmail",
+                    "type": "varchar",
+                    "required": false,
+                    "size": 255
+                },
+                {
+                    "key": "submittedAt",
+                    "type": "varchar",
+                    "required": true,
+                    "size": 50
+                },
+                {
+                    "key": "status",
+                    "type": "varchar",
+                    "required": true,
+                    "size": 32
+                },
+                {
+                    "key": "customLanguageName",
+                    "type": "varchar",
+                    "required": false,
+                    "size": 120
+                },
+                {
+                    "key": "audioFileId",
+                    "type": "varchar",
+                    "required": false,
+                    "size": 120
+                },
+                {
+                    "key": "audioUrl",
+                    "type": "varchar",
+                    "required": false,
+                    "size": 500
+                },
+                {
+                    "key": "audioMimeType",
+                    "type": "varchar",
+                    "required": false,
+                    "size": 64
+                },
+                {
+                    "key": "syncedToR2",
+                    "type": "boolean",
+                    "required": false,
+                    "default": false
+                },
+                {
+                    "key": "reviewNotes",
+                    "type": "varchar",
+                    "required": false,
+                    "size": 500
+                }
+            ],
+            "indexes": [
+                {
+                    "key": "idx_status",
+                    "type": "key",
+                    "status": "available",
+                    "attributes": [
+                        "status"
+                    ]
+                },
+                {
+                    "key": "idx_language",
+                    "type": "key",
+                    "status": "available",
+                    "attributes": [
+                        "language"
+                    ]
+                }
+            ]
+        }
+    ],
+    "buckets": [
+        {
+            "$id": "blog-images",
+            "name": "KenyaHub Media & Contribution Audio",
+            "enabled": true,
+            "fileSecurity": false,
+            "maximumFileSize": 5242880,
+            "allowedFileExtensions": [
+                "jpg",
+                "jpeg",
+                "png",
+                "webp",
+                "gif",
+                "avif",
+                "mp3",
+                "wav",
+                "m4a",
+                "ogg",
+                "opus",
+                "webm",
+                "aac"
+            ],
+            "$permissions": [
+                "create(\"users\")",
+                "read(\"any\")",
+                "delete(\"team:admins\")",
+                "delete(\"label:admin\")"
+            ],
+            "encryption": true,
+            "antivirus": true
         }
     ]
 }

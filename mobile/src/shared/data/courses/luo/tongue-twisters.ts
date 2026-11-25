@@ -1,4 +1,7 @@
-// Auto-generated from public/dictionaries/proverbs.json (tongue_twisters section)
+// ============================================================
+// Public Domain Dholuo Phonetic Practice & Tongue Twisters
+// Built from 1920 Mill-Hill Fathers "A Handbook of the Kavirondo Language"
+// ============================================================
 
 export interface TongueTwisterEntry {
   id: number;
@@ -8,58 +11,28 @@ export interface TongueTwisterEntry {
 
 export const luoTongueTwisters: TongueTwisterEntry[] = [
   {
-    "id": 1,
-    "luo": "Acham tap chotna malando, chotna cham tapa ma lando.",
-    "english": "I eat from my brown sweetheart's plate, and my sweetheart eats from my brown plate."
+    id: 1,
+    luo: "Wach mos, we ruyo, wachi wach mar adieri.",
+    english: "Speak gently, cease hurrying, speak the word of truth (Practicing w, ch, and trilled r — Mill-Hill 1920)."
   },
   {
-    "id": 2,
-    "luo": "Ji dhi chamo ng'op omoth omoth, ng'op omoth omoth ogore piny.",
-    "english": "People go to eat ripe wild figs, and the ripe wild figs fall down to the ground."
+    id: 2,
+    luo: "Kwach ma Kamagambo omako kweye gi kwach moro.",
+    english: "The leopard of Kamagambo caught leopards with another leopard (Practicing labialized velar kw and palatal ch — Mill-Hill 1920)."
   },
   {
-    "id": 3,
-    "luo": "Rawo luor liel, liel luor rawo.",
-    "english": "The hippo fears the elephant, and the elephant fears the hippo."
+    id: 3,
+    luo: "Jatich tiyo tich tek, jotich tiyo tich atiya.",
+    english: "The workman works hard work, the workmen simply work the work (Practicing dental/alveolar t and palatal ch — Mill-Hill 1920)."
   },
   {
-    "id": 4,
-    "luo": "Atud tond atonga, tond atonga chodi.",
-    "english": "I tie the basket's rope, and the basket's rope snaps."
+    id: 4,
+    luo: "Ng'ato mang'eyo ng'iewo rech ng'iewo rech mang'eny.",
+    english: "A person who knows how to buy fish buys many fish (Practicing initial and medial velar nasal ng' — Mill-Hill 1920)."
   },
   {
-    "id": 5,
-    "luo": "Chiw chuururu chuo osuri, osuri chuururu, chuo chiu.",
-    "english": "Drizzle drips through the roof pinnacle; the roof pinnacle drips and drenches completely."
-  },
-  {
-    "id": 6,
-    "luo": "Ombo matindo moloyo rudo ludhe.",
-    "english": "A few small vegetables are better than stirring sticks with nothing."
-  },
-  {
-    "id": 7,
-    "luo": "Lew rombo lemo lum, lum lemo lew rombo.",
-    "english": "The sheep's tongue licks the grass, and the grass brushes the sheep's tongue."
-  },
-  {
-    "id": 8,
-    "luo": "Chiewo chung' chiewo chiege, chi Chiewo chung' chiewo Chiewo gi chiewo.",
-    "english": "Chiewo stands and wakes his wife; Chiewo's wife stands and wakes Chiewo at dawn."
-  },
-  {
-    "id": 9,
-    "luo": "Aket ng'wen gi ng'wech Kong'weno kogwen, ng'wen be keta gi ng'wech Kong'weno kogwen.",
-    "english": "I gather termites in haste at Kong'weno at dawn, and the termites make me run in haste at Kong'weno at dawn."
-  },
-  {
-    "id": 10,
-    "luo": "Nyar Okaka okano kuon ko Kaka ma Kokano Kano.",
-    "english": "Okaka's daughter kept ugali at Kaka's home which Okano kept at Kano."
+    id: 5,
+    luo: "Chogo guok gi chok dhiang' chiegni gi dapi.",
+    english: "The bone of a dog and the bone of a cow are near the waterpot (Practicing construct-state alternation chogo/chok — Mill-Hill 1920)."
   }
 ];
-
-export function getRandomTongueTwister(): TongueTwisterEntry {
-  const index = Math.floor(Math.random() * luoTongueTwisters.length);
-  return luoTongueTwisters[index];
-}

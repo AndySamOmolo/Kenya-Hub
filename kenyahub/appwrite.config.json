@@ -14,9 +14,12 @@
             "$id": "blogs",
             "$permissions": [
                 "read(\"any\")",
-                "create(\"users\")",
-                "update(\"users\")",
-                "delete(\"users\")"
+                "create(\"team:admins\")",
+                "update(\"team:admins\")",
+                "delete(\"team:admins\")",
+                "create(\"label:admin\")",
+                "update(\"label:admin\")",
+                "delete(\"label:admin\")"
             ],
             "databaseId": "kenyahub-db",
             "name": "Blogs",
@@ -98,15 +101,206 @@
                     "key": "idx_slug",
                     "type": "unique",
                     "status": "available",
-                    "columns": ["slug"]
+                    "columns": [
+                        "slug"
+                    ]
                 },
                 {
                     "key": "idx_published_at",
                     "type": "key",
                     "status": "available",
-                    "columns": ["publishedAt"]
+                    "columns": [
+                        "publishedAt"
+                    ]
                 }
             ]
+        },
+        {
+            "$id": "contributions",
+            "$permissions": [
+                "create(\"any\")",
+                "read(\"team:admins\")",
+                "update(\"team:admins\")",
+                "delete(\"team:admins\")",
+                "read(\"label:admin\")",
+                "update(\"label:admin\")",
+                "delete(\"label:admin\")"
+            ],
+            "databaseId": "kenyahub-db",
+            "name": "Language Contributions",
+            "enabled": true,
+            "rowSecurity": false,
+            "columns": [
+                {
+                    "key": "language",
+                    "type": "varchar",
+                    "required": true,
+                    "default": null,
+                    "size": 64
+                },
+                {
+                    "key": "type",
+                    "type": "varchar",
+                    "required": true,
+                    "default": "new_word",
+                    "size": 32
+                },
+                {
+                    "key": "english",
+                    "type": "varchar",
+                    "required": true,
+                    "default": null,
+                    "size": 500
+                },
+                {
+                    "key": "translation",
+                    "type": "varchar",
+                    "required": true,
+                    "default": null,
+                    "size": 500
+                },
+                {
+                    "key": "pronunciation",
+                    "type": "varchar",
+                    "required": false,
+                    "default": null,
+                    "size": 255
+                },
+                {
+                    "key": "context",
+                    "type": "varchar",
+                    "required": false,
+                    "default": null,
+                    "size": 1000
+                },
+                {
+                    "key": "category",
+                    "type": "varchar",
+                    "required": false,
+                    "default": "phrases",
+                    "size": 64
+                },
+                {
+                    "key": "contributorName",
+                    "type": "varchar",
+                    "required": true,
+                    "default": "Community Contributor",
+                    "size": 120
+                },
+                {
+                    "key": "contributorEmail",
+                    "type": "varchar",
+                    "required": false,
+                    "default": null,
+                    "size": 255
+                },
+                {
+                    "key": "submittedAt",
+                    "type": "varchar",
+                    "required": true,
+                    "default": null,
+                    "size": 50
+                },
+                {
+                    "key": "status",
+                    "type": "varchar",
+                    "required": true,
+                    "default": "pending",
+                    "size": 32
+                },
+                {
+                    "key": "customLanguageName",
+                    "type": "varchar",
+                    "required": false,
+                    "default": null,
+                    "size": 120
+                },
+                {
+                    "key": "audioFileId",
+                    "type": "varchar",
+                    "required": false,
+                    "default": null,
+                    "size": 120
+                },
+                {
+                    "key": "audioUrl",
+                    "type": "varchar",
+                    "required": false,
+                    "default": null,
+                    "size": 500
+                },
+                {
+                    "key": "audioMimeType",
+                    "type": "varchar",
+                    "required": false,
+                    "default": null,
+                    "size": 64
+                },
+                {
+                    "key": "syncedToR2",
+                    "type": "boolean",
+                    "required": false,
+                    "default": false
+                },
+                {
+                    "key": "reviewNotes",
+                    "type": "varchar",
+                    "required": false,
+                    "default": null,
+                    "size": 500
+                }
+            ],
+            "indexes": [
+                {
+                    "key": "idx_status",
+                    "type": "key",
+                    "status": "available",
+                    "columns": [
+                        "status"
+                    ]
+                },
+                {
+                    "key": "idx_language",
+                    "type": "key",
+                    "status": "available",
+                    "columns": [
+                        "language"
+                    ]
+                }
+            ]
+        }
+    ],
+    "buckets": [
+        {
+            "$id": "blog-images",
+            "name": "KenyaHub Media & Contribution Audio",
+            "enabled": true,
+            "fileSecurity": false,
+            "maximumFileSize": 5242880,
+            "allowedFileExtensions": [
+                "jpg",
+                "jpeg",
+                "png",
+                "webp",
+                "gif",
+                "avif",
+                "svg",
+                "mp3",
+                "wav",
+                "m4a",
+                "ogg",
+                "opus",
+                "webm",
+                "aac"
+            ],
+            "$permissions": [
+                "create(\"any\")",
+                "read(\"any\")",
+                "delete(\"team:admins\")",
+                "delete(\"label:admin\")"
+            ],
+            "encryption": true,
+            "antivirus": true
         }
     ]
 }

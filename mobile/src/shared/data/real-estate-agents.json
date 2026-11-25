@@ -48,24 +48,102 @@
     }
   },
   "redFlags": [
-    { "flag": "Agent is not EARB registered", "risk": "Illegal to operate without registration — you have no legal recourse if defrauded" },
-    { "flag": "Agent demands cash-only payments", "risk": "Legitimate transactions should have paper trails and receipts" },
-    { "flag": "Agent refuses to show their EARB certificate", "risk": "All registered agents must display their certificate" },
-    { "flag": "Property price is significantly below market value", "risk": "May be a scam or the seller doesn't have clear title" },
-    { "flag": "Agent pushes for immediate full payment", "risk": "Legitimate sales processes involve lawyers, due diligence, and staged payments" },
-    { "flag": "No written agreement or contract", "risk": "All property transactions should have written documentation" }
+    {
+      "flag": "Agent is not EARB registered",
+      "risk": "Illegal to operate without registration — you have no legal recourse if defrauded"
+    },
+    {
+      "flag": "Agent demands cash-only payments",
+      "risk": "Legitimate transactions should have paper trails and receipts"
+    },
+    {
+      "flag": "Agent refuses to show their EARB certificate",
+      "risk": "All registered agents must display their certificate"
+    },
+    {
+      "flag": "Property price is significantly below market value",
+      "risk": "May be a scam or the seller doesn't have clear title"
+    },
+    {
+      "flag": "Agent pushes for immediate full payment",
+      "risk": "Legitimate sales processes involve lawyers, due diligence, and staged payments"
+    },
+    {
+      "flag": "No written agreement or contract",
+      "risk": "All property transactions should have written documentation"
+    }
   ],
   "sampleAgents": [
-    { "name": "Knight Frank Kenya", "type": "Firm", "county": "Nairobi", "specialization": "Commercial & Residential", "registered": true },
-    { "name": "HassConsult Ltd", "type": "Firm", "county": "Nairobi", "specialization": "Residential & Land", "registered": true },
-    { "name": "Pam Golding Properties Kenya", "type": "Firm", "county": "Nairobi", "specialization": "Luxury Residential", "registered": true },
-    { "name": "Lloyd Masika Ltd", "type": "Firm", "county": "Nairobi", "specialization": "Valuation & Agency", "registered": true },
-    { "name": "Tysons Limited", "type": "Firm", "county": "Nairobi", "specialization": "Commercial & Industrial", "registered": true },
-    { "name": "Broll Kenya", "type": "Firm", "county": "Nairobi", "specialization": "Property Management", "registered": true },
-    { "name": "Regent Management Ltd", "type": "Firm", "county": "Nairobi", "specialization": "Property Management", "registered": true },
-    { "name": "Sagana Real Estate", "type": "Firm", "county": "Nairobi", "specialization": "Residential", "registered": true },
-    { "name": "Villa Care Ltd", "type": "Firm", "county": "Mombasa", "specialization": "Coastal Properties", "registered": true },
-    { "name": "Homes Kenya Ltd", "type": "Firm", "county": "Nairobi", "specialization": "Residential & Commercial", "registered": true }
+    {
+      "name": "Knight Frank Kenya",
+      "type": "Firm",
+      "county": "Nairobi",
+      "specialization": "Commercial & Residential",
+      "registered": true
+    },
+    {
+      "name": "HassConsult Ltd",
+      "type": "Firm",
+      "county": "Nairobi",
+      "specialization": "Residential & Land",
+      "registered": true
+    },
+    {
+      "name": "Pam Golding Properties Kenya",
+      "type": "Firm",
+      "county": "Nairobi",
+      "specialization": "Luxury Residential",
+      "registered": true
+    },
+    {
+      "name": "Lloyd Masika Ltd",
+      "type": "Firm",
+      "county": "Nairobi",
+      "specialization": "Valuation & Agency",
+      "registered": true
+    },
+    {
+      "name": "Tysons Limited",
+      "type": "Firm",
+      "county": "Nairobi",
+      "specialization": "Commercial & Industrial",
+      "registered": true
+    },
+    {
+      "name": "Broll Kenya",
+      "type": "Firm",
+      "county": "Nairobi",
+      "specialization": "Property Management",
+      "registered": true
+    },
+    {
+      "name": "Regent Management Ltd",
+      "type": "Firm",
+      "county": "Nairobi",
+      "specialization": "Property Management",
+      "registered": true
+    },
+    {
+      "name": "Sagana Real Estate",
+      "type": "Firm",
+      "county": "Nairobi",
+      "specialization": "Residential",
+      "registered": true
+    },
+    {
+      "name": "Villa Care Ltd",
+      "type": "Firm",
+      "county": "Mombasa",
+      "specialization": "Coastal Properties",
+      "registered": true
+    },
+    {
+      "name": "Homes Kenya Ltd",
+      "type": "Firm",
+      "county": "Nairobi",
+      "specialization": "Residential & Commercial",
+      "registered": true
+    }
   ],
   "notes": [
     "The Estate Agents Registration Board (EARB) regulates estate agents in Kenya under the Estate Agents Act (Cap 533)",
@@ -74,5 +152,7 @@
     "Always insist on seeing an agent's EARB registration certificate before engaging their services",
     "EARB handles complaints against registered agents — you can file via their website or in person",
     "The sample agents list is not exhaustive — always verify directly with EARB"
-  ]
+  ],
+  "lastUpdated": "2026-10-20",
+  "source": "Estate Agents Registration Board (EARB — Cap 533)"
 }

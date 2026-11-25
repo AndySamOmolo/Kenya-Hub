@@ -3,6 +3,7 @@
 
 import { useState, useEffect, useMemo } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { TOOLS, TOOL_CATEGORIES, getPopularTools } from "@/lib/tools-registry";
 import { getToolVisitCounts, hasAnyVisits } from "@/lib/tool-usage";
 import DynamicIcon from "@/components/ui/DynamicIcon";
@@ -17,6 +18,7 @@ import { useMounted } from "@/lib/useMounted";
  * Renders client-side so it can read localStorage visit data.
  */
 export default function PopularToolsSection() {
+  const router = useRouter();
   const [visitCounts, setVisitCounts] = useState<Record<string, number>>({});
   const mounted = useMounted();
 
@@ -47,18 +49,18 @@ export default function PopularToolsSection() {
   const hasUsage = mounted && hasAnyVisits();
 
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
-      <div className="flex items-end justify-between mb-10">
+    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-20">
+      <div className="flex flex-wrap items-end justify-between gap-3 mb-4 sm:mb-10">
         <div>
-          <p className="text-xs font-bold uppercase tracking-[0.15em] text-gold mb-2">
+          <p className="text-xs font-bold uppercase tracking-[0.15em] text-gold mb-1 sm:mb-2">
             {hasUsage ? "Your Most Used" : "Most Popular"}
           </p>
-          <h2 className="text-2xl sm:text-3xl font-bold font-[family-name:var(--font-outfit)] tracking-tight">
+          <h2 className="text-xl sm:text-3xl font-bold font-[family-name:var(--font-outfit)] tracking-tight">
             {hasUsage ? "Your go-to tools" : "Tools Kenyans love"}
           </h2>
         </div>
         <Link
-          href="/tools"
+          href="/tools/"
           className="hidden sm:flex items-center gap-1.5 text-sm text-text-muted hover:text-gold transition-colors font-medium"
         >
           View all
@@ -68,26 +70,30 @@ export default function PopularToolsSection() {
         </Link>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
         {popularTools.map((tool, i) => {
           const cat = TOOL_CATEGORIES.find((c) => c.id === tool.category);
           const visits = visitCounts[tool.slug] ?? 0;
+          const href = `/tools/${tool.slug}/`;
           return (
             <Link
               key={tool.slug}
-              href={`/tools/${tool.slug}`}
-              className="tool-card bg-bg-card border border-border rounded-2xl p-4 sm:p-6 block group"
+              href={href}
+              prefetch={false}
+              onTouchStart={() => router.prefetch(href)}
+              onMouseEnter={() => router.prefetch(href)}
+              className="tool-card bg-bg-card border border-border rounded-2xl p-5 sm:p-6 block group"
               style={{ animationDelay: `${i * 80}ms` }}
             >
-              <div className="flex items-start gap-4">
-                <span className="text-[2rem] tool-icon flex-shrink-0 leading-none">
+              <div className="flex items-start gap-3 sm:gap-4">
+                <span className="text-2xl sm:text-[2rem] tool-icon flex-shrink-0 leading-none">
                   <DynamicIcon emoji={tool.icon} className="w-[1em] h-[1em]" />
                 </span>
                 <div className="min-w-0 flex-1">
-                  <h3 className="text-[0.9375rem] font-semibold text-text-primary mb-1.5 font-[family-name:var(--font-outfit)] group-hover:text-gold transition-colors leading-snug">
+                  <h3 className="text-sm sm:text-[0.9375rem] font-semibold text-text-primary mb-1 sm:mb-1.5 font-[family-name:var(--font-outfit)] group-hover:text-gold transition-colors leading-snug">
                     {tool.shortTitle}
                   </h3>
-                  <p className="text-xs text-text-muted line-clamp-2 leading-relaxed mb-3">
+                  <p className="text-sm text-text-secondary leading-relaxed mb-3">
                     {tool.description}
                   </p>
                   <div className="flex items-center gap-2 flex-wrap">
@@ -109,12 +115,11 @@ export default function PopularToolsSection() {
         })}
       </div>
 
-      <div className="sm:hidden mt-6 text-center">
-        <Link href="/tools" className="btn-outline text-sm">
+      <div className="sm:hidden mt-4 text-center">
+        <Link href="/tools/" className="btn-outline text-sm">
           View All Tools →
         </Link>
       </div>
     </section>
   );
 }
-

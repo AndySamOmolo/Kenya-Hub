@@ -1,54 +1,95 @@
 {
-  "source": "NTSA (ntsa.go.ke) + Traffic Act",
-  "lastUpdated": "2026-10-04",
+  "source": "National Transport and Safety Authority (NTSA) & Traffic Act (Cap 403)",
+  "lastUpdated": "2026-11-20",
   "licenseClasses": [
     {
       "class": "A",
-      "name": "Motorcycles & Tricycles",
-      "description": "All motorcycles (including boda bodas) and three-wheeled vehicles",
+      "name": "Motorcycles & Tricycles (A1, A2, A3)",
+      "description": "Mopeds, boda boda motorcycles, and three-wheeled tuk-tuks",
       "minimumAge": 18,
       "fee": 1750,
-      "requirements": ["Valid medical (DL Form 1)", "Driving school certificate (min 10 hours)", "Theory test pass", "Practical test pass"]
+      "requirements": [
+        "Valid medical (DL Form 1)",
+        "Driving school certificate (min 10 hours)",
+        "Theory test pass",
+        "Practical test pass"
+      ]
     },
     {
       "class": "B",
-      "name": "Light Motor Vehicles",
-      "description": "Cars, SUVs, pick-ups — vehicles not exceeding 3,500 kg GVW",
+      "name": "Light Motor Vehicles (B1, B2, B3)",
+      "description": "Saloon cars, SUVs, pick-ups, and professional light vehicles not exceeding 3,500 kg GVW",
       "minimumAge": 18,
       "fee": 1750,
-      "requirements": ["Valid medical (DL Form 1)", "Driving school certificate (min 40 hours)", "Theory test pass", "Practical test pass"]
+      "requirements": [
+        "Valid medical (DL Form 1)",
+        "Driving school certificate (min 40 hours)",
+        "Theory test pass",
+        "Practical test pass"
+      ]
     },
     {
       "class": "C",
-      "name": "Heavy Motor Vehicles",
-      "description": "Trucks, lorries, buses — vehicles exceeding 3,500 kg GVW",
+      "name": "Heavy Commercial Vehicles (C1, C2, CE)",
+      "description": "Light/heavy trucks, lorries, and articulated commercial combinations exceeding 3,500 kg GVW",
       "minimumAge": 21,
       "fee": 1750,
-      "requirements": ["Must already hold Class B for 2+ years", "Driving school certificate for Class C", "Theory test pass", "Practical test pass"]
+      "requirements": [
+        "Must already hold Class B for 2+ years",
+        "Driving school certificate for Class C",
+        "Theory test pass",
+        "Practical test pass"
+      ]
     },
     {
-      "class": "BCE",
-      "name": "Articulated Vehicles",
-      "description": "Trailers, tankers, heavy combination vehicles",
+      "class": "D",
+      "name": "Public Service Vehicles — PSV (D1, D2, D3)",
+      "description": "Matatus (up to 14 passengers — D1), minibuses/buses (15–33 passengers — D2), and large buses/coaches (33+ passengers — D3)",
       "minimumAge": 24,
       "fee": 1750,
-      "requirements": ["Must hold Class C for 2+ years", "Driving school certificate for BCE", "Theory test pass", "Practical test pass"]
+      "requirements": [
+        "Must hold Class B or C for 3+ years (depends on D1/D2/D3)",
+        "Valid Police Clearance Certificate (Certificate of Good Conduct)",
+        "NTSA PSV badge & medical clearance (DL Form 1)",
+        "PSV driving school endorsement & practical test pass"
+      ]
     },
     {
-      "class": "DL",
-      "name": "Driving Instructor",
-      "description": "Licensed driving instructors — authorized to train learners",
-      "minimumAge": 25,
-      "fee": 2500,
-      "requirements": ["Must hold Class B for 5+ years", "Clean driving record (no serious offences)", "Instructor training course certificate", "NTSA instructor exam pass"]
+      "class": "E",
+      "name": "Special Professional / Hazardous & Heavy Trailers",
+      "description": "Heavy articulated trailers, fuel tankers, and hazardous-material (HazMat) commercial transport",
+      "minimumAge": 24,
+      "fee": 1750,
+      "requirements": [
+        "Must hold Class C / CE for 2+ years",
+        "Specialized HazMat / articulated trailer training certificate",
+        "Valid medical (DL Form 1) & Police Clearance",
+        "NTSA theory and practical test pass"
+      ]
+    },
+    {
+      "class": "F",
+      "name": "Persons Living with Disability (Adapted Vehicles)",
+      "description": "Specially modified / adapted light motor vehicles for drivers with physical disabilities",
+      "minimumAge": 18,
+      "fee": 1750,
+      "requirements": [
+        "Medical fitness & vehicle adaptation assessment",
+        "Driving school training on adapted vehicle",
+        "NTSA theory and practical test pass"
+      ]
     },
     {
       "class": "G",
-      "name": "Tractors & Special Vehicles",
-      "description": "Agricultural tractors, forklifts, and other special-purpose vehicles",
+      "name": "Industrial, Agricultural & Earth-Moving Plant",
+      "description": "Agricultural tractors, forklifts, cranes, graders, and special-purpose plant",
       "minimumAge": 18,
       "fee": 1750,
-      "requirements": ["Valid medical (DL Form 1)", "Training certificate", "Practical test pass"]
+      "requirements": [
+        "Valid medical (DL Form 1)",
+        "Plant operator training certificate",
+        "Practical test pass"
+      ]
     }
   ],
   "applicationProcess": [
@@ -99,11 +140,17 @@
     "renewalPeriod": "Every 3 years from date of issue",
     "renewalFee": 3050,
     "lateRenewalPenalty": "KES 100 per month of delay",
-    "requirements": ["Valid National ID", "Current driving license", "Recent passport photo", "Medical form (DL Form 1) for Class C and above"]
+    "requirements": [
+      "Valid National ID",
+      "Current driving license",
+      "Recent passport photo",
+      "Medical form (DL Form 1) for Class C/D/E and above"
+    ]
   },
   "totalEstimatedCost": {
     "classA": { "min": 5000, "max": 12000, "label": "Class A (Motorcycle)" },
     "classB": { "min": 12000, "max": 30000, "label": "Class B (Car)" },
-    "classC": { "min": 15000, "max": 35000, "label": "Class C (Heavy Vehicle)" }
+    "classC": { "min": 15000, "max": 35000, "label": "Class C (Heavy Vehicle)" },
+    "classD": { "min": 18000, "max": 40000, "label": "Class D (PSV)" }
   }
 }

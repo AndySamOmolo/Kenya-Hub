@@ -1,23 +1,69 @@
+import type { Metadata } from "next";
 import Link from "next/link";
-import { MapPin, ShieldCheck, BadgeCheck, Smartphone } from "lucide-react";
+import {
+  MapPin,
+  ShieldCheck,
+  BadgeCheck,
+  Download,
+  Smartphone,
+  Landmark,
+  BusFront,
+  BookOpen,
+  Languages,
+  Globe,
+  Sparkles,
+  Gamepad2,
+  Layers,
+  ArrowRight,
+  Wrench,
+} from "lucide-react";
+import { GITHUB_APK_RELEASES_URL, AMAZON_APPSTORE_URL } from "@/lib/app-downloads";
 import { TOOLS, TOOL_CATEGORIES } from "@/lib/tools-registry";
+import { PUBLISHED_COURSE_SUMMARIES } from "@/data/courses/catalog-summary";
+import { getLanguageIdentity } from "@/data/language-identity";
+import { STATIC_BLOG_POST_SUMMARIES as STATIC_BLOG_POSTS } from "@/data/blog-posts-summary";
 import PinnedToolsHomeSection from "@/components/tools/PinnedToolsHomeSection";
 import PopularToolsSection from "@/components/tools/PopularToolsSection";
-import DynamicIcon from "@/components/ui/DynamicIcon";
+import CategoryIcon from "@/components/ui/CategoryIcon";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://kenyahub.me/",
+    languages: {
+      "en-KE": "https://kenyahub.me/",
+      en: "https://kenyahub.me/",
+      "x-default": "https://kenyahub.me/",
+    },
+  },
+};
 
 export default function HomePage() {
+  const featuredGuides = STATIC_BLOG_POSTS.slice(0, 6);
 
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "KenyaHub",
     url: "https://kenyahub.me",
-    description: "Free online tools built for Kenya — PAYE salary calculator, M-Pesa fee calculator, CBC curriculum explorer, KUCCPS cluster points, public holidays, and more.",
-    potentialAction: {
-      "@type": "SearchAction",
-      target: "https://kenyahub.me/tools?q={search_term_string}",
-      "query-input": "required name=search_term_string",
-    },
+    inLanguage: "en-KE",
+    description:
+      "Learn 23 Kenyan languages (Swahili, Gĩkũyũ, Dholuo, Kalenjin, Luluhya, Kĩkamba, Maasai & more) with interactive courses, dictionaries, proverbs, and essential Kenyan statutory calculators (2026 PAYE, M-Pesa, KRA CRSP, 47 Counties & Matatu routes).",
+  };
+
+  const homeItemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Flagship Kenyan Language Learning Hub, Calculators & Public Data Directories",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Learn Kenyan Languages, Proverbs & Oral Wisdom Hub (23 Languages)", url: "https://kenyahub.me/tools/learn/" },
+      { "@type": "ListItem", position: 2, name: "Kenyan Languages Translator & Dictionary (23 Languages)", url: "https://kenyahub.me/tools/kenyan-translator/" },
+      { "@type": "ListItem", position: 3, name: "Kenya PAYE Salary Calculator 2026 (Gross to Net & Net to Gross)", url: "https://kenyahub.me/tools/paye-calculator/" },
+      { "@type": "ListItem", position: 4, name: "M-Pesa Transaction & Withdrawal Fee Calculator 2026", url: "https://kenyahub.me/tools/mpesa-fee-calculator/" },
+      { "@type": "ListItem", position: 5, name: "KRA Car Import Duty & CRSP Calculator 2026", url: "https://kenyahub.me/tools/kra-car-import-calculator/" },
+      { "@type": "ListItem", position: 6, name: "Kenya 47 Counties Hub — Budgets, Governors & 290 Constituencies", url: "https://kenyahub.me/county/" },
+      { "@type": "ListItem", position: 7, name: "Kenya Matatu Routes, Stages & Fares Interactive Guide", url: "https://kenyahub.me/matatu/" },
+      { "@type": "ListItem", position: 8, name: "KPLC Prepaid Electricity Token Calculator 2026", url: "https://kenyahub.me/tools/kplc-token-calculator/" },
+    ],
   };
 
   const organizationSchema = {
@@ -25,136 +71,324 @@ export default function HomePage() {
     "@type": "Organization",
     name: "KenyaHub",
     url: "https://kenyahub.me",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://kenyahub.me/icon-512.png",
+      width: 512,
+      height: 512,
+    },
+    contactPoint: {
+      "@type": "ContactPoint",
+      email: "contact@kenyahub.me",
+      contactType: "customer support",
+      areaServed: "KE",
+      availableLanguage: ["English", "Swahili"],
+    },
   };
 
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema).replace(/</g, "\u003c") }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema).replace(/</g, "\u003c") }}
       />
-      {/* ═══════════════════════════════════════════
-          HERO — radial gradient with Kenyan flag colors
-          subtle decorative elements
-          ═══════════════════════════════════════════ */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeItemListSchema).replace(/</g, "\u003c") }}
+      />
+
+      {/* HERO */}
       <section className="relative overflow-hidden">
-        <div className="gradient-hero min-h-[560px] sm:min-h-[600px] flex items-center">
-          {/* Decorative background geometry — Maasai diamond pattern */}
+        <div className="gradient-hero flex items-center">
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            {/* Large diamond */}
             <div className="absolute -top-20 -right-20 w-96 h-96 border border-white/[0.03] rotate-45 rounded-3xl" />
             <div className="absolute -bottom-32 -left-16 w-80 h-80 border border-white/[0.03] rotate-45 rounded-3xl" />
-            {/* Gold accent dot pattern */}
-            <div className="absolute top-1/4 right-1/4 w-2 h-2 rounded-full bg-gold/20 animate-float" />
-            <div className="absolute top-2/3 right-1/3 w-1.5 h-1.5 rounded-full bg-kenya-green/20 animate-float" style={{ animationDelay: "1s" }} />
-            <div className="absolute top-1/3 left-1/4 w-1 h-1 rounded-full bg-kenya-red/20 animate-float" style={{ animationDelay: "2s" }} />
+            <div className="absolute top-1/4 right-1/4 w-2 h-2 rounded-full bg-gold/20" />
+            <div className="absolute top-2/3 right-1/3 w-1.5 h-1.5 rounded-full bg-kenya-green/20" />
+            <div className="absolute top-1/3 left-1/4 w-1 h-1 rounded-full bg-kenya-red/20" />
           </div>
 
-          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-20">
-            <div className="max-w-2xl">
-              {/* Status pill */}
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-white/[0.08] bg-white/[0.03] mb-8">
-                <span className="relative flex h-2 w-2">
-                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-kenya-green opacity-75" />
-                  <span className="relative inline-flex h-2 w-2 rounded-full bg-kenya-green-light" />
-                </span>
-                <span className="text-xs font-medium text-text-secondary tracking-wide">
-                  {TOOLS.length}+ tools · Free forever · Official data
-                </span>
+          <div className="relative max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 pt-4 pb-5 sm:pt-12 sm:pb-14">
+            <div className="max-w-3xl mx-auto sm:mx-0 flex flex-col items-center sm:items-start text-center sm:text-left">
+              {/* Centered Hero Badge Pill on Mobile */}
+              <div className="flex justify-center sm:justify-start mb-2.5 sm:mb-5 w-full">
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-gold/30 bg-gold/10 text-center shadow-sm max-w-full">
+                  <span className="relative flex h-1.5 w-1.5 shrink-0">
+                    <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-kenya-green-light" />
+                  </span>
+                  <span className="text-[0.65rem] sm:text-xs font-semibold text-gold tracking-tight sm:tracking-wide break-words">
+                    23 Languages · {TOOLS.length} Interactive Tools · 47 Counties
+                  </span>
+                </div>
               </div>
 
-              <h1 className="text-[2.5rem] sm:text-5xl lg:text-[3.5rem] font-extrabold font-[family-name:var(--font-outfit)] leading-[1.1] tracking-tight mb-6">
-                The tools{" "}
-                <span className="gradient-text-kenya">every Kenyan</span>
-                {" "}needs, in one place
+              <h1 className="text-xl sm:text-5xl lg:text-[3.25rem] font-extrabold font-[family-name:var(--font-outfit)] leading-[1.2] tracking-tight mb-2.5 sm:mb-5 text-center sm:text-left w-full">
+                Learn <span className="gradient-text-kenya">Kenyan languages</span>{" "}
+                &amp; everyday public tools
               </h1>
 
-              <p className="text-base sm:text-lg text-text-secondary leading-relaxed mb-10 max-w-xl">
-                Calculate your net salary, explore CBC curriculum, decode number
-                plates, check M-Pesa fees — all powered by official Kenyan
-                government data. Zero sign-ups, zero cost.
+              <p className="text-xs sm:text-base text-text-secondary leading-relaxed mb-4 sm:mb-7 max-w-2xl mx-auto sm:mx-0 text-center sm:text-left">
+                Master <strong>23 indigenous Kenyan languages</strong> through interactive skill trees, flashcards, grammar guides, and historical proverbs — alongside Kenya&apos;s essential tools for 2026 PAYE salary, M-Pesa fees, KRA car import duty, 47 Counties, and Matatu routes.
               </p>
 
-              <div className="flex flex-wrap gap-3">
-                <Link href="/tools" className="btn-gold text-[0.9375rem] px-7 py-3.5">
-                  Explore All Tools
-                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                  </svg>
+              {/* Comfortable, prominent hero action buttons */}
+              <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2 sm:gap-3 w-full">
+                <Link
+                  href="/tools/learn/"
+                  className="btn-gold hero-cta-btn text-xs sm:text-sm px-4 py-2.5 sm:px-5 sm:py-3 rounded-lg sm:rounded-xl inline-flex items-center justify-center gap-2 shadow-md w-auto font-semibold"
+                >
+                  <Languages className="w-4 h-4 shrink-0" />
+                  <span>Start Learning Kenyan Languages</span>
+                  <ArrowRight className="w-4 h-4 shrink-0" />
                 </Link>
                 <Link
-                  href="/tools/paye-calculator"
-                  className="btn-outline text-[0.9375rem] px-7 py-3.5"
+                  href="/tools/kenyan-translator/"
+                  className="btn-outline hero-cta-btn text-xs sm:text-sm px-3.5 py-2.5 sm:px-4.5 sm:py-3 rounded-lg sm:rounded-xl inline-flex items-center justify-center gap-1.5 w-auto font-medium"
                 >
-                  Try PAYE Calculator
+                  <Globe className="w-4 h-4 text-kenya-green-light shrink-0" />
+                  <span>23-Language Translator</span>
+                </Link>
+                <Link
+                  href="/tools/"
+                  className="btn-outline hero-cta-btn text-xs sm:text-sm px-3.5 py-2.5 sm:px-4.5 sm:py-3 rounded-lg sm:rounded-xl inline-flex items-center justify-center gap-1.5 w-auto font-medium"
+                >
+                  <Wrench className="w-4 h-4 text-gold shrink-0" />
+                  <span>All {TOOLS.length} Tools</span>
                 </Link>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Gradient fade transition */}
         <div className="h-px bg-gradient-to-r from-transparent via-border-light to-transparent" />
       </section>
 
-      {/* ═══════════════════════════════════════════
-          PINNED TOOLS
-          ═══════════════════════════════════════════ */}
+      {/* FLAGSHIP MAIN FEATURE: KENYAN LANGUAGE LEARNING & TRANSLATOR HUB */}
+      <section className="cv-auto max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 py-5 sm:py-14">
+        <div className="rounded-2xl sm:rounded-3xl border border-gold/35 bg-gradient-to-br from-bg-card via-bg-card to-bg-elevated p-3.5 sm:p-8 lg:p-10 shadow-xl">
+          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-3 sm:gap-4 mb-4 sm:mb-8">
+            <div className="max-w-2xl">
+              <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-gold/15 border border-gold/30 text-gold text-[0.65rem] sm:text-xs font-bold uppercase tracking-wider mb-2 sm:mb-3">
+                <Sparkles className="w-3 h-3 sm:w-3.5 sm:h-3.5" /> Flagship Feature
+              </div>
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold font-[family-name:var(--font-outfit)] text-text-primary leading-tight">
+                Interactive Kenyan Languages, Translator &amp; Oral Wisdom Hub
+              </h2>
+              <p className="text-sm sm:text-base text-text-secondary leading-relaxed mt-2">
+                Explore {PUBLISHED_COURSE_SUMMARIES.length} structured interactive courses with step-by-step skill modules, 3D flip flashcards, written phonetic guides, grammar tables, 12 vocabulary mini-games, and a 23-language bidirectional dictionary.
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-2.5 shrink-0">
+              <Link
+                href="/tools/learn/"
+                className="btn-gold text-xs sm:text-sm px-4 py-2.5 sm:px-5 sm:py-3"
+              >
+                Open Language Hub →
+              </Link>
+              <Link
+                href="/tools/kenyan-translator/"
+                className="btn-outline text-xs sm:text-sm px-4 py-2.5 sm:px-5 sm:py-3"
+              >
+                Open 23-Language Dictionary →
+              </Link>
+            </div>
+          </div>
+
+          {/* 4 Pillar Highlights (Compact 2x2 on Mobile) */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-4 mb-4 sm:mb-8">
+            <div className="rounded-xl border border-border bg-bg-elevated/50 p-2.5 sm:p-4">
+              <div className="flex items-center gap-1.5 text-gold font-bold text-xs sm:text-sm mb-0.5 sm:mb-1">
+                <Languages className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
+                <span className="truncate">{PUBLISHED_COURSE_SUMMARIES.length} Courses</span>
+              </div>
+              <p className="text-[11px] sm:text-sm text-text-secondary leading-snug">
+                Structured units teaching greetings, kinship, verbs, numbers, and daily conversation.
+              </p>
+            </div>
+            <div className="rounded-xl border border-border bg-bg-elevated/50 p-2.5 sm:p-4">
+              <div className="flex items-center gap-1.5 text-kenya-green-light font-bold text-xs sm:text-sm mb-0.5 sm:mb-1">
+                <Layers className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
+                <span className="truncate">3D Flashcards</span>
+              </div>
+              <p className="text-[11px] sm:text-sm text-text-secondary leading-snug">
+                Interactive study decks, spaced repetition reviews, and written phonetic guides.
+              </p>
+            </div>
+            <div className="rounded-xl border border-border bg-bg-elevated/50 p-2.5 sm:p-4">
+              <div className="flex items-center gap-1.5 text-sky-light font-bold text-xs sm:text-sm mb-0.5 sm:mb-1">
+                <Gamepad2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
+                <span className="truncate">12 Mini-Games</span>
+              </div>
+              <p className="text-[11px] sm:text-sm text-text-secondary leading-snug">
+                Play Wordle, Word Scramble, Speed Match, Memory Cards, Riddles, Methali Builder &amp; 6 more games.
+              </p>
+            </div>
+            <div className="rounded-xl border border-border bg-bg-elevated/50 p-2.5 sm:p-4">
+              <div className="flex items-center gap-1.5 text-gold font-bold text-xs sm:text-sm mb-0.5 sm:mb-1">
+                <BookOpen className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
+                <span className="truncate">1,000+ Proverbs</span>
+              </div>
+              <p className="text-[11px] sm:text-sm text-text-secondary leading-snug">
+                Authentic Gĩkũyũ, Dholuo, Bantu, Nilotic &amp; Cushitic proverbs, riddles, and grammar tables.
+              </p>
+            </div>
+          </div>
+
+          {/* Direct Course Launch Grid */}
+          <div>
+            <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
+              <h3 className="text-xs sm:text-sm font-bold uppercase tracking-wider text-text-secondary">
+                Jump Directly Into a Language Course
+              </h3>
+              <Link href="/tools/learn/" className="inline-flex items-center gap-1 text-xs font-semibold text-gold hover:underline">
+                <span>View all {PUBLISHED_COURSE_SUMMARIES.length} courses</span>
+                <ArrowRight className="w-3.5 h-3.5 shrink-0" aria-hidden="true" />
+              </Link>
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-3.5">
+              {PUBLISHED_COURSE_SUMMARIES.map(({ config, skillCount }, idx) => {
+                const identity = getLanguageIdentity(config.id);
+                return (
+                  <Link
+                    key={config.id}
+                    href={`/tools/learn/${config.id}/`}
+                    prefetch={false}
+                    aria-labelledby={`home-course-${config.id}`}
+                    className={`${idx >= 6 ? "hidden sm:flex " : ""}group rounded-xl border border-border bg-bg-card hover:border-gold/50 p-3 sm:p-3.5 transition-colors flex flex-col justify-between shadow-xs`}
+                  >
+                    <div>
+                      <div className="flex items-center justify-between gap-1.5 mb-1.5">
+                        <span className="text-[0.65rem] font-bold text-gold bg-gold/10 px-2 py-0.5 rounded-full border border-gold/25 truncate max-w-[65%]">
+                          “{identity.greeting}”
+                        </span>
+                        <span className="text-[0.625rem] text-text-muted font-medium shrink-0">
+                          {config.family}
+                        </span>
+                      </div>
+                      <h4 id={`home-course-${config.id}`} className="text-xs sm:text-sm font-bold text-text-primary group-hover:text-gold transition-colors leading-snug">
+                        {config.name}
+                      </h4>
+                      <p className="text-[0.65rem] text-text-muted mt-0.5 truncate">
+                        {identity.region}
+                      </p>
+                    </div>
+                    <div className="mt-2 pt-1.5 border-t border-border/60 flex items-center justify-between text-[0.6875rem]">
+                      <span className="text-kenya-green-light font-semibold">
+                        {skillCount} modules
+                      </span>
+                      <span className="text-gold font-bold group-hover:translate-x-0.5 transition-transform">
+                        →
+                      </span>
+                    </div>
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* PINNED TOOLS */}
       <PinnedToolsHomeSection />
 
-      {/* ═══════════════════════════════════════════
-          POPULAR TOOLS — sorted by real user usage
-          ═══════════════════════════════════════════ */}
+      {/* POPULAR TOOLS */}
       <PopularToolsSection />
 
-      {/* Section divider */}
       <div className="section-divider mx-auto max-w-7xl" />
 
-      {/* ═══════════════════════════════════════════
-          CATEGORIES — browse by topic
-          ═══════════════════════════════════════════ */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
-        <div className="text-center mb-12">
+      {/* FLAGSHIP PUBLIC DATA HUBS (47 COUNTIES & MATATU ROUTES) */}
+      <section className="cv-auto max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 py-6 sm:py-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
+          <Link
+            href="/county/"
+            aria-labelledby="home-hub-counties"
+            className="group bg-bg-card border border-border hover:border-gold/50 rounded-2xl p-4 sm:p-8 transition-colors flex flex-col justify-between"
+          >
+            <div>
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-kenya-green/10 border border-kenya-green/20 text-kenya-green-light text-xs font-semibold mb-3 sm:mb-4">
+                <Landmark className="w-3.5 h-3.5 shrink-0" /> Consolidated Civic Module
+              </div>
+              <h2 id="home-hub-counties" className="text-lg sm:text-2xl font-bold font-[family-name:var(--font-outfit)] text-text-primary group-hover:text-gold transition-colors mb-2">
+                Kenya 47 Counties Intelligence Hub
+              </h2>
+              <p className="text-sm text-text-secondary leading-relaxed mb-4">
+                All county data united in one hub — compare Governors, Senators, Woman Representatives,{" "}
+                <strong>290 Constituencies</strong>, <strong>FY 2025/26 Controller of Budget Allocations</strong>,{" "}
+                <strong>12-Month Rainfall &amp; Climate Zones</strong>, SHA Hospitals, Postal Codes, and side-by-side county comparisons.
+              </p>
+            </div>
+            <span className="text-xs sm:text-sm font-bold text-gold group-hover:underline">
+              Open 47 Counties Hub (Directory · Budgets · Constituencies · Climate · Compare) →
+            </span>
+          </Link>
+
+          <Link
+            href="/matatu/"
+            aria-labelledby="home-hub-matatu"
+            className="group bg-bg-card border border-border hover:border-gold/50 rounded-2xl p-4 sm:p-8 transition-colors flex flex-col justify-between"
+          >
+            <div>
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold/10 border border-gold/20 text-gold text-xs font-semibold mb-3 sm:mb-4">
+                <BusFront className="w-3.5 h-3.5 shrink-0" /> Interactive Transit Module
+              </div>
+              <h2 id="home-hub-matatu" className="text-lg sm:text-2xl font-bold font-[family-name:var(--font-outfit)] text-text-primary group-hover:text-gold transition-colors mb-2">
+                Kenya Matatu Routes, Stages &amp; Fares Hub
+              </h2>
+              <p className="text-sm text-text-secondary leading-relaxed mb-4">
+                Navigate public transport across <strong>Nairobi, Mombasa, Kisumu, Nakuru, Eldoret, and Thika</strong>. View CBD boarding stages, route numbers, corridor distances, peak vs off-peak fares, and registered SACCO operators on interactive maps.
+              </p>
+            </div>
+            <span className="text-xs sm:text-sm font-bold text-gold group-hover:underline">
+              Open Matatu Routes Explorer (64+ Verified Routes Across 6 Towns) →
+            </span>
+          </Link>
+        </div>
+      </section>
+
+      <div className="section-divider mx-auto max-w-7xl" />
+
+      {/* CATEGORIES */}
+      <section className="cv-auto max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 py-6 sm:py-16">
+        <div className="text-center mb-6 sm:mb-12">
           <p className="text-xs font-bold uppercase tracking-[0.15em] text-gold mb-2">
             Browse by Category
           </p>
           <h2 className="text-2xl sm:text-3xl font-bold font-[family-name:var(--font-outfit)] tracking-tight">
-            9 categories, one platform
+            {TOOL_CATEGORIES.length} focused Kenyan categories
           </h2>
-          <p className="text-text-muted text-sm mt-3 max-w-md mx-auto">
-            Every aspect of life in Kenya — from finances to farming, education
-            to energy.
+          <p className="text-text-muted text-sm mt-2 max-w-lg mx-auto leading-relaxed">
+            Purpose-built tools for Kenyan life — indigenous languages, KRA taxes &amp; SACCOs, CBC &amp; KUCCPS education, car imports, mjengo construction, and utilities.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5 sm:gap-4">
           {TOOL_CATEGORIES.map((cat) => {
             const count = TOOLS.filter((t) => t.category === cat.id).length;
             return (
               <Link
                 key={cat.id}
-                href={`/tools?category=${cat.id}`}
-                className="tool-card bg-bg-card border border-border rounded-2xl p-4 sm:p-6 flex items-start gap-4 group"
+                href={`/tools/?category=${cat.id}`}
+                prefetch={false}
+                aria-labelledby={`home-cat-${cat.id}`}
+                className="tool-card bg-bg-card border border-border rounded-2xl p-4 sm:p-6 flex items-start gap-3.5 sm:gap-4 group"
               >
-                <div className="w-12 h-12 rounded-xl bg-white/[0.04] flex items-center justify-center flex-shrink-0 group-hover:bg-white/[0.07] transition-colors">
-                  <span className="text-2xl tool-icon"><DynamicIcon emoji={cat.icon} className="w-[1em] h-[1em] inline-block mb-[0.1em]" /></span>
+                <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-white/[0.04] flex items-center justify-center flex-shrink-0 group-hover:bg-white/[0.07] transition-colors">
+                  <span className="text-xl sm:text-2xl tool-icon"><CategoryIcon emoji={cat.icon} className="w-[1em] h-[1em] inline-block mb-[0.1em]" /></span>
                 </div>
                 <div className="min-w-0 flex-1">
-                  <h3 className="text-[0.9375rem] font-semibold text-text-primary font-[family-name:var(--font-outfit)] group-hover:text-gold transition-colors mb-1">
+                  <h3 id={`home-cat-${cat.id}`} className="text-base font-semibold text-text-primary font-[family-name:var(--font-outfit)] group-hover:text-gold transition-colors mb-1">
                     {cat.name}
                   </h3>
-                  <p className="text-xs text-text-muted leading-relaxed mb-2">
+                  <p className="text-xs sm:text-sm text-text-muted leading-relaxed mb-2">
                     {cat.description}
                   </p>
-                  <span className="text-xs font-semibold text-gold/80 group-hover:text-gold transition-colors">
-                    {count} tool{count !== 1 ? "s" : ""}
-                    <svg className="w-3 h-3 inline-block ml-1 -mt-px" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                    </svg>
+                  <span className="inline-flex items-center gap-1 text-xs font-semibold text-gold/80 group-hover:text-gold transition-colors">
+                    <span>{count} tool{count !== 1 ? "s" : ""}</span>
+                    <ArrowRight className="w-3.5 h-3.5 shrink-0" aria-hidden="true" />
                   </span>
                 </div>
               </Link>
@@ -163,14 +397,71 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Section divider */}
       <div className="section-divider mx-auto max-w-7xl" />
 
-      {/* ═══════════════════════════════════════════
-          WHY KENYAHUB — trust pillars
-          ═══════════════════════════════════════════ */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
-        <div className="text-center mb-12">
+      {/* FEATURED STATUTORY GUIDES & EDITORIAL ARTICLES */}
+      <section className="cv-auto max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 py-6 sm:py-16">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-6 sm:mb-10 gap-3">
+          <div>
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-gold mb-1.5 flex items-center gap-1.5">
+              <BookOpen className="w-3.5 h-3.5" /> In-Depth Kenyan Guides
+            </p>
+            <h2 className="text-2xl sm:text-3xl font-bold font-[family-name:var(--font-outfit)] tracking-tight text-text-primary">
+              2026 Statutory Guides &amp; Worked Examples
+            </h2>
+            <p className="text-sm text-text-secondary mt-1.5 max-w-2xl leading-relaxed">
+              Detailed editorial guides explaining the Kenyan laws, Gazette Notices, and step-by-step math behind our calculators.
+            </p>
+          </div>
+          <Link href="/blog/" className="inline-flex items-center gap-1 text-xs sm:text-sm font-bold text-gold hover:underline shrink-0">
+            <span>Read All {STATIC_BLOG_POSTS.length} Guides</span>
+            <ArrowRight className="w-3.5 h-3.5 shrink-0" aria-hidden="true" />
+          </Link>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {featuredGuides.map((post) => (
+            <Link
+              key={post.slug}
+              href={`/blog/${post.slug}/`}
+              prefetch={false}
+              aria-labelledby={`home-guide-${post.slug}`}
+              className="bg-bg-card border border-border hover:border-gold/50 rounded-2xl p-5 transition-colors flex flex-col justify-between group"
+            >
+              <div>
+                <div className="flex flex-wrap items-center gap-1.5 mb-3">
+                  {(post.tags || []).slice(0, 2).map((tag: string) => (
+                    <span
+                      key={tag}
+                      className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-gold/10 text-gold border border-gold/20"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                  <span className="text-xs text-text-muted ml-auto">
+                    {post.readTime} min read
+                  </span>
+                </div>
+                <h3 id={`home-guide-${post.slug}`} className="text-base font-bold text-text-primary font-[family-name:var(--font-outfit)] group-hover:text-gold transition-colors leading-snug mb-2">
+                  {post.title}
+                </h3>
+                <p className="text-xs sm:text-sm text-text-secondary line-clamp-3 leading-relaxed">
+                  {post.excerpt}
+                </p>
+              </div>
+              <span className="text-xs font-semibold text-gold mt-4 inline-block group-hover:underline">
+                Read Full Guide →
+              </span>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <div className="section-divider mx-auto max-w-7xl" />
+
+      {/* WHY KENYAHUB */}
+      <section className="cv-auto max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 py-6 sm:py-16">
+        <div className="text-center mb-6 sm:mb-12">
           <p className="text-xs font-bold uppercase tracking-[0.15em] text-gold mb-2">
             Built Different
           </p>
@@ -179,30 +470,30 @@ export default function HomePage() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:p-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 sm:gap-4">
           {[
             {
-              icon: <MapPin className="w-8 h-8 text-kenya-green mb-1" />,
+              icon: <MapPin className="w-6 h-6 sm:w-8 sm:h-8 text-kenya-green mb-1" />,
               title: "100% Kenyan",
-              desc: "Every tool uses real Kenyan data — KRA tax bands, Safaricom tariffs, KICD curriculum.",
+              desc: "Built specifically for Kenya — 23 indigenous language courses, 2026 KRA tax bands, Safaricom tariffs, CRSP schedules, and KICD curriculum.",
               accent: "from-kenya-green/10 to-transparent",
             },
             {
-              icon: <ShieldCheck className="w-8 h-8 text-gold mb-1" />,
+              icon: <ShieldCheck className="w-6 h-6 sm:w-8 sm:h-8 text-gold mb-1" />,
               title: "Officially Sourced",
-              desc: "Data from KRA, KUCCPS, NHIF, KICD, NTSA, and other government bodies.",
+              desc: "Grounded in verified linguistic corpora and official publications from KRA, KUCCPS, SHA, KICD, NTSA, KNBS, COB, SASRA, and EPRA.",
               accent: "from-gold/10 to-transparent",
             },
             {
-              icon: <BadgeCheck className="w-8 h-8 text-sky mb-1" />,
+              icon: <BadgeCheck className="w-6 h-6 sm:w-8 sm:h-8 text-sky mb-1" />,
               title: "Free Forever",
-              desc: "No registration, no hidden fees, no premium tiers. Every tool is free.",
+              desc: "No registration, no hidden fees, no paywalls. Every language course, dictionary, and calculator is completely free.",
               accent: "from-sky/10 to-transparent",
             },
             {
-              icon: <Smartphone className="w-8 h-8 text-kenya-red mb-1" />,
-              title: "Mobile-First",
-              desc: "Built for phones first — because most Kenyans access the web on mobile.",
+              icon: <Smartphone className="w-6 h-6 sm:w-8 sm:h-8 text-kenya-red mb-1" />,
+              title: "Mobile-First & Privacy-Safe",
+              desc: "All lessons and calculations run locally on your device — your progress and financial numbers stay private in your browser.",
               accent: "from-kenya-red/10 to-transparent",
             },
           ].map((item, i) => (
@@ -210,11 +501,11 @@ export default function HomePage() {
               key={i}
               className={`relative rounded-2xl border border-border p-4 sm:p-6 bg-gradient-to-b ${item.accent} overflow-hidden`}
             >
-              <div className="mb-3">{item.icon}</div>
-              <h3 className="text-sm font-bold text-text-primary mb-2 font-[family-name:var(--font-outfit)]">
+              <div className="mb-2.5 sm:mb-3">{item.icon}</div>
+              <h3 className="text-sm sm:text-base font-bold text-text-primary mb-1.5 font-[family-name:var(--font-outfit)]">
                 {item.title}
               </h3>
-              <p className="text-xs text-text-muted leading-relaxed">
+              <p className="text-xs sm:text-sm text-text-muted leading-relaxed">
                 {item.desc}
               </p>
             </div>
@@ -222,26 +513,51 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════════
-          CTA — bottom banner
-          ═══════════════════════════════════════════ */}
-      <section className="relative overflow-hidden">
+      {/* CTA */}
+      <section className="cv-auto relative overflow-hidden">
         <div className="maasai-border-top" />
         <div className="bg-bg-secondary py-10 sm:py-20">
           <div className="max-w-3xl mx-auto px-4 text-center">
-            <h2 className="text-2xl sm:text-3xl font-bold font-[family-name:var(--font-outfit)] mb-4 tracking-tight">
-              Ready to find the tool you need?
+            <h2 className="text-2xl sm:text-3xl font-bold font-[family-name:var(--font-outfit)] mb-3 sm:mb-4 tracking-tight">
+              Start learning a Kenyan language today
             </h2>
-            <p className="text-text-muted text-sm mb-8 max-w-md mx-auto">
-              From PAYE calculations to CBC curriculum — whatever you need as a
-              Kenyan, we&apos;ve built it.
+            <p className="text-text-muted text-sm sm:text-base mb-6 sm:mb-8 max-w-lg mx-auto leading-relaxed">
+              From Kiswahili, Gĩkũyũ, and Dholuo to Kalenjin, Maasai, and Kigiriama — explore interactive courses or run your 2026 Kenyan financial numbers in seconds.
             </p>
-            <Link href="/tools" className="btn-gold text-base px-8 py-4">
-              Explore All Tools
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-              </svg>
-            </Link>
+            <div className="flex flex-wrap justify-center gap-3">
+              <Link href="/tools/learn/" className="btn-gold text-sm sm:text-base px-6 py-3 sm:px-8 sm:py-4">
+                <Languages className="w-4 h-4 shrink-0" />
+                Explore 23 Kenyan Languages
+              </Link>
+              <Link href="/tools/" className="btn-outline text-sm sm:text-base px-6 py-3 sm:px-8 sm:py-4">
+                Browse All {TOOLS.length} Tools
+              </Link>
+            </div>
+            <div className="mt-6 pt-6 border-t border-border/60 flex flex-col items-center gap-2.5">
+              <p className="text-xs font-semibold uppercase tracking-[0.12em] text-text-muted">
+                Get the Offline Android App
+              </p>
+              <div className="flex flex-wrap justify-center gap-2.5">
+                <a
+                  href={AMAZON_APPSTORE_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-xl border border-gold/40 bg-gold/10 px-4 py-2 text-xs sm:text-sm font-bold text-gold hover:bg-gold/20 transition-colors"
+                >
+                  <Smartphone className="w-4 h-4 shrink-0" />
+                  <span>Amazon Appstore</span>
+                </a>
+                <a
+                  href={GITHUB_APK_RELEASES_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-xl border border-border bg-bg-card px-4 py-2 text-xs sm:text-sm font-semibold text-text-secondary hover:border-gold/50 hover:text-text-primary transition-colors"
+                >
+                  <Download className="w-4 h-4 shrink-0" />
+                  <span>Download APK (GitHub)</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>

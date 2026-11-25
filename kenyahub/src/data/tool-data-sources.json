@@ -3,43 +3,254 @@
   "tools": {
     "paye-calculator": {
       "official": true,
-      "sourceUrl": "https://www.kra.go.ke/individual/calculate-tax/calculating-tax/paye"
+      "sourceUrl": "https://www.kra.go.ke/individual/calculate-tax/calculating-tax/paye",
+      "lastUpdated": "2026-10-21"
     },
     "mpesa-fee-calculator": {
       "official": true,
-      "sourceUrl": "https://www.safaricom.co.ke/main-mpesa/m-pesa-for-you/tariffs-limits/consumer-tariffs-limits"
+      "sourceUrl": "https://www.safaricom.co.ke/main-mpesa/m-pesa-for-you/tariffs-limits/consumer-tariffs-limits",
+      "lastUpdated": "2026-10-21"
     },
-    "passport-id-fees": {
+    "sacco-chama-calculator": {
       "official": true,
-      "sourceUrl": "https://immigration.go.ke/type-and-fees/"
+      "sourceUrl": "https://www.sasra.go.ke/",
+      "lastUpdated": "2026-10-21"
     },
-    "driving-license-guide": {
+    "helb-calculator": {
       "official": true,
-      "sourceUrl": "https://ntsa.go.ke/services/service/renewal-of-smart-driving-licence"
+      "sourceUrl": "https://www.helb.co.ke/",
+      "lastUpdated": "2026-11-20"
     },
-    "nhif-hospital-finder": {
+    "stamp-duty-calculator": {
       "official": true,
-      "sourceUrl": "https://provider.sha.go.ke/"
+      "sourceUrl": "https://www.kenyalaw.org/lex/",
+      "lastUpdated": "2026-11-20"
     },
-    "school-terms": {
+    "cbc-curriculum": {
       "official": true,
-      "sourceUrl": "https://education.go.ke/"
+      "sourceUrl": "https://kicd.ac.ke/",
+      "lastUpdated": "2026-10-20"
     },
-    "vaccination-schedule": {
+    "kuccps-cluster-calculator": {
       "official": true,
-      "sourceUrl": "https://guidelines.health.go.ke/"
+      "sourceUrl": "https://students.kuccps.net/",
+      "lastUpdated": "2026-10-20"
     },
-    "kplc-token-calculator": {
+    "kcse-grade-calculator": {
       "official": true,
-      "sourceUrl": "https://kplc.co.ke/faq/tariff"
+      "sourceUrl": "https://www.knec.ac.ke/",
+      "lastUpdated": "2026-11-20"
+    },
+    "kra-car-import-calculator": {
+      "official": true,
+      "sourceUrl": "https://www.kra.go.ke/individual/import-export/import-duty-on-motor-vehicles",
+      "lastUpdated": "2026-10-21"
+    },
+    "number-plate-decoder": {
+      "official": true,
+      "sourceUrl": "https://ntsa.go.ke/",
+      "lastUpdated": "2026-11-20"
     },
     "traffic-fines": {
       "official": true,
-      "sourceUrl": "https://www.kenyalaw.org/lex/"
+      "sourceUrl": "https://www.kenyalaw.org/lex/",
+      "lastUpdated": "2026-10-20"
     },
-    "public-holidays": {
+    "learn": {
+      "official": false,
+      "sourceUrl": "https://archive.org/",
+      "lastUpdated": "2026-10-31"
+    },
+    "kenyan-translator": {
+      "official": false,
+      "sourceUrl": "https://cldr.unicode.org/",
+      "lastUpdated": "2026-10-20"
+    },
+    "mjengo-construction-calculator": {
       "official": true,
-      "sourceUrl": "https://www.kenyalaw.org/lex/"
+      "sourceUrl": "https://nca.go.ke/",
+      "lastUpdated": "2026-10-21"
+    },
+    "kplc-token-calculator": {
+      "official": true,
+      "sourceUrl": "https://kplc.co.ke/faq/tariff",
+      "lastUpdated": "2026-10-20"
+    },
+    "water-bill-calculator": {
+      "official": true,
+      "sourceUrl": "https://wasreb.go.ke/",
+      "lastUpdated": "2026-11-20"
+    },
+    "sha-benefit-estimator": {
+      "official": true,
+      "sourceUrl": "https://sha.go.ke/",
+      "lastUpdated": "2026-10-21"
+    },
+    "small-claims-calculator": {
+      "official": true,
+      "sourceUrl": "https://judiciary.go.ke/small-claims-court/",
+      "lastUpdated": "2026-11-20"
+    },
+    "ntsa-transfer-calculator": {
+      "official": true,
+      "sourceUrl": "https://ntsa.go.ke/",
+      "lastUpdated": "2026-11-20"
+    },
+    "boma-yangu-calculator": {
+      "official": true,
+      "sourceUrl": "https://bomayangu.go.ke/",
+      "lastUpdated": "2026-10-21"
+    },
+    "rental-tax-calculator": {
+      "official": true,
+      "sourceUrl": "https://www.kra.go.ke/",
+      "lastUpdated": "2026-11-20"
+    },
+    "landlord-tenant-rights": {
+      "official": true,
+      "sourceUrl": "https://www.kenyalaw.org/lex/",
+      "lastUpdated": "2026-10-21"
+    },
+    "domestic-wage-calculator": {
+      "official": true,
+      "sourceUrl": "https://www.labour.go.ke/",
+      "lastUpdated": "2026-11-20"
+    },
+    "airtime-drain-guide": {
+      "official": true,
+      "sourceUrl": "https://www.ca.go.ke/",
+      "lastUpdated": "2026-11-20"
+    },
+    "mobile-number-prefix": {
+      "official": true,
+      "sourceUrl": "https://www.ca.go.ke/",
+      "lastUpdated": "2026-11-20"
+    },
+    "etims-mpesa-reconciler": {
+      "official": true,
+      "sourceUrl": "https://www.kra.go.ke/",
+      "lastUpdated": "2026-11-19"
+    },
+    "odpc-hr-retention-vault": {
+      "official": true,
+      "sourceUrl": "https://www.odpc.go.ke/",
+      "lastUpdated": "2026-11-20"
+    },
+    "eudr-coop-geojson-packager": {
+      "official": true,
+      "sourceUrl": "https://environment.ec.europa.eu/topics/forests/deforestation/regulation-deforestation-free-products_en",
+      "lastUpdated": "2026-11-19"
+    },
+    "icms-landed-cost-arbitrage": {
+      "official": true,
+      "sourceUrl": "https://www.kra.go.ke/",
+      "lastUpdated": "2026-11-19"
+    },
+    "sha-claim-scrubber": {
+      "official": true,
+      "sourceUrl": "https://sha.go.ke/contracted-facilities",
+      "lastUpdated": "2026-11-19"
+    },
+    "ppra-egp-tender-serializer": {
+      "official": true,
+      "sourceUrl": "https://e-gp.go.ke/",
+      "lastUpdated": "2026-11-19"
+    },
+    "kjsea-pathway-engine": {
+      "official": true,
+      "sourceUrl": "https://www.knec.ac.ke/",
+      "lastUpdated": "2026-11-19"
+    },
+    "ardhisasa-cad-title-auditor": {
+      "official": true,
+      "sourceUrl": "https://ardhisasa.lands.go.ke/",
+      "lastUpdated": "2026-11-19"
+    },
+    "school-fee-cap-auditor": {
+      "official": true,
+      "sourceUrl": "https://www.education.go.ke/",
+      "lastUpdated": "2026-11-24"
+    },
+    "cooking-fuel-comparator": {
+      "official": true,
+      "sourceUrl": "https://www.epra.go.ke/",
+      "lastUpdated": "2026-11-24"
+    },
+    "auctioneer-fee-shield": {
+      "official": true,
+      "sourceUrl": "https://www.kenyalaw.org/lex/",
+      "lastUpdated": "2026-11-24"
+    },
+    "succession-cap160-calculator": {
+      "official": true,
+      "sourceUrl": "https://www.kenyalaw.org/lex/",
+      "lastUpdated": "2026-11-24"
+    },
+    "duka-hustle-ubp-calculator": {
+      "official": true,
+      "sourceUrl": "https://nairobiservices.go.ke/",
+      "lastUpdated": "2026-11-24"
+    },
+    "funeral-harambee-planner": {
+      "official": true,
+      "sourceUrl": "https://www.kutrrh.go.ke/",
+      "lastUpdated": "2026-11-24"
+    },
+    "rainwater-tank-sizer": {
+      "official": true,
+      "sourceUrl": "https://meteo.go.ke/",
+      "lastUpdated": "2026-11-24"
+    },
+    "fertilizer-seed-breakeven": {
+      "official": true,
+      "sourceUrl": "https://www.kalro.org/",
+      "lastUpdated": "2026-11-24"
+    },
+    "dairy-ration-margin": {
+      "official": true,
+      "sourceUrl": "https://www.kdb.go.ke/",
+      "lastUpdated": "2026-11-24"
+    },
+    "land-subdivision-planner": {
+      "official": true,
+      "sourceUrl": "https://ardhisasa.lands.go.ke/",
+      "lastUpdated": "2026-11-24"
+    },
+    "biogas-digester-sizer": {
+      "official": true,
+      "sourceUrl": "https://www.energy.go.ke/",
+      "lastUpdated": "2026-11-24"
+    },
+    "livestock-vaccine-calendar": {
+      "official": true,
+      "sourceUrl": "https://kevevapi.or.ke/",
+      "lastUpdated": "2026-11-24"
+    },
+    "ecitizen-docs-planner": {
+      "official": true,
+      "sourceUrl": "https://www.ecitizen.go.ke/",
+      "lastUpdated": "2026-11-24"
+    },
+    "tvet-kmtc-pathway-matcher": {
+      "official": true,
+      "sourceUrl": "https://kmtc.ac.ke/",
+      "lastUpdated": "2026-11-24"
+    },
+    "used-car-elogbook-checker": {
+      "official": true,
+      "sourceUrl": "https://ntsa.go.ke/",
+      "lastUpdated": "2026-11-24"
+    },
+    "child-maintenance-calculator": {
+      "official": true,
+      "sourceUrl": "https://www.kenyalaw.org/lex/",
+      "lastUpdated": "2026-11-24"
+    },
+    "article49-rights-companion": {
+      "official": true,
+      "sourceUrl": "https://www.ipoa.go.ke/",
+      "lastUpdated": "2026-11-24"
     }
-  }
+  },
+  "lastAudit": "2026-11-24"
 }

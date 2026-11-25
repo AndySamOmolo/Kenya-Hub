@@ -1,0 +1,69 @@
+{
+  "lastUpdated": "2026-10-21",
+  "source": "Affordable Housing Act 2024 & Boma Yangu Statutory Portal",
+  "sourceUrl": "https://bomayangu.go.ke/",
+  "housingReliefRate": 0.15,
+  "maxMonthlyRelief": 9000,
+  "maxAnnualRelief": 108000,
+  "tiers": [
+    {
+      "tier": "Social Housing",
+      "maxIncome": 20000,
+      "interestRate": 0.03,
+      "maxTermYears": 30,
+      "sampleUnits": [
+        {
+          "type": "1-Room Unit",
+          "price": 840000,
+          "depositPercent": 0.1
+        },
+        {
+          "type": "2-Room Unit",
+          "price": 1250000,
+          "depositPercent": 0.1
+        }
+      ]
+    },
+    {
+      "tier": "Affordable Housing",
+      "maxIncome": 149999,
+      "interestRate": 0.06,
+      "maxTermYears": 25,
+      "sampleUnits": [
+        {
+          "type": "1-Bedroom (AHP)",
+          "price": 1600000,
+          "depositPercent": 0.1
+        },
+        {
+          "type": "2-Bedroom (AHP)",
+          "price": 2400000,
+          "depositPercent": 0.1
+        },
+        {
+          "type": "3-Bedroom (AHP)",
+          "price": 3200000,
+          "depositPercent": 0.1
+        }
+      ]
+    },
+    {
+      "tier": "Market Units / Mortgage Scheme",
+      "maxIncome": 9999999,
+      "interestRate": 0.09,
+      "maxTermYears": 20,
+      "sampleUnits": [
+        {
+          "type": "2-Bedroom Modern",
+          "price": 3800000,
+          "depositPercent": 0.15
+        },
+        {
+          "type": "3-Bedroom Modern",
+          "price": 4800000,
+          "depositPercent": 0.15
+        }
+      ]
+    }
+  ]
+}

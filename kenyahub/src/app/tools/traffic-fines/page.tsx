@@ -1,41 +1,26 @@
 "use client";
+import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 
 
-import { useState, useMemo } from "react";
-import ToolShell from "@/components/tools/ToolShell";
+import { useState, useMemo, useEffect, useRef, useDeferredValue } from "react";
+import { scrollToTopIfScrolled } from "@/lib/scroll";
 import { TOOLS } from "@/lib/tools-registry";
 import finesData from "@/data/traffic-fines.json";
 import SearchInput from "@/components/ui/SearchInput";
 
 const tool = TOOLS.find((t) => t.slug === "traffic-fines")!;
 
-const faq = [
-  {
-    question: "What is the fine for speeding in Kenya?",
-    answer: "Speeding fines range from KES 5,000 for exceeding the limit by up to 10 km/h, to KES 50,000 for exceeding by over 40 km/h. Higher speed offences also carry more demerit points and may result in arrest.",
-  },
-  {
-    question: "What is the NTSA demerit points system?",
-    answer: "Kenya uses a 24-point demerit system over a 3-year period. Points 1–12 result in a warning, 13–18 require a mandatory road safety course, 19–23 lead to license suspension for 6 months, and 24+ points result in license revocation.",
-  },
-  {
-    question: "What is the fine for driving without insurance in Kenya?",
-    answer: "Driving without valid motor vehicle insurance carries a fine of up to KES 50,000 and is an arrestable offence. You can also face imprisonment. Insurance is a legal requirement under Cap 405.",
-  },
-  {
-    question: "How do I pay NTSA traffic fines?",
-    answer: "You can pay via: cash bond at the police station, M-Pesa paybill (NTSA service), eCitizen portal (ntsa.go.ke), or through court-imposed fine after a hearing.",
-  },
-  {
-    question: "What is the fine for drunk driving in Kenya?",
-    answer: "First offence DUI carries a fine of KES 100,000 plus license suspension for 1 year or imprisonment up to 2 years. Repeat offenders face KES 200,000 fine plus license revocation and up to 3 years imprisonment.",
-  },
-];
 
 export default function TrafficFinesPage() {
   const [searchQuery, setSearchQuery] = useState("");
+  const deferredSearchQuery = useDeferredValue(searchQuery);
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
+  const _scrollMountRef = useRef(false);
+  useEffect(() => {
+    if (!_scrollMountRef.current) { _scrollMountRef.current = true; return; }
+    scrollToTopIfScrolled();
+  }, [selectedCategory]);
 
   const filteredCategories = useMemo(() => {
     let categories = finesData.categories;
@@ -44,8 +29,8 @@ export default function TrafficFinesPage() {
       categories = categories.filter((c) => c.id === selectedCategory);
     }
 
-    if (searchQuery.trim()) {
-      const q = searchQuery.toLowerCase();
+    if (deferredSearchQuery.trim()) {
+      const q = deferredSearchQuery.toLowerCase();
       categories = categories
         .map((cat) => ({
           ...cat,
@@ -57,7 +42,7 @@ export default function TrafficFinesPage() {
     }
 
     return categories;
-  }, [searchQuery, selectedCategory]);
+  }, [deferredSearchQuery, selectedCategory]);
 
   const totalOffences = filteredCategories.reduce((sum, c) => sum + c.offences.length, 0);
 
@@ -65,7 +50,7 @@ export default function TrafficFinesPage() {
     `KES ${n.toLocaleString("en-KE", { minimumFractionDigits: 0, maximumFractionDigits: 0 })}`;
 
   return (
-    <ToolShell tool={tool} faq={faq}>
+    <>
       <div className="space-y-6">
         {/* Search */}
         <div className="bg-bg-card border border-border rounded-xl p-6">
@@ -73,38 +58,41 @@ export default function TrafficFinesPage() {
             type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="Search offences — e.g. 'seatbelt', 'speeding', 'phone'..."
+            placeholder="Search offences (e.g. speeding)..."
             className="input-field"
             id="traffic-search-input"
            onClear={() => setSearchQuery("")} />
         </div>
 
-        {/* Category Filter */}
-        <div className="flex flex-wrap gap-2">
+        {/* Category Filter — Horizontal Scrolling Pills */}
+        <ExpandablePillRow>
           <button
             onClick={() => setSelectedCategory("all")}
-            className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${
+            className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs font-medium border transition-all ${
               selectedCategory === "all"
-                ? "bg-gold text-kenya-black"
-                : "bg-bg-card border border-border text-text-secondary hover:text-gold"
+                ? "border-gold/50 bg-gold/15 text-gold font-semibold"
+                : "border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light"
             }`}
           >
             All Categories
           </button>
-          {finesData.categories.map((cat) => (
-            <button
-              key={cat.id}
-              onClick={() => setSelectedCategory(cat.id)}
-              className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${
-                selectedCategory === cat.id
-                  ? "bg-gold text-kenya-black"
-                  : "bg-bg-card border border-border text-text-secondary hover:text-gold"
-              }`}
-            >
-              <DynamicIcon emoji={cat.icon} className="w-[1em] h-[1em] inline-block mb-[0.1em]" /> {cat.name}
-            </button>
-          ))}
-        </div>
+          {finesData.categories.map((cat) => {
+            const active = selectedCategory === cat.id;
+            return (
+              <button
+                key={cat.id}
+                onClick={() => setSelectedCategory(cat.id)}
+                className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs font-medium border transition-all ${
+                  active
+                    ? "border-gold/50 bg-gold/15 text-gold font-semibold"
+                    : "border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light"
+                }`}
+              >
+                {cat.name}
+              </button>
+            );
+          })}
+        </ExpandablePillRow>
 
         <p className="text-xs text-text-muted">
           Showing {totalOffences} offence{totalOffences !== 1 ? "s" : ""}
@@ -122,12 +110,12 @@ export default function TrafficFinesPage() {
             <div className="divide-y divide-border">
               {cat.offences.map((offence, i) => (
                 <div key={i} className="px-5 py-4">
-                  <div className="flex items-start justify-between gap-4">
-                    <div className="min-w-0">
+                  <div className="flex flex-wrap items-start justify-between gap-x-4 gap-y-2">
+                    <div className="min-w-0 flex-1">
                       <p className="text-sm text-text-primary font-medium">{offence.offence}</p>
                       <div className="flex flex-wrap items-center gap-2 mt-2">
                         <span className="text-xs text-text-muted">
-                          Demerit: <span className="text-gold font-medium">{offence.demeritPoints} pts</span>
+                          Demerit: <span className="text-gold font-medium">{offence.demeritPoints} {offence.demeritPoints === 1 ? "pt" : "pts"}</span>
                         </span>
                         {offence.arrestable && (
                           <span className="inline-flex items-center text-[0.625rem] text-kenya-red-light bg-kenya-red/10 rounded-full px-2 py-0.5 font-medium">
@@ -201,6 +189,6 @@ export default function TrafficFinesPage() {
           </ul>
         </div>
       </div>
-    </ToolShell>
+    </>
   );
 }

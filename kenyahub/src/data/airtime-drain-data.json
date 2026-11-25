@@ -1,0 +1,38 @@
+{
+  "lastUpdated": "2026-11-20",
+  "source": "Communications Authority of Kenya (CA) Consumer Guidelines & MNO USSD Protocols",
+  "sourceUrl": "https://www.ca.go.ke/",
+  "networks": [
+    {
+      "name": "Safaricom",
+      "checkSubscriptionsUSSD": "*456*9*5#",
+      "checkSubscriptionsStep": "Dial *456*9*5# (or *100# → My Subscriptions) to view and cancel all active premium-rate SMS & content subscriptions.",
+      "stopPromoUSSD": "*456*9*5#",
+      "stopAllPromoSMS": "Dial *456*9*5# to opt out of promotional sender IDs and marketing SMS, or send 'STOP' to the specific shortcode.",
+      "checkLinkedSIMsUSSD": "*106#",
+      "checkLinkedSIMsStep": "Dial *106# → Select option 1 (Check numbers registered with my ID) to identify and report fraudulent SIMs.",
+      "blockSimSwapUSSD": "*100*100#",
+      "customerCare": "100 (Free) or WhatsApp 0722000100"
+    },
+    {
+      "name": "Airtel Kenya",
+      "checkSubscriptionsUSSD": "*100#",
+      "checkSubscriptionsStep": "Dial *100# → Select 'Manage My Account' → 'My Subscriptions' → Unsubscribe all.",
+      "stopPromoUSSD": "*100*3#",
+      "stopAllPromoSMS": "Dial *100*3# or send 'STOP' to the deduction shortcode.",
+      "checkLinkedSIMsUSSD": "*106#",
+      "checkLinkedSIMsStep": "Dial *106# to review all MSISDN lines linked to your National ID card.",
+      "customerCare": "100 (Free) or 0733100100"
+    },
+    {
+      "name": "Telkom Kenya",
+      "checkSubscriptionsUSSD": "*100#",
+      "checkSubscriptionsStep": "Dial *100# → Option 4 (My Account) → Manage Active Services.",
+      "stopPromoUSSD": "*100#",
+      "stopAllPromoSMS": "Send 'STOP' to the offending alphanumeric SMS shortcode or manage active services via *100#.",
+      "checkLinkedSIMsUSSD": "*106#",
+      "checkLinkedSIMsStep": "Dial *106# to verify all mobile numbers registered under your National ID.",
+      "customerCare": "100 (Free) or 0770000100"
+    }
+  ]
+}

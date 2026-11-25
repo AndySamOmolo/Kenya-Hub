@@ -1,44 +1,45 @@
 "use client";
-import { getSourcesForLanguage } from "@/data/language-sources";
+import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
+import type { LanguageSource } from "@/data/language-sources";
 import DynamicIcon from "@/components/ui/DynamicIcon";
-
 
 import { useState } from "react";
 import {
-  Lock,
   Check,
   Star,
   ChevronDown,
-  ChevronRight,
-  Volume2,
   Lightbulb,
-  Zap,
-  Heart,
   Flame,
   Trophy,
   Target,
   Crown,
   Sparkles,
+  Layers,
+  Lock,
+  Unlock,
+  BookOpen,
+  Heart,
+  Shield,
+  Gift,
 } from "lucide-react";
 import type { CourseUnit, UserProgress, LanguageConfig } from "@/data/courses/types";
-import { MAX_SKILL_LEVEL, LEVELS, ACHIEVEMENTS, MAX_HEARTS } from "@/data/courses/types";
+import { MAX_SKILL_LEVEL, ACHIEVEMENTS, LEVELS } from "@/data/courses/types";
 import {
-  isSkillUnlocked,
   getXpLevel,
-  minutesToNextHeart,
   getDueReviews,
+  isSkillUnlocked,
+  getLocalDateString,
+  minutesToNextHeart,
 } from "@/lib/learn-progress";
-
-/* ═══════════════════════════════════════════════════════
-   SKILL TREE — Interactive learning path
-   ═══════════════════════════════════════════════════════ */
 
 interface SkillTreeProps {
   units: CourseUnit[];
   progress: UserProgress;
   config: LanguageConfig;
+  languageSources?: LanguageSource[];
   onStartLesson: (skillId: string, level: number) => void;
   onStartReview: () => void;
+  onToggleUnlockAll: () => void;
   onGoBack: () => void;
 }
 
@@ -46,22 +47,41 @@ export default function SkillTree({
   units,
   progress,
   config,
+  languageSources = [],
   onStartLesson,
   onStartReview,
-  onGoBack,
+  onToggleUnlockAll,
 }: SkillTreeProps) {
-  const sources = getSourcesForLanguage(config.id);
-  const [expandedUnit, setExpandedUnit] = useState<string | null>(
-    units[0]?.id || null
-  );
-  const [showProfile, setShowProfile] = useState(false);
+  const sources = languageSources;
+  const [expandedUnits, setExpandedUnits] = useState<Set<number>>(() => new Set([0]));
   const [showAchievements, setShowAchievements] = useState(false);
+  const [showDashboard, setShowDashboard] = useState(false);
+  const [achCategory, setAchCategory] = useState<string>("all");
+
+  const allExpanded = units.length > 0 && expandedUnits.size >= units.length;
+  const isAllUnlocked = Boolean(progress.unlockAll);
+
+  const toggleAllUnits = () => {
+    if (allExpanded) {
+      setExpandedUnits(new Set([0]));
+    } else {
+      setExpandedUnits(new Set(units.map((_, idx) => idx)));
+    }
+  };
+
+  const toggleUnit = (unitIdx: number) => {
+    setExpandedUnits((prev) => {
+      const next = new Set(prev);
+      if (next.has(unitIdx)) next.delete(unitIdx);
+      else next.add(unitIdx);
+      return next;
+    });
+  };
 
   const levelInfo = getXpLevel(progress.xp);
-  const nextHeartMin = minutesToNextHeart(progress);
   const dueReviewCount = getDueReviews(progress).length;
+  const nextHeartMin = minutesToNextHeart(progress);
 
-  // Count totals
   const totalSkills = units.reduce((s, u) => s + u.skills.length, 0);
   const completedSkills = Object.values(progress.skillLevels).filter(
     (v) => v >= 1
@@ -70,193 +90,348 @@ export default function SkillTree({
     (v) => v >= MAX_SKILL_LEVEL
   ).length;
 
-  return (
-    <div className="mx-auto max-w-2xl px-0 sm:px-4 pb-8">
-      {/* ─── Header ──────────────────────────────── */}
-      <div className="mb-6">
-        {/* Language badge */}
-        <div className="mb-4 flex items-center justify-between">
-          <button
-            onClick={onGoBack}
-            className="flex items-center gap-2 text-sm font-semibold text-text-muted transition-colors active:text-text-primary sm:hover:text-text-primary"
-          >
-            <ChevronRight className="h-4 w-4 rotate-180" /> Languages
-          </button>
-          <button
-            onClick={() => setShowProfile(!showProfile)}
-            className="flex items-center gap-2 rounded-full border border-border bg-bg-card px-3 py-1.5 text-xs font-semibold transition-all active:bg-bg-elevated sm:hover:border-gold/40"
-          >
-            <span><DynamicIcon emoji={levelInfo.current.icon} className="w-[1em] h-[1em]" /></span>
-            <span className="text-gold">{progress.xp} XP</span>
-            {progress.streak > 0 && (
-              <>
-                <span className="text-border">|</span>
-                <Flame className="h-3 w-3 text-orange-400" />
-                <span className="text-orange-400">{progress.streak}</span>
-              </>
-            )}
-          </button>
-        </div>
+  const filteredAchievements = ACHIEVEMENTS.filter(
+    (a) => achCategory === "all" || a.category === achCategory
+  );
 
-        {/* Hero card */}
-        <div className="rounded-2xl border border-border bg-gradient-to-br from-bg-card to-bg-elevated p-5 sm:p-6">
-          <div className="flex items-center gap-4">
-            <div className="flex-1 min-w-0">
-              <h1 className="font-[family-name:var(--font-outfit)] text-xl font-bold text-text-primary sm:text-2xl">
-                {config.name}
-              </h1>
-              <p className="text-xs text-text-secondary">{config.description}</p>
-              {sources.length > 0 && (
-                <div className="mt-2 space-y-1 text-[0.65rem] leading-relaxed text-text-muted">
-                  <p>Built from:</p>
-                  {sources.map((source) => (
-                    <p key={source.id} className="pl-2">
-                      <span className="text-text-secondary">{source.title}</span>{" "}
-                      <span className={source.ingestionStatus === "integrated" ? "text-green-400" : "text-gold"}>
-                        ({source.ingestionStatus === "integrated" ? "integrated" : "research reference"})
-                      </span>
-                    </p>
-                  ))}
-                </div>
+  const today = getLocalDateString();
+  const dailyQuests =
+    progress.dailyQuests && progress.dailyQuests.date === today
+      ? progress.dailyQuests
+      : {
+          date: today,
+          lessonDone: false,
+          gameDone: false,
+          memoryOrCardsDone: false,
+          lessonsToday: 0,
+          gamesToday: 0,
+          xpToday: progress.todayXp || 0,
+          chestClaimed: false,
+        };
+
+  return (
+    <div className="mx-auto max-w-3xl px-0 sm:px-2 pb-8">
+      {/* ─── Sleek Compact Progress Strip (1–2 lines on Mobile) ─── */}
+      <div className="mb-2.5 sm:mb-4">
+        <div className="rounded-xl sm:rounded-2xl border border-border bg-gradient-to-br from-bg-card to-bg-elevated p-2.5 sm:p-3.5 shadow-xs transition-all">
+          {/* Row 1: Rank + XP + Hearts + Inline Quests & Badges toggle */}
+          <div className="flex flex-wrap items-center justify-between gap-2">
+            <div className="flex items-center gap-1.5 sm:gap-2 min-w-0 flex-wrap">
+              <span className="text-base sm:text-lg shrink-0">{levelInfo.current.icon}</span>
+              <span className="text-xs sm:text-sm font-bold text-text-primary whitespace-nowrap">
+                Lv.{levelInfo.current.level} {levelInfo.current.title.split("•")[0].trim()}
+              </span>
+              <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-bold bg-gold/15 text-gold border border-gold/30 tabular-nums micro-badge">
+                {progress.xp} XP
+              </span>
+              <span className="inline-flex items-center gap-0.5 px-2 py-0.5 rounded-full text-[11px] font-bold bg-red-500/15 text-red-400 border border-red-500/30 tabular-nums micro-badge">
+                <Heart className="w-2.5 h-2.5 fill-red-400" /> {progress.hearts}/5
+                {nextHeartMin > 0 ? ` (${nextHeartMin}m)` : ""}
+              </span>
+              {progress.streakFreezes > 0 && (
+                <span className="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded-full text-[11px] font-bold bg-sky-500/15 text-sky-400 border border-sky-500/30 micro-badge">
+                  <Shield className="w-2.5 h-2.5" /> {progress.streakFreezes}
+                </span>
               )}
             </div>
+
+            <button
+              type="button"
+              onClick={() => setShowDashboard(!showDashboard)}
+              className="shrink-0 whitespace-nowrap flex items-center gap-1 px-2.5 py-1 rounded-lg border border-border bg-bg-elevated hover:bg-border/60 text-[11px] sm:text-xs font-semibold text-text-secondary hover:text-text-primary transition-all cursor-pointer micro-badge"
+            >
+              <span>{showDashboard ? "Hide ▴" : "Quests & Badges ▾"}</span>
+            </button>
           </div>
 
-          {/* Quick stats row */}
-          <div className="mt-4 grid grid-cols-4 gap-2">
-            <div className="text-center">
-              <div className="text-base font-bold text-gold sm:text-lg"><DynamicIcon emoji={levelInfo.current.icon} className="w-[1em] h-[1em]" /></div>
-              <div className="text-[0.6rem] text-text-muted">{levelInfo.current.name}</div>
-            </div>
-            <div className="text-center">
-              <div className="text-base font-bold text-text-primary sm:text-lg">{completedSkills}/{totalSkills}</div>
-              <div className="text-[0.6rem] text-text-muted">Skills</div>
-            </div>
-            <div className="text-center">
-              <div className="text-base font-bold text-text-primary sm:text-lg">{progress.wordsLearned.length}</div>
-              <div className="text-[0.6rem] text-text-muted">Words</div>
-            </div>
-            <div className="text-center">
-              <div className="flex items-center justify-center gap-0.5 text-base font-bold text-red-400 sm:text-lg">
-                <Heart className="h-3.5 w-3.5" fill="currentColor" />{progress.hearts}
-              </div>
-              <div className="text-[0.6rem] text-text-muted">
-                {progress.hearts < MAX_HEARTS ? `+1 in ${nextHeartMin}m` : "Full"}
-              </div>
-            </div>
-          </div>
-
-          {/* XP Progress bar */}
-          {levelInfo.next && (
-            <div className="mt-4">
-              <div className="flex items-center justify-between text-[0.6rem] text-text-muted">
-                <span>{levelInfo.current.name}</span>
-                <span>{levelInfo.next.name}</span>
-              </div>
-              <div className="mt-1 h-2 overflow-hidden rounded-full bg-bg-elevated">
-                <div
-                  className="h-full rounded-full bg-gradient-to-r from-gold to-kenya-green transition-all duration-700"
-                  style={{ width: `${levelInfo.progressToNext}%` }}
-                />
-              </div>
-              <div className="mt-0.5 text-center text-[0.55rem] text-text-muted">
-                {progress.xp} / {levelInfo.next.minXp} XP
-              </div>
-            </div>
-          )}
-
-          {/* Daily goal */}
-          <div className="mt-3 rounded-lg border border-border/50 bg-bg-elevated/50 p-2.5">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-1.5">
-                <Target className="h-3.5 w-3.5 text-gold" />
-                <span className="text-[0.65rem] font-semibold text-text-secondary">
-                  Daily Goal
-                </span>
-              </div>
-              <span className="text-[0.65rem] font-bold text-gold">
-                {Math.min(progress.todayXp, progress.dailyGoal)}/{progress.dailyGoal} XP
+          {/* Row 2: Compact secondary progress line + Review CTA */}
+          <div className="mt-1.5 flex items-center justify-between gap-2 text-[11px] sm:text-xs text-text-muted micro-badge">
+            <div className="flex items-center gap-1.5 truncate">
+              <span className="tabular-nums">{completedSkills}/{totalSkills} Modules</span>
+              <span>·</span>
+              <span className="text-text-secondary tabular-nums">{progress.wordsLearned.length} Words</span>
+              <span>·</span>
+              <span className={progress.streak > 0 ? "text-orange-400 font-semibold tabular-nums" : "text-text-muted tabular-nums"}>
+                {progress.streak}d Streak
               </span>
             </div>
-            <div className="mt-1.5 h-1.5 overflow-hidden rounded-full bg-bg-elevated">
-              <div
-                className="h-full rounded-full bg-gold transition-all duration-500"
-                style={{
-                  width: `${Math.min(100, (progress.todayXp / progress.dailyGoal) * 100)}%`,
-                }}
-              />
-            </div>
-          </div>
-        </div>
-
-        {dueReviewCount > 0 && (
-          <div className="mt-3 flex items-start gap-2 rounded-xl border border-kenya-green/30 bg-kenya-green/5 p-3">
-            <Lightbulb className="mt-0.5 h-4 w-4 shrink-0 text-kenya-green" />
-            <div className="flex min-w-0 flex-1 items-center justify-between gap-3">
-              <p className="text-xs leading-relaxed text-text-secondary">
-                {dueReviewCount} item{dueReviewCount === 1 ? "" : "s"} ready for review.
-              </p>
+            {dueReviewCount > 0 && (
               <button
                 onClick={onStartReview}
-                className="shrink-0 rounded-lg bg-kenya-green px-3 py-2 text-xs font-bold text-white transition-colors active:brightness-95 sm:hover:brightness-110"
+                className="shrink-0 flex items-center gap-1 rounded-lg bg-gold/15 border border-gold/40 px-2 py-0.5 text-[11px] font-semibold text-gold hover:bg-gold/25 transition-colors cursor-pointer micro-badge"
               >
-                Review now
+                <Sparkles className="h-3 w-3" />
+                <span>Review ({dueReviewCount})</span>
               </button>
+            )}
+          </div>
+
+          {/* Expanded detailed statistics */}
+          {showDashboard && (
+            <div className="mt-3 pt-3 border-t border-border/50 animate-in fade-in duration-200">
+              {/* Compact 2x2 on Mobile / 4-col on Desktop Stats Grid */}
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3">
+                {/* 1. Total XP */}
+                <div className="rounded-xl bg-bg-elevated/70 border border-border/60 p-2 sm:p-3.5 flex flex-col justify-between">
+                  <span className="text-[10px] sm:text-xs uppercase tracking-wider font-semibold text-text-muted truncate compact-label">Total XP</span>
+                  <div className="mt-0.5 flex items-center gap-1 text-sm sm:text-xl font-extrabold tabular-nums text-gold">
+                    <DynamicIcon emoji={levelInfo.current.icon} className="w-4 h-4 sm:w-5 sm:h-5 shrink-0" />
+                    <span>{progress.xp}</span>
+                  </div>
+                  <span className="text-[10px] sm:text-xs text-text-secondary mt-0.5 truncate compact-label">
+                    Lv.{levelInfo.current.level} {levelInfo.current.title}
+                  </span>
+                </div>
+
+                {/* 2. Modules Completed */}
+                <div className="rounded-xl bg-bg-elevated/70 border border-border/60 p-2 sm:p-3.5 flex flex-col justify-between">
+                  <span className="text-[10px] sm:text-xs uppercase tracking-wider font-semibold text-text-muted truncate compact-label">Modules</span>
+                  <div className="mt-0.5 text-sm sm:text-xl font-extrabold tabular-nums text-text-primary">
+                    {completedSkills}
+                    <span className="text-xs sm:text-sm font-normal text-text-muted">/{totalSkills}</span>
+                  </div>
+                  <span className="text-[10px] sm:text-xs text-kenya-green-light mt-0.5 truncate compact-label">
+                    {masteredSkills > 0 ? `${masteredSkills} Mastered ★` : "Guided Path"}
+                  </span>
+                </div>
+
+                {/* 3. Words Learned */}
+                <div className="rounded-xl bg-bg-elevated/70 border border-border/60 p-2 sm:p-3.5 flex flex-col justify-between">
+                  <span className="text-[10px] sm:text-xs uppercase tracking-wider font-semibold text-text-muted truncate compact-label">Vocabulary</span>
+                  <div className="mt-0.5 text-sm sm:text-xl font-extrabold tabular-nums text-text-primary">
+                    {progress.wordsLearned.length}
+                  </div>
+                  <span className="text-[10px] sm:text-xs text-text-secondary mt-0.5 truncate compact-label">
+                    Words Practiced
+                  </span>
+                </div>
+
+                {/* 4. Day Streak */}
+                <div className="rounded-xl bg-bg-elevated/70 border border-border/60 p-2 sm:p-3.5 flex flex-col justify-between">
+                  <span className="text-[10px] sm:text-xs uppercase tracking-wider font-semibold text-text-muted truncate compact-label">Day Streak</span>
+                  <div className="mt-0.5 flex items-center gap-1 text-sm sm:text-xl font-extrabold tabular-nums text-orange-400">
+                    <Flame className="h-4 w-4 sm:h-5 sm:w-5 shrink-0" />
+                    <span>{progress.streak}</span>
+                  </div>
+                  <span className="text-[10px] sm:text-xs text-text-secondary mt-0.5 truncate compact-label">
+                    {progress.streakFreezes > 0
+                      ? `${progress.streakFreezes} Shield Active`
+                      : progress.streak > 0
+                      ? "Active Streak"
+                      : "Practice Today"}
+                  </span>
+                </div>
+              </div>
+
+              {/* Daily Quests & Quest Chest */}
+              <div className="mt-3.5 rounded-xl border border-gold/25 bg-gold/5 p-3.5">
+                <div className="flex items-center justify-between gap-2 mb-2.5 flex-wrap">
+                  <span className="text-xs font-bold text-gold flex items-center gap-1.5">
+                    <Gift className="h-4 w-4 text-gold" /> Daily Quests &amp; Reward Chest
+                  </span>
+                  <span className="text-[0.6875rem] font-semibold text-text-secondary">
+                    {dailyQuests.chestClaimed
+                      ? "✓ Chest Claimed (+50 XP & +1 Streak Shield!)"
+                      : "Complete all 3 for +50 XP & +1 Streak Shield"}
+                  </span>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
+                  {[
+                    {
+                      label: "Complete 1 Lesson",
+                      done: dailyQuests.lessonsToday >= 1,
+                      progressText: `${Math.min(1, dailyQuests.lessonsToday)}/1`,
+                    },
+                    {
+                      label: "Play 2 Mini-Games",
+                      done: dailyQuests.gamesToday >= 2,
+                      progressText: `${Math.min(2, dailyQuests.gamesToday)}/2`,
+                    },
+                    {
+                      label: `Earn ${progress.dailyGoal} XP Today`,
+                      done: dailyQuests.xpToday >= progress.dailyGoal,
+                      progressText: `${Math.min(progress.dailyGoal, dailyQuests.xpToday)}/${progress.dailyGoal}`,
+                    },
+                  ].map((q, idx) => (
+                    <div
+                      key={idx}
+                      className={`rounded-lg border px-3 py-2 flex items-center justify-between text-xs ${
+                        q.done
+                          ? "border-kenya-green/40 bg-kenya-green/10 text-kenya-green-light font-semibold"
+                          : "border-border bg-bg-card text-text-secondary"
+                      }`}
+                    >
+                      <span className="truncate pr-2">{q.label}</span>
+                      <span className="font-bold shrink-0">{q.done ? "✓" : q.progressText}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* XP Level Progress Bar */}
+              <div className="mt-4">
+                <div className="flex items-center justify-between text-xs text-text-secondary mb-1.5 flex-wrap gap-1">
+                  <span className="font-semibold text-gold flex items-center gap-1.5">
+                    <DynamicIcon emoji={levelInfo.current.icon} className="w-4 h-4" /> Level{" "}
+                    {levelInfo.current.level}: {levelInfo.current.title}
+                  </span>
+                  {levelInfo.next ? (
+                    <span>
+                      {progress.xp} / {levelInfo.next.minXp} XP to{" "}
+                      {levelInfo.next.title}
+                    </span>
+                  ) : (
+                    <span className="text-gold font-semibold flex items-center gap-1">
+                      <Crown className="w-3.5 h-3.5 inline text-gold" /> Max Level!
+                    </span>
+                  )}
+                </div>
+                <div className="h-2.5 w-full overflow-hidden rounded-full bg-bg-elevated">
+                  <div
+                    className="h-full rounded-full bg-gradient-to-r from-gold to-kenya-green transition-all duration-500"
+                    style={{ width: `${levelInfo.progressPercent}%` }}
+                  />
+                </div>
+              </div>
+
+              {/* Daily Goal + Action buttons */}
+              <div className="mt-3.5 flex flex-wrap items-center justify-between gap-2.5 pt-3 border-t border-border/50">
+                <div className="flex items-center gap-2 text-xs sm:text-sm text-text-secondary">
+                  <Target className="h-4 w-4 text-kenya-green-light shrink-0" />
+                  <span>
+                    Daily Goal:{" "}
+                    <strong className="text-text-primary">
+                      {progress.todayXp}/{progress.dailyGoal} XP
+                    </strong>
+                  </span>
+                  {progress.todayXp >= progress.dailyGoal && (
+                    <span className="rounded-full bg-kenya-green/20 px-2.5 py-0.5 text-xs font-semibold text-kenya-green-light">
+                      ✓ Goal Met!
+                    </span>
+                  )}
+                </div>
+
+                <div className="flex flex-wrap items-center gap-2">
+                  {dueReviewCount > 0 && (
+                    <button
+                      onClick={onStartReview}
+                      className="flex items-center gap-1.5 rounded-xl bg-gold/15 border border-gold/40 px-3 py-1.5 text-xs font-semibold text-gold hover:bg-gold/25 transition-colors cursor-pointer"
+                    >
+                      <Sparkles className="h-3.5 w-3.5" />
+                      <span>Review ({dueReviewCount})</span>
+                    </button>
+                  )}
+                  <button
+                    onClick={() => setShowAchievements(!showAchievements)}
+                    className="flex items-center gap-1.5 rounded-xl bg-bg-elevated border border-border px-3 py-1.5 text-xs font-medium text-text-secondary hover:text-text-primary transition-colors cursor-pointer"
+                  >
+                    <Trophy className="h-3.5 w-3.5 text-gold" />
+                    <span>
+                      Badges ({progress.achievements.length}/{ACHIEVEMENTS.length})
+                    </span>
+                  </button>
+                </div>
+              </div>
+
+              {sources.length > 0 && (
+                <details className="group mt-3.5 rounded-xl border border-border/70 bg-bg-elevated/50 px-3.5 py-2.5 text-xs">
+                  <summary className="flex cursor-pointer list-none items-center justify-between gap-2 text-xs font-semibold text-text-secondary hover:text-gold transition-colors">
+                    <span className="inline-flex items-center gap-2 min-w-0 flex-1">
+                      <BookOpen className="h-4 w-4 text-gold shrink-0" />
+                      <span>
+                        Compiled from {sources.length} verified linguistic{" "}
+                        {sources.length === 1 ? "source" : "sources"}
+                      </span>
+                    </span>
+                    <ChevronDown className="h-4 w-4 text-text-muted transition-transform group-open:rotate-180 shrink-0" />
+                  </summary>
+                  <ul className="mt-2.5 space-y-1.5 border-t border-border/50 pt-2.5 text-xs leading-relaxed text-text-secondary">
+                    {sources.map((source) => (
+                      <li key={source.id} className="flex items-start gap-2">
+                        <span className="text-gold font-bold shrink-0">•</span>
+                        <span>
+                          <span className="font-medium text-text-primary">{source.title}</span>{" "}
+                          <span className="text-text-muted">({source.published})</span>
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </details>
+              )}
             </div>
-          </div>
-        )}
+          )}
+        </div>
 
-        {/* Achievements button */}
-        <button
-          onClick={() => setShowAchievements(!showAchievements)}
-            aria-expanded={showAchievements}
-            aria-controls="achievements-panel"
-          className="mt-3 flex w-full items-center justify-between rounded-xl border border-border bg-bg-card px-4 py-3 transition-all active:bg-bg-elevated sm:hover:border-gold/30"
-        >
-          <div className="flex items-center gap-2">
-            <Trophy className="h-4 w-4 text-gold" />
-            <span className="text-sm font-semibold text-text-primary">
-              Achievements
-            </span>
-          </div>
-          <div className="flex items-center gap-2">
-            <span className="text-xs text-text-muted">
-              {progress.achievements.length}/{ACHIEVEMENTS.length}
-            </span>
-            <ChevronDown
-              className={`h-4 w-4 text-text-muted transition-transform ${
-                showAchievements ? "rotate-180" : ""
-              }`}
-            />
-          </div>
-        </button>
-
-        {/* Achievements panel */}
+        {/* ─── Collapsible Achievements Drawer ─── */}
         {showAchievements && (
-          <div id="achievements-panel" className="mt-2 rounded-xl border border-border bg-bg-card p-3">
-            <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
-              {ACHIEVEMENTS.map((ach) => {
-                const earned = progress.achievements.includes(ach.id);
+          <div className="mt-3 rounded-2xl border border-border bg-bg-card p-4 animate-in fade-in duration-200">
+            <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
+              <h3 className="text-sm font-bold text-text-primary flex items-center gap-1.5">
+                <Crown className="h-4 w-4 text-gold" /> Achievements &amp; Ranks
+              </h3>
+              <ExpandablePillRow className="w-full sm:w-auto max-w-full">
+                {["all", "lessons", "streak", "vocabulary", "mastery", "games"].map((cat) => (
+                  <button
+                    key={cat}
+                    onClick={() => setAchCategory(cat)}
+                    className={`shrink-0 whitespace-nowrap rounded-full px-3 py-1 text-xs font-medium capitalize border transition-all ${
+                      achCategory === cat
+                        ? "border-gold/50 bg-gold/15 text-gold font-semibold"
+                        : "border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light"
+                    }`}
+                  >
+                    {cat}
+                  </button>
+                ))}
+              </ExpandablePillRow>
+            </div>
+
+            {/* Level Ladder Preview */}
+            <ExpandablePillRow className="mb-3 pb-1.5">
+              {LEVELS.map((lvl) => {
+                const reached = progress.xp >= lvl.minXp;
+                return (
+                  <div
+                    key={lvl.level}
+                    className={`flex shrink-0 items-center gap-2 rounded-xl border px-3 py-1.5 text-xs ${
+                      reached
+                        ? "border-gold/40 bg-gold/10 text-text-primary"
+                        : "border-border bg-bg-elevated text-text-secondary dark:text-[#a39a8c]"
+                    }`}
+                  >
+                    <DynamicIcon emoji={lvl.icon} className="w-4 h-4" />
+                    <div>
+                      <div className="font-bold">Lv.{lvl.level} {lvl.title}</div>
+                      <div className="text-text-muted">{lvl.minXp} XP</div>
+                    </div>
+                  </div>
+                );
+              })}
+            </ExpandablePillRow>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5">
+              {filteredAchievements.map((ach) => {
+                const unlocked = progress.achievements.includes(ach.id);
                 return (
                   <div
                     key={ach.id}
-                    className={`flex flex-col items-center rounded-lg p-2.5 text-center transition-all ${
-                      earned
-                        ? "bg-gold/10 border border-gold/20"
-                        : "opacity-40 border border-border/30"
+                    className={`flex items-start gap-3 rounded-xl border p-3 transition-all ${
+                      unlocked
+                        ? "border-gold/40 bg-gold/5"
+                        : "border-border bg-bg-elevated/60 text-text-secondary dark:text-[#a39a8c]"
                     }`}
                   >
-                    <span className="text-2xl"><DynamicIcon emoji={ach.icon} className="w-[1em] h-[1em]" /></span>
-                    <span
-                      className={`mt-1 text-[0.6rem] font-semibold ${
-                        earned ? "text-gold" : "text-text-muted"
-                      }`}
-                    >
-                      {ach.name}
-                    </span>
-                    <span className="text-[0.5rem] text-text-muted">
-                      {ach.description}
-                    </span>
+                    <div className="text-xl flex items-center justify-center shrink-0 mt-0.5">
+                      <DynamicIcon emoji={ach.icon} className="w-5 h-5" />
+                    </div>
+                    <div className="min-w-0 flex-1">
+                      <div className="text-xs sm:text-sm font-bold text-text-primary break-words">
+                        {ach.name}
+                      </div>
+                      <div className="text-xs text-text-muted leading-snug mt-0.5">
+                        {ach.description}
+                      </div>
+                    </div>
                   </div>
                 );
               })}
@@ -265,182 +440,279 @@ export default function SkillTree({
         )}
       </div>
 
-      {/* ─── Skill Tree Path ─────────────────────── */}
-      <div className="space-y-3">
-        {units.map((unit, unitIdx) => {
-          const isExpanded = expandedUnit === unit.id;
-          const unitCompleted = unit.skills.every(
-            (s) => (progress.skillLevels[s.id] || 0) >= 1
-          );
-          const unitMastered = unit.skills.every(
-            (s) => (progress.skillLevels[s.id] || 0) >= MAX_SKILL_LEVEL
-          );
+      {/* ─── Compact Unit Controls & Jump Bar ──────────────────────── */}
+      <div className="mb-3 space-y-2">
+        <div className="flex flex-wrap items-center justify-between gap-2 px-0.5">
+          <span className="text-xs font-semibold text-text-secondary whitespace-nowrap">
+            {units.length} Units
+          </span>
+          <div className="flex items-center gap-1.5">
+            <button
+              onClick={onToggleUnlockAll}
+              className={`inline-flex items-center gap-1 rounded-lg sm:rounded-xl border px-2.5 py-1 sm:px-3 sm:py-1.5 min-h-[30px] sm:min-h-[34px] text-[11px] sm:text-xs font-semibold transition-colors cursor-pointer micro-badge ${
+                isAllUnlocked
+                  ? "border-gold/50 bg-gold/15 text-gold"
+                  : "border-border bg-bg-card text-text-secondary hover:border-gold/40 hover:text-text-primary"
+              }`}
+              title={
+                isAllUnlocked
+                  ? "Switch back to step-by-step guided progression"
+                  : "Unlock all units and lessons immediately so you can jump to any module"
+              }
+            >
+              {isAllUnlocked ? (
+                <>
+                  <Unlock className="h-3 w-3 text-gold" />
+                  <span>Unlocked</span>
+                </>
+              ) : (
+                <>
+                  <Lock className="h-3 w-3" />
+                  <span>Unlock All</span>
+                </>
+              )}
+            </button>
 
-          // Is this unit accessible?
-          const unitUnlocked =
-            unitIdx === 0 ||
-            isSkillUnlocked(
-              unit.skills[0].id,
-              0,
-              unitIdx,
-              progress.skillLevels,
-              units
-            );
+            <button
+              onClick={toggleAllUnits}
+              className="inline-flex items-center gap-1 rounded-lg sm:rounded-xl border border-border bg-bg-card px-2.5 py-1 sm:px-3 sm:py-1.5 min-h-[30px] sm:min-h-[34px] text-[11px] sm:text-xs font-medium text-text-secondary hover:text-text-primary hover:border-gold/40 transition-colors cursor-pointer micro-badge"
+            >
+              <Layers className="h-3 w-3 text-gold" />
+              <span>{allExpanded ? "Collapse" : "Expand All"}</span>
+            </button>
+          </div>
+        </div>
+
+        {units.length > 1 && (
+          <ExpandablePillRow className="[&>button]:!h-7 [&>button]:!w-7 sm:[&>button]:!h-8 sm:[&>button]:!w-8 [&>button]:rounded-full [&_.expandable-pill-row]:px-1 [&_.expandable-pill-row]:scroll-pl-1">
+            {units.map((u, idx) => (
+              <a
+                key={u.id}
+                href={`#unit-block-${u.id}`}
+                onClick={() =>
+                  setExpandedUnits((prev) => {
+                    const next = new Set(prev);
+                    next.add(idx);
+                    return next;
+                  })
+                }
+                className="shrink-0 whitespace-nowrap rounded-full border border-border bg-bg-card hover:border-gold/50 px-2.5 py-1 sm:px-3.5 sm:py-1.5 min-h-[30px] sm:min-h-[34px] inline-flex items-center text-xs font-medium text-text-secondary hover:text-gold transition-colors"
+              >
+                Unit {idx + 1}: {u.title.replace(/^Unit \d+:\s*/i, "")}
+              </a>
+            ))}
+          </ExpandablePillRow>
+        )}
+      </div>
+
+      {/* ─── Units & Mobile-Optimized Full-Width Skill Cards ─── */}
+      <div className="space-y-3.5 sm:space-y-5">
+        {units.map((unit, uIdx) => {
+          const isExpanded = expandedUnits.has(uIdx);
+          const unitCompleted = unit.skills.filter(
+            (sk) => (progress.skillLevels[sk.id] || 0) >= 1
+          ).length;
 
           return (
-            <div key={unit.id}>
-              {/* Unit header */}
+            <div
+              key={unit.id}
+              id={`unit-block-${unit.id}`}
+              className="rounded-xl sm:rounded-2xl border border-border bg-bg-card overflow-hidden transition-all"
+            >
+              {/* Unit Header Banner */}
               <button
-                onClick={() =>
-                  setExpandedUnit(isExpanded ? null : unit.id)
-                }
+                type="button"
                 aria-expanded={isExpanded}
-                aria-controls={`unit-${unit.id}-skills`}
-                className={`flex w-full items-center gap-3 rounded-xl border px-4 py-3 transition-all ${
-                  unitMastered
-                    ? "border-gold/30 bg-gold/5"
-                    : unitCompleted
-                    ? "border-kenya-green/30 bg-kenya-green/5"
-                    : unitUnlocked
-                    ? "border-border bg-bg-card active:bg-bg-elevated sm:hover:border-gold/40"
-                    : "border-border/50 bg-bg-card/50 opacity-60"
-                }`}
+                onClick={() => toggleUnit(uIdx)}
+                className="w-full flex items-start sm:items-center justify-between gap-2.5 sm:gap-3 p-3 sm:p-5 text-left transition-colors hover:bg-white/[0.02]"
+                style={{
+                  borderBottom: isExpanded ? "1px solid var(--border)" : "none",
+                }}
               >
-                <span className="text-2xl"><DynamicIcon emoji={unit.icon} className="w-[1em] h-[1em]" /></span>
-                <div className="flex-1 min-w-0 text-left">
-                  <h3 className="text-sm font-bold text-text-primary truncate">
-                    {unit.title}
-                  </h3>
-                  <p className="text-[0.6rem] text-text-muted truncate">
-                    {unit.description}
-                  </p>
+                <div className="flex items-start sm:items-center gap-2.5 sm:gap-3.5 min-w-0 flex-1">
+                  <div className="flex h-9 w-9 sm:h-11 sm:w-11 shrink-0 items-center justify-center rounded-lg sm:rounded-xl border border-gold/30 bg-gold/10 text-gold mt-0.5 sm:mt-0">
+                    <DynamicIcon emoji={unit.icon} className="w-4 h-4 sm:w-5 sm:h-5" />
+                  </div>
+                  <div className="min-w-0 flex-1">
+                    <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
+                      <h3 className="font-[family-name:var(--font-outfit)] text-sm sm:text-lg font-bold text-text-primary leading-snug">
+                        {unit.title}
+                      </h3>
+                      <span className="rounded-full bg-bg-elevated px-2 py-0.5 text-[11px] sm:text-xs font-semibold text-gold micro-badge">
+                        {unitCompleted}/{unit.skills.length}
+                      </span>
+                    </div>
+                    <p className="text-xs sm:text-sm text-text-secondary mt-0.5 sm:mt-1 leading-relaxed">
+                      {unit.description}
+                    </p>
+                  </div>
                 </div>
-                <div className="flex items-center gap-2 shrink-0">
-                  {unitMastered && (
-                    <Crown className="h-4 w-4 text-gold shrink-0" />
-                  )}
-                  {unitCompleted && !unitMastered && (
-                    <Check className="h-4 w-4 text-kenya-green" />
-                  )}
-                  {!unitUnlocked && <Lock className="h-4 w-4 text-text-muted" />}
-                  <ChevronDown
-                    className={`h-4 w-4 text-text-muted transition-transform ${
-                      isExpanded ? "rotate-180" : ""
-                    }`}
-                  />
-                </div>
+                <ChevronDown
+                  className={`h-5 w-5 shrink-0 text-text-muted transition-transform duration-200 mt-1 sm:mt-0 ${
+                    isExpanded ? "rotate-180" : ""
+                  }`}
+                />
               </button>
 
-              {/* Skills list */}
+              {/* Unit Skills List — Full-Width Uncramped Layout */}
               {isExpanded && (
-                <div id={`unit-${unit.id}-skills`} className="mt-2 ml-4 space-y-2 border-l-2 border-border pl-4 sm:ml-6 sm:pl-5">
-                  {unit.skills.map((skill, skillIdx) => {
-                    const skillLevel =
-                      progress.skillLevels[skill.id] || 0;
+                <div className="divide-y divide-border/50 p-4 sm:p-5 space-y-4">
+                  {unit.skills.map((skill, sIdx) => {
                     const unlocked = isSkillUnlocked(
                       skill.id,
-                      skillIdx,
-                      unitIdx,
+                      sIdx,
+                      uIdx,
                       progress.skillLevels,
-                      units
+                      units,
+                      isAllUnlocked
                     );
-                    const nextLevel = Math.min(
-                      skillLevel + 1,
-                      MAX_SKILL_LEVEL
-                    );
+
+                    const currentLevel = progress.skillLevels[skill.id] || 0;
+                    const isMastered = currentLevel >= MAX_SKILL_LEVEL;
+                    const nextLevel = Math.min(currentLevel + 1, MAX_SKILL_LEVEL);
+                    const tipContent = skill.tips || skill.tip;
 
                     return (
                       <div
                         key={skill.id}
-                        className={`relative rounded-xl border p-4 transition-all ${
-                          !unlocked
-                            ? "border-border/50 bg-bg-card/50 opacity-50"
-                            : skillLevel >= MAX_SKILL_LEVEL
-                            ? "border-gold/30 bg-gradient-to-r from-gold/5 to-bg-card"
-                            : "border-border bg-bg-card"
-                        }`}
+                        className="pt-4 first:pt-0 transition-all"
                       >
-                        {/* Connector dot */}
-                        <div
-                          className={`absolute -left-[1.35rem] top-5 h-3 w-3 rounded-full border-2 sm:-left-[1.65rem] ${
-                            skillLevel >= MAX_SKILL_LEVEL
-                              ? "border-gold bg-gold"
-                              : skillLevel > 0
-                              ? "border-kenya-green bg-kenya-green"
-                              : unlocked
-                              ? "border-gold bg-bg-primary"
-                              : "border-border bg-bg-elevated"
-                          }`}
-                        />
+                        {/* Row 1: Icon + Skill Title + Word Count */}
+                        <div className="flex items-center gap-3">
+                          <div
+                            className={`relative flex h-11 w-11 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-2xl border-2 transition-transform ${
+                              isMastered
+                                ? "border-gold bg-gold/15 text-gold shadow-sm shadow-gold/20"
+                                : currentLevel > 0
+                                ? "border-kenya-green bg-kenya-green/10 text-kenya-green-light"
+                                : unlocked
+                                ? "border-border-light bg-bg-elevated text-gold"
+                                : "border-border bg-bg-elevated text-text-secondary dark:text-[#b8b0a3]"
+                            }`}
+                          >
+                            {unlocked ? (
+                              <DynamicIcon emoji={skill.icon} className="w-5 h-5 sm:w-6 sm:h-6" />
+                            ) : (
+                              <Lock className="h-4 w-4 sm:h-5 sm:w-5 text-text-secondary dark:text-[#b8b0a3]" />
+                            )}
+                            {isMastered && (
+                              <span className="absolute -right-1 -top-1 flex h-4 w-4 items-center justify-center rounded-full bg-gold text-[0.55rem] font-bold text-black">
+                                <Check className="h-2.5 w-2.5 stroke-[3]" />
+                              </span>
+                            )}
+                          </div>
 
-                        <div className="flex flex-wrap items-center gap-3">
-                          <span className="text-2xl"><DynamicIcon emoji={skill.icon} className="w-[1em] h-[1em]" /></span>
-                          <div className="flex-1 min-w-0">
-                            <h4 className="text-sm font-bold text-text-primary truncate">
-                              {skill.title}
-                            </h4>
-                            <p className="text-[0.6rem] text-text-muted truncate">
-                              {skill.description}
-                            </p>
-
-                            {/* Star progress */}
-                            <div className="mt-1.5 flex items-center gap-1">
-                              {Array.from({ length: MAX_SKILL_LEVEL }).map(
-                                (_, i) => (
-                                  <Star
-                                    key={i}
-                                    className={`h-3.5 w-3.5 ${
-                                      i < skillLevel
-                                        ? "fill-gold text-gold"
-                                        : "text-border"
-                                    }`}
-                                  />
-                                )
-                              )}
-                              <span className="ml-1 text-[0.55rem] text-text-muted">
-                                {skillLevel}/{MAX_SKILL_LEVEL}
+                          <div className="min-w-0 flex-1">
+                            <div className="flex flex-wrap items-center gap-2">
+                              <h4
+                                className={`text-base font-bold leading-snug break-words ${
+                                  !unlocked
+                                    ? "text-text-secondary dark:text-[#a39a8c]"
+                                    : "text-text-primary"
+                                }`}
+                              >
+                                {skill.title}
+                              </h4>
+                              <span
+                                className={`rounded-full bg-bg-elevated border border-border px-2.5 py-0.5 text-xs font-medium ${
+                                  !unlocked
+                                    ? "text-text-secondary dark:text-[#b8b0a3]"
+                                    : "text-text-secondary"
+                                }`}
+                              >
+                                {skill.words.length} words
                               </span>
                             </div>
                           </div>
-
-                          {/* Action button */}
-                          {unlocked ? (
-                            <button
-                              onClick={() =>
-                                onStartLesson(skill.id, nextLevel)
-                              }
-                              disabled={
-                                (progress.hearts <= 0 && dueReviewCount === 0) ||
-                                skillLevel >= MAX_SKILL_LEVEL
-                              }
-                              className={`ml-auto shrink-0 rounded-xl px-4 py-2.5 text-xs font-bold transition-all active:scale-95 ${
-                                skillLevel >= MAX_SKILL_LEVEL
-                                  ? "border border-gold/30 bg-gold/5 text-gold"
-                                  : progress.hearts > 0
-                                  ? "bg-gold text-kenya-black sm:hover:brightness-110"
-                                  : "bg-bg-elevated text-text-muted cursor-not-allowed"
-                              }`}
-                            >
-                              {skillLevel >= MAX_SKILL_LEVEL ? (
-                                <span className="inline-flex items-center gap-1"><Sparkles className="h-3.5 w-3.5" /> Mastered</span>
-                              ) : skillLevel === 0
-                                ? progress.hearts <= 0 && dueReviewCount > 0
-                                  ? "Review"
-                                  : "Start"
-                                : `Level ${nextLevel}`}
-                            </button>
-                          ) : (
-                            <Lock className="h-5 w-5 shrink-0 text-text-muted" />
-                          )}
                         </div>
 
-                        {/* Tips preview */}
-                        {skill.tips && unlocked && skillLevel === 0 && (
-                          <div className="mt-3 flex items-start gap-2 rounded-lg bg-gold/5 p-2.5">
-                            <Lightbulb className="mt-0.5 h-3.5 w-3.5 shrink-0 text-gold" />
-                            <p className="text-[0.6rem] leading-relaxed text-text-secondary line-clamp-2">
-                              {skill.tips}
-                            </p>
+                        {/* Row 2: Full-Width Description (Never Squeezed Between Icon and Button!) */}
+                        <p
+                          className={`mt-2.5 text-sm leading-relaxed ${
+                            !unlocked
+                              ? "text-text-secondary dark:text-[#a39a8c]"
+                              : "text-text-secondary"
+                          }`}
+                        >
+                          {skill.description}
+                        </p>
+
+                        {/* Row 3: 5-Star Mastery Bar on Left + Action Button on Right */}
+                        <div className="mt-3 flex flex-wrap items-center justify-between gap-3">
+                          <div className="flex items-center gap-1.5">
+                            {Array.from({ length: MAX_SKILL_LEVEL }).map(
+                              (_, lvlIdx) => (
+                                <Star
+                                  key={lvlIdx}
+                                  className={`h-4 w-4 ${
+                                    lvlIdx < currentLevel
+                                      ? "fill-gold text-gold"
+                                      : !unlocked
+                                      ? "text-text-muted dark:text-[#8c8478]"
+                                      : "text-border-light"
+                                  }`}
+                                />
+                              )
+                            )}
+                            <span
+                              className={`ml-1.5 text-xs font-medium ${
+                                !unlocked
+                                  ? "text-text-secondary dark:text-[#a39a8c]"
+                                  : "text-text-muted"
+                              }`}
+                            >
+                              {isMastered
+                                ? "Mastered (5/5)"
+                                : `Level ${currentLevel}/${MAX_SKILL_LEVEL}`}
+                            </span>
+                          </div>
+
+                          <button
+                            disabled={!unlocked}
+                            onClick={() =>
+                              onStartLesson(
+                                skill.id,
+                                isMastered ? MAX_SKILL_LEVEL : nextLevel
+                              )
+                            }
+                            className={`rounded-xl px-4 py-2 min-h-[40px] text-xs sm:text-sm font-bold transition-all shrink-0 ${
+                              !unlocked
+                                ? "cursor-not-allowed border border-border bg-bg-elevated text-text-secondary dark:text-[#b8b0a3]"
+                                : isMastered
+                                ? "cursor-pointer border border-gold/40 bg-gold/10 text-gold hover:bg-gold/20"
+                                : currentLevel > 0
+                                ? "cursor-pointer bg-kenya-green text-white hover:bg-kenya-green-light shadow-sm"
+                                : "cursor-pointer bg-gold text-black hover:bg-gold-light shadow-sm"
+                            }`}
+                          >
+                            {!unlocked
+                              ? "Locked"
+                              : isMastered
+                              ? "Practice Again"
+                              : currentLevel === 0
+                              ? "Start Lesson →"
+                              : `Continue Lv ${nextLevel} →`}
+                          </button>
+                        </div>
+
+                        {/* Collapsible Grammar & Lesson Notes Dropdown */}
+                        {unlocked && tipContent && (
+                          <div className="mt-3">
+                            <details
+                              onClick={(e) => e.stopPropagation()}
+                              className="group rounded-xl bg-bg-elevated/60 border border-border/60 px-3.5 py-2.5 text-xs sm:text-sm text-text-secondary"
+                            >
+                              <summary className="flex cursor-pointer list-none items-center justify-between gap-2 text-xs sm:text-sm font-semibold text-gold hover:text-gold-light transition-colors">
+                                <span className="inline-flex items-center gap-2 min-w-0 flex-1">
+                                  <Lightbulb className="h-4 w-4 shrink-0 text-gold" />
+                                  <span>Grammar &amp; Lesson Notes</span>
+                                </span>
+                                <ChevronDown className="h-4 w-4 text-text-muted transition-transform group-open:rotate-180 shrink-0" />
+                              </summary>
+                              <div className="mt-2.5 border-t border-border/50 pt-2.5 text-xs sm:text-sm leading-relaxed text-text-secondary whitespace-pre-line">
+                                {tipContent}
+                              </div>
+                            </details>
                           </div>
                         )}
                       </div>

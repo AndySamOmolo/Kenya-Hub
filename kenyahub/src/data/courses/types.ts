@@ -15,6 +15,7 @@ export interface LanguageConfig {
   speechLocale: string;
   description: string;
   color: string;
+  flag?: string;
   sources?: string[];
 }
 
@@ -33,6 +34,9 @@ export interface CourseUnit {
   title: string;
   description: string;
   icon: string;
+  number?: number;
+  unitNumber?: number;
+  color?: string;
   skills: CourseSkill[];
 }
 
@@ -44,11 +48,13 @@ export interface CourseSkill {
   /** Vocabulary pairs taught in this skill */
   words: WordPair[];
   /** Full sentence pairs for translation exercises */
-  sentences: SentencePair[];
+  sentences?: SentencePair[];
   /** Exercises written by the course author */
   authoredExercises?: Exercise[];
   /** Grammar/cultural tips shown before the lesson */
   tips?: string;
+  tip?: string;
+  grammarTip?: string;
   /** Cultural note shown after completion */
   culturalNote?: string;
 }
@@ -59,15 +65,18 @@ export interface WordPair {
   pronunciation?: string; // Phonetic guide
   partOfSpeech?: string;  // noun, verb, adj, etc.
   audio?: string;         // Optional audio file path
+  audioFile?: string | null; // Optional verified HTTPS recording URL
   hint?: string;          // Contextual hint
   example?: string;       // Teaching example; not assumed to be a translation pair
   response?: string;      // Expected response for dialogue cards
 }
 
 export interface SentencePair {
-  target: string;  // Sentence in the target language
-  source: string;  // English translation
+  target: string;         // Sentence in the target language
+  source: string;         // English translation
+  pronunciation?: string; // Optional phonetic guide
   audio?: string;
+  audioFile?: string | null; // Optional verified HTTPS recording URL
 }
 
 /* ─── Exercise Types ────────────────────────────────────── */
@@ -108,6 +117,46 @@ export interface Exercise {
   reviewId?: string;
 }
 
+/* ─── Mini-Game Personal Bests & Daily Quests ───────────── */
+
+export interface GameStats {
+  wordleWon: number;
+  wordleWins: number;
+  wordleFirstTryWins: number;
+  wordlePlayed: number;
+  wordleStreak: number;
+  wordleBestStreak: number;
+  wordleGuessDist: [number, number, number, number, number, number];
+  lastDailyWordleDate?: string;
+  speedBestScore: number;
+  speedBestStreak: number;
+  memoryBestMoves: number;
+  memoryBestTimeSec: Record<number, number>;
+  scrambleBestStreak: number;
+  scrambleSolved: number;
+  riddlesSolved: number;
+  survivalBestRun: number;
+  methaliSolved?: number;
+  safariCompleted?: number;
+  nounClassBest?: number;
+  oddWordBest?: number;
+  polyglotBest?: number;
+  twisterBest?: number;
+  countiesBest?: number;
+  matatuBest?: number;
+}
+
+export interface DailyQuestProgress {
+  date: string;
+  lessonDone: boolean;
+  gameDone: boolean;
+  memoryOrCardsDone: boolean;
+  lessonsToday: number;
+  gamesToday: number;
+  xpToday: number;
+  chestClaimed: boolean;
+}
+
 /* ─── User Progress ─────────────────────────────────────── */
 
 export interface UserProgress {
@@ -116,11 +165,15 @@ export interface UserProgress {
   languageId: string;
   /** Completed skill levels: { "basics-1": 3 } means level 3/5 completed */
   skillLevels: Record<string, number>;
+  /** Rotation cursors for large dictionary category skills */
+  dictCursors?: Record<string, number>;
+  /** Explicit user toggle to unlock all units/skills without sequential gatekeeping */
+  unlockAll?: boolean;
   /** Total XP earned */
   xp: number;
   /** Current daily streak */
   streak: number;
-  /** Last activity date (ISO string, date only) */
+  /** Last activity date (local YYYY-MM-DD) */
   lastActiveDate: string;
   /** Daily XP goal */
   dailyGoal: number;
@@ -136,10 +189,18 @@ export interface UserProgress {
   wordsLearned: string[];
   /** Total lessons completed */
   lessonsCompleted: number;
+  /** Total perfect (100% accuracy) lessons completed */
+  perfectLessons?: number;
+  /** Total mini-games completed */
+  gamesPlayed?: number;
   /** Streak freeze count */
   streakFreezes: number;
   /** Missed items scheduled for later review */
   reviewQueue: ReviewItem[];
+  /** Persistent per-game high scores and stats */
+  gameStats?: GameStats;
+  /** Daily 3-quest tracker */
+  dailyQuests?: DailyQuestProgress;
 }
 
 export interface ReviewItem {
@@ -148,14 +209,21 @@ export interface ReviewItem {
   type?: ExerciseType;
   prompt: string;
   answer: string;
+  word?: string;
+  wrongCount?: number;
   acceptedAnswers?: string[];
+  options?: string[];
+  wordTiles?: string[];
+  sourceWord?: WordPair;
   hint?: string;
+  box?: number;
   dueAt: number;
 }
 
 export interface LessonResult {
   skillId: string;
   level: number;
+  reviewOnly?: boolean;
   score: number;         // 0-100
   xpEarned: number;
   accuracy: number;      // 0-1
@@ -175,6 +243,8 @@ export interface Achievement {
   name: string;
   description: string;
   icon: string;
+  xpReward: number;
+  category: 'streak' | 'lessons' | 'vocabulary' | 'mastery' | 'games';
   condition: (progress: UserProgress) => boolean;
 }
 
@@ -185,15 +255,22 @@ export const HEART_REFILL_MINUTES = 30;
 export const XP_PER_CORRECT = 10;
 export const XP_PER_CORRECT_WITH_HINT = 5;
 export const XP_PERFECT_BONUS = 50;
+export const XP_DAILY_GOAL_BONUS = 25;
+export const XP_DAILY_QUEST_CHEST = 50;
 export const EXERCISES_PER_LESSON = 15;
 export const MAX_SKILL_LEVEL = 5;
 
 export const LEVELS = [
-  { name: 'Bronze', icon: '🥉', minXp: 0, color: '#CD7F32' },
-  { name: 'Silver', icon: '🥈', minXp: 300, color: '#C0C0C0' },
-  { name: 'Gold', icon: '🥇', minXp: 1000, color: '#FFD700' },
-  { name: 'Sapphire', icon: '💎', minXp: 3000, color: '#0F52BA' },
-  { name: 'Diamond', icon: '👑', minXp: 8000, color: '#B9F2FF' },
+  { level: 1, title: 'Bronze I • Learner', name: 'Bronze I • Learner', icon: '🥉', minXp: 0, color: '#CD7F32' },
+  { level: 2, title: 'Bronze II • Initiate', name: 'Bronze II • Initiate', icon: '🛡️', minXp: 150, color: '#D99058' },
+  { level: 3, title: 'Silver I • Speaker', name: 'Silver I • Speaker', icon: '🥈', minXp: 350, color: '#C0C0C0' },
+  { level: 4, title: 'Silver II • Storyteller', name: 'Silver II • Storyteller', icon: '📜', minXp: 700, color: '#94A3B8' },
+  { level: 5, title: 'Gold I • Scholar', name: 'Gold I • Scholar', icon: '🥇', minXp: 1200, color: '#FFD700' },
+  { level: 6, title: 'Gold II • Orator', name: 'Gold II • Orator', icon: '🎙️', minXp: 2000, color: '#F59E0B' },
+  { level: 7, title: 'Sapphire • Keeper of Wisdom', name: 'Sapphire • Keeper of Wisdom', icon: '💎', minXp: 3200, color: '#0EA5E9' },
+  { level: 8, title: 'Emerald • Council Sage', name: 'Emerald • Council Sage', icon: '🌿', minXp: 5000, color: '#10B981' },
+  { level: 9, title: 'Ruby • Master of Tongues', name: 'Ruby • Master of Tongues', icon: '🔥', minXp: 8000, color: '#EF4444' },
+  { level: 10, title: 'Diamond • Elder of the Council', name: 'Diamond • Elder of the Council', icon: '👑', minXp: 12000, color: '#B9F2FF' }
 ] as const;
 
 export const ACHIEVEMENTS: Achievement[] = [
@@ -202,55 +279,357 @@ export const ACHIEVEMENTS: Achievement[] = [
     name: 'First Steps',
     description: 'Complete your first lesson',
     icon: '🌱',
+    xpReward: 25,
+    category: 'lessons',
     condition: (p) => p.lessonsCompleted >= 1,
+  },
+  {
+    id: 'spark-streak',
+    name: '3-Day Spark',
+    description: 'Reach a 3-day learning streak',
+    icon: '⚡',
+    xpReward: 40,
+    category: 'streak',
+    condition: (p) => p.streak >= 3,
   },
   {
     id: 'on-fire',
     name: 'On Fire',
-    description: '7-day learning streak',
+    description: 'Reach a 7-day learning streak',
     icon: '🔥',
+    xpReward: 75,
+    category: 'streak',
     condition: (p) => p.streak >= 7,
+  },
+  {
+    id: 'unstoppable',
+    name: 'Unstoppable',
+    description: 'Reach a 14-day learning streak',
+    icon: '🌋',
+    xpReward: 150,
+    category: 'streak',
+    condition: (p) => p.streak >= 14,
+  },
+  {
+    id: 'monthly-legend',
+    name: '30-Day Legend',
+    description: 'Reach a 30-day learning streak',
+    icon: '🌞',
+    xpReward: 300,
+    category: 'streak',
+    condition: (p) => p.streak >= 30,
   },
   {
     id: 'perfect-score',
     name: 'Perfect Score',
-    description: 'Complete a lesson with no mistakes',
+    description: 'Complete a lesson with 100% accuracy',
     icon: '⭐',
-    condition: () => false, // Checked at lesson completion
+    xpReward: 50,
+    category: 'mastery',
+    condition: (p) => (p.perfectLessons || 0) >= 1,
   },
   {
-    id: 'bookworm',
-    name: 'Bookworm',
-    description: 'Learn 100 words',
-    icon: '📚',
-    condition: (p) => p.wordsLearned.length >= 100,
+    id: 'sharp-shooter',
+    name: 'Sharp Shooter',
+    description: 'Complete 5 lessons with 100% accuracy',
+    icon: '🎯',
+    xpReward: 120,
+    category: 'mastery',
+    condition: (p) => (p.perfectLessons || 0) >= 5,
   },
   {
-    id: 'dedicated',
-    name: 'Dedicated',
-    description: 'Complete 20 lessons',
-    icon: '🏅',
-    condition: (p) => p.lessonsCompleted >= 20,
-  },
-  {
-    id: 'master',
-    name: 'Master',
-    description: 'Master all skills in a language',
-    icon: '👑',
-    condition: () => false, // Checked per-language
-  },
-  {
-    id: 'diamond',
-    name: 'Diamond',
-    description: 'Reach Diamond level',
-    icon: '💎',
-    condition: (p) => p.xp >= 8000,
+    id: 'vocab-starter',
+    name: 'Word Collector',
+    description: 'Learn 25 vocabulary words',
+    icon: '📝',
+    xpReward: 35,
+    category: 'vocabulary',
+    condition: (p) => p.wordsLearned.length >= 25,
   },
   {
     id: 'memory-king',
     name: 'Memory King',
-    description: 'Learn 200 words',
+    description: 'Learn 50 vocabulary words',
     icon: '🧠',
-    condition: (p) => p.wordsLearned.length >= 200,
+    xpReward: 60,
+    category: 'vocabulary',
+    condition: (p) => p.wordsLearned.length >= 50,
   },
+  {
+    id: 'bookworm',
+    name: 'Bookworm',
+    description: 'Learn 100 vocabulary words',
+    icon: '📚',
+    xpReward: 100,
+    category: 'vocabulary',
+    condition: (p) => p.wordsLearned.length >= 100,
+  },
+  {
+    id: 'lexicon-master',
+    name: 'Lexicon Master',
+    description: 'Learn 250 vocabulary words',
+    icon: '🏛️',
+    xpReward: 200,
+    category: 'vocabulary',
+    condition: (p) => p.wordsLearned.length >= 250,
+  },
+  {
+    id: 'living-dictionary',
+    name: 'Living Dictionary',
+    description: 'Learn 500 vocabulary words',
+    icon: '🌍',
+    xpReward: 400,
+    category: 'vocabulary',
+    condition: (p) => p.wordsLearned.length >= 500,
+  },
+  {
+    id: 'dedicated-10',
+    name: 'Consistent Learner',
+    description: 'Complete 10 lessons',
+    icon: '🥉',
+    xpReward: 50,
+    category: 'lessons',
+    condition: (p) => p.lessonsCompleted >= 10,
+  },
+  {
+    id: 'dedicated',
+    name: 'Dedicated Scholar',
+    description: 'Complete 20 lessons',
+    icon: '🏅',
+    xpReward: 100,
+    category: 'lessons',
+    condition: (p) => p.lessonsCompleted >= 20,
+  },
+  {
+    id: 'centurion',
+    name: 'Half-Century',
+    description: 'Complete 50 lessons',
+    icon: '🏆',
+    xpReward: 250,
+    category: 'lessons',
+    condition: (p) => p.lessonsCompleted >= 50,
+  },
+  {
+    id: 'crown-collector',
+    name: 'Crown Collector',
+    description: 'Reach 5-Star mastery in any skill module',
+    icon: '👑',
+    xpReward: 100,
+    category: 'mastery',
+    condition: (p) => Object.values(p.skillLevels).some((lvl) => lvl >= 5),
+  },
+  {
+    id: 'master',
+    name: 'Polyglot Pioneer',
+    description: 'Complete at least 10 distinct skill modules',
+    icon: '🎓',
+    xpReward: 250,
+    category: 'mastery',
+    condition: (p) => Object.values(p.skillLevels).filter((lvl) => lvl >= 1).length >= 10,
+  },
+  {
+    id: "diamond",
+    name: "Elder of the Council",
+    description: "Earn 8,000+ total XP",
+    icon: "💎",
+    xpReward: 500,
+    category: "mastery",
+    condition: (p) => p.xp >= 8000,
+  },
+  {
+    id: "bronze-master",
+    name: "Initiate Scholar",
+    description: "Reach Level 2 (Bronze II) with 150+ XP",
+    icon: "🧭",
+    xpReward: 30,
+    category: "mastery",
+    condition: (p) => p.xp >= 150,
+  },
+  {
+    id: "silver-master",
+    name: "Silver Orator",
+    description: "Reach Level 4 (Silver II) with 700+ XP",
+    icon: "🥈",
+    xpReward: 70,
+    category: "mastery",
+    condition: (p) => p.xp >= 700,
+  },
+  {
+    id: "gold-scholar",
+    name: "Gold Scholar",
+    description: "Reach Level 5 (Gold I) with 1,200+ XP",
+    icon: "🥇",
+    xpReward: 120,
+    category: "mastery",
+    condition: (p) => p.xp >= 1200,
+  },
+  {
+    id: "sapphire-sage",
+    name: "Keeper of Wisdom",
+    description: "Reach Level 7 (Sapphire) with 3,200+ XP",
+    icon: "💎",
+    xpReward: 250,
+    category: "mastery",
+    condition: (p) => p.xp >= 3200,
+  },
+  {
+    id: "emerald-sage",
+    name: "Council Sage",
+    description: "Reach Level 8 (Emerald) with 5,000+ XP",
+    icon: "🌿",
+    xpReward: 400,
+    category: "mastery",
+    condition: (p) => p.xp >= 5000,
+  },
+  {
+    id: "triple-crown",
+    name: "Triple Crown",
+    description: "Reach 5-Star mastery in at least 3 skill modules",
+    icon: "👑",
+    xpReward: 150,
+    category: "mastery",
+    condition: (p) => Object.values(p.skillLevels || {}).filter((lvl) => lvl >= 5).length >= 3,
+  },
+  {
+    id: "centurion-scholar",
+    name: "Century Club",
+    description: "Complete 100 lessons across Kenyan languages",
+    icon: "💯",
+    xpReward: 350,
+    category: "lessons",
+    condition: (p) => {
+      if (typeof window === "undefined" || typeof localStorage === "undefined") return p.lessonsCompleted >= 100;
+      try {
+        let total = p.lessonsCompleted || 0;
+        for (let i = 0; i < localStorage.length; i++) {
+          const k = localStorage.key(i);
+          if (k && k.startsWith("kh-learn-progress-") && k !== `kh-learn-progress-${p.languageId}`) {
+            const raw = localStorage.getItem(k);
+            if (raw) total += Number(JSON.parse(raw)?.lessonsCompleted) || 0;
+          }
+        }
+        return total >= 100;
+      } catch {
+        return p.lessonsCompleted >= 100;
+      }
+    },
+  },
+  {
+    id: "game-champion",
+    name: "Speed Learner",
+    description: "Complete 10 mini-games or flashcard sessions",
+    icon: "⚡",
+    xpReward: 80,
+    category: "games",
+    condition: (p) => (p.gamesPlayed || 0) >= 10,
+  },
+  {
+    id: "wordle-sharpshooter",
+    name: "Wordle Sharpshooter",
+    description: "Solve a Kenyan Wordle in 3 guesses or fewer",
+    icon: "🟩",
+    xpReward: 75,
+    category: "games",
+    condition: (p) => {
+      if ((p.gameStats?.wordleFirstTryWins || 0) >= 1) return true;
+      const dist = p.gameStats?.wordleGuessDist;
+      if (!dist) return false;
+      return (dist[0] || 0) + (dist[1] || 0) + (dist[2] || 0) >= 1;
+    },
+  },
+  {
+    id: "speed-demon",
+    name: "Lightning Tongue",
+    description: "Reach a 10x streak in Speed Match",
+    icon: "🔥",
+    xpReward: 100,
+    category: "games",
+    condition: (p) => (p.gameStats?.speedBestStreak || 0) >= 10,
+  },
+  {
+    id: "total-recall",
+    name: "Total Recall",
+    description: "Clear a Memory Cards board with a 3-Star rating",
+    icon: "🧠",
+    xpReward: 80,
+    category: "games",
+    condition: (p) => {
+      const best = p.gameStats?.memoryBestMoves || 0;
+      return best > 0 && best <= 14;
+    },
+  },
+  {
+    id: "riddle-elder",
+    name: "Keeper of Riddles",
+    description: "Solve 25 traditional riddles across Kenyan languages",
+    icon: "🧩",
+    xpReward: 120,
+    category: "games",
+    condition: (p) => (p.gameStats?.riddlesSolved || 0) >= 25,
+  },
+  {
+    id: "polyglot-gamer",
+    name: "Polyglot Arcade Master",
+    description: "Play mini-games across at least 3 Kenyan languages",
+    icon: "🕹️",
+    xpReward: 150,
+    category: "games",
+    condition: (p) => {
+      if (typeof window === "undefined" || typeof localStorage === "undefined") {
+        return (p.gamesPlayed || 0) >= 15;
+      }
+      try {
+        let langsWithGames = (p.gamesPlayed || 0) > 0 ? 1 : 0;
+        for (let i = 0; i < localStorage.length; i++) {
+          const k = localStorage.key(i);
+          if (k && k.startsWith("kh-learn-progress-") && k !== `kh-learn-progress-${p.languageId}`) {
+            const raw = localStorage.getItem(k);
+            if (raw && (Number(JSON.parse(raw)?.gamesPlayed) || 0) > 0) {
+              langsWithGames += 1;
+            }
+          }
+        }
+        return langsWithGames >= 3;
+      } catch {
+        return (p.gamesPlayed || 0) >= 15;
+      }
+    },
+  },
+  {
+    id: "daily-champion",
+    name: "Goal Crusher",
+    description: "Double your daily XP goal in a single day",
+    icon: "🎯",
+    xpReward: 50,
+    category: "streak",
+    condition: (p) => (p.todayXp || 0) >= Math.max(40, (p.dailyGoal || 50) * 2),
+  },
+  {
+    id: "polyglot-grandmaster",
+    name: "Master of Tongues",
+    description: "Master at least 20 skill modules across Kenyan languages",
+    icon: "🌍",
+    xpReward: 500,
+    category: "mastery",
+    condition: (p) => {
+      const ownCount = Object.values(p.skillLevels || {}).filter((lvl) => lvl >= 1).length;
+      if (typeof window === "undefined" || typeof localStorage === "undefined") return ownCount >= 20;
+      try {
+        let total = ownCount;
+        for (let i = 0; i < localStorage.length; i++) {
+          const k = localStorage.key(i);
+          if (k && k.startsWith("kh-learn-progress-") && k !== `kh-learn-progress-${p.languageId}`) {
+            const raw = localStorage.getItem(k);
+            if (raw) {
+              const sl = JSON.parse(raw)?.skillLevels || {};
+              total += Object.values(sl).filter((lvl) => Number(lvl) >= 1).length;
+            }
+          }
+        }
+        return total >= 20;
+      } catch {
+        return ownCount >= 20;
+      }
+    },
+  }
 ];

@@ -1,6 +1,6 @@
 {
-  "source": "Ministry of Education, Kenya",
-  "lastUpdated": "2026-01-01",
+  "source": "Ministry of Education, Kenya — Official School Calendar (2025–2027)",
+  "lastUpdated": "2026-10-20",
   "years": {
     "2025": {
       "terms": [
@@ -9,7 +9,10 @@
           "name": "Term 1",
           "openingDate": "2025-01-06",
           "closingDate": "2025-04-04",
-          "midTermBreak": { "start": "2025-02-17", "end": "2025-02-21" },
+          "midTermBreak": {
+            "start": "2025-02-17",
+            "end": "2025-02-21"
+          },
           "weeks": 13,
           "notes": "Schools open for first term. KCPE/KCSE registration begins."
         },
@@ -18,7 +21,10 @@
           "name": "Term 2",
           "openingDate": "2025-04-28",
           "closingDate": "2025-08-01",
-          "midTermBreak": { "start": "2025-06-09", "end": "2025-06-13" },
+          "midTermBreak": {
+            "start": "2025-06-09",
+            "end": "2025-06-13"
+          },
           "weeks": 14,
           "notes": "Madaraka Day (June 1) falls within this term."
         },
@@ -33,9 +39,24 @@
         }
       ],
       "holidays": [
-        { "start": "2025-04-05", "end": "2025-04-27", "name": "April Holiday (Term 1-2 break)", "weeks": 3 },
-        { "start": "2025-08-02", "end": "2025-08-24", "name": "August Holiday (Term 2-3 break)", "weeks": 3 },
-        { "start": "2025-11-01", "end": "2026-01-04", "name": "December Holiday (long break)", "weeks": 9 }
+        {
+          "start": "2025-04-05",
+          "end": "2025-04-27",
+          "name": "April Holiday (Term 1-2 break)",
+          "weeks": 3
+        },
+        {
+          "start": "2025-08-02",
+          "end": "2025-08-24",
+          "name": "August Holiday (Term 2-3 break)",
+          "weeks": 3
+        },
+        {
+          "start": "2025-11-01",
+          "end": "2026-01-04",
+          "name": "December Holiday (long break)",
+          "weeks": 9
+        }
       ]
     },
     "2026": {
@@ -45,7 +66,10 @@
           "name": "Term 1",
           "openingDate": "2026-01-05",
           "closingDate": "2026-04-02",
-          "midTermBreak": { "start": "2026-02-25", "end": "2026-03-01" },
+          "midTermBreak": {
+            "start": "2026-02-25",
+            "end": "2026-03-01"
+          },
           "weeks": 13,
           "notes": "First year with full Senior Secondary School (SSS) cohort."
         },
@@ -54,7 +78,10 @@
           "name": "Term 2",
           "openingDate": "2026-04-27",
           "closingDate": "2026-07-31",
-          "midTermBreak": { "start": "2026-06-24", "end": "2026-06-28" },
+          "midTermBreak": {
+            "start": "2026-06-24",
+            "end": "2026-06-28"
+          },
           "weeks": 14,
           "notes": "Madaraka Day (June 1) falls within this term."
         },
@@ -69,10 +96,87 @@
         }
       ],
       "holidays": [
-        { "start": "2026-04-07", "end": "2026-04-24", "name": "April Holiday (Term 1-2 break)", "weeks": 3 },
-        { "start": "2026-08-03", "end": "2026-08-21", "name": "August Holiday (Term 2-3 break)", "weeks": 3 },
-        { "start": "2026-10-26", "end": "2027-01-01", "name": "December Holiday (long break)", "weeks": 10 }
+        {
+          "start": "2026-04-07",
+          "end": "2026-04-24",
+          "name": "April Holiday (Term 1-2 break)",
+          "weeks": 3
+        },
+        {
+          "start": "2026-08-03",
+          "end": "2026-08-21",
+          "name": "August Holiday (Term 2-3 break)",
+          "weeks": 3
+        },
+        {
+          "start": "2026-10-26",
+          "end": "2027-01-01",
+          "name": "December Holiday (long break)",
+          "weeks": 10
+        }
+      ]
+    },
+    "2027": {
+      "terms": [
+        {
+          "term": 1,
+          "name": "Term 1",
+          "openingDate": "2027-01-04",
+          "closingDate": "2027-04-02",
+          "midTermBreak": {
+            "start": "2027-02-24",
+            "end": "2027-02-28"
+          },
+          "weeks": 13,
+          "notes": "First term of the 2027 academic calendar. Grade 11 Senior Secondary transition begins."
+        },
+        {
+          "term": 2,
+          "name": "Term 2",
+          "openingDate": "2027-04-26",
+          "closingDate": "2027-07-30",
+          "midTermBreak": {
+            "start": "2027-06-23",
+            "end": "2027-06-27"
+          },
+          "weeks": 14,
+          "notes": "Longest academic term; national drama, music, and ball games competitions."
+        },
+        {
+          "term": 3,
+          "name": "Term 3",
+          "openingDate": "2027-08-23",
+          "closingDate": "2027-10-22",
+          "midTermBreak": null,
+          "weeks": 9,
+          "notes": "National examination term (KPSEA, KJSEA, and KCSE)."
+        }
+      ],
+      "holidays": [
+        {
+          "start": "2027-04-03",
+          "end": "2027-04-25",
+          "name": "April Holiday (Term 1-2 break)",
+          "weeks": 3
+        },
+        {
+          "start": "2027-07-31",
+          "end": "2027-08-22",
+          "name": "August Holiday (Term 2-3 break)",
+          "weeks": 3
+        },
+        {
+          "start": "2027-10-25",
+          "end": "2028-01-02",
+          "name": "December Holiday (long break)",
+          "weeks": 10
+        }
       ]
     }
-  }
+  },
+  "notes": [
+    "All public primary, junior secondary, and senior secondary schools follow the Ministry of Education gazetted calendar.",
+    "Term 3 has no mid-term break in order to accommodate national examinations (KPSEA, KJSEA, and KCSE) in late October and November.",
+    "2026 marks the pioneer Grade 10 cohort entering Senior Secondary School (SSS) under the 2-6-3-3-3 CBC structure."
+  ]
 }

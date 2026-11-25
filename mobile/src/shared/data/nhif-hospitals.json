@@ -61,7 +61,7 @@
       "level": 4,
       "type": "Public",
       "county": "Nairobi",
-      "subcounty": "Embakasi South",
+      "subcounty": "Embakasi West",
       "nhifAccredited": true
     },
     {
@@ -101,7 +101,7 @@
       "level": 4,
       "type": "Private",
       "county": "Nairobi",
-      "subcounty": "Mathare",
+      "subcounty": "Embakasi West",
       "nhifAccredited": true
     },
     {
@@ -109,7 +109,7 @@
       "level": 4,
       "type": "Faith-Based",
       "county": "Nairobi",
-      "subcounty": "Starehe",
+      "subcounty": "Dagoretti North",
       "nhifAccredited": true
     },
     {
@@ -454,5 +454,7 @@
     "Emergency treatment is covered at any accredited facility under the Emergency, Critical & Chronic Illness Fund (ECCIF).",
     "Contribution rates: 2.75% of gross monthly salary (minimum KES 300/month), effective October 1, 2024.",
     "Verify current facility accreditation status via *147# or https://sha.go.ke."
-  ]
+  ],
+  "lastUpdated": "2026-10-20",
+  "source": "Social Health Authority (SHA / SHIF) & Ministry of Health Master Facility List"
 }

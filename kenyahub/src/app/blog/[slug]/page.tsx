@@ -1,9 +1,29 @@
+import { notFound } from "next/navigation";
 import { Client, Databases, Query } from "node-appwrite";
 import BlogPostContent from "./BlogPostContent";
-import { STATIC_BLOG_POSTS, getStaticBlogPost, getStaticBlogSlugs, type BlogSource } from "@/data/blog-posts";
+import { getStaticBlogPost, getStaticBlogSlugs, type BlogSource } from "@/data/blog-posts";
 
 const DATABASE_ID = "kenyahub-db";
 const BLOGS_COLLECTION_ID = "blogs";
+const EXCLUDED_SLUGS = new Set([
+  "greatest-kenyan-hiphop-albums-of-all-time",
+  "traditional-bantu-beliefs-and-magic-in-kenya",
+  "thahu-purification-and-restoration-kikuyu-kamba",
+  "circumcision-age-grades-community-memory-kikuyu-kamba",
+  "death-burial-ancestral-spirits-ngoma-aimu-kikuyu-kamba",
+  "mundu-mugo-divination-mbugu-healing-kikuyu-kamba",
+]);
+
+function isHighQualityAppwritePost(doc: any): boolean {
+  if (!doc || !doc.slug || EXCLUDED_SLUGS.has(doc.slug)) return false;
+  const content = String(doc.content || "").trim();
+  const summary = String(doc.excerpt || doc.summary || "").trim();
+  const contentLen = content.length;
+  const summaryLen = summary.length;
+  if (!(contentLen >= 300 && summaryLen >= 30)) return false;
+  if (content.toLowerCase().includes("<iframe")) return false;
+  return true;
+}
 
 interface BlogPost {
   $id: string;
@@ -20,12 +40,9 @@ interface BlogPost {
   sources?: BlogSource[];
 }
 
-// Generate static params for all blogs at build time
 export async function generateStaticParams() {
-  // Always include static blog post slugs
   const staticSlugs = getStaticBlogSlugs().map((slug) => ({ slug }));
 
-  // Also try to fetch Appwrite blog slugs
   let appwriteSlugs: { slug: string }[] = [];
   try {
     const client = new Client()
@@ -40,93 +57,146 @@ export async function generateStaticParams() {
       [Query.limit(100)]
     );
 
-    appwriteSlugs = response.documents.map((doc) => ({
-      slug: doc.slug,
-    }));
-  } catch (error) {
-    console.error("Failed to fetch Appwrite blog posts:", error);
+    appwriteSlugs = response.documents
+      .filter(isHighQualityAppwritePost)
+      .map((doc) => ({
+        slug: doc.slug,
+      }));
+  } catch {
+    // Static fallback when Appwrite is offline or paused
   }
 
-  // Merge and deduplicate
   const allSlugs = new Map<string, { slug: string }>();
   for (const s of [...staticSlugs, ...appwriteSlugs]) {
     allSlugs.set(s.slug, s);
   }
 
-  const params = Array.from(allSlugs.values());
-
-  // Next.js throws an error if generateStaticParams returns an empty array with output: export
-  if (params.length === 0) {
-    return [{ slug: "_empty" }];
-  }
-
-  return params;
+  return Array.from(allSlugs.values());
 }
 
-// Dynamically generate metadata for each post
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
 
-  // Check static posts first
   const staticPost = getStaticBlogPost(slug);
+
+  if (!EXCLUDED_SLUGS.has(slug)) {
+    try {
+      const client = new Client()
+        .setEndpoint("https://fra.cloud.appwrite.io/v1")
+        .setProject("6a3290500003e21b7fe1");
+
+      const databases = new Databases(client);
+
+      const response = await databases.listDocuments(DATABASE_ID, BLOGS_COLLECTION_ID, [
+        Query.equal("slug", slug),
+        Query.limit(1),
+      ]);
+
+      if (response.documents.length > 0 && isHighQualityAppwritePost(response.documents[0])) {
+        const post = response.documents[0];
+        const canonicalUrl = `https://kenyahub.me/blog/${post.slug}/`;
+        return {
+          title: post.title,
+          description: post.excerpt,
+          keywords: post.tags || staticPost?.tags || [],
+          authors: [{ name: post.author, url: "https://kenyahub.me/about/" }],
+          alternates: {
+            canonical: canonicalUrl,
+            languages: {
+              "en-KE": canonicalUrl,
+              en: canonicalUrl,
+              "x-default": canonicalUrl,
+            },
+          },
+          openGraph: {
+            title: `${post.title} | KenyaHub`,
+            description: post.excerpt,
+            type: "article",
+            locale: "en_KE",
+            siteName: "KenyaHub",
+            url: canonicalUrl,
+            publishedTime: post.publishedAt,
+            modifiedTime: post.updatedAt || post.publishedAt,
+            authors: [post.author],
+            tags: post.tags || staticPost?.tags || [],
+            images: post.coverImage
+              ? [post.coverImage]
+              : [
+                  {
+                    url: "/og-image.png",
+                    width: 1200,
+                    height: 630,
+                    alt: post.title,
+                  },
+                ],
+          },
+          twitter: {
+            card: "summary_large_image",
+            title: `${post.title} | KenyaHub`,
+            description: post.excerpt,
+            images: post.coverImage ? [post.coverImage] : ["/og-image.png"],
+          },
+        };
+      }
+    } catch {
+      // Fallback to staticPost metadata below
+    }
+  }
+
   if (staticPost) {
+    const canonicalUrl = `https://kenyahub.me/blog/${staticPost.slug}/`;
     return {
-      title: `${staticPost.title} | KenyaHub Blog`,
+      title: staticPost.title,
       description: staticPost.excerpt,
-      alternates: { canonical: `https://kenyahub.me/blog/${staticPost.slug}/` },
+      keywords: staticPost.tags,
+      authors: [{ name: staticPost.author, url: "https://kenyahub.me/about/" }],
+      alternates: {
+        canonical: canonicalUrl,
+        languages: {
+          "en-KE": canonicalUrl,
+          en: canonicalUrl,
+          "x-default": canonicalUrl,
+        },
+      },
       openGraph: {
-        title: staticPost.title,
+        title: `${staticPost.title} | KenyaHub`,
         description: staticPost.excerpt,
         type: "article",
+        locale: "en_KE",
+        siteName: "KenyaHub",
+        url: canonicalUrl,
         publishedTime: staticPost.publishedAt,
+        modifiedTime: staticPost.updatedAt || staticPost.publishedAt,
         authors: [staticPost.author],
+        tags: staticPost.tags,
+        images: [
+          {
+            url: "/og-image.png",
+            width: 1200,
+            height: 630,
+            alt: staticPost.title,
+          },
+        ],
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: `${staticPost.title} | KenyaHub`,
+        description: staticPost.excerpt,
+        images: ["/og-image.png"],
       },
     };
   }
 
-  // Try Appwrite
-  try {
-    const client = new Client()
-      .setEndpoint("https://fra.cloud.appwrite.io/v1")
-      .setProject("6a3290500003e21b7fe1");
-
-    const databases = new Databases(client);
-
-    const response = await databases.listDocuments(DATABASE_ID, BLOGS_COLLECTION_ID, [
-      Query.equal("slug", slug),
-      Query.limit(1),
-    ]);
-
-    if (response.documents.length > 0) {
-      const post = response.documents[0];
-      return {
-        title: `${post.title} | KenyaHub Blog`,
-        description: post.excerpt,
-        openGraph: {
-          title: post.title,
-          description: post.excerpt,
-          type: "article",
-          publishedTime: post.publishedAt,
-          authors: [post.author],
-          images: post.coverImage ? [post.coverImage] : [],
-        },
-      };
-    }
-  } catch {
-    // Fallback metadata below
-  }
-
   return {
-    title: "Blog Post Not Found | KenyaHub",
+    title: "Blog Post Not Found",
+    robots: { index: false, follow: true },
   };
 }
 
-// Server Component
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   let post: BlogPost | null = null;
 
-  // Check static posts first
   const staticPost = getStaticBlogPost(slug);
   if (staticPost) {
     post = {
@@ -144,8 +214,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     };
   }
 
-  // If not static, try Appwrite
-  if (!post) {
+  // Allow Appwrite remote posts to update/override STATIC_BLOG_POSTS when post.slug matches and isHighQualityAppwritePost passes
+  if (!EXCLUDED_SLUGS.has(slug)) {
     try {
       const client = new Client()
         .setEndpoint("https://fra.cloud.appwrite.io/v1")
@@ -158,41 +228,106 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         Query.limit(1),
       ]);
 
-      if (response.documents.length > 0) {
-        post = JSON.parse(JSON.stringify(response.documents[0]));
+      if (response.documents.length > 0 && isHighQualityAppwritePost(response.documents[0])) {
+        const remoteDoc = JSON.parse(JSON.stringify(response.documents[0]));
+        post = {
+          ...(post || {}),
+          ...remoteDoc,
+          sources: remoteDoc.sources || staticPost?.sources,
+        };
       }
     } catch {
-      post = null;
+      // Retain staticPost fallback if Appwrite is offline
     }
   }
 
-  // Article structured data for SEO
-  const articleJsonLd = post ? {
+  if (!post) {
+    notFound();
+  }
+
+  const canonicalUrl = `https://kenyahub.me/blog/${post.slug}/`;
+  const wordCount = post.content ? post.content.trim().split(/\s+/).length : 0;
+
+  const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: post.title,
     description: post.excerpt,
-    author: { "@type": "Person", name: post.author },
+    inLanguage: "en-KE",
+    wordCount,
+    timeRequired: `PT${Math.max(1, post.readTime || 5)}M`,
+    author: /KenyaHub|Desk|Team|Editorial/i.test(post.author || "KenyaHub")
+      ? {
+          "@type": "Organization",
+          name: post.author || "KenyaHub Statutory & Linguistic Research Desk",
+          url: "https://kenyahub.me/about/",
+        }
+      : {
+          "@type": "Person",
+          name: post.author,
+          url: "https://kenyahub.me/about/",
+        },
+    reviewedBy: {
+      "@type": "Organization",
+      name: "KenyaHub Statutory & Editorial Review Board",
+      url: "https://kenyahub.me/about/",
+    },
     datePublished: post.publishedAt,
     dateModified: post.updatedAt || post.publishedAt,
     publisher: {
       "@type": "Organization",
       name: "KenyaHub",
-      url: "https://kenyahub.me",
+      url: "https://kenyahub.me/",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://kenyahub.me/icon-512.png",
+        width: 512,
+        height: 512,
+      },
     },
-    mainEntityOfPage: `https://kenyahub.me/blog/${post.slug}`,
-    ...(post.coverImage && { image: post.coverImage }),
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": canonicalUrl,
+    },
+    image: post.coverImage || "https://kenyahub.me/og-image.png",
     keywords: post.tags?.join(", "),
-  } : null;
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://kenyahub.me/",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Blog",
+        item: "https://kenyahub.me/blog/",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: post.title,
+        item: canonicalUrl,
+      },
+    ],
+  };
 
   return (
     <>
-      {articleJsonLd && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
-        />
-      )}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd).replace(/</g, "\\u003c") }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd).replace(/</g, "\\u003c") }}
+      />
       <BlogPostContent post={post} />
     </>
   );

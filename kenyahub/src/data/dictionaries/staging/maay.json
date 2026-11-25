@@ -1,0 +1,304 @@
+{
+  "languageId": "maay",
+  "languageName": "Kenyan Maay (Af-Maay)",
+  "nativeName": "Af-Maay",
+  "isoCode": "ymm",
+  "family": "Afro-Asiatic (Cushitic)",
+  "script": "Latin",
+  "counties": [
+    "Dadaab (Garissa County)",
+    "Mandera",
+    "Wajir"
+  ],
+  "staging": true,
+  "dictionaryVersion": "1.0",
+  "lastUpdated": "2026-11-21",
+  "categories": [
+    {
+      "id": "greetings",
+      "name": "Greetings & Farewells",
+      "icon": "👋",
+      "entries": []
+    },
+    {
+      "id": "numbers",
+      "name": "Numbers & Counting",
+      "icon": "🔢",
+      "entries": []
+    },
+    {
+      "id": "family",
+      "name": "Family & Relationships",
+      "icon": "👨‍👩‍👧‍👦",
+      "entries": [
+        {
+          "english": "'woman' (F)",
+          "translation": "bɪ́laŋ",
+          "pronunciation": "",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · Pair: saháŋ (M) vs. bɪ́laŋ (F) · LangSci #427, Ch. 13, Table 1a, g · C-final Isolation Tone (Final H vs. Penultimate H)"
+        },
+        {
+          "english": "'child' (M)",
+          "translation": "ʕonʊ́k",
+          "pronunciation": "",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · Pair: ʕonʊ́k (M) vs. ɲáɲur (F) · LangSci #427, Ch. 13, Table 1b, h · C-final Isolation Tone (Final H vs. Penultimate H)"
+        }
+      ]
+    },
+    {
+      "id": "food",
+      "name": "Food & Dining",
+      "icon": "🍲",
+      "entries": [
+        {
+          "english": "'the coffee' / 'the (rem) coffee'",
+          "translation": "qahwə́-đə / qáhwə-đii",
+          "pronunciation": "",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · Pair: guɾú-ɣə / guɾú-ɣii (M) vs. qahwə́-đə / qáhwə-đii (F) · LangSci #427, Ch. 13, Table 3 · V-final Basic vs. Remote Definite Determiner Tone Shift"
+        },
+        {
+          "english": "'the lip'; 'the bread'",
+          "translation": "bɪʃɪŋ-tə́; rootɨ́-ɣə",
+          "pronunciation": "",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · Pair: fərə́s-kə (M) vs. bɪʃɪŋ-tə́ (F); rootɨ́-ɣə (M) vs. bɛɛsɨ́-đə (F) · LangSci #427, Ch. 13, Table 4 · Basic Definite Determiner"
+        },
+        {
+          "english": "'this lip'; 'this bread'",
+          "translation": "bɪʃɪŋ-tə́ŋ; rootɨ́-ɣəŋ",
+          "pronunciation": "",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · Pair: fərə́s-ɣəŋ (M) vs. bɪʃɪŋ-tə́ŋ (F); rootɨ́-ɣəŋ (M) vs. qahwə-đə́ŋ (F) · LangSci #427, Ch. 13, Table 5 · Proximal Demonstrative Determiner"
+        },
+        {
+          "english": "'this coffee'",
+          "translation": "qahwə-đə́ŋ",
+          "pronunciation": "",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · Pair: fərə́s-ɣəŋ (M) vs. bɪʃɪŋ-tə́ŋ (F); rootɨ́-ɣəŋ (M) vs. qahwə-đə́ŋ (F) · LangSci #427, Ch. 13, Table 5 · Proximal Demonstrative Determiner"
+        },
+        {
+          "english": "'my lip'; 'my bread'",
+          "translation": "bɪʃɪŋ-téy; rootɨ́-ɣey",
+          "pronunciation": "",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · Pair: fərə́s-key (M) vs. bɪʃɪŋ-téy (F); rootɨ́-ɣey (M) vs. qáhwə-đey (F) · LangSci #427, Ch. 13, Table 6 · 1SG Possessive Determiner"
+        },
+        {
+          "english": "'my coffee'",
+          "translation": "qáhwə-đey",
+          "pronunciation": "",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · Pair: fərə́s-key (M) vs. bɪʃɪŋ-téy (F); rootɨ́-ɣey (M) vs. qáhwə-đey (F) · LangSci #427, Ch. 13, Table 6 · 1SG Possessive Determiner"
+        }
+      ]
+    },
+    {
+      "id": "travel",
+      "name": "Travel & Directions",
+      "icon": "🧭",
+      "entries": []
+    },
+    {
+      "id": "time",
+      "name": "Time, Seasons & Calendar",
+      "icon": "⏰",
+      "entries": []
+    },
+    {
+      "id": "body",
+      "name": "Body & Health",
+      "icon": "🫀",
+      "entries": [
+        {
+          "english": "'bone' (F)",
+          "translation": "lə́f",
+          "pronunciation": "",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · Pair: mə́s (M) vs. lə́f (F) · LangSci #427, Ch. 13, Table 1f, l · Monosyllabic CVC Neutralization (Both H)"
+        }
+      ]
+    },
+    {
+      "id": "animals",
+      "name": "Animals & Wildlife",
+      "icon": "🦁",
+      "entries": [
+        {
+          "english": "'camel' (M)",
+          "translation": "gaál",
+          "pronunciation": "",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · Pair: gaál (M) vs. wéel (F) · LangSci #427, Ch. 13, Table 1d, j · Monosyllabic CVVC Tonal Minimal Gender Contrast"
+        },
+        {
+          "english": "'snake' (M)",
+          "translation": "mə́s",
+          "pronunciation": "",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · Pair: mə́s (M) vs. lə́f (F) · LangSci #427, Ch. 13, Table 1f, l · Monosyllabic CVC Neutralization (Both H)"
+        },
+        {
+          "english": "'the horse'",
+          "translation": "fərə́s-kə",
+          "pronunciation": "",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · Pair: fərə́s-kə (M) vs. bɪʃɪŋ-tə́ (F); rootɨ́-ɣə (M) vs. bɛɛsɨ́-đə (F) · LangSci #427, Ch. 13, Table 4 · Basic Definite Determiner"
+        },
+        {
+          "english": "'this horse'",
+          "translation": "fərə́s-ɣəŋ",
+          "pronunciation": "",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · Pair: fərə́s-ɣəŋ (M) vs. bɪʃɪŋ-tə́ŋ (F); rootɨ́-ɣəŋ (M) vs. qahwə-đə́ŋ (F) · LangSci #427, Ch. 13, Table 5 · Proximal Demonstrative Determiner"
+        },
+        {
+          "english": "'my horse'",
+          "translation": "fərə́s-key",
+          "pronunciation": "",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · Pair: fərə́s-key (M) vs. bɪʃɪŋ-téy (F); rootɨ́-ɣey (M) vs. qáhwə-đey (F) · LangSci #427, Ch. 13, Table 6 · 1SG Possessive Determiner"
+        }
+      ]
+    },
+    {
+      "id": "nature",
+      "name": "Nature & Environment",
+      "icon": "🌿",
+      "entries": [
+        {
+          "english": "'cloud' (F)",
+          "translation": "daróor",
+          "pronunciation": "",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · Pair: wəreék (M) vs. daróor (F) · LangSci #427, Ch. 13, Table 1c, i · C-final Isolation Tone (Rising vs. Falling on Long V)"
+        }
+      ]
+    },
+    {
+      "id": "home",
+      "name": "Home & Everyday Objects",
+      "icon": "🏠",
+      "entries": [
+        {
+          "english": "'plate' (M)",
+          "translation": "saháŋ",
+          "pronunciation": "",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · Pair: saháŋ (M) vs. bɪ́laŋ (F) · LangSci #427, Ch. 13, Table 1a, g · C-final Isolation Tone (Final H vs. Penultimate H)"
+        },
+        {
+          "english": "'cat' (F)",
+          "translation": "ɲáɲur",
+          "pronunciation": "",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · Pair: ʕonʊ́k (M) vs. ɲáɲur (F) · LangSci #427, Ch. 13, Table 1b, h · C-final Isolation Tone (Final H vs. Penultimate H)"
+        },
+        {
+          "english": "'the house' / 'the (rem) house'",
+          "translation": "guɾú-ɣə / guɾú-ɣii",
+          "pronunciation": "",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · Pair: guɾú-ɣə / guɾú-ɣii (M) vs. qahwə́-đə / qáhwə-đii (F) · LangSci #427, Ch. 13, Table 3 · V-final Basic vs. Remote Definite Determiner Tone Shift"
+        }
+      ]
+    },
+    {
+      "id": "verbs",
+      "name": "Common Verbs & Actions",
+      "icon": "🏃",
+      "entries": []
+    },
+    {
+      "id": "adjectives",
+      "name": "Descriptive Adjectives",
+      "icon": "✨",
+      "entries": [
+        {
+          "english": "'circle' (M)",
+          "translation": "wəreék",
+          "pronunciation": "",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · Pair: wəreék (M) vs. daróor (F) · LangSci #427, Ch. 13, Table 1c, i · C-final Isolation Tone (Rising vs. Falling on Long V)"
+        }
+      ]
+    },
+    {
+      "id": "shopping",
+      "name": "Trade, Money & Measures",
+      "icon": "🛒",
+      "entries": [
+        {
+          "english": "'the money'",
+          "translation": "bɛɛsɨ́-đə",
+          "pronunciation": "",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · Pair: fərə́s-kə (M) vs. bɪʃɪŋ-tə́ (F); rootɨ́-ɣə (M) vs. bɛɛsɨ́-đə (F) · LangSci #427, Ch. 13, Table 4 · Basic Definite Determiner"
+        }
+      ]
+    },
+    {
+      "id": "emergency",
+      "name": "Health, Safety, Law & Conflict",
+      "icon": "🚨",
+      "entries": []
+    },
+    {
+      "id": "phrases",
+      "name": "Common Expressions & Vocabulary",
+      "icon": "💬",
+      "entries": [
+        {
+          "english": "'calf' (F)",
+          "translation": "wéel",
+          "pronunciation": "",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · Pair: gaál (M) vs. wéel (F) · LangSci #427, Ch. 13, Table 1d, j · Monosyllabic CVVC Tonal Minimal Gender Contrast"
+        },
+        {
+          "english": "'store' (M)",
+          "translation": "tuqćǽŋ",
+          "pronunciation": "",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · Pair: tuqćǽŋ (M) vs. búúr (F) · LangSci #427, Ch. 13, Table 1e, k · C-final Isolation Tone (Flat High Span in Fem.)"
+        },
+        {
+          "english": "'heel' (F)",
+          "translation": "búúr",
+          "pronunciation": "",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · Pair: tuqćǽŋ (M) vs. búúr (F) · LangSci #427, Ch. 13, Table 1e, k · C-final Isolation Tone (Flat High Span in Fem.)"
+        },
+        {
+          "english": "'bull', 'river', 'time', 'meal'",
+          "translation": "dʊβʊ́ (M), wəβɛ́ (M), waxtə́ (M), hoŋgʊɾɨ́ (M)",
+          "pronunciation": "",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · LangSci #427, Ch. 13, Table 2a–d · V-final Masculine Nouns in Isolation"
+        },
+        {
+          "english": "'work', 'thigh', 'knife', 'mother'",
+          "translation": "ʃaqə́ (F), bođə́ (F), toorə́ (F), aayó (F)",
+          "pronunciation": "",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · LangSci #427, Ch. 13, Table 2e–h · V-final Feminine Nouns in Isolation"
+        },
+        {
+          "english": "'horse' → 'horses' → 'the (rem) horses'",
+          "translation": "fəɾə́s → fəɾəs-yaál → fəɾəs-yaál-kii (M)",
+          "pronunciation": "",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · LangSci #427, Ch. 13, Table 7a–c · Culminative H Override by -yaál Plural Suffix"
+        },
+        {
+          "english": "'arm' → 'arms' → 'the (rem) arms'",
+          "translation": "gə́laŋ → gəlaɲ-yaál → gəlaɲ-yaál-kii (F→M)",
+          "pronunciation": "",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · LangSci #427, Ch. 13, Table 7d–f · Feminine Stem + Masculine -yaál Plural Suffix"
+        },
+        {
+          "english": "'fight' → 'killer' → 'fighting'",
+          "translation": "degaál → degaal-ə́ → degaal-ə-mó",
+          "pronunciation": "",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · LangSci #427, Ch. 13, §3.2 (p. 278) · Derivational Suffix H Override"
+        },
+        {
+          "english": "'the (rem) money'",
+          "translation": "bɛɛsɨ́-đii; tɛ́ɛ́sɨ-đii; tóorə-đii (toórə-đii); gaál-kii",
+          "pronunciation": "",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · LangSci #427, Ch. 13, §3.2 (pp. 279–280) · Rising Contour Avoidance vs. Tonal Faithfulness · 'the (rem) money'; 'the (rem) fly'; 'the (rem) knife'; 'the (rem) camel'"
+        },
+        {
+          "english": "'calf', 'salt', 'thigh', 'leg', 'rain'",
+          "translation": "wéel, usbə́, bodə́, lúk, roóp",
+          "pronunciation": "",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · LangSci #427, Ch. 13, Table 9a–e · Cross-Dialect Comparison (KM Forms)"
+        }
+      ]
+    },
+    {
+      "id": "culture-history",
+      "name": "Culture, Clans & Historical Corpus",
+      "icon": "📖",
+      "entries": []
+    }
+  ],
+  "totalEntries": 30
+}

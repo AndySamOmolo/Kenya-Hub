@@ -106,7 +106,7 @@
       "code": 6,
       "name": "Taita Taveta",
       "slug": "taita-taveta",
-      "capital": "Voi",
+      "capital": "Mwatate",
       "governor": "Andrew Mwadime",
       "deputyGovernor": "Christine Kilalo",
       "senator": "Mwinyihaji Mwaruma",
@@ -255,7 +255,7 @@
       "code": 13,
       "name": "Tharaka-Nithi",
       "slug": "tharaka-nithi",
-      "capital": "Chuka",
+      "capital": "Kathwana",
       "governor": "Muthomi Njuki",
       "deputyGovernor": "Francis Kagwima",
       "senator": "Mwenda Gataya",
@@ -452,7 +452,7 @@
       "slug": "kiambu",
       "capital": "Kiambu",
       "governor": "Kimani Wamatangi",
-      "deputyGovernor": "Theresa Wangeci",
+      "deputyGovernor": "Rosemary Njeri Kirika",
       "senator": "Karungo wa Thang'wa",
       "womenRep": "Ann Wamuratha",
       "website": "https://www.kiambu.go.ke",
@@ -646,7 +646,7 @@
       "code": 31,
       "name": "Laikipia",
       "slug": "laikipia",
-      "capital": "Nanyuki",
+      "capital": "Rumuruti",
       "governor": "Joshua Irungu",
       "deputyGovernor": "Martin Kinyua",
       "senator": "John Kinyua",
@@ -1053,5 +1053,7 @@
     "Area is in km²",
     "County codes follow the official KNBS/IEBC numbering (1 = Mombasa to 47 = Nairobi)",
     "Constituencies listed are parliamentary constituencies (not county assembly wards)"
-  ]
+  ],
+  "lastUpdated": "2026-10-20",
+  "source": "IEBC (2022 Election Data) & KNBS Population and Housing Census"
 }

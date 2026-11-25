@@ -12,3 +12,12 @@
 -keep class com.facebook.react.turbomodule.** { *; }
 
 # Add any project specific keep options here:
+
+# Google Mobile Ads SDK & UMP Consent SDK (react-native-google-mobile-ads)
+-keep class io.invertase.googlemobileads.** { *; }
+-keep class com.google.android.gms.ads.** { *; }
+-keep class com.google.android.ump.** { *; }
+-keep public class * extends com.google.android.gms.ads.mediation.MediationAdapter { *; }
+-keepattributes *Annotation*,Signature,InnerClasses,EnclosingMethod
+-dontwarn com.google.android.gms.ads.**
+-dontwarn com.google.android.ump.**

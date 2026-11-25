@@ -4,81 +4,218 @@
 import { useState, useEffect } from "react";
 import { Cookie, Settings2 } from "lucide-react";
 
+const GA_MEASUREMENT_ID = "G-Y069879V7Y";
+const GA_SCRIPT_ID = "kh-ga4-gtag";
+
 declare global {
   interface Window {
     gtag?: (...args: unknown[]) => void;
     dataLayer?: unknown[];
+    __khGaConfigured?: boolean;
+    __tcfapi?: (...args: unknown[]) => void;
+    googlefc?: { showRevocationMessage?: () => void };
   }
 }
 
-/**
- * Update Google Consent Mode v2 defaults.
- * Called before the AdSense script loads if no stored preference exists,
- * and again when the user makes a choice.
- */
-interface CookiePreferences {
+export interface CookiePreferences {
+  essential: boolean;
   analytics: boolean;
   advertising: boolean;
+  ads?: boolean;
 }
 
-function updateConsent(preferences: CookiePreferences) {
-  window.gtag?.("consent", "update", {
-    ad_storage: preferences.advertising ? "granted" : "denied",
-    ad_user_data: preferences.advertising ? "granted" : "denied",
-    ad_personalization: preferences.advertising ? "granted" : "denied",
-    analytics_storage: preferences.analytics ? "granted" : "denied",
-  });
+export interface ParsedConsentState {
+  hasDecision: boolean;
+  preferences: CookiePreferences;
+}
+
+function isProductionAnalyticsHost(): boolean {
+  if (typeof window === "undefined") return false;
+  const host = window.location.hostname;
+  return host === "kenyahub.co.ke" || host === "kenyahub.me";
+}
+
+function parseJsonConsent(raw: string | null): CookiePreferences | null {
+  if (!raw) return null;
+  const trimmed = raw.trim();
+  if (!trimmed.startsWith("{")) return null;
+  try {
+    const parsed = JSON.parse(trimmed) as Record<string, unknown>;
+    if (!parsed || typeof parsed !== "object") return null;
+    const analytics = parsed.analytics === true;
+    const advertising = parsed.advertising === true || parsed.ads === true;
+    return {
+      essential: true,
+      analytics,
+      advertising,
+      ads: advertising,
+    };
+  } catch {
+    return null;
+  }
+}
+
+export function readStoredConsent(): ParsedConsentState {
+  if (typeof window === "undefined") {
+    return {
+      hasDecision: false,
+      preferences: { essential: true, analytics: false, advertising: false, ads: false },
+    };
+  }
+
+  try {
+    const rawPrefs = localStorage.getItem("kh-cookie-preferences");
+    const rawConsent = localStorage.getItem("kh-cookie-consent");
+
+    const fromPrefs = parseJsonConsent(rawPrefs);
+    if (fromPrefs) {
+      return { hasDecision: true, preferences: fromPrefs };
+    }
+
+    const fromConsentJson = parseJsonConsent(rawConsent);
+    if (fromConsentJson) {
+      return { hasDecision: true, preferences: fromConsentJson };
+    }
+
+    if (rawConsent === "accepted") {
+      return {
+        hasDecision: true,
+        preferences: { essential: true, analytics: true, advertising: true, ads: true },
+      };
+    }
+
+    if (rawConsent === "declined" || rawConsent === "essential" || rawConsent === "rejected") {
+      return {
+        hasDecision: true,
+        preferences: { essential: true, analytics: false, advertising: false, ads: false },
+      };
+    }
+  } catch {
+    // ignore storage errors
+  }
+
+  return {
+    hasDecision: false,
+    preferences: { essential: true, analytics: false, advertising: false, ads: false },
+  };
+}
+
+function expireCookieNames(names: string[]) {
+  if (typeof document === "undefined" || typeof window === "undefined") return;
+  const host = window.location.hostname;
+  const domains = ["", `; domain=${host}`, `; domain=.${host}`, "; domain=.kenyahub.me"];
+  for (const name of names) {
+    for (const domainAttr of domains) {
+      document.cookie = `${name}=; Path=/; Max-Age=0; expires=Thu, 01 Jan 1970 00:00:00 GMT${domainAttr}; SameSite=Lax`;
+    }
+  }
+  // Also expire any dynamic _ga_* measurement cookies if analytics cookies are being cleared
+  if (names.includes("_ga") && document.cookie) {
+    const allCookies = document.cookie.split(";");
+    for (const rawCookie of allCookies) {
+      const cookieName = rawCookie.split("=")[0]?.trim();
+      if (cookieName && (cookieName.startsWith("_ga_") || cookieName.startsWith("_gat_"))) {
+        for (const domainAttr of domains) {
+          document.cookie = `${cookieName}=; Path=/; Max-Age=0; expires=Thu, 01 Jan 1970 00:00:00 GMT${domainAttr}; SameSite=Lax`;
+        }
+      }
+    }
+  }
+}
+
+function ensureGa4Loaded(prefs: CookiePreferences) {
+  if (typeof window === "undefined" || typeof document === "undefined") return;
+  // Strictly gate GA4 behind explicit analytics consent AND production hostname only
+  if (prefs.analytics !== true || !isProductionAnalyticsHost()) return;
+
+  window.dataLayer = window.dataLayer || [];
+  if (!window.gtag) {
+    window.gtag = function () {
+      // eslint-disable-next-line prefer-rest-params
+      window.dataLayer!.push(arguments);
+    };
+  }
+
+  const hasCertifiedCmp = typeof window.__tcfapi === "function";
+  if (!window.__khGaConfigured) {
+    window.gtag("consent", "default", {
+      ...(hasCertifiedCmp
+        ? {}
+        : {
+            ad_storage: "denied",
+            ad_user_data: "denied",
+            ad_personalization: "denied",
+          }),
+      analytics_storage: "granted",
+    });
+    window.gtag("set", "url_passthrough", false);
+    window.gtag("js", new Date());
+    window.gtag("config", GA_MEASUREMENT_ID);
+    window.__khGaConfigured = true;
+  }
+
+  if (!document.getElementById(GA_SCRIPT_ID)) {
+    const script = document.createElement("script");
+    script.id = GA_SCRIPT_ID;
+    script.async = true;
+    script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
+    document.head.appendChild(script);
+  }
+}
+
+export function applyGoogleConsent(prefs: CookiePreferences) {
+  if (typeof window === "undefined") return;
+
+  if (prefs.analytics === true && isProductionAnalyticsHost()) {
+    ensureGa4Loaded(prefs);
+  }
+
+  if (typeof window.gtag === "function") {
+    const adState = prefs.advertising ? "granted" : "denied";
+    window.gtag("consent", "update", {
+      analytics_storage: prefs.analytics ? "granted" : "denied",
+      ad_storage: adState,
+      ad_user_data: adState,
+      ad_personalization: adState,
+    });
+  }
+
+  if (!prefs.analytics) {
+    expireCookieNames(["_ga", "_gid", "_gat"]);
+  }
+  if (!prefs.advertising) {
+    expireCookieNames(["__gads", "__gpi", "__eoi"]);
+  }
+  // Advertising consent & cookies are managed by Google certified CMP (IAB TCF v2.4)
 }
 
 export default function CookieConsent() {
   const [visible, setVisible] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
   const [preferences, setPreferences] = useState<CookiePreferences>({
+    essential: true,
     analytics: false,
     advertising: false,
+    ads: false,
   });
 
   useEffect(() => {
-    // Initialize Google tag command queue
-    window.dataLayer = window.dataLayer || [];
-    window.gtag =
-      window.gtag ||
-      function (...args: unknown[]) {
-        window.dataLayer!.push(args);
-      };
+    const stored = readStoredConsent();
+    let timer: ReturnType<typeof setTimeout> | null = null;
 
-    // Check if user has already made a choice
-    const stored = localStorage.getItem("kh-cookie-consent");
-    const storedPreferences = localStorage.getItem("kh-cookie-preferences");
-    if (storedPreferences) {
-      try {
-        const parsed = JSON.parse(storedPreferences) as Partial<CookiePreferences>;
-        const next = {
-          analytics: parsed.analytics === true,
-          advertising: parsed.advertising === true,
-        };
-        setPreferences(next);
-        updateConsent(next);
-      } catch {
-        updateConsent({ analytics: false, advertising: false });
-      }
-    } else if (stored === "accepted") {
-      const next = { analytics: true, advertising: true };
-      setPreferences(next);
-      updateConsent(next);
-    } else if (stored === "declined") {
-      updateConsent({ analytics: false, advertising: false });
+    if (stored.hasDecision) {
+      setPreferences(stored.preferences);
+      applyGoogleConsent(stored.preferences);
+      setVisible(false);
     } else {
-      // Set Consent Mode v2 defaults — deny everything until user consents
-      window.gtag("consent", "default", {
-        ad_storage: "denied",
-        ad_user_data: "denied",
-        ad_personalization: "denied",
-        analytics_storage: "denied",
-        wait_for_update: 500,
-      });
-      // No stored preference — show the banner
-      setVisible(true);
+      timer = setTimeout(() => {
+        const hasTcfCmp =
+          typeof window.__tcfapi === "function" ||
+          typeof (window as unknown as { googlefc?: unknown }).googlefc !== "undefined";
+        if (!hasTcfCmp) {
+          setVisible(true);
+        }
+      }, 1500);
     }
 
     const handleOpenBanner = () => {
@@ -86,24 +223,47 @@ export default function CookieConsent() {
     };
     window.addEventListener("kh-open-cookie-banner", handleOpenBanner);
     return () => {
+      if (timer) clearTimeout(timer);
       window.removeEventListener("kh-open-cookie-banner", handleOpenBanner);
     };
   }, []);
 
+  useEffect(() => {
+    if (typeof document === "undefined") return;
+    document.body.classList.toggle("kh-cookie-banner-open", visible);
+    return () => {
+      document.body.classList.remove("kh-cookie-banner-open");
+    };
+  }, [visible]);
+
   const handleAccept = () => {
-    savePreferences({ analytics: true, advertising: true }, "accepted");
+    savePreferences({ essential: true, analytics: true, advertising: true, ads: true }, "accepted");
   };
 
   const handleDecline = () => {
-    savePreferences({ analytics: false, advertising: false }, "declined");
+    savePreferences({ essential: true, analytics: false, advertising: false, ads: false }, "declined");
   };
 
-  const savePreferences = (next: CookiePreferences, legacyStatus: "accepted" | "declined" | "custom" = "custom") => {
-    setPreferences(next);
-    localStorage.setItem("kh-cookie-preferences", JSON.stringify(next));
-    localStorage.setItem("kh-cookie-consent", legacyStatus);
-    updateConsent(next);
+  const savePreferences = (
+    next: CookiePreferences,
+    legacyStatus: "accepted" | "declined" | "custom" = "custom"
+  ) => {
+    const normalized: CookiePreferences = {
+      essential: true,
+      analytics: next.analytics === true,
+      advertising: next.advertising === true,
+      ads: next.advertising === true,
+    };
+    setPreferences(normalized);
+    try {
+      localStorage.setItem("kh-cookie-preferences", JSON.stringify(normalized));
+      localStorage.setItem("kh-cookie-consent", legacyStatus);
+    } catch {
+      // ignore storage errors
+    }
+    applyGoogleConsent(normalized);
     window.dispatchEvent(new Event("kh-cookie-consent-updated"));
+    setShowSettings(false);
     setVisible(false);
   };
 
@@ -111,80 +271,111 @@ export default function CookieConsent() {
 
   return (
     <div
-      className="fixed bottom-0 inset-x-0 z-[100] p-4 sm:p-6 animate-fade-in-up"
+      data-adsense-ignore="true"
+      className="fixed bottom-0 inset-x-0 z-[95] border-t border-border bg-bg-card sm:bg-bg-card/98 sm:backdrop-blur-md shadow-2xl shadow-black/30"
+      style={{ backgroundColor: "var(--bg-card)" }}
       role="dialog"
-      aria-label="Cookie consent"
+      aria-label={showSettings ? "Cookie preferences" : "Cookie consent"}
     >
-      <div className="max-w-2xl mx-auto bg-bg-card/95 backdrop-blur-xl border border-border rounded-2xl shadow-2xl shadow-black/30 p-5 sm:p-6">
-        {showSettings ? (
-          <>
-            <div className="flex items-start gap-3 mb-4">
-              <Settings2 className="w-5 h-5 text-gold shrink-0 mt-0.5" />
-              <div>
-                <p className="text-sm font-semibold text-text-primary font-[family-name:var(--font-outfit)]">Manage cookie preferences</p>
-                <p className="text-xs text-text-secondary mt-1">Essential storage is always active. Choose whether KenyaHub may use analytics and advertising cookies.</p>
-              </div>
+      {showSettings ? (
+        <div className="max-w-xl mx-auto px-4 py-3.5">
+          <div className="flex items-start gap-2.5 mb-2.5">
+            <Settings2 className="w-4 h-4 text-gold shrink-0 mt-0.5" aria-hidden="true" />
+            <div>
+              <p className="text-xs sm:text-sm font-semibold text-text-primary font-[family-name:var(--font-outfit)]">
+                Manage cookie preferences
+              </p>
+              <p className="text-[0.7rem] text-text-secondary mt-0.5 leading-relaxed">
+                Essential storage is always active. Choose optional GA4 analytics preferences. Ad consent in applicable regions is managed by Google's certified Privacy & Messaging dialog.{" "}
+                <a
+                  href="https://policies.google.com/technologies/partner-sites"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gold hover:underline"
+                >
+                  How Google uses data
+                </a>
+              </p>
             </div>
-            <div className="space-y-2 mb-5">
-              <label className="flex items-center justify-between gap-4 rounded-xl border border-border bg-bg-elevated/50 p-3">
-                <span><span className="block text-xs font-semibold text-text-primary">Essential</span><span className="block text-[0.65rem] text-text-muted mt-0.5">Required for preferences and core site features</span></span>
-                <input type="checkbox" checked disabled className="accent-gold" aria-label="Essential cookies always enabled" />
-              </label>
-              <label className="flex items-center justify-between gap-4 rounded-xl border border-border bg-bg-elevated/50 p-3 cursor-pointer">
-                <span><span className="block text-xs font-semibold text-text-primary">Analytics</span><span className="block text-[0.65rem] text-text-muted mt-0.5">Helps us understand which tools are useful</span></span>
-                <input type="checkbox" checked={preferences.analytics} onChange={(event) => setPreferences((current) => ({ ...current, analytics: event.target.checked }))} className="accent-gold" aria-label="Analytics cookies" />
-              </label>
-              <label className="flex items-center justify-between gap-4 rounded-xl border border-border bg-bg-elevated/50 p-3 cursor-pointer">
-                <span><span className="block text-xs font-semibold text-text-primary">Advertising</span><span className="block text-[0.65rem] text-text-muted mt-0.5">Supports personalised and non-personalised ads</span></span>
-                <input type="checkbox" checked={preferences.advertising} onChange={(event) => setPreferences((current) => ({ ...current, advertising: event.target.checked }))} className="accent-gold" aria-label="Advertising cookies" />
-              </label>
-            </div>
-            <div className="flex justify-end gap-2">
-              <button onClick={() => setShowSettings(false)} className="px-4 py-2 text-xs font-semibold rounded-xl border border-border text-text-secondary hover:text-text-primary transition-all">Back</button>
-              <button onClick={() => savePreferences(preferences)} className="px-4 py-2 text-xs font-bold rounded-xl bg-gradient-to-r from-gold to-gold-vivid text-black hover:opacity-90 transition-opacity">Save preferences</button>
-            </div>
-          </>
-        ) : (
-        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
-          <div className="flex-1 min-w-0">
-            <p className="text-sm font-semibold text-text-primary mb-1 font-[family-name:var(--font-outfit)]">
-              <Cookie className="w-4 h-4 inline-block mr-1.5 text-gold align-text-bottom" />Cookie Consent
-            </p>
-            <p className="text-xs text-text-secondary leading-relaxed">
-              KenyaHub uses cookies for ads personalisation and site analytics.
-              You can accept or decline non-essential cookies. See our{" "}
-              <a
-                href="/privacy/"
-                className="text-gold hover:underline font-medium"
-              >
-                Privacy Policy
-              </a>{" "}
-              for details.
-            </p>
           </div>
-          <div className="flex items-center gap-2 shrink-0">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-3">
+            <label className="flex items-center justify-between gap-2 rounded-xl border border-border bg-bg-elevated/50 px-3 py-2">
+              <span>
+                <span className="block text-xs font-semibold text-text-primary">Essential</span>
+                <span className="block text-[0.65rem] text-text-muted">Local tools &amp; progress</span>
+              </span>
+              <input type="checkbox" checked disabled className="accent-gold" aria-label="Essential cookies always enabled" />
+            </label>
+            <label className="flex items-center justify-between gap-2 rounded-xl border border-border bg-bg-elevated/50 px-3 py-2 cursor-pointer">
+              <span>
+                <span className="block text-xs font-semibold text-text-primary">Analytics</span>
+                <span className="block text-[0.65rem] text-text-muted">Anonymous GA4 stats</span>
+              </span>
+              <input
+                type="checkbox"
+                checked={preferences.analytics}
+                onChange={(event) =>
+                  setPreferences((current) => ({ ...current, analytics: event.target.checked }))
+                }
+                className="accent-gold"
+                aria-label="Analytics cookies"
+              />
+            </label>
+          </div>
+          <div className="flex justify-end gap-2">
             <button
-              onClick={() => setShowSettings(true)}
-              className="inline-flex items-center gap-1 px-3 py-2 text-xs font-semibold rounded-xl text-gold hover:bg-gold/10 transition-all"
+              type="button"
+              onClick={() => setShowSettings(false)}
+              className="px-3 py-1.5 text-xs font-semibold rounded-lg border border-border text-text-secondary hover:text-text-primary transition-all cursor-pointer"
             >
-              <Settings2 className="w-3.5 h-3.5" /> Manage
+              Back
             </button>
             <button
-              onClick={handleDecline}
-              className="px-4 py-2 text-xs font-semibold rounded-xl border border-border text-text-secondary hover:text-text-primary hover:border-text-muted transition-all"
+              type="button"
+              onClick={() => savePreferences(preferences)}
+              className="px-3.5 py-1.5 text-xs font-bold rounded-lg bg-gradient-to-r from-gold to-gold-vivid text-black hover:opacity-90 transition-opacity cursor-pointer"
             >
-              Decline
-            </button>
-            <button
-              onClick={handleAccept}
-              className="px-4 py-2 text-xs font-bold rounded-xl bg-gradient-to-r from-gold to-gold-vivid text-black hover:opacity-90 transition-opacity shadow-lg"
-            >
-              Accept All
+              Save Preferences
             </button>
           </div>
         </div>
-        )}
-      </div>
+      ) : (
+        <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-2 sm:py-0 sm:h-14 sm:max-h-14 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+          <div className="flex items-center gap-2 min-w-0">
+            <Cookie className="w-4 h-4 text-gold shrink-0" aria-hidden="true" />
+            <p className="text-xs text-text-secondary leading-snug sm:truncate">
+              KenyaHub uses cookies for analytics &amp; Google AdSense ads. See our{" "}
+              <a href="/privacy/" className="text-gold hover:underline font-medium">
+                Privacy Policy
+              </a>
+              .
+            </p>
+          </div>
+          <div className="flex items-center justify-end gap-1.5 shrink-0">
+            <button
+              type="button"
+              onClick={() => setShowSettings(true)}
+              className="inline-flex items-center gap-1 px-2.5 py-1.5 text-xs font-semibold rounded-lg text-gold hover:bg-gold/10 transition-all cursor-pointer"
+            >
+              <Settings2 className="w-3.5 h-3.5" aria-hidden="true" /> Manage
+            </button>
+            <button
+              type="button"
+              onClick={handleDecline}
+              className="px-3 py-1.5 text-xs font-semibold rounded-lg border border-border text-text-secondary hover:text-text-primary transition-all cursor-pointer"
+            >
+              Essential Only
+            </button>
+            <button
+              type="button"
+              onClick={handleAccept}
+              className="px-3.5 py-1.5 text-xs font-bold rounded-lg bg-gradient-to-r from-gold to-gold-vivid text-black hover:opacity-90 transition-opacity shadow-sm cursor-pointer"
+            >
+              Accept
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

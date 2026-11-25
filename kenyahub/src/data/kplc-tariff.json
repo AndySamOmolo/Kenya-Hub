@@ -1,5 +1,5 @@
 {
-  "source": "EPRA Approved Retail Electricity Tariff (2023/24 \u2013 2025/26) \u2014 Domestic Consumer (DC1 / DC2 / DC3)",
+  "source": "EPRA Approved Retail Electricity Tariff (2023/24 – 2025/26) — Domestic Consumer (DC1 / DC2 / DC3)",
   "lastUpdated": "2026-10-20",
   "fixedCharge": 0,
   "fixedChargeNote": "EPRA abolished the monthly KES 150 fixed standing charge for domestic prepaid consumers",
@@ -7,20 +7,20 @@
     {
       "min": 0,
       "max": 30,
-      "rate": 12.14,
-      "label": "Lifeline DC1 (0 \u2013 30 kWh)"
+      "rate": 12.23,
+      "label": "Lifeline DC1 (0 – 30 kWh)"
     },
     {
       "min": 31,
       "max": 100,
-      "rate": 16.5,
-      "label": "Ordinary Domestic DC2 (31 \u2013 100 kWh)"
+      "rate": 16.45,
+      "label": "Ordinary Domestic DC2 (31 – 100 kWh)"
     },
     {
       "min": 101,
       "max": 1500,
-      "rate": 19.07,
-      "label": "Domestic DC3 (101 \u2013 1,500 kWh)"
+      "rate": 19.08,
+      "label": "Domestic DC3 (101 – 1,500 kWh)"
     },
     {
       "min": 1501,
@@ -38,22 +38,23 @@
     "epraLevy": 0.18,
     "epraLevyLabel": "EPRA Regulatory Levy (per kWh)",
     "warcLevy": 0.05,
-    "warcLevyLabel": "Water Resources Authority (WRA/WARMA) Levy (per kWh)"
+    "warcLevyLabel": "Water Resources Authority (WRA/WARMA) Levy (per kWh)",
+    "repLevyRate": 0.05
   },
   "fuelCostCharge": {
     "rate": 3.55,
-    "label": "Fuel Energy Cost Charge (FCC) per kWh \u2014 gazetted monthly by EPRA",
+    "label": "Fuel Energy Cost Charge (FCC) per kWh — gazetted monthly by EPRA",
     "note": "Varies monthly based on thermal generation mix and global fuel prices"
   },
   "forexAdjustment": {
     "rate": 1.15,
-    "label": "Foreign Exchange Rate Fluctuation Adjustment (FERFA) per kWh \u2014 gazetted monthly"
+    "label": "Foreign Exchange Rate Fluctuation Adjustment (FERFA) per kWh — gazetted monthly"
   },
   "notes": [
-    "Under the EPRA 2023\u20132026 Retail Tariff Review, there is no monthly fixed standing charge (KES 0) for domestic consumers",
-    "Domestic Lifeline (DC1) covers the first 30 kWh/month at KES 12.14/kWh base energy rate",
-    "Domestic Ordinary (DC2) covers 31\u2013100 kWh/month at KES 16.50/kWh base energy rate",
-    "Consumption above 100 kWh/month (DC3) is billed at KES 19.07/kWh base energy rate",
+    "Under the EPRA 2023–2026 Retail Tariff Review, there is no monthly fixed standing charge (KES 0) for domestic consumers",
+    "Domestic Lifeline (DC1) covers the first 30 kWh/month at KES 12.23/kWh base energy rate",
+    "Domestic Ordinary (DC2) covers 31–100 kWh/month at KES 16.45/kWh base energy rate",
+    "Consumption above 100 kWh/month (DC3) is billed at KES 19.08/kWh base energy rate",
     "Each kWh also attracts Fuel Energy Cost (FCC), Forex Adjustment (FERFA), Inflation Adjustment (IA), EPRA Levy (KES 0.18), WRA Levy (KES 0.05), 5% REP Levy, and 16% VAT"
   ]
 }

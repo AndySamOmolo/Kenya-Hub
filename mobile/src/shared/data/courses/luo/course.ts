@@ -421,7 +421,7 @@ export const COURSE_MODULES: CourseModule[] = [
               { baseForm: "Dala", baseMeaning: "village", transformedForm: "Mier" },
               { baseForm: "Bura", baseMeaning: "commandment, case", transformedForm: "Buche" },
               { baseForm: "Omuga", baseMeaning: "rhino", transformedForm: "Omuke" },
-              { baseForm: "Ajuoga", baseMeaning: "witchdoctor", transformedForm: "Ajuoge (or Ajuoke)" }
+              { baseForm: "Ajuoga", baseMeaning: "traditional healer", transformedForm: "Ajuoge (or Ajuoke)" }
             ]
           },
           {
@@ -1134,13 +1134,15 @@ export const PHRASEBOOK_SECTIONS: DialogueSection[] = [
   {
     sectionId: "pb-1-usual",
     title: "I. Usual Everyday Expressions & Weather",
-    contextDescription: "Essential greetings, polite requests, comprehension checks, personal introductions, and weather expressions.",
+    contextDescription: "Essential greetings, polite requests, comprehension checks, personal introductions, time of day, and weather expressions (Handbook pp. 102–104).",
     sourcePages: [102, 103, 104],
     exchanges: [
       { english: "How do you do?", luo: "Iriyo nade? Inindo nade?" },
       { english: "I am well.", luo: "Ariyo maber. Anindo maber." },
-      { english: "Good-morning. / Good-evening.", luo: "Misawa. Okwe." },
-      { english: "Good-bye!", luo: "Inindi!" },
+      { english: "How are you (to a woman friend)? — I am all right, my friend, and you?", luo: "Ingima? — Angima, Nyamera (Omera), to in?" },
+      { english: "Good-morning. / Good-evening.", luo: "Misawa. Okwe. / Oyawore. Oimore." },
+      { english: "Good-bye!", luo: "Inindi! / Oriti!" },
+      { english: "Thank you.", luo: "Ero kamano." },
       { english: "What's the news of the day?", luo: "Dala (or: Pacho) wacho ang'o?" },
       { english: "No news.", luo: "Dala oling'. (or) Oling' aling'a." },
       { english: "May I come in?", luo: "Adonji e ot koso?" },
@@ -1155,28 +1157,37 @@ export const PHRASEBOOK_SECTIONS: DialogueSection[] = [
       { english: "Wait a little!", luo: "Ter mos! Rit monde!" },
       { english: "Tell me what you want.", luo: "Wachna gi m'idwaro." },
       { english: "I do not understand.", luo: "Okawinjo maber." },
+      { english: "Go away.", luo: "Dhiyo." },
       { english: "Do you understand?", luo: "Iwinjo?" },
       { english: "I must go now.", luo: "Koro onego adhi." },
       { english: "I do not know.", luo: "Akia." },
       { english: "I will not.", luo: "Adagi, Akwer, Okadwar." },
+      { english: "What do you say?", luo: "Iwacho ang'o?" },
+      { english: "Say it again.", luo: "Wachina kendo." },
       { english: "Speak slowly.", luo: "Wach mos. We ruyo." },
       { english: "Answer me.", luo: "Duokina wach." },
       { english: "Make haste.", luo: "Ret piyo." },
-      { english: "Be careful, take care.", luo: "Wothimos. Maki mos. Kaw mos." },
+      { english: "Be careful, take care.", luo: "Wothi mos. Maki mos. Kaw mos." },
       { english: "What is your name?", luo: "Nyingi ng'a?" },
-      { english: "What tribe/place do you belong to?", luo: "I jakanye?" },
+      { english: "What tribe/place do you belong to?", luo: "In jakanye?" },
       { english: "Where do you come from?", luo: "Ia kanye?" },
       { english: "Where are you going to?", luo: "Idhi kanye?" },
+      { english: "Come here.", luo: "Bi ka." },
       { english: "I have forgotten.", luo: "Wiya owil." },
       { english: "You have made a mistake.", luo: "Ibayo wachno." },
-      { english: "Silence! Keep quiet!", luo: "Ling! we wach!" },
+      { english: "Quite right! Well done!", luo: "Ero! Ber! Ero kamano!" },
+      { english: "Silence! Keep quiet!", luo: "Ling'! We wach!" },
       { english: "That will do! That is enough!", luo: "Oromo." },
       { english: "Never mind!", luo: "Ber, oromo. Onge gimoro." },
-      { english: "It is false!", luo: "Mano miriambo." },
+      { english: "Yes. / No.", luo: "Ee. / Oyo." },
+      { english: "It is false! Nonsense!", luo: "Mano miriambo." },
       { english: "Are you sure?", luo: "Ing'eyo maber?" },
       { english: "It is true.", luo: "Adieri." },
       { english: "Let me pass.", luo: "Barna. Leng'rina." },
       { english: "What time is it?", luo: "Sa adi?" },
+      { english: "Six o'clock. / Seven o'clock.", luo: "Sa apar g'ariyo. / Sa achiel." },
+      { english: "Quarter past seven. / Half past seven.", luo: "Sa achiel gi robo. / Sa achiel gi nus." },
+      { english: "Quarter to eight.", luo: "Sa ariyo oremo robo." },
       { english: "It is cloudy.", luo: "Polo otimo luoch." },
       { english: "It is clearing up.", luo: "Luoch oyawore." },
       { english: "The sun is hot.", luo: "Chieng' kech." },
@@ -1187,23 +1198,38 @@ export const PHRASEBOOK_SECTIONS: DialogueSection[] = [
   },
   {
     sectionId: "pb-2-household-meals",
-    title: "II. Household, Cooking, Market & Daily Tasks",
-    contextDescription: "Conversations regarding meals, kitchen tasks, market shopping, laundry, and household management.",
+    title: "II. Servants, Meals, Kitchen, Market & Laundry",
+    contextDescription: "Conversations regarding meals, kitchen tasks, market shopping, laundry, and household management (Handbook pp. 104–107).",
     sourcePages: [104, 105, 106, 107],
     exchanges: [
+      { english: "Call my boy.", luo: "Luongi bocha, obi." },
+      { english: "Where is my boy? — He is in the kitchen.", luo: "Bocha ere? — En jikon." },
+      { english: "Here I am, Sir.", luo: "An ka, Bwana." },
+      { english: "Why did you not come when I called you?", luo: "Marang'o ok nibi kane aluongi?" },
+      { english: "I did not hear you.", luo: "Ne ok awinji." },
+      { english: "Do not come late again.", luo: "Kik ichak iriwri kendo." },
       { english: "Tell the cook.", luo: "Wach ni jatedo." },
       { english: "I want something to eat.", luo: "Adwaro chiemo." },
+      { english: "Is the food ready? — Not yet.", luo: "Chiemo chiek? — Podi." },
+      { english: "Tell him to make haste.", luo: "Wachne oret piyo." },
       { english: "Bring some hot water.", luo: "Kel pi maliet." },
       { english: "Put the water on the fire.", luo: "Ket pi e kendo. Mur pi." },
       { english: "Wash those plates.", luo: "Lwok sendegi." },
-      { english: "That cup is not clean.", luo: "Kikombo ok ler." },
+      { english: "That cup is not clean.", luo: "Kikombe ok ler." },
+      { english: "Where is the tumbler?", luo: "Ere birauri?" },
       { english: "Wipe the spoon carefully.", luo: "Ywe kijiko mos." },
+      { english: "Bring a knife and fork.", luo: "Kel pala gi uma." },
       { english: "Light the lamp.", luo: "Mok taya." },
+      { english: "Put out the lamp.", luo: "Neg taya." },
       { english: "There is no oil in it.", luo: "Mo orumo." },
       { english: "Lay the table.", luo: "Pedhi mesa. Ndiki mesa." },
+      { english: "Put the food on the table.", luo: "Ket chiemo e wi mesa." },
       { english: "The water is not boiling.", luo: "Pi pok'oyienyo." },
       { english: "Boil some eggs.", luo: "Tedi tong'gwen moko." },
       { english: "Fetch the teapot.", luo: "Om binika mar chai." },
+      { english: "Bring some bread and butter.", luo: "Kel mkate gi mor dhiang'." },
+      { english: "The meat is tough. It is not cooked enough.", luo: "Ring'oni tek. Pok ochiek maber." },
+      { english: "Take away the plates.", luo: "Gol sende." },
       { english: "Ring the bell.", luo: "Go okot." },
       { english: "At what time do you have your meals?", luo: "Pile ichiemo sa adi?" },
       { english: "A little coffee when I get up.", luo: "Adwaro kahawa matin k'achiew." },
@@ -1216,9 +1242,12 @@ export const PHRASEBOOK_SECTIONS: DialogueSection[] = [
       { english: "There is plenty of fowl.", luo: "Gwen nitiye mang'eny." },
       { english: "Are there any vegetables?", luo: "Mboga bende nitiye?" },
       { english: "Make my bed properly.", luo: "Pedhina kitandana maber." },
-      { english: "Close the door.", luo: "Chiegi dhoot." },
+      { english: "Sweep my room every morning.", luo: "Ywe oda okinyi ka okinyi." },
+      { english: "Put my boots in the sun and clean them well.", luo: "Ket wuochena e chieng' kendo iywegi maber." },
+      { english: "Close the door. Open the window.", luo: "Chiegi dhoot. Yaw dirisa." },
       { english: "Give me the keys.", luo: "Mia funguo." },
-      { english: "Wash these clothes.", luo: "Lwok lepegi." },
+      { english: "Wash these clothes. Count the clothes.", luo: "Lwok lepegi. Kwan lepe." },
+      { english: "Use plenty of soap. Spread them in the sun.", luo: "Ti gi sabun mang'eny. Moygi e chieng'." },
       { english: "Have you washed yourself?", luo: "Iselwokori?" },
       { english: "I have a bath every day.", luo: "Alwokora pile." }
     ]
@@ -1226,13 +1255,15 @@ export const PHRASEBOOK_SECTIONS: DialogueSection[] = [
   {
     sectionId: "pb-3-village-health",
     title: "III. Visiting a Village, Agriculture & Medical Care",
-    contextDescription: "Visiting a village chief, inquiring about population, cattle, crops, local brewing, and treating illnesses or injuries.",
+    contextDescription: "Visiting a village chief, inquiring about population, cattle, crops, local brewing, and treating illnesses or injuries (Handbook pp. 107–109, 112).",
     sourcePages: [107, 108, 109, 112],
     exchanges: [
       { english: "Do not be afraid. I come to visit the people.", luo: "Kik iluor. Abiro neno jo dalani." },
       { english: "Are you well? — I am quite well.", luo: "Ringri ber? — Ee, ringra ber." },
       { english: "Are you the chief of this village?", luo: "In ruoth mar dalani?" },
       { english: "Where is the chief? — He is at home.", luo: "Ruoth ni kanye? — En dalane." },
+      { english: "Call him out. Tell him I want to see him.", luo: "Dhi luonge, obi. Wachne adwaro nene." },
+      { english: "Is it an important village?", luo: "Dalani ng'ongo?" },
       { english: "How many people? / How many houses?", luo: "Jo dalani gin adi? / Udi gin adi?" },
       { english: "Have you a good number of cattle?", luo: "In gi dhok mang'eny?" },
       { english: "Are the people quiet?", luo: "Pacho okwe?" },
@@ -1240,31 +1271,44 @@ export const PHRASEBOOK_SECTIONS: DialogueSection[] = [
       { english: "This is not clear water.", luo: "Pi oduore, oklew." },
       { english: "Do you get the water from the river?", luo: "Iumbo pi aora?" },
       { english: "What sort of food do you eat?", luo: "Ichamo chiemo manade?" },
-      { english: "Plenty of sweet potatoes.", luo: "Robuon emachamo mang'eny." },
+      { english: "Plenty of sweet potatoes.", luo: "Rabuon emachamo mang'eny." },
+      { english: "Do they plant matama and wimbi? — Yes, a great deal.", luo: "Gipidhi bel gi kal? — Ee, mang'eny ahinya." },
+      { english: "Do they also plant sesamum and groundnuts?", luo: "Bende gipidhi nyim gi njugu?" },
       { english: "Are there any beans? And meal and Indian corn?", luo: "Oganda nitiye? Gi mogo gi banda?" },
       { english: "Is the sugar-cane very sweet?", luo: "Niyang' mit ahinya?" },
       { english: "Where do you get the honey?", luo: "Mor kich inwang'o kanye?" },
+      { english: "How do you make beer? — With matama and wimbi.", luo: "Uloso kong'o nade? — Gi bel gi kal." },
       { english: "Is there anybody sick? What is the matter with him?", luo: "Nitiye ng'ato matuwo? Otuwo ang'o?" },
+      { english: "Since when has he been sick? — Since three days.", luo: "Otuwo nyaka karang'o? — Nyaka ndalo adek." },
       { english: "I have pains all over my body.", luo: "Ringra duto rama." },
       { english: "I cannot take any food.", luo: "Chiemo duto tinde otama." },
       { english: "I have fever. / I have diarrhoea. / I have dysentery.", luo: "Midusi maka. / Adiewo. / Adiewo remo." },
       { english: "I cannot sleep during the night.", luo: "Nindo otama otieno." },
+      { english: "Show me your tongue. Open your mouth.", luo: "Nyisa lewi. Ng'am dhogi." },
+      { english: "Take this medicine twice a day. Swallow it with water.", luo: "Madh yadhni diriyo chieng' achiel. Mwony gi pi." },
+      { english: "If you want anything, tell me.", luo: "K'idwaro gimoro, wachina." },
       { english: "My arm is broken.", luo: "Bada otur." },
       { english: "Put on this ointment. Tie it up with this bandage.", luo: "Wiriye yadhini. Itwe gi nangani." },
-      { english: "Do not stretch your arm for six days.", luo: "Kik irie badi ndalo auchiel." }
+      { english: "Do not stretch your arm for six days.", luo: "Kik irie badi ndalo auchiel." },
+      { english: "I shall come again. He is much better to-day.", luo: "Naduogi kendo. Kawono ohingo nyoro." }
     ]
   },
   {
     sectionId: "pb-4-working-cultivation",
     title: "IV. Working, Farming & Cultivation",
-    contextDescription: "Hiring workmen, discussing cultivation, planting and harvesting sweet potatoes, and farm tools.",
+    contextDescription: "Hiring workmen, discussing cultivation, planting and harvesting sweet potatoes, and farm tools (Handbook pp. 109–111).",
     sourcePages: [109, 110, 111],
     exchanges: [
+      { english: "What is your name? Where do you come from?", luo: "Nyingi ng'a? In jakanye?" },
+      { english: "Is your village far? — No, it is near.", luo: "Dalau bor? — Oyo, chiegini." },
       { english: "Do you want work? Do you know how to work?", luo: "Idwaro tich? Ing'eyo tich?" },
       { english: "Do you understand cultivation?", luo: "Ing'eyo pur?" },
       { english: "Do you know how to cut trees?", luo: "Ing'eyo tong'o yien?" },
       { english: "I know a little.", luo: "Ang'eyo matintin." },
       { english: "Are you a strong man?", luo: "In ng'ato matek?" },
+      { english: "I give you five florins a month.", luo: "Namii florin abich dwe achiel." },
+      { english: "Bring some more men. Come early to-morrow morning.", luo: "Kel ji moko. Kiny nibi okinyi." },
+      { english: "Come quick. Go on, work hard.", luo: "Bi piyo. Tiuru piyo." },
       { english: "You can rest a little in the middle of the day.", luo: "Unyalo yweyo matin odiechieng'." },
       { english: "Come along to the garden.", luo: "Ero, bi, wadhi puodho." },
       { english: "Take a hoe. Dig from here to there.", luo: "Maki kwer. Pur nyaka a kaeni nyaka chopi kacha." },
@@ -1276,32 +1320,39 @@ export const PHRASEBOOK_SECTIONS: DialogueSection[] = [
       { english: "Take out (dig up) the potatoes. Take care not to cut them.", luo: "Kuny rabuon. Kuny mos, kik ipudhigi." },
       { english: "Put them in these bags.", luo: "Rwakigi e kiropegi." },
       { english: "Make haste, it will rain. Send it home before the rain.", luo: "Reti, wang' koth nochwe. Ter dala ka koth podi." },
+      { english: "Leave the work now. Go home altogether.", luo: "Weuru tich koro. Dhiuru dala uduto." },
       { english: "You will be paid to-morrow.", luo: "Kiny nunwang' musachu." }
     ]
   },
   {
     sectionId: "pb-5-caravan-safari",
     title: "V. In Caravan, Travel & Safari",
-    contextDescription: "Organizing a journey, crossing rivers, pitching camp, finding guides, and trading for supplies.",
+    contextDescription: "Organizing a journey, crossing rivers, pitching camp, finding guides, and trading for supplies (Handbook pp. 111–117).",
     sourcePages: [111, 112, 113, 114, 115, 116, 117],
     exchanges: [
       { english: "We shall start to-morrow.", luo: "Kiny wanadhi safar." },
       { english: "Have you all the loads ready?", luo: "Isetweyo gikmoko duto?" },
       { english: "Some of the loads are too heavy.", luo: "Musike moko pek." },
-      { english: "Beat the drum.", luo: "Go bul." },
+      { english: "Beat the drum. Call the porters.", luo: "Go bul. Luongi joting'." },
+      { english: "Bring out the loads. Tie them up quickly.", luo: "Gol gikmoko duto. Twe piyo." },
       { english: "I have no rope.", luo: "Aonge tol." },
       { english: "Carry this box upright.", luo: "Sandugini iting' tir." },
       { english: "Is the tea ready? — I have finished, take it away.", luo: "Chai chiek? — Atieko, kaw oko." },
       { english: "Take this tent down.", luo: "Pudhi hema." },
       { english: "Count the loads. All ready then.", luo: "Kwan musike duto. Girumo giduto." },
       { english: "Halt, we will rest here.", luo: "Weuru, waywe kaeni." },
+      { english: "Put the loads down. The sun is very hot.", luo: "Keturu gikmoko piny. Chieng' kech ahinya." },
       { english: "What time shall we reach camp?", luo: "Wanachopi kampi karang'o?" },
       { english: "What is this place called?", luo: "Kaeni iluongo n'ang'o?" },
       { english: "Is this river deep? Can we wade across?", luo: "Aorani tut? D'wanyal yoro?" },
       { english: "Are there crocodiles?", luo: "Nyang' nitiye?" },
+      { english: "Is there a bridge? — No, the water carried the bridge away.", luo: "Oalo nitiye? — Oyo, pi otero oalo." },
+      { english: "Is there a canoe?", luo: "Yie nitiye?" },
       { english: "Here we are.", luo: "Wasechopo, yaye." },
       { english: "Where is my tent? Bring it here and pitch it.", luo: "Hemba ere? Kel kani, igur." },
+      { english: "Cook, make some tea.", luo: "Jatedo, losna chai." },
       { english: "Go and look for some clean water.", luo: "Dhi, dwar pi malew." },
+      { english: "Cut some firewood and light a big fire.", luo: "Tong' yien kendo imok mach maduong'." },
       { english: "I want a guide to show me the road.", luo: "Adwaro ng'ato, onyisa yo." },
       { english: "I am tired. I shall go to bed.", luo: "Aol. Adhi nindo." },
       { english: "Which is the best road to go by? This road is blocked.", luo: "Yo maber ere? Yorni odinore." },
@@ -1326,9 +1377,11 @@ export const COURSE_EXERCISES: CourseExerciseSet[] = [
     fullOriginalPromptText:
       "A broad bedstead. A small canoe. Beautiful baskets. Tall trees. Bad herdsmen. A good chief. Fierce watchmen. New chairs. An old book. A thick chain. A beautiful child. Clean children. Bad servants. The children of the chief. The chair of the man. The pipes of the woman. Three large poles of the house. Ten good workmen and five lazy porters. The house of the chief. Three long handles. The arm of the sick man. Large villages and fields. Five times. The twelfth cow. The first boy. Ten empty water-jars. The cooking-pot of the girl. The old house of the sick girls. The villages of the new headmen. Three looking-glasses and fifteen umbrellas. The lids of the cooking-pots. The high hills and deep rivers. The sixth hut and the ninth spear of the chief. Dirty cooking-pots of the chief. The small grinding stone. The grandchild of the chief. Three young heifers. Five young bulls.",
     guidedItems: [
+      { promptEnglish: "A broad bedstead.", solutionLuo: "Kitanda malach", grammarFocus: "Noun + Attributive Adjective (ma-)" },
       { promptEnglish: "A small canoe.", solutionLuo: "Yie moro matin (or Yie matin)", grammarFocus: "Noun + Indefinite + Qualitative Adjective" },
       { promptEnglish: "Beautiful baskets.", solutionLuo: "Aditini mabeyo", grammarFocus: "-ini plural + plural adjective (maber -> mabeyo)" },
       { promptEnglish: "Tall trees.", solutionLuo: "Yedhe maboyo (or Yien maboyo)", grammarFocus: "Plural noun + plural adjective (mabor -> maboyo)" },
+      { promptEnglish: "Bad herdsmen.", solutionLuo: "Jokwath maricho", grammarFocus: "Plural agent prefix Jo- + plural adjective (marach -> maricho)" },
       { promptEnglish: "A good chief.", solutionLuo: "Ruoth maber", grammarFocus: "Singular noun + attributive adjective" },
       { promptEnglish: "The children of the chief.", solutionLuo: "Nyithindi ruoth", grammarFocus: "Plural Construct Possessive" },
       { promptEnglish: "The chair of the man.", solutionLuo: "Kom dhano (or Kom mar dhano)", grammarFocus: "Simple Possessive after -m" },
@@ -1339,6 +1392,7 @@ export const COURSE_EXERCISES: CourseExerciseSet[] = [
       { promptEnglish: "The cooking-pot of the girl.", solutionLuo: "Aguch nyako", grammarFocus: "Construct Possessive exception (Agulu -> Aguch)" },
       { promptEnglish: "The high hills and deep rivers.", solutionLuo: "Gode maboyo gi aore matut", grammarFocus: "Plural nouns + adjectives joined by gi" },
       { promptEnglish: "The grandchild of the chief.", solutionLuo: "Nyakwar ruoth", grammarFocus: "Kinship construct possessive" },
+      { promptEnglish: "Three young heifers.", solutionLuo: "Nyiroye adek", grammarFocus: "Plural diminutive (Nyi- + roye) + cardinal number" },
       { promptEnglish: "Five young bulls.", solutionLuo: "Nyiruedhi abich", grammarFocus: "Plural diminutive (Nyi- + ruedhi) + cardinal number" }
     ]
   },
@@ -1353,6 +1407,7 @@ export const COURSE_EXERCISES: CourseExerciseSet[] = [
       { promptEnglish: "I carry a load.", solutionLuo: "Ating'o musigo.", grammarFocus: "1s Present Indefinite" },
       { promptEnglish: "We like him.", solutionLuo: "Waheroe (or Waherogo).", grammarFocus: "3s object suffix -e / -go" },
       { promptEnglish: "I myself can carry the chair.", solutionLuo: "An awon anyalo ting'o kom.", grammarFocus: "Emphatic reflexive 'awon'" },
+      { promptEnglish: "They themselves make the baskets.", solutionLuo: "Gin giwegi giloso aditini.", grammarFocus: "3p Emphatic reflexive 'giwegi'" },
       { promptEnglish: "The handle of your knife.", solutionLuo: "Log pandi.", grammarFocus: "Construct Possessive (Lok -> Log) + 2s possessive (Pala -> Pandi)" },
       { promptEnglish: "His mother and our father.", solutionLuo: "Min mare gi wonwa.", grammarFocus: "Irregular kinship possessives" },
       { promptEnglish: "My cloth is clean, yours (pl.) dirty.", solutionLuo: "Lawa ler, to maru chido.", grammarFocus: "Possessive suffix vs. Possessive substantive (maru)" },
@@ -1372,7 +1427,7 @@ export const COURSE_EXERCISES: CourseExerciseSet[] = [
     guidedItems: [
       { promptEnglish: "The day after to-morrow, I shall go on safari.", solutionLuo: "Orucha nadhi safar.", grammarFocus: "Time adverb 'orucha' + 1s Future" },
       { promptEnglish: "At cock-crow the porters will start.", solutionLuo: "Kogwen joting' nowuogi.", grammarFocus: "Traditional time phrase 'kogwen' + singular verb after plural noun" },
-      { promptEnglish: "My chair is outside, yours (pl.) inside.", solutionLuo: "Koma ni oko, to maru ni iye.", grammarFocus: "Adverbs of place 'oko' vs. 'iye'" },
+      { promptEnglish: "My chair is outside, yours (pl.) inside.", solutionLuo: "Komba ni oko, to maru ni iye.", grammarFocus: "Adverbs of place 'oko' vs. 'iye'" },
       { promptEnglish: "Our garden is near the river on this side.", solutionLuo: "Puodhwa ni but aora lokani.", grammarFocus: "Preposition 'but' + 'lokani'" },
       { promptEnglish: "Are you going alone? No, together with my sister.", solutionLuo: "Idhi kendi? Oyo, wadhi kodi nyamera (or kanyakachiel gi nyamera).", grammarFocus: "Reflexive 'kendi' vs. 'kodi / kanyakachiel gi'" }
     ]
@@ -1414,7 +1469,7 @@ export const COURSE_EXERCISES: CourseExerciseSet[] = [
     focusTopics: ["Negative Present, Past, Future", "Negative Imperative/Subjunctive (kik)", "'Not yet' (poki / podi ok)"],
     sourcePages: [121],
     fullOriginalPromptText:
-      "I shall not go to Kisumu to-day. Yesterday you did not bring my pipe. Why did you not plant Simsim? Because it has not rained enough yet. The road is too bad, therefore I cannot ride my bicycle. Do not allow the work-people to be idle. May I beat them if they don't work well. Yes, but do not tell it to me. Why have you not cleaned my bicycle as yet? I was not able to find time as yet. If you do not work better you will get a beating. If the boys be not careful, they will break the plates. If you had not got out of the way, you would have been killed. Please give me some tobacco? No I will not give it to you, because you did not finish your work well. Some people like the Natives very much, others do not like them. I cannot be on guard day and night. If it does not rain soon, famine will kill many people. Though the rain has not stopped as yet we shall play football. Don't tell so many lies—they will not save you. If you had told the truth, you would not have been punished.",
+      "I shall not go to Kisumu to-day. Yesterday you did not bring my pipe. Why did you not plant Simsim? Because it has not rained enough yet. The road is too bad, therefore I cannot ride my bicycle. Do not allow the work-people to be idle. May I beat them if they do not work? No, do not beat them. Why have you not cleaned my bicycle as yet? I was not able to find a cloth as yet. If you do not work better you will be dismissed. If the boys be not careful, they will break the plates. If you had not stepped aside, you would have been killed. Please give me some tobacco? No I will not give it to you, because you did not finish your work well. Some Europeans like the Natives very much, others do not like them. I cannot be on the road day and night. If it does not rain soon, famine will kill the people. Though the rain has not stopped as yet we shall play football. Don't tell so many lies—they will not save you. If you had told the truth, you would not have been beaten.",
     guidedItems: [
       { promptEnglish: "I shall not go to Kisumu to-day.", solutionLuo: "Okanadhi Kisumu tinende.", grammarFocus: "1s Negative Future (Okanadhi)" },
       { promptEnglish: "Yesterday you did not bring my pipe.", solutionLuo: "Nyoro ok nikel kwesina.", grammarFocus: "2s Negative Past (drops final -o of kelo)" },
@@ -1445,7 +1500,7 @@ export const COURSE_EXERCISES: CourseExerciseSet[] = [
     focusTopics: ["To be (bedo/bet, en)", "To have (bet gi / gi)", "To lack (aonge)", "Reflexives & Reciprocals", "Modals (onego, owinjore)"],
     sourcePages: [122, 123],
     fullOriginalPromptText:
-      "He is. You were. We are. They shall be. That they be. Thou art. I was. They were fools. Thou art a glutton. We shall be near the river. I had a beautiful knife. The Kavirondo have many cows. We shall have ten rupees. Thou hast one goat only. The old man had three children, but now he has only one. A good boy washes himself every day. A cat and a dog do not love one another. Thou shalt love thy neighbour as thyself. The natives often praise themselves only. The man fell from the tree. The murderer tried to hang himself. Tell (sing.) the children to be quiet. If you want to learn, listen to my words. You simply do nothing. You don't pay attention. It is difficult to learn the Kavirondo language by yourself. You ought to beat the boys, if they will not listen. We must observe God's commandments. A child must obey his parents. In order to learn the Kavirondo language you ought to talk often to the natives. We shall be without work unless we look for it ourselves. When is your master at home, I want to see him? Some boys salute Europeans in order to attract the latter's attention.",
+      "He is. You were. We are. They shall be. That they be. Thou art. I was. They were fools. Thou art a glutton. We shall be near the river. I had a beautiful knife. The Kavirondo have many cows. We shall have ten rupees. Thou hast one goat only. The old man had three children, but now he has only one. A good boy washes himself every day. A cat and a dog do not love one another. Thou shalt love thy neighbour as thyself. The natives often praise themselves only. The man fell from the tree. The criminal tried to hang himself. Tell (sing.) the children to be quiet. If you want to learn, listen to my words. You simply do nothing. You don't pay attention. It is difficult to learn the Kavirondo language by yourself. You ought to beat the learners if they do not listen. We must observe God's commandments. A child must obey his parents. In order to learn the Kavirondo language you ought to talk often to the natives. We shall be without food unless we steal it. When is your master at home, I want to see him? The native women walk past the Europeans smoking a pipe.",
     guidedItems: [
       { promptEnglish: "He is. You were. We are. They shall be. That they be.", solutionLuo: "Obet (or En). Nubet (or Ne un). Wabet (or Wan). Ginibedi. Gibedi.", grammarFocus: "Conjugation of 'Bedo / Bet'" },
       { promptEnglish: "I had a beautiful knife.", solutionLuo: "Nabet gi pala maber (or Ne an gi pala maber).", grammarFocus: "Past tense of 'to have' (Nabet gi)" },
@@ -1559,7 +1614,7 @@ export function conjugateVerb(infinitive: string): Record<string, Record<string,
       "1p": `wana${futureStem}`,
       "2p": `unu${futureStem}`,
       "3p": `gini${futureStem}`,
-      "1s_neg": `okanaher`.replace("her", futureStem),
+      "1s_neg": `okana${futureStem}`,
       "2s_neg": `okani${futureStem}`,
       "3s_neg": `okano${futureStem}`,
       "1p_neg": `okwana${futureStem}`,
@@ -1669,7 +1724,7 @@ export const LUO_GRAMMAR_SECTIONS: GrammarSection[] = COURSE_MODULES.flatMap((mo
           english: ex.english,
           explanation: vp.tenseOrMood,
         }))
-      ),
+      )
     ];
 
     return {
@@ -1729,93 +1784,93 @@ const SUPPLEMENTAL_LESSON_SENTENCES: Record<string, { target: string; source: st
     { target: 'Dholuo onge herufi c, j, q, v, x, z mag dho ngere.', source: 'Dholuo has no English letters c, j, q, v, x, z.' },
     { target: 'Wawacho dholuo maber.', source: 'We speak Dholuo well.' },
     { target: 'Soma wechegi maber.', source: 'Read these words well.' },
-    { target: 'Japuonj somo bugene.', source: 'The teacher reads his books.' },
+    { target: 'Japuonj somo bugene.', source: 'The teacher reads his books.' }
   ],
   'les-1-2-vowels-stress-elision': [
     { target: "Ng'ato achiel obiro oma.", source: 'One man comes to fetch me.' },
     { target: 'Ka wagero ot maber.', source: 'When we build a good house.' },
     { target: 'Podi onindo e ot.', source: 'He is still asleep in the house.' },
-    { target: 'Jatedo tedi chiemo.', source: 'The cook cooks food.' },
+    { target: 'Jatedo tedi chiemo.', source: 'The cook cooks food.' }
   ],
   'les-2-1-noun-classes-gender-diminutives': [
     { target: 'Dhano maber obiro.', source: 'A good person came.' },
     { target: 'Nyako dhi ka.', source: 'The girl goes here.' },
     { target: 'Woyi dwaro kuon.', source: 'The boy wants food.' },
     { target: 'Otieno nonyuol gotieno.', source: 'Otieno was born at night.' },
-    { target: 'Akinyi nonyuol gokinyi.', source: 'Akinyi was born in the morning.' },
+    { target: 'Akinyi nonyuol gokinyi.', source: 'Akinyi was born in the morning.' }
   ],
   'les-2-2-plural-formation': [
     { target: 'Guogi duto ringo.', source: 'All the dogs are running.' },
     { target: 'Dhok ni e laro.', source: 'The cattle are in the yard.' },
     { target: 'Nyithindo nindo.', source: 'The children are sleeping.' },
-    { target: 'Gweno chamo kal.', source: 'The chicken eats millet.' },
+    { target: 'Gweno chamo kal.', source: 'The chicken eats millet.' }
   ],
   'les-3-1-simple-possessive': [
     { target: 'Kwesi mar Petrus ni ka.', source: "Peter's pipe is here." },
     { target: 'Kombe mag won ni malo.', source: "Father's chairs are up there." },
-    { target: 'Min gi won ohero nyathi.', source: 'Mother and father love the child.' },
+    { target: 'Min gi won ohero nyathi.', source: 'Mother and father love the child.' }
   ],
   'les-3-2-construct-possessive': [
     { target: 'Oda ni but aora.', source: 'My house is near the river.' },
     { target: 'Jo dala duto nindo.', source: 'All the home people are sleeping.' },
-    { target: 'Dayo tedi kuon maber.', source: 'Grandmother cooks good ugali.' },
+    { target: 'Dayo tedi kuon maber.', source: 'Grandmother cooks good ugali.' }
   ],
   'les-4-1-adjectives-syntax-morphology': [
     { target: "Dhano maber ohero ng'wono.", source: 'A good person loves kindness.' },
     { target: "Dhiang' marachar ni e puodho.", source: 'The white cow is in the field.' },
-    { target: "Ruath marating' maduong'.", source: 'The black bull is large.' },
+    { target: "Ruath marating' maduong'.", source: 'The black bull is large.' }
   ],
   'les-4-2-numerals-comparison': [
     { target: 'An gi ji ariyo.', source: 'I have two people.' },
     { target: 'Kel kombe adek.', source: 'Bring three chairs.' },
-    { target: "Ng'at achiel obiro.", source: 'One person came.' },
+    { target: "Ng'at achiel obiro.", source: 'One person came.' }
   ],
   'les-5-1-personal-reflexive-possessive-pronouns': [
     { target: 'An adhi e chiro.', source: 'I am going to the market.' },
     { target: 'Wan wahero pacho.', source: 'We love home.' },
     { target: 'An awuon aloso oda.', source: 'I myself built my house.' },
-    { target: 'En kende odak kanyo.', source: 'He lives there alone.' },
+    { target: 'En kende odak kanyo.', source: 'He lives there alone.' }
   ],
   'les-5-2-demonstrative-relative-interrogative-indefinite': [
     { target: 'Ot ma en mara.', source: 'This house is mine.' },
     { target: 'Ji macha dhi chiro.', source: 'Those people are going to the market.' },
     { target: "Nyingi ng'a?", source: 'What is your name?' },
-    { target: 'Idhi kanye?', source: 'Where are you going?' },
+    { target: 'Idhi kanye?', source: 'Where are you going?' }
   ],
   'les-6-1-verb-roots-present-past-perfect': [
     { target: 'Ahero kwesi mara.', source: 'I love my pipe.' },
     { target: 'Nahero chiemo maber.', source: 'I loved good food.' },
     { target: 'Asehero wuoth ahinya.', source: 'I have loved the journey very much.' },
-    { target: 'Negisehero somo buge.', source: 'They had loved reading books.' },
+    { target: 'Negisehero somo buge.', source: 'They had loved reading books.' }
   ],
   'les-6-2-future-imperative-subjunctive-conditional': [
     { target: 'Wanaher pacho marwa.', source: 'We shall love our home.' },
     { target: 'Giniher timbe mabeyo.', source: 'They will love good deeds.' },
     { target: 'Ok adwar chiemo sani.', source: 'I do not want food now.' },
-    { target: 'Kik idhi e aora.', source: 'Do not go to the river.' },
+    { target: 'Kik idhi e aora.', source: 'Do not go to the river.' }
   ],
   'les-7-1-passive-reflexive-reciprocal-reduplicated': [
     { target: 'Aherora ahinya.', source: 'I love myself very much.' },
     { target: "Waherore ng'ato gi nyawadgi.", source: 'We love one another as companions.' },
-    { target: 'Ji duto chokore kaeni.', source: 'All people assemble here.' },
+    { target: 'Ji duto chokore kaeni.', source: 'All people assemble here.' }
   ],
   'les-7-2-defective-verbs-valency-syntax': [
     { target: "Onge ng'ato e ot.", source: 'There is nobody in the house.' },
     { target: 'Adwaro chamo rech gi kuon.', source: 'I want to eat fish with ugali.' },
-    { target: 'Madhi pi malew.', source: 'Drink clean water.' },
+    { target: 'Madhi pi malew.', source: 'Drink clean water.' }
   ],
   'les-8-1-adverbs-time-place-manner-idioms': [
     { target: 'Kiny wanadhi pacho.', source: 'Tomorrow we shall go home.' },
     { target: 'Tinende koth chwe.', source: 'Today it is raining.' },
     { target: 'Wach mos mondo awinji.', source: 'Speak slowly so that I understand you.' },
-    { target: 'Otiyo matek ahinya.', source: 'He worked very hard.' },
+    { target: 'Otiyo matek ahinya.', source: 'He worked very hard.' }
   ],
   'les-8-2-prepositions-conjunctions-interjections-salutations': [
     { target: 'Oyawore, nade?', source: 'Good morning, how are you?' },
     { target: 'Oriti, wanenre kendo.', source: 'Goodbye, we shall see each other again.' },
     { target: 'Thuol ni e ot.', source: 'A snake is in the house.' },
     { target: "Nobiro gi tong'.", source: 'He came with a spear.' },
-    { target: 'Tedi kuon mondo wacham.', source: 'Cook food so that we eat.' },
+    { target: 'Tedi kuon mondo wacham.', source: 'Cook food so that we eat.' }
   ],
 };
 
@@ -1826,6 +1881,7 @@ interface SkillWord {
   partOfSpeech?: string;
   hint?: string;
   audio?: string;
+  audioFile?: string | null;
   example?: string;
   response?: string;
 }
@@ -1994,15 +2050,41 @@ function buildExercisesForSkill(
 }
 
 function buildLessonTips(lesson: Lesson): string {
-  const parts: string[] = [lesson.summary];
+  const parts: string[] = [];
   for (const rule of lesson.grammarRules) {
-    parts.push(`${rule.title}: ${rule.explanation}`);
+    let section = `${rule.title}: ${rule.explanation}`;
     if (rule.subRules && rule.subRules.length > 0) {
-      parts.push(rule.subRules.join(' '));
+      section += '\n' + rule.subRules.map((s) => `• ${s}`).join('\n');
     }
+    parts.push(section);
   }
   return parts.join('\n\n');
 }
+
+const SECONDARY_PART_ICONS: Record<string, string> = {
+  Volume2: 'Megaphone',
+  Mic: 'Volume2',
+  UserCheck: 'Users',
+  Layers: 'BookOpen',
+  Link: 'Key',
+  Key: 'Link',
+  Palette: 'Sparkles',
+  Hash: 'Calculator',
+  Users: 'UserCheck',
+  HelpCircle: 'MessageCircle',
+  Play: 'Zap',
+  FastForward: 'RefreshCw',
+  Repeat: 'RefreshCw',
+  Sliders: 'Layers',
+  Clock: 'Calendar',
+  MessageCircle: 'Handshake',
+  MessageSquare: 'MessageCircle',
+  Home: 'Soup',
+  Heart: 'Hospital',
+  Sprout: 'Wheat',
+  Map: 'Compass',
+  Award: 'Crown',
+};
 
 function chunkWordsIntoSkills(
   baseId: string,
@@ -2027,7 +2109,7 @@ function chunkWordsIntoSkills(
         words: allWords,
         sentences,
         authoredExercises: buildExercisesForSkill(allWords, sentences),
-      },
+      }
     ];
   }
 
@@ -2047,10 +2129,11 @@ function chunkWordsIntoSkills(
     }
     const partId = p === 0 ? baseId : `${baseId}-part-${p + 1}`;
     const partTitle = `${baseTitle} (Part ${p + 1})`;
+    const partIcon = p === 0 ? icon : (SECONDARY_PART_ICONS[icon] || icon);
     skills.push({
       id: partId,
       title: partTitle,
-      icon,
+      icon: partIcon,
       description,
       tips,
       culturalNote,
@@ -2063,13 +2146,150 @@ function chunkWordsIntoSkills(
   return skills;
 }
 
+
+const DHOLUO_CURATED_PRONUNCIATIONS: Record<string, string> = {
+  dhiyo: 'dhee-yoh',
+  chak: 'chahk',
+  wacho: 'wah-choh',
+  tedo: 'teh-doh',
+  puodho: 'pwoh-dhoh',
+  thedho: 'theh-dhoh',
+  thieth: 'thee-ehth',
+  kelo: 'keh-loh',
+  lamo: 'lah-moh',
+  min: 'meen',
+  limo: 'lee-moh',
+  nego: 'neh-goh',
+  neno: 'neh-noh',
+  moso: 'moh-soh',
+  tado: 'tah-doh',
+  rito: 'ree-toh',
+  ndawa: 'ndah-wah',
+  ndemo: 'ndeh-moh',
+  ngege: 'ng-geh-geh',
+  "ng'owo": 'ng-oh-woh',
+  nyako: 'nyah-koh',
+  piny: 'peen-y',
+  mako: 'mah-koh',
+  kal: 'kahl',
+  lemo: 'leh-moh',
+  lendo: 'lehn-doh',
+  ler: 'lehr',
+  kwongo: 'kwohn-goh',
+  loko: 'loh-koh',
+  bam: 'bahm',
+  dhi: 'dhee',
+  bi: 'bee',
+  chiemo: 'chee-eh-moh',
+  madho: 'mah-dhoh',
+  metho: 'meh-thoh',
+  goyo: 'goh-yoh',
+  gocho: 'goh-choh',
+  chulo: 'choo-loh',
+  chudo: 'choo-doh',
+  kuon: 'kwoh-on',
+  rech: 'reh-ch',
+  pi: 'pee',
+  ot: 'oht',
+  udi: 'oo-dee',
+  gweno: 'gweh-noh',
+  gwen: 'gwehn',
+  "dhiang'": 'dhee-ahng',
+  dhok: 'dhohk',
+  nyathi: 'nyah-thee',
+  nyithindo: 'nyee-theen-doh',
+  wuoyi: 'wwoh-yee',
+  woyi: 'woh-yee',
+  rawera: 'rah-weh-rah',
+  japuonj: 'jah-pwoh-onj',
+  jatedo: 'jah-teh-doh',
+  jaluo: 'jah-lwoh',
+  joluo: 'joh-lwoh',
+  oyawore: 'oh-yah-woh-reh',
+  oriti: 'oh-ree-tee',
+  kiny: 'keen-y',
+  tinende: 'tee-nehn-deh',
+  thuol: 'thwoh-ohl',
+  "tong'": 'toh-ng',
+};
+
+const DHOLUO_CURATED_EXAMPLES: Record<string, string> = {
+  dhiyo: 'Ji macha dhi chiro. — Those people are going to the market.',
+  tedo: 'Jatedo tedi chiemo maber. — The cook cooks good food.',
+  wacho: 'Wawacho dholuo maber. — We speak Dholuo well.',
+  chak: 'Nyathi madho chak. — The child drinks milk.',
+  puodho: "Dhiang' ni e puodho. — The cow is in the field.",
+  min: 'Min gi won ohero nyathi. — Mother and father love the child.',
+  neno: 'Wanenre kendo kiny. — We shall see each other again tomorrow.',
+  limo: 'Walimo jirani tinende. — We are visiting our neighbor today.',
+  moso: 'Moso jowadwi gi luor. — Greet your companions with respect.',
+  rito: 'Japuonj rito nyithindo. — The teacher watches over the children.',
+  nyako: 'Nyako dhi ka sani. — The girl goes here now.',
+  ndawa: 'Kik imadh ndawa. — Do not smoke tobacco.',
+  ngege: 'Adwaro chamo rech ngege. — I want to eat tilapia fish.',
+  piny: 'Pinywa ni maber ahinya. — Our country is very good.',
+  kuon: 'Tedi kuon mondo wacham. — Cook ugali so that we eat.',
+  rech: 'Chamo rech moromo piny. — Eating fish that satisfies everyone.',
+  pi: 'Madhi pi maler. — Drink clean water.',
+  ot: 'Podi onindo e ot. — He is still asleep in the house.',
+  gweno: 'Gweno chamo kal. — The chicken eats millet.',
+  dhok: 'Dhok ni e laro. — The cattle are in the yard.',
+  nyithindo: 'Nyithindo nindo e ot. — The children are sleeping in the house.',
+  japuonj: 'Japuonj somo buge. — The teacher reads books.',
+  kelo: 'Kelo tong\' gi kuon. — Bring the spear and food.',
+  lamo: 'Lamo Nyasaye gokinyi. — Pray to God in the morning.',
+  tado: 'Gero tado mar ot. — Building the roof of the house.',
+};
+
+function getDholuoPronunciationGuide(luo: string): string {
+  const norm = luo.toLowerCase().trim();
+  if (DHOLUO_CURATED_PRONUNCIATIONS[norm]) {
+    return DHOLUO_CURATED_PRONUNCIATIONS[norm];
+  }
+  return luo
+    .toLowerCase()
+    .replace(/ng'/g, 'ng-')
+    .replace(/dh/g, 'dh-')
+    .replace(/th/g, 'th-')
+    .replace(/ny/g, 'ny-')
+    .replace(/mb/g, 'mb-')
+    .replace(/nd/g, 'nd-')
+    .replace(/([aeiou])([bcdfghjklmnpqrstvwxyz])/g, '$1-$2')
+    .replace(/-+/g, '-')
+    .replace(/^-|-$/g, '');
+}
+
+function getDholuoExampleSentence(luo: string, english: string, lessonId: string, grammarExamples: { luo: string; english: string }[]): string | undefined {
+  const norm = luo.toLowerCase().trim();
+  if (DHOLUO_CURATED_EXAMPLES[norm]) {
+    return DHOLUO_CURATED_EXAMPLES[norm];
+  }
+  // Search supplemental sentences
+  const sents = SUPPLEMENTAL_LESSON_SENTENCES[lessonId] || [];
+  for (const s of sents) {
+    if (s.target.toLowerCase().includes(norm)) {
+      return `${s.target} — ${s.source}`;
+    }
+  }
+  // Search grammar rule examples that are actual sentences (more than 1 word)
+  for (const ex of grammarExamples) {
+    if (ex.luo.toLowerCase().includes(norm) && ex.luo.trim().split(/\s+/).length >= 2) {
+      if (ex.luo.toLowerCase().trim() !== norm && ex.english.toLowerCase().trim() !== english.toLowerCase().trim()) {
+        return `${ex.luo} — ${ex.english}`;
+      }
+    }
+  }
+  return undefined;
+}
+
 // Build Units 1-8 from COURSE_MODULES
 const GRAMMAR_MODULE_UNITS: CourseUnit[] = COURSE_MODULES.map((mod) => {
   return {
     id: mod.moduleId,
-    title: `Module ${mod.moduleNumber}: ${mod.title}`,
+    title: mod.title,
     description: mod.description,
     icon: MODULE_ICONS[mod.moduleId] || 'BookOpen',
+    color: LUO_CONFIG.color,
     skills: mod.lessons.flatMap((lesson) => {
       const words: SkillWord[] = [];
       const seenTargets = new Set<string>();
@@ -2077,15 +2297,17 @@ const GRAMMAR_MODULE_UNITS: CourseUnit[] = COURSE_MODULES.map((mod) => {
 
       // 1. Key Vocabulary
       for (const vocab of lesson.keyVocabulary) {
-        const matchingExample = lesson.grammarRules
-          .flatMap((r) => r.examples)
-          .find((ex) => ex.luo.toLowerCase().includes(vocab.luo.toLowerCase().split(' ')[0]));
+        const grammarExamples = lesson.grammarRules.flatMap((r) => r.examples);
+        const phoneticPron = getDholuoPronunciationGuide(vocab.luo);
+        const contextualExample = getDholuoExampleSentence(vocab.luo, vocab.english, lesson.lessonId, grammarExamples);
+
         addUniqueWord(words, seenTargets, seenSources, {
           target: vocab.luo,
           source: vocab.english,
-          pronunciation: vocab.notes ? `${vocab.partOfSpeech} • ${vocab.notes}` : vocab.partOfSpeech,
+          pronunciation: phoneticPron,
           partOfSpeech: vocab.partOfSpeech,
-          example: matchingExample ? `${matchingExample.luo} — ${matchingExample.english}` : undefined,
+          hint: vocab.notes,
+          example: contextualExample,
         });
       }
 
@@ -2096,8 +2318,9 @@ const GRAMMAR_MODULE_UNITS: CourseUnit[] = COURSE_MODULES.map((mod) => {
             addUniqueWord(words, seenTargets, seenSources, {
               target: ex.transformedForm,
               source: `${ex.transformedMeaning} (from ${ex.baseForm})`,
-              pronunciation: `${table.category} • base ${ex.baseForm} (${ex.baseMeaning})`,
+              pronunciation: getDholuoPronunciationGuide(ex.transformedForm),
               partOfSpeech: 'noun',
+              hint: `${table.category} • base ${ex.baseForm} (${ex.baseMeaning})`,
               example: `${ex.baseForm} (${ex.baseMeaning}) → ${ex.transformedForm}`,
             });
           }
@@ -2106,8 +2329,9 @@ const GRAMMAR_MODULE_UNITS: CourseUnit[] = COURSE_MODULES.map((mod) => {
               addUniqueWord(words, seenTargets, seenSources, {
                 target: exc.transformedForm,
                 source: `plural of ${exc.baseForm} (${exc.baseMeaning})`,
-                pronunciation: exc.note || `Irregular form of ${exc.baseForm}`,
+                pronunciation: getDholuoPronunciationGuide(exc.transformedForm),
                 partOfSpeech: 'noun',
+                hint: exc.note || `Irregular form of ${exc.baseForm}`,
                 example: `${exc.baseForm} (${exc.baseMeaning}) → ${exc.transformedForm}`,
               });
             }
@@ -2122,8 +2346,9 @@ const GRAMMAR_MODULE_UNITS: CourseUnit[] = COURSE_MODULES.map((mod) => {
             addUniqueWord(words, seenTargets, seenSources, {
               target: row.affirmative[0],
               source: `${row.englishAffirmative} (${row.pronounLabel})`,
-              pronunciation: row.negative ? `Neg ${row.negative[0]} • ${vp.tenseOrMood}` : vp.tenseOrMood,
+              pronunciation: getDholuoPronunciationGuide(row.affirmative[0]),
               partOfSpeech: 'verb',
+              hint: row.negative ? `Neg ${row.negative[0]} • ${vp.tenseOrMood}` : vp.tenseOrMood,
               example: row.negative
                 ? `${row.pronounLabel} ${row.affirmative[0]} / ${row.negative[0]}`
                 : `${row.pronounLabel} ${row.affirmative[0]}`,
@@ -2139,8 +2364,8 @@ const GRAMMAR_MODULE_UNITS: CourseUnit[] = COURSE_MODULES.map((mod) => {
             addUniqueWord(words, seenTargets, seenSources, {
               target: ex.luo,
               source: ex.english,
-              pronunciation: ex.grammarNote || rule.title,
               partOfSpeech: 'phrase',
+              hint: ex.grammarNote || rule.title,
             });
           }
         }
@@ -2185,7 +2410,7 @@ const GRAMMAR_MODULE_UNITS: CourseUnit[] = COURSE_MODULES.map((mod) => {
         LESSON_ICONS[lesson.lessonId] || 'BookOpen',
         lesson.summary,
         buildLessonTips(lesson),
-        `Source: A Handbook of the Kavirondo Language (1920), pp. ${lesson.sourcePages.join(', ')}. ${lesson.grammarRules[0]?.explanation || lesson.summary}`,
+        `Source: A Handbook of the Kavirondo Language (1920), pp. ${lesson.sourcePages.join(', ')}.`,
         words,
         sentences,
         15
@@ -2197,10 +2422,11 @@ const GRAMMAR_MODULE_UNITS: CourseUnit[] = COURSE_MODULES.map((mod) => {
 // Build Unit 9 from PHRASEBOOK_SECTIONS
 const PHRASEBOOK_UNIT: CourseUnit = {
   id: 'mod-9-phrasebook-dialogues',
-  title: 'Module 9: Situational Phrasebook & Everyday Dialogues',
+  title: 'Situational Phrasebook & Everyday Dialogues',
   description:
-    'Practical conversational Dholuo across everyday greetings, weather, household tasks, market shopping, village visits, health care, farming, and safari travel (Pages 102–117).',
+    'Practical conversational Dholuo across greetings, household tasks, market shopping, health care, farming, and travel.',
   icon: 'MessageSquare',
+  color: LUO_CONFIG.color,
   skills: PHRASEBOOK_SECTIONS.flatMap((section) => {
     const words: SkillWord[] = [];
     const seenTargets = new Set<string>();
@@ -2213,8 +2439,8 @@ const PHRASEBOOK_UNIT: CourseUnit = {
       addUniqueWord(words, seenTargets, seenSources, {
         target: primaryLuo,
         source: ex.english,
-        pronunciation: ex.notes || section.title,
         partOfSpeech: 'phrase',
+        hint: ex.notes || section.title,
         example: ex.luo !== primaryLuo ? ex.luo : undefined,
       });
 
@@ -2227,12 +2453,17 @@ const PHRASEBOOK_UNIT: CourseUnit = {
       }
     }
 
+    const highlightLines = section.exchanges
+      .slice(0, 4)
+      .map((ex) => `• ${ex.luo} — ${ex.english}${ex.notes ? ` (${ex.notes})` : ''}`)
+      .join('\n');
+
     return chunkWordsIntoSkills(
       section.sectionId,
       section.title,
       PHRASEBOOK_ICONS[section.sectionId] || 'MessageCircle',
       section.contextDescription,
-      `${section.title}: ${section.contextDescription}`,
+      `Key Expressions:\n${highlightLines}`,
       `Source: A Handbook of the Kavirondo Language (1920), Phrasebook pp. ${section.sourcePages.join(', ')}.`,
       words,
       sentences,
@@ -2241,13 +2472,25 @@ const PHRASEBOOK_UNIT: CourseUnit = {
   }),
 };
 
+const EXERCISE_SKILL_ICONS = [
+  'Volume2',
+  'Layers',
+  'Key',
+  'Hash',
+  'Users',
+  'RefreshCw',
+  'Sliders',
+  'MessageCircle'
+];
+
 // Build Unit 10 from COURSE_EXERCISES
 const EXERCISES_UNIT: CourseUnit = {
   id: 'mod-10-handbook-exercises',
-  title: 'Module 10: Handbook Translation & Grammar Exercises (I–VIII)',
+  title: 'Translation & Grammar Practice Drills',
   description:
-    'Comprehensive translation and morphology drills from Pages 118–123 of the 1920 Handbook with model solutions and grammatical commentary.',
-  icon: 'Award',
+    'Comprehensive translation and morphology drills from the 1920 Handbook with model solutions and grammatical commentary.',
+  icon: 'Target',
+  color: LUO_CONFIG.color,
   skills: COURSE_EXERCISES.map((exSet, idx) => {
     const words: SkillWord[] = [];
     const seenTargets = new Set<string>();
@@ -2260,8 +2503,8 @@ const EXERCISES_UNIT: CourseUnit = {
       addUniqueWord(words, seenTargets, seenSources, {
         target: primaryLuo,
         source: item.promptEnglish,
-        pronunciation: item.grammarFocus,
         partOfSpeech: 'sentence',
+        hint: item.grammarFocus,
         example: item.solutionLuo !== primaryLuo ? item.solutionLuo : item.explanation,
       });
       if (isCleanPracticeSentence(primaryLuo, item.promptEnglish)) {
@@ -2273,7 +2516,6 @@ const EXERCISES_UNIT: CourseUnit = {
       }
     }
 
-    // Supplement with vocabulary from the corresponding module so every exercise skill has 10-14 words
     const linkedModule = COURSE_MODULES[idx % COURSE_MODULES.length];
     if (linkedModule && words.length < 12) {
       for (const lesson of linkedModule.lessons) {
@@ -2282,8 +2524,9 @@ const EXERCISES_UNIT: CourseUnit = {
           addUniqueWord(words, seenTargets, seenSources, {
             target: vocab.luo,
             source: vocab.english,
-            pronunciation: `${vocab.partOfSpeech}${vocab.notes ? ` • ${vocab.notes}` : ''}`,
+            pronunciation: getDholuoPronunciationGuide(vocab.luo),
             partOfSpeech: vocab.partOfSpeech,
+            hint: vocab.notes,
           });
         }
       }
@@ -2292,9 +2535,9 @@ const EXERCISES_UNIT: CourseUnit = {
     return {
       id: exSet.exerciseId,
       title: exSet.title,
-      icon: 'CheckSquare',
-      description: `Focus: ${exSet.focusTopics.join(', ')}.`,
-      tips: `${exSet.title}\n\nFocus Topics: ${exSet.focusTopics.join(' • ')}\n\nOriginal Handbook Prompt (pp. ${exSet.sourcePages.join(', ')}):\n${exSet.fullOriginalPromptText}`,
+      icon: EXERCISE_SKILL_ICONS[idx % EXERCISE_SKILL_ICONS.length],
+      description: `Practice ${exSet.focusTopics.slice(0, 3).join(', ')}.`,
+      tips: `Focus Topics: ${exSet.focusTopics.join(' • ')}\n\nHandbook Drill (pp. ${exSet.sourcePages.join(', ')}):\n${exSet.fullOriginalPromptText}`,
       culturalNote: `Source: A Handbook of the Kavirondo Language (1920), Exercises pp. ${exSet.sourcePages.join(', ')}.`,
       words,
       sentences,
@@ -2303,10 +2546,8 @@ const EXERCISES_UNIT: CourseUnit = {
   }),
 };
 
-
 // Build Unit 11 from luoProverbs, luoRiddles, and luoTongueTwisters
 const ORAL_LITERATURE_UNIT: CourseUnit = (() => {
-  // 1. Proverbs (Ngeche) — top 24 curated proverbs across 2 skills
   const proverbWords: SkillWord[] = [];
   const seenPT = new Set<string>();
   const seenPS = new Set<string>();
@@ -2316,8 +2557,8 @@ const ORAL_LITERATURE_UNIT: CourseUnit = (() => {
     addUniqueWord(proverbWords, seenPT, seenPS, {
       target: p.luo,
       source: cleanMeaning,
-      pronunciation: p.literal_translation ? `Lit. "${p.literal_translation}"` : 'Dholuo Proverb (Ngero)',
       partOfSpeech: 'proverb',
+      hint: p.literal_translation ? `Lit. "${p.literal_translation}"` : 'Dholuo Proverb (Ngero)',
       example: p.explanation || p.literal_translation || cleanMeaning,
     });
     if (proverbWords.length >= 24) break;
@@ -2334,12 +2575,11 @@ const ORAL_LITERATURE_UNIT: CourseUnit = (() => {
     [
       { target: "Acham ayieng' ne onego suna.", source: 'Greed killed the mosquito.' },
       { target: 'Rieko oloyo tek.', source: 'Wisdom surpasses physical strength.' },
-      { target: 'Wat en wat kata mabor.', source: 'Kinship remains kinship even from afar.' },
+      { target: 'Wat en wat kata mabor.', source: 'Kinship remains kinship even from afar.' }
     ],
     12
   );
 
-  // 2. Riddles (Miero) — top 15 riddles
   const riddleWords: SkillWord[] = [];
   const seenRT = new Set<string>();
   const seenRS = new Set<string>();
@@ -2348,8 +2588,8 @@ const ORAL_LITERATURE_UNIT: CourseUnit = (() => {
     addUniqueWord(riddleWords, seenRT, seenRS, {
       target: r.luo,
       source: `${r.english} (Answer — ${r.answer})`,
-      pronunciation: `Riddle Answer — ${r.answer}`,
       partOfSpeech: 'riddle',
+      hint: `Riddle Answer — ${r.answer}`,
       example: `${r.luo} — ${r.english} → ${r.answer}`,
     });
     if (riddleWords.length >= 14) break;
@@ -2357,20 +2597,19 @@ const ORAL_LITERATURE_UNIT: CourseUnit = (() => {
 
   const riddleSkills = chunkWordsIntoSkills(
     'oral-2-riddles',
-    'Traditional Riddles (Miero /Ngero)',
-    'HelpCircle',
+    'Traditional Riddles (Miero)',
+    'Lightbulb',
     'Interactive Dholuo riddles (Miero) sharpening metaphorical thinking and nature vocabulary.',
     'Dholuo riddles (Miero) are traditionally exchanged in the evening around the grandmother’s hearth (siwindhe) using the call-and-response "Miero! — Kwiri!".',
     'Source: Traditional Dholuo Siwindhe Riddle Corpus.',
     riddleWords,
     [
       { target: 'Abet e kombe adek kinde duto.', source: 'I always sit on three chairs.' },
-      { target: 'Adak e kind kuthe.', source: 'I live among thorns.' },
+      { target: 'Adak e kind kuthe.', source: 'I live among thorns.' }
     ],
     14
   );
 
-  // 3. Tongue Twisters & Phonetic Mastery
   const twisterWords: SkillWord[] = [];
   const seenTT = new Set<string>();
   const seenTS = new Set<string>();
@@ -2378,8 +2617,8 @@ const ORAL_LITERATURE_UNIT: CourseUnit = (() => {
     addUniqueWord(twisterWords, seenTT, seenTS, {
       target: t.luo,
       source: t.english,
-      pronunciation: 'Alliterative Dholuo Tongue Twister',
       partOfSpeech: 'phrase',
+      hint: 'Alliterative Dholuo Tongue Twister',
       example: `${t.luo} — ${t.english}`,
     });
   }
@@ -2387,32 +2626,1545 @@ const ORAL_LITERATURE_UNIT: CourseUnit = (() => {
   const twisterSkills = chunkWordsIntoSkills(
     'oral-3-tongue-twisters',
     'Dholuo Tongue Twisters & Diction',
-    'Mic',
-    'Master rapid dental/alveolar contrasts (dh/th vs. d/t) and nasal compounds (ng’ vs. ng) through traditional tongue twisters.',
+    'Megaphone',
+    'Master rapid dental/alveolar contrasts (dh/th vs. d/t) and nasal compounds through traditional tongue twisters.',
     'Practicing Dholuo tongue twisters trains rapid articulation of dental stops (dh, th), velar nasals (ng’), and construct-state consonant mutations.',
     'Source: Dholuo Oral Phonetics & Siwindhe Tradition.',
     twisterWords,
     [
       { target: 'Rawo luor liel, liel luor rawo.', source: 'The hippo fears the elephant, and the elephant fears the hippo.' },
-      { target: 'Atud tond atonga, tond atonga chodi.', source: 'I tie the basket rope, and the basket rope snaps.' },
+      { target: 'Atud tond atonga, tond atonga chodi.', source: 'I tie the basket rope, and the basket rope snaps.' }
     ],
     15
   );
 
   return {
     id: 'mod-11-oral-literature',
-    title: 'Module 11: Dholuo Oral Literature — Proverbs (Ngeche), Riddles & Tongue Twisters',
+    title: 'Dholuo Oral Literature — Proverbs, Riddles & Diction',
     description: 'Master classical Dholuo proverbs (Ngeche), evening riddles (Miero), and alliterative tongue twisters.',
-    icon: 'Sparkles',
+    icon: 'Award',
+    color: LUO_CONFIG.color,
     skills: [...proverbSkills, ...riddleSkills, ...twisterSkills],
   };
 })();
 
+export const PUBLIC_DOMAIN_DATASET_UNITS: CourseUnit[] = [
+  {
+    "id": "luo-unit-1",
+    "unitNumber": 1,
+    "title": "Traditional Naming (Juogi) & Homestead Expressions",
+    "description": "Master Dholuo time-of-day birth names (Juogi), agricultural expressions, and modern everyday phrases.",
+    "icon": "Sun",
+    "color": "#D4A843",
+    "skills": [
+      {
+        "id": "luo-pd-corpus-12-1",
+        "title": "Time-of-Day & Seasonal Naming (Juogi)",
+        "icon": "Baby",
+        "description": "Learn how Dholuo personal names reflect the time of day, weather, and birth order.",
+        "tips": "Traditional Dholuo birth names (nying juogi) pair masculine O- prefixes with feminine A- prefixes according to the hour or season of birth (e.g., Okinyi / Akinyi for dawn, Ochieng’ / Achieng’ for midday sun, Otieno / Atieno for night).",
+        "words": [
+          {
+            "target": "Okinyi (m.) / Akinyi (f.)",
+            "source": "Born at dawn (6–10 a.m. — okinyi)",
+            "pronunciation": "o-kiny-i",
+            "hint": "Dholuo dawn birth name"
+          },
+          {
+            "target": "Onyango (m.) / Anyango (f.)",
+            "source": "Born in the mid-morning sun (9–11 a.m.)",
+            "pronunciation": "ony-ang-o",
+            "hint": "Dholuo mid-morning birth name"
+          },
+          {
+            "target": "Ochieng' (m.) / Achieng' (f.)",
+            "source": "Born when the midday sun shines fiercely (chieng')",
+            "pronunciation": "och-ieng'",
+            "hint": "Dholuo midday birth name"
+          },
+          {
+            "target": "Odhiambo (m.) / Adhiambo (f.)",
+            "source": "Born in the late afternoon or evening (odhiambo)",
+            "pronunciation": "odh-iamb-o",
+            "hint": "Dholuo afternoon birth name"
+          },
+          {
+            "target": "Otieno (m.) / Atieno (f.)",
+            "source": "Born at night (otieno)",
+            "pronunciation": "o-tie-no",
+            "hint": "Dholuo night birth name"
+          },
+          {
+            "target": "Opiyo / Apiyo & Odongo / Adongo",
+            "source": "First-born twin (piyo = quick) & Second-born twin",
+            "pronunciation": "o-pi-yo / o-dong-o",
+            "hint": "Dholuo twin birth names"
+          },
+          {
+            "target": "Okoth / Akoth & Ooro / Aoro",
+            "source": "Born during rain (koth) & Born during dry season (oro)",
+            "pronunciation": "o-koth / o-o-ro",
+            "hint": "Dholuo weather birth names"
+          },
+          {
+            "target": "Odero / Adero & Okeyo / Akeyo",
+            "source": "Born during granary abundance (dero) & Born at harvest (keyo)",
+            "pronunciation": "o-de-ro / o-ke-yo",
+            "hint": "Dholuo harvest birth names"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Otieno nonyuol gotieno.",
+            "source": "Otieno was born at night."
+          },
+          {
+            "target": "Akinyi nonyuol gokinyi.",
+            "source": "Akinyi was born in the morning."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"Okinyi (m.) / Akinyi (f.)\" in Dholuo?",
+            "correctAnswer": "Born at dawn (6–10 a.m. — okinyi)",
+            "options": [
+              "Born at dawn (6–10 a.m. — okinyi)",
+              "Born in the mid-morning sun (9–11 a.m.)",
+              "Born when the midday sun shines fiercely (chieng')",
+              "Born in the late afternoon or evening (odhiambo)"
+            ],
+            "hint": "okinyi = morning/dawn"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each Dholuo birth name pair with its meaning:",
+            "correctAnswer": "Okinyi (m.) / Akinyi (f.): Born at dawn (6–10 a.m. — okinyi)",
+            "pairs": [
+              {
+                "left": "Okinyi (m.) / Akinyi (f.)",
+                "right": "Born at dawn (6–10 a.m. — okinyi)"
+              },
+              {
+                "left": "Onyango (m.) / Anyango (f.)",
+                "right": "Born in the mid-morning sun (9–11 a.m.)"
+              },
+              {
+                "left": "Ochieng' (m.) / Achieng' (f.)",
+                "right": "Born when the midday sun shines fiercely (chieng')"
+              },
+              {
+                "left": "Odhiambo (m.) / Adhiambo (f.)",
+                "right": "Born in the late afternoon or evening (odhiambo)"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Dholuo name pair for \"Born at night (otieno)\": ___",
+            "correctAnswer": "Otieno (m.) / Atieno (f.)",
+            "options": [
+              "Otieno (m.) / Atieno (f.)",
+              "Opiyo / Apiyo & Odongo / Adongo",
+              "Okinyi (m.) / Akinyi (f.)",
+              "Onyango (m.) / Anyango (f.)"
+            ],
+            "hint": "otieno = night"
+          }
+        ]
+      },
+      {
+        "id": "luo-pd-corpus-12-2",
+        "title": "Homestead, Farming & Everyday Expressions",
+        "icon": "Home",
+        "description": "Practice conversational Dholuo expressions for homestead peace, farming, river crossings, and daily life.",
+        "tips": "Notice how imperative verbs like \"Wach mos\" (Speak slowly), \"Maki kwer\" (Take a hoe), and \"Kuny rabuon mos\" (Dig up the sweet potatoes carefully) use concise verb-object order.",
+        "words": [
+          {
+            "target": "Dala wacho ang'o? — Dala oling'.",
+            "source": "What is the news of the homestead? — The homestead is peaceful.",
+            "pronunciation": "da-la wach-o ang'-o da-la o-ling'",
+            "hint": "Mill-Hill (1920, p. 102)"
+          },
+          {
+            "target": "Wach mos. We ruyo.",
+            "source": "Speak slowly. Do not hurry.",
+            "pronunciation": "wach mos we ru-yo",
+            "hint": "Mill-Hill (1920, p. 103)"
+          },
+          {
+            "target": "Polo otimo luoch; luoch oyawore.",
+            "source": "The sky is cloudy; the clouds are clearing up.",
+            "pronunciation": "po-lo o-ti-mo luoch",
+            "hint": "Mill-Hill (1920, p. 104)"
+          },
+          {
+            "target": "Maki kwer, wadhi puodho.",
+            "source": "Take a hoe, let us go to the garden.",
+            "pronunciation": "ma-ki kwer wadh-i puodh-o",
+            "hint": "Mill-Hill (1920, p. 112)"
+          },
+          {
+            "target": "Kuny rabuon mos, kik ipudhigi.",
+            "source": "Dig up the sweet potatoes carefully, do not cut them.",
+            "pronunciation": "kuny ra-buon mos kik i-pudh-i-gi",
+            "hint": "Mill-Hill (1920, p. 113)"
+          },
+          {
+            "target": "Aorani tut? D'wanyal yoro?",
+            "source": "Is this river deep? Can we wade across?",
+            "pronunciation": "ao-ra-ni tut d'-wany-al yo-ro",
+            "hint": "Mill-Hill (1920, p. 115)"
+          },
+          {
+            "target": "oro pesa e simu",
+            "source": "Sending money on a mobile phone",
+            "pronunciation": "o-ro pe-sa e si-mu",
+            "hint": "Modern Dholuo expression"
+          },
+          {
+            "target": "od thieth mar gweng'",
+            "source": "Community health dispensary / clinic",
+            "pronunciation": "od thieth mar gweng'",
+            "hint": "Modern Dholuo healthcare term"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Wach mos. We ruyo.",
+            "source": "Speak slowly. Do not hurry."
+          },
+          {
+            "target": "Maki kwer, wadhi puodho.",
+            "source": "Take a hoe, let us go to the garden."
+          },
+          {
+            "target": "Kuny rabuon mos, kik ipudhigi.",
+            "source": "Dig up the sweet potatoes carefully, do not cut them."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"Dala wacho ang'o? — Dala oling'.\" in Dholuo?",
+            "correctAnswer": "What is the news of the homestead? — The homestead is peaceful.",
+            "options": [
+              "What is the news of the homestead? — The homestead is peaceful.",
+              "Speak slowly. Do not hurry.",
+              "The sky is cloudy; the clouds are clearing up.",
+              "Take a hoe, let us go to the garden."
+            ],
+            "hint": "dala = homestead; oling' = is peaceful/quiet"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each Dholuo expression with its English meaning:",
+            "correctAnswer": "Wach mos. We ruyo.: Speak slowly. Do not hurry.",
+            "pairs": [
+              {
+                "left": "Dala wacho ang'o? — Dala oling'.",
+                "right": "What is the news of the homestead? — The homestead is peaceful."
+              },
+              {
+                "left": "Wach mos. We ruyo.",
+                "right": "Speak slowly. Do not hurry."
+              },
+              {
+                "left": "Polo otimo luoch; luoch oyawore.",
+                "right": "The sky is cloudy; the clouds are clearing up."
+              },
+              {
+                "left": "Maki kwer, wadhi puodho.",
+                "right": "Take a hoe, let us go to the garden."
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Dholuo sentence for \"Dig up the sweet potatoes carefully, do not cut them.\": ___",
+            "correctAnswer": "Kuny rabuon mos, kik ipudhigi.",
+            "options": [
+              "Kuny rabuon mos, kik ipudhigi.",
+              "Aorani tut? D'wanyal yoro?",
+              "Dala wacho ang'o? — Dala oling'.",
+              "Wach mos. We ruyo."
+            ],
+            "hint": "rabuon = sweet potatoes"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "luo-unit-2",
+    "unitNumber": 2,
+    "title": "Customary Institutions, Hobley 20 Kwero Totems & Classical Verbs",
+    "description": "Explore traditional Dholuo social institutions, the 20 clan totems (Kwero) recorded verbatim by C. W. Hobley (1903, p. 348) and Northcote (1907), and classical verb forms.",
+    "icon": "Globe",
+    "color": "#D4A843",
+    "skills": [
+      {
+        "id": "luo-open-dataset-13-1",
+        "title": "Customary Institutions & Hobley’s 20 Kwero Totems",
+        "icon": "Crown",
+        "description": "Learn Dholuo terms for traditional healers, bridewealth, taboos, and the 20 Ja-Luo Kwero totems in Tho-Luo recorded by C. W. Hobley (1903, p. 348).",
+        "tips": "C. W. Hobley (1903, pp. 326, 348) records 20 Ja-Luo Kwero totems in Tho-Luo: Nyang (crocodile), Ndiek (hyæna), Okwach (leopard), Bīm (baboon), Ongner (Cercopithecus monkey), Ogwang (wild cat — eaten by Gemi, Lego & Sakwa), Buwem (jackal), Achut-th (vulture), Agako (crow), Otenga (kite), Ngnech (Nile monitor), Nyelo (python — sacred ancestor of Kadimu), Gori gori (mongoose), Kumnēr (rock hyrax), Upuku (tortoise), Kuru (colobus), Imbirri (wart hog), Ogwan (frog), Iwang (crested crane — preserved by all except Gemi), and Arumtich (ground hornbill).",
+        "words": [
+          {
+            "target": "Ajuoga (pl. Ajuoge)",
+            "source": "Diviner / traditional healer",
+            "pronunciation": "a-juo-ga",
+            "hint": "Northcote (1907, p. 64)"
+          },
+          {
+            "target": "Keny / Dho keny",
+            "source": "Traditional bridewealth cattle settlement",
+            "pronunciation": "keny / dho keny",
+            "hint": "Northcote (1907, p. 62)"
+          },
+          {
+            "target": "Chira / Kwero",
+            "source": "Ritual taboo / clan totem prohibition (causing skin eruption if eaten)",
+            "pronunciation": "chi-ra / kwe-ro",
+            "hint": "Hobley (1903, pp. 347–348) & Northcote (1907)"
+          },
+          {
+            "target": "Nyelo (Kadimu ancestor)",
+            "source": "Python",
+            "pronunciation": "nyelo"
+          },
+          {
+            "target": "Ngnech",
+            "source": "Nile monitor lizard",
+            "pronunciation": "ngnech"
+          },
+          {
+            "target": "Upuku",
+            "source": "Tortoise",
+            "pronunciation": "upuku"
+          },
+          {
+            "target": "Nyang",
+            "source": "Crocodile",
+            "pronunciation": "nyang"
+          },
+          {
+            "target": "Ndiek",
+            "source": "Hyæna",
+            "pronunciation": "ndiek"
+          },
+          {
+            "target": "Okwach",
+            "source": "Leopard",
+            "pronunciation": "okwach"
+          },
+          {
+            "target": "Buwem",
+            "source": "Jackal",
+            "pronunciation": "buwem"
+          },
+          {
+            "target": "Bīm",
+            "source": "Baboon",
+            "pronunciation": "bīm"
+          },
+          {
+            "target": "Ongner",
+            "source": "Cercopithecus monkey",
+            "pronunciation": "ongner"
+          },
+          {
+            "target": "Kuru",
+            "source": "Colobus monkey",
+            "pronunciation": "kuru"
+          },
+          {
+            "target": "Ogwang",
+            "source": "Wild cat",
+            "pronunciation": "ogwang"
+          },
+          {
+            "target": "Achut-th",
+            "source": "Vulture",
+            "pronunciation": "achut-th"
+          },
+          {
+            "target": "Agako",
+            "source": "Crow",
+            "pronunciation": "agako"
+          },
+          {
+            "target": "Otenga",
+            "source": "Kite",
+            "pronunciation": "otenga"
+          },
+          {
+            "target": "Iwang",
+            "source": "Crested crane (preserved except in Gemi)",
+            "pronunciation": "iwang"
+          },
+          {
+            "target": "Arumtich",
+            "source": "Ground hornbill",
+            "pronunciation": "arumtich"
+          },
+          {
+            "target": "Gori gori",
+            "source": "Mongoose",
+            "pronunciation": "gori-gori"
+          },
+          {
+            "target": "Kumnēr",
+            "source": "Rock hyrax",
+            "pronunciation": "kumnēr"
+          },
+          {
+            "target": "Imbirri",
+            "source": "Wart hog",
+            "pronunciation": "imbirri"
+          },
+          {
+            "target": "Ogwan",
+            "source": "Frog",
+            "pronunciation": "ogwan"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Ajuoga thiedho jatuo.",
+            "source": "The traditional healer treats the patient."
+          },
+          {
+            "target": "Keny riwo anyuola ariyo.",
+            "source": "Marriage unites two families."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "match_pairs",
+            "prompt": "Match each Tho-Luo Kwero totem recorded by Hobley (1903, p. 348) with its English meaning:",
+            "correctAnswer": "Nyelo: Python (sacred ancestor of Kadimu)",
+            "pairs": [
+              {
+                "left": "Nyelo",
+                "right": "Python (sacred ancestor of Kadimu)"
+              },
+              {
+                "left": "Iwang",
+                "right": "Crested crane (Balearica gibbericeps)"
+              },
+              {
+                "left": "Arumtich",
+                "right": "Ground hornbill"
+              },
+              {
+                "left": "Kumnēr",
+                "right": "Rock hyrax"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Dholuo term for \"Traditional bridewealth cattle settlement\": ___",
+            "correctAnswer": "Keny / Dho keny",
+            "options": [
+              "Keny / Dho keny",
+              "Ajuoga (pl. Ajuoge)",
+              "Chira / Kwero",
+              "Nyelo"
+            ],
+            "hint": "Northcote (1907, p. 62)"
+          }
+        ]
+      },
+      {
+        "id": "luo-open-dataset-13-2",
+        "title": "Hobley Origin Narratives, Charms, Cosmology & Classical Clauses",
+        "icon": "Zap",
+        "description": "Master Apōdtho and Ramogi origin traditions, Chief Ugada’s charms, chieno tassels, mikayi succession, and Johnston (1902) / Mill-Hill (1920) verb clauses.",
+        "tips": "Hobley (1903, pp. 326–331, 345–359) records Apōdtho carving two milking/urine bowls from the Were tree, the Simbi abūr crater lake (\"abūr\" = hole/pit), the married woman’s chieno tassel of tuoro aloe fibre, Chief Ugada’s 4 omeni wrist sticks, Chieng (Sun & Deity) and Polo (sky/heavens), the Isira blood-feud taboo, and first-wife (mikayi) chieftainship succession.",
+        "words": [
+          {
+            "target": "Apōdtho",
+            "source": "First ancestor of the Ja-Luo",
+            "pronunciation": "apōdtho"
+          },
+          {
+            "target": "Ramogi",
+            "source": "Founder of Kavirondo settlements at Ramogi Hill",
+            "pronunciation": "ramogi"
+          },
+          {
+            "target": "Were",
+            "source": "Tree from which Apōdtho carved two milking bowls",
+            "pronunciation": "were"
+          },
+          {
+            "target": "Chindu • Anyango • Rajoki • Jimbo • Uyua • Mbunga",
+            "source": "Genealogical patriarchs linking Apōdtho and Ramogi across Usakwa, Korando, and Kanyamwa",
+            "pronunciation": "chin-du / a-nya-ngo / ra-jo-ki / jim-bo / u-yu-a / m-bu-nga",
+            "hint": "Hobley (1903, pp. 327–331 — Chindu cf. Luganda Kintu, p. 332)"
+          },
+          {
+            "target": "Chieno (mar tuoro)",
+            "source": "Married woman’s 6–8 in. aloe-fibre tassel",
+            "pronunciation": "chieno"
+          },
+          {
+            "target": "Omeni",
+            "source": "Chief Ugada’s 4 wooden wrist sticks",
+            "pronunciation": "omeni"
+          },
+          {
+            "target": "Thako",
+            "source": "Grandmother’s 3-holed iron charm",
+            "pronunciation": "thako"
+          },
+          {
+            "target": "Nya-Luo",
+            "source": "Ancient yellow beads",
+            "pronunciation": "nya-luo"
+          },
+          {
+            "target": "Chieng",
+            "source": "Sun & Supreme Deity",
+            "pronunciation": "chieng"
+          },
+          {
+            "target": "Polo",
+            "source": "Heavens / daylight sky",
+            "pronunciation": "polo"
+          },
+          {
+            "target": "Simbi abūr",
+            "source": "Crater lake in Kalachonyo (abūr = hole/pit)",
+            "pronunciation": "simbi-abūr"
+          },
+          {
+            "target": "Loka",
+            "source": "On the other side (south of Kavirondo Gulf)",
+            "pronunciation": "loka"
+          },
+          {
+            "target": "Isira",
+            "source": "24-hour fatal blood-feud meal taboo",
+            "pronunciation": "isira"
+          },
+          {
+            "target": "Mikayi",
+            "source": "First-wife chieftainship succession law",
+            "pronunciation": "mikayi"
+          },
+          {
+            "target": "Winyo orengo",
+            "source": "The birds flew away",
+            "pronunciation": "winyo-orengo"
+          },
+          {
+            "target": "Go bul",
+            "source": "Beat the drum",
+            "pronunciation": "go-bul"
+          },
+          {
+            "target": "Wawacho",
+            "source": "We say / We speak",
+            "pronunciation": "wawacho"
+          },
+          {
+            "target": "Ang’eyo",
+            "source": "I know",
+            "pronunciation": "angeyo"
+          },
+          {
+            "target": "Akia",
+            "source": "I do not know",
+            "pronunciation": "akia"
+          },
+          {
+            "target": "Adhiyo",
+            "source": "I went / I am going",
+            "pronunciation": "adhiyo"
+          },
+          {
+            "target": "Abiro",
+            "source": "I am coming",
+            "pronunciation": "abiro"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Go bul.",
+            "source": "Beat the drum."
+          },
+          {
+            "target": "Winyo orengo.",
+            "source": "The birds flew away."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "match_pairs",
+            "prompt": "Match each Ja-Luo term recorded by C. W. Hobley (1903) with its meaning:",
+            "correctAnswer": "Chieng: Both the Sun and the Supreme Deity (p. 358)",
+            "pairs": [
+              {
+                "left": "Chieng",
+                "right": "Both the Sun and the Supreme Deity (p. 358)"
+              },
+              {
+                "left": "Polo",
+                "right": "The daylight sky / heavens (p. 358)"
+              },
+              {
+                "left": "Chieno (tuoro)",
+                "right": "Married woman’s white aloe-fibre tassel (pp. 350–351)"
+              },
+              {
+                "left": "Simbi abūr",
+                "right": "Crater lake in Kalachonyo (abūr = hole/pit, p. 350)"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Dholuo expression for \"I do not know\": ___",
+            "correctAnswer": "Akia",
+            "options": [
+              "Akia",
+              "Ang'eyo",
+              "Go bul",
+              "Winyo orengo"
+            ],
+            "hint": "Johnston (1902)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "luo-unit-3",
+    "unitNumber": 3,
+    "title": "Ch. XVIII Ja-luo (Nyifwa) Ethnography & Set 3 Vocabulary",
+    "description": "Explore Chapter XVIII Ja-luo ethnography (Chieng sun worship, Nyaluo jasper beads, Uvino smiths, Kiviri ordeal, Chief Odua's prophecy) and Set 3 vocabulary & phonetic footnotes [-11], [-12], [-13] (pp. 926–935).",
+    "icon": "Sun",
+    "color": "#D4A843",
+    "skills": [
+      {
+        "id": "luo-johnston-1902-set3-skill",
+        "title": "Set 3 Ja-luo Vocabulary, Phonetic Footnotes & Chapter XVIII",
+        "icon": "BookOpen",
+        "description": "Master verified Set 3 Ja-luo headwords, footnotes [-11]–[-13], and Chapter XVIII cultural terms.",
+        "tips": "Johnston's three phonetic footnotes to Set 3 (pp. 928, 933, 934) explain palatal stop articulation in 1902 Ja-luo: [-11] Retc ('Fish') is pronounced 'Retch'; [-12] Ratc ('Bad') often sounds like 'Raty'; and [-13] in Aciemo ('I eat'), 'The c in Ja-luo is pronounced very like ty.'",
+        "words": [
+          {
+            "target": "Retc",
+            "source": "Fish",
+            "pronunciation": "retc"
+          },
+          {
+            "target": "Ratc",
+            "source": "Bad",
+            "pronunciation": "ratc"
+          },
+          {
+            "target": "Aciemo",
+            "source": "I eat",
+            "pronunciation": "aciemo"
+          },
+          {
+            "target": "Ñama ñongo",
+            "source": "Great man",
+            "pronunciation": "ñama-ñongo"
+          },
+          {
+            "target": "Kalīni",
+            "source": "Ground-nut",
+            "pronunciation": "kalīni"
+          },
+          {
+            "target": "Nyapuñ lak",
+            "source": "Tooth, molar",
+            "pronunciation": "nyapuñ-lak"
+          },
+          {
+            "target": "Nyaluógono",
+            "source": "Tooth, canine",
+            "pronunciation": "nyaluógono"
+          },
+          {
+            "target": "Ñutu",
+            "source": "Woman, young",
+            "pronunciation": "ñutu"
+          },
+          {
+            "target": "Ukanamī",
+            "source": "I give not",
+            "pronunciation": "ukanamī"
+          },
+          {
+            "target": "Chieng",
+            "source": "Sun-god",
+            "pronunciation": "chieng"
+          },
+          {
+            "target": "Kiketi & Nyaluo (1 cow per bead)",
+            "source": "Blue glass & Maragolia jasper beads",
+            "pronunciation": "kiketi-nyaluo"
+          },
+          {
+            "target": "Dema",
+            "source": "Wicker fish-trap",
+            "pronunciation": "dema"
+          },
+          {
+            "target": "Yothetth (Uvino)",
+            "source": "Blacksmith caste",
+            "pronunciation": "yothetth"
+          },
+          {
+            "target": "Jamkingo",
+            "source": "Secret society",
+            "pronunciation": "jamkingo"
+          },
+          {
+            "target": "Kiviri",
+            "source": "Boiling-gruel ordeal",
+            "pronunciation": "kiviri"
+          },
+          {
+            "target": "Owiti / Awiti & Opio / Apio",
+            "source": "Threshold & twin names",
+            "pronunciation": "owiti"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "An nakel — Atugo — Watimo — Wawaci — Añeyo — Ukanamī.",
+            "source": "I bring — I dance — We make — We say — I know — I give not (Johnston 1902, Set 3, pp. 933–935)."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "luo-unit-4",
+    "unitNumber": 4,
+    "title": "Complete Line-by-Line Ethnographic & Legal Audit",
+    "description": "Exhaustive line-by-line study of G. A. S. Northcote's 1907 JRAI monograph (Vol. 37, pp. 58–66): Wadilai/Acholi/Aluri/Dinka kinship, 1883 cattle plague diet & dowry shift, 3-goat tassel fine, 3-rupee hut tax, full gala dress, 3 ft 6 in. × 6 ft buffalo shields, semi-feudal council & passive secession, individual shamba plots, 2 ft raised × 5 ft × 3 ft wicker granaries, Case Study A–F succession, sun-god wedding offering & first dinner rite, 6-day vs. 3-day wailing & recumbent burial, 3 court/medical cases, rain-maker's reed ritual & Indian shopkeeper letter, 5 fishing methods, 8-stringed harp, grandfather litigation, and 9 Kisumu occupations.",
+    "icon": "BookOpen",
+    "color": "#D4A843",
+    "skills": [
+      {
+        "id": "luo-u14-northcote-1907-skill-1",
+        "title": "Northcote: Naming, Shamba & Askari Law, Succession Case A–F & Customary Rites",
+        "icon": "Scale",
+        "description": "Master all 12 indigenous terms, naming traditions, customary land/succession rules, and ethnographic records from G. A. S. Northcote (1907, pp. 58–66).",
+        "tips": "Northcote (1907, p. 62) records the 4 time-of-day birth names (onyango, oching, odiambo, otieno) alongside 3 hereditary nicknames: obele (\"the man who owned much mtama [millet]\"), oliech (\"the man who killed an elephant\"), and obonyo (\"the man like a locust\").",
+        "words": [
+          {
+            "target": "Jaluo",
+            "source": "Proper endonym of the Nilotic Kavirondo",
+            "pronunciation": "ja-lu-o",
+            "hint": "Northcote (1907, JRAI Vol. 37, p. 58)"
+          },
+          {
+            "target": "onyango",
+            "source": "morning",
+            "pronunciation": "onyango"
+          },
+          {
+            "target": "oching",
+            "source": "noon",
+            "pronunciation": "oching"
+          },
+          {
+            "target": "odiambo",
+            "source": "afternoon",
+            "pronunciation": "odiambo"
+          },
+          {
+            "target": "otieno",
+            "source": "night",
+            "pronunciation": "otieno"
+          },
+          {
+            "target": "obele",
+            "source": "much mtama",
+            "pronunciation": "obele"
+          },
+          {
+            "target": "oliech",
+            "source": "killed an elephant",
+            "pronunciation": "oliech"
+          },
+          {
+            "target": "obonyo",
+            "source": "like a locust",
+            "pronunciation": "obonyo"
+          },
+          {
+            "target": "shamba",
+            "source": "individual plot",
+            "pronunciation": "shamba"
+          },
+          {
+            "target": "askari",
+            "source": "retainer/page",
+            "pronunciation": "askari"
+          },
+          {
+            "target": "mtama",
+            "source": "millet",
+            "pronunciation": "mtama"
+          },
+          {
+            "target": "Bwana",
+            "source": "magistrate",
+            "pronunciation": "bwana"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Onyango nonyuol gokinyi, Oching odiechieng, Odiambo godhiambo, to Otieno gotieno.",
+            "source": "Onyango was born in the morning, Oching at noon, Odiambo in the afternoon, and Otieno at night (Northcote 1907, p. 62)."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "luo-unit-5",
+    "unitNumber": 5,
+    "title": "Modern Dholuo Verbs, Broadcast & Proverbs",
+    "description": "Core Dholuo action verbs, Dala FM civic vocabulary, and oral proverbs from Kencorpus, Google SMOL/GATITOS, and The Thiomi Dataset",
+    "icon": "Radio",
+    "color": "#0EA5E9",
+    "skills": [
+      {
+        "id": "luo-open-skill-1",
+        "title": "Core Action Verbs & Civic Terms",
+        "icon": "Zap",
+        "description": "Essential Dholuo verbs and public life vocabulary from Kencorpus and GATITOS",
+        "grammarTip": "Most Dholuo transitive verbs in the citation form end in -o (e.g., chamo 'to eat', chulo 'to pay', doyo 'to weed', fwenyo 'to discover').",
+        "culturalNote": "Compiled from Kencorpus/KenCorpus_text & KenPOS (Wanjawa et al. 2022/2023, CC-BY-4.0), Google SMOL/GATITOS (CC-BY-4.0), and The Thiomi Dataset (CC-BY-4.0).",
+        "words": [
+          {
+            "target": "chamo",
+            "source": "To eat",
+            "pronunciation": "cha-mo"
+          },
+          {
+            "target": "chielo",
+            "source": "To fry or roast",
+            "pronunciation": "chie-lo"
+          },
+          {
+            "target": "chulo",
+            "source": "To pay or compensate",
+            "pronunciation": "chu-lo"
+          },
+          {
+            "target": "chopo",
+            "source": "To arrive or reach",
+            "pronunciation": "cho-po"
+          },
+          {
+            "target": "choko",
+            "source": "To gather or collect",
+            "pronunciation": "cho-ko"
+          },
+          {
+            "target": "doyo",
+            "source": "To weed a farm",
+            "pronunciation": "do-yo"
+          },
+          {
+            "target": "dwoko",
+            "source": "To return or answer",
+            "pronunciation": "dwo-ko"
+          },
+          {
+            "target": "fwenyo",
+            "source": "To discover or recognize",
+            "pronunciation": "fwe-nyo"
+          },
+          {
+            "target": "Japuonjre",
+            "source": "Student or pupil",
+            "pronunciation": "ja-puo-njre"
+          },
+          {
+            "target": "Jaod Bura",
+            "source": "Member of Parliament",
+            "pronunciation": "ja-od bu-ra"
+          },
+          {
+            "target": "Jofwambo",
+            "source": "Journalists / news reporters",
+            "pronunciation": "jo-fwa-mbo"
+          },
+          {
+            "target": "Migao mar Pith gi Pur",
+            "source": "Ministry of Agriculture and Livestock",
+            "pronunciation": "mi-ga-o mar pith gi pur"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Adiera en kwiri, to adiera ok tow.",
+            "source": "Truth is medicine, and truth never rots."
+          },
+          {
+            "target": "Alot michayo ema tieko kuon.",
+            "source": "The despised vegetable is the one that finishes the ugali."
+          },
+          {
+            "target": "Sigana mar opuk gi apuoyo.",
+            "source": "The story of the tortoise and the hare."
+          }
+        ]
+      },
+        {
+        "id": "luo-corpus-sentences-skill-1",
+        "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
+        "icon": "MessageSquare",
+        "description": "Practice verified Dholuo (Luo) parallel sentences and vocabulary from commercially permissive corpora.",
+        "culturalNote": "Kencorpus Dholuo (KenCorpus_text, KenPOS, KenTrans, CC-BY-4.0), Thiomi (CC-BY-4.0), Google SMOL/GATITOS (en_luo, CC-BY-4.0), LughaGen Dholuo (CC-BY-SA-4.0), ThinkKenya/Waleghwa & Common Voice 25.0 (CC-BY-4.0/CC0-1.0), African Next Voices Dholuo (CC-BY-4.0), Sunbird SALT (CC-BY-4.0), Code-170k-luo (CC-BY-4.0), SDTC (CC-BY-4.0), CLDF ASJP v20 (CC-BY-4.0) & Public Domain Historical Lexicons (Hobley 1902/1903, Johnston 1902, Northcote 1907, Roscoe & Willis 1915, Mill-Hill Fathers 1920 & BFBS 1921)",
+        "words": [
+                  {
+                            "target": "Kwe",
+                            "source": "Peace",
+                            "pronunciation": "kweh"
+                  },
+                  {
+                            "target": "Misawa",
+                            "source": "Hello",
+                            "pronunciation": "mee-sah-wah / behr"
+                  },
+                  {
+                            "target": "Okwe!",
+                            "source": "Peace!",
+                            "pronunciation": "oh-kweh"
+                  },
+                  {
+                            "target": "Rwako",
+                            "source": "Welcome",
+                            "pronunciation": "rwa-ko / don-ju-ru"
+                  },
+                  {
+                            "target": "Erokamano",
+                            "source": "Thank you",
+                            "pronunciation": "eh-roh-kah-mah-noh"
+                  },
+                  {
+                            "target": "ukwe",
+                            "source": "Salutation",
+                            "pronunciation": "ukwe"
+                  },
+                  {
+                            "target": "ohombo",
+                            "source": "Salute, to",
+                            "pronunciation": "o-hombo"
+                  },
+                  {
+                            "target": "wene",
+                            "source": "Pardon, to",
+                            "pronunciation": "we-ne"
+                  },
+                  {
+                            "target": "Misawa!",
+                            "source": "Peace! / Hello!",
+                            "pronunciation": "mee-sah-wah"
+                  },
+                  {
+                            "target": "Inindi",
+                            "source": "Goodbye / Sleep well",
+                            "pronunciation": "ee-neen-dee"
+                  }
+        ],
+        "sentences": [
+                  {
+                            "target": "Ero kamano",
+                            "source": "Thank you / Well done"
+                  },
+                  {
+                            "target": "Wagoyo ni Nyasaye erokamano",
+                            "source": "We thank God"
+                  },
+                  {
+                            "target": "Misawa. Okwe",
+                            "source": "Good morning / Good evening / Peace"
+                  },
+                  {
+                            "target": "Misawa! — Misawa ahinya!",
+                            "source": "Hail! / Peace! — Great peace!"
+                  },
+                  {
+                            "target": "Oyawore! — Oyawore ahinya!",
+                            "source": "Good morning! — Good morning to you!"
+                  },
+                  {
+                            "target": "Oimore! — Oimore ahinya!",
+                            "source": "Good evening! — Good evening to you!"
+                  },
+                  {
+                            "target": "Inindo nade? — Anindo maber.",
+                            "source": "How did you sleep? — I slept well."
+                  },
+                  {
+                            "target": "Tich mar programu",
+                            "source": "Function / Computer program routine"
+                  }
+        ]
+},
+        {
+        "id": "luo-corpus-sentences-skill-2",
+        "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
+        "icon": "Globe",
+        "description": "Master multi-domain Dholuo (Luo) sentences for healthcare, transport, and community safety.",
+        "culturalNote": "Kencorpus Dholuo (KenCorpus_text, KenPOS, KenTrans, CC-BY-4.0), Thiomi (CC-BY-4.0), Google SMOL/GATITOS (en_luo, CC-BY-4.0), LughaGen Dholuo (CC-BY-SA-4.0), ThinkKenya/Waleghwa & Common Voice 25.0 (CC-BY-4.0/CC0-1.0), African Next Voices Dholuo (CC-BY-4.0), Sunbird SALT (CC-BY-4.0), Code-170k-luo (CC-BY-4.0), SDTC (CC-BY-4.0), CLDF ASJP v20 (CC-BY-4.0) & Public Domain Historical Lexicons (Hobley 1902/1903, Johnston 1902, Northcote 1907, Roscoe & Willis 1915, Mill-Hill Fathers 1920 & BFBS 1921)",
+        "words": [
+                  {
+                            "target": "Achiel",
+                            "source": "One",
+                            "pronunciation": "ah-chee-ehl"
+                  },
+                  {
+                            "target": "Ariyo",
+                            "source": "Two",
+                            "pronunciation": "ah-ree-yoh"
+                  },
+                  {
+                            "target": "Auchiel",
+                            "source": "Six",
+                            "pronunciation": "ah-oo-chee-ehl"
+                  },
+                  {
+                            "target": "Apar",
+                            "source": "Ten",
+                            "pronunciation": "ah-pahr"
+                  },
+                  {
+                            "target": "Ang'wen",
+                            "source": "Four",
+                            "pronunciation": "ah-ng'wehn"
+                  },
+                  {
+                            "target": "Abich",
+                            "source": "Five",
+                            "pronunciation": "ah-beech"
+                  },
+                  {
+                            "target": "Ongachiel",
+                            "source": "Nine",
+                            "pronunciation": "ohng-ah-chee-ehl"
+                  },
+                  {
+                            "target": "Kuchiel",
+                            "source": "Half",
+                            "pronunciation": "kuchiel"
+                  },
+                  {
+                            "target": "nyadi chiel",
+                            "source": "Once",
+                            "pronunciation": "nya-di chiel"
+                  },
+                  {
+                            "target": "Adek",
+                            "source": "Three",
+                            "pronunciation": "ah-dehk"
+                  }
+        ],
+        "sentences": [
+                  {
+                            "target": "Ringri ber? — Ringra ber ahinya.",
+                            "source": "Is your body well? — My body is very well."
+                  },
+                  {
+                            "target": "Tuo omaka, adwaro yath mar chango.",
+                            "source": "Sickness has caught me; I need medicine for healing."
+                  },
+                  {
+                            "target": "Kiny wanadhi wuoth nyaka Kisumo.",
+                            "source": "Tomorrow we shall travel all the way to Kisumu."
+                  },
+                  {
+                            "target": "Aorani tut, ok wanyal ng'ado gi tielo.",
+                            "source": "This river is deep; we cannot cross on foot."
+                  },
+                  {
+                            "target": "Jopuonjre odhi e skul gokinyi mang'ich.",
+                            "source": "The students went to school early in the cool morning."
+                  },
+                  {
+                            "target": "Jopur osekwayo kony kuom Migao mar Pith gi Pur.",
+                            "source": "The farmers have requested support from the Ministry of Agriculture and Livestock."
+                  },
+                  {
+                            "target": "Ruoth ochoko jodongo e bura mar gweng'.",
+                            "source": "The chief gathered the elders at the village council."
+                  },
+                  {
+                            "target": "Jofwambo olando wach maber mar kwe e piny.",
+                            "source": "The journalists broadcast good news of peace in the land."
+                  }
+        ]
+}
+    ]
+  }
+];
+
+const NATIVE_AUDIO_UNIT: CourseUnit = {
+  "id": "luo-unit-17",
+  "unitNumber": 17,
+  "title": "Native Audio & Listening Practice",
+  "description": "Train your ear with verified native-speaker Dholuo recordings covering everyday expressions, home dialogues, and community life.",
+  "icon": "Volume2",
+  "color": "#0EA5E9",
+  "skills": [
+    {
+      "id": "luo-audio-1-everyday",
+      "title": "Everyday Expressions & Polite Speech",
+      "icon": "Volume2",
+      "description": "Listen to native Dholuo speakers use essential daily expressions, hospitality phrases, and common responses.",
+      "tips": "Listen closely to Dholuo vowel harmony and tone contours in everyday phrases like 'Ber ahinya' (Very good / Awesome), 'Kaw kom' (Have a seat), and 'Ee ero kamano' (Yes, we are thankful).",
+      "culturalNote": "Welcoming a visitor with 'Kaw kom' (Take a chair) and expressing gratitude with 'Ero kamano' are foundational habits of Luo hospitality around the Lake Victoria basin. Verified native recordings from the Thiomi-5K Parallel Speech & Text Corpus (CC-BY-4.0).",
+      "words": [
+        {
+          "target": "Ka",
+          "source": "Here / If / Upon",
+          "pronunciation": "ka",
+          "partOfSpeech": "preposition",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/ka.opus"
+        },
+        {
+          "target": "Ber ahinya",
+          "source": "Very good / Awesome",
+          "pronunciation": "ber a-hi-nya",
+          "partOfSpeech": "phrase",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/ber-ahinya.opus"
+        },
+        {
+          "target": "Kaw kom",
+          "source": "Have a seat",
+          "pronunciation": "kaw kom",
+          "partOfSpeech": "phrase",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/kaw-kom.opus"
+        },
+        {
+          "target": "Ee ero kamano",
+          "source": "Yes, we are thankful",
+          "pronunciation": "ee e-ro ka-ma-no",
+          "partOfSpeech": "phrase",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/ee-ero-kamano.opus"
+        },
+        {
+          "target": "Nyaka adhi",
+          "source": "I must go / Got to go",
+          "pronunciation": "nya-ka a-dhi",
+          "partOfSpeech": "phrase",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/nyaka-adhi.opus"
+        },
+        {
+          "target": "Ne tek",
+          "source": "It was tough",
+          "pronunciation": "ne tek",
+          "partOfSpeech": "phrase",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/ne-tek.opus"
+        },
+        {
+          "target": "Onge ketho",
+          "source": "Innocent / No fault",
+          "pronunciation": "o-nge ke-tho",
+          "partOfSpeech": "phrase",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/onge-ketho.opus"
+        },
+        {
+          "target": "Kuom kinde duto",
+          "source": "All this time",
+          "pronunciation": "kuom ki-nde du-to",
+          "partOfSpeech": "phrase",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/kuom-kinde-duto.opus"
+        }
+      ],
+      "sentences": [
+        {
+          "target": "Kaw kom",
+          "source": "Have a seat.",
+          "audio": "https://audio.kenyahub.me/audio/luo/kaw-kom.opus"
+        },
+        {
+          "target": "Ee ero kamano",
+          "source": "Yes, we are thankful.",
+          "audio": "https://audio.kenyahub.me/audio/luo/ee-ero-kamano.opus"
+        },
+        {
+          "target": "Nyaka adhi",
+          "source": "I must go.",
+          "audio": "https://audio.kenyahub.me/audio/luo/nyaka-adhi.opus"
+        }
+      ],
+      "authoredExercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "What does 'Kaw kom' mean in Dholuo?",
+          "correctAnswer": "Have a seat",
+          "options": [
+            "Have a seat",
+            "It was tough",
+            "I must go",
+            "All this time"
+          ],
+          "hint": "'Kaw' = take; 'kom' = chair/stool."
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Complete 'Very good / Awesome': Ber _____",
+          "correctAnswer": "ahinya",
+          "options": [
+            "ahinya",
+            "kom",
+            "ketho",
+            "duto"
+          ],
+          "hint": "The Dholuo intensifier meaning 'very / very much'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match each spoken Dholuo expression with its English meaning",
+          "correctAnswer": "",
+          "pairs": [
+            {
+              "left": "Ber ahinya",
+              "right": "Very good / Awesome"
+            },
+            {
+              "left": "Kaw kom",
+              "right": "Have a seat"
+            },
+            {
+              "left": "Nyaka adhi",
+              "right": "I must go"
+            },
+            {
+              "left": "Ne tek",
+              "right": "It was tough"
+            }
+          ]
+        },
+        {
+          "type": "word_bank",
+          "prompt": "Build the Dholuo phrase for 'Yes, we are thankful'",
+          "correctAnswer": "Ee ero kamano",
+          "wordTiles": [
+            "Ee",
+            "ero",
+            "kamano",
+            "tek"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "luo-audio-2-home-questions",
+      "title": "Home, Directions & Everyday Questions",
+      "icon": "MessageCircle",
+      "description": "Practice listening to natural Dholuo questions about visitors, directions, helping others, and everyday household life.",
+      "tips": "Notice dental 'dh' in 'dhootno' (the door), velar nasal 'ng’' in 'ng’a/nga’wa' (who?), and the 1st-person plural prefix 'wa-' in 'Wapenj yo' (Let's ask for directions) and 'Wan gi ywaruok' (We have a problem).",
+      "culturalNote": "In Dholuo conversation, polite questions often soften directness with 'onego' (should/ought) or 'dak' (why not / why didn't). Verified native recordings from the Thiomi-5K Parallel Speech & Text Corpus (CC-BY-4.0).",
+      "words": [
+        {
+          "target": "Dhootno",
+          "source": "The door",
+          "pronunciation": "dhoot-no",
+          "partOfSpeech": "noun",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/dhootno.opus"
+        },
+        {
+          "target": "Nga'wa manie dhoot",
+          "source": "Who is at the door?",
+          "pronunciation": "nga-wa ma-nie dhoot",
+          "partOfSpeech": "phrase",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/nga-wa-manie-dhoot.opus"
+        },
+        {
+          "target": "Wapenj yo",
+          "source": "Let's ask for directions",
+          "pronunciation": "wa-penj yo",
+          "partOfSpeech": "phrase",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/wapenj-yo.opus"
+        },
+        {
+          "target": "Lewni manyien",
+          "source": "New clothes",
+          "pronunciation": "lew-ni ma-nyien",
+          "partOfSpeech": "phrase",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/lewni-manyien.opus"
+        },
+        {
+          "target": "Onego wakonye",
+          "source": "Should we help her out?",
+          "pronunciation": "o-ne-go wa-ko-nye",
+          "partOfSpeech": "phrase",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/onego-wakonye.opus"
+        },
+        {
+          "target": "Dak ne inyisa",
+          "source": "Why didn't you tell me?",
+          "pronunciation": "dak ne i-nyi-sa",
+          "partOfSpeech": "phrase",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/dak-ne-inyisa.opus"
+        },
+        {
+          "target": "Maendi ne igolo kanye",
+          "source": "Where did you get this one?",
+          "pronunciation": "ma-e-ndi ne i-go-lo ka-nye",
+          "partOfSpeech": "phrase",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/maendi-ne-igolo-kanye.opus"
+        },
+        {
+          "target": "Wan gi ywaruok",
+          "source": "We have a problem",
+          "pronunciation": "wan gi ywa-ruok",
+          "partOfSpeech": "phrase",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/wan-gi-ywaruok.opus"
+        }
+      ],
+      "sentences": [
+        {
+          "target": "Nga'wa manie dhoot",
+          "source": "Who is at the door?",
+          "audio": "https://audio.kenyahub.me/audio/luo/nga-wa-manie-dhoot.opus"
+        },
+        {
+          "target": "Wapenj yo",
+          "source": "Let's ask for directions!",
+          "audio": "https://audio.kenyahub.me/audio/luo/wapenj-yo.opus"
+        },
+        {
+          "target": "Wan gi ywaruok",
+          "source": "We have a problem.",
+          "audio": "https://audio.kenyahub.me/audio/luo/wan-gi-ywaruok.opus"
+        }
+      ],
+      "authoredExercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "How do you say 'Let's ask for directions' in Dholuo?",
+          "correctAnswer": "Wapenj yo",
+          "options": [
+            "Wapenj yo",
+            "Lewni manyien",
+            "Wan gi ywaruok",
+            "Onego wakonye"
+          ],
+          "hint": "'Penjo' = to ask; 'yo' = road/way."
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Complete 'New clothes': Lewni _____",
+          "correctAnswer": "manyien",
+          "options": [
+            "manyien",
+            "dhootno",
+            "kanye",
+            "ywaruok"
+          ],
+          "hint": "The Dholuo attributive adjective meaning 'new'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match each Dholuo phrase with its English meaning",
+          "correctAnswer": "",
+          "pairs": [
+            {
+              "left": "Dhootno",
+              "right": "The door"
+            },
+            {
+              "left": "Lewni manyien",
+              "right": "New clothes"
+            },
+            {
+              "left": "Onego wakonye",
+              "right": "Should we help her out?"
+            },
+            {
+              "left": "Wan gi ywaruok",
+              "right": "We have a problem"
+            }
+          ]
+        },
+        {
+          "type": "word_bank",
+          "prompt": "Arrange the words to say 'We have a problem'",
+          "correctAnswer": "Wan gi ywaruok",
+          "wordTiles": [
+            "Wan",
+            "gi",
+            "ywaruok",
+            "yo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "luo-audio-3-work-learning",
+      "title": "Farming, Education & Community Life",
+      "icon": "BookOpen",
+      "description": "Build listening fluency with full native-speaker Dholuo sentences about farming, education, storytelling, and mutual support.",
+      "tips": "Listen for agentive 'ja-' in 'japur' (farmer), the negative imperative 'Kik idew' (Don't worry), and habitual '-ga' in 'kawoga' (usually takes).",
+      "culturalNote": "Small-scale farming ('pur'), formal education ('somo'), and evening storytelling ('sigana') remain cornerstones of Luo community life across Kisumu, Siaya, Homa Bay, and Migori counties. Verified native recordings from Thiomi-5K (CC-BY-4.0).",
+      "words": [
+        {
+          "target": "An japur puothe matindo",
+          "source": "I am a small-scale farmer",
+          "pronunciation": "an ja-pur puo-the ma-ti-ndo",
+          "partOfSpeech": "sentence",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/an-japur-puothe-matindo.opus"
+        },
+        {
+          "target": "Somo miyo ng'ato bedo maber",
+          "source": "Education adds value to you",
+          "pronunciation": "so-mo mi-yo nga-to be-do ma-ber",
+          "partOfSpeech": "sentence",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/somo-miyo-ng-ato-bedo-maber.opus"
+        },
+        {
+          "target": "Waseiko bugewa mag somo piny",
+          "source": "We are revising geography books",
+          "pronunciation": "wa-se-i-ko bu-ge-wa mag so-mo piny",
+          "partOfSpeech": "sentence",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/waseiko-bugewa-mag-somo-piny.opus"
+        },
+        {
+          "target": "Sigana maber kawoga seche",
+          "source": "Good stories take time",
+          "pronunciation": "si-ga-na ma-ber ka-wo-ga se-che",
+          "partOfSpeech": "sentence",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/sigana-maber-kawoga-seche.opus"
+        },
+        {
+          "target": "Abiro limogi e yo makende",
+          "source": "I am visiting them in a special way",
+          "pronunciation": "a-bi-ro li-mo-gi e yo ma-ke-nde",
+          "partOfSpeech": "sentence",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/abiro-limogi-e-yo-makende.opus"
+        },
+        {
+          "target": "Kik idew an gi mang'eny",
+          "source": "Don't worry, I have plenty for us",
+          "pronunciation": "kik i-dew an gi ma-ngeny",
+          "partOfSpeech": "sentence",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/kik-idew-an-gi-mang-eny.opus"
+        },
+        {
+          "target": "Ng'a ma nyalo konyi timo mano",
+          "source": "Who can help you do that?",
+          "pronunciation": "nga ma nya-lo ko-nyi ti-mo ma-no",
+          "partOfSpeech": "sentence",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/ng-a-ma-nyalo-konyi-timo-mano.opus"
+        },
+        {
+          "target": "Apuoyi kuom bedo e kwan mogik",
+          "source": "Congratulations for making it to the final list",
+          "pronunciation": "a-puo-yi kuom be-do e kwan mo-gik",
+          "partOfSpeech": "sentence",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/apuoyi-kuom-bedo-e-kwan-mogik.opus"
+        }
+      ],
+      "sentences": [
+        {
+          "target": "An japur puothe matindo",
+          "source": "I am a small-scale farmer.",
+          "audio": "https://audio.kenyahub.me/audio/luo/an-japur-puothe-matindo.opus"
+        },
+        {
+          "target": "Sigana maber kawoga seche",
+          "source": "Good stories take time.",
+          "audio": "https://audio.kenyahub.me/audio/luo/sigana-maber-kawoga-seche.opus"
+        },
+        {
+          "target": "Somo miyo ng'ato bedo maber",
+          "source": "Education adds value to you.",
+          "audio": "https://audio.kenyahub.me/audio/luo/somo-miyo-ng-ato-bedo-maber.opus"
+        }
+      ],
+      "authoredExercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "What does 'Sigana maber kawoga seche' mean?",
+          "correctAnswer": "Good stories take time",
+          "options": [
+            "Good stories take time",
+            "I am a small-scale farmer",
+            "Education adds value to you",
+            "Who can help you do that?"
+          ],
+          "hint": "'Sigana' = story; 'seche' = time/hours."
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Complete 'I am a small-scale farmer': An _____ puothe matindo",
+          "correctAnswer": "japur",
+          "options": [
+            "japur",
+            "sigana",
+            "somo",
+            "kwan"
+          ],
+          "hint": "Combines agent prefix 'ja-' + 'pur' (cultivate)."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match each Dholuo sentence with its English meaning",
+          "correctAnswer": "",
+          "pairs": [
+            {
+              "left": "An japur puothe matindo",
+              "right": "I am a small-scale farmer"
+            },
+            {
+              "left": "Sigana maber kawoga seche",
+              "right": "Good stories take time"
+            },
+            {
+              "left": "Kik idew an gi mang'eny",
+              "right": "Don't worry, I have plenty for us"
+            },
+            {
+              "left": "Ng'a ma nyalo konyi timo mano",
+              "right": "Who can help you do that?"
+            }
+          ]
+        },
+        {
+          "type": "word_bank",
+          "prompt": "Build the Dholuo sentence 'I am a small-scale farmer'",
+          "correctAnswer": "An japur puothe matindo",
+          "wordTiles": [
+            "An",
+            "japur",
+            "puothe",
+            "matindo"
+          ]
+        }
+      ]
+    }
+  ]
+};
+
 export const LUO_UNITS: CourseUnit[] = [
-  ...GRAMMAR_MODULE_UNITS,
   PHRASEBOOK_UNIT,
+  ...GRAMMAR_MODULE_UNITS,
   EXERCISES_UNIT,
   ORAL_LITERATURE_UNIT,
-];
+  ...PUBLIC_DOMAIN_DATASET_UNITS,
+  NATIVE_AUDIO_UNIT,
+].map((u, idx) => ({
+  ...u,
+  id: `luo-unit-${idx + 1}`,
+  unitNumber: idx + 1,
+}));
 
 export default LUO_COURSE;

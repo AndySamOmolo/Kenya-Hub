@@ -1,0 +1,322 @@
+name: Ingest Open-Access Audio, KSL, Text & CLDF Datasets to Cloudflare R2
+
+on:
+  workflow_dispatch:
+    inputs:
+      force_reingest:
+        description: "Re-run ingestion even if scriptsHash in .audio-ingested-lock.json matches"
+        required: false
+        default: "false"
+        type: string
+      max_clips_per_dataset:
+        description: "Maximum audio clips to transcode & upload per dataset split (0 = unlimited)"
+        required: false
+        default: "0"
+        type: string
+      retry_pending_only:
+        description: "Skip already-completed datasets and only retry pending gated/failed ones"
+        required: false
+        default: "true"
+        type: string
+      only_ungated:
+        description: "Skip gated HF repos if you have not accepted their access terms yet"
+        required: false
+        default: "false"
+        type: string
+      include_mdc_common_voice:
+        description: "Ingest Mozilla Common Voice 27.0 (CC0-1.0) tarballs via MDC_API_KEY"
+        required: false
+        default: "true"
+        type: string
+      include_lingua_libre:
+        description: "Ingest Wikimedia Commons Lingua Libre Swahili pronunciations (CC-BY-SA-4.0)"
+        required: false
+        default: "true"
+        type: string
+      include_audio_ingestion:
+        description: "Stream & upload open-access audio datasets to Cloudflare R2"
+        required: false
+        default: "true"
+        type: string
+      include_ksl_metadata:
+        description: "Sync Kenyan Sign Language (xki) videos & metadata index (public/ksl-index.json)"
+        required: false
+        default: "true"
+        type: string
+      only_ksl:
+        description: "Run ONLY KSL (xki) full-duration re-import & mobile sync (skips text/CLDF/audio steps)"
+        required: false
+        default: false
+        type: boolean
+      include_kaikki_raw:
+        description: "Stream-filter Kaikki.org raw Wiktextract dump (180s cap) for all Kenyan ISO codes & Sheng"
+        required: false
+        default: "true"
+        type: string
+      include_freq_lists:
+        description: "Build frequency-only wordlists from FineWeb-2, MADLAD-400, HPLT v3.0, WURA & CulturaX"
+        required: false
+        default: "true"
+        type: string
+      include_cldf_wikimedia_civic:
+        description: "Run CLDF/Typology, Wikimedia Lexemes & Civic/Agri ingestion script"
+        required: false
+        default: "true"
+        type: string
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/ingest-audio-and-datasets.yml"
+      - "kenyahub/scripts/lib/license_guard.py"
+      - "kenyahub/scripts/ci-ingest-audio-and-text-r2.py"
+      - "kenyahub/scripts/ingest-ksl-pose-r2.py"
+      - "kenyahub/scripts/ingest-permissive-text-datasets.py"
+      - "kenyahub/scripts/ingest-cldf-wikimedia-civic.py"
+      - "kenyahub/scripts/ingest-pmc-ethnobotany.py"
+      - "kenyahub/scripts/ingest-external-datasets.mjs"
+      - "kenyahub/scripts/sync-cloudflare-r2-audio.mjs"
+      - "kenyahub/scripts/sync-approved-contributions.py"
+      - "kenyahub/scripts/build-open-corpus-index.py"
+      - "mobile/scripts/sync-data.mjs"
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  ingest-datasets:
+    name: Stream Open-Access Text, CLDF, KSL & Audio Datasets -> Repo & Cloudflare R2
+    runs-on: ubuntu-latest
+    timeout-minutes: 345
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check Ingestion Lockfile & Scripts Fingerprint
+        id: lock_check
+        run: |
+          CURRENT_HASH=$(sha256sum \
+            kenyahub/scripts/lib/license_guard.py \
+            kenyahub/scripts/ci-ingest-audio-and-text-r2.py \
+            kenyahub/scripts/ingest-ksl-pose-r2.py \
+            kenyahub/scripts/ingest-permissive-text-datasets.py \
+            kenyahub/scripts/ingest-cldf-wikimedia-civic.py \
+            kenyahub/scripts/ingest-pmc-ethnobotany.py \
+            kenyahub/scripts/ingest-external-datasets.mjs \
+            kenyahub/scripts/sync-cloudflare-r2-audio.mjs \
+            kenyahub/scripts/sync-approved-contributions.py \
+            kenyahub/scripts/build-open-corpus-index.py \
+            mobile/scripts/sync-data.mjs \
+            | sha256sum | awk '{print $1}')
+          echo "scripts_hash=$CURRENT_HASH" >> "$GITHUB_OUTPUT"
+
+          LOCK_FILE="kenyahub/public/.audio-ingested-lock.json"
+          LOCKED_HASH=""
+          if [ -f "$LOCK_FILE" ]; then
+            LOCKED_HASH=$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1])).get("scriptsHash",""))' "$LOCK_FILE" 2>/dev/null || echo "")
+          fi
+
+          if [ -f "$LOCK_FILE" ] && [ "$LOCKED_HASH" = "$CURRENT_HASH" ] && [ "${{ inputs.force_reingest }}" != "true" ] && [ "${{ inputs.only_ksl }}" != "true" ]; then
+            echo "Ingestion already completed for current script fingerprint ($CURRENT_HASH). Skipping."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Running dataset ingestion (locked_hash='${LOCKED_HASH:-none}', current_hash='$CURRENT_HASH', force='${{ inputs.force_reingest }}')."
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Check Cloudflare R2 Secrets Availability
+        id: secrets_check
+        if: steps.lock_check.outputs.skip != 'true'
+        env:
+          CF_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CF_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          R2_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET: ${{ secrets.R2_SECRET_ACCESS_KEY || secrets.R2_SECRET_KEY }}
+        run: |
+          if [ -n "$CF_ACCOUNT_ID" ] && { [ -n "$CF_API_TOKEN" ] || { [ -n "$R2_KEY_ID" ] && [ -n "$R2_SECRET" ]; }; }; then
+            echo "Cloudflare R2 credentials detected — audio upload enabled."
+            echo "r2_ready=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "::warning::Cloudflare R2 secrets not fully configured — running text & CLDF ingestion only (audio R2 uploads skipped)."
+            echo "r2_ready=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Setup Node.js 20
+        if: steps.lock_check.outputs.skip != 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: kenyahub/package-lock.json
+
+      - name: Setup Python 3.11
+        if: steps.lock_check.outputs.skip != 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install FFmpeg & Python Audio/Dataset Dependencies
+        if: steps.lock_check.outputs.skip != 'true'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg libsndfile1
+          pip install --no-cache-dir --upgrade pip
+          pip install --no-cache-dir "datasets>=2.19.0,<4.0.0" numpy soundfile librosa boto3 requests pyarrow huggingface_hub pypdf "datacollective>=0.7.1"
+
+      - name: Install Web Dependencies
+        if: steps.lock_check.outputs.skip != 'true'
+        working-directory: kenyahub
+        run: npm ci --prefer-offline --no-audit --no-fund
+
+      - name: Run Commercially Permissive Text, PanLex, CLDR 49, Kaikki, OER, Freq & CLDF Streamers
+        if: steps.lock_check.outputs.skip != 'true'
+        working-directory: kenyahub
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_DATASETS_TRUST_REMOTE_CODE: "0"
+          INCLUDE_CLDF: ${{ inputs.include_cldf_wikimedia_civic || 'true' }}
+          INCLUDE_KAIKKI: ${{ inputs.include_kaikki_raw || 'true' }}
+          INCLUDE_FREQ: ${{ inputs.include_freq_lists || 'true' }}
+          FORCE_REINGEST: ${{ inputs.force_reingest || 'false' }}
+          RETRY_PENDING_ONLY: ${{ inputs.retry_pending_only || 'true' }}
+        run: |
+          node scripts/ingest-external-datasets.mjs
+          TEXT_FLAGS="--max-rows=2500 --include-oer --include-benchmarks"
+          if [ "$INCLUDE_KAIKKI" = "true" ]; then TEXT_FLAGS="$TEXT_FLAGS --include-kaikki-raw"; fi
+          if [ "$INCLUDE_FREQ" = "true" ]; then TEXT_FLAGS="$TEXT_FLAGS --build-freq-lists"; fi
+          python3 -u scripts/ingest-permissive-text-datasets.py $TEXT_FLAGS
+          if [ "$INCLUDE_CLDF" = "true" ]; then
+            python3 -u scripts/ingest-cldf-wikimedia-civic.py --track=all
+            python3 -u scripts/ingest-pmc-ethnobotany.py --max-per-paper=250
+          fi
+
+      - name: Stream Open-Access Audio & KSL Metadata, Transcode to 24kbps Opus & Upload to Cloudflare R2
+        if: steps.lock_check.outputs.skip != 'true'
+        working-directory: kenyahub
+        env:
+          PYTHONUNBUFFERED: "1"
+          APPWRITE_API_KEY: ${{ secrets.APPWRITE_API_KEY }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY || secrets.R2_SECRET_KEY }}
+          R2_UPLOAD_WORKERS: "12"
+          KSL_UPLOAD_WORKERS: "8"
+          R2_BUCKET_NAME: ${{ secrets.R2_BUCKET_NAME || 'kenyahub-audio' }}
+          NEXT_PUBLIC_AUDIO_CDN_URL: ${{ secrets.NEXT_PUBLIC_AUDIO_CDN_URL }}
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_DATASETS_TRUST_REMOTE_CODE: "0"
+          MDC_API_KEY: ${{ secrets.MDC_API_KEY }}
+          ZENODO_TOKEN: ${{ secrets.ZENODO_TOKEN }}
+          MAX_CLIPS_PER_DATASET: ${{ inputs.max_clips_per_dataset || '0' }}
+          ONLY_UNGATED: ${{ inputs.only_ungated || 'false' }}
+          FORCE_REINGEST: ${{ inputs.force_reingest || 'false' }}
+          RETRY_PENDING_ONLY: ${{ inputs.retry_pending_only || 'true' }}
+          INCLUDE_MDC_COMMON_VOICE: ${{ inputs.include_mdc_common_voice || 'true' }}
+          INCLUDE_LINGUA_LIBRE: ${{ inputs.include_lingua_libre || 'true' }}
+          INCLUDE_KSL_METADATA: ${{ inputs.include_ksl_metadata || 'true' }}
+          MAX_KSL_MASENO_VIDEOS: "0"
+          MAX_KSL_HUMAN_VIDEOS: "0"
+          KSL_TIME_BUDGET_SEC: "${{ inputs.only_ksl && '18000' || '14400' }}"
+          PER_DATASET_TIMEOUT_SEC: "900"
+          GLOBAL_TIME_BUDGET_SEC: "10800"
+          INGESTION_SCRIPTS_HASH: ${{ steps.lock_check.outputs.scripts_hash }}
+          R2_READY: ${{ steps.secrets_check.outputs.r2_ready }}
+        run: |
+          if [ "${{ inputs.include_audio_ingestion || 'true' }}" = "true" ]; then
+            if [ "${{ inputs.only_ksl || 'false' }}" != "true" ]; then
+            python3 -u scripts/ci-ingest-audio-and-text-r2.py
+          else
+            echo "only_ksl=true: skipping general audio ingestion and jumping directly to full-duration KSL re-import."
+          fi
+          fi
+          if [ "${{ inputs.include_ksl_metadata || 'true' }}" = "true" ]; then
+            python3 -u scripts/ingest-ksl-pose-r2.py
+          fi
+          python3 -u scripts/sync-approved-contributions.py
+
+      - name: Sync Mobile Data & Run Strict Tool/Course Audit
+        if: steps.lock_check.outputs.skip != 'true'
+        run: |
+          node kenyahub/scripts/clean-removed-tools.mjs
+          python3 -u kenyahub/scripts/ci-ingest-audio-and-text-r2.py --sync-only
+          python3 -u kenyahub/scripts/build-open-corpus-index.py
+          node mobile/scripts/sync-data.mjs
+          npm --prefix kenyahub run audit:tools:strict
+          npm --prefix kenyahub test
+
+      - name: Commit Ingested Dictionaries, Typology, Manifests & Updated Lockfile
+        if: always() && steps.lock_check.outputs.skip != 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for p in \
+            kenyahub/src/data/dictionaries \
+            kenyahub/src/data/language-sources \
+            kenyahub/src/data/courses/proverbs \
+            kenyahub/src/data/language-typology \
+            kenyahub/src/data/open-corpus-index.json \
+            kenyahub/src/data/locales \
+            kenyahub/src/data/readers \
+            kenyahub/src/data/benchmarks \
+            kenyahub/src/data/frequency-lists \
+            kenyahub/src/data/civic \
+            kenyahub/src/data/wikimedia \
+            kenyahub/public/data/learning \
+            kenyahub/public/audio-manifest.json \
+            kenyahub/public/.audio-ingested-lock.json \
+            kenyahub/public/.text-ingested-lock.json \
+            kenyahub/public/.contributions-synced-lock.json \
+            kenyahub/public/r2-audio-index.json \
+            kenyahub/public/ksl-index.json \
+            kenyahub/public/dholuo-audio-chapters.json \
+            kenyahub/reports/tool-audit.json \
+            mobile/src/shared; do
+            [ -e "$p" ] && git add -A -- "$p"
+          done
+          if ! git diff --staged --quiet; then
+            git commit -m "feat(data): ingest commercially permissive audio, KSL, text, PanLex, CLDR 49, Kaikki & CLDF datasets"
+            git reset --hard HEAD
+            git clean -fd
+            for attempt in 1 2 3; do
+              git fetch origin "${GITHUB_REF_NAME}"
+              if ! git rebase "origin/${GITHUB_REF_NAME}"; then
+                mapfile -t conflicted < <(git diff --name-only --diff-filter=U)
+                unexpected_conflict=false
+                for file in "${conflicted[@]}"; do
+                  case "$file" in
+                    kenyahub/src/data/dictionaries/*|kenyahub/src/data/language-sources/*|kenyahub/src/data/courses/proverbs/*|kenyahub/src/data/language-typology/*|kenyahub/src/data/open-corpus-index.json|kenyahub/src/data/locales/*|kenyahub/src/data/readers/*|kenyahub/src/data/benchmarks/*|kenyahub/src/data/frequency-lists/*|kenyahub/src/data/civic/*|kenyahub/src/data/wikimedia/*|kenyahub/public/data/learning/*|kenyahub/public/audio-manifest.json|kenyahub/public/.audio-ingested-lock.json|kenyahub/public/.text-ingested-lock.json|kenyahub/public/.contributions-synced-lock.json|kenyahub/public/r2-audio-index.json|kenyahub/public/ksl-index.json|kenyahub/public/dholuo-audio-chapters.json|kenyahub/reports/tool-audit.json|mobile/src/shared/*)
+                      git checkout --theirs -- "$file"
+                      git add -- "$file"
+                      ;;
+                    *)
+                      echo "::error::Unexpected conflict in $file; refusing to overwrite repository changes."
+                      unexpected_conflict=true
+                      ;;
+                  esac
+                done
+                if [ "$unexpected_conflict" = "true" ]; then
+                  git rebase --abort
+                  exit 1
+                fi
+                GIT_EDITOR=true git rebase --continue
+              fi
+              if git push origin HEAD:"${GITHUB_REF_NAME}"; then
+                break
+              fi
+              if [ "$attempt" -eq 3 ]; then
+                echo "::error::Failed to push ingested dataset checkpoint after 3 attempts."
+                exit 1
+              fi
+              echo "Push attempt ${attempt} failed; retrying in 5s..."
+              sleep 5
+            done
+          else
+            echo "No dictionary or manifest changes to commit."
+          fi

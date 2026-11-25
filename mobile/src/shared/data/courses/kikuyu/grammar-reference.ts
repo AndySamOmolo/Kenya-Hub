@@ -1,9 +1,3 @@
-// ============================================================
-// Kikuyu (Gĩkũyũ) Grammar Reference Guide
-// Based on "First Lessons in Kikuyu" by L.S.B. Leakey (1959, Eagle Press)
-// and "A Short Kikuyu Grammar".
-// ============================================================
-
 export interface KikuyuGrammarSection {
   id: string;
   title: string;
@@ -14,173 +8,348 @@ export interface KikuyuGrammarSection {
 
 export const KIKUYU_GRAMMAR_SECTIONS: KikuyuGrammarSection[] = [
   {
-    id: 'kikuyu-vowels',
-    title: 'The Seven-Vowel Phonology & Tildes (ĩ / ũ)',
-    summary: 'Gĩkũyũ possesses seven distinct vowel phonemes represented in standard orthography by a, e, i, o, u, and the tilded vowels ĩ and ũ.',
-    content: `Unlike languages with five vowels, Gĩkũyũ has seven vowel phonemes with close phonemic distinctions:
-- **a**: pronounced as in *father* (e.g., *baba* - father).
-- **e**: open 'e' as in *bed* (e.g., *kera* - cross over).
-- **i**: closed 'i' as in *machine* (e.g., *hinya* - strength).
-- **ĩ**: close-mid vowel, between 'e' and 'i', similar to English *bit* (e.g., *mũndũ mũrũmĩrĩri* - follower).
-- **o**: open 'o' as in *law* or *order* (e.g., *moko* - arms).
-- **u**: closed back vowel as in *rule* (e.g., *nguru* - tortoise).
-- **ũ**: close-mid back vowel, between 'o' and 'u', similar to English *put* or German *und* (e.g., *mũndũ* - person).
-
-Omitting tildes changes the meaning of words completely:
-- *kũra* (grow up) vs *kora* (find) vs *kũũra* (uproot) vs *kĩra* (be quiet).`,
-    examples: [
-      { kikuyu: 'mũndũ', english: 'person / human', explanation: 'Vowel ũ (near-close back)' },
-      { kikuyu: 'mĩtĩ', english: 'trees', explanation: 'Vowel ĩ (near-close front)' },
-      { kikuyu: 'kũgũrũ', english: 'leg / foot', explanation: 'Singular noun of Class IV with ũ' },
-      { kikuyu: 'nyũmba', english: 'house', explanation: 'N-class noun with ũ' }
-    ]
-  },
-  {
-    id: 'kikuyu-noun-classes',
-    title: 'Noun Classes & Concordial Agreement',
-    summary: 'Nouns are divided into pairs of singular and plural classes that govern all adjectives, pronouns, and verbs.',
-    content: `Leakey (1959) outlines the classical Gĩkũyũ noun classes:
-1. **Class 1 (Mũ- / A-)**: Human beings.
-   - *mũndũ* (person) → *andũ* (people)
-   - *mũthengi* (cleaner) → *athengi* (cleaners)
-2. **Class 2 (Mũ- / Mĩ-)**: Plants, trees, and natural objects.
-   - *mũtĩ* (tree) → *mĩtĩ* (trees)
-   - *mũkore* (fig tree) → *mĩkore* (fig trees)
-3. **Class 3 (Kĩ- / Ci-)**: Artifacts, tools, and characteristics.
-   - *kĩndũ* (thing) → *ciĩndũ* (things)
-   - *kĩara* (finger) → *ciara* (fingers)
-4. **Class 4 (I- / Ma- or Gĩ- / Ma-)**: Fruits, body parts, and augmentatives.
-   - *igwa* (sugar cane) → *magwa* (canes)
-   - *ithanwa* (axe) → *mathanwa* (axes)
-5. **Class 5 (Rũ- / N- or Ny-)**: Long, thin items, extensions.
-   - *rũrĩmĩ* (tongue) → *nĩmĩ* (tongues)
-   - *rũhĩ* (palm of hand) → *hĩ* (palms)
-6. **Class 6 (Ka- / Tũ-)**: Diminutives.
-   - *kamũndũ* (little person) → *tũmũndũ* (little people)
-   - *kahĩĩ* (boy) → *tũhĩĩ* (boys)
-7. **Class 7 (Ũ- / Ma-)**: Abstract qualities and states.
-   - *ũhoro* (news / matters) → *mohoro* (matters)
-   - *ũtugi* (generosity)
-8. **Class 8 (Kũ-)**: Infinitives / gerunds.
-   - *kũrĩma* (to cultivate / farming)
-9. **Class 9 (Ha-) & Class 10 (Kũ-)**: Locatives.
-   - *handũ* (a specific place) / *kũndũ* (general area/direction).`,
-    examples: [
-      { kikuyu: 'mũndũ mũkũrũ', english: 'an old person', explanation: 'Class 1 concord: mũ- concord on both noun and adjective' },
-      { kikuyu: 'andũ akũrũ', english: 'old people', explanation: 'Class 1 plural concord: a- concord' },
-      { kikuyu: 'mũtĩ mũraaya', english: 'a tall tree', explanation: 'Class 2 singular concord: mũ-' },
-      { kikuyu: 'kĩndũ kĩega', english: 'a good thing', explanation: 'Class 3 concord: kĩ-' }
-    ]
-  },
-  {
-    id: 'kikuyu-verb-tenses',
-    title: 'The Tense System: Today vs Past vs Remote Past',
-    summary: 'Gĩkũyũ verbs inflect precisely according to temporal distance from the moment of speech.',
-    content: `Gĩkũyũ distinguishes between recent past (today), near past (yesterday), and remote past (before yesterday):
-1. **Present Continuous**: Subject Prefix + -ra- + Verb Root + -a:
-   - *Nĩndĩrarĩma* (I am cultivating right now).
-2. **Immediate Past (Today)**: Root + -ĩte:
-   - *Nĩndĩrĩmĩte* (I cultivated earlier today).
-3. **Near Past (Yesterday)**: Root + -ire / -ĩire:
-   - *Nĩndarĩmire ira* (I cultivated yesterday).
-4. **Remote Past (Before yesterday)**:
-   - *Nĩndarĩmire tene* (I cultivated long ago).
-5. **Immediate Future (Today)**:
-   - *Nĩngũrĩma* (I will cultivate today).
-6. **Remote Future (Tomorrow onwards)**:
-   - *Nĩngaagũra* (I will buy tomorrow/later).`,
-    examples: [
-      { kikuyu: 'Nĩndĩrarora', english: 'I am looking (now)', explanation: 'Present continuous tense with nĩ- prefix' },
-      { kikuyu: 'Nĩndĩrorete', english: 'I have looked (earlier today)', explanation: 'Recent today past with -ete suffix' },
-      { kikuyu: 'Nĩndarorire ira', english: 'I looked yesterday', explanation: 'Yesterday past with -ire suffix' },
-      { kikuyu: 'Nĩngarora rũciũ', english: 'I will look tomorrow', explanation: 'Remote future tense' }
-    ]
-  },
-  {
-    id: 'kikuyu-negation',
-    title: 'Verbal Negation Prefixes',
-    summary: 'Negation is expressed through negative subject prefixes prefixed directly to the verbal stem.',
-    content: `Affirmative statements often begin with the focus particle **nĩ-**, whereas negative statements replace the subjective prefix:
-- 1st sing (I): *ndĩ-* (e.g., *ndĩkũĩ* - I do not know).
-- 2nd sing (You): *ndũ-* (e.g., *ndũkaathiĩ* - do not go).
-- 3rd sing (He/She): *nda-* (e.g., *ndarĩma* - he is not cultivating).
-- 1st plural (We): *tũti-* (e.g., *tũtionaga* - we do not see).
-- 2nd plural (You pl.): *mũti-* (e.g., *mũtiathiĩ* - do not go pl.).
-- 3rd plural (They): *mati-* (e.g., *matiũĩ* - they do not know).`,
-    examples: [
-      { kikuyu: 'Nĩnjũĩ', english: 'I know', explanation: 'Affirmative with nĩ-' },
-      { kikuyu: 'Ndikũĩ', english: 'I do not know', explanation: 'Negative 1st person prefix ndĩ-' },
-      { kikuyu: 'Nĩenda', english: 'He/she wants', explanation: 'Affirmative 3rd person' },
-      { kikuyu: 'Ndaenda', english: 'He/she does not want', explanation: 'Negative 3rd person prefix nda-' }
-    ]
-  },
-  // ── EXPANDED GRAMMAR SECTIONS ──
-  {
-    "id": "kikuyu-possessives-demonstratives",
-    "title": "Possessive Pronouns & Three-Degree Demonstratives",
-    "summary": "Gĩkũyũ possessives and demonstratives inflect with the concord prefix of the possessed noun class.",
-    "content": "In Gĩkũyũ (Leakey 1959), possessive stems (**-akwa** my, **-aku** your, **-ake** his/her, **-itũ** our, **-anyu** your pl., **-ao** their) take the concordial prefix of the noun they modify:\n- **Class 1 (wa-)**: *mũrata wakwa* (my friend), *mũndũ wao* (their person).\n- **Class 1 pl. (a-)**: *arata akwa* (my friends), *ciana ciakwa* (my children — Class 3 pl. *cia-*).\n- **Class 2 (wa- / ya-)**: *mũgũnda wakwa* (my farm) → *mĩgũnda yakwa* (my farms).\n- **Class 3 (gĩa- / cia-)**: *kĩndũ gĩakwa* (my thing) → *ciĩndũ ciakwa* (my things).\n\nDemonstratives distinguish three spatial degrees:\n- **Proximal (this near me)**: *ũyũ* (Cl. 1), *aya* (Cl. 1 pl.), *ĩno* (nyũmba ĩno - this house).\n- **Referential / Near Listener (that near you or just mentioned)**: *ũcio* (mũndũ ũcio), *acio* (andũ acio), *ĩyo* (nyũmba ĩyo).\n- **Distal (that yonder)**: *ũrĩa* (mũndũ ũrĩa), *arĩa* (andũ arĩa), *ĩrĩa* (nyũmba ĩrĩa).",
+    "id": "kikuyu-phonology-orthography",
+    "title": "Phonology, Orthography & Penultimate Stress (Hémery 1903, Hinde 1904 & McGregor 1904)",
+    "summary": "Rev. Fr. A. Hémery (1903), Hildegarde Hinde (1904), and Rev. A. W. McGregor (1904) document Kikuyu's vowel qualities, interdental th, velar nasal ng' vs. prenasalized ng'g, consonant alternations (B/V, G/K, R/L), and Dahl's Law.",
+    "content": "In *English-Kikuyu Handbook* (1903, p. 5), *Vocabularies of the Kamba and Kikuyu Languages* (1904, pp. v–x), and *English-Kikuyu Vocabulary* (1904, pp. iii–iv, 5, compiled at Fort Smith / *Kabeti*), Hémery, Hinde, and McGregor record the foundational phonological traits of Gĩkũyũ:\n1. **Interdental *Th* & Velar Nasal *Ng'* vs. *Ng'g* (McGregor 1904, p. 5)**:\n   - In Kabeti (Fort Smith), **S and Z are not used, *Th* always taking their places** (as in *thahu* 'ceremonial defilement', *thayu* 'peace', *gothii* 'to go', *muthenya* 'day'); *L* and *R* are interchangeable.\n   - McGregor (1904, p. 5) uses **ng'** (with a point after *ng*) for the pure velar nasal as in **koteng'era** (\"to run / abscond\", pronounced *koteng-era*, not *koten-gera*, and *ng'ombe* 'cow', *ng'ondu* 'sheep'), and **ng'g** when both the velar nasal and hard *g* are sounded as in **kuing'gata** (\"to drive away / banish / conquer\").\n2. **Consonant Alternations & Penultimate Stress (Hinde 1904)**:\n   - Word stress almost invariably falls on the **penultimate (second-to-last) syllable**.\n   - **B and V**, **G and K**, and **R and L** alternate across regional varieties (Jogowini/Nyeri vs. Metumi/Murang'a vs. Kabete/Kiambu).\n3. **Infinitive Prefix Assimilation — Dahl's Law (Hémery 1903 & McGregor 1904)**:\n   - The Class 15 infinitive prefix **ku- / kũ-** voices to **gu- / gũ-** whenever the verb root begins with a voiceless consonant (*k, t, th, c*): e.g., *gu-tinda* (to conquer/spend time), *gu-kor-a* (to find), *gu-thi-i* (to go), whereas voiced/vowel stems retain *ku-*: *ku-hora* (to beat/rest), *ku-rĩma* (to cultivate).",
     "examples": [
       {
-        "kikuyu": "mũrata wakwa / arata akwa",
-        "english": "my friend / my friends",
-        "explanation": "Class 1 singular wa- vs. plural a-"
+        "kikuyu": "mwohoro — mwohoro mwēga",
+        "english": "greeting (news) — good news / peace",
+        "explanation": "Standard Jogowini Kikuyu salutation recorded by Hinde (1904)"
       },
       {
-        "kikuyu": "nyũmba ĩno vs. nyũmba ĩrĩa",
-        "english": "this house vs. that house yonder",
-        "explanation": "Proximal vs. distal demonstrative"
+        "kikuyu": "ku-hora (to beat) vs. gu-tinda (to conquer) / gu-thiĩ (to go)",
+        "english": "to beat vs. to conquer / to go",
+        "explanation": "Dahl's Law voicing ku- -> gu- before voiceless root consonant (Hémery 1903 & Hinde 1904)"
       },
       {
-        "kikuyu": "mũgũnda witũ",
-        "english": "our farm / garden",
-        "explanation": "1st person plural possessive -itũ"
+        "kikuyu": "koteng'era (velar ng') vs. kuing'gata (ng' + hard g) • ng'ombe / ng'ondu",
+        "english": "to run/abscond vs. to drive away/conquer • cow / sheep",
+        "explanation": "McGregor's (1904, p. 5) exact Kabeti orthographic contrast between ng' and ng'g"
       }
     ]
   },
   {
-    "id": "kikuyu-locatives-prepositions",
-    "title": "The Locative Suffix (-inĩ) & Spatial Prepositions",
-    "summary": "The suffix -inĩ attaches to nouns to express 'in, at, on, or near', complemented by spatial nouns like igũrũ, thĩ, and gatagatĩ.",
-    "content": "Rather than using standalone prepositions for 'in' or 'at', Gĩkũyũ suffixes **-inĩ** directly to the noun:\n- *nyũmba* (house) → **nyũmba-inĩ** (in/at the house)\n- *mũgũnda* (farm) → **mũgũnda-inĩ** (in the farm/garden)\n- *rũũĩ* (river) → **rũũĩ-inĩ** (at/in the river)\n- *njĩra* (path/road) → **njĩra-inĩ** (on the road)\n\nCompound spatial relations use associative **wa / cia / ya**:\n- **igũrũ rĩa** (on top of / above)\n- **rungũ rwa** (underneath / below)\n- **gatagatĩ ka** (in the middle of / between)\n- **mbere ya** (in front of / before) and **thutha wa** (behind / after).",
+    "id": "kikuyu-six-noun-classes",
+    "title": "The Nine Noun Classes, Diminutives (Ka-/To-) & Augmentatives (Ke-) (Hémery 1903, Hinde 1904 & Johnston 1919)",
+    "summary": "Hémery (1903, pp. 1–4), Hinde (1904, pp. vi–vii), McGregor (1904), and Johnston (1919 #11) codify the noun classes of Gĩkũyũ and their prefixal concord across adjectives, possessives, and numerals.",
+    "content": "Rev. Fr. A. Hémery (1903, pp. 1–4) and Hildegarde Hinde (1904, pp. vi–vii) classify Gĩkũyũ nouns into nine prefixal classes:\n1. **Class I — Animate *Mu-* → *A-* (Classes 1/2)**:\n   - *mundu* (person) → **andu** (people); *muka* (woman/wife) → **aka** (women); *mwanake* (warrior) → **anake** (warriors); *mutumia* (elder) → **atumia** (elders); *muiritu* (maiden) → **airitu** (maidens).\n2. **Class II — Inanimate *Mu-* → *Mi-* (Classes 3/4)**:\n   - *muti* (tree) → **miti** (trees); *mwaki* (fire) → **miaki** (fires); *mugunda* (cultivated farm) → **migunda** (farms); *mucii* (homestead) → **micii** (homesteads); *mweri* (moon/month) → **mieri** (months).\n3. **Class III — *I-* / *Ri-* → *Ma-* (Classes 5/6)**:\n   - *ihiga* (stone) → **mahiga** (stones); *itumbi* (egg) → **matumbi** (eggs); *ithangu* (leaf) → **mathangu** (leaves); *riitho* (eye) → **maitho** (eyes); *igego* (tooth) → **magego** (teeth).\n4. **Class IV — *Ki-* / *Gi-* → *I-* / *Ci- (Shi-)* (Classes 7/8 — Tools, Artifacts & Augmentatives)**:\n   - *kindu* (thing) → **indu** (things); *giti* (stool/chair) → **iti** (chairs); *kiratu* (sandal) → **iratu** (sandals); *kiara* (finger) → **ciara / shiara** (fingers); *kirima* (mountain) → **irima** (mountains).\n   - Hémery (1903, pp. 3–4) notes that prefixing **ke- / kĩ-** also forms **augmentatives** (large objects).\n5. **Class V — Invariable *N-* (*Ny-, Nd-, Ng-, Mb-, Nj-*) Class (Classes 9/10)**:\n   - *nyumba* (house/houses), *ng'ombe* (cow/cattle), *mburi* (goat/goats), *mbura* (rain), *njira* (road/path).\n6. **Class VI — *Ru-* → *N-* (Classes 11/10)**:\n   - *rurimi* (tongue) → **ndimi** (tongues); *ruhiu* (sword/knife) → **hiu / njora** (swords); *ruui* (river) → **njui** (rivers); *rukuni* (firewood) → **nguni** (firewood).\n7. **Class VII — Diminutive *Ka-* → *To- (Tũ- / Twa-)* (Classes 12/13)**:\n   - Hémery (1903, pp. 3–4): *kana* (little child) → **twana / toana**; *kaguku* (little chicken) → **toguku**; *kamuti* (little tree) → **tomiti**; *kahee* (little boy) → **tohee**.\n8. **Class VIII & IX — Abstract/Collective *U- (Ũ-)* → *Ma-* (Class 14) & Verbal/Locative *Ku- (Kũ-)* (Classes 15–17)**:\n   - *uta* (bow) → **mata** (bows); *uhoro* (news/affair) → **mohoro**; *utuku* (night); *kundu* (place) → **makundu**.",
     "examples": [
       {
-        "kikuyu": "Ciana irĩ nyũmba-inĩ.",
-        "english": "The children are in the house.",
-        "explanation": "Locative suffix -inĩ"
+        "kikuyu": "mundu mwega → andu ega | muti mwega → miti miega",
+        "english": "a good person → good people | a good tree → good trees",
+        "explanation": "Classes 1/2 (mu-/a-) and 3/4 (mu-/mi-) adjectival concord (Hémery 1903, p. 15)"
       },
       {
-        "kikuyu": "Igũrũ rĩa kĩrĩma",
-        "english": "On top of the mountain",
-        "explanation": "Compound spatial phrase"
+        "kikuyu": "kana kega → twana twega | kaguku → toguku",
+        "english": "a good child → good children | little chicken → little chickens",
+        "explanation": "Diminutive Class 12/13 ka-/to- (tw-) in Hémery (1903, pp. 3–4)"
       },
       {
-        "kikuyu": "Thutha wa nyũmba",
-        "english": "Behind the house",
-        "explanation": "Spatial noun thutha + wa"
+        "kikuyu": "ruhiu rwega → hiu njega | rurimi → ndimi",
+        "english": "a good knife/sword → good knives | tongue → tongues",
+        "explanation": "Class 11/10 ru-/n- alternation (Hémery 1903 & Hinde 1904)"
       }
     ]
   },
   {
-    "id": "kikuyu-verbal-extensions",
-    "title": "Verbal Extensions: Applicative (-ĩra), Causative (-ithia) & Passive (-wo)",
-    "summary": "Gĩkũyũ derives new verb meanings systematically by adding suffixes to the verb root before the final vowel.",
-    "content": "As documented in *A Short Kikuyu Grammar* and Leakey (1959), verb roots take productive derivational suffixes:\n- **Applicative (-ĩra / -era)**: Do for, to, or on behalf of someone.\n  - *rũga* (cook) → **rũgĩra** (cook for); *handa* (plant) → **handĩra** (plant for).\n- **Causative (-ithia / -ia)**: Cause or help someone to do something.\n  - *rĩma* (cultivate) → **rĩmithia** (cause to cultivate); *menya* (know) → **menyithia** (inform / make known).\n- **Passive (-wo / -ĩrwo)**: Turns an active verb into the passive voice.\n  - *ona* (see) → **onwo** (be seen); *rũga* (cook) → **rũgwo** (be cooked).\n- **Reciprocal (-ana)**: Action done to one another.\n  - *enda* (love) → **endana** (love one another); *iguana* (agree / understand one another).",
+    "id": "kikuyu-affirmative-verb-tenses",
+    "title": "Affirmative Verb Conjugation & Five Derivative Verb Stems (Hémery 1903 & Hinde 1904)",
+    "summary": "Complete affirmative conjugation paradigms of kohora ('to beat', Hémery 1903) and gu-tinda ('to conquer', Hinde 1904) plus Hémery's 5 verbal derivative forms (-era, -ia, -ika, -ana, -wo).",
+    "content": "Rev. Fr. A. Hémery (1903, pp. 9–11) and Hildegarde Hinde (1904, pp. xi–xv) set out the full affirmative conjugation of **kohora** (\"to beat\") and **ku-tinda / gu-tinda** (\"to conquer\"):\n1. **Present Tense (Prefix *-a-* / *ndi-*)**:\n   - Hémery (1903, p. 9): **Ndahora** (I beat), **Ne wahora** (thou beatest), **Ne ahora** (he/she beats), **Ne twahora** (we beat), **Ne mwahora** (you beat), **Ne mahora** (they beat) — contrasting with Negative Present **Ndihora, Ndohora, Ndehora, Totihora, Motihora, Matihora**.\n   - Hinde (1904): 1s **n-a-tinda**, 2s **w-a-tinda**, 3s **a-tinda**, 1p **tw-a-tinda**, 2p **mw-a-tinda**, 3p **m-a-tinda**.\n2. **Present Imperfect / Progressive (Prefix *-ki-* / *-re-*)**:\n   - 1s **ni-ki-tinda** (I am conquering), 2s **u-ki-tinda**, 3s **a-ki-tinda**, 1p **tu-ki-tinda**, 2p **mu-ki-tinda**, 3p **ma-ki-tinda**.\n3. **Present Perfect (Suffix *-ite* / *-eti* / *-iti*)**:\n   - Hémery (1903, p. 9 Past & Preterit): **Nderahora / Ndehorete / Ndehorile** (I beat / have beaten), **Ne urahora**, **Ne arahora**, **Ne torahora**, **Ne morahora**, **Ne marahora**; Preterit (narrative): **Ndakehora, Okehora, Akehora**.\n   - Hinde (1904): **ni-tind-iti** (I have conquered).\n4. **Past Perfect (Suffix *-ire* / *-eri*, with *ra-* or *a-*)**:\n   - Hémery (1903): *ndahorire / ndirahorire* (I beat [past]), *wahorire*, *ahorire*, *twahorire*, *mwahorire*, *mahorire*.\n5. **Future Tense (Infix *-ka-* / *-ga-* or *-rii-*)**:\n   - Hémery (1903, p. 10 Future & Conditional): Future **Ne ngohora, Ne okohora, Ne akohora, Ne tokohora, Ne mokohora, Ne makohora** (Neg. **Ndikohora, Ndokohora, Ndekohora, Totikohora, Motikohora, Matikohora**); Conditional Present **Ningehora, Ne ongehora, Ne angehora, Ne tongehora, Ne mongehora, Ne mangehora** (Neg. **Ndingehora**; Past **Ningehorile / ningehorete**).\n   - Hinde (1904): **nin-ka-tinda / ni-ga-tinda** (I shall conquer).\n6. **Five Derivative Verb Stems & Habitual *-ga* (Hémery 1903, pp. 10–11)**:\n   - **(I) Determinative / Applied (*-era / -ira*)**: *koluta → kolutera* (to do to), *kokinya → kokinyera* (to reach at).\n   - **(II) Passive (*-wo / -ilwo*)**: *kohora → kohorwo* (to be beaten), *koona → koonwo* (to be seen).\n   - **(III) Causative (*-ia / -ya*)**: *kohona* (to be cured) → *kohonya* (to cure), *koikoroka* (to descend) → *koikorokia* (to bring down).\n   - **(IV) Reflexive (*-e-* prefixed to root)**: *kooraga → koeoraga* (to kill oneself), *kogora → koegora* (to buy oneself).\n   - **(V) Reciprocal (*-na / -ana*)**: *kokwenda → kokwendana* (to love each other), *kokora → kokorana* (to meet together), *kohora → kohorana* (to beat/fight).\n   - **Habitual/Continuous Suffix (*-ga*, p. 10)**: *kohoraga* (beat continually), *kolyaga* (eat habitually), *komenyaga* (know continually).",
     "examples": [
       {
-        "kikuyu": "Nĩndĩrarũgĩra ciana irio.",
-        "english": "I am cooking food for the children.",
-        "explanation": "Applicative suffix -ĩra"
+        "kikuyu": "Ndahora (Neg. Ndihora) • Nderahora / Ndehorete • Ndakehora • Ne ngohora • Ningehora",
+        "english": "I beat (I do not beat) • I beat/have beaten • I beat (narrative) • I shall beat • I would beat",
+        "explanation": "Hémery (1903, pp. 9–10) paradigm of kohora"
       },
       {
-        "kikuyu": "Nĩtũkwendana mũno.",
-        "english": "We love one another very much.",
-        "explanation": "Reciprocal suffix -ana"
+        "kikuyu": "kohora → kohorera → kohorithia → kohorwo → kohorana",
+        "english": "to beat → beat for → cause to beat → be beaten → beat one another",
+        "explanation": "Hémery (1903, p. 11) 5 derivative verb stems"
       },
       {
-        "kikuyu": "Irio nĩ irũgĩtwo.",
-        "english": "The food has been cooked.",
-        "explanation": "Perfect passive -ĩtwo"
+        "kikuyu": "n-a-tinda / ni-ki-tinda / ni-tind-iti / nin-ka-tinda",
+        "english": "I conquer / I am conquering / I have conquered / I shall conquer",
+        "explanation": "Hinde (1904, pp. xi–xiii) paradigm of ku-tinda"
+      }
+    ]
+  },
+  {
+    "id": "kikuyu-negative-conjugation-locatives",
+    "title": "Negative Verb Paradigms (-ti- / -di- / -ndi-) & Locative Suffix (-ini / -eni) (Hémery 1903 & Hinde 1904)",
+    "summary": "Kikuyu forms negative tenses with the prefix -ti- (-di-/-ndi- in 1s) and negative copula ti-, and marks interior/spatial location with the suffix -ini / -eni.",
+    "content": "Hémery (1903, pp. 9–10) and Hinde (1904, pp. xv–xviii, 64–67) detail how negation and spatial location operate in Gĩkũyũ:\n1. **Negative Present (1s *ndi-*, 2s *ndu-* / *u-ti-*, 3s *nda-* / *a-ti-*, pl. *tu-ti-, mu-ti-, ma-ti-*)**:\n   - Hémery (1903, p. 9): **Ndihora** (I do not beat), **Ndohora**, **Ndehora**, **Totihora**, **Motihora**, **Matihora**; Negative Infinitive: **Kotihora** (not to beat).\n   - Common conversational negatives: **ndiui / ndikumenya** (I do not know), **ndikwenda** (I do not want), **ndingihota kuthi** (I cannot go).\n2. **Negative Past (Infix *-na-*)**:\n   - Hémery (1903, p. 9) & Hinde (1904, p. xvi): **ndi-na-hora / n-di-na-tinda** (I did not beat / conquer), **u-ti-na-hora**, **a-ti-na-hora**, **tu-ti-na-hora**, **mu-ti-na-hora**, **ma-ti-na-hora**.\n3. **Negative Future (Infix *-ka-* / *-ga-*)**:\n   - **n-di-ka-tinda / ndikahora** (I shall not conquer / beat), **ndikathie** (I will not go).\n4. **Negative Subjunctive / Imperative (*-ti-ka-...-e*)**:\n   - Hémery (1903, p. 10): **Ndihore / ndikahore**, **Ndohore / ndokahore** (do not beat! sg.), **Ndehore / ndekahore**, **Totihore / totikahore**, **Motihore / motikahore** (do not beat! pl.), **Matihore / matikahore**.\n5. **Locative Suffix (*-ini* / *-eni*)**:\n   - Added to the end of a noun to express \"in, at, on, near\": *mutwe* (head) → **mutweni** (on the head), *miti* (trees) → **mitini** (in the trees), *nyumba* (house) → **nyumbani / nyumba-ini** (in the house), *ruui* (river) → **ruuini** (at the river).",
+    "examples": [
+      {
+        "kikuyu": "ndina-hora / tutina-hora | ndika-hora / tutika-hora",
+        "english": "I/we did not beat | I/we shall not beat",
+        "explanation": "Negative past (-na-) and negative future (-ka-) in Hémery (1903, pp. 9–10)"
+      },
+      {
+        "kikuyu": "ndiui / ndikumenya • ndingihota kuthi",
+        "english": "I do not know • I cannot go",
+        "explanation": "Everyday negative expressions (Hinde 1904, p. 64)"
+      },
+      {
+        "kikuyu": "mutweni / mitini / nyumbani / ruuini",
+        "english": "in the head / in the trees / in the house / at the river",
+        "explanation": "Locative suffix -ini/-eni (Hémery 1903 & Hinde 1904)"
+      }
+    ]
+  },
+  {
+    "id": "kikuyu-numerals-possessives",
+    "title": "Decimal Numerals, Qualifying Adjectives, Multipliers (Ka-) & Possessive Concords (Hémery 1903 & Hinde 1904)",
+    "summary": "Gĩkũyũ counts in tens (ikumi, mirongo iri, igana, ngiri), prefixes ka-/kĩ- for 'times' (kamwe/kirrimue, keeri, kathatu), and inflects adjectives and possessives to match the noun class.",
+    "content": "From Rev. Fr. A. Hémery (1903, pp. 4–8) and Hildegarde Hinde (1904, pp. 62–66):\n1. **Cardinal Numbers (1–1,000)**:\n   - **1–10**: *imue / ĩmwe* (1), *igiri / igĩrĩ* (2), *ithatu / ithatũ* (3), *inya* (4), *ithanu / ithano* (5), *thanthatu / ithathatũ* (6), *muguanja / mũgwanja* (7), *inyanya* (8), *ikenda / kenda* (9), *ikumi* (10).\n   - **11–1,000**: *ikumi na imwe* (11), *mirongo iri* (20), *mirongo itatu* (30), *mirongo inya* (40), *mirongo ithanu* (50), *igana* (100, pl. *magana*), *ngiri* (1,000).\n   - Note (Hémery 1903, p. 5): Numbers 1, 2, 3, 4, 5, 6, and 8 (as well as *-igana* \"how many?\") agree in prefix with the noun counted (*mundu umwe* '1 person', *andu eri* '2 people', *miti itatu* '3 trees', *indu inya* '4 things', *nyumba ithano* '5 houses'), whereas *mugwanja* (7), *kenda* (9), and *ikumi* (10) are invariable.\n2. **Adverbial Multipliers (*Ka-*)**:\n   - *kamwe / kirrimue* (once), *kēēri* (twice), *kathatu* (thrice), *kanna* (four times), *kathano* (five times).\n3. **Possessive Concords (*-akwa, -aku, -ake, -itu, -anyu, -ao*) & Suppletive Kinship Terms (McGregor 1904, pp. 27, 63, 76, 114, 158)**:\n   - Regular concords: *mwana wakwa* (my child), *ciana ciaku* (your children), *ng'ombe ciake* (his cows), *guoko gwake* (his arm), *mucii witu* (our homestead).\n   - **Suppletive Kinship Possessives (McGregor 1904)**:\n     - **Father (p. 63)**: My father = **Baba**, Your father = **Thoguo**, His/her father = **Ithi** (Plural all persons: **Maithi**; forefather = *Baba wa tene*, pl. *Maithi wa tene*, p. 69).\n     - **Mother (p. 114)**: My mother = **Maito**, Your mother = **Nyukwa**, His/her mother = **Nyina** (Plural all persons: **Manyina**).\n     - **Siblings, In-Laws & Grandparents (pp. 27, 40, 43, 76, 158–159)**: Brother = *Mwana / Muru wa maito*; Sister = *Mwari wa maito* (pl. *Ari*); Sister-in-law = *Mwari wa nyina* or *Maramu* (pl. *A-*); Brother-/Son-in-law / Cousin = *Muthoni* (pl. *A-*); Grandfather / Grandchild = *Guka / Gukawe* (pl. *Maguka / Magukawe*); Grandmother = *Chocho* (pl. *Machocho*).",
+    "examples": [
+      {
+        "kikuyu": "mundu umwe, andu eri, miti itatu, indu inya, nyumba ithano",
+        "english": "one person, two people, three trees, four things, five houses",
+        "explanation": "Noun-class prefix agreement on numerals 1–5 (Hémery 1903, p. 17)"
+      },
+      {
+        "kikuyu": "Baba / Thoguo / Ithi (pl. Maithi) • Maito / Nyukwa / Nyina (pl. Manyina)",
+        "english": "My / your / his-her father (pl. fathers) • My / your / his-her mother (pl. mothers)",
+        "explanation": "Suppletive kinship possessives in McGregor (1904, pp. 63, 114)"
+      },
+      {
+        "kikuyu": "mwana wakwa / ciana ciaku / mucii witu",
+        "english": "my child / your children / our homestead",
+        "explanation": "Possessive concord across classes (Hémery 1903, p. 20 & Hinde 1904, p. 65)"
+      }
+    ]
+  },
+  {
+    "id": "kikuyu-cultural-lexicon-hobley",
+    "title": "Classical Agĩkũyũ Social, Judicial, Seasonal, Clan & Ritual Terminology (Höhnel 1894, McGregor 1904, Routledge 1910, Dundas 1915 & Hobley 1922)",
+    "summary": "Höhnel (1894), W. S. & K. Routledge (1910), Hon. Charles Dundas (1915), and C. W. Hobley (1910, 1922) preserve the complete terminology of the 13 Agĩkũyũ clans (Mĩhĩrĩga), generation ages (Rĩĩka), council grades (Kiama), land tenure (Gĩthaka), and peace covenants.",
+    "content": "In *Discovery of Lakes Rudolf and Stefanie* (1894, Vol. I, Chs. V–VI), *With a Prehistoric People: The Akikúyu of British East Africa* (1910), *The Organization and Laws of Some Bantu Tribes in East Africa* (Hon. Charles Dundas, JRAI Vol. 45, 1915, pp. 234–306), and *Bantu Beliefs and Customary Institutions* (1922, Glossary pp. 305–308), primary accounts document the institutional vocabulary of Agĩkũyũ society:\n1. **1887 Traverse of Kikuyuland: Peace Covenants, Ridges & Homesteads (Höhnel 1894, Vol. I, pp. 286–365)**:\n   - Records the earliest south-to-north traverse from *Ngongo Bagas* (Ngong) to *Ndoro* at the western base of Mount Kenya (Aug–Oct 1887), meeting leaders *Miani*, *Karanja*, *Waiyaki*, *Kihara*, *Gathirimu*, *Karanja wa Maragua*, *Wamugunda* (Tetu), and *Kihura* (Ndoro).\n   - **Peace Litany & Covenants**: Greeting **Mirema!** and peace chorus **Thayu! Thayu!** (\"Peace! Peace!\") during the **kuhoria tatha** ceremony (sprinkling sheep stomach-contents over both parties) and the solemn **githathi** blood-and-peace covenant over a white ram and black goat (**mburi ya thayu**).\n   - **Landscape & Fortifications**: **rugongo** (pl. *migongo*, parallel mountain ridge bounded by streams), **Subugo** (primeval boundary forest belt), **itura** (fortified homestead ring inside the forest clearing), **kihingo** (thorny stockade gate barrier), **ngurunga** (camouflaged pitfall with sharpened stakes).\n2. **Council Grades (*Kiama kia Kamatimo* vs. *Kiama kia Athuri*), *Gĩthaka* Tenure & Customary Law (Dundas 1915, pp. 241–304)**:\n   - **Kiama Grades**: Junior council **Kiama kia Kamatimo** (initiated by presenting a goat after marriage) vs. senior judicial council **Kiama kia Athuri / Kiama kia Mataha** (carrying the ceremonial fly-whisk *mataha* and *mũthĩgi* staff), led by the spokesman **Mũthamaki**.\n   - **Land Tenure (*Gĩthaka*)**: Hereditary ridge estate (**gĩthaka**, administered by the *mũramati*), distinguishing an outright purchase (**kũgũra**) from redeemable cultivation tenancy (**mũhoi** 'borrower of land' and **mũthoni** 'in-law tenant').\n   - **Blood-Compensation (*Magambo / Ũhoro wa Njũgũma*)**: Fixed at 100 sheep/goats for a man and 30 for a woman, concluded with the **kũhoria** peace-ram sacrifice so kinship peace is restored.\n3. **The 13 Clans (*I-ri-ka* / *Mĩhĩrĩga*) & 10 Chronological Ages (*Rĩĩka*) (Routledge 1910, pp. 8–23)**:\n   - **13 Clans**: *A-ché-ra, A-ga-chí-ku, A-ga-thi-gí-a, Ai-cha-ka-mú-yo, Ai-rí-mu, A-ki-ú-ru (M'we-sá-ga / M'bú-ru), Am-bú-i, An-gá-ri (Ai-the-ka-hú-no), An-jí-ru, An-gó-i, E-thá-ga, Ai-ze-ran'-du, Ai-zi-e-gé-ni*.\n   - **10 Ages Since Creation**: *1. Man-jí-ri → 2. Man-dó-ti → 3. Chi-éra → 4. Masaí → 5. Ma-thá-thi → 6. N'dé-mi → 7. I-ré-gi → 8. Ma-í-na → 9. Mwan'gi → 10. Mu-i-run'-gu*, with the **Itwika** generational transfer ceremony.",
+    "examples": [
+      {
+        "kikuyu": "Thayu! Thayu! • kuhoria tatha • mburi ya thayu • rugongo (pl. migongo)",
+        "english": "Peace! Peace! • peace-sprinkling ceremony • peace-sheep • mountain ridge",
+        "explanation": "1887 Kikuyu peace covenant and landscape terms recorded by Höhnel (1894, Vol. I, Chs. V–VI, pp. 220–221, 234–236, 286–309 [361], 362–366, 371–375)"
+      },
+      {
+        "kikuyu": "Kiama kia Kamatimo → Kiama kia Athuri (Mataha) • Gĩthaka • Mũramati • Mũhoi",
+        "english": "Junior council → Senior elders' council • Clan land estate • Estate trustee • Land tenant/borrower",
+        "explanation": "Agĩkũyũ judicial grades and Gĩthaka land law in Hon. Charles Dundas (1915, pp. 241–295)"
+      },
+      {
+        "kikuyu": "Gĩcandĩ (Kishandi) • Rũgano (pl. Ngano) • Guso!",
+        "english": "Poetic gourd rattle • Folktale • Riddle challenge ('Guess!')",
+        "explanation": "Agĩkũyũ oral literature & music (Routledge 1910, pp. 109, 285)"
+      }
+    ]
+  },
+  {
+    "id": "kikuyu-mcgregor-1905-barlow-1914-dahl",
+    "title": "Dahl's Law (K→G Dissimilation), Hinde (1904) Aspect Suffixes & Locative Classes (McGregor 1905 & Barlow 1914)",
+    "summary": "Rev. A. W. McGregor (1905), A. R. Barlow (1914), and H. Hinde (1904) document Gĩkũyũ velar dissimilation (k → g before voiceless consonants), aspect suffixes (-ĩte perfect, -ire past), and spatial demonstratives.",
+    "content": "1. **Dahl's Law in Gĩkũyũ Prefixes (McGregor 1905 & Barlow 1914)**:\n   - The prefixes *ka-* (Class 12), *kĩ-* (Class 7), and *kũ-* (Class 15/17) voice to **ga-**, **gĩ-**, and **gũ-** when the next syllable begins with a voiceless consonant (*k, t, th, c*): *gĩ-thaka* (bushland), *gũ-tindĩka* (to push), *gũ-tinia* (to cut), *ga-kĩrĩma* (small hill), vs. *kĩ-rĩma* (mountain), *kũ-menya* (to know), *kũ-nyua* (to drink).\n2. **Completive vs. Preterite Suffixes (Hinde 1904, pp. xiii–xiv)**:\n   - Present Perfect uses **-ĩte / -ete** (*nĩ-ndĩ-tind-ĩte* 'I have conquered/stayed'), whereas Past Perfect/Preterite uses **-ire / -ere** (*nĩ-ndĩ-tind-ire*). Locatives distinguish *haha/gũkũ* (here) from *harĩa/kũrĩa* (yonder).",
+    "examples": [
+      {
+        "kikuyu": "gĩ-thaka, gũ-tinia, gũ-tindĩka vs. kĩ-rĩma, kũ-menya",
+        "english": "bushland, to cut, to push vs. mountain, to know",
+        "explanation": "Dahl's Law voicing k → g before voiceless obstruents (McGregor 1905)"
+      },
+      {
+        "kikuyu": "haha / gũkũ (here) • harĩa / hau / kũrĩa (there/yonder)",
+        "english": "proximal vs. distal locative demonstratives",
+        "explanation": "Wiktionary Bantu Swadesh & Barlow (1914)"
+      }
+    ]
+  },
+  {
+    "id": "kikuyu-hemery-1903-complete-handbook",
+    "title": "Rev. Fr. A. Hémery, C.S.Sp. (1903) English-Kikuyu Hand-Book: Exact 9 Noun Classes, Diminutives (ka-/to-) & Augmentatives (ke-), Qualifying (-ega), Cardinals (1–10,000), Pronouns, Kohora Paradigm, 5 Derived Verb Forms, Particles (pp. 13–14) & 5-Part Phrase-Book (pp. 77–87)",
+    "summary": "Complete line-by-line grammatical and conversational synthesis of Rev. Fr. A. Hémery's pioneering 1903 English-Kikuyu Hand-Book (Roman Catholic Mission, Zanzibar—Nairobi; Preface dated Nairobi, April 20th, 1902, Book pp. 1–87 [PDF pp. 1–92]).",
+    "content": "From The Rev. Father A. Hémery, C.S.Sp., Missionary Apostolic (*English-Kikuyu Hand-Book*, Zanzibar—Nairobi: Roman Catholic Mission, 1903; Preface dated Catholic Mission, Naïrobi, April 20th, 1902, citing Consul-General Sir Charles Eliot and the Uganda Railway, Book pp. 1–87 [PDF pp. 1–92]):\n1. **The Alphabet & Five Confused Sound Pairs (PDF p. 5)**:\n   - *ch, sh, w* as in English; *g* as in *gate*; *j* as in French *jour*; *s* as in *sun*; *t* as in *ten*; *y* as in *yes*; vowels as in Italian; **the letter *f* is not used**.\n   - **Five Sound Pairs Frequently Confused by Speakers**: **(1)** *l* and *r*, **(2)** *g* and *k*, **(3)** *sh* and *ch*, **(4)** *o* and *u*, **(5)** *e* and *i*.\n2. **Chapter I — Hémery's Exact Nine Classes of Nouns, Diminutives & Augmentatives (Book pp. 1–4)**:\n   - **I. Class (*m-, mu-, mo- → a-*, rational beings)**: *Mundu → Andu* ('a Man'), *Mkikuyu → AKikuyu* ('a Kikuyu'), *Mzungu → Azungu* ('an European'), *Mnene → Anene* ('a Chief'), *Moireto → Aireto* ('a Girl').\n   - **II. Class (*m-, mo- → me-*)**: *Mte / Mote → Mete* ('a Tree'), *Mweri → Meeri* ('the Moon'), *Motoe → Metoe* ('the Head'), *Mwere → Meere* ('the Body'), *Mkiha → Mekiha* ('the Vein'), *Mrigo → Merigo* ('a Load'), *Mwaka → Meaka* ('a Year'), *Mgunda → Megunda* ('a Field'), *Mtito → Metito* ('a Forest').\n   - **III. Class (Invariable Nouns)**: *Nyumba* ('a House'), *Nyama* ('Meat'), *Ngombe* ('an Ox'), *Ngondu* ('a Sheep'), *Ndigiri* ('a Donkey'), *Nyoni* ('a Bird'), *Ndjogu* ('an Elephant'), *Ndjira* ('a Road'), *Mbura* ('the Rain').\n   - **IV. Class (*ke- → i-*)**: *Kendo → Indo* ('a Thing'), *Kesaka → Isaka* ('a Field'), *Kekwa → Ikwa* ('a Yam'), *Kelima → Ilima* ('a Hill'), *Keroto → Iroto* ('a Dream').\n   - **V. Class (*i- → ma-*, plus *koto* & *kogoro*)**: *Inyoro → Manyoro* ('the Nose'), *Igongona → Magongona* ('a Sacrifice'), *Ihiga → Mahiga* ('a Stone'), *Irima → Marima* ('a Hole'), *Itumbe → Matumbe* ('an Egg'), *Igego → Magego* ('a Tooth'), plus *koto → mato* ('the ear') and *kogoro → magoro* ('the foot').\n   - **VI. Class (Nouns not beginning with *i-* prefixing *ma-* in the plural)**: *Letwa → Maletwa* ('a Name'), *Ondo → Maondo* ('a Cause'), *Taama → Mataama* ('Cloth').\n   - **VII. Class (*l- / lo-* → *n-* before consonant, *ny-* before vowel; initial *l/r* + *n* → *d*)**: *Logito → Ngito* ('a Roof'), *Lwimbo → Nyimbo* ('a Song'), *Loleme → Ndeme* ('the Tongue'), *Lorigi → Ndigi* ('a String'), *Loara → Ndoara* ('a Nail'), *Loere → Ndoere* ('a String/Side').\n   - **VIII. Class (*ki- → shi-*)**: *Kiombe → Shiombe* ('a Person'), *Kiongoyo → Shiongoyo* ('a Fish'), *Kiara → Shiara* ('a Finger'), *Kiuga → Shiuga* ('a Dish'), *Kiaro → Shiaro* ('a Caravan'), *Kiondo → Shiondo* ('a Basket'), *Kiura → Shiura* ('a Toad').\n   - **IX. Class (Verbs used as nouns)**: *Kokwa* ('To die'), *Kosie* ('To go'), *Kooraga* ('To kill').\n   - **Diminutives (`ka-` & `to-`) & Augmentatives (`ke-`, pp. 3–4)**: *Ngondu → Kangondu* ('a small sheep'), *Munyu → Kamunyu* ('a little salt'), *Ngombe → Kangombe* ('a little ox'), *Tomae* ('a little water'), *Toirio* ('a little food'); *Ngombe → Kengombe* ('a big ox'), *Munyu → Kemunyu* ('plenty of salt').\n3. **Chapters II–IV — Qualifying `-ega`, Cardinals `1–10,000`, Ordinals & Complete Pronouns (Book pp. 4–8)**:\n   - **Qualifying `-ega` across Classes I–IX (p. 4)**: I. *Mundu mwega / Andu aega*; II. *Mote mwega / Mete mega*; III. *Nyumba Njega*; IV. *Kendo kyega / Indo shyega*; V. *Ihiga ryega / Mahiga mega*; VI. *Taama mwega / Mataama mega*; VII. *Lwimbo lwega / Nyimbo djega*; VIII. *Kiara kiega / Shiara shiega*; IX. *Kokwa kwega*.\n   - **Cardinals `1–10,000` & Ordinals (pp. 4–5)**: *1 Imwe/omwe, 2 Igere/ere, 3 Itato/isato, 4 Inya, 5 Isano, 6 Itandato, 7 Mgwandja, 8 Inyanya, 9 Kenda, 10 Ikumi, 11 Kumi na imwe ... 20 Merongo ere, 30 Merongo isato, 40 Merongo ena, 50 Merongo etano, 60 Merongo itandato, 70 Merongo mgwandja, 80 Merongo enana, 90 Merongo kenda, 100 Igana, 200 Magana mere, 300 Magana atato, 400 Magana ana, 500 Magana atano, 600 Magana atandato, 700 Magana mgwandja, 800 Magana anana, 900 Magana kenda, 1000 Ngiri ... 10000 Ngiri ikumi*; Ordinals *-a mbereirie* ('First') to *-a suza* ('The last').\n   - **Genitive `-a` ('of') across Classes 1–9 (pp. 6–7)**: 1. *Mundu wa mzamaki / Andu a mzamaki*; 2. *Mte wa mzuri / Mete ya mwana*; 3. *Nyumba ya mzuri*; 4. *Kesaka kya baba / Isaka shya baba*; 5. *Ihiga rya nyumba / Mahiga ma nyumba*; 6. *Taama wa mundu / Mataama ma mundu*; 7. *Loleme lwa maito / Ndeme shya maito*; 8. *Kiara kya mundu / Shiara shya mundu*; 9. *Kokwa kwa baba*.\n   - **Composite Pronouns & 3-Way Demonstratives (pp. 7–8)**: *niye mwene, we mwene, nake mwene, iswe ene, inywe ene, wao/ao ene*; Demonstratives (1 Near | 2 Distant | 3 Spoken of Beforehand): Cl. 1 *oyo | olya | oshio* (pl. *aya | alya | ashio*), Cl. 4 *geke | kelya | keo* (pl. *ishi | ilya | ishio*), Cl. 5 *rere | relya | reo* (pl. *maya | malya | mashio*).\n4. **Chapter V — Adverbs, Enclitics (`-le` & `-tya`), Attention Call (`Aderere!`) & 5-Part Phrase-Book (Book pp. 13–14, 77–87)**:\n   - **Particles & Time Adverbs (pp. 13–14)**: *Kolaya* ('far'), *Hange* ('elsewhere'), *Igoro / Logoro* ('above'), *Se / ze* ('below'), *Reu / reu-reu* ('now/to-day'), *Rochio* ('to-morrow'), *Oke* ('day after to-morrow'), *Ira* ('yesterday'), *Iyo* ('day before yesterday'), *Rochine tene* ('very early in the morning'), enclitic **-le** ('if/when/as': *Ndalutara werale negokwata rupia*), enclitic **-tya** ('how?': *Waekatya*), **Kana** ('if/when' & 'or/either'), **Aderere!** ('Listen to me!'), **Ne muhoro — Nde muhoro, muhoro mweg**, and **Tiguo uhoro / tigwoni uhoro** ('Good-bye').\n   - **Five-Part Conversational Phrase-Book (pp. 77–87)**: **I. Usual** (pp. 77–78), **II. Servants, Meals, etc.** (pp. 79–81), **III. A Visit to a Village** (pp. 81–82), **IV. Working** (pp. 82–83), and **V. In Caravan** (pp. 84–87).",
+    "examples": [
+      {
+        "kikuyu": "Cl. VI Letwa → Maletwa, Ondo → Maondo, Taama → Mataama • Cl. VII Logito → Ngito, Lwimbo → Nyimbo, Loleme → Ndeme, Lorigi → Ndigi, Loara → Ndoara • Cl. VIII Kiombe → Shiombe, Kiongoyo → Shiongoyo",
+        "english": "name, cause, cloth (Ø → ma-) • roof, song, tongue, string, nail (l-/lo- → n-/ny-/nd-) • person, fish (ki- → shi-)",
+        "explanation": "Hémery's (1903, pp. 2–3) Classes VI, VII, and VIII"
+      },
+      {
+        "kikuyu": "Mundu oyo / olya / oshio (pl. Andu aya / alya / ashio) • Kendo geke / kelya / keo (pl. Indo ishi / ilya / ishio) • Ihiga rere / relya / reo (pl. Mahiga maya / malya / mashio)",
+        "english": "this / that (distant) / that (aforementioned) man, thing, and stone",
+        "explanation": "Hémery's (1903, p. 8) 3-way demonstrative system"
+      },
+      {
+        "kikuyu": "Ndalutara werale negokwata rupia • Waekatya? • Aderere! • Ne muhoro — Nde muhoro • Tiguo uhoro / tigwoni uhoro",
+        "english": "If I do work I shall get Rupees • What do you do? • Listen to me! • Good day — I am well • Good-bye (sg. / pl.)",
+        "explanation": "Enclitics -le and -tya, attention call, and salutations in Hémery (1903, pp. 13–14)"
+      }
+    ]
+  },
+  {
+    "id": "kikuyu-mcgregor-1904-complete-vocabulary",
+    "title": "Rev. A. W. McGregor (1904) English-Kikuyu Vocabulary (C.M.S. / SPCK London, Fort Smith / Kabeti, 1901–1902, PDF pp. 1–201 / Book pp. [i]–iv, 5–192): Stanford Provenance, Preface, R.G.S. Orthography (Th for S/Z, Ng' vs. Ng'g), 10 Noun Classes, Pronouns, Kinship, 7-Day Sequence, Seasons, Law & Editorial Audit",
+    "summary": "Complete line-by-line synthesis of Rev. A. W. McGregor's 192-page English-Kikuyu Vocabulary (SPCK London, 1904; printed by Richard Clay & Sons, Limited, London and Bungay; Preface dated London, May 1903; collected at Fort Smith / Kabeti in 1901–1902, PDF pp. 1–201, Stanford University Libraries Copy PL 8379.4 .M3 C.1).",
+    "content": "1. **Front Matter, Stanford University Libraries Provenance, Preface & Printer Colophon (PDF pp. 1–9, 197–201; Book pp. [i]–iv, 192)**:\n   - **Provenance & Physical Volume**: Digitized from the Cecil H. Green Library / Stanford University Libraries copy (`PL 8379.4 .M3 C.1`, barcode `3 6105 037 215 303`, flyleaf notation `A45- / U7` [`A45- / 47`], bookplate on PDF p. 3: *'In tribute to Dr. & Mrs. Robert A. Rennie from a gift by Nationwide Foundation / Stanford University Memorial Fund'*, circulation stamps `SEP 17 1990`, `MAR 21 1991`, `MAY 23 19[91]`, `JUN 15 2005`, `DEC 05 2005`, printed by *Richard Clay & Sons, Limited, London and Bungay*, p. 192).\n   - **Preface (London, May 1903, pp. iii–iv)**: First printed vocabulary of the Kikuyu language, collected in the district of Kikuyu called by Europeans **Fort Smith** (native name, **Kabeti**) during **1901 and 1902** while stationed there by the Church Missionary Society. Situated practically on the Equator, bounded on the SW by the **Uganda Railway from about mile 326 to mile 360** (round the **Nairobi and Kikuyu stations**), and stretching NE to **Mount Kenia** (native name **Kirinyaga** on p. iv; **Kilinyatha. Kireira** on p. 95). Altitude varies from **4,000 feet to the 18,000 feet of Kenia** (inhabited zone **4,000 to 7,000 feet**); population estimated at **200,000 to 300,000**.\n\n2. **Orthographic Note (R.G.S. System), 9 Abbreviations, Observe A–B & 10 Noun Class Prefix Pairings (PDF pp. 10–11; Book pp. 5–6)**:\n   - **R.G.S. Orthography, `Th` for `S`/`Z`, and `L`/`R` Interchangeability**: Consonants as in English, vowels as in Italian; every letter pronounced. In **Kabeti** (Fort Smith), ***S* and *Z* do not appear to be used, *Th* always taking their places** (*Muthungu, Muthamaki, Muthuri, -theru, kothie, Thetani, Mathihi/Krithto, Mutha, Kithwaeri*); ***L* and *R*** are often indistinguishable or used interchangeably (*kolekia/korekia, lochuthi, lokwaro*).\n   - **Velar Nasal `ng'` vs. Prenasalized `ng'g` (p. 5)**: Words with a point after *ng*, as **koteng'era** ('to abscond/run'), must be pronounced **koteng-era**, not *koten-gera* (also *ng'ombe, ng'ondu, ng'aragu, ng'ania, kong'orota, kong'athia, king'ang'aini*). Words having both nasal *ng* and hard *g* are written **ng'g**, as **kuing'gata** ('to accelerate/banish/conquer/drive away') and **ketung'guru (I-)** ('ball/sphere').\n   - **9 Abbreviations & Observe A–B (pp. 5–6)**: *n., pron., adj., conj., prep., adv., int., pass., neu.* **(A)** The Infinitive of the verb is in all cases given (*Ko-, Ku-, Kw-*). **(B)** Invariable nouns are marked ***s. & p.***; variable nouns give the full plural in brackets as *Servant, Mwetereri (Etereri)*, or the plural prefix in brackets as *Gechunji (I-)* → *Ichunji* across 10 prefix pairings (`Mu-/A-`, `Mu-/Mi-`, `Ge-,Ke-,Ki-/I-,Chi-`, `I-,Re-,Ri-/Ma-`, `Ro-,Ru-/N-,M-,Ny-,Nd-,Ng-` or `Ma-`, `Ka-/To-,Tu-,Twa-`, `O-,U-,W-/Ma-`, `Ko-,Ku-,Gu-/Ma-`, invariable `N- [s. & p.]`, and locative `Ha-/Ku-` & `-ini`).\n\n3. **Complete Pronouns, Object Infixes, Demonstratives, Locatives (`Kw-` & `-ini`), Enclitics & Suppletive Kinship (Book pp. 6–192)**:\n   - **Personal & Reflexive Pronouns**: *Nie / Ngoro yakwa* ('I'), *Nie nyiki / Nie mweni* ('I myself / alone'), *We / We mweni / Ngoro yaku* ('Thou / Thyself'), *Oria / We wiki* ('He/Her / Of himself'), *Ithui / Ithui eni / Ngoro chiitu / Ithui wiki* ('We / Ourselves / Only we'), *Inyui / Inyui eni / Ngoro yanyu* ('Ye / Yourselves'), *Aria / Iria / Maria / Haria* ('They'); Object infixes: *-nd-, -nj-, -ng-* ('me', p. 109), *-mu-, -mo-, -mw-* ('him', p. 82), *-tu-, -to-, -tw-* ('us', p. 179), *-ma-, -chia-* ('them', p. 167); Possessives: *-akwa* (printed *-awka* on p. 116), *-aku, -ake, -itu, -anyu, -ao*; Home locatives: *Kwangu, Kwaku, Kwake, Kwitu, Kwanyu, Kwao* (*Tuthie kwitu* 'Let us go along', p. 14) and noun locative suffix *-ini / -ni* (pp. 87, 92).\n   - **Demonstratives & Interrogatives**: *Uyu, Keki, Roro, Haha* (pl. *Aya, Ichi, Maya, Haha*, p. 168) vs. *-ria* (*Oria, Aria, Iria, Maria, Haria, Koria*) and *Oria mweni (Aria eni) / Okiriakiria* ('identical', p. 85); *No? Niweo?* ('Who? Who are you?', p. 187), *-ao?* ('Whose?'), *Nike? Niatea?* ('What? What is the matter?'), verb suffix **-atea** (*Akuugatea* 'How does he speak?', p. 84; *Kotariatea?* 'What kind of weather?', p. 185), *-riko* ('What kind / Which?'), *Niri?* ('When?'), *-ha / -ka* (*Meha?* 'Where are they?', p. 186), verb suffix **-ko** ('Whence/Whither?', pp. 186–187), *Goro uriko?* ('What price?', p. 190).\n   - **Suppletive Kinship & Marriage**: Father (p. 63): *Baba / Thoguo / Ithi* (pl. *Maithi*; *Baba watene / Maithiwa tene* 'forefather', p. 69; *Baba munyinyi / Babawa keri* 'uncle', p. 176); Mother (p. 114): *Maito / Nyukwa / Nyina* (pl. *Manyina*; *Tata* 'aunt', p. 17); *Mwana / Muru wa maito* ('brother', p. 27), *Mwari wa maito (Ari)* ('sister', p. 158), *Mwari wa nyina / Maramu (A-)* ('sister-in-law', p. 158), *Muthoni (A-)* ('brother-in-law / cousin / son-in-law', pp. 27, 40, 159), *Guka (Maguka) / Gukawe (Magukawe)* ('grandchild / grand-daughter', pp. 43, 76), *Chocho (Machocho)* ('grandmother', p. 76), *Rorachio (Marorachio)* ('gift to bride's father', p. 73), *Wathiomo* ('gift of a goat', pp. 73, 122, 137).\n\n4. **7-Day Relative Time Sequence, Agricultural Seasons, Customary Law & Editorial Audit of Original 1904 Printing Anomalies (Book pp. 6–192)**:\n   - **7-Day Sequence & Seasons**: *Iyo* ('day before yesterday') → *Ira* ('yesterday') → *Reu / Omothi / Muthenya uyu / Otuko uyu* ('to-day') → *Rochio* ('to-morrow') → *Oke* ('day after to-morrow') → *Matukwatatu* ('2 days after to-morrow') → *Matukwana* ('3 days after to-morrow'); *Kathano* ('greater rainy season / winter', *Mwaka wa heho*, pp. 142, 188), *Mwaka wa kehu* ('lesser rainy season', p. 142), and crop-year seasons **Mwaka wa Njahi, Mweri, Mohea** ('last year: *Mwaka wa njahi or mweri as the case may be*', pp. 154, 191).\n   - **Law, Ordeal, Religion & Architecture**: *Chira (Ma-)* ('council/law', *Machiraini* 'parliament', *Muchiri* 'judge', *Muchirithia* 'plaintiff', *Muchirithio* 'defendant'), *Magambo / Mugambo (Mi-)* ('composition/fine for murder', pp. 36, 66; *Irehi [Ma-]* 'fine'), *Konyua muma* ('to take an oath / take ordeal cup', pp. 120, 124), *Muramati (A-) / Oramati* ('heir / inheritance'), *Mutaithorani (A-) / Kotaithorana* ('peacemaker / to make peace'), *Igongona (Magongona)* ('sacrifice') at the *Kegongaini (I-)* ('altar'), *Thahu / Mugiru (Migiri) / Rehiya (Mehiya)* ('ceremonial sin/taboo', p. 157), *Mundu mugo (A-)* vs. *Murogi (A-)*, *Thingira (Ma-)* ('man's hut'), *Itara (Ma-) & Ikombi (Ma-)* ('granary/garner/store'), *Mungu (Miungu)* ('refuge pit of men', p. 146), and *Kegandaini* ('furnace', p. 71).\n   - **Complete Audit of 1904 Printing Gaps, Errata & Bracketed Margin Reconstructions**: Records all **3 original alphabetical gaps** (Book p. 17 *Arms* → *Astonishment*; Book p. 45 *Defiance* → *Deluge*; Book p. 153 *Ruthless* → *Scare*), all **9 original printer's errata** (Book p. 18 *Aze* for *Axe*; Book p. 29 *Call up* `Nonenya` for `Komenya`; Book p. 41 *Crop* ditto for *Cross, n.* `Muthalaba (Mi-). Keigereri (I-).`; Book p. 66 *First* `-a kiamkereria` for `-a kiambereria`; Book p. 83 *Honest* ditto for *Honour, n.* `Onene. Ogochi. Ngumo. Okumio. Otei.`; Book p. 85 *Hush, n.* `Makoro.` for *Husk, n.*; Book p. 116 *My* `-awka` for `-akwa`; Book p. 168 *Thirteenth* `-ai kumi na ithathatu` [lit. 16th]; Book p. 171 *Topple, to* `(new) Kogoa` for `(*neu.*) Kogoa`), and all **30 outer-margin bracket-reconstructed pages** (Book pp. 7, 10, 12, 14, 16, 18, 30, 32, 34, 35, 40, 52, 54, 58, 60, 68, 76, 78, 88, 90, 98, 106, 108, 140, 146, 156, 158, 161, 170, 172).",
+    "examples": [
+      {
+        "kikuyu": "koteng'era (velar ng') vs. kuing'gata & ketung'guru (ng' + hard g) • Mwetereri (Etereri) • Gechunji (I-) → Ichunji",
+        "english": "to run/abscond vs. to banish/conquer & ball • Servant (Servants) • Portion (Portions)",
+        "explanation": "McGregor's (1904, pp. 5–6) exact Kabeti orthographic & plural bracket notation"
+      },
+      {
+        "kikuyu": "Iyo → Ira → Reu / Omothi → Rochio → Oke → Matukwatatu → Matukwana • Kathano & Mwaka wa kehu • Mwaka wa Njahi, Mweri, Mohea",
+        "english": "Day before yesterday → Yesterday → To-day → To-morrow → Day after to-morrow → 2 & 3 days after to-morrow • Greater & lesser rainy seasons • Lablab, bulrush-millet & sorghum crop seasons",
+        "explanation": "McGregor's (1904, pp. 44, 114, 142, 154, 170, 191–192) 7-day sequence and seasonal calendar"
+      },
+      {
+        "kikuyu": "Akuugatea? • Kotariatea? — Kwena matu / Kwena heho / Kwena rugari (Ohiyo) • Tuthie kwitu! • Ndainuka / Ndaimuka — Thie na uhoro! • Ngai angienda",
+        "english": "How does he speak? • What kind of weather? — Cloudy / Cold / Hot • Let us go along! • I am going — Go in peace! • Probably (D.V., if God wills)",
+        "explanation": "Conversational idioms and enclitics across McGregor (1904, pp. 14, 63, 76, 84, 138, 185)"
+      },
+      {
+        "kikuyu": "Aze (= Axe, Ithanwa [Ma-], p. 18) • Crop [Cross], n. = Muthalaba (Mi-). Keigereri (I-). (p. 41) • Honest [Honour], n. = Onene. Ogochi. Ngumo. Okumio. Otei. (p. 83) • Hush [Husk], n. = Makoro. (p. 85) • My = -awka [-akwa] (p. 116) • Topple, to = (new [= neu.]) Kogoa (p. 171)",
+        "english": "Original 1904 typesetting slips and ditto-mark shifts documented in the line-by-line audit of McGregor (1904)",
+        "explanation": "Editorial and philological apparatus for McGregor (1904, Book pp. 18, 29, 41, 66, 83, 85, 116, 168, 171)"
+      }
+    ]
+  },
+  {
+    "id": "kikuyu-hobley-1910-thahu-kamiri-cattle-brands",
+    "title": "C. W. Hobley (1910) Part II Chapters II–IV: 87 A-Kikuyu Clan Cattle Brands (pp. 122–133), Ceremonial Uncleanness (Thahu, 7 Sacred Herbs, Ku'ringa-thengi & Kithathi, pp. 134–143) & Chief Medicine-Man Kamiri's Kutagura Ordeal (pp. 144–145)",
+    "summary": "Complete line-by-line documentation of C. W. Hobley's 1910 Kikuyu chapters: all 87 sub-clan (mbari) cattle brands across 13 clans (Figs. I–CXI), the 15 causes of Thahu and 7 purification herbs, the Ku'ringa-thengi and Kithathi oaths, and Chief Medicine-Man Kamiri's Kutagura notched-twig trial.",
+    "content": "From C. W. Hobley, C.M.G. (*Ethnology of A-Kamba and Other East African Tribes*, Cambridge University Press, 1910, Part II, Chapters II–IV, pp. 122–145):\n1. **Part II, Chapter II — The 87 A-Kikuyu Clan & Sub-Clan (*Mbari*) Cattle Brands and Ear-Marks (pp. 122–133, Figs. I–CXI)**:\n   - Hobley illustrates and catalogues **87 distinct Kikuyu cattle brands** across all **13 primary clans (*Mihiriga*)** alongside their ear-slit patterns:\n   - **(1) Anjiru** (Figs. I–XIV, 14 *mbari*: *Mbari ya Mbaricho, Kithuma, Mwichuki, Njau, Muli, Checuki, Ngwaci, Mukolwe, Kimani, Njeru, Mbugu, Kanyoria, Munene, Gachii*), **(2) Ambui** (Figs. XV–XXV, 11 *mbari*), **(3) Agachiku** (Figs. XXVI–XXXI, 6 *mbari*), **(4) Eithaga / Aithaga** (Figs. XXXII–XXXVII, 6 *mbari*), **(5) Aitherandu** (Figs. XXXVIII–XLVII, 10 *mbari*), **(6) Angari / Aithekahuno** (Figs. XLVIII–LIV, 7 *mbari*), **(7) Achera** (Figs. LV–LXIII, 9 *mbari*), **(8) Agathigia** (Figs. LXIV–LXIX, 6 *mbari*), **(9) Akiuru / Mwesaga** (Figs. LXX–LXXV, 6 *mbari*), **(10) Angoi** (Figs. LXXVI–LXXIX, 4 *mbari*), **(11) Aichakamuyu** (Figs. LXXX–LXXXIII, 4 *mbari*), **(12) Airimu** (Figs. LXXXIV–LXXXV, 2 *mbari*), and **(13) Aiziegeni** (Figs. LXXXVI–LXXXVII, 2 *mbari*).\n2. **Part II, Chapter III — Ceremonial Uncleanness Known as *Thahu*, 7 Sacred Herbs & Oaths (pp. 134–143)**:\n   - **15 Specific Causes of *Thahu* (pp. 134–139)**: Stepping over a corpse; touching a woman's menstrual blood; a hyena defecating inside the homestead courtyard; a woman breaking a cooking pot on the hearthstones (*mahiga*); a bedstead breaking while sleeping on it; an eagle or kite dropping meat in a village; a dog dying in a hut; a woman bearing twins on a bed; circumcision blood falling on another candidate; eating with a smith or touching his bellows; and violating clan dietary taboos.\n   - **Purification by the *Mundu Mugo* & 7 Sacred Herbs (pp. 139–141)**: The *Mundu Mugo* purifies the patient (*ku-tahika thahu*) with sheep stomach-contents (**nduo / tatha**), white diatomite earth (**ira** from Mount Kenia), and a brush of **7 ceremonial plants**:\n     1. **Mukengeria** (*Commelyna sp.*, wandering jew — coolness and peace)\n     2. **Mugeri** (*Hibiscus / Solanum sp.* with hairy stems)\n     3. **Munyururu** (*Vernonia sp.*)\n     4. **Muhondu** (*Abutilon indicum*)\n     5. **Matura thongu** (*Emilia sp.*)\n     6. **Lujoi** (*Clerodendron sp.*)\n     7. **Mutongu** (*Solanum incanum*, common Sodom apple)\n   - **Solemn Oaths (*Ku'ringa-thengi*, *Muma* & *Kithathi*, pp. 141–143)**:\n     - **Ku'ringa-thengi** (\"Beating the He-Goat\"): Litigants strike and break the limbs of a live male goat with a stone while pronouncing a conditional self-curse (*\"If I lie, may I be broken like this goat\"*).\n     - **Kithathi** (borrowed from the Akamba *kithito*): A perforated clay or stone object (*githathi*) through whose seven apertures the swearer thrusts a grass stalk or twig while invoking destruction upon perjury.\n     - **Rudioi & Muthumba**: Protective charms prepared by the *Mundu Mugo* against witchcraft (*urogi*).\n3. **Part II, Chapter IV — Chief Medicine-Man Kamiri of Kiambu & the *Kutagura* Ordeal (pp. 144–145, Plates XXVI–XXVII)**:\n   - Documents **Kamiri**, paramount *Mundu Mugo* of southern Kikuyu (Kiambu), his gourd rattle (**Mbuthu** or **Mwanu**), divination skin bag (**Kichuthu**), iron-tipped arrow shaft (**Mwarisa**) for applying medicine to the tongue, and boys' initiation shoulder-shield (**Ndomi**).\n   - **The *Kutagura* Five-Twig Ordeal Table (p. 144)**: To detect a thief among five suspects from five clans, Kamiri cut five twigs from four sacred trees and marked each with notches before casting lots:\n     - **1st Twig**: **Mugaga** tree — marked with **One notch**.\n     - **2nd Twig**: **Muchatha** tree — marked with **Two notches**.\n     - **3rd Twig**: **Murumbawe** tree — marked with **Three notches**.\n     - **4th Twig**: **Muchatha** tree — marked with **Four notches**.\n     - **5th Twig**: **Mutongo** tree — marked with **Five notches**.",
+    "examples": [
+      {
+        "kikuyu": "Thahu • ku-tahika thahu • nduo (tatha) • ira • Mukengeria, Mugeri, Munyururu, Muhondu, Matura thongu, Lujoi, Mutongu",
+        "english": "Ceremonial defilement • to purify/vomit thahu • sheep stomach contents • white sacred earth • the 7 sacred purification herbs",
+        "explanation": "Hobley (1910, Part II, Ch. III, pp. 134–141)"
+      },
+      {
+        "kikuyu": "Ku'ringa-thengi • Kithathi (Githathi) • Rudioi & Muthumba",
+        "english": "Beating the he-goat oath • perforated stone/clay oath-fetish • protective charms",
+        "explanation": "Kikuyu judicial oaths and charms in Hobley (1910, pp. 141–143)"
+      },
+      {
+        "kikuyu": "Kutagura: Mugaga (1 notch), Muchatha (2 notches), Murumbawe (3 notches), Muchatha (4 notches), Mutongo (5 notches) • Mbuthu / Mwanu • Kichuthu • Mwarisa • Ndomi",
+        "english": "Kamiri's 5 notched divination twigs • divining gourd • skin pouch • arrow shaft • initiation arm-shield",
+        "explanation": "Hobley (1910, Part II, Ch. IV, pp. 144–145, Plates XXVI–XXVII)"
+      }
+    ]
+  },
+  {
+    "id": "kikuyu-johnston-1919-1922-group-c-11",
+    "title": "Sir Harry H. Johnston (1919–1922) Group C #11 Kikuyu & Mount Kenya Bantu: 10 Dialect Markers (K., N. Dhaicω, Nd., E., C., Mw., M. 11a, Emb., Þ., Ig.), 16-Class Prefix/Concord Table (p. 111), Numerals, Pronouns, Noteworthy Roots (Vol. II, pp. 28–30) & Bibliography (p. 788)",
+    "summary": "Complete line-by-line documentation of Group C #11 Kikuyu and #11a Meru in Sir Harry H. Johnston's Comparative Study of the Bantu and Semi-Bantu Languages (Vol. I, 1919, pp. 98–112, 788 & Vol. II, 1922, pp. 28–30, 226, 261, 377–441, 463–491, 499–534).",
+    "content": "From Sir Harry H. Johnston, G.C.M.G., K.C.B., D.Sc. (*A Comparative Study of the Bantu and Semi-Bantu Languages*, Oxford: Clarendon Press, Vol. I [1919], pp. 98–112, 788 & Vol. II [1922], pp. 28–30, 226, 261, 377–441, 463–491, 499–534):\n1. **Ten Mount Kenya & Highland Dialect Abbreviations in Column 11 (Vol. I, pp. 98, 111 & Vol. II, pp. 28–30)**:\n   - **K.** = Kikuyu proper (Kabete / Fort Hall / Nyeri)\n   - **N.** = North Kikuyu or *'Dhaicω'* (Thaichu)\n   - **Nd.** = Ndia (Kirinyaga)\n   - **E.** = Embu\n   - **C.** = Cuka (Chuka)\n   - **Mw.** = Mwimbe (Mwimbi)\n   - **M.** = Meru (**11a**, north and north-east of Mt. Kenya across the Nyambeni Hills)\n   - **Emb.** = Emberre (Mbeere)\n   - **Þ.** = Þeraka (Tharaka, Upper Tana valley)\n   - **Ig.** = Igωji (Igoji)\n   - **Phonological Hallmarks (Vol. II, pp. 28–29, 226)**: Slurring of proto-Bantu *p* into *h*, *γ*, *w*, or zero (*-hīa* 'burn', *-hītūka* 'return'); frequent substitution of dental fricative **þ** (*th*) and **đ** (*dh*) for *s*, *z*, *f*, *v*, and *t* (*N-þē* 'country', *Mū-þēnya* 'day', *Þakame* 'blood', *Ma-iþω* 'eyes', *Mū-þūri* 'husband/elder', *-þatū* 'three', *-þanω* 'five', *-þanþatū* 'six'); and occasional loss of nasal in Class 9 before *g* (*Guī* for *Ṅ-guī* 'dog', *Gūkū* for *Ṅ-gūkū* 'fowl', *Gurūwe* 'pig', *Gari* 'leopard').\n2. **Complete 16-Class Prefix & Concord Table for #11 Kikuyu & #11a Meru (Vol. I, p. 111 & Vol. II, p. 261)**:\n   - **Class 1**: **Mu-, Mū-** (*u-, mū-, a-, wa-*) • **Class 2**: **A-** (**Ba-** in Meru 11a; *a-, ma-* / *ba-* in 11a)\n   - **Class 3**: **Mu-, Mū-** (*mu-, u-, gu-*) • **Class 4**: **Mi-** (*mi-, i-, ī-*)\n   - **Class 5**: **I-, Ri-, Rī-** (*ri-, rī-*) • **Class 6**: **Ma-** (*ma-, ga-*)\n   - **Class 7**: **Ki-, Kī-, Gi-** (*ki-, gi-, c'-*) • **Class 8**: **I-, Ci-, C'-, Śi-** (**Bi-** in Meru 11a; *i-, ci-, śi-* / *bi-* in 11a)\n   - **Class 9**: **N- (Ny-, M-), Ø-** (*i-, y'-*) • **Class 10**: **N- (Ny-, M-), Ø-, Tšū-** (*i-, zi-, c'-, tš'-*)\n   - **Class 11**: **Ru-, Rū-** (*ru-, rū-*)\n   - **Class 12**: **Tu-, Tū-** (plural of Class 13 *Ka-*; *tu-, tū-*) • **Class 13**: **Ka-** (diminutive singular; *ka-*)\n   - **Class 14**: **U-, Ū-, W-** (*u-, ū-, gu-*) • **Class 15**: **Ku-, Gu-** (*ku-, gu-*) • **Class 16**: **Ha-** (*ha-*; locative suffix **-ini**).\n3. **Noteworthy Roots & Dialect Comparisons in #11 Kikuyu & #11a Meru (Vol. I, pp. 98–110 & Vol. II, pp. 29–30)**:\n   - **Cosmology & Nature**: **Ṅ-gai** (*Ngai*, Masai loanword for God alongside **Mū-rūṅgu**), **Ri-ūa** (sun; **I-rūa** in 11a), **M-weri** (moon), **N-jata** (star), **M-būra** (rain), **Ma-ī** (**Rū-ī** in 11a, water), **M-waki / M-wanki** (fire), **I-higa ; ma-** (**I-bia** in Embu/Tharaka, stone), **Kī-rīma ; i-** (mountain), **Mū-tītū** (forest).\n   - **Kinship, Body & Animals**: **Baba, Þωgω ('Đωgω), Iþe** (my/thy/his father), **Maitω, Nyūkwa, Nyina** (my/thy/his mother), **Mū-rū wa nyina / Mū-rū wa maitω** (brother), **M-wari wa maitω** (sister), **Mū-þūri ; a-** (elder/husband), **Mū-ka / Mū-tūmia ; a-** (**Mū-gūrra** in 11a, woman/wife), **Mū-twe** (**Kī-oṅgω** in E./M., head), **Rī-iþω ; ma-iþω** (eye), **Kū-tū ; ma-tū** (ear), **I-gegω ; ma-** (tooth), **Rū-rīmī ; n-dīmī** (tongue), **Gu-ωkω ; m-ωkω** (arm), **Kū-gūrū ; ma-** (leg), **N-jωgū** (elephant), **M-bωgω** (buffalo), **Mū-rūþi / N-gatia** (lion), **N-gari** (leopard), **N-gūū / N-guō** (hippo), **Hiti** (**M-biti** in E./M., hyena), **N-jωka** (snake), **Kī-ūṅgūyū** (**N-þī** in 11a, fish).\n4. **Bibliography for #11 Kikuyu & #11a Meru (Vol. I, p. 788)**:\n   - Cites A. W. McGregor (*English-Kikuyu Vocabulary*, 1904; *Grammar of the Kikuyu Language*, 1905), Hildegarde Hinde (*Vocabularies of the Kamba and Kikuyu Languages*, 1904 — Kabete, Jogowini & Mathira dialects), Father A. Hémery (*English-Kikuyu Handbook*, 1902–1903), Père Bernhard (*Grammaire Kikuyu*, 1908), W. S. & K. Routledge (*With a Prehistoric People*, 1910), A. R. Barlow (*Tentative Studies in Kikuyu Grammar and Idiom*, 1914), and MS. vocabularies by C. W. Hobley (Kikuyu, Dhaicω, Embu, Cuka, Mwimbe) and E. B. Horne (Meru, Emberre, Þeraka, Igωji).",
+    "examples": [
+      {
+        "kikuyu": "K. (Kikuyu), N. (Dhaicω), Nd. (Ndia), E. (Embu), C. (Cuka), Mw. (Mwimbe), M. (11a Meru), Emb. (Emberre), Þ. (Þeraka), Ig. (Igωji)",
+        "english": "All 10 Mount Kenya & Highland dialect abbreviations in Johnston's Column 11",
+        "explanation": "Johnston (1919, Vol. I, pp. 98–112 & 1922, Vol. II, pp. 28–30)"
+      },
+      {
+        "kikuyu": "N-þē (country), Mū-þēnya (day), Þakame (blood), Ma-iþω (eyes), Mū-þūri (husband/elder), -þatū (3), -þanω (5), -þanþatū (6)",
+        "english": "Characteristic Kikuyu dental fricative þ (th) correspondences",
+        "explanation": "Johnston (1922, Vol. II, pp. 28–30, 226)"
+      },
+      {
+        "kikuyu": "Nie, We (Wee), We (Uyu), Iþui (Iþwe), Inyui (Inywe), Aω (Aria) • -akwa, -aku, -ake, -itu, -anyu, -aω",
+        "english": "Independent personal and possessive pronouns in #11 Kikuyu",
+        "explanation": "Johnston (1919, Vol. I, p. 108 & 1922, Vol. II, pp. 377–441)"
+      }
+    ]
+  },
+  {
+    "id": "kikuyu-routledge-1910-complete-monograph",
+    "title": "W. Scoresby & Katherine Routledge (1910) 'With a Prehistoric People: The Akikúyu of British East Africa' (pp. i–xxxii, 1–392, Plates I–CXXXVI): 17 Informants, 10 Ages, 17 Initiation Years, 13 Clans, 6-Month Crop Table, Metallurgy & 6-Step Chain-Making, 2-Stage Pottery, 30-Item Market List, 2 Ki-shan'-di Rattles (47 & 38 Symbols), 6 Musical Scores, 12 Dances, 9 Trials, 6 Ordeals, 29 Thá-hu Causes, 14-Hole Ki-tha-si, 15 Medicines, 13 Folktales & Bidirectional Glossaries",
+    "summary": "Complete line-by-line documentation of W. Scoresby Routledge, M.A. (Oxon.) and Katherine Routledge (born Pease), Som. Coll. (Oxon.), M.A. (Trin. Coll., Dublin), With a Prehistoric People: The Akikúyu of British East Africa (London: Edward Arnold, 1910, pp. i–xxxii, 1–392, Frontispiece + Plates I–CXXXVI + Map).",
+    "content": "From W. Scoresby Routledge, M.A. (Oxon.) and Katherine Routledge (born Pease), Som. Coll. (Oxon.), M.A. (Trin. Coll., Dublin) (*With a Prehistoric People: The Akikúyu of British East Africa — Being Some Account of the Method of Life and Mode of Thought Found Existent Amongst a Nation on Its First Contact with European Civilisation*, London: Edward Arnold, 41 & 43 Maddox Street, Bond Street, W., 1910, pp. i–xxxii, 1–392, Frontispiece + Plates I–CXXXVI + Map; dedicated to **Prof. Edward B. Tylor**):\n1. **Prefaces, 17 Named Informants & 4 Swahili Words (pp. vii–xxii)**:\n   - **Fieldwork Stations**: W. S. Routledge arrived in Aug. 1902 at **Fort Hall** (60 miles NE of Nairobi, enclosed by a loose stone wall & 12-ft ditch under Sub-Commissioner **Sidney Hinde**, **Hemstead** & **R. W. Humphery**) and **Ny-er'-i** (30 miles N of Fort Hall under **C. W. Neligan**; W. S. Routledge's Swahili name: **B'wana M'refu** 'Mr. Long', p. 340); Katherine Routledge joined in 1904.\n   - **17 Named Informants (pp. xxi–xxii)**: *7 Akikúyu in service*: **Wa-ma'-hu** (brother of Chief Wom-bú-gu, Gúra River), **Wa-nang'-a** (headman for 18 months), **N'jar'-ge** (son of Chief Mun-gé), **Ka-no'-hi-a wa Du-ku'-u**, **Ki-ran-ju'-i wa Bat'-i-a** (SW Kikúyu), **Ka-ran'-ja wa Ki-ra'-tu**, **Ki-lan'-go wa Gun'-du**; *4 Swahili/Masaí retainers*: **Do'-sa bin Mi-sha'-mi** (head groom), **Ali bin Sha-ku'-a**, **Ali bin Salim**, **Lou-be'-a bin Cha'-ris** (Swahili father, Masaí mother); *6 Other Akikúyu authorities*: Chiefs **Mun'-gé**, **Ka-ru'-ri** (60 wives, p. 134; woman lieutenant **Wan'-gu / Wan'-go**, pp. 132, 138, 237) & **N'du-i-'ni** (head of Anjíru clan, mother bore 14 children, p. 137), Medicine-Man **Ra-zi'-mi** (father of N'duíni), **'Jash'-u' wa Ka'-ru'-ri**, **N'jo-ro'-gi** (servant to Dr. Crawford), plus storytellers **Na-ga-tú-u** & **Mo-só-ni**, Tuso medicine-man **Kahiga** (p. 279), and *Ki-tha-si* keeper **De-gua wa Ki-ma-ni** of Tú-su (p. 273).\n   - **4 Swahili Terms Used (p. xxi)**: **Boma** (homestead/station), **Marli** (property/bride-wealth), **Panga** (iron tool), **Shamba** (cultivated plot).\n2. **Introduction: Aboriginal Predecessors, 10 Generation Ages & 17 Initiation Years (pp. 1–16)**:\n   - **A'si (`A-ki-e-ki` / Masaí `N'dor-ó-bo`, pp. 3–4)**: Fierce forest elephant hunters who sold forest clearings to incoming Akikúyu for **~30 goats**.\n   - **A-gum'-ba (`A-mai-tho ma chi-a-na` 'enemies of the children / fierce little people' or `Maitho ma chi-a-na` 'children's eyes', pp. 3–6)**: Stature ~4 ft 6 in., lived in circular pit-dwellings roofed with poles, banana leaves & earth; Routledge's excavation of a 3-ft depression to 3 ft depth yielded hand-worked **obsidian** flakes, large-bellied pottery fragments, charcoal, and wild banana seeds matching the **thi'-ra** initiation waist fringe (Plate CVI); tradition says they went 'west to a big forest'.\n   - **10 Ages Since the Creation of the World (p. 9)**: **1. Man-jí-ri** (first man **Mam'-ba** & his son **N'jí-ri**, who dug channels and built a sandbank at the sea), **2. Man-dó-ti** (evildoers), **3. Chi-éra** (people increased greatly), **4. Masaí** (smearing with red earth became fashionable; no connection with the tribe Masaí), **5. Ma-thá-thi** (Akikúyu came from the Akam'ba; Chief Mun-gé traced 4 generations back to *Mathathi*, ~150 years ago), **6. N'dé-mi** (root stem 'to cut' trees; Ra-zí-mi's grandfather), **7. I-ré-gi** ('the revolters' against the Somalis, opposed by Akikúyu, Masaí, N'doróbo & Akam'ba, pp. 9, 15; Ra-zí-mi's father), **8. Ma-í-na** (generation dying off — Ra-zí-mi), **9. Mwan'gi** (generation in middle life — Chief Mun-gé), **10. Mu-i-run'-gu** (rising generation).\n   - **17 Annual Circumcision Festival Names (1891–1907, pp. 10–11, from Rev. A. W. McGregor)**: **1891 Ngan'do**, **1892 Ngi'-ge** (large locust), **1893 Nyon'go** (cattle disease), **1894 Mutung'o** (smallpox), **1895 Thungu'-ya** (scented flower), **1896 Ka-gi'-cha** (clan reference), **1897 Ki-angwa'chi** (*m'wele* failed, sweet potatoes prolific), **1898 Nu'-thi** (jigger flea), **1899 Ki-en-je'ku** (septic circumcision wound), **1900 Ndi'-mu** (manioc failed), **1901 Hit'-ti** (hyena), **1902 Ka-man'di** (spear), **1903 Mo-chi'-ri** (= a judge), **1904 Ki-hur'i-a** (scratcher/scratching), **1905 Kan-yo'-to** (certain animal), **1906 Nga'-ra** (putting in little heaps), **1907 Ka-ban'go** ('year on the back').\n3. **Part I — 13 Clans, 17 Age-Stage Terms, Agriculture, Metallurgy, Pottery, Market Prices, Picture-Rattles & 6 Musical Scores (pp. 19–115)**:\n   - **13 Exogamous Clans (`i-ri-ka`, pp. 20–22) & Hobley's 9 Totems**: **1. A-ché-ra** (*swala* gazelle), **2. A-ga-chí-ku** (no ironwork/circumcising; zebra), **3. A-ga-thi-gí-a** (warthog), **4. Ai-cha-ka-mú-yo**, **5. Ai-rí-mu**, **6. A-ki-ú-ru / M'we-sá-ga / M'bú-ru** (no ironwork; rain-stopping, evil eye cured by spittle-mud on temple, throat & stomach, woodland preservation; wild game totem), **7. Am-bú-i** (fish), **8. An-gá-ri / Ai-the-ka-hú-no** (sheep's stomach), **9. An-jí-ru** (headed by Chief N'duíni & Razími; elephant & birds), **10. An-gó-i**, **11. E-thá-ga**, **12. Ai-ze-ran'-du** (hippo), **13. Ai-zi-e-gé-ni** (impala); dying father's curse **ki-rú-me** (p. 21).\n   - **10 Male & 7 Female Age-Stage Terms (pp. 25 fn. 1, 138–141)**: *Men*: **Ka'-he → Ki'-he → Mu'-mo → M'wa-na'-ke → Wa-ka-ny-u-ku → Mun'-du mu-ge'-ma → Ka-ra-bai' → M'zur'-i → M'zur'-i a ki-a-na → M'zur'-i a bou'i**; *Women*: **Ka-re'-go → Ki-ré-gu (Ki-ri'-gu) → Moi-re'-tu → Mu-hi'-ki → Wa-bai (M'wa-na-mú-ke) → Mu-ti-mi'-a → I-he'-ti**.\n   - **Engineering & Crafts (pp. 66–102)**: 15-ft circular hut (**njoum'-ba**: 19 wall-posts + 4 central roof-pillars); creeper suspension bridges; 30–45s fire-making (**u-lin'-di** 8 woods & **je'-ka** 5 woods); 3-step string-making (**ku-nor'-a, ku-ta-nu'-ka, ku-o-go'-sa**); magnetite ore washing (**mu-san'-ga**), smelting in **i-li'-ma** pit crucible with **mu-koi-i'-go** charcoal & twin **mu'-ra** bellows into six 2-lb **ki-ka'-ma** blooms, smithing on 50-lb Sagana granite anvil (**mu-hi'-ga**) with 2.5-lb rotated bar hammer (**ke-li'-ha**), cold wire-drawing (**ku-gu'-chi-a**) through 7-hole **ú-ta** plate with 3-piece **rú-ga** clamp (**ró-ga, ke-rá-si, n'gó-me**), 6-step chain-making (**ga-zi'-ka** → **ki-len-ge'-ri / mu-i-nor'-o**, Plates LXI–LXVI), and 2-stage women's pottery (**li-um'-ba** winnowed on **ki-ta-ru'-ru** + **m'bi-u / n'daka** = 6-lb **mun'-du-a** bars).\n   - **30-Item Wa-wer'-u Market Price List (Feb. 16, 1908, pp. 106–107)**, **47-Symbol & 38-Symbol `Ki-shan'-di` Picture-Rattle Keys (`ku-i'-nya ki-shan'-di`, pp. 109–110, Plates LXXXVI–LXXXVIII)**, and **6 Transcribed Musical Scores by Dr. C. S. Myers (`Ku-lan-gí-ri, Dú-mo, Mu-goí-i-o, Ku-lu-mí-si-a` & War Song, pp. 111–115)**.\n4. **Parts II–IV, Appendices I–V & Bidirectional Glossaries (pp. 117–392)**:\n   - **Homesteads A–G, Marriage (30 goats + 5–6 sheep `marli`, visit to chiefess `Wan'-gu`), Second Birth (`ko-chi-a-rú-o ke'-ri / m'bór-i`), `Mam-bú-ra` Initiation, 4 Burial Methods, 12 Dances + Maize-Sheath Harvest Dance before the Clay Image at Wombúgu's, 5 `Guso!` Riddles, `Mo-ran'-ja / Ki-á-ma / N'já-ma` Ranks, 6-Circle Drinking Diagram, 9 Dated Trials (Dec. 1907–Jan. 1908), 6 `Mu-ma` Ordeals & 4-District Penalty Tables (pp. 117–221)**.\n   - **Religion & Medicine-Man (pp. 225–281)**: **N'gaí / Mwi-nin-ya-ga** sacrifice under 8-shrub **Mu-gú-mu**, Chief Mungé's verbatim phonograph prayer & responses (**N'ga-na! Sa-i!**), **Ai-twi'-ka / N'da-ma-thi-a** snake worship on the Ma-thi-oy-a, **N'gor'-o** vs. **N'gó-ma** in **Mi-i-ri-ni-ya Mi-kon-go-i**, **Mun'-du Mu-gu** initiation with 5 **m'boo-thu** gourds (**ru-sú-ku, gon'-du, u'-mu, u-then'-gi, í-ra**) & **m'wá-no** lot-gourd, translated prophets **Ki-shu-ro** & **Nya-kai-ro**, 29 **Thá-hu** causes, 9 Tuso brush plants, 14-hole **Ki-tha-si** curse stone of **De-gua wa Ki-ma-ni** at Tú-su, and 15 medicines from **Kahiga**.\n   - **3 Myths, 13 `Ro-gá-nu` Folktales (pp. 283–328), Conclusion (pp. 329–333), Appendices I–V (pp. 335–362), 25-Work Bibliography (pp. 363–365) & Bidirectional Glossaries Part I–II (pp. 367–379)**.",
+    "examples": [
+      {
+        "kikuyu": "Man-jí-ri (Mam'-ba & N'jí-ri) → Man-dó-ti → Chi-éra → Masaí → Ma-thá-thi → N'dé-mi → I-ré-gi → Ma-í-na → Mwan'gi → Mu-i-run'-gu",
+        "english": "The 10 Ages Since the Creation of the World (p. 9)",
+        "explanation": "Together with the 17 annual circumcision festival names from 1891 Ngan'do to 1907 Ka-ban'go (pp. 10–11)"
+      },
+      {
+        "kikuyu": "mu-san'-ga • i-li'-ma • mu'-ra (mi-kum-ba'-ti, mer-u'-ki, ger'-u-a) • ki-ka'-ma • mu-hi'-ga • ke-li'-ha • ku-gu'-chi-a • ú-ta (mu-ku'-ha) • rú-ga (ró-ga, ke-rá-si, n'gó-me, ju-gu'-ma) • ga-zi'-ka → ki-len-ge'-ri / mu-i-nor'-o",
+        "english": "Complete Kikuyu iron-smelting, smithing, cold wire-drawing & 6-stage chain-making terminology",
+        "explanation": "Routledge (1910, Part I Ch. IV, Appendix IV & Glossaries, pp. 79–97, 353–356, 367–379)"
+      },
+      {
+        "kikuyu": "Mo-ran'-ja / N'dun'-du / Ke-thi-ga → Ki-á-ma (Ma-tu'-ra n'gu'-ru; Mu-ti'-gi, Mu-nder-en'-du, Mu-ta'-zi) → N'já-ma (n'der'-i feather; n'gi-ri'-a beetle) • Mu-ma & 14-Hole Ki-tha-si • Mun'-du Mu-gu (5 m'boo-thu gourds & m'wá-no lot-gourd) • Ta-hí-ka thá-hu!",
+        "english": "Three elder grades, judicial oaths, 5 medicine gourds, lot-casting & purification formula",
+        "explanation": "Routledge (1910, Parts II–III, pp. 195–281)"
+      }
+    ]
+  },
+  {
+    "id": "kikuyu-hinde-1904-complete-monograph",
+    "title": "Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages of East Africa' (pp. i–xviii, 1–76): Preface (Fort Hall, Sept. 1902), 6 Plural Rules, Alphabet, 12-Paradigm Conjugation of Ku or Gu-tinda, Jogowini Lexicon, 8 Dances, Numerals & All 65 Phrases",
+    "summary": "Complete line-by-line documentation of Hildegarde Hinde (Mrs Sidney L. Hinde, author of A Masai Grammar), Vocabularies of the Kamba and Kikuyu Languages of East Africa (Cambridge: at the University Press, 1904, pp. i–xviii, 1–76; Cornell University Library PL 8351.H66 from the Estate of L. L. Seaman).",
+    "content": "From Hildegarde Hinde (Mrs Sidney L. Hinde, *Vocabularies of the Kamba and Kikuyu Languages of East Africa*, Cambridge: at the University Press, 1904, Preface signed Fort Hall, British East Africa, September 1902, pp. v–xviii, 1–76):\n1. **Preface: Jogowini Kikuyu Dialect, 6 Plural Formation Rules & Phonology (pp. v–viii)**:\n   - **Jogowini Dialect**: Recorded at **Fort Hall** (*September 1902*) in the **Jogowini** dialect of the Kenya Province (noting two other dialects in the Kenya Province and distinct dialects near Nairobi, and observing that the Akikuyu of the southern part of the Kenya Province and the Akamba of the adjoining Kitui District readily understand each other).\n   - **Six Plural Formation Rules (pp. vi–vii)**:\n     1. **Animate `mu-` → `a-`**: *muka* ('woman') → **aka** ('women'); native **Mukikuyu** (sing.) → **Akikuyu** (pl.) and **Mukamba** (sing.) → **Akamba** (pl.), contrasted with Swahili *Mkikuyu / Wakikuyu* and *Mkamba / Wakamba*.\n     2. **Inanimate `mu-` → `mi-`**: *muti* ('tree') → **miti** ('trees').\n     3. **`i-` → `ma-`**: *ihiga* ('stone') → **mahiga** ('stones').\n     4. **`ki-` → `i-`**: *kiratu* ('sandal') → **iratu** ('sandals').\n     5. **Invariable `n-`**: *nyumba* ('house') → **nyumba** ('houses').\n     6. **`ka-` or `ki-` → `twa-` or `shi-`**: *kana* ('child') → **twana** or **shiana** ('children'); *kiara* ('finger') → **shiara** ('fingers').\n   - **Phonology & The Alphabet (pp. vii, ix–x)**: Frequent aspirate in Kikuyu; interchangeable **K and G**, **B and V**, **Th and S or Z**, and **R and L**; burred **RR**; Italian vowels + German **ö** and **ü**; penultimate stress marked with **¯** and **˘**; and prenasalized initial **M** and **N** before a consonant.\n2. **Complete 12-Paradigm Conjugation of `Ku or gu-tinda` ('to conquer', pp. xi–xviii)**:\n   - **Indicative Present (`-a-`, p. xii)**: **n-a-tinda, w-a-tinda, a-tinda, tw-a-tinda, mw-a-tinda, m-a-tinda**.\n   - **Present Imperfect (`-ki-`, p. xiii)**: **ni-ki-tinda, wa or u-ki-tinda, a-ki-tinda, tu-ki-tinda, mu-ki-tinda, me or ma-ki-tinda**.\n   - **Present Perfect (`-eti or -iti`, p. xiii)**: **ni-tind-eti or iti, wa or u-tind-eti or iti, a-tind-eti or iti, tu-tind-eti or iti, mu-tind-eti or iti, me or ma-tind-eti or iti**.\n   - **Past Perfect (Kikuyu `-eri`, p. xiv)**: **ni-tind-eri, wa or u-tind-eri, a-tind-eri, tu-tind-eri, mu-tind-eri, me or ma-tind-eri** (vs. Kamba *ni-na-tind-ie*).\n   - **Future (`-ka- or -ga-`, p. xiv)**: **ni or nin-ka or ga-tinda, wa or u-ka or ga-tinda, a-ka or ga-tinda, tu-ka or ga-tinda, mu-ka or ga-tinda, me or ma-ka or ga-tinda**.\n   - **Imperative (p. xv)**: sing. **tinda**, pl. **tindani or tindai** • **Subjunctive (`-e`, p. xv)**: **ni-tinde, wa or u-tinde, a-tinde, tu-tinde, mu-tinde, me or ma-tinde**.\n   - **Negative Present (`-di- or -ndi-`, p. xvi)**: **n-di-tinda, wa or u-di or ndi-tinda, a-di or ndi-tinda, tu-di or ndi-tinda, mu-di or ndi-tinda, me or ma-di or ndi-tinda**.\n   - **Negative Past Perfect (`-di-na- or -ndi-na-`, p. xvi)**: **n-di-na-tinda, etc.** • **Negative Future (`-di-ka-/-ga-`, p. xvii)**: **n-di-ka or ga-tinda, etc.** • **Negative Imperative (p. xvii)**: **di or ndi-tinda, pl. di or ndi-tindani or tindai** • **Negative Subjunctive (p. xviii)**: **n-di-tinde, etc.**\n   - **Conversational Infinitive Note (p. xviii)**: **ninkushoka** ('I will return') used in short sentences for **ninkashoka**.\n3. **Age-Graded Dances & War-Songs in Jogowini Kikuyu (pp. 17, 65)**:\n   - **General Dance**: **thoiitha, kuina** (v. **kuthoiitha**, p. 17) • **Elders**: **muthun guuchi** • **Children**: **ngushu** • **Warriors**: **kishukia** • **Young Women**: **nduumo** • **Old Women**: **kitiiro** • **Uncircumcised Boys**: **reegu** (p. 17) • **War-Songs**: **nduugu** (going to war) vs. **karre** (returning from war, p. 65).",
+    "examples": [
+      {
+        "kikuyu": "n-a-tinda • ni-ki-tinda • ni-tind-eti / iti • ni-tind-eri • ni / nin-ka / ga-tinda • n-di-tinda • n-di-na-tinda • n-di-ka / ga-tinda",
+        "english": "I conquer • I am conquering • I have conquered • I conquered (Kikuyu -eri) • I shall conquer • I do not conquer • I did not conquer • I shall not conquer",
+        "explanation": "Complete affirmative and negative paradigms of ku or gu-tinda in Hinde (1904, pp. xii–xviii)"
+      },
+      {
+        "kikuyu": "muthun guuchi (elders) • ngushu (children) • kishukia (warriors) • nduumo (young women) • kitiiro (old women) • reegu (uncircumcised boys) | nduugu (going) • karre (returning)",
+        "english": "Six age-graded Jogowini Kikuyu dances (p. 17) and two war-songs (p. 65)",
+        "explanation": "Hinde (1904, pp. 17, 65)"
+      },
+      {
+        "kikuyu": "wita gwatia? • wathiiku? • ukwendakki? • umaku? • mwohoro — mwohoro mwēga / mwēga munnu",
+        "english": "What is your name? • Where are you going? • What do you want? • Where do you come from? • Salutation — Reply",
+        "explanation": "Jogowini Kikuyu conversational phrases in Hinde (1904, pp. 73, 75)"
+      }
+    ]
+  },
+  {
+    "id": "kikuyu-johnston-1902-uganda-protectorate-set9-complete",
+    "title": "Sir Harry Johnston (1902) 'The Uganda Protectorate, Vol. II' (pp. 885–902, 993–1001): Chapter XX Kikuyu Phonology (P/F → H Shift, Fisi → Hiti), Kikamba Pa- vs. Kikuyu Ha- (Class 16), Orthography (p. 901) & Complete Vocabulary Set 9 (Ikuyu, pp. 993–1001)",
+    "summary": "Complete line-by-line documentation of Ikuyu (Gĩkũyũ) in Sir Harry Johnston's The Uganda Protectorate, Vol. II (1902, pp. 885–902, 993–1001), including the systematic p/f → h sound law (Fisi → Hiti), Class 16 Ha- vs. Kikamba Pa-, and all Set 9 Ikuyu vocabulary, numerals, pronouns, and verbal phrases on pp. 993–1001.",
+    "content": "From Sir Harry Johnston, G.C.M.G., K.C.B. (*The Uganda Protectorate*, Vol. II, London: Hutchinson & Co., 1902, Ch. XX pp. 885–902, 993–1001):\n1. **Chapter XX Comparative Bantu Analysis of Kikuyu (*Ikuyu*, pp. 889–902)**:\n   - **Systematic Labial Lenition (*p / f → h*, p. 900)**: Johnston highlights Kikuyu's regular replacement of Proto-Bantu and coastal *p* and *f* by the aspirate **h**, exemplified by Swahili *Fisi* ('hyena') → Kikuyu **Hiti**, *piga / figa* ('cooking stone') → **Ihiga**, and *pa-* (Class 16 locative) → **Ha-** (whereas neighbouring Kikamba retains archaic **Pa-**, p. 892).\n   - **Retention of Archaic *-ñombe* ('Cattle', p. 894)**: Notes that Kikuyu (**Ñombe / Ng'ombe**), Igizii (**Engombe**), and Kavirondo (**Ingombe**) retain the original East African Bantu root *-ñombe* rather than the Interlacustrine innovation *-nte* (*Ente*).\n2. **Complete Vocabulary Set 9 — *Ikuyu* (Kikuyu) on pp. 993–1001**:\n   - **People, Kinship & Body Parts (pp. 993–998)**: *Man/Person* **Mundu (pl. Andu)**, *Man/Husband* **Muthuri**, *Woman/Wife* **Muka (pl. Aka) / Mutumia**, *Father* **Baba / Thoguo / Ithe**, *Mother* **Maito / Nyukwa / Nyina**, *Child* **Mwana (pl. Ciana)**, *Chief* **Muthamaki / Munene**, *Doctor (medicine-man)* **Mundu mugu**, *God* **Ngai**, *Head* **Mutwe (pl. Mitwe)**, *Eye* **Riitho (pl. Maitho)**, *Ear* **Kutu (pl. Matu)**, *Nose* **Iniuru**, *Mouth* **Kanua**, *Tooth* **Igego (pl. Magego)**, *Tongue* **Rurimi (pl. Ndimi)**, *Arm* **Guoko (pl. Moko)**, *Leg* **Kuguru (pl. Maguru)**, *Blood* **Thakame**, *Bone* **Ihindi (pl. Mahindi)**.\n   - **Nature, Animals & Material Culture (pp. 993–998)**: *Sun* **Riua**, *Moon* **Mweri**, *Star* **Njata**, *Rain* **Mbura**, *Water* **Mai**, *Fire* **Mwaki**, *Stone* **Ihiga (pl. Mahiga)**, *Mountain* **Kirima (pl. Irima)**, *Forest* **Mutitu**, *Tree* **Muti (pl. Miti)**, *House* **Nyumba**, *Spear* **Itimu (pl. Matimu)**, *Shield* **Ngo**, *Bow* **Uta**, *Arrow* **Mugwi (pl. Migwi)**, *Sword* **Ruhiu**, *Cow* **Ng'ombe**, *Goat* **Mburi**, *Sheep* **Ng'ondu**, *Dog* **Ngui**, *Elephant* **Njogu**, *Buffalo* **Mbogo**, *Lion* **Muruthi / Ngatia**, *Leopard* **Ngari**, *Hyena* **Hiti**, *Hippopotamus* **Nguo**, *Rhinoceros* **Huria**, *Zebra* **Njagi**, *Snake* **Njoka**.\n   - **Adjectives, Numerals 1–1,000, Pronouns & Sentences (pp. 998–1001)**:\n     - **Adjectives (p. 998)**: *Good* **-ega (mwega)**, *Bad* **-uru (muru)**, *Great* **-nene**, *Little* **-nini**, *White* **-eru**, *Black* **-iru**, *Red* **-tune**, *All* **-othe (othe, mothe)**.\n     - **Numerals (pp. 998–999)**: *1* **-mwe (imwe)**, *2* **-iri (igiri)**, *3* **-thatu (ithatu)**, *4* **-inya (inya)**, *5* **-thano (ithano)**, *6* **-thanthatu (ithanthatu)**, *7* **muanja**, *8* **inyanya**, *9* **kenda**, *10* **ikumi**, *11* **ikumi na imwe**, *20* **mirongo iiri**, *30* **mirongo ithatu**, *40* **mirongo inya**, *50* **mirongo ithano**, *100* **igana**, *1,000* **ngiri**.\n     - **Pronouns & Sentences (pp. 999–1001)**: *I* **Nie**, *Thou* **We (Wee)**, *He* **We (Uyu)**, *We* **Ithui**, *Ye* **Inyui**, *They* **Ao**; *Possessives* **-akwa, -aku, -ake, -itu, -anyu, -ao**; *This man* **Mundu uyu**, *That man* **Mundu uria**, *This tree* **Muti uyu**, *My house* **Nyumba yakwa**, *Our town* **Mucii witu**, *No, not* **Aca / Ti**.",
+    "examples": [
+      {
+        "kikuyu": "Fisi → Hiti (hyena) • Figa → Ihiga (stone) • Pa- → Ha- (Class 16 locative, vs. Kikamba Pa-) • Ñombe (cattle, vs. Interlacustrine Ente)",
+        "english": "Johnston's (1902, pp. 892, 894, 900) phonological and morphological laws for Ikuyu (Gĩkũyũ)",
+        "explanation": "Sir Harry Johnston, The Uganda Protectorate, Vol. II (1902, Ch. XX, pp. 892–900)"
+      },
+      {
+        "kikuyu": "-mwe, -iri, -thatu, -inya, -thano, -thanthatu, muanja, inyanya, kenda, ikumi, mirongo iiri, igana, ngiri",
+        "english": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20, 100, 1,000 in Set 9 Ikuyu",
+        "explanation": "Vocabulary Set 9 (Ikuyu), Johnston (1902, pp. 998–999)"
+      }
+    ]
+  },
+  {
+    "id": "kikuyu-hohnel-1894-vol1-chs5-6-complete",
+    "title": "Lieut. Ludwig von Höhnel (1894, Vol. I, Chs. V–VI, pp. 220–221, 234–236, 286–309 [361], 362–366, 371–375): First European Traverse of Kikuyuland from Ngongo Bagas to Ndoro (Aug. 27–Oct. 8, 1887), 68 Parallel Ravines, Subugo Forest Fortifications, Peace Covenants (Mburi ya Thayu, Kuhoria Tatha & Sept. 16 Mathira Githathi), Smiths (Aturi), 3-Tier Ridge Crop Zoning & First Ascent of Mount Kenia (Donyo Egere) to 15,355 ft.",
+    "summary": "Complete line-by-line synthesis of Chapters V and VI of Lieut. Ludwig von Höhnel's 'Discovery of Lakes Rudolf and Stefanie' (tr. Nancy Bell [N. D'Anvers], Vol. I, London: Longmans, Green, and Co., 1894, pp. 220–221, 234–236, 286–309 [361], 362–366, 371–375 & Errata p. xx): the first European traverse of Kikuyuland (Aug. 27–Oct. 8, 1887) and the first European ascent of Mount Kenia (Oct. 8–14, 1887).",
+    "content": [
+      "1. Frontier Contact & Blood-Brotherhood at Ngongo Bagas (Aug. 18–27, 1887, pp. 220–221, 234–236): Encamped at Ngongo Bagas (6,100 ft., at the northern foot of four-peaked Donyo Lamuyu [Ngong Hills]), the expedition met southern Kikuyu elders Miani, Karanja, and Waiyaki (brother-in-law of a Masai elder), who brought fat-tailed sheep, sugar-cane beer (uhi / njohi), flour, and yams. On Aug. 23, 1887, Count Teleki and Jumbe Kimemeta concluded solemn blood-brotherhood (kuringa githathi / Swahili ndugu ya damu) with Miani, Karanja, and Waiyaki by eating small pieces of roasted goat's heart, liver, and kidney smeared with drops of blood drawn from a small incision on each party's forearm while a medicine-man beat the ground with a club and invoked destruction upon anyone who broke the bond (p. 221).",
+      "2. Highland Geography, Subugo Forest Fortifications & All 68 Parallel Ravines Crossed (pp. 220, 286–308): Kikuyuland forms a volcanic plateau terrace (~90 miles S–N from Donyo Lamuyu [1° 25' S] to Mount Kenia [0° 15' S], 30–40 miles wide, 5,500–6,400 ft.), encircled by a 2–5-mile belt of primeval boundary forest (Subugo) fortified against the Masai with felled-tree breastworks, narrow stockaded gates (kihingo), and concealed pitfalls (ngurunga) lined with sharpened stakes smeared with arrow-poison (muriju, boiled from the wood and bark of Acokanthera Schimperi, pp. 220, 286, 303, 307). In 17 marching days over 75 geographical miles, the caravan climbed and descended 68 deep parallel valleys and gorges (draining SE into the Tana / Kiloluma, except the northernmost Thegu draining into the northern Guaso Nyiro), naming from south to north: Nairobi, Mathari, Gitathuru, Kiu, Ruiruaka, Ruaraka, Karura, Gatharaini, Mukuyu, Kamiti, Ndarugu, Thiririka, Theta, Ruiru, Komothai, Chania (5,350 ft., 25 yds. wide, crossed by a swaying liana suspension bridge slung between two giant fig-trees, p. 292), Thika (5,420 ft.), Karinga, Sabasaba, Maragua (5,150 ft., a 600-ft.-deep gorge dividing southern and central/northern Kikuyuland, p. 294), Kahuru, Gikigie, Mathioya (a 700-ft. precipitous chasm, p. 295), Gura, Muringato, Chinga, Gikondi, Amboni, Ragati, Sagana (5,680 ft.), and Thegu (6,050 ft., pp. 299, 302).",
+      "3. Ridge Governance (Rugongo), Peace Ceremonies (Kuhoria Tatha & Githathi), Smiths (Aturi) & Three-Tier Ridge Crop Zoning (pp. 287–305): Each parallel ridge (rugongo, pl. migongo) formed an independent community under its council of elders (Athuri, sg. Muthuri) and spokesman (Muthamaki), supported by circumcised warriors (Anake). Exclamations of astonishment ('U-u-u-ui! Ngai!') and greeting ('Mirema! Mirema!', p. 287) accompanied negotiations at each ridge boundary, which required sacrificing a peace-sheep (mburi ya thayu) and performing the kuhoria tatha ceremony—sprinkling the stomach contents mixed with water, honey, and sheep's blood over the paths and leaders while chanting 'Thayu! Thayu!' ('Peace! Peace!', pp. 288, 291, 303). Circular bramble-hedged homesteads (itura) contained 4–10 conical thatched huts with raised wicker granaries, sacred fig-trees (mugumo, p. 302), and indoor stall-fed sheep and goats fattened on sweet-potato vines and banana leaves (p. 289). Kikuyu smiths (Aturi) washed black iron-sand from stream beds and smelted it in clay furnaces with twin goat-skin cone bellows to forge leaf-shaped spears, double-edged spatulate swords (ruhiu) in red leather sheaths, and two-edged knives (kahiu, p. 304). Women wove elastic string bags (kiondo) from bark fibre; men hung hollowed log beehives (mwatũ) branded with clan marks in forest trees, brewed honey- and sugar-cane beer (njohi / uhi) in long gourds, wore boat-shaped iron ankle rattles (njingiri), blew wooden/horn war-trumpets (corno), and broke new ground in teams of 3–4 men abreast using 7–8 ft. pointed wooden digging-poles (muro, pp. 288–289, 304–305). Every ridge followed a 3-tier agricultural zoning (p. 305): (a) Ridge crests & upper slopes: sorghum (mtama), red eleusine millet (wimbi), maize, and beans (njahi & mboso); (b) Middle slopes: sweet potatoes (ngwaci), staked yams (Dioscorea), bananas (marigu, 15+ varieties), and tobacco; (c) Marshy valley bottoms: taro (nduma, Colocasia antiquorum) and 10–12 ft. sugar-cane.",
+      "4. Nine Named Stages & Chiefs Across Kikuyuland (Aug. 27–Oct. 20, 1887, pp. 287–309): (1) Miani's (6,250 ft., Aug. 27); (2) Waiyaki & Karanja's (6,050 ft., Aug. 28–30); (3) Kihara's (5,870 ft., Aug. 31–Sept. 1: Teleki demonstrated Express rifle penetration through a Kikuyu iron-plated shield and 3 banana trunks and fired 2 war-rockets at night, p. 306); (4) Kahuhia (5,780 ft., Sept. 2) & Gathirimu's (5,920 ft., Sept. 3); (5) Getura (5,850 ft., Sept. 4–5: ambush in a narrow ravine where 2 porters were hit by muriju poisoned arrows, saved by immediate ligature, deep incision, and cauterization with nitric acid and ammonia; 3 stockaded homesteads burned, pp. 292–293, 307) & Githambia (5,980 ft., Sept. 5); (6) Kornu north of the Maragua gorge (5,840 ft., Sept. 7–8: friendly chief Karanja wa Maragua, p. 294) & Muruka (6,020 ft., Sept. 9–10); (7) Wamugunda's in Tetu (6,150 ft., Sept. 11: where people took the caravan's horses for hornless rhinoceroses or trained zebras, p. 295); (8) Northern Mathira (6,010 ft., Sept. 13–16: after repelling an attack by 3,000 warriors on Sept. 14, concluded a solemn githathi peace covenant on Sept. 16 in which 4 medicine-men broke the legs of a white ram and a black goat with clubs and slit them longitudinally while Teleki, Kimemeta, and 6 Kikuyu chiefs stepped across the bleeding carcasses 7 times swearing eternal peace, p. 298); and (9) Ndoro (6,380 ft., Sept. 19–Oct. 20) at the western foot of Mount Kenia (called Donyo Egere, 'the Spotted or Dappled Mountain', by the Masai from its black rock precipices and white snowfields, pp. 300, 308) on the Guaso Narok under friendly chief Kihura (pp. 300–301, 308–309, where 20 tons of grain were purchased).",
+      "5. First European Ascent of Mount Kenia across Five Vertical Ecological Zones to 15,355 ft. (Ch. VI, Oct. 8–14, 1887, pp. 362–366, 371–375 & Errata p. xx): Ascending the western slope of Mount Kenia from Ndoro, Count Teleki and Lieut. von Höhnel documented 5 distinct vertical zones: (1) Lower timber forest (Subugo, 6,750–8,100 ft.): giant pencil cedars (Juniperus procera, 120–160 ft.), Podocarpus elongata, Podocarpus Mannii, wild olives (Olea chrysophylla), elephant pitfalls of Wandorobbo hunters, and black-and-white colobus monkeys (Colobus guereza caudatus); (2) Dense giant bamboo zone (Arundinaria alpina, 8,100–10,000 ft., stems 30–50 ft. high and 2–4 in. thick; camp on Oct. 8 at 8,850 ft., where the 4 Kikuyu guides turned back in terror of the mountain spirit Ngai); (3) Upper podocarpus and Hagenia abyssinica (kousso) zone draped in grey beard-lichen (Usnea barbata, 9,600–10,500 ft.); (4) Alpine moorland zone (10,500–13,600 ft.): tree-heaths (Erica arborea), tussock grasses, everlasting flowers (Helichrysum), Alchemilla, giant groundsels (Senecio Johnstoni, 15–20 ft.), Lobelia Deckenii (Errata p. xx: Deckeni → Deckenii), and the newly discovered woolly candle-like Lobelia Telekii Schweinfurth (10–12 ft. high; Errata p. xx: Teleki Schweinfurth → Telekii, Schweinfurth; camps at 11,600 ft. [min. -4° C] and 13,100 ft. [min. -7.5° C], where Höhnel halted with bronchitis); and (5) Snow-line crossed at 14,750 ft. On Oct. 11, 1887 at 11 A.M., Count Teleki reached the western crater-rim (an ancient volcanic cirque / kar filled with glacier ice feeding the Guaso Narok, beneath the twin central kenyte/phonolite peaks of 18,400–19,000 ft.) at 15,355 feet (4,680 metres; air temp 32° F / 0° C, boiling point 184.6° F / 84.8° C, pp. 364–365, 373–374)."
+    ].join("\n\n"),
+    "examples": [
+      {
+        "kikuyu": "'U-u-u-ui! Ngai!' & 'Mirema! Mirema!' (p. 287) • mburi ya thayu & kuhoria tatha chanting 'Thayu! Thayu!' ('Peace! Peace!', pp. 288, 291, 303) • Ngongo Bagas blood-brotherhood (kuringa githathi, Aug. 23, 1887, p. 221) & Mathira 7-step white-ram/black-goat githathi covenant (Sept. 16, 1887, p. 298)",
+        "english": "Kikuyu exclamations, peace salutations, stomach-contents sprinkling ceremony, and the two solemn peace covenants of Aug.–Sept. 1887",
+        "explanation": "Lieut. Ludwig von Höhnel, Discovery of Lakes Rudolf and Stefanie, Vol. I (1894, Chs. IV–V, pp. 221, 287–298, 303)"
+      },
+      {
+        "kikuyu": "rugongo (pl. migongo) • Subugo, kihingo & ngurunga pitfalls with muriju (Acokanthera Schimperi) poison • itura & mugumo • Aturi smiths, ruhiu, kahiu, kiondo, mwatũ, njohi/uhi, njingiri, corno & 7–8 ft. muro digging-sticks (pp. 286–305)",
+        "english": "Ridge governance, forest fortifications, iron-smelting, material culture, and communal digging-sticks in 1887 Kikuyuland",
+        "explanation": "Lieut. Ludwig von Höhnel, Discovery of Lakes Rudolf and Stefanie, Vol. I (1894, Ch. V, pp. 286–305)"
+      },
+      {
+        "kikuyu": "68 Parallel Ravines (Nairobi, Chania liana bridge, Thika, Maragua 600-ft. gorge, Mathioya 700-ft. chasm, Sagana, Thegu) • Chiefs Miani, Karanja, Waiyaki, Kihara, Gathirimu, Karanja wa Maragua, Wamugunda (Tetu) & Kihura (Ndoro) • Mount Kenia (Donyo Egere) ascent to 15,355 ft. & Lobelia Telekii Schweinfurth (pp. 287–309, 362–375)",
+        "english": "Complete south-to-north hydrography, named ridge leaders, and first ascent of Mount Kenia across 5 vertical zones",
+        "explanation": "Lieut. Ludwig von Höhnel, Discovery of Lakes Rudolf and Stefanie, Vol. I (1894, Chs. V–VI, pp. 287–309, 362–375)"
       }
     ]
   }

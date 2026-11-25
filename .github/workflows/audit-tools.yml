@@ -10,11 +10,16 @@ on:
       - "kenyahub/src/data/**"
       - "kenyahub/src/lib/tools-registry.ts"
       - "kenyahub/scripts/audit-tools.mjs"
+      - "kenyahub/scripts/test-core-logic.mjs"
       - "kenyahub/package.json"
+
+permissions:
+  contents: read
 
 jobs:
   audit:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     defaults:
       run:
         working-directory: kenyahub
@@ -26,8 +31,9 @@ jobs:
           cache: npm
           cache-dependency-path: kenyahub/package-lock.json
       - run: npm ci --prefer-offline --no-audit --no-fund
+      - run: node scripts/clean-removed-tools.mjs
       - run: npm run audit:tools:sources
-      - run: npm run audit:tools:strict
+      - run: npm run audit:tools:strict && npm test
       - uses: actions/upload-artifact@v4
         if: always()
         with:

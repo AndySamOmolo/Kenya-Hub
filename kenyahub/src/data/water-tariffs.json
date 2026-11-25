@@ -1,4 +1,5 @@
 {
+  "wasrebLevyRate": 0.04,
   "utilities": [
     {
       "id": "ncwsc",
@@ -8,7 +9,7 @@
       "currency": "KES",
       "sewerageRate": 0.75,
       "sewerageNote": "75% of water bill",
-      "meterRent": 100,
+      "meterRent": 50,
       "bands": [
         {
           "min": 0,
@@ -19,25 +20,25 @@
         {
           "min": 7,
           "max": 20,
-          "rate": 53.0,
+          "rate": 67.0,
           "label": "7 – 20 m³"
         },
         {
           "min": 21,
           "max": 50,
-          "rate": 64.0,
+          "rate": 72.0,
           "label": "21 – 50 m³"
         },
         {
           "min": 51,
           "max": 100,
-          "rate": 72.0,
+          "rate": 80.0,
           "label": "51 – 100 m³"
         },
         {
           "min": 101,
           "max": null,
-          "rate": 80.0,
+          "rate": 90.0,
           "label": "Above 100 m³"
         }
       ]
@@ -50,7 +51,7 @@
       "currency": "KES",
       "sewerageRate": 0.75,
       "sewerageNote": "75% of water bill",
-      "meterRent": 80,
+      "meterRent": 50,
       "bands": [
         {
           "min": 0,
@@ -92,7 +93,7 @@
       "currency": "KES",
       "sewerageRate": 0.75,
       "sewerageNote": "75% of water bill",
-      "meterRent": 70,
+      "meterRent": 50,
       "bands": [
         {
           "min": 0,
@@ -128,13 +129,13 @@
     },
     {
       "id": "naruwasco",
-      "name": "Nakuru Rural Water & Sanitation Company (NARUWASCO)",
+      "name": "Nakuru Rural Water & Sanitation Company (NAWASSCO)",
       "city": "Nakuru",
       "county": "Nakuru",
       "currency": "KES",
       "sewerageRate": 0.75,
       "sewerageNote": "75% of water bill",
-      "meterRent": 75,
+      "meterRent": 50,
       "bands": [
         {
           "min": 0,
@@ -176,7 +177,7 @@
       "currency": "KES",
       "sewerageRate": 0.75,
       "sewerageNote": "75% of water bill",
-      "meterRent": 70,
+      "meterRent": 50,
       "bands": [
         {
           "min": 0,
@@ -212,10 +213,12 @@
     }
   ],
   "notes": [
-    "Water tariffs are approved by the Water Services Regulatory Board (WASREB)",
-    "Sewerage charge is typically 75% of the water bill for connected properties",
-    "Meter rent is a fixed monthly charge regardless of consumption",
-    "Lifeline tariff (0–6 m³) is subsidized for low-income households",
-    "Rates shown are for domestic/residential connections; commercial rates are higher"
-  ]
+    "Water tariffs are approved by the Water Services Regulatory Board (WASREB); NCWSC Block 2 (7–20 m³) is KES 67/m³",
+    "Sewerage charge is typically 75% of the water bill for sewer-connected properties",
+    "Meter rent is KES 50/month for a standard 1/2-inch domestic connection regardless of consumption",
+    "WASREB regulatory levy (4% of water & sewerage charges) funds national water-sector oversight",
+    "Lifeline tariff (0–6 m³) is subsidized for low-income households"
+  ],
+  "lastUpdated": "2026-11-20",
+  "source": "Water Services Regulatory Board (WASREB) Approved Utility Tariffs"
 }

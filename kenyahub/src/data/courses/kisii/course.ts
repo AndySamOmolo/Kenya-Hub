@@ -1,689 +1,395 @@
-// ============================================================
-// Kisii (Ekegusii) Language Course Configuration & Units
-// Based on "A Practical Introduction to Gusii"
-// by W.H. Whiteley (East African Literature Bureau, 1956)
-// and standard highland Ekegusii linguistic references.
-// ============================================================
-
-import type { LanguageConfig, CourseUnit } from '../types';
+import type { LanguageConfig, CourseUnit } from "../types";
 
 export const KISII_CONFIG: LanguageConfig = {
-  id: 'kisii',
-  name: 'Kisii',
-  nativeName: 'Ekegusii',
-  family: 'Bantu',
-  counties: ['Kisii', 'Nyamira'],
-  speakers: '2.7M',
-  speechLocale: 'sw-KE',
-  description: 'A Highland Bantu language spoken across the fertile green hills of Kisii and Nyamira counties in Western Kenya, celebrated for its 7-vowel phonology, soapstone arts, and rich agricultural traditions.',
-  color: '#D97706',
+  "id": "kisii",
+  "name": "Kisii",
+  "nativeName": "Ekegusii",
+  "family": "Bantu",
+  "counties": [
+    "Kisii",
+    "Nyamira"
+  ],
+  "speakers": "2.7M",
+  "speechLocale": "sw-KE",
+  "description": "A Highland East Nyanza Bantu language (JE.42) spoken across Kisii and Nyamira counties in Western Kenya.",
+  "color": "#D97706",
+  "sources": [
+    "hobley-eastern-uganda-1902",
+    "johnston-uganda-protectorate-1902",
+    "johnston-bantu-1919",
+    "open-web-swadesh-comparative"
+  ]
 };
 
 export const KISII_UNITS: CourseUnit[] = [
   {
-    id: 'kisii-unit-1',
-    title: 'Unit 1: Foundations, Greetings & Numbers',
-    description: 'Learn foundational greetings, daily salutations, and the cardinal counting system of Ekegusii.',
-    icon: '👋',
-    skills: [
-      {
-        id: 'kisii-greetings',
-        title: 'Greetings & Politeness',
-        icon: 'Handshake',
-        description: 'Master core greetings, polite inquiries, and daily salutations.',
-        tips: "In Ekegusii, morning greetings begin with 'Bwakiire' (lit. 'How did you wake up?'). The standard respectful response is 'Mbuya mono' ('Very well' or 'Good'). For afternoon and evening, 'Bwairire' is used. When asking how someone is, say 'Naki ase?'. To say goodbye, say 'Togokoana' ('We will see each other') or 'Genda buya' ('Go well').",
-        culturalNote: "Greetings in Gusii culture carry deep warmth. Inquiring about one's family, the farm (omogondo), and health is essential before discussing business. Elders are addressed with reverent titles like 'Omogaaka' (elder father) and 'Omong'ina' (elder mother).",
-        words: [
-          { target: 'Bwakiire', source: 'Good morning / Hello', pronunciation: 'bwah-kee-reh', hint: 'Morning greeting (lit. "how did you wake?")', example: 'Bwakiire, tata! — Mbuya mono.' },
-          { target: 'Mbuya mono', source: 'Very well / Good', pronunciation: 'm-boo-yah moh-noh', hint: 'Standard polite reply to greetings', example: 'Ndi botire, mbuya mono.' },
-          { target: 'Bwairire', source: 'Good afternoon / evening', pronunciation: 'bwah-ee-ree-reh', hint: 'Salutation used from midday onwards' },
-          { target: 'Naki ase?', source: 'How are you?', pronunciation: 'nah-kee ah-seh', hint: 'Common conversational greeting', example: 'Naki ase, osomwabo?' },
-          { target: 'Ndi botire', source: 'I am fine', pronunciation: 'n-dee boh-tee-reh', hint: 'Affirmative response: "I am fine"' },
-          { target: 'Orogoro', source: 'Good morning (Daylight)', pronunciation: 'oh-roh-goh-roh', hint: 'Salutation honoring the early morning sunlight' },
-          { target: 'Ase mono', source: 'Thank you very much', pronunciation: 'ah-seh moh-noh', hint: "'Ase' means thanks; 'mono' means very much", example: 'Ase mono nigo oindeitie.' },
-          { target: 'Togokoana', source: 'Goodbye (we shall meet)', pronunciation: 'toh-goh-koh-ah-nah', hint: 'Parting phrase: we shall see each other' },
-          { target: 'Genda buya', source: 'Goodbye (go well)', pronunciation: 'gehn-dah boo-yah', hint: 'Spoken to the person departing' },
-          { target: 'Manya buya', source: 'Goodbye (stay well)', pronunciation: 'mah-nyah boo-yah', hint: 'Spoken by traveler to host staying behind' },
-          { target: 'Ee', source: 'Yes', pronunciation: 'eh-eh', hint: 'Affirmative' },
-          { target: 'Yaya', source: 'No', pronunciation: 'yah-yah', hint: 'Negative' }
-        ],
-        sentences: [
-          { target: 'Bwakiire, naki ase?', source: 'Good morning, how are you?' },
-          { target: 'Ndi botire, mbuya mono.', source: 'I am fine, very well.' },
-          { target: 'Genda buya, togokoana naende.', source: 'Go well, we will see each other again.' }
-        ],
-        authoredExercises: [
-          {
-            type: 'multiple_choice',
-            prompt: 'How do you reply to "Bwakiire" (Good morning) in Ekegusii?',
-            correctAnswer: 'Mbuya mono',
-            options: ['Mbuya mono', 'Yaya', 'Genda buya', 'Naki ase?'],
-            hint: 'Means "very well / good"'
-          },
-          {
-            type: 'multiple_choice',
-            prompt: 'What does "Togokoana" mean?',
-            correctAnswer: 'Goodbye (we shall meet)',
-            options: ['Goodbye (we shall meet)', 'Thank you', 'Good morning', 'How are you?'],
-            hint: 'Said when parting'
-          },
-          {
-            type: 'match_pairs',
-            prompt: 'Match the Gusii greetings with their English meanings:',
-            correctAnswer: 'Bwakiire: Good morning, Mbuya mono: Very well, Ase mono: Thank you very much, Yaya: No',
-            pairs: [
-              { left: 'Bwakiire', right: 'Good morning' },
-              { left: 'Mbuya mono', right: 'Very well' },
-              { left: 'Ase mono', right: 'Thank you very much' },
-              { left: 'Yaya', right: 'No' }
-            ]
-          },
-          {
-            type: 'fill_blank',
-            prompt: 'Complete: "Ndi botire, _____ mono." (I am fine, very well.)',
-            correctAnswer: 'mbuya',
-            options: ['mbuya', 'yaya', 'orogoro', 'bwairire'],
-            hint: 'Ekegusii word for good / well'
-          }
-        ]
-      },
-      {
-        id: 'kisii-numbers',
-        title: 'Counting & Numbers',
-        icon: 'Hash',
-        description: 'Learn the cardinal numbers from one to a hundred in Ekegusii.',
-        tips: "Ekegusii counting is based on Bantu numerals: 1 is Emwe, 2 is Ebere, 3 is Eshato (or Etato), 4 is Ene, and 5 is Etano. 10 is Ekoome, 20 is Amakoome abere (two tens), and 100 is Egana.",
-        culturalNote: "When counting cattle or livestock, Gusii pastoralists traditionally used respectful terms or grouping by color and age rather than blunt tallies to avoid bad fortune.",
-        words: [
-          { target: 'Emwe', source: 'One', pronunciation: 'ehm-weh', hint: 'Numeral 1' },
-          { target: 'Ebere', source: 'Two', pronunciation: 'eh-beh-reh', hint: 'Numeral 2' },
-          { target: 'Eshato', source: 'Three', pronunciation: 'eh-shah-toh', hint: 'Numeral 3 (also Etato)' },
-          { target: 'Ene', source: 'Four', pronunciation: 'eh-neh', hint: 'Numeral 4' },
-          { target: 'Etano', source: 'Five', pronunciation: 'eh-tah-noh', hint: 'Numeral 5' },
-          { target: 'Esita', source: 'Six', pronunciation: 'eh-see-tah', hint: 'Numeral 6' },
-          { target: 'Esobaa', source: 'Seven', pronunciation: 'eh-soh-bah', hint: 'Numeral 7 (also Musaafo)' },
-          { target: 'Enane', source: 'Eight', pronunciation: 'eh-nah-neh', hint: 'Numeral 8' },
-          { target: 'Engenda', source: 'Nine', pronunciation: 'ehn-gehn-dah', hint: 'Numeral 9' },
-          { target: 'Ekoome', source: 'Ten', pronunciation: 'eh-koh-meh', hint: 'Numeral 10' },
-          { target: 'Amakoome abere', source: 'Twenty', pronunciation: 'ah-mah-koh-meh ah-beh-reh', hint: 'Lit. "two tens"' },
-          { target: 'Egana', source: 'Hundred', pronunciation: 'eh-gah-nah', hint: 'Numeral 100' }
-        ],
-        sentences: [
-          { target: 'Ndi na abaana bashato.', source: 'I have three children.' },
-          { target: 'Mbe amatoke abere.', source: 'Give me two bananas.' },
-          { target: 'Ching\'ombe chikoome chiria.', source: 'Those ten cows.' }
-        ],
-        authoredExercises: [
-          {
-            type: 'multiple_choice',
-            prompt: 'How do you say "Three" in Ekegusii?',
-            correctAnswer: 'Eshato',
-            options: ['Eshato', 'Ebere', 'Etano', 'Ene'],
-            hint: 'Cognate to Bantu tatũ'
-          },
-          {
-            type: 'multiple_choice',
-            prompt: 'Which word means "Ten"?',
-            correctAnswer: 'Ekoome',
-            options: ['Ekoome', 'Emwe', 'Egana', 'Enane'],
-            hint: 'Cognate to kũmi'
-          },
-          {
-            type: 'match_pairs',
-            prompt: 'Match the numbers to their Ekegusii words:',
-            correctAnswer: 'Emwe: One, Ebere: Two, Eshato: Three, Etano: Five',
-            pairs: [
-              { left: 'Emwe', right: 'One' },
-              { left: 'Ebere', right: 'Two' },
-              { left: 'Eshato', right: 'Three' },
-              { left: 'Etano', right: 'Five' }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    id: 'kisii-unit-2',
-    title: 'Unit 2: People, Family & Society',
-    description: 'Learn terms for family members, social kinship, and leadership roles in Gusii society.',
-    icon: '👨‍👩‍👧‍👦',
-    skills: [
-      {
-        id: 'kisii-family',
-        title: 'Family & Kinship',
-        icon: 'Users',
-        description: 'Master terms for immediate and extended family in Ekegusii.',
-        tips: "In Ekegusii, 'Omonto' means person (plural 'Abanto'). 'Tata' is father, 'Omong'ina' is mother (or revered elder woman). 'Omwana' is child (plural 'Abaana'). 'Omosaacha' is husband/man, and 'Omokungu' is wife/woman.",
-        culturalNote: "The Abagusii family system is organized around patrilineal homesteads. Respect for parents and elders is cardinal, reflected in respectful greeting rituals and filial care.",
-        words: [
-          { target: 'Omonto', source: 'Person / Human being', pronunciation: 'oh-mohn-toh', hint: 'Plural: Abanto (people)', example: 'Omonto oyo nigo arigeti.' },
-          { target: 'Abanto', source: 'People', pronunciation: 'ah-bahn-toh', hint: 'Plural of omonto', example: 'Abanto banto nigo bamenyete.' },
-          { target: 'Tata', source: 'Father', pronunciation: 'tah-tah', hint: 'Biological father or paternal uncle', example: 'Tata ali mogondo.' },
-          { target: 'Omong\'ina', source: 'Mother / Elder woman', pronunciation: 'oh-moh-ngee-nah', hint: 'Mother or matriarch (plural: Abang\'ina)', example: 'Omong\'ina ateekire.' },
-          { target: 'Omwana', source: 'Child', pronunciation: 'ohm-wah-nah', hint: 'Plural: Abaana', example: 'Omwana asomete.' },
-          { target: 'Abaana', source: 'Children', pronunciation: 'ah-bah-ah-nah', hint: 'Plural of omwana', example: 'Abaana bare aiga.' },
-          { target: 'Omosaacha', source: 'Man / Husband', pronunciation: 'oh-moh-sah-ah-chah', hint: 'Plural: Abasaacha', example: 'Omosaacha nigo akorire.' },
-          { target: 'Omokungu', source: 'Woman / Wife', pronunciation: 'oh-moh-koon-goo', hint: 'Plural: Abakungu', example: 'Omokungu omwega.' },
-          { target: 'Omochokoro', source: 'Grandchild', pronunciation: 'oh-moh-choh-koh-roh', hint: 'Plural: Abachokoro' },
-          { target: 'Omogaaka', source: 'Elder / Old man', pronunciation: 'oh-moh-gah-ah-kah', hint: 'Plural: Abagaaka (title of great honor)' }
-        ],
-        sentences: [
-          { target: 'Omosaacha nomokungu bamenyete aiga.', source: 'The man and woman live here.' },
-          { target: 'Tata nomong\'ina bare mogondo.', source: 'Father and mother are at the farm.' },
-          { target: 'Abaana bano nigo basomete.', source: 'These children are studying.' }
-        ],
-        authoredExercises: [
-          {
-            type: 'multiple_choice',
-            prompt: 'What is the plural of "omwana" (child) in Ekegusii?',
-            correctAnswer: 'Abaana',
-            options: ['Abaana', 'Abanto', 'Abasaacha', 'Abachokoro'],
-            hint: 'Class 2 plural prefix aba-'
-          },
-          {
-            type: 'multiple_choice',
-            prompt: 'Which word means "Person"?',
-            correctAnswer: 'Omonto',
-            options: ['Omonto', 'Omote', 'Omoyio', 'Tata'],
-            hint: 'Plural is abanto'
-          },
-          {
-            type: 'match_pairs',
-            prompt: 'Match the family members to their Gusii words:',
-            correctAnswer: 'Tata: Father, Omong\'ina: Mother, Omwana: Child, Omosaacha: Husband',
-            pairs: [
-              { left: 'Tata', right: 'Father' },
-              { left: "Omong'ina", right: 'Mother' },
-              { left: 'Omwana', right: 'Child' },
-              { left: 'Omosaacha', right: 'Husband' }
-            ]
-          }
-        ]
-      },
-      {
-        id: 'kisii-roles',
-        title: 'Youth & Community Roles',
-        icon: 'Crown',
-        description: 'Terms for youth, leaders, and community roles in Gusii life.',
-        tips: "'Omomura' refers to a young man / circumcised youth (plural 'Abamura'). 'Omoiseke' is a young maiden (plural 'Abaiseke'). 'Omogambi' is a chief or respected community spokesperson.",
-        culturalNote: "Circumcision age-sets (ebisarate) historically bonded Gusii youths into brotherhoods responsible for guarding cattle and defending the highlands.",
-        words: [
-          { target: 'Omomura', source: 'Young man / Warrior', pronunciation: 'oh-moh-moo-rah', hint: 'Plural: Abamura (youth/warrior)', example: 'Omomura omoeneri.' },
-          { target: 'Omoiseke', source: 'Young woman / Maiden', pronunciation: 'oh-moh-ee-seh-keh', hint: 'Plural: Abaiseke', example: 'Omoiseke omuya.' },
-          { target: 'Omogambi', source: 'Chief / Leader / Judge', pronunciation: 'oh-moh-gahm-bee', hint: 'Plural: Abagambi (customary adjudicator)', example: 'Omogambi nigo arigeti.' },
-          { target: 'Omorimi', source: 'Farmer / Cultivator', pronunciation: 'oh-moh-ree-mee', hint: 'Plural: Abarimi (from gokora mogondo)' },
-          { target: 'Osomwabo', source: 'Friend / Companion', pronunciation: 'oh-sohm-wah-boh', hint: 'Comrade or trusted peer' }
-        ],
-        sentences: [
-          { target: 'Abamura nigo bare aiga.', source: 'The young men are here.' },
-          { target: 'Omogambi nigo atebire buya.', source: 'The chief has spoken well.' }
-        ],
-        authoredExercises: [
-          {
-            type: 'multiple_choice',
-            prompt: 'What does "Omogambi" mean?',
-            correctAnswer: 'Chief / Leader',
-            options: ['Chief / Leader', 'Farmer', 'Child', 'Water'],
-            hint: 'The one who adjudicates disputes'
-          }
-        ]
-      }
-    ]
-  },
-  {
-    id: 'kisii-unit-3',
-    title: 'Unit 3: Food, Farm & Highland Nature',
-    description: 'Vocabulary for staple foods, farming, domestic homestead items, and the lush nature of Gusii hills.',
-    icon: '🌿',
-    skills: [
-      {
-        id: 'kisii-home-food',
-        title: 'Food & Homestead',
-        icon: 'Utensils',
-        description: 'Terms for highland meals, crops, and household items.',
-        tips: "'Amatoke' (green bananas / plantains) are the supreme culinary staple of the Gusii highlands. 'Amaanche' means water, 'Amabwere' is fresh milk, and 'Enyomba' is a house.",
-        culturalNote: "The Kisii Highlands enjoy rich volcanic soils and high rainfall. Bananas, tea, coffee, and maize form the backbone of household prosperity.",
-        words: [
-          { target: 'Amatoke', source: 'Bananas / Plantains', pronunciation: 'ah-mah-toh-keh', hint: 'Singular: Ritoke (central staple food)', example: 'Amatoke aya amaya mono.' },
-          { target: 'Amaanche', source: 'Water', pronunciation: 'ah-mah-ahn-cheh', hint: 'Essential drinking and cooking water', example: 'Mbe amaanche nywe.' },
-          { target: 'Amabwere', source: 'Milk', pronunciation: 'ah-mah-bweh-reh', hint: 'Fresh cow milk' },
-          { target: 'Enyomba', source: 'House / Home', pronunciation: 'ehn-yohm-bah', hint: 'Plural: Chinyomba', example: 'Enyomba yane eri aiga.' },
-          { target: 'Omogondo', source: 'Farm / Shamba', pronunciation: 'oh-moh-gohn-doh', hint: 'Plural: Emegondo (cultivated land)', example: 'Genda mogondo.' },
-          { target: 'Omobero', source: 'Fire / Hearth', pronunciation: 'oh-moh-beh-roh', hint: 'Domestic fire' },
-          { target: 'Ekerogo', source: 'Chair / Stool', pronunciation: 'eh-keh-roh-goh', hint: 'Plural: Ebirogo' },
-          { target: 'Omoyio', source: 'Knife', pronunciation: 'oh-moh-yee-oh', hint: 'Plural: Emeyio' },
-          { target: 'Ritimo', source: 'Spear', pronunciation: 'ree-tee-moh', hint: 'Plural: Amatimo (traditional weapon)' }
-        ],
-        sentences: [
-          { target: 'Mbe amaanche manywe.', source: 'Give me water to drink.' },
-          { target: 'Amatoke aya nigo arierwe.', source: 'These bananas are eaten.' },
-          { target: 'Omogondo oyio nigo orimire.', source: 'That farm is cultivated.' }
-        ],
-        authoredExercises: [
-          {
-            type: 'multiple_choice',
-            prompt: 'Which word means "Bananas" in Ekegusii?',
-            correctAnswer: 'Amatoke',
-            options: ['Amatoke', 'Amaanche', 'Amabwere', 'Omobero'],
-            hint: 'The premier Gusii staple crop'
-          },
-          {
-            type: 'multiple_choice',
-            prompt: 'What does "Amaanche" mean?',
-            correctAnswer: 'Water',
-            options: ['Water', 'Milk', 'Fire', 'House'],
-            hint: 'Essential liquid'
-          },
-          {
-            type: 'match_pairs',
-            prompt: 'Match the homestead terms with their meanings:',
-            correctAnswer: 'Amatoke: Bananas, Amaanche: Water, Enyomba: House, Omogondo: Farm',
-            pairs: [
-              { left: 'Amatoke', right: 'Bananas' },
-              { left: 'Amaanche', right: 'Water' },
-              { left: 'Enyomba', right: 'House' },
-              { left: 'Omogondo', right: 'Farm' }
-            ]
-          }
-        ]
-      },
-      {
-        id: 'kisii-nature-animals',
-        title: 'Nature & Livestock',
-        icon: 'Leaf',
-        description: 'Terms for animals, livestock, and elements of nature.',
-        tips: "In Ekegusii, 'Omote' is a tree (plural 'Emete'). 'Embura' is rain, and 'Rioba' is the sun. Cattle are 'Eng'ombe' (plural 'Ching'ombe').",
-        culturalNote: "Pastoral agriculture is deeply woven into Gusii life. Cattle provide bride-wealth (enyangi) and milk, while the sun (Rioba) and rain (Embura) signify life and divine blessing.",
-        words: [
-          { target: 'Omote', source: 'Tree', pronunciation: 'oh-moh-teh', hint: 'Plural: Emete', example: 'Omote oyo omunene.' },
-          { target: 'Embura', source: 'Rain', pronunciation: 'ehm-boo-rah', hint: 'Abundant highland rainfall', example: 'Embura nigo egwa.' },
-          { target: 'Rioba', source: 'Sun / Daylight', pronunciation: 'ree-oh-bah', hint: 'The sun shining above' },
-          { target: 'Eng\'ombe', source: 'Cow / Cattle', pronunciation: 'ehng-ohm-beh', hint: 'Plural: Ching\'ombe', example: 'Eng\'ombe nigo echete.' },
-          { target: 'Embori', source: 'Goat', pronunciation: 'ehm-boh-ree', hint: 'Plural: Chimbori' },
-          { target: 'Engoko', source: 'Chicken', pronunciation: 'ehn-goh-koh', hint: 'Plural: Chingoko' },
-          { target: 'Nyasae', source: 'God / Supreme Creator', pronunciation: 'nyah-sah-eh', hint: 'Also Engoro (Almighty God)' }
-        ],
-        sentences: [
-          { target: 'Embura nigo egwa leelo.', source: 'Rain is falling today.' },
-          { target: 'Ching\'ombe chiri mogondo.', source: 'The cows are at the farm.' }
-        ],
-        authoredExercises: [
-          {
-            type: 'multiple_choice',
-            prompt: 'Which word means "Rain" in Ekegusii?',
-            correctAnswer: 'Embura',
-            options: ['Embura', 'Rioba', 'Omote', 'Embori'],
-            hint: 'Rainfall that nurtures crops'
-          }
-        ]
-      }
-    ]
-  },
-  {
-    id: 'kisii-unit-4',
-    title: 'Unit 4: Verbs & Daily Conversation',
-    description: 'Learn foundational verbs, question words, and common phrases for everyday dialogue in Ekegusii.',
-    icon: '💬',
-    skills: [
-      {
-        id: 'kisii-verbs-dialogue',
-        title: 'Verbs & Everyday Phrases',
-        icon: 'MessageSquare',
-        description: 'Key action verbs and question words for everyday interactions.',
-        tips: "Infinitive verbs in Ekegusii typically begin with 'Go-' or 'Ko-': 'Gokora' (to work/do), 'Gosoma' (to read/study), 'Gotaaha' (to draw water/enter), 'Gochia' (to go), 'Gocha' (to come), 'Gotagera' (to want/need), 'Komanya' (to know), and 'Gokunda' (to love). 'Inka?' means 'Where?'.",
-        culturalNote: "When speaking with elders, young people use softened phrasing and respectful question words to maintain decorum.",
-        words: [
-          { target: 'Gokora', source: 'To work / do', pronunciation: 'goh-koh-rah', hint: 'Infinitive verb', example: 'Gokora obuya.' },
-          { target: 'Gosoma', source: 'To read / study', pronunciation: 'goh-soh-mah', hint: 'Infinitive verb from Whiteley (1956)', example: 'Gosoma ebitabu.' },
-          { target: 'Gotaaha', source: 'To draw water / enter', pronunciation: 'goh-tah-ah-hah', hint: 'Whiteley (1956) model verb: draw water', example: 'Gotaaha amaanche.' },
-          { target: 'Gochia', source: 'To go / depart', pronunciation: 'goh-chee-ah', hint: 'Infinitive: to go', example: 'Ngochia mogondo.' },
-          { target: 'Gocha', source: 'To come / arrive', pronunciation: 'goh-chah', hint: 'Infinitive: to come', example: 'Incha aiga.' },
-          { target: 'Gotagera', source: 'To want / need', pronunciation: 'goh-tah-geh-rah', hint: 'Infinitive: to desire', example: 'Nintagete amatoke.' },
-          { target: 'Komanya', source: 'To know / understand', pronunciation: 'koh-mah-nyah', hint: 'Infinitive: to know' },
-          { target: 'Gokunda', source: 'To love / like', pronunciation: 'goh-koon-dah', hint: 'Nkogokunda = I love you' },
-          { target: 'Inka?', source: 'Where?', pronunciation: 'een-kah', hint: 'Question: location', example: 'Inka ogochia?' },
-          { target: 'Naki?', source: 'How?', pronunciation: 'nah-kee', hint: 'Question: manner' },
-          { target: 'Ning\'o?', source: 'Who?', pronunciation: 'neeng-oh', hint: 'Question: person' }
-        ],
-        sentences: [
-          { target: 'Inka ogochia leelo?', source: 'Where are you going today?' },
-          { target: 'Nkogokunda mono, mama.', source: 'I love you very much, mother.' },
-          { target: 'Incha aiga torye ebiokuria.', source: 'Come here so we eat food.' },
-          { target: 'Omwana nigo agotaaha amaanche.', source: 'The child is fetching water.' }
-        ],
-        authoredExercises: [
-          {
-            type: 'multiple_choice',
-            prompt: 'How do you say "I love you" in Ekegusii?',
-            correctAnswer: 'Nkogokunda',
-            options: ['Nkogokunda', 'Genda buya', 'Naki ase', 'Gokora'],
-            hint: 'From the verb gokunda'
-          },
-          {
-            type: 'multiple_choice',
-            prompt: 'What does "Inka ogochia?" mean?',
-            correctAnswer: 'Where are you going?',
-            options: ['Where are you going?', 'Who is coming?', 'How are you?', 'What do you want?'],
-            hint: 'Inka means where'
-          },
-          {
-            type: 'match_pairs',
-            prompt: 'Match the Gusii verbs to their English meanings:',
-            correctAnswer: 'Gokora: To work, Gochia: To go, Gocha: To come, Gokunda: To love',
-            pairs: [
-              { left: 'Gokora', right: 'To work' },
-              { left: 'Gochia', right: 'To go' },
-              { left: 'Gocha', right: 'To come' },
-              { left: 'Gokunda', right: 'To love' }
-            ]
-          },
-          {
-            type: 'fill_blank',
-            prompt: 'Complete: "_____ ogochia?" (Where are you going?)',
-            correctAnswer: 'Inka',
-            options: ['Inka', 'Yaya', 'Ee', 'Tata'],
-            hint: 'Ekegusii word for "Where"'
-          }
-        ]
-      }
-    ]
-  },
-  
-  // ── EXPANDED SOURCE-VERIFIED UNITS ──
-  {
-    "id": "kisii-unit-5-greetings",
-    "title": "Unit 5: Greetings & Farewells",
-    "description": "Comprehensive Kisii (Ekegusii) curriculum for Greetings & Farewells, vetted from Wilfred H. Whiteley (1956) 'A Practical Introduction to Gusii' and Whiteley (1960) 'The Tense System of Gusii' (East African Literature Bureau).",
-    "icon": "Handshake",
+    "id": "kisii-unit-1",
+    "unitNumber": 1,
+    "title": "Greetings, Noun Classes & Numbers 1–20",
+    "description": "Master Ekegusii greetings, noun class pairs (omonto/abanto, egekombe/ebikombe, rigena/amagena), and counting from 1 to 20.",
+    "icon": "Layers",
+    "color": "#D97706",
     "skills": [
       {
-        "id": "kisii-exp-greetings",
-        "title": "Greetings & Farewells",
-        "icon": "Handshake",
-        "description": "Master Kisii (Ekegusii) greetings & farewells vocabulary and expressions from verified historical sources.",
-        "tips": "In this Kisii (Ekegusii) skill covering Greetings & Farewells, pay special attention to pronunciation and morphological prefixes/suffixes: 'Mbuya omuerio' (Good morning), 'Mbuya omotienyi' (Good afternoon), 'Mbuya mogari' (Good evening), 'Oyagore' (Welcome / Hello).",
-        "culturalNote": "Source attribution: Wilfred H. Whiteley (1956) 'A Practical Introduction to Gusii' and Whiteley (1960) 'The Tense System of Gusii' (East African Literature Bureau).",
+        "id": "kisii-greetings-nouns",
+        "title": "Greetings, People & Homestead Nouns",
+        "icon": "Users",
+        "description": "Learn daily salutations and core noun classes in Ekegusii.",
+        "tips": "Morning greeting in Ekegusii is 'Bwakire buya' ('It has dawned well'), and good night is 'Obotuko obuya'. Notice Class 1/2 'omonto → abanto' (person → people) and Class 9/10 'eng'ombe → chiombe' (cow → cows).",
         "words": [
           {
-            "target": "Mbuya omuerio",
+            "target": "Bwakire buya",
             "source": "Good morning",
-            "pronunciation": "m-boo-yah oh-mweh-ree-oh",
-            "hint": "Traditional morning greeting wishing a good morning",
-            "example": "Mbuya omuerio — Good morning (Traditional morning greeting wishing a good morning)"
+            "pronunciation": "bwa-ki-re bu-ya",
+            "hint": "Morning salutation"
           },
           {
-            "target": "Mbuya omotienyi",
-            "source": "Good afternoon",
-            "pronunciation": "m-boo-yah oh-moh-tee-ehn-yee",
-            "hint": "Afternoon greeting (lit. 'good daylight/sun period')",
-            "example": "Mbuya omotienyi — Good afternoon (Afternoon greeting (lit. 'good daylight/sun period'))"
+            "target": "Obotuko obuya",
+            "source": "Good night",
+            "pronunciation": "o-bo-tu-ko o-bu-ya",
+            "hint": "Night salutation"
           },
           {
-            "target": "Mbuya mogari",
-            "source": "Good evening",
-            "pronunciation": "m-boo-yah moh-gah-ree",
-            "hint": "Evening greeting as dusk approaches",
-            "example": "Mbuya mogari — Good evening (Evening greeting as dusk approaches)"
+            "target": "omonto (pl. abanto)",
+            "source": "Person (pl. People)",
+            "pronunciation": "o-monto",
+            "hint": "Class 1/2 noun (Hobley 1902 & Johnston 1919)"
           },
           {
-            "target": "Oyagore",
-            "source": "Welcome / Hello",
-            "pronunciation": "oh-yah-goh-reh",
-            "hint": "Warm welcoming salutation to guests",
-            "example": "Oyagore — Welcome / Hello (Warm welcoming salutation to guests)"
+            "target": "omosacha (pl. abasacha)",
+            "source": "Man, husband",
+            "pronunciation": "o-mo-sacha",
+            "hint": "Hobley (1902) & Johnston (1919 #7)"
           },
           {
-            "target": "Ase mono / Buya mono",
-            "source": "Thank you",
-            "pronunciation": "ah-seh moh-noh / boo-yah moh-noh",
-            "hint": "'Ase mono' = thank you very much",
-            "example": "Ase mono / Buya mono — Thank you ('Ase mono' = thank you very much)"
+            "target": "omokungu (pl. abakungu)",
+            "source": "Woman, wife",
+            "pronunciation": "o-mo-kungu",
+            "hint": "Hobley (1902) & Johnston (1919 #7)"
           },
           {
-            "target": "Bwakiire",
-            "source": "Hello / Morning greeting",
-            "pronunciation": "bwah-kee-reh",
-            "hint": "Universal morning salutation (lit. 'How did it dawn?')",
-            "example": "Bwakiire — Hello / Morning greeting (Universal morning salutation (lit. 'How did it dawn?'))"
+            "target": "omoiseke (pl. abaiseke)",
+            "source": "Girl",
+            "pronunciation": "o-moi-se-ke",
+            "hint": "Class 1/2 nouns (Johnston 1919)"
           },
           {
-            "target": "Bwairire",
-            "source": "Goodnight / Evening greeting",
-            "pronunciation": "bwah-ee-ree-reh",
-            "hint": "Salutation used from midday onwards and into dusk / night",
-            "example": "Bwairire — Goodnight / Evening greeting (Salutation used from midday onwards and into dusk / night)"
+            "target": "omosia (pl. abasia)",
+            "source": "Boy",
+            "pronunciation": "o-mo-sia",
+            "hint": "Class 1/2 nouns (Johnston 1919)"
           },
           {
-            "target": "Mbuya mono",
-            "source": "Response: I am well",
-            "pronunciation": "m-boo-yah moh-noh",
-            "hint": "Standard reply to Bwakiire ('Very well / good')",
-            "example": "Mbuya mono — Response: I am well (Standard reply to Bwakiire ('Very well / good'))"
+            "target": "omogaka (pl. abagaka)",
+            "source": "Elder",
+            "pronunciation": "o-mo-ga-ka",
+            "hint": "Kinship & elder nouns (Hobley 1902)"
+          },
+          {
+            "target": "baba",
+            "source": "Mother",
+            "pronunciation": "ba-ba",
+            "hint": "Kinship & elder nouns (Hobley 1902)"
+          },
+          {
+            "target": "tata",
+            "source": "Father",
+            "pronunciation": "ta-ta",
+            "hint": "Kinship & elder nouns (Hobley 1902)"
+          },
+          {
+            "target": "amache",
+            "source": "Water",
+            "pronunciation": "a-mache",
+            "hint": "Hobley (1902) & Johnston (1919)"
+          },
+          {
+            "target": "amabere",
+            "source": "Milk",
+            "pronunciation": "a-ma-be-re",
+            "hint": "Hobley (1902) & Johnston (1919)"
+          },
+          {
+            "target": "omorero",
+            "source": "Fire",
+            "pronunciation": "o-mo-re-ro",
+            "hint": "Hobley (1902) & Johnston (1919)"
+          },
+          {
+            "target": "enyomba (pl. chinyomba)",
+            "source": "House (pl. Houses)",
+            "pronunciation": "enyomba",
+            "hint": "Class 9/10 e-/chi- (Johnston 1919)"
+          },
+          {
+            "target": "inka",
+            "source": "Homestead",
+            "pronunciation": "inka",
+            "hint": "Class 9/10 e-/chi- (Johnston 1919)"
+          },
+          {
+            "target": "rigena (pl. amagena)",
+            "source": "Stone (pl. Stones)",
+            "pronunciation": "ri-ge-na",
+            "hint": "Class 5/6 ri-/ama- & Class 3/4 omo-/eme-"
+          },
+          {
+            "target": "omote (pl. emete)",
+            "source": "Tree (pl. Trees)",
+            "pronunciation": "o-mo-te",
+            "hint": "Class 5/6 ri-/ama- & Class 3/4 omo-/eme-"
+          },
+          {
+            "target": "Engoro",
+            "source": "God",
+            "pronunciation": "engo-ro",
+            "hint": "Hobley (1902) & Johnston (1919)"
+          },
+          {
+            "target": "Erioba",
+            "source": "The Sun",
+            "pronunciation": "e-rio-ba",
+            "hint": "Hobley (1902) & Johnston (1919)"
           }
         ],
         "sentences": [
           {
-            "target": "Omonto oyo n'omuya mono.",
-            "source": "This person is very good."
+            "target": "Bwakire buya, baba.",
+            "source": "Good morning, mother."
           },
           {
-            "target": "Abana bonsi bagenda esukuru.",
-            "source": "All the children have gone to school."
-          },
-          {
-            "target": "Amache aya n'amaya okonywa.",
-            "source": "This water is good for drinking."
+            "target": "Obotuko obuya inka.",
+            "source": "Good night at home."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What does \"Mbuya omuerio\" mean in English?",
+            "prompt": "What is the English meaning of \"Bwakire buya\" in Kisii?",
             "correctAnswer": "Good morning",
             "options": [
-              "Good afternoon",
-              "Good evening",
-              "Welcome / Hello",
+              "Good night",
+              "Person",
+              "Man",
               "Good morning"
             ],
-            "hint": "Traditional morning greeting wishing a good morning"
+            "hint": "Morning salutation"
           },
           {
             "type": "multiple_choice",
-            "prompt": "What does \"Mbuya omotienyi\" mean in English?",
-            "correctAnswer": "Good afternoon",
+            "prompt": "What is the English meaning of \"Obotuko obuya\" in Kisii?",
+            "correctAnswer": "Good night",
             "options": [
-              "Good evening",
-              "Welcome / Hello",
-              "Good afternoon",
+              "Person",
+              "Man",
+              "Good night",
               "Good morning"
             ],
-            "hint": "Afternoon greeting (lit. 'good daylight/sun period')"
+            "hint": "Night salutation"
           },
           {
             "type": "multiple_choice",
-            "prompt": "What does \"Mbuya mogari\" mean in English?",
-            "correctAnswer": "Good evening",
+            "prompt": "What is the English meaning of \"omonto (pl. abanto)\" in Kisii?",
+            "correctAnswer": "Person",
             "options": [
-              "Welcome / Hello",
-              "Good evening",
+              "Person",
+              "Man",
               "Good morning",
-              "Good afternoon"
+              "Good night"
             ],
-            "hint": "Evening greeting as dusk approaches"
+            "hint": "Class 1/2 noun (Hobley 1902 & Johnston 1919)",
+            "acceptedAnswers": [
+              "Person (pl. People)",
+              "Person"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Good evening\" in Kisii (Ekegusii)?",
-            "correctAnswer": "Mbuya mogari",
+            "prompt": "How do you say \"Person (pl. People)\" in Kisii?",
+            "correctAnswer": "omonto",
             "options": [
-              "Mbuya mogari",
-              "Mbuya omuerio",
-              "Mbuya omotienyi",
-              "Oyagore"
+              "omonto",
+              "Bwakire buya",
+              "Obotuko obuya",
+              "omosacha"
             ],
-            "hint": "m-boo-yah moh-gah-ree"
+            "hint": "oh-moh-ntoh / ah-bah-ntoh",
+            "acceptedAnswers": [
+              "omonto (pl. abanto)",
+              "omonto"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Welcome / Hello\" in Kisii (Ekegusii)?",
-            "correctAnswer": "Oyagore",
+            "prompt": "How do you say \"Man\" in Kisii?",
+            "correctAnswer": "omosacha",
             "options": [
-              "Mbuya omuerio",
-              "Mbuya omotienyi",
-              "Mbuya mogari",
-              "Oyagore"
+              "Bwakire buya",
+              "Obotuko obuya",
+              "omosacha",
+              "omonto"
             ],
-            "hint": "oh-yah-goh-reh"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Thank you\" in Kisii (Ekegusii)?",
-            "correctAnswer": "Ase mono / Buya mono",
-            "options": [
-              "Mbuya omotienyi",
-              "Mbuya mogari",
-              "Ase mono / Buya mono",
-              "Mbuya omuerio"
-            ],
-            "hint": "ah-seh moh-noh / boo-yah moh-noh"
+            "hint": "oh-moh-sah-chah / oh-moh-koon-goo",
+            "acceptedAnswers": [
+              "omosacha (pl. abasacha) / omokungu (pl. abakungu)",
+              "omosacha"
+            ]
           },
           {
             "type": "match_pairs",
-            "prompt": "Match the Kisii (Ekegusii) terms with their English meanings:",
-            "correctAnswer": "Mbuya omuerio: Good morning, Mbuya omotienyi: Good afternoon, Mbuya mogari: Good evening, Oyagore: Welcome / Hello",
+            "prompt": "Match each Kisii expression with its English meaning:",
+            "correctAnswer": "Bwakire buya: Good morning",
             "pairs": [
               {
-                "left": "Mbuya omuerio",
+                "left": "Bwakire buya",
                 "right": "Good morning"
               },
               {
-                "left": "Mbuya omotienyi",
-                "right": "Good afternoon"
+                "left": "Obotuko obuya",
+                "right": "Good night"
               },
               {
-                "left": "Mbuya mogari",
-                "right": "Good evening"
+                "left": "omonto (pl. abanto)",
+                "right": "Person (pl. People)"
               },
               {
-                "left": "Oyagore",
-                "right": "Welcome / Hello"
+                "left": "omosacha (pl. abasacha) / omokungu (pl. abakungu)",
+                "right": "Man, husband / Woman, wife"
               }
             ]
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete: \"_____\" means \"Good morning\" in Kisii (Ekegusii).",
-            "correctAnswer": "Mbuya omuerio",
+            "prompt": "Complete the Kisii term for \"Girl\": ___",
+            "correctAnswer": "omoiseke",
             "options": [
-              "Mbuya omuerio",
-              "Mbuya omotienyi",
-              "Mbuya mogari",
-              "Oyagore"
+              "Bwakire buya",
+              "Obotuko obuya",
+              "omonto",
+              "omoiseke"
             ],
-            "hint": "m-boo-yah oh-mweh-ree-oh"
+            "hint": "Class 1/2 nouns (Johnston 1919)",
+            "acceptedAnswers": [
+              "omoiseke (pl. abaiseke) / omosia (pl. abasia)",
+              "omoiseke"
+            ]
           }
         ]
-      }
-    ]
-  },
-  {
-    "id": "kisii-unit-6-numbers",
-    "title": "Unit 6: Numbers",
-    "description": "Comprehensive Kisii (Ekegusii) curriculum for Numbers, vetted from Wilfred H. Whiteley (1956) 'A Practical Introduction to Gusii' and Whiteley (1960) 'The Tense System of Gusii' (East African Literature Bureau).",
-    "icon": "Hash",
-    "skills": [
+      },
       {
-        "id": "kisii-exp-numbers",
-        "title": "Numbers",
+        "id": "kisii-numbers-verbs",
+        "title": "Numbers 1–20 & Everyday Actions",
         "icon": "Hash",
-        "description": "Master Kisii (Ekegusii) numbers vocabulary and expressions from verified historical sources.",
-        "tips": "In this Kisii (Ekegusii) skill covering Numbers, pay special attention to pronunciation and morphological prefixes/suffixes: 'Emwe / Eyemo' (One), 'Ebere / Ibere' (Two), 'Isatu / Etato' (Three), 'Inye / Ene' (Four).",
-        "culturalNote": "Source attribution: Wilfred H. Whiteley (1956) 'A Practical Introduction to Gusii' and Whiteley (1960) 'The Tense System of Gusii' (East African Literature Bureau).",
+        "description": "Count from eyemo (1) to emerongo ebere (20) and use core Ekegusii verbs.",
+        "tips": "Numbers 6–8 build on 'isano' (5): isano nemo (6), isano na ibere (7), isano na isato (8), while 9 is 'kianda' and 10 is 'ikomi' (Hobley 1902, p. 69 & Johnston 1919, Vol. I, p. 81).",
         "words": [
           {
-            "target": "Emwe / Eyemo",
-            "source": "One",
-            "pronunciation": "ehm-weh / eh-yeh-moh",
-            "hint": "Numeral 1 (Adjective stem: -mo)",
-            "example": "Emwe / Eyemo — One (Numeral 1 (Adjective stem: -mo))"
+            "target": "eyemo",
+            "source": "One (1)",
+            "pronunciation": "e-ye-mo",
+            "hint": "Cardinal 1 (Hobley 1902 & Johnston 1919)"
           },
           {
-            "target": "Ebere / Ibere",
-            "source": "Two",
-            "pronunciation": "eh-beh-reh / ee-beh-reh",
-            "hint": "Numeral 2 (Adjective stem: -bere)",
-            "example": "Ebere / Ibere — Two (Numeral 2 (Adjective stem: -bere))"
+            "target": "ibere",
+            "source": "Two (2)",
+            "pronunciation": "i-be-re",
+            "hint": "Cardinal 2"
           },
           {
-            "target": "Isatu / Etato",
-            "source": "Three",
-            "pronunciation": "ee-sah-too / eh-tah-toh",
-            "hint": "Numeral 3 (Adjective stem: -tatu / -shato)",
-            "example": "Isatu / Etato — Three (Numeral 3 (Adjective stem: -tatu / -shato))"
+            "target": "isato",
+            "source": "Three (3)",
+            "pronunciation": "i-sa-to",
+            "hint": "Cardinal 3"
           },
           {
-            "target": "Inye / Ene",
-            "source": "Four",
-            "pronunciation": "een-yeh / eh-neh",
-            "hint": "Numeral 4 (Adjective stem: -ne)",
-            "example": "Inye / Ene — Four (Numeral 4 (Adjective stem: -ne))"
+            "target": "inye",
+            "source": "Four (4)",
+            "pronunciation": "inye",
+            "hint": "Cardinal 4"
           },
           {
-            "target": "Isaano / Etano",
-            "source": "Five",
-            "pronunciation": "ee-sah-ah-noh / eh-tah-noh",
-            "hint": "Numeral 5 (Adjective stem: -taano)",
-            "example": "Isaano / Etano — Five (Numeral 5 (Adjective stem: -taano))"
+            "target": "isano",
+            "source": "Five (5)",
+            "pronunciation": "i-sa-no",
+            "hint": "Cardinal 5"
           },
           {
-            "target": "Esobaa / Musaafo",
-            "source": "Seven",
-            "pronunciation": "eh-soh-bah / moo-sah-ah-foh",
-            "hint": "Numeral 7",
-            "example": "Esobaa / Musaafo — Seven (Numeral 7)"
+            "target": "isano nemo",
+            "source": "Six (6, lit. 5+1)",
+            "pronunciation": "i-sa-no ne-mo",
+            "hint": "Cardinal 6"
           },
           {
-            "target": "Amakoome atato",
-            "source": "Thirty",
-            "pronunciation": "ah-mah-koh-meh ah-tah-toh",
-            "hint": "Lit. 'three tens'",
-            "example": "Amakoome atato — Thirty (Lit. 'three tens')"
+            "target": "isano na ibere",
+            "source": "Seven (7, lit. 5+2)",
+            "pronunciation": "i-sa-no na i-be-re",
+            "hint": "Cardinals 7 & 8"
           },
           {
-            "target": "Amakoome ataano",
-            "source": "Fifty",
-            "pronunciation": "ah-mah-koh-meh ah-tah-ah-noh",
-            "hint": "Lit. 'five tens'",
-            "example": "Amakoome ataano — Fifty (Lit. 'five tens')"
+            "target": "isano na isato",
+            "source": "Eight (8, lit. 5+3)",
+            "pronunciation": "i-sa-no na i-sa-to",
+            "hint": "Cardinals 7 & 8"
           },
           {
-            "target": "Egana / Rigana",
-            "source": "Hundred",
-            "pronunciation": "eh-gah-nah / ree-gah-nah",
-            "hint": "Numeral 100 (also Emerongo ekomi)",
-            "example": "Egana / Rigana — Hundred (Numeral 100 (also Emerongo ekomi))"
+            "target": "kianda",
+            "source": "Nine (9)",
+            "pronunciation": "kianda",
+            "hint": "Cardinals 9 & 10"
+          },
+          {
+            "target": "ikomi",
+            "source": "Ten (10)",
+            "pronunciation": "i-ko-mi",
+            "hint": "Cardinals 9 & 10"
+          },
+          {
+            "target": "emerongo ebere",
+            "source": "Twenty (20)",
+            "pronunciation": "e-me-rongo e-be-re",
+            "hint": "Cardinals 20 & 100 (Johnston 1919)"
+          },
+          {
+            "target": "rigana",
+            "source": "One hundred (100)",
+            "pronunciation": "ri-ga-na",
+            "hint": "Cardinals 20 & 100 (Johnston 1919)"
+          },
+          {
+            "target": "okomanya",
+            "source": "To know",
+            "pronunciation": "o-ko-manya",
+            "hint": "Core verbs (Hobley 1902 & Johnston 1919)"
+          },
+          {
+            "target": "okorora",
+            "source": "To see",
+            "pronunciation": "o-ko-ro-ra",
+            "hint": "Core verbs (Hobley 1902 & Johnston 1919)"
+          },
+          {
+            "target": "okoria",
+            "source": "To eat",
+            "pronunciation": "o-ko-ria",
+            "hint": "Core verbs (Hobley 1902 & Johnston 1919)"
+          },
+          {
+            "target": "okonywa",
+            "source": "To drink",
+            "pronunciation": "o-konywa",
+            "hint": "Core verbs (Hobley 1902 & Johnston 1919)"
           }
         ],
         "sentences": [
           {
-            "target": "Omonto oyo n'omuya mono.",
-            "source": "This person is very good."
-          },
-          {
-            "target": "Abana bonsi bagenda esukuru.",
-            "source": "All the children have gone to school."
-          },
-          {
-            "target": "Amache aya n'amaya okonywa.",
-            "source": "This water is good for drinking."
+            "target": "Chiombe isano na ibere",
+            "source": "Seven cows."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What does \"Emwe / Eyemo\" mean in English?",
+            "prompt": "What is the English meaning of \"eyemo\" in Kisii?",
             "correctAnswer": "One",
             "options": [
               "Two",
@@ -691,23 +397,31 @@ export const KISII_UNITS: CourseUnit[] = [
               "Four",
               "One"
             ],
-            "hint": "Numeral 1 (Adjective stem: -mo)"
+            "hint": "Cardinal 1 (Hobley 1902 & Johnston 1919)",
+            "acceptedAnswers": [
+              "One (1)",
+              "One"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "What does \"Ebere / Ibere\" mean in English?",
+            "prompt": "What is the English meaning of \"ibere\" in Kisii?",
             "correctAnswer": "Two",
             "options": [
               "Three",
               "Four",
-              "Two",
-              "One"
+              "One",
+              "Two"
             ],
-            "hint": "Numeral 2 (Adjective stem: -bere)"
+            "hint": "Cardinal 2",
+            "acceptedAnswers": [
+              "Two (2)",
+              "Two"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "What does \"Isatu / Etato\" mean in English?",
+            "prompt": "What is the English meaning of \"isato\" in Kisii?",
             "correctAnswer": "Three",
             "options": [
               "Four",
@@ -715,2307 +429,3029 @@ export const KISII_UNITS: CourseUnit[] = [
               "One",
               "Two"
             ],
-            "hint": "Numeral 3 (Adjective stem: -tatu / -shato)"
+            "hint": "Cardinal 3",
+            "acceptedAnswers": [
+              "Three (3)",
+              "Three"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Three\" in Kisii (Ekegusii)?",
-            "correctAnswer": "Isatu / Etato",
+            "prompt": "How do you say \"Three (3)\" in Kisii?",
+            "correctAnswer": "isato",
             "options": [
-              "Isatu / Etato",
-              "Emwe / Eyemo",
-              "Ebere / Ibere",
-              "Inye / Ene"
+              "eyemo",
+              "isato",
+              "ibere",
+              "inye"
             ],
-            "hint": "ee-sah-too / eh-tah-toh"
+            "hint": "ee-sah-toh"
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Four\" in Kisii (Ekegusii)?",
-            "correctAnswer": "Inye / Ene",
+            "prompt": "How do you say \"Four (4)\" in Kisii?",
+            "correctAnswer": "inye",
             "options": [
-              "Emwe / Eyemo",
-              "Ebere / Ibere",
-              "Isatu / Etato",
-              "Inye / Ene"
+              "eyemo",
+              "ibere",
+              "isato",
+              "inye"
             ],
-            "hint": "een-yeh / eh-neh"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Five\" in Kisii (Ekegusii)?",
-            "correctAnswer": "Isaano / Etano",
-            "options": [
-              "Ebere / Ibere",
-              "Isatu / Etato",
-              "Isaano / Etano",
-              "Emwe / Eyemo"
-            ],
-            "hint": "ee-sah-ah-noh / eh-tah-noh"
+            "hint": "ee-nyeh"
           },
           {
             "type": "match_pairs",
-            "prompt": "Match the Kisii (Ekegusii) terms with their English meanings:",
-            "correctAnswer": "Emwe / Eyemo: One, Ebere / Ibere: Two, Isatu / Etato: Three, Inye / Ene: Four",
+            "prompt": "Match each Kisii expression with its English meaning:",
+            "correctAnswer": "eyemo: One (1)",
             "pairs": [
               {
-                "left": "Emwe / Eyemo",
-                "right": "One"
+                "left": "eyemo",
+                "right": "One (1)"
               },
               {
-                "left": "Ebere / Ibere",
-                "right": "Two"
+                "left": "ibere",
+                "right": "Two (2)"
               },
               {
-                "left": "Isatu / Etato",
-                "right": "Three"
+                "left": "isato",
+                "right": "Three (3)"
               },
               {
-                "left": "Inye / Ene",
-                "right": "Four"
+                "left": "inye",
+                "right": "Four (4)"
               }
             ]
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete: \"_____\" means \"One\" in Kisii (Ekegusii).",
-            "correctAnswer": "Emwe / Eyemo",
+            "prompt": "Complete the Kisii term for \"Five (5)\": ___",
+            "correctAnswer": "isano",
             "options": [
-              "Emwe / Eyemo",
-              "Ebere / Ibere",
-              "Isatu / Etato",
-              "Inye / Ene"
+              "isano",
+              "eyemo",
+              "ibere",
+              "isato"
             ],
-            "hint": "ehm-weh / eh-yeh-moh"
+            "hint": "Cardinal 5"
           }
         ]
       }
     ]
   },
   {
-    "id": "kisii-unit-7-family",
-    "title": "Unit 7: Family & Kinship",
-    "description": "Comprehensive Kisii (Ekegusii) curriculum for Family & Kinship, vetted from Wilfred H. Whiteley (1956) 'A Practical Introduction to Gusii' and Whiteley (1960) 'The Tense System of Gusii' (East African Literature Bureau).",
+    "id": "kisii-unit-2",
+    "unitNumber": 2,
+    "title": "Dahl’s Law, Agriculture, Craftsmanship & Oral Wisdom",
+    "description": "Master Ekegusii Dahl’s Law voicing (oko-/ogo-, eke-/ege-), highland crops, tools, and traditional Risaga community values.",
+    "icon": "Award",
+    "color": "#D97706",
+    "skills": [
+      {
+        "id": "kisii-agriculture-culture",
+        "title": "Highland Crops, Tools, Pronouns & Risaga Solidarity",
+        "icon": "Mountain",
+        "description": "Learn Ekegusii vocabulary from Hobley (1902 Kossova) and Johnston (1919 #7 Ki-guzii).",
+        "tips": "In Ekegusii, Dahl's Law voices k to g before a voiceless consonant in the next syllable: oko-manya (to know) vs. ogo-kama (to milk), eke-moni (cat) vs. ege-kombe (cup).",
+        "culturalNote": "In Gusii highland tradition, 'risaga' is cooperative neighbourhood labour where homesteads unite to cultivate finger-millet (obori), thatch houses (chinyomba), and harvest crops.",
+        "words": [
+          {
+            "target": "inche",
+            "source": "I",
+            "pronunciation": "inche",
+            "hint": "Johnston (1919, Vol. I, p. 82 #7 Ki-guzii) pronouns"
+          },
+          {
+            "target": "aye",
+            "source": "you (sg.)",
+            "pronunciation": "aye",
+            "hint": "Johnston (1919, Vol. I, p. 82 #7 Ki-guzii) pronouns"
+          },
+          {
+            "target": "ere",
+            "source": "s/he",
+            "pronunciation": "ere",
+            "hint": "Johnston (1919, Vol. I, p. 82 #7 Ki-guzii) pronouns"
+          },
+          {
+            "target": "intwe",
+            "source": "we",
+            "pronunciation": "intwe",
+            "hint": "Johnston (1919, Vol. I, p. 82 #7 Ki-guzii) pronouns"
+          },
+          {
+            "target": "inywe",
+            "source": "you (pl.)",
+            "pronunciation": "inywe",
+            "hint": "Johnston (1919, Vol. I, p. 82 #7 Ki-guzii) pronouns"
+          },
+          {
+            "target": "barabwo",
+            "source": "they",
+            "pronunciation": "ba-rabwo",
+            "hint": "Johnston (1919, Vol. I, p. 82 #7 Ki-guzii) pronouns"
+          },
+          {
+            "target": "obori",
+            "source": "Finger-millet (wimbi)",
+            "pronunciation": "o-bo-ri",
+            "hint": "Hobley (1902, pp. 89–91) highland staples"
+          },
+          {
+            "target": "amaemba",
+            "source": "Sorghum",
+            "pronunciation": "a-maemba",
+            "hint": "Hobley (1902, pp. 89–91) highland staples"
+          },
+          {
+            "target": "erabuoni",
+            "source": "Sweet potato",
+            "pronunciation": "e-ra-buo-ni",
+            "hint": "Hobley (1902, pp. 89–91) highland staples"
+          },
+          {
+            "target": "obokima",
+            "source": "Millet ugali",
+            "pronunciation": "o-bo-ki-ma",
+            "hint": "Hobley (1902, pp. 89–91)"
+          },
+          {
+            "target": "obouki",
+            "source": "Honey",
+            "pronunciation": "o-bou-ki",
+            "hint": "Hobley (1902, pp. 89–91)"
+          },
+          {
+            "target": "ritimo (pl. amatimo)",
+            "source": "Spear (pl. Spears)",
+            "pronunciation": "ri-ti-mo",
+            "hint": "Hobley (1902, pp. 89–91) & Johnston (1919 #7)"
+          },
+          {
+            "target": "enguba",
+            "source": "Shield",
+            "pronunciation": "engu-ba",
+            "hint": "Hobley (1902, pp. 89–91) & Johnston (1919 #7)"
+          },
+          {
+            "target": "obota",
+            "source": "Bow",
+            "pronunciation": "o-bo-ta",
+            "hint": "Hobley (1902, pp. 89–91)"
+          },
+          {
+            "target": "omogwe",
+            "source": "Arrow",
+            "pronunciation": "o-mogwe",
+            "hint": "Hobley (1902, pp. 89–91)"
+          },
+          {
+            "target": "orobanga",
+            "source": "Sword-knife (panga)",
+            "pronunciation": "o-ro-banga",
+            "hint": "Hobley (1902, pp. 89–91)"
+          },
+          {
+            "target": "risaga",
+            "source": "Cooperative community work-party",
+            "pronunciation": "ri-sa-ga",
+            "hint": "Traditional Gusii institutions"
+          },
+          {
+            "target": "egesarate",
+            "source": "Cattle boma",
+            "pronunciation": "e-ge-sa-ra-te",
+            "hint": "Traditional Gusii institutions"
+          },
+          {
+            "target": "rogoro",
+            "source": "Upperside (Northern standard dialect)",
+            "pronunciation": "ro-go-ro",
+            "hint": "Two main Ekegusii dialect zones"
+          },
+          {
+            "target": "maate",
+            "source": "Lowerside (South-western dialect)",
+            "pronunciation": "maa-te",
+            "hint": "Two main Ekegusii dialect zones"
+          },
+          {
+            "target": "gokama (-kama)",
+            "source": "To milk (Dahl’s Law ogo-)",
+            "pronunciation": "go-ka-ma",
+            "hint": "Dahl’s Law voicing before voiceless k"
+          },
+          {
+            "target": "okoruga (-ruga)",
+            "source": "To cook (oko-)",
+            "pronunciation": "o-ko-ru-ga",
+            "hint": "Dahl’s Law voicing before voiceless k"
+          },
+          {
+            "target": "Amaboko abere nigo agokora egesieri",
+            "source": "Two hands together build the doorway (Proverb)",
+            "pronunciation": "a-ma-bo-ko a-be-re ni-go a-go-ko-ra e-ge-sie-ri",
+            "hint": "Unity and cooperation"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Amaboko abere nigo agokora egesieri.",
+            "source": "Two hands together build the doorway."
+          },
+          {
+            "target": "Omwana omonyakige ogokina na abagaka.",
+            "source": "A respectful child sits with elders."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"inche\" in Kisii?",
+            "correctAnswer": "I",
+            "options": [
+              "Finger-millet",
+              "I",
+              "Millet ugali",
+              "Spear"
+            ],
+            "hint": "Johnston (1919, Vol. I, p. 82 #7 Ki-guzii) pronouns",
+            "acceptedAnswers": [
+              "I, you (sg.), s/he, we, you (pl.), they",
+              "I"
+            ]
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"obori\" in Kisii?",
+            "correctAnswer": "Finger-millet",
+            "options": [
+              "Millet ugali",
+              "Finger-millet",
+              "Spear",
+              "I"
+            ],
+            "hint": "Hobley (1902, pp. 89–91) highland staples",
+            "acceptedAnswers": [
+              "Finger-millet (wimbi) / Sorghum / Sweet potato",
+              "Finger-millet"
+            ]
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"obokima\" in Kisii?",
+            "correctAnswer": "Millet ugali",
+            "options": [
+              "Spear",
+              "I",
+              "Millet ugali",
+              "Finger-millet"
+            ],
+            "hint": "Hobley (1902, pp. 89–91)",
+            "acceptedAnswers": [
+              "Millet ugali / Honey",
+              "Millet ugali"
+            ]
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Millet ugali\" in Kisii?",
+            "correctAnswer": "obokima",
+            "options": [
+              "inche",
+              "obori",
+              "obokima",
+              "ritimo"
+            ],
+            "hint": "oh-boh-kee-mah / oh-boh-oo-kee",
+            "acceptedAnswers": [
+              "obokima / obouki",
+              "obokima"
+            ]
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Spear\" in Kisii?",
+            "correctAnswer": "ritimo",
+            "options": [
+              "inche",
+              "obori",
+              "ritimo",
+              "obokima"
+            ],
+            "hint": "ree-tee-moh / ehn-goo-bah",
+            "acceptedAnswers": [
+              "ritimo (pl. amatimo) / enguba",
+              "ritimo"
+            ]
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each Kisii expression with its English meaning:",
+            "correctAnswer": "inche, aye, ere, intwe, inywe, barabwo: I, you (sg.), s/he, we, you (pl.), they",
+            "pairs": [
+              {
+                "left": "inche, aye, ere, intwe, inywe, barabwo",
+                "right": "I, you (sg.), s/he, we, you (pl.), they"
+              },
+              {
+                "left": "obori / amaemba / erabuoni",
+                "right": "Finger-millet (wimbi) / Sorghum / Sweet potato"
+              },
+              {
+                "left": "obokima / obouki",
+                "right": "Millet ugali / Honey"
+              },
+              {
+                "left": "ritimo (pl. amatimo) / enguba",
+                "right": "Spear (pl. Spears) / Shield"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Kisii term for \"Bow\": ___",
+            "correctAnswer": "obota",
+            "options": [
+              "inche",
+              "obori",
+              "obokima",
+              "obota"
+            ],
+            "hint": "Hobley (1902, pp. 89–91)",
+            "acceptedAnswers": [
+              "obota / omogwe / orobanga",
+              "obota"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kisii-unit-3",
+    "unitNumber": 3,
+    "title": "Family, Kinship, Clans & Social Organization",
+    "description": "Master family, kinship, clans & social organization in Kisii (Ekegusii) built directly from C. W. Hobley (1902), G. A. S. Northcote (1907), and Sir Harry H. Johnston (1919, 1922).",
     "icon": "Users",
+    "color": "#D97706",
     "skills": [
       {
-        "id": "kisii-exp-family",
-        "title": "Family & Kinship (Part 1)",
+        "id": "kisii-family-kinship-kinship-elders-3",
+        "title": "Kinship Terms, Elders & Household Roles",
         "icon": "Users",
-        "description": "Master Kisii (Ekegusii) family & kinship vocabulary and expressions from verified historical sources.",
-        "tips": "In this Kisii (Ekegusii) skill covering Family & Kinship, pay special attention to pronunciation and morphological prefixes/suffixes: 'So / Iso' (Your father), 'Ise' (His/her father), 'Baba / Baaba' (My mother), 'Nyoko' (Your mother).",
-        "culturalNote": "Source attribution: Wilfred H. Whiteley (1956) 'A Practical Introduction to Gusii' and Whiteley (1960) 'The Tense System of Gusii' (East African Literature Bureau).",
+        "description": "Master core family, kinship, and household terms documented in the primary historical vocabularies.",
+        "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1902 Kossova Vocabulary) & Sir Harry Johnston (1902 Igizii & 1919 Sub-group A6 Ki-Guzii / Ki-Koria). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "culturalNote": "Primary historical documentation for Kisii (Ekegusii) (Ekegusii) in C. W. Hobley (1902 Kossova Vocabulary) & Sir Harry Johnston (1902 Igizii & 1919 Sub-group A6 Ki-Guzii / Ki-Koria) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kisii, Nyamira.",
         "words": [
           {
-            "target": "So / Iso",
-            "source": "Your father",
-            "pronunciation": "soh / ee-soh",
-            "hint": "Your father (2nd person singular kinship)",
-            "example": "So / Iso — Your father (Your father (2nd person singular kinship))"
+            "target": "omosani (pl. abasani)",
+            "source": "Friend",
+            "pronunciation": "o-mo-sa-ni",
+            "hint": "Ekegusii Class 1/2 friendship noun"
           },
           {
-            "target": "Ise",
-            "source": "His/her father",
-            "pronunciation": "ee-seh",
-            "hint": "His or her father (3rd person singular kinship)",
-            "example": "Ise — His/her father (His or her father (3rd person singular kinship))"
+            "target": "omwana (pl. abana)",
+            "source": "Child",
+            "pronunciation": "omwa-na",
+            "hint": "Hobley 1902 & Johnston 1919 #7"
           },
           {
-            "target": "Baba / Baaba",
-            "source": "My mother",
-            "pronunciation": "bah-bah / bah-ah-bah",
-            "hint": "My mother (Whiteley Ch. 48, p. 90)",
-            "example": "Baba / Baaba — My mother (My mother (Whiteley Ch. 48, p. 90))"
+            "target": "omokungu (pl. abakungu)",
+            "source": "Woman",
+            "pronunciation": "o-mo-kungu",
+            "hint": "Hobley 1902 & Johnston 1919 #7"
           },
           {
-            "target": "Nyoko",
-            "source": "Your mother",
-            "pronunciation": "nyoh-koh",
-            "hint": "Your mother (2nd person maternal kinship)",
-            "example": "Nyoko — Your mother (Your mother (2nd person maternal kinship))"
+            "target": "omosacha (pl. abasacha)",
+            "source": "Man",
+            "pronunciation": "o-mo-sacha",
+            "hint": "Hobley 1902 & Johnston 1919 #7"
           },
           {
-            "target": "Ngina / Ng'ina",
-            "source": "His/her mother",
-            "pronunciation": "ngee-nah / ng-ee-nah",
-            "hint": "His or her mother (3rd person maternal kinship)",
-            "example": "Ngina / Ng'ina — His/her mother (His or her mother (3rd person maternal kinship))"
+            "target": "tata (iso = your father, ise = his father)",
+            "source": "Father",
+            "pronunciation": "ta-ta",
+            "hint": "Hobley 1902 p. 63 & Johnston 1919 #7"
           },
           {
-            "target": "Omongina / Omong'ina",
-            "source": "Elderly woman",
-            "pronunciation": "oh-moh-ngee-nah",
-            "hint": "Revered elder woman (Class 1/2, pl: Abang'ina)",
-            "example": "Omongina / Omong'ina — Elderly woman (Revered elder woman (Class 1/2, pl: Abang'ina))"
+            "target": "obonto",
+            "source": "Humanity / Ubuntu philosophy",
+            "pronunciation": "o-bonto",
+            "hint": "Wikipedia Ubuntu philosophy — Ekegusii"
           },
           {
-            "target": "Omochakoro / Omochokoro",
-            "source": "Ancestor / Grandchild",
-            "pronunciation": "oh-moh-chah-koh-roh",
-            "hint": "Lineage forebear, ancestor, or grandchild (Class 1/2, pl: Abachokoro)",
-            "example": "Omochakoro / Omochokoro — Ancestor / Grandchild (Lineage forebear, ancestor, or grandchild (Class 1/2, pl: Abachokoro))"
+            "target": "baba",
+            "source": "Mother",
+            "pronunciation": "ba-ba",
+            "hint": "Wikipedia Gusii language — Phonology"
           },
           {
-            "target": "Mwana'nto / Momura ominto",
-            "source": "Brother / Sister (Sibling)",
-            "pronunciation": "mwah-nah-n-toh / moh-moo-rah oh-meen-toh",
-            "hint": "'Mwana'nto' = sibling; 'Momura ominto' = my/our brother",
-            "example": "Mwana'nto / Momura ominto — Brother / Sister (Sibling) ('Mwana'nto' = sibling; 'Momura ominto' = my/our brother)"
+            "target": "abana",
+            "source": "Children",
+            "pronunciation": "a-ba-na",
+            "hint": "Wikipedia Gusii language — Phonology"
           },
           {
-            "target": "Moiseke ominto",
-            "source": "Sister (my/our sister)",
-            "pronunciation": "moh-ee-seh-keh oh-meen-toh",
-            "hint": "My/our unmarried sister (for married sister: Mosubaati ominto)",
-            "example": "Moiseke ominto — Sister (my/our sister) (My/our unmarried sister (for married sister: Mosubaati ominto))"
-          },
-          {
-            "target": "Omoisia",
-            "source": "Young boy",
-            "pronunciation": "oh-moh-ee-see-ah",
-            "hint": "Young uncircumcised boy (Class 1/2, pl: Abaisia)",
-            "example": "Omoisia — Young boy (Young uncircumcised boy (Class 1/2, pl: Abaisia))"
-          },
-          {
-            "target": "Sokoro",
-            "source": "Grandfather",
-            "pronunciation": "soh-koh-roh",
-            "hint": "Grandfather on either side (pl: Chisokoro)",
-            "example": "Sokoro — Grandfather (Grandfather on either side (pl: Chisokoro))"
-          },
-          {
-            "target": "Maagokoro",
-            "source": "Grandmother",
-            "pronunciation": "mah-ah-goh-koh-roh",
-            "hint": "Grandmother on either side (pl: Abamaagokoro)",
-            "example": "Maagokoro — Grandmother (Grandmother on either side (pl: Abamaagokoro))"
-          },
-          {
-            "target": "Maame",
-            "source": "Maternal uncle",
-            "pronunciation": "mah-ah-meh",
-            "hint": "Mother's brother (Class 1/2, pl: Abamaame)",
-            "example": "Maame — Maternal uncle (Mother's brother (Class 1/2, pl: Abamaame))"
-          },
-          {
-            "target": "Omosaani / Osomwabo",
-            "source": "Friend / Comrade",
-            "pronunciation": "oh-moh-sah-ah-nee / oh-sohm-wah-boh",
-            "hint": "Friend or trusted companion (Class 1/2)",
-            "example": "Omosaani / Osomwabo — Friend / Comrade (Friend or trusted companion (Class 1/2))"
-          }
-        ],
-        "sentences": [
-          {
-            "target": "Omonto oyo n'omuya mono.",
-            "source": "This person is very good."
-          },
-          {
-            "target": "Abana bonsi bagenda esukuru.",
-            "source": "All the children have gone to school."
-          },
-          {
-            "target": "Amache aya n'amaya okonywa.",
-            "source": "This water is good for drinking."
+            "target": "baminto",
+            "source": "Our people / brothers and sisters",
+            "pronunciation": "ba-minto",
+            "hint": "Wikipedia Gusii language — Phonology"
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What does \"So / Iso\" mean in English?",
-            "correctAnswer": "Your father",
+            "prompt": "What is the English meaning of \"omosani (pl. abasani)\" in Kisii?",
+            "correctAnswer": "Friend",
             "options": [
-              "His/her father",
-              "My mother",
-              "Your mother",
-              "Your father"
+              "Child",
+              "Woman",
+              "Friend",
+              "Man"
             ],
-            "hint": "Your father (2nd person singular kinship)"
+            "hint": "Starts with \"Fr…\" (6 letters)"
           },
           {
             "type": "multiple_choice",
-            "prompt": "What does \"Ise\" mean in English?",
-            "correctAnswer": "His/her father",
+            "prompt": "What is the English meaning of \"omwana (pl. abana)\" in Kisii?",
+            "correctAnswer": "Child",
             "options": [
-              "My mother",
-              "Your mother",
-              "His/her father",
-              "Your father"
+              "Woman",
+              "Man",
+              "Child",
+              "Friend"
             ],
-            "hint": "His or her father (3rd person singular kinship)"
+            "hint": "Hobley 1902 & Johnston 1919 #7"
           },
           {
             "type": "multiple_choice",
-            "prompt": "What does \"Baba / Baaba\" mean in English?",
-            "correctAnswer": "My mother",
+            "prompt": "What is the English meaning of \"omokungu (pl. abakungu)\" in Kisii?",
+            "correctAnswer": "Woman",
             "options": [
-              "Your mother",
-              "My mother",
-              "Your father",
-              "His/her father"
+              "Man",
+              "Friend",
+              "Child",
+              "Woman"
             ],
-            "hint": "My mother (Whiteley Ch. 48, p. 90)"
+            "hint": "Hobley 1902 & Johnston 1919 #7"
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"My mother\" in Kisii (Ekegusii)?",
-            "correctAnswer": "Baba / Baaba",
+            "prompt": "How do you say \"Woman\" in Kisii?",
+            "correctAnswer": "omokungu",
             "options": [
-              "Baba / Baaba",
-              "So / Iso",
-              "Ise",
-              "Nyoko"
+              "omokungu",
+              "omosani",
+              "omwana",
+              "omosacha"
             ],
-            "hint": "bah-bah / bah-ah-bah"
+            "hint": "oh-moh-koon-goo",
+            "acceptedAnswers": [
+              "omokungu (pl. abakungu)",
+              "omokungu"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Your mother\" in Kisii (Ekegusii)?",
-            "correctAnswer": "Nyoko",
+            "prompt": "How do you say \"Man\" in Kisii?",
+            "correctAnswer": "omosacha",
             "options": [
-              "So / Iso",
-              "Ise",
-              "Baba / Baaba",
-              "Nyoko"
+              "omosani",
+              "omwana",
+              "omosacha",
+              "omokungu"
             ],
-            "hint": "nyoh-koh"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"His/her mother\" in Kisii (Ekegusii)?",
-            "correctAnswer": "Ngina / Ng'ina",
-            "options": [
-              "Ise",
-              "Baba / Baaba",
-              "Ngina / Ng'ina",
-              "So / Iso"
-            ],
-            "hint": "ngee-nah / ng-ee-nah"
+            "hint": "oh-moh-sah-chah",
+            "acceptedAnswers": [
+              "omosacha (pl. abasacha)",
+              "omosacha"
+            ]
           },
           {
             "type": "match_pairs",
-            "prompt": "Match the Kisii (Ekegusii) terms with their English meanings:",
-            "correctAnswer": "So / Iso: Your father, Ise: His/her father, Baba / Baaba: My mother, Nyoko: Your mother",
+            "prompt": "Match each Kisii expression with its English meaning:",
+            "correctAnswer": "omosani (pl. abasani): Friend",
             "pairs": [
               {
-                "left": "So / Iso",
-                "right": "Your father"
+                "left": "omosani (pl. abasani)",
+                "right": "Friend"
               },
               {
-                "left": "Ise",
-                "right": "His/her father"
+                "left": "omwana (pl. abana)",
+                "right": "Child"
               },
               {
-                "left": "Baba / Baaba",
-                "right": "My mother"
+                "left": "omokungu (pl. abakungu)",
+                "right": "Woman"
               },
               {
-                "left": "Nyoko",
-                "right": "Your mother"
+                "left": "omosacha (pl. abasacha)",
+                "right": "Man"
               }
             ]
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete: \"_____\" means \"Your father\" in Kisii (Ekegusii).",
-            "correctAnswer": "So / Iso",
+            "prompt": "Complete the Kisii term for \"Father\": ___",
+            "correctAnswer": "tata",
             "options": [
-              "So / Iso",
-              "Ise",
-              "Baba / Baaba",
-              "Nyoko"
+              "omosani",
+              "tata",
+              "omwana",
+              "omokungu"
             ],
-            "hint": "soh / ee-soh"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "kisii-unit-8-nature",
-    "title": "Unit 8: Nature & Environment",
-    "description": "Comprehensive Kisii (Ekegusii) curriculum for Nature & Environment, vetted from Wilfred H. Whiteley (1956) 'A Practical Introduction to Gusii' and Whiteley (1960) 'The Tense System of Gusii' (East African Literature Bureau).",
-    "icon": "Sun",
-    "skills": [
-      {
-        "id": "kisii-exp-nature",
-        "title": "Nature & Environment (Part 1)",
-        "icon": "Sun",
-        "description": "Master Kisii (Ekegusii) nature & environment vocabulary and expressions from verified historical sources.",
-        "tips": "In this Kisii (Ekegusii) skill covering Nature & Environment, pay special attention to pronunciation and morphological prefixes/suffixes: 'Erioba / Omobaso' (Sun / Sunlight), 'Amache / Amaache' (Water), 'Embura / Enyaroka' (Rain), 'Emondo / Rire' (Cloud).",
-        "culturalNote": "Source attribution: Wilfred H. Whiteley (1956) 'A Practical Introduction to Gusii' and Whiteley (1960) 'The Tense System of Gusii' (East African Literature Bureau).",
-        "words": [
-          {
-            "target": "Erioba / Omobaso",
-            "source": "Sun / Sunlight",
-            "pronunciation": "eh-ree-oh-bah / oh-moh-bah-soh",
-            "hint": "The sun or daylight (Class 5/6 Rioba; Class 3/4 Omobaso)",
-            "example": "Erioba / Omobaso — Sun / Sunlight (The sun or daylight (Class 5/6 Rioba; Class 3/4 Omobaso))"
-          },
-          {
-            "target": "Amache / Amaache",
-            "source": "Water",
-            "pronunciation": "ah-mah-cheh / ah-mah-ah-cheh",
-            "hint": "Water (Class 6 plural liquid noun)",
-            "example": "Amache / Amaache — Water (Water (Class 6 plural liquid noun))"
-          },
-          {
-            "target": "Embura / Enyaroka",
-            "source": "Rain",
-            "pronunciation": "ehm-boo-rah / ehn-yah-roh-kah",
-            "hint": "Rain (Class 9/10; verb: -twa = to rain)",
-            "example": "Embura / Enyaroka — Rain (Rain (Class 9/10; verb: -twa = to rain))"
-          },
-          {
-            "target": "Emondo / Rire",
-            "source": "Cloud",
-            "pronunciation": "eh-mohn-doh / ree-reh",
-            "hint": "Cloud in the sky (Class 5/6 Rire, pl: Amare)",
-            "example": "Emondo / Rire — Cloud (Cloud in the sky (Class 5/6 Rire, pl: Amare))"
-          },
-          {
-            "target": "Egetutu / Orosaana",
-            "source": "Forest / Woodland",
-            "pronunciation": "eh-geh-too-too / oh-roh-sah-ah-nah",
-            "hint": "Forest or wooded area (Class 7/8 Egetutu; Class 11/10a Orosaana; also Rinani)",
-            "example": "Egetutu / Orosaana — Forest / Woodland (Forest or wooded area (Class 7/8 Egetutu; Class 11/10a Orosaana; also Rinani))"
-          },
-          {
-            "target": "Oroche / Orooche",
-            "source": "River",
-            "pronunciation": "oh-roh-cheh / oh-roh-oh-cheh",
-            "hint": "River or stream (Class 11/10a, pl: Chindoche)",
-            "example": "Oroche / Orooche — River (River or stream (Class 11/10a, pl: Chindoche))"
-          },
-          {
-            "target": "Emotwe / Egetunwa",
-            "source": "Mountain / Hill",
-            "pronunciation": "eh-moh-tweh / eh-geh-toon-wah",
-            "hint": "Hill or mountain (Class 7/8 Egetunwa, pl: Ebitunwa)",
-            "example": "Emotwe / Egetunwa — Mountain / Hill (Hill or mountain (Class 7/8 Egetunwa, pl: Ebitunwa))"
-          },
-          {
-            "target": "Omorero",
-            "source": "Fire",
-            "pronunciation": "oh-moh-reh-roh",
-            "hint": "Fire or flames (Class 3/4, pl: Emerero)",
-            "example": "Omorero — Fire (Fire or flames (Class 3/4, pl: Emerero))"
-          },
-          {
-            "target": "Omotienyi",
-            "source": "Moon / Month",
-            "pronunciation": "oh-moh-tee-ehn-yee",
-            "hint": "Moon or calendar month (Class 3/4, pl: Emetienyi)",
-            "example": "Omotienyi — Moon / Month (Moon or calendar month (Class 3/4, pl: Emetienyi))"
-          },
-          {
-            "target": "Obonyansi",
-            "source": "Grass",
-            "pronunciation": "oh-boh-nyahn-see",
-            "hint": "Grass or pasture (Class 14/6; Dry grass: Rise)",
-            "example": "Obonyansi — Grass (Grass or pasture (Class 14/6; Dry grass: Rise))"
-          },
-          {
-            "target": "Embeo",
-            "source": "Wind",
-            "pronunciation": "ehm-beh-oh",
-            "hint": "Wind or cool breeze (Class 9/10)",
-            "example": "Embeo — Wind (Wind or cool breeze (Class 9/10))"
-          },
-          {
-            "target": "Enyancha",
-            "source": "Lake / Sea",
-            "pronunciation": "ehn-yahn-chah",
-            "hint": "Lake Victoria or open sea (Class 9/10)",
-            "example": "Enyancha — Lake / Sea (Lake Victoria or open sea (Class 9/10))"
-          }
-        ],
-        "sentences": [
-          {
-            "target": "Omonto oyo n'omuya mono.",
-            "source": "This person is very good."
-          },
-          {
-            "target": "Abana bonsi bagenda esukuru.",
-            "source": "All the children have gone to school."
-          },
-          {
-            "target": "Amache aya n'amaya okonywa.",
-            "source": "This water is good for drinking."
-          }
-        ],
-        "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Erioba / Omobaso\" mean in English?",
-            "correctAnswer": "Sun / Sunlight",
-            "options": [
-              "Water",
-              "Rain",
-              "Cloud",
-              "Sun / Sunlight"
-            ],
-            "hint": "The sun or daylight (Class 5/6 Rioba; Class 3/4 Omobaso)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Amache / Amaache\" mean in English?",
-            "correctAnswer": "Water",
-            "options": [
-              "Rain",
-              "Cloud",
-              "Water",
-              "Sun / Sunlight"
-            ],
-            "hint": "Water (Class 6 plural liquid noun)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Embura / Enyaroka\" mean in English?",
-            "correctAnswer": "Rain",
-            "options": [
-              "Cloud",
-              "Rain",
-              "Sun / Sunlight",
-              "Water"
-            ],
-            "hint": "Rain (Class 9/10; verb: -twa = to rain)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Rain\" in Kisii (Ekegusii)?",
-            "correctAnswer": "Embura / Enyaroka",
-            "options": [
-              "Embura / Enyaroka",
-              "Erioba / Omobaso",
-              "Amache / Amaache",
-              "Emondo / Rire"
-            ],
-            "hint": "ehm-boo-rah / ehn-yah-roh-kah"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Cloud\" in Kisii (Ekegusii)?",
-            "correctAnswer": "Emondo / Rire",
-            "options": [
-              "Erioba / Omobaso",
-              "Amache / Amaache",
-              "Embura / Enyaroka",
-              "Emondo / Rire"
-            ],
-            "hint": "eh-mohn-doh / ree-reh"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Forest / Woodland\" in Kisii (Ekegusii)?",
-            "correctAnswer": "Egetutu / Orosaana",
-            "options": [
-              "Amache / Amaache",
-              "Embura / Enyaroka",
-              "Egetutu / Orosaana",
-              "Erioba / Omobaso"
-            ],
-            "hint": "eh-geh-too-too / oh-roh-sah-ah-nah"
-          },
-          {
-            "type": "match_pairs",
-            "prompt": "Match the Kisii (Ekegusii) terms with their English meanings:",
-            "correctAnswer": "Erioba / Omobaso: Sun / Sunlight, Amache / Amaache: Water, Embura / Enyaroka: Rain, Emondo / Rire: Cloud",
-            "pairs": [
-              {
-                "left": "Erioba / Omobaso",
-                "right": "Sun / Sunlight"
-              },
-              {
-                "left": "Amache / Amaache",
-                "right": "Water"
-              },
-              {
-                "left": "Embura / Enyaroka",
-                "right": "Rain"
-              },
-              {
-                "left": "Emondo / Rire",
-                "right": "Cloud"
-              }
+            "hint": "Hobley 1902 p. 63 & Johnston 1919 #7",
+            "acceptedAnswers": [
+              "tata (iso = your father, ise = his father)",
+              "tata"
             ]
-          },
-          {
-            "type": "fill_blank",
-            "prompt": "Complete: \"_____\" means \"Sun / Sunlight\" in Kisii (Ekegusii).",
-            "correctAnswer": "Erioba / Omobaso",
-            "options": [
-              "Erioba / Omobaso",
-              "Amache / Amaache",
-              "Embura / Enyaroka",
-              "Emondo / Rire"
-            ],
-            "hint": "eh-ree-oh-bah / oh-moh-bah-soh"
           }
         ]
       },
       {
-        "id": "kisii-exp-nature-2",
-        "title": "Nature & Environment (Part 2)",
-        "icon": "Sun",
-        "description": "Master Kisii (Ekegusii) nature & environment vocabulary and expressions from verified historical sources.",
-        "tips": "In this Kisii (Ekegusii) skill covering Nature & Environment, pay special attention to pronunciation and morphological prefixes/suffixes: 'Rigena' (Stone / Rock), 'Rituko' (Day / Daylight), 'Obotuko' (Night), 'Erioki' (Smoke).",
-        "culturalNote": "Source attribution: Wilfred H. Whiteley (1956) 'A Practical Introduction to Gusii' and Whiteley (1960) 'The Tense System of Gusii' (East African Literature Bureau).",
+        "id": "kisii-family-kinship-clans-community-3",
+        "title": "Clans, Marriage & Community Life",
+        "icon": "Heart",
+        "description": "Explore social titles, marriage terms, and community relationships from the ethnographic records.",
+        "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1902 Kossova Vocabulary) & Sir Harry Johnston (1902 Igizii & 1919 Sub-group A6 Ki-Guzii / Ki-Koria). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "culturalNote": "Primary historical documentation for Kisii (Ekegusii) (Ekegusii) in C. W. Hobley (1902 Kossova Vocabulary) & Sir Harry Johnston (1902 Igizii & 1919 Sub-group A6 Ki-Guzii / Ki-Koria) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kisii, Nyamira.",
         "words": [
           {
-            "target": "Rigena",
-            "source": "Stone / Rock",
-            "pronunciation": "ree-geh-nah",
-            "hint": "Stone (Class 5/6, pl: Amagena; small pebble: Akagena)",
-            "example": "Rigena — Stone / Rock (Stone (Class 5/6, pl: Amagena; small pebble: Akagena))"
+            "target": "omoiseke (pl. abaiseke)",
+            "source": "Girl (Class 1/2: omo-/aba-)",
+            "pronunciation": "o-moi-se-ke",
+            "hint": "Wikipedia Gusii language — Noun classes"
           },
           {
-            "target": "Rituko",
-            "source": "Day / Daylight",
-            "pronunciation": "ree-too-koh",
-            "hint": "Day (Class 5/6, pl: Amatuko; daytime: Mobaso)",
-            "example": "Rituko — Day / Daylight (Day (Class 5/6, pl: Amatuko; daytime: Mobaso))"
+            "target": "sokoro",
+            "source": "Grandfather",
+            "pronunciation": "so-ko-ro",
+            "hint": "Wikipedia Gusii language — Sample phrases"
           },
           {
-            "target": "Obotuko",
-            "source": "Night",
-            "pronunciation": "oh-boh-too-koh",
-            "hint": "Night (Class 14/6; Botuko = during the night)",
-            "example": "Obotuko — Night (Night (Class 14/6; Botuko = during the night))"
+            "target": "omosubati",
+            "source": "Lady / married woman",
+            "pronunciation": "o-mo-su-ba-ti",
+            "hint": "Wikipedia Gusii language — Sample phrases"
           },
           {
-            "target": "Erioki",
-            "source": "Smoke",
-            "pronunciation": "eh-ree-oh-kee",
-            "hint": "Smoke from fire (Class 5/6, pl: Amarioki)",
-            "example": "Erioki — Smoke (Smoke from fire (Class 5/6, pl: Amarioki))"
+            "target": "omorwani",
+            "source": "Fighter / warrior",
+            "pronunciation": "o-morwa-ni",
+            "hint": "Wikipedia Gusii language — Sample phrases"
           },
           {
-            "target": "Omochanga / Omokenye",
-            "source": "Sand",
-            "pronunciation": "oh-moh-chahn-gah / oh-moh-keh-nyeh",
-            "hint": "Sand (Class 3/4)",
-            "example": "Omochanga / Omokenye — Sand (Sand (Class 3/4))"
+            "target": "omwana oitu / omomura oitu",
+            "source": "Brother",
+            "pronunciation": "omwa-na o-i-tu"
           },
           {
-            "target": "Engoro / Nyasae",
-            "source": "God (Supreme Creator)",
-            "pronunciation": "ehn-goh-roh / nyah-sah-eh",
-            "hint": "Supreme Deity (Engoro is classical Gusii; Nyasae assimilated)",
-            "example": "Engoro / Nyasae — God (Supreme Creator) (Supreme Deity (Engoro is classical Gusii; Nyasae assimilated))"
-          }
-        ],
-        "sentences": [
-          {
-            "target": "Amache aya n'amaya okonywa.",
-            "source": "This water is good for drinking."
+            "target": "omwiseke oitu / nyarukha",
+            "source": "Sister",
+            "pronunciation": "omwi-se-ke o-i-tu / nya-ru-kha"
           },
           {
-            "target": "Chiombe chionsi chiri ase obori.",
-            "source": "All the cattle are in the pasture."
+            "target": "omwana / omoisia",
+            "source": "Son / Boy",
+            "pronunciation": "omwa-na / o-moi-sia"
           },
           {
-            "target": "Omogondo oito omenyete egetamo.",
-            "source": "Our farm is situated near the river."
+            "target": "omokungu / omoke",
+            "source": "Wife",
+            "pronunciation": "o-mo-ku-ngu / o-mo-ke"
+          },
+          {
+            "target": "omomura (pl. abamura)",
+            "source": "Young man / Son",
+            "pronunciation": "o-mo-mu-ra"
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What does \"Rigena\" mean in English?",
-            "correctAnswer": "Stone / Rock",
+            "prompt": "What is the English meaning of \"omoiseke\" in Kisii (Ekegusii)?",
+            "correctAnswer": "Girl",
             "options": [
-              "Day / Daylight",
-              "Night",
-              "Smoke",
-              "Stone / Rock"
+              "Grandfather",
+              "Lady",
+              "Girl",
+              "Fighter"
             ],
-            "hint": "Stone (Class 5/6, pl: Amagena; small pebble: Akagena)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Rituko\" mean in English?",
-            "correctAnswer": "Day / Daylight",
-            "options": [
-              "Night",
-              "Smoke",
-              "Day / Daylight",
-              "Stone / Rock"
-            ],
-            "hint": "Day (Class 5/6, pl: Amatuko; daytime: Mobaso)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Obotuko\" mean in English?",
-            "correctAnswer": "Night",
-            "options": [
-              "Smoke",
-              "Night",
-              "Stone / Rock",
-              "Day / Daylight"
-            ],
-            "hint": "Night (Class 14/6; Botuko = during the night)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Night\" in Kisii (Ekegusii)?",
-            "correctAnswer": "Obotuko",
-            "options": [
-              "Obotuko",
-              "Rigena",
-              "Rituko",
-              "Erioki"
-            ],
-            "hint": "oh-boh-too-koh"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Smoke\" in Kisii (Ekegusii)?",
-            "correctAnswer": "Erioki",
-            "options": [
-              "Rigena",
-              "Rituko",
-              "Obotuko",
-              "Erioki"
-            ],
-            "hint": "eh-ree-oh-kee"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Sand\" in Kisii (Ekegusii)?",
-            "correctAnswer": "Omochanga / Omokenye",
-            "options": [
-              "Rituko",
-              "Obotuko",
-              "Omochanga / Omokenye",
-              "Rigena"
-            ],
-            "hint": "oh-moh-chahn-gah / oh-moh-keh-nyeh"
+            "hint": "Wikipedia Gusii language — Noun classes",
+            "acceptedAnswers": [
+              "Girl (Class 9/2)",
+              "Girl"
+            ]
           },
           {
             "type": "match_pairs",
-            "prompt": "Match the Kisii (Ekegusii) terms with their English meanings:",
-            "correctAnswer": "Rigena: Stone / Rock, Rituko: Day / Daylight, Obotuko: Night, Erioki: Smoke",
+            "prompt": "Match each verified Kisii (Ekegusii) term to its English meaning:",
+            "correctAnswer": "omoiseke (pl. abaiseke): Girl (Class 1/2: omo-/aba-)",
             "pairs": [
               {
-                "left": "Rigena",
-                "right": "Stone / Rock"
+                "left": "omoiseke (pl. abaiseke)",
+                "right": "Girl (Class 1/2: omo-/aba-)"
               },
               {
-                "left": "Rituko",
-                "right": "Day / Daylight"
+                "left": "sokoro",
+                "right": "Grandfather"
               },
               {
-                "left": "Obotuko",
-                "right": "Night"
+                "left": "omosubati",
+                "right": "Lady / married woman"
               },
               {
-                "left": "Erioki",
-                "right": "Smoke"
+                "left": "omorwani",
+                "right": "Fighter / warrior"
               }
             ]
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete: \"_____\" means \"Stone / Rock\" in Kisii (Ekegusii).",
-            "correctAnswer": "Rigena",
+            "prompt": "Complete the Kisii (Ekegusii) term for \"Brother\": ___",
+            "correctAnswer": "omwana oitu",
             "options": [
-              "Rigena",
-              "Rituko",
-              "Obotuko",
-              "Erioki"
-            ],
-            "hint": "ree-geh-nah"
+              "omoiseke",
+              "sokoro",
+              "omosubati",
+              "omwana oitu"
+            ]
           }
         ]
       }
     ]
   },
   {
-    "id": "kisii-unit-9-animals",
-    "title": "Unit 9: Animals & Wildlife",
-    "description": "Comprehensive Kisii (Ekegusii) curriculum for Animals & Wildlife, vetted from Wilfred H. Whiteley (1956) 'A Practical Introduction to Gusii' and Whiteley (1960) 'The Tense System of Gusii' (East African Literature Bureau).",
-    "icon": "Compass",
+    "id": "kisii-unit-4",
+    "unitNumber": 4,
+    "title": "Numbers, Counting, Currency & Measures",
+    "description": "Master numbers, counting, currency & measures in Kisii (Ekegusii) built directly from C. W. Hobley (1902), G. A. S. Northcote (1907), and Sir Harry H. Johnston (1919, 1922).",
+    "icon": "Scale",
+    "color": "#D97706",
     "skills": [
       {
-        "id": "kisii-exp-animals",
-        "title": "Animals & Wildlife (Part 1)",
-        "icon": "Compass",
-        "description": "Master Kisii (Ekegusii) animals & wildlife vocabulary and expressions from verified historical sources.",
-        "tips": "In this Kisii (Ekegusii) skill covering Animals & Wildlife, pay special attention to pronunciation and morphological prefixes/suffixes: 'Eng'ombe' (Cow / Cattle), 'Embene / Embori' (Goat), 'Embwa / Ese' (Dog), 'Etuko / Eng'uko' (Mole / Badger).",
-        "culturalNote": "Source attribution: Wilfred H. Whiteley (1956) 'A Practical Introduction to Gusii' and Whiteley (1960) 'The Tense System of Gusii' (East African Literature Bureau).",
+        "id": "kisii-numbers-measures-cardinals-ordinals-4",
+        "title": "Cardinal & Ordinal Numerals",
+        "icon": "Hash",
+        "description": "Count fluently and form ordinal numbers using historical numeral tables.",
+        "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1902 Kossova Vocabulary) & Sir Harry Johnston (1902 Igizii & 1919 Sub-group A6 Ki-Guzii / Ki-Koria). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "culturalNote": "Primary historical documentation for Kisii (Ekegusii) (Ekegusii) in C. W. Hobley (1902 Kossova Vocabulary) & Sir Harry Johnston (1902 Igizii & 1919 Sub-group A6 Ki-Guzii / Ki-Koria) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kisii, Nyamira.",
         "words": [
           {
-            "target": "Eng'ombe",
-            "source": "Cow / Cattle",
-            "pronunciation": "ehng-ohm-beh",
-            "hint": "Cow or cattle (Class 9/10, pl: Ching'ombe)",
-            "example": "Eng'ombe — Cow / Cattle (Cow or cattle (Class 9/10, pl: Ching'ombe))"
+            "target": "isano na ibere",
+            "source": "Seven (7, lit. 5+2)",
+            "pronunciation": "i-sa-no na i-be-re",
+            "hint": "Wikipedia Gusii language — Gusii Numeral System"
           },
           {
-            "target": "Embene / Embori",
-            "source": "Goat",
-            "pronunciation": "ehm-beh-neh / ehm-boh-ree",
-            "hint": "Goat (Class 9/10, pl: Chimbene / Chimbori)",
-            "example": "Embene / Embori — Goat (Goat (Class 9/10, pl: Chimbene / Chimbori))"
+            "target": "isano na isato",
+            "source": "Eight (8, lit. 5+3)",
+            "pronunciation": "i-sa-no na i-sa-to",
+            "hint": "Wikipedia Gusii language — Gusii Numeral System"
           },
           {
-            "target": "Embwa / Ese",
-            "source": "Dog",
-            "pronunciation": "ehm-bwah / eh-seh",
-            "hint": "Domestic dog (Class 9/10, pl: Chise)",
-            "example": "Embwa / Ese — Dog (Domestic dog (Class 9/10, pl: Chise))"
+            "target": "kianda",
+            "source": "Nine (9)",
+            "pronunciation": "kianda",
+            "hint": "Wikipedia Gusii language — Gusii Numeral System"
           },
           {
-            "target": "Etuko / Eng'uko",
-            "source": "Mole / Badger",
-            "pronunciation": "eh-too-koh / ehng-oo-koh",
-            "hint": "Mole or burrowing creature (featured in Gusii folk stories, Class 9/10)",
-            "example": "Etuko / Eng'uko — Mole / Badger (Mole or burrowing creature (featured in Gusii folk stories, Class 9/10))"
+            "target": "ikomi",
+            "source": "Ten (10)",
+            "pronunciation": "i-ko-mi",
+            "hint": "Wikipedia Gusii language — Gusii Numeral System"
           },
           {
-            "target": "Engwe",
-            "source": "Leopard",
-            "pronunciation": "ehn-gweh",
-            "hint": "Leopard (Class 9/10, pl: Chingwe)",
-            "example": "Engwe — Leopard (Leopard (Class 9/10, pl: Chingwe))"
+            "target": "ikomi nemo",
+            "source": "Eleven (11)",
+            "pronunciation": "i-ko-mi ne-mo",
+            "hint": "Wikipedia Gusii language — Gusii Numeral System"
           },
           {
-            "target": "Entaare / Endo",
-            "source": "Lion",
-            "pronunciation": "ehn-tah-ah-reh / ehn-doh",
-            "hint": "Lion (Class 9/10, pl: Chintaare / Chindo)",
-            "example": "Entaare / Endo — Lion (Lion (Class 9/10, pl: Chintaare / Chindo))"
+            "target": "ikomi na isato",
+            "source": "Thirteen (13)",
+            "pronunciation": "i-ko-mi na i-sa-to",
+            "hint": "Wikipedia Gusii language — Gusii Numeral System"
           },
           {
-            "target": "Enchogu",
-            "source": "Elephant",
-            "pronunciation": "ehn-choh-goo",
-            "hint": "Elephant (Class 9/10, pl: Chinchogu)",
-            "example": "Enchogu — Elephant (Elephant (Class 9/10, pl: Chinchogu))"
+            "target": "ikomi na inye",
+            "source": "Fourteen (14)",
+            "pronunciation": "i-ko-mi na inye",
+            "hint": "Wikipedia Gusii language — Gusii Numeral System"
           },
           {
-            "target": "Eng'ondi / Endaiga",
-            "source": "Sheep",
-            "pronunciation": "ehng-ohn-dee / ehn-dah-ee-gah",
-            "hint": "Sheep (Class 9/10, pl: Ching'ondi / Chindaiga)",
-            "example": "Eng'ondi / Endaiga — Sheep (Sheep (Class 9/10, pl: Ching'ondi / Chindaiga))"
+            "target": "ikomi na isano",
+            "source": "Fifteen (15)",
+            "pronunciation": "i-ko-mi na i-sa-no",
+            "hint": "Wikipedia Gusii language — Gusii Numeral System"
           },
           {
-            "target": "Emoori",
-            "source": "Calf / Heifer",
-            "pronunciation": "eh-moh-oh-ree",
-            "hint": "Calf or young heifer (Class 9/10, pl: Chimoori)",
-            "example": "Emoori — Calf / Heifer (Calf or young heifer (Class 9/10, pl: Chimoori))"
-          },
-          {
-            "target": "Enyoni",
-            "source": "Bird",
-            "pronunciation": "ehn-yoh-nee",
-            "hint": "Bird (Class 9/10, pl: Chinyoni)",
-            "example": "Enyoni — Bird (Bird (Class 9/10, pl: Chinyoni))"
-          },
-          {
-            "target": "Enswe",
-            "source": "Fish",
-            "pronunciation": "ehn-sweh",
-            "hint": "Fish (Class 9/10, pl: Chinswe)",
-            "example": "Enswe — Fish (Fish (Class 9/10, pl: Chinswe))"
-          },
-          {
-            "target": "Egesusu",
-            "source": "Hare",
-            "pronunciation": "eh-geh-soo-soo",
-            "hint": "Hare (Class 7/8, pl: Ebisusu)",
-            "example": "Egesusu — Hare (Hare (Class 7/8, pl: Ebisusu))"
-          },
-          {
-            "target": "Eeeri",
-            "source": "Bull",
-            "pronunciation": "eh-eh-eh-ree",
-            "hint": "Bull (Class 9/10, pl: Chieeri)",
-            "example": "Eeeri — Bull (Bull (Class 9/10, pl: Chieeri))"
-          },
-          {
-            "target": "Eng'iti",
-            "source": "Wild beast / Snake",
-            "pronunciation": "ehng-ee-tee",
-            "hint": "General term for wild animal or snake (Class 9/10, pl: Ching'iti)",
-            "example": "Eng'iti — Wild beast / Snake (General term for wild animal or snake (Class 9/10, pl: Ching'iti))"
-          }
-        ],
-        "sentences": [
-          {
-            "target": "Omonto oyo n'omuya mono.",
-            "source": "This person is very good."
-          },
-          {
-            "target": "Abana bonsi bagenda esukuru.",
-            "source": "All the children have gone to school."
-          },
-          {
-            "target": "Amache aya n'amaya okonywa.",
-            "source": "This water is good for drinking."
+            "target": "ikomi na isano nemo",
+            "source": "Sixteen (16)",
+            "pronunciation": "i-ko-mi na i-sa-no ne-mo",
+            "hint": "Wikipedia Gusii language — Gusii Numeral System"
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What does \"Eng'ombe\" mean in English?",
-            "correctAnswer": "Cow / Cattle",
+            "prompt": "What is the English meaning of \"isano na ibere\" in Kisii?",
+            "correctAnswer": "Seven",
             "options": [
-              "Goat",
-              "Dog",
-              "Mole / Badger",
-              "Cow / Cattle"
+              "Eight",
+              "Nine",
+              "Seven",
+              "Ten"
             ],
-            "hint": "Cow or cattle (Class 9/10, pl: Ching'ombe)"
+            "hint": "Wikipedia Gusii language — Gusii Numeral System",
+            "acceptedAnswers": [
+              "Seven (7, lit. 5+2)",
+              "Seven"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "What does \"Embene / Embori\" mean in English?",
-            "correctAnswer": "Goat",
+            "prompt": "What is the English meaning of \"isano na isato\" in Kisii?",
+            "correctAnswer": "Eight",
             "options": [
-              "Dog",
-              "Mole / Badger",
-              "Goat",
-              "Cow / Cattle"
+              "Nine",
+              "Ten",
+              "Eight",
+              "Seven"
             ],
-            "hint": "Goat (Class 9/10, pl: Chimbene / Chimbori)"
+            "hint": "Wikipedia Gusii language — Gusii Numeral System",
+            "acceptedAnswers": [
+              "Eight (8, lit. 5+3)",
+              "Eight"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "What does \"Embwa / Ese\" mean in English?",
-            "correctAnswer": "Dog",
+            "prompt": "What is the English meaning of \"kianda\" in Kisii?",
+            "correctAnswer": "Nine",
             "options": [
-              "Mole / Badger",
-              "Dog",
-              "Cow / Cattle",
-              "Goat"
+              "Ten",
+              "Nine",
+              "Seven",
+              "Eight"
             ],
-            "hint": "Domestic dog (Class 9/10, pl: Chise)"
+            "hint": "Wikipedia Gusii language — Gusii Numeral System",
+            "acceptedAnswers": [
+              "Nine (9)",
+              "Nine"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Dog\" in Kisii (Ekegusii)?",
-            "correctAnswer": "Embwa / Ese",
+            "prompt": "How do you say \"Nine (9)\" in Kisii?",
+            "correctAnswer": "kianda",
             "options": [
-              "Embwa / Ese",
-              "Eng'ombe",
-              "Embene / Embori",
-              "Etuko / Eng'uko"
+              "isano na ibere",
+              "kianda",
+              "ikomi",
+              "ikomi nemo"
             ],
-            "hint": "ehm-bwah / eh-seh"
+            "hint": "Starts with \"ki…\" (6 letters)"
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Mole / Badger\" in Kisii (Ekegusii)?",
-            "correctAnswer": "Etuko / Eng'uko",
+            "prompt": "How do you say \"Ten (10)\" in Kisii?",
+            "correctAnswer": "ikomi",
             "options": [
-              "Eng'ombe",
-              "Embene / Embori",
-              "Embwa / Ese",
-              "Etuko / Eng'uko"
+              "ikomi",
+              "isano na ibere",
+              "kianda",
+              "ikomi nemo"
             ],
-            "hint": "eh-too-koh / ehng-oo-koh"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Leopard\" in Kisii (Ekegusii)?",
-            "correctAnswer": "Engwe",
-            "options": [
-              "Embene / Embori",
-              "Embwa / Ese",
-              "Engwe",
-              "Eng'ombe"
-            ],
-            "hint": "ehn-gweh"
+            "hint": "Starts with \"ik…\" (5 letters)"
           },
           {
             "type": "match_pairs",
-            "prompt": "Match the Kisii (Ekegusii) terms with their English meanings:",
-            "correctAnswer": "Eng'ombe: Cow / Cattle, Embene / Embori: Goat, Embwa / Ese: Dog, Etuko / Eng'uko: Mole / Badger",
+            "prompt": "Match each Kisii expression with its English meaning:",
+            "correctAnswer": "isano na ibere: Seven (7, lit. 5+2)",
             "pairs": [
               {
-                "left": "Eng'ombe",
-                "right": "Cow / Cattle"
+                "left": "isano na ibere",
+                "right": "Seven (7, lit. 5+2)"
               },
               {
-                "left": "Embene / Embori",
-                "right": "Goat"
+                "left": "isano na isato",
+                "right": "Eight (8, lit. 5+3)"
               },
               {
-                "left": "Embwa / Ese",
-                "right": "Dog"
+                "left": "kianda",
+                "right": "Nine (9)"
               },
               {
-                "left": "Etuko / Eng'uko",
-                "right": "Mole / Badger"
+                "left": "ikomi",
+                "right": "Ten (10)"
               }
             ]
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete: \"_____\" means \"Cow / Cattle\" in Kisii (Ekegusii).",
-            "correctAnswer": "Eng'ombe",
+            "prompt": "Complete the Kisii term for \"Eleven (11)\": ___",
+            "correctAnswer": "ikomi nemo",
             "options": [
-              "Eng'ombe",
-              "Embene / Embori",
-              "Embwa / Ese",
-              "Etuko / Eng'uko"
+              "ikomi nemo",
+              "isano na ibere",
+              "kianda",
+              "ikomi"
             ],
-            "hint": "ehng-ohm-beh"
+            "hint": "Wikipedia Gusii language — Gusii Numeral System"
+          }
+        ]
+      },
+      {
+        "id": "kisii-numbers-measures-trade-measures-4",
+        "title": "Trade, Barter, Currency & Traditional Measures",
+        "icon": "Scale",
+        "description": "Learn market exchange, weights, measures, and value expressions.",
+        "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1902 Kossova Vocabulary) & Sir Harry Johnston (1902 Igizii & 1919 Sub-group A6 Ki-Guzii / Ki-Koria). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "culturalNote": "Primary historical documentation for Kisii (Ekegusii) (Ekegusii) in C. W. Hobley (1902 Kossova Vocabulary) & Sir Harry Johnston (1902 Igizii & 1919 Sub-group A6 Ki-Guzii / Ki-Koria) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kisii, Nyamira.",
+        "words": [
+          {
+            "target": "ikomi na isano na ibere",
+            "source": "Seventeen (17)",
+            "pronunciation": "i-ko-mi na i-sa-no na i-be-re",
+            "hint": "Wikipedia Gusii language — Gusii Numeral System"
+          },
+          {
+            "target": "ikomi na isano na isato",
+            "source": "Eighteen (18)",
+            "pronunciation": "i-ko-mi na i-sa-no na i-sa-to",
+            "hint": "Wikipedia Gusii language — Gusii Numeral System"
+          },
+          {
+            "target": "ikomi na kianda",
+            "source": "Nineteen (19)",
+            "pronunciation": "i-ko-mi na kianda",
+            "hint": "Wikipedia Gusii language — Gusii Numeral System"
+          },
+          {
+            "target": "emerongo ebere",
+            "source": "Twenty (20)",
+            "pronunciation": "e-me-rongo e-be-re",
+            "hint": "Wikipedia Gusii language — Gusii Numeral System"
+          },
+          {
+            "target": "Esekendi",
+            "source": "Second (time unit)",
+            "pronunciation": "e-se-kendi"
+          },
+          {
+            "target": "-mu, -mo / -mo, -mwe",
+            "source": "One",
+            "pronunciation": "mu mo / mo mwe"
+          },
+          {
+            "target": "-beri, -viri / -viri",
+            "source": "Two",
+            "pronunciation": "be-ri vi-ri / vi-ri"
+          },
+          {
+            "target": "-satu, -tatu / -tatu",
+            "source": "Three",
+            "pronunciation": "sa-tu ta-tu / ta-tu"
+          },
+          {
+            "target": "-nye, -nne / -nne",
+            "source": "Four",
+            "pronunciation": "nye nne / nne"
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"ikomi na isano na ibere\" in Kisii?",
+            "correctAnswer": "Seventeen",
+            "options": [
+              "Eighteen",
+              "Nineteen",
+              "Twenty",
+              "Seventeen"
+            ],
+            "hint": "Wikipedia Gusii language — Gusii Numeral System",
+            "acceptedAnswers": [
+              "Seventeen (17)",
+              "Seventeen"
+            ]
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"ikomi na isano na isato\" in Kisii?",
+            "correctAnswer": "Eighteen",
+            "options": [
+              "Nineteen",
+              "Twenty",
+              "Eighteen",
+              "Seventeen"
+            ],
+            "hint": "Wikipedia Gusii language — Gusii Numeral System",
+            "acceptedAnswers": [
+              "Eighteen (18)",
+              "Eighteen"
+            ]
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"ikomi na kianda\" in Kisii?",
+            "correctAnswer": "Nineteen",
+            "options": [
+              "Twenty",
+              "Seventeen",
+              "Nineteen",
+              "Eighteen"
+            ],
+            "hint": "Wikipedia Gusii language — Gusii Numeral System",
+            "acceptedAnswers": [
+              "Nineteen (19)",
+              "Nineteen"
+            ]
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Nineteen (19)\" in Kisii?",
+            "correctAnswer": "ikomi na kianda",
+            "options": [
+              "emerongo ebere",
+              "Esekendi",
+              "-mu",
+              "ikomi na kianda"
+            ],
+            "hint": "Starts with \"ik…\" (15 letters)"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Twenty (20)\" in Kisii?",
+            "correctAnswer": "emerongo ebere",
+            "options": [
+              "emerongo ebere",
+              "ikomi na kianda",
+              "Esekendi",
+              "-mu"
+            ],
+            "hint": "Starts with \"em…\" (14 letters)"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each Kisii expression with its English meaning:",
+            "correctAnswer": "ikomi na isano na ibere: Seventeen (17)",
+            "pairs": [
+              {
+                "left": "ikomi na isano na ibere",
+                "right": "Seventeen (17)"
+              },
+              {
+                "left": "ikomi na isano na isato",
+                "right": "Eighteen (18)"
+              },
+              {
+                "left": "ikomi na kianda",
+                "right": "Nineteen (19)"
+              },
+              {
+                "left": "emerongo ebere",
+                "right": "Twenty (20)"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Kisii term for \"Second (time unit)\": ___",
+            "correctAnswer": "Esekendi",
+            "options": [
+              "ikomi na kianda",
+              "Esekendi",
+              "emerongo ebere",
+              "-mu"
+            ],
+            "hint": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
           }
         ]
       }
     ]
   },
   {
-    "id": "kisii-unit-10-food",
-    "title": "Unit 10: Food & Household",
-    "description": "Comprehensive Kisii (Ekegusii) curriculum for Food & Household, vetted from Wilfred H. Whiteley (1956) 'A Practical Introduction to Gusii' and Whiteley (1960) 'The Tense System of Gusii' (East African Literature Bureau).",
-    "icon": "Utensils",
+    "id": "kisii-unit-5",
+    "unitNumber": 5,
+    "title": "Food, Cuisine, Crops & Livestock Husbandry",
+    "description": "Master food, cuisine, crops & livestock husbandry in Kisii (Ekegusii) built directly from C. W. Hobley (1902), G. A. S. Northcote (1907), and Sir Harry H. Johnston (1919, 1922).",
+    "icon": "Tractor",
+    "color": "#D97706",
     "skills": [
       {
-        "id": "kisii-exp-food",
-        "title": "Food & Household (Part 1)",
-        "icon": "Utensils",
-        "description": "Master Kisii (Ekegusii) food & household vocabulary and expressions from verified historical sources.",
-        "tips": "In this Kisii (Ekegusii) skill covering Food & Household, pay special attention to pronunciation and morphological prefixes/suffixes: 'Obokima' (Ugali / Porridge), 'Amabere / Amabeere' (Milk), 'Enyama' (Meat), 'Chindagera / Endaagera' (Food).",
-        "culturalNote": "Source attribution: Wilfred H. Whiteley (1956) 'A Practical Introduction to Gusii' and Whiteley (1960) 'The Tense System of Gusii' (East African Literature Bureau).",
+        "id": "kisii-food-agriculture-staple-foods-cookery-5",
+        "title": "Staple Foods, Cookery & Beverages",
+        "icon": "Soup",
+        "description": "Learn traditional dishes, grains, culinary tools, and food preparation verbs.",
+        "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1902 Kossova Vocabulary) & Sir Harry Johnston (1902 Igizii & 1919 Sub-group A6 Ki-Guzii / Ki-Koria). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "culturalNote": "Primary historical documentation for Kisii (Ekegusii) (Ekegusii) in C. W. Hobley (1902 Kossova Vocabulary) & Sir Harry Johnston (1902 Igizii & 1919 Sub-group A6 Ki-Guzii / Ki-Koria) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kisii, Nyamira.",
         "words": [
           {
-            "target": "Obokima",
-            "source": "Ugali / Porridge",
-            "pronunciation": "oh-boh-kee-mah",
-            "hint": "Highland staple ugali / stiff grain porridge (Class 14/6)",
-            "example": "Obokima — Ugali / Porridge (Highland staple ugali / stiff grain porridge (Class 14/6))"
+            "target": "obouki",
+            "source": "Honey",
+            "pronunciation": "o-bou-ki",
+            "hint": "Hobley 1902 p. 64 & Johnston 1919 #7"
           },
           {
-            "target": "Amabere / Amabeere",
-            "source": "Milk",
-            "pronunciation": "ah-mah-beh-reh / ah-mah-beh-eh-reh",
-            "hint": "Fresh cow milk (Class 6 plural liquid noun)",
-            "example": "Amabere / Amabeere — Milk (Fresh cow milk (Class 6 plural liquid noun))"
-          },
-          {
-            "target": "Enyama",
+            "target": "enyama",
             "source": "Meat",
-            "pronunciation": "ehn-yah-mah",
-            "hint": "Meat (Class 9/10, pl: Chinyama)",
-            "example": "Enyama — Meat (Meat (Class 9/10, pl: Chinyama))"
+            "pronunciation": "enya-ma",
+            "hint": "Hobley 1902 & Johnston 1919 #7"
           },
           {
-            "target": "Chindagera / Endaagera",
+            "target": "endagera (obokima = ugali)",
             "source": "Food",
-            "pronunciation": "cheen-dah-geh-rah / ehn-dah-ah-geh-rah",
-            "hint": "Food or sustenance (Class 9/10, derived from verb -raagera)",
-            "example": "Chindagera / Endaagera — Food (Food or sustenance (Class 9/10, derived from verb -raagera))"
+            "pronunciation": "enda-ge-ra",
+            "hint": "Hobley 1902 & Johnston 1919 #7"
           },
           {
-            "target": "Ritooke / Ritoke",
-            "source": "Banana / Matoke",
-            "pronunciation": "ree-toh-oh-keh / ree-toh-keh",
-            "hint": "Banana or cooking plantain (Class 5/6, pl: Amatooke)",
-            "example": "Ritooke / Ritoke — Banana / Matoke (Banana or cooking plantain (Class 5/6, pl: Amatooke))"
+            "target": "egekombe (pl. ebikombe)",
+            "source": "Cup (Class 7/8: ege-/ebi-)",
+            "pronunciation": "e-ge-kombe",
+            "hint": "Wikipedia Gusii language — Noun classes"
           },
           {
-            "target": "Egetuuma / Ebando",
-            "source": "Maize / Corn",
-            "pronunciation": "eh-geh-too-oo-mah / eh-bahn-doh",
-            "hint": "Maize cobs or grain (Class 7/8 Egetuuma; Class 9/10 Ebando)",
-            "example": "Egetuuma / Ebando — Maize / Corn (Maize cobs or grain (Class 7/8 Egetuuma; Class 9/10 Ebando))"
+            "target": "ritunda (pl. amatunda)",
+            "source": "Fruit (Class 5/6: ri-/ama-)",
+            "pronunciation": "ri-tunda",
+            "hint": "Wikipedia Gusii language — Noun classes"
           },
           {
-            "target": "Ching'ende",
-            "source": "Beans",
-            "pronunciation": "cheen-gehn-deh",
-            "hint": "Cooked or harvested beans (Class 10 plural of Eng'ende)",
-            "example": "Ching'ende — Beans (Cooked or harvested beans (Class 10 plural of Eng'ende))"
+            "target": "amabere",
+            "source": "Milk (Class 6: ama-)",
+            "pronunciation": "a-ma-be-re",
+            "hint": "Wikipedia Gusii language — Noun classes"
           },
           {
-            "target": "Enyeni / Nyeni",
-            "source": "Vegetables / Greens",
-            "pronunciation": "ehn-yeh-nee / nyeh-nee",
-            "hint": "Edible green vegetables (Class 9/10, pl: Chinyeni; also Orweni)",
-            "example": "Enyeni / Nyeni — Vegetables / Greens (Edible green vegetables (Class 9/10, pl: Chinyeni; also Orweni))"
+            "target": "amache",
+            "source": "Water",
+            "pronunciation": "a-mache",
+            "hint": "Wikipedia Gusii language — Sample phrases"
           },
           {
-            "target": "Obosie",
-            "source": "Flour",
-            "pronunciation": "oh-boh-see-eh",
-            "hint": "Milled flour for preparing porridge (Class 14/6)",
-            "example": "Obosie — Flour (Milled flour for preparing porridge (Class 14/6))"
-          },
-          {
-            "target": "Obori",
-            "source": "Millet",
-            "pronunciation": "oh-boh-ree",
-            "hint": "Bulrush millet, traditional ancestral grain (Class 14)",
-            "example": "Obori — Millet (Bulrush millet, traditional ancestral grain (Class 14))"
-          },
-          {
-            "target": "Amaemba / Riemba",
-            "source": "Sorghum",
-            "pronunciation": "ah-mah-ehm-bah / ree-ehm-bah",
-            "hint": "Sorghum grain (Class 5/6, usually plural Amaemba)",
-            "example": "Amaemba / Riemba — Sorghum (Sorghum grain (Class 5/6, usually plural Amaemba))"
-          },
-          {
-            "target": "Omoonyo",
-            "source": "Salt",
-            "pronunciation": "oh-moh-ohn-yoh",
-            "hint": "Salt for seasoning (Class 3/4)",
-            "example": "Omoonyo — Salt (Salt for seasoning (Class 3/4))"
-          },
-          {
-            "target": "Amaguta",
-            "source": "Cooking fat / Oil",
-            "pronunciation": "ah-mah-goo-tah",
-            "hint": "Fat, butter, or cooking oil (Class 6)",
-            "example": "Amaguta — Cooking fat / Oil (Fat, butter, or cooking oil (Class 6))"
-          },
-          {
-            "target": "Omwogo",
-            "source": "Cassava",
-            "pronunciation": "ohm-woh-goh",
-            "hint": "Cassava tuber (Class 3/4, pl: Emiogo)",
-            "example": "Omwogo — Cassava (Cassava tuber (Class 3/4, pl: Emiogo))"
-          },
-          {
-            "target": "Erongoori",
-            "source": "Gruel / Porridge",
-            "pronunciation": "eh-rohn-goh-oh-ree",
-            "hint": "Thin gruel / porridge drink (Class 9/10)",
-            "example": "Erongoori — Gruel / Porridge (Thin gruel / porridge drink (Class 9/10))"
-          },
-          {
-            "target": "Rigena ri'engoko",
-            "source": "Egg",
-            "pronunciation": "ree-geh-nah ree-ehn-goh-koh",
-            "hint": "Egg (lit. 'stone of a chicken', Class 5/6, pl: Amagena y'engoko)",
-            "example": "Rigena ri'engoko — Egg (Egg (lit. 'stone of a chicken', Class 5/6, pl: Amagena y'engoko))"
-          }
-        ],
-        "sentences": [
-          {
-            "target": "Omonto oyo n'omuya mono.",
-            "source": "This person is very good."
-          },
-          {
-            "target": "Abana bonsi bagenda esukuru.",
-            "source": "All the children have gone to school."
-          },
-          {
-            "target": "Amache aya n'amaya okonywa.",
-            "source": "This water is good for drinking."
+            "target": "rigomia (pl. amagomia) / ritoke",
+            "source": "Banana",
+            "pronunciation": "ri-go-mia / ri-to-ke"
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What does \"Obokima\" mean in English?",
-            "correctAnswer": "Ugali / Porridge",
-            "options": [
-              "Milk",
-              "Meat",
-              "Food",
-              "Ugali / Porridge"
-            ],
-            "hint": "Highland staple ugali / stiff grain porridge (Class 14/6)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Amabere / Amabeere\" mean in English?",
-            "correctAnswer": "Milk",
+            "prompt": "What is the English meaning of \"obouki\" in Kisii?",
+            "correctAnswer": "Honey",
             "options": [
               "Meat",
               "Food",
-              "Milk",
-              "Ugali / Porridge"
+              "Honey",
+              "Cup"
             ],
-            "hint": "Fresh cow milk (Class 6 plural liquid noun)"
+            "hint": "Hobley 1902 p. 64 & Johnston 1919 #7"
           },
           {
             "type": "multiple_choice",
-            "prompt": "What does \"Enyama\" mean in English?",
+            "prompt": "What is the English meaning of \"enyama\" in Kisii?",
             "correctAnswer": "Meat",
             "options": [
               "Food",
               "Meat",
-              "Ugali / Porridge",
-              "Milk"
+              "Cup",
+              "Honey"
             ],
-            "hint": "Meat (Class 9/10, pl: Chinyama)"
+            "hint": "Hobley 1902 & Johnston 1919 #7"
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Meat\" in Kisii (Ekegusii)?",
-            "correctAnswer": "Enyama",
+            "prompt": "What is the English meaning of \"endagera\" in Kisii?",
+            "correctAnswer": "Food",
             "options": [
-              "Enyama",
-              "Obokima",
-              "Amabere / Amabeere",
-              "Chindagera / Endaagera"
+              "Cup",
+              "Honey",
+              "Meat",
+              "Food"
             ],
-            "hint": "ehn-yah-mah"
+            "hint": "Hobley 1902 & Johnston 1919 #7"
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Food\" in Kisii (Ekegusii)?",
-            "correctAnswer": "Chindagera / Endaagera",
+            "prompt": "How do you say \"Food\" in Kisii?",
+            "correctAnswer": "endagera",
             "options": [
-              "Obokima",
-              "Amabere / Amabeere",
-              "Enyama",
-              "Chindagera / Endaagera"
+              "obouki",
+              "enyama",
+              "egekombe",
+              "endagera"
             ],
-            "hint": "cheen-dah-geh-rah / ehn-dah-ah-geh-rah"
+            "hint": "ehn-dah-geh-rah / oh-boh-kee-mah",
+            "acceptedAnswers": [
+              "endagera (obokima = ugali)",
+              "endagera"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Banana / Matoke\" in Kisii (Ekegusii)?",
-            "correctAnswer": "Ritooke / Ritoke",
+            "prompt": "How do you say \"Cup (Class 7/8: ege-/ebi-)\" in Kisii?",
+            "correctAnswer": "egekombe",
             "options": [
-              "Amabere / Amabeere",
-              "Enyama",
-              "Ritooke / Ritoke",
-              "Obokima"
+              "obouki",
+              "egekombe",
+              "enyama",
+              "endagera"
             ],
-            "hint": "ree-toh-oh-keh / ree-toh-keh"
+            "hint": "Starts with \"eg…\" (8 letters)",
+            "acceptedAnswers": [
+              "egekombe (pl. ebikombe)",
+              "egekombe"
+            ]
           },
           {
             "type": "match_pairs",
-            "prompt": "Match the Kisii (Ekegusii) terms with their English meanings:",
-            "correctAnswer": "Obokima: Ugali / Porridge, Amabere / Amabeere: Milk, Enyama: Meat, Chindagera / Endaagera: Food",
+            "prompt": "Match each Kisii expression with its English meaning:",
+            "correctAnswer": "obouki: Honey",
             "pairs": [
               {
-                "left": "Obokima",
-                "right": "Ugali / Porridge"
+                "left": "obouki",
+                "right": "Honey"
               },
               {
-                "left": "Amabere / Amabeere",
-                "right": "Milk"
-              },
-              {
-                "left": "Enyama",
+                "left": "enyama",
                 "right": "Meat"
               },
               {
-                "left": "Chindagera / Endaagera",
+                "left": "endagera (obokima = ugali)",
                 "right": "Food"
+              },
+              {
+                "left": "egekombe (pl. ebikombe)",
+                "right": "Cup (Class 7/8: ege-/ebi-)"
               }
             ]
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete: \"_____\" means \"Ugali / Porridge\" in Kisii (Ekegusii).",
-            "correctAnswer": "Obokima",
+            "prompt": "Complete the Kisii term for \"Fruit (Class 5/6: ri-/ama-)\": ___",
+            "correctAnswer": "ritunda",
             "options": [
-              "Obokima",
-              "Amabere / Amabeere",
-              "Enyama",
-              "Chindagera / Endaagera"
+              "obouki",
+              "ritunda",
+              "enyama",
+              "endagera"
             ],
-            "hint": "oh-boh-kee-mah"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "kisii-unit-11-home",
-    "title": "Unit 11: Home & Village",
-    "description": "Comprehensive Kisii (Ekegusii) curriculum for Home & Village, vetted from Wilfred H. Whiteley (1956) 'A Practical Introduction to Gusii' and Whiteley (1960) 'The Tense System of Gusii' (East African Literature Bureau).",
-    "icon": "Home",
-    "skills": [
-      {
-        "id": "kisii-exp-home",
-        "title": "Home & Village",
-        "icon": "Home",
-        "description": "Master Kisii (Ekegusii) home & village vocabulary and expressions from verified historical sources.",
-        "tips": "In this Kisii (Ekegusii) skill covering Home & Village, pay special attention to pronunciation and morphological prefixes/suffixes: 'Egetanda / Oborere' (Bed), 'Enyongo' (Cooking pot), 'Obokombe' (Hoe), 'Egetonga' (Basket).",
-        "culturalNote": "Source attribution: Wilfred H. Whiteley (1956) 'A Practical Introduction to Gusii' and Whiteley (1960) 'The Tense System of Gusii' (East African Literature Bureau).",
-        "words": [
-          {
-            "target": "Egetanda / Oborere",
-            "source": "Bed",
-            "pronunciation": "eh-geh-tahn-dah / oh-boh-reh-reh",
-            "hint": "Bed (Class 7/8 Egetanda; Class 14/6 Oborere)",
-            "example": "Egetanda / Oborere — Bed (Bed (Class 7/8 Egetanda; Class 14/6 Oborere))"
-          },
-          {
-            "target": "Enyongo",
-            "source": "Cooking pot",
-            "pronunciation": "ehn-yohn-goh",
-            "hint": "Clay cooking pot (Class 9/10, pl: Chinyongo)",
-            "example": "Enyongo — Cooking pot (Clay cooking pot (Class 9/10, pl: Chinyongo))"
-          },
-          {
-            "target": "Obokombe",
-            "source": "Hoe",
-            "pronunciation": "oh-boh-kohm-beh",
-            "hint": "Agricultural hoe (Class 14/6, pl: Amakombe)",
-            "example": "Obokombe — Hoe (Agricultural hoe (Class 14/6, pl: Amakombe))"
-          },
-          {
-            "target": "Egetonga",
-            "source": "Basket",
-            "pronunciation": "eh-geh-tohn-gah",
-            "hint": "Storage or carrying basket (Class 7/8, pl: Ebitonga)",
-            "example": "Egetonga — Basket (Storage or carrying basket (Class 7/8, pl: Ebitonga))"
-          },
-          {
-            "target": "Ekerandi",
-            "source": "Gourd / Calabash",
-            "pronunciation": "eh-keh-rahn-dee",
-            "hint": "Gourd container (Class 7/8, pl: Ebirandi)",
-            "example": "Ekerandi — Gourd / Calabash (Gourd container (Class 7/8, pl: Ebirandi))"
-          },
-          {
-            "target": "Omochie",
-            "source": "Village / Homestead",
-            "pronunciation": "oh-moh-chee-eh",
-            "hint": "Village, homestead, or settlement (Class 3/4, pl: Emechie)",
-            "example": "Omochie — Village / Homestead (Village, homestead, or settlement (Class 3/4, pl: Emechie))"
-          },
-          {
-            "target": "Egesieri",
-            "source": "Door (family entrance)",
-            "pronunciation": "eh-geh-see-eh-ree",
-            "hint": "Everyday entrance door (Class 7/8, pl: Ebisieri)",
-            "example": "Egesieri — Door (family entrance) (Everyday entrance door (Class 7/8, pl: Ebisieri))"
-          },
-          {
-            "target": "Orobago",
-            "source": "Fence",
-            "pronunciation": "oh-roh-bah-goh",
-            "hint": "Garden or compound fence (Class 11/10a, pl: Chimbago)",
-            "example": "Orobago — Fence (Garden or compound fence (Class 11/10a, pl: Chimbago))"
-          },
-          {
-            "target": "Ekiage",
-            "source": "Granary",
-            "pronunciation": "eh-kee-ah-geh",
-            "hint": "Cereal storage granary (Class 7/8, pl: Ebiage)",
-            "example": "Ekiage — Granary (Cereal storage granary (Class 7/8, pl: Ebiage))"
-          },
-          {
-            "target": "Oroko",
-            "source": "Firewood",
-            "pronunciation": "oh-roh-koh",
-            "hint": "Stick of firewood (Class 11/10a, pl: Chinko)",
-            "example": "Oroko — Firewood (Stick of firewood (Class 11/10a, pl: Chinko))"
-          },
-          {
-            "target": "Ekeoreri",
-            "source": "Courtyard",
-            "pronunciation": "eh-keh-oh-reh-ree",
-            "hint": "Homestead forecourt or courtyard (Class 7/8, pl: Ebioreri)",
-            "example": "Ekeoreri — Courtyard (Homestead forecourt or courtyard (Class 7/8, pl: Ebioreri))"
-          },
-          {
-            "target": "Obweeri",
-            "source": "Cattle byre",
-            "pronunciation": "oh-bweh-eh-ree",
-            "hint": "Enclosure for livestock (Class 14/6, pl: Ameeri)",
-            "example": "Obweeri — Cattle byre (Enclosure for livestock (Class 14/6, pl: Ameeri))"
-          }
-        ],
-        "sentences": [
-          {
-            "target": "Omonto oyo n'omuya mono.",
-            "source": "This person is very good."
-          },
-          {
-            "target": "Abana bonsi bagenda esukuru.",
-            "source": "All the children have gone to school."
-          },
-          {
-            "target": "Amache aya n'amaya okonywa.",
-            "source": "This water is good for drinking."
-          }
-        ],
-        "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Egetanda / Oborere\" mean in English?",
-            "correctAnswer": "Bed",
-            "options": [
-              "Cooking pot",
-              "Hoe",
-              "Basket",
-              "Bed"
-            ],
-            "hint": "Bed (Class 7/8 Egetanda; Class 14/6 Oborere)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Enyongo\" mean in English?",
-            "correctAnswer": "Cooking pot",
-            "options": [
-              "Hoe",
-              "Basket",
-              "Cooking pot",
-              "Bed"
-            ],
-            "hint": "Clay cooking pot (Class 9/10, pl: Chinyongo)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Obokombe\" mean in English?",
-            "correctAnswer": "Hoe",
-            "options": [
-              "Basket",
-              "Hoe",
-              "Bed",
-              "Cooking pot"
-            ],
-            "hint": "Agricultural hoe (Class 14/6, pl: Amakombe)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Hoe\" in Kisii (Ekegusii)?",
-            "correctAnswer": "Obokombe",
-            "options": [
-              "Obokombe",
-              "Egetanda / Oborere",
-              "Enyongo",
-              "Egetonga"
-            ],
-            "hint": "oh-boh-kohm-beh"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Basket\" in Kisii (Ekegusii)?",
-            "correctAnswer": "Egetonga",
-            "options": [
-              "Egetanda / Oborere",
-              "Enyongo",
-              "Obokombe",
-              "Egetonga"
-            ],
-            "hint": "eh-geh-tohn-gah"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Gourd / Calabash\" in Kisii (Ekegusii)?",
-            "correctAnswer": "Ekerandi",
-            "options": [
-              "Enyongo",
-              "Obokombe",
-              "Ekerandi",
-              "Egetanda / Oborere"
-            ],
-            "hint": "eh-keh-rahn-dee"
-          },
-          {
-            "type": "match_pairs",
-            "prompt": "Match the Kisii (Ekegusii) terms with their English meanings:",
-            "correctAnswer": "Egetanda / Oborere: Bed, Enyongo: Cooking pot, Obokombe: Hoe, Egetonga: Basket",
-            "pairs": [
-              {
-                "left": "Egetanda / Oborere",
-                "right": "Bed"
-              },
-              {
-                "left": "Enyongo",
-                "right": "Cooking pot"
-              },
-              {
-                "left": "Obokombe",
-                "right": "Hoe"
-              },
-              {
-                "left": "Egetonga",
-                "right": "Basket"
-              }
+            "hint": "Wikipedia Gusii language — Noun classes",
+            "acceptedAnswers": [
+              "ritunda (pl. amatunda)",
+              "ritunda"
             ]
-          },
-          {
-            "type": "fill_blank",
-            "prompt": "Complete: \"_____\" means \"Bed\" in Kisii (Ekegusii).",
-            "correctAnswer": "Egetanda / Oborere",
-            "options": [
-              "Egetanda / Oborere",
-              "Enyongo",
-              "Obokombe",
-              "Egetonga"
-            ],
-            "hint": "eh-geh-tahn-dah / oh-boh-reh-reh"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "kisii-unit-12-body",
-    "title": "Unit 12: Body Parts",
-    "description": "Comprehensive Kisii (Ekegusii) curriculum for Body Parts, vetted from Wilfred H. Whiteley (1956) 'A Practical Introduction to Gusii' and Whiteley (1960) 'The Tense System of Gusii' (East African Literature Bureau).",
-    "icon": "Heart",
-    "skills": [
-      {
-        "id": "kisii-exp-body",
-        "title": "Body Parts (Part 1)",
-        "icon": "Heart",
-        "description": "Master Kisii (Ekegusii) body parts vocabulary and expressions from verified historical sources.",
-        "tips": "In this Kisii (Ekegusii) skill covering Body Parts, pay special attention to pronunciation and morphological prefixes/suffixes: 'Omotwe' (Head), 'Omobere' (Body), 'Riiso' (Eye), 'Riino' (Tooth).",
-        "culturalNote": "Source attribution: Wilfred H. Whiteley (1956) 'A Practical Introduction to Gusii' and Whiteley (1960) 'The Tense System of Gusii' (East African Literature Bureau).",
-        "words": [
-          {
-            "target": "Omotwe",
-            "source": "Head",
-            "pronunciation": "oh-moh-tweh",
-            "hint": "Head (Class 3/4, pl: Emetwe)",
-            "example": "Omotwe — Head (Head (Class 3/4, pl: Emetwe))"
-          },
-          {
-            "target": "Omobere",
-            "source": "Body",
-            "pronunciation": "oh-moh-beh-reh",
-            "hint": "Human body (Class 3/4, pl: Emebere)",
-            "example": "Omobere — Body (Human body (Class 3/4, pl: Emebere))"
-          },
-          {
-            "target": "Riiso",
-            "source": "Eye",
-            "pronunciation": "ree-ee-soh",
-            "hint": "Eye (Class 5/6, pl: Amaiso)",
-            "example": "Riiso — Eye (Eye (Class 5/6, pl: Amaiso))"
-          },
-          {
-            "target": "Riino",
-            "source": "Tooth",
-            "pronunciation": "ree-ee-noh",
-            "hint": "Tooth (Class 5/6, pl: Amaino)",
-            "example": "Riino — Tooth (Tooth (Class 5/6, pl: Amaino))"
-          },
-          {
-            "target": "Okutu / Ogoto",
-            "source": "Ear",
-            "pronunciation": "oh-koo-too / oh-goh-toh",
-            "hint": "Ear (Class 15/6, pl: Amatwi / Amagoto)",
-            "example": "Okutu / Ogoto — Ear (Ear (Class 15/6, pl: Amatwi / Amagoto))"
-          },
-          {
-            "target": "Okoboko",
-            "source": "Hand / Arm",
-            "pronunciation": "oh-koh-boh-koh",
-            "hint": "Arm or hand (Class 15/6, pl: Amaboko)",
-            "example": "Okoboko — Hand / Arm (Arm or hand (Class 15/6, pl: Amaboko))"
-          },
-          {
-            "target": "Okogoro",
-            "source": "Leg / Foot",
-            "pronunciation": "oh-koh-goh-roh",
-            "hint": "Leg or foot (Class 15/6, pl: Amagoro)",
-            "example": "Okogoro — Leg / Foot (Leg or foot (Class 15/6, pl: Amagoro))"
-          },
-          {
-            "target": "Engoro",
-            "source": "Heart / Conscience",
-            "pronunciation": "ehn-goh-roh",
-            "hint": "Heart or soul (Class 9/10)",
-            "example": "Engoro — Heart / Conscience (Heart or soul (Class 9/10))"
-          },
-          {
-            "target": "Amanyinga",
-            "source": "Blood",
-            "pronunciation": "ah-mah-nyeen-gah",
-            "hint": "Blood (Class 6 plural)",
-            "example": "Amanyinga — Blood (Blood (Class 6 plural))"
-          },
-          {
-            "target": "Ekiara",
-            "source": "Finger",
-            "pronunciation": "eh-kee-ah-rah",
-            "hint": "Finger (Class 7/8, pl: Ebiara)",
-            "example": "Ekiara — Finger (Finger (Class 7/8, pl: Ebiara))"
-          },
-          {
-            "target": "Obosio",
-            "source": "Forehead",
-            "pronunciation": "oh-boh-see-oh",
-            "hint": "Forehead (Class 14/6)",
-            "example": "Obosio — Forehead (Forehead (Class 14/6))"
-          },
-          {
-            "target": "Ekiyeni",
-            "source": "Face",
-            "pronunciation": "eh-kee-yeh-nee",
-            "hint": "Face, appearance (Class 7/8, pl: Ebiyeni)",
-            "example": "Ekiyeni — Face (Face, appearance (Class 7/8, pl: Ebiyeni))"
-          },
-          {
-            "target": "Riuga",
-            "source": "Bone",
-            "pronunciation": "ree-oo-gah",
-            "hint": "Bone (Class 5/6, pl: Amauga)",
-            "example": "Riuga — Bone (Bone (Class 5/6, pl: Amauga))"
-          }
-        ],
-        "sentences": [
-          {
-            "target": "Omonto oyo n'omuya mono.",
-            "source": "This person is very good."
-          },
-          {
-            "target": "Abana bonsi bagenda esukuru.",
-            "source": "All the children have gone to school."
-          },
-          {
-            "target": "Amache aya n'amaya okonywa.",
-            "source": "This water is good for drinking."
-          }
-        ],
-        "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Omotwe\" mean in English?",
-            "correctAnswer": "Head",
-            "options": [
-              "Body",
-              "Eye",
-              "Tooth",
-              "Head"
-            ],
-            "hint": "Head (Class 3/4, pl: Emetwe)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Omobere\" mean in English?",
-            "correctAnswer": "Body",
-            "options": [
-              "Eye",
-              "Tooth",
-              "Body",
-              "Head"
-            ],
-            "hint": "Human body (Class 3/4, pl: Emebere)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Riiso\" mean in English?",
-            "correctAnswer": "Eye",
-            "options": [
-              "Tooth",
-              "Eye",
-              "Head",
-              "Body"
-            ],
-            "hint": "Eye (Class 5/6, pl: Amaiso)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Eye\" in Kisii (Ekegusii)?",
-            "correctAnswer": "Riiso",
-            "options": [
-              "Riiso",
-              "Omotwe",
-              "Omobere",
-              "Riino"
-            ],
-            "hint": "ree-ee-soh"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Tooth\" in Kisii (Ekegusii)?",
-            "correctAnswer": "Riino",
-            "options": [
-              "Omotwe",
-              "Omobere",
-              "Riiso",
-              "Riino"
-            ],
-            "hint": "ree-ee-noh"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Ear\" in Kisii (Ekegusii)?",
-            "correctAnswer": "Okutu / Ogoto",
-            "options": [
-              "Omobere",
-              "Riiso",
-              "Okutu / Ogoto",
-              "Omotwe"
-            ],
-            "hint": "oh-koo-too / oh-goh-toh"
-          },
-          {
-            "type": "match_pairs",
-            "prompt": "Match the Kisii (Ekegusii) terms with their English meanings:",
-            "correctAnswer": "Omotwe: Head, Omobere: Body, Riiso: Eye, Riino: Tooth",
-            "pairs": [
-              {
-                "left": "Omotwe",
-                "right": "Head"
-              },
-              {
-                "left": "Omobere",
-                "right": "Body"
-              },
-              {
-                "left": "Riiso",
-                "right": "Eye"
-              },
-              {
-                "left": "Riino",
-                "right": "Tooth"
-              }
-            ]
-          },
-          {
-            "type": "fill_blank",
-            "prompt": "Complete: \"_____\" means \"Head\" in Kisii (Ekegusii).",
-            "correctAnswer": "Omotwe",
-            "options": [
-              "Omotwe",
-              "Omobere",
-              "Riiso",
-              "Riino"
-            ],
-            "hint": "oh-moh-tweh"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "kisii-unit-13-verbs",
-    "title": "Unit 13: Verbs & Actions",
-    "description": "Comprehensive Kisii (Ekegusii) curriculum for Verbs & Actions, vetted from Wilfred H. Whiteley (1956) 'A Practical Introduction to Gusii' and Whiteley (1960) 'The Tense System of Gusii' (East African Literature Bureau).",
-    "icon": "Zap",
-    "skills": [
-      {
-        "id": "kisii-exp-verbs",
-        "title": "Verbs & Actions (Part 1)",
-        "icon": "Zap",
-        "description": "Master Kisii (Ekegusii) verbs & actions vocabulary and expressions from verified historical sources.",
-        "tips": "In this Kisii (Ekegusii) skill covering Verbs & Actions, pay special attention to pronunciation and morphological prefixes/suffixes: 'Gogenda' (To go), 'Goseka' (To laugh), 'Koria' (To eat), 'Konywa' (To drink).",
-        "culturalNote": "Source attribution: Wilfred H. Whiteley (1956) 'A Practical Introduction to Gusii' and Whiteley (1960) 'The Tense System of Gusii' (East African Literature Bureau).",
-        "words": [
-          {
-            "target": "Gogenda",
-            "source": "To go",
-            "pronunciation": "goh-gehn-dah",
-            "hint": "Infinitive verb: to go, depart (Stem: -genda; also Gochia)",
-            "example": "Gogenda — To go (Infinitive verb: to go, depart (Stem: -genda; also Gochia))"
-          },
-          {
-            "target": "Goseka",
-            "source": "To laugh",
-            "pronunciation": "goh-seh-kah",
-            "hint": "Infinitive verb: to laugh (Stem: -seka)",
-            "example": "Goseka — To laugh (Infinitive verb: to laugh (Stem: -seka))"
-          },
-          {
-            "target": "Koria",
-            "source": "To eat",
-            "pronunciation": "koh-ree-ah",
-            "hint": "Infinitive verb: to consume food (Stem: -ria; also -raagera)",
-            "example": "Koria — To eat (Infinitive verb: to consume food (Stem: -ria; also -raagera))"
-          },
-          {
-            "target": "Konywa",
-            "source": "To drink",
-            "pronunciation": "koh-nywah",
-            "hint": "Infinitive verb: to drink liquids (Stem: -nywa)",
-            "example": "Konywa — To drink (Infinitive verb: to drink liquids (Stem: -nywa))"
-          },
-          {
-            "target": "Korora",
-            "source": "To see",
-            "pronunciation": "koh-roh-rah",
-            "hint": "Infinitive verb: to see, look, behold (Stem: -rora)",
-            "example": "Korora — To see (Infinitive verb: to see, look, behold (Stem: -rora))"
-          },
-          {
-            "target": "Koigwa",
-            "source": "To hear / feel",
-            "pronunciation": "koh-ee-gwah",
-            "hint": "Infinitive verb: to hear, perceive, feel (Stem: -iigwa)",
-            "example": "Koigwa — To hear / feel (Infinitive verb: to hear, perceive, feel (Stem: -iigwa))"
-          },
-          {
-            "target": "Gotiga",
-            "source": "To leave / abandon",
-            "pronunciation": "goh-tee-gah",
-            "hint": "Infinitive verb: to leave behind, abandon (Stem: -tiga)",
-            "example": "Gotiga — To leave / abandon (Infinitive verb: to leave behind, abandon (Stem: -tiga))"
-          },
-          {
-            "target": "Gokunda / Kwanche",
-            "source": "To love / like",
-            "pronunciation": "goh-koon-dah / kwahn-cheh",
-            "hint": "Infinitive verb: to love, like, care for (Stem: -kunda / -ancha)",
-            "example": "Gokunda / Kwanche — To love / like (Infinitive verb: to love, like, care for (Stem: -kunda / -ancha))"
-          },
-          {
-            "target": "Gokoana",
-            "source": "To speak / converse",
-            "pronunciation": "goh-koh-ah-nah",
-            "hint": "Infinitive verb: to speak, talk, converse (Stem: -kwana)",
-            "example": "Gokoana — To speak / converse (Infinitive verb: to speak, talk, converse (Stem: -kwana))"
-          },
-          {
-            "target": "Goruga",
-            "source": "To cook",
-            "pronunciation": "goh-roo-gah",
-            "hint": "Infinitive verb: to cook porridge (Stem: -ruga; -yeka = to boil/stew)",
-            "example": "Goruga — To cook (Infinitive verb: to cook porridge (Stem: -ruga; -yeka = to boil/stew))"
-          },
-          {
-            "target": "Gorema",
-            "source": "To cultivate",
-            "pronunciation": "goh-reh-mah",
-            "hint": "Infinitive verb: to hoe, dig, farm (Stem: -rema)",
-            "example": "Gorema — To cultivate (Infinitive verb: to hoe, dig, farm (Stem: -rema))"
-          },
-          {
-            "target": "Goraara",
-            "source": "To sleep",
-            "pronunciation": "goh-rah-ah-rah",
-            "hint": "Infinitive verb: to sleep, rest (Stem: -raara)",
-            "example": "Goraara — To sleep (Infinitive verb: to sleep, rest (Stem: -raara))"
-          }
-        ],
-        "sentences": [
-          {
-            "target": "Omonto oyo n'omuya mono.",
-            "source": "This person is very good."
-          },
-          {
-            "target": "Abana bonsi bagenda esukuru.",
-            "source": "All the children have gone to school."
-          },
-          {
-            "target": "Amache aya n'amaya okonywa.",
-            "source": "This water is good for drinking."
-          }
-        ],
-        "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Gogenda\" mean in English?",
-            "correctAnswer": "To go",
-            "options": [
-              "To laugh",
-              "To eat",
-              "To drink",
-              "To go"
-            ],
-            "hint": "Infinitive verb: to go, depart (Stem: -genda; also Gochia)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Goseka\" mean in English?",
-            "correctAnswer": "To laugh",
-            "options": [
-              "To eat",
-              "To drink",
-              "To laugh",
-              "To go"
-            ],
-            "hint": "Infinitive verb: to laugh (Stem: -seka)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Koria\" mean in English?",
-            "correctAnswer": "To eat",
-            "options": [
-              "To drink",
-              "To eat",
-              "To go",
-              "To laugh"
-            ],
-            "hint": "Infinitive verb: to consume food (Stem: -ria; also -raagera)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"To eat\" in Kisii (Ekegusii)?",
-            "correctAnswer": "Koria",
-            "options": [
-              "Koria",
-              "Gogenda",
-              "Goseka",
-              "Konywa"
-            ],
-            "hint": "koh-ree-ah"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"To drink\" in Kisii (Ekegusii)?",
-            "correctAnswer": "Konywa",
-            "options": [
-              "Gogenda",
-              "Goseka",
-              "Koria",
-              "Konywa"
-            ],
-            "hint": "koh-nywah"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"To see\" in Kisii (Ekegusii)?",
-            "correctAnswer": "Korora",
-            "options": [
-              "Goseka",
-              "Koria",
-              "Korora",
-              "Gogenda"
-            ],
-            "hint": "koh-roh-rah"
-          },
-          {
-            "type": "match_pairs",
-            "prompt": "Match the Kisii (Ekegusii) terms with their English meanings:",
-            "correctAnswer": "Gogenda: To go, Goseka: To laugh, Koria: To eat, Konywa: To drink",
-            "pairs": [
-              {
-                "left": "Gogenda",
-                "right": "To go"
-              },
-              {
-                "left": "Goseka",
-                "right": "To laugh"
-              },
-              {
-                "left": "Koria",
-                "right": "To eat"
-              },
-              {
-                "left": "Konywa",
-                "right": "To drink"
-              }
-            ]
-          },
-          {
-            "type": "fill_blank",
-            "prompt": "Complete: \"_____\" means \"To go\" in Kisii (Ekegusii).",
-            "correctAnswer": "Gogenda",
-            "options": [
-              "Gogenda",
-              "Goseka",
-              "Koria",
-              "Konywa"
-            ],
-            "hint": "goh-gehn-dah"
           }
         ]
       },
       {
-        "id": "kisii-exp-verbs-2",
-        "title": "Verbs & Actions (Part 2)",
-        "icon": "Zap",
-        "description": "Master Kisii (Ekegusii) verbs & actions vocabulary and expressions from verified historical sources.",
-        "tips": "In this Kisii (Ekegusii) skill covering Verbs & Actions, pay special attention to pronunciation and morphological prefixes/suffixes: 'Goteera' (To sing), 'Gogora' (To buy), 'Geesibia' (To wash / bathe), 'Gominyoka / Gotama' (To run).",
-        "culturalNote": "Source attribution: Wilfred H. Whiteley (1956) 'A Practical Introduction to Gusii' and Whiteley (1960) 'The Tense System of Gusii' (East African Literature Bureau).",
+        "id": "kisii-food-agriculture-crops-livestock-5",
+        "title": "Crops, Cultivation & Pastoral Livestock",
+        "icon": "Tractor",
+        "description": "Study indigenous crops, planting seasons, and livestock terminology.",
+        "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1902 Kossova Vocabulary) & Sir Harry Johnston (1902 Igizii & 1919 Sub-group A6 Ki-Guzii / Ki-Koria). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "culturalNote": "Primary historical documentation for Kisii (Ekegusii) (Ekegusii) in C. W. Hobley (1902 Kossova Vocabulary) & Sir Harry Johnston (1902 Igizii & 1919 Sub-group A6 Ki-Guzii / Ki-Koria) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kisii, Nyamira.",
         "words": [
           {
-            "target": "Goteera",
-            "source": "To sing",
-            "pronunciation": "goh-teh-eh-rah",
-            "hint": "Infinitive verb: to sing (Stem: -teera)",
-            "example": "Goteera — To sing (Infinitive verb: to sing (Stem: -teera))"
+            "target": "amaguta / egetinia",
+            "source": "Fat / Oil",
+            "pronunciation": "a-ma-gu-ta / e-ge-ti-nia"
           },
           {
-            "target": "Gogora",
-            "source": "To buy",
-            "pronunciation": "goh-goh-rah",
-            "hint": "Infinitive verb: to buy or trade (Stem: -gora)",
-            "example": "Gogora — To buy (Infinitive verb: to buy or trade (Stem: -gora))"
+            "target": "enchara / enjara",
+            "source": "Hunger",
+            "pronunciation": "en-cha-ra / en-ja-ra"
           },
           {
-            "target": "Geesibia",
-            "source": "To wash / bathe",
-            "pronunciation": "geh-eh-see-bee-ah",
-            "hint": "Infinitive reflexive: to wash oneself, bathe (Stem: -eesibia)",
-            "example": "Geesibia — To wash / bathe (Infinitive reflexive: to wash oneself, bathe (Stem: -eesibia))"
+            "target": "ebando (pl. chibando)",
+            "source": "Maize",
+            "pronunciation": "e-ba-ndo"
           },
           {
-            "target": "Gominyoka / Gotama",
-            "source": "To run",
-            "pronunciation": "goh-mee-nyoh-kah / goh-tah-mah",
-            "hint": "Infinitive verb: to run, flee (Stem: -minyoka / -tama)",
-            "example": "Gominyoka / Gotama — To run (Infinitive verb: to run, flee (Stem: -minyoka / -tama))"
+            "target": "amabere / amavere",
+            "source": "Milk",
+            "pronunciation": "a-ma-be-re"
           },
           {
-            "target": "Gokoonya",
-            "source": "To help / assist",
-            "pronunciation": "goh-koh-ohn-yah",
-            "hint": "Infinitive verb: to aid, assist (Stem: -koonya)",
-            "example": "Gokoonya — To help / assist (Infinitive verb: to aid, assist (Stem: -koonya))"
-          }
-        ],
-        "sentences": [
-          {
-            "target": "Amache aya n'amaya okonywa.",
-            "source": "This water is good for drinking."
+            "target": "amarwa",
+            "source": "Traditional millet beer",
+            "pronunciation": "a-ma-rwa"
           },
           {
-            "target": "Chiombe chionsi chiri ase obori.",
-            "source": "All the cattle are in the pasture."
+            "target": "-lia",
+            "source": "To eat",
+            "pronunciation": "lia"
           },
           {
-            "target": "Omogondo oito omenyete egetamo.",
-            "source": "Our farm is situated near the river."
+            "target": "owoli",
+            "source": "Eleusine grain (wimbi)",
+            "pronunciation": "o-wo-li",
+            "hint": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Kossova / Kisii)"
+          },
+          {
+            "target": "chinyeni",
+            "source": "Vegetables / Greens",
+            "pronunciation": "chi-nye-ni"
+          },
+          {
+            "target": "eng'ombe (pl. chiombe)",
+            "source": "Cow / Cattle",
+            "pronunciation": "eng-o-mbe"
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What does \"Goteera\" mean in English?",
-            "correctAnswer": "To sing",
+            "prompt": "What is the English meaning of \"amaguta / egetinia\" in Kisii?",
+            "correctAnswer": "Fat / Oil",
             "options": [
-              "To buy",
-              "To wash / bathe",
-              "To run",
-              "To sing"
-            ],
-            "hint": "Infinitive verb: to sing (Stem: -teera)"
+              "Hunger",
+              "Maize",
+              "Milk",
+              "Fat / Oil"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "What does \"Gogora\" mean in English?",
-            "correctAnswer": "To buy",
+            "prompt": "What is the English meaning of \"enchara / enjara\" in Kisii?",
+            "correctAnswer": "Hunger",
             "options": [
-              "To wash / bathe",
-              "To run",
-              "To buy",
-              "To sing"
-            ],
-            "hint": "Infinitive verb: to buy or trade (Stem: -gora)"
+              "Maize",
+              "Milk",
+              "Fat / Oil",
+              "Hunger"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "What does \"Geesibia\" mean in English?",
-            "correctAnswer": "To wash / bathe",
+            "prompt": "What is the English meaning of \"ebando (pl. chibando)\" in Kisii?",
+            "correctAnswer": "Maize",
             "options": [
-              "To run",
-              "To wash / bathe",
-              "To sing",
-              "To buy"
-            ],
-            "hint": "Infinitive reflexive: to wash oneself, bathe (Stem: -eesibia)"
+              "Milk",
+              "Maize",
+              "Fat / Oil",
+              "Hunger"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"To wash / bathe\" in Kisii (Ekegusii)?",
-            "correctAnswer": "Geesibia",
+            "prompt": "How do you say \"Maize\" in Kisii?",
+            "correctAnswer": "ebando",
             "options": [
-              "Geesibia",
-              "Goteera",
-              "Gogora",
-              "Gominyoka / Gotama"
-            ],
-            "hint": "geh-eh-see-bee-ah"
+              "amaguta",
+              "enchara",
+              "amabere",
+              "ebando"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"To run\" in Kisii (Ekegusii)?",
-            "correctAnswer": "Gominyoka / Gotama",
+            "prompt": "How do you say \"Milk\" in Kisii?",
+            "correctAnswer": "amabere",
             "options": [
-              "Goteera",
-              "Gogora",
-              "Geesibia",
-              "Gominyoka / Gotama"
-            ],
-            "hint": "goh-mee-nyoh-kah / goh-tah-mah"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"To help / assist\" in Kisii (Ekegusii)?",
-            "correctAnswer": "Gokoonya",
-            "options": [
-              "Gogora",
-              "Geesibia",
-              "Gokoonya",
-              "Goteera"
-            ],
-            "hint": "goh-koh-ohn-yah"
+              "amaguta",
+              "enchara",
+              "ebando",
+              "amabere"
+            ]
           },
           {
             "type": "match_pairs",
-            "prompt": "Match the Kisii (Ekegusii) terms with their English meanings:",
-            "correctAnswer": "Goteera: To sing, Gogora: To buy, Geesibia: To wash / bathe, Gominyoka / Gotama: To run",
+            "prompt": "Match each Kisii expression with its English meaning:",
+            "correctAnswer": "amaguta / egetinia: Fat / Oil",
             "pairs": [
               {
-                "left": "Goteera",
-                "right": "To sing"
+                "left": "amaguta / egetinia",
+                "right": "Fat / Oil"
               },
               {
-                "left": "Gogora",
-                "right": "To buy"
+                "left": "enchara / enjara",
+                "right": "Hunger"
               },
               {
-                "left": "Geesibia",
-                "right": "To wash / bathe"
+                "left": "ebando (pl. chibando)",
+                "right": "Maize"
               },
               {
-                "left": "Gominyoka / Gotama",
-                "right": "To run"
+                "left": "amabere / amavere",
+                "right": "Milk"
               }
             ]
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete: \"_____\" means \"To sing\" in Kisii (Ekegusii).",
-            "correctAnswer": "Goteera",
+            "prompt": "Complete the Kisii term for \"Traditional millet beer\": ___",
+            "correctAnswer": "amarwa",
             "options": [
-              "Goteera",
-              "Gogora",
-              "Geesibia",
-              "Gominyoka / Gotama"
-            ],
-            "hint": "goh-teh-eh-rah"
+              "amaguta",
+              "amarwa",
+              "enchara",
+              "ebando"
+            ]
           }
         ]
       }
     ]
   },
   {
-    "id": "kisii-unit-14-phrases",
-    "title": "Unit 14: Common Expressions",
-    "description": "Comprehensive Kisii (Ekegusii) curriculum for Common Expressions, vetted from Wilfred H. Whiteley (1956) 'A Practical Introduction to Gusii' and Whiteley (1960) 'The Tense System of Gusii' (East African Literature Bureau).",
-    "icon": "MessageCircle",
+    "id": "kisii-unit-6",
+    "unitNumber": 6,
+    "title": "Nature, Landscape, Flora & East African Wildlife",
+    "description": "Master nature, landscape, flora & east african wildlife in Kisii (Ekegusii) built directly from C. W. Hobley (1902), G. A. S. Northcote (1907), and Sir Harry H. Johnston (1919, 1922).",
+    "icon": "PawPrint",
+    "color": "#D97706",
     "skills": [
       {
-        "id": "kisii-exp-phrases",
-        "title": "Common Expressions (Part 1)",
-        "icon": "MessageCircle",
-        "description": "Master Kisii (Ekegusii) common expressions vocabulary and expressions from verified historical sources.",
-        "tips": "In this Kisii (Ekegusii) skill covering Common Expressions, pay special attention to pronunciation and morphological prefixes/suffixes: 'Eee / Ee' (Yes), 'Yaya / Yaaya' (No), 'Nkogokunda / Nkwanchire' (I love you), 'Inka ogochia?' (Where are you going?).",
-        "culturalNote": "Source attribution: Wilfred H. Whiteley (1956) 'A Practical Introduction to Gusii' and Whiteley (1960) 'The Tense System of Gusii' (East African Literature Bureau).",
+        "id": "kisii-nature-wildlife-land-sky-water-6",
+        "title": "Sky, Weather, Rivers & Landforms",
+        "icon": "CloudRain",
+        "description": "Describe the natural environment, rivers, mountains, and weather phenomena.",
+        "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1902 Kossova Vocabulary) & Sir Harry Johnston (1902 Igizii & 1919 Sub-group A6 Ki-Guzii / Ki-Koria). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "culturalNote": "Primary historical documentation for Kisii (Ekegusii) (Ekegusii) in C. W. Hobley (1902 Kossova Vocabulary) & Sir Harry Johnston (1902 Igizii & 1919 Sub-group A6 Ki-Guzii / Ki-Koria) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kisii, Nyamira.",
         "words": [
           {
-            "target": "Eee / Ee",
-            "source": "Yes",
-            "pronunciation": "eh-eh",
-            "hint": "Universal affirmative particle ('Yes!')",
-            "example": "Eee / Ee — Yes (Universal affirmative particle ('Yes!'))"
+            "target": "rituko (pl. amatuko) / omobaso",
+            "source": "Day",
+            "pronunciation": "ri-tu-ko / o-mo-ba-so",
+            "hint": "Hobley 1902 & Johnston 1919 #7"
           },
           {
-            "target": "Yaya / Yaaya",
-            "source": "No",
-            "pronunciation": "yah-yah",
-            "hint": "Universal negative particle ('No!')",
-            "example": "Yaya / Yaaya — No (Universal negative particle ('No!'))"
+            "target": "obotuko",
+            "source": "Night",
+            "pronunciation": "o-bo-tu-ko",
+            "hint": "Hobley 1902 p. 65 & Johnston 1919 #7"
           },
           {
-            "target": "Nkogokunda / Nkwanchire",
-            "source": "I love you",
-            "pronunciation": "n-koh-goh-koon-dah / n-kwahn-chee-reh",
-            "hint": "Expression of love and affection",
-            "example": "Nkogokunda / Nkwanchire — I love you (Expression of love and affection)"
+            "target": "omote (pl. emete)",
+            "source": "Tree",
+            "pronunciation": "o-mo-te",
+            "hint": "Hobley 1902 p. 67 & Johnston 1919 #7"
           },
           {
-            "target": "Inka ogochia?",
-            "source": "Where are you going?",
-            "pronunciation": "een-kah oh-goh-chee-ah",
-            "hint": "Everyday inquiry to travelers ('Where are you heading?')",
-            "example": "Inka ogochia? — Where are you going? (Everyday inquiry to travelers ('Where are you heading?'))"
+            "target": "embura",
+            "source": "Rain",
+            "pronunciation": "embu-ra",
+            "hint": "Hobley 1902 p. 66 & Johnston 1919 #7"
           },
           {
-            "target": "Incha aiga / Nchuo aiga",
-            "source": "Come here",
-            "pronunciation": "een-chah ah-ee-gah / n-choo-oh ah-ee-gah",
-            "hint": "Direct imperative command ('Come here!')",
-            "example": "Incha aiga / Nchuo aiga — Come here (Direct imperative command ('Come here!'))"
+            "target": "omorero",
+            "source": "Fire",
+            "pronunciation": "o-mo-re-ro",
+            "hint": "Hobley 1902 p. 63 & Johnston 1919 #7"
           },
           {
-            "target": "Rieta riao ningo?",
-            "source": "What is your name?",
-            "pronunciation": "ree-eh-tah ree-ah-oh neen-goh",
-            "hint": "Courteous question asking for someone's name",
-            "example": "Rieta riao ningo? — What is your name? (Courteous question asking for someone's name)"
+            "target": "eng'enang'eni",
+            "source": "Star",
+            "pronunciation": "eng'e-nang'e-ni",
+            "hint": "Hobley 1902 p. 67 & Johnston 1919 #7"
           },
           {
-            "target": "Erieta riane nere...",
-            "source": "My name is...",
-            "pronunciation": "eh-ree-eh-tah ree-ah-neh neh-reh",
-            "hint": "Standard self-introduction ('My name is...')",
-            "example": "Erieta riane nere... — My name is... (Standard self-introduction ('My name is...'))"
+            "target": "omotienyi",
+            "source": "Moon",
+            "pronunciation": "o-mo-tienyi",
+            "hint": "Hobley 1902 p. 65 & Johnston 1919 #7"
           },
           {
-            "target": "Bono",
-            "source": "Now",
-            "pronunciation": "boh-noh",
-            "hint": "Temporal adverb: at present, now",
-            "example": "Bono — Now (Temporal adverb: at present, now)"
+            "target": "erioba (risase)",
+            "source": "Sun",
+            "pronunciation": "e-rio-ba",
+            "hint": "Hobley 1902 p. 67 & Johnston 1919 #7"
           },
           {
-            "target": "Reero",
-            "source": "Today",
-            "pronunciation": "reh-eh-roh",
-            "hint": "Temporal adverb: today",
-            "example": "Reero — Today (Temporal adverb: today)"
-          },
-          {
-            "target": "Ankio",
-            "source": "Tomorrow",
-            "pronunciation": "ahn-kee-oh",
-            "hint": "Temporal adverb: tomorrow (Ankiende = day after tomorrow)",
-            "example": "Ankio — Tomorrow (Temporal adverb: tomorrow (Ankiende = day after tomorrow))"
-          },
-          {
-            "target": "Ekiaagera",
-            "source": "Because",
-            "pronunciation": "eh-kee-ah-ah-geh-rah",
-            "hint": "Conjunction stating cause or reason",
-            "example": "Ekiaagera — Because (Conjunction stating cause or reason)"
-          },
-          {
-            "target": "Ekero",
-            "source": "When",
-            "pronunciation": "eh-keh-roh",
-            "hint": "Temporal conjunction ('when / at the time that')",
-            "example": "Ekero — When (Temporal conjunction ('when / at the time that'))"
-          },
-          {
-            "target": "Korende",
-            "source": "But",
-            "pronunciation": "koh-rehn-deh",
-            "hint": "Adversative conjunction ('but / however')",
-            "example": "Korende — But (Adversative conjunction ('but / however'))"
-          },
-          {
-            "target": "Nki kiaagera?",
-            "source": "Why?",
-            "pronunciation": "n-kee kee-ah-ah-geh-rah",
-            "hint": "Interrogative expression ('What caused it? / Why?')",
-            "example": "Nki kiaagera? — Why? (Interrogative expression ('What caused it? / Why?'))"
-          },
-          {
-            "target": "Ng'o?",
-            "source": "Who?",
-            "pronunciation": "ng-oh",
-            "hint": "Interrogative pronoun ('Who?')",
-            "example": "Ng'o? — Who? (Interrogative pronoun ('Who?'))"
+            "target": "Eri-guru",
+            "source": "Sky",
+            "pronunciation": "eri-guru"
           }
         ],
         "sentences": [
           {
-            "target": "Omonto oyo n'omuya mono.",
-            "source": "This person is very good."
+            "target": "Rituko n'obotuko mbuya.",
+            "source": "Day and night are good."
           },
           {
-            "target": "Abana bonsi bagenda esukuru.",
-            "source": "All the children have gone to school."
-          },
-          {
-            "target": "Amache aya n'amaya okonywa.",
-            "source": "This water is good for drinking."
+            "target": "Embura nigo ekorwa igoro ase omote.",
+            "source": "Rain falls from above onto the tree."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What does \"Eee / Ee\" mean in English?",
-            "correctAnswer": "Yes",
+            "prompt": "What does \"rituko\" mean in English?",
+            "correctAnswer": "Day",
             "options": [
-              "No",
-              "I love you",
-              "Where are you going?",
-              "Yes"
+              "Night",
+              "Tree",
+              "Day",
+              "Rain"
             ],
-            "hint": "Universal affirmative particle ('Yes!')"
+            "hint": "Core vocabulary in Sky, Weather, Rivers & Landforms"
           },
           {
-            "type": "multiple_choice",
-            "prompt": "What does \"Yaya / Yaaya\" mean in English?",
-            "correctAnswer": "No",
-            "options": [
-              "I love you",
-              "Where are you going?",
-              "No",
-              "Yes"
+            "type": "translate_to_target",
+            "prompt": "Translate to the target language: \"Night\"",
+            "correctAnswer": "obotuko",
+            "acceptedAnswers": [
+              "obotuko",
+              "obotuko"
             ],
-            "hint": "Universal negative particle ('No!')"
+            "hint": "Starts with \"ob\""
           },
           {
-            "type": "multiple_choice",
-            "prompt": "What does \"Nkogokunda / Nkwanchire\" mean in English?",
-            "correctAnswer": "I love you",
-            "options": [
-              "Where are you going?",
-              "I love you",
-              "Yes",
-              "No"
+            "type": "translate_to_english",
+            "prompt": "Translate to English: \"omote\"",
+            "correctAnswer": "Tree",
+            "acceptedAnswers": [
+              "Tree",
+              "Tree"
             ],
-            "hint": "Expression of love and affection"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"I love you\" in Kisii (Ekegusii)?",
-            "correctAnswer": "Nkogokunda / Nkwanchire",
-            "options": [
-              "Nkogokunda / Nkwanchire",
-              "Eee / Ee",
-              "Yaya / Yaaya",
-              "Inka ogochia?"
-            ],
-            "hint": "n-koh-goh-koon-dah / n-kwahn-chee-reh"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Where are you going?\" in Kisii (Ekegusii)?",
-            "correctAnswer": "Inka ogochia?",
-            "options": [
-              "Eee / Ee",
-              "Yaya / Yaaya",
-              "Nkogokunda / Nkwanchire",
-              "Inka ogochia?"
-            ],
-            "hint": "een-kah oh-goh-chee-ah"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Come here\" in Kisii (Ekegusii)?",
-            "correctAnswer": "Incha aiga / Nchuo aiga",
-            "options": [
-              "Yaya / Yaaya",
-              "Nkogokunda / Nkwanchire",
-              "Incha aiga / Nchuo aiga",
-              "Eee / Ee"
-            ],
-            "hint": "een-chah ah-ee-gah / n-choo-oh ah-ee-gah"
+            "hint": "Review Sky, Weather, Rivers & Landforms"
           },
           {
             "type": "match_pairs",
-            "prompt": "Match the Kisii (Ekegusii) terms with their English meanings:",
-            "correctAnswer": "Eee / Ee: Yes, Yaya / Yaaya: No, Nkogokunda / Nkwanchire: I love you, Inka ogochia?: Where are you going?",
+            "prompt": "Match each expression from Sky, Weather, Rivers & Landforms with its English meaning:",
+            "correctAnswer": "all_matched",
             "pairs": [
               {
-                "left": "Eee / Ee",
-                "right": "Yes"
+                "left": "rituko",
+                "right": "Day"
               },
               {
-                "left": "Yaya / Yaaya",
-                "right": "No"
+                "left": "obotuko",
+                "right": "Night"
               },
               {
-                "left": "Nkogokunda / Nkwanchire",
-                "right": "I love you"
+                "left": "omote",
+                "right": "Tree"
               },
               {
-                "left": "Inka ogochia?",
-                "right": "Where are you going?"
+                "left": "embura",
+                "right": "Rain"
+              },
+              {
+                "left": "omorero",
+                "right": "Fire"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kisii-nature-wildlife-wildlife-flora-6",
+        "title": "East African Fauna, Birds & Sacred Trees",
+        "icon": "PawPrint",
+        "description": "Identify indigenous mammals, birds, insects, and botanical species recorded in the primary texts.",
+        "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1902 Kossova Vocabulary) & Sir Harry Johnston (1902 Igizii & 1919 Sub-group A6 Ki-Guzii / Ki-Koria). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "culturalNote": "Primary historical documentation for Kisii (Ekegusii) (Ekegusii) in C. W. Hobley (1902 Kossova Vocabulary) & Sir Harry Johnston (1902 Igizii & 1919 Sub-group A6 Ki-Guzii / Ki-Koria) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kisii, Nyamira.",
+        "words": [
+          {
+            "target": "ense",
+            "source": "Earth / world",
+            "pronunciation": "ense",
+            "hint": "Wikipedia Gusii language — Sample phrases"
+          },
+          {
+            "target": "risase",
+            "source": "Sun",
+            "pronunciation": "ri-sa-se",
+            "hint": "Wikipedia Gusii language — Sample phrases"
+          },
+          {
+            "target": "omobaso",
+            "source": "Daytime",
+            "pronunciation": "o-mo-ba-so",
+            "hint": "Wikipedia Gusii language — Sample phrases"
+          },
+          {
+            "target": "enyancha",
+            "source": "Lake / sea",
+            "pronunciation": "enyancha",
+            "hint": "Wikipedia Gusii language — Sample phrases"
+          },
+          {
+            "target": "eroro",
+            "source": "Desert / wilderness",
+            "pronunciation": "e-ro-ro",
+            "hint": "Wikipedia Gusii language — Sample phrases"
+          },
+          {
+            "target": "Omororro",
+            "source": "fire (Class 3)",
+            "pronunciation": "o-mo-rorro",
+            "hint": "Ekegusii"
+          },
+          {
+            "target": "enchogu",
+            "source": "Elephant",
+            "pronunciation": "en-cho-gu"
+          },
+          {
+            "target": "iriuba",
+            "source": "Sky",
+            "pronunciation": "i-riu-ba"
+          },
+          {
+            "target": "engo",
+            "source": "Leopard",
+            "pronunciation": "en-go"
+          },
+          {
+            "target": "Em-beho",
+            "source": "Wind",
+            "pronunciation": "em-beho"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Risase nigo rikorika ase ense.",
+            "source": "The sun shines upon the earth."
+          },
+          {
+            "target": "Enyancha nene ere ange n'eroro.",
+            "source": "A great lake is near the wilderness."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"ense\" mean in English?",
+            "correctAnswer": "Earth",
+            "options": [
+              "Sun",
+              "Lake",
+              "Earth",
+              "Desert"
+            ],
+            "hint": "Core vocabulary in East African Fauna, Birds & Sacred Trees",
+            "acceptedAnswers": [
+              "Earth / world",
+              "Earth"
+            ]
+          },
+          {
+            "type": "translate_to_target",
+            "prompt": "Translate to the target language: \"Sun / daytime\"",
+            "correctAnswer": "risase",
+            "acceptedAnswers": [
+              "risase / omobaso",
+              "risase"
+            ],
+            "hint": "Starts with \"ri\""
+          },
+          {
+            "type": "translate_to_english",
+            "prompt": "Translate to English: \"enyancha\"",
+            "correctAnswer": "Lake",
+            "acceptedAnswers": [
+              "Lake / sea",
+              "Lake"
+            ],
+            "hint": "Review East African Fauna, Birds & Sacred Trees"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each expression from East African Fauna, Birds & Sacred Trees with its English meaning:",
+            "correctAnswer": "all_matched",
+            "pairs": [
+              {
+                "left": "ense",
+                "right": "Earth"
+              },
+              {
+                "left": "risase",
+                "right": "Sun"
+              },
+              {
+                "left": "enyancha",
+                "right": "Lake"
+              },
+              {
+                "left": "eroro",
+                "right": "Desert"
+              },
+              {
+                "left": "Omororro",
+                "right": "fire"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kisii-unit-7",
+    "unitNumber": 7,
+    "title": "The Human Body, Health, Medicine & Safety",
+    "description": "Master the human body, health, medicine & safety in Kisii (Ekegusii) built directly from C. W. Hobley (1902), G. A. S. Northcote (1907), and Sir Harry H. Johnston (1919, 1922).",
+    "icon": "User",
+    "color": "#D97706",
+    "skills": [
+      {
+        "id": "kisii-body-health-anatomy-senses-7",
+        "title": "Parts of the Body & Physical Senses",
+        "icon": "Activity",
+        "description": "Name anatomical terms, senses, and bodily states from comparative lexical tables.",
+        "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1902 Kossova Vocabulary) & Sir Harry Johnston (1902 Igizii & 1919 Sub-group A6 Ki-Guzii / Ki-Koria). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "culturalNote": "Primary historical documentation for Kisii (Ekegusii) (Ekegusii) in C. W. Hobley (1902 Kossova Vocabulary) & Sir Harry Johnston (1902 Igizii & 1919 Sub-group A6 Ki-Guzii / Ki-Koria) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kisii, Nyamira.",
+        "words": [
+          {
+            "target": "okogoro (pl. amagoro)",
+            "source": "Foot",
+            "pronunciation": "o-ko-go-ro",
+            "hint": "Hobley 1902 p. 64 & Johnston 1919 #7"
+          },
+          {
+            "target": "okoboko (pl. amaboko)",
+            "source": "Hand",
+            "pronunciation": "o-ko-bo-ko",
+            "hint": "Hobley 1902 p. 64 & Johnston 1919 #7"
+          },
+          {
+            "target": "riiso (pl. amaiso)",
+            "source": "Eye",
+            "pronunciation": "rii-so",
+            "hint": "Hobley 1902 p. 63 & Johnston 1919 #7"
+          },
+          {
+            "target": "omotwe (pl. emetwe)",
+            "source": "Head (Class 3/4: omo-/eme-)",
+            "pronunciation": "o-motwe",
+            "hint": "Wikipedia Gusii language — Noun classes"
+          },
+          {
+            "target": "ogoto",
+            "source": "Ear",
+            "pronunciation": "o-go-to",
+            "hint": "Wikipedia Gusii language — Sample phrases"
+          },
+          {
+            "target": "riino (pl. amaino)",
+            "source": "Tooth",
+            "pronunciation": "rii-no"
+          },
+          {
+            "target": "oromeme (pl. chimeme)",
+            "source": "Tongue",
+            "pronunciation": "o-ro-me-me"
+          },
+          {
+            "target": "emioro",
+            "source": "Nose",
+            "pronunciation": "e-mio-ro"
+          },
+          {
+            "target": "omonwa",
+            "source": "Mouth",
+            "pronunciation": "o-mo-nwa"
+          },
+          {
+            "target": "enkoro",
+            "source": "Heart",
+            "pronunciation": "en-ko-ro"
+          },
+          {
+            "target": "omokono / okoboko",
+            "source": "Arm",
+            "pronunciation": "o-mo-ko-no / o-ko-bo-ko"
+          },
+          {
+            "target": "omogongo",
+            "source": "Back",
+            "pronunciation": "o-mo-go-ngo"
+          },
+          {
+            "target": "enda (pl. chinda)",
+            "source": "Belly / Stomach",
+            "pronunciation": "en-da"
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"okogoro (pl. amagoro)\" in Kisii (Ekegusii)?",
+            "correctAnswer": "Foot",
+            "options": [
+              "Hand",
+              "Eye",
+              "Head",
+              "Foot"
+            ],
+            "hint": "Hobley 1902 p. 64 & Johnston 1919 #7"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each verified Kisii (Ekegusii) term to its English meaning:",
+            "correctAnswer": "okogoro (pl. amagoro): Foot",
+            "pairs": [
+              {
+                "left": "okogoro (pl. amagoro)",
+                "right": "Foot"
+              },
+              {
+                "left": "okoboko (pl. amaboko)",
+                "right": "Hand"
+              },
+              {
+                "left": "riiso (pl. amaiso)",
+                "right": "Eye"
+              },
+              {
+                "left": "omotwe (pl. emetwe)",
+                "right": "Head (Class 3/4: omo-/eme-)"
               }
             ]
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete: \"_____\" means \"Yes\" in Kisii (Ekegusii).",
-            "correctAnswer": "Eee / Ee",
+            "prompt": "Complete the Kisii (Ekegusii) term for \"Ear\": ___",
+            "correctAnswer": "ogoto",
             "options": [
-              "Eee / Ee",
-              "Yaya / Yaaya",
-              "Nkogokunda / Nkwanchire",
-              "Inka ogochia?"
+              "okogoro",
+              "okoboko",
+              "ogoto",
+              "riiso"
             ],
-            "hint": "eh-eh"
+            "hint": "Wikipedia Gusii language — Sample phrases"
           }
         ]
+      },
+      {
+        "id": "kisii-body-health-healing-safety-7",
+        "title": "Health, Traditional Medicine & Emergency Terms",
+        "icon": "Hospital",
+        "description": "Master expressions for illness, healing remedies, protection, and safety.",
+        "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1902 Kossova Vocabulary) & Sir Harry Johnston (1902 Igizii & 1919 Sub-group A6 Ki-Guzii / Ki-Koria). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "culturalNote": "Primary historical documentation for Kisii (Ekegusii) (Ekegusii) in C. W. Hobley (1902 Kossova Vocabulary) & Sir Harry Johnston (1902 Igizii & 1919 Sub-group A6 Ki-Guzii / Ki-Koria) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kisii, Nyamira.",
+        "words": [
+          {
+            "target": "amanyinga",
+            "source": "Blood",
+            "pronunciation": "a-ma-nyi-nga"
+          },
+          {
+            "target": "egekuba (pl. ebikuba)",
+            "source": "Chest",
+            "pronunciation": "e-ge-ku-ba"
+          },
+          {
+            "target": "ribere (pl. amabere)",
+            "source": "Breast",
+            "pronunciation": "ri-be-re"
+          },
+          {
+            "target": "ekiara (pl. ebiara)",
+            "source": "Finger",
+            "pronunciation": "e-kia-ra"
+          },
+          {
+            "target": "etukia (pl. chitukia)",
+            "source": "Hair",
+            "pronunciation": "e-tu-kia"
+          },
+          {
+            "target": "omotwe (pl. emetwe)",
+            "source": "Head",
+            "pronunciation": "o-mo-twe"
+          },
+          {
+            "target": "enteme / enkoro",
+            "source": "Heart",
+            "pronunciation": "en-te-me / en-ko-ro"
+          },
+          {
+            "target": "egetingiro",
+            "source": "Heel",
+            "pronunciation": "e-ge-ti-ngi-ro"
+          },
+          {
+            "target": "eriru (pl. amaru)",
+            "source": "Knee",
+            "pronunciation": "e-ri-ru"
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"amanyinga\" in Kisii (Ekegusii)?",
+            "correctAnswer": "Blood",
+            "options": [
+              "Chest",
+              "Finger",
+              "Hair",
+              "Blood"
+            ]
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each verified Kisii (Ekegusii) term to its English meaning:",
+            "correctAnswer": "amanyinga: Blood",
+            "pairs": [
+              {
+                "left": "amanyinga",
+                "right": "Blood"
+              },
+              {
+                "left": "egekuba (pl. ebikuba)",
+                "right": "Chest"
+              },
+              {
+                "left": "ribere (pl. amabere)",
+                "right": "Breast"
+              },
+              {
+                "left": "ekiara (pl. ebiara)",
+                "right": "Finger"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Kisii (Ekegusii) term for \"Hair\": ___",
+            "correctAnswer": "etukia",
+            "options": [
+              "amanyinga",
+              "etukia",
+              "egekuba",
+              "ribere"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kisii-unit-8",
+    "unitNumber": 8,
+    "title": "Core Verbs, Tenses, Negation & Verbal Extensions",
+    "description": "Master core verbs, tenses, negation & verbal extensions in Kisii (Ekegusii) built directly from C. W. Hobley (1902), G. A. S. Northcote (1907), and Sir Harry H. Johnston (1919, 1922).",
+    "icon": "BookOpen",
+    "color": "#D97706",
+    "skills": [
+      {
+        "id": "kisii-verbs-grammar-action-verbs-8",
+        "title": "Essential Action & Motion Verbs",
+        "icon": "Zap",
+        "description": "Conjugate high-frequency transitive and intransitive verbs of motion, speech, and work.",
+        "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1902 Kossova Vocabulary) & Sir Harry Johnston (1902 Igizii & 1919 Sub-group A6 Ki-Guzii / Ki-Koria). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "culturalNote": "Primary historical documentation for Kisii (Ekegusii) (Ekegusii) in C. W. Hobley (1902 Kossova Vocabulary) & Sir Harry Johnston (1902 Igizii & 1919 Sub-group A6 Ki-Guzii / Ki-Koria) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kisii, Nyamira.",
+        "words": [
+          {
+            "target": "ogokwana (-kwana) / okoboora",
+            "source": "Speak",
+            "pronunciation": "o-gokwa-na / o-ko-boo-ra",
+            "hint": "Hobley 1902 & Johnston 1919 #7"
+          },
+          {
+            "target": "okorara (-rara)",
+            "source": "Sleep",
+            "pronunciation": "o-ko-ra-ra",
+            "hint": "Hobley 1902 & Johnston 1919 #7"
+          },
+          {
+            "target": "ogocha (inchwo! = come!)",
+            "source": "Come",
+            "pronunciation": "o-gocha",
+            "hint": "Hobley 1902 & Johnston 1919 #7"
+          },
+          {
+            "target": "okogenda (-genda)",
+            "source": "Go",
+            "pronunciation": "o-ko-genda",
+            "hint": "Hobley 1902 & Johnston 1919 #7"
+          },
+          {
+            "target": "okonywa (-nywa)",
+            "source": "Drink",
+            "pronunciation": "o-konywa",
+            "hint": "Hobley 1902 & Johnston 1919 #7"
+          },
+          {
+            "target": "okoria (-ria)",
+            "source": "Eat",
+            "pronunciation": "o-ko-ria",
+            "hint": "Hobley 1902 & Johnston 1919 #7"
+          },
+          {
+            "target": "bóra (to miss) vs. bóóra (to say)",
+            "source": "To miss (short vowel) vs. To say/tell (long vowel)",
+            "pronunciation": "bo-ra vs boo-ra",
+            "hint": "Wikipedia Gusii language — Contrastive vowel length"
+          },
+          {
+            "target": "komanya (-manya)",
+            "source": "To know",
+            "pronunciation": "ko-manya",
+            "hint": "Wikipedia Gusii language — Sample phrases"
+          },
+          {
+            "target": "gokama (-kama)",
+            "source": "To milk",
+            "pronunciation": "go-ka-ma",
+            "hint": "Wikipedia Gusii language — Sample phrases"
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"ogokwana (-kwana) / okoboora\" in Kisii?",
+            "correctAnswer": "Speak",
+            "options": [
+              "Speak",
+              "Sleep",
+              "Come",
+              "Go"
+            ],
+            "hint": "Hobley 1902 & Johnston 1919 #7"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"okorara (-rara)\" in Kisii?",
+            "correctAnswer": "Sleep",
+            "options": [
+              "Come",
+              "Go",
+              "Speak",
+              "Sleep"
+            ],
+            "hint": "Hobley 1902 & Johnston 1919 #7"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"ogocha\" in Kisii?",
+            "correctAnswer": "Come",
+            "options": [
+              "Go",
+              "Come",
+              "Speak",
+              "Sleep"
+            ],
+            "hint": "Hobley 1902 & Johnston 1919 #7"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Come\" in Kisii?",
+            "correctAnswer": "ogocha",
+            "options": [
+              "ogokwana",
+              "ogocha",
+              "okorara",
+              "okogenda"
+            ],
+            "hint": "oh-goh-chah / een-chwoh",
+            "acceptedAnswers": [
+              "ogocha (inchwo! = come!)",
+              "ogocha"
+            ]
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Go\" in Kisii?",
+            "correctAnswer": "okogenda",
+            "options": [
+              "ogokwana",
+              "okogenda",
+              "okorara",
+              "ogocha"
+            ],
+            "hint": "oh-koh-gehn-dah",
+            "acceptedAnswers": [
+              "okogenda (-genda)",
+              "okogenda"
+            ]
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each Kisii expression with its English meaning:",
+            "correctAnswer": "ogokwana (-kwana) / okoboora: Speak",
+            "pairs": [
+              {
+                "left": "ogokwana (-kwana) / okoboora",
+                "right": "Speak"
+              },
+              {
+                "left": "okorara (-rara)",
+                "right": "Sleep"
+              },
+              {
+                "left": "ogocha (inchwo! = come!)",
+                "right": "Come"
+              },
+              {
+                "left": "okogenda (-genda)",
+                "right": "Go"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Kisii term for \"Drink\": ___",
+            "correctAnswer": "okonywa",
+            "options": [
+              "ogokwana",
+              "okorara",
+              "ogocha",
+              "okonywa"
+            ],
+            "hint": "Hobley 1902 & Johnston 1919 #7",
+            "acceptedAnswers": [
+              "okonywa (-nywa)",
+              "okonywa"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kisii-verbs-grammar-verbal-derivatives-8",
+        "title": "Applied, Causative, Reciprocal & Stative Verbs",
+        "icon": "RefreshCw",
+        "description": "Build complex meanings using verbal extensions and grammatical particles.",
+        "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1902 Kossova Vocabulary) & Sir Harry Johnston (1902 Igizii & 1919 Sub-group A6 Ki-Guzii / Ki-Koria). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "culturalNote": "Primary historical documentation for Kisii (Ekegusii) (Ekegusii) in C. W. Hobley (1902 Kossova Vocabulary) & Sir Harry Johnston (1902 Igizii & 1919 Sub-group A6 Ki-Guzii / Ki-Koria) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kisii, Nyamira.",
+        "words": [
+          {
+            "target": "komenya (menya)",
+            "source": "To dwell / live",
+            "pronunciation": "ko-menya",
+            "hint": "Wikipedia Gusii language — Sample phrases"
+          },
+          {
+            "target": "gotenena (-tenena)",
+            "source": "To stand",
+            "pronunciation": "go-te-ne-na",
+            "hint": "Wikipedia Gusii language — Sample phrases"
+          },
+          {
+            "target": "korora (-rora)",
+            "source": "To see",
+            "pronunciation": "ko-ro-ra",
+            "hint": "Wikipedia Gusii language — Sample phrases"
+          },
+          {
+            "target": "-garagara",
+            "source": "To roll over",
+            "pronunciation": "ga-ra-ga-ra",
+            "hint": "Wikipedia Gusii language — Sample phrases"
+          },
+          {
+            "target": "gesa",
+            "source": "To harvest",
+            "pronunciation": "ge-sa",
+            "hint": "Wikipedia Gusii language — Sample phrases"
+          },
+          {
+            "target": "rigesa",
+            "source": "Harvest season",
+            "pronunciation": "ri-ge-sa",
+            "hint": "Wikipedia Gusii language — Sample phrases"
+          },
+          {
+            "target": "rera",
+            "source": "To cry",
+            "pronunciation": "re-ra",
+            "hint": "Wikipedia Gusii language — Sample phrases"
+          },
+          {
+            "target": "tara",
+            "source": "To walk",
+            "pronunciation": "ta-ra",
+            "hint": "Wikipedia Gusii language — Sample phrases"
+          },
+          {
+            "target": "rigereria",
+            "source": "To look / observe",
+            "pronunciation": "ri-ge-re-ria",
+            "hint": "Wikipedia Gusii language — Sample phrases"
+          },
+          {
+            "target": "okoria",
+            "source": "to eat",
+            "pronunciation": "o-ko-ria",
+            "hint": "Ekegusii"
+          },
+          {
+            "target": "okonywa",
+            "source": "to drink (Class 15 infinitives)",
+            "pronunciation": "o-konywa",
+            "hint": "Ekegusii"
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"komenya\" in Kisii?",
+            "correctAnswer": "To dwell",
+            "options": [
+              "To stand",
+              "To see",
+              "To dwell",
+              "To roll over"
+            ],
+            "hint": "Wikipedia Gusii language — Sample phrases",
+            "acceptedAnswers": [
+              "To dwell / live",
+              "To dwell"
+            ]
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"gotenena (-tenena)\" in Kisii?",
+            "correctAnswer": "To stand",
+            "options": [
+              "To see",
+              "To stand",
+              "To roll over",
+              "To dwell"
+            ],
+            "hint": "Wikipedia Gusii language — Sample phrases"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"korora (-rora)\" in Kisii?",
+            "correctAnswer": "To see",
+            "options": [
+              "To roll over",
+              "To dwell",
+              "To stand",
+              "To see"
+            ],
+            "hint": "Wikipedia Gusii language — Sample phrases"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"To see\" in Kisii?",
+            "correctAnswer": "korora",
+            "options": [
+              "komenya",
+              "gotenena",
+              "-garagara",
+              "korora"
+            ],
+            "hint": "Starts with \"ko…\" (6 letters)",
+            "acceptedAnswers": [
+              "korora (-rora)",
+              "korora"
+            ]
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"To roll over\" in Kisii?",
+            "correctAnswer": "-garagara",
+            "options": [
+              "-garagara",
+              "komenya",
+              "gotenena",
+              "korora"
+            ],
+            "hint": "Starts with \"-g…\" (9 letters)"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each Kisii expression with its English meaning:",
+            "correctAnswer": "komenya (menya): To dwell / live",
+            "pairs": [
+              {
+                "left": "komenya (menya)",
+                "right": "To dwell / live"
+              },
+              {
+                "left": "gotenena (-tenena)",
+                "right": "To stand"
+              },
+              {
+                "left": "korora (-rora)",
+                "right": "To see"
+              },
+              {
+                "left": "-garagara",
+                "right": "To roll over"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Kisii term for \"To harvest\": ___",
+            "correctAnswer": "gesa",
+            "options": [
+              "komenya",
+              "gesa",
+              "gotenena",
+              "korora"
+            ],
+            "hint": "Starts with \"ge…\" (4 letters)",
+            "acceptedAnswers": [
+              "gesa (verb) / rigesa (noun)",
+              "gesa"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kisii-unit-9",
+    "unitNumber": 9,
+    "title": "Archival Monograph & Comparative Lexicon",
+    "description": "Master newly extracted Kisii (Ekegusii) vocabulary, dialect forms, and grammatical roots from the historical public-domain monographs and comparative tables.",
+    "icon": "ScrollText",
+    "color": "#D97706",
+    "skills": [
+      {
+        "id": "kisii-pd-corpus-9-1",
+        "title": "Classical Roots & Naming Traditions",
+        "icon": "Baby",
+        "description": "Study verified Kisii (Ekegusii) headwords and dialect forms extracted from primary public-domain monographs.",
+        "tips": "Every item in this skill is grounded directly in the historical Kisii (Ekegusii) linguistic corpus with full phonetic pronunciation guides.",
+        "words": [
+          {
+            "target": "Ngotenga",
+            "source": "I dance",
+            "pronunciation": "ngo-tenga",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
+          },
+          {
+            "target": "Nangire",
+            "source": "I come not",
+            "pronunciation": "nangi-re",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
+          },
+          {
+            "target": "Ngoja",
+            "source": "I come",
+            "pronunciation": "ngo-ja",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
+          },
+          {
+            "target": "Narēnta",
+            "source": "I bring",
+            "pronunciation": "na-renta",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
+          },
+          {
+            "target": "Inje ndu",
+            "source": "I am",
+            "pronunciation": "inje ndu",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
+          },
+          {
+            "target": "Yaya",
+            "source": "No, not",
+            "pronunciation": "ya-ya",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
+          },
+          {
+            "target": "Ariá",
+            "source": "There",
+            "pronunciation": "a-ria",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
+          },
+          {
+            "target": "ñgi",
+            "source": "Plenty",
+            "pronunciation": "nggi",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Inje ndu",
+            "source": "I am."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"Ngotenga\" in Kisii?",
+            "correctAnswer": "I dance",
+            "options": [
+              "I come not",
+              "I come",
+              "I dance",
+              "I bring"
+            ],
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each verified Kisii (Ekegusii) term from the public-domain corpus to its English meaning:",
+            "correctAnswer": "Ngotenga: I dance",
+            "pairs": [
+              {
+                "left": "Ngotenga",
+                "right": "I dance"
+              },
+              {
+                "left": "Nangire",
+                "right": "I come not"
+              },
+              {
+                "left": "Ngoja",
+                "right": "I come"
+              },
+              {
+                "left": "Narēnta",
+                "right": "I bring"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Kisii (Ekegusii) term for \"I am\": ___",
+            "correctAnswer": "Inje ndu",
+            "options": [
+              "Yaya",
+              "Ngotenga",
+              "Inje ndu",
+              "Nangire"
+            ],
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
+          }
+        ]
+      },
+      {
+        "id": "kisii-pd-corpus-9-2",
+        "title": "Homestead, Nature & Everyday Expressions",
+        "icon": "Users",
+        "description": "Expand your command of Kisii (Ekegusii) ecological, kinship, and action vocabulary from the archival corpus.",
+        "tips": "Compare classical 19th- and early 20th-century Kisii (Ekegusii) transcriptions with modern standardized orthography.",
+        "words": [
+          {
+            "target": "Emuamu",
+            "source": "Black",
+            "pronunciation": "e-mua-mu",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
+          },
+          {
+            "target": "Aīya, Aiga",
+            "source": "Here",
+            "pronunciation": "ai-ya ai-ga",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
+          },
+          {
+            "target": "Endabu",
+            "source": "White",
+            "pronunciation": "enda-bu",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
+          },
+          {
+            "target": "saja, -gore",
+            "source": "Male",
+            "pronunciation": "sa-ja go-re",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
+          },
+          {
+            "target": "kĕ",
+            "source": "Little",
+            "pronunciation": "ke",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
+          },
+          {
+            "target": "kuru",
+            "source": "Great",
+            "pronunciation": "ku-ru",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
+          },
+          {
+            "target": "uya / -ya (abanto baya)",
+            "source": "Good (e.g., good people)",
+            "pronunciation": "u-ya / ya"
+          },
+          {
+            "target": "Enkari, -kari",
+            "source": "Female",
+            "pronunciation": "enka-ri ka-ri",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"Emuamu\" in Kisii?",
+            "correctAnswer": "Black",
+            "options": [
+              "Here",
+              "White",
+              "Black",
+              "Male"
+            ],
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each verified Kisii (Ekegusii) term from the public-domain corpus to its English meaning:",
+            "correctAnswer": "Emuamu: Black",
+            "pairs": [
+              {
+                "left": "Emuamu",
+                "right": "Black"
+              },
+              {
+                "left": "Aīya, Aiga",
+                "right": "Here"
+              },
+              {
+                "left": "Endabu",
+                "right": "White"
+              },
+              {
+                "left": "saja, -gore",
+                "right": "Male"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Kisii (Ekegusii) term for \"Little\": ___",
+            "correctAnswer": "kĕ",
+            "options": [
+              "kuru",
+              "Emuamu",
+              "kĕ",
+              "Aīya"
+            ],
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kisii-unit-10",
+    "unitNumber": 10,
+    "title": "Core Swadesh & Everyday Community Vocabulary",
+    "description": "Master Kisii (Ekegusii) vocabulary and expressions from open-licensed datasets alongside deep archival lexicon.",
+    "icon": "Landmark",
+    "color": "#D97706",
+    "skills": [
+      {
+        "id": "kisii-open-dataset-10-1",
+        "title": "Core Swadesh & Cultural Vocabulary",
+        "icon": "TreePine",
+        "description": "Learn core Kisii (Ekegusii) verbs, nouns, and cultural terms integrated from open-web linguistic datasets.",
+        "tips": "Focus on high-frequency roots shared across Kisii (Ekegusii) dialects and everyday speech.",
+        "words": [
+          {
+            "target": "bi",
+            "source": "Bad",
+            "pronunciation": "bi",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
+          },
+          {
+            "target": "Abana babo",
+            "source": "Their children",
+            "pronunciation": "a-ba-na ba-bo",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
+          },
+          {
+            "target": "Riroba rienu",
+            "source": "Your country",
+            "pronunciation": "ri-ro-ba rie-nu",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
+          },
+          {
+            "target": "Omuji uitu",
+            "source": "Our town",
+            "pronunciation": "o-mu-ji ui-tu",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
+          },
+          {
+            "target": "yake (-ake)",
+            "source": "His / Her (possessive)",
+            "pronunciation": "ya-ke",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
+          },
+          {
+            "target": "yāo (-ao)",
+            "source": "Your (singular possessive)",
+            "pronunciation": "yao",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
+          },
+          {
+            "target": "Enyumba yane",
+            "source": "My house",
+            "pronunciation": "enyumba ya-ne",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
+          },
+          {
+            "target": "ulia",
+            "source": "That (yonder, Class 3)",
+            "pronunciation": "u-lia",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Abana babo",
+            "source": "Their children."
+          },
+          {
+            "target": "Riroba rienu",
+            "source": "Your country."
+          },
+          {
+            "target": "Omuji uitu",
+            "source": "Our town."
+          },
+          {
+            "target": "Enyumba yane",
+            "source": "My house."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"bi\" in Kisii (Ekegusii)?",
+            "correctAnswer": "Bad",
+            "options": [
+              "Their children",
+              "Your country",
+              "Our town",
+              "Bad"
+            ],
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each verified Kisii (Ekegusii) term to its English meaning:",
+            "correctAnswer": "bi: Bad",
+            "pairs": [
+              {
+                "left": "bi",
+                "right": "Bad"
+              },
+              {
+                "left": "Abana babo",
+                "right": "Their children"
+              },
+              {
+                "left": "Riroba rienu",
+                "right": "Your country"
+              },
+              {
+                "left": "Omuji uitu",
+                "right": "Our town"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Kisii (Ekegusii) term for \"His / Her (possessive)\": ___",
+            "correctAnswer": "yake",
+            "options": [
+              "yake",
+              "bi",
+              "Abana babo",
+              "Riroba rienu"
+            ],
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)",
+            "acceptedAnswers": [
+              "yake (-ake)",
+              "yake"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kisii-open-dataset-10-2",
+        "title": "Agriculture, Community & Everyday Life",
+        "icon": "Leaf",
+        "description": "Practice Kisii (Ekegusii) terms for agriculture, environment, social organization, and daily communication.",
+        "tips": "Review how traditional Kisii (Ekegusii) roots extend naturally to modern community, farming, and civic contexts.",
+        "words": [
+          {
+            "target": "Umute uyu",
+            "source": "This tree",
+            "pronunciation": "u-mu-te uyu",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
+          },
+          {
+            "target": "uuria",
+            "source": "That person (yonder, Class 1)",
+            "pronunciation": "uu-ria",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
+          },
+          {
+            "target": "Omuntu oyu",
+            "source": "This man",
+            "pronunciation": "o-muntu oyu",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
+          },
+          {
+            "target": "onsi (bonsi, etc.)",
+            "source": "All",
+            "pronunciation": "onsi",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
+          },
+          {
+            "target": "Abo",
+            "source": "They",
+            "pronunciation": "abo",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
+          },
+          {
+            "target": "Inyue",
+            "source": "You",
+            "pronunciation": "inyue",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
+          },
+          {
+            "target": "Iewi",
+            "source": "We",
+            "pronunciation": "ie-wi",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
+          },
+          {
+            "target": "Olia",
+            "source": "He",
+            "pronunciation": "o-lia",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Umute uyu",
+            "source": "This tree."
+          },
+          {
+            "target": "Omuntu oyu",
+            "source": "This man."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"Umute uyu\" in Kisii (Ekegusii)?",
+            "correctAnswer": "This tree",
+            "options": [
+              "This tree",
+              "That person",
+              "This man",
+              "All"
+            ],
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each verified Kisii (Ekegusii) term to its English meaning:",
+            "correctAnswer": "Umute uyu: This tree",
+            "pairs": [
+              {
+                "left": "Umute uyu",
+                "right": "This tree"
+              },
+              {
+                "left": "uuria",
+                "right": "That person (yonder, Class 1)"
+              },
+              {
+                "left": "Omuntu oyu",
+                "right": "This man"
+              },
+              {
+                "left": "onsi (bonsi, etc.)",
+                "right": "All"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Kisii (Ekegusii) term for \"They\": ___",
+            "correctAnswer": "Abo",
+            "options": [
+              "Umute uyu",
+              "Abo",
+              "uuria",
+              "Omuntu oyu"
+            ],
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kisii-unit-11",
+    "unitNumber": 11,
+    "title": "Set 9 Igizii (Ekegusii) & Lusinga",
+    "description": "Master all Igizii (Ekegusii) and Lusinga (Rusinga Island) vocabulary, numerals 1–1,000, pronouns, and verbal sentences from Set 9 of Sir Harry Johnston's The Uganda Protectorate, Vol. II (1902, pp. 993–1001).",
+    "icon": "BookOpen",
+    "color": "#D97706",
+    "skills": [
+      {
+        "id": "kisii-johnston-1902-set9-skill",
+        "title": "Set 9 Igizii & Lusinga Lexicon, Numerals & Verbal Sentences",
+        "icon": "Sparkles",
+        "description": "Practice verified Igizii (Ekegusii) headwords, pronouns, and sentences from pp. 993–1001 of Johnston (1902).",
+        "tips": "In Johnston's Set 9 table (1902, pp. 993–1001), Igizii preserves the 7-vowel root system and Class 5 Eri- / Class 6 Ama- concords: Erioba (sun/God), Erino → Amaino (tooth → teeth), Eritimo → Amatimo (spear → spears), Riroba rienu (your country).",
+        "words": [
+          {
+            "target": "Omundu (pl. Abanto)",
+            "source": "Man/Person (pl. People)",
+            "pronunciation": "omundu"
+          },
+          {
+            "target": "Omukari (pl. Abakari)",
+            "source": "Woman (pl. Women)",
+            "pronunciation": "omukari"
+          },
+          {
+            "target": "Engoro",
+            "source": "God",
+            "pronunciation": "engoro"
+          },
+          {
+            "target": "Erioba",
+            "source": "Sun",
+            "pronunciation": "e-rio-ba"
+          },
+          {
+            "target": "Amace",
+            "source": "Water",
+            "pronunciation": "amace"
+          },
+          {
+            "target": "Omurero",
+            "source": "Fire",
+            "pronunciation": "omurero"
+          },
+          {
+            "target": "Eritimo (pl. Amatimo)",
+            "source": "Spear (pl. Spears)",
+            "pronunciation": "eritimo"
+          },
+          {
+            "target": "Enguba",
+            "source": "Shield",
+            "pronunciation": "enguba"
+          },
+          {
+            "target": "Obuta",
+            "source": "Bow",
+            "pronunciation": "obuta"
+          },
+          {
+            "target": "Omugwe (pl. Emigwe)",
+            "source": "Arrow (pl. Arrows)",
+            "pronunciation": "omugwe"
+          },
+          {
+            "target": "Ekisiri / Ekenabo",
+            "source": "Axe",
+            "pronunciation": "ekisiri"
+          },
+          {
+            "target": "Obuatō",
+            "source": "Canoe",
+            "pronunciation": "obuatō"
+          },
+          {
+            "target": "Ngotenga",
+            "source": "I dance",
+            "pronunciation": "ngotenga"
+          },
+          {
+            "target": "Nangire",
+            "source": "I come not",
+            "pronunciation": "nangire"
+          },
+          {
+            "target": "Emuamu",
+            "source": "Black",
+            "pronunciation": "emuamu"
+          },
+          {
+            "target": "Aīya, Aiga",
+            "source": "Here",
+            "pronunciation": "aīya"
+          },
+          {
+            "target": "Omuji uitu",
+            "source": "Our town",
+            "pronunciation": "omuji-uitu"
+          },
+          {
+            "target": "Riroba rienu",
+            "source": "Your country",
+            "pronunciation": "riroba-rienu"
+          },
+          {
+            "target": "Abana babo",
+            "source": "Their children",
+            "pronunciation": "abana-babo"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Omuntu oyu — Umute uyu — Omuji uitu — Riroba rienu — Abana babo.",
+            "source": "This man — This tree — Our town — Your country — Their children."
+          }
+        ]
+      },
+      {
+        "id": "kisii-open-datasets-ddd",
+        "title": "Mobile Banking, Highland Farming & Daily Life",
+        "icon": "Database",
+        "description": "Practice modern Ekegusii expressions for mobile banking, agriculture, and community life from Digital Divide Data's DDD-Kenya-Gusii-Intent (61.6k rows, CC-BY-4.0).",
+        "culturalNote": "Digital Divide Data (DDD) Kenya's open Ekegusii datasets document contemporary spoken and written Ekegusii across Kisii and Nyamira counties, covering mobile money (chibesa ase esimu), highland tea and maize farming, and healthcare.",
+        "grammarTip": "In Ekegusii, class 10 plural nouns with prefix chi- (such as chibesa 'money' and chinchoke 'bees') govern concord prefix chi- on demonstratives and possessives.",
+        "words": [
+          {
+            "target": "Chibesa",
+            "source": "Money / Funds",
+            "pronunciation": "chee-beh-sah"
+          },
+          {
+            "target": "Esimu yane",
+            "source": "My mobile phone",
+            "pronunciation": "eh-see-moo yah-neh"
+          },
+          {
+            "target": "Okorwa chibesa",
+            "source": "To withdraw money",
+            "pronunciation": "oh-koh-rwah chee-beh-sah"
+          },
+          {
+            "target": "Ogotoma chibesa",
+            "source": "To send money",
+            "pronunciation": "oh-goh-toh-mah chee-beh-sah"
+          },
+          {
+            "target": "Endagera engiya",
+            "source": "Good nutrition / feed",
+            "pronunciation": "eh-ndah-geh-rah eh-ngee-yah"
+          },
+          {
+            "target": "Ebimera",
+            "source": "Crops / Plants",
+            "pronunciation": "eh-bee-meh-rah"
+          },
+          {
+            "target": "Ekenyoro",
+            "source": "Highland village / community",
+            "pronunciation": "eh-keh-nyoh-roh"
+          },
+          {
+            "target": "Enchoke (pl. Chinchoke)",
+            "source": "Honeybee",
+            "pronunciation": "ehn-choh-keh"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Ning'ana nigo ntachie korwa chibesa ase esimu yane?",
+            "source": "How do I withdraw money using my mobile phone?"
+          },
+          {
+            "target": "Endagera engiya y'enchoke amo n'ebimera ase ekenyoro.",
+            "source": "Good care for bees and crops in the highland village."
+          }
+        ]
+      },
+      {
+        "id": "kisii-corpus-sentences-skill-1",
+        "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
+        "icon": "MessageSquare",
+        "description": "Practice verified Kisii (Ekegusii) parallel sentences and vocabulary from commercially permissive corpora.",
+        "culturalNote": "DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0), Sunbird AI SALT-31 Ekegusii (CC-BY-4.0), CLDF ASJP v20 GUSII & BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Hobley 1902 & Johnston 1902, 1919–1922).",
+        "words": [
+          {
+            "target": "Omorembe",
+            "source": "Peace",
+            "pronunciation": "oh-moh-rehm-beh"
+          },
+          {
+            "target": "Bwakire!",
+            "source": "Good morning / Hello",
+            "pronunciation": "bwah-kee-reh"
+          },
+          {
+            "target": "Mbuya mono",
+            "source": "Thank you very much",
+            "pronunciation": "m-boo-yah moh-noh"
+          },
+          {
+            "target": "Naki ogenderete?",
+            "source": "How are you doing?",
+            "pronunciation": "nah-kee oh-gehn-deh-reh-teh"
+          },
+          {
+            "target": "Obotuko obuya",
+            "source": "Good night",
+            "pronunciation": "oh-boh-too-koh oh-boo-yah"
+          },
+          {
+            "target": "Bwairire",
+            "source": "Good evening",
+            "pronunciation": "bwairire"
+          },
+          {
+            "target": "Karibu inka",
+            "source": "Welcome home",
+            "pronunciation": "karibu inka"
+          },
+          {
+            "target": "Omorembe obe n'inwe",
+            "source": "Peace be with you",
+            "pronunciation": "omorembe obe n'inwe"
+          },
+          {
+            "target": "amauta",
+            "source": "Fat",
+            "pronunciation": "a-mau-ta"
+          },
+          {
+            "target": "Erige",
+            "source": "Egg",
+            "pronunciation": "e-ri-ge"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Bwakire buya, baba!",
+            "source": "Good morning, mother!"
+          },
+          {
+            "target": "Mbuya mono!",
+            "source": "Thank you very much! / Very well!"
+          },
+          {
+            "target": "Okorwa gose ogotoma chibesa ase esimu.",
+            "source": "Withdrawing or sending money by mobile phone."
+          },
+          {
+            "target": "Naki ogenderete rero?",
+            "source": "How are you doing today?"
+          },
+          {
+            "target": "Karibu inka.",
+            "source": "Welcome home."
+          },
+          {
+            "target": "Omorembe obe n'inwe.",
+            "source": "Peace be with you."
+          }
+        ]
+      },
+      {
+        "id": "kisii-corpus-sentences-skill-2",
+        "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
+        "icon": "Globe",
+        "description": "Master multi-domain Kisii (Ekegusii) sentences for healthcare, transport, and community safety.",
+        "culturalNote": "DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0), Sunbird AI SALT-31 Ekegusii (CC-BY-4.0), CLDF ASJP v20 GUSII & BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Hobley 1902 & Johnston 1902, 1919–1922).",
+        "words": [
+          {
+            "target": "-mu, -mo",
+            "source": "One",
+            "pronunciation": "mu / mo"
+          },
+          {
+            "target": "-beri, -viri",
+            "source": "Two",
+            "pronunciation": "be-ri / vi-ri"
+          },
+          {
+            "target": "-sano na i-mo",
+            "source": "Six",
+            "pronunciation": "sa-no na i-mo"
+          },
+          {
+            "target": "I-kumi",
+            "source": "Ten",
+            "pronunciation": "i-kumi"
+          },
+          {
+            "target": "-nye, -nne",
+            "source": "Four",
+            "pronunciation": "nye / nne"
+          },
+          {
+            "target": "-sano, -tanu",
+            "source": "Five",
+            "pronunciation": "sa-no / ta-nu"
+          },
+          {
+            "target": "Ki-anda",
+            "source": "Nine",
+            "pronunciation": "ki-anda"
+          },
+          {
+            "target": "-satu, -tatu",
+            "source": "Three",
+            "pronunciation": "sa-tu / ta-tu"
+          },
+          {
+            "target": "-sano na i-were",
+            "source": "Seven",
+            "pronunciation": "sa-no na i-we-re"
+          },
+          {
+            "target": "-sano na i-satu",
+            "source": "Eight",
+            "pronunciation": "sa-no na i-sa-tu"
+          }
+        ],
+        "sentences": []
       }
     ]
   }

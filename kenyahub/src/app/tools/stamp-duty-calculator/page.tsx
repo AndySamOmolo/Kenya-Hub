@@ -1,9 +1,10 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import ToolShell from "@/components/tools/ToolShell";
+import { X } from "lucide-react";
 import { TOOLS } from "@/lib/tools-registry";
 import stampDutyData from "@/data/stamp-duty-rates.json";
+import realEstateAgentsData from "@/data/real-estate-agents.json";
 
 const tool = TOOLS.find((t) => t.slug === "stamp-duty-calculator")!;
 
@@ -15,14 +16,15 @@ function calculateStampDuty(value: number, isUrban: boolean, isFirstTimeBuyer: b
 
 function calculateConveyancingFees(value: number) {
   let totalFee = 0;
-  let breakdown: { band: string; amount: number }[] = [];
+  const breakdown: { band: string; amount: number }[] = [];
   let remaining = value;
 
   for (const band of stampDutyData.conveyancingFees) {
     if (remaining <= 0) break;
     const bandMax = band.max ?? Infinity;
     const bandMin = band.min;
-    const taxableInBand = Math.min(remaining, bandMax - bandMin + 1);
+    const bandWidth = bandMin === 0 ? bandMax : bandMax - bandMin + 1;
+    const taxableInBand = Math.min(remaining, bandWidth);
 
     if (taxableInBand > 0) {
       const fee = Math.round(taxableInBand * (band.rate / 100));
@@ -32,39 +34,14 @@ function calculateConveyancingFees(value: number) {
     remaining -= taxableInBand;
   }
 
-  const minFee = stampDutyData.conveyancingFees[0]?.minimumFee ?? 0;
+  const minFee = (stampDutyData.conveyancingFees[0] as any)?.minFee ?? 35000;
   if (totalFee < minFee && value > 0) totalFee = minFee;
 
-  return { total: totalFee, breakdown };
-}
+  const vatRate = stampDutyData.legalFeeVatPercent ?? 16;
+  const vat = Math.round(totalFee * (vatRate / 100));
 
-const faq = [
-  {
-    question: "What is stamp duty in Kenya?",
-    answer:
-      "Stamp duty is a government tax charged on the transfer of property (land or buildings) in Kenya. It is payable to the Kenya Revenue Authority (KRA) within 30 days of executing the transfer instrument.",
-  },
-  {
-    question: "What is the stamp duty rate for urban vs rural property?",
-    answer:
-      "Stamp duty is 4% of the market value for urban and peri-urban properties, and 2% for rural properties. First-time buyers under the Affordable Housing Fund (AHF) scheme are fully exempt.",
-  },
-  {
-    question: "What are conveyancing fees in Kenya?",
-    answer:
-      "Conveyancing fees are legal fees paid to an advocate for handling the property transfer process. Rates are set by the Law Society of Kenya (LSK) Advocates Remuneration Order on a progressive scale based on property value.",
-  },
-  {
-    question: "Are first-time home buyers exempt from stamp duty?",
-    answer:
-      "Yes. Under the Affordable Housing Fund (AHF) scheme introduced in Finance Act 2023, first-time buyers of affordable housing units are exempt from stamp duty entirely.",
-  },
-  {
-    question: "What other costs are involved in property transfer?",
-    answer:
-      "Beyond stamp duty and conveyancing fees, you may also need to pay: Land Registry registration fee (KES 5,000 flat), search fee (KES 520), consent to transfer (KES 5,000), valuation fee (~0.25% of property value), and county-specific land rates clearance.",
-  },
-];
+  return { baseFee: totalFee, vat, totalWithVat: totalFee + vat, breakdown };
+}
 
 export default function StampDutyCalculatorPage() {
   const [propertyValue, setPropertyValue] = useState<number>(5000000);
@@ -74,16 +51,21 @@ export default function StampDutyCalculatorPage() {
   const results = useMemo(() => {
     const stampDuty = calculateStampDuty(propertyValue, isUrban, isFirstTimeBuyer);
     const conveyancing = calculateConveyancingFees(propertyValue);
-    const registrationFee = stampDutyData.otherCosts.registrationFee;
-    const searchFee = stampDutyData.otherCosts.searchFee;
-    const consent = stampDutyData.otherCosts.consentToTransfer;
-    const total = stampDuty + conveyancing.total + registrationFee + searchFee + consent;
+    const registrationFee = propertyValue > 0 ? stampDutyData.otherCosts.registrationFee : 0;
+    const searchFee = propertyValue > 0 ? stampDutyData.otherCosts.searchFee : 0;
+    const consent = propertyValue > 0 ? stampDutyData.otherCosts.consentToTransfer : 0;
+    const total =
+      propertyValue > 0
+        ? stampDuty + conveyancing.totalWithVat + registrationFee + searchFee + consent
+        : 0;
 
     return {
       propertyValue,
       stampDuty,
-      stampDutyRate: isFirstTimeBuyer ? 0 : isUrban ? 4 : 2,
-      conveyancing: conveyancing.total,
+      stampDutyRate: isFirstTimeBuyer ? 0 : isUrban ? stampDutyData.stampDuty.urban : stampDutyData.stampDuty.rural,
+      conveyancingBase: conveyancing.baseFee,
+      conveyancingVat: conveyancing.vat,
+      conveyancingTotal: conveyancing.totalWithVat,
       conveyancingBreakdown: conveyancing.breakdown,
       registrationFee,
       searchFee,
@@ -97,28 +79,50 @@ export default function StampDutyCalculatorPage() {
     `KES ${n.toLocaleString("en-KE", { minimumFractionDigits: 0, maximumFractionDigits: 0 })}`;
 
   return (
-    <ToolShell tool={tool} faq={faq}>
+    <>
       <div className="space-y-6">
         {/* Input */}
-        <div className="bg-bg-card border border-border rounded-xl p-6">
-          <label className="block text-sm font-medium text-text-secondary mb-2">
+        <div className="bg-bg-card border border-border rounded-xl p-5 sm:p-6">
+          <label
+            htmlFor="property-value-input"
+            className="block text-sm font-medium text-text-secondary mb-2"
+          >
             Property Value (KES)
           </label>
-          <input
-            type="number"
-            value={propertyValue}
-            onChange={(e) => setPropertyValue(Math.max(0, Number(e.target.value)))}
-            className="input-field text-xl sm:text-2xl font-bold font-[family-name:var(--font-outfit)]"
-            min={0}
-            step={100000}
-            id="property-value-input"
-          />
+          <div className="relative">
+            <input
+              type="number"
+              inputMode="numeric"
+              value={propertyValue === 0 ? "" : propertyValue}
+              onChange={(e) => {
+                const raw = e.target.value.replace(/^0+(?=\d)/, "");
+                setPropertyValue(raw === "" ? 0 : Math.max(0, Number(raw)));
+              }}
+              placeholder="e.g. 5000000"
+              className="input-field text-xl sm:text-2xl font-bold font-[family-name:var(--font-outfit)] pr-11! border border-border dark:border-white/15 tabular-nums"
+              style={{ paddingRight: "2.75rem" }}
+              min={0}
+              step={100000}
+              id="property-value-input"
+            />
+            {propertyValue > 0 && (
+              <button
+                type="button"
+                onClick={() => setPropertyValue(0)}
+                className="absolute right-3 top-1/2 -translate-y-1/2 w-6 h-6 shrink-0 rounded-full bg-bg-card border border-border hover:border-gold hover:bg-gold/15 hover:text-gold active:scale-90 flex items-center justify-center transition-all cursor-pointer z-10"
+                aria-label="Clear property value"
+              >
+                <X className="w-3.5 h-3.5 text-text-muted hover:text-gold shrink-0" />
+              </button>
+            )}
+          </div>
           <input
             type="range"
+            aria-label="Property value slider"
             min={0}
             max={50000000}
             step={500000}
-            value={propertyValue}
+            value={Math.min(50000000, propertyValue)}
             onChange={(e) => setPropertyValue(Number(e.target.value))}
             className="w-full mt-3 accent-gold"
           />
@@ -134,8 +138,10 @@ export default function StampDutyCalculatorPage() {
             <p className="text-xs text-text-muted mb-3">Property Location</p>
             <div className="flex gap-2">
               <button
+                type="button"
+                aria-pressed={isUrban}
                 onClick={() => setIsUrban(true)}
-                className={`flex-1 px-3 py-2 rounded-lg text-sm font-medium transition-all ${
+                className={`flex-1 px-3 py-2 rounded-lg text-sm font-medium transition-all cursor-pointer ${
                   isUrban
                     ? "bg-gold text-kenya-black"
                     : "bg-bg-elevated border border-border text-text-secondary hover:text-gold"
@@ -144,8 +150,10 @@ export default function StampDutyCalculatorPage() {
                 Urban (4%)
               </button>
               <button
+                type="button"
+                aria-pressed={!isUrban}
                 onClick={() => setIsUrban(false)}
-                className={`flex-1 px-3 py-2 rounded-lg text-sm font-medium transition-all ${
+                className={`flex-1 px-3 py-2 rounded-lg text-sm font-medium transition-all cursor-pointer ${
                   !isUrban
                     ? "bg-gold text-kenya-black"
                     : "bg-bg-elevated border border-border text-text-secondary hover:text-gold"
@@ -171,79 +179,89 @@ export default function StampDutyCalculatorPage() {
           </div>
         </div>
 
-        {/* Result */}
-        <div className="result-box">
-          <div className="flex items-center justify-between mb-4">
-            <span className="text-sm text-text-secondary">Total Transfer Cost</span>
-            <span className="text-xs text-text-muted">
-              {results.percentOfValue}% of property value
-            </span>
+        {/* Live Result Region */}
+        <div role="status" aria-live="polite" aria-atomic="true" className="space-y-6">
+          <div className="result-box">
+            <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
+              <span className="text-sm text-text-secondary">Total Transfer Cost (incl. ARO 2014 Legal Fees &amp; 16% VAT)</span>
+              <span className="text-xs text-text-muted tabular-nums">
+                {results.percentOfValue}% of property value
+              </span>
+            </div>
+            <p className="text-3xl sm:text-4xl font-extrabold font-[family-name:var(--font-outfit)] text-kenya-green-light tabular-nums">
+              {fmt(results.total)}
+            </p>
+            <p className="text-xs text-text-muted mt-2 tabular-nums">
+              For a {fmt(results.propertyValue)} {isUrban ? "urban" : "rural"} property (Legal Fees incl. 16% VAT: {fmt(results.conveyancingTotal)})
+            </p>
           </div>
-          <p className="text-3xl sm:text-4xl font-extrabold font-[family-name:var(--font-outfit)] text-kenya-green-light">
-            {fmt(results.total)}
-          </p>
-          <p className="text-xs text-text-muted mt-2">
-            For a {fmt(results.propertyValue)} {isUrban ? "urban" : "rural"} property
-          </p>
-        </div>
 
-        {/* Cost Breakdown */}
-        <div className="bg-bg-card border border-border rounded-xl overflow-hidden">
-          <div className="px-5 py-3 border-b border-border bg-bg-elevated">
-            <h3 className="text-sm font-semibold text-text-primary font-[family-name:var(--font-outfit)]">
-              Cost Breakdown
-            </h3>
-          </div>
-          <div className="overflow-x-auto">
-            <table className="data-table">
-              <thead>
-                <tr>
-                  <th>Item</th>
-                  <th className="text-right">Amount</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td className="text-text-primary">
-                    Stamp Duty ({results.stampDutyRate}%)
-                    {isFirstTimeBuyer && (
-                      <span className="ml-2 text-xs text-kenya-green-light">AHF EXEMPT</span>
-                    )}
-                  </td>
-                  <td className="text-right font-semibold text-text-primary">{fmt(results.stampDuty)}</td>
-                </tr>
-                <tr>
-                  <td className="text-text-primary">LSK Conveyancing Fees</td>
-                  <td className="text-right font-semibold text-text-primary">{fmt(results.conveyancing)}</td>
-                </tr>
-                <tr>
-                  <td className="text-text-muted pl-8 text-xs">Land Registry Registration</td>
-                  <td className="text-right text-text-muted text-xs">{fmt(results.registrationFee)}</td>
-                </tr>
-                <tr>
-                  <td className="text-text-muted pl-8 text-xs">Search Fee</td>
-                  <td className="text-right text-text-muted text-xs">{fmt(results.searchFee)}</td>
-                </tr>
-                <tr>
-                  <td className="text-text-muted pl-8 text-xs">Consent to Transfer</td>
-                  <td className="text-right text-text-muted text-xs">{fmt(results.consent)}</td>
-                </tr>
-                <tr className="border-t-2 border-border bg-kenya-green/10">
-                  <td className="font-bold text-kenya-green-light text-base">Total</td>
-                  <td className="text-right font-bold text-kenya-green-light text-base">
-                    {fmt(results.total)}
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+          {/* Cost Breakdown */}
+          <div className="bg-bg-card border border-border rounded-xl overflow-hidden">
+            <div className="px-5 py-3 border-b border-border bg-bg-elevated">
+              <h2 className="text-sm font-semibold text-text-primary font-[family-name:var(--font-outfit)]">
+                Cost Breakdown
+              </h2>
+            </div>
+            <div className="overflow-x-auto">
+              <table className="data-table">
+                <thead>
+                  <tr>
+                    <th>Item</th>
+                    <th className="text-right whitespace-nowrap">Amount</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="text-text-primary">
+                      Stamp Duty ({results.stampDutyRate}%)
+                      {isFirstTimeBuyer && (
+                        <span className="ml-2 text-xs text-kenya-green-light">AHF EXEMPT</span>
+                      )}
+                    </td>
+                    <td className="text-right font-semibold text-text-primary whitespace-nowrap tabular-nums">{fmt(results.stampDuty)}</td>
+                  </tr>
+                  <tr>
+                    <td className="text-text-primary">LSK Conveyancing Legal Fees (ARO 2014 Scale 1)</td>
+                    <td className="text-right font-semibold text-text-primary whitespace-nowrap tabular-nums">{fmt(results.conveyancingBase)}</td>
+                  </tr>
+                  <tr>
+                    <td className="text-text-secondary pl-6 text-xs">16% VAT on Legal Fees</td>
+                    <td className="text-right text-text-secondary text-xs whitespace-nowrap tabular-nums">{fmt(results.conveyancingVat)}</td>
+                  </tr>
+                  <tr>
+                    <td className="text-text-primary font-medium pl-6 text-xs">Subtotal: Conveyancing + 16% VAT</td>
+                    <td className="text-right font-semibold text-gold text-xs whitespace-nowrap tabular-nums">{fmt(results.conveyancingTotal)}</td>
+                  </tr>
+                  <tr>
+                    <td className="text-text-muted pl-6 text-xs">Land Registry Registration</td>
+                    <td className="text-right text-text-muted text-xs whitespace-nowrap tabular-nums">{fmt(results.registrationFee)}</td>
+                  </tr>
+                  <tr>
+                    <td className="text-text-muted pl-6 text-xs">Official Title Search Fee</td>
+                    <td className="text-right text-text-muted text-xs whitespace-nowrap tabular-nums">{fmt(results.searchFee)}</td>
+                  </tr>
+                  <tr>
+                    <td className="text-text-muted pl-6 text-xs">Consent to Transfer</td>
+                    <td className="text-right text-text-muted text-xs whitespace-nowrap tabular-nums">{fmt(results.consent)}</td>
+                  </tr>
+                  <tr className="border-t-2 border-border bg-kenya-green/10">
+                    <td className="font-bold text-kenya-green-light text-base">Total Transfer Cost</td>
+                    <td className="text-right font-bold text-kenya-green-light text-base whitespace-nowrap tabular-nums">
+                      {fmt(results.total)}
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
 
         {/* Notes */}
         <div className="bg-bg-card border border-border rounded-xl p-5">
-          <h3 className="text-sm font-semibold text-text-primary mb-3 font-[family-name:var(--font-outfit)]">
+          <h2 className="text-sm font-semibold text-text-primary mb-3 font-[family-name:var(--font-outfit)]">
             Important Notes
-          </h3>
+          </h2>
           <ul className="space-y-2">
             {stampDutyData.notes.map((note, i) => (
               <li key={i} className="flex items-start gap-2 text-xs text-text-secondary">
@@ -253,7 +271,30 @@ export default function StampDutyCalculatorPage() {
             ))}
           </ul>
         </div>
+
+        {/* EARB Cap 533 Estate Agents Verification & Buyer Red Flags */}
+        <div className="bg-bg-card border border-border rounded-2xl p-5 space-y-3 mt-6">
+          <h2 className="text-sm sm:text-base font-bold font-[family-name:var(--font-outfit)] text-text-primary">
+            {realEstateAgentsData.verificationGuide.title} ({realEstateAgentsData.source})
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
+            <div className="space-y-1.5">
+              <p className="font-bold text-gold">Property Buyer Verification Steps</p>
+              {realEstateAgentsData.verificationGuide.steps.map((st) => (
+                <p key={st.step} className="text-text-secondary">
+                  • <strong className="text-text-primary">{st.title}:</strong> {st.description}
+                </p>
+              ))}
+            </div>
+            <div className="space-y-1.5">
+              <p className="font-bold text-kenya-red-light">Conveyancing &amp; Agency Red Flags</p>
+              {realEstateAgentsData.redFlags.slice(0, 4).map((rf, idx) => (
+                <p key={idx} className="text-text-secondary">• <strong className="text-text-primary">{rf.flag}:</strong> {rf.risk}</p>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
-    </ToolShell>
+    </>
   );
 }

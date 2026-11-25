@@ -1,0 +1,108 @@
+name: Pull Appwrite Blogs & Approved Contributions to Web & Mobile
+
+on:
+  schedule:
+    # Weekly sync keeps Appwrite active (prevents inactivity pause) and pulls new CMS posts + approved contributions into Git + Mobile
+    - cron: "0 3 * * 0"
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  pull-blogs:
+    name: Pull Appwrite Blogs & Approved Contributions -> Static Web & Mobile Data
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: kenyahub/package-lock.json
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install web dependencies
+        working-directory: kenyahub
+        run: npm ci --prefer-offline --no-audit --no-fund
+
+      - name: Install lightweight Python & FFmpeg dependencies for contributions sync
+        env:
+          APPWRITE_API_KEY: ${{ secrets.APPWRITE_API_KEY }}
+        run: |
+          if [ -n "$APPWRITE_API_KEY" ]; then
+            command -v ffmpeg >/dev/null 2>&1 || (sudo apt-get update && sudo apt-get install -y ffmpeg)
+            pip install --no-cache-dir requests boto3
+          else
+            echo "::warning::APPWRITE_API_KEY not set — skipping Python/FFmpeg dependency install."
+          fi
+
+      - name: Pull Appwrite blogs into blog-posts.ts & summary
+        working-directory: kenyahub
+        env:
+          APPWRITE_API_KEY: ${{ secrets.APPWRITE_API_KEY }}
+        run: npx tsx scripts/pull-appwrite-blogs.ts
+
+      - name: Sync approved Appwrite contributions to R2 & dictionaries
+        env:
+          PYTHONUNBUFFERED: "1"
+          APPWRITE_API_KEY: ${{ secrets.APPWRITE_API_KEY }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY || secrets.R2_SECRET_KEY }}
+          R2_BUCKET_NAME: ${{ secrets.R2_BUCKET_NAME || 'kenyahub-audio' }}
+          NEXT_PUBLIC_AUDIO_CDN_URL: ${{ secrets.NEXT_PUBLIC_AUDIO_CDN_URL }}
+        run: python3 -u kenyahub/scripts/sync-approved-contributions.py
+
+      - name: Sync updated data into Mobile app & verify
+        run: |
+          node mobile/scripts/sync-data.mjs
+          npm --prefix kenyahub run audit:tools:strict
+          npm --prefix kenyahub test
+
+      - name: Commit & push synced blogs and contributions
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for p in \
+            kenyahub/src/data/blog-posts.ts \
+            kenyahub/src/data/blog-posts-summary.ts \
+            kenyahub/src/data/dictionaries \
+            kenyahub/public/r2-audio-index.json \
+            kenyahub/public/.contributions-synced-lock.json \
+            mobile/src/shared; do
+            [ -e "$p" ] && git add -A -- "$p"
+          done
+          if ! git diff --staged --quiet; then
+            git commit -m "chore(appwrite): pull Appwrite blogs and approved contributions to web and mobile"
+            for attempt in 1 2 3; do
+              git fetch origin "${GITHUB_REF_NAME}"
+              git rebase --autostash "origin/${GITHUB_REF_NAME}"
+              if git push origin HEAD:"${GITHUB_REF_NAME}"; then
+                break
+              fi
+              if [ "$attempt" -eq 3 ]; then
+                echo "::error::Failed to push synced Appwrite updates after 3 attempts."
+                exit 1
+              fi
+              sleep 5
+            done
+          else
+            echo "No new or updated Appwrite blogs or contributions to commit."
+          fi

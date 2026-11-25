@@ -1,3857 +1,4691 @@
-// ============================================================
-// Kikuyu (Gĩkũyũ) Language Course Configuration & Units
-// Enriched with cultural proverbs from "1,000 Kikuyu Proverbs"
-// by G. Barra (Consolata Catholic Mission, Nyeri)
-// ============================================================
-
-import type { LanguageConfig, CourseUnit } from '../types';
+import type { LanguageConfig, CourseUnit } from "../types";
 
 export const KIKUYU_CONFIG: LanguageConfig = {
-  id: 'kikuyu',
-  name: 'Kikuyu',
-  nativeName: 'Gĩkũyũ',
-  family: 'Bantu',
-  counties: ['Kiambu', "Murang'a", 'Nyeri', 'Kirinyaga', 'Nyandarua'],
-  speakers: '8.1M',
-  speechLocale: 'sw-KE',
-  description: 'The most spoken ethnic language in Kenya, spoken across the fertile Central Highlands around Mount Kenya (Kĩrĩnyaga), renowned for its profound proverbial wisdom and rich cultural traditions.',
-  color: '#2E7D32',
+  "id": "kikuyu",
+  "name": "Kikuyu",
+  "nativeName": "Gĩkũyũ",
+  "family": "Bantu",
+  "counties": [
+    "Kiambu",
+    "Murang'a",
+    "Nyeri",
+    "Kirinyaga",
+    "Nyandarua"
+  ],
+  "speakers": "8.1M",
+  "speechLocale": "sw-KE",
+  "description": "The most widely spoken ethnic language in Kenya, spoken across the fertile Central Highlands around Mount Kenya (Kĩrĩnyaga).",
+  "color": "#2E7D32",
+  "sources": [
+    "johnston-uganda-protectorate-1902",
+    "hemery-kikuyu-handbook-1903",
+    "kamba-kikuyu-vocabularies",
+    "mcgregor-kikuyu-1904",
+    "routledge-prehistoric-people-1910",
+    "hobley-akamba-ethnology-1910",
+    "johnston-bantu-1919",
+    "bantu-beliefs",
+    "open-web-swadesh-comparative",
+    "mcgregor-kikuyu-vocabulary-1904"
+  ]
 };
 
 export const KIKUYU_UNITS: CourseUnit[] = [
   {
-    id: 'kikuyu-unit-1',
-    title: 'Unit 1: Foundations, Greetings & Numbers',
-    description: 'Learn foundational greetings, time-of-day courtesies, and the counting system of Gĩkũyũ.',
-    icon: '👋',
-    skills: [
-      {
-        id: 'kikuyu-greetings',
-        title: 'Greetings & Politeness',
-        icon: 'Handshake',
-        description: 'Master core greetings, polite inquiries, and daily salutations.',
-        tips: "In Gĩkũyũ, 'Ũhoro waku?' means 'What is your news?' or 'How are you?'. A common reply is 'Ndĩ mwega' ('I am well/fine'). When asking if someone is well, say 'Wĩ mwega?'. 'Nĩ wega' literally means 'It is good' and functions as 'Thank you'. For parting, 'Tigwo na wega' is said to the one staying, while 'Thiĩ na wega' is said to the traveler.",
-        culturalNote: "Greetings in Kikuyu culture reflect deep communal respect. Inquiring about one's family and health before getting to business is a hallmark of good upbringing (ũreri mwega). Traditional blessings often conclude with 'Thaai thayũ' (Peace and prosperity).",
-        words: [
-          { target: 'Wĩ mwega?', source: 'Are you well? / Hello', pronunciation: 'wee mweh-gah', hint: 'Universal greeting to one person', example: 'Wĩ mwega? — Ĩĩ, ndĩ mwega.' },
-          { target: 'Ũhoro waku?', source: 'How are you? / What is your news?', pronunciation: 'oo-hoh-roh wah-koo', hint: 'Lit. "What is your news?"', example: 'Ũhoro waku, mũrata?' },
-          { target: 'Ndĩ mwega', source: 'I am fine / well', pronunciation: 'n-dee mweh-gah', hint: 'Standard polite reply', example: 'Ndĩ mwega, nĩ wega.' },
-          { target: 'Nĩ wega', source: 'Thank you', pronunciation: 'nee weh-gah', hint: 'Lit. "It is good"', example: 'Nĩ wega mũno.' },
-          { target: 'Nĩ wega mũno', source: 'Thank you very much', pronunciation: 'nee weh-gah moo-noh', hint: "'Mũno' means very much", example: 'Nĩ wega mũno nĩ kũndeithia.' },
-          { target: 'Tigwo na wega', source: 'Goodbye (stay well)', pronunciation: 'tee-gwoh nah weh-gah', hint: 'Said to the one staying behind' },
-          { target: 'Thiĩ na wega', source: 'Goodbye (go well)', pronunciation: 'thee-ee nah weh-gah', hint: 'Said to the traveler departing' },
-          { target: 'Ũhoro wa rũciinĩ', source: 'Good morning', pronunciation: 'oo-hoh-roh wah roo-chee-nee', hint: 'Lit. "News of the morning"' },
-          { target: 'Ũhoro wa hwaĩ-inĩ', source: 'Good evening', pronunciation: 'oo-hoh-roh wah hwah-ee-nee', hint: 'Lit. "News of the evening"' },
-          { target: 'Ĩĩ', source: 'Yes', pronunciation: 'ee-ee', hint: 'Affirmative response' },
-          { target: 'Aca', source: 'No', pronunciation: 'ah-chah', hint: 'Negative response' }
-        ],
-        sentences: [
-          { target: 'Wĩ mwega, mũrata wakwa?', source: 'Are you well, my friend?' },
-          { target: 'Ndĩ mwega, nĩ wega mũno.', source: 'I am fine, thank you very much.' },
-          { target: 'Thiĩ na wega, nĩtũkuona rũciũ.', source: 'Go well, we will see you tomorrow.' }
-        ],
-        authoredExercises: [
-          {
-            type: 'multiple_choice',
-            prompt: 'How do you say "Thank you very much" in Gĩkũyũ?',
-            correctAnswer: 'Nĩ wega mũno',
-            options: ['Nĩ wega mũno', 'Tigwo na wega', 'Wĩ mwega?', 'Ũhoro waku?'],
-            hint: "'Wega' means good and 'mũno' means very much"
-          },
-          {
-            type: 'multiple_choice',
-            prompt: 'What is the standard reply to "Ũhoro waku?" (How are you)?',
-            correctAnswer: 'Ndĩ mwega',
-            options: ['Ndĩ mwega', 'Aca', 'Thiĩ na wega', 'Ĩmwe'],
-            hint: "Means 'I am fine / well'"
-          },
-          {
-            type: 'match_pairs',
-            prompt: 'Match the Kikuyu greetings with their English meanings:',
-            correctAnswer: 'Wĩ mwega?: Are you well?, Nĩ wega: Thank you, Thiĩ na wega: Go well, Aca: No',
-            pairs: [
-              { left: 'Wĩ mwega?', right: 'Are you well?' },
-              { left: 'Nĩ wega', right: 'Thank you' },
-              { left: 'Thiĩ na wega', right: 'Go well' },
-              { left: 'Aca', right: 'No' }
-            ]
-          }
-        ]
-      },
-      {
-        id: 'kikuyu-numbers',
-        title: 'Counting & Numbers',
-        icon: 'Hash',
-        description: 'Learn the cardinal counting system from one to a hundred in Gĩkũyũ.',
-        tips: "Gĩkũyũ uses a base-10 counting system rooted in Bantu morphology. 1 is Ĩmwe, 2 is Igĩrĩ, 3 is Ithatũ, 4 is Inya, 5 is Ithano. 10 is Ikũmi, 20 is Mĩrongo ĩĩrĩ (two tens), 30 is Mĩrongo ĩtatũ (three tens), and 100 is Igana.",
-        culturalNote: "Traditionally, counting livestock or children in Kikuyu was rarely done by direct tallying in the open due to a cultural belief against vanity and the evil eye. Numbers were often stated with reverent approximations or respectful idioms.",
-        words: [
-          { target: 'Ĩmwe', source: 'One', pronunciation: 'ee-mweh', hint: 'Numeral 1' },
-          { target: 'Igĩrĩ', source: 'Two', pronunciation: 'ee-gee-ree', hint: 'Numeral 2' },
-          { target: 'Ithatũ', source: 'Three', pronunciation: 'ee-thah-too', hint: 'Numeral 3' },
-          { target: 'Inya', source: 'Four', pronunciation: 'ee-nyah', hint: 'Numeral 4' },
-          { target: 'Ithano', source: 'Five', pronunciation: 'ee-thah-noh', hint: 'Numeral 5' },
-          { target: 'Ithathatũ', source: 'Six', pronunciation: 'ee-thah-thah-too', hint: 'Numeral 6' },
-          { target: 'Mũgwanja', source: 'Seven', pronunciation: 'moo-gwahn-jah', hint: 'Numeral 7' },
-          { target: 'Inyanya', source: 'Eight', pronunciation: 'ee-nyah-nyah', hint: 'Numeral 8' },
-          { target: 'Kenda', source: 'Nine', pronunciation: 'kehn-dah', hint: 'Numeral 9' },
-          { target: 'Ikũmi', source: 'Ten', pronunciation: 'ee-koo-mee', hint: 'Numeral 10' },
-          { target: 'Mĩrongo ĩĩrĩ', source: 'Twenty', pronunciation: 'mee-rohn-goh ee-ree', hint: 'Lit. "two tens"' },
-          { target: 'Igana', source: 'Hundred', pronunciation: 'ee-gah-nah', hint: 'Numeral 100' }
-        ],
-        sentences: [
-          { target: 'Ndĩ na ciana ithatũ.', source: 'I have three children.' },
-          { target: 'He mbembe igĩrĩ.', source: 'Give me two cobs of maize.' },
-          { target: 'Arata akwa nĩ ikũmi.', source: 'My friends are ten.' }
-        ],
-        authoredExercises: [
-          {
-            type: 'multiple_choice',
-            prompt: 'Which number is "Ithano" in English?',
-            correctAnswer: 'Five',
-            options: ['Five', 'Three', 'Seven', 'Ten'],
-            hint: 'The number after Inya (four)'
-          },
-          {
-            type: 'multiple_choice',
-            prompt: 'How do you say "Ten" in Gĩkũyũ?',
-            correctAnswer: 'Ikũmi',
-            options: ['Ikũmi', 'Igana', 'Kenda', 'Mũgwanja'],
-            hint: 'Cognate to Kiswahili Kumi'
-          },
-          {
-            type: 'match_pairs',
-            prompt: 'Match the numbers with their Kikuyu translations:',
-            correctAnswer: 'Ĩmwe: One, Igĩrĩ: Two, Ithatũ: Three, Inya: Four',
-            pairs: [
-              { left: 'Ĩmwe', right: 'One' },
-              { left: 'Igĩrĩ', right: 'Two' },
-              { left: 'Ithatũ', right: 'Three' },
-              { left: 'Inya', right: 'Four' }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    id: 'kikuyu-unit-2',
-    title: 'Unit 2: Family, People & The Home',
-    description: 'Learn terms for family members, relationships, traditional foods, and household life.',
-    icon: '👨‍👩‍👧‍👦',
-    skills: [
-      {
-        id: 'kikuyu-family',
-        title: 'Family & Kinship',
-        icon: 'Users',
-        description: 'Learn terms for immediate and extended family in Gĩkũyũ.',
-        tips: "Family terms in Gĩkũyũ carry affectionate closeness. 'Maitũ' means mother (lit. 'our mother'), while 'Baba' is father. A brother is 'Mũrũ wa maitũ' (son of our mother) and a sister is 'Mwarĩ wa maitũ' (daughter of our mother). 'Cũcũ' is grandmother and 'Gũka' is grandfather.",
-        culturalNote: "The Kikuyu naming system follows strict patriarchal-matriarchal patterns: the first son is named after the paternal grandfather, the second son after the maternal grandfather; the first daughter after the paternal grandmother, and the second after the maternal grandmother.",
-        words: [
-          { target: 'Maitũ', source: 'Mother', pronunciation: 'mah-ee-too', hint: 'Affectionate term ("our mother")' },
-          { target: 'Baba', source: 'Father', pronunciation: 'bah-bah', hint: 'Father' },
-          { target: 'Kaana', source: 'Child', pronunciation: 'kah-ah-nah', hint: 'Plural: Ciana (children)' },
-          { target: 'Mũrũ wa maitũ', source: 'Brother', pronunciation: 'moo-roo wah mah-ee-too', hint: 'Lit. "son of my mother"' },
-          { target: 'Mwarĩ wa maitũ', source: 'Sister', pronunciation: 'mwah-ree wah mah-ee-too', hint: 'Lit. "daughter of my mother"' },
-          { target: 'Cũcũ', source: 'Grandmother', pronunciation: 'choo-choo', hint: 'Beloved grandmother' },
-          { target: 'Gũka', source: 'Grandfather', pronunciation: 'goo-kah', hint: 'Respected grandfather' },
-          { target: 'Mũrata', source: 'Friend', pronunciation: 'moo-rah-tah', hint: 'Plural: Arata (friends)' },
-          { target: 'Mũthuuri', source: 'Elder / Husband', pronunciation: 'moo-thoo-ree', hint: 'Respected man or husband' },
-          { target: 'Mũtumia', source: 'Woman / Wife', pronunciation: 'moo-too-mee-ah', hint: 'Married woman or wife' }
-        ],
-        sentences: [
-          { target: 'Maitũ nĩ mũrĩmi mwega.', source: 'My mother is a good farmer.' },
-          { target: 'Cũcũ nĩ aikarĩte mũciĩ.', source: 'Grandmother is sitting at the homestead.' },
-          { target: 'Mũrũ wa maitũ nĩ aroka.', source: 'My brother is coming.' }
-        ],
-        authoredExercises: [
-          {
-            type: 'multiple_choice',
-            prompt: 'What does "Cũcũ" mean in English?',
-            correctAnswer: 'Grandmother',
-            options: ['Grandmother', 'Grandfather', 'Mother', 'Sister'],
-            hint: 'A loving term for the elder matriarch'
-          },
-          {
-            type: 'multiple_choice',
-            prompt: 'How do you say "Brother" in Gĩkũyũ?',
-            correctAnswer: 'Mũrũ wa maitũ',
-            options: ['Mũrũ wa maitũ', 'Mwarĩ wa maitũ', 'Baba', 'Gũka'],
-            hint: 'Literally means "son of our mother"'
-          },
-          {
-            type: 'match_pairs',
-            prompt: 'Match the family terms with their English translations:',
-            correctAnswer: 'Maitũ: Mother, Baba: Father, Cũcũ: Grandmother, Mũrata: Friend',
-            pairs: [
-              { left: 'Maitũ', right: 'Mother' },
-              { left: 'Baba', right: 'Father' },
-              { left: 'Cũcũ', right: 'Grandmother' },
-              { left: 'Mũrata', right: 'Friend' }
-            ]
-          }
-        ]
-      },
-      {
-        id: 'kikuyu-food-home',
-        title: 'Food, Drink & The Homestead',
-        icon: 'Utensils',
-        description: 'Explore traditional staples, food culture, and parts of the homestead.',
-        tips: "'Irio' is the general word for food, and also the name of the celebrated dish of mashed potatoes, green peas/beans, and corn. 'Ngima' is traditional ugali. 'Maaĩ' is water and 'Iria' is milk. The family compound is known as 'Mũciĩ'.",
-        culturalNote: "Food in Kikuyu culture is sacredly associated with hospitality and sharing. As recorded in ancient proverbs, 'Irio hĩũ itiumaga mbũri' (Cooked food is not sold for goats, but given freely to guests and neighbors).",
-        words: [
-          { target: 'Irio', source: 'Food', pronunciation: 'ee-ree-oh', hint: 'General food or the mashed potato dish' },
-          { target: 'Ngima', source: 'Ugali', pronunciation: 'n-gee-mah', hint: 'Maize meal cake' },
-          { target: 'Maaĩ', source: 'Water', pronunciation: 'mah-ah-ee', hint: 'Drinking water' },
-          { target: 'Iria', source: 'Milk', pronunciation: 'ee-ree-ah', hint: 'Cow or goat milk' },
-          { target: 'Nyama', source: 'Meat', pronunciation: 'nyah-mah', hint: 'Beef or goat meat' },
-          { target: 'Waru', source: 'Potato', pronunciation: 'wah-roo', hint: 'Irish potato staple' },
-          { target: 'Mboco', source: 'Beans', pronunciation: 'm-boh-choh', hint: 'Legumes' },
-          { target: 'Mbembe', source: 'Maize', pronunciation: 'm-behm-beh', hint: 'Corn cobs' },
-          { target: 'Mũciĩ', source: 'Home / Homestead', pronunciation: 'moo-chee-ee', hint: 'Family compound' },
-          { target: 'Mũgũnda', source: 'Farm / Shamba', pronunciation: 'moo-goon-dah', hint: 'Cultivated land' }
-        ],
-        sentences: [
-          { target: 'Tũrĩe irio na tũnyue maaĩ.', source: 'Let us eat food and drink water.' },
-          { target: 'Maitũ nĩ araruga ngima na nyama.', source: 'Mother is cooking ugali and meat.' },
-          { target: 'Mũgũnda witũ nĩ mũnene.', source: 'Our farm is big.' }
-        ],
-        authoredExercises: [
-          {
-            type: 'multiple_choice',
-            prompt: 'Which word means "Water" in Gĩkũyũ?',
-            correctAnswer: 'Maaĩ',
-            options: ['Maaĩ', 'Iria', 'Irio', 'Nyama'],
-            hint: 'Essential clear liquid for life'
-          },
-          {
-            type: 'multiple_choice',
-            prompt: 'What is the Gĩkũyũ word for "Homestead / Home"?',
-            correctAnswer: 'Mũciĩ',
-            options: ['Mũciĩ', 'Mũgũnda', 'Waru', 'Mboco'],
-            hint: 'The family residential compound'
-          },
-          {
-            type: 'match_pairs',
-            prompt: 'Match the food items with their translations:',
-            correctAnswer: 'Irio: Food, Maaĩ: Water, Nyama: Meat, Ngima: Ugali',
-            pairs: [
-              { left: 'Irio', right: 'Food' },
-              { left: 'Maaĩ', right: 'Water' },
-              { left: 'Nyama', right: 'Meat' },
-              { left: 'Ngima', right: 'Ugali' }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    id: 'kikuyu-unit-3',
-    title: 'Unit 3: Verbs, Actions & Daily Life',
-    description: 'Learn everyday action verbs, farming expressions, and conversational questions.',
-    icon: '⚡',
-    skills: [
-      {
-        id: 'kikuyu-verbs',
-        title: 'Everyday Actions & Verbs',
-        icon: 'Activity',
-        description: 'Learn core action verbs in Gĩkũyũ for farming, working, and speaking.',
-        tips: "Infinitive verbs in Gĩkũyũ start with the prefix 'Kũ-' or 'Gũ-' (e.g., Kũrĩma = to farm; Gũceera = to visit). The subject prefix for third-person singular ('he/she') is 'a-' (e.g., arĩma = he/she farms).",
-        culturalNote: "Agriculture is celebrated as the cornerstone of Kikuyu livelihood. Hard work (wĩra) is deeply revered, while idleness (ũgũta) is strongly cautioned against in numerous proverbs.",
-        words: [
-          { target: 'Kũrĩma', source: 'To farm / cultivate', pronunciation: 'koo-ree-mah', hint: 'The foundation of highland life' },
-          { target: 'Kũruta wĩra', source: 'To work', pronunciation: 'koo-roo-tah wee-rah', hint: 'Work or labor' },
-          { target: 'Kwarĩria', source: 'To speak / talk', pronunciation: 'kwah-ree-ree-ah', hint: 'Engage in conversation' },
-          { target: 'Kuona', source: 'To see', pronunciation: 'koo-oh-nah', hint: 'Visual perception' },
-          { target: 'Kũmenya', source: 'To know / understand', pronunciation: 'koo-meh-nyah', hint: 'Knowledge and comprehension' },
-          { target: 'Gũceera', source: 'To visit / walk', pronunciation: 'goo-cheh-eh-rah', hint: 'Traveling or visiting family' },
-          { target: 'Gũaka', source: 'To build', pronunciation: 'gwah-kah', hint: 'Constructing houses or shelters' },
-          { target: 'Kũhoya', source: 'To pray / ask', pronunciation: 'koo-hoh-yah', hint: 'Petition or pray to Ngai' }
-        ],
-        sentences: [
-          { target: 'Andũ nĩ mararuta wĩra mũgũnda-inĩ.', source: 'People are working in the farm.' },
-          { target: 'Nĩ ngũceera gwaku rũciũ.', source: 'I will visit your place tomorrow.' },
-          { target: 'Nĩndĩramenya ũhoro ũcio.', source: 'I understand that matter.' }
-        ],
-        authoredExercises: [
-          {
-            type: 'multiple_choice',
-            prompt: 'What does "Kũrĩma" mean in English?',
-            correctAnswer: 'To farm / cultivate',
-            options: ['To farm / cultivate', 'To build', 'To sleep', 'To drink'],
-            hint: 'The traditional agricultural work of the highlands'
-          },
-          {
-            type: 'multiple_choice',
-            prompt: 'Which verb means "To know / understand"?',
-            correctAnswer: 'Kũmenya',
-            options: ['Kũmenya', 'Kuona', 'Gũaka', 'Kũhoya'],
-            hint: 'Comprehending truth'
-          },
-          {
-            type: 'match_pairs',
-            prompt: 'Match the verbs with their English meanings:',
-            correctAnswer: 'Kũrĩma: To farm, Kuona: To see, Gũaka: To build, Kũhoya: To pray',
-            pairs: [
-              { left: 'Kũrĩma', right: 'To farm' },
-              { left: 'Kuona', right: 'To see' },
-              { left: 'Gũaka', right: 'To build' },
-              { left: 'Kũhoya', right: 'To pray' }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    id: 'kikuyu-unit-4',
-    title: 'Unit 4: Gĩkũyũ Proverbs & Wisdom (Thimo)',
-    description: 'Immerse yourself in authentic Kikuyu proverbs from G. Barra’s historical collection.',
-    icon: '📜',
-    skills: [
-      {
-        id: 'kikuyu-proverbs-unity',
-        title: 'Proverbs of Unity & Perseverance',
-        icon: 'Shield',
-        description: 'Learn proverbs that emphasize community cooperation, persistence, and strength.',
-        tips: "Kikuyu wisdom is largely codified in 'Thimo' (proverbs). For example: 'Kaara kamwe gatingĩyũragĩra ndaa' (One finger does not kill a louse — Unity is strength). Another pillar is 'Mageria nomo mahota' (Persistent attempts bring success — Where there is a will there is a way).",
-        culturalNote: "As Father G. Barra noted in 1939, proverbs were the code of laws and philosophy of the Kikuyu people for centuries. Elders settled lawsuits (ciira) using appropriate proverbs that summarized moral truths.",
-        words: [
-          { target: 'Thimo', source: 'Proverb / Maxim', pronunciation: 'thee-moh', hint: 'Plural: Thimo (proverbs of wisdom)' },
-          { target: 'Kĩhooto', source: 'Truth / Justice', pronunciation: 'kee-hoh-oh-toh', hint: 'Moral right and fairness' },
-          { target: 'Hinya', source: 'Strength / Power', pronunciation: 'heen-yah', hint: 'Energy and endurance' },
-          { target: 'Ũrũmwe', source: 'Unity', pronunciation: 'oo-room-weh', hint: 'Standing together as one' },
-          { target: 'Ũtonga', source: 'Wealth / Riches', pronunciation: 'oo-tohn-gah', hint: 'Material or spiritual prosperity' }
-        ],
-        sentences: [
-          { target: 'Kaara kamwe gatingĩyũragĩra ndaa.', source: 'One finger does not kill a louse (Unity is strength).' },
-          { target: 'Mageria nomo mahota.', source: 'Persistent trials mean success (Where there is a will there is a way).' },
-          { target: 'Indo nĩ kũrĩmithanio.', source: 'Riches come from cultivating together (Many hands make light work).' }
-        ],
-        authoredExercises: [
-          {
-            type: 'multiple_choice',
-            prompt: 'What is the English proverb equivalent of "Mageria nomo mahota"?',
-            correctAnswer: 'Where there is a will there is a way',
-            options: ['Where there is a will there is a way', 'Too many cooks spoil the broth', 'Look before you leap', 'A stitch in time saves nine'],
-            hint: 'Persistent trials and effort bring achievement'
-          },
-          {
-            type: 'multiple_choice',
-            prompt: 'What does "Kaara kamwe gatingĩyũragĩra ndaa" teach us?',
-            correctAnswer: 'Unity is strength (Cooperation is necessary)',
-            options: ['Unity is strength (Cooperation is necessary)', 'Haste makes waste', 'Silence is golden', 'Birds of a feather flock together'],
-            hint: 'One finger alone cannot accomplish the task'
-          },
-          {
-            type: 'match_pairs',
-            prompt: 'Match the Kikuyu proverbs with their English equivalents:',
-            correctAnswer: 'Mageria nomo mahota: Where there is a will there is a way, Indo nĩ kũrĩmithanio: Many hands make light work, Kĩhooto: Justice / Truth, Ũrũmwe: Unity',
-            pairs: [
-              { left: 'Mageria nomo mahota', right: 'Where there is a will there is a way' },
-              { left: 'Indo nĩ kũrĩmithanio', right: 'Many hands make light work' },
-              { left: 'Kĩhooto', right: 'Justice / Truth' },
-              { left: 'Ũrũmwe', right: 'Unity' }
-            ]
-          }
-        ]
-      },
-      {
-        id: 'kikuyu-proverbs-wisdom',
-        title: 'Proverbs of Truth & Character',
-        icon: 'BookOpen',
-        description: 'Explore classic maxims on truth, respect for elders, and discretion.',
-        tips: "Respect for truth and history is captured in 'Kĩhooto gĩtĩkũragwo nĩ rũũĩ' (Justice and truth cannot be swept away by the river). Discretion in family matters is maintained through 'Cia mũciĩ itiumaga ndira' (Do not wash dirty linen in public).",
-        culturalNote: "The proverb 'Kahiga gakũrũ gatiagararagwo nĩ maaĩ' (The river does not leap over an ancient stone) underlines the absolute respect due to elders and ancient traditions in traditional Kikuyu governance.",
-        words: [
-          { target: 'Ũũgĩ', source: 'Wisdom / Intelligence', pronunciation: 'oo-oo-gee', hint: 'Insight and sound judgement' },
-          { target: 'Mĩtugo', source: 'Customs / Character', pronunciation: 'mee-too-goh', hint: 'Moral behavior and tradition' },
-          { target: 'Kahiga', source: 'Small stone / Rock', pronunciation: 'kah-hee-gah', hint: 'Firm foundation' },
-          { target: 'Rũũĩ', source: 'River', pronunciation: 'roo-oo-ee', hint: 'Flowing water' },
-          { target: 'Ũhoro wa ma', source: 'The true story / Truth', pronunciation: 'oo-hoh-roh wah mah', hint: 'Verified truth' }
-        ],
-        sentences: [
-          { target: 'Kahiga gakũrũ gatiagararagwo nĩ maaĩ.', source: 'The river does not jump over an ancient stone (Old age is honourable).' },
-          { target: 'Cia mũciĩ itiumaga ndira.', source: 'Home affairs must not go into the open fields (Keep family matters private).' },
-          { target: 'Mũũkĩrĩ tene acokaga tene.', source: 'He who wakes early returns early (The early bird catches the worm).' }
-        ],
-        authoredExercises: [
-          {
-            type: 'multiple_choice',
-            prompt: 'Which proverb corresponds to "Old age is honourable"?',
-            correctAnswer: 'Kahiga gakũrũ gatiagararagwo nĩ maai',
-            options: [
-              'Kahiga gakũrũ gatiagararagwo nĩ maai',
-              'Cia mũciĩ itiumaga ndira',
-              'Mageria nomo mahota',
-              'Wĩ mwega?'
-            ],
-            hint: 'Refers to an ancient stone in the river'
-          },
-          {
-            type: 'multiple_choice',
-            prompt: 'What does "Cia mũciĩ itiumaga ndira" mean in practical life?',
-            correctAnswer: 'Keep family matters private (Do not wash dirty linen in public)',
-            options: [
-              'Keep family matters private (Do not wash dirty linen in public)',
-              'Always eat together outside',
-              'Sell farm products quickly',
-              'Wake up before sunrise'
-            ],
-            hint: 'Home affairs should stay within the family'
-          },
-          {
-            type: 'match_pairs',
-            prompt: 'Match the proverbs with their English wisdom:',
-            correctAnswer: 'Kahiga gakũrũ...: Old age is honourable, Cia mũciĩ...: Keep family affairs private, Mũũkĩrĩ tene...: The early bird catches the worm, Ũũgĩ: Wisdom',
-            pairs: [
-              { left: 'Kahiga gakũrũ...', right: 'Old age is honourable' },
-              { left: 'Cia mũciĩ...', right: 'Keep family affairs private' },
-              { left: 'Mũũkĩrĩ tene...', right: 'The early bird catches the worm' },
-              { left: 'Ũũgĩ', right: 'Wisdom' }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    id: 'kikuyu-unit-5',
-    title: 'Unit 5: Grammar Foundations from First Lessons',
-    description: 'Use explicit examples from First Lessons in Kikuyu to recognize noun-class pairs and infinitive forms.',
-    icon: '📚',
-    skills: [
-      {
-        id: 'kikuyu-noun-class-pairs',
-        title: 'Noun-Class Pairs',
-        icon: 'Layers',
-        description: 'Recognize common singular and plural pairs used in the textbook grammar sequence.',
-        tips: 'First Lessons in Kikuyu introduces noun classes as agreement groups, not as biological genders. These examples are a study aid from the historical textbook and should be checked against contemporary Gĩkũyũ usage.',
-        culturalNote: 'Noun classes organize agreement across a sentence. A learner should memorize the pair and listen for the matching agreement before trying to generalize a pattern.',
-        words: [
-          { target: 'Mũndũ', source: 'Person', hint: 'Human singular example' },
-          { target: 'Andũ', source: 'People', hint: 'Human plural example' },
-          { target: 'Mũtĩ', source: 'Tree', hint: 'Class 3 example' },
-          { target: 'Mĩtĩ', source: 'Trees', hint: 'Class 4 plural example' },
-          { target: 'Kĩama', source: 'Council', hint: 'Class 7 example' },
-          { target: 'Ciama', source: 'Councils', hint: 'Class 8 plural example' }
-        ],
-        sentences: [
-          { target: 'Mũndũ ũmwe nĩ aroka mũciĩ.', source: 'One person is coming home.' },
-          { target: 'Mĩtĩ ĩno nĩ mĩraya mũno.', source: 'These trees are very tall.' },
-          { target: 'Ciama ciothe nĩ ikũngano.', source: 'All councils are gathering.' }
-        ],
-        authoredExercises: [
-          {
-            type: 'match_pairs',
-            prompt: 'Match the Gĩkũyũ noun-class examples:',
-            correctAnswer: 'Mũndũ: Person, Andũ: People, Mũtĩ: Tree, Mĩtĩ: Trees',
-            pairs: [
-              { left: 'Mũndũ', right: 'Person' },
-              { left: 'Andũ', right: 'People' },
-              { left: 'Mũtĩ', right: 'Tree' },
-              { left: 'Mĩtĩ', right: 'Trees' }
-            ]
-          }
-        ]
-      },
-      {
-        id: 'kikuyu-infinitives',
-        title: 'Infinitives and Actions',
-        icon: 'Activity',
-        description: 'Identify the infinitive forms that introduce action verbs in the textbook examples.',
-        tips: 'The textbook presents infinitives as a useful starting point for studying verb formation. Learn the complete form first; do not assume that an English verb maps to one form in every context.',
-        words: [
-          { target: 'Kũrĩma', source: 'To cultivate', hint: 'Agricultural action' },
-          { target: 'Gũceera', source: 'To visit', hint: 'Movement or visiting' },
-          { target: 'Kũmenya', source: 'To know', hint: 'Knowledge or understanding' },
-          { target: 'Kũhoya', source: 'To pray / ask', hint: 'Prayer or asking' }
-        ],
-        sentences: [
-          { target: 'Kũrĩma mũgũnda nĩ kũrĩ bata.', source: 'To cultivate the farm is important.' },
-          { target: 'Nĩ wega kũmenya ũhoro wa ma.', source: 'It is good to know the true story.' },
-          { target: 'Nĩtũgwĩciria gũceera gwaku.', source: 'We are planning to visit your place.' }
-        ],
-        authoredExercises: [
-          {
-            type: 'multiple_choice',
-            prompt: 'Which form means “to cultivate” in this source-based lesson?',
-            correctAnswer: 'Kũrĩma',
-            options: ['Kũrĩma', 'Gũceera', 'Kũmenya', 'Kũhoya'],
-            hint: 'It refers to working the land.'
-          }
-        ]
-      }
-    ]
-  },
-  
-  // ── EXPANDED SOURCE-VERIFIED UNITS ──
-  {
-    "id": "kikuyu-unit-6-greetings",
-    "title": "Unit 6: Greetings & Farewells",
-    "description": "Comprehensive Kikuyu (Gĩkũyũ) curriculum for Greetings & Farewells, vetted from L.S.B. Leakey (1959) 'First Lessons in Kikuyu', 'A Short Kikuyu Grammar', Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and Fr. G. Barra (1939) '1,000 Kikuyu Proverbs'.",
+    "id": "kikuyu-unit-1",
+    "unitNumber": 1,
+    "title": "Greetings, Courtesies & Everyday Inquiries",
+    "description": "Master traditional Gĩkũyũ salutations, polite replies, and essential conversational questions recorded by Hildegarde Hinde (1904).",
     "icon": "Handshake",
+    "color": "#10B981",
     "skills": [
       {
-        "id": "kikuyu-exp-greetings",
-        "title": "Greetings & Farewells",
+        "id": "kikuyu-greetings-1",
+        "title": "Salutations & Welcoming Guests",
         "icon": "Handshake",
-        "description": "Master Kikuyu (Gĩkũyũ) greetings & farewells vocabulary and expressions from verified historical sources.",
-        "tips": "In this Kikuyu (Gĩkũyũ) skill covering Greetings & Farewells, pay special attention to pronunciation and morphological prefixes/suffixes: 'Ũhoro wa mũthenya' (How is your afternoon?), 'Ũhana atĩa?' (How are you?), 'Ũkĩrĩte / Karibu' (Welcome / Come in), 'Thaai thayũ' (Peace to you).",
-        "culturalNote": "Source attribution: L.S.B. Leakey (1959) 'First Lessons in Kikuyu', 'A Short Kikuyu Grammar', Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and Fr. G. Barra (1939) '1,000 Kikuyu Proverbs'.",
+        "description": "Learn traditional salutations, responses, and welcoming hospitality phrases from Hinde (1904).",
+        "culturalNote": "Among the Agĩkũyũ of the Central Highlands, inquiring after the peace ('mwohoro') of the homestead, children, and herds precedes any formal conversation.",
         "words": [
           {
-            "target": "Ũhoro wa mũthenya",
-            "source": "How is your afternoon?",
-            "pronunciation": "oo-hoh-roh wah moo-then-yah",
-            "hint": "Afternoon greeting",
-            "example": "Ũhoro wa mũthenya — How is your afternoon? (Afternoon greeting)"
+            "target": "Mwohoro",
+            "source": "Salutation / How is the news?",
+            "pronunciation": "mwo-ho-ro"
           },
           {
-            "target": "Ũhana atĩa?",
-            "source": "How are you?",
-            "pronunciation": "oo-hah-nah ah-tee-ah",
-            "hint": "General greeting",
-            "example": "Ũhana atĩa? — How are you? (General greeting)"
+            "target": "Mwohoro mwēga",
+            "source": "Good news / Fine",
+            "pronunciation": "mwo-ho-ro mwe-ga"
           },
           {
-            "target": "Ũkĩrĩte / Karibu",
-            "source": "Welcome / Come in",
-            "pronunciation": "oo-kee-ree-teh / kah-ree-boo",
-            "hint": "Hospitality invitation",
-            "example": "Ũkĩrĩte / Karibu — Welcome / Come in (Hospitality invitation)"
+            "target": "Mwēga munnu",
+            "source": "Very good / Very well",
+            "pronunciation": "mwe-ga munnu"
           },
           {
-            "target": "Thaai thayũ",
-            "source": "Peace to you",
-            "pronunciation": "thah-ah-ee thah-yoo",
-            "hint": "Traditional blessing of peace (lit. 'Peace and life')",
-            "example": "Thaai thayũ — Peace to you (Traditional blessing of peace (lit. 'Peace and life'))"
+            "target": "Nimwega",
+            "source": "I am good / well",
+            "pronunciation": "nimwe-ga"
           },
           {
-            "target": "Ũhoro wa rũciinĩ",
-            "source": "How is your morning?",
-            "pronunciation": "oo-hoh-roh wah roo-chee-nee",
-            "hint": "Morning greeting",
-            "example": "Ũhoro wa rũciinĩ — How is your morning? (Morning greeting)"
-          },
-          {
-            "target": "Ũhoro wa hwaĩ-inĩ",
-            "source": "How is your evening?",
-            "pronunciation": "oo-hoh-roh wah hwah-ee-nee",
-            "hint": "Evening greeting",
-            "example": "Ũhoro wa hwaĩ-inĩ — How is your evening? (Evening greeting)"
-          },
-          {
-            "target": "Ndĩ mwega",
-            "source": "I am fine / well",
-            "pronunciation": "n-dee mweh-gah",
-            "hint": "Standard reply to 'Ũhana atĩa?'",
-            "example": "Ndĩ mwega — I am fine / well (Standard reply to 'Ũhana atĩa?')"
-          },
-          {
-            "target": "Wĩ mwega?",
-            "source": "Hello / Are you well?",
-            "pronunciation": "wee mweh-gah",
-            "hint": "Casual: 'Are you well?' (Plural: Mũrĩ eega?)",
-            "example": "Wĩ mwega? — Hello / Are you well? (Casual: 'Are you well?' (Plural: Mũrĩ eega?))"
-          }
-        ],
-        "sentences": [
-          {
-            "target": "Mũndũ mwega nĩ endaga andũ.",
-            "source": "A good person loves people."
-          },
-          {
-            "target": "Mũtĩ mũnene wĩ na mĩri mĩraaya.",
-            "source": "A big tree has long roots."
-          },
-          {
-            "target": "Rũũĩ rũrũ rũiyũire maĩ mega.",
-            "source": "This river is full of clean water."
-          }
-        ],
-        "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Ũhoro wa mũthenya\" mean in English?",
-            "correctAnswer": "How is your afternoon?",
-            "options": [
-              "How are you?",
-              "Welcome / Come in",
-              "Peace to you",
-              "How is your afternoon?"
-            ],
-            "hint": "Afternoon greeting"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Ũhana atĩa?\" mean in English?",
-            "correctAnswer": "How are you?",
-            "options": [
-              "Welcome / Come in",
-              "Peace to you",
-              "How are you?",
-              "How is your afternoon?"
-            ],
-            "hint": "General greeting"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Ũkĩrĩte / Karibu\" mean in English?",
-            "correctAnswer": "Welcome / Come in",
-            "options": [
-              "Peace to you",
-              "Welcome / Come in",
-              "How is your afternoon?",
-              "How are you?"
-            ],
-            "hint": "Hospitality invitation"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Welcome / Come in\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "Ũkĩrĩte / Karibu",
-            "options": [
-              "Ũkĩrĩte / Karibu",
-              "Ũhoro wa mũthenya",
-              "Ũhana atĩa?",
-              "Thaai thayũ"
-            ],
-            "hint": "oo-kee-ree-teh / kah-ree-boo"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Peace to you\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "Thaai thayũ",
-            "options": [
-              "Ũhoro wa mũthenya",
-              "Ũhana atĩa?",
-              "Ũkĩrĩte / Karibu",
-              "Thaai thayũ"
-            ],
-            "hint": "thah-ah-ee thah-yoo"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"How is your morning?\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "Ũhoro wa rũciinĩ",
-            "options": [
-              "Ũhana atĩa?",
-              "Ũkĩrĩte / Karibu",
-              "Ũhoro wa rũciinĩ",
-              "Ũhoro wa mũthenya"
-            ],
-            "hint": "oo-hoh-roh wah roo-chee-nee"
-          },
-          {
-            "type": "match_pairs",
-            "prompt": "Match the Kikuyu (Gĩkũyũ) terms with their English meanings:",
-            "correctAnswer": "Ũhoro wa mũthenya: How is your afternoon?, Ũhana atĩa?: How are you?, Ũkĩrĩte / Karibu: Welcome / Come in, Thaai thayũ: Peace to you",
-            "pairs": [
-              {
-                "left": "Ũhoro wa mũthenya",
-                "right": "How is your afternoon?"
-              },
-              {
-                "left": "Ũhana atĩa?",
-                "right": "How are you?"
-              },
-              {
-                "left": "Ũkĩrĩte / Karibu",
-                "right": "Welcome / Come in"
-              },
-              {
-                "left": "Thaai thayũ",
-                "right": "Peace to you"
-              }
-            ]
-          },
-          {
-            "type": "fill_blank",
-            "prompt": "Complete: \"_____\" means \"How is your afternoon?\" in Kikuyu (Gĩkũyũ).",
-            "correctAnswer": "Ũhoro wa mũthenya",
-            "options": [
-              "Ũhoro wa mũthenya",
-              "Ũhana atĩa?",
-              "Ũkĩrĩte / Karibu",
-              "Thaai thayũ"
-            ],
-            "hint": "oo-hoh-roh wah moo-then-yah"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "kikuyu-unit-7-numbers",
-    "title": "Unit 7: Numbers",
-    "description": "Comprehensive Kikuyu (Gĩkũyũ) curriculum for Numbers, vetted from L.S.B. Leakey (1959) 'First Lessons in Kikuyu', 'A Short Kikuyu Grammar', Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and Fr. G. Barra (1939) '1,000 Kikuyu Proverbs'.",
-    "icon": "Hash",
-    "skills": [
-      {
-        "id": "kikuyu-exp-numbers",
-        "title": "Numbers",
-        "icon": "Hash",
-        "description": "Master Kikuyu (Gĩkũyũ) numbers vocabulary and expressions from verified historical sources.",
-        "tips": "In this Kikuyu (Gĩkũyũ) skill covering Numbers, pay special attention to pronunciation and morphological prefixes/suffixes: 'Mĩrongo ĩtatũ' (Thirty), 'Mĩrongo ĩnya' (Forty), 'Mĩrongo ĩthano' (Fifty), 'Nganga / Ngiri' (Thousand).",
-        "culturalNote": "Source attribution: L.S.B. Leakey (1959) 'First Lessons in Kikuyu', 'A Short Kikuyu Grammar', Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and Fr. G. Barra (1939) '1,000 Kikuyu Proverbs'.",
-        "words": [
-          {
-            "target": "Mĩrongo ĩtatũ",
-            "source": "Thirty",
-            "pronunciation": "mee-rohn-goh ee-tah-too",
-            "hint": "Three tens",
-            "example": "Mĩrongo ĩtatũ — Thirty (Three tens)"
-          },
-          {
-            "target": "Mĩrongo ĩnya",
-            "source": "Forty",
-            "pronunciation": "mee-rohn-goh ee-nyah",
-            "hint": "Four tens",
-            "example": "Mĩrongo ĩnya — Forty (Four tens)"
-          },
-          {
-            "target": "Mĩrongo ĩthano",
-            "source": "Fifty",
-            "pronunciation": "mee-rohn-goh ee-thah-noh",
-            "hint": "Five tens",
-            "example": "Mĩrongo ĩthano — Fifty (Five tens)"
-          },
-          {
-            "target": "Nganga / Ngiri",
-            "source": "Thousand",
-            "pronunciation": "n-gahn-gah / n-gee-ree",
-            "example": "Nganga / Ngiri — Thousand"
-          },
-          {
-            "target": "Ĩmwe",
-            "source": "One",
-            "pronunciation": "ee-mweh",
-            "hint": "Stem: -mwe",
-            "example": "Ĩmwe — One (Stem: -mwe)"
-          },
-          {
-            "target": "Igĩrĩ",
-            "source": "Two",
-            "pronunciation": "ee-gee-ree",
-            "hint": "Stem: -gĩrĩ / -ĩrĩ",
-            "example": "Igĩrĩ — Two (Stem: -gĩrĩ / -ĩrĩ)"
-          },
-          {
-            "target": "Ithatũ",
-            "source": "Three",
-            "pronunciation": "ee-thah-too",
-            "hint": "Stem: -thatũ",
-            "example": "Ithatũ — Three (Stem: -thatũ)"
-          },
-          {
-            "target": "Inya",
-            "source": "Four",
-            "pronunciation": "ee-nyah",
-            "hint": "Stem: -nya",
-            "example": "Inya — Four (Stem: -nya)"
-          }
-        ],
-        "sentences": [
-          {
-            "target": "Mũndũ mwega nĩ endaga andũ.",
-            "source": "A good person loves people."
-          },
-          {
-            "target": "Mũtĩ mũnene wĩ na mĩri mĩraaya.",
-            "source": "A big tree has long roots."
-          },
-          {
-            "target": "Rũũĩ rũrũ rũiyũire maĩ mega.",
-            "source": "This river is full of clean water."
-          }
-        ],
-        "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Mĩrongo ĩtatũ\" mean in English?",
-            "correctAnswer": "Thirty",
-            "options": [
-              "Forty",
-              "Fifty",
-              "Thousand",
-              "Thirty"
-            ],
-            "hint": "Three tens"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Mĩrongo ĩnya\" mean in English?",
-            "correctAnswer": "Forty",
-            "options": [
-              "Fifty",
-              "Thousand",
-              "Forty",
-              "Thirty"
-            ],
-            "hint": "Four tens"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Mĩrongo ĩthano\" mean in English?",
-            "correctAnswer": "Fifty",
-            "options": [
-              "Thousand",
-              "Fifty",
-              "Thirty",
-              "Forty"
-            ],
-            "hint": "Five tens"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Fifty\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "Mĩrongo ĩthano",
-            "options": [
-              "Mĩrongo ĩthano",
-              "Mĩrongo ĩtatũ",
-              "Mĩrongo ĩnya",
-              "Nganga / Ngiri"
-            ],
-            "hint": "mee-rohn-goh ee-thah-noh"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Thousand\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "Nganga / Ngiri",
-            "options": [
-              "Mĩrongo ĩtatũ",
-              "Mĩrongo ĩnya",
-              "Mĩrongo ĩthano",
-              "Nganga / Ngiri"
-            ],
-            "hint": "n-gahn-gah / n-gee-ree"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"One\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "Ĩmwe",
-            "options": [
-              "Mĩrongo ĩnya",
-              "Mĩrongo ĩthano",
-              "Ĩmwe",
-              "Mĩrongo ĩtatũ"
-            ],
-            "hint": "ee-mweh"
-          },
-          {
-            "type": "match_pairs",
-            "prompt": "Match the Kikuyu (Gĩkũyũ) terms with their English meanings:",
-            "correctAnswer": "Mĩrongo ĩtatũ: Thirty, Mĩrongo ĩnya: Forty, Mĩrongo ĩthano: Fifty, Nganga / Ngiri: Thousand",
-            "pairs": [
-              {
-                "left": "Mĩrongo ĩtatũ",
-                "right": "Thirty"
-              },
-              {
-                "left": "Mĩrongo ĩnya",
-                "right": "Forty"
-              },
-              {
-                "left": "Mĩrongo ĩthano",
-                "right": "Fifty"
-              },
-              {
-                "left": "Nganga / Ngiri",
-                "right": "Thousand"
-              }
-            ]
-          },
-          {
-            "type": "fill_blank",
-            "prompt": "Complete: \"_____\" means \"Thirty\" in Kikuyu (Gĩkũyũ).",
-            "correctAnswer": "Mĩrongo ĩtatũ",
-            "options": [
-              "Mĩrongo ĩtatũ",
-              "Mĩrongo ĩnya",
-              "Mĩrongo ĩthano",
-              "Nganga / Ngiri"
-            ],
-            "hint": "mee-rohn-goh ee-tah-too"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "kikuyu-unit-8-family",
-    "title": "Unit 8: Family & Relationships",
-    "description": "Comprehensive Kikuyu (Gĩkũyũ) curriculum for Family & Relationships, vetted from L.S.B. Leakey (1959) 'First Lessons in Kikuyu', 'A Short Kikuyu Grammar', Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and Fr. G. Barra (1939) '1,000 Kikuyu Proverbs'.",
-    "icon": "Users",
-    "skills": [
-      {
-        "id": "kikuyu-exp-family",
-        "title": "Family & Relationships",
-        "icon": "Users",
-        "description": "Master Kikuyu (Gĩkũyũ) family & relationships vocabulary and expressions from verified historical sources.",
-        "tips": "In this Kikuyu (Gĩkũyũ) skill covering Family & Relationships, pay special attention to pronunciation and morphological prefixes/suffixes: 'Maitũ / Nyina' (Mother), 'Baba / Ithe' (Father), 'Kahĩĩ / Mũrũ' (Son / Boy), 'Mwarĩ / Mũirĩtu' (Daughter / Girl).",
-        "culturalNote": "Source attribution: L.S.B. Leakey (1959) 'First Lessons in Kikuyu', 'A Short Kikuyu Grammar', Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and Fr. G. Barra (1939) '1,000 Kikuyu Proverbs'.",
-        "words": [
-          {
-            "target": "Maitũ / Nyina",
-            "source": "Mother",
-            "pronunciation": "mah-ee-too / nyee-nah",
-            "hint": "'Maitũ' is affectionate ('our mother'); 'nyina' is formal ('his/her mother')",
-            "example": "Maitũ / Nyina — Mother ('Maitũ' is affectionate ('our mother'); 'nyina' is formal ('his/her mother'))"
-          },
-          {
-            "target": "Baba / Ithe",
-            "source": "Father",
-            "pronunciation": "bah-bah / ee-theh",
-            "hint": "'Baba' = my father; 'ithe' = his/her father",
-            "example": "Baba / Ithe — Father ('Baba' = my father; 'ithe' = his/her father)"
-          },
-          {
-            "target": "Kahĩĩ / Mũrũ",
-            "source": "Son / Boy",
-            "pronunciation": "kah-hee-ee / moo-roo",
-            "hint": "'Mũrũ wa...' = son of...; uninitiated boy: kĩhĩĩ",
-            "example": "Kahĩĩ / Mũrũ — Son / Boy ('Mũrũ wa...' = son of...; uninitiated boy: kĩhĩĩ)"
-          },
-          {
-            "target": "Mwarĩ / Mũirĩtu",
-            "source": "Daughter / Girl",
-            "pronunciation": "mwah-ree / moo-ee-ree-too",
-            "hint": "'Mwarĩ wa...' = daughter of...; initiated maiden: mũirĩtu",
-            "example": "Mwarĩ / Mũirĩtu — Daughter / Girl ('Mwarĩ wa...' = daughter of...; initiated maiden: mũirĩtu)"
-          },
-          {
-            "target": "Mwanake",
-            "source": "Young man / Warrior",
-            "pronunciation": "mwah-nah-keh",
-            "hint": "Plural: Anake (young initiated men)",
-            "example": "Mwanake — Young man / Warrior (Plural: Anake (young initiated men))"
-          },
-          {
-            "target": "Kaana",
-            "source": "Child / Baby",
-            "pronunciation": "kah-ah-nah",
-            "hint": "Plural: Ciana (children)",
-            "example": "Kaana — Child / Baby (Plural: Ciana (children))"
-          },
-          {
-            "target": "Mũrũ wa maitũ",
-            "source": "Brother",
-            "pronunciation": "moo-roo wah mah-ee-too",
-            "hint": "Literally 'son of our mother'",
-            "example": "Mũrũ wa maitũ — Brother (Literally 'son of our mother')"
-          },
-          {
-            "target": "Mwarĩ wa maitũ",
-            "source": "Sister",
-            "pronunciation": "mwah-ree wah mah-ee-too",
-            "hint": "Literally 'daughter of our mother'",
-            "example": "Mwarĩ wa maitũ — Sister (Literally 'daughter of our mother')"
-          }
-        ],
-        "sentences": [
-          {
-            "target": "Mũndũ mwega nĩ endaga andũ.",
-            "source": "A good person loves people."
-          },
-          {
-            "target": "Mũtĩ mũnene wĩ na mĩri mĩraaya.",
-            "source": "A big tree has long roots."
-          },
-          {
-            "target": "Rũũĩ rũrũ rũiyũire maĩ mega.",
-            "source": "This river is full of clean water."
-          }
-        ],
-        "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Maitũ / Nyina\" mean in English?",
-            "correctAnswer": "Mother",
-            "options": [
-              "Father",
-              "Son / Boy",
-              "Daughter / Girl",
-              "Mother"
-            ],
-            "hint": "'Maitũ' is affectionate ('our mother'); 'nyina' is formal ('his/her mother')"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Baba / Ithe\" mean in English?",
-            "correctAnswer": "Father",
-            "options": [
-              "Son / Boy",
-              "Daughter / Girl",
-              "Father",
-              "Mother"
-            ],
-            "hint": "'Baba' = my father; 'ithe' = his/her father"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Kahĩĩ / Mũrũ\" mean in English?",
-            "correctAnswer": "Son / Boy",
-            "options": [
-              "Daughter / Girl",
-              "Son / Boy",
-              "Mother",
-              "Father"
-            ],
-            "hint": "'Mũrũ wa...' = son of...; uninitiated boy: kĩhĩĩ"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Son / Boy\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "Kahĩĩ / Mũrũ",
-            "options": [
-              "Kahĩĩ / Mũrũ",
-              "Maitũ / Nyina",
-              "Baba / Ithe",
-              "Mwarĩ / Mũirĩtu"
-            ],
-            "hint": "kah-hee-ee / moo-roo"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Daughter / Girl\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "Mwarĩ / Mũirĩtu",
-            "options": [
-              "Maitũ / Nyina",
-              "Baba / Ithe",
-              "Kahĩĩ / Mũrũ",
-              "Mwarĩ / Mũirĩtu"
-            ],
-            "hint": "mwah-ree / moo-ee-ree-too"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Young man / Warrior\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "Mwanake",
-            "options": [
-              "Baba / Ithe",
-              "Kahĩĩ / Mũrũ",
-              "Mwanake",
-              "Maitũ / Nyina"
-            ],
-            "hint": "mwah-nah-keh"
-          },
-          {
-            "type": "match_pairs",
-            "prompt": "Match the Kikuyu (Gĩkũyũ) terms with their English meanings:",
-            "correctAnswer": "Maitũ / Nyina: Mother, Baba / Ithe: Father, Kahĩĩ / Mũrũ: Son / Boy, Mwarĩ / Mũirĩtu: Daughter / Girl",
-            "pairs": [
-              {
-                "left": "Maitũ / Nyina",
-                "right": "Mother"
-              },
-              {
-                "left": "Baba / Ithe",
-                "right": "Father"
-              },
-              {
-                "left": "Kahĩĩ / Mũrũ",
-                "right": "Son / Boy"
-              },
-              {
-                "left": "Mwarĩ / Mũirĩtu",
-                "right": "Daughter / Girl"
-              }
-            ]
-          },
-          {
-            "type": "fill_blank",
-            "prompt": "Complete: \"_____\" means \"Mother\" in Kikuyu (Gĩkũyũ).",
-            "correctAnswer": "Maitũ / Nyina",
-            "options": [
-              "Maitũ / Nyina",
-              "Baba / Ithe",
-              "Kahĩĩ / Mũrũ",
-              "Mwarĩ / Mũirĩtu"
-            ],
-            "hint": "mah-ee-too / nyee-nah"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "kikuyu-unit-9-food",
-    "title": "Unit 9: Food & Drink",
-    "description": "Comprehensive Kikuyu (Gĩkũyũ) curriculum for Food & Drink, vetted from L.S.B. Leakey (1959) 'First Lessons in Kikuyu', 'A Short Kikuyu Grammar', Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and Fr. G. Barra (1939) '1,000 Kikuyu Proverbs'.",
-    "icon": "Utensils",
-    "skills": [
-      {
-        "id": "kikuyu-exp-food",
-        "title": "Food & Drink",
-        "icon": "Utensils",
-        "description": "Master Kikuyu (Gĩkũyũ) food & drink vocabulary and expressions from verified historical sources.",
-        "tips": "In this Kikuyu (Gĩkũyũ) skill covering Food & Drink, pay special attention to pronunciation and morphological prefixes/suffixes: 'Caai' (Tea), 'Irigũ' (Banana), 'Ngwacĩ' (Sweet Potato), 'Ũũkĩ' (Honey).",
-        "culturalNote": "Source attribution: L.S.B. Leakey (1959) 'First Lessons in Kikuyu', 'A Short Kikuyu Grammar', Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and Fr. G. Barra (1939) '1,000 Kikuyu Proverbs'.",
-        "words": [
-          {
-            "target": "Caai",
-            "source": "Tea",
-            "pronunciation": "chah-ah-ee",
-            "hint": "Tea cultivated extensively in Central Kenya Highlands",
-            "example": "Caai — Tea (Tea cultivated extensively in Central Kenya Highlands)"
-          },
-          {
-            "target": "Irigũ",
-            "source": "Banana",
-            "pronunciation": "ee-ree-goo",
-            "hint": "Plural: Marigũ (staple crop in Gĩkũyũland)",
-            "example": "Irigũ — Banana (Plural: Marigũ (staple crop in Gĩkũyũland))"
-          },
-          {
-            "target": "Ngwacĩ",
-            "source": "Sweet Potato",
-            "pronunciation": "n-gwah-chee",
-            "hint": "Traditional roasted or boiled sweet tuber",
-            "example": "Ngwacĩ — Sweet Potato (Traditional roasted or boiled sweet tuber)"
-          },
-          {
-            "target": "Ũũkĩ",
-            "source": "Honey",
-            "pronunciation": "oo-oo-kee",
-            "hint": "Prized natural honey harvested from tree log hives",
-            "example": "Ũũkĩ — Honey (Prized natural honey harvested from tree log hives)"
-          },
-          {
-            "target": "Njohi",
-            "source": "Traditional beer",
-            "pronunciation": "n-joh-hee",
-            "hint": "Fermented sugar cane or honey brew for elders' ceremonies",
-            "example": "Njohi — Traditional beer (Fermented sugar cane or honey brew for elders' ceremonies)"
-          },
-          {
-            "target": "Maaĩ",
-            "source": "Water",
-            "pronunciation": "mah-ah-ee",
-            "hint": "Essential fresh water",
-            "example": "Maaĩ — Water (Essential fresh water)"
-          },
-          {
-            "target": "Irio",
-            "source": "Food",
-            "pronunciation": "ee-ree-oh",
-            "hint": "Generic food, and the iconic mashed potato/corn/beans dish",
-            "example": "Irio — Food (Generic food, and the iconic mashed potato/corn/beans dish)"
-          },
-          {
-            "target": "Ngima",
-            "source": "Ugali",
-            "pronunciation": "n-gee-mah",
-            "hint": "Traditional maize or millet meal cake",
-            "example": "Ngima — Ugali (Traditional maize or millet meal cake)"
-          }
-        ],
-        "sentences": [
-          {
-            "target": "Mũndũ mwega nĩ endaga andũ.",
-            "source": "A good person loves people."
-          },
-          {
-            "target": "Mũtĩ mũnene wĩ na mĩri mĩraaya.",
-            "source": "A big tree has long roots."
-          },
-          {
-            "target": "Rũũĩ rũrũ rũiyũire maĩ mega.",
-            "source": "This river is full of clean water."
-          }
-        ],
-        "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Caai\" mean in English?",
-            "correctAnswer": "Tea",
-            "options": [
-              "Banana",
-              "Sweet Potato",
-              "Honey",
-              "Tea"
-            ],
-            "hint": "Tea cultivated extensively in Central Kenya Highlands"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Irigũ\" mean in English?",
-            "correctAnswer": "Banana",
-            "options": [
-              "Sweet Potato",
-              "Honey",
-              "Banana",
-              "Tea"
-            ],
-            "hint": "Plural: Marigũ (staple crop in Gĩkũyũland)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Ngwacĩ\" mean in English?",
-            "correctAnswer": "Sweet Potato",
-            "options": [
-              "Honey",
-              "Sweet Potato",
-              "Tea",
-              "Banana"
-            ],
-            "hint": "Traditional roasted or boiled sweet tuber"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Sweet Potato\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "Ngwacĩ",
-            "options": [
-              "Ngwacĩ",
-              "Caai",
-              "Irigũ",
-              "Ũũkĩ"
-            ],
-            "hint": "n-gwah-chee"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Honey\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "Ũũkĩ",
-            "options": [
-              "Caai",
-              "Irigũ",
-              "Ngwacĩ",
-              "Ũũkĩ"
-            ],
-            "hint": "oo-oo-kee"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Traditional beer\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "Njohi",
-            "options": [
-              "Irigũ",
-              "Ngwacĩ",
-              "Njohi",
-              "Caai"
-            ],
-            "hint": "n-joh-hee"
-          },
-          {
-            "type": "match_pairs",
-            "prompt": "Match the Kikuyu (Gĩkũyũ) terms with their English meanings:",
-            "correctAnswer": "Caai: Tea, Irigũ: Banana, Ngwacĩ: Sweet Potato, Ũũkĩ: Honey",
-            "pairs": [
-              {
-                "left": "Caai",
-                "right": "Tea"
-              },
-              {
-                "left": "Irigũ",
-                "right": "Banana"
-              },
-              {
-                "left": "Ngwacĩ",
-                "right": "Sweet Potato"
-              },
-              {
-                "left": "Ũũkĩ",
-                "right": "Honey"
-              }
-            ]
-          },
-          {
-            "type": "fill_blank",
-            "prompt": "Complete: \"_____\" means \"Tea\" in Kikuyu (Gĩkũyũ).",
-            "correctAnswer": "Caai",
-            "options": [
-              "Caai",
-              "Irigũ",
-              "Ngwacĩ",
-              "Ũũkĩ"
-            ],
-            "hint": "chah-ah-ee"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "kikuyu-unit-10-verbs",
-    "title": "Unit 10: Verbs & Actions",
-    "description": "Comprehensive Kikuyu (Gĩkũyũ) curriculum for Verbs & Actions, vetted from L.S.B. Leakey (1959) 'First Lessons in Kikuyu', 'A Short Kikuyu Grammar', Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and Fr. G. Barra (1939) '1,000 Kikuyu Proverbs'.",
-    "icon": "Zap",
-    "skills": [
-      {
-        "id": "kikuyu-exp-verbs",
-        "title": "Verbs & Actions (Part 1)",
-        "icon": "Zap",
-        "description": "Master Kikuyu (Gĩkũyũ) verbs & actions vocabulary and expressions from verified historical sources.",
-        "tips": "In this Kikuyu (Gĩkũyũ) skill covering Verbs & Actions, pay special attention to pronunciation and morphological prefixes/suffixes: 'Gũhota / Ũhoti' (To be able / Ability), 'Gũthĩtaka' (To accuse), 'Kwongerera' (To add to), 'Gũtaara' (To advise).",
-        "culturalNote": "Source attribution: L.S.B. Leakey (1959) 'First Lessons in Kikuyu', 'A Short Kikuyu Grammar', Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and Fr. G. Barra (1939) '1,000 Kikuyu Proverbs'.",
-        "words": [
-          {
-            "target": "Gũhota / Ũhoti",
-            "source": "To be able / Ability",
-            "pronunciation": "goo-hoh-tah / oo-hoh-tee",
-            "hint": "Verb stem -hota (be able), noun ũhoti (ability)",
-            "example": "Gũhota / Ũhoti — To be able / Ability (Verb stem -hota (be able), noun ũhoti (ability))"
-          },
-          {
-            "target": "Gũthĩtaka",
-            "source": "To accuse",
-            "pronunciation": "goo-thee-tah-kah",
-            "hint": "Verb stem: -thĩtaka",
-            "example": "Gũthĩtaka — To accuse (Verb stem: -thĩtaka)"
-          },
-          {
-            "target": "Kwongerera",
-            "source": "To add to",
-            "pronunciation": "kwohn-geh-reh-rah",
-            "hint": "Verb stem: -ongerera",
-            "example": "Kwongerera — To add to (Verb stem: -ongerera)"
-          },
-          {
-            "target": "Gũtaara",
-            "source": "To advise",
-            "pronunciation": "goo-tah-ah-rah",
-            "hint": "Verb stem: -taara (give counsel)",
-            "example": "Gũtaara — To advise (Verb stem: -taara (give counsel))"
-          },
-          {
-            "target": "Kwĩtigĩra",
-            "source": "To be afraid",
-            "pronunciation": "kwee-tee-gee-rah",
-            "hint": "Verb stem: -ĩtigĩra",
-            "example": "Kwĩtigĩra — To be afraid (Verb stem: -ĩtigĩra)"
-          },
-          {
-            "target": "Kwĩtĩkĩra / Kũiguana",
-            "source": "To agree",
-            "pronunciation": "kwee-tee-kee-rah / koo-ee-gwah-nah",
-            "hint": "-ĩtĩkĩra = agree to; -iguana = agree together",
-            "example": "Kwĩtĩkĩra / Kũiguana — To agree (-ĩtĩkĩra = agree to; -iguana = agree together)"
-          },
-          {
-            "target": "Kũrakara",
-            "source": "To be angry",
-            "pronunciation": "koo-rah-kah-rah",
-            "hint": "Verb stem: -rakara",
-            "example": "Kũrakara — To be angry (Verb stem: -rakara)"
-          },
-          {
-            "target": "Kũũria",
-            "source": "To ask (question)",
-            "pronunciation": "koo-oo-ree-ah",
-            "hint": "Inquire; ask for something = kũhoya",
-            "example": "Kũũria — To ask (question) (Inquire; ask for something = kũhoya)"
-          },
-          {
-            "target": "Gũciara",
-            "source": "To bear fruit / Give birth",
-            "pronunciation": "goo-chee-ah-rah",
-            "hint": "Verb stem: -ciara",
-            "example": "Gũciara — To bear fruit / Give birth (Verb stem: -ciara)"
-          },
-          {
-            "target": "Kũhũra",
-            "source": "To beat / Strike",
-            "pronunciation": "koo-hoo-rah",
-            "hint": "Verb stem: -hũra",
-            "example": "Kũhũra — To beat / Strike (Verb stem: -hũra)"
-          },
-          {
-            "target": "Kwambĩrĩria",
-            "source": "To begin",
-            "pronunciation": "kwahm-bee-ree-ree-ah",
-            "hint": "Verb stem: -ambĩrĩria",
-            "example": "Kwambĩrĩria — To begin (Verb stem: -ambĩrĩria)"
-          },
-          {
-            "target": "Kwĩtĩkia",
-            "source": "To believe",
-            "pronunciation": "kwee-tee-kee-ah",
-            "hint": "Verb stem: -ĩtĩkia",
-            "example": "Kwĩtĩkia — To believe (Verb stem: -ĩtĩkia)"
-          }
-        ],
-        "sentences": [
-          {
-            "target": "Mũndũ mwega nĩ endaga andũ.",
-            "source": "A good person loves people."
-          },
-          {
-            "target": "Mũtĩ mũnene wĩ na mĩri mĩraaya.",
-            "source": "A big tree has long roots."
-          },
-          {
-            "target": "Rũũĩ rũrũ rũiyũire maĩ mega.",
-            "source": "This river is full of clean water."
-          }
-        ],
-        "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Gũhota / Ũhoti\" mean in English?",
-            "correctAnswer": "To be able / Ability",
-            "options": [
-              "To accuse",
-              "To add to",
-              "To advise",
-              "To be able / Ability"
-            ],
-            "hint": "Verb stem -hota (be able), noun ũhoti (ability)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Gũthĩtaka\" mean in English?",
-            "correctAnswer": "To accuse",
-            "options": [
-              "To add to",
-              "To advise",
-              "To accuse",
-              "To be able / Ability"
-            ],
-            "hint": "Verb stem: -thĩtaka"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Kwongerera\" mean in English?",
-            "correctAnswer": "To add to",
-            "options": [
-              "To advise",
-              "To add to",
-              "To be able / Ability",
-              "To accuse"
-            ],
-            "hint": "Verb stem: -ongerera"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"To add to\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "Kwongerera",
-            "options": [
-              "Kwongerera",
-              "Gũhota / Ũhoti",
-              "Gũthĩtaka",
-              "Gũtaara"
-            ],
-            "hint": "kwohn-geh-reh-rah"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"To advise\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "Gũtaara",
-            "options": [
-              "Gũhota / Ũhoti",
-              "Gũthĩtaka",
-              "Kwongerera",
-              "Gũtaara"
-            ],
-            "hint": "goo-tah-ah-rah"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"To be afraid\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "Kwĩtigĩra",
-            "options": [
-              "Gũthĩtaka",
-              "Kwongerera",
-              "Kwĩtigĩra",
-              "Gũhota / Ũhoti"
-            ],
-            "hint": "kwee-tee-gee-rah"
-          },
-          {
-            "type": "match_pairs",
-            "prompt": "Match the Kikuyu (Gĩkũyũ) terms with their English meanings:",
-            "correctAnswer": "Gũhota / Ũhoti: To be able / Ability, Gũthĩtaka: To accuse, Kwongerera: To add to, Gũtaara: To advise",
-            "pairs": [
-              {
-                "left": "Gũhota / Ũhoti",
-                "right": "To be able / Ability"
-              },
-              {
-                "left": "Gũthĩtaka",
-                "right": "To accuse"
-              },
-              {
-                "left": "Kwongerera",
-                "right": "To add to"
-              },
-              {
-                "left": "Gũtaara",
-                "right": "To advise"
-              }
-            ]
-          },
-          {
-            "type": "fill_blank",
-            "prompt": "Complete: \"_____\" means \"To be able / Ability\" in Kikuyu (Gĩkũyũ).",
-            "correctAnswer": "Gũhota / Ũhoti",
-            "options": [
-              "Gũhota / Ũhoti",
-              "Gũthĩtaka",
-              "Kwongerera",
-              "Gũtaara"
-            ],
-            "hint": "goo-hoh-tah / oo-hoh-tee"
-          }
-        ]
-      },
-      {
-        "id": "kikuyu-exp-verbs-2",
-        "title": "Verbs & Actions (Part 2)",
-        "icon": "Zap",
-        "description": "Master Kikuyu (Gĩkũyũ) verbs & actions vocabulary and expressions from verified historical sources.",
-        "tips": "In this Kikuyu (Gĩkũyũ) skill covering Verbs & Actions, pay special attention to pronunciation and morphological prefixes/suffixes: 'Gũthika' (To bury), 'Kũgũra' (To buy), 'Gũkuua' (To carry), 'Kũruga' (To cook).",
-        "culturalNote": "Source attribution: L.S.B. Leakey (1959) 'First Lessons in Kikuyu', 'A Short Kikuyu Grammar', Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and Fr. G. Barra (1939) '1,000 Kikuyu Proverbs'.",
-        "words": [
-          {
-            "target": "Gũthika",
-            "source": "To bury",
-            "pronunciation": "goo-thee-kah",
-            "hint": "Verb stem: -thika",
-            "example": "Gũthika — To bury (Verb stem: -thika)"
-          },
-          {
-            "target": "Kũgũra",
-            "source": "To buy",
-            "pronunciation": "koo-goo-rah",
-            "hint": "Verb stem: -gũra",
-            "example": "Kũgũra — To buy (Verb stem: -gũra)"
-          },
-          {
-            "target": "Gũkuua",
-            "source": "To carry",
-            "pronunciation": "goo-koo-oo-ah",
-            "hint": "Transport loads or burdens",
-            "example": "Gũkuua — To carry (Transport loads or burdens)"
-          },
-          {
-            "target": "Kũruga",
-            "source": "To cook",
-            "pronunciation": "koo-roo-gah",
-            "hint": "Preparing food over the fire",
-            "example": "Kũruga — To cook (Preparing food over the fire)"
-          },
-          {
-            "target": "Gũtema / Gũtinia",
-            "source": "To cut",
-            "pronunciation": "goo-teh-mah / goo-tee-nee-ah",
-            "hint": "Gũtema = cut down/slash; gũtinia = sever/cut off",
-            "example": "Gũtema / Gũtinia — To cut (Gũtema = cut down/slash; gũtinia = sever/cut off)"
-          },
-          {
-            "target": "Gũkua",
-            "source": "To die",
-            "pronunciation": "goo-koo-ah",
-            "hint": "Verb stem: -kua",
-            "example": "Gũkua — To die (Verb stem: -kua)"
-          },
-          {
-            "target": "Kwenja",
-            "source": "To dig",
-            "pronunciation": "kwehn-jah",
-            "hint": "Verb stem: -enja",
-            "example": "Kwenja — To dig (Verb stem: -enja)"
-          },
-          {
-            "target": "Gũtaha maaĩ",
-            "source": "To draw water",
-            "pronunciation": "goo-tah-hah mah-ah-ee",
-            "hint": "Fetching river or stream water",
-            "example": "Gũtaha maaĩ — To draw water (Fetching river or stream water)"
-          },
-          {
-            "target": "Kũnyua",
-            "source": "To drink",
-            "pronunciation": "koo-nyoo-ah",
-            "hint": "Present: anyua (he/she drinks)",
-            "example": "Kũnyua — To drink (Present: anyua (he/she drinks))"
-          },
-          {
-            "target": "Kũrĩa",
-            "source": "To eat",
-            "pronunciation": "koo-ree-ah",
-            "hint": "Present: arĩa (he/she eats)",
-            "example": "Kũrĩa — To eat (Present: arĩa (he/she eats))"
-          },
-          {
-            "target": "Kwendana / Kwenda",
-            "source": "To love / Desire",
-            "pronunciation": "kwehn-dah-nah / kwehn-dah",
-            "hint": "Love, affection, preference",
-            "example": "Kwendana / Kwenda — To love / Desire (Love, affection, preference)"
-          },
-          {
-            "target": "Kuona / Kũmenya",
-            "source": "To see / Understand",
-            "pronunciation": "koo-oh-nah / koo-meh-nyah",
-            "hint": "'Kuona' = see; 'kũmenya' = know / understand",
-            "example": "Kuona / Kũmenya — To see / Understand ('Kuona' = see; 'kũmenya' = know / understand)"
-          },
-          {
-            "target": "Kũina",
-            "source": "To sing / Dance",
-            "pronunciation": "koo-ee-nah",
-            "hint": "Singing songs or participating in cultural dances",
-            "example": "Kũina — To sing / Dance (Singing songs or participating in cultural dances)"
-          },
-          {
-            "target": "Kwarĩria / Kũheana",
-            "source": "To speak / Talk",
-            "pronunciation": "kwah-ree-ree-ah / koo-heh-ah-nah",
-            "hint": "Dialogue and discussion",
-            "example": "Kwarĩria / Kũheana — To speak / Talk (Dialogue and discussion)"
-          },
-          {
-            "target": "Kũrutana",
-            "source": "To teach",
-            "pronunciation": "koo-roo-tah-nah",
-            "hint": "Imparting knowledge or skills",
-            "example": "Kũrutana — To teach (Imparting knowledge or skills)"
-          }
-        ],
-        "sentences": [
-          {
-            "target": "Rũũĩ rũrũ rũiyũire maĩ mega.",
-            "source": "This river is full of clean water."
-          },
-          {
-            "target": "Ciana nĩ irathاكا nja ya nyũmba.",
-            "source": "The children are playing outside the house."
-          },
-          {
-            "target": "Wĩra wa mũgũnda nĩ wambĩrĩirie rũciinĩ.",
-            "source": "The farm work started in the morning."
-          }
-        ],
-        "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Gũthika\" mean in English?",
-            "correctAnswer": "To bury",
-            "options": [
-              "To buy",
-              "To carry",
-              "To cook",
-              "To bury"
-            ],
-            "hint": "Verb stem: -thika"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Kũgũra\" mean in English?",
-            "correctAnswer": "To buy",
-            "options": [
-              "To carry",
-              "To cook",
-              "To buy",
-              "To bury"
-            ],
-            "hint": "Verb stem: -gũra"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Gũkuua\" mean in English?",
-            "correctAnswer": "To carry",
-            "options": [
-              "To cook",
-              "To carry",
-              "To bury",
-              "To buy"
-            ],
-            "hint": "Transport loads or burdens"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"To carry\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "Gũkuua",
-            "options": [
-              "Gũkuua",
-              "Gũthika",
-              "Kũgũra",
-              "Kũruga"
-            ],
-            "hint": "goo-koo-oo-ah"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"To cook\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "Kũruga",
-            "options": [
-              "Gũthika",
-              "Kũgũra",
-              "Gũkuua",
-              "Kũruga"
-            ],
-            "hint": "koo-roo-gah"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"To cut\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "Gũtema / Gũtinia",
-            "options": [
-              "Kũgũra",
-              "Gũkuua",
-              "Gũtema / Gũtinia",
-              "Gũthika"
-            ],
-            "hint": "goo-teh-mah / goo-tee-nee-ah"
-          },
-          {
-            "type": "match_pairs",
-            "prompt": "Match the Kikuyu (Gĩkũyũ) terms with their English meanings:",
-            "correctAnswer": "Gũthika: To bury, Kũgũra: To buy, Gũkuua: To carry, Kũruga: To cook",
-            "pairs": [
-              {
-                "left": "Gũthika",
-                "right": "To bury"
-              },
-              {
-                "left": "Kũgũra",
-                "right": "To buy"
-              },
-              {
-                "left": "Gũkuua",
-                "right": "To carry"
-              },
-              {
-                "left": "Kũruga",
-                "right": "To cook"
-              }
-            ]
-          },
-          {
-            "type": "fill_blank",
-            "prompt": "Complete: \"_____\" means \"To bury\" in Kikuyu (Gĩkũyũ).",
-            "correctAnswer": "Gũthika",
-            "options": [
-              "Gũthika",
-              "Kũgũra",
-              "Gũkuua",
-              "Kũruga"
-            ],
-            "hint": "goo-thee-kah"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "kikuyu-unit-11-nature",
-    "title": "Unit 11: Nature & Environment",
-    "description": "Comprehensive Kikuyu (Gĩkũyũ) curriculum for Nature & Environment, vetted from L.S.B. Leakey (1959) 'First Lessons in Kikuyu', 'A Short Kikuyu Grammar', Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and Fr. G. Barra (1939) '1,000 Kikuyu Proverbs'.",
-    "icon": "Sun",
-    "skills": [
-      {
-        "id": "kikuyu-exp-nature",
-        "title": "Nature & Environment (Part 1)",
-        "icon": "Sun",
-        "description": "Master Kikuyu (Gĩkũyũ) nature & environment vocabulary and expressions from verified historical sources.",
-        "tips": "In this Kikuyu (Gĩkũyũ) skill covering Nature & Environment, pay special attention to pronunciation and morphological prefixes/suffixes: 'Thĩ' (Earth / World), 'Tĩri' (Soil / Ground), 'Kĩrĩma' (Mountain / Hill), 'Mũgumo' (Sacred Fig Tree).",
-        "culturalNote": "Source attribution: L.S.B. Leakey (1959) 'First Lessons in Kikuyu', 'A Short Kikuyu Grammar', Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and Fr. G. Barra (1939) '1,000 Kikuyu Proverbs'.",
-        "words": [
-          {
-            "target": "Thĩ",
-            "source": "Earth / World",
-            "pronunciation": "thee",
-            "hint": "The earth or world under heaven",
-            "example": "Thĩ — Earth / World (The earth or world under heaven)"
-          },
-          {
-            "target": "Tĩri",
-            "source": "Soil / Ground",
-            "pronunciation": "tee-ree",
-            "hint": "Fertile volcanic soil of the highlands",
-            "example": "Tĩri — Soil / Ground (Fertile volcanic soil of the highlands)"
-          },
-          {
-            "target": "Kĩrĩma",
-            "source": "Mountain / Hill",
-            "pronunciation": "kee-ree-mah",
-            "hint": "Plural: Irĩma; Mount Kenya = Kĩrĩnyaga",
-            "example": "Kĩrĩma — Mountain / Hill (Plural: Irĩma; Mount Kenya = Kĩrĩnyaga)"
-          },
-          {
-            "target": "Mũgumo",
-            "source": "Sacred Fig Tree",
-            "pronunciation": "moo-goo-moh",
-            "hint": "Venerated parasitic fig tree, focal point of traditional prayer",
-            "example": "Mũgumo — Sacred Fig Tree (Venerated parasitic fig tree, focal point of traditional prayer)"
-          },
-          {
-            "target": "Gĩthaka",
-            "source": "Forest / Bush",
-            "pronunciation": "gee-thah-kah",
-            "hint": "Ancestral bushland or land estate",
-            "example": "Gĩthaka — Forest / Bush (Ancestral bushland or land estate)"
-          },
-          {
-            "target": "Mbura",
-            "source": "Rain",
-            "pronunciation": "m-boo-rah",
-            "hint": "Precious life-sustaining rainfall",
-            "example": "Mbura — Rain (Precious life-sustaining rainfall)"
-          },
-          {
-            "target": "Rĩũa",
-            "source": "Sun",
-            "pronunciation": "ree-oo-ah",
-            "hint": "Sun and daylight",
-            "example": "Rĩũa — Sun (Sun and daylight)"
-          },
-          {
-            "target": "Mweri",
-            "source": "Moon / Month",
-            "pronunciation": "mweh-ree",
-            "hint": "Moon or lunar calendar month",
-            "example": "Mweri — Moon / Month (Moon or lunar calendar month)"
-          },
-          {
-            "target": "Njata",
-            "source": "Star",
-            "pronunciation": "n-jah-tah",
-            "hint": "Night sky star",
-            "example": "Njata — Star (Night sky star)"
-          },
-          {
-            "target": "Rũhuho",
-            "source": "Wind",
-            "pronunciation": "roo-hoo-hoh",
-            "hint": "Plural: 'Huho (breeze or strong wind)",
-            "example": "Rũhuho — Wind (Plural: 'Huho (breeze or strong wind))"
-          },
-          {
-            "target": "Itu",
-            "source": "Cloud",
-            "pronunciation": "ee-too",
-            "hint": "Plural: Matu (rainclouds)",
-            "example": "Itu — Cloud (Plural: Matu (rainclouds))"
-          },
-          {
-            "target": "Mwaki",
-            "source": "Fire",
-            "pronunciation": "mwah-kee",
-            "hint": "Hearth fire or burning wood",
-            "example": "Mwaki — Fire (Hearth fire or burning wood)"
-          }
-        ],
-        "sentences": [
-          {
-            "target": "Mũndũ mwega nĩ endaga andũ.",
-            "source": "A good person loves people."
-          },
-          {
-            "target": "Mũtĩ mũnene wĩ na mĩri mĩraaya.",
-            "source": "A big tree has long roots."
-          },
-          {
-            "target": "Rũũĩ rũrũ rũiyũire maĩ mega.",
-            "source": "This river is full of clean water."
-          }
-        ],
-        "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Thĩ\" mean in English?",
-            "correctAnswer": "Earth / World",
-            "options": [
-              "Soil / Ground",
-              "Mountain / Hill",
-              "Sacred Fig Tree",
-              "Earth / World"
-            ],
-            "hint": "The earth or world under heaven"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Tĩri\" mean in English?",
-            "correctAnswer": "Soil / Ground",
-            "options": [
-              "Mountain / Hill",
-              "Sacred Fig Tree",
-              "Soil / Ground",
-              "Earth / World"
-            ],
-            "hint": "Fertile volcanic soil of the highlands"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Kĩrĩma\" mean in English?",
-            "correctAnswer": "Mountain / Hill",
-            "options": [
-              "Sacred Fig Tree",
-              "Mountain / Hill",
-              "Earth / World",
-              "Soil / Ground"
-            ],
-            "hint": "Plural: Irĩma; Mount Kenya = Kĩrĩnyaga"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Mountain / Hill\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "Kĩrĩma",
-            "options": [
-              "Kĩrĩma",
-              "Thĩ",
-              "Tĩri",
-              "Mũgumo"
-            ],
-            "hint": "kee-ree-mah"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Sacred Fig Tree\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "Mũgumo",
-            "options": [
-              "Thĩ",
-              "Tĩri",
-              "Kĩrĩma",
-              "Mũgumo"
-            ],
-            "hint": "moo-goo-moh"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Forest / Bush\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "Gĩthaka",
-            "options": [
-              "Tĩri",
-              "Kĩrĩma",
-              "Gĩthaka",
-              "Thĩ"
-            ],
-            "hint": "gee-thah-kah"
-          },
-          {
-            "type": "match_pairs",
-            "prompt": "Match the Kikuyu (Gĩkũyũ) terms with their English meanings:",
-            "correctAnswer": "Thĩ: Earth / World, Tĩri: Soil / Ground, Kĩrĩma: Mountain / Hill, Mũgumo: Sacred Fig Tree",
-            "pairs": [
-              {
-                "left": "Thĩ",
-                "right": "Earth / World"
-              },
-              {
-                "left": "Tĩri",
-                "right": "Soil / Ground"
-              },
-              {
-                "left": "Kĩrĩma",
-                "right": "Mountain / Hill"
-              },
-              {
-                "left": "Mũgumo",
-                "right": "Sacred Fig Tree"
-              }
-            ]
-          },
-          {
-            "type": "fill_blank",
-            "prompt": "Complete: \"_____\" means \"Earth / World\" in Kikuyu (Gĩkũyũ).",
-            "correctAnswer": "Thĩ",
-            "options": [
-              "Thĩ",
-              "Tĩri",
-              "Kĩrĩma",
-              "Mũgumo"
-            ],
-            "hint": "thee"
-          }
-        ]
-      },
-      {
-        "id": "kikuyu-exp-nature-2",
-        "title": "Nature & Environment (Part 2)",
-        "icon": "Sun",
-        "description": "Master Kikuyu (Gĩkũyũ) nature & environment vocabulary and expressions from verified historical sources.",
-        "tips": "In this Kikuyu (Gĩkũyũ) skill covering Nature & Environment, pay special attention to pronunciation and morphological prefixes/suffixes: 'Mahiga' (Stones), 'Heho' (Coldness), 'Nyeki' (Grass), 'Nyamũ' (Animal / Wildlife).",
-        "culturalNote": "Source attribution: L.S.B. Leakey (1959) 'First Lessons in Kikuyu', 'A Short Kikuyu Grammar', Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and Fr. G. Barra (1939) '1,000 Kikuyu Proverbs'.",
-        "words": [
-          {
-            "target": "Mahiga",
-            "source": "Stones",
-            "pronunciation": "mah-hee-gah",
-            "hint": "Singular: Ihiga (hearth-stones / stones)",
-            "example": "Mahiga — Stones (Singular: Ihiga (hearth-stones / stones))"
-          },
-          {
-            "target": "Heho",
-            "source": "Coldness",
-            "pronunciation": "heh-hoh",
-            "hint": "Highland chill or cool air",
-            "example": "Heho — Coldness (Highland chill or cool air)"
-          },
-          {
-            "target": "Nyeki",
-            "source": "Grass",
-            "pronunciation": "nyeh-kee",
-            "hint": "Pasture grass for livestock",
-            "example": "Nyeki — Grass (Pasture grass for livestock)"
-          },
-          {
-            "target": "Nyamũ",
-            "source": "Animal / Wildlife",
-            "pronunciation": "nyah-moo",
-            "hint": "General term for wildlife and animals",
-            "example": "Nyamũ — Animal / Wildlife (General term for wildlife and animals)"
-          },
-          {
-            "target": "Nyoni",
-            "source": "Bird",
-            "pronunciation": "nyoh-nee",
-            "hint": "Class III noun for bird",
-            "example": "Nyoni — Bird (Class III noun for bird)"
-          },
-          {
-            "target": "Njũkĩ",
-            "source": "Bee",
-            "pronunciation": "n-joo-kee",
-            "hint": "Honeybee",
-            "example": "Njũkĩ — Bee (Honeybee)"
-          },
-          {
-            "target": "Mũrũthi",
-            "source": "Lion",
-            "pronunciation": "moo-roo-thee",
-            "hint": "Revered apex predator; promoted to Class II",
-            "example": "Mũrũthi — Lion (Revered apex predator; promoted to Class II)"
-          },
-          {
-            "target": "Ngarĩ",
-            "source": "Leopard",
-            "pronunciation": "n-gah-ree",
-            "hint": "Spotted predator",
-            "example": "Ngarĩ — Leopard (Spotted predator)"
-          },
-          {
-            "target": "Njogu",
-            "source": "Elephant",
-            "pronunciation": "n-joh-goo",
-            "hint": "Mighty forest and savanna elephant",
-            "example": "Njogu — Elephant (Mighty forest and savanna elephant)"
-          },
-          {
-            "target": "Mbogo",
-            "source": "Buffalo",
-            "pronunciation": "m-boh-goh",
-            "hint": "Cape buffalo of the Aberdares and Mt. Kenya",
-            "example": "Mbogo — Buffalo (Cape buffalo of the Aberdares and Mt. Kenya)"
-          },
-          {
-            "target": "Ng'ombe",
-            "source": "Cow / Cattle",
-            "pronunciation": "n-gohm-beh",
-            "hint": "Domestic bovine cattle",
-            "example": "Ng'ombe — Cow / Cattle (Domestic bovine cattle)"
-          },
-          {
-            "target": "Ndegwa",
-            "source": "Bull / Ox",
-            "pronunciation": "n-deh-gwah",
-            "hint": "Male ox or bull",
-            "example": "Ndegwa — Bull / Ox (Male ox or bull)"
-          },
-          {
-            "target": "Mbũri",
-            "source": "Goat",
-            "pronunciation": "m-boo-ree",
-            "hint": "Prized livestock animal",
-            "example": "Mbũri — Goat (Prized livestock animal)"
-          },
-          {
-            "target": "Ndũrũme",
-            "source": "Sheep / Ram",
-            "pronunciation": "n-doo-roo-meh",
-            "hint": "Sacrificial male ram",
-            "example": "Ndũrũme — Sheep / Ram (Sacrificial male ram)"
-          }
-        ],
-        "sentences": [
-          {
-            "target": "Rũũĩ rũrũ rũiyũire maĩ mega.",
-            "source": "This river is full of clean water."
-          },
-          {
-            "target": "Ciana nĩ irathاكا nja ya nyũmba.",
-            "source": "The children are playing outside the house."
-          },
-          {
-            "target": "Wĩra wa mũgũnda nĩ wambĩrĩirie rũciinĩ.",
-            "source": "The farm work started in the morning."
-          }
-        ],
-        "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Mahiga\" mean in English?",
-            "correctAnswer": "Stones",
-            "options": [
-              "Coldness",
-              "Grass",
-              "Animal / Wildlife",
-              "Stones"
-            ],
-            "hint": "Singular: Ihiga (hearth-stones / stones)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Heho\" mean in English?",
-            "correctAnswer": "Coldness",
-            "options": [
-              "Grass",
-              "Animal / Wildlife",
-              "Coldness",
-              "Stones"
-            ],
-            "hint": "Highland chill or cool air"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Nyeki\" mean in English?",
-            "correctAnswer": "Grass",
-            "options": [
-              "Animal / Wildlife",
-              "Grass",
-              "Stones",
-              "Coldness"
-            ],
-            "hint": "Pasture grass for livestock"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Grass\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "Nyeki",
-            "options": [
-              "Nyeki",
-              "Mahiga",
-              "Heho",
-              "Nyamũ"
-            ],
-            "hint": "nyeh-kee"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Animal / Wildlife\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "Nyamũ",
-            "options": [
-              "Mahiga",
-              "Heho",
-              "Nyeki",
-              "Nyamũ"
-            ],
-            "hint": "nyah-moo"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Bird\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "Nyoni",
-            "options": [
-              "Heho",
-              "Nyeki",
-              "Nyoni",
-              "Mahiga"
-            ],
-            "hint": "nyoh-nee"
-          },
-          {
-            "type": "match_pairs",
-            "prompt": "Match the Kikuyu (Gĩkũyũ) terms with their English meanings:",
-            "correctAnswer": "Mahiga: Stones, Heho: Coldness, Nyeki: Grass, Nyamũ: Animal / Wildlife",
-            "pairs": [
-              {
-                "left": "Mahiga",
-                "right": "Stones"
-              },
-              {
-                "left": "Heho",
-                "right": "Coldness"
-              },
-              {
-                "left": "Nyeki",
-                "right": "Grass"
-              },
-              {
-                "left": "Nyamũ",
-                "right": "Animal / Wildlife"
-              }
-            ]
-          },
-          {
-            "type": "fill_blank",
-            "prompt": "Complete: \"_____\" means \"Stones\" in Kikuyu (Gĩkũyũ).",
-            "correctAnswer": "Mahiga",
-            "options": [
-              "Mahiga",
-              "Heho",
-              "Nyeki",
-              "Nyamũ"
-            ],
-            "hint": "mah-hee-gah"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "kikuyu-unit-12-body",
-    "title": "Unit 12: Body Parts",
-    "description": "Comprehensive Kikuyu (Gĩkũyũ) curriculum for Body Parts, vetted from L.S.B. Leakey (1959) 'First Lessons in Kikuyu', 'A Short Kikuyu Grammar', Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and Fr. G. Barra (1939) '1,000 Kikuyu Proverbs'.",
-    "icon": "Heart",
-    "skills": [
-      {
-        "id": "kikuyu-exp-body",
-        "title": "Body Parts (Part 1)",
-        "icon": "Heart",
-        "description": "Master Kikuyu (Gĩkũyũ) body parts vocabulary and expressions from verified historical sources.",
-        "tips": "In this Kikuyu (Gĩkũyũ) skill covering Body Parts, pay special attention to pronunciation and morphological prefixes/suffixes: 'Mwĩrĩ' (Living body), 'Mũtwe' (Head), 'Rĩitho' (Eye), 'Gũtũ' (Ear).",
-        "culturalNote": "Source attribution: L.S.B. Leakey (1959) 'First Lessons in Kikuyu', 'A Short Kikuyu Grammar', Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and Fr. G. Barra (1939) '1,000 Kikuyu Proverbs'.",
-        "words": [
-          {
-            "target": "Mwĩrĩ",
-            "source": "Living body",
-            "pronunciation": "mwee-ree",
-            "hint": "The living human body (corpse is kĩĩmba)",
-            "example": "Mwĩrĩ — Living body (The living human body (corpse is kĩĩmba))"
-          },
-          {
-            "target": "Mũtwe",
-            "source": "Head",
-            "pronunciation": "moo-tweh",
-            "hint": "Plural: Mĩtwe",
-            "example": "Mũtwe — Head (Plural: Mĩtwe)"
-          },
-          {
-            "target": "Rĩitho",
-            "source": "Eye",
-            "pronunciation": "ree-ee-thoh",
-            "hint": "Plural: Maitho",
-            "example": "Rĩitho — Eye (Plural: Maitho)"
-          },
-          {
-            "target": "Gũtũ",
-            "source": "Ear",
-            "pronunciation": "goo-too",
-            "hint": "Plural: Matũ (Class VIII body noun)",
-            "example": "Gũtũ — Ear (Plural: Matũ (Class VIII body noun))"
-          },
-          {
-            "target": "Iniũrũ",
-            "source": "Nose",
-            "pronunciation": "ee-nee-oo-roo",
-            "hint": "Plural: Maniũrũ",
-            "example": "Iniũrũ — Nose (Plural: Maniũrũ)"
-          },
-          {
-            "target": "Mũromo",
-            "source": "Mouth",
-            "pronunciation": "moo-roh-moh",
-            "hint": "Plural: Mĩromo",
-            "example": "Mũromo — Mouth (Plural: Mĩromo)"
-          },
-          {
-            "target": "Igego",
-            "source": "Tooth",
-            "pronunciation": "ee-geh-goh",
-            "hint": "Plural: Magego",
-            "example": "Igego — Tooth (Plural: Magego)"
-          },
-          {
-            "target": "Rũrĩmĩ",
-            "source": "Tongue",
-            "pronunciation": "roo-ree-mee",
-            "hint": "Plural: Nĩmĩ (Class VI noun)",
-            "example": "Rũrĩmĩ — Tongue (Plural: Nĩmĩ (Class VI noun))"
-          },
-          {
-            "target": "Nderu",
-            "source": "Beard",
-            "pronunciation": "n-deh-roo",
-            "hint": "Facial hair and whiskers",
-            "example": "Nderu — Beard (Facial hair and whiskers)"
-          },
-          {
-            "target": "Ngingo",
-            "source": "Neck",
-            "pronunciation": "n-geen-goh",
-            "hint": "Anatomical neck",
-            "example": "Ngingo — Neck (Anatomical neck)"
-          },
-          {
-            "target": "Gĩthũri",
-            "source": "Chest",
-            "pronunciation": "gee-thoo-ree",
-            "hint": "Plural: Ithũri",
-            "example": "Gĩthũri — Chest (Plural: Ithũri)"
-          },
-          {
-            "target": "Ngoro",
-            "source": "Heart",
-            "pronunciation": "n-goh-roh",
-            "hint": "Physical heart and seat of feelings",
-            "example": "Ngoro — Heart (Physical heart and seat of feelings)"
-          }
-        ],
-        "sentences": [
-          {
-            "target": "Mũndũ mwega nĩ endaga andũ.",
-            "source": "A good person loves people."
-          },
-          {
-            "target": "Mũtĩ mũnene wĩ na mĩri mĩraaya.",
-            "source": "A big tree has long roots."
-          },
-          {
-            "target": "Rũũĩ rũrũ rũiyũire maĩ mega.",
-            "source": "This river is full of clean water."
-          }
-        ],
-        "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Mwĩrĩ\" mean in English?",
-            "correctAnswer": "Living body",
-            "options": [
-              "Head",
-              "Eye",
-              "Ear",
-              "Living body"
-            ],
-            "hint": "The living human body (corpse is kĩĩmba)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Mũtwe\" mean in English?",
-            "correctAnswer": "Head",
-            "options": [
-              "Eye",
-              "Ear",
-              "Head",
-              "Living body"
-            ],
-            "hint": "Plural: Mĩtwe"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Rĩitho\" mean in English?",
-            "correctAnswer": "Eye",
-            "options": [
-              "Ear",
-              "Eye",
-              "Living body",
-              "Head"
-            ],
-            "hint": "Plural: Maitho"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Eye\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "Rĩitho",
-            "options": [
-              "Rĩitho",
-              "Mwĩrĩ",
-              "Mũtwe",
-              "Gũtũ"
-            ],
-            "hint": "ree-ee-thoh"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Ear\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "Gũtũ",
-            "options": [
-              "Mwĩrĩ",
-              "Mũtwe",
-              "Rĩitho",
-              "Gũtũ"
-            ],
-            "hint": "goo-too"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Nose\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "Iniũrũ",
-            "options": [
-              "Mũtwe",
-              "Rĩitho",
-              "Iniũrũ",
-              "Mwĩrĩ"
-            ],
-            "hint": "ee-nee-oo-roo"
-          },
-          {
-            "type": "match_pairs",
-            "prompt": "Match the Kikuyu (Gĩkũyũ) terms with their English meanings:",
-            "correctAnswer": "Mwĩrĩ: Living body, Mũtwe: Head, Rĩitho: Eye, Gũtũ: Ear",
-            "pairs": [
-              {
-                "left": "Mwĩrĩ",
-                "right": "Living body"
-              },
-              {
-                "left": "Mũtwe",
-                "right": "Head"
-              },
-              {
-                "left": "Rĩitho",
-                "right": "Eye"
-              },
-              {
-                "left": "Gũtũ",
-                "right": "Ear"
-              }
-            ]
-          },
-          {
-            "type": "fill_blank",
-            "prompt": "Complete: \"_____\" means \"Living body\" in Kikuyu (Gĩkũyũ).",
-            "correctAnswer": "Mwĩrĩ",
-            "options": [
-              "Mwĩrĩ",
-              "Mũtwe",
-              "Rĩitho",
-              "Gũtũ"
-            ],
-            "hint": "mwee-ree"
-          }
-        ]
-      },
-      {
-        "id": "kikuyu-exp-body-2",
-        "title": "Body Parts (Part 2)",
-        "icon": "Heart",
-        "description": "Master Kikuyu (Gĩkũyũ) body parts vocabulary and expressions from verified historical sources.",
-        "tips": "In this Kikuyu (Gĩkũyũ) skill covering Body Parts, pay special attention to pronunciation and morphological prefixes/suffixes: 'Nda' (Stomach / Abdomen), 'Mũgongo' (Back), 'Guoko' (Arm / Hand), 'Kũgũrũ' (Leg / Foot).",
-        "culturalNote": "Source attribution: L.S.B. Leakey (1959) 'First Lessons in Kikuyu', 'A Short Kikuyu Grammar', Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and Fr. G. Barra (1939) '1,000 Kikuyu Proverbs'.",
-        "words": [
-          {
-            "target": "Nda",
-            "source": "Stomach / Abdomen",
-            "pronunciation": "n-dah",
-            "hint": "Stomach, belly, or pregnancy",
-            "example": "Nda — Stomach / Abdomen (Stomach, belly, or pregnancy)"
-          },
-          {
-            "target": "Mũgongo",
-            "source": "Back",
-            "pronunciation": "moo-gohn-goh",
-            "hint": "Plural: Mĩgongo",
-            "example": "Mũgongo — Back (Plural: Mĩgongo)"
-          },
-          {
-            "target": "Guoko",
-            "source": "Arm / Hand",
-            "pronunciation": "gwah-koh",
-            "hint": "Plural: Moko / Maoko (Class VIII body noun)",
-            "example": "Guoko — Arm / Hand (Plural: Moko / Maoko (Class VIII body noun))"
-          },
-          {
-            "target": "Kũgũrũ",
-            "source": "Leg / Foot",
-            "pronunciation": "koo-goo-roo",
-            "hint": "Plural: Magũrũ (Class VIII body noun)",
-            "example": "Kũgũrũ — Leg / Foot (Plural: Magũrũ (Class VIII body noun))"
-          },
-          {
-            "target": "Thakame",
-            "source": "Blood",
-            "pronunciation": "thah-kah-meh",
-            "hint": "Lifeblood",
-            "example": "Thakame — Blood (Lifeblood)"
-          },
-          {
-            "target": "Ihĩndĩ",
-            "source": "Bone",
-            "pronunciation": "ee-heen-dee",
-            "hint": "Plural: Mahĩndĩ",
-            "example": "Ihĩndĩ — Bone (Plural: Mahĩndĩ)"
-          }
-        ],
-        "sentences": [
-          {
-            "target": "Rũũĩ rũrũ rũiyũire maĩ mega.",
-            "source": "This river is full of clean water."
-          },
-          {
-            "target": "Ciana nĩ irathاكا nja ya nyũmba.",
-            "source": "The children are playing outside the house."
-          },
-          {
-            "target": "Wĩra wa mũgũnda nĩ wambĩrĩirie rũciinĩ.",
-            "source": "The farm work started in the morning."
-          }
-        ],
-        "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Nda\" mean in English?",
-            "correctAnswer": "Stomach / Abdomen",
-            "options": [
-              "Back",
-              "Arm / Hand",
-              "Leg / Foot",
-              "Stomach / Abdomen"
-            ],
-            "hint": "Stomach, belly, or pregnancy"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Mũgongo\" mean in English?",
-            "correctAnswer": "Back",
-            "options": [
-              "Arm / Hand",
-              "Leg / Foot",
-              "Back",
-              "Stomach / Abdomen"
-            ],
-            "hint": "Plural: Mĩgongo"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Guoko\" mean in English?",
-            "correctAnswer": "Arm / Hand",
-            "options": [
-              "Leg / Foot",
-              "Arm / Hand",
-              "Stomach / Abdomen",
-              "Back"
-            ],
-            "hint": "Plural: Moko / Maoko (Class VIII body noun)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Arm / Hand\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "Guoko",
-            "options": [
-              "Guoko",
-              "Nda",
-              "Mũgongo",
-              "Kũgũrũ"
-            ],
-            "hint": "gwah-koh"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Leg / Foot\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "Kũgũrũ",
-            "options": [
-              "Nda",
-              "Mũgongo",
-              "Guoko",
-              "Kũgũrũ"
-            ],
-            "hint": "koo-goo-roo"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Blood\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "Thakame",
-            "options": [
-              "Mũgongo",
-              "Guoko",
-              "Thakame",
-              "Nda"
-            ],
-            "hint": "thah-kah-meh"
-          },
-          {
-            "type": "match_pairs",
-            "prompt": "Match the Kikuyu (Gĩkũyũ) terms with their English meanings:",
-            "correctAnswer": "Nda: Stomach / Abdomen, Mũgongo: Back, Guoko: Arm / Hand, Kũgũrũ: Leg / Foot",
-            "pairs": [
-              {
-                "left": "Nda",
-                "right": "Stomach / Abdomen"
-              },
-              {
-                "left": "Mũgongo",
-                "right": "Back"
-              },
-              {
-                "left": "Guoko",
-                "right": "Arm / Hand"
-              },
-              {
-                "left": "Kũgũrũ",
-                "right": "Leg / Foot"
-              }
-            ]
-          },
-          {
-            "type": "fill_blank",
-            "prompt": "Complete: \"_____\" means \"Stomach / Abdomen\" in Kikuyu (Gĩkũyũ).",
-            "correctAnswer": "Nda",
-            "options": [
-              "Nda",
-              "Mũgongo",
-              "Guoko",
-              "Kũgũrũ"
-            ],
-            "hint": "n-dah"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "kikuyu-unit-13-culture",
-    "title": "Unit 13: Culture & Heritage",
-    "description": "Comprehensive Kikuyu (Gĩkũyũ) curriculum for Culture & Heritage, vetted from L.S.B. Leakey (1959) 'First Lessons in Kikuyu', 'A Short Kikuyu Grammar', Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and Fr. G. Barra (1939) '1,000 Kikuyu Proverbs'.",
-    "icon": "Award",
-    "skills": [
-      {
-        "id": "kikuyu-exp-culture",
-        "title": "Culture & Heritage",
-        "icon": "Award",
-        "description": "Master Kikuyu (Gĩkũyũ) culture & heritage vocabulary and expressions from verified historical sources.",
-        "tips": "In this Kikuyu (Gĩkũyũ) skill covering Culture & Heritage, pay special attention to pronunciation and morphological prefixes/suffixes: 'Ngai' (God (The Creator)), 'Rũracio' (Dowry / Bride Gift), 'Ciira' (Lawsuit / Case), 'Ndĩrĩ' (Wooden Mortar).",
-        "culturalNote": "Source attribution: L.S.B. Leakey (1959) 'First Lessons in Kikuyu', 'A Short Kikuyu Grammar', Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and Fr. G. Barra (1939) '1,000 Kikuyu Proverbs'.",
-        "words": [
-          {
-            "target": "Ngai",
-            "source": "God (The Creator)",
-            "pronunciation": "n-gah-ee",
-            "hint": "Supreme deity dwelling atop Kĩrĩnyaga (Mount Kenya)",
-            "example": "Ngai — God (The Creator) (Supreme deity dwelling atop Kĩrĩnyaga (Mount Kenya))"
-          },
-          {
-            "target": "Rũracio",
-            "source": "Dowry / Bride Gift",
-            "pronunciation": "roo-rah-chee-oh",
-            "hint": "Traditional matrimonial tokens uniting two families",
-            "example": "Rũracio — Dowry / Bride Gift (Traditional matrimonial tokens uniting two families)"
-          },
-          {
-            "target": "Ciira",
-            "source": "Lawsuit / Case",
-            "pronunciation": "chee-ee-rah",
-            "hint": "Legal proceeding heard and decided by elders",
-            "example": "Ciira — Lawsuit / Case (Legal proceeding heard and decided by elders)"
-          },
-          {
-            "target": "Ndĩrĩ",
-            "source": "Wooden Mortar",
-            "pronunciation": "n-dee-ree",
-            "hint": "Carved heavy hardwood mortar for pounding maize and grain",
-            "example": "Ndĩrĩ — Wooden Mortar (Carved heavy hardwood mortar for pounding maize and grain)"
-          },
-          {
-            "target": "Mwatũ",
-            "source": "Beehive",
-            "pronunciation": "mwah-too",
-            "hint": "Hollowed cylindrical log beehive hung high in forest canopies",
-            "example": "Mwatũ — Beehive (Hollowed cylindrical log beehive hung high in forest canopies)"
-          },
-          {
-            "target": "Kĩnandu",
-            "source": "Ceremonial Gourd",
-            "pronunciation": "kee-nahn-doo",
-            "hint": "Small ceremonial gourd kept for ritual castor oil",
-            "example": "Kĩnandu — Ceremonial Gourd (Small ceremonial gourd kept for ritual castor oil)"
-          },
-          {
-            "target": "Watho",
-            "source": "Law / Commandment",
-            "pronunciation": "wah-thoh",
-            "hint": "Customary law and ordinances",
-            "example": "Watho — Law / Commandment (Customary law and ordinances)"
-          },
-          {
-            "target": "Mũtugo",
-            "source": "Custom / Tradition",
-            "pronunciation": "moo-too-goh",
-            "hint": "Established cultural heritage and ancestral customs",
-            "example": "Mũtugo — Custom / Tradition (Established cultural heritage and ancestral customs)"
-          },
-          {
-            "target": "Kĩondo",
-            "source": "Traditional woven bag",
-            "pronunciation": "kee-ohn-doh",
-            "hint": "Famous indigenous sisal woven carrying bag (skin bag is mondo)",
-            "example": "Kĩondo — Traditional woven bag (Famous indigenous sisal woven carrying bag (skin bag is mondo))"
-          },
-          {
-            "target": "Mũguĩ",
-            "source": "Arrow",
-            "pronunciation": "moo-gwee",
-            "hint": "Quiver arrow (quiver = kĩano / thiaka)",
-            "example": "Mũguĩ — Arrow (Quiver arrow (quiver = kĩano / thiaka))"
-          },
-          {
-            "target": "Ithanwa",
-            "source": "Ceremonial axe",
-            "pronunciation": "ee-thahn-wah",
-            "hint": "Traditional tanged axe-blade used for ritual purification",
-            "example": "Ithanwa — Ceremonial axe (Traditional tanged axe-blade used for ritual purification)"
-          }
-        ],
-        "sentences": [
-          {
-            "target": "Mũndũ mwega nĩ endaga andũ.",
-            "source": "A good person loves people."
-          },
-          {
-            "target": "Mũtĩ mũnene wĩ na mĩri mĩraaya.",
-            "source": "A big tree has long roots."
-          },
-          {
-            "target": "Rũũĩ rũrũ rũiyũire maĩ mega.",
-            "source": "This river is full of clean water."
-          }
-        ],
-        "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Ngai\" mean in English?",
-            "correctAnswer": "God (The Creator)",
-            "options": [
-              "Dowry / Bride Gift",
-              "Lawsuit / Case",
-              "Wooden Mortar",
-              "God (The Creator)"
-            ],
-            "hint": "Supreme deity dwelling atop Kĩrĩnyaga (Mount Kenya)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Rũracio\" mean in English?",
-            "correctAnswer": "Dowry / Bride Gift",
-            "options": [
-              "Lawsuit / Case",
-              "Wooden Mortar",
-              "Dowry / Bride Gift",
-              "God (The Creator)"
-            ],
-            "hint": "Traditional matrimonial tokens uniting two families"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Ciira\" mean in English?",
-            "correctAnswer": "Lawsuit / Case",
-            "options": [
-              "Wooden Mortar",
-              "Lawsuit / Case",
-              "God (The Creator)",
-              "Dowry / Bride Gift"
-            ],
-            "hint": "Legal proceeding heard and decided by elders"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Lawsuit / Case\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "Ciira",
-            "options": [
-              "Ciira",
-              "Ngai",
-              "Rũracio",
-              "Ndĩrĩ"
-            ],
-            "hint": "chee-ee-rah"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Wooden Mortar\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "Ndĩrĩ",
-            "options": [
-              "Ngai",
-              "Rũracio",
-              "Ciira",
-              "Ndĩrĩ"
-            ],
-            "hint": "n-dee-ree"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Beehive\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "Mwatũ",
-            "options": [
-              "Rũracio",
-              "Ciira",
-              "Mwatũ",
-              "Ngai"
-            ],
-            "hint": "mwah-too"
-          },
-          {
-            "type": "match_pairs",
-            "prompt": "Match the Kikuyu (Gĩkũyũ) terms with their English meanings:",
-            "correctAnswer": "Ngai: God (The Creator), Rũracio: Dowry / Bride Gift, Ciira: Lawsuit / Case, Ndĩrĩ: Wooden Mortar",
-            "pairs": [
-              {
-                "left": "Ngai",
-                "right": "God (The Creator)"
-              },
-              {
-                "left": "Rũracio",
-                "right": "Dowry / Bride Gift"
-              },
-              {
-                "left": "Ciira",
-                "right": "Lawsuit / Case"
-              },
-              {
-                "left": "Ndĩrĩ",
-                "right": "Wooden Mortar"
-              }
-            ]
-          },
-          {
-            "type": "fill_blank",
-            "prompt": "Complete: \"_____\" means \"God (The Creator)\" in Kikuyu (Gĩkũyũ).",
-            "correctAnswer": "Ngai",
-            "options": [
-              "Ngai",
-              "Rũracio",
-              "Ciira",
-              "Ndĩrĩ"
-            ],
-            "hint": "n-gah-ee"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "kikuyu-unit-14-proverbs",
-    "title": "Unit 14: Proverbs & Wisdom (Thimo)",
-    "description": "Comprehensive Kikuyu (Gĩkũyũ) curriculum for Proverbs & Wisdom (Thimo), vetted from L.S.B. Leakey (1959) 'First Lessons in Kikuyu', 'A Short Kikuyu Grammar', Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and Fr. G. Barra (1939) '1,000 Kikuyu Proverbs'.",
-    "icon": "BookOpen",
-    "skills": [
-      {
-        "id": "kikuyu-exp-proverbs",
-        "title": "Proverbs & Wisdom (Thimo)",
-        "icon": "BookOpen",
-        "description": "Master Kikuyu (Gĩkũyũ) proverbs & wisdom (thimo) vocabulary and expressions from verified historical sources.",
-        "tips": "In this Kikuyu (Gĩkũyũ) skill covering Proverbs & Wisdom (Thimo), pay special attention to pronunciation and morphological prefixes/suffixes: 'Indo nĩ kũrĩmithanio' (Many hands make light work), 'Kaara kamwe gatingĩyũragĩra ndaa' (United we stand, divided we fall), 'Kaana ka ngarĩ gakunyaga ta nyina' (Like father, like son), 'Mageria nomo mahota' (Where there is a will there is a way).",
-        "culturalNote": "Source attribution: L.S.B. Leakey (1959) 'First Lessons in Kikuyu', 'A Short Kikuyu Grammar', Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and Fr. G. Barra (1939) '1,000 Kikuyu Proverbs'.",
-        "words": [
-          {
-            "target": "Indo nĩ kũrĩmithanio",
-            "source": "Many hands make light work",
-            "pronunciation": "een-doh nee koo-ree-mee-thah-nyoh",
-            "hint": "Lit. 'Riches are found in cultivating together.' Community unity yields abundant harvest.",
-            "example": "Indo nĩ kũrĩmithanio — Many hands make light work (Lit. 'Riches are found in cultivating together.' Community unity yields abundant harvest.)"
-          },
-          {
-            "target": "Kaara kamwe gatingĩyũragĩra ndaa",
-            "source": "United we stand, divided we fall",
-            "pronunciation": "kah-ah-rah kah-mweh gah-teen-gee-yoo-rah-gee-rah n-dah-ah",
-            "hint": "Lit. 'One finger does not kill a louse.' Teamwork and unity are essential for success.",
-            "example": "Kaara kamwe gatingĩyũragĩra ndaa — United we stand, divided we fall (Lit. 'One finger does not kill a louse.' Teamwork and unity are essential for success.)"
-          },
-          {
-            "target": "Kaana ka ngarĩ gakunyaga ta nyina",
-            "source": "Like father, like son",
-            "pronunciation": "kah-ah-nah kah n-gah-ree gah-koo-nyah-gah tah nyee-nah",
-            "hint": "Lit. 'The cub of a leopard scratches like its mother.' Children inherit their parents' habits.",
-            "example": "Kaana ka ngarĩ gakunyaga ta nyina — Like father, like son (Lit. 'The cub of a leopard scratches like its mother.' Children inherit their parents' habits.)"
-          },
-          {
-            "target": "Mageria nomo mahota",
-            "source": "Where there is a will there is a way",
-            "pronunciation": "mah-geh-ree-ah noh-moh mah-hoh-tah",
-            "hint": "Lit. 'Persistent trials mean success.' Continuous effort overcomes obstacles.",
-            "example": "Mageria nomo mahota — Where there is a will there is a way (Lit. 'Persistent trials mean success.' Continuous effort overcomes obstacles.)"
-          },
-          {
-            "target": "Kahiga gakũrũ gatiagararagwo nĩ maai",
-            "source": "Old age is honourable",
-            "pronunciation": "kah-hee-gah gah-koo-roo gah-tee-ah-gah-rah-rah-gwoh nee mah-ah-ee",
-            "hint": "Lit. 'The stream does not jump over an ancient rock.' Respect for elders and history.",
-            "example": "Kahiga gakũrũ gatiagararagwo nĩ maai — Old age is honourable (Lit. 'The stream does not jump over an ancient rock.' Respect for elders and history.)"
-          },
-          {
-            "target": "Cia mũciĩ itiumaga ndira",
-            "source": "Do not wash dirty linen in public",
-            "pronunciation": "chee-ah moo-chee-ee ee-tee-oo-mah-gah n-dee-rah",
-            "hint": "Lit. 'Home matters must not venture into the open fields.' Keep family matters private.",
-            "example": "Cia mũciĩ itiumaga ndira — Do not wash dirty linen in public (Lit. 'Home matters must not venture into the open fields.' Keep family matters private.)"
-          },
-          {
-            "target": "Gũkũra nĩ kũona, kũhũna ti gũtonga",
-            "source": "A good name is better than riches",
-            "pronunciation": "goo-koo-rah nee koo-oh-nah koo-hoo-nah tee goo-tohn-gah",
-            "hint": "To grow old is to gain insight; mere fulness of belly is not lasting wealth.",
-            "example": "Gũkũra nĩ kũona, kũhũna ti gũtonga — A good name is better than riches (To grow old is to gain insight; mere fulness of belly is not lasting wealth.)"
-          },
-          {
-            "target": "Kĩhooto gĩtĩkũragwo nĩ rũũĩ",
-            "source": "Truth will prevail",
-            "pronunciation": "kee-hoh-oh-toh gee-tee-koo-rah-gwoh nee roo-oo-ee",
-            "hint": "Lit. 'Justice / moral truth cannot be swept away by a river.' Truth stands firm forever.",
-            "example": "Kĩhooto gĩtĩkũragwo nĩ rũũĩ — Truth will prevail (Lit. 'Justice / moral truth cannot be swept away by a river.' Truth stands firm forever.)"
-          },
-          {
-            "target": "Mũũkĩrĩ tene acokaga tene",
-            "source": "The early bird catches the worm",
-            "pronunciation": "moo-oo-kee-ree teh-neh ah-choh-kah-gah teh-neh",
-            "hint": "Lit. 'He who wakes early returns home early.' Promptness leads to success.",
-            "example": "Mũũkĩrĩ tene acokaga tene — The early bird catches the worm (Lit. 'He who wakes early returns home early.' Promptness leads to success.)"
-          },
-          {
-            "target": "Mũrata wa ma onekaga thĩĩna-inĩ",
-            "source": "A friend in need is a friend indeed",
-            "pronunciation": "moo-rah-tah wah mah oh-neh-kah-gah thee-ee-nah-ee-nee",
-            "hint": "A genuine friend proves loyalty during days of hardship and difficulty.",
-            "example": "Mũrata wa ma onekaga thĩĩna-inĩ — A friend in need is a friend indeed (A genuine friend proves loyalty during days of hardship and difficulty.)"
-          }
-        ],
-        "sentences": [
-          {
-            "target": "Mũndũ mwega nĩ endaga andũ.",
-            "source": "A good person loves people."
-          },
-          {
-            "target": "Mũtĩ mũnene wĩ na mĩri mĩraaya.",
-            "source": "A big tree has long roots."
-          },
-          {
-            "target": "Rũũĩ rũrũ rũiyũire maĩ mega.",
-            "source": "This river is full of clean water."
-          }
-        ],
-        "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Indo nĩ kũrĩmithanio\" mean in English?",
-            "correctAnswer": "Many hands make light work",
-            "options": [
-              "United we stand, divided we fall",
-              "Like father, like son",
-              "Where there is a will there is a way",
-              "Many hands make light work"
-            ],
-            "hint": "Lit. 'Riches are found in cultivating together.' Community unity yields abundant harvest."
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Kaara kamwe gatingĩyũragĩra ndaa\" mean in English?",
-            "correctAnswer": "United we stand, divided we fall",
-            "options": [
-              "Like father, like son",
-              "Where there is a will there is a way",
-              "United we stand, divided we fall",
-              "Many hands make light work"
-            ],
-            "hint": "Lit. 'One finger does not kill a louse.' Teamwork and unity are essential for success."
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Kaana ka ngarĩ gakunyaga ta nyina\" mean in English?",
-            "correctAnswer": "Like father, like son",
-            "options": [
-              "Where there is a will there is a way",
-              "Like father, like son",
-              "Many hands make light work",
-              "United we stand, divided we fall"
-            ],
-            "hint": "Lit. 'The cub of a leopard scratches like its mother.' Children inherit their parents' habits."
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Like father, like son\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "Kaana ka ngarĩ gakunyaga ta nyina",
-            "options": [
-              "Kaana ka ngarĩ gakunyaga ta nyina",
-              "Indo nĩ kũrĩmithanio",
-              "Kaara kamwe gatingĩyũragĩra ndaa",
-              "Mageria nomo mahota"
-            ],
-            "hint": "kah-ah-nah kah n-gah-ree gah-koo-nyah-gah tah nyee-nah"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Where there is a will there is a way\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "Mageria nomo mahota",
-            "options": [
-              "Indo nĩ kũrĩmithanio",
-              "Kaara kamwe gatingĩyũragĩra ndaa",
-              "Kaana ka ngarĩ gakunyaga ta nyina",
-              "Mageria nomo mahota"
-            ],
-            "hint": "mah-geh-ree-ah noh-moh mah-hoh-tah"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Old age is honourable\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "Kahiga gakũrũ gatiagararagwo nĩ maai",
-            "options": [
-              "Kaara kamwe gatingĩyũragĩra ndaa",
-              "Kaana ka ngarĩ gakunyaga ta nyina",
-              "Kahiga gakũrũ gatiagararagwo nĩ maai",
-              "Indo nĩ kũrĩmithanio"
-            ],
-            "hint": "kah-hee-gah gah-koo-roo gah-tee-ah-gah-rah-rah-gwoh nee mah-ah-ee"
-          },
-          {
-            "type": "match_pairs",
-            "prompt": "Match the Kikuyu (Gĩkũyũ) terms with their English meanings:",
-            "correctAnswer": "Indo nĩ kũrĩmithanio: Many hands make light work, Kaara kamwe gatingĩyũragĩra ndaa: United we stand, divided we fall, Kaana ka ngarĩ gakunyaga ta nyina: Like father, like son, Mageria nomo mahota: Where there is a will there is a way",
-            "pairs": [
-              {
-                "left": "Indo nĩ kũrĩmithanio",
-                "right": "Many hands make light work"
-              },
-              {
-                "left": "Kaara kamwe gatingĩyũragĩra ndaa",
-                "right": "United we stand, divided we fall"
-              },
-              {
-                "left": "Kaana ka ngarĩ gakunyaga ta nyina",
-                "right": "Like father, like son"
-              },
-              {
-                "left": "Mageria nomo mahota",
-                "right": "Where there is a will there is a way"
-              }
-            ]
-          },
-          {
-            "type": "fill_blank",
-            "prompt": "Complete: \"_____\" means \"Many hands make light work\" in Kikuyu (Gĩkũyũ).",
-            "correctAnswer": "Indo nĩ kũrĩmithanio",
-            "options": [
-              "Indo nĩ kũrĩmithanio",
-              "Kaara kamwe gatingĩyũragĩra ndaa",
-              "Kaana ka ngarĩ gakunyaga ta nyina",
-              "Mageria nomo mahota"
-            ],
-            "hint": "een-doh nee koo-ree-mee-thah-nyoh"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "kikuyu-unit-15-phrases",
-    "title": "Unit 15: Common Phrases",
-    "description": "Comprehensive Kikuyu (Gĩkũyũ) curriculum for Common Phrases, vetted from L.S.B. Leakey (1959) 'First Lessons in Kikuyu', 'A Short Kikuyu Grammar', Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and Fr. G. Barra (1939) '1,000 Kikuyu Proverbs'.",
-    "icon": "MessageCircle",
-    "skills": [
-      {
-        "id": "kikuyu-exp-phrases",
-        "title": "Common Phrases (Part 1)",
-        "icon": "MessageCircle",
-        "description": "Master Kikuyu (Gĩkũyũ) common phrases vocabulary and expressions from verified historical sources.",
-        "tips": "In this Kikuyu (Gĩkũyũ) skill covering Common Phrases, pay special attention to pronunciation and morphological prefixes/suffixes: 'Ũrĩa Ngai / Pole' (Sorry / Sympathy), 'Wĩtagwo atĩa?' (What is your name?), 'Njitagwo...' (My name is...), 'Nĩngwendete' (I love you).",
-        "culturalNote": "Source attribution: L.S.B. Leakey (1959) 'First Lessons in Kikuyu', 'A Short Kikuyu Grammar', Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and Fr. G. Barra (1939) '1,000 Kikuyu Proverbs'.",
-        "words": [
-          {
-            "target": "Ũrĩa Ngai / Pole",
-            "source": "Sorry / Sympathy",
-            "pronunciation": "oo-ree-ah n-gah-ee / poh-leh",
-            "hint": "Expression of empathy or comfort",
-            "example": "Ũrĩa Ngai / Pole — Sorry / Sympathy (Expression of empathy or comfort)"
-          },
-          {
-            "target": "Wĩtagwo atĩa?",
-            "source": "What is your name?",
-            "pronunciation": "wee-tah-gwoh ah-tee-ah",
-            "hint": "Polite introduction inquiry",
-            "example": "Wĩtagwo atĩa? — What is your name? (Polite introduction inquiry)"
-          },
-          {
-            "target": "Njitagwo...",
-            "source": "My name is...",
-            "pronunciation": "n-jee-tah-gwoh",
-            "hint": "Response: 'I am called...'",
-            "example": "Njitagwo... — My name is... (Response: 'I am called...')"
-          },
-          {
-            "target": "Nĩngwendete",
-            "source": "I love you",
-            "pronunciation": "nee-n-gwehn-deh-teh",
-            "hint": "Deep personal affection",
-            "example": "Nĩngwendete — I love you (Deep personal affection)"
-          },
-          {
-            "target": "Ũka haha",
+            "target": "Uka haha",
             "source": "Come here",
-            "pronunciation": "oo-kah hah-hah",
-            "hint": "Friendly request to approach",
-            "example": "Ũka haha — Come here (Friendly request to approach)"
+            "pronunciation": "uka ha-ha"
           },
           {
-            "target": "Ũrathiĩ kũ?",
-            "source": "Where are you going?",
-            "pronunciation": "oo-rah-thee-ee koo",
-            "hint": "Common question to travelers",
-            "example": "Ũrathiĩ kũ? — Where are you going? (Common question to travelers)"
+            "target": "Rehe maii",
+            "source": "Bring water",
+            "pronunciation": "re-he maii"
           },
           {
-            "target": "Gĩkĩ nĩ mbeca cigana?",
-            "source": "How much is this?",
-            "pronunciation": "gee-kee nee m-beh-chah chee-gah-nah",
-            "hint": "Market price inquiry",
-            "example": "Gĩkĩ nĩ mbeca cigana? — How much is this? (Market price inquiry)"
+            "target": "Reherria",
+            "source": "Bring food",
+            "pronunciation": "re-herria"
           },
           {
-            "target": "Wega",
-            "source": "Good / Well",
-            "pronunciation": "weh-gah",
-            "hint": "General approval or affirmation",
-            "example": "Wega — Good / Well (General approval or affirmation)"
-          },
-          {
-            "target": "Gũtĩrĩ na ũũru",
-            "source": "All is well",
-            "pronunciation": "goo-tee-ree nah oo-oo-roo",
-            "hint": "Lit. 'There is no evil / trouble'",
-            "example": "Gũtĩrĩ na ũũru — All is well (Lit. 'There is no evil / trouble')"
-          },
-          {
-            "target": "Ũhoro",
-            "source": "News / Affair",
-            "pronunciation": "oo-hoh-roh",
-            "hint": "Information, matter, or news",
-            "example": "Ũhoro — News / Affair (Information, matter, or news)"
-          },
-          {
-            "target": "Tene",
-            "source": "Long ago / Ancient times",
-            "pronunciation": "teh-neh",
-            "hint": "Times of old / early",
-            "example": "Tene — Long ago / Ancient times (Times of old / early)"
-          },
-          {
-            "target": "Mĩarahũko-inĩ",
-            "source": "In the afternoon",
-            "pronunciation": "mee-ah-rah-hoo-koh-ee-nee",
-            "hint": "Mĩarahũko = afternoon",
-            "example": "Mĩarahũko-inĩ — In the afternoon (Mĩarahũko = afternoon)"
+            "target": "Aca",
+            "source": "No",
+            "pronunciation": "aca"
           }
         ],
         "sentences": [
           {
-            "target": "Mũndũ mwega nĩ endaga andũ.",
-            "source": "A good person loves people."
+            "target": "Mwohoro? Mwohoro mwēga munnu.",
+            "source": "How is the news? Very good news."
           },
           {
-            "target": "Mũtĩ mũnene wĩ na mĩri mĩraaya.",
-            "source": "A big tree has long roots."
-          },
-          {
-            "target": "Rũũĩ rũrũ rũiyũire maĩ mega.",
-            "source": "This river is full of clean water."
+            "target": "Uka haha, rehe maii.",
+            "source": "Come here, bring water."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What does \"Ũrĩa Ngai / Pole\" mean in English?",
-            "correctAnswer": "Sorry / Sympathy",
+            "prompt": "What is the traditional Kikuyu salutation recorded by Hildegarde Hinde (1904)?",
+            "correctAnswer": "Mwohoro",
             "options": [
-              "What is your name?",
-              "My name is...",
-              "I love you",
-              "Sorry / Sympathy"
+              "Uka haha",
+              "Mwohoro",
+              "Rehe maii",
+              "Aca"
             ],
-            "hint": "Expression of empathy or comfort"
+            "hint": "Literally asks after the news/peace"
           },
           {
             "type": "multiple_choice",
-            "prompt": "What does \"Wĩtagwo atĩa?\" mean in English?",
+            "prompt": "How do you say \"Bring water\" in Kikuyu?",
+            "correctAnswer": "Rehe maii",
+            "options": [
+              "Rehe maii",
+              "Uka haha",
+              "Mwohoro mwēga",
+              "Nimwega"
+            ],
+            "hint": "maii = water"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match the Kikuyu hospitality phrases from Hinde (1904) with their English meanings:",
+            "correctAnswer": "Mwohoro: Salutation, Mwēga munnu: Very good, Uka haha: Come here, Rehe maii: Bring water",
+            "pairs": [
+              {
+                "left": "Mwohoro",
+                "right": "Salutation"
+              },
+              {
+                "left": "Mwēga munnu",
+                "right": "Very good"
+              },
+              {
+                "left": "Uka haha",
+                "right": "Come here"
+              },
+              {
+                "left": "Rehe maii",
+                "right": "Bring water"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kikuyu-questions-1",
+        "title": "Essential Questions & Conversational Replies",
+        "icon": "Coffee",
+        "description": "Ask names, origins, destinations, and intentions using Hinde (1904) phraseology.",
+        "words": [
+          {
+            "target": "Wita gwatia?",
+            "source": "What is your name?",
+            "pronunciation": "wi-ta gwa-tia"
+          },
+          {
+            "target": "Wathiiku?",
+            "source": "Where are you going?",
+            "pronunciation": "wathii-ku"
+          },
+          {
+            "target": "Ukwendakki?",
+            "source": "What do you want?",
+            "pronunciation": "ukwendakki"
+          },
+          {
+            "target": "Umaku?",
+            "source": "Where do you come from?",
+            "pronunciation": "u-ma-ku"
+          },
+          {
+            "target": "Uguikatia?",
+            "source": "What are you doing?",
+            "pronunciation": "u-gui-ka-tia"
+          },
+          {
+            "target": "Nikkigekki?",
+            "source": "What is this?",
+            "pronunciation": "nikki-gekki"
+          },
+          {
+            "target": "Meku maii?",
+            "source": "Where is the water?",
+            "pronunciation": "me-ku maii"
+          },
+          {
+            "target": "Ndiui",
+            "source": "I do not know",
+            "pronunciation": "ndiui"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Wita gwatia? Umaku?",
+            "source": "What is your name? Where do you come from?"
+          },
+          {
+            "target": "Wathiiku? Ukwendakki?",
+            "source": "Where are you going? What do you want?"
+          },
+          {
+            "target": "Meku maii? Ndiui.",
+            "source": "Where is the water? I do not know."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"Wita gwatia?\" in Kikuyu?",
             "correctAnswer": "What is your name?",
             "options": [
-              "My name is...",
-              "I love you",
+              "Where are you going?",
+              "What do you want?",
               "What is your name?",
-              "Sorry / Sympathy"
+              "Where do you come from?"
             ],
-            "hint": "Polite introduction inquiry"
+            "hint": "Hinde (1904) p. 64"
           },
           {
             "type": "multiple_choice",
-            "prompt": "What does \"Njitagwo...\" mean in English?",
-            "correctAnswer": "My name is...",
+            "prompt": "What is the English meaning of \"Wathiiku?\" in Kikuyu?",
+            "correctAnswer": "Where are you going?",
             "options": [
-              "I love you",
-              "My name is...",
-              "Sorry / Sympathy",
+              "What do you want?",
+              "Where are you going?",
+              "Where do you come from?",
               "What is your name?"
             ],
-            "hint": "Response: 'I am called...'"
+            "hint": "Hinde (1904) p. 64"
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"My name is...\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "Njitagwo...",
+            "prompt": "What is the English meaning of \"Ukwendakki?\" in Kikuyu?",
+            "correctAnswer": "What do you want?",
             "options": [
-              "Njitagwo...",
-              "Ũrĩa Ngai / Pole",
-              "Wĩtagwo atĩa?",
-              "Nĩngwendete"
+              "What do you want?",
+              "Where do you come from?",
+              "What is your name?",
+              "Where are you going?"
             ],
-            "hint": "n-jee-tah-gwoh"
+            "hint": "Hinde (1904) p. 64"
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"I love you\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "Nĩngwendete",
+            "prompt": "How do you say \"What do you want?\" in Kikuyu?",
+            "correctAnswer": "Ukwendakki?",
             "options": [
-              "Ũrĩa Ngai / Pole",
-              "Wĩtagwo atĩa?",
-              "Njitagwo...",
-              "Nĩngwendete"
+              "Ukwendakki?",
+              "Wita gwatia?",
+              "Wathiiku?",
+              "Umaku?"
             ],
-            "hint": "nee-n-gwehn-deh-teh"
+            "hint": "oo-kwen-dah-kee"
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Come here\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "Ũka haha",
+            "prompt": "How do you say \"Where do you come from?\" in Kikuyu?",
+            "correctAnswer": "Umaku?",
             "options": [
-              "Wĩtagwo atĩa?",
-              "Njitagwo...",
-              "Ũka haha",
-              "Ũrĩa Ngai / Pole"
+              "Wita gwatia?",
+              "Umaku?",
+              "Wathiiku?",
+              "Ukwendakki?"
             ],
-            "hint": "oo-kah hah-hah"
+            "hint": "oo-mah-koo"
           },
           {
             "type": "match_pairs",
-            "prompt": "Match the Kikuyu (Gĩkũyũ) terms with their English meanings:",
-            "correctAnswer": "Ũrĩa Ngai / Pole: Sorry / Sympathy, Wĩtagwo atĩa?: What is your name?, Njitagwo...: My name is..., Nĩngwendete: I love you",
+            "prompt": "Match each Kikuyu expression with its English meaning:",
+            "correctAnswer": "Wita gwatia?: What is your name?",
             "pairs": [
               {
-                "left": "Ũrĩa Ngai / Pole",
-                "right": "Sorry / Sympathy"
-              },
-              {
-                "left": "Wĩtagwo atĩa?",
+                "left": "Wita gwatia?",
                 "right": "What is your name?"
               },
               {
-                "left": "Njitagwo...",
-                "right": "My name is..."
+                "left": "Wathiiku?",
+                "right": "Where are you going?"
               },
               {
-                "left": "Nĩngwendete",
-                "right": "I love you"
+                "left": "Ukwendakki?",
+                "right": "What do you want?"
+              },
+              {
+                "left": "Umaku?",
+                "right": "Where do you come from?"
               }
             ]
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete: \"_____\" means \"Sorry / Sympathy\" in Kikuyu (Gĩkũyũ).",
-            "correctAnswer": "Ũrĩa Ngai / Pole",
+            "prompt": "Complete the Kikuyu term for \"What are you doing?\": ___",
+            "correctAnswer": "Uguikatia?",
             "options": [
-              "Ũrĩa Ngai / Pole",
-              "Wĩtagwo atĩa?",
-              "Njitagwo...",
-              "Nĩngwendete"
+              "Wita gwatia?",
+              "Uguikatia?",
+              "Wathiiku?",
+              "Ukwendakki?"
             ],
-            "hint": "oo-ree-ah n-gah-ee / poh-leh"
-          }
-        ]
-      },
-      {
-        "id": "kikuyu-exp-phrases-2",
-        "title": "Common Phrases (Part 2)",
-        "icon": "MessageCircle",
-        "description": "Master Kikuyu (Gĩkũyũ) common phrases vocabulary and expressions from verified historical sources.",
-        "tips": "In this Kikuyu (Gĩkũyũ) skill covering Common Phrases, pay special attention to pronunciation and morphological prefixes/suffixes: 'Rĩngĩ' (Again), 'Igũrũ' (Above / Up), 'Thutha' (After / Behind), '-thaka' (Beautiful / Handsome).",
-        "culturalNote": "Source attribution: L.S.B. Leakey (1959) 'First Lessons in Kikuyu', 'A Short Kikuyu Grammar', Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and Fr. G. Barra (1939) '1,000 Kikuyu Proverbs'.",
-        "words": [
-          {
-            "target": "Rĩngĩ",
-            "source": "Again",
-            "pronunciation": "reen-gee",
-            "hint": "Once more",
-            "example": "Rĩngĩ — Again (Once more)"
-          },
-          {
-            "target": "Igũrũ",
-            "source": "Above / Up",
-            "pronunciation": "ee-goo-roo",
-            "hint": "Up high or in the heavens",
-            "example": "Igũrũ — Above / Up (Up high or in the heavens)"
-          },
-          {
-            "target": "Thutha",
-            "source": "After / Behind",
-            "pronunciation": "thoo-thah",
-            "hint": "'Thutha wa...' = behind / after...",
-            "example": "Thutha — After / Behind ('Thutha wa...' = behind / after...)"
-          },
-          {
-            "target": "-thaka",
-            "source": "Beautiful / Handsome",
-            "pronunciation": "thah-kah",
-            "hint": "Mũndũ mũthaka = handsome/beautiful person",
-            "example": "-thaka — Beautiful / Handsome (Mũndũ mũthaka = handsome/beautiful person)"
-          },
-          {
-            "target": "-ũru",
-            "source": "Bad / Evil",
-            "pronunciation": "oo-roo",
-            "hint": "Ũhoro mũũru = bad news",
-            "example": "-ũru — Bad / Evil (Ũhoro mũũru = bad news)"
-          }
-        ],
-        "sentences": [
-          {
-            "target": "Rũũĩ rũrũ rũiyũire maĩ mega.",
-            "source": "This river is full of clean water."
-          },
-          {
-            "target": "Ciana nĩ irathاكا nja ya nyũmba.",
-            "source": "The children are playing outside the house."
-          },
-          {
-            "target": "Wĩra wa mũgũnda nĩ wambĩrĩirie rũciinĩ.",
-            "source": "The farm work started in the morning."
-          }
-        ],
-        "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Rĩngĩ\" mean in English?",
-            "correctAnswer": "Again",
-            "options": [
-              "Above / Up",
-              "After / Behind",
-              "Beautiful / Handsome",
-              "Again"
-            ],
-            "hint": "Once more"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Igũrũ\" mean in English?",
-            "correctAnswer": "Above / Up",
-            "options": [
-              "After / Behind",
-              "Beautiful / Handsome",
-              "Above / Up",
-              "Again"
-            ],
-            "hint": "Up high or in the heavens"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Thutha\" mean in English?",
-            "correctAnswer": "After / Behind",
-            "options": [
-              "Beautiful / Handsome",
-              "After / Behind",
-              "Again",
-              "Above / Up"
-            ],
-            "hint": "'Thutha wa...' = behind / after..."
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"After / Behind\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "Thutha",
-            "options": [
-              "Thutha",
-              "Rĩngĩ",
-              "Igũrũ",
-              "-thaka"
-            ],
-            "hint": "thoo-thah"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Beautiful / Handsome\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "-thaka",
-            "options": [
-              "Rĩngĩ",
-              "Igũrũ",
-              "Thutha",
-              "-thaka"
-            ],
-            "hint": "thah-kah"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Bad / Evil\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "-ũru",
-            "options": [
-              "Igũrũ",
-              "Thutha",
-              "-ũru",
-              "Rĩngĩ"
-            ],
-            "hint": "oo-roo"
-          },
-          {
-            "type": "match_pairs",
-            "prompt": "Match the Kikuyu (Gĩkũyũ) terms with their English meanings:",
-            "correctAnswer": "Rĩngĩ: Again, Igũrũ: Above / Up, Thutha: After / Behind, -thaka: Beautiful / Handsome",
-            "pairs": [
-              {
-                "left": "Rĩngĩ",
-                "right": "Again"
-              },
-              {
-                "left": "Igũrũ",
-                "right": "Above / Up"
-              },
-              {
-                "left": "Thutha",
-                "right": "After / Behind"
-              },
-              {
-                "left": "-thaka",
-                "right": "Beautiful / Handsome"
-              }
-            ]
-          },
-          {
-            "type": "fill_blank",
-            "prompt": "Complete: \"_____\" means \"Again\" in Kikuyu (Gĩkũyũ).",
-            "correctAnswer": "Rĩngĩ",
-            "options": [
-              "Rĩngĩ",
-              "Igũrũ",
-              "Thutha",
-              "-thaka"
-            ],
-            "hint": "reen-gee"
+            "hint": "Hinde (1904) p. 64"
           }
         ]
       }
     ]
   },
   {
-    "id": "kikuyu-unit-16-barra-thimo",
-    "title": "Unit 16: Classical Thimo Anthology (G. Barra 1939)",
-    "description": "Deepen your mastery of Gĩkũyũ eloquence and customary philosophy with proverbs from Fr. G. Barra's 1939 Nyeri collection.",
-    "icon": "Award",
+    "id": "kikuyu-unit-2",
+    "unitNumber": 2,
+    "title": "Numbers, Counting & Multipliers",
+    "description": "Learn the decimal counting system from 1 to 100, ordinals, and frequency multipliers from Hinde (1904).",
+    "icon": "BookOpen",
+    "color": "#10B981",
     "skills": [
       {
-        "id": "kikuyu-barra-thimo-1",
-        "title": "Barra's 1939 Thimo Anthology (Part 1)",
-        "icon": "Award",
-        "description": "Authentic Gĩkũyũ legal maxims and moral proverbs collected by Fr. G. Barra (1939).",
-        "tips": "In traditional Agĩkũyũ councils of elders (Kĩama kĩa Athuri), proverbs ('Thimo') functioned as legal precedents and philosophical maxims.",
-        "culturalNote": "Source: '1,000 Kikuyu Proverbs' by Fr. G. Barra, I.M.C. (Consolata Catholic Mission, Nyeri, 1939).",
+        "id": "kikuyu-numbers-1-10",
+        "title": "Cardinal Numbers 1 to 10",
+        "icon": "Hash",
+        "description": "Count from 1 (imue) to 10 (ikumi) in Gĩkũyũ.",
         "words": [
           {
-            "target": "Agikuyũ moi kũhitha ndia, matiũ kuhitha ũhoro",
-            "source": "The Kikuyu know how to conceal their quiver, but do not know how to conceal their secrets.",
-            "pronunciation": "Thimo #1 • community",
-            "hint": "The Kikuyu know how to conceal their quiver, but do not know how to conceal their secrets.",
-            "example": "The Kikuyu, though very clever in concealing their arms, cannot keep secrets from the members of their tribe."
+            "target": "Imue",
+            "source": "One (1)",
+            "pronunciation": "i-mue"
           },
           {
-            "target": "Ageni eri matirĩ ũtugire",
-            "source": "Two guests (at the same time) have no welcome.",
-            "pronunciation": "Thimo #2 • community",
-            "hint": "Two guests (at the same time) have no welcome.",
-            "example": "Two guests (at the same time) have no welcome."
+            "target": "Igiri",
+            "source": "Two (2)",
+            "pronunciation": "i-gi-ri"
           },
           {
-            "target": "Ageni eri na karirũĩ kao",
-            "source": "Every man has his hobby horse.",
-            "pronunciation": "Thimo #3 • family",
-            "hint": "Two guests love a different song.",
-            "example": "When you receive two visitors at the same time, you cannot treat them in the same manner, because they have different tastes."
+            "target": "Ithatu",
+            "source": "Three (3)",
+            "pronunciation": "itha-tu"
           },
           {
-            "target": "Aikaragia mbia ta njũũ ngigi",
-            "source": "Much wants more.",
-            "pronunciation": "Thimo #4 • work-wealth",
-            "hint": "He is a man that looks after money as ‘njũ’ looks after locusts.",
-            "example": "‘Njũũ’ is a bird which accompanies migrating locusts to feed on them."
+            "target": "Inya",
+            "source": "Four (4)",
+            "pronunciation": "inya"
           },
           {
-            "target": "Aka eri ni nyũngũ igĩrĩ cia ũrogi",
-            "source": "Women’s jars breed men’s wars.",
-            "pronunciation": "Thimo #5 • family",
-            "hint": "Two wives are two pots full of poison.",
-            "example": "The more women you have in your house, the more troubles you must expect."
+            "target": "Ithanu",
+            "source": "Five (5)",
+            "pronunciation": "itha-nu"
           },
           {
-            "target": "Aka matĩrĩ cia ndiiro no cia nyiniko",
-            "source": "Women conceal all that they know not.",
-            "pronunciation": "Thimo #6 • family",
-            "hint": "Women have no upright words, but only crooked ones.",
-            "example": "The Kikuyu use the proverb to say that women keep no secrets and seldom tell the truth."
+            "target": "Thanthatu",
+            "source": "Six (6)",
+            "pronunciation": "thantha-tu"
           },
           {
-            "target": "Aka na ng’ombe itĩri ndũgũ",
-            "source": "Wives and oxen have no friends.",
-            "pronunciation": "Thimo #7 • family",
-            "hint": "Wives and oxen have no friends.",
-            "example": "There are things which are not to be given to friends. A woman is to be from her house three times: when she is christened, married, and buried."
+            "target": "Muguanja",
+            "source": "Seven (7)",
+            "pronunciation": "mu-guanja"
           },
           {
-            "target": "Andũ maiganaine magithĩ na magiceera",
-            "source": "Men are equal when they are going and walking.",
-            "pronunciation": "Thimo #8 • work-wealth",
-            "hint": "Men are equal when they are going and walking.",
-            "example": "One can notice a difference between man and man when they, ‘exempli gratia’, are commanding or working, but not on the road where they look quite the same."
+            "target": "Inyanya",
+            "source": "Eight (8)",
+            "pronunciation": "inyanya"
           },
           {
-            "target": "Andũ matari ndundu mahũragwo na njũgũma ũmwe",
-            "source": "Lack of union spells weakness.",
-            "pronunciation": "Thimo #9 • community",
-            "hint": "People who have no secret agreement are beaten by a single club.",
-            "example": "A group of men not bound by a secret will be easily beaten by a single man."
+            "target": "Ikenda",
+            "source": "Nine (9)",
+            "pronunciation": "i-kenda"
           },
           {
-            "target": "Andũ matĩĩ ngamini",
-            "source": "One does not give without hope of return.",
-            "pronunciation": "Thimo #10 • wisdom",
-            "hint": "Men do not know liberality.",
-            "example": "Men do not know liberality."
-          },
-          {
-            "target": "Andũ matĩĩ ngũ, moi ithendũ",
-            "source": "People put aside hard tasks and devote themselves only to easy ones.",
-            "pronunciation": "Thimo #11 • community",
-            "hint": "Men do not know hard firewood, but only lops.",
-            "example": "Men do not know hard firewood, but only lops."
-          },
-          {
-            "target": "Andũ me muoyo matiagaga wira",
-            "source": "Life would be too smooth if it had no rubs in it.",
-            "pronunciation": "Thimo #12 • work-wealth",
-            "hint": "Live men do not lack work.",
-            "example": "Live men do not lack work."
+            "target": "Ikumi",
+            "source": "Ten (10)",
+            "pronunciation": "i-ku-mi"
           }
         ],
         "sentences": [
           {
-            "target": "Mũndũ mwega nĩ endaga andũ.",
-            "source": "A good person loves people."
+            "target": "Miti ithatu na mahiga inya.",
+            "source": "Three trees and four stones."
           },
           {
-            "target": "Mũtĩ mũnene wĩ na mĩri mĩraaya.",
-            "source": "A big tree has long roots."
-          },
-          {
-            "target": "Rũũĩ rũrũ rũiyũire maĩ mega.",
-            "source": "This river is full of clean water."
+            "target": "Mũthuri arĩ na ng'ombe igĩrĩ mũciĩ.",
+            "source": "The elder has two cows at the homestead."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What does \"Agikuyũ moi kũhitha ndia, matiũ kuhitha ũhoro\" mean in English?",
-            "correctAnswer": "The Kikuyu know how to conceal their quiver, but do not know how to conceal their secrets.",
+            "prompt": "What is the English meaning of \"Imue\" in Kikuyu?",
+            "correctAnswer": "One",
             "options": [
-              "Two guests (at the same time) have no welcome.",
-              "Every man has his hobby horse.",
-              "Much wants more.",
-              "The Kikuyu know how to conceal their quiver, but do not know how to conceal their secrets."
+              "Two",
+              "Three",
+              "Four",
+              "One"
             ],
-            "hint": "The Kikuyu know how to conceal their quiver, but do not know how to conceal their secrets."
+            "hint": "Hinde (1904) p. 62 (modern: ĩmwe)",
+            "acceptedAnswers": [
+              "One (1)",
+              "One"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "What does \"Ageni eri matirĩ ũtugire\" mean in English?",
-            "correctAnswer": "Two guests (at the same time) have no welcome.",
+            "prompt": "What is the English meaning of \"Igiri\" in Kikuyu?",
+            "correctAnswer": "Two",
             "options": [
-              "Every man has his hobby horse.",
-              "Much wants more.",
-              "Two guests (at the same time) have no welcome.",
-              "The Kikuyu know how to conceal their quiver, but do not know how to conceal their secrets."
+              "Two",
+              "Three",
+              "Four",
+              "One"
             ],
-            "hint": "Two guests (at the same time) have no welcome."
+            "hint": "Hinde (1904) p. 62 (modern: igĩrĩ)",
+            "acceptedAnswers": [
+              "Two (2)",
+              "Two"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "What does \"Ageni eri na karirũĩ kao\" mean in English?",
-            "correctAnswer": "Every man has his hobby horse.",
+            "prompt": "What is the English meaning of \"Ithatu\" in Kikuyu?",
+            "correctAnswer": "Three",
             "options": [
-              "Much wants more.",
-              "Every man has his hobby horse.",
-              "The Kikuyu know how to conceal their quiver, but do not know how to conceal their secrets.",
-              "Two guests (at the same time) have no welcome."
+              "Four",
+              "One",
+              "Two",
+              "Three"
             ],
-            "hint": "Two guests love a different song."
+            "hint": "Hinde (1904) p. 62 (modern: ithatũ)",
+            "acceptedAnswers": [
+              "Three (3)",
+              "Three"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Every man has his hobby horse.\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "Ageni eri na karirũĩ kao",
+            "prompt": "How do you say \"Three (3)\" in Kikuyu?",
+            "correctAnswer": "Ithatu",
             "options": [
-              "Ageni eri na karirũĩ kao",
-              "Agikuyũ moi kũhitha ndia, matiũ kuhitha ũhoro",
-              "Ageni eri matirĩ ũtugire",
-              "Aikaragia mbia ta njũũ ngigi"
+              "Imue",
+              "Igiri",
+              "Inya",
+              "Ithatu"
             ],
-            "hint": "Thimo #3 • family"
+            "hint": "ee-thah-too"
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Much wants more.\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "Aikaragia mbia ta njũũ ngigi",
+            "prompt": "How do you say \"Four (4)\" in Kikuyu?",
+            "correctAnswer": "Inya",
             "options": [
-              "Agikuyũ moi kũhitha ndia, matiũ kuhitha ũhoro",
-              "Ageni eri matirĩ ũtugire",
-              "Ageni eri na karirũĩ kao",
-              "Aikaragia mbia ta njũũ ngigi"
+              "Inya",
+              "Imue",
+              "Igiri",
+              "Ithatu"
             ],
-            "hint": "Thimo #4 • work-wealth"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Women’s jars breed men’s wars.\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "Aka eri ni nyũngũ igĩrĩ cia ũrogi",
-            "options": [
-              "Ageni eri matirĩ ũtugire",
-              "Ageni eri na karirũĩ kao",
-              "Aka eri ni nyũngũ igĩrĩ cia ũrogi",
-              "Agikuyũ moi kũhitha ndia, matiũ kuhitha ũhoro"
-            ],
-            "hint": "Thimo #5 • family"
+            "hint": "ee-nyah"
           },
           {
             "type": "match_pairs",
-            "prompt": "Match the Kikuyu (Gĩkũyũ) terms with their English meanings:",
-            "correctAnswer": "Agikuyũ moi kũhitha ndia, matiũ kuhitha ũhoro: The Kikuyu know how to conceal their quiver, but do not know how to conceal their secrets., Ageni eri matirĩ ũtugire: Two guests (at the same time) have no welcome., Ageni eri na karirũĩ kao: Every man has his hobby horse., Aikaragia mbia ta njũũ ngigi: Much wants more.",
+            "prompt": "Match each Kikuyu expression with its English meaning:",
+            "correctAnswer": "Imue: One (1)",
             "pairs": [
               {
-                "left": "Agikuyũ moi kũhitha ndia, matiũ kuhitha ũhoro",
-                "right": "The Kikuyu know how to conceal their quiver, but do not know how to conceal their secrets."
+                "left": "Imue",
+                "right": "One (1)"
               },
               {
-                "left": "Ageni eri matirĩ ũtugire",
-                "right": "Two guests (at the same time) have no welcome."
+                "left": "Igiri",
+                "right": "Two (2)"
               },
               {
-                "left": "Ageni eri na karirũĩ kao",
-                "right": "Every man has his hobby horse."
+                "left": "Ithatu",
+                "right": "Three (3)"
               },
               {
-                "left": "Aikaragia mbia ta njũũ ngigi",
-                "right": "Much wants more."
+                "left": "Inya",
+                "right": "Four (4)"
               }
             ]
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete: \"_____\" means \"The Kikuyu know how to conceal their quiver, but do not know how to conceal their secrets.\" in Kikuyu (Gĩkũyũ).",
-            "correctAnswer": "Agikuyũ moi kũhitha ndia, matiũ kuhitha ũhoro",
+            "prompt": "Complete the Kikuyu term for \"Five (5)\": ___",
+            "correctAnswer": "Ithanu",
             "options": [
-              "Agikuyũ moi kũhitha ndia, matiũ kuhitha ũhoro",
-              "Ageni eri matirĩ ũtugire",
-              "Ageni eri na karirũĩ kao",
-              "Aikaragia mbia ta njũũ ngigi"
+              "Imue",
+              "Igiri",
+              "Ithanu",
+              "Ithatu"
             ],
-            "hint": "Thimo #1 • community"
+            "hint": "Hinde (1904) p. 62 (modern: ithano)"
           }
         ]
       },
       {
-        "id": "kikuyu-barra-thimo-2",
-        "title": "Barra's 1939 Thimo Anthology (Part 2)",
-        "icon": "Award",
-        "description": "Authentic Gĩkũyũ legal maxims and moral proverbs collected by Fr. G. Barra (1939).",
-        "tips": "In traditional Agĩkũyũ councils of elders (Kĩama kĩa Athuri), proverbs ('Thimo') functioned as legal precedents and philosophical maxims.",
-        "culturalNote": "Source: '1,000 Kikuyu Proverbs' by Fr. G. Barra, I.M.C. (Consolata Catholic Mission, Nyeri, 1939).",
+        "id": "kikuyu-numbers-tens-multipliers",
+        "title": "Tens (Mirongo), Hundreds & Multipliers",
+        "icon": "Calculator",
+        "description": "Count by tens from 20 to 100 and express \"once, twice, thrice, first, last\".",
         "words": [
           {
-            "target": "Angimituriria na ũmirite ndangimionana rikii",
-            "source": "Do not look for stolen goods in the robber's house.",
-            "pronunciation": "Thimo #13 • justice",
-            "hint": "He who seeks his goat with the man who ate it, is certain not to find it.",
-            "example": "He who seeks his goat with the man who ate it, is certain not to find it."
+            "target": "Mirongoiri",
+            "source": "Twenty (20)",
+            "pronunciation": "mi-rongoi-ri"
           },
           {
-            "target": "Arũme mari rwamba",
-            "source": "Do evil and look for like.",
-            "pronunciation": "Thimo #14 • caution",
-            "hint": "Men have got quills.",
-            "example": "Do not annoy others because they will respond by hurting."
+            "target": "Mirongo itatu",
+            "source": "Thirty (30)",
+            "pronunciation": "mi-rongo i-ta-tu"
           },
           {
-            "target": "Bata ndũbatabataga",
-            "source": "He that will have no trouble in this world must not be born in it.",
-            "pronunciation": "Thimo #15 • wisdom",
-            "hint": "Necessities never end.",
-            "example": "Necessities never end."
+            "target": "Mirongo inya",
+            "source": "Forty (40)",
+            "pronunciation": "mi-rongo inya"
           },
           {
-            "target": "Cia athuri inyuagira thutha",
-            "source": "Elderly people are not in such a hurry as young ones.",
-            "pronunciation": "Thimo #16 • community",
-            "hint": "The elders drink afterwards (i.e.",
-            "example": "after the others)."
+            "target": "Mirongo ithanu",
+            "source": "Fifty (50)",
+            "pronunciation": "mi-rongo itha-nu"
           },
           {
-            "target": "Ciakorire wacũ mũgũnda",
-            "source": "The food found Wacũ in the field.",
-            "pronunciation": "Thimo #17 • family",
-            "hint": "The food found Wacũ in the field.",
-            "example": "The proverb originates in the legend of Wacũ, the most despised amongst the wives of a rich man who never"
+            "target": "Igana",
+            "source": "One hundred (100)",
+            "pronunciation": "i-ga-na"
           },
           {
-            "target": "Cia kionje itigayagwo gitanakua",
-            "source": "The reason is that he is unable to get anything more than he already possesses.",
-            "pronunciation": "Thimo #18 • family",
-            "hint": "The property of a helpless man must not be divided before his death.",
-            "example": "The property of a helpless man must not be divided before his death."
+            "target": "Kirrimue",
+            "source": "Once (one time)",
+            "pronunciation": "kirri-mue"
           },
           {
-            "target": "Cia mūciĩ itiumaga ndira",
-            "source": "Do not wash dirty linen in public",
-            "pronunciation": "Thimo #20 • family",
-            "hint": "Home affairs must not go into the open.",
-            "example": "Home affairs must not go into the open."
+            "target": "Kēēri",
+            "source": "Twice (two times)",
+            "pronunciation": "kee-ri"
           },
           {
-            "target": "Ciana cia ndigwa itiri maithori",
-            "source": "The widow's sons have no tears.",
-            "pronunciation": "Thimo #22 • family",
-            "hint": "The widow's sons have no tears.",
-            "example": "It means that they have been accustomed to suffer very early."
+            "target": "Kathatu",
+            "source": "Thrice (three times)",
+            "pronunciation": "katha-tu"
           },
           {
-            "target": "Ciathanaga ikigũā, itiathanaga ikiũmbũka",
-            "source": "Birds agree when flying down, but do not agree when flying up.",
-            "pronunciation": "Thimo #23 • nature",
-            "hint": "Birds agree when flying down, but do not agree when flying up.",
-            "example": "Birds agree when flying down, but do not agree when flying up."
+            "target": "Kuambirrira",
+            "source": "First",
+            "pronunciation": "kuambirri-ra"
           },
           {
-            "target": "Cia thũgũri itiyũraga ikũmbĩ",
-            "source": "Do not hope to become rich without cultivating your fields.",
-            "pronunciation": "Thimo #24 • work-wealth",
-            "hint": "Bought things do not fill the granary.",
-            "example": "Bought things do not fill the granary."
-          },
-          {
-            "target": "Ciatura ngũyũ irĩaga ng'umo",
-            "source": "If thou hast not a capon, feed on an onion.",
-            "pronunciation": "Thimo #25 • work-wealth",
-            "hint": "When there is shortage of figs, birds eat the fruits of the ‘mugumo’.",
-            "example": "The tree called ‘mugumo’ by the natives bears little fruits that are not eaten by birds when there is plenty of other food."
-          },
-          {
-            "target": "Cia ũthoni ciambaga nguhi",
-            "source": "Great events have small beginnings.",
-            "pronunciation": "Thimo #26 • family",
-            "hint": "The buying of a wife begins from a little thing.",
-            "example": "The buying of a wife begins from a little thing."
+            "target": "imue",
+            "source": "One",
+            "pronunciation": "i-mue"
           }
         ],
         "sentences": [
           {
-            "target": "Mũndũ mwega nĩ endaga andũ.",
-            "source": "A good person loves people."
+            "target": "Andũ mĩrongo ĩĩrĩ na mĩrongo ĩtatũ nĩmokire.",
+            "source": "Twenty and thirty people came."
           },
           {
-            "target": "Mũtĩ mũnene wĩ na mĩri mĩraaya.",
-            "source": "A big tree has long roots."
-          },
-          {
-            "target": "Rũũĩ rũrũ rũiyũire maĩ mega.",
-            "source": "This river is full of clean water."
+            "target": "Mũrĩmi arĩ na mbũri mĩrongo ĩnya na ng'ondu mĩrongo ĩtano.",
+            "source": "The farmer has forty goats and fifty sheep."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What does \"Angimituriria na ũmirite ndangimionana rikii\" mean in English?",
-            "correctAnswer": "Do not look for stolen goods in the robber's house.",
+            "prompt": "What does \"Mirongoiri\" mean in English?",
+            "correctAnswer": "Twenty",
             "options": [
-              "Do evil and look for like.",
-              "He that will have no trouble in this world must not be born in it.",
-              "Elderly people are not in such a hurry as young ones.",
-              "Do not look for stolen goods in the robber's house."
+              "Thirty",
+              "Twenty",
+              "Forty",
+              "Fifty"
             ],
-            "hint": "He who seeks his goat with the man who ate it, is certain not to find it."
+            "hint": "Core vocabulary in Tens (Mirongo), Hundreds & Multipliers",
+            "acceptedAnswers": [
+              "Twenty (20)",
+              "Twenty"
+            ]
           },
           {
-            "type": "multiple_choice",
-            "prompt": "What does \"Arũme mari rwamba\" mean in English?",
-            "correctAnswer": "Do evil and look for like.",
-            "options": [
-              "He that will have no trouble in this world must not be born in it.",
-              "Elderly people are not in such a hurry as young ones.",
-              "Do evil and look for like.",
-              "Do not look for stolen goods in the robber's house."
+            "type": "translate_to_target",
+            "prompt": "Translate to the target language: \"Thirty (30)\"",
+            "correctAnswer": "Mirongo itatu",
+            "acceptedAnswers": [
+              "Mirongo itatu",
+              "Mirongo itatu"
             ],
-            "hint": "Men have got quills."
+            "hint": "Starts with \"Mi\""
           },
           {
-            "type": "multiple_choice",
-            "prompt": "What does \"Bata ndũbatabataga\" mean in English?",
-            "correctAnswer": "He that will have no trouble in this world must not be born in it.",
-            "options": [
-              "Elderly people are not in such a hurry as young ones.",
-              "He that will have no trouble in this world must not be born in it.",
-              "Do not look for stolen goods in the robber's house.",
-              "Do evil and look for like."
+            "type": "translate_to_english",
+            "prompt": "Translate to English: \"Mirongo inya\"",
+            "correctAnswer": "Forty",
+            "acceptedAnswers": [
+              "Forty (40)",
+              "Forty"
             ],
-            "hint": "Necessities never end."
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"He that will have no trouble in this world must not be born in it.\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "Bata ndũbatabataga",
-            "options": [
-              "Bata ndũbatabataga",
-              "Angimituriria na ũmirite ndangimionana rikii",
-              "Arũme mari rwamba",
-              "Cia athuri inyuagira thutha"
-            ],
-            "hint": "Thimo #15 • wisdom"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Elderly people are not in such a hurry as young ones.\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "Cia athuri inyuagira thutha",
-            "options": [
-              "Angimituriria na ũmirite ndangimionana rikii",
-              "Arũme mari rwamba",
-              "Bata ndũbatabataga",
-              "Cia athuri inyuagira thutha"
-            ],
-            "hint": "Thimo #16 • community"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"The food found Wacũ in the field.\" in Kikuyu (Gĩkũyũ)?",
-            "correctAnswer": "Ciakorire wacũ mũgũnda",
-            "options": [
-              "Arũme mari rwamba",
-              "Bata ndũbatabataga",
-              "Ciakorire wacũ mũgũnda",
-              "Angimituriria na ũmirite ndangimionana rikii"
-            ],
-            "hint": "Thimo #17 • family"
+            "hint": "Review Tens (Mirongo), Hundreds & Multipliers"
           },
           {
             "type": "match_pairs",
-            "prompt": "Match the Kikuyu (Gĩkũyũ) terms with their English meanings:",
-            "correctAnswer": "Angimituriria na ũmirite ndangimionana rikii: Do not look for stolen goods in the robber's house., Arũme mari rwamba: Do evil and look for like., Bata ndũbatabataga: He that will have no trouble in this world must not be born in it., Cia athuri inyuagira thutha: Elderly people are not in such a hurry as young ones.",
+            "prompt": "Match each expression from Tens (Mirongo), Hundreds & Multipliers with its English meaning:",
+            "correctAnswer": "all_matched",
             "pairs": [
               {
-                "left": "Angimituriria na ũmirite ndangimionana rikii",
-                "right": "Do not look for stolen goods in the robber's house."
+                "left": "Mirongoiri",
+                "right": "Twenty"
               },
               {
-                "left": "Arũme mari rwamba",
-                "right": "Do evil and look for like."
+                "left": "Mirongo itatu",
+                "right": "Thirty"
               },
               {
-                "left": "Bata ndũbatabataga",
-                "right": "He that will have no trouble in this world must not be born in it."
+                "left": "Mirongo inya",
+                "right": "Forty"
               },
               {
-                "left": "Cia athuri inyuagira thutha",
-                "right": "Elderly people are not in such a hurry as young ones."
+                "left": "Mirongo ithanu",
+                "right": "Fifty"
+              },
+              {
+                "left": "Igana",
+                "right": "One hundred"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kikuyu-unit-3",
+    "unitNumber": 3,
+    "title": "Family, Kinship & Social Ranks",
+    "description": "Learn terms for family members, life stages, and possessives from Hinde (1904) and Hobley (1922).",
+    "icon": "Users",
+    "color": "#10B981",
+    "skills": [
+      {
+        "id": "kikuyu-family-kinship",
+        "title": "Parents, Children & Homestead Kin",
+        "icon": "Users",
+        "description": "Master core kinship nouns and possessive phrases.",
+        "words": [
+          {
+            "target": "Baba wiitu",
+            "source": "Our father",
+            "pronunciation": "ba-ba wii-tu"
+          },
+          {
+            "target": "Nyina wiitu",
+            "source": "Our mother",
+            "pronunciation": "nyi-na wii-tu"
+          },
+          {
+            "target": "Mwana wakua",
+            "source": "My child",
+            "pronunciation": "mwa-na wa-kua"
+          },
+          {
+            "target": "Siana siaku",
+            "source": "Your children",
+            "pronunciation": "sia-na sia-ku"
+          },
+          {
+            "target": "Mundu (pl. Andu)",
+            "source": "Person (pl. People)",
+            "pronunciation": "mundu"
+          },
+          {
+            "target": "Muka (pl. Aka)",
+            "source": "Woman / Wife (pl. Women / Wives)",
+            "pronunciation": "mu-ka"
+          },
+          {
+            "target": "Mwanake (pl. Anake)",
+            "source": "Warrior / Young man (pl. Warriors)",
+            "pronunciation": "mwa-na-ke"
+          },
+          {
+            "target": "Muiritu (pl. Airitu)",
+            "source": "Maiden / Unmarried girl",
+            "pronunciation": "mui-ri-tu"
+          },
+          {
+            "target": "Mutumia (pl. Atumia)",
+            "source": "Elder of the community",
+            "pronunciation": "mu-tu-mia"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Ninakana. Kana kani kiega.",
+            "source": "I have a child. A good child."
+          },
+          {
+            "target": "Twana tothe tunini.",
+            "source": "All the children are small."
+          },
+          {
+            "target": "Mundu nimuwega; andu anega.",
+            "source": "A good man; good men."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"Baba wiitu\" in Kikuyu?",
+            "correctAnswer": "Our father",
+            "options": [
+              "Our father",
+              "Our mother",
+              "My child",
+              "Your children"
+            ],
+            "hint": "Hinde (1904) p. 65"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"Nyina wiitu\" in Kikuyu?",
+            "correctAnswer": "Our mother",
+            "options": [
+              "My child",
+              "Our mother",
+              "Your children",
+              "Our father"
+            ],
+            "hint": "Hinde (1904) p. 65 (also Mwaitu)"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"Mwana wakua\" in Kikuyu?",
+            "correctAnswer": "My child",
+            "options": [
+              "Your children",
+              "Our father",
+              "Our mother",
+              "My child"
+            ],
+            "hint": "Hinde (1904) p. 65"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"My child\" in Kikuyu?",
+            "correctAnswer": "Mwana wakua",
+            "options": [
+              "Baba wiitu",
+              "Nyina wiitu",
+              "Siana siaku",
+              "Mwana wakua"
+            ],
+            "hint": "mwah-nah wah-kwah"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Your children\" in Kikuyu?",
+            "correctAnswer": "Siana siaku",
+            "options": [
+              "Siana siaku",
+              "Baba wiitu",
+              "Nyina wiitu",
+              "Mwana wakua"
+            ],
+            "hint": "see-ah-nah see-ah-koo"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each Kikuyu expression with its English meaning:",
+            "correctAnswer": "Baba wiitu: Our father",
+            "pairs": [
+              {
+                "left": "Baba wiitu",
+                "right": "Our father"
+              },
+              {
+                "left": "Nyina wiitu",
+                "right": "Our mother"
+              },
+              {
+                "left": "Mwana wakua",
+                "right": "My child"
+              },
+              {
+                "left": "Siana siaku",
+                "right": "Your children"
               }
             ]
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete: \"_____\" means \"Do not look for stolen goods in the robber's house.\" in Kikuyu (Gĩkũyũ).",
-            "correctAnswer": "Angimituriria na ũmirite ndangimionana rikii",
+            "prompt": "Complete the Kikuyu term for \"Person (pl. People)\": ___",
+            "correctAnswer": "Mundu",
             "options": [
-              "Angimituriria na ũmirite ndangimionana rikii",
-              "Arũme mari rwamba",
-              "Bata ndũbatabataga",
-              "Cia athuri inyuagira thutha"
+              "Mundu",
+              "Baba wiitu",
+              "Nyina wiitu",
+              "Mwana wakua"
             ],
-            "hint": "Thimo #13 • justice"
+            "hint": "Hinde (1904) p. vi",
+            "acceptedAnswers": [
+              "Mundu (pl. Andu)",
+              "Mundu"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kikuyu-unit-4",
+    "unitNumber": 4,
+    "title": "Homestead, Food, Livestock & Daily Sustenance",
+    "description": "Talk about food, milk, hunger, cattle, and household items using Hinde (1904).",
+    "icon": "Tractor",
+    "color": "#10B981",
+    "skills": [
+      {
+        "id": "kikuyu-food-homestead",
+        "title": "Food, Milk, Fire & Homestead Life",
+        "icon": "MessageCircle",
+        "description": "Express hunger, request milk and food, and name household items.",
+        "words": [
+          {
+            "target": "Nihūtie",
+            "source": "I am hungry",
+            "pronunciation": "ni-hu-tie"
+          },
+          {
+            "target": "Ningwenda irria",
+            "source": "I want milk",
+            "pronunciation": "ningwenda irria"
+          },
+          {
+            "target": "Ugika kurria?",
+            "source": "Do you want to eat?",
+            "pronunciation": "u-gi-ka kurria"
+          },
+          {
+            "target": "Ngombe siake",
+            "source": "His cows / cattle",
+            "pronunciation": "ngombe sia-ke"
+          },
+          {
+            "target": "Nyumba ninene",
+            "source": "A big house",
+            "pronunciation": "nyumba ni-ne-ne"
+          },
+          {
+            "target": "Mwitzi wiitu",
+            "source": "Our village / homestead",
+            "pronunciation": "mwitzi wii-tu"
+          },
+          {
+            "target": "Akiamwaki",
+            "source": "Make a fire",
+            "pronunciation": "a-kiamwa-ki"
+          },
+          {
+            "target": "Ruhiu rwega",
+            "source": "A good knife / sword",
+            "pronunciation": "ru-hiu rwe-ga"
+          },
+          {
+            "target": "Kiratu (pl. Iratu)",
+            "source": "Sandal / shoe (pl. Sandals)",
+            "pronunciation": "ki-ra-tu"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Akiamwaki nyumbani.",
+            "source": "Make a fire in the house."
+          },
+          {
+            "target": "Ngombe siake na mwitzi wiitu.",
+            "source": "His cows and our village."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"Nihūtie\" in Kikuyu?",
+            "correctAnswer": "I am hungry",
+            "options": [
+              "I want milk",
+              "Do you want to eat?",
+              "I am hungry",
+              "His cows"
+            ],
+            "hint": "Hinde (1904) p. 64"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"Ningwenda irria\" in Kikuyu?",
+            "correctAnswer": "I want milk",
+            "options": [
+              "Do you want to eat?",
+              "His cows",
+              "I want milk",
+              "I am hungry"
+            ],
+            "hint": "Hinde (1904) p. 64"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"Ugika kurria?\" in Kikuyu?",
+            "correctAnswer": "Do you want to eat?",
+            "options": [
+              "Do you want to eat?",
+              "I am hungry",
+              "I want milk",
+              "A big house"
+            ],
+            "hint": "Hinde (1904) p. 65"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Do you want to eat?\" in Kikuyu?",
+            "correctAnswer": "Ugika kurria?",
+            "options": [
+              "Ugika kurria?",
+              "Nihūtie",
+              "Ningwenda irria",
+              "Ngombe siake"
+            ],
+            "hint": "oo-gee-kah koo-rri-ah"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"His cows / cattle\" in Kikuyu?",
+            "correctAnswer": "Ngombe siake",
+            "options": [
+              "Nihūtie",
+              "Ngombe siake",
+              "Ningwenda irria",
+              "Ugika kurria?"
+            ],
+            "hint": "ngoh-mbeh see-ah-keh"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each Kikuyu expression with its English meaning:",
+            "correctAnswer": "Nihūtie: I am hungry",
+            "pairs": [
+              {
+                "left": "Nihūtie",
+                "right": "I am hungry"
+              },
+              {
+                "left": "Ningwenda irria",
+                "right": "I want milk"
+              },
+              {
+                "left": "Ugika kurria?",
+                "right": "Do you want to eat?"
+              },
+              {
+                "left": "Ngombe siake",
+                "right": "His cows / cattle"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Kikuyu term for \"A big house\": ___",
+            "correctAnswer": "Nyumba ninene",
+            "options": [
+              "Nyumba ninene",
+              "Nihūtie",
+              "Ningwenda irria",
+              "Ugika kurria?"
+            ],
+            "hint": "Hinde (1904) p. 65"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kikuyu-unit-5",
+    "unitNumber": 5,
+    "title": "Verbs, Tenses & Negation",
+    "description": "Master affirmative and negative verb conjugations, imperatives, and everyday actions from Hinde (1904).",
+    "icon": "Zap",
+    "color": "#10B981",
+    "skills": [
+      {
+        "id": "kikuyu-verbs-actions",
+        "title": "Everyday Verbs, Commands & Negatives",
+        "icon": "Zap",
+        "description": "Express going, returning, bringing, seeing, and negative statements.",
+        "words": [
+          {
+            "target": "Ningathi",
+            "source": "I will go",
+            "pronunciation": "ningathi"
+          },
+          {
+            "target": "Ndikathie",
+            "source": "I will not go",
+            "pronunciation": "ndi-kathie"
+          },
+          {
+            "target": "Ndingihotta kuthi",
+            "source": "I cannot go",
+            "pronunciation": "ndingi-hotta kuthi"
+          },
+          {
+            "target": "Ningashōka",
+            "source": "I will return",
+            "pronunciation": "ningasho-ka"
+          },
+          {
+            "target": "Ndikwenda",
+            "source": "I do not want",
+            "pronunciation": "ndikwenda"
+          },
+          {
+            "target": "Ndionna",
+            "source": "I do not see",
+            "pronunciation": "ndionna"
+          },
+          {
+            "target": "Nikurehe",
+            "source": "I bring",
+            "pronunciation": "ni-ku-re-he"
+          },
+          {
+            "target": "Aniuka",
+            "source": "He has come",
+            "pronunciation": "a-niu-ka"
+          },
+          {
+            "target": "Udikuka",
+            "source": "Do not come",
+            "pronunciation": "u-di-ku-ka"
+          },
+          {
+            "target": "Kirra",
+            "source": "Be quiet",
+            "pronunciation": "kirra"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Ndikwenda kuthi; ndingihotta kuthi.",
+            "source": "I do not want to go; I cannot go."
+          },
+          {
+            "target": "Mũthuri aniuka mũciĩ, na ningashōka rũciũ.",
+            "source": "The elder has come to the homestead, and I will return tomorrow."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"Ningathi\" in Kikuyu?",
+            "correctAnswer": "I will go",
+            "options": [
+              "I will not go",
+              "I will go",
+              "I cannot go",
+              "I will return"
+            ],
+            "hint": "Hinde (1904) p. 64"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"Ndikathie\" in Kikuyu?",
+            "correctAnswer": "I will not go",
+            "options": [
+              "I cannot go",
+              "I will return",
+              "I will not go",
+              "I will go"
+            ],
+            "hint": "Hinde (1904) p. 64"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"Ndingihotta kuthi\" in Kikuyu?",
+            "correctAnswer": "I cannot go",
+            "options": [
+              "I cannot go",
+              "I will return",
+              "I will go",
+              "I will not go"
+            ],
+            "hint": "Hinde (1904) p. 64"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"I cannot go\" in Kikuyu?",
+            "correctAnswer": "Ndingihotta kuthi",
+            "options": [
+              "Ndingihotta kuthi",
+              "Ningathi",
+              "Ndikathie",
+              "Ningashōka"
+            ],
+            "hint": "ndee-ngee-hoh-ttah koo-thee"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"I will return\" in Kikuyu?",
+            "correctAnswer": "Ningashōka",
+            "options": [
+              "Ningathi",
+              "Ndikathie",
+              "Ndingihotta kuthi",
+              "Ningashōka"
+            ],
+            "hint": "nee-ngah-shoh-kah"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each Kikuyu expression with its English meaning:",
+            "correctAnswer": "Ningathi: I will go",
+            "pairs": [
+              {
+                "left": "Ningathi",
+                "right": "I will go"
+              },
+              {
+                "left": "Ndikathie",
+                "right": "I will not go"
+              },
+              {
+                "left": "Ndingihotta kuthi",
+                "right": "I cannot go"
+              },
+              {
+                "left": "Ningashōka",
+                "right": "I will return"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Kikuyu term for \"I do not want\": ___",
+            "correctAnswer": "Ndikwenda",
+            "options": [
+              "Ningathi",
+              "Ndikathie",
+              "Ndikwenda",
+              "Ndingihotta kuthi"
+            ],
+            "hint": "Hinde (1904) p. 64"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kikuyu-unit-6",
+    "unitNumber": 6,
+    "title": "Nature, Body Parts & Cultural Heritage",
+    "description": "Explore natural landscapes, anatomy, and classical Agĩkũyũ cultural institutions from Hinde (1904) and Hobley (1922).",
+    "icon": "Activity",
+    "color": "#10B981",
+    "skills": [
+      {
+        "id": "kikuyu-nature-body",
+        "title": "Nature, Anatomy & Locatives",
+        "icon": "Activity",
+        "description": "Name features of the highland landscape and parts of the body.",
+        "words": [
+          {
+            "target": "Kiara (pl. Shiara)",
+            "source": "Finger (pl. Fingers)",
+            "pronunciation": "kia-ra"
+          },
+          {
+            "target": "Uwoko wake",
+            "source": "His hand / arm",
+            "pronunciation": "u-wo-ko wa-ke"
+          },
+          {
+            "target": "Mtueni",
+            "source": "In the head",
+            "pronunciation": "mtue-ni"
+          },
+          {
+            "target": "kutu",
+            "source": "Ear",
+            "pronunciation": "ku-tu"
+          },
+          {
+            "target": "ritho (pl. meetho)",
+            "source": "Eye (pl. Eyes)",
+            "pronunciation": "ritho"
+          },
+          {
+            "target": "kuhuru",
+            "source": "Leg",
+            "pronunciation": "ku-hu-ru"
+          },
+          {
+            "target": "mbaru",
+            "source": "Rib",
+            "pronunciation": "mba-ru"
+          },
+          {
+            "target": "kiarra",
+            "source": "Toe",
+            "pronunciation": "kiarra"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Uwoko wake wĩ na shiara ithano.",
+            "source": "His hand has five fingers."
+          },
+          {
+            "target": "Mũndũ arĩ na meetho meerĩ na matũ meerĩ mtueni.",
+            "source": "A person has two eyes and two ears on the head."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Kiara\" mean in English?",
+            "correctAnswer": "Finger",
+            "options": [
+              "Finger",
+              "His hand",
+              "In the head",
+              "Ear"
+            ],
+            "hint": "Core vocabulary in Nature, Anatomy & Locatives",
+            "acceptedAnswers": [
+              "Finger (pl. Fingers)",
+              "Finger"
+            ]
+          },
+          {
+            "type": "translate_to_target",
+            "prompt": "Translate to the target language: \"His hand / arm\"",
+            "correctAnswer": "Uwoko wake",
+            "acceptedAnswers": [
+              "Uwoko wake",
+              "Uwoko wake"
+            ],
+            "hint": "Starts with \"Uw\""
+          },
+          {
+            "type": "translate_to_english",
+            "prompt": "Translate to English: \"Mtueni\"",
+            "correctAnswer": "In the head",
+            "acceptedAnswers": [
+              "In the head",
+              "In the head"
+            ],
+            "hint": "Review Nature, Anatomy & Locatives"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each expression from Nature, Anatomy & Locatives with its English meaning:",
+            "correctAnswer": "all_matched",
+            "pairs": [
+              {
+                "left": "Kiara",
+                "right": "Finger"
+              },
+              {
+                "left": "Uwoko wake",
+                "right": "His hand"
+              },
+              {
+                "left": "Mtueni",
+                "right": "In the head"
+              },
+              {
+                "left": "kutu",
+                "right": "Ear"
+              },
+              {
+                "left": "ritho (pl. meetho)",
+                "right": "Eye"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kikuyu-culture-hobley",
+        "title": "Agĩkũyũ Council, Age-Sets & Sacred Heritage",
+        "icon": "Crown",
+        "description": "Learn the institutional vocabulary of the Kiama council, Itwika generational transfer, and sacred Mugumo tree from C. W. Hobley (1922).",
+        "words": [
+          {
+            "target": "Mundu Mugo",
+            "source": "Traditional healer and diviner",
+            "pronunciation": "mundu mu-go"
+          },
+          {
+            "target": "gũtũ (pl. matũ)",
+            "source": "Ear",
+            "pronunciation": "gutu"
+          },
+          {
+            "target": "riitho (pl. maitho)",
+            "source": "Eye",
+            "pronunciation": "riitho"
+          },
+          {
+            "target": "Guoko (pl. moko)",
+            "source": "Arm",
+            "pronunciation": "guoko"
+          },
+          {
+            "target": "Mromo",
+            "source": "Lip",
+            "pronunciation": "mro-mo"
+          },
+          {
+            "target": "Kiara kya kogoro",
+            "source": "Toe",
+            "pronunciation": "kia-ra kya ko-go-ro"
+          },
+          {
+            "target": "Kiero (Chiero)",
+            "source": "Hip",
+            "pronunciation": "kiero"
+          },
+          {
+            "target": "Koguru (Ma-)",
+            "source": "Leg",
+            "pronunciation": "koguru"
+          },
+          {
+            "target": "Robaru (Ma-). (Mbaru.)",
+            "source": "Rib",
+            "pronunciation": "robaru"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Mundu Mugo nĩarahonia mũrũaru mũciĩ.",
+            "source": "The traditional healer and diviner is healing the sick person at the homestead."
+          },
+          {
+            "target": "Mũndũ aonaga na riitho na aiguaga na gũtũ.",
+            "source": "A person sees with the eye and hears with the ear."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Mundu Mugo\" mean in English?",
+            "correctAnswer": "Traditional healer and diviner",
+            "options": [
+              "Ear",
+              "Traditional healer and diviner",
+              "Eye",
+              "Arm"
+            ],
+            "hint": "Core vocabulary in Agĩkũyũ Council, Age-Sets & Sacred Heritage"
+          },
+          {
+            "type": "translate_to_target",
+            "prompt": "Translate to the target language: \"Ear\"",
+            "correctAnswer": "gũtũ",
+            "acceptedAnswers": [
+              "gũtũ (pl. matũ)",
+              "gũtũ"
+            ],
+            "hint": "Starts with \"gũ\""
+          },
+          {
+            "type": "translate_to_english",
+            "prompt": "Translate to English: \"riitho\"",
+            "correctAnswer": "Eye",
+            "acceptedAnswers": [
+              "Eye",
+              "Eye"
+            ],
+            "hint": "Review Agĩkũyũ Council, Age-Sets & Sacred Heritage"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each expression from Agĩkũyũ Council, Age-Sets & Sacred Heritage with its English meaning:",
+            "correctAnswer": "all_matched",
+            "pairs": [
+              {
+                "left": "Mundu Mugo",
+                "right": "Traditional healer and diviner"
+              },
+              {
+                "left": "gũtũ",
+                "right": "Ear"
+              },
+              {
+                "left": "riitho",
+                "right": "Eye"
+              },
+              {
+                "left": "Guoko",
+                "right": "Arm"
+              },
+              {
+                "left": "Mromo",
+                "right": "Lip"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kikuyu-unit-7",
+    "unitNumber": 7,
+    "title": "Family, Kinship, Clans & Social Organization",
+    "description": "Master family, kinship, clans & social organization in Kikuyu (Gĩkũyũ) built directly from Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927).",
+    "icon": "User",
+    "color": "#10B981",
+    "skills": [
+      {
+        "id": "kikuyu-family-kinship-kinship-elders-7",
+        "title": "Kinship Terms, Elders & Household Roles",
+        "icon": "Users",
+        "description": "Master core family, kinship, and household terms documented in the primary historical vocabularies.",
+        "culturalNote": "Primary historical documentation for Kikuyu (Gĩkũyũ) in Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kiambu, Murang'a, Nyeri.",
+        "words": [
+          {
+            "target": "muundu (pl. andu)",
+            "source": "Man",
+            "pronunciation": "muundu"
+          },
+          {
+            "target": "Mwana",
+            "source": "Son",
+            "pronunciation": "mwana"
+          },
+          {
+            "target": "karegu",
+            "source": "Girl",
+            "pronunciation": "karegu"
+          },
+          {
+            "target": "kahi",
+            "source": "boy",
+            "pronunciation": "ka-hi"
+          },
+          {
+            "target": "mundu murume",
+            "source": "boy (circumcised)",
+            "pronunciation": "mundu mu-ru-me"
+          },
+          {
+            "target": "murāta",
+            "source": "brother",
+            "pronunciation": "mu-ra-ta"
+          },
+          {
+            "target": "mthoni",
+            "source": "brother in law",
+            "pronunciation": "mtho-ni"
+          },
+          {
+            "target": "muthamaki",
+            "source": "chief",
+            "pronunciation": "mutha-ma-ki"
+          },
+          {
+            "target": "kana",
+            "source": "child",
+            "pronunciation": "ka-na"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Mũthamaki na andũ ake marĩ mũciĩ.",
+            "source": "The chief and his people are at the homestead."
+          },
+          {
+            "target": "Karegũ na kahĩĩ nĩ ciana cia mũrata wakwa.",
+            "source": "The girl and the boy are the children of my brother."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"muundu, pl. andu\" mean in English?",
+            "correctAnswer": "Man",
+            "options": [
+              "Man",
+              "Son",
+              "Girl",
+              "boy"
+            ],
+            "hint": "Core vocabulary in Kinship Terms, Elders & Household Roles"
+          },
+          {
+            "type": "translate_to_target",
+            "prompt": "Translate to the target language: \"Son\"",
+            "correctAnswer": "Mwana",
+            "acceptedAnswers": [
+              "Mwana",
+              "Mwana"
+            ],
+            "hint": "Starts with \"Mw\""
+          },
+          {
+            "type": "translate_to_english",
+            "prompt": "Translate to English: \"karegu\"",
+            "correctAnswer": "Girl",
+            "acceptedAnswers": [
+              "Girl",
+              "Girl"
+            ],
+            "hint": "Review Kinship Terms, Elders & Household Roles"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each expression from Kinship Terms, Elders & Household Roles with its English meaning:",
+            "correctAnswer": "all_matched",
+            "pairs": [
+              {
+                "left": "muundu (pl. andu)",
+                "right": "Man"
+              },
+              {
+                "left": "Mwana",
+                "right": "Son"
+              },
+              {
+                "left": "karegu",
+                "right": "Girl"
+              },
+              {
+                "left": "kahi",
+                "right": "boy"
+              },
+              {
+                "left": "mundu murume",
+                "right": "boy (circumcised)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kikuyu-family-kinship-clans-community-7",
+        "title": "Clans, Marriage & Community Life",
+        "icon": "Heart",
+        "description": "Explore social titles, marriage terms, and community relationships from the ethnographic records.",
+        "culturalNote": "Primary historical documentation for Kikuyu (Gĩkũyũ) in Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kiambu, Murang'a, Nyeri.",
+        "words": [
+          {
+            "target": "kukigamma",
+            "source": "crawl (a man)",
+            "pronunciation": "ku-ki-gamma"
+          },
+          {
+            "target": "muthuri (pl. athuri)",
+            "source": "elder",
+            "pronunciation": "muthu-ri"
+          },
+          {
+            "target": "baba",
+            "source": "father",
+            "pronunciation": "ba-ba"
+          },
+          {
+            "target": "wathiomo",
+            "source": "father-in-law",
+            "pronunciation": "wathio-mo"
+          },
+          {
+            "target": "karegu",
+            "source": "girl",
+            "pronunciation": "ka-re-gu"
+          },
+          {
+            "target": "murume wakwa",
+            "source": "husband",
+            "pronunciation": "mu-ru-me wakwa"
+          },
+          {
+            "target": "muundu",
+            "source": "man",
+            "pronunciation": "muundu"
+          },
+          {
+            "target": "maiitu",
+            "source": "mother",
+            "pronunciation": "maii-tu"
+          },
+          {
+            "target": "Mwana",
+            "source": "Son",
+            "pronunciation": "mwa-na"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Athuri marĩ kĩama-inĩ na baba.",
+            "source": "The elders are in the council with my father."
+          },
+          {
+            "target": "Maitũ na mũrũme wakwa nĩmarĩmaga mũgũnda.",
+            "source": "My mother and my husband cultivate the garden."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"kukigamma\" mean in English?",
+            "correctAnswer": "crawl",
+            "options": [
+              "elder",
+              "father",
+              "girl",
+              "crawl"
+            ],
+            "hint": "Core vocabulary in Clans, Marriage & Community Life",
+            "acceptedAnswers": [
+              "crawl (a man)",
+              "crawl"
+            ]
+          },
+          {
+            "type": "translate_to_target",
+            "prompt": "Translate to the target language: \"elder\"",
+            "correctAnswer": "muthuri (pl. athuri)",
+            "acceptedAnswers": [
+              "muthuri, pl. athuri",
+              "muthuri"
+            ],
+            "hint": "Starts with \"mu\""
+          },
+          {
+            "type": "translate_to_english",
+            "prompt": "Translate to English: \"baba\"",
+            "correctAnswer": "father",
+            "acceptedAnswers": [
+              "father",
+              "father"
+            ],
+            "hint": "Review Clans, Marriage & Community Life"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each expression from Clans, Marriage & Community Life with its English meaning:",
+            "correctAnswer": "all_matched",
+            "pairs": [
+              {
+                "left": "kukigamma",
+                "right": "crawl"
+              },
+              {
+                "left": "muthuri (pl. athuri)",
+                "right": "elder"
+              },
+              {
+                "left": "baba",
+                "right": "father"
+              },
+              {
+                "left": "wathiomo",
+                "right": "father-in-law"
+              },
+              {
+                "left": "karegu",
+                "right": "girl"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kikuyu-unit-8",
+    "unitNumber": 8,
+    "title": "Numbers, Counting, Currency & Measures",
+    "description": "Master numbers, counting, currency & measures in Kikuyu (Gĩkũyũ) built directly from Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927).",
+    "icon": "Scale",
+    "color": "#10B981",
+    "skills": [
+      {
+        "id": "kikuyu-numbers-measures-cardinals-ordinals-8",
+        "title": "Cardinal & Ordinal Numerals",
+        "icon": "Hash",
+        "description": "Count fluently and form ordinal numbers using historical numeral tables.",
+        "culturalNote": "Primary historical documentation for Kikuyu (Gĩkũyũ) in Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kiambu, Murang'a, Nyeri.",
+        "words": [
+          {
+            "target": "Ithathatũ",
+            "source": "Six",
+            "pronunciation": "ithatha-tu"
+          },
+          {
+            "target": "-õthe",
+            "source": "all",
+            "pronunciation": "othe"
+          },
+          {
+            "target": "ithiwi õthe",
+            "source": "all of us",
+            "pronunciation": "ithi-wi othe"
+          },
+          {
+            "target": "imue",
+            "source": "One",
+            "pronunciation": "imue"
+          },
+          {
+            "target": "ikumi",
+            "source": "Ten",
+            "pronunciation": "ikumi"
+          },
+          {
+            "target": "andu ere",
+            "source": "both",
+            "pronunciation": "andu ere"
+          },
+          {
+            "target": "kutara",
+            "source": "count",
+            "pronunciation": "ku-ta-ra"
+          },
+          {
+            "target": "inyanga",
+            "source": "eight",
+            "pronunciation": "inyanga"
+          },
+          {
+            "target": "kanyanya",
+            "source": "eight times",
+            "pronunciation": "kanyanya"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Ithiwi õthe nĩtũratara mbũri ikũmi.",
+            "source": "All of us are counting ten goats."
+          },
+          {
+            "target": "Andu ere marĩ na ng'ombe ithathatũ.",
+            "source": "Both people have six cows."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Ithathatũ\" mean in English?",
+            "correctAnswer": "Six",
+            "options": [
+              "all",
+              "Six",
+              "all of us",
+              "One"
+            ],
+            "hint": "Core vocabulary in Cardinal & Ordinal Numerals"
+          },
+          {
+            "type": "translate_to_target",
+            "prompt": "Translate to the target language: \"all\"",
+            "correctAnswer": "-õthe",
+            "acceptedAnswers": [
+              "-õthe",
+              "-õthe"
+            ],
+            "hint": "Starts with \"-õ\""
+          },
+          {
+            "type": "translate_to_english",
+            "prompt": "Translate to English: \"ithiwi õthe\"",
+            "correctAnswer": "all of us",
+            "acceptedAnswers": [
+              "all of us",
+              "all of us"
+            ],
+            "hint": "Review Cardinal & Ordinal Numerals"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each expression from Cardinal & Ordinal Numerals with its English meaning:",
+            "correctAnswer": "all_matched",
+            "pairs": [
+              {
+                "left": "Ithathatũ",
+                "right": "Six"
+              },
+              {
+                "left": "-õthe",
+                "right": "all"
+              },
+              {
+                "left": "ithiwi õthe",
+                "right": "all of us"
+              },
+              {
+                "left": "imue",
+                "right": "One"
+              },
+              {
+                "left": "ikumi",
+                "right": "Ten"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kikuyu-numbers-measures-trade-measures-8",
+        "title": "Trade, Barter, Currency & Traditional Measures",
+        "icon": "Scale",
+        "description": "Learn market exchange, weights, measures, and value expressions.",
+        "culturalNote": "Primary historical documentation for Kikuyu (Gĩkũyũ) in Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kiambu, Murang'a, Nyeri.",
+        "words": [
+          {
+            "target": "mirongoiri na itanu",
+            "source": "fifty",
+            "pronunciation": "mi-rongoi-ri na i-ta-nu"
+          },
+          {
+            "target": "kiarra ki morroto",
+            "source": "finger (first)",
+            "pronunciation": "kiarra ki morro-to"
+          },
+          {
+            "target": "ikinya or kuambirrira",
+            "source": "first",
+            "pronunciation": "i-kinya / ku-ambi-rri-ra"
+          },
+          {
+            "target": "katanu",
+            "source": "five times",
+            "pronunciation": "ka-ta-nu"
+          },
+          {
+            "target": "mirongo iri na ena",
+            "source": "forty",
+            "pronunciation": "mi-rongo iri na ena"
+          },
+          {
+            "target": "kanna",
+            "source": "four times",
+            "pronunciation": "kanna"
+          },
+          {
+            "target": "kishuinji",
+            "source": "half",
+            "pronunciation": "kishuinji"
+          },
+          {
+            "target": "nichigana",
+            "source": "how many",
+            "pronunciation": "nichi-ga-na"
+          },
+          {
+            "target": "riingi",
+            "source": "many",
+            "pronunciation": "riingi"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Mũthuri onanirie kiarra ki morroto na agĩtara katanu.",
+            "source": "The elder showed the first finger and counted five times."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"mirongoiri na itanu\" in Kikuyu?",
+            "correctAnswer": "fifty",
+            "options": [
+              "fifty",
+              "finger",
+              "first",
+              "five times"
+            ],
+            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"kiarra ki morroto\" in Kikuyu?",
+            "correctAnswer": "finger",
+            "options": [
+              "first",
+              "five times",
+              "fifty",
+              "finger"
+            ],
+            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)",
+            "acceptedAnswers": [
+              "finger (first)",
+              "finger"
+            ]
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"ikinya or kuambirrira\" in Kikuyu?",
+            "correctAnswer": "first",
+            "options": [
+              "five times",
+              "fifty",
+              "first",
+              "finger"
+            ],
+            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"first\" in Kikuyu?",
+            "correctAnswer": "ikinya or kuambirrira",
+            "options": [
+              "mirongoiri na itanu",
+              "kiarra ki morroto",
+              "ikinya or kuambirrira",
+              "katanu"
+            ],
+            "hint": "Starts with \"ik…\" (21 letters)"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"five times\" in Kikuyu?",
+            "correctAnswer": "katanu",
+            "options": [
+              "katanu",
+              "mirongoiri na itanu",
+              "kiarra ki morroto",
+              "ikinya or kuambirrira"
+            ],
+            "hint": "Starts with \"ka…\" (6 letters)"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each Kikuyu expression with its English meaning:",
+            "correctAnswer": "mirongoiri na itanu: fifty",
+            "pairs": [
+              {
+                "left": "mirongoiri na itanu",
+                "right": "fifty"
+              },
+              {
+                "left": "kiarra ki morroto",
+                "right": "finger (first)"
+              },
+              {
+                "left": "ikinya or kuambirrira",
+                "right": "first"
+              },
+              {
+                "left": "katanu",
+                "right": "five times"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Kikuyu term for \"forty\": ___",
+            "correctAnswer": "mirongo iri na ena",
+            "options": [
+              "kiarra ki morroto",
+              "ikinya or kuambirrira",
+              "mirongoiri na itanu",
+              "mirongo iri na ena"
+            ],
+            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kikuyu-unit-9",
+    "unitNumber": 9,
+    "title": "Food, Cuisine, Crops & Livestock Husbandry",
+    "description": "Master food, cuisine, crops & livestock husbandry in Kikuyu (Gĩkũyũ) built directly from Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927).",
+    "icon": "Milk",
+    "color": "#10B981",
+    "skills": [
+      {
+        "id": "kikuyu-food-agriculture-staple-foods-cookery-9",
+        "title": "Staple Foods, Cookery & Beverages",
+        "icon": "Soup",
+        "description": "Learn traditional dishes, grains, culinary tools, and food preparation verbs.",
+        "culturalNote": "Primary historical documentation for Kikuyu (Gĩkũyũ) in Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kiambu, Murang'a, Nyeri.",
+        "words": [
+          {
+            "target": "marigu",
+            "source": "banana",
+            "pronunciation": "ma-ri-gu"
+          },
+          {
+            "target": "kutziara",
+            "source": "bear fruit (to)",
+            "pronunciation": "kutzia-ra"
+          },
+          {
+            "target": "enjohi",
+            "source": "beer (native)",
+            "pronunciation": "enjo-hi"
+          },
+          {
+            "target": "-nyungu",
+            "source": "bitter",
+            "pronunciation": "nyungu"
+          },
+          {
+            "target": "ngorrono",
+            "source": "butter",
+            "pronunciation": "ngorro-no"
+          },
+          {
+            "target": "maguta",
+            "source": "butter (clarified)",
+            "pronunciation": "ma-gu-ta"
+          },
+          {
+            "target": "uria",
+            "source": "butter milk",
+            "pronunciation": "u-ria"
+          },
+          {
+            "target": "mweer",
+            "source": "caffre corn",
+            "pronunciation": "mweer"
+          },
+          {
+            "target": "mugwatchi",
+            "source": "cassava",
+            "pronunciation": "mugwatchi"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Mĩtĩ ya marigũ nĩĩratziara wega mũgũnda-inĩ.",
+            "source": "The banana trees are bearing fruit well in the garden."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"marigu\" in Kikuyu?",
+            "correctAnswer": "banana",
+            "options": [
+              "banana",
+              "bear fruit",
+              "beer",
+              "bitter"
+            ],
+            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"kutziara\" in Kikuyu?",
+            "correctAnswer": "bear fruit",
+            "options": [
+              "beer",
+              "bitter",
+              "bear fruit",
+              "banana"
+            ],
+            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)",
+            "acceptedAnswers": [
+              "bear fruit (to)",
+              "bear fruit"
+            ]
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"enjohi\" in Kikuyu?",
+            "correctAnswer": "beer",
+            "options": [
+              "bitter",
+              "banana",
+              "beer",
+              "bear fruit"
+            ],
+            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)",
+            "acceptedAnswers": [
+              "beer (native)",
+              "beer"
+            ]
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"beer (native)\" in Kikuyu?",
+            "correctAnswer": "enjohi",
+            "options": [
+              "marigu",
+              "kutziara",
+              "-nyungu",
+              "enjohi"
+            ],
+            "hint": "Starts with \"en…\" (6 letters)"
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"bitter\" in Kikuyu?",
+            "correctAnswer": "-nyungu",
+            "options": [
+              "marigu",
+              "-nyungu",
+              "kutziara",
+              "enjohi"
+            ],
+            "hint": "Starts with \"-n…\" (7 letters)"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each Kikuyu expression with its English meaning:",
+            "correctAnswer": "marigu: banana",
+            "pairs": [
+              {
+                "left": "marigu",
+                "right": "banana"
+              },
+              {
+                "left": "kutziara",
+                "right": "bear fruit (to)"
+              },
+              {
+                "left": "enjohi",
+                "right": "beer (native)"
+              },
+              {
+                "left": "-nyungu",
+                "right": "bitter"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Kikuyu term for \"butter\": ___",
+            "correctAnswer": "ngorrono",
+            "options": [
+              "marigu",
+              "kutziara",
+              "ngorrono",
+              "enjohi"
+            ],
+            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+          }
+        ]
+      },
+      {
+        "id": "kikuyu-food-agriculture-crops-livestock-9",
+        "title": "Crops, Cultivation & Pastoral Livestock",
+        "icon": "Tractor",
+        "description": "Study indigenous crops, planting seasons, and livestock terminology.",
+        "culturalNote": "Primary historical documentation for Kikuyu (Gĩkũyũ) in Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kiambu, Murang'a, Nyeri.",
+        "words": [
+          {
+            "target": "mbariki",
+            "source": "castor-oil tree",
+            "pronunciation": "mba-ri-ki"
+          },
+          {
+            "target": "kurri ambakki",
+            "source": "chew (tobacco)",
+            "pronunciation": "kurri ambakki"
+          },
+          {
+            "target": "kuruga",
+            "source": "cook",
+            "pronunciation": "ku-ru-ga"
+          },
+          {
+            "target": "kumea",
+            "source": "drink",
+            "pronunciation": "ku-mea"
+          },
+          {
+            "target": "kunigurria",
+            "source": "eat",
+            "pronunciation": "ku-ni-gurria"
+          },
+          {
+            "target": "itumbi",
+            "source": "egg",
+            "pronunciation": "i-tumbi"
+          },
+          {
+            "target": "mutŭ",
+            "source": "flour",
+            "pronunciation": "mu-tu"
+          },
+          {
+            "target": "maguta",
+            "source": "Oil",
+            "pronunciation": "ma-gu-ta"
+          },
+          {
+            "target": "hithi",
+            "source": "Raw",
+            "pronunciation": "hithi"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Mũtumia nĩararuga irio na mũtũ na maguta.",
+            "source": "The woman is cooking food with flour and oil."
+          },
+          {
+            "target": "Mũgeni nĩaranyua maĩ na akarĩa itumbĩ.",
+            "source": "The guest drinks water and eats an egg."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"mbariki\" mean in English?",
+            "correctAnswer": "castor-oil tree",
+            "options": [
+              "chew",
+              "cook",
+              "drink",
+              "castor-oil tree"
+            ],
+            "hint": "Core vocabulary in Crops, Cultivation & Pastoral Livestock"
+          },
+          {
+            "type": "translate_to_target",
+            "prompt": "Translate to the target language: \"chew (tobacco)\"",
+            "correctAnswer": "kurri ambakki",
+            "acceptedAnswers": [
+              "kurri ambakki",
+              "kurri ambakki"
+            ],
+            "hint": "Starts with \"ku\""
+          },
+          {
+            "type": "translate_to_english",
+            "prompt": "Translate to English: \"kuruga\"",
+            "correctAnswer": "cook",
+            "acceptedAnswers": [
+              "cook",
+              "cook"
+            ],
+            "hint": "Review Crops, Cultivation & Pastoral Livestock"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each expression from Crops, Cultivation & Pastoral Livestock with its English meaning:",
+            "correctAnswer": "all_matched",
+            "pairs": [
+              {
+                "left": "mbariki",
+                "right": "castor-oil tree"
+              },
+              {
+                "left": "kurri ambakki",
+                "right": "chew"
+              },
+              {
+                "left": "kuruga",
+                "right": "cook"
+              },
+              {
+                "left": "kumea",
+                "right": "drink"
+              },
+              {
+                "left": "kunigurria",
+                "right": "eat"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kikuyu-unit-10",
+    "unitNumber": 10,
+    "title": "Nature, Landscape, Flora & East African Wildlife",
+    "description": "Master nature, landscape, flora & east african wildlife in Kikuyu (Gĩkũyũ) built directly from Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927).",
+    "icon": "PawPrint",
+    "color": "#10B981",
+    "skills": [
+      {
+        "id": "kikuyu-nature-wildlife-land-sky-water-10",
+        "title": "Sky, Weather, Rivers & Landforms",
+        "icon": "CloudRain",
+        "description": "Describe the natural environment, rivers, mountains, and weather phenomena.",
+        "culturalNote": "Primary historical documentation for Kikuyu (Gĩkũyũ) in Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kiambu, Murang'a, Nyeri.",
+        "words": [
+          {
+            "target": "hiti",
+            "source": "Hyena",
+            "pronunciation": "hi-ti"
+          },
+          {
+            "target": "mũgumo (pl. mĩgumo)",
+            "source": "Sacred Fig Tree",
+            "pronunciation": "mu-gu-mo"
+          },
+          {
+            "target": "thigirriri",
+            "source": "ant (small black)",
+            "pronunciation": "thi-girri-ri"
+          },
+          {
+            "target": "tharaku",
+            "source": "ant (red)",
+            "pronunciation": "tha-ra-ku"
+          },
+          {
+            "target": "muthua",
+            "source": "ant (white)",
+            "pronunciation": "muthua"
+          },
+          {
+            "target": "irõõnga",
+            "source": "antelope",
+            "pronunciation": "i-roonga"
+          },
+          {
+            "target": "muhu",
+            "source": "ashes",
+            "pronunciation": "mu-hu"
+          },
+          {
+            "target": "nugu ao ithinwa",
+            "source": "baboon",
+            "pronunciation": "nu-gu ao ithinwa"
+          },
+          {
+            "target": "nempaka",
+            "source": "Cat",
+            "pronunciation": "nempa-ka"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Athuri marahoya Ngai rungu rwa mũtĩ wa mũgumo.",
+            "source": "The elders are praying to God under the sacred fig tree."
+          },
+          {
+            "target": "Hiti na irõõnga ciũrĩire mũtitũ-inĩ.",
+            "source": "The hyena and the antelope fled into the forest."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"hiti\" mean in English?",
+            "correctAnswer": "Hyena",
+            "options": [
+              "Sacred Fig Tree",
+              "ant",
+              "Hyena",
+              "antelope"
+            ],
+            "hint": "Core vocabulary in Sky, Weather, Rivers & Landforms"
+          },
+          {
+            "type": "translate_to_target",
+            "prompt": "Translate to the target language: \"Sacred Fig Tree\"",
+            "correctAnswer": "mũgumo",
+            "acceptedAnswers": [
+              "mũgumo (pl. mĩgumo)",
+              "mũgumo"
+            ],
+            "hint": "Starts with \"mũ\""
+          },
+          {
+            "type": "translate_to_english",
+            "prompt": "Translate to English: \"thigirriri\"",
+            "correctAnswer": "ant",
+            "acceptedAnswers": [
+              "ant (small black)",
+              "ant"
+            ],
+            "hint": "Review Sky, Weather, Rivers & Landforms"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each expression from Sky, Weather, Rivers & Landforms with its English meaning:",
+            "correctAnswer": "all_matched",
+            "pairs": [
+              {
+                "left": "hiti",
+                "right": "Hyena"
+              },
+              {
+                "left": "mũgumo",
+                "right": "Sacred Fig Tree"
+              },
+              {
+                "left": "thigirriri",
+                "right": "ant (small black)"
+              },
+              {
+                "left": "tharaku",
+                "right": "ant (red)"
+              },
+              {
+                "left": "muthua",
+                "right": "ant (white)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kikuyu-nature-wildlife-wildlife-flora-10",
+        "title": "East African Fauna, Birds & Sacred Trees",
+        "icon": "PawPrint",
+        "description": "Identify indigenous mammals, birds, insects, and botanical species recorded in the primary texts.",
+        "culturalNote": "Primary historical documentation for Kikuyu (Gĩkũyũ) in Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kiambu, Murang'a, Nyeri.",
+        "words": [
+          {
+            "target": "mugiyo",
+            "source": "baobab tree",
+            "pronunciation": "mu-gi-yo"
+          },
+          {
+            "target": "kugambu",
+            "source": "bark",
+            "pronunciation": "ku-gambu"
+          },
+          {
+            "target": "makonni",
+            "source": "bark (of tree)",
+            "pronunciation": "ma-konni"
+          },
+          {
+            "target": "enjugu",
+            "source": "beans (tree)",
+            "pronunciation": "enju-gu"
+          },
+          {
+            "target": "njuki",
+            "source": "bee",
+            "pronunciation": "nju-ki"
+          },
+          {
+            "target": "mbuggi",
+            "source": "bell (cow)",
+            "pronunciation": "mbuggi"
+          },
+          {
+            "target": "nyoni",
+            "source": "bird",
+            "pronunciation": "nyo-ni"
+          },
+          {
+            "target": "imme",
+            "source": "Dew",
+            "pronunciation": "imme"
+          },
+          {
+            "target": "kui / ngiti",
+            "source": "Dog",
+            "pronunciation": "kui"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Njũkĩ na nyoni ciũmbũkaga mũtĩ-inĩ wa mugiyo.",
+            "source": "Bees and birds fly around the baobab tree."
+          },
+          {
+            "target": "Ngiti nĩĩrakũgamba mũciĩ rũciinĩ.",
+            "source": "The dog is barking at the homestead in the morning."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"mugiyo\" mean in English?",
+            "correctAnswer": "baobab tree",
+            "options": [
+              "bark",
+              "beans",
+              "baobab tree",
+              "bee"
+            ],
+            "hint": "Core vocabulary in East African Fauna, Birds & Sacred Trees"
+          },
+          {
+            "type": "translate_to_target",
+            "prompt": "Translate to the target language: \"bark\"",
+            "correctAnswer": "kugambu",
+            "acceptedAnswers": [
+              "kugambu",
+              "kugambu"
+            ],
+            "hint": "Starts with \"ku\""
+          },
+          {
+            "type": "translate_to_english",
+            "prompt": "Translate to English: \"makonni\"",
+            "correctAnswer": "bark",
+            "acceptedAnswers": [
+              "bark (of tree)",
+              "bark"
+            ],
+            "hint": "Review East African Fauna, Birds & Sacred Trees"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each expression from East African Fauna, Birds & Sacred Trees with its English meaning:",
+            "correctAnswer": "all_matched",
+            "pairs": [
+              {
+                "left": "mugiyo",
+                "right": "baobab tree"
+              },
+              {
+                "left": "kugambu",
+                "right": "bark (verb)"
+              },
+              {
+                "left": "makonni",
+                "right": "bark (of tree)"
+              },
+              {
+                "left": "enjugu",
+                "right": "beans (tree)"
+              },
+              {
+                "left": "njuki",
+                "right": "bee"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kikuyu-unit-11",
+    "unitNumber": 11,
+    "title": "The Human Body, Health, Medicine & Safety",
+    "description": "Master the human body, health, medicine & safety in Kikuyu (Gĩkũyũ) built directly from Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927).",
+    "icon": "Heart",
+    "color": "#10B981",
+    "skills": [
+      {
+        "id": "kikuyu-body-health-anatomy-senses-11",
+        "title": "Parts of the Body & Physical Senses",
+        "icon": "Activity",
+        "description": "Name anatomical terms, senses, and bodily states from comparative lexical tables.",
+        "culturalNote": "Primary historical documentation for Kikuyu (Gĩkũyũ) in Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kiambu, Murang'a, Nyeri.",
+        "words": [
+          {
+            "target": "nda",
+            "source": "abdomen",
+            "pronunciation": "nda"
+          },
+          {
+            "target": "runyadide",
+            "source": "ankle",
+            "pronunciation": "runya-di-de"
+          },
+          {
+            "target": "wuoko",
+            "source": "arm (the whole)",
+            "pronunciation": "wuo-ko"
+          },
+          {
+            "target": "kuwoko",
+            "source": "arm (fore)",
+            "pronunciation": "ku-wo-ko"
+          },
+          {
+            "target": "kichako",
+            "source": "arm (upper)",
+            "pronunciation": "kicha-ko"
+          },
+          {
+            "target": "mgongo",
+            "source": "back",
+            "pronunciation": "mgongo"
+          },
+          {
+            "target": "ihindi",
+            "source": "back (small of)",
+            "pronunciation": "i-hindi"
+          },
+          {
+            "target": "Koto (pl. mato)",
+            "source": "Ear",
+            "pronunciation": "koto"
+          },
+          {
+            "target": "Rizo (pl. maizo)",
+            "source": "Eye",
+            "pronunciation": "rizo"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Mũrũaru arĩ na ruo nda na mgongo.",
+            "source": "The patient has pain in the abdomen and back."
+          },
+          {
+            "target": "Mwanake nĩagũrĩire wuoko na runyadide.",
+            "source": "The warrior injured his arm and ankle."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"nda\" mean in English?",
+            "correctAnswer": "abdomen",
+            "options": [
+              "ankle",
+              "arm",
+              "back",
+              "abdomen"
+            ],
+            "hint": "Core vocabulary in Parts of the Body & Physical Senses"
+          },
+          {
+            "type": "translate_to_target",
+            "prompt": "Translate to the target language: \"ankle\"",
+            "correctAnswer": "runyadide",
+            "acceptedAnswers": [
+              "runyadide",
+              "runyadide"
+            ],
+            "hint": "Starts with \"ru\""
+          },
+          {
+            "type": "translate_to_english",
+            "prompt": "Translate to English: \"wuoko\"",
+            "correctAnswer": "arm",
+            "acceptedAnswers": [
+              "arm (the whole)",
+              "arm"
+            ],
+            "hint": "Review Parts of the Body & Physical Senses"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each expression from Parts of the Body & Physical Senses with its English meaning:",
+            "correctAnswer": "all_matched",
+            "pairs": [
+              {
+                "left": "nda",
+                "right": "abdomen"
+              },
+              {
+                "left": "runyadide",
+                "right": "ankle"
+              },
+              {
+                "left": "wuoko",
+                "right": "arm (the whole)"
+              },
+              {
+                "left": "kuwoko",
+                "right": "arm (forearm)"
+              },
+              {
+                "left": "kichako",
+                "right": "arm (upper)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kikuyu-body-health-healing-safety-11",
+        "title": "Health, Traditional Medicine & Emergency Terms",
+        "icon": "Hospital",
+        "description": "Master expressions for illness, healing remedies, protection, and safety.",
+        "culturalNote": "Primary historical documentation for Kikuyu (Gĩkũyũ) in Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kiambu, Murang'a, Nyeri.",
+        "words": [
+          {
+            "target": "nderu",
+            "source": "beard",
+            "pronunciation": "nde-ru"
+          },
+          {
+            "target": "sakame",
+            "source": "blood",
+            "pronunciation": "sa-ka-me"
+          },
+          {
+            "target": "kumirra",
+            "source": "blow nose",
+            "pronunciation": "ku-mirra"
+          },
+          {
+            "target": "mwiri",
+            "source": "body",
+            "pronunciation": "mwi-ri"
+          },
+          {
+            "target": "ihuha (pl. mahuha)",
+            "source": "boil",
+            "pronunciation": "i-hu-ha"
+          },
+          {
+            "target": "kutu",
+            "source": "Ear",
+            "pronunciation": "kutu"
+          },
+          {
+            "target": "ihindi",
+            "source": "bone",
+            "pronunciation": "i-hindi"
+          },
+          {
+            "target": "nyondo",
+            "source": "breast",
+            "pronunciation": "nyondo"
+          },
+          {
+            "target": "Guoko (Moko)",
+            "source": "Arm",
+            "pronunciation": "guoko"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Mũthuri wĩ na nderu nĩahorire ihuha mwĩrĩ-inĩ.",
+            "source": "The bearded elder treated a boil on the body."
+          },
+          {
+            "target": "Mũndũ mũgo nĩaroria sakame na ihĩndĩ rĩa guoko.",
+            "source": "The healer examined the blood and the bone of the arm."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"nderu\" mean in English?",
+            "correctAnswer": "beard",
+            "options": [
+              "blood",
+              "blow nose",
+              "body",
+              "beard"
+            ],
+            "hint": "Core vocabulary in Health, Traditional Medicine & Emergency Terms"
+          },
+          {
+            "type": "translate_to_target",
+            "prompt": "Translate to the target language: \"blood\"",
+            "correctAnswer": "sakame",
+            "acceptedAnswers": [
+              "sakame",
+              "sakame"
+            ],
+            "hint": "Starts with \"sa\""
+          },
+          {
+            "type": "translate_to_english",
+            "prompt": "Translate to English: \"kumirra\"",
+            "correctAnswer": "blow nose",
+            "acceptedAnswers": [
+              "blow nose",
+              "blow nose"
+            ],
+            "hint": "Review Health, Traditional Medicine & Emergency Terms"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each expression from Health, Traditional Medicine & Emergency Terms with its English meaning:",
+            "correctAnswer": "all_matched",
+            "pairs": [
+              {
+                "left": "nderu",
+                "right": "beard"
+              },
+              {
+                "left": "sakame",
+                "right": "blood"
+              },
+              {
+                "left": "kumirra",
+                "right": "blow nose"
+              },
+              {
+                "left": "mwiri",
+                "right": "body"
+              },
+              {
+                "left": "ihuha (pl. mahuha)",
+                "right": "boil"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kikuyu-unit-12",
+    "unitNumber": 12,
+    "title": "Core Verbs, Tenses, Negation & Verbal Extensions",
+    "description": "Master core verbs, tenses, negation & verbal extensions in Kikuyu (Gĩkũyũ) built directly from Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927).",
+    "icon": "Compass",
+    "color": "#10B981",
+    "skills": [
+      {
+        "id": "kikuyu-verbs-grammar-action-verbs-12",
+        "title": "Essential Action & Motion Verbs",
+        "icon": "Zap",
+        "description": "Conjugate high-frequency transitive and intransitive verbs of motion, speech, and work.",
+        "culturalNote": "Primary historical documentation for Kikuyu (Gĩkũyũ) in Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kiambu, Murang'a, Nyeri.",
+        "words": [
+          {
+            "target": "kwaria (-aria) / kuuga",
+            "source": "Speak",
+            "pronunciation": "kwa-ria / kuu-ga"
+          },
+          {
+            "target": "kũkoma (-koma)",
+            "source": "Sleep",
+            "pronunciation": "ku-ko-ma"
+          },
+          {
+            "target": "gũthiĩ (-thiĩ)",
+            "source": "Go",
+            "pronunciation": "guthii"
+          },
+          {
+            "target": "kũnyua (-nyua)",
+            "source": "Drink",
+            "pronunciation": "kunyua"
+          },
+          {
+            "target": "kũrĩa (-rĩa)",
+            "source": "Eat",
+            "pronunciation": "ku-ria"
+          },
+          {
+            "target": "Koeka",
+            "source": "Do",
+            "pronunciation": "koe-ka"
+          },
+          {
+            "target": "kunikē",
+            "source": "Ask",
+            "pronunciation": "ku-ni-ke"
+          },
+          {
+            "target": "kuhoiya",
+            "source": "Beg",
+            "pronunciation": "ku-hoi-ya"
+          },
+          {
+            "target": "Kogora",
+            "source": "Buy",
+            "pronunciation": "ko-go-ra"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Athuri marĩkĩtie kwaria na rĩu nĩmarathiĩ kũkoma.",
+            "source": "The elders have finished speaking and now they are going to sleep."
+          },
+          {
+            "target": "Ageni nĩmararĩa irio na makanyua maĩ.",
+            "source": "The guests are eating food and drinking water."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"kwaria\" mean in English?",
+            "correctAnswer": "Speak",
+            "options": [
+              "Speak",
+              "Sleep",
+              "Go",
+              "Drink"
+            ],
+            "hint": "Core vocabulary in Essential Action & Motion Verbs"
+          },
+          {
+            "type": "translate_to_target",
+            "prompt": "Translate to the target language: \"Sleep\"",
+            "correctAnswer": "kũkoma",
+            "acceptedAnswers": [
+              "kũkoma (-koma)",
+              "kũkoma"
+            ],
+            "hint": "Starts with \"kũ\""
+          },
+          {
+            "type": "translate_to_english",
+            "prompt": "Translate to English: \"gũthiĩ\"",
+            "correctAnswer": "Go",
+            "acceptedAnswers": [
+              "Go",
+              "Go"
+            ],
+            "hint": "Review Essential Action & Motion Verbs"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each expression from Essential Action & Motion Verbs with its English meaning:",
+            "correctAnswer": "all_matched",
+            "pairs": [
+              {
+                "left": "kwaria",
+                "right": "Speak"
+              },
+              {
+                "left": "kũkoma",
+                "right": "Sleep"
+              },
+              {
+                "left": "gũthiĩ",
+                "right": "Go"
+              },
+              {
+                "left": "kũnyua",
+                "right": "Drink"
+              },
+              {
+                "left": "kũrĩa",
+                "right": "Eat"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kikuyu-verbs-grammar-verbal-derivatives-12",
+        "title": "Applied, Causative, Reciprocal & Stative Verbs",
+        "icon": "RefreshCw",
+        "description": "Build complex meanings using verbal extensions and grammatical particles.",
+        "culturalNote": "Primary historical documentation for Kikuyu (Gĩkũyũ) in Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kiambu, Murang'a, Nyeri.",
+        "words": [
+          {
+            "target": "Kolela",
+            "source": "Cry",
+            "pronunciation": "ko-le-la"
+          },
+          {
+            "target": "Kokua",
+            "source": "Die",
+            "pronunciation": "ko-kua"
+          },
+          {
+            "target": "Koendja",
+            "source": "Dig",
+            "pronunciation": "koendja"
+          },
+          {
+            "target": "Kohora",
+            "source": "Hit",
+            "pronunciation": "ko-ho-ra"
+          },
+          {
+            "target": "Kolima",
+            "source": "Hoe",
+            "pronunciation": "ko-li-ma"
+          },
+          {
+            "target": "Kohenia",
+            "source": "Lie",
+            "pronunciation": "ko-he-nia"
+          },
+          {
+            "target": "Koleha",
+            "source": "Pay",
+            "pronunciation": "ko-le-ha"
+          },
+          {
+            "target": "Koekera",
+            "source": "Put",
+            "pronunciation": "koe-ke-ra"
+          },
+          {
+            "target": "Koiya, kotunya",
+            "source": "Rob",
+            "pronunciation": "koi-ya ko-tunya"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Mũrĩmi nĩaralima mũgũnda na akaendja irima.",
+            "source": "The farmer is hoeing the field and digging a hole."
+          },
+          {
+            "target": "Tiga kũlela, nĩtũkoleha thiri ũcio.",
+            "source": "Stop crying, we shall pay that debt."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Kolela\" mean in English?",
+            "correctAnswer": "Cry",
+            "options": [
+              "Die",
+              "Dig",
+              "Cry",
+              "Hit"
+            ],
+            "hint": "Core vocabulary in Applied, Causative, Reciprocal & Stative Verbs"
+          },
+          {
+            "type": "translate_to_target",
+            "prompt": "Translate to the target language: \"Die\"",
+            "correctAnswer": "Kokua",
+            "acceptedAnswers": [
+              "Kokua",
+              "Kokua"
+            ],
+            "hint": "Starts with \"Ko\""
+          },
+          {
+            "type": "translate_to_english",
+            "prompt": "Translate to English: \"Koendja\"",
+            "correctAnswer": "Dig",
+            "acceptedAnswers": [
+              "Dig",
+              "Dig"
+            ],
+            "hint": "Review Applied, Causative, Reciprocal & Stative Verbs"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each expression from Applied, Causative, Reciprocal & Stative Verbs with its English meaning:",
+            "correctAnswer": "all_matched",
+            "pairs": [
+              {
+                "left": "Kolela",
+                "right": "Cry"
+              },
+              {
+                "left": "Kokua",
+                "right": "Die"
+              },
+              {
+                "left": "Koendja",
+                "right": "Dig"
+              },
+              {
+                "left": "Kohora",
+                "right": "Hit"
+              },
+              {
+                "left": "Kolima",
+                "right": "Hoe"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kikuyu-unit-13",
+    "unitNumber": 13,
+    "title": "Archival Monograph & Comparative Lexicon",
+    "description": "Master newly extracted Kikuyu (Gĩkũyũ) vocabulary, dialect forms, and grammatical roots from the historical public-domain monographs and comparative tables.",
+    "icon": "ScrollText",
+    "color": "#10B981",
+    "skills": [
+      {
+        "id": "kikuyu-pd-corpus-13-1",
+        "title": "Classical Roots & Naming Traditions",
+        "icon": "Baby",
+        "description": "Study verified Kikuyu (Gĩkũyũ) headwords and dialect forms extracted from primary public-domain monographs.",
+        "words": [
+          {
+            "target": "riika (pl. mariika)",
+            "source": "Age-grade / initiation generation",
+            "pronunciation": "rii-ka"
+          },
+          {
+            "target": "ituĩka",
+            "source": "Generational transfer of governance ceremony",
+            "pronunciation": "i-tui-ka"
+          },
+          {
+            "target": "thahu",
+            "source": "Ritual impurity / ceremonial curse",
+            "pronunciation": "tha-hu"
+          },
+          {
+            "target": "gũtahĩkia",
+            "source": "To purify ceremonially from thahu",
+            "pronunciation": "gu-ta-hi-kia"
+          },
+          {
+            "target": "thengira",
+            "source": "Unmarried men's bachelor hut / council hut",
+            "pronunciation": "thengi-ra"
+          },
+          {
+            "target": "rũkwarũ",
+            "source": "Goat-skin wrist/waist strip of ceremonial peace",
+            "pronunciation": "rukwa-ru"
+          },
+          {
+            "target": "rũenji",
+            "source": "Traditional razor",
+            "pronunciation": "ruenji"
+          },
+          {
+            "target": "rũoro",
+            "source": "Cattle-branding iron knife",
+            "pronunciation": "ruo-ro"
+          },
+          {
+            "target": "mũgũnda",
+            "source": "Cultivated garden farm",
+            "pronunciation": "mu-gunda"
+          },
+          {
+            "target": "gĩthaka",
+            "source": "Uncultivated bushland",
+            "pronunciation": "githa-ka"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Mũthuri nĩatairie ũhoro wa ituĩka na mariika mũciĩ.",
+            "source": "The elder explained the tradition of the generational transfer ceremony and age-grades at the homestead."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"riika\" in Kikuyu?",
+            "correctAnswer": "Age-grade",
+            "options": [
+              "Ritual impurity",
+              "Goat-skin wrist",
+              "Age-grade",
+              "Traditional razor"
+            ],
+            "hint": "Hobley (1922, p. 308) & Routledge (1910)",
+            "acceptedAnswers": [
+              "Age-grade / initiation generation",
+              "Age-grade"
+            ]
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each verified Kikuyu (Gĩkũyũ) term from the public-domain corpus to its English meaning:",
+            "correctAnswer": "riika (pl. mariika): Age-grade / initiation generation",
+            "pairs": [
+              {
+                "left": "riika (pl. mariika)",
+                "right": "Age-grade / initiation generation"
+              },
+              {
+                "left": "ituĩka",
+                "right": "Generational transfer of governance ceremony"
+              },
+              {
+                "left": "thahu",
+                "right": "Ritual impurity / ceremonial curse"
+              },
+              {
+                "left": "gũtahĩkia",
+                "right": "To purify ceremonially from thahu"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Kikuyu (Gĩkũyũ) term for \"Unmarried men's bachelor hut / council hut\": ___",
+            "correctAnswer": "thengira",
+            "options": [
+              "rũkwarũ",
+              "riika",
+              "ituĩka",
+              "thengira"
+            ],
+            "hint": "Hobley (1922, p. 308)"
+          }
+        ]
+      },
+      {
+        "id": "kikuyu-pd-corpus-13-2",
+        "title": "Homestead, Nature & Everyday Expressions",
+        "icon": "Users",
+        "description": "Expand your command of Kikuyu (Gĩkũyũ) ecological, kinship, and action vocabulary from the archival corpus.",
+        "words": [
+          {
+            "target": "gũtũma mbeca na thimũ",
+            "source": "To send money via mobile phone (M-Pesa)",
+            "pronunciation": "gu-tu-ma mbe-ca na thi-mu"
+          },
+          {
+            "target": "ũrĩmi wa mĩmera na mahiũ",
+            "source": "Crop farming and livestock husbandry",
+            "pronunciation": "u-ri-mi wa mi-me-ra na ma-hiu"
+          },
+          {
+            "target": "mbeũ njega cia mbembe",
+            "source": "Certified / high-yield maize seeds",
+            "pronunciation": "mbeu nje-ga cia mbembe"
+          },
+          {
+            "target": "thibitarĩ",
+            "source": "Hospital",
+            "pronunciation": "thi-bi-ta-ri"
+          },
+          {
+            "target": "nyũmba ya ũrigiti",
+            "source": "Health dispensary",
+            "pronunciation": "nyumba ya u-ri-gi-ti"
+          },
+          {
+            "target": "gwĩciria",
+            "source": "To think",
+            "pronunciation": "gwi-ci-ria"
+          },
+          {
+            "target": "kũmenya",
+            "source": "To know",
+            "pronunciation": "ku-menya"
+          },
+          {
+            "target": "gũtindĩka",
+            "source": "To push",
+            "pronunciation": "gu-tindi-ka"
+          },
+          {
+            "target": "kũgucia",
+            "source": "To pull",
+            "pronunciation": "ku-gu-cia"
+          },
+          {
+            "target": "kũatũra",
+            "source": "To split wood",
+            "pronunciation": "kua-tu-ra"
+          },
+          {
+            "target": "gũtinia",
+            "source": "To cut",
+            "pronunciation": "gu-ti-nia"
+          },
+          {
+            "target": "kũnyoroka",
+            "source": "To be smooth",
+            "pronunciation": "kunyo-ro-ka"
+          },
+          {
+            "target": "kũrũnga",
+            "source": "To be straight",
+            "pronunciation": "ku-runga"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Mũrĩmi nĩatũmire mbeca na thimũ kũgũra mbeũ njega cia mbembe.",
+            "source": "The farmer sent money via mobile phone to buy certified maize seeds."
+          },
+          {
+            "target": "Ũrĩmi wa mĩmera na mahiũ nĩũteithagia mĩciĩ iitũ.",
+            "source": "Crop farming and livestock husbandry support our homesteads."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"gũtũma mbeca na thimũ\" in Kikuyu?",
+            "correctAnswer": "To send money via mobile phone",
+            "options": [
+              "Crop farming and livestock husbandry",
+              "Certified",
+              "Hospital",
+              "To send money via mobile phone"
+            ],
+            "hint": "Anv-ke Gĩkũyũ Financial Corpus",
+            "acceptedAnswers": [
+              "To send money via mobile phone (M-Pesa)",
+              "To send money via mobile phone"
+            ]
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each verified Kikuyu (Gĩkũyũ) term from the public-domain corpus to its English meaning:",
+            "correctAnswer": "gũtũma mbeca na thimũ: To send money via mobile phone (M-Pesa)",
+            "pairs": [
+              {
+                "left": "gũtũma mbeca na thimũ",
+                "right": "To send money via mobile phone (M-Pesa)"
+              },
+              {
+                "left": "ũrĩmi wa mĩmera na mahiũ",
+                "right": "Crop farming and livestock husbandry"
+              },
+              {
+                "left": "mbeũ njega cia mbembe",
+                "right": "Certified / high-yield maize seeds"
+              },
+              {
+                "left": "thibitarĩ / nyũmba ya ũrigiti",
+                "right": "Hospital / health dispensary"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Kikuyu (Gĩkũyũ) term for \"To think\": ___",
+            "correctAnswer": "gwĩciria",
+            "options": [
+              "gũtindĩka",
+              "gwĩciria",
+              "thibitarĩ",
+              "nyũmba ya ũrigiti"
+            ],
+            "hint": "Wiktionary Appendix:Bantu Swadesh lists",
+            "acceptedAnswers": [
+              "gwĩciria / kũmenya",
+              "gwĩciria"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kikuyu-unit-14",
+    "unitNumber": 14,
+    "title": "Core Swadesh & Everyday Community Vocabulary",
+    "description": "Master Kikuyu (Gĩkũyũ) vocabulary and expressions from open-licensed datasets alongside deep archival lexicon.",
+    "icon": "Landmark",
+    "color": "#10B981",
+    "skills": [
+      {
+        "id": "kikuyu-open-dataset-14-1",
+        "title": "Core Swadesh & Cultural Vocabulary",
+        "icon": "Baby",
+        "description": "Learn core Kikuyu (Gĩkũyũ) verbs, nouns, and cultural terms integrated from open-web linguistic datasets.",
+        "words": [
+          {
+            "target": "Ku-Tahikia",
+            "source": "To purify. Ku is the infinitive prefix common to all verbs",
+            "pronunciation": "ku-tahikia"
+          },
+          {
+            "target": "Ruoro",
+            "source": "Knife used for branding cattle",
+            "pronunciation": "ruo-ro"
+          },
+          {
+            "target": "Ruenji",
+            "source": "A razor",
+            "pronunciation": "ruenji"
+          },
+          {
+            "target": "Rika",
+            "source": "Generation—age grade",
+            "pronunciation": "ri-ka"
+          },
+          {
+            "target": "Njohi",
+            "source": "Native beer, usually made from sugar cane",
+            "pronunciation": "njo-hi"
+          },
+          {
+            "target": "Ngunga",
+            "source": "Caterpillars",
+            "pronunciation": "ngunga"
+          },
+          {
+            "target": "Ndorume",
+            "source": "A ram, a favourite form of sacrifice",
+            "pronunciation": "ndo-ru-me"
+          },
+          {
+            "target": "Ngoma",
+            "source": "Ancestral spirit",
+            "pronunciation": "ngo-ma"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Mũthuri nĩahũthagĩra rũoro kũora ng'ombe cia mũciĩ.",
+            "source": "The elder uses a branding knife to brand the cattle of the homestead."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"Ku-Tahikia\" in Kikuyu?",
+            "correctAnswer": "To purify. Ku is the infinitive prefix common to all verbs",
+            "options": [
+              "To purify. Ku is the infinitive prefix common to all verbs",
+              "Knife used for branding cattle",
+              "A razor",
+              "Generation"
+            ],
+            "hint": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each verified Kikuyu (Gĩkũyũ) term from the public-domain corpus to its English meaning:",
+            "correctAnswer": "Ku-Tahikia: To purify. Ku is the infinitive prefix common to all verbs",
+            "pairs": [
+              {
+                "left": "Ku-Tahikia",
+                "right": "To purify. Ku is the infinitive prefix common to all verbs"
+              },
+              {
+                "left": "Ruoro",
+                "right": "Knife used for branding cattle"
+              },
+              {
+                "left": "Ruenji",
+                "right": "A razor"
+              },
+              {
+                "left": "Rika",
+                "right": "Generation—age grade"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Kikuyu (Gĩkũyũ) term for \"Native beer, usually made from sugar cane\": ___",
+            "correctAnswer": "Njohi",
+            "options": [
+              "Ngunga",
+              "Ku-Tahikia",
+              "Ruoro",
+              "Njohi"
+            ],
+            "hint": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)"
+          }
+        ]
+      },
+      {
+        "id": "kikuyu-open-dataset-14-2",
+        "title": "Agriculture, Community & Everyday Life",
+        "icon": "TreePine",
+        "description": "Practice Kikuyu (Gĩkũyũ) terms for agriculture, environment, social organization, and daily communication.",
+        "words": [
+          {
+            "target": "Muburi",
+            "source": "Goat",
+            "pronunciation": "mu-bu-ri"
+          },
+          {
+            "target": "Murogi",
+            "source": "Medicine man who deals in black magic",
+            "pronunciation": "mu-ro-gi"
+          },
+          {
+            "target": "Mugumu",
+            "source": "Sacred fig tree, often called muti wa Engai",
+            "pronunciation": "mu-gu-mu"
+          },
+          {
+            "target": "Kiama",
+            "source": "Council of elders",
+            "pronunciation": "kia-ma"
+          },
+          {
+            "target": "Kita",
+            "source": "The power of the evil eye",
+            "pronunciation": "ki-ta"
+          },
+          {
+            "target": "Kihe",
+            "source": "An uncircumcised boy",
+            "pronunciation": "ki-he"
+          },
+          {
+            "target": "Kithangaona",
+            "source": "Sacred place",
+            "pronunciation": "kithangao-na"
+          },
+          {
+            "target": "Ichua",
+            "source": "A sacrificial fire",
+            "pronunciation": "ichua"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Athuri a Kĩama marĩ kĩthangaona-inĩ rungu rwa mũtĩ wa Mũgumo.",
+            "source": "The elders of the Council are at the sacred place under the Mugumo fig tree."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"Muburi\" in Kikuyu?",
+            "correctAnswer": "Goat",
+            "options": [
+              "Sacred fig tree",
+              "Council of elders",
+              "Goat",
+              "An uncircumcised boy"
+            ],
+            "hint": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each verified Kikuyu (Gĩkũyũ) term from the public-domain corpus to its English meaning:",
+            "correctAnswer": "Muburi: Goat",
+            "pairs": [
+              {
+                "left": "Muburi",
+                "right": "Goat"
+              },
+              {
+                "left": "Murogi",
+                "right": "Medicine man who deals in black magic"
+              },
+              {
+                "left": "Mugumu",
+                "right": "Sacred fig tree, often called muti wa Engai"
+              },
+              {
+                "left": "Kiama",
+                "right": "Council of elders"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Kikuyu (Gĩkũyũ) term for \"The power of the evil eye\": ___",
+            "correctAnswer": "Kita",
+            "options": [
+              "Kihe",
+              "Muburi",
+              "Kita",
+              "Murogi"
+            ],
+            "hint": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kikuyu-unit-15",
+    "unitNumber": 15,
+    "title": "Hémery English-Kikuyu Hand-Book — 9 Noun Classes",
+    "description": "Master the complete grammar, 3-way demonstratives, Kohora verb paradigm, 5 derived verb stems, particles (pp. 13–14), and 5-part Phrase-Book (Usual, Servants & Meals, Village Visit, Working, In Caravan) from Rev. Fr. A. Hémery's 1903 English-Kikuyu Hand-Book.",
+    "icon": "BookOpen",
+    "color": "#10B981",
+    "skills": [
+      {
+        "id": "kikuyu-hemery-1903-grammar-particles-13-1",
+        "title": "9 Noun Classes, 3-Way Demonstratives & Kohora Conjugation",
+        "icon": "Sparkles",
+        "description": "Study Hémery's (1903, pp. 1–14) 9 noun classes, ka-/to- diminutives, ke- augmentatives, 3-way demonstratives, full Kohora paradigm, and enclitic particles.",
+        "words": [
+          {
+            "target": "Cl. VI: Letwa (pl. maletwa), Ngiti (pl. mangiti), Taama (pl. mataama)",
+            "source": "Name, dog, cloth (Class VI Ø → ma-)",
+            "pronunciation": "letwa-maletwa / ngiti-mangiti / taama-mataama"
+          },
+          {
+            "target": "Kangondu, Kamunyu, Kangombe • Tomae, Toirio • Kengombe, Kemunyu",
+            "source": "Small sheep, little salt, little ox (ka-/to- dimin., ke- augm.)",
+            "pronunciation": "ka-ngo-ndu / ka-mu-nyu / to-ma-e / to-i-ri-o / ke-ngo-mbe"
+          },
+          {
+            "target": "Mundu oyo",
+            "source": "This man (near)",
+            "pronunciation": "mundu o-yo"
+          },
+          {
+            "target": "Mundu olya",
+            "source": "That man (distant)",
+            "pronunciation": "mundu o-lya"
+          },
+          {
+            "target": "Mundu oshio / Kendo keo / Ihiga reo",
+            "source": "That man, thing, or stone (spoken of beforehand)",
+            "pronunciation": "mundu o-shi-o / kendo ke-o / ihiga re-o"
+          },
+          {
+            "target": "Ndahora",
+            "source": "I beat (Neg. Ndihora 'I do not beat')",
+            "pronunciation": "ndahora"
+          },
+          {
+            "target": "Ne ngohora",
+            "source": "I shall beat (Neg. Ndikohora 'I shall not beat')",
+            "pronunciation": "ne-ngohora"
+          },
+          {
+            "target": "Tiguo uhoro (pl. tigwoni uhoro)",
+            "source": "Good-bye / Stay in peace (sg. & pl.)",
+            "pronunciation": "tiguo-uhoro"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Ndalutara werale negokwata rupia.",
+            "source": "If I do work I shall get Rupees."
+          },
+          {
+            "target": "Omwe alutaga wera, ungi ne aikara se.",
+            "source": "One works (continually, -ga), another sits down."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "match_pairs",
+            "prompt": "Match each Kikuyu demonstrative or particle from Hémery (1903, Book pp. 8, 13–14) with its meaning:",
+            "correctAnswer": "Mundu oshio / Kendo keo / Ihiga reo: That man / thing / stone spoken of beforehand",
+            "pairs": [
+              {
+                "left": "Mundu oshio / Kendo keo / Ihiga reo",
+                "right": "That man / thing / stone spoken of beforehand"
+              },
+              {
+                "left": "Aderere!",
+                "right": "Listen, listen to me! (call for attention before talking)"
+              },
+              {
+                "left": "Tiguo uhoro (pl. tigwoni uhoro)",
+                "right": "Good-bye, farewell (sg. & pl.)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kikuyu-hemery-1903-phrasebook-13-2",
+        "title": "Phrase-Book Sections I–V: Caravan & Homestead Dialogues",
+        "icon": "MessageCircle",
+        "description": "Practice authentic 1903 Kikuyu dialogues from Hémery's 5-part Phrase-Book (Book pp. 77–87): Usual, Servants & Meals, A Visit to a Village, Working, and In Caravan.",
+        "words": [
+          {
+            "target": "Waetagwa-tya? • We moona-ko? • We huma-ko? • Wasie-ko?",
+            "source": "What is your name? • What tribe do you belong to? • Where do you come from? • Where do you go?",
+            "pronunciation": "wa-e-ta-gwa-tya / we moo-na-ko / we hu-ma-ko / wa-si-e-ko"
+          },
+          {
+            "target": "Okolya saa shiigana? — Ta saa kumi na igere rochine.",
+            "source": "When have you your meals? — About 6 a.m.",
+            "pronunciation": "o-ko-lya saa shi-i-ga-na / ta saa ku-mi na i-ge-re ro-chi-ne"
+          },
+          {
+            "target": "Kozondeka-tya ucholo?",
+            "source": "How do you prepare the gruel?",
+            "pronunciation": "kozondeka-tya-ucholo"
+          },
+          {
+            "target": "Ndena kehuti",
+            "source": "I have fever",
+            "pronunciation": "ndena-kehuti"
+          },
+          {
+            "target": "Akui magana atano",
+            "source": "Five hundred porters",
+            "pronunciation": "akui-magana-atano"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Mwere mnene ne ngoenda ndurume na nguadje shya akui; ne akwenda rupia, kana mataama, kana megase?",
+            "source": "Tell the chief I want a sheep and some potatoes for the porters; does he want rupees, or clothes, or beads?"
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "match_pairs",
+            "prompt": "Match each conversational Kikuyu sentence from Hémery's Phrase-Book (1903, pp. 78–85) with its English meaning:",
+            "correctAnswer": "We moona-ko?: What tribe do you belong to? (p. 78)",
+            "pairs": [
+              {
+                "left": "We moona-ko?",
+                "right": "What tribe do you belong to? (p. 78)"
+              },
+              {
+                "left": "Kira! Manegene!",
+                "right": "Silence! Hold your tongue! (p. 78)"
+              },
+              {
+                "left": "Wasisina-le? ne ogohona",
+                "right": "If you get into a perspiration, you will feel better (p. 82)"
+              },
+              {
+                "left": "Twahota koringa na magoro?",
+                "right": "Can we wade across on foot? (p. 85)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kikuyu-unit-16",
+    "unitNumber": 16,
+    "title": "McGregor English-Kikuyu Vocabulary — Orthography",
+    "description": "Master the Kabeti (Fort Smith) orthography (th for s/z, ng' vs. ng'g), plural bracket conventions, suppletive kinship, 7-day time sequence, agricultural seasons (Kathano, Kehu, Njahi, Mweri, Mohea), customary law (Chira, Magambo, Muma, Oramati), and conversational idioms from Rev. A. W. McGregor's 1904 English-Kikuyu Vocabulary.",
+    "icon": "BookOpen",
+    "color": "#10B981",
+    "skills": [
+      {
+        "id": "kikuyu-mcgregor-1904-orthography-kinship-time-14-1",
+        "title": "Kabeti Orthography (Th, Ng' vs. Ng'g), Suppletive Kinship & 7-Day Sequence",
+        "icon": "Sparkles",
+        "description": "Study McGregor's (1904, pp. iii–iv, 5–192) Fort Smith (Kabeti) phonological rules, plural bracket system, kinship possessives, 7-day sequence, and seasonal calendar.",
+        "words": [
+          {
+            "target": "Mwetereri (pl. Etereri)",
+            "source": "Servant (pl. Servants)",
+            "pronunciation": "mwetereri"
+          },
+          {
+            "target": "Baba",
+            "source": "My father",
+            "pronunciation": "baba"
+          },
+          {
+            "target": "Thoguo",
+            "source": "Your father",
+            "pronunciation": "tho-guo"
+          },
+          {
+            "target": "Ithi (pl. Maithi)",
+            "source": "His/her father (pl. fathers)",
+            "pronunciation": "ithi"
+          },
+          {
+            "target": "Iyo → Ira → Reu / Omothi → Rochio → Oke → Matukwatatu → Matukwana",
+            "source": "Day before yesterday → Yesterday → To-day → To-morrow → Day after to-morrow → 3 days hence → 4 days hence",
+            "pronunciation": "iyo-ira-reu"
+          },
+          {
+            "target": "Kathano (Mwaka wa heho) & Mwaka wa kehu",
+            "source": "Greater rainy season (winter) & lesser rainy season",
+            "pronunciation": "kathano-mwaka-wa-kehu"
+          },
+          {
+            "target": "Kabeti",
+            "source": "Fort Smith (Kabeti station)",
+            "pronunciation": "kabeti"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Tuthie kwitu! — Ndainuka (Nendathie). — Thie na uhoro!",
+            "source": "Let us go along! — I am going home. — Go in peace!"
+          },
+          {
+            "target": "Kotariatea? — Kwena matu / Kwena heho / Kwena rugari.",
+            "source": "What kind of weather is it? — It is cloudy / It is cold / It is hot weather."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "match_pairs",
+            "prompt": "Match each Kikuyu seasonal or temporal term from McGregor (1904, pp. 114, 142, 154, 191) with its English meaning:",
+            "correctAnswer": "Kathano vs. Mwaka wa kehu: Greater rainy season (winter) vs. lesser rainy season (p. 142)",
+            "pairs": [
+              {
+                "left": "Kathano vs. Mwaka wa kehu",
+                "right": "Greater rainy season (winter) vs. lesser rainy season (p. 142)"
+              },
+              {
+                "left": "Kilinyatha / Kireira / Kirinyaga",
+                "right": "Mount Kenia (pp. iv, 95)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kikuyu-mcgregor-1904-law-religion-idioms-14-2",
+        "title": "Customary Law (Chira, Magambo, Muma, Oramati) & Ethnomedicine",
+        "icon": "MessageCircle",
+        "description": "Learn McGregor's (1904, pp. 6–192) terminology for Kikuyu courts, murder composition, ordeal oaths, peacemaking, ritual, and everyday questions.",
+        "words": [
+          {
+            "target": "Chira (pl. Machira)",
+            "source": "Council / Law / Lawsuit",
+            "pronunciation": "chira"
+          },
+          {
+            "target": "Muchiri (pl. Achiri)",
+            "source": "Judge / Arbitrator / Councillor",
+            "pronunciation": "muchiri"
+          },
+          {
+            "target": "Muramati (A-) & Oramati",
+            "source": "Heir/inheritor & birthright/inheritance",
+            "pronunciation": "muramati-oramati"
+          },
+          {
+            "target": "Ngai (Makai) & Ngai angienda",
+            "source": "God & 'If God wills (D.V.)'",
+            "pronunciation": "ngai-ngai-angienda"
+          },
+          {
+            "target": "Mundu mugo (A-) & Kahiyu ka mundu mugo (To-)",
+            "source": "Doctor/medicine-man & lancet",
+            "pronunciation": "mu-ndu mu-go / kahiyu ka mu-ndu mu-go"
+          },
+          {
+            "target": "Thingira (pl. Mathingira)",
+            "source": "Man's hut / Men's reception house",
+            "pronunciation": "thingira"
+          },
+          {
+            "target": "Mungu (pl. Miungu)",
+            "source": "Refuge pit of men",
+            "pronunciation": "mungu"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Hari na mundu. — Akuugatea? — Anga nengothie, Ngai angienda.",
+            "source": "There was a man. — How does he speak? — Suppose I go, if God wills (D.V.)."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "match_pairs",
+            "prompt": "Match each Kikuyu institutional or architectural term from McGregor (1904) with its meaning:",
+            "correctAnswer": "Muramati (A-) / Oramati: Heir / Birthright & inheritance (pp. 23, 81, 90)",
+            "pairs": [
+              {
+                "left": "Muramati (A-) / Oramati",
+                "right": "Heir / Birthright & inheritance (pp. 23, 81, 90)"
+              },
+              {
+                "left": "Mutaithorani (A-) / Kotaithorana",
+                "right": "Peacemaker, mediator, advocate / To make peace (pp. 10–11, 130)"
+              },
+              {
+                "left": "Mungu (Miungu)",
+                "right": "Refuge pit of men (p. 146)"
+              },
+              {
+                "left": "Itara (Ma-) & Ikombi (Ma-)",
+                "right": "Garner, granary, loft & food storehouse (pp. 72, 103, 162, 183)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kikuyu-mcgregor-1904-provenance-grammar-editorial-14-3",
+        "title": "Stanford Provenance, 10 Noun Classes & Pronouns/Enclitics (1904)",
+        "icon": "BookOpen",
+        "description": "Examine the physical provenance of the Stanford University Libraries copy (PL 8379.4 .M3 C.1), the 10 noun class prefix pairings, pronominal/interrogative enclitics, and the 3 printing gaps & 9 errata of the 1904 SPCK edition.",
+        "culturalNote": "Compiled by Rev. A. W. McGregor at Fort Smith (native name Kabeti) in 1901–1902 (Preface signed London, May 1903), this 192-page volume is the first printed vocabulary of the Kikuyu language, documenting the speech of 200,000–300,000 Agĩkũyũ from the Uganda Railway (miles 326–360) to Mount Kenia (Kirinyaga / Kilinyatha / Kireira, 4,000–18,000 ft).",
+        "words": [
+          {
+            "target": "Kabeti",
+            "source": "Fort Smith (1901–1902 C.M.S. station)",
+            "pronunciation": "ka-be-ti"
+          },
+          {
+            "target": "Kirinyaga / Kilinyatha / Kireira",
+            "source": "Mount Kenia (stretching NE from Uganda Railway miles 326–360)",
+            "pronunciation": "ki-ri-nya-ga"
+          },
+          {
+            "target": "Nie / Nie mweni / Nie nyiki",
+            "source": "Personal, Reflexive & Exclusive ('Only I') Pronouns",
+            "pronunciation": "nie"
+          },
+          {
+            "target": "No? Niweo?",
+            "source": "Who? Who are you?",
+            "pronunciation": "no-niweo"
+          },
+          {
+            "target": "ithanwa (pl. mathanwa)",
+            "source": "Axe",
+            "pronunciation": "i-tha-nwa"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Niweo? — Nie nyiki (Nie mweni). — Meha? — Goro uriko?",
+            "source": "Who are you? — I alone (I myself). — Where are they? — What price (worth)?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kikuyu-unit-17",
+    "unitNumber": 17,
+    "title": "Routledge 'With a Prehistoric People: The Akikúyu' (1910)",
+    "description": "Master the historical, technical, legal, musical, ritual, and narrative vocabulary recorded by W. Scoresby & Katherine Routledge across Fort Hall and Nyeri (1902–1910, pp. i–xxxii, 1–392, Plates I–CXXXVI).",
+    "icon": "BookOpen",
+    "color": "#10B981",
+    "skills": [
+      {
+        "id": "kikuyu-routledge-1910-history-clans-crafts-15-1",
+        "title": "10 Ages, 17 Initiation Years, 13 Clans & Traditional Metallurgy",
+        "icon": "Sparkles",
+        "description": "Study the 10 generation ages, 17 annual initiation cohorts, 13 i-ri-ka clans, 17 age-stage terms, iron smelting, cold wire-drawing, 6-step chain-making, 2-stage pottery, and 30-item Wa-wer'-u market price list in Routledge (1910, pp. 1–115).",
+        "words": [
+          {
+            "target": "Man-jí-ri (Mam'-ba & N'jí-ri) → Man-dó-ti → Chi-éra → Masaí → Ma-thá-thi → N'dé-mi → I-ré-gi → Ma-í-na → Mwan'gi → Mu-i-run'-gu",
+            "source": "The 10 Ages Since the Creation of the World",
+            "pronunciation": "man-jí-ri-man-dó-ti-chi-éra-masaí"
+          },
+          {
+            "target": "1891 Ngan'do",
+            "source": "Key annual circumcision cohort among the 17 named years",
+            "pronunciation": "ngan-do"
+          },
+          {
+            "target": "A'si (A-ki-e-ki / N'dor-ó-bo) & A-gum'-ba (A-mai-tho ma chi-a-na)",
+            "source": "Forest elephant hunters (30-goat clearing sale) & 4 ft 6 in. obsidian pit-dwellers",
+            "pronunciation": "a'si-a-gum'-ba"
+          },
+          {
+            "target": "mu-san'-ga",
+            "source": "Washed magnetite ore",
+            "pronunciation": "mu-san'-ga"
+          },
+          {
+            "target": "ku-i'-nya ki-shan'-di",
+            "source": "Gourd picture-rattle (47 & 38 symbols)",
+            "pronunciation": "ku-i'-nya-ki-shan'-di"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Ku-nor'-a → Ku-ta-nu'-ka → Ku-o-go'-sa (from Mu-gi'-o, Mon-du'-e, Mu-ke'-o, Mu-lin'-da n'gu-ru'-e & Mu-gu'-mu).",
+            "source": "Peel bark → Chew bark → Roll twine on the thigh."
+          }
+        ]
+      },
+      {
+        "id": "kikuyu-routledge-1910-law-religion-folklore-15-2",
+        "title": "Second Birth, 12 Dances, Ki-á-ma & N'já-ma Governance & 9 Trials",
+        "icon": "MessageCircle",
+        "description": "Master the social rites, 12 classified dances, 3 elder grades, 9 dated court trials, 6 Mu-ma ordeals, N'gaí sacrifice, Ai-twi'-ka snake worship, Mun'-du Mu-gu divination, 29 Thá-hu causes, 14-hole Ki-tha-si stone, and 13 Ro-gá-nu folktales in Routledge (1910, pp. 117–333).",
+        "words": [
+          {
+            "target": "ko-chi-a-rú-o ke'-ri / ko-chi-a-re-i-rú-o m'bór-i",
+            "source": "Rite of Second Birth",
+            "pronunciation": "ko-chi-a-rú-o-ke'-ri"
+          },
+          {
+            "target": "Ke-boí-i-a, N'goi-í-sa, Mam-bú-ra",
+            "source": "Classified dances across 4 categories & the Gúra River harvest dance",
+            "pronunciation": "ke-boí-i-a"
+          },
+          {
+            "target": "Mo-ran'-ja, Ki-á-ma & N'já-ma",
+            "source": "Three official elder grades, ceremonial leaf-bunch & 3 staff woods, eagle feather",
+            "pronunciation": "mo-ran'-ja"
+          },
+          {
+            "target": "N'gaí / Mwi-nin-ya-ga",
+            "source": "Supreme Creator ('Possessor of Whiteness'), 8-shrub fig-tree sacrifice & responses",
+            "pronunciation": "n'gaí"
+          },
+          {
+            "target": "Mun'-du Mu-gu",
+            "source": "Medicine-Man's 5 gourds & divination gourd",
+            "pronunciation": "mun'-du-mu-gu"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "O N'gaí! Mwi-nin-ya-ga! — N'ga-na! Sa-i! Sa-i!",
+            "source": "O God! Possessor of Whiteness! — So be it! Hear, hear!"
+          }
+        ]
+      },
+      {
+        "id": "kikuyu-hohnel-1894-vol1-lesson",
+        "title": "Höhnel: 1887 Traverse of 68 Ravines, Kuhoria Tatha & Mathira",
+        "icon": "Mountain",
+        "description": "Explore Lieut. Ludwig von Höhnel's (1894, Vol. I) complete record of the first European traverse of Kikuyuland (Aug. 27–Oct. 8, 1887): Ngongo Bagas blood-brotherhood with Miani, Karanja, and Waiyaki, the 68 parallel ravines from Nairobi to Thegu, ridge peace ceremonies ('Mirema! — Thayu! Thayu!'), Aturi smiths and 7–8 ft. muro digging-sticks, and the Oct. 11, 1887 ascent of Mount Kenia (Donyo Egere) to 15,355 ft.",
+        "culturalNote": "On Sept. 16, 1887 in northern Mathira (p. 298), four medicine-men concluded a solemn githathi peace covenant by breaking the legs of a white ram and a black goat with clubs and slitting them longitudinally while Count Teleki, Jumbe Kimemeta, and six Kikuyu chiefs stepped across the bleeding carcasses seven times swearing eternal peace.",
+        "words": [
+          {
+            "target": "kuringa githathi",
+            "source": "Solemn 7-step peace covenant (Aug. 23 Ngongo Bagas & Sept. 16 Mathira, pp. 221, 298)",
+            "pronunciation": "kuringa-githathi"
+          },
+          {
+            "target": "rugongo (pl. migongo)",
+            "source": "Parallel mountain ridge bounded by streams (pl. ridges)",
+            "pronunciation": "rugongo"
+          },
+          {
+            "target": "Aturi, ruhiu, kahiu, kiondo, mwatũ, njohi, njingiri, coro, muro",
+            "source": "Kikuyu Metallurgy, Weapons, Crafts, Musical Instruments & Communal Digging-Poles",
+            "pronunciation": "aturi-ruhiu-kahiu-kiondo"
+          },
+          {
+            "target": "Kĩrĩnyaga",
+            "source": "Mount Kenya",
+            "pronunciation": "ki-ri-nya-ga"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "U-u-u-ui! Ngai! — Mirema! Mirema! — Thayu! Thayu!",
+            "source": "Exclamation of wonder ('O God!'), peaceful greeting ('Mirema!'), and the peace-sprinkling chorus ('Peace! Peace!') recorded across Kikuyuland."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kikuyu-unit-18",
+    "unitNumber": 18,
+    "title": "Ethnobiology, Botanicals & Modern Gĩkũyũ",
+    "description": "Gĩkũyũ highland trees, wildlife, farming, and everyday vocabulary from Tsammalex, Kaikki.org, Google SMOL/GATITOS, CGIAR, and Thiomi",
+    "icon": "TreePine",
+    "color": "#16A34A",
+    "skills": [
+      {
+        "id": "kikuyu-open-skill-1",
+        "title": "Highland Flora, Fauna & Daily Life",
+        "icon": "Leaf",
+        "description": "Authentic Gĩkũyũ botanicals, livestock terms, and everyday nouns",
+        "grammarTip": "Class 3/4 trees and plants in Gĩkũyũ take the singular prefix mũ- and plural prefix mĩ- (e.g., mũtamaiyũ 'wild olive', mũringa 'cordia tree').",
+        "culturalNote": "Sourced from Tsammalex Kikuyu Ethnobiology (CC-BY-4.0), Kaikki.org Kikuyu Wiktionary (CC-BY-SA-4.0), Google SMOL/GATITOS (CC-BY-4.0), CGIAR (Apache-2.0), and The Thiomi Dataset (CC-BY-4.0).",
+        "words": [
+          {
+            "target": "mũgũnda",
+            "source": "Cultivated field or garden",
+            "pronunciation": "mu-gu-nda"
+          },
+          {
+            "target": "ũrĩmi",
+            "source": "Agriculture / farming",
+            "pronunciation": "u-ri-mi"
+          },
+          {
+            "target": "mũrĩmi",
+            "source": "Farmer or cultivator",
+            "pronunciation": "mu-ri-mi"
+          },
+          {
+            "target": "mũrutani",
+            "source": "Teacher or instructor",
+            "pronunciation": "mu-ru-ta-ni"
+          },
+          {
+            "target": "ngwacĩ",
+            "source": "Sweet potato",
+            "pronunciation": "ngwa-ci"
+          },
+          {
+            "target": "mũgĩmbĩ",
+            "source": "Finger millet",
+            "pronunciation": "mu-gi-mbi"
+          },
+          {
+            "target": "mũtamaiyũ",
+            "source": "Wild brown olive tree",
+            "pronunciation": "mu-ta-mai-yu"
+          },
+          {
+            "target": "mũthaitĩ",
+            "source": "East African camphorwood",
+            "pronunciation": "mu-thai-ti"
+          },
+          {
+            "target": "mũthĩga",
+            "source": "East African greenheart medicinal tree",
+            "pronunciation": "mu-thi-ga"
+          },
+          {
+            "target": "ndereti",
+            "source": "Conversation or dialogue",
+            "pronunciation": "nde-re-ti"
+          },
+          {
+            "target": "ũrata",
+            "source": "Friendship",
+            "pronunciation": "u-ra-ta"
+          },
+          {
+            "target": "ririkana",
+            "source": "To remember",
+            "pronunciation": "ri-ri-ka-na"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Kĩara kĩmwe gĩtiũragaga ndaa.",
+            "source": "One finger cannot kill a louse (unity proverb)."
+          },
+          {
+            "target": "Kamũingĩ koyaga ndĩrĩ.",
+            "source": "A small group together lifts the heavy mortar."
+          }
+        ]
+      },
+      {
+        "id": "kikuyu-corpus-sentences-skill-1",
+        "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
+        "icon": "MessageSquare",
+        "description": "Practice verified Kikuyu (Gĩkũyũ) parallel sentences and vocabulary from commercially permissive corpora.",
+        "culturalNote": "The Thiomi Dataset (CC-BY-4.0), Google SMOL/GATITOS (en_kik, CC-BY-4.0), African Next Voices Kenya (5 Gikuyu dialects, CC-BY-4.0), CGIAR Kikuyu–English (Apache-2.0), LughaGen (CC-BY-SA-4.0), Mich-Seth Owusu Emotion & Parallel Corpora (MIT/CC-BY-4.0), CLDF Tsammalex & ASJP v20 (CC-BY-4.0), Kaikki.org (CC-BY-SA-4.0) & Public Domain & Peer-Reviewed Lexicons (Höhnel 1894, Hémery 1903, Hinde 1904, McGregor 1904/1905, Routledge 1910, Hobley 1910/1922, Barlow 1914/1951, Dundas 1915, Werner 1915, Johnston 1919, Beech 1920 & Kencorpus/ANV 2022–2026).",
+        "words": [
+          {
+            "target": "Wĩ mwega?",
+            "source": "Hello / Are you well?",
+            "pronunciation": "wee mweh-gah"
+          },
+          {
+            "target": "thayũ",
+            "source": "Peace",
+            "pronunciation": "tha-yu"
+          },
+          {
+            "target": "Koonya wega",
+            "source": "Thank",
+            "pronunciation": "koonya we-ga"
+          },
+          {
+            "target": "Komindja",
+            "source": "Bless",
+            "pronunciation": "ko-mindja"
+          },
+          {
+            "target": "kuenda",
+            "source": "Please",
+            "pronunciation": "kuenda"
+          },
+          {
+            "target": "Koohera",
+            "source": "Pardon",
+            "pronunciation": "koo-he-ra"
+          },
+          {
+            "target": "Kogeizia",
+            "source": "Salute",
+            "pronunciation": "ko-gei-zia"
+          },
+          {
+            "target": "-a kikenni",
+            "source": "Welcome",
+            "pronunciation": "a ki-kenni"
+          },
+          {
+            "target": "Tiguoni uhoro",
+            "source": "Farewell",
+            "pronunciation": "ti-guo-ni u-ho-ro"
+          },
+          {
+            "target": "Kegaithio",
+            "source": "Greeting",
+            "pronunciation": "kegaithio"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Nĩ wega mũno, tigwo na thayũ.",
+            "source": "Thank you very much, stay in peace."
+          }
+        ]
+      },
+      {
+        "id": "kikuyu-corpus-sentences-skill-2",
+        "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
+        "icon": "Globe",
+        "description": "Master multi-domain Kikuyu (Gĩkũyũ) sentences for healthcare, transport, and community safety.",
+        "culturalNote": "The Thiomi Dataset (CC-BY-4.0), Google SMOL/GATITOS (en_kik, CC-BY-4.0), African Next Voices Kenya (5 Gikuyu dialects, CC-BY-4.0), CGIAR Kikuyu–English (Apache-2.0), LughaGen (CC-BY-SA-4.0), Mich-Seth Owusu Emotion & Parallel Corpora (MIT/CC-BY-4.0), CLDF Tsammalex & ASJP v20 (CC-BY-4.0), Kaikki.org (CC-BY-SA-4.0) & Public Domain & Peer-Reviewed Lexicons (Höhnel 1894, Hémery 1903, Hinde 1904, McGregor 1904/1905, Routledge 1910, Hobley 1910/1922, Barlow 1914/1951, Dundas 1915, Werner 1915, Johnston 1919, Beech 1920 & Kencorpus/ANV 2022–2026).",
+        "words": [
+          {
+            "target": "Ithathatũ",
+            "source": "Six",
+            "pronunciation": "ithathatu"
+          },
+          {
+            "target": "imue",
+            "source": "One",
+            "pronunciation": "i-mue"
+          },
+          {
+            "target": "ikumi",
+            "source": "Ten",
+            "pronunciation": "i-ku-mi"
+          },
+          {
+            "target": "igiri",
+            "source": "Two",
+            "pronunciation": "i-gi-ri"
+          },
+          {
+            "target": "andu ere",
+            "source": "Both",
+            "pronunciation": "andu ere"
+          },
+          {
+            "target": "ithanu",
+            "source": "Five",
+            "pronunciation": "itha-nu"
+          },
+          {
+            "target": "inya",
+            "source": "Four",
+            "pronunciation": "inya"
+          },
+          {
+            "target": "kishuinji",
+            "source": "Half",
+            "pronunciation": "kishuinji"
+          },
+          {
+            "target": "ikenda",
+            "source": "Nine",
+            "pronunciation": "i-kenda"
+          },
+          {
+            "target": "irrimue",
+            "source": "Once",
+            "pronunciation": "irri-mue"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Andũ eerĩ nĩmathiire thibitarĩ rũciinĩ.",
+            "source": "Both people went to the hospital in the morning."
+          },
+          {
+            "target": "Tũrĩ na mathaa ikũmi ma rũgendo rũrũ.",
+            "source": "We have ten hours for this journey."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kikuyu-native-audio-listening",
+    "unitNumber": 19,
+    "title": "Native Audio & Listening Practice",
+    "description": "Train your ear with 24 verified native Gĩkũyũ speaker recordings covering everyday hospitality, questions, directions, and natural community conversations.",
+    "icon": "🎧",
+    "color": "#2E7D32",
+    "skills": [
+      {
+        "id": "kikuyu-native-audio-everyday-expressions",
+        "title": "Everyday Native Expressions & Hospitality",
+        "icon": "🎙️",
+        "description": "Listen to native Gĩkũyũ speakers pronounce essential daily words and welcoming phrases.",
+        "tips": "Pay close attention to the seven Gĩkũyũ vowels—especially 'ĩ' (close-mid front) and 'ũ' (close-mid back) as in 'mũrango' (door) and 'ikara thĩ' (have a seat)—as well as vowel length and tone.",
+        "culturalNote": "Offering a visitor a seat ('ikara thĩ') and expressing gratitude ('ĩĩ twĩna ngatho') are foundational courtesies in Gĩkũyũ hospitality.",
+        "words": [
+          {
+            "target": "haha",
+            "source": "Here",
+            "partOfSpeech": "adverb",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/haha.opus"
+          },
+          {
+            "target": "mũrango",
+            "source": "The door",
+            "partOfSpeech": "noun",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/murango.opus"
+          },
+          {
+            "target": "Nĩ wega mũno",
+            "source": "Very good / Wow",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/ni-wega-muno.opus"
+          },
+          {
+            "target": "ikara thĩ",
+            "source": "Have a seat",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/ikara-thi.opus"
+          },
+          {
+            "target": "reke thiĩ",
+            "source": "Got to go / Let me go",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/reke-thii.opus"
+          },
+          {
+            "target": "ĩĩ twĩna ngatho",
+            "source": "Yes, we are thankful",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/ii-twina-ngatho.opus"
+          },
+          {
+            "target": "nguo njerũ",
+            "source": "New clothes",
+            "partOfSpeech": "noun phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/nguo-njeru.opus"
+          },
+          {
+            "target": "kahinda gaka gothe",
+            "source": "All this time",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/kahinda-gaka-gothe.opus"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Ikara thĩ.",
+            "source": "Have a seat.",
+            "audio": "https://audio.kenyahub.me/audio/kikuyu/ikara-thi.opus"
+          },
+          {
+            "target": "Ĩĩ twĩna ngatho.",
+            "source": "Yes, we are thankful.",
+            "audio": "https://audio.kenyahub.me/audio/kikuyu/ii-twina-ngatho.opus"
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "tap_what_you_hear",
+            "prompt": "Listen to the native Gĩkũyũ recording and select its English meaning:",
+            "correctAnswer": "Here",
+            "options": [
+              "Here",
+              "The door",
+              "Very good / Wow",
+              "Have a seat"
+            ],
+            "audioText": "haha",
+            "sourceWord": {
+              "target": "haha",
+              "source": "Here",
+              "partOfSpeech": "adverb",
+              "audioFile": "https://audio.kenyahub.me/audio/kikuyu/haha.opus"
+            }
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "Which Gĩkũyũ expression matches \"The door\"?",
+            "correctAnswer": "mũrango",
+            "options": [
+              "mũrango",
+              "haha",
+              "Nĩ wega mũno",
+              "reke thiĩ"
+            ],
+            "sourceWord": {
+              "target": "mũrango",
+              "source": "The door",
+              "partOfSpeech": "noun",
+              "audioFile": "https://audio.kenyahub.me/audio/kikuyu/murango.opus"
+            }
+          },
+          {
+            "type": "tap_what_you_hear",
+            "prompt": "Listen to the native Gĩkũyũ speaker and choose the correct translation:",
+            "correctAnswer": "Yes, we are thankful",
+            "options": [
+              "Yes, we are thankful",
+              "New clothes",
+              "All this time",
+              "Got to go / Let me go"
+            ],
+            "audioText": "ĩĩ twĩna ngatho",
+            "sourceWord": {
+              "target": "ĩĩ twĩna ngatho",
+              "source": "Yes, we are thankful",
+              "partOfSpeech": "phrase",
+              "audioFile": "https://audio.kenyahub.me/audio/kikuyu/ii-twina-ngatho.opus"
+            }
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each recorded Gĩkũyũ expression to its English meaning:",
+            "correctAnswer": "",
+            "pairs": [
+              {
+                "left": "haha",
+                "right": "Here"
+              },
+              {
+                "left": "mũrango",
+                "right": "The door"
+              },
+              {
+                "left": "Nĩ wega mũno",
+                "right": "Very good / Wow"
+              },
+              {
+                "left": "ikara thĩ",
+                "right": "Have a seat"
+              },
+              {
+                "left": "reke thiĩ",
+                "right": "Got to go / Let me go"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kikuyu-native-audio-questions-directions",
+        "title": "Asking Questions, Directions & Daily Life",
+        "icon": "🧭",
+        "description": "Practice understanding natural native-speed questions, requests, and everyday statements.",
+        "tips": "Notice question words in spoken Gĩkũyũ: 'nũũ' (who), 'kũ' (where), and 'nĩkĩ' (why). The locative suffix '-inĩ' in 'mũrango-inĩ' means 'at the door'.",
+        "culturalNote": "Small-scale farming ('mũrĩmi mũnini') and mutual assistance ('tũmũteithie') reflect the cooperative ethos of Central Kenya communities.",
+        "words": [
+          {
+            "target": "nũũ ũrĩ mũrango-inĩ",
+            "source": "Who is at the door?",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/nuu-uri-murango-ini.opus"
+          },
+          {
+            "target": "reke tũurie jĩra",
+            "source": "Let's ask for directions!",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/reke-tuurie-jira.opus"
+          },
+          {
+            "target": "tũrĩ na thĩna",
+            "source": "We have a problem",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/turi-na-thina.opus"
+          },
+          {
+            "target": "tũmũteithie",
+            "source": "Should we help her out?",
+            "partOfSpeech": "verb",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/tumuteithie.opus"
+          },
+          {
+            "target": "ũyũ wamũrutire kũ",
+            "source": "Where did you get this one?",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/uyu-wamurutire-ku.opus"
+          },
+          {
+            "target": "nĩnjũĩ mũthako ũcio",
+            "source": "I know that game!",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/ninjui-muthako-ucio.opus"
+          },
+          {
+            "target": "ndĩ mũrĩmi mũnini",
+            "source": "I am a small-scale farmer",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/ndi-murimi-munini.opus"
+          },
+          {
+            "target": "ũregire kũnjĩĩra nĩkĩ",
+            "source": "Why didn't you tell me?",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/uregire-kunjiira-niki.opus"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Nũũ ũrĩ mũrango-inĩ?",
+            "source": "Who is at the door?",
+            "audio": "https://audio.kenyahub.me/audio/kikuyu/nuu-uri-murango-ini.opus"
+          },
+          {
+            "target": "Ndĩ mũrĩmi mũnini.",
+            "source": "I am a small-scale farmer.",
+            "audio": "https://audio.kenyahub.me/audio/kikuyu/ndi-murimi-munini.opus"
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "tap_what_you_hear",
+            "prompt": "Listen to the native Gĩkũyũ recording and select its English meaning:",
+            "correctAnswer": "Who is at the door?",
+            "options": [
+              "Who is at the door?",
+              "Let's ask for directions!",
+              "We have a problem",
+              "Should we help her out?"
+            ],
+            "audioText": "nũũ ũrĩ mũrango-inĩ",
+            "sourceWord": {
+              "target": "nũũ ũrĩ mũrango-inĩ",
+              "source": "Who is at the door?",
+              "partOfSpeech": "phrase",
+              "audioFile": "https://audio.kenyahub.me/audio/kikuyu/nuu-uri-murango-ini.opus"
+            }
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "Which Gĩkũyũ expression matches \"Let's ask for directions!\"?",
+            "correctAnswer": "reke tũurie jĩra",
+            "options": [
+              "reke tũurie jĩra",
+              "nũũ ũrĩ mũrango-inĩ",
+              "tũrĩ na thĩna",
+              "ũyũ wamũrutire kũ"
+            ],
+            "sourceWord": {
+              "target": "reke tũurie jĩra",
+              "source": "Let's ask for directions!",
+              "partOfSpeech": "phrase",
+              "audioFile": "https://audio.kenyahub.me/audio/kikuyu/reke-tuurie-jira.opus"
+            }
+          },
+          {
+            "type": "tap_what_you_hear",
+            "prompt": "Listen to the native Gĩkũyũ speaker and choose the correct translation:",
+            "correctAnswer": "I know that game!",
+            "options": [
+              "I know that game!",
+              "I am a small-scale farmer",
+              "Why didn't you tell me?",
+              "Where did you get this one?"
+            ],
+            "audioText": "nĩnjũĩ mũthako ũcio",
+            "sourceWord": {
+              "target": "nĩnjũĩ mũthako ũcio",
+              "source": "I know that game!",
+              "partOfSpeech": "phrase",
+              "audioFile": "https://audio.kenyahub.me/audio/kikuyu/ninjui-muthako-ucio.opus"
+            }
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each recorded Gĩkũyũ expression to its English meaning:",
+            "correctAnswer": "",
+            "pairs": [
+              {
+                "left": "nũũ ũrĩ mũrango-inĩ",
+                "right": "Who is at the door?"
+              },
+              {
+                "left": "reke tũurie jĩra",
+                "right": "Let's ask for directions!"
+              },
+              {
+                "left": "tũrĩ na thĩna",
+                "right": "We have a problem"
+              },
+              {
+                "left": "tũmũteithie",
+                "right": "Should we help her out?"
+              },
+              {
+                "left": "ũyũ wamũrutire kũ",
+                "right": "Where did you get this one?"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kikuyu-native-audio-conversations-community",
+        "title": "Natural Conversations, Health & Community",
+        "icon": "💬",
+        "description": "Build listening fluency with longer native Gĩkũyũ sentences on health, reassurance, and education.",
+        "tips": "Listen for how Gĩkũyũ packs subject, tense, negative, and object markers into single verbs—such as 'ndũkamake' (do not worry) and 'gũtũteithagia' (helps us habitually).",
+        "culturalNote": "Wishing everyone a good day ('tũkũmwendera inyuothe mũthenya mwega') and reassuring guests ('ndũkamake ndĩ na citũiganĩte') showcase warm conversational Gĩkũyũ.",
+        "words": [
+          {
+            "target": "ena ũrugarĩ mũingĩ mũno",
+            "source": "He has a very high fever",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/ena-urugari-muingi-muno.opus"
+          },
+          {
+            "target": "nĩ ũgũbatara kũrorwo maitho",
+            "source": "You might need an eye check-up",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/ni-ugubatara-kurorwo-maitho.opus"
+          },
+          {
+            "target": "ndũkamake ndĩ na citũiganĩte",
+            "source": "Don't worry, I have plenty for us",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/ndukamake-ndi-na-cituiganite.opus"
+          },
+          {
+            "target": "nũũ ũngĩgũteithia gwĩka ũguo",
+            "source": "Who can help you do that?",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/nuu-ungiguteithia-gwika-uguo.opus"
+          },
+          {
+            "target": "gũthomithio nĩ gũtũteithagia",
+            "source": "Education adds value to you",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/guthomithio-ni-gututeithagia.opus"
+          },
+          {
+            "target": "hatirĩ ũndũ twĩkĩte mũndũ",
+            "source": "We have done nothing to anyone",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/hatiri-undu-twikite-mundu.opus"
+          },
+          {
+            "target": "tũkũmwendera inyuothe mũthenya mwega",
+            "source": "Have a wonderful day, everyone",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/tukumwendera-inyuothe-muthenya-mwega.opus"
+          },
+          {
+            "target": "ũndũ ũcio warĩ mũritũ",
+            "source": "It was tough",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/undu-ucio-wari-muritu.opus"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Gũthomithio nĩ gũtũteithagia.",
+            "source": "Education adds value to you.",
+            "audio": "https://audio.kenyahub.me/audio/kikuyu/guthomithio-ni-gututeithagia.opus"
+          },
+          {
+            "target": "Tũkũmwendera inyuothe mũthenya mwega.",
+            "source": "Have a wonderful day, everyone.",
+            "audio": "https://audio.kenyahub.me/audio/kikuyu/tukumwendera-inyuothe-muthenya-mwega.opus"
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "tap_what_you_hear",
+            "prompt": "Listen to the native Gĩkũyũ recording and select its English meaning:",
+            "correctAnswer": "He has a very high fever",
+            "options": [
+              "He has a very high fever",
+              "You might need an eye check-up",
+              "Don't worry, I have plenty for us",
+              "Who can help you do that?"
+            ],
+            "audioText": "ena ũrugarĩ mũingĩ mũno",
+            "sourceWord": {
+              "target": "ena ũrugarĩ mũingĩ mũno",
+              "source": "He has a very high fever",
+              "partOfSpeech": "phrase",
+              "audioFile": "https://audio.kenyahub.me/audio/kikuyu/ena-urugari-muingi-muno.opus"
+            }
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "Which Gĩkũyũ expression matches \"You might need an eye check-up\"?",
+            "correctAnswer": "nĩ ũgũbatara kũrorwo maitho",
+            "options": [
+              "nĩ ũgũbatara kũrorwo maitho",
+              "ena ũrugarĩ mũingĩ mũno",
+              "ndũkamake ndĩ na citũiganĩte",
+              "gũthomithio nĩ gũtũteithagia"
+            ],
+            "sourceWord": {
+              "target": "nĩ ũgũbatara kũrorwo maitho",
+              "source": "You might need an eye check-up",
+              "partOfSpeech": "phrase",
+              "audioFile": "https://audio.kenyahub.me/audio/kikuyu/ni-ugubatara-kurorwo-maitho.opus"
+            }
+          },
+          {
+            "type": "tap_what_you_hear",
+            "prompt": "Listen to the native Gĩkũyũ speaker and choose the correct translation:",
+            "correctAnswer": "We have done nothing to anyone",
+            "options": [
+              "We have done nothing to anyone",
+              "Have a wonderful day, everyone",
+              "It was tough",
+              "Education adds value to you"
+            ],
+            "audioText": "hatirĩ ũndũ twĩkĩte mũndũ",
+            "sourceWord": {
+              "target": "hatirĩ ũndũ twĩkĩte mũndũ",
+              "source": "We have done nothing to anyone",
+              "partOfSpeech": "phrase",
+              "audioFile": "https://audio.kenyahub.me/audio/kikuyu/hatiri-undu-twikite-mundu.opus"
+            }
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each recorded Gĩkũyũ expression to its English meaning:",
+            "correctAnswer": "",
+            "pairs": [
+              {
+                "left": "ena ũrugarĩ mũingĩ mũno",
+                "right": "He has a very high fever"
+              },
+              {
+                "left": "nĩ ũgũbatara kũrorwo maitho",
+                "right": "You might need an eye check-up"
+              },
+              {
+                "left": "ndũkamake ndĩ na citũiganĩte",
+                "right": "Don't worry, I have plenty for us"
+              },
+              {
+                "left": "nũũ ũngĩgũteithia gwĩka ũguo",
+                "right": "Who can help you do that?"
+              },
+              {
+                "left": "gũthomithio nĩ gũtũteithagia",
+                "right": "Education adds value to you"
+              }
+            ]
           }
         ]
       }

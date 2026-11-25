@@ -1,9 +1,10 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import ToolShell from "@/components/tools/ToolShell";
+import { X } from "lucide-react";
 import { TOOLS } from "@/lib/tools-registry";
 import tariffData from "@/data/kplc-tariff.json";
+import solarIrradianceData from "@/data/solar-irradiance.json";
 
 const tool = TOOLS.find((t) => t.slug === "kplc-token-calculator")!;
 
@@ -14,14 +15,16 @@ interface BandBreakdown {
   cost: number;
 }
 
-function calculateTokens(amountPaid: number) {
+function calculateTokens(amountPaid: number, tariffMode: "lifeline" | "ordinary" | "commercial" = "lifeline") {
   const fixedCharge = tariffData.fixedCharge;
-  const levyPerUnit = tariffData.levies.repLevy + tariffData.levies.refLevy + tariffData.levies.epraLevy + tariffData.levies.warcLevy;
   const fccPerUnit = tariffData.fuelCostCharge.rate;
   const ferfa = tariffData.forexAdjustment.rate;
+  const iaPerUnit = tariffData.levies.refLevy || 0;
+  const epraLevy = tariffData.levies.epraLevy || 0;
+  const wraLevy = tariffData.levies.warcLevy || 0;
+  const repRate = (tariffData.levies as any).repLevyRate ?? 0.05;
   const vatRate = tariffData.levies.vat / 100;
 
-  // Fixed charge is deducted first (with VAT)
   const fixedChargeWithVat = fixedCharge * (1 + vatRate);
   const amountForUnits = Math.max(0, amountPaid - fixedChargeWithVat);
 
@@ -39,40 +42,34 @@ function calculateTokens(amountPaid: number) {
     };
   }
 
-  // Iteratively find how many units the remaining amount buys
-  // Each unit costs: energyRate + levies + FCC + FERFA, all +16% VAT
-  let remainingAmount = amountForUnits;
-  let totalUnits = 0;
-  const breakdown: BandBreakdown[] = [];
+  // EPRA 2025/26 flat rolling-average tariff category:
+  // DC1 Lifeline (<=30 kWh/mo), DC2/DC3 Ordinary Domestic, SC1 Small Commercial
+  const bandIdx = tariffMode === "lifeline" ? 0 : tariffMode === "ordinary" ? 1 : 2;
+  const selectedBand = tariffData.energyBands[bandIdx] || tariffData.energyBands[0];
+  const baseRate = selectedBand.rate;
+  const repPerUnit = baseRate * repRate;
 
-  for (const band of tariffData.energyBands) {
-    if (remainingAmount <= 0) break;
-    const bandMax = band.max ?? 100000;
-    const bandMin = band.min;
-    const bandCapacity = bandMax - bandMin + 1;
+  // 16% VAT applies ONLY to Base Energy + FCC + FERFA + Inflation Adjustment (REP, EPRA, WRA are VAT-exempt)
+  const vatablePerUnit = baseRate + fccPerUnit + ferfa + iaPerUnit;
+  const vatPerUnit = vatablePerUnit * vatRate;
+  const exemptLeviesPerUnit = repPerUnit + epraLevy + wraLevy;
+  const totalCostPerUnit = vatablePerUnit + vatPerUnit + exemptLeviesPerUnit;
 
-    const unitCostBeforeVat = band.rate + levyPerUnit + fccPerUnit + ferfa;
-    const unitCostWithVat = unitCostBeforeVat * (1 + vatRate);
+  const rawUnits = totalCostPerUnit > 0 ? amountForUnits / totalCostPerUnit : 0;
+  const totalUnits = Math.round(rawUnits * 100) / 100;
+  const breakdown: BandBreakdown[] = [
+    {
+      band: selectedBand.label,
+      units: totalUnits,
+      rate: baseRate,
+      cost: Math.round(amountForUnits * 100) / 100,
+    },
+  ];
 
-    const maxUnitsInBand = Math.min(bandCapacity, Math.floor(remainingAmount / unitCostWithVat));
-    const costForBand = maxUnitsInBand * unitCostWithVat;
-
-    if (maxUnitsInBand > 0) {
-      breakdown.push({
-        band: band.label,
-        units: maxUnitsInBand,
-        rate: band.rate,
-        cost: Math.round(costForBand * 100) / 100,
-      });
-      totalUnits += maxUnitsInBand;
-      remainingAmount -= costForBand;
-    }
-  }
-
-  const totalEnergyCost = breakdown.reduce((sum, b) => sum + b.units * b.rate, 0);
-  const totalLevies = totalUnits * levyPerUnit;
-  const totalFCC = totalUnits * (fccPerUnit + ferfa);
-  const totalVAT = (totalEnergyCost + totalLevies + totalFCC) * vatRate;
+  const totalEnergyCost = rawUnits * baseRate;
+  const totalLevies = rawUnits * (exemptLeviesPerUnit + iaPerUnit);
+  const totalFCC = rawUnits * (fccPerUnit + ferfa);
+  const totalVAT = rawUnits * vatPerUnit;
 
   return {
     totalUnits,
@@ -87,33 +84,12 @@ function calculateTokens(amountPaid: number) {
   };
 }
 
-const faq = [
-  {
-    question: "How many KPLC units will I get for KES 1,000?",
-    answer: "The number of units depends on whether the fixed monthly charge (KES 150 + VAT) has been fully paid. After the fixed charge is deducted, the remaining amount buys units at the applicable tariff band rate. Use the calculator above for an exact figure.",
-  },
-  {
-    question: "What is the KPLC fixed charge of KES 150?",
-    answer: "KPLC charges a fixed monthly service fee of KES 150 (plus 16% VAT = KES 174). This is deducted from your prepaid token purchases until fully paid each month. After it's paid, all subsequent purchases go toward units.",
-  },
-  {
-    question: "What is the lifeline tariff?",
-    answer: "Under the EPRA 2023–2026 tariff structure, the Domestic Lifeline band (DC1, 0–30 kWh/month) is charged at a base rate of KES 12.14/kWh. Ordinary Domestic DC2 (31–100 kWh) is KES 16.50/kWh, and DC3 (above 100 kWh) is KES 19.07/kWh, with no monthly fixed standing charge.",
-  },
-  {
-    question: "What levies are included in KPLC token charges?",
-    answer: "Each unit includes: Rural Electrification Levy (KES 0.12), REP Fund Levy (KES 0.03), EPRA Levy (KES 0.10), WARMA Levy (KES 0.03), Fuel Cost Charge (~KES 3.87), and Forex Adjustment (~KES 0.67). Plus 16% VAT on everything.",
-  },
-  {
-    question: "Why do I get fewer units than expected?",
-    answer: "Three main reasons: (1) the KES 150 fixed charge is deducted from early purchases each month, (2) multiple levies and surcharges are added per unit, and (3) 16% VAT applies on top of everything. The effective cost per unit is much higher than the base tariff rate.",
-  },
-];
 
 export default function KPLCTokenCalculatorPage() {
   const [amount, setAmount] = useState<number>(1000);
+  const [tariffMode, setTariffMode] = useState<"lifeline" | "ordinary" | "commercial">("lifeline");
 
-  const results = useMemo(() => calculateTokens(amount), [amount]);
+  const results = useMemo(() => calculateTokens(amount, tariffMode), [amount, tariffMode]);
 
   const fmt = (n: number) =>
     `KES ${n.toLocaleString("en-KE", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
@@ -122,28 +98,71 @@ export default function KPLCTokenCalculatorPage() {
     `KES ${n.toLocaleString("en-KE", { minimumFractionDigits: 0, maximumFractionDigits: 0 })}`;
 
   return (
-    <ToolShell tool={tool} faq={faq}>
+    <>
       <div className="space-y-6">
         {/* Input */}
         <div className="bg-bg-card border border-border rounded-xl p-6">
+          <div className="mb-4">
+            <label className="block text-sm font-medium text-text-secondary mb-2">
+              EPRA Tariff Classification
+            </label>
+            <div className="flex flex-wrap gap-2">
+              {([
+                { id: "lifeline", label: "Lifeline + Domestic (DC1/DC2)" },
+                { id: "ordinary", label: "Domestic Ordinary (DC2/DC3)" },
+                { id: "commercial", label: "Small Commercial (SC1)" },
+              ] as const).map((t) => (
+                <button
+                  key={t.id}
+                  type="button"
+                  onClick={() => setTariffMode(t.id)}
+                  className={`px-3 py-1.5 rounded-xl text-xs font-semibold border transition-colors cursor-pointer ${
+                    tariffMode === t.id
+                      ? "bg-gold/15 border-gold text-gold"
+                      : "bg-bg-elevated border-border text-text-secondary hover:text-text-primary"
+                  }`}
+                >
+                  {t.label}
+                </button>
+              ))}
+            </div>
+          </div>
           <label className="block text-sm font-medium text-text-secondary mb-2">
             Amount to Purchase (KES)
           </label>
-          <input
-            type="number"
-            value={amount}
-            onChange={(e) => setAmount(Math.max(0, Number(e.target.value)))}
-            className="input-field text-xl sm:text-2xl font-bold font-[family-name:var(--font-outfit)]"
-            min={0}
-            step={100}
-            id="token-amount-input"
-          />
+          <div className="relative">
+            <input
+              type="number"
+              inputMode="numeric"
+              value={amount === 0 ? "" : amount}
+              onChange={(e) => {
+                const raw = e.target.value.replace(/^0+(?=\d)/, "");
+                setAmount(raw === "" ? 0 : Math.max(0, Number(raw)));
+              }}
+              placeholder="0"
+              className="input-field text-xl sm:text-2xl font-bold font-[family-name:var(--font-outfit)] pr-11!"
+              style={{ paddingRight: "2.75rem" }}
+              min={0}
+              step={100}
+              id="token-amount-input"
+            />
+            {amount > 0 && (
+              <button
+                type="button"
+                onClick={() => setAmount(0)}
+                className="absolute right-3 top-1/2 -translate-y-1/2 w-6 h-6 shrink-0 rounded-full bg-bg-card border border-border hover:border-gold hover:bg-gold/15 hover:text-gold active:scale-90 flex items-center justify-center transition-all cursor-pointer z-10"
+                aria-label="Clear amount"
+              >
+                <X className="w-3.5 h-3.5 text-text-muted hover:text-gold shrink-0" />
+              </button>
+            )}
+          </div>
           <input
             type="range"
             min={0}
             max={10000}
             step={50}
-            value={amount}
+            value={Math.min(10000, amount)}
             onChange={(e) => setAmount(Number(e.target.value))}
             className="w-full mt-3 accent-gold"
           />
@@ -154,8 +173,8 @@ export default function KPLCTokenCalculatorPage() {
         </div>
 
         {/* Result */}
-        <div className="result-box">
-          <div className="flex items-center justify-between mb-4">
+        <div role="status" aria-live="polite" aria-atomic="true" className="result-box">
+          <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
             <span className="text-sm text-text-secondary">Units You Will Receive</span>
             <span className="text-xs text-text-muted">
               {results.totalUnits > 0
@@ -187,25 +206,29 @@ export default function KPLCTokenCalculatorPage() {
                 </tr>
               </thead>
               <tbody>
+                {results.fixedCharge > 0 && (
+                  <>
+                    <tr>
+                      <td className="text-kenya-red-light">Fixed Charge (monthly)</td>
+                      <td className="text-right text-kenya-red-light">{fmt(results.fixedCharge)}</td>
+                    </tr>
+                    <tr>
+                      <td className="text-text-muted pl-8 text-xs">VAT on fixed charge</td>
+                      <td className="text-right text-text-muted text-xs">{fmt(results.fixedChargeVat)}</td>
+                    </tr>
+                  </>
+                )}
                 <tr>
-                  <td className="text-kenya-red-light">Fixed Charge (monthly)</td>
-                  <td className="text-right text-kenya-red-light">{fmt(results.fixedCharge)}</td>
+                  <td className="text-text-primary font-medium">Base Energy Charges ({results.totalUnits} kWh)</td>
+                  <td className="text-right text-text-primary font-medium">{fmt(results.totalEnergyCost)}</td>
                 </tr>
                 <tr>
-                  <td className="text-text-muted pl-8 text-xs">VAT on fixed charge</td>
-                  <td className="text-right text-text-muted text-xs">{fmt(results.fixedChargeVat)}</td>
-                </tr>
-                <tr className="border-t border-border">
-                  <td className="text-text-primary">Energy charges ({results.totalUnits} units)</td>
-                  <td className="text-right text-text-primary">{fmt(results.totalEnergyCost)}</td>
-                </tr>
-                <tr>
-                  <td className="text-text-muted pl-8 text-xs">Levies (REP + EPRA + WARMA)</td>
-                  <td className="text-right text-text-muted text-xs">{fmt(results.totalLevies)}</td>
-                </tr>
-                <tr>
-                  <td className="text-text-muted pl-8 text-xs">Fuel Cost + Forex Adjustment</td>
+                  <td className="text-text-muted pl-8 text-xs">Fuel Cost + Forex Adjustment (FCC + FERFA)</td>
                   <td className="text-right text-text-muted text-xs">{fmt(results.totalFCC)}</td>
+                </tr>
+                <tr>
+                  <td className="text-text-muted pl-8 text-xs">Levies &amp; Inflation Adj. (REP + IA + EPRA + WRA)</td>
+                  <td className="text-right text-text-muted text-xs">{fmt(results.totalLevies)}</td>
                 </tr>
                 <tr>
                   <td className="text-text-muted pl-8 text-xs">VAT (16%)</td>
@@ -288,7 +311,23 @@ export default function KPLCTokenCalculatorPage() {
             ))}
           </ul>
         </div>
+
+        {/* Kenya Regional Solar Irradiance & Off-Grid PV Reference */}
+        <div className="bg-bg-card border border-border rounded-2xl p-5 space-y-3 mt-6">
+          <h2 className="text-sm sm:text-base font-bold font-[family-name:var(--font-outfit)] text-text-primary">
+            Kenya Regional Solar Irradiance (kWh/m²/day) &amp; Solar PV Payback Reference ({solarIrradianceData.source})
+          </h2>
+          <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-2.5 text-xs">
+            {solarIrradianceData.regions.map((reg) => (
+              <div key={reg.id} className="rounded-xl bg-bg-elevated/60 border border-border p-3 text-center">
+                <p className="font-bold text-text-primary">{reg.name}</p>
+                <p className="text-base font-extrabold text-gold mt-1">{reg.irradiance} kWh/m²</p>
+                <p className="text-[0.65rem] text-text-muted mt-0.5">{reg.counties.slice(0, 2).join(", ")}</p>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
-    </ToolShell>
+    </>
   );
 }

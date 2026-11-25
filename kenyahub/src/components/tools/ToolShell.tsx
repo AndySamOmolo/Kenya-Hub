@@ -1,264 +1,149 @@
-import Link from "next/link";
-import { getRelatedTools, getCategoryInfo } from "@/lib/tools-registry";
+import React from "react";
 import type { Tool } from "@/lib/types";
-import PinToolButton from "./PinToolButton";
-import ToolAccessTracker from "./ToolAccessTracker";
+import { getCategoryInfo, getRelatedTools } from "@/lib/tools-registry";
+import { STATIC_BLOG_POST_SUMMARIES, type StaticBlogPostSummary } from "@/data/blog-posts-summary";
 import DynamicIcon from "@/components/ui/DynamicIcon";
+import toolGuidesData from "@/data/tool-guides.json";
+import toolSourcesData from "@/data/tool-data-sources.json";
+import ToolShellView, {
+  type FAQItem,
+  type BreadcrumbItem,
+  type RichGuideEntry,
+} from "@/components/tools/ToolShellView";
+
+export type { FAQItem, BreadcrumbItem, RichGuideEntry };
 
 interface ToolShellProps {
   tool: Tool;
   children: React.ReactNode;
-  faq?: { question: string; answer: string }[];
-  breadcrumbSuffix?: { label: string; href?: string }[];
+  faq?: FAQItem[];
+  breadcrumbSuffix?: BreadcrumbItem[];
+  breadcrumbParentLabel?: string;
+  hideHeader?: boolean;
+  hideFooter?: boolean;
+  hideSource?: boolean;
+  guideOverride?: RichGuideEntry;
 }
 
-export default function ToolShell({ tool, children, faq, breadcrumbSuffix }: ToolShellProps) {
-  const related = getRelatedTools(tool.slug, 4);
+const typedToolSources = toolSourcesData as {
+  lastAudit?: string;
+  tools?: Record<string, { lastUpdated?: string; sourceUrl?: string; notes?: string }>;
+};
+
+const CURATED_TOOL_BLOG_SLUGS: Record<string, string[]> = {
+  "learn": [
+    "open-kenyan-language-datasets-kencorpus-tafsiri-thiomi-guide",
+    "how-bantu-languages-work-noun-classes-guide",
+    "classical-swahili-literature-liongo-tales-aphorisms",
+  ],
+  "kenyan-translator": [
+    "open-kenyan-language-datasets-kencorpus-tafsiri-thiomi-guide",
+    "how-bantu-languages-work-noun-classes-guide",
+    "krapf-1850-six-east-african-languages-rabai-mpya",
+  ],
+};
+
+function getCuratedBlogPostsForTool(tool: Tool, limit: number = 3): StaticBlogPostSummary[] {
+  const slugs = CURATED_TOOL_BLOG_SLUGS[tool.slug] || [];
+  const results: StaticBlogPostSummary[] = [];
+  for (const slug of slugs) {
+    const post = STATIC_BLOG_POST_SUMMARIES.find((p) => p.slug === slug);
+    if (post && !results.some((r) => r.slug === post.slug)) {
+      results.push(post);
+    }
+    if (results.length >= limit) break;
+  }
+  return results;
+}
+
+function normalizeFaqKey(q: string): string {
+  return q
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/g, "")
+    .replace(/\b(what|how|is|are|the|in|for|of|a|an|to|do|does|can|my|your|kenya|kenyan|2026)\b/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function resolveGuideAndFaq(
+  tool: Tool,
+  faq: FAQItem[],
+  guideOverride?: RichGuideEntry
+): { guide: RichGuideEntry | undefined; effectiveFaq: FAQItem[] } {
+  const guide =
+    guideOverride ||
+    (toolGuidesData.guides as Record<string, RichGuideEntry>)[tool.slug];
+
+  const mergedFaqMap = new Map<string, FAQItem>();
+  const normalizedKeys = new Set<string>();
+  const primaryFaqs = guide?.faq && guide.faq.length > 0 ? guide.faq : faq;
+  for (const item of primaryFaqs) {
+    const exactKey = item.question.trim().toLowerCase();
+    const normKey = normalizeFaqKey(item.question);
+    if (!mergedFaqMap.has(exactKey) && (!normKey || !normalizedKeys.has(normKey))) {
+      mergedFaqMap.set(exactKey, item);
+      if (normKey) normalizedKeys.add(normKey);
+    }
+  }
+  return { guide, effectiveFaq: Array.from(mergedFaqMap.values()) };
+}
+
+const EMPTY_FAQ: FAQItem[] = [];
+const EMPTY_BREADCRUMB_SUFFIX: BreadcrumbItem[] = [];
+
+export default function ToolShell({
+  tool,
+  children,
+  faq = EMPTY_FAQ,
+  breadcrumbSuffix = EMPTY_BREADCRUMB_SUFFIX,
+  breadcrumbParentLabel,
+  hideHeader = false,
+  hideFooter = false,
+  hideSource = false,
+  guideOverride,
+}: ToolShellProps) {
+  if (!tool) {
+    return (
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        {children}
+      </div>
+    );
+  }
+
   const category = getCategoryInfo(tool.category);
-
-  const faqSchema = faq
-    ? {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        mainEntity: faq.map((q) => ({
-          "@type": "Question",
-          name: q.question,
-          acceptedAnswer: { "@type": "Answer", text: q.answer },
-        })),
-      }
-    : null;
-
-  const toolSchema = {
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    name: tool.title,
-    url: `https://kenyahub.me/tools/${tool.slug}/`,
-    applicationCategory: "UtilityApplication",
-    operatingSystem: "Web Browser",
-    description: tool.description,
-    offers: { "@type": "Offer", price: "0", priceCurrency: "KES" },
-    provider: { "@type": "Organization", name: "KenyaHub" },
-  };
-
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Home",
-        item: "https://kenyahub.me/",
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Tools",
-        item: "https://kenyahub.me/tools/",
-      },
-      {
-        "@type": "ListItem",
-        position: 3,
-        name: tool.shortTitle,
-        item: `https://kenyahub.me/tools/${tool.slug}/`,
-      },
-    ],
-  };
+  const { guide, effectiveFaq } = resolveGuideAndFaq(tool, faq, guideOverride);
+  const sourceEntry = typedToolSources.tools?.[tool.slug];
+  const lastModifiedDate =
+    sourceEntry?.lastUpdated || typedToolSources.lastAudit || "2026-11-15";
+  const officialSourceUrl = sourceEntry?.sourceUrl;
+  const relatedBlogPosts = getCuratedBlogPostsForTool(tool, 3);
+  const relatedTools = getRelatedTools(tool.slug, 4).map((rel) => {
+    const relCat = getCategoryInfo(rel.category);
+    return {
+      tool: rel,
+      category: relCat ? { name: relCat.name, badgeClass: relCat.badgeClass } : undefined,
+      iconNode: <DynamicIcon emoji={rel.icon} className="w-[1em] h-[1em] inline-block mb-[0.1em]" />,
+    };
+  });
 
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
-      <ToolAccessTracker tool={tool} />
-      {/* Structured data */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(toolSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      {faqSchema && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-        />
-      )}
-
-      {/* Breadcrumbs */}
-      <nav className="flex items-center gap-1.5 text-xs text-text-muted mb-8">
-        <Link href="/" className="hover:text-gold transition-colors">
-          Home
-        </Link>
-        <svg className="w-3 h-3 text-border-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-        </svg>
-        <Link href="/tools" className="hover:text-gold transition-colors">
-          Tools
-        </Link>
-        <svg className="w-3 h-3 text-border-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-        </svg>
-        {!breadcrumbSuffix ? (
-          <span className="text-text-secondary truncate">{tool.shortTitle}</span>
-        ) : (
-          <>
-            <Link href={`/tools/${tool.slug}`} className="hover:text-gold transition-colors truncate">
-              {tool.shortTitle}
-            </Link>
-            {breadcrumbSuffix.map((crumb, idx) => (
-              <span key={idx} className="flex items-center gap-1.5 truncate">
-                <svg className="w-3 h-3 text-border-light shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                </svg>
-                {crumb.href ? (
-                  <Link href={crumb.href} className="hover:text-gold transition-colors truncate">
-                    {crumb.label}
-                  </Link>
-                ) : (
-                  <span className="text-text-secondary truncate">{crumb.label}</span>
-                )}
-              </span>
-            ))}
-          </>
-        )}
-      </nav>
-
-      {/* ── Header ── */}
-      <header className="mb-10">
-        <div className="flex items-start gap-4 mb-4">
-          <div className="w-14 h-14 rounded-2xl bg-white/[0.04] border border-border flex items-center justify-center flex-shrink-0">
-            <span className="text-[1.75rem]"><DynamicIcon emoji={tool.icon} className="w-[1em] h-[1em]" /></span>
-          </div>
-          <div className="min-w-0 flex-1">
-            <h1 className="text-xl sm:text-2xl lg:text-[1.75rem] font-bold font-[family-name:var(--font-outfit)] text-text-primary leading-tight tracking-tight">
-              {tool.title}
-            </h1>
-          </div>
-          <div className="flex-shrink-0">
-            <PinToolButton toolSlug={tool.slug} />
-          </div>
-        </div>
-
-        <p className="text-text-secondary text-sm leading-relaxed mb-5 max-w-2xl">
-          {tool.description}
-        </p>
-
-        <div className="flex flex-wrap items-center gap-2.5">
-          {category && (
-            <span className={`badge ${category.badgeClass}`}>
-              <DynamicIcon emoji={category.icon} className="w-[1em] h-[1em] inline-block mb-[0.1em]" /> {category.name}
-            </span>
-          )}
-          <span className="inline-flex items-center gap-1 text-[0.625rem] text-text-muted bg-white/[0.02] border border-border rounded-full px-2.5 py-1">
-            <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-            </svg>
-            {tool.dataSource}
-          </span>
-          <span className="inline-flex items-center gap-1 text-[0.625rem] text-text-muted bg-white/[0.02] border border-border rounded-full px-2.5 py-1">
-            <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-            </svg>
-            {tool.updateFrequency === "static"
-              ? "Rarely changes"
-              : tool.updateFrequency === "annual"
-              ? "Updated annually"
-              : tool.updateFrequency === "periodic"
-              ? "Updated periodically"
-              : "Live data"}
-          </span>
-        </div>
-      </header>
-
-      {/* ── Tool Content ── */}
-      <div className="mb-16">{children}</div>
-
-      {/* ── FAQ Section ── */}
-      {faq && faq.length > 0 && (
-        <section className="mb-16">
-          <div className="flex items-center gap-3 mb-6">
-            <div className="w-8 h-8 rounded-lg bg-gold/10 flex items-center justify-center">
-              <svg className="w-4 h-4 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary">
-              Frequently Asked Questions
-            </h2>
-          </div>
-          <div className="space-y-3">
-            {faq.map((item, i) => (
-              <details
-                key={i}
-                className="group bg-bg-card border border-border rounded-xl overflow-hidden"
-              >
-                <summary className="flex items-center justify-between px-5 py-4 cursor-pointer text-[0.8125rem] font-medium text-text-primary hover:text-gold transition-colors list-none">
-                  <span className="pr-4">{item.question}</span>
-                  <svg
-                    className="w-4 h-4 text-text-muted group-open:rotate-180 transition-transform duration-200 flex-shrink-0"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2.5}
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-                  </svg>
-                </summary>
-                <div className="px-5 pb-5 text-sm text-text-secondary leading-relaxed border-t border-border pt-4">
-                  {item.answer}
-                </div>
-              </details>
-            ))}
-          </div>
-        </section>
-      )}
-
-      {/* ── Related Tools ── */}
-      {related.length > 0 && (
-        <section>
-          <div className="flex items-center gap-3 mb-6">
-            <div className="w-8 h-8 rounded-lg bg-kenya-green/10 flex items-center justify-center">
-              <svg className="w-4 h-4 text-kenya-green-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
-              </svg>
-            </div>
-            <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary">
-              Related Tools
-            </h2>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            {related.map((rt) => {
-              const rtCat = getCategoryInfo(rt.category);
-              return (
-                <Link
-                  key={rt.slug}
-                  href={`/tools/${rt.slug}`}
-                  className="tool-card bg-bg-card border border-border rounded-xl p-4 block group"
-                >
-                  <div className="flex items-start gap-3">
-                    <span className="text-xl tool-icon flex-shrink-0">
-                      <DynamicIcon emoji={rt.icon} className="w-[1em] h-[1em]" />
-                    </span>
-                    <div className="min-w-0">
-                      <h3 className="text-[0.8125rem] font-semibold text-text-primary mb-1 group-hover:text-gold transition-colors">
-                        {rt.shortTitle}
-                      </h3>
-                      <p className="text-[0.6875rem] text-text-muted line-clamp-2 leading-relaxed">
-                        {rt.description}
-                      </p>
-                      {rtCat && (
-                        <span className={`badge ${rtCat.badgeClass} mt-2`}>
-                          <DynamicIcon emoji={rtCat.icon} className="w-[1em] h-[1em] inline-block mb-[0.1em]" /> {rtCat.name}
-                        </span>
-                      )}
-                    </div>
-                  </div>
-                </Link>
-              );
-            })}
-          </div>
-        </section>
-      )}
-    </div>
+    <ToolShellView
+      tool={tool}
+      category={category ? { id: category.id, name: category.name, badgeClass: category.badgeClass } : undefined}
+      toolIconNode={<DynamicIcon emoji={tool.icon} className="w-[1em] h-[1em] inline-block mb-[0.1em]" />}
+      guide={guide}
+      effectiveFaq={effectiveFaq}
+      relatedTools={relatedTools}
+      relatedBlogPosts={relatedBlogPosts}
+      lastModifiedDate={lastModifiedDate}
+      officialSourceUrl={officialSourceUrl}
+      breadcrumbSuffix={breadcrumbSuffix}
+      breadcrumbParentLabel={breadcrumbParentLabel}
+      hideHeader={hideHeader}
+      hideFooter={hideFooter}
+      hideSource={hideSource}
+    >
+      {children}
+    </ToolShellView>
   );
 }

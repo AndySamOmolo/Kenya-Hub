@@ -13,6 +13,8 @@ export type ToolCategory =
 export interface Tool {
   slug: string;
   title: string;
+  /** Concise title (<= 52 chars) used for HTML <title> tag before " | KenyaHub" suffix to prevent SERP truncation. */
+  seoTitle?: string;
   shortTitle: string;
   description: string;
   category: ToolCategory;

@@ -1,98 +1,509 @@
-import React, { useEffect, useState } from "react";
+import { useAppLanguage, translateToolShortTitle } from "../../src/lib/i18n";
+import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import {
+  Linking,
+  Modal,
   Platform,
   Pressable,
+  KeyboardAvoidingView,
   ScrollView,
+  StatusBar,
   StyleSheet,
   Text,
   View,
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { SafeAreaView } from "react-native-safe-area-context";
+import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
 import {
   useTheme,
   categoryColorMap,
   KenyaStripe,
   AndroidTopAppBar,
   androidRipple,
+  pressableStyle,
+  triggerHaptic,
+  parseSavedTools,
+  serializeSavedTools,
+  getContrastInk,
 } from "../../src/theme";
 import {
   TOOLS,
   getRelatedTools,
+  getCategoryInfo,
 } from "../../src/shared/lib/tools-registry";
+import {
+  STATIC_BLOG_POSTS,
+  type StaticBlogPost,
+} from "../../src/shared/data/blog-posts";
+import toolGuidesData from "../../src/shared/data/tool-guides.json";
+import toolDataSources from "../../src/shared/data/tool-data-sources.json";
 import { DynamicIcon } from "../../src/components/DynamicIcon";
+import { BlogMarkdownContent } from "../../src/components/home/HomeHelpers";
 
-// Interactive Tools
-import {
-  PayeCalculator,
-  MpesaCalculator,
-  KplcTokenCalculator,
-  HelbCalculator,
-  HousingLevyCalculator,
-  StampDutyCalculator,
-  VehicleInsuranceCalculator,
-  WaterBillCalculator,
-} from "../../src/tools/FinanceTools";
+// Lazy-loaded Interactive Tools (resolved on demand per slug to avoid parsing all 50 tools on mount)
+function getToolComponent(slug: string): React.ComponentType<any> | null {
+  switch (slug) {
+    case "paye-calculator":
+      return require("../../src/tools/FinanceTools").PayeCalculator;
+    case "mpesa-fee-calculator":
+      return require("../../src/tools/FinanceTools").MpesaCalculator;
+    case "kplc-token-calculator":
+      return require("../../src/tools/FinanceTools").KplcTokenCalculator;
+    case "helb-calculator":
+      return require("../../src/tools/FinanceTools").HelbCalculator;
+    case "stamp-duty-calculator":
+      return require("../../src/tools/FinanceTools").StampDutyCalculator;
+    case "water-bill-calculator":
+      return require("../../src/tools/FinanceTools").WaterBillCalculator;
+    case "kra-car-import-calculator":
+      return require("../../src/tools/FinanceTools").KraCarImportCalculator;
+    case "mjengo-construction-calculator":
+      return require("../../src/tools/FinanceTools").MjengoConstructionCalculator;
+    case "sacco-chama-calculator":
+      return require("../../src/tools/FinanceTools").SaccoChamaCalculator;
+    case "number-plate-decoder":
+      return require("../../src/tools/TransportGovernmentTools").NumberPlateDecoder;
+    case "mobile-number-prefix":
+      return require("../../src/tools/TransportGovernmentTools").MobilePrefixFinder;
+    case "traffic-fines":
+      return require("../../src/tools/TransportGovernmentTools").TrafficFinesTool;
+    case "cbc-curriculum":
+      return require("../../src/tools/AdvancedTools").CbcCurriculumTool;
+    case "kuccps-cluster-calculator":
+      return require("../../src/tools/AdvancedTools").KuccpsClusterTool;
+    case "kcse-grade-calculator":
+      return require("../../src/tools/EducationCultureTools").KcseCalculatorTool;
+    case "kenyan-translator":
+      return require("../../src/tools/KenyanTranslatorTool").KenyanTranslatorTool;
+    case "learn":
+      return require("../../src/tools/LanguageCourseTool").LanguageLearningTool;
+    case "sha-benefit-estimator":
+      return require("../../src/tools/CivicLegalTools").ShaBenefitEstimatorTool;
+    case "small-claims-calculator":
+      return require("../../src/tools/CivicLegalTools").SmallClaimsTool;
+    case "ntsa-transfer-calculator":
+      return require("../../src/tools/CivicLegalTools").NtsaTransferTool;
+    case "boma-yangu-calculator":
+      return require("../../src/tools/CivicLegalTools").BomaYanguTool;
+    case "rental-tax-calculator":
+      return require("../../src/tools/CivicLegalTools").RentalTaxTool;
+    case "landlord-tenant-rights":
+      return require("../../src/tools/CivicLegalTools").LandlordTenantTool;
+    case "domestic-wage-calculator":
+      return require("../../src/tools/CivicLegalTools").DomesticWageTool;
+    case "airtime-drain-guide":
+      return require("../../src/tools/CivicLegalTools").AirtimeDrainTool;
+    case "etims-mpesa-reconciler":
+      return require("../../src/tools/KenyaUtilityTools2026").EtimsMpesaReconcilerTool;
+    case "odpc-hr-retention-vault":
+      return require("../../src/tools/KenyaUtilityTools2026").OdpcHrRetentionVaultTool;
+    case "eudr-coop-geojson-packager":
+      return require("../../src/tools/KenyaUtilityTools2026").EudrCoopGeojsonPackagerTool;
+    case "icms-landed-cost-arbitrage":
+      return require("../../src/tools/KenyaUtilityTools2026").IcmsLandedCostArbitrageTool;
+    case "sha-claim-scrubber":
+      return require("../../src/tools/KenyaUtilityTools2026").ShaClaimScrubberTool;
+    case "ppra-egp-tender-serializer":
+      return require("../../src/tools/KenyaUtilityTools2026").PpraEgpTenderSerializerTool;
+    case "kjsea-pathway-engine":
+      return require("../../src/tools/KenyaUtilityTools2026").KjseaPathwayEngineTool;
+    case "ardhisasa-cad-title-auditor":
+      return require("../../src/tools/KenyaUtilityTools2026").ArdhisasaCadTitleAuditorTool;
+    case "school-fee-cap-auditor":
+      return require("../../src/tools/EverydayHouseholdTools").SchoolFeeCapAuditorTool;
+    case "cooking-fuel-comparator":
+      return require("../../src/tools/EverydayHouseholdTools").CookingFuelComparatorTool;
+    case "auctioneer-fee-shield":
+      return require("../../src/tools/EverydayHouseholdTools").AuctioneerFeeShieldTool;
+    case "succession-cap160-calculator":
+      return require("../../src/tools/EverydayHouseholdTools").SuccessionCap160Tool;
+    case "duka-hustle-ubp-calculator":
+      return require("../../src/tools/EverydayHouseholdTools").DukaHustleUbpTool;
+    case "funeral-harambee-planner":
+      return require("../../src/tools/EverydayHouseholdTools").FuneralHarambeePlannerTool;
+    case "rainwater-tank-sizer":
+      return require("../../src/tools/EverydayRuralTools").RainwaterTankSizerTool;
+    case "fertilizer-seed-breakeven":
+      return require("../../src/tools/EverydayRuralTools").FertilizerSeedBreakevenTool;
+    case "dairy-ration-margin":
+      return require("../../src/tools/EverydayRuralTools").DairyRationMarginTool;
+    case "land-subdivision-planner":
+      return require("../../src/tools/EverydayRuralTools").LandSubdivisionPlannerTool;
+    case "biogas-digester-sizer":
+      return require("../../src/tools/EverydayRuralTools").BiogasDigesterSizerTool;
+    case "livestock-vaccine-calendar":
+      return require("../../src/tools/EverydayRuralTools").LivestockVaccineCalendarTool;
+    case "ecitizen-docs-planner":
+      return require("../../src/tools/EverydayCivicTools").EcitizenDocsPlannerTool;
+    case "tvet-kmtc-pathway-matcher":
+      return require("../../src/tools/EverydayCivicTools").TvetKmtcPathwayTool;
+    case "used-car-elogbook-checker":
+      return require("../../src/tools/EverydayCivicTools").UsedCarElogbookTool;
+    case "child-maintenance-calculator":
+      return require("../../src/tools/EverydayCivicTools").ChildMaintenanceTool;
+    case "article49-rights-companion":
+      return require("../../src/tools/EverydayCivicTools").Article49RightsTool;
+    default:
+      return null;
+  }
+}
 
-import {
-  NumberPlateDecoder,
-  MobilePrefixFinder,
-  PublicHolidaysTool,
-  TrafficFinesTool,
-  PostalCodesTool,
-  DrivingLicenseTool,
-  PassportFeesTool,
-  MatatuRoutesTool,
-} from "../../src/tools/TransportGovernmentTools";
+interface WorkedExampleEntry {
+  title: string;
+  scenario: string;
+  steps: string[];
+  takeaway: string;
+}
 
-import {
-  CbcGradeAgeTool,
-  KcseCalculatorTool,
-  KikuyuProverbsTool,
-  KcseRankingsTool,
-  SchoolTermsTool,
-} from "../../src/tools/EducationCultureTools";
+interface ToolGuideEntry {
+  notesTitle?: string;
+  overview?: string[];
+  howItWorks?: string[];
+  workedExample?: WorkedExampleEntry;
+  complianceTips?: string[];
+  notes?: string[];
+  faq?: { question: string; answer: string }[];
+}
 
-import { LanguageLearningTool } from "../../src/tools/LanguageCourseTool";
-import { KenyanTranslatorTool } from "../../src/tools/KenyanTranslatorTool";
-import {
-  SolarRoiTool,
-  WardConstituencyFinderTool,
-  CbcCurriculumTool,
-  KuccpsClusterTool,
-} from "../../src/tools/AdvancedTools";
-import { ReferenceDirectoryTool } from "../../src/tools/ReferenceDirectoryTool";
+const TOOL_TO_BLOG_MAP: Record<string, string[]> = {
+  learn: [
+    "cbc-curriculum-explained-for-parents",
+    "guide-to-kenyan-public-holidays-2026",
+  ],
+  "kenyan-translator": [
+    "cbc-curriculum-explained-for-parents",
+    "guide-to-kenyan-public-holidays-2026",
+  ],
+  "paye-calculator": [
+    "how-paye-tax-works-in-kenya",
+    "sha-shif-health-insurance-kenya-complete-guide-2026",
+    "sacco-loans-dividends-chama-guide-kenya-2026",
+  ],
+  "mpesa-fee-calculator": [
+    "understanding-mpesa-transaction-fees",
+    "how-paye-tax-works-in-kenya",
+    "sacco-loans-dividends-chama-guide-kenya-2026",
+  ],
+  "sacco-chama-calculator": [
+    "sacco-loans-dividends-chama-guide-kenya-2026",
+    "cost-of-building-a-house-in-kenya-mjengo-guide-2026",
+    "land-transfer-stamp-duty-conveyancing-fees-kenya-2026",
+  ],
+  "helb-calculator": [
+    "how-paye-tax-works-in-kenya",
+    "sacco-loans-dividends-chama-guide-kenya-2026",
+    "cbc-curriculum-explained-for-parents",
+  ],
+  "stamp-duty-calculator": [
+    "land-transfer-stamp-duty-conveyancing-fees-kenya-2026",
+    "cost-of-building-a-house-in-kenya-mjengo-guide-2026",
+    "sacco-loans-dividends-chama-guide-kenya-2026",
+  ],
+  "cbc-curriculum": [
+    "cbc-curriculum-explained-for-parents",
+    "guide-to-kenyan-public-holidays-2026",
+    "how-paye-tax-works-in-kenya",
+  ],
+  "kuccps-cluster-calculator": [
+    "cbc-curriculum-explained-for-parents",
+    "how-paye-tax-works-in-kenya",
+    "sacco-loans-dividends-chama-guide-kenya-2026",
+  ],
+  "kcse-grade-calculator": [
+    "cbc-curriculum-explained-for-parents",
+    "how-paye-tax-works-in-kenya",
+    "guide-to-kenyan-public-holidays-2026",
+  ],
+  "kra-car-import-calculator": [
+    "kra-car-import-duty-calculator-guide-kenya-2026",
+    "how-paye-tax-works-in-kenya",
+    "understanding-mpesa-transaction-fees",
+  ],
+  "number-plate-decoder": [
+    "kra-car-import-duty-calculator-guide-kenya-2026",
+    "guide-to-kenyan-public-holidays-2026",
+  ],
+  "traffic-fines": [
+    "kra-car-import-duty-calculator-guide-kenya-2026",
+    "guide-to-kenyan-public-holidays-2026",
+  ],
+  "mjengo-construction-calculator": [
+    "cost-of-building-a-house-in-kenya-mjengo-guide-2026",
+    "land-transfer-stamp-duty-conveyancing-fees-kenya-2026",
+    "sacco-loans-dividends-chama-guide-kenya-2026",
+  ],
+  "kplc-token-calculator": [
+    "kplc-prepaid-tokens-tariff-bands-guide-kenya-2026",
+    "understanding-mpesa-transaction-fees",
+    "cost-of-building-a-house-in-kenya-mjengo-guide-2026",
+  ],
+  "water-bill-calculator": [
+    "kplc-prepaid-tokens-tariff-bands-guide-kenya-2026",
+    "cost-of-building-a-house-in-kenya-mjengo-guide-2026",
+  ],
+  "mobile-number-prefix": [
+    "understanding-mpesa-transaction-fees",
+    "guide-to-kenyan-public-holidays-2026",
+  ],
+  "sha-benefit-estimator": [
+    "sha-shif-health-insurance-kenya-complete-guide-2026",
+    "how-paye-tax-works-in-kenya",
+  ],
+  "small-claims-calculator": [
+    "land-transfer-stamp-duty-conveyancing-fees-kenya-2026",
+    "how-paye-tax-works-in-kenya",
+  ],
+  "ntsa-transfer-calculator": [
+    "kra-car-import-duty-calculator-guide-kenya-2026",
+    "land-transfer-stamp-duty-conveyancing-fees-kenya-2026",
+  ],
+  "boma-yangu-calculator": [
+    "cost-of-building-a-house-in-kenya-mjengo-guide-2026",
+    "how-paye-tax-works-in-kenya",
+  ],
+  "rental-tax-calculator": [
+    "how-paye-tax-works-in-kenya",
+    "land-transfer-stamp-duty-conveyancing-fees-kenya-2026",
+  ],
+  "landlord-tenant-rights": [
+    "cost-of-building-a-house-in-kenya-mjengo-guide-2026",
+    "how-paye-tax-works-in-kenya",
+  ],
+  "domestic-wage-calculator": [
+    "how-paye-tax-works-in-kenya",
+    "sha-shif-health-insurance-kenya-complete-guide-2026",
+  ],
+  "airtime-drain-guide": [
+    "understanding-mpesa-transaction-fees",
+    "guide-to-kenyan-public-holidays-2026",
+  ],
+};
+
+function getRelatedBlogPosts(toolSlug: string, limit = 3): StaticBlogPost[] {
+  const results: StaticBlogPost[] = [];
+  const seen = new Set<string>();
+  for (const bSlug of TOOL_TO_BLOG_MAP[toolSlug] || []) {
+    const found = STATIC_BLOG_POSTS.find((p) => p.slug === bSlug);
+    if (found && !seen.has(found.slug)) {
+      results.push(found);
+      seen.add(found.slug);
+    }
+  }
+  for (const p of STATIC_BLOG_POSTS) {
+    if (results.length >= limit) break;
+    if (!seen.has(p.slug)) {
+      results.push(p);
+      seen.add(p.slug);
+    }
+  }
+  return results.slice(0, limit);
+}
 
 export default function ToolDetailScreen() {
-  const { slug } = useLocalSearchParams<{ slug: string }>();
+  const { slug, lang, tab } = useLocalSearchParams<{
+    slug: string;
+    lang?: string;
+    tab?: string;
+  }>();
   const router = useRouter();
-  const { theme } = useTheme();
-  const tool = TOOLS.find((item) => item.slug === slug);
+  const { theme, isDark, themeConfig } = useTheme();
+  const { language } = useAppLanguage();
+  const insets = useSafeAreaInsets();
+  const safeTop = Math.max(insets.top, Platform.OS === "android" ? StatusBar.currentHeight ?? 24 : 0);
+  const effectiveSlug = slug === "cbc-grade-age" ? "cbc-curriculum" : slug;
+  const tool = TOOLS.find((item) => item.slug === effectiveSlug);
+  const sourceMeta = tool
+    ? (
+        toolDataSources.tools as Record<
+          string,
+          { official?: boolean; sourceUrl?: string; lastUpdated?: string }
+        >
+      )[tool.slug]
+    : undefined;
+  const officialSourceUrl = sourceMeta?.sourceUrl ?? null;
+  const isOfficialCivicTool = Boolean(sourceMeta?.official);
+
+  const isLanguageCourseScreen = tool?.slug === "learn";
+  const isNonCalculatorTool = Boolean(
+    tool &&
+      [
+        "learn",
+        "kenyan-translator",
+        "cbc-curriculum",
+        "traffic-fines",
+        "mobile-number-prefix",
+        "airtime-drain-guide",
+        "landlord-tenant-rights",
+      ].includes(tool.slug)
+  );
   const [saved, setSaved] = useState(false);
+  const [descriptionExpanded, setDescriptionExpanded] = useState(false);
+  useEffect(() => {
+    setDescriptionExpanded(false);
+  }, [effectiveSlug]);
+  const [openFaqIdx, setOpenFaqIdx] = useState<number | null>(0);
+  const [showFullGuide, setShowFullGuide] = useState(true);
+  const [showBackToTop, setShowBackToTop] = useState(false);
+  const [selectedPost, setSelectedPost] = useState<StaticBlogPost | null>(null);
+  const [readerProgress, setReaderProgress] = useState(0);
+  const lastReaderProgressRef = useRef(0);
+
+  const scrollRef = useRef<ScrollView>(null);
+  const scrollYRef = useRef(0);
+  const viewportHeightRef = useRef(700);
+  const toolWrapLayoutRef = useRef({ y: 0, height: 0 });
+  const resetRafRef = useRef<number | null>(null);
+  const resetTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const clearResetTimers = useCallback(() => {
+    if (resetRafRef.current !== null) {
+      cancelAnimationFrame(resetRafRef.current);
+      resetRafRef.current = null;
+    }
+    if (resetTimerRef.current !== null) {
+      clearTimeout(resetTimerRef.current);
+      resetTimerRef.current = null;
+    }
+  }, []);
+
+  useEffect(() => clearResetTimers, [clearResetTimers]);
+
+  const resetToPageTop = useCallback(() => {
+    clearResetTimers();
+    scrollRef.current?.scrollTo({ y: 0, animated: false });
+    resetRafRef.current = requestAnimationFrame(() => {
+      resetRafRef.current = null;
+      scrollRef.current?.scrollTo({ y: 0, animated: false });
+    });
+    resetTimerRef.current = setTimeout(() => {
+      resetTimerRef.current = null;
+      scrollRef.current?.scrollTo({ y: 0, animated: false });
+    }, 50);
+  }, [clearResetTimers]);
+
+  const scrollToTop = useCallback(() => {
+    const targetY = Math.max(0, toolWrapLayoutRef.current.y - 12);
+    if (scrollYRef.current > targetY + 120) {
+      scrollRef.current?.scrollTo({ y: targetY, animated: true });
+    }
+  }, []);
+
+  useEffect(() => {
+    if (slug === "matatu-routes") {
+      router.replace("/matatu");
+      return;
+    }
+    resetToPageTop();
+  }, [slug, resetToPageTop, router]);
 
   useEffect(() => {
     if (tool) {
-      AsyncStorage.getItem("kh-saved-tools").then((value) =>
-        setSaved(value?.split(",").includes(tool.slug) ?? false)
-      );
+      AsyncStorage.getItem("kh-saved-tools")
+        .then((value) => setSaved(parseSavedTools(value).includes(tool.slug)))
+        .catch(() => {});
+      AsyncStorage.getItem("kh-tool-visits")
+        .then((raw) => {
+          const parsed = raw ? JSON.parse(raw) : {};
+          const counts =
+            parsed && typeof parsed === "object" && !Array.isArray(parsed) ? parsed : {};
+          counts[tool.slug] = (Number(counts[tool.slug]) || 0) + 1;
+          return AsyncStorage.setItem(
+            "kh-tool-visits",
+            JSON.stringify(counts)
+          );
+        })
+        .catch(() => {});
     }
   }, [tool]);
 
+  const handleBlogLinkNavigation = useCallback(
+    (href: string) => {
+      const clean = href.trim();
+      if (clean.startsWith("http://") || clean.startsWith("https://")) {
+        if (/^https?:\/\/(www\.)?kenyahub\.me\//i.test(clean)) {
+          const pathPart = clean.replace(/^https?:\/\/(www\.)?kenyahub\.me/i, "") || "/";
+          handleBlogLinkNavigation(pathPart);
+          return;
+        }
+        Linking.openURL(clean).catch(() => {});
+        return;
+      }
+      const pathOnly = clean.split("?")[0].replace(/\/+$/, "");
+      if (pathOnly.startsWith("/tools/learn/")) {
+        const lId = pathOnly.replace("/tools/learn/", "").split("/")[0];
+        setSelectedPost(null);
+        router.push({
+          pathname: "/tools/[slug]",
+          params: { slug: "learn", lang: lId },
+        });
+        return;
+      }
+      if (pathOnly.startsWith("/tools/")) {
+        const targetSlug = pathOnly.replace("/tools/", "").split("/")[0];
+        setSelectedPost(null);
+        router.push({
+          pathname: "/tools/[slug]",
+          params: { slug: targetSlug },
+        });
+        return;
+      }
+      if (pathOnly.startsWith("/county/")) {
+        const cSlug = pathOnly.replace("/county/", "").split("/")[0];
+        setSelectedPost(null);
+        router.push({
+          pathname: "/county/[slug]",
+          params: { slug: cSlug },
+        });
+        return;
+      }
+      if (pathOnly.startsWith("/matatu/")) {
+        const mSlug = pathOnly.replace("/matatu/", "").split("/")[0];
+        setSelectedPost(null);
+        router.push({
+          pathname: "/matatu/[slug]",
+          params: { slug: mSlug },
+        });
+        return;
+      }
+      if (pathOnly === "/matatu") {
+        setSelectedPost(null);
+        router.push("/matatu");
+      }
+    },
+    [router]
+  );
+
+  const relatedBlogPosts = useMemo(
+    () => (tool ? getRelatedBlogPosts(tool.slug, 3) : []),
+    [tool?.slug]
+  );
+
+  const ActiveToolComponent = useMemo(
+    () => (tool ? getToolComponent(tool.slug) : null),
+    [tool?.slug]
+  );
+
   if (!tool) {
     return (
-      <SafeAreaView style={[styles.screen, { backgroundColor: theme.bgPrimary }]}>
+      <SafeAreaView
+        style={[styles.screen, { backgroundColor: theme.bgPrimary }]}
+        edges={["top", "left", "right", "bottom"]}
+      >
         <View style={styles.notFound}>
           <Ionicons name="search" size={48} color={theme.textMuted} />
           <Text style={[styles.notFoundTitle, { color: theme.textPrimary }]}>
             Tool not found
           </Text>
           <Pressable
-            onPress={() => router.back()}
-            style={[styles.backButton, { backgroundColor: theme.gold }]}
+            onPress={() => (router.canGoBack() ? router.back() : router.replace("/(tabs)"))}
+            style={pressableStyle([
+              styles.backButton,
+              { backgroundColor: theme.gold },
+            ])}
           >
-            <Text style={[styles.backButtonText, { color: theme.kenyaBlack }]}>
+            <Text style={[styles.backButtonText, { color: getContrastInk(theme.gold) }]}>
               Go back
             </Text>
           </Pressable>
@@ -102,95 +513,115 @@ export default function ToolDetailScreen() {
   }
 
   const toggleSaved = async () => {
-    const current =
-      (await AsyncStorage.getItem("kh-saved-tools"))?.split(",").filter(Boolean) ?? [];
-    const next = saved
-      ? current.filter((item) => item !== tool.slug)
-      : [...new Set([...current, tool.slug])];
-    await AsyncStorage.setItem("kh-saved-tools", next.join(","));
-    setSaved(!saved);
+    triggerHaptic(12);
+    try {
+      const current = parseSavedTools(
+        await AsyncStorage.getItem("kh-saved-tools")
+      );
+      const next = saved
+        ? current.filter((item) => item !== tool.slug)
+        : [...new Set([...current, tool.slug])];
+      await AsyncStorage.setItem("kh-saved-tools", serializeSavedTools(next));
+      setSaved(!saved);
+    } catch {}
   };
 
-  const related = getRelatedTools(tool.slug, 3);
+  const related = getRelatedTools(tool.slug, 4);
+  const categoryInfo = getCategoryInfo(tool.category);
   const categoryColor = categoryColorMap[tool.category] || theme.gold;
+  const guide: ToolGuideEntry =
+    ((toolGuidesData as any)?.guides?.[tool.slug] as ToolGuideEntry) ||
+    ((toolGuidesData as any)?.tools?.[tool.slug] as ToolGuideEntry) ||
+    {};
+  const dedupeStrings = (arr: string[]) => {
+    const seen = new Set<string>();
+    return arr.filter((item) => {
+      const k = String(item || "").trim().toLowerCase();
+      if (!k || seen.has(k)) return false;
+      seen.add(k);
+      return true;
+    });
+  };
+  const overview = dedupeStrings(guide.overview || []);
+  const howItWorks = dedupeStrings(guide.howItWorks || []);
+  const workedExample = guide.workedExample;
+  const complianceTips = dedupeStrings(guide.complianceTips || []);
+  const complianceSet = new Set(complianceTips.map((t) => t.trim().toLowerCase()));
+  const faqs = (() => {
+    const seen = new Set<string>();
+    return (guide.faq || []).filter((item) => {
+      const k = String(item?.question || "").trim().toLowerCase();
+      if (!k || seen.has(k)) return false;
+      seen.add(k);
+      return true;
+    });
+  })();
+  const notes = dedupeStrings(guide.notes || []).filter(
+    (n) => !complianceSet.has(n.trim().toLowerCase())
+  );
+  const notesTitle = guide.notesTitle || "Important Notes & About the Data";
+  const frequencyLabel =
+    tool.updateFrequency === "static"
+      ? "Verified 2026 Reference"
+      : tool.updateFrequency === "annual"
+      ? "Updated for 2026"
+      : tool.updateFrequency === "periodic"
+      ? "Updated periodically"
+      : "Live data";
 
   const renderToolComponent = () => {
-    switch (tool.slug) {
-      case "paye-calculator":
-        return <PayeCalculator />;
-      case "mpesa-fee-calculator":
-        return <MpesaCalculator />;
-      case "kplc-token-calculator":
-        return <KplcTokenCalculator />;
-      case "helb-calculator":
-        return <HelbCalculator />;
-      case "housing-levy-calculator":
-        return <HousingLevyCalculator />;
-      case "stamp-duty-calculator":
-        return <StampDutyCalculator />;
-      case "vehicle-insurance-calculator":
-        return <VehicleInsuranceCalculator />;
-      case "water-bill-calculator":
-        return <WaterBillCalculator />;
-      case "solar-roi-calculator":
-        return <SolarRoiTool />;
-      case "number-plate-decoder":
-        return <NumberPlateDecoder />;
-      case "mobile-number-prefix":
-        return <MobilePrefixFinder />;
-      case "public-holidays":
-        return <PublicHolidaysTool />;
-      case "traffic-fines":
-        return <TrafficFinesTool />;
-      case "kenya-postal-codes":
-        return <PostalCodesTool />;
-      case "driving-license-guide":
-        return <DrivingLicenseTool />;
-      case "passport-id-fees":
-        return <PassportFeesTool />;
-      case "ward-constituency-finder":
-        return <WardConstituencyFinderTool />;
-      case "cbc-grade-age":
-        return <CbcGradeAgeTool />;
-      case "cbc-curriculum":
-        return <CbcCurriculumTool />;
-      case "kuccps-cluster-calculator":
-        return <KuccpsClusterTool />;
-      case "kcse-grade-calculator":
-        return <KcseCalculatorTool />;
-      case "kikuyu-proverbs":
-        return <KikuyuProverbsTool />;
-      case "kenyan-translator":
-        return <KenyanTranslatorTool />;
-      case "learn":
-        return <LanguageLearningTool />;
-      case "kcse-school-rankings":
-        return <KcseRankingsTool />;
-      case "school-terms":
-        return <SchoolTermsTool />;
-      case "matatu-routes":
-        return <MatatuRoutesTool />;
-      default:
-        return <ReferenceDirectoryTool slug={tool.slug} />;
+    if (!ActiveToolComponent) {
+      return (
+        <View style={{ padding: 20, alignItems: "center" }}>
+          <Text style={{ color: theme.textSecondary, fontSize: 13 }}>
+            This tool is not available in this app version yet.
+          </Text>
+        </View>
+      );
     }
+    if (tool.slug === "learn") {
+      return (
+        <ActiveToolComponent
+          onScrollToTop={scrollToTop}
+          initialLanguageId={lang}
+          initialTab={tab as any}
+        />
+      );
+    }
+    if (
+      tool.slug === "traffic-fines" ||
+      tool.slug === "cbc-curriculum" ||
+      tool.slug === "kuccps-cluster-calculator" ||
+      tool.slug === "kenyan-translator"
+    ) {
+      return <ActiveToolComponent onScrollToTop={scrollToTop} />;
+    }
+    return <ActiveToolComponent />;
   };
 
   return (
     <SafeAreaView
-      style={[styles.screen, { backgroundColor: theme.bgPrimary }]}
-      edges={["top", "left", "right"]}
+      style={[styles.screen, { backgroundColor: theme.bgPrimary, paddingTop: insets.top === 0 ? safeTop : 0 }]}
+      edges={["top", "left", "right", "bottom"]}
     >
       <KenyaStripe />
 
       <AndroidTopAppBar
-        title={tool.shortTitle}
-        subtitle={tool.category.replace("-", " & ").toUpperCase()}
-        onBack={() => router.back()}
+        title={translateToolShortTitle(tool.slug, tool.shortTitle, language)}
+        subtitle={
+          categoryInfo?.name.toUpperCase() ||
+          tool.category.replace("-", " & ").toUpperCase()
+        }
+        onBack={() => (router.canGoBack() ? router.back() : router.replace("/(tabs)"))}
         rightAction={
           <Pressable
             onPress={toggleSaved}
+            accessibilityRole="button"
+            accessibilityLabel={
+              saved ? `Unpin ${tool.shortTitle}` : `Pin ${tool.shortTitle}`
+            }
             android_ripple={androidRipple(theme.rippleColor, true)}
-            style={[
+            style={pressableStyle([
               styles.pinIconBtn,
               {
                 backgroundColor: saved
@@ -198,25 +629,42 @@ export default function ToolDetailScreen() {
                   : theme.surfaceContainerHigh,
                 borderColor: saved ? theme.gold : theme.outlineVariant,
               },
-            ]}
+            ])}
             hitSlop={8}
           >
             <Ionicons
               name={saved ? "bookmark" : "bookmark-outline"}
-              size={20}
+              size={17}
               color={theme.gold}
             />
           </Pressable>
         }
       />
 
-      <ScrollView
-        contentContainerStyle={styles.content}
-        showsVerticalScrollIndicator={false}
-        keyboardShouldPersistTaps="handled"
+      <KeyboardAvoidingView
+        style={{ flex: 1 }}
+        behavior={Platform.OS === "ios" ? "padding" : "height"}
       >
-        {/* Material 3 Tool Info Banner (compact for 'learn' so course takes center stage) */}
-        {tool.slug !== "learn" && (
+      <ScrollView
+        ref={scrollRef}
+        contentContainerStyle={styles.content}
+        showsVerticalScrollIndicator={themeConfig.verticalScrollbarStyle !== "hidden"}
+        persistentScrollbar={themeConfig.verticalScrollbarStyle === "always-visible"}
+        keyboardShouldPersistTaps="handled"
+        keyboardDismissMode="on-drag"
+        scrollEventThrottle={16}
+        onScroll={(e) => {
+          const y = e.nativeEvent.contentOffset.y;
+          scrollYRef.current = y;
+          if (y > 700 && !showBackToTop) setShowBackToTop(true);
+          else if (y <= 700 && showBackToTop) setShowBackToTop(false);
+        }}
+        onLayout={(e) => {
+          viewportHeightRef.current = e.nativeEvent.layout.height;
+        }}
+      >
+        {/* Material 3 Tool Info Banner */}
+        {!isLanguageCourseScreen && (
           <View
             style={[
               styles.toolHeaderCard,
@@ -236,23 +684,127 @@ export default function ToolDetailScreen() {
                   },
                 ]}
               >
-                <DynamicIcon emoji={tool.icon} size={26} color={categoryColor} />
+                <DynamicIcon
+                  emoji={tool.icon}
+                  size={26}
+                  color={categoryColor}
+                />
               </View>
-              <View style={{ flex: 1, marginLeft: 12 }}>
-                <Text style={[styles.heroTitle, { color: theme.textPrimary }]}>
-                  {tool.title}
-                </Text>
-                <Text
-                  style={[styles.heroDescription, { color: theme.textSecondary }]}
+              <View style={{ flex: 1, marginLeft: 10 }}>
+                {tool.title.trim().toLowerCase() !==
+                  tool.shortTitle.trim().toLowerCase() && (
+                  <Text style={[styles.heroTitle, { color: theme.textPrimary }]}>
+                    {tool.title}
+                  </Text>
+                )}
+                <Pressable
+                  accessibilityRole="button"
+                  accessibilityLabel={descriptionExpanded ? "Collapse tool description" : "Expand full tool description"}
+                  onPress={() => {
+                    triggerHaptic(6);
+                    setDescriptionExpanded((prev) => !prev);
+                  }}
                 >
-                  {tool.description}
-                </Text>
+                  <Text
+                    numberOfLines={descriptionExpanded ? undefined : 2}
+                    style={[
+                      styles.heroDescription,
+                      {
+                        color: theme.textSecondary,
+                        marginTop:
+                          tool.title.trim().toLowerCase() !==
+                          tool.shortTitle.trim().toLowerCase()
+                            ? 2
+                            : 0,
+                      },
+                    ]}
+                  >
+                    {tool.description}
+                  </Text>
+                  {tool.description.length > 75 && (
+                    <View style={{ flexDirection: "row", alignItems: "center", gap: 4, marginTop: 4 }}>
+                      <Text style={[{ fontFamily: "Inter_600SemiBold", fontSize: 11.5, color: theme.gold }, { flexShrink: 1 }]}>
+                        {descriptionExpanded ? "Show less" : "Full description"}
+                      </Text>
+                      <Ionicons
+                        name={descriptionExpanded ? "chevron-up" : "chevron-down"}
+                        size={13}
+                        color={theme.gold}
+                      />
+                    </View>
+                  )}
+                </Pressable>
               </View>
             </View>
 
             <View
-              style={[styles.badgesRow, { borderTopColor: theme.outlineVariant }]}
+              style={[
+                styles.badgesRow,
+                { borderTopColor: theme.outlineVariant },
+              ]}
             >
+              {officialSourceUrl ? (
+                <Pressable
+                  accessibilityRole="link"
+                  accessibilityLabel={`Open official source: ${tool.dataSource}`}
+                  android_ripple={androidRipple(theme.rippleColor)}
+                  onPress={() => {
+                    triggerHaptic(6);
+                    Linking.openURL(officialSourceUrl).catch(() => {});
+                  }}
+                  style={pressableStyle([
+                    styles.sourceTag,
+                    {
+                      backgroundColor: theme.surfaceContainerHigh,
+                      borderColor: `${theme.kenyaGreenLight}55`,
+                    },
+                  ])}
+                >
+                  <Ionicons
+                    name="shield-checkmark"
+                    size={13}
+                    color={theme.kenyaGreenLight}
+                  />
+                  <Text
+                    style={[
+                      styles.sourceText,
+                      {
+                        color: theme.kenyaGreenLight,
+                        textDecorationLine: "underline",
+                      },
+                    ]}
+                  >
+                    {tool.dataSource}
+                  </Text>
+                  <Ionicons
+                    name="open-outline"
+                    size={11}
+                    color={theme.kenyaGreenLight}
+                  />
+                </Pressable>
+              ) : (
+                <View
+                  style={[
+                    styles.sourceTag,
+                    {
+                      backgroundColor: theme.surfaceContainerHigh,
+                      borderColor: theme.outlineVariant,
+                    },
+                  ]}
+                >
+                  <Ionicons
+                    name="shield-checkmark"
+                    size={13}
+                    color={theme.kenyaGreenLight}
+                  />
+                  <Text
+                    style={[styles.sourceText, { color: theme.textSecondary }]}
+                  >
+                    {tool.dataSource}
+                  </Text>
+                </View>
+              )}
+
               <View
                 style={[
                   styles.sourceTag,
@@ -262,31 +814,558 @@ export default function ToolDetailScreen() {
                   },
                 ]}
               >
-                <Ionicons
-                  name="shield-checkmark"
-                  size={13}
-                  color={theme.kenyaGreenLight}
-                />
-                <Text style={[styles.sourceText, { color: theme.textSecondary }]}>
-                  Source: {tool.dataSource}
+                <Ionicons name="sync-outline" size={12} color={theme.gold} />
+                <Text style={[styles.sourceText, { color: theme.textMuted }]}>
+                  {frequencyLabel}
                 </Text>
               </View>
             </View>
+
+            {isOfficialCivicTool && (
+              <View
+                style={[
+                  styles.govDisclaimerBox,
+                  {
+                    backgroundColor: theme.surfaceContainerHigh,
+                    borderColor: `${theme.gold}45`,
+                  },
+                ]}
+              >
+                <Ionicons
+                  name="information-circle-outline"
+                  size={15}
+                  color={theme.gold}
+                  style={{ marginTop: 1 }}
+                />
+                <View style={{ flex: 1, gap: 2 }}>
+                  <Text
+                    style={[
+                      styles.govDisclaimerText,
+                      { color: theme.textSecondary },
+                    ]}
+                  >
+                    Independent app — KenyaHub is not affiliated with, endorsed
+                    by, or representing the Government of Kenya or any statutory
+                    agency. Verify final figures directly on the official portal.
+                  </Text>
+                  {officialSourceUrl && (
+                    <Pressable
+                      accessibilityRole="link"
+                      onPress={() => {
+                        triggerHaptic(6);
+                        Linking.openURL(officialSourceUrl).catch(() => {});
+                      }}
+                    >
+                      <Text
+                        style={[
+                          styles.govDisclaimerLink,
+                          { color: theme.kenyaGreenLight },
+                        ]}
+                      >
+                        Official source: {officialSourceUrl}
+                      </Text>
+                    </Pressable>
+                  )}
+                </View>
+              </View>
+            )}
           </View>
         )}
 
         {/* Interactive Tool Component */}
-        <View style={styles.toolContentWrap}>{renderToolComponent()}</View>
+        <View
+          style={styles.toolContentWrap}
+          onLayout={(e) => {
+            const { y, height } = e.nativeEvent.layout;
+            toolWrapLayoutRef.current = { y, height };
+            const toolBottom = y + height;
+            if (
+              scrollYRef.current > y + 80 &&
+              toolBottom - scrollYRef.current <
+                viewportHeightRef.current * 0.35
+            ) {
+              scrollRef.current?.scrollTo({
+                y: Math.max(0, y - 12),
+                animated: true,
+              });
+            }
+          }}
+        >
+          {renderToolComponent()}
+        </View>
+
+        {/* Rich Statutory Guide: Overview, How It Works, Worked Example & Compliance Tips (MOB-8) */}
+        {!isLanguageCourseScreen &&
+          (overview.length > 0 ||
+            howItWorks.length > 0 ||
+            workedExample ||
+            complianceTips.length > 0) && (
+            <View
+              style={[
+                styles.notesSectionCard,
+                {
+                  backgroundColor: theme.surfaceContainer,
+                  borderColor: theme.outlineVariant,
+                },
+              ]}
+            >
+              <Pressable
+                onPress={() => {
+                  triggerHaptic(8);
+                  setShowFullGuide((v) => !v);
+                }}
+                style={styles.notesHeaderRow}
+              >
+                <View
+                  style={[
+                    styles.notesIconBadge,
+                    { backgroundColor: `${theme.gold}1A` },
+                  ]}
+                >
+                  <Ionicons
+                    name="book-outline"
+                    size={18}
+                    color={theme.gold}
+                  />
+                </View>
+                <Text style={[styles.notesTitle, { color: theme.textPrimary }]}>
+                  {isNonCalculatorTool
+                    ? "How to Use & Reference Guide"
+                    : "How It Works, Worked Example & Statutory Guide"}
+                </Text>
+                <Ionicons
+                  name={showFullGuide ? "chevron-up" : "chevron-down"}
+                  size={18}
+                  color={theme.textMuted}
+                />
+              </Pressable>
+
+              {showFullGuide && (
+                <View style={{ gap: 12, marginTop: 4 }}>
+                  {overview.map((para, pIdx) => (
+                    <Text
+                      key={`ov-${pIdx}`}
+                      style={[styles.noteText, { color: theme.textSecondary }]}
+                    >
+                      {para}
+                    </Text>
+                  ))}
+
+                  {howItWorks.length > 0 && (
+                    <View style={{ gap: 6 }}>
+                      <Text
+                        style={{
+                          fontFamily: "Outfit_700Bold",
+                          fontSize: 13.5,
+                          color: theme.gold,
+                        }}
+                      >
+                        Step-by-Step Guide
+                      </Text>
+                      {howItWorks.map((step, sIdx) => (
+                        <View key={`hiw-${sIdx}`} style={styles.noteRow}>
+                          <Text
+                            style={[styles.noteBullet, { color: theme.gold }, { flexShrink: 1 }]}
+                          >
+                            {sIdx + 1}.
+                          </Text>
+                          <Text
+                            style={[
+                              styles.noteText,
+                              { color: theme.textSecondary },
+                            ]}
+                          >
+                            {step}
+                          </Text>
+                        </View>
+                      ))}
+                    </View>
+                  )}
+
+                  {workedExample && (
+                    <View
+                      style={{
+                        padding: 12,
+                        borderRadius: 14,
+                        backgroundColor: theme.surfaceContainerHigh,
+                        borderWidth: 1,
+                        borderColor: `${theme.gold}40`,
+                        gap: 6,
+                      }}
+                    >
+                      <Text
+                        style={{
+                          fontFamily: "Outfit_800ExtraBold",
+                          fontSize: 13.5,
+                          color: theme.gold,
+                        }}
+                      >
+                        Worked Example: {workedExample.title}
+                      </Text>
+                      <Text
+                        style={{
+                          fontFamily: "Inter_500Medium",
+                          fontSize: 12,
+                          color: theme.textPrimary,
+                          lineHeight: 17.5,
+                        }}
+                      >
+                        {workedExample.scenario}
+                      </Text>
+                      {(workedExample.steps || []).map((st, idx) => (
+                        <View key={`we-${idx}`} style={styles.noteRow}>
+                          <Text
+                            style={[
+                              styles.noteBullet,
+                              { color: theme.kenyaGreenLight },
+                            , { flexShrink: 1 }]}
+                          >
+                            •
+                          </Text>
+                          <Text
+                            style={[
+                              styles.noteText,
+                              { color: theme.textSecondary },
+                            ]}
+                          >
+                            {st}
+                          </Text>
+                        </View>
+                      ))}
+                      {workedExample.takeaway && (
+                        <Text
+                          style={{
+                            fontFamily: "Inter_600SemiBold",
+                            fontSize: 12,
+                            color: theme.kenyaGreenLight,
+                            marginTop: 2,
+                          }}
+                        >
+                          Key Takeaway: {workedExample.takeaway}
+                        </Text>
+                      )}
+                    </View>
+                  )}
+
+                  {complianceTips.length > 0 && (
+                    <View style={{ gap: 6 }}>
+                      <Text
+                        style={{
+                          fontFamily: "Outfit_700Bold",
+                          fontSize: 13.5,
+                          color: theme.sky,
+                        }}
+                      >
+                        {isNonCalculatorTool
+                          ? "Practical Usage Tips"
+                          : "Statutory Compliance Tips"}
+                      </Text>
+                      {complianceTips.map((tip, tIdx) => (
+                        <View key={`ct-${tIdx}`} style={styles.noteRow}>
+                          <Text
+                            style={[styles.noteBullet, { color: theme.sky }, { flexShrink: 1 }]}
+                          >
+                            ✓
+                          </Text>
+                          <Text
+                            style={[
+                              styles.noteText,
+                              { color: theme.textSecondary },
+                            ]}
+                          >
+                            {tip}
+                          </Text>
+                        </View>
+                      ))}
+                    </View>
+                  )}
+                </View>
+              )}
+            </View>
+          )}
+
+        {/* Important Notes / About the Data Section */}
+        {!isLanguageCourseScreen && notes.length > 0 && (
+          <View
+            style={[
+              styles.notesSectionCard,
+              {
+                backgroundColor: theme.surfaceContainer,
+                borderColor: theme.outlineVariant,
+              },
+            ]}
+          >
+            <View style={styles.notesHeaderRow}>
+              <View
+                style={[
+                  styles.notesIconBadge,
+                  { backgroundColor: `${theme.gold}1A` },
+                ]}
+              >
+                <Ionicons
+                  name="information-circle-outline"
+                  size={18}
+                  color={theme.gold}
+                />
+              </View>
+              <Text style={[styles.notesTitle, { color: theme.textPrimary }]}>
+                {notesTitle}
+              </Text>
+            </View>
+            <View style={styles.notesList}>
+              {notes.map((note, idx) => (
+                <View key={idx} style={styles.noteRow}>
+                  <Text style={[styles.noteBullet, { color: theme.gold }, { flexShrink: 1 }]}>
+                    •
+                  </Text>
+                  <Text
+                    style={[styles.noteText, { color: theme.textSecondary }]}
+                  >
+                    {note}
+                  </Text>
+                </View>
+              ))}
+            </View>
+          </View>
+        )}
+
+        {/* Frequently Asked Questions Section */}
+        {!isLanguageCourseScreen && faqs.length > 0 && (
+          <View style={styles.faqSection}>
+            <View style={styles.faqHeaderRow}>
+              <View
+                style={[
+                  styles.notesIconBadge,
+                  { backgroundColor: `${theme.gold}1A` },
+                ]}
+              >
+                <Ionicons
+                  name="help-circle-outline"
+                  size={18}
+                  color={theme.gold}
+                />
+              </View>
+              <Text style={[styles.faqHeading, { color: theme.textPrimary }, { flexShrink: 1 }]}>
+                Frequently Asked Questions
+              </Text>
+            </View>
+
+            <View style={styles.faqList}>
+              {faqs.map((item, idx) => {
+                const isOpen = openFaqIdx === idx;
+                return (
+                  <View
+                    key={idx}
+                    style={[
+                      styles.faqCard,
+                      {
+                        backgroundColor: theme.surfaceContainer,
+                        borderColor: isOpen
+                          ? `${theme.gold}50`
+                          : theme.outlineVariant,
+                      },
+                    ]}
+                  >
+                    <Pressable
+                      android_ripple={androidRipple(theme.rippleColor)}
+                      onPress={() => {
+                        triggerHaptic(6);
+                        setOpenFaqIdx(isOpen ? null : idx);
+                      }}
+                      style={styles.faqQuestionRow}
+                    >
+                      <Text
+                        style={[
+                          styles.faqQuestionText,
+                          { color: isOpen ? theme.gold : theme.textPrimary },
+                        ]}
+                      >
+                        {item.question}
+                      </Text>
+                      <Ionicons
+                        name={isOpen ? "chevron-up" : "chevron-down"}
+                        size={18}
+                        color={isOpen ? theme.gold : theme.textMuted}
+                      />
+                    </Pressable>
+                    {isOpen && (
+                      <View
+                        style={[
+                          styles.faqAnswerBox,
+                          { borderTopColor: theme.outlineVariant },
+                        ]}
+                      >
+                        <Text
+                          style={[
+                            styles.faqAnswerText,
+                            { color: theme.textSecondary },
+                          ]}
+                        >
+                          {item.answer}
+                        </Text>
+                      </View>
+                    )}
+                  </View>
+                );
+              })}
+            </View>
+          </View>
+        )}
+
+        {/* Related Kenyan Guides & Worked Articles (UX-13) */}
+        {!isLanguageCourseScreen && relatedBlogPosts.length > 0 && (
+          <View style={[styles.relatedSection, { marginBottom: 20 }]}>
+            <Text style={[styles.relatedHeading, { color: theme.gold }]}>
+              RELATED KENYAN GUIDES & WORKED ARTICLES
+            </Text>
+            <View style={styles.relatedList}>
+              {relatedBlogPosts.map((post) => (
+                <View
+                  key={post.slug}
+                  style={[
+                    styles.relatedCardWrap,
+                    {
+                      backgroundColor: theme.surfaceContainer,
+                      borderColor: theme.outlineVariant,
+                    },
+                  ]}
+                >
+                  <Pressable
+                    android_ripple={androidRipple(theme.rippleColor)}
+                    onPress={() => {
+                      triggerHaptic(8);
+                      lastReaderProgressRef.current = 0;
+                      setReaderProgress(0);
+                      setSelectedPost(post);
+                    }}
+                    style={pressableStyle(styles.relatedCard)}
+                  >
+                    <View
+                      style={[
+                        styles.relatedIconBox,
+                        { backgroundColor: `${theme.gold}18` },
+                      ]}
+                    >
+                      <Ionicons
+                        name="newspaper-outline"
+                        size={19}
+                        color={theme.gold}
+                      />
+                    </View>
+                    <View style={{ flex: 1, marginLeft: 12 }}>
+                      <Text
+                        style={[
+                          styles.relatedTitle,
+                          { color: theme.textPrimary },
+                        ]}
+                        numberOfLines={2}
+                      >
+                        {post.title}
+                      </Text>
+                      <Text
+                        style={[
+                          styles.relatedDesc,
+                          { color: theme.textSecondary },
+                        ]}
+                        numberOfLines={2}
+                      >
+                        {post.excerpt}
+                      </Text>
+                      <Text
+                        style={{
+                          fontSize: 10,
+                          color: theme.gold,
+                          fontFamily: "Outfit_700Bold",
+                          marginTop: 3,
+                        }}
+                      >
+                        Read Offline Guide · {post.readTime} min read
+                      </Text>
+                    </View>
+                    <Ionicons
+                      name="chevron-forward"
+                      size={16}
+                      color={theme.textMuted}
+                    />
+                  </Pressable>
+                </View>
+              ))}
+            </View>
+          </View>
+        )}
 
         {/* Related Tools */}
-        {related.length > 0 && (
+        {!isLanguageCourseScreen && related.length > 0 && (
           <View style={styles.relatedSection}>
             <Text style={[styles.relatedHeading, { color: theme.gold }]}>
               RELATED TOOLS
             </Text>
             <View style={styles.relatedList}>
+              {tool.category === "transport-travel" && (
+                <View
+                  style={[
+                    styles.relatedCardWrap,
+                    {
+                      backgroundColor: theme.surfaceContainer,
+                      borderColor: `${theme.gold}55`,
+                    },
+                  ]}
+                >
+                  <Pressable
+                    android_ripple={androidRipple(theme.rippleColor)}
+                    onPress={() => router.push("/matatu")}
+                    style={pressableStyle(styles.relatedCard)}
+                  >
+                    <View
+                      style={[
+                        styles.relatedIconBox,
+                        { backgroundColor: "rgba(14, 165, 233, 0.16)" },
+                      ]}
+                    >
+                      <Ionicons name="bus" size={20} color="#0EA5E9" />
+                    </View>
+                    <View style={{ flex: 1, marginLeft: 12 }}>
+                      <Text
+                        style={[
+                          styles.relatedTitle,
+                          { color: theme.textPrimary },
+                        ]}
+                      >
+                        Matatu Routes & SACCO Fares
+                      </Text>
+                      <Text
+                        style={[
+                          styles.relatedDesc,
+                          { color: theme.textSecondary },
+                        ]}
+                      >
+                        Interactive stage maps, route numbers, and off-peak/peak
+                        fares across Nairobi, Mombasa, Kisumu, Nakuru, Eldoret &
+                        Thika.
+                      </Text>
+                      <Text
+                        style={{
+                          fontSize: 10,
+                          color: "#0EA5E9",
+                          fontFamily: "Outfit_700Bold",
+                          marginTop: 2,
+                        }}
+                      >
+                        Transport & Travel Hub
+                      </Text>
+                    </View>
+                    <Ionicons
+                      name="arrow-forward"
+                      size={16}
+                      color={theme.textMuted}
+                    />
+                  </Pressable>
+                </View>
+              )}
+
               {related.map((rel) => {
                 const relColor = categoryColorMap[rel.category] || theme.gold;
+                const relCat = getCategoryInfo(rel.category);
                 return (
                   <View
                     key={rel.slug}
@@ -306,7 +1385,7 @@ export default function ToolDetailScreen() {
                           params: { slug: rel.slug },
                         })
                       }
-                      style={styles.relatedCard}
+                      style={pressableStyle(styles.relatedCard)}
                     >
                       <View
                         style={[
@@ -314,7 +1393,11 @@ export default function ToolDetailScreen() {
                           { backgroundColor: `${relColor}1A` },
                         ]}
                       >
-                        <DynamicIcon emoji={rel.icon} size={20} color={relColor} />
+                        <DynamicIcon
+                          emoji={rel.icon}
+                          size={20}
+                          color={relColor}
+                        />
                       </View>
                       <View style={{ flex: 1, marginLeft: 12 }}>
                         <Text
@@ -330,10 +1413,21 @@ export default function ToolDetailScreen() {
                             styles.relatedDesc,
                             { color: theme.textSecondary },
                           ]}
-                          numberOfLines={1}
                         >
                           {rel.description}
                         </Text>
+                        {relCat && (
+                          <Text
+                            style={{
+                              fontSize: 10,
+                              color: relColor,
+                              fontFamily: "Outfit_700Bold",
+                              marginTop: 2,
+                            }}
+                          >
+                            {relCat.name}
+                          </Text>
+                        )}
                       </View>
                       <Ionicons
                         name="arrow-forward"
@@ -348,96 +1442,336 @@ export default function ToolDetailScreen() {
           </View>
         )}
       </ScrollView>
+      </KeyboardAvoidingView>
+
+      {/* Floating Back-to-Top Pill Button (UX-10) */}
+      {showBackToTop && (
+        <Pressable
+          onPress={() => {
+            triggerHaptic(8);
+            scrollRef.current?.scrollTo({ y: 0, animated: true });
+          }}
+          accessibilityRole="button"
+          accessibilityLabel="Scroll back to top"
+          android_ripple={androidRipple(theme.rippleColor)}
+          style={pressableStyle([
+            styles.fabTopBtn,
+            {
+              backgroundColor: theme.gold,
+              borderColor: theme.kenyaBlack,
+              bottom: 20 + insets.bottom,
+            },
+          ])}
+        >
+          <Ionicons name="arrow-up" size={16} color={getContrastInk(theme.gold)} />
+          <Text style={[styles.fabTopText, { color: getContrastInk(theme.gold) }]}>
+            Top
+          </Text>
+        </Pressable>
+      )}
+
+      {/* Full-Screen Offline Blog Guide Reader Modal (UX-13) */}
+      {selectedPost && (
+      <Modal
+        visible={true}
+        animationType="slide"
+        accessibilityViewIsModal={true}
+        onRequestClose={() => setSelectedPost(null)}
+      >
+        <SafeAreaView
+          style={[styles.screen, { backgroundColor: theme.bgPrimary }]}
+          edges={["top", "left", "right", "bottom"]}
+        >
+          <KenyaStripe />
+          <AndroidTopAppBar
+            title="Offline Guide"
+            subtitle={
+              selectedPost
+                ? `${selectedPost.author} · ${selectedPost.readTime} min read`
+                : ""
+            }
+            onBack={() => setSelectedPost(null)}
+          />
+          <View
+            style={{
+              height: 3,
+              width: "100%",
+              backgroundColor: theme.surfaceContainerHigh,
+            }}
+          >
+            <View
+              style={{
+                height: "100%",
+                width: `${Math.min(100, Math.max(4, readerProgress * 100))}%`,
+                backgroundColor: theme.gold,
+              }}
+            />
+          </View>
+
+          {selectedPost && (
+            <ScrollView
+              contentContainerStyle={{ padding: 16, paddingBottom: 48 }}
+              showsVerticalScrollIndicator={themeConfig.verticalScrollbarStyle !== "hidden"}
+        persistentScrollbar={themeConfig.verticalScrollbarStyle === "always-visible"}
+              scrollEventThrottle={48}
+              onScroll={(e) => {
+                const { contentOffset, contentSize, layoutMeasurement } =
+                  e.nativeEvent;
+                const maxScroll = Math.max(
+                  1,
+                  contentSize.height - layoutMeasurement.height
+                );
+                const next = Math.min(1, Math.max(0, contentOffset.y / maxScroll));
+                if (
+                  Math.abs(next - lastReaderProgressRef.current) >= 0.03 ||
+                  next === 0 ||
+                  next === 1
+                ) {
+                  lastReaderProgressRef.current = next;
+                  setReaderProgress(next);
+                }
+              }}
+            >
+              <View
+                style={[
+                  styles.notesSectionCard,
+                  {
+                    backgroundColor: theme.surfaceContainer,
+                    borderColor: theme.outlineVariant,
+                    marginBottom: 16,
+                  },
+                ]}
+              >
+                <Text
+                  style={{
+                    fontFamily: "Outfit_800ExtraBold",
+                    fontSize: 20,
+                    color: theme.textPrimary,
+                    lineHeight: 26,
+                  }}
+                >
+                  {selectedPost.title}
+                </Text>
+                <Text
+                  style={{
+                    fontSize: 13,
+                    color: theme.textSecondary,
+                    marginTop: 4,
+                    lineHeight: 19,
+                  }}
+                >
+                  {selectedPost.excerpt}
+                </Text>
+              </View>
+
+              <View
+                style={[
+                  styles.notesSectionCard,
+                  {
+                    backgroundColor: theme.surfaceContainer,
+                    borderColor: theme.outlineVariant,
+                  },
+                ]}
+              >
+                <BlogMarkdownContent
+                  content={selectedPost.content}
+                  theme={theme}
+                  onNavigateLink={handleBlogLinkNavigation}
+                />
+              </View>
+            </ScrollView>
+          )}
+        </SafeAreaView>
+      </Modal>
+      )}
     </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-  screen: {
-    flex: 1,
-  },
+  screen: { flex: 1 },
   pinIconBtn: {
-    width: 40,
-    height: 40,
-    borderRadius: 20,
+    width: 34,
+    height: 34,
+    borderRadius: 17,
     borderWidth: 1,
     alignItems: "center",
     justifyContent: "center",
     overflow: "hidden",
   },
   content: {
-    padding: 16,
-    paddingBottom: 40,
+    padding: 10,
+    paddingBottom: 96,
   },
   toolHeaderCard: {
-    borderRadius: 20,
+    borderRadius: 14,
     borderWidth: 1,
-    padding: 16,
-    marginBottom: 16,
+    padding: 11,
+    marginBottom: 10,
     elevation: Platform.OS === "android" ? 2 : 0,
   },
   heroRow: {
     flexDirection: "row",
-    alignItems: "flex-start",
+    alignItems: "center",
   },
   heroIconBox: {
-    width: 48,
-    height: 48,
-    borderRadius: 14,
+    width: 38,
+    height: 38,
+    borderRadius: 10,
     borderWidth: 1,
     alignItems: "center",
     justifyContent: "center",
   },
   heroTitle: {
     fontFamily: "Outfit_700Bold",
-    fontSize: 18,
-    lineHeight: 23,
+    fontSize: 15.5,
+    lineHeight: 20,
   },
   heroDescription: {
-    fontSize: 12.5,
-    lineHeight: 18,
-    marginTop: 4,
+    fontFamily: "Inter_400Regular",
+    fontSize: 12,
+    lineHeight: 17,
+    marginTop: 2,
   },
   badgesRow: {
     flexDirection: "row",
     flexWrap: "wrap",
-    gap: 8,
-    marginTop: 12,
-    paddingTop: 10,
+    gap: 6,
+    marginTop: 8,
+    paddingTop: 8,
     borderTopWidth: StyleSheet.hairlineWidth,
   },
   sourceTag: {
     flexDirection: "row",
     alignItems: "center",
-    gap: 6,
-    paddingHorizontal: 10,
+    gap: 5,
+    paddingHorizontal: 8,
     paddingVertical: 4,
     borderRadius: 8,
     borderWidth: 1,
+    maxWidth: "100%",
+    flexShrink: 1,
+  },
+  govDisclaimerBox: {
+    flexDirection: "row",
+    alignItems: "flex-start",
+    gap: 8,
+    marginTop: 8,
+    padding: 9,
+    borderRadius: 10,
+    borderWidth: 1,
+  },
+  govDisclaimerText: {
+    fontFamily: "Inter_400Regular",
+    fontSize: 11,
+    lineHeight: 15.5,
+  },
+  govDisclaimerLink: {
+    fontFamily: "Inter_600SemiBold",
+    fontSize: 11,
+    textDecorationLine: "underline",
   },
   sourceText: {
+    fontFamily: "Inter_500Medium",
     fontSize: 11,
+    flexShrink: 1,
   },
-  toolContentWrap: {
+  toolContentWrap: { marginBottom: 20 },
+  notesSectionCard: {
+    borderRadius: 18,
+    borderWidth: 1,
+    padding: 16,
     marginBottom: 20,
+    gap: 10,
   },
-  relatedSection: {
-    marginTop: 8,
+  notesHeaderRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 10,
   },
+  notesIconBadge: {
+    width: 32,
+    height: 32,
+    borderRadius: 10,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  notesTitle: {
+    fontFamily: "Outfit_700Bold",
+    fontSize: 15,
+    flex: 1,
+  },
+  notesList: { gap: 8 },
+  noteRow: {
+    flexDirection: "row",
+    alignItems: "flex-start",
+    gap: 8,
+  },
+  noteBullet: {
+    fontFamily: "Outfit_800ExtraBold",
+    fontSize: 13,
+    lineHeight: 19,
+  },
+  noteText: {
+    flex: 1,
+    fontFamily: "Inter_400Regular",
+    fontSize: 12.5,
+    lineHeight: 18.5,
+  },
+  faqSection: { marginBottom: 20 },
+  faqHeaderRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 10,
+    marginBottom: 12,
+  },
+  faqHeading: {
+    fontFamily: "Outfit_700Bold",
+    fontSize: 16,
+  },
+  faqList: { gap: 8 },
+  faqCard: {
+    borderRadius: 16,
+    borderWidth: 1,
+    overflow: "hidden",
+  },
+  faqQuestionRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    paddingHorizontal: 14,
+    paddingVertical: 13,
+    gap: 10,
+  },
+  faqQuestionText: {
+    flex: 1,
+    fontFamily: "Outfit_700Bold",
+    fontSize: 13.5,
+    lineHeight: 19,
+  },
+  faqAnswerBox: {
+    paddingHorizontal: 14,
+    paddingBottom: 14,
+    paddingTop: 10,
+    borderTopWidth: StyleSheet.hairlineWidth,
+  },
+  faqAnswerText: {
+    fontFamily: "Inter_400Regular",
+    fontSize: 12.5,
+    lineHeight: 18.5,
+  },
+  relatedSection: { marginTop: 4 },
   relatedHeading: {
     fontFamily: "Outfit_700Bold",
     fontSize: 11,
     letterSpacing: 1.2,
     marginBottom: 10,
   },
-  relatedList: {
-    gap: 8,
-  },
+  relatedList: { gap: 8 },
   relatedCardWrap: {
     borderRadius: 16,
     borderWidth: 1,
     overflow: "hidden",
-    elevation: Platform.OS === "android" ? 1 : 0,
   },
   relatedCard: {
     flexDirection: "row",
@@ -456,6 +1790,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
   },
   relatedDesc: {
+    fontFamily: "Inter_400Regular",
     fontSize: 11.5,
     marginTop: 1,
   },
@@ -479,5 +1814,26 @@ const styles = StyleSheet.create({
   backButtonText: {
     fontFamily: "Outfit_700Bold",
     fontSize: 14,
+  },
+  fabTopBtn: {
+    position: "absolute",
+    bottom: 20,
+    right: 16,
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 4,
+    paddingHorizontal: 14,
+    paddingVertical: 9,
+    borderRadius: 999,
+    borderWidth: 1,
+    elevation: 6,
+    shadowColor: "#000",
+    shadowOpacity: 0.25,
+    shadowRadius: 8,
+    shadowOffset: { width: 0, height: 3 },
+  },
+  fabTopText: {
+    fontFamily: "Outfit_800ExtraBold",
+    fontSize: 12,
   },
 });

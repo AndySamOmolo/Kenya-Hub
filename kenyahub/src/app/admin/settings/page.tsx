@@ -1,14 +1,14 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { account } from "@/lib/appwrite";
+import { account, verifyAdminAccount } from "@/lib/appwrite";
 import Link from "next/link";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 
 export default function AdminSettingsPage() {
   const [user, setUser] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
-  
+
   const [oldPassword, setOldPassword] = useState("");
   const [newPassword, setNewPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
@@ -19,8 +19,9 @@ export default function AdminSettingsPage() {
   useEffect(() => {
     const init = async () => {
       try {
-        const u = await account.get();
-        setUser(u.email);
+        const email = await verifyAdminAccount();
+        setUser(email);
+        if (!email) return;
       } catch {
         setUser(null);
       } finally {
@@ -77,7 +78,7 @@ export default function AdminSettingsPage() {
     return (
       <div className="max-w-md mx-auto px-4 py-8 text-center">
         <p className="text-text-secondary mb-4">Please sign in to access settings.</p>
-        <Link href="/admin/login" className="btn-primary">
+        <Link href="/admin/login/" className="btn-primary">
           Sign In
         </Link>
       </div>
@@ -85,87 +86,109 @@ export default function AdminSettingsPage() {
   }
 
   return (
-    <div className="max-w-md mx-auto px-4 py-8">
-      <header className="mb-8">
-        <div className="flex items-center justify-between mb-2">
-          <h1 className="text-2xl font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2">
-            <DynamicIcon emoji="⚙️" className="w-6 h-6 text-gold" /> Settings
-          </h1>
-          <Link href="/admin/posts" className="text-sm text-gold hover:text-gold-light">
-            ← Back to Posts
-          </Link>
+    <div className="flex min-h-screen">
+      <aside className="hidden md:flex w-64 flex-col bg-bg-card border-r border-border md:fixed h-full p-5 space-y-2">
+        <div className="text-sm font-bold text-gold mb-4 flex items-center gap-2">
+          <DynamicIcon emoji="📊" className="w-5 h-5 text-gold" />
+          <span>KenyaHub Admin</span>
         </div>
-        <p className="text-text-muted text-sm">Signed in as <strong className="text-text-primary">{user}</strong></p>
-      </header>
+        <Link href="/admin/" className="px-3 py-2 rounded-lg text-xs font-medium text-text-secondary hover:text-text-primary hover:bg-bg-elevated">
+          Dashboard
+        </Link>
+        <Link href="/admin/posts/" className="px-3 py-2 rounded-lg text-xs font-medium text-text-secondary hover:text-text-primary hover:bg-bg-elevated">
+          Blog Posts
+        </Link>
+        <Link href="/admin/translations/" className="px-3 py-2 rounded-lg text-xs font-medium text-text-secondary hover:text-text-primary hover:bg-bg-elevated">
+          Translations
+        </Link>
+        <Link href="/admin/settings/" className="px-3 py-2 rounded-lg text-xs font-semibold bg-gold/15 text-gold">
+          Settings
+        </Link>
+      </aside>
+      <main className="flex-1 md:ml-64 p-4 sm:p-6 md:p-8">
+        <div className="max-w-md mx-auto">
+          <header className="mb-8">
+            <div className="flex items-center justify-between mb-2">
+              <h1 className="text-2xl font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2">
+                <DynamicIcon emoji="⚙️" className="w-6 h-6 text-gold" /> Settings
+              </h1>
+              <Link href="/admin/posts/" className="text-sm text-gold hover:text-gold-light">
+                ← Back to Posts
+              </Link>
+            </div>
+            <p className="text-text-muted text-sm">Signed in as <strong className="text-text-primary">{user}</strong></p>
+          </header>
 
-      <div className="bg-bg-card border border-border rounded-xl p-6 mb-6">
-        <h2 className="text-lg font-semibold text-text-primary mb-4">Change Password</h2>
-        <form onSubmit={handleUpdatePassword} className="space-y-4">
-          <div>
-            <label className="block text-sm font-medium text-text-secondary mb-1" htmlFor="oldPassword">
-              Current Password
-            </label>
-            <input
-              id="oldPassword"
-              type="password"
-              value={oldPassword}
-              onChange={(e) => setOldPassword(e.target.value)}
-              required
-              className="input-field"
-            />
+          <div className="bg-bg-card border border-border rounded-xl p-6 mb-6">
+            <h2 className="text-lg font-semibold text-text-primary mb-4">Change Password</h2>
+            <form onSubmit={handleUpdatePassword} className="space-y-4">
+              <div>
+                <label className="block text-sm font-medium text-text-secondary mb-1" htmlFor="oldPassword">
+                  Current Password
+                </label>
+                <input
+                  id="oldPassword"
+                  type="password"
+                  value={oldPassword}
+                  onChange={(e) => setOldPassword(e.target.value)}
+                  required
+                  className="input-field"
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-text-secondary mb-1" htmlFor="newPassword">
+                  New Password
+                </label>
+                <input
+                  id="newPassword"
+                  type="password"
+                  value={newPassword}
+                  onChange={(e) => setNewPassword(e.target.value)}
+                  required
+                  minLength={8}
+                  className="input-field"
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-text-secondary mb-1" htmlFor="confirmPassword">
+                  Confirm New Password
+                </label>
+                <input
+                  id="confirmPassword"
+                  type="password"
+                  value={confirmPassword}
+                  onChange={(e) => setConfirmPassword(e.target.value)}
+                  required
+                  minLength={8}
+                  className="input-field"
+                />
+              </div>
+
+              {error && <p className="text-sm text-kenya-red-light">{error}</p>}
+              {success && <p className="text-sm text-kenya-green-light">{success}</p>}
+
+              <button
+                type="submit"
+                disabled={updating || !oldPassword || !newPassword || !confirmPassword}
+                className="btn-primary w-full disabled:opacity-50 mt-2"
+              >
+                {updating ? "Updating..." : "Update Password"}
+              </button>
+            </form>
           </div>
-          <div>
-            <label className="block text-sm font-medium text-text-secondary mb-1" htmlFor="newPassword">
-              New Password
-            </label>
-            <input
-              id="newPassword"
-              type="password"
-              value={newPassword}
-              onChange={(e) => setNewPassword(e.target.value)}
-              required
-              minLength={8}
-              className="input-field"
-            />
+
+          <div className="bg-bg-card border border-kenya-red/30 rounded-xl p-6">
+            <h2 className="text-lg font-semibold text-text-primary mb-2">Logout</h2>
+            <p className="text-sm text-text-secondary mb-4">Sign out of your admin session on this device.</p>
+            <button
+              onClick={handleLogout}
+              className="px-4 py-2 w-full rounded-lg border border-kenya-red/50 text-kenya-red-light hover:bg-kenya-red/10 transition-colors text-sm font-medium"
+            >
+              Sign Out
+            </button>
           </div>
-          <div>
-            <label className="block text-sm font-medium text-text-secondary mb-1" htmlFor="confirmPassword">
-              Confirm New Password
-            </label>
-            <input
-              id="confirmPassword"
-              type="password"
-              value={confirmPassword}
-              onChange={(e) => setConfirmPassword(e.target.value)}
-              required
-              minLength={8}
-              className="input-field"
-            />
-          </div>
-
-          {error && <p className="text-sm text-kenya-red-light">{error}</p>}
-          {success && <p className="text-sm text-kenya-green-light">{success}</p>}
-
-          <button
-            type="submit"
-            disabled={updating || !oldPassword || !newPassword || !confirmPassword}
-            className="btn-primary w-full disabled:opacity-50 mt-2"
-          >
-            {updating ? "Updating..." : "Update Password"}
-          </button>
-        </form>
-      </div>
-
-      <div className="bg-bg-card border border-kenya-red/30 rounded-xl p-6">
-        <h2 className="text-lg font-semibold text-text-primary mb-2">Logout</h2>
-        <p className="text-sm text-text-secondary mb-4">Sign out of your admin session on this device.</p>
-        <button
-          onClick={handleLogout}
-          className="px-4 py-2 w-full rounded-lg border border-kenya-red/50 text-kenya-red-light hover:bg-kenya-red/10 transition-colors text-sm font-medium"
-        >
-          Sign Out
-        </button>
-      </div>
+        </div>
+      </main>
     </div>
   );
 }

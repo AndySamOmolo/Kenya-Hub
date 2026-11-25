@@ -5,6 +5,9 @@ export interface CourseValidationIssue {
   message: string;
 }
 
+const SYNTHETIC_TEMPLATE_RX =
+  /^(?:What is the price of .+ at the market\?|Do you have .+ today\?|Yes, we have plenty of .+|The farmer produces .+ in the field|Take care of .+ for good health)/i;
+
 function validateExercise(
   exercise: Exercise,
   path: string
@@ -18,7 +21,7 @@ function validateExercise(
     issues.push({ path, message: "Exercise answer is empty" });
   }
 
-  if (exercise.type === "multiple_choice") {
+  if (exercise.type === "multiple_choice" || exercise.type === "tap_what_you_hear") {
     if (!exercise.options || exercise.options.length < 2) {
       issues.push({ path, message: "Multiple choice exercise must have at least two options" });
     } else {
@@ -44,12 +47,22 @@ function validateExercise(
     if (!exercise.pairs || exercise.pairs.length < 2) {
       issues.push({ path, message: "Match exercise needs at least two pairs" });
     } else {
+      const seenLeft = new Set<string>();
+      const seenRight = new Set<string>();
       exercise.pairs.forEach((pair, pairIndex) => {
         if (!pair.left || !pair.left.trim() || !pair.right || !pair.right.trim()) {
           issues.push({
             path: `${path}.pairs[${pairIndex}]`,
             message: "Match pair has empty left or right value",
           });
+        } else {
+          const lk = pair.left.trim().toLowerCase();
+          const rk = pair.right.trim().toLowerCase();
+          if (seenLeft.has(lk) || seenRight.has(rk)) {
+            issues.push({ path: `${path}.pairs[${pairIndex}]`, message: "Duplicate left or right match pair value" });
+          }
+          seenLeft.add(lk);
+          seenRight.add(rk);
         }
       });
     }
@@ -81,11 +94,32 @@ export function validateCourse(units: CourseUnit[]): CourseValidationIssue[] {
       if (skillIds.has(skill.id)) issues.push({ path: skillPath, message: `Duplicate skill ID: ${skill.id}` });
       skillIds.add(skill.id);
 
+      if (skill.culturalNote) {
+        const note = skill.culturalNote.trim();
+        const openParens = (note.match(/\(/g) || []).length;
+        const closeParens = (note.match(/\)/g) || []).length;
+        if (openParens > closeParens || /[,-]\s*$/.test(note)) {
+          issues.push({
+            path: `${skillPath}.culturalNote`,
+            message: `Truncated culturalNote in skill ${skill.id}`,
+          });
+        }
+      }
+
       const wordTargets = new Set<string>();
       skill.words.forEach((word, wordIndex) => {
         const wordPath = `${skillPath}.words[${wordIndex}]`;
         if (!word.target.trim()) issues.push({ path: wordPath, message: "Vocabulary target is empty" });
         if (!word.source.trim()) issues.push({ path: wordPath, message: "Vocabulary source is empty" });
+        if (/,\s*pl$/i.test(word.target.trim())) {
+          issues.push({ path: wordPath, message: `Truncated plural marker in target: ${word.target}` });
+        }
+        if (word.source.includes("„") || word.target.includes("„")) {
+          issues.push({ path: wordPath, message: `Unresolved ditto mark („) in word: ${word.source}` });
+        }
+        if (SYNTHETIC_TEMPLATE_RX.test(word.source.trim())) {
+          issues.push({ path: wordPath, message: `Synthetic carrier template in word: ${word.source}` });
+        }
 
         const normalizedTarget = word.target.trim().toLowerCase();
         if (wordTargets.has(normalizedTarget)) {
@@ -101,6 +135,12 @@ export function validateCourse(units: CourseUnit[]): CourseValidationIssue[] {
         }
         if (!sentence.source || !sentence.source.trim()) {
           issues.push({ path: sentencePath, message: "Sentence source is empty" });
+        }
+        if (sentence.source?.includes("„") || sentence.target?.includes("„")) {
+          issues.push({ path: sentencePath, message: `Unresolved ditto mark („) in sentence: ${sentence.source}` });
+        }
+        if (sentence.source && SYNTHETIC_TEMPLATE_RX.test(sentence.source.trim())) {
+          issues.push({ path: sentencePath, message: `Synthetic carrier template in sentence: ${sentence.source}` });
         }
         const targetTokens = sentence.target ? sentence.target.trim().split(/\s+/).filter(Boolean) : [];
         const sourceTokens = sentence.source ? sentence.source.trim().split(/\s+/).filter(Boolean) : [];

@@ -1,156 +1,277 @@
 "use client";
 
+import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 import { useState, useMemo } from "react";
-import ToolShell from "@/components/tools/ToolShell";
+import { X } from "lucide-react";
 import { TOOLS } from "@/lib/tools-registry";
 import mpesaData from "@/data/mpesa-tariffs.json";
-import CustomSelect from "@/components/ui/CustomSelect";
 
 const tool = TOOLS.find((t) => t.slug === "mpesa-fee-calculator")!;
 
 type TransactionType = keyof typeof mpesaData.transactionTypes;
 
-function calculateFee(amount: number, type: TransactionType): number | null {
+function getFee(amount: number, type: TransactionType): number | null {
+  if (!Number.isFinite(amount) || amount <= 0) return null;
+  const amt = Math.ceil(amount);
   const bands = mpesaData.transactionTypes[type].bands;
   for (const band of bands) {
-    if (amount >= band.min && amount <= band.max) {
+    if (amt >= band.min && amt <= band.max) {
       return band.fee;
     }
   }
   return null;
 }
 
-function findSavingTip(amount: number, type: TransactionType): string | null {
+const calculateFee = getFee;
+
+function findOptimalSplit(amount: number, type: TransactionType) {
+  if (amount <= 100 || amount > 500000) return null;
+  const singleFee = getFee(amount, type);
+  if (singleFee === 0) return null;
+
+  let bestTotalFee = singleFee ?? Infinity;
+  let bestSplitDesc: string | null = null;
+
   const bands = mpesaData.transactionTypes[type].bands;
-  for (let i = 0; i < bands.length - 1; i++) {
-    const currentBand = bands[i];
-    const nextBand = bands[i + 1];
-    // If the amount falls in the start of a higher-fee band
-    if (amount >= nextBand.min && amount <= nextBand.min + 100) {
-      if (currentBand.fee < nextBand.fee) {
-        return `Sending KES ${currentBand.max.toLocaleString()} instead of KES ${amount.toLocaleString()} would save you KES ${(nextBand.fee - currentBand.fee).toLocaleString()} in fees (same band boundary).`;
+  const maxSingleLimit = bands[bands.length - 1]?.max ?? 250000;
+  for (const b of bands) {
+    if (b.max >= amount) break;
+    const part1 = b.max;
+    const part2 = amount - part1;
+    if (part1 > maxSingleLimit || part2 > maxSingleLimit) continue;
+    const fee1 = getFee(part1, type);
+    const fee2 = getFee(part2, type);
+    if (fee1 !== null && fee2 !== null && fee1 + fee2 < bestTotalFee) {
+      bestTotalFee = fee1 + fee2;
+      if (singleFee !== null) {
+        const saved = singleFee - bestTotalFee;
+        bestSplitDesc = `Split into KES ${part1.toLocaleString()} (fee KES ${fee1}) + KES ${part2.toLocaleString()} (fee KES ${fee2}) = KES ${bestTotalFee} total fee — saving you KES ${saved.toLocaleString()}!`;
+      } else {
+        bestSplitDesc = `Exceeds KES ${maxSingleLimit.toLocaleString()} single-tx limit: Split into KES ${part1.toLocaleString()} (fee KES ${fee1}) + KES ${part2.toLocaleString()} (fee KES ${fee2}) = KES ${bestTotalFee} total fee (within KES 500,000 daily limit).`;
       }
     }
   }
-  return null;
+
+  return bestSplitDesc;
 }
 
-const faq = [
-  {
-    question: "Are M-Pesa Buy Goods (Lipa Na M-Pesa) transactions free?",
-    answer: "Yes, Safaricom does not charge customers any fee for Buy Goods (till number) transactions. This makes Lipa Na M-Pesa the cheapest way to pay for goods and services.",
-  },
-  {
-    question: "How much does M-Pesa charge to send money?",
-    answer: "M-Pesa charges vary by amount and whether the recipient is registered. Sending to a registered user ranges from KES 0 (for amounts under KES 100) to KES 108 (for amounts over KES 25,000). Sending to unregistered users costs more.",
-  },
-  {
-    question: "What is the M-Pesa maximum transaction limit?",
-    answer: "The maximum single transaction is KES 150,000. The maximum daily transaction total is KES 300,000. The maximum M-Pesa balance is KES 300,000.",
-  },
-  {
-    question: "Is receiving money on M-Pesa free?",
-    answer: "Yes, receiving money on M-Pesa is always free regardless of the amount. You only pay fees when sending money or withdrawing.",
-  },
-  {
-    question: "How can I save on M-Pesa fees?",
-    answer: "Use Buy Goods (Lipa Na M-Pesa) whenever possible as it's free. When sending money, check the fee boundaries — sometimes sending KES 500 instead of KES 501 can save you fees because of tariff band transitions.",
-  },
-];
 
-export default function MpesaFeeCalculatorPage() {
-  const [amount, setAmount] = useState<number>(1000);
-  const [txType, setTxType] = useState<TransactionType>("sendRegistered");
-
-  const results = useMemo(() => {
-    const fee = calculateFee(amount, txType);
-    const savingTip = findSavingTip(amount, txType);
-    const totalCost = fee !== null ? amount + fee : null;
-
-    // Calculate fees for all transaction types for comparison
-    const allFees = Object.entries(mpesaData.transactionTypes).map(([key, value]) => {
-      const f = calculateFee(amount, key as TransactionType);
-      return { key: key as TransactionType, label: value.label, fee: f };
-    });
-
-    return { fee, savingTip, totalCost, allFees };
-  }, [amount, txType]);
-
-  const txTypeOptions = Object.entries(mpesaData.transactionTypes).map(([key, value]) => ({
+const txTypeOptions = Object.entries(mpesaData.transactionTypes).map(
+  ([key, value]) => ({
     key: key as TransactionType,
     label: value.label,
-  }));
+  })
+);
+
+export default function MpesaFeeCalculatorPage() {
+  const [amount, setAmount] = useState<number>(5000);
+  const [txType, setTxType] = useState<TransactionType>("sendRegistered");
+  const [includeWithdrawal, setIncludeWithdrawal] = useState<boolean>(false);
+
+  const results = useMemo(() => {
+    const numAmount = Math.max(0, amount);
+    const canIncludeWithdrawal =
+      includeWithdrawal && (txType === "sendRegistered" || txType === "sendUnregistered");
+    const withdrawalFeeForTarget = canIncludeWithdrawal
+      ? calculateFee(numAmount, "withdrawAgent") ?? 0
+      : 0;
+    const amountToSend = canIncludeWithdrawal
+      ? numAmount + withdrawalFeeForTarget
+      : numAmount;
+
+    // Check if adding withdrawal fee pushed recipient into next withdrawal band
+    const actualAgentWithdrawFee = canIncludeWithdrawal
+      ? calculateFee(amountToSend, "withdrawAgent") ?? withdrawalFeeForTarget
+      : 0;
+    const adjustedAmountToSend =
+      canIncludeWithdrawal && actualAgentWithdrawFee > withdrawalFeeForTarget
+        ? numAmount + actualAgentWithdrawFee
+        : amountToSend;
+
+    const withdrawalFee = canIncludeWithdrawal ? actualAgentWithdrawFee : 0;
+    const sendFee = getFee(adjustedAmountToSend, txType);
+    const fee = sendFee !== null ? sendFee + withdrawalFee : null;
+    const splitTip = findOptimalSplit(adjustedAmountToSend, txType);
+    const totalSenderWalletNeeded =
+      sendFee !== null ? adjustedAmountToSend + sendFee : null;
+
+    const allFees = Object.entries(mpesaData.transactionTypes).map(
+      ([key, value]) => {
+        const f = getFee(
+          includeWithdrawal && numAmount <= 250000
+            ? adjustedAmountToSend
+            : adjustedAmountToSend,
+          key as TransactionType
+        );
+        return { key: key as TransactionType, label: value.label, fee: f };
+      }
+    );
+
+    return {
+      amountToSend: adjustedAmountToSend,
+      agentWithdrawalFee: withdrawalFee,
+      sendFee,
+      fee,
+      splitTip,
+      totalSenderWalletNeeded,
+      allFees,
+    };
+  }, [amount, txType, includeWithdrawal]);
+
 
   return (
-    <ToolShell tool={tool} faq={faq}>
+    <>
       <div className="space-y-6">
         {/* Inputs */}
         <div className="bg-bg-card border border-border rounded-xl p-6 space-y-4">
           <div>
             <label className="block text-sm font-medium text-text-secondary mb-2">
-              Transaction Amount (KES)
+              {includeWithdrawal
+                ? "Net Cash Recipient Must Withdraw at Agent (KES)"
+                : "Transaction Amount (KES)"}
             </label>
-            <input
-              type="number"
-              value={amount}
-              onChange={(e) => setAmount(Math.max(0, Number(e.target.value)))}
-              className="input-field text-xl sm:text-2xl font-bold font-[family-name:var(--font-outfit)]"
-              min={0}
-              max={150000}
-              id="mpesa-amount-input"
-            />
+            <div className="relative">
+              <input
+                type="number"
+                inputMode="numeric"
+                value={amount === 0 ? "" : amount}
+                onChange={(e) => {
+                  const raw = e.target.value.replace(/^0+(?=\d)/, "");
+                  setAmount(raw === "" ? 0 : Math.max(0, Number(raw)));
+                }}
+                placeholder="0"
+                className="input-field text-xl sm:text-2xl font-bold font-[family-name:var(--font-outfit)] pr-11!"
+                style={{ paddingRight: "2.75rem" }}
+                min={0}
+                max={500000}
+                id="mpesa-amount-input"
+              />
+              {amount > 0 && (
+                <button
+                  type="button"
+                  onClick={() => setAmount(0)}
+                  className="absolute right-3 top-1/2 -translate-y-1/2 w-6 h-6 shrink-0 rounded-full bg-bg-card border border-border hover:border-gold hover:bg-gold/15 hover:text-gold active:scale-90 flex items-center justify-center transition-all cursor-pointer z-10"
+                  aria-label="Clear amount"
+                >
+                  <X className="w-3.5 h-3.5 text-text-muted hover:text-gold shrink-0" />
+                </button>
+              )}
+            </div>
           </div>
+
+          <ExpandablePillRow>
+            {[500, 1000, 2500, 5000, 10000, 20000, 50000, 250000].map((preset) => (
+              <button
+                key={preset}
+                type="button"
+                aria-pressed={amount === preset}
+                onClick={() => setAmount(preset)}
+                className={`shrink-0 whitespace-nowrap px-3.5 py-1.5 rounded-full text-xs font-medium border transition-all cursor-pointer ${
+                  amount === preset
+                    ? "border-gold/50 bg-gold/15 text-gold font-semibold"
+                    : "border-border bg-bg-elevated text-text-secondary hover:text-text-primary hover:border-border-light"
+                }`}
+              >
+                KES {preset.toLocaleString()}
+              </button>
+            ))}
+          </ExpandablePillRow>
+
+          {/* Tuma na ya Kutoa Toggle */}
+          <label className="flex items-center gap-2.5 p-3 rounded-xl bg-gold/10 border border-gold/30 cursor-pointer">
+            <input
+              type="checkbox"
+              checked={includeWithdrawal}
+              onChange={(e) => setIncludeWithdrawal(e.target.checked)}
+              className="rounded accent-gold"
+            />
+            <span className="text-xs sm:text-sm font-semibold text-text-primary">
+              Include Agent Withdrawal Fee (Add M-Pesa Agent Withdrawal Fee so recipient withdraws exact KES {amount.toLocaleString()})
+            </span>
+          </label>
 
           <div>
             <label className="block text-sm font-medium text-text-secondary mb-2">
               Transaction Type
             </label>
-            <CustomSelect
-              value={txType}
-              onChange={(e) => setTxType(e.target.value as TransactionType)}
-              className="select-field"
-              id="mpesa-type-select"
-            >
-              {txTypeOptions.map((opt) => (
-                <option key={opt.key} value={opt.key}>
-                  {opt.label}
-                </option>
-              ))}
-            </CustomSelect>
+            <div className="mb-3">
+              <ExpandablePillRow>
+                {txTypeOptions.map((opt) => (
+                  <button
+                    key={opt.key}
+                    type="button"
+                    aria-pressed={txType === opt.key}
+                    onClick={() => setTxType(opt.key)}
+                    className={`shrink-0 whitespace-nowrap px-3.5 py-1.5 rounded-full text-xs font-medium border transition-all cursor-pointer ${
+                      txType === opt.key
+                        ? "border-gold/50 bg-gold/15 text-gold font-semibold"
+                        : "border-border bg-bg-elevated text-text-secondary hover:text-text-primary hover:border-border-light"
+                    }`}
+                  >
+                    {opt.label}
+                  </button>
+                ))}
+              </ExpandablePillRow>
+            </div>
+
           </div>
         </div>
 
         {/* Result */}
-        <div className="result-box">
-          <div className="grid grid-cols-3 gap-4 text-center">
+        <div role="status" aria-live="polite" aria-atomic="true" className="result-box">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
             <div>
-              <p className="text-xs text-text-muted mb-1">Amount</p>
-              <p className="text-lg font-bold text-text-primary font-[family-name:var(--font-outfit)]">
-                KES {amount.toLocaleString()}
+              <p className="text-xs text-text-muted mb-1">
+                {includeWithdrawal ? "Amount to Send (+Withdrawal Fee)" : "Amount"}
               </p>
+              <p className="text-xl font-bold text-text-primary font-[family-name:var(--font-outfit)]">
+                KES {results.amountToSend.toLocaleString()}
+              </p>
+              {includeWithdrawal && (
+                <p className="text-[0.65rem] text-gold mt-0.5">
+                  Includes KES {results.agentWithdrawalFee} agent withdrawal fee
+                </p>
+              )}
             </div>
             <div>
-              <p className="text-xs text-text-muted mb-1">Fee</p>
-              <p className="text-lg font-bold text-kenya-red-light font-[family-name:var(--font-outfit)]">
-                {results.fee !== null ? `KES ${results.fee.toLocaleString()}` : "N/A"}
+              <p className="text-xs text-text-muted mb-1">
+                {includeWithdrawal ? "Total Fee (Send + Withdrawal)" : "Sending / Tx Fee"}
               </p>
+              <p className="text-xl font-bold text-kenya-red-light font-[family-name:var(--font-outfit)]">
+                {results.fee !== null
+                  ? `KES ${results.fee.toLocaleString()}`
+                  : "N/A"}
+              </p>
+              {includeWithdrawal && results.sendFee !== null && (
+                <p className="text-[0.65rem] text-text-muted mt-0.5">
+                  KES {results.sendFee.toLocaleString()} + KES {results.agentWithdrawalFee.toLocaleString()} = KES {results.fee?.toLocaleString()}
+                </p>
+              )}
             </div>
             <div>
-              <p className="text-xs text-text-muted mb-1">Total Cost</p>
-              <p className="text-lg font-bold text-kenya-green-light font-[family-name:var(--font-outfit)]">
-                {results.totalCost !== null
-                  ? `KES ${results.totalCost.toLocaleString()}`
+              <p className="text-xs text-text-muted mb-1">
+                Total Needed in Your M-Pesa
+              </p>
+              <p className="text-xl font-bold text-kenya-green-light font-[family-name:var(--font-outfit)]">
+                {results.totalSenderWalletNeeded !== null
+                  ? `KES ${results.totalSenderWalletNeeded.toLocaleString()}`
                   : "N/A"}
               </p>
             </div>
           </div>
         </div>
 
-        {/* Saving Tip */}
-        {results.savingTip && (
+        {/* Smart Split Saving Tip */}
+        {results.splitTip && (
           <div className="bg-gold/10 border border-gold/30 rounded-xl p-4">
-            <div className="flex items-start gap-2"><DynamicIcon emoji="💡" className="w-4 h-4 text-gold flex-shrink-0 mt-0.5" /><p className="text-sm text-gold-light">{results.savingTip}</p></div>
+            <div className="flex items-start gap-2">
+              <DynamicIcon
+                emoji="💡"
+                className="w-4 h-4 text-gold flex-shrink-0 mt-0.5"
+              />
+              <p className="text-sm text-gold-light">{results.splitTip}</p>
+            </div>
           </div>
         )}
 
@@ -158,11 +279,11 @@ export default function MpesaFeeCalculatorPage() {
         <div className="bg-bg-card border border-border rounded-xl overflow-hidden">
           <div className="px-5 py-3 border-b border-border bg-bg-elevated">
             <h3 className="text-sm font-semibold text-text-primary font-[family-name:var(--font-outfit)]">
-              Fee Comparison for KES {amount.toLocaleString()}
+              Fee Comparison for KES {results.amountToSend.toLocaleString()}
             </h3>
           </div>
           <div className="overflow-x-auto">
-            <table className="data-table">
+            <table className="data-table whitespace-nowrap tabular-nums">
               <thead>
                 <tr>
                   <th>Transaction Type</th>
@@ -176,15 +297,25 @@ export default function MpesaFeeCalculatorPage() {
                     className={item.key === txType ? "bg-gold/5" : ""}
                   >
                     <td
-                      className={`text-text-secondary ${item.key === txType ? "font-semibold text-gold" : ""}`}
+                      className={`text-text-secondary ${
+                        item.key === txType ? "font-semibold text-gold" : ""
+                      }`}
                     >
                       {item.label}
                       {item.key === txType && " ←"}
                     </td>
                     <td className="text-right">
                       {item.fee !== null ? (
-                        <span className={item.fee === 0 ? "text-kenya-green-light font-semibold" : "text-text-primary"}>
-                          {item.fee === 0 ? "FREE" : `KES ${item.fee.toLocaleString()}`}
+                        <span
+                          className={
+                            item.fee === 0
+                              ? "text-kenya-green-light font-semibold"
+                              : "text-text-primary"
+                          }
+                        >
+                          {item.fee === 0
+                            ? "FREE"
+                            : `KES ${item.fee.toLocaleString()}`}
                         </span>
                       ) : (
                         <span className="text-text-muted">N/A</span>
@@ -196,71 +327,7 @@ export default function MpesaFeeCalculatorPage() {
             </table>
           </div>
         </div>
-
-        {/* Full Tariff Reference */}
-        <div className="bg-bg-card border border-border rounded-xl overflow-hidden">
-          <div className="px-5 py-3 border-b border-border bg-bg-elevated">
-            <h3 className="text-sm font-semibold text-text-primary font-[family-name:var(--font-outfit)]">
-              Full M-Pesa Tariff — {mpesaData.transactionTypes[txType].label}
-            </h3>
-          </div>
-          <div className="overflow-x-auto">
-            <table className="data-table">
-              <thead>
-                <tr>
-                  <th>Amount Range</th>
-                  <th className="text-right">Fee</th>
-                </tr>
-              </thead>
-              <tbody>
-                {mpesaData.transactionTypes[txType].bands.map((band, i) => {
-                  const isActive = amount >= band.min && amount <= band.max;
-                  return (
-                    <tr key={i} className={isActive ? "bg-gold/5" : ""}>
-                      <td className={isActive ? "font-semibold text-gold" : "text-text-secondary"}>
-                        KES {band.min.toLocaleString()} – KES {band.max.toLocaleString()}
-                        {isActive && " ← Your amount"}
-                      </td>
-                      <td className={`text-right ${isActive ? "font-semibold text-gold" : ""}`}>
-                        {band.fee === 0 ? (
-                          <span className="text-kenya-green-light">FREE</span>
-                        ) : (
-                          `KES ${band.fee}`
-                        )}
-                      </td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        {/* Transaction Limits */}
-        <div className="bg-bg-card border border-border rounded-xl p-5">
-          <h3 className="text-sm font-semibold text-text-primary mb-3 font-[family-name:var(--font-outfit)]">
-            M-Pesa Transaction Limits
-          </h3>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm">
-            <div>
-              <p className="text-text-muted text-xs">Max Balance</p>
-              <p className="font-semibold text-text-primary">KES {mpesaData.limits.maxBalance.toLocaleString()}</p>
-            </div>
-            <div>
-              <p className="text-text-muted text-xs">Max Per Day</p>
-              <p className="font-semibold text-text-primary">KES {mpesaData.limits.maxTransactionPerDay.toLocaleString()}</p>
-            </div>
-            <div>
-              <p className="text-text-muted text-xs">Max Single Tx</p>
-              <p className="font-semibold text-text-primary">KES {mpesaData.limits.maxSingleTransaction.toLocaleString()}</p>
-            </div>
-            <div>
-              <p className="text-text-muted text-xs">Receive Money</p>
-              <p className="font-semibold text-kenya-green-light">Always FREE</p>
-            </div>
-          </div>
-        </div>
       </div>
-    </ToolShell>
+    </>
   );
 }
