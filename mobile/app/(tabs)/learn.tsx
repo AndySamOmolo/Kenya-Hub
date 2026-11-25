@@ -203,7 +203,7 @@ function createLearnStyles(
 }
 
 export default function LearnTabScreen() {
-  const { theme, themeConfig, themeMetrics, resolvedFonts } = useTheme();
+  const { theme, themeConfig, themeMetrics, resolvedFonts, themeReady, isDark } = useTheme();
   const { t } = useAppLanguage();
   const styles = useMemo(
     () => createLearnStyles(themeMetrics, resolvedFonts),
@@ -255,8 +255,8 @@ export default function LearnTabScreen() {
   }, [themeConfig]);
 
   const DeferredLanguageLearningTool = useMemo(
-    () => (contentReady ? getLanguageLearningTool() : null),
-    [contentReady, themeVersion]
+    () => (contentReady && themeReady ? getLanguageLearningTool() : null),
+    [contentReady, themeVersion, themeReady]
   );
 
   const handleScrollToTop = useCallback(() => {
@@ -304,6 +304,7 @@ export default function LearnTabScreen() {
       >
         {DeferredLanguageLearningTool ? (
           <DeferredLanguageLearningTool
+            key={`learn-tool-${themeVersion}`}
             initialLanguageId={typeof params.lang === "string" ? params.lang : undefined}
             initialTab={typeof params.tab === "string" ? (params.tab as any) : undefined}
             onScrollToTop={handleScrollToTop}
